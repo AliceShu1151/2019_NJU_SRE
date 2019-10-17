@@ -64,7 +64,6 @@ fix:
 	359 Fixed `FlipCommaIntention` for Groovy files
 	360 Fix for Go to Class window loses focus during typing.
 	366 [Fernflower] Refactored IIdentifierRenamer, Fixed renaming annotations on classes, Fixed the location of generated comments relative to annotations, Improved the default renaming scheme.
-	366 [Fernflower] Refactored IIdentifierRenamer, Fixed renaming annotations on classes, Fixed the location of generated comments relative to annotations, Improved the default renaming scheme.
 	367 [Fernflower] Fixed annotations not being renamed properly and corrected the position of annotations relative to generated comments
 	369 Fix WM_CLASS x property not being null-terminated
 	372 fix constructor arguments for extended inner classes
@@ -619,16 +618,12 @@ class:
 	739 PY-28562: Add implicit `object` super when class has new style metaclass
 	750 [Fernflower] Ignore library classes when saving decompilation result
 	826 Add a Way To Specify Class Names to Not Import Inner Classes For
-	826 Add a Way To Specify Class Names to Not Import Inner Classes For
-	828 Add a Way To Specify Class Names to Not Import Inner Classes For
 	828 Add a Way To Specify Class Names to Not Import Inner Classes For
 	839 Change resolve class scope to include libraries
 	854 [Decompiler] Fix short name imports shadowed by super inner classes (IDEA-196315)
 	884 [Fernflower] Cleanup of collections-related classes
 	1020 IDEA-202032 replace '/' with '.' when typing class name in the Create New Class dialog
-	1020 IDEA-202032 replace '/' with '.' when typing class name in the Create New Class dialog
 	1023 Fix invalid decompiled missing inner class references
-	1024 IDEA-204998: Use decompile classes in preference to library classes
 	1024 IDEA-204998: Use decompile classes in preference to library classes
 	1155 Skip Kotlin classes in NotNullInstrumentingBuilder
 	1192 Additional modules not visible through thread context class loader
@@ -649,7 +644,6 @@ name:
 	351 [Fernflower] Make the default renamer rename classes that have a name that is reserved by the windows namespace
 	365 Prevent static field name clashes in local methods
 	388 Comment out checking maven settings by file name
-	448 IDEA-146390 Modules generated from Maven sources named using artifact name
 	448 IDEA-146390 Modules generated from Maven sources named using artifact name
 	461 IDEA-163243 fixed confussion in parameter names
 	467 Add ability to provide name on MockModule for testing
@@ -815,8 +809,6 @@ type:
 	355 Debugger: do not insert cast to runtime type for non java code fragments
 	383 Fixed issues with Jump to source/ Jump to Type in python debugger
 	477 In type names, replace type params with concrete types
-	477 In type names, replace type params with concrete types
-	477 In type names, replace type params with concrete types
 	517 IDEA-168575 introduced ant ansi color based on message type (error, w¡­
 	545 Change return type of PydevConsoleRunnerFactory
 	552 IDEA-171459 fix type cast for int literals used as byte / short
@@ -841,10 +833,6 @@ test:
 	262 Generate keys and values in each test case instead of use hardcoded constants
 	376 [Fernflower] Setup increment/decrement test properly
 	389 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
-	389 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
-	389 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
-	390 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
-	390 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
 	390 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
 	399 PY-19541: Fix test runner progress for py.test
 	426 PY-11943 Add MutableMapping test and check
@@ -865,7 +853,6 @@ test:
 	877 [Fernflower] add test case for bad variable initialization
 	894 doc(testIntegration): Add some javadoc around test integration
 	905 Added test state to AccessibleName of test results entry
-	905 Added test state to AccessibleName of test results entry
 	923 Add more tests for UnnecessaryUnicodeEscapeInspection
 	1003 IDEA-203651: Improve check that source root type is for tests
 	1120 Support test parallelization in UsefulTestCase
@@ -879,8 +866,6 @@ project:
 	207 Shelve changes to project dir.
 	219 IDEA-132199 Fix Git get repo for python projects that are also installed in virtualenv
 	220 Added the Close All Projects and Close Other Projects actions.
-	220 Added the Close All Projects and Close Other Projects actions.
-	221 Added the Close All Projects and Close Other Projects actions.
 	221 Added the Close All Projects and Close Other Projects actions.
 	250 Remove file based storage from project creation options (fixes first part of IDEA-137327)
 	294 Debug log level for project data services
@@ -905,7 +890,6 @@ project:
 
 build:
 	22 IDEA-35950  Generate ant build adds generated file to Ant Build window
-	22 IDEA-35950  Generate ant build adds generated file to Ant Build window
 	32 IDEA-36137  Drag-n-drop Ant scripts to Ant Build tool window
 	39 IDEA-86115 Build file properties ant command line config is not saved to .idea/ant.xml
 	47 IDEA-99287 ANT toolwindow: prevent duplicate build files
@@ -923,12 +907,10 @@ build:
 	650 Support creation and importing Gradle projects with Kotlin DSL build scripts
 	745 Changes to show sync issues messages on build view.
 	792 build scripts: allow products to define special icons for EAP builds
-	792 build scripts: allow products to define special icons for EAP builds
 	810 Have common Icons for nodes in build view
 	817 New unified build procedure in README.md (IJSDK-50)
 	851 build scripts: increase Xmx to fix OOM
 	857 Add a programmatic way to switch between views in the Build toolwindow.
-	1012 Select first leaf that contains an error on Build view after build
 	1012 Select first leaf that contains an error on Build view after build
 	1033 IDEA-205705 Include file name in tab title for pom.xml and gradle build scripts (like plugin.xml)
 	1073 Check that build view is not null before sending events
@@ -1001,8 +983,6 @@ new:
 	303 Add a new postfix completion template
 	361 New GIT option to disable fast-forward when merging into master from a log window
 	389 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
-	389 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
-	390 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
 	390 [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
 	391 [Fernflower] new option -osc: solves problems with method/field selection
 	401 IDEA-137640: New FileTemplate time variables
@@ -1022,7 +1002,6 @@ new:
 console:
 	6 IDEA-69292 make merge possible from console
 	25 IDEA-95644 Support console input filtering
-	62 IDEA-104221 Console folding rules allow to add empty substring and after this console folding is not working anymore
 	62 IDEA-104221 Console folding rules allow to add empty substring and after this console folding is not working anymore
 	114 PY-9343 Add to OOTB console folding rules the *sys-package-mgr* lines
 	166 IDEA-123665 richcopy enabled for console and highlighters
@@ -1076,7 +1055,6 @@ code:
 	343 IDEA-139310: Find Usages reports source code usages first
 	355 Debugger: do not insert cast to runtime type for non java code fragments
 	423 (PY-19967) Fix code code completion in cases of namedtuple inheritance
-	423 (PY-19967) Fix code code completion in cases of namedtuple inheritance
 	433 IDEA-157903 add "keep blank lines" option in properties code style
 	520 IDEA-151925: IntelliJ should be aware that a custom sourceSet contains Test sources for production code
 	562 IDEA-171697 Omit explicit arrays for vararg parameters in decompiled code
@@ -1120,13 +1098,11 @@ python:
 	466 Add a custom python package identifier extension point
 	498 Added building python debugger binaries for 2.6
 	534 Added ability to patch python command line via Python sdk flavor
-	534 Added ability to patch python command line via Python sdk flavor
 	616 PY-25794: Prevent unnecessary stub to AST switches in Python inspections
 	661 Making pydev compatible with Python 2.6
 	664 PY-27004: Use multiResolve to check if Python refs match
 	776 PY-29338: Sort out foreign relative imports from python ones
 	790 [PY-27594] disable debug when Python gets input from stdin
-	895 [platform] Support Python 2.6 in python launcher
 	895 [platform] Support Python 2.6 in python launcher
 
 dialog:
@@ -1326,7 +1302,6 @@ maven:
 	66 fix maven autoimport - use build-helper-maven-plugin config
 	146 Activate Maven extensions during project resolution.
 	157 Fixed a warning, run maven build in maven 3.2.1
-	157 Fixed a warning, run maven build in maven 3.2.1
 	178 IDEA-123453 Maven failsafe environment variables
 	254 added "Add Maven Dependency" quick fix for groovy
 	266 IDEA-138533 Add checkbox to disable Maven keyboard shortcuts
@@ -1335,7 +1310,6 @@ maven:
 	448 IDEA-146390 Modules generated from Maven sources named using artifact name
 	630 IDEA-179472: Fix maven module not retrieving "release" version from config
 	904 [IDEA-201282] Ignore setting Maven Resolver's LoggerFactory for Maven¡­
-	1005 [IDEA-201343] Add standard Maven properties to pom.xml of just created Maven based module
 	1005 [IDEA-201343] Add standard Maven properties to pom.xml of just created Maven based module
 	1101 IDEA-205103 Sort maven archetype versions
 
@@ -1377,8 +1351,6 @@ branch:
 
 ant:
 	22 IDEA-35950  Generate ant build adds generated file to Ant Build window
-	22 IDEA-35950  Generate ant build adds generated file to Ant Build window
-	32 IDEA-36137  Drag-n-drop Ant scripts to Ant Build tool window
 	32 IDEA-36137  Drag-n-drop Ant scripts to Ant Build tool window
 	38 IDEA-36076 Ant integration: allow to add and remove multiple files at on...
 	39 IDEA-86115 Build file properties ant command line config is not saved to .idea/ant.xml
@@ -1396,7 +1368,6 @@ ant:
 git:
 	82 SSH agent support for git and svn integrations
 	100 IDEA-113488 Find commits in git log from file history context menu
-	104 IDEA-112775 git file history  make use of git describe command
 	104 IDEA-112775 git file history  make use of git describe command
 	123 IDEA-116247 Path does not exist with cyrillic chars at Git
 	140 SSH agent support for git and svn integrations
@@ -1460,7 +1431,6 @@ commit:
 	793 In my opinion, there aren't many people that committed message same as previous
 	823 Add "delete unversioned" action shortcut in commit changes dialog
 	885 IDEA-199921 Revert commit d8423f0 after commit b6a57a9
-	885 IDEA-199921 Revert commit d8423f0 after commit b6a57a9
 	1172 Delete code dead since commit 51e756a
 
 line:
@@ -1519,7 +1489,6 @@ rename:
 	347 [IDEA-137253] Fixed renaming class elements when decompiling
 	351 [Fernflower] Make the default renamer rename classes that have a name that is reserved by the windows namespace
 	366 [Fernflower] Refactored IIdentifierRenamer, Fixed renaming annotations on classes, Fixed the location of generated comments relative to annotations, Improved the default renaming scheme.
-	366 [Fernflower] Refactored IIdentifierRenamer, Fixed renaming annotations on classes, Fixed the location of generated comments relative to annotations, Improved the default renaming scheme.
 	367 [Fernflower] Fixed annotations not being renamed properly and corrected the position of annotations relative to generated comments
 	380 Inplace renaming of elements from different Psi trees
 	393 [Fernflower] Renaming support for .class field access and assertions
@@ -1536,14 +1505,12 @@ version:
 	177 Fix passing idea version when creating RunProfileState in
 	213 Fix the asm jar version required by javac2 in ant build
 	228 optimize plugin version checking when update intellij platform version
-	228 optimize plugin version checking when update intellij platform version
 	244 fsNotifier: Fix glibc version specifier for ppc64
 	491 Update error messages for version control plugins to be more readable.
 	630 IDEA-179472: Fix maven module not retrieving "release" version from config
 	723 Import correct version of XmlElement
 	822 Updated FiraCode font to version 1.205
 	832 Switch JavaHelp license type to match bundled version
-	844 Optimize plugin version checking when update intellij platform version
 	844 Optimize plugin version checking when update intellij platform version
 	1028 PY-33474 updates pyparsing to version 1.5.6
 
@@ -1631,13 +1598,11 @@ color:
 	7 IDEA-88520 When applying dark color scheme and ColorIde plugin then settings tree is displayed incorrectly
 	8 IDEA-88520 When applying dark color scheme and ColorIde plugin then settings tree is displayed incorrectly
 	9 IDEA-88526 When applying dark color scheme and ColorIde plugin then several types of tree nodes are always have black text color
-	9 IDEA-88526 When applying dark color scheme and ColorIde plugin then several types of tree nodes are always have black text color
 	286 Allow using more than one color in structure view nodes
 	396 IDEA-118247 fix application of Color Scheme to Terminal.
 	517 IDEA-168575 introduced ant ansi color based on message type (error, w¡­
 	579 IDEA-173612 added ant log colors configuration
 	702 Do not use a hard-coded color for active tool header
-	837 Uniformize all color scheme hexadecimal colors
 	837 Uniformize all color scheme hexadecimal colors
 	1065 IDEA-207424 Add color constants for uidesigner.
 	1069 IDEA-137065: Support escape sequences for 8-bit and 24-bit colors in console window
@@ -1673,7 +1638,6 @@ task:
 	1187 [Gradle] Avoid task configuration in tooling model builders.
 
 generate:
-	22 IDEA-35950  Generate ant build adds generated file to Ant Build window
 	22 IDEA-35950  Generate ant build adds generated file to Ant Build window
 	262 Generate keys and values in each test case instead of use hardcoded constants
 	276 Don't provide intentions or fixes that will modify generated sources
@@ -1809,8 +1773,6 @@ set:
 
 close:
 	220 Added the Close All Projects and Close Other Projects actions.
-	220 Added the Close All Projects and Close Other Projects actions.
-	221 Added the Close All Projects and Close Other Projects actions.
 	221 Added the Close All Projects and Close Other Projects actions.
 	230 hg4idea: close branch
 	231 hg4idea close branch feature
@@ -1946,15 +1908,11 @@ open:
 	1057 IDEA-206965 Mark focused component when opening UI Inspector
 	1164 Focus lost upon opening certain important dialogs.
 	1199 Open a project by launcher.py when other window is already open
-	1199 Open a project by launcher.py when other window is already open
 
 highlight:
 	24 New highlights
 	45 IDEA-99364 Highlighting constructor correction - highlight only javaReference, without type parameters
-	45 IDEA-99364 Highlighting constructor correction - highlight only javaReference, without type parameters
 	46 IDEA-99403 Dont highlight 'super' / 'this' keywords, while highlighting 'Constructor Call'
-	46 IDEA-99403 Dont highlight 'super' / 'this' keywords, while highlighting 'Constructor Call'
-	135 highlight usages in custom file type works as text highlighting (IDEA-11...
 	135 highlight usages in custom file type works as text highlighting (IDEA-11...
 	344 Allow the WolfTheProblemSolver to disable the highlighting pass.
 	860 Add the ability to highlight java primitives separately from keywords.
@@ -2125,7 +2083,6 @@ usages:
 	153 Add extension point for postprocessing of usages in the course of Move refactoring
 	159 Add extension point for preprocessing of inner class usages
 	279 Usage View: Remove usages (like in Eclipse)
-	343 IDEA-139310: Find Usages reports source code usages first
 	343 IDEA-139310: Find Usages reports source code usages first
 	346 Expose UpdateChecker.NOTIFICATIONS as public field for java usages
 	570 Remove usages and deprecate some obsolete StringUtil methods
@@ -2309,7 +2266,6 @@ time:
 	323 IDEA-101238 fixed url parameter encoding for youtrack time tracking
 	401 IDEA-137640: New FileTemplate time variables
 	592 git annotate show author time instead of committer time
-	592 git annotate show author time instead of committer time
 	782 IDEA-190710 Add Gitlab Time Tracking integration
 	834 Add GitLab time tracking IDEA-190710
 	882 Refactoring - constant described several times
@@ -2419,7 +2375,6 @@ text:
 	801 fixed English language typo in Tip of the Day text
 	1031 IDEA-205629 Shift text range when getStartTagNameElement is null
 	1208 visually separate DUMMY_IDENTIFIER text from the main text
-	1208 visually separate DUMMY_IDENTIFIER text from the main text
 
 context:
 	10 IDEA-80292 RunProfile name are too much truncated in file context popup menu
@@ -2457,7 +2412,6 @@ parameters:
 	469 Pass otherwise unused buffersize parameters
 	562 IDEA-171697 Omit explicit arrays for vararg parameters in decompiled code
 	848 Add support for multiple type parameters
-	881 Added an AccessibleName to Parameters table when refactoring parameters of a method. IDEA-199219
 	881 Added an AccessibleName to Parameters table when refactoring parameters of a method. IDEA-199219
 	1150 Add explicit types to method parameters intention
 
@@ -2502,7 +2456,6 @@ modify:
 	1030 Don't modify TestPlan
 
 string:
-	130 PY-11317 Incorrect type detection for formatter string with java String ...
 	130 PY-11317 Incorrect type detection for formatter string with java String ...
 	142 Add method ignore in i18n/Hard coded string inspection
 	289 IDEA-96179 Replace with a camel case string and Preserve Case
@@ -2773,7 +2726,6 @@ case:
 	262 Generate keys and values in each test case instead of use hardcoded constants
 	288 Include more details for FS case setting mismatch
 	289 IDEA-96179 Replace with a camel case string and Preserve Case
-	289 IDEA-96179 Replace with a camel case string and Preserve Case
 	423 (PY-19967) Fix code code completion in cases of namedtuple inheritance
 	877 [Fernflower] add test case for bad variable initialization
 	1188 IDEA-219943 language counters corner case
@@ -2873,7 +2825,6 @@ tabs:
 	861 Terminal tool window native tabs
 
 fold:
-	62 IDEA-104221 Console folding rules allow to add empty substring and after this console folding is not working anymore
 	62 IDEA-104221 Console folding rules allow to add empty substring and after this console folding is not working anymore
 	114 PY-9343 Add to OOTB console folding rules the *sys-package-mgr* lines
 	136 structural brace based folding for custom file types (IDEA-83026)
@@ -3041,7 +2992,6 @@ configuration:
 	1187 [Gradle] Avoid task configuration in tooling model builders.
 
 dispose:
-	687 Dispose of the IdeRootPanel when disposing of the IdeFrame
 	687 Dispose of the IdeRootPanel when disposing of the IdeFrame
 	1037 IDEA-197682 Dispose the CloseTab action with the editor.
 	1143 IDEA-214615: Deactivate caret on dispose to avoid a memory leak
@@ -3310,7 +3260,6 @@ scope:
 annotations:
 	366 [Fernflower] Refactored IIdentifierRenamer, Fixed renaming annotations on classes, Fixed the location of generated comments relative to annotations, Improved the default renaming scheme.
 	367 [Fernflower] Fixed annotations not being renamed properly and corrected the position of annotations relative to generated comments
-	367 [Fernflower] Fixed annotations not being renamed properly and corrected the position of annotations relative to generated comments
 	757 Add support for nullability annotations in androidx package
 	1009 Fix IDEA-201331: Respect the annotations processors order
 
@@ -3340,7 +3289,6 @@ patch:
 	534 Added ability to patch python command line via Python sdk flavor
 	549 Patch command line in PyPackageManager
 	852 Fix patching args in monkey patched subprocess module.
-	852 Fix patching args in monkey patched subprocess module.
 
 way:
 	522 Add a way to skip git pre-commit and pre-push hooks (IDEA-115914)
@@ -3352,7 +3300,6 @@ way:
 synchronize:
 	643 IDEA-180447: Hide Synchronize action when it is unlikely to be used
 	645 IDEA-180447 Reduce UI clutter by hiding Synchronize action from menu and toolbar when it is unlikely to be used
-	646 IDEA-180614: Rename Synchronize action to Synchronize with File System
 	646 IDEA-180614: Rename Synchronize action to Synchronize with File System
 	741 Synchronize access to mutable fields
 

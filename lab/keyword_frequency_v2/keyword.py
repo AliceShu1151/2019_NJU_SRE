@@ -66,6 +66,7 @@ for word,frequency in keywords_list:
             if word == wnl.lemmatize(word_tmp.lower(), pos = 'v'):
                 classified_file.write('\t')
                 classified_file.write(line)
+                break
     classified_file.write('\n')
 classified_file.close()
 
