@@ -9,16 +9,26 @@ import requests
 from bs4 import BeautifulSoup
 
 url = 'https://bugs.eclipse.org/bugs/show_bug.cgi?id='
-path = '../data/eclipse_bugs.csv'
+path = '../data/eclipse_bugs_50000.csv'
 
 
 def get_bug(bug_no):
     bug_url = url + str(bug_no)
-    r = requests.get(bug_url)
-        
+
+    status_code = 201
+    while status_code != 200:
+        try:
+            r = requests.get(bug_url,timeout=5)
+            status_code = r.status_code
+        except:
+            print('timeout! retry...')
+            
     # if requests.get success,  status_code == 200
     if r.status_code == 200:
         soup = BeautifulSoup(r.text, features="lxml")
+        if soup.find_all('div', attrs={'class':"throw_error",'id':"error_msg"}) != []:
+            print(str(bug_no)+' You must enter a valid bug number!')
+            return None
         bug = {}
         bug['id'] = bug_no
         bug['title'] = soup.find_all('span', attrs={'id':"short_desc_nonedit_display"})[0].text.strip()
@@ -64,23 +74,34 @@ def get_bug(bug_no):
         blocks = soup.find_all('th', attrs={'id':"field_label_blocked"})[0]
         bug['blocks'] = blocks.findNext('td').text.replace('\n','').strip()
         
+        reported = soup.find_all('td', attrs={'id':"bz_show_bug_column_2"})[0]
+        bug['reported'] = reported.contents[1].contents[1].find_all('td')[0].text.replace('\n','').strip()
+        
+        modified = soup.find_all('td', attrs={'id':"bz_show_bug_column_2"})[0]
+        modified = modified.contents[1].contents[3].find_all('td')[0].text.replace('\n','').strip()
+        bug['modified'] = re.sub('\\(.*?\\)','',modified).strip()
+        
+        cclist = soup.find_all('td', attrs={'id':"bz_show_bug_column_2"})[0]
+        cclist = cclist.contents[1].contents[5].find_all('td')[0].text.replace('\n','').strip()
+        bug['cclist'] = ' '.join(re.sub('\\(.*?\\)','',cclist).strip().split()[0:2])
+        
         return bug
     else:
         return None
         
 
 if __name__ == '__main__':
-    if os.path.exists(path) == False:
-        with open(path, 'w') as f:
-            f_csv = csv.writer(f,lineterminator='\n')
-            for bug_no in range(1,101):  
-                bug_info = get_bug(bug_no)
-        
-                if bug_no == 1:                    
-                    f_csv.writerow(bug_info.keys())
+    with open(path, 'a+', errors='ignore') as f:
+        f_csv = csv.writer(f,lineterminator='\n')
+        for bug_no in range(50000,60000):  #552850
+            bug_info = get_bug(bug_no)
+    
+            if bug_no == 50000:                    
+                f_csv.writerow(bug_info.keys())
                 
+            if bug_info != None:                    
                 f_csv.writerow(bug_info.values())
-                
                 print(bug_no, bug_info['title'])
-            f.close()
+                    
+        f.close()
             
