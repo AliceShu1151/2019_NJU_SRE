@@ -2,14 +2,14 @@
 """
 Created on Sat Oct 12 10:30:32 2019
 
-@author: 11515
+@author: jss
 """
-import os,re,csv
+import re,csv
 import requests
 from bs4 import BeautifulSoup
 
 url = 'https://bugs.eclipse.org/bugs/show_bug.cgi?id='
-path = '../data/eclipse_bugs_50000.csv'
+path = '../data/eclipse_bugs_'
 
 
 def get_bug(bug_no):
@@ -91,12 +91,15 @@ def get_bug(bug_no):
         
 
 if __name__ == '__main__':
-    with open(path, 'a+', errors='ignore') as f:
+    start = 10000
+    end = start + 10000
+    i_path = path + str(start) + '.csv'
+    with open(i_path, 'a+', errors='ignore') as f:
         f_csv = csv.writer(f,lineterminator='\n')
-        for bug_no in range(50000,60000):  #552850
+        for bug_no in range(start,end):  #552850
             bug_info = get_bug(bug_no)
     
-            if bug_no == 50000:                    
+            if bug_no == start:                    
                 f_csv.writerow(bug_info.keys())
                 
             if bug_info != None:                    
