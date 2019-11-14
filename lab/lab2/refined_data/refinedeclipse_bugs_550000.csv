@@ -1,0 +1,2877 @@
+id,title,status,importance
+550000,pde quickfix create invalid tag,VERIFIED FIXED,P3 normal
+550001,grant access project storage service jenkins instance project tea,CLOSED DUPLICATE of bug 549981,P3 normal
+550002,add relation information,ASSIGNED,P3 major
+550003,provide platform independent set os dark theme,NEW,P3 normal
+550004,inline method refacting report reference method,NEW,P3 normal
+550005,call hierarchy incorrectly include binary artifacts,VERIFIED WORKSFORME,P3 normal
+550006,run apianalysisbuilder content preference file change,NEW,P3 normal
+550007,run pde compiler content preference file change,NEW,P3 normal
+550008,ui freeze pluginsview,VERIFIED FIXED,P3 normal
+550009,ui freeze,RESOLVED FIXED,P3 normal
+550010,cpd dialog consistent usage setusehashlookup menu action tree viewer,RESOLVED FIXED,P3 normal
+550011,git fail build block,CLOSED FIXED,P3 critical
+550012,badge plugin work,CLOSED FIXED,P3 normal
+550013,pull request flood comment jenkins,CLOSED FIXED,P3 normal
+550014,cant import exist local git project,NEW,P3 normal
+550015,actor name stereotype display block definition diagram,UNCONFIRMED,P3 normal
+550016,remove resourcenavigator menu,REOPENED,P3 normal
+550017,disable styledtext move insertion position,VERIFIED FIXED,P3 normal
+550018,project explorer lose last select work set,NEW,P3 normal
+550019,go build codewind fail signal kill,ASSIGNED,P3 normal
+550020,quick search preview area small,RESOLVED FIXED,P3 trivial
+550021,wrong tooltips quicksearch preference page,RESOLVED FIXED,P3 trivial
+550022,long delay delete time tree,NEW,P3 normal
+550023,use setusehashlookup internal,RESOLVED FIXED,P3 normal
+550024,update query show detail progress,RESOLVED FIXED,P3 normal
+550025,ci cannot allocation memory randomaccessfile,CLOSED FIXED,P3 normal
+550026,use filteredtree logview,RESOLVED FIXED,P3 normal
+550027,use filteredtree showview dialog,NEW,P3 normal
+550028,use filteredtree installediugroup,RESOLVED FIXED,P3 normal
+550029,multiple layout issue launch configuration dialog,ASSIGNED,P3 minor
+550030,release filteredtree api,NEW,P3 normal
+550031,superfluous slash path,RESOLVED FIXED,P3 trivial
+550032,disagreements javac,NEW,P3 normal
+550033,redirect relative path block,RESOLVED FIXED,P3 normal
+550034,use project schedule rule pluginmodelmanager job,NEW,P3 normal
+550035,remove unnecessary activator webbrowsertestsplugin,RESOLVED FIXED,P3 normal
+550036,update application model code fix bug bug,RESOLVED FIXED,P3 normal
+550037,use stringbuilder instead stringbuffer,RESOLVED FIXED,P3 normal
+550038,investigate force activation still necessary,RESOLVED FIXED,P3 normal
+550039,build show comparator error jsp file,NEW,P3 normal
+550040,eclipse genie fail create cq repeatedly,RESOLVED FIXED,P3 major
+550041,cannot set decorator change width connections,ASSIGNED,P3 enhancement
+550042,ignore file extensions must check case insensitive,RESOLVED FIXED,P3 minor
+550043,release preparations,CLOSED FIXED,P3 normal
+550044,compile warn official build,VERIFIED FIXED,P3 normal
+550045,enable call method via reference entry behavior start state state machine,ASSIGNED,P3 normal
+550046,remove copy textutils,NEW,P3 minor
+550047,ease jipp trigger gerrit commit,CLOSED FIXED,P3 normal
+550048,remove sure want text,RESOLVED WONTFIX,P3 normal
+550049,remove sure want text,VERIFIED FIXED,P3 normal
+550050,coonections black editor open start,CLOSED FIXED,P3 normal
+550051,engine termination improve,CLOSED FIXED,P3 normal
+550052,remove sure want text,RESOLVED FIXED,P3 normal
+550053,properly,RESOLVED FIXED,P3 normal
+550054,update pde templates use deprecate,VERIFIED FIXED,P3 normal
+550055,import exist project wizard close project import archive,CLOSED DUPLICATE of bug 549261,P3 normal
+550056,miss menu item quick text search,RESOLVED WORKSFORME,P3 normal
+550057,quick text search dialog menu item miss mnemonics,RESOLVED FIXED,P3 normal
+550058,name mismatch ui,RESOLVED FIXED,P3 normal
+550059,type combination insert,ASSIGNED,P3 normal
+550060,run new use autoboxing use unbox cleanup,NEW,P3 normal
+550061,change title bar systemconfiguration editor better indicate system configuration,CLOSED FIXED,P3 normal
+550062,use arraydeque rather stack,VERIFIED FIXED,P3 normal
+550063,throw arrayindexoutofboundsexception,RESOLVED FIXED,P3 normal
+550064,create new application default,CLOSED FIXED,P3 normal
+550065,please include setup project eclipse capra,RESOLVED FIXED,P3 enhancement
+550066,track bug inclusion eclipse capra oomph project catalogue,NEW,P3 normal
+550067,arrayindexoutofboundsexception java search,NEW,P3 normal
+550068,empty action visible property sheet,CLOSED FIXED,P3 normal
+550069,zlinux nod offline,CLOSED NOT_ECLIPSE,P3 normal
+550070,use stringbuilder instead stringbuffer,RESOLVED FIXED,P3 normal
+550071,generate autocomplete xsd crash eclipse,NEW,P3 major
+550072,also clone transient data widget ref,NEW,P3 normal
+550073,diagram validation validate visible elements,NEW,P3 normal
+550074,request commit right simrel repo,CLOSED FIXED,P3 normal
+550075,git work windows nod migration,CLOSED FIXED,P3 major
+550076,peparser parse bite executables correctly,RESOLVED FIXED,P3 normal
+550077,jdt ui test fail,RESOLVED FIXED,P3 normal
+550078,dependency add quickfix,NEW,P3 enhancement
+550079,,RESOLVED FIXED,P3 normal
+550080,character truncate vertically label mac os,NEW,P3 minor
+550081,return immutable list,VERIFIED FIXED,P3 normal
+550082,check project seem generic,RESOLVED FIXED,P3 normal
+550083,ui change relate blank line settings,RESOLVED FIXED,P3 normal
+550084,inclusion problem might due incorrect source,NEW,P3 blocker
+550085,integrate feature generic editor,RESOLVED FIXED,P3 normal
+550086,two breakpoint single line debug executable file compile,RESOLVED FIXED,P3 normal
+550087,ui freeze servlet servletcontextlistener,NEW,P3 normal
+550088,provide access ci access jakarta ee specification committee,CLOSED FIXED,P3 normal
+550089,ssh access hang error,CLOSED FIXED,P3 normal
+550090,urisyntaxexception aut location contain space,RESOLVED FIXED,P3 normal
+550091,eclipse ignore set,REOPENED,P3 normal
+550092,need version increase,VERIFIED FIXED,P3 normal
+550093,sash bright form,RESOLVED FIXED,P3 normal
+550094,update platform jetty,RESOLVED FIXED,P3 normal
+550095,add constructor filtereditemsselectiondialog activate usehashcode deprecate others,NEW,P3 normal
+550096,formatter eat whitespace function declaration include macro result join name,RESOLVED FIXED,P3 normal
+550097,,RESOLVED FIXED,P3 normal
+550098,,RESOLVED FIXED,P3 normal
+550099,close tree project explorer scroll correct top level element,NEW,P3 normal
+550100,program outline disappear debug,RESOLVED NOT_ECLIPSE,P3 normal
+550101,string externalize,RESOLVED FIXED,P3 major
+550102,remove outdated target milestones eclipse top level project,NEW,P3 normal
+550103,offer way add language servers via preference page,CLOSED WORKSFORME,P3 normal
+550104,text selection editable cdatetime widget simple text selection,RESOLVED FIXED,P3 normal
+550105,text quick fix enable preview feature use text block,RESOLVED WORKSFORME,P3 major
+550106,align resource perspective java perspectives,RESOLVED WONTFIX,P3 normal
+550107,text return align,RESOLVED FIXED,P3 normal
+550108,text return place caret next line,RESOLVED FIXED,P3 normal
+550109,text close add string preference,RESOLVED FIXED,P3 normal
+550110,please reset new repository,CLOSED FIXED,P3 normal
+550111,junit test fail windows,NEW,P3 normal
+550112,oomph configurator offer dark theme,NEW,P3 enhancement
+550113,text cumbersome enter text block editor,NEW,P3 normal
+550114,move mpc eclipse platform,NEW,P3 normal
+550115,jgit work securitymanager enable,RESOLVED FIXED,P3 normal
+550116,codewind pr allow merge without review approval prereq,CLOSED FIXED,P3 normal
+550117,installation page link jdk download link,VERIFIED FIXED,P3 major with 1 vote
+550118,developer mail list project,RESOLVED FIXED,P3 normal
+550119,installation page tout eclipse ide latest,REOPENED,P3 minor
+550120,ui freeze preferencedialog filteredpreferencedialog,RESOLVED FIXED,P3 normal
+550121,homepage claim rse version latest,NEW,P3 normal
+550122,eclipse php developers create shortcut name php latest,RESOLVED FIXED,P3 major
+550123,defer context update work properly due unordered handle,RESOLVED FIXED,P3 normal
+550124,unavailable,RESOLVED FIXED,P3 normal
+550125,eclipse constantly freeze,CLOSED DUPLICATE of bug 548443,P3 major
+550126,update filteredtree usage use setusehashlookup,RESOLVED WORKSFORME,P3 normal
+550127,update show view tree usage use setusehashlookup,RESOLVED FIXED,P3 normal
+550128,,RESOLVED FIXED,P3 normal
+550129,remove redundant array creation,VERIFIED FIXED,P3 normal
+550130,please automatically link ticket mention form,NEW,P3 enhancement
+550131,community product description call,CLOSED FIXED,P3 normal
+550132,issue creation first step account eclipse project,NEW,P3 minor
+550133,name mislead,NEW,P3 normal
+550134,fail swt build step complete,RESOLVED FIXED,P3 normal
+550135,provide service notarise mac app,NEW,P3 normal
+550136,improve startup time eclipse sdk,NEW,P3 normal
+550137,merge issue beta impact previewenabled check dom jdt ui,RESOLVED FIXED,P3 normal
+550138,code recommenders cannot download model repository index,NEW,P3 normal
+550139,pde validation dialog also center,RESOLVED FIXED,P3 normal
+550140,eclipse release note hard find,NEW,P3 normal
+550141,improve implementation scoping dispatch,RESOLVED FIXED,P3 enhancement
+550142,high ram consumption mac os,NEW,P3 normal
+550143,chemclipse switch default develop,CLOSED FIXED,P3 normal
+550144,resource already exist disk error log,NEW,P3 normal
+550145,add smart import wizard quicklinks project explorer,NEW,P3 normal
+550146,ui freeze compare,CLOSED DUPLICATE of bug 544600,P3 normal
+550147,unreliable wayland,NEW,P3 normal
+550148,use action orientate label close events dialogs,RESOLVED FIXED,P3 normal
+550149,connect update sit use basic auth,NEW,P3 normal
+550150,ui freeze newkeyspreferencepage,RESOLVED WONTFIX,P3 normal
+550151,open new swtkeyboardstrategy cannot type,NEW,P3 normal
+550152,port controllistviewer controllistitem platform,NEW,P3 normal
+550153,hide breakpoint icons behind light bulb icons,VERIFIED FIXED,P3 enhancement
+550154,use tableviewer quickaccesscontents instead table,NEW,P3 normal
+550155,assertionerror miss,NEW,P3 normal
+550156,performance regression genericpatternmatch positional accessors,RESOLVED FIXED,P3 normal
+550157,bug,RESOLVED WORKSFORME,P3 major
+550158,error cause try call class methods,NEW,P3 major
+550159,update liberty server adapter discovery update site url,RESOLVED FIXED,P3 normal
+550160,stackoverflowerror code completion inner class within lambdas,NEW,P3 major
+550161,css jenkins job attach file,CLOSED WONTFIX,P3 normal
+550162,add new button,NEW,P3 enhancement
+550163,undesirable markers,CLOSED DUPLICATE of bug 528333,P3 normal
+550164,failure export feature plugins require package remove,NEW,P3 major
+550165,debug stick occur step return,RESOLVED FIXED,P3 normal
+550166,support contextual class,NEW,P3 normal
+550167,object mark give incorrect result oome,RESOLVED FIXED,P3 normal
+550168,avoid uri navigation deresolve,RESOLVED FIXED,P3 normal
+550169,improve tychos handle target definition,NEW,P3 enhancement
+550170,default ignore miss source,NEW,P3 enhancement
+550171,provide option,NEW,P3 enhancement
+550172,source feature find include subfeature,NEW,P3 normal
+550173,tycho support real pomless build,CLOSED DUPLICATE of bug 490886,P3 enhancement with 2 votes
+550174,change format profile throw away restart eclipse,RESOLVED FIXED,P3 major
+550175,malformedurlexception launch plugin junit test debug,NEW,P3 normal
+550176,name modules pick runtime,NEW,P3 normal
+550177,eclipse leak memory,CLOSED INVALID,P3 critical
+550178,npe invalid package export open,RESOLVED FIXED,P3 normal
+550179,,CLOSED INVALID,P3 normal
+550180,test may fail outdated document content,NEW,P3 normal
+550181,java doc warn build,RESOLVED FIXED,P3 normal
+550182,add filter api tool problem type longer work,RESOLVED FIXED,P3 normal
+550183,eclipse issue warn name collision javac report error,RESOLVED FIXED,P3 normal
+550184,eclipse prerequisites ecf,RESOLVED WONTFIX,P3 normal
+550185,eclipse prerequisites emf,RESOLVED FIXED,P3 normal
+550186,eclipse prerequisites orbit,RESOLVED FIXED,P3 normal
+550187,class cast exception move class class diagram,UNCONFIRMED,P3 normal
+550188,apianalyzer flag false positive error due extension point schema include,NEW,P3 normal
+550189,compatibility check prohibit installation,CLOSED WONTFIX,P3 normal
+550190,src folder,RESOLVED FIXED,P3 normal
+550191,fix issue connector reification,RESOLVED FIXED,P3 normal
+550192,speedup static weave processor weave,NEW,P3 enhancement
+550193,activate azure devops integration github project,CLOSED WONTFIX,P3 normal
+550194,debug view collapse content hide,NEW,P3 normal
+550195,ui freeze hotcodereplaceerrordialog,NEW,P3 normal
+550196,ignore polyglot file,RESOLVED FIXED,P3 normal
+550197,ui freeze javaoutlineinformationcontrol,RESOLVED FIXED,P3 normal
+550198,enable google analytics project,NEW,P3 normal
+550199,new jacc maven coordinate,CLOSED FIXED,P3 normal
+550200,flag appear open pdf file,NEW,P3 normal
+550201,provide tutorial license,RESOLVED FIXED,P3 critical
+550202,large integers throw use script shell,CLOSED FIXED,P3 normal
+550203,analysis exceptions return success,VERIFIED FIXED,P3 major
+550204,static,RESOLVED WORKSFORME,P3 normal
+550205,use varargs,RESOLVED WORKSFORME,P3 normal
+550206,ignor polyglot file,RESOLVED FIXED,P3 normal
+550207,miss rcp icons essential feature,NEW,P3 normal
+550208,provide reliable way measure startup performance,NEW,P3 normal
+550209,improve interactive performance eclipse sdk,NEW,P3 normal with 1 vote
+550210,npe toposortgenerator,NEW,P3 normal
+550211,remove try catch block structuredviewer,RESOLVED FIXED,P3 normal
+550212,create target platform,ASSIGNED,P3 normal
+550213,unable run bugzilla manager,RESOLVED FIXED,P3 normal
+550214,proxy server honour eclipse,CLOSED FIXED,P3 normal
+550215,unknown character display breadcrumbs,NEW,P3 normal
+550216,enable hashcode usage detailedprogressviewer progress,RESOLVED WONTFIX,P3 normal
+550217,wrong quickfix unresolved reference port,RESOLVED FIXED,P3 normal
+550218,promote failure stop error flag work modern test,UNCONFIRMED,P3 major
+550219,commandprovideradapter service registration adapt commandprovider service,RESOLVED FIXED,P3 normal
+550220,sometimes incomplete stack show thread expand resume,RESOLVED FIXED,P3 normal
+550222,teamaction return null,RESOLVED FIXED,P3 normal
+550223,update wizard elements use hash code lookup viewers,RESOLVED WORKSFORME,P3 normal
+550224,use hash lookup newwizardnewpage,RESOLVED FIXED,P3 normal
+550226,new proposal category may get enable default,NEW,P3 normal
+550227,assign resource pack project,CLOSED FIXED,P3 normal
+550228,delete multiple interdependent project trigger build prevent deletion,NEW,P3 normal
+550229,,RESOLVED FIXED,P3 normal
+550230,,RESOLVED FIXED,P3 normal
+550231,,RESOLVED FIXED,P3 normal
+550232,increase debug log lock file functionality,NEW,P3 normal
+550233,change download page use eclipse mirror script,CLOSED FIXED,P3 normal
+550234,rcptt complain try use content assist popup dialog,UNCONFIRMED,P3 normal
+550235,build fail due swt increment job failure,RESOLVED FIXED,P3 normal
+550236,test failures,VERIFIED FIXED,P3 normal
+550237,test failures template test pde build,RESOLVED FIXED,P3 normal
+550238,jar miss eclipse photon,RESOLVED NOT_ECLIPSE,P3 normal
+550239,pomless build support override derive maven coordinate,REOPENED,P3 enhancement
+550240,activate parallel load bundle,RESOLVED WONTFIX,P3 enhancement
+550241,new wizard use hash lookup,RESOLVED FIXED,P3 normal
+550242,mac native build take long,NEW,P3 normal
+550243,assign resource pack project,CLOSED FIXED,P3 normal
+550244,decorator example available even papyrus examples instal,RESOLVED FIXED,P3 normal
+550245,apibaselinepreferencepage use fast hash lookup,VERIFIED FIXED,P3 normal
+550246,sometimes open java file system rather jdt editor,NEW,P3 normal
+550247,commitfilediffviewer use fast hash lookup,RESOLVED FIXED,P3 normal
+550248,windows test machine,CLOSED FIXED,P3 major
+550249,provide filtereditemsselectiondialog jface,NEW,P3 normal
+550250,remove manifestbuilder schemabuilder api analysis,RESOLVED FIXED,P3 normal
+550251,code completion help popups might stall ui,CLOSED FIXED,P3 normal
+550252,error markers dependency tab,ASSIGNED,P3 normal
+550253,generaded c code inherit operations miss extend dataclasses,REOPENED,P3 normal
+550254,release swt builder class api,RESOLVED FIXED,P3 normal
+550255,method x make ignore synchronize,NEW,P3 normal
+550256,sometimes npe,CLOSED DUPLICATE of bug 516447,P3 normal
+550257,remote debug application extremely slow,NEW,P3 major
+550258,use fast tree lookup debug launch config,NEW,P3 normal
+550259,update ide templates set persist flag create model elements,NEW,P3 normal
+550260,api analysis step tycho build use latest release baseline,RESOLVED FIXED,P3 enhancement
+550261,stop quick search dialog,VERIFIED FIXED,P3 normal
+550262,cce categorization composite categories depth,CLOSED FIXED,P3 normal
+550263,random build errors,CLOSED DUPLICATE of bug 547181,P3 normal
+550264,eclipse photon remote system explorer ftpclient class miss,NEW,P3 blocker
+550265,ui freeze,NEW,P3 normal
+550266,ide tycho build generate download package correct name,CLOSED FIXED,P3 normal
+550267,npe open quick outline,RESOLVED FIXED,P3 major
+550268,toolbar render wrong location visible flag toggle,NEW,P3 normal
+550269,longer able use external class folder build path entry use unc path,RESOLVED FIXED,P3 normal
+550270,assign resource pack project,CLOSED FIXED,P3 normal
+550271,jface viewer guard null access finditems usehashlookup use,NEW,P3 normal
+550272,ide templates break uniqueness conventions,NEW,P3 major
+550273,whitespace ignore octal text block,NEW,P3 normal
+550274,make happen product miss dependency,CLOSED FIXED,P3 normal
+550275,bill materials pom maven repo,NEW,P3 enhancement
+550276,,RESOLVED FIXED,P3 normal
+550277,installation fail macos catalina security check,CLOSED DUPLICATE of bug 549814,P3 normal
+550278,add download stats generation ide update sit,CLOSED FIXED,P3 normal
+550279,miss logo ide platforms,RESOLVED FIXED,P3 normal
+550280,tycho surefire configuration explicitly depend,NEW,P3 normal
+550281,please add items,CLOSED FIXED,P3 normal
+550282,create patch build java,CLOSED DUPLICATE of bug 547710,P3 normal
+550283,display port available hippcentos attach releng jipp,CLOSED FIXED,P3 blocker
+550284,jadclipse menu option,CLOSED NOT_ECLIPSE,P3 normal
+550285,tycho pomless support build,RESOLVED FIXED,P3 enhancement
+550286,flicker quick search result window,NEW,P3 normal
+550287,,RESOLVED INVALID,P3 normal
+550288,quicksearch dialog show even search parameter,VERIFIED FIXED,P3 normal
+550289,constant ui freeze error log view specific log entries,NEW,P3 normal
+550290,lack may lead bytecode,RESOLVED FIXED,P3 normal with 1 vote
+550291,jgit hang,CLOSED DUPLICATE of bug 548598,P3 normal
+550292,use concise text discard change dialog,RESOLVED FIXED,P3 normal
+550293,use concise text reset dialog,RESOLVED FIXED,P3 normal
+550294,error log log field never enable,VERIFIED FIXED,P3 normal
+550295,inconsistencies trace model edit trace several open editors,NEW,P3 critical
+550296,improve usability genmodel validation,RESOLVED FIXED,P3 normal
+550297,context menu view model action fail load ecore,NEW,P3 normal
+550298,enumliteral table readonly dialog create eenum,NEW,P3 normal
+550299,open activate action set,NEW,P3 normal
+550300,also check latest version follow cleanup preview enable check,RESOLVED FIXED,P3 normal
+550301,delete quick fix work,NEW,P3 normal
+550302,error log instal cant instal,NEW,P3 normal
+550303,please shell script,CLOSED WONTFIX,P3 enhancement with 1 vote
+550304,provide better support edit compile jet templates,CLOSED FIXED,P3 enhancement
+550305,jakarta stable release jenkins job unable access github,CLOSED FIXED,P3 normal
+550306,apply light theme egit jenkins,CLOSED FIXED,P3 enhancement
+550307,progressively longer ui freeze run build,NEW,P3 normal
+550308,allow toolchain help set name build config,RESOLVED FIXED,P3 normal
+550309,unable launch runtime eclipse mac adoptopenjdk,CLOSED NOT_ECLIPSE,P3 normal
+550310,offset bound ambiguities,NEW,P3 normal
+550311,synthetic method process compiler,NEW,P3 normal
+550312,declare,RESOLVED FIXED,P3 normal
+550313,use polyglot file,RESOLVED FIXED,P3 normal
+550314,know security vulnerability batik use birt reportengine,NEW,P3 critical
+550315,work,CLOSED FIXED,P3 critical
+550316,feature target platform,VERIFIED FIXED,P3 enhancement
+550317,show products,ASSIGNED,P3 enhancement
+550318,refactoring support,NEW,P3 enhancement
+550319,provide declarative project templates,CLOSED WONTFIX,P3 normal
+550320,cvs server accessible,RESOLVED FIXED,P3 normal
+550321,test fail proxymodificationtrackingadapter,RESOLVED FIXED,P3 normal
+550322,intermittent test failure isfocuscontrol,RESOLVED FIXED,P3 normal
+550323,confuse label wg page,NEW,P3 enhancement
+550324,render problem java editor view long line,NEW,P3 normal
+550325,junit test fail nightly build,REOPENED,P3 normal
+550326,entry selection quick search dialog,ASSIGNED,P3 normal
+550327,move preference page,RESOLVED FIXED,P3 enhancement
+550328,junit test fail nightly build,RESOLVED FIXED,P3 normal
+550329,rethink selection change event handle,RESOLVED FIXED,P3 normal
+550330,make uniform require dependencies version plugins,NEW,P3 normal
+550331,provide bundle test plugin,NEW,P3 normal
+550332,add tooltip diagram semantic element,VERIFIED FIXED,P3 enhancement
+550333,enable convert loop enhance code clean get exception certain java,NEW,P3 normal
+550334,clean convert loop enhance result null pointer certain,VERIFIED FIXED,P3 normal
+550335,sign commit permissive locate secretkey,RESOLVED FIXED,P3 normal
+550336,stag view freeze commit,RESOLVED FIXED,P3 critical
+550337,table viewer use row template show correct tooltip,NEW,P3 normal
+550338,generic type cache update eclasses,CLOSED FIXED,P3 major
+550339,nullpointerexception metadatamirrorfactory ejb,NEW,P3 normal
+550340,nullpointerexception,RESOLVED FIXED,P3 normal
+550341,scale bright background ctabfolder,RESOLVED FIXED,P3 normal
+550342,fail target platform,NEW,P3 blocker with 2 votes
+550343,support option log command,NEW,P3 normal
+550344,break point stop work debug mode,NEW,P3 critical
+550345,fail windows,VERIFIED FIXED,P3 normal
+550346,ui freeze approx second open launch configuration dialog,VERIFIED FIXED,P3 major
+550347,provide method,RESOLVED FIXED,P3 normal
+550348,java container support show image id rather repo tag,RESOLVED FIXED,P3 normal
+550349,jenkins job connect,CLOSED NOT_ECLIPSE,P3 blocker
+550350,improve performance annotation column paint,RESOLVED FIXED,P3 normal
+550351,enable read access jenkins instance contributors,NEW,P3 normal
+550352,fail one platform,NEW,P3 normal
+550353,disable ui monitor dev mode,RESOLVED FIXED,P3 normal
+550354,yield block flag error,RESOLVED FIXED,P3 normal
+550355,cleanup platformuipreferencelistener,RESOLVED FIXED,P3 normal
+550356,compiler recognize text block even preview disable,RESOLVED FIXED,P3 normal
+550357,update base builder build,RESOLVED FIXED,P3 normal
+550358,remove prior check,RESOLVED FIXED,P3 normal
+550359,create view visualize available architectures instance,NEW,P3 enhancement
+550360,customize name,NEW,P3 normal
+550361,provide support generate repository quality report,NEW,P3 enhancement
+550362,deploy ecj compiler use build,RESOLVED FIXED,P3 normal
+550363,improve performance,NEW,P3 normal
+550364,help hover cause npe help available,CLOSED FIXED,P3 normal
+550365,remove preference settings,NEW,P3 normal
+550366,add action export elk graph correspond sirius diagram,VERIFIED FIXED,P3 enhancement
+550367,remove preference settings,RESOLVED FIXED,P3 normal
+550368,elk algorithm options avalaible vsm,VERIFIED FIXED,P3 normal
+550369,update product version number release,CLOSED FIXED,P3 normal
+550370,design splash screen,CLOSED FIXED,P3 normal
+550371,removal intermediate cross referencers,NEW,P3 enhancement
+550372,replace activator log call standard log call,RESOLVED FIXED,P3 normal
+550373,call borderitemawarelayoutprovider elk layout algorithm,VERIFIED FIXED,P3 normal
+550374,allow make specific change link semantic aspects layout,VERIFIED FIXED,P3 enhancement
+550375,remove unused api filter,RESOLVED FIXED,P3 normal
+550376,cannot run jupiter test project upgrade junit,VERIFIED FIXED,P3 critical
+550377,add preference change listener status line,NEW,P3 minor
+550378,,RESOLVED FIXED,P3 normal
+550379,delete navigator view august,NEW,P3 normal
+550380,shall use,NEW,P3 normal
+550381,update build version work new ci infrastructure,CLOSED FIXED,P3 normal
+550382,allow label locate outside border around node,VERIFIED FIXED,P3 enhancement
+550383,remove usage delete method,RESOLVED FIXED,P3 normal
+550384,global,NEW,P3 normal
+550385,project explorer support navigator view properties,NEW,P3 normal
+550386,http whiteboard bundle declare duplicate capability via,RESOLVED FIXED,P3 normal
+550388,wrong shell,RESOLVED WORKSFORME,P3 normal
+550389,improve elk graph transformation,VERIFIED FIXED,P3 normal
+550390,validation architecture framework definition available,ASSIGNED,P3 enhancement
+550391,eclipse ide get download show server error,RESOLVED DUPLICATE of bug 550315,P3 critical
+550392,,RESOLVED FIXED,P3 normal
+550393,ide work properly,RESOLVED INVALID,P3 critical
+550394,immigration lambda expression enhancement,NEW,P3 enhancement
+550395,true,NEW,P3 normal
+550396,ui freeze enable word wrap file marker,RESOLVED FIXED,P3 normal
+550397,error resolve overload conversion operators one template,RESOLVED FIXED,P3 normal
+550398,open resource prefer file file,RESOLVED INVALID,P3 normal
+550399,ilog provide methods log simple string,RESOLVED FIXED,P3 enhancement
+550400,,NEW,P3 normal
+550401,error display unable update software release,RESOLVED WONTFIX,P3 normal
+550402,xss,CLOSED INVALID,P3 normal
+550403,insufficient package,NEW,P3 normal
+550404,sgfghg,CLOSED INVALID,P3 normal
+550405,login work,CLOSED FIXED,P3 blocker
+550406,gatewayvalidator ignore mix type,NEW,P3 normal
+550407,miss job,RESOLVED FIXED,P3 normal
+550408,bogus compile error observe team checkuniquecallincapture,RESOLVED FIXED,P3 normal
+550409,update,ASSIGNED,P3 normal
+550410,undue cache module move rename,VERIFIED FIXED,P3 normal
+550411,update ide epl,CLOSED FIXED,P3 blocker
+550412,update forte,CLOSED FIXED,P3 blocker
+550413,marketplace search produce error,NEW,P3 trivial
+550414,log limit warn,RESOLVED FIXED,P3 normal
+550415,worksforme indicate different mislead label,NEW,P3 normal with 1 vote
+550416,undocumented status value close,CLOSED WORKSFORME,P3 normal with 1 vote
+550417,error launch ide,RESOLVED WONTFIX,P3 critical
+550418,illegalargumentexception trigger chain completion,RESOLVED FIXED,P3 normal
+550419,dialog show close rcp app,VERIFIED FIXED,P3 normal
+550420,wontfix ticket status resolve,NEW,P3 minor
+550421,slave releng jipp,CLOSED FIXED,P1 blocker
+550422,automatically show list selection box table inline graphical editors,CLOSED FIXED,P3 enhancement
+550423,crash creation combo,VERIFIED FIXED,P3 major
+550424,solutions epl filter mpc api responses,RESOLVED FIXED,P2 critical
+550425,add type ahead search combo box,CLOSED FIXED,P3 enhancement
+550426,aeri,RESOLVED FIXED,P3 normal
+550427,dsplaunchdelegatelaunchbuilder load value provide launchconfig,NEW,P3 enhancement
+550428,usability improvements,NEW,P3 enhancement
+550429,git commit button become disable remain,CLOSED DUPLICATE of bug 550336,P3 normal
+550430,feature add quick link,NEW,P3 enhancement
+550431,combine select annotations compose annotation,NEW,P3 enhancement
+550432,improve log,RESOLVED WONTFIX,P3 normal
+550433,start level autostart configuration system bundle ignore,CLOSED INVALID,P3 normal
+550434,remove file try simulate manifest header,RESOLVED FIXED,P3 normal
+550435,nullpointerexception cpp state machine generation,RESOLVED FIXED,P3 blocker
+550436,legacy process aftertab elements lead wrong order,NEW,P3 normal
+550437,layouting issue nabula dialog exception input,RESOLVED FIXED,P3 normal
+550438,minor improvements multistringmatcher,RESOLVED FIXED,P3 enhancement
+550439,mark bookmarknavigator relate api deletion,RESOLVED FIXED,P3 normal
+550440,severe rednering bug scroll editor mac os,CLOSED DUPLICATE of bug 548491,P3 normal
+550441,variables expressions view icons dark,NEW,P3 normal
+550442,add jar,RESOLVED WONTFIX,P3 normal
+550443,framework must provide tool create documentprototype documenttemplate,NEW,P3 normal with 1 vote
+550444,show mail list break log,NEW,P3 major
+550445,generate accept fully,RESOLVED FIXED,P3 normal
+550446,non initialize property cause execution error,UNCONFIRMED,P3 normal
+550447,property generate,UNCONFIRMED,P3 normal
+550448,state machine code generation empty loop cause execution issue,UNCONFIRMED,P3 normal
+550449,,NEW,P3 normal
+550450,need issue tracker enable,NEW,P3 normal
+550451,quick assist light bulb longer work,RESOLVED FIXED,P3 major
+550452,cannot publish local branch github,CLOSED WORKSFORME,P3 normal
+550453,performance loss,NEW,P1 blocker
+550454,state system explorer experiment empty trace,RESOLVED FIXED,P3 normal
+550455,,RESOLVED FIXED,P3 normal
+550456,,RESOLVED FIXED,P3 normal
+550457,update latest java release version,RESOLVED FIXED,P3 normal
+550458,eclipse prerequisites orbit,RESOLVED FIXED,P3 normal
+550459,nightly build ide update error,CLOSED FIXED,P3 normal
+550460,rework performancestats log entries similar ui freeze monitor,NEW,P3 normal
+550461,remove info message detect host gerrit,NEW,P3 normal
+550462,remove preference migration,RESOLVED FIXED,P3 normal
+550463,support tag,VERIFIED FIXED,P3 normal
+550464,filter plugins dialog slow,RESOLVED FIXED,P3 minor
+550465,sonar relate build problem capellastudio,NEW,P3 normal
+550466,drop shell editor modules,RESOLVED FIXED,P3 normal
+550467,capella static character encode generate page,CLOSED MOVED,P3 normal
+550468,update base builder build,RESOLVED FIXED,P3 normal
+550469,deploy ecj compiler use build,RESOLVED FIXED,P3 normal
+550470,infrastructure support java,NEW,P3 enhancement
+550471,improve deprecate,RESOLVED FIXED,P3 normal
+550472,arraystoreexception eventually cause indexer shut,CLOSED DUPLICATE of bug 548482,P3 major
+550473,add faster nextdelimiter utility method,RESOLVED FIXED,P3 enhancement
+550474,linuxtools gcov incorrectly interpret data file generate gcc version,RESOLVED FIXED,P3 major
+550475,enhance support disable event handle glazedlistseventlayer,CLOSED FIXED,P3 enhancement
+550476,remove file data,RESOLVED WONTFIX,P3 normal
+550477,empty array insert null value,NEW,P3 normal
+550478,dap base breakpoints interferring normal cdt breakpoints,RESOLVED FIXED,P3 blocker
+550479,show users configure runtime,CLOSED FIXED,P3 normal
+550480,throw arrayindexoutofboundsexception part,NEW,P3 normal
+550481,grant access project storage service jenkins instance project eclipse kuksa,CLOSED FIXED,P3 normal
+550482,use shorter restart text installation,RESOLVED FIXED,P3 normal
+550483,add filter icon project explorer toolbar,NEW,P3 enhancement
+550484,manage alert vulnerability codewind,CLOSED FIXED,P3 critical
+550485,upload file size limit incorrect,RESOLVED FIXED,P3 normal
+550486,text editor status line show selection size even disable preference,VERIFIED FIXED,P3 normal
+550487,use eclipse logo represent eclipse ide,NEW,P3 normal
+550488,codewind build docker build agent fail space leave message,CLOSED FIXED,P3 blocker
+550490,avoid reload resourcebundle multiple time,RESOLVED FIXED,P3 normal
+550491,tune gerrit cache settings,NEW,P3 normal
+550492,null pointer excpetion code autocomplete chaincompletionproposalcomputer,NEW,P3 major
+550493,support bouncycastlefipsprovider gpg relate code,NEW,P3 normal
+550494,nullpointerexception compile aspect use implement interface,NEW,P3 normal
+550495,error jenkins build,NEW,P3 critical
+550496,release task,RESOLVED FIXED,P3 normal
+550497,readme file,VERIFIED FIXED,P3 normal
+550498,,VERIFIED FIXED,P3 normal
+550499,javadoc bash,VERIFIED FIXED,P3 normal
+550501,ability place digit character datetime,VERIFIED FIXED,P3 normal
+550503,support java,RESOLVED DUPLICATE of bug 549808,P3 normal
+550504,jep record,NEW,P3 enhancement
+550505,jep seal type,NEW,P3 enhancement
+550506,investigate freeze click trace tab launch configuration dialog,NEW,P3 normal
+550507,menu icons show proper position,CLOSED WONTFIX,P3 minor
+550508,move convertanonymoustonestedrefactoring use,RESOLVED FIXED,P3 normal
+550509,wrong warn,CLOSED DUPLICATE of bug 377046,P3 normal
+550510,documentation concern switch architecture viewpoint modify,ASSIGNED,P3 normal
+550511,jipp request project,CLOSED DUPLICATE of bug 550512,P3 normal
+550512,jipp request project,CLOSED FIXED,P3 normal
+550513,catch runtimeexceptions commit,RESOLVED FIXED,P3 normal
+550514,change require feature dependent feature,NEW,P3 normal
+550515,bundle test find plugins hudson check,CLOSED FIXED,P3 normal
+550516,create jdt platform port guide update link welcome page,RESOLVED FIXED,P3 normal
+550517,swing components keep focus come back swt widgets,RESOLVED FIXED,P3 critical
+550518,remove jcp disclaimers ui marketplace,RESOLVED FIXED,P3 normal
+550519,eclipse ide java ee developers neon maven project,NEW,P3 critical
+550520,papyrus must provide tool create easily tableconfiguration exist table,NEW,P3 normal
+550521,invoke many time lead many request potentially erroneous display,RESOLVED FIXED,P3 normal
+550522,create examples wiki page,RESOLVED FIXED,P3 normal
+550523,acknowledgements,RESOLVED FIXED,P3 normal
+550524,use ee jre result compile error,VERIFIED FIXED,P3 blocker
+550525,timer use posix always available,CLOSED FIXED,P3 normal
+550526,fatal error semantic analysis recursive type,CLOSED FIXED,P3 normal
+550527,calendar press esc cause ui error,RESOLVED FIXED,P3 minor
+550528,incorrect result,RESOLVED FIXED,P3 normal
+550529,create still memory leak,NEW,P3 normal
+550530,allow port vserver,RESOLVED FIXED,P3 normal
+550531,distinction bitwise logical operators,UNCONFIRMED,P3 normal
+550532,enter invalid id show error message,NEW,P3 normal
+550533,open datepicker button work picker close via button,RESOLVED FIXED,P3 normal
+550534,crash open code style formatter cdt,NEW,P3 normal
+550535,switch editors manage current viewpoints must close,ASSIGNED,P3 normal
+550536,extract contribute support page,CLOSED FIXED,P3 normal
+550537,add contribute entry help menu,CLOSED FIXED,P3 normal
+550538,action pane context tab cannot resize,CLOSED DUPLICATE of bug 520715,P3 normal
+550539,dialog new button name cause confusion,RESOLVED WORKSFORME,P3 normal with 1 vote
+550540,remove name,RESOLVED FIXED,P3 critical
+550541,mwe jiro,CLOSED FIXED,P3 normal
+550542,store procedures support name parameters oracle,ASSIGNED,P3 normal
+550543,npe tycho pomless aggregation,RESOLVED FIXED,P3 normal
+550544,babel server ready php,RESOLVED FIXED,P3 normal
+550545,mat macos binaries sign gatekeeper,NEW,P3 normal
+550546,java heap space error eclipse exit,NEW,P3 normal
+550547,declare,RESOLVED FIXED,P3 normal
+550548,remove activator,RESOLVED FIXED,P3 normal
+550549,tycho support target platforms target artifact,NEW,P3 enhancement
+550550,remove activator,NEW,P3 normal
+550551,provide access bundle preference store outside abstractuiplugin,RESOLVED FIXED,P3 normal
+550552,please remove bugzilla component,CLOSED FIXED,P3 normal
+550553,check state read correctly checkboxtableviewer,NEW,P3 normal
+550554,incremental builder stop show squiggles,NEW,P3 normal
+550555,handle error hyperlinks create,CLOSED WONTFIX,P3 critical
+550556,column insertion table sometimes impossible,NEW,P3 normal
+550557,unable run junit test context menu,RESOLVED INVALID,P3 major
+550558,unresolved elements cause error popup editor,RESOLVED FIXED,P3 normal
+550559,error transition event without condition,UNCONFIRMED,P3 normal
+550560,rename dialog show inline edit,RESOLVED FIXED,P3 normal
+550561,text handle tabs text block editor,NEW,P3 normal
+550562,allow custom fonts timegraphcontrol,UNCONFIRMED,P3 normal
+550563,undocumented status value new,REOPENED,P3 normal
+550564,please make glassfishrobot admin,CLOSED WORKSFORME,P3 major
+550565,request delete branch,RESOLVED FIXED,P3 normal
+550566,access eclipse packager stag repository maven central,CLOSED FIXED,P3 normal
+550567,diagram table visible even viewpoint enable,NEW,P3 normal
+550568,diagram table icons disable viewpoint gray,NEW,P3 normal
+550569,diagram table icons disable viewpoint open dialog enable viewpoint,NEW,P3 normal
+550570,set session property project git ignore location,CLOSED WONTFIX,P3 normal
+550571,please disable eike cronjobs,RESOLVED FIXED,P3 normal
+550572,products corrupt license,RESOLVED FIXED,P3 normal
+550573,add option remove provision,UNCONFIRMED,P3 enhancement
+550574,update avatar org,CLOSED FIXED,P3 normal
+550575,linux tool rpmcreaterepo test fail gerrit,RESOLVED FIXED,P3 normal
+550576,javacorepreferencemodifylistenertest work abstractjavamodeltest,NEW,P3 normal
+550577,unresolvedreferenceexception generate java xmi,UNCONFIRMED,P3 normal
+550578,replace activator trace functionality,NEW,P3 normal
+550579,improve activator startup time,RESOLVED WORKSFORME,P3 normal
+550580,eclipe,CLOSED NOT_ECLIPSE,P3 major
+550581,extra slow,CLOSED WORKSFORME,P3 normal
+550582,allow show shortcut popup mouse interaction,NEW,P3 normal
+550583,fix file end crlf git repository,VERIFIED FIXED,P3 normal
+550584,add file bin folders example project,RESOLVED FIXED,P3 normal
+550585,fix file end crlf git repository,RESOLVED FIXED,P3 normal
+550586,fix file end crlf git repository,RESOLVED FIXED,P3 normal
+550587,repository index cant switch,NEW,P3 normal
+550588,work scenario two context menus,NEW,P3 normal
+550589,block value,UNCONFIRMED,P3 normal
+550590,please build part incremental build,RESOLVED FIXED,P3 normal
+550591,please build part incremental build,VERIFIED FIXED,P3 normal
+550592,please set,RESOLVED INVALID,P3 normal
+550593,please include,RESOLVED FIXED,P3 normal
+550594,please set,RESOLVED FIXED,P3 normal
+550595,executionerror open menu spy,NEW,P3 normal
+550596,please export package,VERIFIED FIXED,P3 normal
+550597,update filter icons history view,RESOLVED FIXED,P3 enhancement
+550598,create additional repository,RESOLVED FIXED,P3 normal
+550599,incorrect version package,RESOLVED FIXED,P3 normal
+550600,add github plugins ci,CLOSED FIXED,P3 enhancement
+550601,make general available reusable,NEW,P3 enhancement
+550602,cannot make unsafe null string safe,NEW,P3 normal
+550603,common subexpressions repeat,NEW,P3 normal
+550604,script test autogen job,CLOSED FIXED,P3 normal
+550605,share class impl check zip entry check cache,RESOLVED FIXED,P3 normal
+550606,rename project explorer start hide project,VERIFIED FIXED,P3 major
+550607,wrong top relation head,NEW,P3 normal
+550608,teste crawler,CLOSED INVALID,P3 trivial
+550609,snapshot build fail,RESOLVED FIXED,P3 normal
+550610,release mylyn docs,ASSIGNED,P3 normal
+550611,moxy maven dependencies break,NEW,P3 normal
+550612,diagram openable validation issue,RESOLVED FIXED,P3 normal
+550613,add initial transition diagram automatically,RESOLVED FIXED,P3 normal
+550614,change etrice versioning,RESOLVED FIXED,P3 normal
+550615,remove sync log runtime,NEW,P3 normal
+550616,remove generate warn via macro,NEW,P3 normal
+550617,utility restore preference value test,RESOLVED FIXED,P3 enhancement
+550618,ioconsolepartitioner produce overlap style range,VERIFIED FIXED,P3 minor
+550619,stackoverflowerror transitive dependency,NEW,P3 normal
+550620,fix style range override textconsoleviewer,VERIFIED FIXED,P3 minor
+550621,improve input handle ioconsole,VERIFIED FIXED,P3 enhancement
+550622,spring xml validation always fail,NEW,P3 normal
+550623,issue new way encode,RESOLVED FIXED,P3 normal
+550624,centralize context information make api,ASSIGNED,P3 normal
+550625,may select wrong range overload method,NEW,P3 normal with 1 vote
+550626,fully support run java,NEW,P3 enhancement
+550627,recent jdk like attempt weave certain system class,RESOLVED FIXED,P3 normal
+550628,migrate epp consistently use epl sua,RESOLVED FIXED,P3 normal
+550629,flaky download build products,RESOLVED FIXED,P3 normal
+550630,please use absolute urls child location,CLOSED FIXED,P3 normal
+550631,unexpected runtime error compute text hover,VERIFIED FIXED,P3 normal
+550632,download page tell visitors favorite desktop ide,NEW,P3 minor
+550633,design view error,NEW,P3 normal
+550634,eclipse project page refer eclipse sdk,NEW,P3 normal
+550635,website incoherent number eclipse,NEW,P3 normal
+550636,fix regressions java,RESOLVED FIXED,P3 normal
+550637,please offer package shell script,REOPENED,P3 enhancement with 1 vote
+550638,remove maven support,RESOLVED FIXED,P3 normal
+550639,remove support gnuplot data log,RESOLVED FIXED,P3 normal
+550640,,NEW,P3 normal
+550641,cheat sheet hello world application wrong,NEW,P3 major
+550642,issue board manager,NEW,P3 normal
+550643,keybindings work split editor,NEW,P3 normal
+550644,improve performance injectorimpl,RESOLVED FIXED,P3 normal
+550645,improve,RESOLVED FIXED,P3 normal
+550646,improve performance,NEW,P3 normal
+550647,project explorer work target editor external flatpak,NEW,P3 normal
+550648,specify provider,RESOLVED FIXED,P3 normal
+550649,link read nvda tab second time,VERIFIED FIXED,P3 normal
+550650,eclipse prerequisites emf,RESOLVED FIXED,P3 normal
+550651,improve readability css code around,RESOLVED FIXED,P3 normal
+550652,content assist type name longer work,NEW,P3 normal
+550653,implement generatemarkermessage method handlers,NEW,P3 normal
+550654,deprecate use,NEW,P3 normal
+550655,miss runnablecall entry create inside task,CLOSED FIXED,P3 normal
+550656,traceability,NEW,P3 normal
+550657,papyrus must provide toolsmiths register easily exist tableconfiguration file exist architecture file,NEW,P3 normal
+550658,access ipzilla,RESOLVED FIXED,P3 normal
+550659,extendable footer action,RESOLVED FIXED,P3 normal
+550660,sign feature jar,NEW,P3 normal
+550661,annotation always generate end comment,RESOLVED WORKSFORME,P3 normal
+550662,cache,NEW,P3 normal
+550663,call often,NEW,P3 normal
+550664,refactoring preview correctly render,NEW,P3 normal
+550665,ossrh network issue,CLOSED WORKSFORME,P3 normal
+550666,device properties set late deployment,CLOSED FIXED,P3 normal
+550667,need password reset,CLOSED FIXED,P3 normal
+550668,work,NEW,P3 normal
+550669,locationtech repo,RESOLVED FIXED,P3 normal
+550670,jipp atl,CLOSED FIXED,P3 normal
+550671,refine javadoc,RESOLVED FIXED,P3 normal
+550672,enhance loop conversion create wrong compilable code since,VERIFIED FIXED,P3 blocker
+550673,compare branch versus compare commit,NEW,P3 enhancement
+550674,specify harden runtime mac app sign,RESOLVED FIXED,P3 normal
+550675,debug variables hover show value primitive field outer class,NEW,P3 normal
+550676,checkbox button also possible messagearea,RESOLVED FIXED,P3 normal
+550677,sign mac native libraries,RESOLVED FIXED,P3 normal
+550678,save action work cdo environment,NEW,P3 normal
+550679,update jdt tip trick,RESOLVED WORKSFORME,P3 enhancement
+550680,update pde tip trick,RESOLVED WORKSFORME,P3 enhancement
+550681,emf cdo generator must add plugin dependency generate edit plugin,NEW,P3 normal
+550682,launch rcp via exist launch config pick latest source,RESOLVED FIXED,P3 normal
+550683,update platform tip trick,RESOLVED WORKSFORME,P3 enhancement
+550684,install java release candidate,CLOSED FIXED,P3 normal
+550685,import plugins source target import api,VERIFIED FIXED,P3 normal
+550686,remove disclaimers branch,RESOLVED FIXED,P3 normal
+550687,remove disclaimers jdt debug code base merge beta branch master,VERIFIED FIXED,P3 normal
+550688,end update site cause download artifacts break,RESOLVED FIXED,P3 normal
+550689,illegalargumentexception,RESOLVED FIXED,P3 normal
+550690,empty window copy file,NEW,P3 minor
+550691,stag view freeze commit,NEW,P3 critical
+550692,jdk path update,CLOSED WORKSFORME,P3 blocker
+550693,display project explorer run,RESOLVED NOT_ECLIPSE,P3 minor
+550694,remove unsed,RESOLVED FIXED,P3 normal
+550695,jipp chemclipse,CLOSED FIXED,P3 normal
+550696,classcastexception load time instructionhandle cannot cast branchhandle,RESOLVED FIXED,P3 normal
+550697,unable use serial connection use windows example,RESOLVED FIXED,P3 blocker
+550698,set opc ua data subscriptions publish intervals,CLOSED FIXED,P3 normal
+550699,block,NEW,P3 normal
+550700,,RESOLVED FIXED,P3 normal
+550701,eclipse workbench fail restart adoptopenjdk,NEW,P3 normal
+550702,leak memory,RESOLVED FIXED,P3 major
+550703,,NEW,P3 normal
+550704,,RESOLVED FIXED,P3 normal
+550705,intermittent verifyerror due incorrectly compute stack map duplicate resolve type weaver,NEW,P3 normal
+550706,,RESOLVED FIXED,P3 normal
+550707,need global variable define,CLOSED FIXED,P3 normal
+550708,possible keep team gh feature theia repo,NEW,P3 normal
+550709,use hashmap manifestelement instead hashtable,RESOLVED FIXED,P3 normal
+550710,ui freeze project explorer right click context,UNCONFIRMED,P3 normal
+550711,ui freeze change view,UNCONFIRMED,P3 normal
+550712,hunkheader miss function info,NEW,P3 enhancement
+550713,remove invalid solution list,NEW,P3 normal
+550714,comparator errors,RESOLVED FIXED,P3 normal
+550715,archive code repository longer browsable,NEW,P3 normal
+550716,remove pmf simultaneous release,CLOSED FIXED,P3 normal
+550717,wrong focus highlight syslink mnemonics,VERIFIED FIXED,P3 normal
+550718,change banner ece,RESOLVED FIXED,P3 normal
+550719,cannot cycle link widget widget,NEW,P3 minor
+550720,screen reader problems link contain multiple link,NEW,P3 normal
+550721,illegalaccesserror jdk jenkins,CLOSED DUPLICATE of bug 549294,P3 normal
+550722,eclipselink incompatible jpms,CLOSED DUPLICATE of bug 525457,P3 normal
+550723,build failure,NEW,P3 normal
+550724,data retention policy eclipse vorto,CLOSED FIXED,P3 normal
+550725,nvda read drop item twice,NEW,P3 normal
+550726,convert enhance loop result npe,VERIFIED FIXED,P3 major
+550727,update welcome screen icon something fit welcome screen,NEW,P3 normal
+550728,javabuilder fail nullpointerexception,NEW,P3 normal
+550729,improve performance modulecontainer modulclassloader,NEW,P3 normal
+550730,provide ability force creation branch even already exist branch,NEW,P3 enhancement
+550731,archive release available,VERIFIED FIXED,P3 normal
+550732,blank line dropdown action view fedora,NEW,P3 normal
+550733,getter methods datetime return wrong date time value field change keyboard,VERIFIED FIXED,P3 normal
+550734,cache display,VERIFIED FIXED,P3 normal
+550735,deployment microprofile repo fail jiro jipp,CLOSED NOT_ECLIPSE,P3 normal
+550736,unable run test path contain space,CLOSED WONTFIX,P3 blocker
+550737,cleanup action create ui freeze second,RESOLVED FIXED,P3 normal
+550738,job reschedule fail cancellation,RESOLVED FIXED,P3 normal with 2 votes
+550739,ui lockout search,NEW,P3 major
+550740,clone website docs new infra,CLOSED FIXED,P3 major
+550741,generate code cause,NEW,P3 normal
+550742,replace egit early startup action osgi service,RESOLVED FIXED,P3 normal
+550743,,RESOLVED FIXED,P3 normal
+550744,open large incorrect java file freeze ui secs,NEW,P3 normal
+550745,getadapter workbenchpart use generics rcp counterpart,RESOLVED FIXED,P3 normal
+550746,shorten perspective switcher text,RESOLVED FIXED,P3 normal
+550747,hide toolbar item non target perspectives,RESOLVED WORKSFORME,P3 normal
+550748,openssl tool californium interoperability test,CLOSED WONTFIX,P3 normal
+550749,,RESOLVED FIXED,P3 normal
+550750,jep record grammar change,ASSIGNED,P3 normal
+550751,eclipse ecd charter,RESOLVED FIXED,P3 normal
+550752,eclipse switch perspective creation new project,NEW,P3 normal
+550753,indexer file name include file folder name include file end name folder include file,NEW,P3 normal
+550754,table line style support,NEW,P3 enhancement with 1 vote
+550755,crash exit systemtrays unsupported,CLOSED FIXED,P3 normal
+550756,ecoregenerator come anything workflow,NEW,P3 normal
+550757,key bind popup show sequence,NEW,P3 normal
+550758,delete remote branch,RESOLVED FIXED,P3 normal
+550759,unable create gerrit platform repo,RESOLVED FIXED,P3 blocker
+550760,declare,RESOLVED FIXED,P3 normal
+550761,prep work open master development,RESOLVED FIXED,P3 normal
+550762,create parent pom target sdk deployment job,RESOLVED FIXED,P3 normal
+550763,create new test job,RESOLVED FIXED,P3 normal
+550764,configure swt build script,RESOLVED FIXED,P3 normal
+550765,need new temporary splash screen,RESOLVED FIXED,P3 normal
+550766,create repo,RESOLVED FIXED,P3 normal
+550767,pom product version change release,RESOLVED FIXED,P3 normal
+550768,update comparator repo eclipse run repo repo,RESOLVED FIXED,P3 normal
+550769,update product version number across build script,RESOLVED FIXED,P3 normal
+550770,template switch case expression need update,RESOLVED FIXED,P3 normal
+550771,hide build download page,RESOLVED WONTFIX,P3 normal
+550772,move previous version across build script,RESOLVED FIXED,P3 normal
+550773,show build download page,RESOLVED WONTFIX,P3 normal
+550774,update version number,RESOLVED FIXED,P3 normal
+550775,move release version build script,RESOLVED FIXED,P3 normal
+550776,create generic repos milestones point repos,VERIFIED FIXED,P3 normal
+550777,version bump stream,RESOLVED FIXED,P3 normal
+550778,create branch,RESOLVED FIXED,P3 normal
+550779,open type dialog automatically prefix search string,NEW,P3 major
+550780,render emf form use angular,NEW,P3 critical
+550781,minor trim twice,RESOLVED WONTFIX,P3 normal
+550782,move branch,NEW,P3 normal
+550783,replace deprecate logservice usage,NEW,P3 normal
+550784,use shorter text workspace write version,RESOLVED FIXED,P3 normal
+550785,cannot cancel close project checkout,RESOLVED FIXED,P3 normal
+550786,file output directories cannot delete svn update,NEW,P3 normal
+550787,p build build build,NEW,P3 normal
+550788,replace tip day early startup extension osgi service,RESOLVED FIXED,P3 normal
+550789,radiobuttonclickedrule work,RESOLVED FIXED,P3 normal
+550790,rcptt work new carriage position format,NEW,P3 normal
+550791,upgrade elk version,VERIFIED FIXED,P3 enhancement
+550792,change avatar icon github user,CLOSED FIXED,P3 normal
+550793,update ant,VERIFIED FIXED,P3 enhancement
+550794,stackoverflowerror invoke content assist lambda anonymous class result,CLOSED DUPLICATE of bug 550160,P3 normal
+550795,run forever larger workspace,NEW,P3 normal
+550796,shorter text clean project dialog,RESOLVED FIXED,P3 normal
+550797,tons javabuilder handle coreexceptions file find,RESOLVED WORKSFORME,P3 critical
+550798,break hono jipp instance,CLOSED FIXED,P3 normal
+550799,improve datatemplate editor reference handle,NEW,P3 normal
+550800,dark theme apply properly filter view,RESOLVED FIXED,P3 normal
+550801,sporadically classcastexception,CLOSED DUPLICATE of bug 547181,P3 normal
+550802,npe,RESOLVED FIXED,P3 normal
+550803,enable wip bot repository,CLOSED FIXED,P3 normal
+550804,webbrowsereditorinput implement iurieditorinput,NEW,P3 enhancement
+550805,update release locations,CLOSED FIXED,P3 normal
+550806,directory directory,CLOSED FIXED,P3 normal
+550807,option set checkindexstatus miss generatepdom,NEW,P3 minor
+550808,,RESOLVED FIXED,P3 normal
+550809,,RESOLVED FIXED,P3 normal
+550810,,RESOLVED FIXED,P3 normal
+550811,,RESOLVED FIXED,P3 normal
+550812,,RESOLVED FIXED,P3 normal
+550813,add check quickfix update service segment,RESOLVED DUPLICATE of bug 493053,P3 normal
+550814,reference ecore use uris,CLOSED FIXED,P3 normal
+550815,eclipse check spell show warn use english symbols symbols one word,NEW,P3 normal
+550816,fix process monitor bug pde,NEW,P3 normal
+550817,ui freeze replace previous revision,RESOLVED FIXED,P3 normal
+550818,external annotations drop type annotations exist member,NEW,P3 normal
+550819,db transaction roll back exception flush,NEW,P3 major
+550820,tag appear history context menu,RESOLVED FIXED,P3 trivial
+550821,cannot apply chain proposals exist method contain parameters,VERIFIED FIXED,P3 normal
+550822,gerrit send notification email,REOPENED,P3 normal
+550823,,RESOLVED FIXED,P3 normal
+550824,,RESOLVED FIXED,P3 normal
+550825,conflict ot error code,NEW,P3 normal
+550826,add tool tip ece show track description schedule page,NEW,P3 normal
+550827,add repository location resizable location area widen horizontally resize,RESOLVED FIXED,P3 normal
+550828,activate heap monitor default,REOPENED,P3 normal
+550829,switch expressions incorrect compilation error yield,RESOLVED FIXED,P3 normal
+550830,incorrect usage submonitor api,RESOLVED FIXED,P3 normal
+550831,report different value,NEW,P3 normal with 1 vote
+550832,remove gif leave move png file,NEW,P3 normal
+550833,external system property evaluate correctly,REOPENED,P3 normal
+550834,race condition inputstreammonitor delay block user input runtimeprocess,VERIFIED FIXED,P3 normal
+550835,select quick access elements disappear list,RESOLVED FIXED,P3 normal
+550836,provide warn numeric literal condition,NEW,P3 normal
+550837,java tool jsp information template select convey properly user,NEW,P3 normal
+550838,java tool new dynamic web app dark color contrast ratio text message present section less,CLOSED DUPLICATE of bug 552414,P3 normal
+550839,java tool eclipse azure device focus inside error detail narrator read,NEW,P3 normal
+550840,java tool eclipse azure device focus link nvda read anything,NEW,P3 normal
+550841,java tool azure sign dark color contrast ratio blue color less,CLOSED DUPLICATE of bug 552414,P3 normal
+550842,java tool azure sign dark text unselected radio button blur,NEW,P3 normal
+550843,java tool eclipse azure sign narrator read error message come user provide authentication file,NEW,P3 normal
+550844,cannot push error happen check user sign agreement,NEW,P3 normal
+550845,widget dispose styledtext,NEW,P3 normal
+550846,build fail upgrade guava,RESOLVED FIXED,P3 normal
+550847,support,RESOLVED FIXED,P3 enhancement
+550848,npe local search matcher initialization plan access,NEW,P3 normal
+550849,cannot push error happen check user sign agreement,CLOSED DUPLICATE of bug 549810,P3 normal
+550850,,RESOLVED FIXED,P3 normal
+550851,,RESOLVED FIXED,P3 normal
+550852,upgrade jacoco,UNCONFIRMED,P3 normal
+550853,incorrect inner yield classification lead compilation error,RESOLVED FIXED,P3 normal
+550854,asdsd,NEW,P3 normal
+550855,ee,CLOSED DUPLICATE of bug 442999,P3 normal
+550856,crm,CLOSED DUPLICATE of bug 442999,P3 normal
+550857,inline fast sequence esc kill eclipse,RESOLVED FIXED,P3 critical
+550858,typo errors page list,RESOLVED FIXED,P3 trivial
+550859,new class wizard generate namespace header,NEW,P3 normal
+550860,offer deploy root application apache tomcat instance,NEW,P3 enhancement
+550861,yield nestle inside case switch expression flag errors,RESOLVED FIXED,P3 normal
+550862,irrational sort code auto completion due java proposals,CLOSED DUPLICATE of bug 506804,P3 normal
+550863,private access among nest mat incompatible copy inheritance,RESOLVED FIXED,P3 normal
+550864,remove type argument result compile error,NEW,P3 major
+550865,able perform debug option,NEW,P3 normal
+550866,windows test machine,CLOSED FIXED,P3 blocker
+550867,wrong license encode,NEW,P3 normal
+550868,mismatch api baseline error doesnt go away remove baseline,VERIFIED FIXED,P3 normal
+550869,search plugin registry view show result second progress information,VERIFIED FIXED,P3 normal
+550870,merge editor save,RESOLVED FIXED,P3 normal
+550871,support jpa,NEW,P3 enhancement
+550872,undocumented status value reopen,NEW,P3 enhancement
+550873,tag eclipse equinox release,RESOLVED FIXED,P3 normal
+550874,deploy ecj compiler use build,RESOLVED FIXED,P3 normal
+550875,update base builder build,RESOLVED FIXED,P3 normal
+550876,update,RESOLVED FIXED,P3 normal
+550877,wrong snippet string method,NEW,P3 normal
+550878,repository state cache decorators,NEW,P3 enhancement
+550879,add,RESOLVED WORKSFORME,P3 normal
+550880,previous pick list store clear proposals,NEW,P3 enhancement
+550881,previous pick proposals incremental provider get miss,RESOLVED FIXED,P3 normal
+550882,diagram close work,RESOLVED FIXED,P3 normal
+550883,deprecate extension,NEW,P3 normal
+550884,new versions kitalpha bugzilla,RESOLVED FIXED,P3 normal
+550885,please update entries,RESOLVED FIXED,P3 normal
+550886,match full branch name hierarchical layout branch selection dialog,RESOLVED FIXED,P3 normal
+550887,allow close view,NEW,P3 normal
+550888,new project wizard remove default clear location field,NEW,P3 normal
+550889,checkout eclipse source,NEW,P3 normal
+550890,table header,RESOLVED DUPLICATE of bug 431915,P3 normal
+550891,support macos,NEW,P3 normal
+550892,nvda read list item select,NEW,P3 normal
+550893,data focus lose tabbing section,NEW,P3 normal
+550894,reduce space usage toolbar linux,RESOLVED FIXED,P3 normal
+550895,initial transition validation error project opended,RESOLVED FIXED,P3 normal
+550896,refactor dialog inconsistent compare dialogs,NEW,P3 normal
+550897,allow create folder element eclipse,NEW,P3 normal
+550898,allow create subfolder new file wizard,NEW,P3 normal
+550899,support platform specific folder delimiter new folder wizard,RESOLVED INVALID,P3 normal
+550900,publish maven jakarta nosql,NEW,P3 normal
+550901,support user preference scope,NEW,P3 normal
+550902,papyrus embed documentation must documentation wiki,NEW,P3 normal
+550903,unwanted search menu main menu eclipse,RESOLVED FIXED,P3 normal
+550904,could deploy snapshot ossrh,REOPENED,P3 normal
+550905,,RESOLVED FIXED,P3 normal
+550906,,RESOLVED FIXED,P3 normal
+550907,incorrect columncount,CLOSED FIXED,P3 normal
+550908,jdk latest update,CLOSED FIXED,P3 normal
+550909,xml registry fully deploy maven central,CLOSED NOT_ECLIPSE,P3 normal
+550910,,NEW,P3 normal
+550911,use space dark theme light theme,RESOLVED FIXED,P3 normal
+550912,trademark approval require eclipse iot package,RESOLVED FIXED,P3 normal
+550913,immigration push negation,RESOLVED FIXED,P3 enhancement
+550914,fortran project wizard show empty project explorer,RESOLVED FIXED,P3 normal
+550915,emptyworkspacehelper recreate empty workspace correctly,NEW,P3 normal
+550916,enable webkitgtk gesture,VERIFIED FIXED,P3 normal
+550917,remove user cdt gerrit,RESOLVED FIXED,P3 normal
+550918,visibility malformed doc comment hide reference,NEW,P3 normal
+550919,associate extension,RESOLVED FIXED,P3 normal
+550920,async completions proposals popup ignore character type completions calculate,RESOLVED FIXED,P3 normal
+550921,whether text block consider nls tag,NEW,P3 normal
+550922,javadoc failure releng sept build,RESOLVED WORKSFORME,P3 normal
+550923,get rid manual array copy possible,NEW,P3 normal
+550924,remove support export diagram gif bmp one maybe also pdf,NEW,P3 normal
+550925,migration jnosql jipp new ci infrastructure,CLOSED FIXED,P3 normal
+550926,svg image use style background color compute,VERIFIED FIXED,P3 normal
+550927,return true even listeners register,ASSIGNED,P3 normal
+550928,nest anonymous class code completion respect nest prompt methods,NEW,P3 normal
+550929,reconnecting session open two new server sessions recovery,ASSIGNED,P3 normal
+550930,recoveringcdosessionimpl deactivate exceptions,ASSIGNED,P3 normal
+550931,cannot install remote marketplace locations,RESOLVED FIXED,P3 normal
+550932,make quick access appeal,RESOLVED FIXED,P3 enhancement
+550933,cannot cleanup download without remote shell access,CLOSED WORKSFORME,P3 normal
+550934,default use different eclipse default,NEW,P3 normal with 1 vote
+550935,move source tarball generation separate,RESOLVED FIXED,P3 normal
+550936,improve documentation,UNCONFIRMED,P3 normal
+550937,checkbutton next link miss pad,CLOSED DUPLICATE of bug 548056,P3 normal
+550938,synchronize project wizards show workspace empty,RESOLVED FIXED,P3 normal
+550939,dark theme text control style,RESOLVED FIXED,P3 normal
+550940,deletion branch inside papyrus git repository,NEW,P3 normal
+550941,abstractbranchselectiondialog load refs async open,NEW,P3 enhancement
+550942,change xsd file notargetnamespace map,RESOLVED FIXED,P3 normal
+550943,mojarra multiple directory traversal issue,NEW,P3 normal
+550944,bugzilla manager milestones table sort sortkey numerically,NEW,P3 normal
+550945,change target platform lead unable instantiate class,NEW,P3 major
+550946,enter window span histogram view invalid,UNCONFIRMED,P3 normal
+550947,dynamic thread filter active thread cpu work control flow view,RESOLVED FIXED,P3 normal
+550948,variables view start correctly require manual refresh,NEW,P3 normal
+550949,enable optimization cache start,RESOLVED FIXED,P3 normal
+550950,part events startup depend splash screen,VERIFIED FIXED,P3 normal
+550951,parameter bind type result sql syntax exception,RESOLVED FIXED,P3 normal
+550952,push change without,CLOSED WORKSFORME,P3 major
+550953,prevent push gerrit without,CLOSED DUPLICATE of bug 550952,P3 normal
+550954,use,CLOSED DUPLICATE of bug 500266,P3 enhancement
+550955,javadoc build fail,RESOLVED FIXED,P3 normal
+550956,support mail attachment,ASSIGNED,P3 normal
+550957,outdated javadoc,RESOLVED FIXED,P3 trivial
+550958,table might lose header set parent dark system theme,NEW,P3 major
+550959,egits hang eclipse ui,RESOLVED FIXED,P3 critical
+550960,genmodel validation single resource validate whole project,NEW,P3 normal
+550961,remove accessors macros attribute operations,NEW,P3 normal
+550962,align pde feature version platform sdk,RESOLVED WONTFIX,P3 normal
+550963,update gdb jtag device descriptions provide command,RESOLVED FIXED,P3 normal
+550964,workspace symbol provider quick access cause ui freeze,NEW,P3 normal
+550965,remove swt tool activator,VERIFIED FIXED,P3 normal
+550966,internal error occur launch debug java application,NEW,P3 normal
+550967,mac dark theme list eclipse,NEW,P3 normal with 6 votes
+550968,symbols label provider cause document connect,RESOLVED FIXED,P3 normal
+550969,update eclipse ide enterprise java developers,CLOSED NOT_ECLIPSE,P3 major
+550970,mark stag file without actual change,NEW,P3 enhancement
+550971,diagnosticview always expand,CLOSED FIXED,P2 normal
+550972,disable gerrits without,RESOLVED FIXED,P3 normal
+550973,nullpointerexception resolve annotation bind,NEW,P3 normal
+550974,lsincompletecompletionproposal proposal allow filter,CLOSED MOVED,P3 normal
+550975,outofmemoryerror happen format java source file,UNCONFIRMED,P3 normal
+550976,authorization prompt button unusable smaller devices,RESOLVED FIXED,P2 blocker
+550977,cannot configure git settings,CLOSED DUPLICATE of bug 548598,P3 critical
+550978,miss comment log,CLOSED DUPLICATE of bug 512408,P3 normal
+550979,harmonize use nocodegen stereotype,NEW,P3 normal
+550980,miss last use value input box,RESOLVED NOT_ECLIPSE,P3 normal
+550981,code recommder cant ddownload model,NEW,P3 normal
+550982,never complete,NEW,P3 normal
+550983,,RESOLVED FIXED,P3 normal
+550984,paste project project create new project,NEW,P3 normal
+550985,deployment sonatype longer work,NEW,P3 normal
+550986,egit context menu contributions miss pde editor,CLOSED DUPLICATE of bug 552361,P3 major
+550987,ui freeze,ASSIGNED,P3 normal
+550988,add glazedlists orbit,CLOSED FIXED,P3 normal
+550989,cce compare conflict involve rename,RESOLVED FIXED,P3 normal
+550990,display java text corrupt java editor,CLOSED DUPLICATE of bug 548491,P3 normal with 3 votes
+550991,protect eclipse january branch,CLOSED FIXED,P3 normal
+550992,add support experimental feature,RESOLVED FIXED,P3 enhancement
+550993,gerrit verification build fail,RESOLVED FIXED,P3 normal
+550994,fail gerrit verification build,RESOLVED FIXED,P3 normal
+550995,enable api check new bundle introduce,RESOLVED FIXED,P3 normal
+550996,text block expression type bind set null instead,RESOLVED FIXED,P3 normal
+550997,notarize mac apps,NEW,P3 critical
+550998,gtk stabilize,RESOLVED WORKSFORME,P3 normal
+550999,stop offer download use plain http without encryption,NEW,P2 critical
+551000,support genmodel versions emf,RESOLVED FIXED,P3 enhancement
+551001,text block auto completion include,RESOLVED FIXED,P3 normal
+551002,refactor extract local variable extract constant work text block,RESOLVED FIXED,P3 normal
+551003,add breakpoint final textblock field,RESOLVED FIXED,P3 normal
+551004,trim lead space copy installation dialog,RESOLVED WONTFIX,P3 normal
+551005,text block escape value show first line astview,NEW,P3 normal
+551006,npe cleanup,NEW,P3 normal
+551007,remote profile perf search perf data wrong directory,NEW,P3 normal
+551008,retire possible,NEW,P3 normal
+551009,profile tool configuration edit run error,NEW,P3 normal
+551010,perl,NEW,P3 normal
+551011,opengcaction generate null pointer exception default binary find,RESOLVED FIXED,P3 critical
+551012,new problems redundant null check involve constants,VERIFIED FIXED,P3 normal
+551013,remove gifs product,RESOLVED FIXED,P3 normal
+551014,contribute oomph installer eclipse dartboard contributions,RESOLVED FIXED,P3 enhancement
+551015,push dialog know uri anymore,NEW,P3 normal
+551016,repository info github,VERIFIED FIXED,P3 normal
+551017,,RESOLVED FIXED,P3 normal
+551018,workspace init may fail project one corrupt,CLOSED FIXED,P3 normal
+551019,maximize float view maximize anymore main window restore,NEW,P3 normal
+551020,keyword register dynamic view,CLOSED FIXED,P3 normal
+551021,event iterator hang deadlocks trace close,NEW,P3 normal
+551022,select bundle osgi framework launch configuration filter active destroy start level settings,CLOSED DUPLICATE of bug 545614,P3 major
+551023,java formatter honor never join already wrap line method parameter annotations,NEW,P3 normal
+551024,npe branchoperationui,RESOLVED FIXED,P3 normal
+551025,allow run script name parameters,CLOSED FIXED,P3 normal
+551026,unable run build windows,NEW,P3 normal
+551027,upgrade sirius,RESOLVED FIXED,P3 normal
+551028,create repository,RESOLVED FIXED,P3 normal
+551029,test failures,RESOLVED FIXED,P3 normal
+551030,invalidinputexception scanner yield,VERIFIED FIXED,P3 normal
+551031,new list elements intermittently show database external reference fragment,ASSIGNED,P3 critical
+551032,please create,RESOLVED FIXED,P3 enhancement
+551033,request commit right simrel repo,CLOSED FIXED,P3 normal
+551034,create github repository,RESOLVED FIXED,P3 normal
+551035,unordered list optimization work together undo,ASSIGNED,P3 major
+551036,recursive throw preview,NEW,P3 enhancement
+551037,use java vm instead java vm label,RESOLVED WORKSFORME,P3 normal
+551038,cleanup redundant lead compile error,VERIFIED FIXED,P3 normal
+551039,notarize mac apps,RESOLVED FIXED,P3 normal
+551040,logview listen osgi logservice,RESOLVED FIXED,P3 normal
+551041,rust package refer php package,RESOLVED FIXED,P3 normal
+551042,problem adapter connection two subapplications,CLOSED FIXED,P3 blocker
+551043,target editor resize well,NEW,P3 normal
+551044,run pde api analysis jenkins build,NEW,P3 normal
+551045,run pde api analysis jenkins build,NEW,P3 normal
+551046,build fail run use ant script export pde build eclipse plugin project,NEW,P3 normal
+551047,unable delete build fail run use ant script export pde build eclipse plugin project,NEW,P3 critical
+551048,java console limit character,NEW,P3 major with 1 vote
+551049,,RESOLVED FIXED,P3 normal
+551050,togglebreakpoint inconsistent textblock,RESOLVED FIXED,P3 normal
+551051,unexpected compilation errors change code class project,NEW,P3 normal
+551052,show key bind command name simplify,RESOLVED FIXED,P3 trivial
+551053,catch exceptions session close dirty state distant resource reachable,VERIFIED FIXED,P3 normal
+551054,npe perspectivecustomization second call,NEW,P3 normal
+551055,reference dialogs also list reference plugin workspace model,ASSIGNED,P3 enhancement
+551056,use stack synchronize block,RESOLVED FIXED,P3 normal
+551057,save options change notation bug,CLOSED FIXED,P3 major
+551058,descriptors annotate work,NEW,P3 normal
+551059,bug fix find find,NEW,P3 normal
+551060,publish maven central,RESOLVED INVALID,P3 normal
+551061,create eclipse ide land page,RESOLVED FIXED,P3 normal
+551062,setviewercontents performance poor due heavy use getadapter,NEW,P3 normal
+551063,xtext use wrong versions generate,RESOLVED INVALID,P3 normal
+551064,astparser able recover directly body type declaration,NEW,P3 normal
+551065,wrong selection use breakpoints suspend vm,NEW,P3 normal
+551066,reveal control work within category,CLOSED FIXED,P2 normal
+551067,npe eclipse crash hide search field git history toolbar,VERIFIED FIXED,P3 major
+551068,cannot run via java,RESOLVED FIXED,P3 normal
+551069,ugly icons dark theme preference record,CLOSED DUPLICATE of bug 543239,P3 normal
+551070,use multicatch block possible,NEW,P3 normal
+551071,implement binary server,ASSIGNED,P3 enhancement
+551072,diagnose state change assertions,NEW,P3 normal
+551073,method use method jdt provide quick fix create method,ASSIGNED,P3 enhancement
+551074,error try add static import java code,NEW,P3 normal
+551075,use suggest update remove complete,NEW,P3 normal
+551076,sort libraries alphabetical order,CLOSED DUPLICATE of bug 223318,P3 normal
+551077,double wrong signature intersection vs union,NEW,P3 normal
+551078,value reset value ini consequently eclipse start longer,RESOLVED WORKSFORME,P3 normal
+551079,unable instantiate class,RESOLVED FIXED,P3 normal
+551080,eclipse release train date setup product model wizard,RESOLVED FIXED,P3 normal
+551081,update target platform eclipse,CLOSED FIXED,P3 blocker
+551082,support usage apt preprocessors configure,NEW,P3 normal
+551083,npe detailcodetranslator,ASSIGNED,P3 normal
+551084,nullpointerexception,RESOLVED FIXED,P3 critical with 1 vote
+551085,systemconfiguration plugin reference wrong property sheet class,CLOSED FIXED,P3 normal
+551086,publish eclipse maven central,RESOLVED FIXED,P3 normal
+551087,label move,NEW,P3 normal
+551088,diagnosticcache throw npe delete reference,CLOSED FIXED,P3 normal
+551089,build libraries space name fail,NEW,P3 normal
+551090,change create throw exception,CLOSED FIXED,P3 normal
+551091,crash mylyn,CLOSED FIXED,P3 normal with 1 vote
+551092,return incorrect end line number add textblock,RESOLVED FIXED,P3 normal
+551093,button enlarge toolbar windows,VERIFIED FIXED,P3 normal
+551094,miss token textblock iterminalsymbols,NEW,P3 normal
+551095,conditional breakpoint textblock consider text block terminal symbol,RESOLVED FIXED,P3 normal
+551096,unable add jar file options disable,NEW,P3 critical
+551097,tool available screen read information regard progress,NEW,P3 normal
+551098,tool available screen narrator read instead read text field value items focus land,NEW,P3 normal
+551099,tool available screen read error message provide,NEW,P3 normal
+551100,tool available screen read error message provide,NEW,P3 normal
+551101,disable insertion trigger except work debug shell,NEW,P3 minor with 1 vote
+551102,tool confirm select feature dark color contrast list items tree view checkbox less,NEW,P3 normal
+551103,editnewobjectdialog must handle readonly resources,CLOSED FIXED,P3 normal
+551104,tool nvda read link browser,NEW,P3 normal
+551105,make error message project cannot build prerequisite useful,NEW,P3 normal
+551106,job change events order,NEW,P3 enhancement
+551107,synchronisation throw arrayindexoutofboundsexception undo removal,RESOLVED FIXED,P3 critical
+551108,tool narrator nvda read label,NEW,P3 normal
+551109,api error,VERIFIED FIXED,P3 major
+551110,tool accessible keyboard,NEW,P3 normal
+551111,tool tooltips visible keyboard focus,NEW,P3 normal
+551112,tool keyboard focus go static content page,NEW,P3 normal
+551113,tool link etc keyboard accessible,NEW,P3 normal
+551114,tool soon focus land list item get select without user action,NEW,P3 normal
+551115,narrator read status azure toolkit checkbox instead read,NEW,P3 normal
+551116,narrator read name activity tab item user press arrow key navigate,NEW,P3 normal
+551117,dark color contrast activity tab item less,NEW,P3 normal
+551118,dark color contrast service price link less,NEW,P3 normal
+551119,non uniform behavior change change system explorer,CLOSED FIXED,P3 normal
+551120,application model editor display icons store fragment host plugin,NEW,P3 normal
+551121,containerlauncher use build environment variables,NEW,P3 normal
+551122,add content target editor use identifier target editor content tab,NEW,P3 normal
+551124,,RESOLVED FIXED,P3 normal
+551125,offline,REOPENED,P3 normal
+551126,update feature story footer eclipse ide,RESOLVED FIXED,P2 normal
+551127,caret stop blink open another shell,CLOSED WONTFIX,P3 minor
+551128,project import setup task,CLOSED FIXED,P3 minor
+551129,circular dependency error report could resolve due main test build separation,NEW,P3 normal
+551130,use update license feature,RESOLVED FIXED,P3 enhancement
+551131,upgrade latest target,RESOLVED FIXED,P3 enhancement
+551132,know vulnerability use,NEW,P3 major
+551133,text widget group wrong background color,NEW,P3 normal
+551134,,RESOLVED FIXED,P3 normal
+551135,update drillstack use isempty deque instead stack,RESOLVED FIXED,P3 normal
+551136,automate error report server reachable,NEW,P3 normal
+551137,ui freeze startup due detailedprogressviewer,NEW,P3 normal
+551138,,NEW,P3 normal
+551139,use toolitem quick access similar perspective switcher,RESOLVED FIXED,P3 normal
+551140,externalize string java file,UNCONFIRMED,P3 normal
+551141,git setup jgit windows slave,NEW,P3 normal
+551142,,RESOLVED INVALID,P3 blocker
+551143,wrong date convert date jan,NEW,P3 normal
+551144,close plugin project cause externaljavasearchclasspathcontainer,NEW,P3 normal
+551145,memory leak scroll file ram,NEW,P3 normal
+551146,superset mention interface,RESOLVED FIXED,P3 major
+551147,unable use build due cycle errors,VERIFIED FIXED,P3 blocker
+551148,debug output provide mislead information,NEW,P3 normal
+551149,ui freeze command parameter completion,RESOLVED FIXED,P3 trivial
+551150,slow import take advantage available resources,NEW,P3 normal
+551151,modal popup often hide behind code replacement,NEW,P3 normal
+551152,ui freeze startup via dynamicsourcesworkingsetupdater,NEW,P3 normal
+551153,long run quick access providers freeze ui,RESOLVED FIXED,P3 major
+551154,add release number name page,NEW,P3 normal
+551155,one miss element target platform definition break whole tp,NEW,P3 normal
+551156,use fix version sua,RESOLVED FIXED,P3 normal
+551157,improve problem marker cannot,NEW,P3 normal
+551158,always use new qualifier isv doc get rid manual touch,NEW,P3 normal
+551159,meta model contain reference remove accord documentation,CLOSED WONTFIX,P3 normal
+551160,cve request extremely deep hierarchy cause stack overflow,RESOLVED FIXED,P3 normal
+551161,visual studio cannot compile opc ua problem,NEW,P3 normal
+551162,cve request use free use delay interval,RESOLVED FIXED,P3 normal
+551163,selectable form editor title dark eclipse dark theme,NEW,P3 normal
+551164,consider,NEW,P3 normal
+551165,,RESOLVED FIXED,P3 normal
+551166,add ecore feature update sit,CLOSED FIXED,P3 normal
+551167,mark command handlers model editor persiststate false,RESOLVED FIXED,P3 normal
+551168,latest update break select,CLOSED INVALID,P3 normal
+551169,,RESOLVED FIXED,P3 normal
+551170,respect new remove multiple space,RESOLVED FIXED,P3 normal
+551171,view secondary ids recreate perspective change,NEW,P3 major
+551172,request create additional repositories,RESOLVED FIXED,P3 normal
+551173,promote contribute simrel,RESOLVED FIXED,P3 normal
+551174,comparator errors build,VERIFIED FIXED,P3 normal
+551175,umbrella bug record infrastructure issue,NEW,P3 normal
+551176,external classpath entries config auto convert project paths,NEW,P3 normal
+551177,merge branch master java ga,RESOLVED FIXED,P3 normal
+551178,tag move,RESOLVED FIXED,P3 blocker
+551179,expand tag node take long time,NEW,P3 normal
+551180,debug shell anymore,VERIFIED FIXED,P3 critical
+551181,eclipse hang save java class,NEW,P3 major
+551182,unexpected change organization,CLOSED FIXED,P3 normal
+551183,allow define http reference target definition file,RESOLVED WORKSFORME,P3 normal
+551184,diagram editor dispose remove listeners diagram newly create distant resource remove,RESOLVED FIXED,P3 normal
+551185,enable github security advisories leshan,NEW,P3 normal
+551186,problem markers remove resolve build cycle,NEW,P3 normal
+551187,performancesimprovements wiki page move internal documentation,NEW,P3 normal
+551188,cannot monitor,CLOSED FIXED,P3 normal
+551189,consistent arrayindexoutofbounds save incorrect java file code enable,VERIFIED FIXED,P3 normal
+551190,support zephyr jira,NEW,P3 normal
+551191,delete account,RESOLVED FIXED,P3 normal
+551192,widget dispose exception find action quick access,RESOLVED FIXED,P3 major
+551193,local variable declaration hide another field exclude static field,VERIFIED WONTFIX,P3 enhancement
+551194,sign service,CLOSED FIXED,P3 normal
+551195,repository info sprotty github,RESOLVED FIXED,P3 normal
+551196,give sometimes dialog error message,VERIFIED FIXED,P3 normal
+551197,report error unnecessary version increment,RESOLVED FIXED,P3 enhancement
+551198,enable rasterframes gitter channel,CLOSED FIXED,P3 normal
+551199,release repo erroneous,CLOSED INVALID,P3 blocker
+551200,support relative paths,CLOSED FIXED,P3 normal
+551201,add methods repository config,NEW,P3 normal
+551202,preferences save user check run validation simulation,CLOSED FIXED,P3 normal
+551203,tool provide way custom display label element,UNCONFIRMED,P3 normal
+551204,tool provide way use label define model instead name,UNCONFIRMED,P3 normal
+551205,tool provide way filter line table,UNCONFIRMED,P3 normal with 1 vote
+551206,use cryptographically weak number generator,NEW,P3 critical
+551207,rust link go,NEW,P3 normal
+551208,impossible use rcptt product base,CLOSED DUPLICATE of bug 548517,P3 major
+551209,export versionized package different version,RESOLVED WONTFIX,P3 normal
+551210,wrong download,CLOSED FIXED,P3 normal
+551211,take advantage lambda displayhelper,RESOLVED FIXED,P3 enhancement
+551212,please update ptp version,RESOLVED FIXED,P3 normal
+551213,remove tab simultaneous release view,NEW,P3 normal
+551214,add documentation jvm finalizer root,RESOLVED FIXED,P3 minor
+551215,issue org,NEW,P3 normal
+551216,remove terminate work group work group page,NEW,P3 normal
+551217,npe open model compare,RESOLVED FIXED,P3 normal
+551218,add apache trafodion support eclipselink,NEW,P3 enhancement
+551219,,NEW,P3 normal
+551220,alternative license approval eclipse jkube,RESOLVED FIXED,P3 normal
+551221,trademark approval require eclipse jkube,RESOLVED FIXED,P3 normal
+551222,translation hint produce result,RESOLVED FIXED,P3 normal
+551223,remove automatic error report plugins,CLOSED FIXED,P3 blocker
+551224,remove button experiment abnormally large size,UNCONFIRMED,P3 normal
+551225,text become blurry horizontal scroll mac,CLOSED DUPLICATE of bug 548491,P3 major
+551226,installation fail error,NEW,P3 blocker
+551227,wrong syntax highlight preview switch expressions,VERIFIED FIXED,P3 normal
+551228,unable parse metadata xml,CLOSED DUPLICATE of bug 534237,P3 normal
+551229,download link break,CLOSED FIXED,P3 normal
+551230,merge branch master,VERIFIED FIXED,P3 normal
+551231,report create,RESOLVED FIXED,P3 normal
+551232,support mappings cdoserverimporter,ASSIGNED,P3 enhancement
+551233,editor tab show file path split mode,NEW,P3 minor
+551234,null linux since,RESOLVED WORKSFORME,P3 normal
+551235,ensure compatibilty eclipse,NEW,P3 normal
+551236,osx mojave debug mode arguments pass enclose single quote,NEW,P3 normal
+551237,add trace option build cycle,RESOLVED FIXED,P3 normal
+551238,npe extendedpropertysheetpage,RESOLVED FIXED,P3 normal
+551239,eclass direct edit fail,CLOSED FIXED,P3 major
+551240,outline view update editor caret move hierarchical symbols,UNCONFIRMED,P3 normal
+551241,,NEW,P3 normal
+551242,add plugin jipp project ditto,CLOSED FIXED,P3 normal
+551243,update git history,NEW,P3 normal
+551244,map invocation null,NEW,P3 minor
+551245,select show head head change,NEW,P3 normal
+551246,write lot log entries freeze ui,NEW,P3 normal
+551247,api check recognize change class hierarchy across dependencies,NEW,P3 normal
+551248,npe target editor filter content target platform still load,NEW,P3 normal
+551249,sirius nature name,VERIFIED FIXED,P3 trivial
+551250,add support,RESOLVED INVALID,P3 normal
+551251,save action redundant remove modifier,CLOSED FIXED,P3 normal
+551252,detail formatters cannot output boolean object string representation,NEW,P3 normal
+551253,project explorer background color base current git branch,NEW,P3 enhancement
+551254,enable roll build appveyor,CLOSED FIXED,P3 normal
+551255,exception import uftrace directory,NEW,P3 normal
+551256,issue java,CLOSED WORKSFORME,P3 normal
+551257,eclipse checksum mismatch,RESOLVED FIXED,P3 major
+551258,,RESOLVED FIXED,P3 normal
+551259,description preference save section ignore resources,NEW,P3 minor
+551260,click workspace dialog redisplays dialog,NEW,P3 normal
+551261,update eclipse executable launcher unable locate companion share library,NEW,P3 major
+551262,allow use new quick search dialog view,NEW,P3 enhancement
+551263,bump allow gerrit build succeed,RESOLVED FIXED,P3 normal
+551264,sftp file content become persistently outdated internal error cache manually delete,NEW,P3 major with 1 vote
+551265,critical wakeup within context irq link source,NEW,P3 normal
+551266,move californium vserver domain,NEW,P3 normal
+551267,move che vserver domain,NEW,P3 normal
+551268,move ditto vserver domain,NEW,P3 normal
+551269,move egerrit vserver domain,NEW,P3 normal
+551270,move hono vserver domain,NEW,P3 normal
+551271,move kapua vserver domain,NEW,P3 normal
+551272,move milo vserver domain,NEW,P3 normal
+551273,move packagedrone vserver domain,NEW,P3 normal
+551274,move vserver domain,NEW,P3 normal
+551275,move rtsc vserver domain,NEW,P3 normal
+551276,move tracecompass vserver domain,NEW,P3 normal
+551277,move unide vserver domain,NEW,P3 normal
+551278,move vertx vserver domain,NEW,P3 normal
+551279,move vorto vserver domain,NEW,P3 normal
+551280,move hawkbit vserver domain,NEW,P3 normal
+551281,move kuksa vserver domain,NEW,P3 normal
+551282,move leshan vserver domain,NEW,P3 normal
+551283,move paho vserver domain,NEW,P3 normal
+551284,build path cycle message list many project useful,VERIFIED FIXED,P3 normal
+551285,improve emf code pattern,RESOLVED FIXED,P3 enhancement
+551286,test failures build java merge,NEW,P3 normal
+551287,enable null warn check fix associate problems,RESOLVED FIXED,P3 normal
+551288,step step button grey,NEW,P3 normal
+551289,pull operation refresh project repository,RESOLVED FIXED,P3 normal
+551290,api problem filter longer use,RESOLVED INVALID,P3 normal
+551291,refactor inlinerefactoring use,NEW,P3 normal
+551292,use plexus container maven,RESOLVED FIXED,P3 normal
+551293,test fail merge java patch master,RESOLVED DUPLICATE of bug 550236,P3 major
+551294,file name shorten download source code,CLOSED DUPLICATE of bug 551295,P3 normal
+551295,file name shorten download source code,CLOSED NOT_ECLIPSE,P3 critical
+551296,eclipse marketplace window open behind workspace,NEW,P3 normal
+551297,extend technical differences sirius,RESOLVED FIXED,P3 normal
+551298,miss junit test find test runner,NEW,P3 major with 8 votes
+551299,problem,RESOLVED FIXED,P3 normal
+551300,import system import fbs,NEW,P3 normal
+551301,php support,NEW,P3 enhancement
+551302,progress view hide content system dialog open,VERIFIED FIXED,P3 normal
+551303,dnd swt embbedded awt frame break application crash minutes,REOPENED,P3 normal with 3 votes
+551304,simplify boolean expression,RESOLVED FIXED,P3 trivial
+551305,java doc error,VERIFIED FIXED,P3 normal
+551306,make change outside eclipse mark file change,CLOSED DUPLICATE of bug 535189,P3 normal
+551307,header word wrap support alignment,RESOLVED FIXED,P3 normal
+551308,request new repository,RESOLVED FIXED,P3 normal
+551309,align versions,NEW,P3 normal
+551310,remove resource filter project explorer,NEW,P3 normal
+551311,publish test result use java drop test,RESOLVED FIXED,P3 normal
+551312,newsletter page content hide use adblocker,RESOLVED FIXED,P3 normal
+551313,filter customization dialog miss tab icons,VERIFIED FIXED,P3 normal
+551314,exit button double,CLOSED NOT_ECLIPSE,P3 major
+551315,register uri extension start oomph installer click uri,NEW,P3 enhancement
+551316,online babel message eclipse,RESOLVED FIXED,P3 normal
+551317,correct qvto archive ownership,REOPENED,P3 normal
+551318,junit test failure,NEW,P3 normal
+551319,junit test failure,NEW,P3 normal
+551320,miss line number revision enable,RESOLVED FIXED,P3 normal
+551321,search result,RESOLVED FIXED,P3 normal
+551322,incorrectly compile call specialize interface method,NEW,P3 normal
+551323,outage,CLOSED FIXED,P1 major
+551324,allow hide text quick access find action tool contribution,NEW,P3 major
+551325,use better icon find action toolcontribution,RESOLVED FIXED,P3 normal
+551326,improve default search item,CLOSED DUPLICATE of bug 552073,P3 normal
+551327,remove oprofile feature,RESOLVED FIXED,P3 normal
+551328,request view column process,UNCONFIRMED,P3 normal
+551329,request show filter view column process number,UNCONFIRMED,P3 normal
+551330,translation stats break,RESOLVED FIXED,P3 normal
+551331,request show filter view search tid number name,UNCONFIRMED,P3 normal
+551332,script approvals test autogen job,CLOSED FIXED,P3 normal
+551333,cannot use jdt headless application,RESOLVED FIXED,P3 major
+551334,enable github page eclipse metro,CLOSED FIXED,P3 normal
+551335,setstyleranges reset less cache necessary,VERIFIED FIXED,P3 normal
+551336,reset style reset render,VERIFIED FIXED,P3 normal
+551337,pdt sonarqube build fail,CLOSED FIXED,P3 normal
+551339,lldb support standard alone debugger,NEW,P3 enhancement
+551340,add option allow detach folder,NEW,P3 normal
+551341,remove mac hidpi linenumberrulercolumn subclasses,RESOLVED FIXED,P3 normal
+551342,cannot create pty,CLOSED DUPLICATE of bug 519886,P3 normal
+551343,cannot change value variables,CLOSED DUPLICATE of bug 550606,P3 normal
+551344,switch eclipse,RESOLVED FIXED,P3 normal
+551345,assert fail cu presnet package test,CLOSED WORKSFORME,P3 minor
+551346,npe run save action unboxingcleanup,NEW,P3 critical
+551347,pipe break second run,UNCONFIRMED,P3 normal
+551348,create java version support code test,ASSIGNED,P3 normal
+551349,could replace logo new one research page,RESOLVED FIXED,P3 normal
+551350,autocomplete show options case type etc,NEW,P3 major
+551351,double slash text block recognize line comment,NEW,P3 normal
+551352,install jdk test,CLOSED FIXED,P3 normal
+551353,detail formatter evaluations must contain either expression block statements nattable,NEW,P3 normal
+551354,detail formatter evaluations must contain either expression block statements nattable,NEW,P3 blocker
+551355,trigger search reachable,CLOSED INVALID,P3 normal
+551356,arrayindexoutofboundsexception,VERIFIED FIXED,P3 normal
+551357,add banner java support,NEW,P3 normal
+551358,scrollbar arrows big,NEW,P3 normal
+551359,version,NEW,P3 normal
+551360,blank line view thread stack thread overview,NEW,P3 normal
+551361,createproject,CLOSED FIXED,P3 normal
+551362,call anymore resource operations,RESOLVED FIXED,P3 critical
+551363,deploy ecj compiler use build,RESOLVED FIXED,P3 normal
+551364,api tool give error unnecessary minor version increase,CLOSED DUPLICATE of bug 551247,P3 normal
+551365,repository rename,RESOLVED FIXED,P3 normal
+551366,provide tool fix problems crlf git repository,RESOLVED FIXED,P3 enhancement
+551367,debug support java,ASSIGNED,P3 normal
+551368,verifyerror latest code master,VERIFIED FIXED,P1 blocker
+551369,migration jdt jipp new ci infrastructure,CLOSED FIXED,P3 normal
+551370,ignore white space stop work,CLOSED DUPLICATE of bug 535189,P3 major
+551371,problem load convert amalthea model java example project,UNCONFIRMED,P3 normal
+551372,reattach view,NEW,P3 normal
+551373,bad implementation constraints,CLOSED FIXED,P3 normal
+551374,testsuite wizard generate necessary value,CLOSED FIXED,P3 normal
+551375,widgetfactories extend,RESOLVED FIXED,P3 normal
+551376,add getwrappedtype bundlefilewrapperchain,RESOLVED FIXED,P3 normal
+551377,class stereotypemodelelement must return observablevalue dedicate stereotype property edition,REOPENED,P3 normal
+551378,restart touchpoint setjvmaction use jvm,CLOSED INVALID,P3 normal
+551379,wrong anchor markdown headers,NEW,P3 normal
+551380,allow test method return null,RESOLVED FIXED,P3 normal
+551381,,RESOLVED FIXED,P3 normal
+551382,include profile picture,RESOLVED FIXED,P3 normal
+551383,change visibility inherit method propose class inherit interface,NEW,P3 normal
+551384,keyboard shortcut focus search,NEW,P3 enhancement
+551385,error marketplace,NEW,P3 normal
+551386,scorecard index page improvements,RESOLVED FIXED,P3 normal
+551387,cursor position status enough space,VERIFIED FIXED,P3 normal
+551388,remove resourcenavigator resource perspective,NEW,P3 normal
+551389,cannot run junit test maven project,CLOSED DUPLICATE of bug 551298,P3 major
+551390,remove custom style draw perspectiveswitcher,RESOLVED FIXED,P3 normal
+551391,code completion lambda result invalid code,NEW,P3 normal
+551392,babel support languages page break,NEW,P3 normal
+551393,unable connect remote debug vpn fail connect remote vm,REOPENED,P1 normal
+551394,enable tycho strict bin include,RESOLVED FIXED,P3 normal
+551395,action add miss annotations change unrelated line indentation type,NEW,P3 normal
+551396,fix file end crlf git repository,RESOLVED FIXED,P3 normal
+551397,add support ios nxp board,NEW,P3 enhancement
+551398,eclipselink java cause,RESOLVED FIXED,P3 major
+551399,investigate usage command,RESOLVED FIXED,P3 normal
+551400,jee get error launch eclipse,NEW,P3 blocker
+551401,provider equinox launcher,RESOLVED DUPLICATE of bug 550648,P3 normal
+551402,miss file repository,NEW,P3 normal
+551403,duplicate license ecf sua sua,CLOSED DUPLICATE of bug 552067,P3 normal
+551404,new debug perspective display input field click,CLOSED DUPLICATE of bug 550606,P3 normal
+551405,text widget cancel icon longer accept clear field,NEW,P3 normal
+551406,cannot import project link testfile setup,CLOSED DUPLICATE of bug 529013,P3 normal
+551407,improve,NEW,P3 enhancement
+551408,switch webtools wildwebdeveloper enterprise java developers,NEW,P3 normal
+551409,,RESOLVED FIXED,P3 normal
+551410,miss file bundle cause filenotfoundexception,CLOSED NOT_ECLIPSE,P3 normal
+551411,ubuntu lts horizontal scrollbar block obstruct text field inspect variables console log,CLOSED DUPLICATE of bug 519728,P3 normal
+551412,regard workspace,CLOSED WORKSFORME,P3 normal
+551413,unexported package validation might produce invalid marker value,NEW,P3 normal with 1 vote
+551414,log file get spammed property tester contribute property type class,CLOSED INVALID,P3 normal with 1 vote
+551415,cs load fail,RESOLVED FIXED,P3 normal
+551416,able merge prs project,RESOLVED FIXED,P3 normal
+551417,application generate file,RESOLVED FIXED,P3 enhancement
+551418,remove hack cause unreadable permission checkboxes,VERIFIED FIXED,P3 normal
+551419,please enable assertions test,RESOLVED FIXED,P3 normal
+551420,unable specify specific annotation processors run,NEW,P3 enhancement
+551421,match time value default,NEW,P3 normal
+551422,toolitem separator visible,NEW,P3 normal
+551423,support tls unsecure,NEW,P3 normal
+551424,current line number cut statusbar,CLOSED DUPLICATE of bug 551387,P3 normal
+551425,use less margins perspective switcher,RESOLVED FIXED,P3 normal
+551426,npe,NEW,P3 normal
+551427,use shorter perspective reset text,RESOLVED FIXED,P3 normal
+551428,file accessible prompt disconnect network share make ide unusable,NEW,P3 normal
+551429,internal error find action,RESOLVED FIXED,P3 normal
+551430,improve performance,RESOLVED WORKSFORME,P3 normal
+551431,npe system content null restart cache,RESOLVED FIXED,P3 normal
+551432,update tostring implementation command,RESOLVED FIXED,P3 normal
+551433,eclipse longer run test class press outside,NEW,P3 normal
+551434,false syntax error expressions,CLOSED FIXED,P3 normal
+551435,eclipse,RESOLVED NOT_ECLIPSE,P3 normal
+551436,jipp nosql,CLOSED FIXED,P3 normal
+551437,multi aop control code order,NEW,P3 normal
+551438,fix file end crlf git repository,RESOLVED FIXED,P3 normal
+551439,fix simrel problems,NEW,P3 normal
+551440,startline match endline,NEW,P3 normal
+551441,base bind apis improve eliminate use raw type,NEW,P3 enhancement
+551442,marketplace client search marketplacediscoverystrategy fail error cannot complete request,RESOLVED FIXED,P3 major
+551443,bad,NEW,P3 normal
+551444,allow id layer open close bracket,CLOSED FIXED,P3 normal
+551445,upgrade nexus,CLOSED FIXED,P3 normal
+551446,upgrade nexus,CLOSED FIXED,P3 normal
+551447,table linesvisible js exception column width zero,RESOLVED FIXED,P3 major
+551448,upgrade target,CLOSED FIXED,P3 normal
+551449,wrong entries product editor set arguments,VERIFIED FIXED,P3 normal
+551450,wrong zip file use build update site,NEW,P3 normal
+551451,kapua ci instance reachable,CLOSED FIXED,P3 normal
+551452,marketplacediscoverystrategy fail internal server error,CLOSED FIXED,P3 normal
+551453,api versioning error binary project,VERIFIED FIXED,P3 normal
+551454,marketplace client search require plugins,NEW,P3 blocker
+551455,dynamic color allocation break ide eclipse,CLOSED FIXED,P3 blocker
+551456,swt image auto scale nattable,NEW,P3 normal
+551457,miss type multiplefailureserror,NEW,P3 normal
+551458,output serial terminal distort ubuntu,RESOLVED FIXED,P3 normal
+551459,unable connect ipzilla,RESOLVED WORKSFORME,P3 normal
+551460,pmi send email,RESOLVED WORKSFORME,P3 critical
+551461,add null analysis codebase,NEW,P3 normal
+551462,align eclipse windows toolbar default style win,NEW,P3 normal
+551463,ui freeze right click project project explorer,CLOSED NOT_ECLIPSE,P3 normal
+551464,failures,CLOSED FIXED,P3 major
+551465,thread suspend top stack frame automatically select,CLOSED FIXED,P3 normal
+551466,eclipse show error log right click source file project explorer,NEW,P3 normal with 1 vote
+551467,jar copy,UNCONFIRMED,P3 normal
+551469,fix access warn,VERIFIED FIXED,P3 normal
+551470,default device profile set rc,CLOSED FIXED,P3 major
+551471,please ignore,CLOSED FIXED,P3 enhancement
+551472,java document match ast,NEW,P3 major with 1 vote
+551473,create repository,RESOLVED FIXED,P3 normal
+551474,edit pom error,UNCONFIRMED,P3 normal
+551475,archetype exceptions throw find variables,NEW,P3 normal
+551476,find action compute result make result list,NEW,P3 normal
+551477,find action sort prefer prefix match,RESOLVED FIXED,P3 enhancement
+551478,unhandled event loop exception,NEW,P3 normal
+551479,validator incorrectly flag conditionally declare class php error,CLOSED FIXED,P3 normal
+551480,module require,RESOLVED FIXED,P3 normal
+551481,many error report,NEW,P3 normal
+551482,jep switch expressions,NEW,P3 normal
+551483,jep helpful nullpointerexceptions,NEW,P3 normal
+551484,machine,RESOLVED FIXED,P3 major
+551485,release activities,NEW,P3 normal
+551486,create,NEW,P3 normal
+551487,update bundle versions dependency versions,NEW,P3 normal
+551488,create java,NEW,P3 normal
+551489,java api doc add jre library,NEW,P3 normal
+551490,start create build,NEW,P3 normal
+551491,remove beta compiler preference page compliance dropdown,ASSIGNED,P3 normal
+551492,investigate api tool new java version current asm,NEW,P3 normal
+551493,allow jdt target java compiler preferences,ASSIGNED,P3 enhancement
+551494,improve usability look feel eclipse,NEW,P3 normal
+551495,configure gerrit build,NEW,P3 normal
+551496,remove jcp disclaimers ui marketplace,NEW,P3 normal
+551497,create examples wiki page,NEW,P3 normal
+551498,expression box update type,RESOLVED DUPLICATE of bug 550606,P3 major
+551499,request real shell,CLOSED WONTFIX,P3 normal
+551500,remove disclaimers jdt debug code base merge beta branch master,NEW,P3 normal
+551501,curl command fail job,CLOSED FIXED,P3 blocker
+551502,component map arraycopy index bound,NEW,P3 normal
+551503,add execution environment,RESOLVED FIXED,P3 normal
+551504,launch java show compatible jre java,NEW,P3 normal
+551505,import never use use phpdoc type,CLOSED FIXED,P3 enhancement
+551506,git stag update add index,RESOLVED FIXED,P3 major
+551507,project antenna request eclipse project website,REOPENED,P3 normal
+551508,cheese compare editor,NEW,P3 normal
+551509,minor layout inconsistencies compare editor,NEW,P3 minor
+551510,eclipse lambda show suggestions,RESOLVED INVALID,P3 enhancement
+551511,typo lib webpage,CLOSED FIXED,P3 minor
+551512,label representation need translate sirius translator,NEW,P3 normal
+551513,automatically dark theme base os lead null theme rcp apps,RESOLVED FIXED,P3 normal
+551514,antenna project activate github page,CLOSED FIXED,P3 normal
+551515,project job deploy ossrh stag,NEW,P3 normal
+551516,unnesseray remain end stream successful,CLOSED FIXED,P3 normal
+551517,nullpointerexception validation extension point define give engine,CLOSED FIXED,P3 normal
+551518,instal rtc plugin cause install software connection problems,CLOSED NOT_ECLIPSE,P3 normal
+551519,,RESOLVED FIXED,P3 normal
+551520,syntax color option persist,NEW,P3 normal
+551521,property tester contribute property type class,CLOSED DUPLICATE of bug 551414,P3 normal with 1 vote
+551522,able force update update site target editor edit software site,NEW,P3 normal
+551523,update eclipse documentation section,NEW,P3 normal
+551524,scrollablethumbnail behave wrong macos,NEW,P3 normal
+551525,move restart notificationmanager,RESOLVED WONTFIX,P3 normal
+551526,nothing build source output folder delete file system,NEW,P3 normal
+551527,incorrect feature license entries cause rely old version share license feature,RESOLVED FIXED,P3 normal
+551528,system explorer show update resource name,CLOSED FIXED,P3 normal
+551529,script approvals test autogen job,CLOSED FIXED,P3 normal
+551530,nullpointerexception checkbox use internationalization,ASSIGNED,P3 normal
+551531,use two evl file specify validation rule metamodel execute rule one,UNCONFIRMED,P3 normal
+551532,fix section dark theme,RESOLVED FIXED,P3 normal
+551533,provider gcc compiler break indexer mess include order,NEW,P3 normal
+551534,delete line stop work workspace open second time,NEW,P3 normal
+551535,refactor applycssproperty use fast return less nest ifs,RESOLVED FIXED,P3 normal
+551536,shorter workspace lock text,RESOLVED FIXED,P3 normal
+551537,delay show previous choices find action,NEW,P3 normal
+551538,shorter text,VERIFIED FIXED,P3 normal
+551539,select deselect git stag view viewer,RESOLVED FIXED,P3 normal
+551540,epsilon quick fix show xtext editor,UNCONFIRMED,P3 normal
+551541,,UNCONFIRMED,P3 normal
+551542,avoid handle nullpointerexception,RESOLVED FIXED,P3 normal
+551543,cdt bot account npmjs,NEW,P3 normal
+551544,delay startup,NEW,P3 normal
+551545,adopt new orbit ant,RESOLVED FIXED,P3 normal
+551546,build fail due unresolved dependencies,CLOSED DUPLICATE of bug 533801,P3 normal
+551547,library sign,NEW,P3 normal
+551548,fix bad,RESOLVED FIXED,P3 normal
+551549,make bold manifest editor,VERIFIED FIXED,P3 normal
+551550,fix bad,NEW,P3 normal
+551551,icons scale model editor,RESOLVED FIXED,P3 normal
+551552,exception run query editor open,RESOLVED FIXED,P3 normal
+551553,model editor cannot select import fragment via keyboard,RESOLVED FIXED,P3 normal
+551554,maintain role project,CLOSED FIXED,P3 normal
+551555,use shortcut key block comment work properly new version eclipse,NEW,P3 major
+551556,java test run,RESOLVED FIXED,P3 minor
+551557,,RESOLVED FIXED,P3 normal
+551558,test build fail since tablereconciler incorrect,CLOSED FIXED,P3 normal
+551559,resolve dependency,RESOLVED FIXED,P3 normal
+551560,dropdown arrow present folder contain anything inside,NEW,P3 trivial
+551561,indexoutofboundsexception run kernelmemoryusageviewtest,RESOLVED FIXED,P3 normal
+551562,break api,RESOLVED FIXED,P3 normal
+551563,disable cache sql error exist,RESOLVED FIXED,P3 normal
+551564,build failures due miss jre,CLOSED FIXED,P3 normal
+551565,miss,RESOLVED FIXED,P3 normal
+551566,create new table without get switch viewpoint dialog,CLOSED FIXED,P3 normal
+551567,ui freeze open big project,NEW,P3 normal
+551568,strange code discover refactoring,NEW,P3 normal
+551569,locationtech repo,CLOSED WORKSFORME,P3 normal
+551570,two fail linux since,VERIFIED FIXED,P3 normal
+551571,display units preferences,UNCONFIRMED,P3 major
+551572,eclipse freeze indefinitely star postmortem debug session,NEW,P3 normal with 1 vote
+551573,reduce space waste compare editor,NEW,P3 normal
+551574,simplify dark css,RESOLVED FIXED,P3 normal
+551575,enhancement much need like vscode would efficient could option get path need code get image something else project,NEW,P3 enhancement
+551576,always return,RESOLVED FIXED,P3 normal
+551577,disassembly view scroll address column,NEW,P3 normal
+551578,cancel file diff viewer job schedule next one,RESOLVED FIXED,P3 enhancement
+551579,import pom always set project java nature,NEW,P3 normal
+551580,build fail method type must override implement supertype method,RESOLVED FIXED,P3 blocker
+551581,fix file end crlf git repository,RESOLVED FIXED,P3 normal
+551582,history input set twice first enable,RESOLVED FIXED,P3 normal
+551583,jdk home configuration,CLOSED FIXED,P3 normal
+551584,xtext jenkins job dont start,REOPENED,P3 normal
+551585,autoboxing unbox preview verbose exhaustive,NEW,P3 trivial
+551586,call,NEW,P3 normal
+551587,controlcontribution set inside toolitem data,RESOLVED FIXED,P3 enhancement
+551588,performance bad long text,VERIFIED FIXED,P3 major
+551589,add widgets widgetfactories,NEW,P3 normal
+551590,update target platform,CLOSED FIXED,P3 normal
+551591,fix bad,NEW,P3 normal
+551592,status getuncommittedchanges invalid windows,RESOLVED FIXED,P3 major
+551593,miss,RESOLVED FIXED,P3 normal
+551594,miss,RESOLVED FIXED,P3 normal
+551595,miss,RESOLVED FIXED,P3 normal
+551597,eclipse work windows,CLOSED NOT_ECLIPSE,P3 normal
+551598,jpms options render may incorrect,RESOLVED FIXED,P3 normal
+551599,race condition indexer,NEW,P3 normal
+551600,immigration use lazy logical operator,NEW,P3 enhancement
+551601,pass format options compilationunitrewrite,VERIFIED FIXED,P3 normal
+551602,set workspace apply new project project specific settings,NEW,P3 major
+551603,add miss methods abstractcontrolfactory,RESOLVED FIXED,P3 normal
+551604,replace view menu icon,RESOLVED FIXED,P3 enhancement
+551605,design toolbar idocs display macos eclipse wb,NEW,P3 normal
+551606,snapshots repo corrupt,RESOLVED FIXED,P3 normal
+551607,common filter tab use,RESOLVED FIXED,P3 enhancement
+551608,edit code,NEW,P3 normal
+551609,provide easy way eclipse repositories,RESOLVED FIXED,P3 enhancement
+551610,arrayindexoutofboundsexception,NEW,P3 normal
+551611,return true rcp app dark mode,NEW,P3 normal
+551612,stop work,NEW,P3 normal
+551613,error popup show everytime file open ide,CLOSED NOT_ECLIPSE,P3 normal
+551614,immigration use directly map method,NEW,P3 enhancement
+551615,optimize preference recorder button dark theme,CLOSED DUPLICATE of bug 551069,P3 normal
+551616,java support jdt ui,NEW,P3 normal
+551617,button jdt ui core root bug bugzilla script,RESOLVED FIXED,P3 enhancement
+551618,unsatisfield link error linux error macosx,NEW,P3 blocker
+551619,simrel aggregator build fail,CLOSED FIXED,P3 normal
+551620,feature view block main thread minutes,RESOLVED FIXED,P3 major
+551621,bug run,NEW,P3 normal
+551622,assert format php code inline html code,CLOSED FIXED,P3 normal
+551623,key bind conflict,NEW,P3 normal
+551624,recursive loop events,VERIFIED FIXED,P3 critical
+551625,provide extension point manage custom uri client side,UNCONFIRMED,P3 normal
+551626,target editor code completion list prefix match first,NEW,P3 normal
+551627,enable list github issue new release,CLOSED DUPLICATE of bug 506847,P3 normal
+551628,wizards hide via cause parent category flash open close initial click,NEW,P3 normal
+551629,view show correctly advices elementtypes,CLOSED FIXED,P3 normal
+551630,support standalone deployment outside eclipse,NEW,P3 normal
+551631,config file parse error float module parameter expressions,CLOSED FIXED,P3 normal
+551632,formatter correctly handle static keyword lambda arrow function,CLOSED FIXED,P3 normal
+551633,request ci server eclipse hawk,CLOSED FIXED,P3 normal
+551634,fragment import sharedelements late,NEW,P3 normal
+551635,run eclipse without bug,CLOSED WORKSFORME,P3 normal
+551636,please create git repository website,RESOLVED FIXED,P3 normal
+551637,please update description,RESOLVED FIXED,P3 normal
+551638,remove file try simulate manifest header platform,RESOLVED FIXED,P3 normal
+551639,ease jiro content security policy,CLOSED WONTFIX,P3 normal
+551640,show screenshots first page list,NEW,P3 normal
+551641,error update eclipse marketplace,NEW,P3 enhancement
+551642,set preference store already set,RESOLVED FIXED,P3 enhancement
+551643,invalidquerykeyinexpression error access collection due querykeyexpression object get modify previously code execute join query,NEW,P3 normal
+551644,posix sercom several issue,CLOSED FIXED,P3 normal
+551645,run gerrit test recent java version,RESOLVED FIXED,P3 normal
+551646,miss credentials,CLOSED FIXED,P3 normal
+551647,arrayindexoutofboundsexception publish products,NEW,P3 major
+551648,versions increase need since java branch merge,VERIFIED FIXED,P3 normal
+551649,unable use workspace resolution latest versions everything,UNCONFIRMED,P3 major
+551650,xtext build fail project cyclic dependency,NEW,P3 normal
+551651,empty row implicitly remove,CLOSED DUPLICATE of bug 542614,P3 normal
+551652,null pointer instal eclipse ide,NEW,P3 blocker
+551653,cleanup job able delete resources,CLOSED FIXED,P3 normal
+551654,ui freeze several minutes projectviewer,CLOSED DUPLICATE of bug 551588,P3 normal
+551655,cursor jump begin textfield render eint value,NEW,P3 normal
+551656,removal incubation logo,RESOLVED FIXED,P3 normal
+551657,text block properly close,RESOLVED FIXED,P3 normal
+551658,update java usage,RESOLVED FIXED,P3 normal
+551659,service find evaluation trigger evalutationexception,NEW,P3 normal
+551660,validation error undo still present,NEW,P3 normal
+551661,replace self make text box usage hint setmessage filter dialog,VERIFIED FIXED,P3 minor
+551662,use varargs,NEW,P3 normal
+551663,validation error git revert still present,NEW,P3 normal
+551664,unsupported value configuration key,RESOLVED FIXED,P3 normal with 1 vote
+551665,mdm user login issue user windows server,CLOSED FIXED,P3 major
+551666,wrong selection dialog initialize text,VERIFIED FIXED,P3 minor
+551667,fix javadoc errors eclipseui,NEW,P3 normal
+551668,eclipse light theme toolbar css work,NEW,P3 major with 1 vote
+551669,allow dialog specify getters setters,NEW,P3 normal
+551670,single point plot daxis incorrectly position,RESOLVED FIXED,P3 normal
+551671,point style provider bug,RESOLVED FIXED,P3 normal
+551672,birt crosstab report export xlsx display empty cells,NEW,P3 normal
+551673,package accessible one,NEW,P3 normal
+551674,gerrit build fail,CLOSED FIXED,P3 blocker
+551675,minor axis code refactor,RESOLVED FIXED,P3 normal
+551676,update dynamic java work set even though,NEW,P3 normal
+551677,gpf crash open editor,CLOSED DUPLICATE of bug 551067,P3 normal
+551678,update,RESOLVED FIXED,P3 enhancement
+551679,executable flag vanish use stag view diff view,RESOLVED FIXED,P3 normal
+551680,xss query param webapp war file,RESOLVED FIXED,P3 major
+551681,,RESOLVED FIXED,P3 normal
+551682,locationtech nexus repo fail available last five nightly geomesa build,CLOSED FIXED,P3 normal
+551683,please increase number concurrent build,CLOSED FIXED,P3 normal
+551684,update feature story ece,RESOLVED FIXED,P3 normal
+551685,frequent freeze broadway,NEW,P3 normal
+551686,naiveastflattener miss space extend operands infixexpression,NEW,P3 normal with 1 vote
+551687,odd ivy antrun failure custom container,CLOSED FIXED,P3 normal
+551688,crash double click jbutton jframe,NEW,P3 blocker with 1 vote
+551689,return false equivalent literals,RESOLVED FIXED,P3 normal
+551690,accesscontrolexception trigger securitymanager instal,NEW,P3 normal
+551691,give admin right eclipse organization dockerhub,NEW,P3 normal
+551692,probable,RESOLVED WONTFIX,P3 minor
+551693,rethink return value behaviour,RESOLVED FIXED,P3 normal
+551694,miss events open ftrace file,NEW,P3 normal
+551695,fix endline encode repository file,NEW,P3 normal
+551696,add github repository codacy github app instal eclipse account,RESOLVED FIXED,P3 major
+551697,replace something meaningful,RESOLVED FIXED,P3 normal
+551698,enable tycho strict src include,RESOLVED FIXED,P3 normal
+551699,enable github integration gitter,CLOSED FIXED,P3 normal
+551700,fix package issue,NEW,P3 normal
+551701,,RESOLVED FIXED,P3 normal
+551702,option miss context menu debug view,NEW,P3 major
+551703,job fail,CLOSED FIXED,P2 blocker
+551704,github credentials,NEW,P3 major
+551705,pomless tycho support,CLOSED DUPLICATE of bug 487341,P3 normal
+551706,ci instance stop run job,REOPENED,P3 critical
+551707,use color consistently,RESOLVED FIXED,P3 normal
+551708,auto complete crash eclipse eclipse installer also crash error,NEW,P3 critical
+551709,enable repo default,NEW,P3 normal
+551710,move,NEW,P3 normal
+551711,avoid strong bind launcher,NEW,P3 normal
+551712,provide osgi capability mark bundle provide native lib,NEW,P3 normal
+551713,virgo build downloadvirgobuildtools archive zip archive,CLOSED FIXED,P3 normal
+551714,provide native launcher bundle similar native library,NEW,P3 normal
+551715,eclipse ide cannot reset line height input method editor change,NEW,P3 normal
+551716,build start linux tool jipp,CLOSED FIXED,P3 normal
+551717,install vs code dependencies onto codewind agent,CLOSED FIXED,P3 normal
+551718,full support,CLOSED DUPLICATE of bug 490406,P3 normal
+551719,use actual check button refspecpanel,RESOLVED FIXED,P3 enhancement
+551720,add support feature,NEW,P3 normal
+551721,pls restart zlinux nod,CLOSED FIXED,P3 normal
+551722,allow committers restart jenkins nod,CLOSED FIXED,P3 normal
+551723,update widget children,NEW,P3 normal
+551724,dead key combinations longer work,NEW,P3 critical with 1 vote
+551725,jgit build job start unix epoch,CLOSED FIXED,P3 normal
+551726,redundant type remove type compiler need,NEW,P3 normal
+551727,create larger button close welcome screen,CLOSED FIXED,P3 minor
+551728,move,VERIFIED FIXED,P3 normal
+551729,take account project open,NEW,P3 normal
+551730,open file project explorer,NEW,P3 normal
+551731,install,CLOSED FIXED,P3 normal
+551732,aspectj internal compiler error,NEW,P3 normal
+551733,cannot push model repository,CLOSED FIXED,P3 normal
+551734,java editor show garbage,NEW,P3 normal
+551735,svg image use style background color compute,RESOLVED FIXED,P3 normal
+551736,library example contain folders,RESOLVED FIXED,P3 normal
+551737,architecture file provide valid,RESOLVED FIXED,P3 normal
+551738,change versioning approach independent versioned submodules common version,CLOSED WONTFIX,P3 normal
+551739,return map instead list,RESOLVED FIXED,P3 blocker
+551740,must check representation reference viewpoint,NEW,P3 major
+551741,birt reportdesigner,NEW,P3 normal
+551742,test build fail,CLOSED FIXED,P3 normal
+551743,nullpointerexception nulled shutdown,RESOLVED FIXED,P3 normal
+551744,flaky,NEW,P3 normal
+551745,revise ioconsolepartitioner output append,REOPENED,P3 normal
+551746,problems new version eclipse,NEW,P3 major
+551748,increase default parallel pull request set,RESOLVED FIXED,P3 enhancement
+551749,application model editor allow create compositepart inside snippets,NEW,P3 normal
+551750,application model add partsash composite part create another compositepart,RESOLVED FIXED,P3 normal
+551751,propose change sla,NEW,P3 normal
+551752,replace deprecate gtimeval function arguments,NEW,P3 normal
+551753,fix break link,NEW,P3 normal
+551754,,NEW,P3 normal
+551755,linux view toolbar size layout problem,NEW,P3 normal
+551756,appear option create new method code template,NEW,P3 normal
+551757,class creation wizard generate,NEW,P3 normal
+551758,define compile c,NEW,P3 normal
+551759,stop build,RESOLVED FIXED,P3 normal
+551760,reprots error status,CLOSED FIXED,P3 normal
+551761,bug automatic getter generation name,NEW,P3 minor
+551762,javadoc image overscaling,NEW,P3 normal
+551763,update platform jetty,RESOLVED FIXED,P3 normal
+551764,possible disable listener part stack,NEW,P3 normal
+551765,jenkins instance keep lastsuccessfulbuild number,CLOSED NOT_ECLIPSE,P3 normal
+551766,eclipse emf,RESOLVED FIXED,P3 normal
+551767,update prereqs ecf,RESOLVED WORKSFORME,P3 normal
+551768,eclipse orbit,RESOLVED FIXED,P3 normal
+551769,incorrect context menu latest open diagram,UNCONFIRMED,P3 major with 2 votes
+551770,semantic highligting preferences save,CLOSED DUPLICATE of bug 443373,P3 normal
+551771,gnome dark theme eclipse light theme,NEW,P3 normal
+551772,move openshift cluter,NEW,P3 normal
+551773,move sign service proxy build openshift,NEW,P3 normal
+551774,null argument tasklistindex constructor,CLOSED DUPLICATE of bug 548640,P3 normal
+551775,move openshift,NEW,P3 normal
+551776,java support part,NEW,P3 normal
+551777,ossrh setup project hawk,NEW,P3 normal
+551778,keyple unable access,RESOLVED FIXED,P3 normal
+551779,lead display widget,RESOLVED FIXED,P3 enhancement
+551780,segmentation fault cause universal charstring,CLOSED FIXED,P3 normal
+551781,change return type,RESOLVED FIXED,P3 normal
+551782,startup error convert work set older workspce,VERIFIED WORKSFORME,P3 normal
+551783,hope respond soon,CLOSED NOT_ECLIPSE,P3 normal
+551784,orbit build job stick wait available executor,CLOSED FIXED,P3 normal
+551785,create release record,RESOLVED FIXED,P3 normal
+551786,internal var property sheet show comment arraysize column,CLOSED FIXED,P3 major
+551787,upgrade collapsible button project java,RESOLVED FIXED,P3 minor
+551788,upgrade format project java,RESOLVED FIXED,P3 normal
+551789,upgrade gallery project java,RESOLVED FIXED,P3 normal
+551790,upgrade oscilloscope project java,RESOLVED FIXED,P3 normal
+551791,upgrade paginationcontrol project java,RESOLVED FIXED,P3 normal
+551792,upgrade picturecontrol project java,RESOLVED FIXED,P3 normal
+551793,upgrade pshelf project java,RESOLVED FIXED,P3 normal
+551794,upgrade xviewer project java,RESOLVED FIXED,P3 normal
+551795,upgrade treemapper project java,RESOLVED FIXED,P3 normal
+551796,geotrellis commiter anymore,RESOLVED FIXED,P3 normal
+551797,text area border miss,NEW,P3 normal
+551798,upgrade asm orbit,RESOLVED FIXED,P3 normal
+551799,deadlock scr start level thread thread,RESOLVED NOT_ECLIPSE,P3 normal
+551800,attach remotely jvm eclipse become,NEW,P3 major
+551801,codan test case syntax errors,NEW,P3 minor
+551802,problem delete line,NEW,P3 normal
+551803,npe open edit file,NEW,P3 normal
+551804,spinner model stick,NEW,P3 major
+551805,fix notexpression,RESOLVED FIXED,P3 normal
+551806,class miss jar,UNCONFIRMED,P3 normal
+551807,javadoc hover miss method signature,NEW,P3 normal
+551808,please enable file upload agileuml eclipse github repository,NEW,P3 normal
+551809,wrong highlight,CLOSED DUPLICATE of bug 488754,P3 trivial
+551810,eclipse ibuild,RESOLVED FIXED,P3 blocker
+551811,add walk create file exist project easily,CLOSED DUPLICATE of bug 531346,P3 enhancement
+551812,change button,CLOSED INVALID,P3 normal
+551813,switch branch via quick assist,CLOSED WONTFIX,P3 enhancement
+551814,flatmap prefer map enter content assist,CLOSED DUPLICATE of bug 506804,P3 normal
+551815,entity aggregate field set null change null aggregate field eclipselink execute bogus sql update statement,NEW,P3 normal
+551816,receive invite organization github,RESOLVED WORKSFORME,P3 normal
+551817,miss cdt plugins,NEW,P3 blocker
+551818,invalid link,RESOLVED FIXED,P3 normal
+551819,gitflow start release commit history view break,RESOLVED FIXED,P3 normal
+551820,update version,NEW,P3 normal
+551821,translate xviewer french,RESOLVED FIXED,P3 enhancement
+551822,rationalize,NEW,P3 normal
+551823,search view work properly search,RESOLVED INVALID,P3 critical
+551824,toolitem provide meaningful,RESOLVED FIXED,P3 enhancement
+551825,argv populate,CLOSED FIXED,P3 normal
+551826,attribute scope search generous,RESOLVED FIXED,P3 normal
+551827,redo undo work,NEW,P3 normal
+551828,eclipse break,CLOSED INVALID,P3 normal
+551829,typo mandatory style property page,NEW,P3 normal
+551830,add java completions java,CLOSED FIXED,P3 normal
+551831,databinding support command action,NEW,P3 normal
+551832,migrate cje jipp instance jiro,NEW,P3 normal
+551833,migration bridgeiot jipp jiro,CLOSED FIXED,P3 normal
+551834,migration ca jipp jiro,ASSIGNED,P3 normal
+551835,migration cognicrypt jipp jiro,ASSIGNED,P3 normal
+551836,migration cu jipp jiro,ASSIGNED,P3 normal
+551837,migration ejb jipp jiro,ASSIGNED,P3 normal
+551838,migration el jipp jiro,ASSIGNED,P3 normal
+551839,migration epf jipp jiro,ASSIGNED,P3 normal
+551840,migration es jipp jiro,ASSIGNED,P3 normal
+551841,migration glassfish jipp jiro,NEW,P3 normal
+551842,migration interceptors jipp jiro,ASSIGNED,P3 normal
+551843,migration jacc jipp jiro,NEW,P3 normal
+551844,migration jaf jipp jiro,ASSIGNED,P3 normal
+551845,migration jipp jiro,ASSIGNED,P3 normal
+551846,migration jipp jiro,ASSIGNED,P3 normal
+551847,add table figure concept document structure,CLOSED FIXED,P3 normal
+551848,click news item body redirect wrong target,RESOLVED FIXED,P3 normal
+551849,assign resource pack project cdt,CLOSED FIXED,P3 normal
+551850,jgit modify,NEW,P3 normal with 2 votes
+551851,error message useless,NEW,P3 major
+551852,ptp display,NEW,P3 normal
+551853,customize error overlay icon tree master view via template model work,NEW,P3 normal
+551854,signature validation problem ossrh,CLOSED FIXED,P3 normal
+551855,add mapper tableoffigures,CLOSED FIXED,P3 normal
+551856,distinguish methods,VERIFIED FIXED,P3 normal
+551857,,RESOLVED FIXED,P3 normal
+551858,migration jaspic jipp jiro,ASSIGNED,P3 normal
+551859,engines selectable shell view,CLOSED FIXED,P3 normal
+551860,migration jaxb jipp jiro,ASSIGNED,P3 normal
+551861,update project setup,ASSIGNED,P3 normal
+551862,migration jipp jiro,ASSIGNED,P3 normal
+551863,migration jaxrs jipp jiro,ASSIGNED,P3 normal
+551864,migration jaxws jipp jiro,ASSIGNED,P3 normal
+551865,migration jca jipp jiro,ASSIGNED,P3 normal
+551866,migration jersey jipp jiro,ASSIGNED,P3 normal
+551867,migration jms jipp jiro,ASSIGNED,P3 normal
+551868,use java api,ASSIGNED,P3 normal
+551869,migration jpa jipp jiro,ASSIGNED,P3 normal
+551870,codeactions display correctly generic editor,NEW,P3 normal
+551871,migration json bind jipp jiro,ASSIGNED,P3 normal
+551872,migration json process jipp jiro,ASSIGNED,P3 normal
+551873,migration jsp jipp jiro,ASSIGNED,P3 normal
+551874,provide slack integration,CLOSED FIXED,P3 normal
+551875,migration jstl jipp jiro,ASSIGNED,P3 normal
+551876,migration jta jipp jiro,ASSIGNED,P3 normal
+551877,migration keyple jipp jiro,ASSIGNED,P3 normal
+551878,migration krazo jipp jiro,CLOSED FIXED,P3 normal
+551879,migration kuksa jipp jiro,NEW,P3 normal
+551880,migration liibra jipp jiro,NEW,P3 normal
+551881,migration mail jipp jiro,NEW,P3 normal
+551882,invalid receiver type class subtype implementation type interface,NEW,P3 normal
+551883,migration metro jipp jiro,NEW,P3 normal
+551884,migration mojarra jipp jiro,NEW,P3 normal
+551885,migration openmq jipp jiro,NEW,P3 normal
+551886,migration orb jipp jiro,NEW,P3 normal
+551887,migration servlet jipp jiro,NEW,P3 normal
+551888,migration soteria jipp jiro,NEW,P3 normal
+551889,cannot unbind rebind rebind copy,CLOSED DUPLICATE of bug 552010,P3 minor
+551890,migration sprotty jipp jiro,NEW,P3 normal
+551891,migration stem jipp jiro,NEW,P3 normal
+551892,migration jipp jiro,NEW,P3 normal
+551893,migration umlgen jipp jiro,NEW,P3 normal
+551894,migration websocket jipp jiro,NEW,P3 normal
+551895,migration yasson jipp jiro,NEW,P3 normal
+551896,migration xacc jipp jiro,NEW,P3 normal
+551897,migration wildwebdeveloper jipp jiro,CLOSED FIXED,P3 normal
+551898,shut aeri,RESOLVED FIXED,P3 normal
+551899,performance test bug fluctuate ci,RESOLVED FIXED,P3 normal
+551900,performance group unbreakable group break reorder hide edge,RESOLVED FIXED,P3 normal
+551901,unspecified organization name display,RESOLVED FIXED,P3 normal
+551902,debug relate test dnf,VERIFIED FIXED,P3 major
+551903,rdp kill eclipse,NEW,P3 critical
+551904,concurrentmodificationexception query modules,CLOSED FIXED,P3 normal
+551905,unnecessary,RESOLVED WORKSFORME,P3 normal
+551906,moka provide better user feedback exception due bad model,CLOSED FIXED,P3 normal
+551907,access violation,CLOSED DUPLICATE of bug 551067,P3 critical
+551908,eclipse emf,RESOLVED FIXED,P3 normal
+551909,update prereqs ecf,RESOLVED FIXED,P3 normal
+551910,eclipse orbit,RESOLVED FIXED,P3 normal
+551911,short ui freeze shortly save,NEW,P3 normal
+551912,allow define forte base class classdef attribute,CLOSED FIXED,P3 normal
+551913,invalid method x must override implement supertype method,NEW,P3 normal
+551914,subcontributionitem maintain visible state,NEW,P3 enhancement
+551915,editable,NEW,P3 major
+551916,add api create tableoffigures libreoffice document,RESOLVED FIXED,P3 normal
+551917,nullpointexception call,CLOSED FIXED,P3 normal
+551918,checksum download site match download file,RESOLVED FIXED,P3 normal
+551919,initial workspace selector window small,NEW,P3 normal
+551920,serve website subfolder,RESOLVED FIXED,P3 normal
+551921,rewritejar task fail windows,CLOSED FIXED,P3 normal
+551922,allow quickassistassistant reinvoked already default,RESOLVED FIXED,P3 enhancement
+551923,dispose exception,RESOLVED FIXED,P3 normal
+551924,configuration problem maven,RESOLVED FIXED,P3 normal
+551925,rmiregistrymanager overwrite task name launch r console,CLOSED FIXED,P3 normal
+551926,postfix completion create new variable,RESOLVED INVALID,P3 normal
+551927,switch eclipse tlp gerrit,CLOSED FIXED,P3 normal
+551928,use shorter exit eclipse sdk text,RESOLVED FIXED,P3 normal
+551929,eclipse compiler show error construct diamond inference,NEW,P3 normal
+551930,cannot sign gpg within custom container,CLOSED FIXED,P3 normal
+551931,refactor variabledeclarationfix use,RESOLVED FIXED,P3 normal
+551932,handle,NEW,P3 critical
+551933,allow use templatestore friends,NEW,P3 normal
+551934,latency vs time legend match symbols,RESOLVED FIXED,P3 normal
+551935,replace usage deprecate,ASSIGNED,P3 normal
+551936,find,RESOLVED FIXED,P3 blocker
+551937,cant run program,RESOLVED INVALID,P3 blocker
+551938,launch config dialog maven runtime,RESOLVED FIXED,P3 normal
+551939,field edit environment variables small hard multiple users edit,NEW,P3 enhancement
+551940,input textfield show expressions,CLOSED DUPLICATE of bug 551404,P3 normal
+551941,occurrences annotations color dark theme aware,NEW,P3 normal
+551942,record preview error code api,NEW,P3 normal
+551943,javadoc miss java versions,NEW,P3 normal
+551944,remove usage declarative service basictopologymanager,RESOLVED FIXED,P3 normal
+551945,support keyboard shortcut select items,RESOLVED WONTFIX,P3 normal
+551946,remote host identification change use egit nightly apache http,CLOSED INVALID,P3 normal
+551947,eclipse occasionally,CLOSED DUPLICATE of bug 551067,P3 normal
+551948,text block new escape sequence,NEW,P3 normal
+551949,jipp request project eclipse iot package,REOPENED,P3 normal
+551950,freetextindexer cannot deactivate,CLOSED FIXED,P3 normal
+551951,shortcuts work start upgrade,NEW,P3 normal
+551952,file selection page current wizards new enable even last onehat last page,RESOLVED FIXED,P3 enhancement
+551953,debug shell evaluate mac,NEW,P3 normal
+551954,implement benchmarx example,NEW,P3 normal
+551955,warn,RESOLVED FIXED,P3 normal
+551956,support,NEW,P3 normal
+551957,two fail since,RESOLVED FIXED,P3 normal
+551958,add parent pom spring boot project releng,RESOLVED FIXED,P3 normal
+551959,outgo change mark correctly project explorer,NEW,P3 critical
+551960,assertion failure mementoed eclipse crash nest eclipse launch,NEW,P3 normal
+551961,,RESOLVED FIXED,P3 normal
+551962,able find documentation eclipse foundation jenkins configuration sonarcloud,CLOSED FIXED,P3 normal
+551963,work java support jdt ui,ASSIGNED,P3 enhancement
+551964,grant access project storage service jenkins instance project reddeer,CLOSED WORKSFORME,P3 normal
+551965,tabs garble fresh install,CLOSED NOT_ECLIPSE,P3 normal
+551966,allow subgraph without init transition,RESOLVED FIXED,P3 normal
+551967,add customize perspective contain suitable,NEW,P3 enhancement
+551968,update spring boot,CLOSED FIXED,P3 normal
+551969,npe possibility save,NEW,P3 major
+551970,show quick text search result directly find action,RESOLVED FIXED,P3 enhancement
+551971,report render mat,NEW,P3 major
+551972,timestamps jiro,CLOSED WORKSFORME,P3 normal
+551973,npe array parameters,RESOLVED FIXED,P3 normal
+551974,defaultbundlereader manifest cache small,RESOLVED FIXED,P3 normal with 1 vote
+551975,segment highlight filter scatter chart,RESOLVED FIXED,P3 normal
+551976,open diagram feature open notation editor,CLOSED FIXED,P3 normal
+551977,ds annotations,NEW,P3 normal
+551978,,NEW,P3 normal
+551979,trademark approval require eclipse supervisory control toolkit,RESOLVED FIXED,P3 normal
+551980,mentor require eclipse supervisory control toolkit,NEW,P3 normal
+551981,alternative license approval eclipse supervisory control toolkit,NEW,P3 normal
+551982,nothing render create new gc canvas,RESOLVED FIXED,P3 normal
+551983,eclipse ui freeze randomly select text jsp editor,NEW,P3 major
+551984,formatter support jep text block ui,RESOLVED FIXED,P3 normal
+551985,return text block align accord formatter settings,RESOLVED FIXED,P3 normal
+551986,advance source lookup disable java,RESOLVED FIXED,P3 normal
+551987,declare,RESOLVED FIXED,P3 normal
+551988,update base builder build,RESOLVED FIXED,P3 normal
+551989,access restriction,CLOSED FIXED,P3 normal
+551990,update minimum dependency version,RESOLVED FIXED,P3 normal
+551991,two different git import wizards,NEW,P3 enhancement
+551992,would useful add indent range something,NEW,P3 normal
+551993,need know detail basic feature relate mdm,UNCONFIRMED,P3 major
+551994,username empty gerrit push,RESOLVED FIXED,P3 normal
+551995,unable link opc ua share library,NEW,P3 normal
+551996,api tool improvements pde,RESOLVED FIXED,P3 normal
+551997,feature view enhancements,NEW,P3 normal
+551998,quickaccessdialogtest testpreviouschoicesavailable junit test fail mac windows,NEW,P3 normal
+551999,tableeditor move cell,NEW,P3 normal
+552000,move,RESOLVED FIXED,P3 normal
+552001,jipp jemo,CLOSED FIXED,P3 normal
+552002,deployment maven central fail,CLOSED NOT_ECLIPSE,P3 normal
+552003,java miss instal,NEW,P3 normal
+552004,weaken version constraint dependency,UNCONFIRMED,P3 normal
+552005,project explorer emptyworkspacehelper extensible break projectexplorer extensibility,NEW,P3 normal
+552006,copy paste resource set change notation serialization,NEW,P3 normal
+552007,noclassdeffounderror hierarchyresolver,RESOLVED NOT_ECLIPSE,P3 normal
+552008,strange behaviour cursor use font text editor font,NEW,P3 normal
+552009,negativearraysizeexception parse huge heap dump,NEW,P3 normal
+552010,bind get duplicate change multiple time,VERIFIED FIXED,P3 major
+552011,feature,ASSIGNED,P3 enhancement
+552012,javadoc format break code,NEW,P3 major
+552013,eclipse follow redirect proxies set specifically try install update plugins,NEW,P3 major
+552014,input problem fix width console ime,NEW,P3 normal
+552015,stream close notification send late input connect file,RESOLVED FIXED,P3 normal
+552016,,NEW,P3 normal
+552017,,RESOLVED FIXED,P3 normal
+552018,update target platform,NEW,P3 normal
+552019,timeout upload vorto artifacts,CLOSED NOT_ECLIPSE,P3 major
+552020,replace navigator project explorer show,RESOLVED FIXED,P3 normal
+552021,replace navigator project explorer show,RESOLVED FIXED,P3 normal
+552022,delete outdated mwe update sit,CLOSED FIXED,P3 normal
+552023,project explorer allow resource rename within java source folders,NEW,P3 normal
+552024,registrations templatevariableresolvers locate different place,NEW,P3 normal
+552025,umlx coverage diagram,NEW,P3 enhancement
+552026,contain information press button,NEW,P3 enhancement
+552027,ensure viatra runtime work correctly without guava,NEW,P3 normal
+552028,warn open resource package,NEW,P3 normal
+552029,emfforms editor unable open resource custom content type parser register,NEW,P3 normal
+552030,improvements eclipse console,NEW,P3 enhancement
+552031,menu launch gendoc wizard papyrus available context,RESOLVED FIXED,P3 normal
+552032,implement event handler,NEW,P3 normal
+552033,framework must provide way create paragraph eattribute estring,NEW,P3 normal
+552034,framework must provide way create paragraph stereotype property estring another,NEW,P3 normal
+552035,unhelpful list index,NEW,P3 minor
+552036,generation parameters scalartype double set correctly implicitlinear implicitsaw,CLOSED FIXED,P3 normal
+552037,generate classpath argument file use quote launch fail,VERIFIED FIXED,P3 major
+552038,allow project specific settings repository,NEW,P3 normal
+552039,model blank name open properly,RESOLVED FIXED,P3 normal
+552040,add content support specification project handbook,NEW,P3 normal
+552041,keydown event wrong keycode layouts,NEW,P3 normal with 1 vote
+552042,export javascript code style formatter cleanup preference profile similar java code style formatter export,CLOSED WORKSFORME,P3 enhancement
+552043,rollback cdotransaction notify adapter properly,RESOLVED FIXED,P3 normal
+552044,stack overflow internal error java ast,NEW,P3 normal
+552045,datamodel methods specify xsd file generate accessor clases,NEW,P3 normal
+552046,npe find action quick access click search help,VERIFIED FIXED,P3 normal
+552047,status bar display appearance show status bar,NEW,P3 normal
+552048,add support git wire protocol,NEW,P3 normal
+552049,interfaces suppress javadoc generate setters use wrong parameter name,RESOLVED FIXED,P3 normal
+552050,data type primitive type conversion delegate generate bad code default literal null,RESOLVED FIXED,P3 normal
+552051,new set etrice model wizard produce incorrect model,RESOLVED FIXED,P3 normal
+552052,upgrade jacoco orbit,ASSIGNED,P3 normal
+552053,eclipse foundation account employer change,VERIFIED FIXED,P3 major
+552054,text block delimiter auto close enter,NEW,P3 normal
+552055,cannot extract text block method,RESOLVED FIXED,P3 normal
+552056,error save,NEW,P3 critical
+552057,run line work text block debug,RESOLVED FIXED,P3 normal
+552058,unable add breakpoint text block,RESOLVED DUPLICATE of bug 551657,P3 normal
+552059,enable protect branch delete head,CLOSED FIXED,P3 normal
+552060,,NEW,P3 normal
+552061,breakpoint annotation marker occlude error marker,NEW,P3 enhancement
+552062,wsdl wizard strip last character target namespace prefix,NEW,P3 minor
+552063,rcp app menu active launch eclipse,NEW,P3 normal
+552064,swt ole excel embed freeze old excel instance,NEW,P3 normal
+552065,add javadoc widget factories,RESOLVED FIXED,P3 normal
+552066,respect base feature,RESOLVED FIXED,P3 normal
+552067,ecf feature use mix license feature locally define license,ASSIGNED,P3 normal
+552068,javadoc long line split copyright notice differently,NEW,P3 normal
+552069,clarify dialog,RESOLVED FIXED,P3 normal
+552070,build configure correctly error build project,NEW,P3 normal
+552071,problems use new filter icon context menu,RESOLVED FIXED,P3 normal
+552072,debug support java,ASSIGNED,P3 normal
+552073,replace flashlight icon magnifier icon,NEW,P3 normal
+552074,bundle resolve,NEW,P3 normal
+552075,cannot install platform,NEW,P3 major
+552076,false positive warn call virtual methods constructor scope resolution operator use,RESOLVED FIXED,P3 normal
+552077,closeprojectsmissingaftercheckout superfluous newly create branch head,NEW,P3 normal
+552078,update xtext,RESOLVED FIXED,P3 normal
+552079,make conference schedule available giggity,NEW,P3 enhancement
+552080,repo please set use branch,CLOSED FIXED,P3 normal
+552081,test mark fail test,NEW,P3 normal
+552082,type specify explicit target element type cannot apply compiler error annotation generic type declaration return type,NEW,P3 minor
+552083,use select file stag view,NEW,P3 enhancement
+552084,see extra menu,NEW,P3 normal
+552085,never fail call registerasparallelcapable,RESOLVED FIXED,P3 normal
+552086,textual issue textual representation component,ASSIGNED,P3 normal
+552087,avoid create class loaders static initializers,RESOLVED FIXED,P3 normal
+552088,allow framework continue even factories set url,RESOLVED FIXED,P3 normal
+552089,render cross reference combobox,NEW,P3 normal
+552090,add mode condition compare value two mode label,CLOSED FIXED,P3 normal
+552091,gpg credentials provider error unable get passphrase,RESOLVED NOT_ECLIPSE,P3 minor
+552092,syntax color switch expressions work well dark theme,NEW,P3 minor
+552093,remove launcher code,RESOLVED FIXED,P3 normal
+552094,attempt underallocate child gtkprogressbar allocation minimum require size,NEW,P3 normal
+552095,create additional repository,CLOSED FIXED,P3 normal
+552096,work reliably,RESOLVED FIXED,P3 normal
+552097,use elk layout diagram,NEW,P3 normal
+552098,typedmodel analysis,NEW,P3 normal
+552099,please create organisation github host eclipse repositories,CLOSED FIXED,P3 normal
+552100,revamp typedmodel control,NEW,P3 normal
+552101,generation table configuration table work,CLOSED FIXED,P3 normal
+552102,allow exclude package index java property,ASSIGNED,P3 normal
+552103,apply style dialog available css style,UNCONFIRMED,P3 normal
+552104,move menu item open r help view menu console r main menu,NEW,P3 enhancement
+552105,text block indentation preserve run application,RESOLVED FIXED,P3 normal
+552106,remove bind platform,CLOSED FIXED,P3 normal
+552107,error jdt core ast unsupportedoperationexception,RESOLVED FIXED,P3 major
+552108,tree wont expand collapse icon enable hover place arrow tip,NEW,P3 normal
+552109,update web page style,NEW,P3 enhancement
+552110,untyped interface sheet break,CLOSED FIXED,P3 normal
+552111,enhancement calendar datetime constrain make exclude days stylable css,NEW,P3 enhancement
+552112,close delimiter text block add inside method call,RESOLVED FIXED,P3 normal
+552113,use style border node break,NEW,P3 normal
+552114,flukey spurious error,NEW,P3 normal
+552115,papyrus cdo server product build,CLOSED FIXED,P3 normal
+552116,java newer versions longer contain,CLOSED FIXED,P3 normal
+552117,feature version update,RESOLVED FIXED,P3 normal
+552118,feature version update,RESOLVED FIXED,P3 normal
+552119,use edge rout property choose elk layout,RESOLVED FIXED,P3 normal
+552120,xmof generate xdsml project fail,UNCONFIRMED,P3 normal
+552121,defer events issue,UNCONFIRMED,P3 normal
+552122,exception access violation,CLOSED DUPLICATE of bug 551067,P3 normal
+552123,buildship introduce urls classpath,UNCONFIRMED,P3 normal
+552124,job start,NEW,P3 normal
+552125,showinmenu provide command parameters menu contributions,RESOLVED FIXED,P3 normal
+552126,disable remove ci control jipps,CLOSED FIXED,P3 normal
+552127,validationservice validate collection object,CLOSED FIXED,P2 enhancement
+552128,remove system module possible even require,RESOLVED FIXED,P3 enhancement
+552129,dump creation,RESOLVED FIXED,P3 normal
+552130,add encryption capabilities opc ua clients,CLOSED FIXED,P3 enhancement
+552131,console overlap tool,NEW,P3 normal
+552132,text block cause content assist fail,NEW,P3 normal
+552133,releng jipp reachable,REOPENED,P3 major
+552134,miss dependency,RESOLVED FIXED,P3 normal
+552135,releng jipp return code,CLOSED DUPLICATE of bug 552133,P3 normal
+552136,update application term use gdpr,NEW,P3 major
+552137,rap crash browser use dropdown datetime certain way,RESOLVED FIXED,P1 normal
+552138,dynamic weave throw issue,NEW,P3 major
+552139,xml wizard namespace perfix overtake xsd,NEW,P3 major
+552140,nullpointerexception,RESOLVED FIXED,P3 normal
+552141,provide must part test api,NEW,P3 normal
+552142,lose perspectives close initial window last,NEW,P3 normal
+552143,deploy ecj compiler use build,NEW,P3 normal
+552144,filter quick switch editor work correctly,NEW,P3 normal
+552145,restore default work correctly step filter preferences,RESOLVED FIXED,P3 normal
+552146,wrong insertion postfix template,NEW,P3 normal
+552147,request create additional repository,CLOSED FIXED,P3 normal
+552148,break since bug,RESOLVED FIXED,P3 normal
+552149,externalize key display progress monitor changeviewpointselectioncommand,RESOLVED FIXED,P3 normal
+552150,could determine test framework provider,NEW,P3 normal
+552151,add keybindings prefix also keybinding disable latter one,NEW,P3 normal with 5 votes
+552152,button preference page modify selector,NEW,P3 normal with 5 votes
+552153,termination perform even new launch cancel,NEW,P3 enhancement
+552154,miss command scheme properly inherit,NEW,P3 normal with 5 votes
+552155,treeviewer performance issue lazy load content provider,NEW,P3 normal
+552156,unreadable javadoc tooltips use font color theme,NEW,P3 normal
+552157,attempt expand nod string find minify css js file search cause ui stop respond,NEW,P3 normal
+552158,init run command support comment line start,RESOLVED FIXED,P3 normal
+552159,bug,CLOSED DUPLICATE of bug 101420,P3 minor
+552160,npe first parent,NEW,P3 normal
+552161,add plugin jipp project ditto,CLOSED FIXED,P3 normal
+552162,rename,RESOLVED FIXED,P3 normal
+552163,issue drop list right click data definition abap perspective,NEW,P3 normal
+552164,cannot file team synchronise perspective,NEW,P3 normal
+552165,migration releng jipp new ci infrastructure,ASSIGNED,P3 normal
+552166,save syntax problem,NEW,P3 normal
+552167,drop variable oldcontainer unusable drag model,UNCONFIRMED,P3 normal
+552168,duplicate php project,NEW,P3 normal
+552169,fix problem sit,NEW,P3 normal
+552170,check update integration error occur collect items instal better error message,NEW,P3 normal
+552171,remove bind platform,CLOSED WONTFIX,P3 normal
+552172,lower platform dependencies support older versions,CLOSED FIXED,P3 normal
+552173,many open file fetch repos lot refs,NEW,P3 major
+552174,column number ellipsed status bar,CLOSED DUPLICATE of bug 551387,P3 normal
+552175,avoid bean introspection overhead,ASSIGNED,P3 normal
+552176,application model jump list entries,RESOLVED FIXED,P3 normal
+552177,cannot infer type argument diamond instantiation method reference,ASSIGNED,P3 normal
+552178,rust preferences mishandle paths,NEW,P3 normal
+552179,moduleselectiondialog trip project,RESOLVED FIXED,P3 normal
+552180,download section need update,CLOSED FIXED,P3 normal
+552181,restructure bug fix,NEW,P3 normal
+552182,possible cancel command,NEW,P3 normal
+552183,improve compatibility old target platforms,CLOSED FIXED,P3 normal
+552184,project display incorrect statistics graph,RESOLVED FIXED,P3 normal
+552185,bad performance,RESOLVED FIXED,P3 normal
+552186,crash use,CLOSED DUPLICATE of bug 551067,P3 major
+552187,emf regression itemproviders jet templates,CLOSED DUPLICATE of bug 548957,P3 normal
+552188,context menu shop basket display correctly,CLOSED FIXED,P3 minor
+552189,improve eclipse ide description,RESOLVED FIXED,P3 enhancement
+552190,include path remove switch unable recover latest commit file,RESOLVED FIXED,P3 normal
+552191,excessive file access read external annotations,NEW,P3 enhancement
+552192,stop build ruby module,RESOLVED FIXED,P3 normal
+552193,eclipse inter error,NEW,P3 enhancement with 1 vote
+552194,show warn manifest dependencies higher bree bundle,REOPENED,P3 normal
+552195,move codestylecleanup codestylefix jdt core,RESOLVED FIXED,P3 normal
+552196,project cannot run due specify,RESOLVED FIXED,P3 normal
+552197,exception throw navigate cmake tab project properties,NEW,P3 blocker
+552198,nullability analysis fail field,RESOLVED WORKSFORME,P3 normal
+552199,autogenerated work windows mac,NEW,P3 enhancement
+552200,eclipse close without error use windowbuilder,NEW,P3 major
+552201,git configuration issue releng jipp,CLOSED FIXED,P3 blocker
+552202,open eclipse,RESOLVED WONTFIX,P3 critical
+552203,jvm crash click edit cell properties view,CLOSED DUPLICATE of bug 551067,P3 major
+552204,sql console error,CLOSED NOT_ECLIPSE,P3 normal
+552205,incremental build seem work properly tag least,NEW,P3 normal
+552206,feature editor feature selection dialog list feature target platform update sit,NEW,P3 normal
+552207,elements select expression behavior compliant documentation,NEW,P3 normal
+552208,umbrella bug track current keybinding problems,NEW,P3 normal
+552209,tree crash,NEW,P3 normal
+552210,design tab draw due,NEW,P3 normal
+552211,add default cc gemoc bugzilla,NEW,P3 normal
+552212,gradle display page contain invalid value,UNCONFIRMED,P3 major
+552213,character problem windows update,CLOSED DUPLICATE of bug 551724,P3 normal
+552214,aioobe,NEW,P3 normal
+552215,excessive flicker,RESOLVED FIXED,P3 major
+552216,illegalargumentexception compareinputresourceprovider,NEW,P3 normal
+552217,request website iceoryx,RESOLVED FIXED,P3 normal
+552218,delete behaviourexecutionspecification sequence diagram cause uml file,UNCONFIRMED,P3 critical
+552219,memory leak swt browser,NEW,P3 major
+552220,open resource list generic editor,CLOSED WORKSFORME,P3 normal
+552221,support typedmodel instance variables,NEW,P3 normal
+552222,remove obsolete css quick search control,RESOLVED FIXED,P3 normal
+552223,npe click menuitem dispose menu,NEW,P3 critical
+552224,add new member eclipse iot steer committee mail list,RESOLVED FIXED,P3 normal
+552225,fix break build relate bundle whose brees still target,ASSIGNED,P3 normal
+552226,declare github account contributor eclipse keyple project,CLOSED WORKSFORME,P3 normal
+552227,use message find sequence diagram cause lead block diagram elements save reopen,UNCONFIRMED,P3 critical
+552228,,NEW,P3 normal
+552229,trademark approval require eclipse mustang,NEW,P3 normal
+552230,fix relative deadline computation,RESOLVED FIXED,P3 normal
+552231,style apply inside word,NEW,P3 major
+552232,mandatory specify optional field default value record function parameters,CLOSED FIXED,P3 normal
+552233,add quick fix unnecessary array creation,RESOLVED FIXED,P3 normal
+552234,call cause debug session,CLOSED NOT_ECLIPSE,P3 major
+552235,repository properties page flicker,NEW,P3 trivial
+552236,remove text egit icons,NEW,P3 enhancement
+552237,mark speaker attend eclipsecon,RESOLVED FIXED,P3 trivial
+552238,title bar eclipse popups dark dark theme,NEW,P3 normal
+552239,silly errors application model still contain deprecate xyz,CLOSED DUPLICATE of bug 552240,P3 major
+552240,remove wizard dialogs model,RESOLVED FIXED,P3 normal
+552241,rename text text guide user use better text editor,NEW,P3 normal
+552242,generate test file loadable,NEW,P3 normal
+552243,security warn unsigned content dialog use error icon,NEW,P3 normal
+552244,add good start tip similar android studio,NEW,P3 normal
+552245,provide support report,NEW,P3 enhancement
+552246,untyped subapps break delete fbs,CLOSED FIXED,P3 normal
+552247,api get module disregard,RESOLVED FIXED,P3 normal
+552248,patch offer project already declare patch build path,RESOLVED FIXED,P3 normal
+552249,cant download,NEW,P3 blocker
+552250,java doc error,CLOSED DUPLICATE of bug 552175,P3 normal
+552251,trust expire root,NEW,P3 normal
+552252,support typedmodel inheritance,NEW,P3 normal
+552253,support explicit typedmodel sequence,NEW,P3 normal
+552254,use eclipse licence jgit egit,CLOSED DUPLICATE of bug 549021,P3 normal
+552255,eliminate imperativetypedmodel,RESOLVED FIXED,P3 normal
+552256,code recommenders cannot download repository index,RESOLVED WONTFIX,P3 normal
+552257,drag transition lead devision zero errors,CLOSED FIXED,P3 normal
+552258,shortcut work macos,NEW,P3 normal
+552259,increase select width endpoint size,CLOSED FIXED,P3 normal
+552260,jdk link page longer offer version,VERIFIED FIXED,P3 normal
+552261,provide table view use variable name project refactoring,NEW,P3 enhancement
+552262,gerrit events trigger build webtools,CLOSED FIXED,P3 major
+552263,flaky signer,NEW,P3 normal
+552264,unstable,RESOLVED FIXED,P3 normal
+552265,nondeterministic jvm crash propertiesview,CLOSED DUPLICATE of bug 551067,P3 normal
+552266,pod template work one another,NEW,P3 normal
+552267,fail sign fail try couple return,NEW,P3 normal
+552268,colour search result type,ASSIGNED,P3 enhancement
+552269,cannot open sql console eclipse,CLOSED NOT_ECLIPSE,P3 critical
+552270,many helper methods processevents,NEW,P3 normal
+552271,reorganize examples accord new name conventions,ASSIGNED,P3 normal
+552272,eca failure message helpful,NEW,P3 normal
+552273,compilation error legal generics,NEW,P3 major
+552274,view repaint properly,NEW,P3 critical
+552275,regression eclipse installer executable unable locate companion share,RESOLVED WORKSFORME,P3 blocker
+552276,egit ignore local,CLOSED DUPLICATE of bug 537036,P3 normal
+552277,virtual table become visible upon setitemcount,NEW,P3 major
+552278,extend override methods webmvcconfigurationsupport class custom configuration class longer hibernate transactional session available lazy,NEW,P3 enhancement
+552279,add project explorer java perspective,NEW,P3 normal
+552280,make variable font inherit text font,NEW,P3 normal
+552281,javapartitionermanager leak memory lead oom,RESOLVED FIXED,P3 major
+552282,refactor unnecessarycodecleanup use,RESOLVED FIXED,P3 normal
+552283,create patch select location reselects clipboard option,NEW,P3 normal
+552284,,NEW,P3 normal
+552285,mentor require smart contract ide blockchain developers,NEW,P3 normal
+552286,add avr work macos,NEW,P3 normal
+552287,trademark approval require eclipse smart contract ide blockchain developers,NEW,P3 normal
+552288,jgit return request subkey,RESOLVED FIXED,P3 normal
+552289,command longer available new,NEW,P3 major
+552290,find action seem work windows,NEW,P3 normal
+552291,performance degradation,CLOSED WORKSFORME,P3 normal
+552292,report modify,NEW,P3 normal
+552293,job fail permission deny,CLOSED FIXED,P3 blocker
+552294,parallelize creation targetbundles,RESOLVED FIXED,P3 normal
+552295,parallelize creation targetbundles,CLOSED DUPLICATE of bug 552294,P3 normal
+552296,size description text fit dialog,RESOLVED WONTFIX,P3 normal
+552297,restart dialog replace restart,RESOLVED FIXED,P3 enhancement
+552298,bundle pool management use user face terminology,RESOLVED WONTFIX,P3 normal
+552299,avoid show first page wizard,RESOLVED WONTFIX,P3 normal
+552300,,NEW,P3 normal
+552301,certificate look weirdly format example,NEW,P3 normal
+552302,error setup,RESOLVED INVALID,P3 normal
+552303,unable fetch patch gerrit content assist key bind break,RESOLVED FIXED,P3 normal
+552304,validation errors,ASSIGNED,P3 normal
+552305,use better job description replace compute prerequisite receive object resolve deltas,RESOLVED WONTFIX,P3 enhancement
+552306,space leave device capella jipp,CLOSED FIXED,P3 blocker
+552307,move hibernate objectivity support,RESOLVED FIXED,P3 major
+552308,annoy popup problem,NEW,P3 normal
+552309,remove ant task build command,NEW,P3 normal
+552310,menu contributions context menu debug view miss,NEW,P3 normal
+552311,move unused dawn components,CLOSED INVALID,P3 minor
+552312,bundle pool management available simple mode,RESOLVED WORKSFORME,P3 normal
+552313,need checklist make sure platform build impact,NEW,P3 normal
+552314,fail shutdown eclipse,NEW,P3 normal
+552315,dnd setup file locate ide onto installer result error,RESOLVED WONTFIX,P3 enhancement
+552316,place table cell edit work linux,RESOLVED DUPLICATE of bug 550606,P3 normal
+552317,dnd setup file locate web onto installer result error,CLOSED DUPLICATE of bug 552315,P3 normal
+552318,caret disappear autocompleting,NEW,P3 normal
+552319,way see talk speaker via speakers page,NEW,P3 normal
+552320,provide design domain model,RESOLVED FIXED,P3 normal
+552321,add minimap view list show target,NEW,P3 enhancement
+552322,provide design main flow,NEW,P3 normal
+552323,spinner table editor usable plugin configuration dialog,RESOLVED FIXED,P3 normal
+552324,improve xpath,RESOLVED FIXED,P3 normal
+552325,default repository folder empty set,VERIFIED FIXED,P3 major
+552326,npe,RESOLVED FIXED,P3 normal
+552327,open result errors oomph editor,RESOLVED WORKSFORME,P3 normal
+552328,debug view hang ui extend periods,NEW,P3 normal
+552329,fieldeditor use preference store field directly,VERIFIED FIXED,P1 blocker
+552330,inline edit visible switch row,CLOSED WORKSFORME,P3 normal
+552331,use semantic highlight mark relevant region textblock,NEW,P3 enhancement
+552332,npe environmentmodule,NEW,P3 normal
+552333,java test test class,RESOLVED FIXED,P3 enhancement
+552334,like comment ansi c source code comment,NEW,P3 trivial
+552335,temporarily remove branch protection master branch,RESOLVED FIXED,P3 major
+552336,move tycho,NEW,P3 normal
+552337,cannot satisfy dependency instal docker tool,RESOLVED FIXED,P3 normal
+552338,ui external mergetool support,NEW,P3 enhancement
+552339,add support text block publicscanner,RESOLVED FIXED,P3 normal
+552340,subapp editor cannot delete fb,CLOSED FIXED,P3 normal
+552341,enable spring application support,NEW,P3 normal
+552342,please create github repository,RESOLVED FIXED,P3 normal
+552343,error see error log,NEW,P3 blocker
+552344,toolbar narrow hide,NEW,P3 normal
+552345,improve error tolerance,NEW,P3 normal
+552346,pomless build show incorrect project name update,VERIFIED FIXED,P3 normal
+552347,universal launchbar use high resolution icons,ASSIGNED,P3 normal
+552348,osgi install area calculate wrong symlinks,NEW,P3 normal
+552349,switch compiler compliance cause compiler errors,RESOLVED WORKSFORME,P3 major
+552350,eclipse start toolitems enable,NEW,P3 normal
+552351,update logback,NEW,P3 normal
+552352,use swap compare editor lose change dirty status,NEW,P3 normal
+552353,git synchronization via ssh extremely slow eclipse,RESOLVED FIXED,P3 major
+552354,arduino download manager add intel board complete,NEW,P3 blocker
+552355,constrain scope properties view local architecture context,CLOSED FIXED,P3 normal
+552356,properties window return key,UNCONFIRMED,P3 normal
+552357,codewind scan repository,CLOSED FIXED,P3 normal
+552358,map scope runtime test maven dependencies classpath container,CLOSED INVALID,P3 major
+552359,rename view,RESOLVED FIXED,P3 enhancement
+552360,use title case interactive rebase step,RESOLVED FIXED,P3 enhancement
+552361,popupmenuextender handle multiple menumanager instance correctly,RESOLVED FIXED,P3 normal
+552362,get commit message,UNCONFIRMED,P3 normal
+552363,click event type filter trace tracecompass crash,NEW,P3 critical
+552364,cdb settings provider cause long ui freeze apply project properties,NEW,P3 normal
+552365,table editors editable immediately mac second,NEW,P3 normal
+552366,npe use extract method refactoring,CLOSED FIXED,P3 normal
+552367,rename ui responsiveness monitor ui freeze monitor,NEW,P3 normal
+552368,move common settings common file os system,RESOLVED FIXED,P3 normal
+552369,png renderer produce binary diffent file svg file,NEW,P3 normal
+552370,support testsuites,REOPENED,P3 normal
+552371,mine text display line code,RESOLVED FIXED,P3 normal
+552372,eclipse fail start instal,VERIFIED FIXED,P3 critical
+552373,allow calculate hover information outside main thread,NEW,P3 normal
+552374,emptyworkspacehelper refresh wizards list perspective change,NEW,P3 normal
+552375,document semantics transition point,RESOLVED FIXED,P3 normal
+552376,composite state,NEW,P3 normal
+552377,pull generic method superclass implementation stub subclasses without type parameter,NEW,P3 major
+552378,mix reference,ASSIGNED,P3 enhancement
+552379,reduce default whitespace character,RESOLVED FIXED,P3 enhancement
+552380,program r cmd operation use wrong work directory,ASSIGNED,P3 normal
+552381,circular reference detect bundle,NEW,P3 normal
+552382,bindremoteserviceadmin errors start,RESOLVED FIXED,P3 normal
+552383,add epsilon model generation language epsilon family,UNCONFIRMED,P3 normal
+552384,deprecate class instance present,CLOSED DUPLICATE of bug 552240,P3 normal
+552385,emfdeleteserviceimpl contradict item providers,CLOSED FIXED,P2 major
+552386,delete unnecessary wiki page,NEW,P3 normal
+552387,make swt eclipse rcp apps work snap package,NEW,P3 major
+552388,type argument containment lenient check enclose parameterized type,RESOLVED FIXED,P3 normal
+552389,console always restart fix,RESOLVED FIXED,P3 normal
+552390,compiler error outer outer instance access local class,ASSIGNED,P3 normal
+552391,oxygen download,RESOLVED FIXED,P3 normal
+552392,enable command r cmd launch configurations,ASSIGNED,P3 enhancement
+552393,unable install xmpp feature snapshot repo,RESOLVED FIXED,P3 normal
+552394,allow use asm version range,RESOLVED FIXED,P3 normal
+552395,update platform jetty,RESOLVED FIXED,P3 normal
+552396,continue move java test test class,NEW,P3 enhancement
+552397,remove discovery view,RESOLVED FIXED,P3 normal
+552398,move promotion jenkins,RESOLVED FIXED,P3 enhancement
+552399,file attachments webclient,ASSIGNED,P3 normal
+552400,context data base mdm templates,ASSIGNED,P3 normal
+552401,model map atfxadapter extsystem,ASSIGNED,P3 normal
+552402,simple,ASSIGNED,P3 normal
+552403,introduce user roles webclient,ASSIGNED,P3 normal
+552404,remove special style main toolbar,RESOLVED FIXED,P3 normal
+552405,remove special style table active part stack,RESOLVED FIXED,P3 normal
+552406,remove special style,RESOLVED FIXED,P3 normal
+552407,gpf start,CLOSED DUPLICATE of bug 551091,P3 normal
+552408,provide script module help,NEW,P3 normal
+552409,jnigenerator always structs fill,NEW,P3 normal
+552410,stereotype composite association copy paste stereotype element work correctly,CLOSED FIXED,P3 normal
+552411,adapt searchtext widget current swt,ASSIGNED,P3 normal
+552412,remove special style,RESOLVED FIXED,P3 normal
+552413,menu toolbar disable,CLOSED DUPLICATE of bug 552659,P3 normal
+552414,always style hyperlink imagehyperlink,RESOLVED FIXED,P3 normal
+552415,indexoutofboundsexception textvariablefilter,ASSIGNED,P3 normal
+552416,nullpointer remove eager fetch list,NEW,P3 normal
+552417,text dropdownbutton clip,ASSIGNED,P3 normal
+552418,open resource dialog better handle paths,RESOLVED FIXED,P3 enhancement
+552419,open resource dialog take paths,CLOSED DUPLICATE of bug 552418,P3 normal
+552420,outofmemoryerror model data store clipboard,NEW,P3 normal
+552421,alf compiler work oxygen problem xtext validation job,NEW,P3 normal
+552422,alf compiler generate complicate ad return x instruction,NEW,P3 normal
+552423,replace usage,RESOLVED FIXED,P3 trivial
+552424,alf compiler generate decision node statement,NEW,P3 normal
+552425,replace usage,RESOLVED FIXED,P3 trivial
+552426,replace usage,RESOLVED FIXED,P3 trivial
+552427,replace usage,RESOLVED FIXED,P3 trivial
+552428,attempt email message reject,RESOLVED NOT_ECLIPSE,P3 normal
+552429,initialize hover completion client capabilities markdown support,RESOLVED FIXED,P3 enhancement
+552430,npe remote user delete diagram,CLOSED INVALID,P3 normal
+552431,add merge requirement,CLOSED FIXED,P3 normal
+552432,simplify style css,RESOLVED FIXED,P3 normal
+552433,move workaround logview text search general set,RESOLVED FIXED,P3 normal
+552434,use configurable range indicator color text editors prompt highlight,CLOSED WONTFIX,P3 normal
+552435,get permission connect launch tomcat server eclipse luna,CLOSED NOT_ECLIPSE,P3 major
+552436,document uri may null highlightreconcilingstrategy,NEW,P3 normal
+552437,avoid scr circular reference component,NEW,P3 normal
+552438,use solid color prompt highlight,ASSIGNED,P3 enhancement
+552439,expose java stack trace console quick search,NEW,P3 normal
+552440,default disable jslp discovery eclipse,RESOLVED FIXED,P3 normal
+552441,resource erroneously report within,ASSIGNED,P3 normal
+552442,delete folder git repo history,CLOSED FIXED,P3 normal
+552443,eclipse top level project link,RESOLVED FIXED,P3 normal
+552444,use assertj junit,NEW,P3 enhancement
+552445,orbit faq outdated piggy,NEW,P3 normal
+552446,whitespace remove begin text block,RESOLVED WORKSFORME,P3 normal
+552447,create connection propertysheet show subapp cfb type editor,CLOSED FIXED,P3 normal
+552448,fb creation position follow snap grid option,CLOSED FIXED,P3 normal
+552449,make codecov github app available project host github,CLOSED FIXED,P3 major
+552450,structure grid regular solid line,CLOSED FIXED,P3 normal
+552451,dspprocess add launch,RESOLVED FIXED,P3 normal
+552452,stale reference update suite astview,RESOLVED FIXED,P3 minor
+552453,rename test avoid future conflict,RESOLVED FIXED,P3 trivial
+552454,finish move java test test class,NEW,P3 enhancement
+552455,microsoft visual studio error parser,ASSIGNED,P3 normal
+552456,immigration number suffix uppercase,NEW,P3 enhancement
+552457,inadequate breakpoint save,NEW,P3 normal
+552458,network problem,NEW,P3 normal
+552459,ui freeze long time browse code completion annotation,NEW,P3 major
+552460,checksum match sdk download,CLOSED FIXED,P3 critical
+552461,add fully qualify name add conflict class name,NEW,P3 normal
+552462,cdt indexer start complain literal operator template string udl,CLOSED DUPLICATE of bug 536986,P3 normal
+552463,patch button module dependencies tab display empty list,NEW,P3 normal
+552464,available documentation module tab lack sufficient detail usage step,NEW,P3 normal
+552465,usable message request header field,REOPENED,P3 blocker
+552466,match partial ref name ref content completion,NEW,P3 enhancement
+552467,support diffformatter history view show cyrillic file name,NEW,P3 minor
+552468,variable eat code,NEW,P3 normal
+552469,npe link handlers,NEW,P3 normal
+552470,always style toolbar inherit instead special case,RESOLVED FIXED,P3 normal
+552471,please change owner download estepper,CLOSED WORKSFORME,P3 normal
+552472,dialog solutions button small,NEW,P3 minor
+552473,copy eclipse console paste directly gnumeric truncate long selections,NEW,P3 normal
+552474,delete unnecessary css spy relate css style,RESOLVED WORKSFORME,P3 normal
+552475,npe generic editor,RESOLVED FIXED,P3 normal
+552476,remove workaround bug,RESOLVED FIXED,P3 normal
+552477,save tokenmanager throw stringindexoutofboundsexception,CLOSED DUPLICATE of bug 471825,P3 normal
+552478,informationflow end increase move relation end diagram,UNCONFIRMED,P3 normal
+552479,internal error occur scanner info,NEW,P3 normal
+552480,update junit junit assertj truth assertions,NEW,P3 normal
+552481,new c project wizard fail overwrite exist project name different case,NEW,P3 normal
+552482,please create repository,CLOSED FIXED,P3 normal
+552483,monitor different instance cfb give value,CLOSED FIXED,P3 normal
+552484,add parameter specify hostname addition interface name corbafileserver,NEW,P3 normal
+552485,installation fail due connexion timeout,RESOLVED WORKSFORME,P3 blocker
+552486,honor providers,NEW,P3 normal
+552487,empty aspectbinding may trigger npe,NEW,P3 normal
+552488,fail build mockjavaproject need,NEW,P3 blocker
+552489,abstractboundclass find superclass,NEW,P3 normal
+552490,change final modifier quick assist message,NEW,P3 normal
+552491,use issue templates eclipse iceoryx,CLOSED FIXED,P3 normal
+552492,invalid code generate integer literal,CLOSED FIXED,P3 minor
+552493,,RESOLVED FIXED,P3 normal
+552494,merge tycho repos build,RESOLVED FIXED,P3 enhancement
+552495,code formatter throw exception launch command line,NEW,P3 normal
+552496,,NEW,P3 normal
+552497,migrate emfforms,UNCONFIRMED,P3 major
+552498,,NEW,P3 normal
+552499,permission deny jetty jipp script file change,CLOSED FIXED,P3 normal
+552500,cannot register new address,CLOSED DUPLICATE of bug 491315,P3 normal
+552501,forum subscription email contain base path,NEW,P3 trivial
+552502,testjarsign fail,NEW,P3 normal
+552503,issue simrel,CLOSED FIXED,P3 normal
+552504,remove icompilationunitcontext,NEW,P3 normal
+552505,urls rout angular fallback,ASSIGNED,P3 normal
+552506,record code generation,NEW,P3 normal
+552507,use api generation app directly instead ant,NEW,P3 enhancement
+552508,indicate change committer,NEW,P3 enhancement
+552509,secure storage writen later cannot read older salt must bytes long,NEW,P3 normal
+552510,getindexinfo trigger table analyze oracle,NEW,P3 normal
+552511,create cleanup script equinox download,RESOLVED FIXED,P3 normal
+552512,cdoserverexporter release session,RESOLVED FIXED,P3 normal
+552513,create updateindex script jiro,NEW,P3 normal
+552514,categories tree display preferencedialog macos,NEW,P3 normal
+552515,support emf annotations source license requirements,NEW,P3 normal
+552516,support license check functionality constraints emfforms,NEW,P3 normal
+552517,open cfb inside another one,NEW,P3 normal
+552518,ui freeze,NEW,P3 normal
+552519,plugin configuration dialog run level spinner truncate gtk,RESOLVED FIXED,P3 normal
+552520,jipp help esf,CLOSED FIXED,P3 normal
+552521,warn closeable weaken inside,ASSIGNED,P3 normal with 1 vote
+552522,jenkins eclipse glsp,CLOSED FIXED,P3 normal
+552523,merge select bundle attribute eclipse osgi launch configs,ASSIGNED,P3 normal
+552524,build failure need move bree java se,RESOLVED FIXED,P3 normal
+552525,master restart,NEW,P3 major
+552526,add git repositories dialog enter directory field trigger search,NEW,P3 normal
+552527,must create window menu present main menu display spy,RESOLVED FIXED,P3 normal
+552528,exception create new cfb type,CLOSED WORKSFORME,P3 normal
+552529,code generation fault use optional field value redirect,CLOSED FIXED,P3 minor
+552530,,NEW,P3 normal
+552531,update esf reference target platform,RESOLVED FIXED,P3 normal
+552532,advancedpatternparser handle correctly pattern remove file update,NEW,P3 major
+552533,doubleclickevent fire first column tableviewer,NEW,P3 normal
+552534,npe unboxingcleanup,RESOLVED FIXED,P3 normal
+552535,build failure,RESOLVED FIXED,P3 blocker
+552536,nightly build fail,CLOSED DUPLICATE of bug 552535,P3 normal
+552537,cannot run test inside secondary type,CLOSED DUPLICATE of bug 529722,P3 normal
+552538,tycho use different parse product file,NEW,P3 enhancement
+552539,ability resolve urls,NEW,P3 enhancement
+552540,mac app sign service,CLOSED FIXED,P3 blocker
+552541,record recordcomponentelement delta,NEW,P3 normal
+552543,stop work,NEW,P3 normal
+552544,could lock config file permission deny,CLOSED FIXED,P3 normal
+552545,change default show welcome start welcome page,NEW,P3 normal
+552546,add jaxen orbit,RESOLVED FIXED,P3 normal
+552547,draw artifact,NEW,P3 normal
+552548,auto complete eclipse stucks restart without kill open,NEW,P3 blocker
+552549,repository browser text cut,RESOLVED WORKSFORME,P3 minor
+552550,create script get eclipse platform product latest release,NEW,P3 normal
+552551,root folder require project import error update seem,RESOLVED WORKSFORME,P3 normal
+552552,develop script add repo delete repo jiro use,RESOLVED FIXED,P3 normal
+552553,reduce distraction add placeholder entries,CLOSED DUPLICATE of bug 549419,P3 enhancement
+552554,part icon update seticonuri call,RESOLVED FIXED,P3 normal
+552555,font large change file package explorer,NEW,P3 normal
+552556,constructor use fail class,NEW,P3 minor
+552557,ide,RESOLVED INVALID,P3 normal
+552558,fix warn,ASSIGNED,P3 normal
+552559,filenotfoundexception,NEW,P3 normal
+552560,add code metric calculation ide,CLOSED FIXED,P3 enhancement
+552561,expressions provide api languages,NEW,P3 enhancement
+552562,unify variables expressions view,NEW,P3 enhancement
+552563,eclipse freeze debug tomcat,CLOSED FIXED,P3 normal
+552564,trace generation service allow select name generate file,NEW,P3 normal
+552565,align hideshow layer interfaces,RESOLVED FIXED,P3 normal
+552566,remove unnecessary error log message,RESOLVED FIXED,P3 normal
+552567,,NEW,P3 normal
+552568,eclipse crash reference count error message,RESOLVED FIXED,P3 critical
+552569,java completion crash intersection variable declare use var,NEW,P3 normal
+552570,save subbapp type create double connections,CLOSED DUPLICATE of bug 539037,P3 normal
+552571,support handle positionutil,RESOLVED FIXED,P3 normal
+552572,arrayindexoutofboundsexception,NEW,P3 normal
+552573,implement osgi connect,NEW,P3 normal
+552574,internal error occur children,RESOLVED INVALID,P3 normal
+552575,filter convert data,RESOLVED FIXED,P3 normal
+552576,possible enter field string attribute profile tab property,UNCONFIRMED,P3 minor
+552577,remove special style widgets part active,RESOLVED WONTFIX,P3 normal
+552578,always style shell,RESOLVED FIXED,P3 normal
+552579,add eclipse tool day grenoble,RESOLVED FIXED,P3 normal
+552580,increase minor version plugins due change minimum bree,ASSIGNED,P3 normal
+552581,change metric analysis result presentation table,CLOSED FIXED,P3 normal
+552582,expand metric analysis cfbs subapps,CLOSED FIXED,P3 normal
+552583,allow metric analysis type subapps applications,CLOSED FIXED,P3 normal
+552584,eclipse installer freeze computer force manual restart,NEW,P3 normal
+552585,contribute eclipse equinox simrel,RESOLVED FIXED,P3 normal
+552586,provide better support redirections,RESOLVED FIXED,P3 enhancement
+552587,test itest use deprecate,NEW,P3 normal
+552588,test,CLOSED INVALID,P3 normal
+552589,linux machine,CLOSED FIXED,P3 blocker
+552590,impossible desactive auto close double quote editor generic,NEW,P3 critical
+552591,remove repo check permissions,CLOSED FIXED,P3 normal
+552592,junit test fail eclipse kura,CLOSED WONTFIX,P3 normal
+552593,grant access project storage service jenkins instance project microprofile,CLOSED FIXED,P3 normal
+552594,make work app class loader java,NEW,P3 normal
+552595,eclipse oxygen crash start,RESOLVED WORKSFORME,P3 major
+552596,eclipse oxygen crash start,CLOSED DUPLICATE of bug 552595,P3 normal
+552597,add command definitions pemicro gdb server,RESOLVED FIXED,P3 enhancement
+552598,generate code ux need quick add usual wizard default,NEW,P3 enhancement
+552599,compilation c runtimes fail latest ubuntu,NEW,P3 normal
+552600,provision additional vps add agent codewind jipp,CLOSED WONTFIX,P3 normal
+552601,api tool error message swt,VERIFIED FIXED,P3 normal
+552602,right click show whole menu case,CLOSED DUPLICATE of bug 551769,P3 normal
+552603,type instructions text field conflict clipboard sometimes type,NEW,P3 enhancement
+552604,versioning problem,CLOSED DUPLICATE of bug 552601,P3 blocker
+552605,swt project settings versioning issue error,RESOLVED FIXED,P3 normal
+552606,update incrementalprojectbuilder api add builder dependent arguments,NEW,P3 normal
+552607,create redundant instance,RESOLVED FIXED,P3 normal
+552608,add bouncycastle bcpg bcpkix bcprov,RESOLVED FIXED,P3 normal
+552609,hit oom,NEW,P3 major
+552610,split function remove php,RESOLVED FIXED,P3 normal
+552611,leak test failures java,RESOLVED FIXED,P3 normal
+552612,junit test fail nightly build,NEW,P3 normal
+552613,junit test fail nightly build,NEW,P3 normal
+552614,junit test fail nightly build,NEW,P3 normal
+552615,test failures,NEW,P3 normal
+552616,filter several alignment errors,RESOLVED FIXED,P3 minor
+552617,junit failure see mac,NEW,P3 normal
+552618,error first code assistant request download model repository,CLOSED WONTFIX,P3 minor
+552619,deploy ecj compiler use build,RESOLVED FIXED,P3 normal
+552620,investigate removal apianalysisapplication,REOPENED,P3 normal
+552621,batch process improvements,ASSIGNED,P3 normal
+552622,wrong use model object stag view,RESOLVED FIXED,P3 normal
+552623,please close prs github mirror,RESOLVED FIXED,P3 normal
+552624,jenkins instance eclipse collections seem move,CLOSED WORKSFORME,P3 major
+552625,update try create incorrectly,RESOLVED WORKSFORME,P3 normal
+552626,properties label display correctly,UNCONFIRMED,P3 normal
+552627,support,NEW,P3 normal
+552628,bots add validate user github eca,NEW,P3 normal
+552629,jenkins eclipse,CLOSED FIXED,P3 normal
+552630,bug launch bar,NEW,P3 normal
+552631,jgit leave file state remove remote file repo push another file repo,CLOSED INVALID,P3 normal
+552632,deprecate testrunstarted,NEW,P3 normal
+552633,support rollback new object state,RESOLVED FIXED,P3 enhancement
+552634,please fix problems associate simrel contribution,NEW,P3 normal
+552635,mac notarization service fail,RESOLVED WORKSFORME,P3 major
+552636,file refresh interactive rebase,RESOLVED FIXED,P3 normal
+552637,please remove,NEW,P3 normal
+552638,please fix problems associate simrel contribution,CLOSED FIXED,P3 normal
+552639,application model editor derive possible elements emf model,NEW,P3 enhancement
+552640,cce commitmessageviewer preferences set default,RESOLVED FIXED,P3 minor
+552641,add make migration participants silent,NEW,P3 enhancement
+552642,support reproducible build sort generate index,RESOLVED FIXED,P3 normal
+552643,import quickfix reorder class room file,NEW,P3 normal
+552644,create github repository,CLOSED FIXED,P3 normal
+552645,nullpointerexception aspected code two annotations work together,NEW,P3 normal
+552646,reflection problem generic type,NEW,P3 normal
+552647,cannot suspend stop gdb,NEW,P3 normal
+552648,jdt debug need react asm,RESOLVED FIXED,P3 normal
+552649,resize hot zone painfully small simple installer,RESOLVED FIXED,P3 normal
+552650,include eclipse passage simrel,RESOLVED FIXED,P3 normal
+552651,content assist popup textcelleditor steal focus cell editor,RESOLVED FIXED,P3 normal
+552652,ui freeze detailedprogressviewer,NEW,P3 normal
+552653,unchanged file show dirty,CLOSED DUPLICATE of bug 535189,P3 normal
+552654,progressinfoitem compareviewerpane inherit color container,RESOLVED FIXED,P3 normal
+552655,align ruler color standard color,NEW,P3 normal
+552656,migrate check composites script,RESOLVED FIXED,P3 normal
+552657,migrate old build cleanup job jiro,RESOLVED FIXED,P3 normal
+552658,uri scheme registration work well mac,NEW,P3 major
+552659,menumanager contribute via menucontribution disable,RESOLVED FIXED,P3 normal
+552660,add condition indirection,NEW,P3 enhancement
+552661,catalogattribute unit set load,UNCONFIRMED,P3 normal
+552662,find action use search style,NEW,P3 normal
+552663,exception find action open layout spy,NEW,P3 normal
+552664,concurrentmodificationexception statesystemdataprovider,RESOLVED FIXED,P3 normal
+552665,unable retrieve dependencies nexus repository manager use https protocol,NEW,P3 enhancement
+552666,replace standard java,NEW,P3 normal
+552667,fluent databinding api,NEW,P3 enhancement
+552668,link method element clear button grey,NEW,P3 normal
+552669,framework must allow insert image landscape page max possible,ASSIGNED,P3 normal
+552670,add documentation display bytes gb smart format,RESOLVED FIXED,P3 normal
+552671,astrewrite ignore new nod replace name,NEW,P3 normal
+552672,try ssh build hang indefinitely,CLOSED FIXED,P3 normal
+552673,eclipse ide web page update show theia,RESOLVED FIXED,P3 normal
+552674,apply redirect build,NEW,P3 normal
+552675,validation prs open genie bot fail,NEW,P3 normal
+552676,egit allow stag push virtual box share folders,NEW,P3 major
+552677,increase socket buffer size tcf vxworks,RESOLVED FIXED,P3 normal
+552678,text block,NEW,P3 normal
+552679,catch exceptions session close dirty state distant resource reachable,NEW,P3 normal
+552680,configure properly,RESOLVED FIXED,P3 trivial
+552681,support preview feature conditional breakpoint editor,NEW,P3 normal
+552682,pull result multiple respositories use verbs instead ok,NEW,P3 normal
+552683,refurbish iprogressmonitor merge iprogressmonitorwithblocking integrate basic function submonitor,NEW,P3 enhancement with 1 vote
+552684,server show diagnostic address,RESOLVED FIXED,P3 normal
+552685,use shorter text rebuild due settings change,NEW,P3 normal
+552686,ui freeze renamebranchcommand,NEW,P3 minor
+552687,two advices method lead errors,NEW,P3 normal
+552688,hyperlink imagehyperlink inherit container background color,RESOLVED FIXED,P3 normal
+552689,npe bundle image check,NEW,P3 normal
+552690,enable gitpod sprotty repos,CLOSED FIXED,P3 normal
+552691,rename dialog white artifacts,REOPENED,P3 normal
+552692,filter test code need view refresh,NEW,P3 enhancement
+552693,developer framework must provide tool unzip full content odt file,NEW,P3 normal
+552694,jipp iottestware,CLOSED FIXED,P3 normal
+552695,archetypes date,NEW,P3 major
+552696,generate autocomplete xsd use editor cause ecliplse crash,NEW,P3 normal
+552697,xtext test class must distribute api,NEW,P3 normal
+552698,extend git component correctly use git metadata,NEW,P3 enhancement
+552699,pomless fail,CLOSED FIXED,P3 major
+552700,use color table tree header background widgets,NEW,P3 normal
+552701,need enable sonarcloud plugin project,NEW,P3 normal
+552702,send email leshan vserver,CLOSED WONTFIX,P3 normal
+552703,lttng option display xml file,NEW,P3 normal
+552704,use pomless build,RESOLVED FIXED,P3 normal
+552705,incomplete build path report jdk class,NEW,P3 blocker
+552706,tycho report name instead ids final report,CLOSED WONTFIX,P3 normal
+552707,fluent jface table api,NEW,P3 normal
+552708,git plugin memory leak,RESOLVED FIXED,P3 normal
+552709,windowsbuilder crash eclipse,CLOSED INVALID,P3 critical
+552710,add external jar selection ignore create new project,NEW,P3 normal
+552711,problems randomly omit various view specific file,NEW,P3 major
+552712,package explorer context menu slow big selection,NEW,P3 enhancement
+552713,make trace compass build java,NEW,P3 normal
+552714,open resources find action,RESOLVED FIXED,P3 enhancement
+552715,validation providers give view model context,CLOSED FIXED,P2 enhancement
+552716,code never,NEW,P3 normal
+552717,able login marketplace error message appear,RESOLVED FIXED,P3 blocker
+552718,rcp upgrade one ui program ui freeze,NEW,P3 critical
+552719,make switch expressions available standard feature dom ast,ASSIGNED,P3 normal
+552720,use pomless build,NEW,P3 normal
+552721,api errors,RESOLVED FIXED,P3 normal
+552722,design registry requirementresolvers,NEW,P3 normal
+552723,filteredlist deselect selection ui eclipse,NEW,P3 normal
+552724,typo,NEW,P3 trivial
+552725,use function xslt,NEW,P3 normal
+552726,use pomless build,RESOLVED FIXED,P3 normal
+552727,treelayer tree icons wrong position collapse,NEW,P3 normal
+552728,java search show white artifacts,NEW,P3 normal
+552729,clean start without delete serviceability folder,NEW,P3 normal with 1 vote
+552730,wrong archive link welcome mail,RESOLVED FIXED,P3 normal
+552731,stackoverflow error creation papyrus project,RESOLVED FIXED,P3 blocker
+552732,add two githhub repos sprotty,RESOLVED FIXED,P3 normal
+552733,add string,NEW,P3 enhancement
+552734,please enable readthedocs repos,NEW,P3 normal
+552735,rename make usage clear,RESOLVED FIXED,P3 normal
+552736,please enable github page,CLOSED FIXED,P3 normal
+552737,tipsourceprovider need call layout make tool item status line visible,NEW,P3 normal
+552738,dockerconnectionmanager block ui thread app startup,NEW,P3 normal
+552739,problems code recommenders fxml editor,CLOSED MOVED,P3 blocker
+552740,bug memory view,NEW,P3 enhancement
+552741,request commit right simrel repo nitind,CLOSED FIXED,P3 normal
+552742,grant eclipse account admin access jenkins instance specific project,CLOSED FIXED,P3 normal
+552743,support code format save,UNCONFIRMED,P3 enhancement
+552744,redo error ecc,CLOSED FIXED,P3 normal
+552745,ci build fail,ASSIGNED,P3 blocker
+552746,look weird combine,NEW,P3 normal
+552747,layout initialization container elements,ASSIGNED,P3 normal
+552748,project incorrect artifactid,CLOSED FIXED,P3 normal
+552749,tree post event,NEW,P3 normal
+552750,automate mylyn upgrade apparently fail conflict relevant version timestamp months,NEW,P3 normal
+552751,remove deprecate css attribute,NEW,P3 normal
+552752,belong interface,NEW,P3 normal
+552753,belong interface,UNCONFIRMED,P3 normal
+552754,show stopper cannot export feature base product,NEW,P3 normal
+552755,run xsl launch configuration get connect socket problem,NEW,P3 normal
+552756,compile errors method two distinct lower bound type params,ASSIGNED,P3 minor
+552757,call hierarchy show callers,CLOSED DUPLICATE of bug 552774,P3 normal
+552758,trace open cli active one,NEW,P3 normal
+552759,deploy microprofile snapshots,CLOSED WORKSFORME,P3 normal
+552760,npe display,NEW,P3 normal
+552761,,NEW,P3 normal
+552762,selection feedback type comment interface editor,CLOSED FIXED,P3 normal
+552763,provide guidance regard constitute,NEW,P3 normal
+552764,jep switch expressions standard change error cod,RESOLVED FIXED,P3 normal
+552765,create compliance level java ui,NEW,P3 normal
+552766,fix testjavadoclogs releng test,RESOLVED FIXED,P3 normal
+552767,merge sitedocs,NEW,P3 normal
+552768,avoid show tip day layout job user,RESOLVED FIXED,P3 normal
+552769,failures,NEW,P3 normal
+552770,tycho osgi compiler plugin,NEW,P3 normal
+552771,error generate site,CLOSED WORKSFORME,P3 normal
+552772,prefer name accpeting numeric char,VERIFIED FIXED,P3 normal
+552773,simplify log platform code base,NEW,P3 enhancement
+552774,call hierarchy show callers,NEW,P3 normal
+552775,verify seem take long,NEW,P3 normal
+552776,ui freeze multiple second deletepathsoperation,RESOLVED FIXED,P3 normal
+552777,suppress download progress batch mode,NEW,P3 enhancement
+552778,,RESOLVED FIXED,P3 normal
+552779,create se profile,RESOLVED FIXED,P3 normal
+552780,unselected tabs text get gray,RESOLVED FIXED,P3 normal
+552781,consider invalid order predicate synthesis,NEW,P3 normal
+552782,extend flowanalysis bad collection index,NEW,P3 normal
+552783,server specify preference wrong preference page open,NEW,P3 normal
+552784,handle break,RESOLVED FIXED,P3 normal
+552785,please make point github page,NEW,P3 normal
+552786,combobox letter lookahead select properly,CLOSED FIXED,P3 normal
+552787,slow,NEW,P3 normal
+552788,slow,NEW,P3 normal
+552789,stick yourkit,NEW,P3 normal
+552790,remove usage stringtokenizer cssoneofattributeconditionimpl,NEW,P3 normal
+552791,unclear,NEW,P3 normal
+552792,persistence stackoverflowerror read double,RESOLVED FIXED,P3 blocker
+552793,remove special style,RESOLVED FIXED,P3 normal
+552794,add monitor tool use display raise notification alarm,UNCONFIRMED,P3 enhancement
+552795,add fiter button junit view move show failure show skip failures,NEW,P3 normal
+552796,server could bind conditional transport properlly,RESOLVED FIXED,P3 normal
+552797,shell flicker around edge first pop,NEW,P3 normal
+552798,incorrect path macos,CLOSED NOT_ECLIPSE,P3 normal
+552799,please protect branch repos,CLOSED FIXED,P3 normal
+552800,remove debug assistant customization exception still send,NEW,P3 normal
+552801,bad request request header cookie large,CLOSED DUPLICATE of bug 552465,P3 normal
+552802,fail write core minidumps enable default client versions windows,NEW,P3 normal
+552803,npe bundle image check,ASSIGNED,P3 normal
+552804,please add event page,NEW,P3 normal
+552805,,NEW,P3 normal
+552806,mentor require eclipse skills,NEW,P3 normal
+552807,trademark approval require eclipse skills,NEW,P3 normal
+552808,,NEW,P3 normal
+552809,mentor require eclipse streamsheets,NEW,P3 normal
+552810,trademark approval require eclipse streamsheets,NEW,P3 normal
+552811,shift leave break mix line empty prefix allow,RESOLVED FIXED,P3 normal
+552812,comment type disappear interface editor,CLOSED FIXED,P3 normal
+552813,preferences dialog open last select page top tree visible scrollbar,NEW,P3 normal
+552814,use consistent style active non active part,NEW,P3 normal
+552815,remove special style targetplatformstate,NEW,P3 normal
+552816,remove rule,NEW,P3 normal
+552817,simplify form style,NEW,P3 normal
+552818,remove move scriptdisplayview platform dark theme,NEW,P3 normal
+552819,method name contain typo,NEW,P3 minor
+552820,please remove bugzilla components,CLOSED FIXED,P3 normal
+552821,use pomless build,NEW,P3 normal
+552822,cursor click clear search text mouse arrow caret,NEW,P3 normal
+552823,support predicate logic,NEW,P3 normal
+552824,reduce text perspective,NEW,P3 normal
+552825,address tls variable wrong,NEW,P3 normal
+552826,,NEW,P3 major
+552827,add iterate support,NEW,P3 normal
+552828,failures,NEW,P3 normal
+552829,hover color section badly readable,NEW,P3 normal
+552830,content assist debug hover lose content scroll resize,NEW,P3 normal
+552831,stop publish remove ees non lts limit java,NEW,P3 normal
+552832,pde ci build report erroneous api errors,NEW,P3 blocker
+552833,ossrh setup project glsp,NEW,P3 normal
+552834,run platform build java,NEW,P3 normal
+552835,swtexception diagram refresh,NEW,P3 normal
+552836,race condition shutdown sequence cause seg fault,NEW,P3 normal
+552837,description simplefb miss,NEW,P3 normal
+552838,allow egit use external diftools define,NEW,P3 enhancement
+552839,delete container semantic element representation delete representation descriptor,NEW,P3 normal
+552840,teach jgit handle external difftools define,NEW,P3 enhancement
+552841,disable cdi support doesnt work maven update,NEW,P3 normal
+552842,eclipse crash access violation module time,NEW,P3 critical
+552843,filter ui options longer support jvms,NEW,P3 normal
+552844,diagram copy correctly copy container own diagram,NEW,P3 critical
+552845,simex palette simplify,NEW,P3 normal
+552846,moka incubations instal create connectors port,NEW,P3 normal
+552847,problem trace compass ubuntutest node,NEW,P3 normal
+552848,simulation thread mark terminate still run,NEW,P3 normal
+552849,chaincompletionproposalcomputer run forever thread without ui hint,ASSIGNED,P3 major
+552850,miss preference select default engine,NEW,P3 normal
+552851,report gmf fix concern fonts break export image print bug class copy sirius,ASSIGNED,P3 normal
+552852,viewmodelcontext leak tab render,RESOLVED FIXED,P2 major
+552853,tidy collectiontemplateexp synthesis,NEW,P3 normal
+552854,dialogs shell decorations,CLOSED WORKSFORME,P3 normal
+552855,,NEW,P3 normal
+552856,migrate polarsys download page,NEW,P3 normal
+552857,migrate locationtech websites,NEW,P3 normal
+552858,move linkednamesassistproposal jdt core us,NEW,P3 normal
+552859,change project ids foundation db,NEW,P3 normal
+552860,improve add many line interface edit table,UNCONFIRMED,P3 normal
+552861,arduino download manager select platforms install,NEW,P3 major
+552862,,NEW,P3 normal
+552863,allbrowsertests crash fedora,NEW,P3 normal
+552864,,NEW,P3 normal
+552865,trademark approval require eclipse extension registry,NEW,P3 normal
+552866,command lsof jdt,NEW,P3 normal
+552867,cannot resolve local apply field ref,NEW,P3 normal
+552868,build fail,RESOLVED FIXED,P3 normal
+552869,remove duplicate entries,NEW,P3 normal
+552870,make robust,RESOLVED FIXED,P3 normal
+552871,bad registration,NEW,P3 critical
+552872,remove workarounds bug,ASSIGNED,P3 normal
+552873,remove workarounds bug,ASSIGNED,P3 normal
+552874,content assist stop work press view toolbar button,ASSIGNED,P3 normal
+552875,permission create draft security advisory,NEW,P3 normal
+552876,confuse log output like,NEW,P3 normal
+552877,service register,NEW,P3 normal
+552878,concurrentmodificationexception finishedjobs,ASSIGNED,P3 normal
+552879,oql enhancements context distinct,ASSIGNED,P3 enhancement
+552880,eclipse wb crush appear unhandled error win,NEW,P3 critical
+552881,switch tycho,NEW,P3 normal
+552882,framework must provide extension point register generators,NEW,P3 normal
+552883,organize favorites dialog small,NEW,P3 trivial
+552884,generic constructor invocation proposal use diamond operator,NEW,P3 normal
+552885,move method buttonfactory abstractwidgetfactory,NEW,P3 minor
+552886,improve word new code mine annotations,NEW,P3 enhancement
+552887,add format option reference expressions,NEW,P3 enhancement
