@@ -5,10 +5,23 @@ from sklearn.ensemble import BaggingClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.externals import joblib
+# from sklearn.externals import joblib
+import joblib
 from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
+
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import precision_score
+from sklearn.metrics import recall_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import f1_score
+from sklearn.metrics import brier_score_loss
+from sklearn.metrics import log_loss
+from sklearn.metrics import average_precision_score
+from sklearn.metrics import hinge_loss
+from sklearn.metrics import classification_report
+import pandas as pd
+
 
 class dataFormat:
 	def summary(end):
@@ -109,6 +122,7 @@ train_X_, test_X_ = dataFormat.tfIdf(train_X, test_X)
 # print('svm',mdlSvm.score(test_X_,test_y))
 
 #从事先训练好并存下来的模型文件中导入五种预测方法的模型
+
 # mdlBayes=joblib.load('bayes.m')
 # mdlDecisionT=joblib.load('decisionT.m')
 # mdlRandomF=joblib.load('randomF.m')
@@ -136,9 +150,84 @@ train_X_, test_X_ = dataFormat.tfIdf(train_X, test_X)
 # with open('svm.r','w',encoding='utf-8') as f:
 # 	f.writelines(svm_y)
 
-with open('svm.r','r',encoding='utf-8') as f:
-	bayes_y=f.readlines()
-	
-print(accuracy_score(bayes_y,test_y))
 
+# 五种方法效果评估
+with open('bayes.r','r',encoding='utf-8') as f:
+	bayes_y=f.readlines()
+with open('decisionT.r','r',encoding='utf-8') as f:
+	decisionT_y=f.readlines()
+with open('randomF.r','r',encoding='utf-8') as f:
+	randomF_y=f.readlines()
+with open('knn.r','r',encoding='utf-8') as f:
+	knn_y=f.readlines()
+with open('svm.r','r',encoding='utf-8') as f:
+	svm_y=f.readlines()
+
+def print_report(report):
+	lines = report.split('\n')
+	print(lines[0])
+	print(lines[1])
+	print(lines[2]+lines[3])
+	print(lines[4]+lines[5])
+	print(lines[6]+lines[7])
+	print(lines[8]+lines[9])
+	print(lines[10]+lines[11])
+	print(lines[12])
+	print(lines[13])
+	print(lines[14])
+	print(lines[15])
+	print('')
+
+
+print("bayes report:")
+print_report(classification_report(test_y,bayes_y))
+print("decisionT report:")
+print_report(classification_report(test_y,decisionT_y))
+print("randomF report:")
+print_report(classification_report(test_y,randomF_y))
+print("knn report:")
+print_report(classification_report(test_y,knn_y))
+print("svm report:")
+print_report(classification_report(test_y,svm_y))
+
+
+
+print("bayes accuracy: " +str(accuracy_score(test_y,bayes_y)))
+print("decisionT accuracy: " +str(accuracy_score(test_y,decisionT_y)))
+print("randomF accuracy: "+str(accuracy_score(test_y,randomF_y)))
+print("knn accuracy: "+str(accuracy_score(test_y,knn_y)))
+print("svm accuracy: "+str(accuracy_score(test_y,svm_y)))
+print('')
+
+# print("bayes matrix")
+# print(confusion_matrix(bayes_y,test_y))
+# print("decisionT matrix")
+# print(confusion_matrix(decisionT_y,test_y))
+# print("randomF matrix")
+# print(confusion_matrix(randomF_y,test_y))
+# print("knn matrix")
+# print(confusion_matrix(knn_y,test_y))
+# print("svm matrix")
+# print(confusion_matrix(svm_y,test_y))
+
+print("bayes precision: " +str(precision_score(test_y,bayes_y,average='macro')))
+print("decisionT precision: " +str(precision_score(test_y,decisionT_y,average='macro')))
+print("randomF precision: " +str(precision_score(test_y,randomF_y,average='macro')))
+print("knn precision: " +str(precision_score(test_y,knn_y,average='macro')))
+print("svm precision: " +str(precision_score(test_y,svm_y,average='macro')))
+print('')
+
+print("bayes recall: " +str(recall_score(test_y,bayes_y,average='macro')))
+print("decisionT recall: " +str(recall_score(test_y,decisionT_y,average='macro')))
+print("randomF recall: " +str(recall_score(test_y,randomF_y,average='macro')))
+print("knn recall: " +str(recall_score(test_y,knn_y,average='macro')))
+print("svm recall: " +str(recall_score(test_y,svm_y,average='macro')))
+print('')
+
+print("bayes f1 score: " +str(f1_score(test_y,bayes_y,average='macro')))
+print("decisionT f1 score: " +str(f1_score(test_y,decisionT_y,average='macro')))
+print("randomF f1 score: " +str(f1_score(test_y,randomF_y,average='macro')))
+print("knn f1 score: " +str(f1_score(test_y,knn_y,average='macro')))
+print("svm f1 score: " +str(f1_score(test_y,svm_y,average='macro')))
+print('')
 
