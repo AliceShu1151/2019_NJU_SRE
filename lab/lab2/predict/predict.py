@@ -109,19 +109,36 @@ train_X_, test_X_ = dataFormat.tfIdf(train_X, test_X)
 # print('svm',mdlSvm.score(test_X_,test_y))
 
 #从事先训练好并存下来的模型文件中导入五种预测方法的模型
-mdlBayes=joblib.load('bayes.m')
-mdlDecisionT=joblib.load('decisionT.m')
-mdlRandomF=joblib.load('randomF.m')
-mdlKnn=joblib.load('knn.m')
-mdlSvm=joblib.load('svm.m')
+# mdlBayes=joblib.load('bayes.m')
+# mdlDecisionT=joblib.load('decisionT.m')
+# mdlRandomF=joblib.load('randomF.m')
+# mdlKnn=joblib.load('knn.m')
+# mdlSvm=joblib.load('svm.m')
 
 #五种预测方法的预测结果
-bayes_y=mdlBayes.predict(test_X_)
-dcsn_y=mdlDecisionT.predict(test_X_)
-rdmf_y=mdlRandomF.predict(test_X_)
-knn_y=mdlKnn.predict(test_X_)
-svm_y=mdlSvm.predict(test_X_)
+# bayes_y=mdlBayes.predict(test_X_)
+# with open('bayes.r','w',encoding='utf-8') as f:
+# 	f.writelines(bayes_y)
+	
+# dcsn_y=mdlDecisionT.predict(test_X_)
+# with open('decisionT.r','w',encoding='utf-8') as f:
+# 	f.writelines(dcsn_y)
 
+# rdmf_y=mdlRandomF.predict(test_X_)
+# with open('randomF.r','w',encoding='utf-8') as f:
+# 	f.writelines(rdmf_y)
+	
+# knn_y=mdlKnn.predict(test_X_)
+# with open('knn.r','w',encoding='utf-8') as f:
+# 	f.writelines(knn_y)
 
+# svm_y=mdlSvm.predict(test_X_)
+# with open('svm.r','w',encoding='utf-8') as f:
+# 	f.writelines(svm_y)
+
+with open('svm.r','r',encoding='utf-8') as f:
+	bayes_y=f.readlines()
+	
+print(accuracy_score(bayes_y,test_y))
 
 
