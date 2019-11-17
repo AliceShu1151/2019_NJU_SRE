@@ -20,6 +20,7 @@ from sklearn.metrics import log_loss
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import hinge_loss
 from sklearn.metrics import classification_report
+from sklearn.metrics import hamming_loss
 import pandas as pd
 
 
@@ -231,3 +232,9 @@ print("knn f1 score: " +str(f1_score(test_y,knn_y,average='macro')))
 print("svm f1 score: " +str(f1_score(test_y,svm_y,average='macro')))
 print('')
 
+print("bayes hamming loss: " +str(hamming_loss(test_y,bayes_y)))
+print("decisionT hamming loss: " +str(hamming_loss(test_y,decisionT_y)))
+print("randomF hamming loss: "+str(hamming_loss(test_y,randomF_y)))
+print("knn hamming loss: "+str(hamming_loss(test_y,knn_y)))
+print("svm hamming loss: "+str(hamming_loss(test_y,svm_y)))
+print('')
