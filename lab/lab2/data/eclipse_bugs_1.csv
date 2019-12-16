@@ -8844,8 +8844,3 @@ id,title,status,alias,product,component,version,importance,target_milestone,assi
 9997,Workbench | Build should rebuild active project only,RESOLVED FIXED,None,Platform,UI,2,P3 enhancement,---,Kevin Haaland,,,,,,,2002-02-19 07:43 EST by Leon J. Breedt,2002-05-01 17:01 EDT,0 users
 9998,Performance - Better pruning meaningless AST nodes upon completion,RESOLVED FIXED,None,JDT,Core,2,P1 normal,2.0 M4,David Audel,,,,,,,2002-02-19 08:36 EST by Philipe Mulet,2002-02-28 06:14 EST,0 users
 9999,C indentation mode,RESOLVED DUPLICATE of bug 45202,None,CDT,cdt-core,1,P4 enhancement,Future,Alain Magloire,,,,,,8583,2002-02-19 10:05 EST by Johan Walles,2009-01-09 14:51 EST,1 user
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-100个pr,100个文件,,,,,,,,,,,,,,,,,
-一个需求 一个文件,,,,,,,,,,,,,,,,,,
-id,名字需求,讨论文本,,,,,,,,,,,,,,,,
