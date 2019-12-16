@@ -1,0 +1,5 @@
+850,IDEA-166142 IDEA-198152 find full hierarchy for jar:/// files  бн
+2018-09-01T21:13:55Z,discuss,Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+2018-09-07T14:11:43Z,discuss,"We found another way to fix the issue.
+Thank you a lot for your help!"
+2018-09-01T21:13:15Z,commit,IDEA-166142 IDEA-198152 find fill hierarchy for jar:/// files,github.com/JetBrains/intellij-community/pull/850/commits/73ce9319134a0fd6aa2f4f20b1d96c68c89176f0

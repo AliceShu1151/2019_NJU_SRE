@@ -1,0 +1,4 @@
+1088,Fix a memory leak in InternalDecorator (IDEA-208847)
+2019-03-13T00:20:49Z,discuss,The leak is prevented by not adding a lambda object as a child of project to the Disposer's tree and calling removeAncestorListener from the InternalDecorator.dispose method instead.
+2019-03-22T19:46:42Z,discuss,"Disposer.register(myHeader /* instead of myProject */, () -> removeAncestorListener(ancestorListener)); solves the issue"
+2019-03-13T00:18:59Z,commit,Fix a memory leak in InternalDecorator (IDEA-208847),github.com/JetBrains/intellij-community/pull/1088/commits/8f95df9bc812482fea079fd48146bbde7800e323

@@ -1,0 +1,7 @@
+134,Custom filetype keyword completion
+2013-12-03T11:59:24Z,discuss,"
+No description provided.
+"
+2013-12-09T19:04:24Z,discuss,Merged manually
+2013-12-03T07:03:44Z,commit,custom file type completion rewritten as completion contributor,github.com/JetBrains/intellij-community/pull/134/commits/450bf58195f8049e2420a3d06b2857622a0696ac
+2013-12-03T07:19:34Z,commit,"in custom file types, don't complete keywords in literals or comments¡­",github.com/JetBrains/intellij-community/pull/134/commits/c8790402964d6db2fbae780eab17017c5ed6ebb8

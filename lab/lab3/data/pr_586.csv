@@ -1,0 +1,4 @@
+586,Remove current name from the suggestion list when renaming
+2017-06-07T22:25:43Z,discuss,"This patch removes the element current name from the suggestions list when renaming.
+(as mentioned in IDEA-171082)"
+2017-05-17T20:02:21Z,commit,Remove current name from the suggestion list when renaming,github.com/JetBrains/intellij-community/pull/586/commits/b40f563e7ba4064eda6682e0758d0be74aafae8e

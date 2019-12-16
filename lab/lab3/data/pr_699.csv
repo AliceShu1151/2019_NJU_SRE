@@ -1,0 +1,9 @@
+699,Fix UI in Balloon
+2017-12-27T05:13:45Z,discuss,
+2017-12-29T15:53:40Z,discuss,What issue does this patch solve? I need the steps to reproduce at least.
+2017-12-30T06:23:04Z,discuss,"Extract variable popup balloon:
+"
+2017-12-30T06:23:04Z,discuss,Or write a plugin:
+2017-12-30T06:23:04Z,discuss,
+2018-01-16T19:24:39Z,discuss,"Oh, now I can see... Thank you, your fix's been just pushed to the master branch!"
+2017-12-27T04:36:00Z,commit,Fix UI in Balloon,github.com/JetBrains/intellij-community/pull/699/commits/9ecf4940b40fb17c2a4b29131b68c982c655f90e

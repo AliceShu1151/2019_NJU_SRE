@@ -1,0 +1,6 @@
+1231,Fix PY-38835
+2019-11-04T17:52:31Z,discuss,"Fix for https://youtrack.jetbrains.com/issue/PY-38835
+Not tested"
+2019-11-04T17:51:27Z,commit,Fix PY-38835,github.com/JetBrains/intellij-community/pull/1231/commits/c10ecebff10c1626585dd8157e9d63e5d0782231
+2019-11-18T05:02:21Z,commit,Update SciPyDocumentationLinkProvider.kt,github.com/JetBrains/intellij-community/pull/1231/commits/dd92522539eff78d1967a5c2d61fcc8a438643e8
+2019-11-18T05:05:03Z,commit,Update SciPyDocumentationLinkProvider.kt,github.com/JetBrains/intellij-community/pull/1231/commits/aff79f2d91bab0a652004f5923112179249f9414

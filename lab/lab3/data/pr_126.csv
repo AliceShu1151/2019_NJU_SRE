@@ -1,0 +1,11 @@
+126,Correct build fixes for pycharm
+2013-11-13T00:53:11Z,discuss,"The two fixes, as one might guess from the diff, are as follows:"
+2013-11-13T00:53:11Z,discuss,"This guards those two directories so once they re-appear the build
+should again include them."
+2013-11-13T11:37:21Z,discuss,Shuould the comment be really commited in?
+2013-11-13T11:38:11Z,discuss,It seems to me that the real problem is that the path is calculated wrongly /proj/jetbrains/community/community/lib/libpty instead of /proj/jetbrains/community/lib/libpty
+2013-11-13T22:02:04Z,discuss,"Is this ""closed, applied upstream"" or ""closed, please pull out the offending comment and fix up the path calculation""?"
+2013-11-14T12:21:59Z,discuss,"This is ""closed, path calculation fixed""."
+2013-11-22T00:02:49Z,discuss,I am still experiencing that line 298 references a non-existent help directory
+2014-01-19T07:34:03Z,discuss,Hope springs eternal...
+2013-11-13T00:47:33Z,commit,Correct build fixes for pycharm,github.com/JetBrains/intellij-community/pull/126/commits/89b7427ed15791a306c72b18847258064a7ea58d

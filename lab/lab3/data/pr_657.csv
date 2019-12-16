@@ -1,0 +1,5 @@
+657,解决使用nosetest执行用例时，用例注释为中文unicode时的乱码问题。
+2017-11-07T09:30:40Z,discuss,如果testcase的注释为中文Unicode时，如：
+2017-11-07T09:30:40Z,discuss,"这种形式，那么运行nosetest时，会报异常：
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 1-11: ordinal not in range(128)"
+2017-11-07T09:27:44Z,commit,解决使用nosetest执行用例时，用例注释为中文unicode时的乱码问题。,github.com/JetBrains/intellij-community/pull/657/commits/c55fbef05ca72e26a535f40a0e3fcb02794691cb

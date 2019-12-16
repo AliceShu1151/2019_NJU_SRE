@@ -1,0 +1,5 @@
+794,Pass caught exception when generating ExternalSystemException
+2018-06-01T00:29:13Z,discuss,"This will cause the message to not be empty when getMessage(rootCause)
+returns an empty string."
+2018-06-04T10:33:12Z,discuss,"Thanks for the contribution, I've merged the change using the following commit 5575541"
+2018-06-01T00:23:13Z,commit,Pass caught exception when generating ExternalSystemException,github.com/JetBrains/intellij-community/pull/794/commits/c07228eaa7f9c45bfce9fd2092318d15ee66d71a

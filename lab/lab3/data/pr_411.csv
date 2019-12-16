@@ -1,0 +1,3 @@
+411,idea.bat: Honor IDEA_JDK_64 environment variable
+2016-06-12T15:56:14Z,discuss,"If %BITS% is set to ""64"" and the path specified in %IDEA_JDK_64% exists, it is used as JDK path."
+2016-06-12T15:55:38Z,commit,idea.bat: Honor IDEA_JDK_64 environment variable,github.com/JetBrains/intellij-community/pull/411/commits/fc087d717b4f0885805e1f341f23c2be55daeeee

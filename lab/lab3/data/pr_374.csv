@@ -1,0 +1,3 @@
+374,Changing path separator for creating gists
+2016-03-23T23:45:27Z,discuss,Resolves https://youtrack.jetbrains.com/issue/IDEA-153547
+2016-03-23T23:45:05Z,commit,Changing path separator for creating gists,github.com/JetBrains/intellij-community/pull/374/commits/1fa2cc792b8634e63137780cf2d293500752c56e

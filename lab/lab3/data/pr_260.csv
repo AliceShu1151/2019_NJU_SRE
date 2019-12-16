@@ -1,0 +1,36 @@
+260,Add the ability to get keys and values from KeyFMap
+2015-04-27T17:04:58Z,discuss,Changes in KeyFMap are needed for Kotlin
+2015-04-27T17:18:27Z,discuss,@donnerpeter @chashnikov please review this.
+2015-04-27T17:19:16Z,discuss,Note I didn't test it on CI
+2015-04-27T19:11:04Z,discuss,Why exactly do you need this in Kotlin?
+2015-04-27T19:51:20Z,discuss,"We need lightweight container for storing metadata in some places.
+We want to use UserDataHolder(Base) but sometimes we need merge some containers, so we should know what keys stored inside container..."
+2015-04-27T19:51:20Z,discuss,"TBH right now we need only getKeys, getValues added because it's already exist in most implementations and to be symmetrical :)"
+2015-04-27T20:00:16Z,discuss,"Another possible way to achieve it is declare some utility functions outside KeyFMap, but I afraid that then we can forget to update these functions while adding new implementations."
+2015-04-27T20:00:16Z,discuss,Thoughts?
+2015-04-27T20:01:34Z,discuss,"I thought that maybe will be useful to have containsKey too?
+What do you think?"
+2015-04-28T08:44:11Z,discuss,"If you need to merge KeyFMap why not add method 'plus(KeyFMap)' to KeyFMap
+instead?"
+2015-04-28T08:44:11Z,discuss,"On Mon, Apr 27, 2015 at 9:51 PM, Zalim Bashorov notifications@github.com
+wrote:"
+2015-04-28T18:08:43Z,discuss,"Good point, thanks @chashnikov!
+What do You think @donnerpeter?"
+2015-04-28T18:08:43Z,discuss,Anyway I think getKeys is useful in some cases(e.g. see second commit).
+2015-04-28T18:35:24Z,discuss,"I'm sorry, but I jumped to conclusions. We really need getKeys."
+2015-04-28T19:31:59Z,discuss,"I still don't understand the exact problem you're trying to solve and why just plain old Map isn't enough. KeyFMap is pretty specific and has quite a bad performance when large. If you need immutability, have a look at SmartFMap (and if Kotlin still doesn't have its own immutable collections, that's a shame)."
+2015-04-28T19:48:16Z,discuss,I updated the PR
+2015-04-28T19:57:49Z,discuss,We want to store metadatas which key's type is Key.
+2015-04-28T19:57:49Z,discuss,It's ok for our cases -- we don't expected large datas.
+2015-04-28T19:57:59Z,discuss,We (sometimes) prefer to use tested for years things instead of reinvent it :)
+2015-04-28T20:08:16Z,discuss,"java.util.HashMap is a very tested thing, for many more years already than KeyFMap. The latter is itself an implementation detail of UserDataHolderBase and might change in future (although not very likely).  It also lacks some functionality that might be important, e.g. equals/hashCode. HashMap is not so type-safe, agreed, but definitely more reliable and proven."
+2015-04-28T20:08:16Z,discuss,So I'd say I need more arguments that you really-really need KeyFMap and no alternatives will ever suit you :)
+2015-04-29T13:12:04Z,discuss,I updated PR.
+2015-04-29T13:12:28Z,discuss,Please backport changes to 141 branch
+2015-04-29T14:01:56Z,discuss,Pushed to master. Need review for 141. @chashnikov ?
+2015-04-29T14:33:29Z,discuss,"Looks ok now, though I would generate KEYS and VALUES arrays in KeyFMapTest instead of hardcoding."
+2015-04-29T15:20:34Z,discuss,I created new PR #262 with changes in KeyFMapTest.
+2015-04-29T15:20:34Z,discuss,Thanks all!
+2015-04-28T19:15:36Z,commit,ArrayBackedFMap: getKeys -> getKeyIds,github.com/JetBrains/intellij-community/pull/260/commits/9bb470daacab7496a197967e392a01a9e3fa65f8
+2015-04-27T16:34:44Z,commit,Add the ability to get keys and values from KeyFMap,github.com/JetBrains/intellij-community/pull/260/commits/f06a33f802b349b294a091c5a8cc2447b7d8f1ad
+2015-04-28T19:34:05Z,commit,Use KeyFMap#getKeys in ExportableUserDataHolderBase to simplify and i¡­,github.com/JetBrains/intellij-community/pull/260/commits/d993831ce5ff4437536e1d9d2c63f29b428fcf8f

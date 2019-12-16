@@ -1,0 +1,5 @@
+426,PY-11943 Add MutableMapping test and check
+2016-07-11T15:15:07Z,discuss,"Type checker has separate checks to perform type casting to abstract
+base classes like Mapping, but it didn't support MutableMapping so this
+commit added MutableMapping inspection to type checker."
+2016-07-11T15:02:20Z,commit,PY-11943 Add MutableMapping test and check,github.com/JetBrains/intellij-community/pull/426/commits/4f72c809210c50737d76f9c692528c82d4a3f846

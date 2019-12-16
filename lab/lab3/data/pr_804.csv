@@ -1,0 +1,5 @@
+804,Gradle: upgrade Tooling API from 4.7 up to 4.8
+2018-06-07T17:03:49Z,discuss,"This PR upgrades Gradle version to last stable release 4.8.
+No big change was required."
+2018-06-07T17:55:03Z,discuss,"Thanks Lucas, however the gradle tooling jars were already upgraded recently, see 29e4db3"
+2018-06-07T16:51:06Z,commit,Gradle: upgrade Tooling API from 4.7 up to 4.8,github.com/JetBrains/intellij-community/pull/804/commits/3b38fd70f25e6f38944e509b76f478aef0f7d9e1

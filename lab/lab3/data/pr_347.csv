@@ -1,0 +1,10 @@
+347,[IDEA-137253] Fixed renaming class elements when decompiling
+2016-01-21T06:11:13Z,discuss,Fixes issue IDEA-137253
+2016-01-22T15:28:35Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-01-24T23:39:22Z,discuss,"I'll do that early next week, I won't have access to a printer until monday at the earliest."
+2016-01-26T20:49:04Z,discuss,I've gone ahead and emailed it to the address that you mentioned.
+2016-01-27T15:35:07Z,discuss,We've received the CLA. Thanks.
+2016-02-19T23:43:52Z,discuss,There is a bug with renaming inherited class elements in the outputted code (methods and fields). When an inherited method or field is referenced in code it is decompiled as the original name. Obviously this is not the intended behaviour.
+2016-02-21T19:43:29Z,discuss,I mentioned that in this comment that I added in 82f187e
+2016-02-21T19:45:30Z,discuss,"I'm not familiar enough with the codebase to resolve it myself but if you comment/vote for the issue that is mentioned in the comment I left in the source code, maybe it'll get some attention."
+2016-01-21T06:06:45Z,commit,Fixed renaming class elements when using the decompilers -ren=1 optio¡­,github.com/JetBrains/intellij-community/pull/347/commits/e1b4995d6eb38a26f8a6854b0f2de96539687444

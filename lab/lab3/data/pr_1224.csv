@@ -1,0 +1,4 @@
+1224,Fix bug: environment variables of before run task can not be saved to¡­
+2019-10-29T12:12:09Z,discuss,"Fix bug: environment variables of before run task can not be saved to xml config file.
+"
+2019-10-29T12:02:05Z,commit,Fix bug: environment variables of before run task can not be saved to¡­,github.com/JetBrains/intellij-community/pull/1224/commits/70de9f4349621701d3606d31477a847a6b4e0efa

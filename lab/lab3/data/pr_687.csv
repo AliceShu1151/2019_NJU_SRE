@@ -1,0 +1,3 @@
+687,Dispose of the IdeRootPanel when disposing of the IdeFrame
+2017-12-18T14:40:06Z,discuss,Avoid memory leaks by disposing of the IdeRootPane when about to dispose of the IdeFrame
+2017-03-29T14:10:21Z,commit,Dispose of the IdeRootPanel when disposing of the IdeFrame,github.com/JetBrains/intellij-community/pull/687/commits/b7dda85c9babd086054638fa3cdf277920cd9633

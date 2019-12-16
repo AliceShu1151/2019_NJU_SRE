@@ -1,0 +1,4 @@
+1112,Remove listener before calling deactivateIfNeeded (IDEA-210564)
+2019-04-06T01:22:01Z,discuss,Remove listener from myMouseListeners before calling deactivateIfNeeded (IDEA-210564)
+2019-10-23T11:52:03Z,discuss,Already merged
+2019-04-06T01:19:29Z,commit,Remove listener from myMouseListeners before calling deactivateIfNeed¡­,github.com/JetBrains/intellij-community/pull/1112/commits/a9bad4af055871c75d5af6bb3a2541fcfe3136f7

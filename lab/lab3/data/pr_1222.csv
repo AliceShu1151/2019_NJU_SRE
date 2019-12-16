@@ -1,0 +1,5 @@
+1222,IDEA-225641: Clear ResolveCache on low memory condition
+2019-10-27T20:40:13Z,discuss,"
+No description provided.
+"
+2019-10-27T20:37:17Z,commit,IDEA-225641: Clear ResolveCache on low memory condition,github.com/JetBrains/intellij-community/pull/1222/commits/3324a6637f6300a6eedabb46750338e02e4cfbba

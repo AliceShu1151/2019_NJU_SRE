@@ -1,0 +1,10 @@
+211,Consider edited filename in SaveDialog.
+2014-09-24T19:23:33Z,discuss,"If filename edited after selected file in FileSystemTree, SaveDialog will adopt new filename."
+2014-09-24T19:25:32Z,discuss,"Check ""File name"" textfield has changed."
+2014-09-24T19:25:49Z,discuss,Adopt new file name.
+2014-09-26T08:47:30Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-09-26T13:00:12Z,discuss,I have done. Thank you.
+2014-09-26T14:58:45Z,discuss,Agreement received. Thanks.
+2015-10-20T16:37:54Z,discuss,Hi @klikh Is there any problem?
+2019-06-23T00:10:56Z,discuss,hey @keiji
+2014-09-24T19:18:34Z,commit,Consider edited filename in SaveDialog.,github.com/JetBrains/intellij-community/pull/211/commits/39d9b1742f605251a0126d0af5b797286b07a9a6

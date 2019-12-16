@@ -1,0 +1,8 @@
+599,simple support for xslt 3.0
+2017-07-04T10:34:55Z,discuss,"While XSLT 3.0 offers much more functionality, the basic thing you want is that the IDE at least recognizes the same functionality as in 2.0. I think with these simple changes that should be fixed. Since I am not a Java developer, and also did not test this, you should take this PR with care."
+2017-07-04T12:20:26Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-07-04T12:25:22Z,discuss,Done.
+2018-07-21T11:52:14Z,discuss,"@frederikbosch, please rebase the PR, cc @dmitry-avdeev."
+2019-06-23T15:55:40Z,discuss,hey @frederikbosch
+2017-07-04T10:31:56Z,commit,simple support for xslt 3.0,github.com/JetBrains/intellij-community/pull/599/commits/52f224cbbfdad2517bc11a2756ab4469ff6f7b6c
+2017-07-04T10:37:19Z,commit,"xsd, not dtd",github.com/JetBrains/intellij-community/pull/599/commits/b59849d9fb9e52c0151701154ed3907dbc17c93e

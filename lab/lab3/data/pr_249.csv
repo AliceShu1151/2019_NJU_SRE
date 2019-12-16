@@ -1,0 +1,6 @@
+249,fix IDEA-132015
+2015-03-05T14:39:30Z,discuss,"Add ""assigned me"" checkbox.
+If this check box is not selected, the all tasks are displayed."
+2015-03-06T12:02:02Z,discuss,"Hi, @siosio, I'm going to make this feature (filtration of tasks by assignee) consistent across all different connectors and move corresponding checkbox to the ""Open Task"" popup eventually, but for the time being it's a nice little fix, so I accept your pull request. Thank you!"
+2015-03-06T12:02:02Z,discuss,"P.S. I've changed UI in the editor a bit so it was similar to the one for Trello: checkbox is called ""Include issues not assigned to me"" and has the opposite effect. Hope you don't mind."
+2015-03-05T14:27:27Z,commit,fix IDEA-132015,github.com/JetBrains/intellij-community/pull/249/commits/e7735ef93638e952c97c8b666d1be35389087718

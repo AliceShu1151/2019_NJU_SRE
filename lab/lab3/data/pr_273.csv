@@ -1,0 +1,15 @@
+273,Fixed issues related to generic type refs from cls
+2015-06-08T16:27:26Z,discuss,"
+No description provided.
+"
+2015-06-08T13:36:18Z,discuss,Fails here without the fixes
+2015-06-08T13:36:25Z,discuss,Fails here without the fixes
+2015-06-08T13:36:55Z,discuss,Fails here without the fixes
+2015-06-08T13:37:03Z,discuss,Fails here without the fixes
+2015-06-08T16:31:28Z,discuss,see https://youtrack.jetbrains.com/issue/IDEA-141230
+2015-06-09T12:56:01Z,discuss,Pushed upstream (with minor reformatting and omitting unneeded test cases). Thanks!
+2015-06-08T13:13:14Z,commit,Test case to illustrate the problem with binary class files,github.com/JetBrains/intellij-community/pull/273/commits/c4429ac23226252da6dcec6b21f1bb761e165324
+2015-06-08T13:28:03Z,commit,Added tests for the FernFlower decompiler,github.com/JetBrains/intellij-community/pull/273/commits/06dce2d8ec27d3833527a0e7fcf4715435a2883c
+2015-06-08T15:00:24Z,commit,Fixed generic type references when read from cls files,github.com/JetBrains/intellij-community/pull/273/commits/6b23fbc83dcbea596b509e0d334bb661839c7ba6
+2015-06-08T16:22:55Z,commit,Fixed Fernflower decompiler output for generic nested types,github.com/JetBrains/intellij-community/pull/273/commits/57df4795eeb1a63991582021bf374d5882b8b56c
+2015-06-08T16:26:43Z,commit,Moved test cases to existing test class,github.com/JetBrains/intellij-community/pull/273/commits/faa7d2ca203dd63829dde8bf83e2ba17843358eb

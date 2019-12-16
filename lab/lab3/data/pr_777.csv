@@ -1,0 +1,19 @@
+777,Resize myOriginalDocument to a message boundary
+2018-04-11T01:03:29Z,discuss,"Android Studio overrides LogConsoleBase.getOriginalDocument to work around
+the referenced issue. The override deletes additional characters up to and
+including the next newline so the Studio logcat message parsers don't break."
+2018-04-11T01:03:29Z,discuss,Bug: https://issuetracker.google.com/77876440
+2018-04-11T01:05:14Z,discuss,@Eugene-Kudelevsky
+2018-04-11T15:06:55Z,discuss,Eugene doesn't work at JB anymore. I'll try to help if I can. What would be the fix in AS with help of opened document/editor? I would prefer to expose api and not the implementation details which are represented by document/editor in this case. Thanks
+2018-04-11T20:29:10Z,discuss,Hi @akozlova
+2018-04-11T20:29:10Z,discuss,"For the record, I'm a total GitHub newbie, so please bear with me. I pushed a new commit with effectively the same fix I had in Studio. Let me know what you think, thanks!"
+2018-04-12T15:39:38Z,discuss,I ask what would you like to do with exposed document and editor assuming you have access to them. Is there any commits with the changes? I see only one commit from you. Thanks
+2018-04-12T18:56:10Z,discuss,I uploaded a commit to our external Gerrit so you can see what I'm trying to do. I'm overriding getOriginalDocument to do what the superclass version does and adding my custom buffer resizing logic. I reference myOriginalDocument and getEditor in the override.
+2018-04-12T18:56:10Z,discuss,https://android-review.googlesource.com/#/c/platform/tools/adt/idea/+/663830/
+2018-04-13T18:09:36Z,discuss,what if delete to the last new line before toRemove?
+2018-04-14T00:22:59Z,discuss,That's fine. Thank you!
+2018-04-18T18:14:22Z,discuss,"merged manually, thanks!"
+2018-04-18T18:40:43Z,discuss,Thank you Anna! Can you point me at a commit so I can merge it on our side?
+2018-04-18T18:57:07Z,discuss,Not yet visible on GitHub. Will appear tomorrow. Will let you know
+2018-04-19T10:12:42Z,discuss,3bef87b
+2018-04-11T19:51:55Z,commit,Resize myOriginalDocument to a message boundary,github.com/JetBrains/intellij-community/pull/777/commits/fe4fa91b5b1b13bf66b2201d3fa1c398454f9350

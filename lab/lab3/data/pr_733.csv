@@ -1,0 +1,14 @@
+733,PY-28461: Fix completions for implicitly imported sub-packages from inside a package
+2018-02-13T01:52:03Z,discuss,@vlasovskikh This fixes PY-28461. I didn't want to add this to previous PR since it was already too large.
+2018-02-13T01:52:03Z,discuss,"btw do you know the purpose of the check !inSameFile(location, importedModule)  in PyModuleType? It looks suspicious to me."
+2018-03-01T11:45:03Z,discuss,"@fitermay !inSameFile(location, importedModule) was necessary for PyMultiFileResolveTest#testRelativeFromSubmodule where we had to add the original import for the imported module located in anther file. Actually it's OK to remove this check and always add the original import, there just may be duplicates. Making importElements a Set<PyImportElement> will likely overcome this duplication."
+2018-03-01T11:51:44Z,discuss,@fitermay Thanks for your pull request! I've found a couple of minor details that can be improved. Could you please address them?
+2018-03-02T05:10:58Z,discuss,"@vlasovskikh I've refactored it as you suggested , I think.  Some operations ended up being repeated twice, but I think it's probably better than passing a confusing number of parameters."
+2018-03-05T03:35:48Z,discuss,@vlasovskikh I've noticed a couple of issue that may be related to my previous set of changes. I've added fixes to them in this PR.
+2018-03-13T15:11:09Z,discuss,@fitermay Thanks for your PR! I've rebased it onto master.
+2018-02-12T22:10:16Z,commit,PY-28461 Refactoring: get rid of unused PyModuleType member,github.com/JetBrains/intellij-community/pull/733/commits/823cfc21528bd261ea63607c6bbda8d7340fd29b
+2018-02-13T01:43:15Z,commit,PY-28461: Converge logic for resolveMember and getCompletionVariants,github.com/JetBrains/intellij-community/pull/733/commits/d02cd91a2b93c0dadec31cf7d547843c2abc58b8
+2018-02-27T05:23:19Z,commit,PY-28685: Consider module at reference location as implcitly imported,github.com/JetBrains/intellij-community/pull/733/commits/ff14b9f4c4a1169fbb37e5dfa2df047bafdbbc61
+2018-03-02T05:05:05Z,commit,PY-28685/PY-28461: Refactoring after review,github.com/JetBrains/intellij-community/pull/733/commits/e9990fdb630d62d616e20c41ddf021d2d68c4ae3
+2018-03-03T06:02:40Z,commit,fix resolving QualifiedNames in scratch file context,github.com/JetBrains/intellij-community/pull/733/commits/fccd1ffbefa3bfb06360771145d90e5e0dcb8abb
+2018-03-05T03:31:31Z,commit,ensure packages resolve to __init__.py when possible,github.com/JetBrains/intellij-community/pull/733/commits/2faa63936a2327e3c9cf107bd1f9d7b19e9c2971

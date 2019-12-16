@@ -1,0 +1,6 @@
+628,PY-26081: Make 'getProcessOutput' respect cancellation by ProgressIndicator
+2017-09-14T04:57:19Z,discuss,"
+No description provided.
+"
+2017-10-03T13:49:18Z,discuss,Thanks for the PR! I indeed didn't realize that Quick Documentation is actually opened under a special write action sensitive progress indicator coming from ProgressIndicatorUtils#runInReadActionWithWriteActionPriority().
+2017-09-14T04:55:47Z,commit,PY-26081: Make 'getProcessOutput' respect cancellation by ProgressInd¡­,github.com/JetBrains/intellij-community/pull/628/commits/342abef60007cb95bb8680d88a8e3c5c4751840a

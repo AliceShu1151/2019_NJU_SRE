@@ -1,0 +1,15 @@
+304,Always check PATH in Git detector
+2015-09-28T19:51:58Z,discuss,With the change the detector works fine with my custom git location.
+2015-10-01T19:20:25Z,discuss,FYI @klikh. Would be nice to have it cherry-picked in 15.
+2015-10-06T15:00:42Z,discuss,LGTM. Have you checked GitExecutableDetectorWindowsTest?
+2015-10-06T17:20:16Z,discuss,I assumed it's only for windows and I have only Mac.
+2015-10-09T16:49:03Z,discuss,"I've checked it myself, it fails because the code is referring to the PathEnvironmentVariableUtil which is not overridden in the test. I'll prepare the fix and merge the updated change soon."
+2015-10-09T16:58:34Z,discuss,Thanks a ton!
+2015-10-09T16:58:34Z,discuss,"On Fri, Oct 9, 2015 at 9:49 AM, Kirill Likhodedov notifications@github.com
+wrote:"
+2015-10-10T14:00:56Z,discuss,"Just found another problem: there are two valid executable formats for Git on Windows: git.cmd and git.exe. In this PR only git.exe is considered. Moreover, it is not enough to, for instance, check the PATH for git.exe and then check it for git.cmd, since if both are available in the PATH, the first one (in the order in which they appear in the PATH) should be preferred."
+2015-10-10T14:00:56Z,discuss,"Currently working on it. Luckily, I wrote this test a while ago, otherwise wouldn't capture this."
+2018-07-27T17:22:16Z,discuss,"I've ported this PR to current master.
+See commit 06e4dec
+Thank you, @fkorotkov"
+2015-09-28T17:23:01Z,commit,Always check PATH in Git detector,github.com/JetBrains/intellij-community/pull/304/commits/26c1ea0661607257912909f5323fc56e66582f06

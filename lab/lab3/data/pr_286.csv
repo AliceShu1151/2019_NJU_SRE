@@ -1,0 +1,19 @@
+286,Allow using more than one color in structure view nodes
+2015-07-08T13:38:14Z,discuss,"This patch allows using more than one color in ItemPresentations used in the structure view, for example to match the syntax highlighting in the editor."
+2016-05-31T14:36:35Z,discuss,"Are you guys are interested in this PR? If so, I can update it."
+2016-05-31T17:48:39Z,discuss,"This idea is good, but..."
+2016-05-31T17:48:39Z,discuss,"ItemPresentation is a simple representation, which includes primary text, secondary text and icon only. All colors are retrieved automatically according to selected color scheme and component state."
+2016-05-31T17:48:39Z,discuss,"ColoredItemPresentation adds an ability to set a text color, but it uses a special key to retrive it from selected color scheme."
+2016-05-31T17:48:39Z,discuss,"You suggest to return a ColoredFragment from the Tree API, which allows people to set colors directly. So many people will not take care of supporting different color schemes."
+2016-05-31T17:48:39Z,discuss,"I think that interface should return something like List<Pair<String,TextAttributesKey>>. Also, the documentation should describe what should we do with methods of the super interface. Should we ignore all the methods from ItemPresentation? Should we extend ColoredItemPresentation and use our list as addtitional text fragments to the primary colored fragment?"
+2016-05-31T17:48:39Z,discuss,Also we need to test this functionality in different use cases.
+2016-05-31T17:53:04Z,discuss,"Sorry, the following part of the comment was considered as HTML and gone:"
+2016-05-31T17:53:04Z,discuss,"I think that interface should return something like List of Pair of String,TextAttributesKey."
+2016-05-31T18:57:57Z,discuss,"Thanks for your feedback. Using TextAttributesKey seems like a good idea, I'll try to improve the PR this week."
+2016-05-31T18:57:57Z,discuss,"I think getLocationString() and getIcon(boolean) are still useful and should not be ignored, only getPresentableText() will not be used because the results of getColoredFragments() will be used instead. Since this method is already @Nullable, I suppose I can override it in MulticoloredItemPresentation to add a Javadoc that clarifies this."
+2016-05-31T18:57:57Z,discuss,ColoredItemPresentation can still be used independently of MulticoloredItemPresentation to add an easier way to force a single color.
+2018-07-21T14:51:35Z,discuss,"@bjansen, please rebase the PR, cc @SergeyMalenkov."
+2018-10-08T19:33:09Z,discuss,"Actually I don't have this branch anymore, I will open a separate pull request with my updated changes."
+2018-10-08T20:15:25Z,discuss,@SergeyMalenkov what about something like this?
+2018-10-08T20:15:25Z,discuss,"getPresentableText() would still be used to return the text, and the extra methods returns which parts of the text should be presented differently, and how to present them."
+2015-07-08T13:34:44Z,commit,Allow using more than one color in structure view nodes,github.com/JetBrains/intellij-community/pull/286/commits/ba265306c265206a45549ca0f44f79c3658772f1

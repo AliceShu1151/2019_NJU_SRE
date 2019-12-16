@@ -1,0 +1,6 @@
+1204,Make default Layout of TextEditorWithPreview configurable
+2019-09-23T16:34:41Z,discuss,"If the Layout can't be retrieved from PropertiesComponent, we were
+defaulting to SHOW_EDITOR_AND_PREVIEW, but for some subclasses of
+TextEditorWithPreview other modes might make more sense."
+2019-09-25T13:24:12Z,discuss,Thank you. Merged.
+2019-09-23T16:29:38Z,commit,Make default Layout of TextEditorWithPreview configurable,github.com/JetBrains/intellij-community/pull/1204/commits/5ae66fcd468d678fe07160f1c0a0ad0d63457f26

@@ -1,0 +1,12 @@
+202,option BROWSEWORDATCARET removed
+2014-07-26T12:38:45Z,discuss,"Latest BrowseWordAtCaret fully supports darcula scheme, so this key is not longer needed. https://code.google.com/p/browsewordatcaret/issues/detail?id=16"
+2014-07-27T12:24:38Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-07-27T12:47:36Z,discuss,"@klikh
+CLA done"
+2014-07-27T12:50:57Z,discuss,"Received, thanks."
+2018-07-21T15:08:28Z,discuss,"@minman, please rebase the PR, cc @bulenkov."
+2019-06-22T23:47:43Z,discuss,@minman what issue does it solve? is it still reproducible? there are chances that it was fixed somewhere between 2014 and 2019...
+2019-06-22T23:47:43Z,discuss,"@bulenkov
+please update this PR so it's ready to be merged, explain why this can't be done, or consider closing it."
+2019-06-22T23:47:43Z,discuss,keeping pull requests untouched for years is cluttering the repository.
+2014-07-26T12:36:27Z,commit,option BROWSEWORDATCARET removed,github.com/JetBrains/intellij-community/pull/202/commits/cac5f6de909fb6595314a5b690c7e82c64cee543

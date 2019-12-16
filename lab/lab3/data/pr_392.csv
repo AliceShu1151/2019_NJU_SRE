@@ -1,0 +1,7 @@
+392,Support for Groovy BaseScript annotation in package definition and im¡­
+2016-04-26T02:59:53Z,discuss,¡­port statements
+2016-04-26T11:18:53Z,discuss,+1
+2016-06-18T15:28:16Z,discuss,updated
+2018-07-21T13:22:00Z,discuss,"@DameNoSupaplex, please rebase the PR, cc @dovchinnikov."
+2019-06-24T14:38:10Z,discuss,"I've updated the request a bit and merged it, thank you!"
+2016-06-18T14:48:36Z,commit,Support for Groovy BaseScript annotation in package definition and im¡­,github.com/JetBrains/intellij-community/pull/392/commits/ec1942b6f12360b89a795046d4e967fa1708804d

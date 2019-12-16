@@ -1,0 +1,4 @@
+474,Make plugins/git4idea/resources a resources root
+2016-11-28T22:32:08Z,discuss,"бн instead of a sources root, since it contains only icons."
+2016-12-06T17:30:18Z,discuss,Merged manually. Thanks.
+2016-11-28T22:26:55Z,commit,Make plugins/git4idea/resources a resources root,github.com/JetBrains/intellij-community/pull/474/commits/6cba3d24c05d7b34258cffed81d558c83926a423

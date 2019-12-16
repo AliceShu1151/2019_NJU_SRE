@@ -1,0 +1,9 @@
+655,Revert commit 8608f6e
+2017-10-27T18:28:55Z,discuss,"This dependency caused Project Structure Problems to show
+¡°Module util: invalid item 'xml-apis-ext' in the dependencies list¡±
+because xml-apis-ext was removed by commit 1c6369f."
+2017-10-27T18:29:43Z,discuss,@forantar
+2017-11-15T03:17:47Z,discuss,@chashnikov?
+2017-11-15T09:16:24Z,discuss,"@dahlstrom-g We need to have dependency on 'xml-apis-ext' (as described in the commit message), so I've added xml-apis-ext library back instead."
+2017-11-15T20:34:42Z,discuss,Thank you!
+2017-10-27T18:24:33Z,commit,Revert commit,github.com/JetBrains/intellij-community/pull/655/commits/442cdbd94824794a5091ab7ccd8dc8b620b44a3f

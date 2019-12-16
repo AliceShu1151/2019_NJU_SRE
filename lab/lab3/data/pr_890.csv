@@ -1,0 +1,7 @@
+890,GuiDesigner update
+2018-10-14T22:31:06Z,discuss,"This is a GuiDesigner update. Now it's possible to select a Look and Feel from a list in Form properties and see how
+it changes the design of the desired form. Some component properties are initialized based on selected
+look and feel. I have also started to implement a way to load custom look and feel, but I can't make it works...
+So I hope someone can do it in next updates."
+2018-10-15T07:23:28Z,discuss,Why have you deleted jvmFormatter.iml?
+2018-10-17T02:29:51Z,discuss,"But you didn't add it in your first commit, you've modified it. The file is valid and is present in current master branch, so it shouldn't be deleted. You just have to remove your modification of it. Could you please rebase them PR accordingly?"

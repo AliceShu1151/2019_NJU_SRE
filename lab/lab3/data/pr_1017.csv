@@ -1,0 +1,6 @@
+1017,Fix IDEA-202846: Use the Document and not the root Element to run XPath
+2018-12-19T22:37:05Z,discuss,"The IDEA-202846 is actually a regression introduced in the a992508 commit. Element, even root element, is not always a good chose to run xpath on it (for example if your xpath is absolute, i.e. starts with /) and this is why the old and correct xpath-es stopped to work properly."
+2018-12-19T22:37:05Z,discuss,This PR makes xpath-es in the com.intellij.jarFinder.MavenCentralSourceSearcher and in the com.intellij.jarFinder.SonatypeSourceSearcher classes run properly again.
+2018-12-19T22:37:05Z,discuss,"Please review, merge and consider to undepricate the JDOMUtil.loadDocument() methods."
+2018-12-21T07:31:34Z,discuss,"Thanks, I decided to fix the root cause and fix XPath expression instead of using Document again."
+2018-12-19T22:32:59Z,commit,Fix IDEA-202846: Use the Document and not the root Element to run XPath,github.com/JetBrains/intellij-community/pull/1017/commits/6517867789e17d7183669ea05f79477a4386b56f

@@ -1,0 +1,7 @@
+902,Fix StringSearcher.scan bug
+2018-10-27T13:28:06Z,discuss,"new StringSearcher(pattern, any, false).scan(text) starts scan from index text.length() - myPatternLength + 1 in text.
+So it throws StringIndexOutOfBoundsException if myPatternLength == 1."
+2018-10-30T12:07:43Z,discuss,"thanks, pushed"
+2018-10-27T11:21:37Z,commit,Add test case to StringSearcherTest,github.com/JetBrains/intellij-community/pull/902/commits/1b36052fafd890e0e4b2d128dfd59af0c9f9870b
+2018-10-27T11:25:42Z,commit,Fix StringSearcher bug,github.com/JetBrains/intellij-community/pull/902/commits/8c31aaad030d585e2ca579670e0fbc3da89f5b92
+2018-10-27T12:50:08Z,commit,Inline variable to remove inspection warning,github.com/JetBrains/intellij-community/pull/902/commits/365e39e6b4ebea83011b6ce6dba5e52b5100751a

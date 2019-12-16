@@ -1,0 +1,11 @@
+92,Some refactoring for reusing GenerateEquals UI in scala plugin
+2013-08-26T12:24:39Z,discuss,"
+No description provided.
+"
+2013-08-28T18:40:58Z,discuss,"Please do respect the formatting. We don't put getters in a single line. I'll fix it for you this time, but in the future, as I mentioned, please respect the style of the codebase you're contributing to."
+2013-08-28T18:55:02Z,discuss,"I've also moved AbstractGenerateEqualsWizard to the java-impl module. equals() and hashCode() are JVM-specific concepts, and a wizard to generate those is of no use for IDEs that don't target the JVM."
+2013-08-28T18:57:02Z,discuss,"createMemberSelectionTable() is never invoked through the AbstractMemberSelectionPanel interface, so I've removed it from the interface."
+2013-08-28T18:58:59Z,discuss,"With these remarks, the pull request has been merged and pushed."
+2013-08-28T18:59:33Z,discuss,"Also note that pull requests should normally be created from a specific branch that consists your specific set of changes, not from the master branch."
+2013-08-26T11:29:43Z,commit,Some refactoring for reusing GenerateEquals UI in scala plugin,github.com/JetBrains/intellij-community/pull/92/commits/7046dc4da7001710ef4c399e6f825bfb9402144d
+2013-08-26T12:21:19Z,commit,Code style fixed,github.com/JetBrains/intellij-community/pull/92/commits/710d3ba6e554edc98590d5b75dba7f5aa18f8a0c

@@ -1,0 +1,5 @@
+323,IDEA-101238 fixed url parameter encoding for youtrack time tracking
+2015-11-10T10:40:18Z,discuss,Contribution agreement has been signed already: #222
+2015-12-05T10:43:52Z,discuss,"Guys, any plans to merge it?"
+2015-12-24T12:21:15Z,discuss,@jk1 Merged it. Thank you and sorry it took so long!
+2015-11-10T10:38:35Z,commit,IDEA-101238 fixed url parameter encoding for youtrack time tracking,github.com/JetBrains/intellij-community/pull/323/commits/cc5273a816100ff6e9b8ea3cec59362986b23c39

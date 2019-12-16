@@ -1,0 +1,9 @@
+312,"Fixed `ResultOfAssignmentUsed` inspection, when it's not in method"
+2015-10-24T16:34:18Z,discuss,"Feel free to check the examples in the provided tests, e.g. https://github.com/paplorinc/intellij-community/blob/ResultOfAssignmentUsed/plugins/groovy/test/org/jetbrains/plugins/groovy/lang/highlighting/GrResultOfAssignmentUsedTest.groovy"
+2016-03-22T15:21:00Z,discuss,"@dovchinnikov, @maxmedvedev, @ignatov ?"
+2016-03-23T15:54:03Z,discuss,"org.jetbrains.plugins.groovy.refactoring.convertToJava.CodeBlockGenerationTest and org.jetbrains.plugins.groovy.refactoring.convertToJava.FileGenerationTest are failing after this change.
+This is related to another bug, I'll fix it by myself."
+2016-03-23T15:54:03Z,discuss,"Meanwhile the PR is OK, I'll merge it after I fix that bug."
+2016-03-23T15:54:51Z,discuss,You may want to fix commit message btw :)
+2016-03-23T15:59:51Z,discuss,"Fixed, thanks!"
+2016-03-02T16:54:47Z,commit,"Fixed `ResultOfAssignmentUsed` inspection, when it's not in method",github.com/JetBrains/intellij-community/pull/312/commits/1e7810d41c7c84d3412692f87543d07de834c0e1

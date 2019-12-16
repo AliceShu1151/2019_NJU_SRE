@@ -1,0 +1,6 @@
+798,Fix an error when the HEAD is detached
+2018-06-02T13:35:06Z,discuss,The error occurred when there is no current branch (e.g. a commit is checked out).
+2018-06-02T13:35:06Z,discuss,Fixed by checking if the parameter is null before passing it to getBranchPresentation() method.
+2018-06-02T16:34:30Z,discuss,Thanks for the contribution! But this has already been fixed in 0e2571c
+2018-06-02T16:34:30Z,discuss,"Unfortunately, it seems that this repository is not being updated for 3 days, that's why you didn't see the commit. We'll check ASAP."
+2018-06-02T13:20:33Z,commit,Fix an error when the HEAD is detached,github.com/JetBrains/intellij-community/pull/798/commits/790aef83d33aaf0a56e2e690ef65c4a032d96e1d

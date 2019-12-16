@@ -1,0 +1,7 @@
+421,Replace coll.stream().forEachOrdered(..) with coll.forEach(..)
+2016-06-26T16:00:06Z,discuss,This is a follow-up to IDEA-156324. Sometimes people use collection.stream().forEachOrdered(...) (GitHub search) which also could be replaced with collection.forEach(...). This PR enhances SimplifyStreamApiCallChainsInspection to support forEachOrdered.
+2016-06-27T15:57:37Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-06-28T04:32:50Z,discuss,"@klikh, done, thanks."
+2016-06-28T14:48:27Z,discuss,"Received, thanks."
+2016-06-28T17:33:38Z,discuss,We've merged the pull request. Thanks for the contribution!
+2016-06-26T13:34:56Z,commit,Replace coll.stream().forEachOrdered(..) with coll.forEach(..),github.com/JetBrains/intellij-community/pull/421/commits/ffccdd1f4028090bbe6a2250811ed3763698a4a8

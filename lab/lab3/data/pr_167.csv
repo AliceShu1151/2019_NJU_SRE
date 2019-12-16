@@ -1,0 +1,7 @@
+167,Give MavenImporters a chance to set user properties.
+2014-04-09T21:24:45Z,discuss,"Subclasses of MavenImporter can override customizeUserProperties().
+Improved robustness of maven 2/maven 3 switching in MiscImportingTest."
+2014-04-09T21:24:45Z,discuss,Fixes IDEA-123761 MavenImporters should be able to set properties for import
+2017-06-22T12:50:03Z,discuss,"Hi Christian, I'm sorry for such a long silence. I've looked at the change and found it useful. It's a pity that it was not merged back in 2014 year. I've merged it with the current master branch using the following commit: 9fc5d9d
+Thanks for the contribution!"
+2014-04-09T21:21:16Z,commit,Give MavenImporters a chance to set user properties.,github.com/JetBrains/intellij-community/pull/167/commits/c2ce33d1871b9ffad750bae67c8de5e4c9f64012

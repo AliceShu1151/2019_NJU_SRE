@@ -1,0 +1,6 @@
+410,Fix for user profile path with spaces
+2016-06-12T13:52:06Z,discuss,Fixes issues:
+2016-06-12T13:48:28Z,commit,idea.bat: Fix for user profile path with spaces,github.com/JetBrains/intellij-community/pull/410/commits/15be5256311141fe329314f8fac34533611a300a
+2016-06-12T22:25:25Z,commit,Fix for user profile path with spaces,github.com/JetBrains/intellij-community/pull/410/commits/ec85a09bfdeecd5a8af6fbce147a704e85ed4513
+2016-06-12T22:26:58Z,commit,Fix for user profile path with spaces,github.com/JetBrains/intellij-community/pull/410/commits/50cabc265977c19b36c0f7174149b48df02d8741
+2016-06-19T11:45:31Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/410/commits/c8264d188049bc3eb28cff7fc7ae03c4e662d0d9

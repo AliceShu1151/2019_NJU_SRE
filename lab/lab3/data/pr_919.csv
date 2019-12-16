@@ -1,0 +1,11 @@
+919,Prevent ProgressSuspender from crashing in isInImpatientReader mode.
+2018-11-15T12:49:24Z,discuss,"If ProgressSuspender has installed its check cancelled hook it should
+not crash on checking isReadAccessAllowed (especially when the current
+thread is not under the suspended ProgressIndicator)."
+2018-11-15T12:49:24Z,discuss,"It happens when JobLauncher.invokeConcurrentlyUnderProgress runs a job
+in isInImpatientReader mode."
+2018-11-15T12:49:24Z,discuss,Change-Id: Ib6fec3045626fd09d8ec1e38e121419b416b6d27
+2018-11-23T17:15:43Z,discuss,"Merged manually, but then another change occurred and fixed isReadAccessAllowed throwing PCE, so now I'm considering reverting this change."
+2018-11-26T17:26:56Z,discuss,I think it is safe to revert since 435d349 (corrected SHA) should indeed fix the problem.
+2018-11-27T12:29:07Z,discuss,"Backported to 183, reverted in master"
+2018-11-15T12:21:01Z,commit,Prevent ProgressSuspender from crashing in isInImpatientReader mode.,github.com/JetBrains/intellij-community/pull/919/commits/592ed3e7303d94bffdb92203014b37b1894b0c29

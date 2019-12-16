@@ -1,0 +1,7 @@
+627,Do not force reindex on content files with compatible language levels
+2017-09-12T01:07:57Z,discuss,"We switch between 2.6 and 2.7 frequently. Currently this forces a reindex of the
+entire project (100k+ files). I believe this reindexing is not necessary for Python
+Language levels which are AST compatible."
+2017-09-14T03:20:05Z,discuss,@sproshev I've made the suggested changes and rebased onto latest master. An EnumMap actually suffices because currently no level is compatible with more than one other.
+2018-01-12T19:04:37Z,discuss,Merged
+2017-09-12T01:06:07Z,commit,Do not force reindex on content files with compatible language levels,github.com/JetBrains/intellij-community/pull/627/commits/c0ea8f4edca5f65999553987ee047d848f027a7d

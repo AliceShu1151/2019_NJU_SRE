@@ -1,0 +1,6 @@
+922,IDEA-201670 added error popup while creation setter for final field
+2018-11-19T13:56:39Z,discuss,"
+No description provided.
+"
+2018-11-26T14:00:50Z,discuss,"Thanks for the PR. I slightly modified the changes and pushed to master, see 11ff07b."
+2018-11-19T13:53:32Z,commit,IDEA-201670 added error popup while creation setter for final field,github.com/JetBrains/intellij-community/pull/922/commits/9522f8499e3012785351fd3ba5524ead2cb7952c

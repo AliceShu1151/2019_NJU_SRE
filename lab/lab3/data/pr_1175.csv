@@ -1,0 +1,8 @@
+1175,Register FileEditorManagerImpl for disposal
+2019-07-17T05:00:17Z,discuss,"бн with its parent project, since commit 84880bc registers its children
+to it instead of the project."
+2019-07-17T05:00:27Z,discuss,@develar
+2019-07-22T15:22:07Z,discuss,"Why it is required? FileEditorManagerImpl it is project component, so, automatically disposed once parent container (project in this case) is disposed. So, no need to register it explicitly to be disposed."
+2019-07-22T18:11:27Z,discuss,Without this tests fail with AssertionError: Found leaked class com.intellij.openapi.project.impl.ProjectImpl [бн] via 'com.intellij.openapi.fileEditor.impl.FileEditorManagerImpl.myProject'.
+2019-10-22T00:00:05Z,discuss,The failing test code has been removed.
+2019-07-17T02:00:00Z,commit,Register FileEditorManagerImpl for disposal,github.com/JetBrains/intellij-community/pull/1175/commits/47d1a85d1acd5196059023ddf2df36b9a69a0a2d

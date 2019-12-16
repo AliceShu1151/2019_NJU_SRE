@@ -1,0 +1,5 @@
+1155,Skip Kotlin classes in NotNullInstrumentingBuilder
+2019-06-10T22:28:19Z,discuss,"Kotlin classes already contain null checks for parameters, so they should not be added by Intellij nullability instrumenter (see KT-13563 & KT-31879)."
+2019-06-10T22:28:19Z,discuss,"Instrumentation support was added in 1.3.40-eap-95, but it was disabled by default.
+To enable it, check kotlin.jps.instrument.bytecode in registry and rebuild."
+2019-06-07T20:01:19Z,commit,Skip Kotlin classes in NotNullInstrumentingBuilder,github.com/JetBrains/intellij-community/pull/1155/commits/7ea427d54f3ca8c904f06c29bc5e0580cfe14b05

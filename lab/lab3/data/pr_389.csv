@@ -1,0 +1,9 @@
+389,[Fernflower] New Testing Type: stdout comparison tests (including new test cases)
+2016-04-25T16:59:30Z,discuss,"For these test you just dump java files into the test folder. They will be compiled, then run (output stored), then the classes are decompiled, compiled and run too (output compared)."
+2016-04-25T16:59:30Z,discuss,So much less maintaining to do then with the other tests (for the others all tests have to be updated on fundamental changes to Fernflower that change decompiled output).
+2016-04-25T16:59:30Z,discuss,These tests don't require that the decompiler output never changes. They check that the output of the classes when run does not change and is the same as for the original classes. Also we get a failure when the decompiled classes cannot be compiled again.
+2016-04-25T16:59:30Z,discuss,It also supports optional pattern matching on the created classes.
+2016-04-25T16:59:30Z,discuss,"At the moment all but the example test are deactivate (so skipped), see build.xml begin of test-stdout-prepare:"
+2016-04-25T17:14:43Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-04-25T17:40:40Z,discuss,"Will send it. Have to reopen the pull, messed it up (git is hard :-(... )"
+2016-04-28T13:42:33Z,discuss,@droid666 you know you can always rework the code and force push to the same branch. It will update the pull request

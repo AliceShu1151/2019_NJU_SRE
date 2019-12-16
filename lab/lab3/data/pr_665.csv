@@ -1,0 +1,12 @@
+665,support atomic save
+2017-11-15T03:32:48Z,discuss,@trespasserw @nicity
+2017-11-15T03:32:48Z,discuss,Please accept this PR. It prevents many heisenbugs results from the file being temporarily deleted when saving. For example Git rescan sometimes picking up the deleted file. It is also safer and faster than the alternate save.
+2017-11-15T03:32:48Z,discuss,Had to do some copy-paste reuse because the module with SafeOutputStream must support JDK 1.6 and this needs 1.7+.
+2017-11-15T14:28:07Z,discuss,Just for the record: first proposed in https://youtrack.jetbrains.com/issue/IDEA-155415.
+2017-11-15T14:28:07Z,discuss,"Need some time. I understand the patch, but there are other complaints on class' behavior, and fixing them may eliminate the need for the move."
+2017-11-15T15:30:53Z,discuss,@trespasserw Thanks for the prompt response and for the issue link. Let's discuss this. I'm having trouble imagining any proper implementation of save that doesn't end up calling Files.move or otherwise an OS-specific API. What other complaints are there about the class' behavior?
+2017-11-15T18:29:19Z,discuss,The main complaint is that the class deletes original files and replaces them with new ones. This may cause permissions and ownership loss.
+2017-11-16T15:39:20Z,discuss,"@trespasserw What is your plan for implementing save without replacing the file?
+On Windows you can use the ReplaceFile OS call that atomically replaces the file while keeping the original file's indentity, including ACLs."
+2017-11-16T15:39:20Z,discuss,"On the other hand on UNIX based systems there is no such call so you would have to write directly to the file. This would make the write non atomic, even with a file lock because file locks on UNIX systems are advisory,not mandatory."
+2017-11-15T03:28:05Z,commit,support atomic save,github.com/JetBrains/intellij-community/pull/665/commits/47bd89c698be3cf6f9d27849b01b57ac51b9cd7b

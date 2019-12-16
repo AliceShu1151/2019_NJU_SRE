@@ -1,0 +1,7 @@
+29,IDEA-71391 Adds --rename-manifest-package to AndroidFacetConfiguration
+2012-12-10T21:43:56Z,discuss,This allows to compile the same app with a different package name. Useful for when you want to deploy both production or dev builds.
+2012-12-10T21:43:56Z,discuss,I added the code and input field into the AndroidFacetEditorTab.form instead of the AndroidRunConfigurationEditor.form because this applies to the compiling/packaging of the APK. If this is incorrect I can change it.
+2012-12-10T21:43:56Z,discuss,Also edited the launcher to take into consideration if the package has been renamed before launching the app.
+2012-12-11T15:08:23Z,discuss,"Do you need to run your production build from within the IDE? If not, a much better solution would be to use an external Ant script (or the new Gradle build infrastructure) to compile the production version of your app."
+2012-12-13T18:31:25Z,discuss,Closing as according to Eugene this won't work on IDEA 12.
+2012-12-10T21:31:21Z,commit,Allow to rename android manifest during packaging.,github.com/JetBrains/intellij-community/pull/29/commits/b61f35ff2604cab5e4df217d9debdb656674a9b6

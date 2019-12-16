@@ -1,0 +1,6 @@
+736,PY-28512: Fix TypeEvalContext leak in PyRemoveParameterQuickFix
+2018-02-16T03:22:35Z,discuss,"
+No description provided.
+"
+2018-03-01T12:24:12Z,discuss,@fitermay Thanks for your pull request! Merged it into master.
+2018-02-16T02:42:29Z,commit,PY-28512: Do not retain TypeEvalContext in PyRemoveParameterQuickFix,github.com/JetBrains/intellij-community/pull/736/commits/723fd78e08190152d3201bda5c4e65d7a07b91e1

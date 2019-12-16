@@ -1,0 +1,6 @@
+101,Allow inheritance from HierarchyBrowser implementations (Type/Method hierarchy)
+2013-09-12T10:03:17Z,discuss,"
+No description provided.
+"
+2013-09-12T13:28:14Z,discuss,Merged and pushed.
+2013-09-10T16:16:41Z,commit,Allow inheritance from HierarchyBrowser implementations (Type/Method бн,github.com/JetBrains/intellij-community/pull/101/commits/243ba784a628b6cd0c5a07793367a11a3d58731e

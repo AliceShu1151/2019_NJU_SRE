@@ -1,0 +1,9 @@
+818,IDEA-147781 ColorChooser: Opacity changing doesn't affect the results
+2018-06-28T21:03:04Z,discuss,"
+No description provided.
+"
+2018-07-02T09:00:38Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-07-02T13:56:34Z,discuss,yes
+2018-07-21T10:52:25Z,discuss,cc @bulenkov
+2018-07-22T14:17:12Z,discuss,Thank you. Merged c043da6
+2018-06-28T20:57:25Z,commit,IDEA-147781 ColorChooser: Opacity changing doesn't affect the results,github.com/JetBrains/intellij-community/pull/818/commits/3f441244bb1054afd7f5145ec9ee753977ac8868

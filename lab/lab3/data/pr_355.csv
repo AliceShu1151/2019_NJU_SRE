@@ -1,0 +1,8 @@
+355,Debugger: do not insert cast to runtime type for non java code fragments
+2016-02-15T15:27:41Z,discuss,"
+No description provided.
+"
+2016-02-25T13:04:21Z,discuss,"This may affect groovy, jsp, etc..."
+2016-02-29T08:47:21Z,discuss,"@gorrus I've just force pushed the pull-request. Now cast should be inserted for groovy, jps and others, but not for Kotlin (and maybe some others where java-like cast won't be parsed)"
+2016-03-28T13:55:34Z,discuss,"expression is cached, so if you switch the language it won't add casts as expected."
+2016-02-15T13:27:30Z,commit,Do not insert cast in debugger if it produces error elements,github.com/JetBrains/intellij-community/pull/355/commits/f01f31906814b211355b977ded29a44b8ec60125

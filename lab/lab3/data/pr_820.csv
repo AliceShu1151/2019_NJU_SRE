@@ -1,0 +1,4 @@
+820,Fixed misleading parameter name
+2018-06-30T23:38:29Z,discuss,Same as done in the callee by 9177747#diff-aa16b7ef452ec0f88a2d62c9c9564b06R81
+2018-07-02T11:50:38Z,discuss,"Merged manually, thanks!"
+2018-06-30T23:30:26Z,commit,fixed parameter name,github.com/JetBrains/intellij-community/pull/820/commits/153d25fe91242355d45e301cba8351af783ff60f

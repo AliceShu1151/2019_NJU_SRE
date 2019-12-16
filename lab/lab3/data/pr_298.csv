@@ -1,0 +1,5 @@
+298,[groovy] format comments properly in Spock 'where' tables
+2015-08-30T10:44:47Z,discuss,Fixes https://youtrack.jetbrains.com/issue/IDEA-137145: 'Formatting is broken if there is comments inside Spock Data Table'
+2015-08-31T07:31:27Z,discuss,fixed in the next commit :)
+2015-08-30T10:34:35Z,commit,[groovy] format comments properly in Spock 'where' tables,github.com/JetBrains/intellij-community/pull/298/commits/5ae568cc41059cf1d741fcdebf4b0e0dfc81aaff
+2015-08-31T20:41:35Z,commit,[groovy] fix spockTableWithComments,github.com/JetBrains/intellij-community/pull/298/commits/df996edf5c7ddc99a368284905653fdda71ab3fb

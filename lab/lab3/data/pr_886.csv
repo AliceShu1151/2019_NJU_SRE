@@ -1,0 +1,21 @@
+886,Group External Modules in UI
+2018-10-12T20:13:14Z,discuss,Related to IDEA-198453
+2018-10-12T20:13:14Z,discuss,New Group Modules action looks like this in action:
+2018-10-12T20:13:14Z,discuss,
+2018-10-16T00:28:16Z,discuss,@vladsoroka looking a little bit more into how BaseGradleProjectResolverExtension#createModule works it seems that any ModuleData will always be a direct child of a ProjectData which will make the structure flatten. I was wondering if it makes sense to add some structure there instead of duplicating this logic here and potentially in ExternalProjectDataSelectorDialog (since it will be great to group modules there too to load/unload groups of modules). What do you think?
+2018-10-20T21:16:24Z,discuss,I've also added grouping to select projects to import in the last commit
+2018-10-20T21:16:24Z,discuss,
+2018-10-25T08:22:27Z,discuss,"We can not do this, since it will break existing clients of the DataNode api and decrease the performance of the project modules traverse."
+2018-10-25T08:22:27Z,discuss,We have plans to replace DataNode api with another api which will have db-like implementation under the hood with indexing and other facilities to address performance and usability issues of the external project model consumers.
+2018-11-07T06:35:08Z,discuss,There are several issues with the change (the gradle-4.10.2/samples/java/multiproject used for testing):
+2018-11-07T20:27:10Z,discuss,Rebased and fixed the issues described. 
+2018-11-13T10:15:34Z,discuss,"Thanks for the contribution, I've merged the changes using the following commits:
+9b48f9a, 5874b0d, 882a673, 8facb70, 9640755, 93b3001"
+2018-11-13T10:15:34Z,discuss,"However I've had to add some additional fixes to the change:
+274c22d, 2724111"
+2018-10-15T22:09:28Z,commit,Group External Modules in UI,github.com/JetBrains/intellij-community/pull/886/commits/55471762bd1ee09b601bba8b4fc776d1da1c9772
+2018-10-20T21:13:04Z,commit,Grouping in ExternalProjectDataSelectorDialog,github.com/JetBrains/intellij-community/pull/886/commits/5db4acd1c80b15b612fad98c86a208380fcd0411
+2018-10-31T22:58:11Z,commit,Make parents assigning order independent,github.com/JetBrains/intellij-community/pull/886/commits/cda9cb6fcbe6f7293c9a9304e2268da9e4ed4d25
+2018-11-07T18:48:32Z,commit,Default parent to project root,github.com/JetBrains/intellij-community/pull/886/commits/d82b1b720f0ad69385cea97f3533056e5e93ceb2
+2018-11-07T18:49:31Z,commit,Better grouping to fix edge cases,github.com/JetBrains/intellij-community/pull/886/commits/d7d52bcdda8043c7ea12a5a9e5d76715a4c73412
+2018-11-07T19:31:17Z,commit,Simplified IDE module grouping to support source sets,github.com/JetBrains/intellij-community/pull/886/commits/1519c1447ddb313c9e4e57795c4a09c65ba5d71e

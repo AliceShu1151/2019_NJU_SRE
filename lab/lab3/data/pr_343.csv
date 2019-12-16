@@ -1,0 +1,11 @@
+343,IDEA-139310: Find Usages reports source code usages first
+2016-01-08T21:24:14Z,discuss,"This builds upon 327c0fa and does what the issue asks for and people require: source code usages
+(static or ""dynamic"") first, non-code usages (documentation) second, and generated code last.."
+2016-01-08T21:24:14Z,discuss,"No CLA necessary. If you agree, please apply the change in your name."
+2016-01-11T15:14:25Z,discuss,"Unfortunately, it is necessary. Could you please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com?"
+2016-01-11T15:51:01Z,discuss,Have done it. Thanks.
+2016-01-11T16:04:54Z,discuss,"Received, thanks."
+2016-01-14T03:01:53Z,discuss,No problem! Anything to facilitate seeing this in the next release. 
+2016-01-22T12:44:05Z,discuss,"Merged manually. The fix will be included into the next IDEA 16 EAP build.
+Thank you for the contribution!"
+2016-01-08T21:17:44Z,commit,IDEA-139310: Find Usages reports source code usages first,github.com/JetBrains/intellij-community/pull/343/commits/f3e7fd0abc512879cbe9eed89e4d1181a7738997

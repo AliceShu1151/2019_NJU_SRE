@@ -1,0 +1,3 @@
+192,BasicStepMethodFilter.getMethodName() extracted to the separate interface
+2014-06-10T14:07:28Z,discuss,For scala plugin: BasicStepMethodFilter is not suitable for local functions in scala
+2014-06-10T13:27:38Z,commit,BasicStepMethodFilter.getMethodName() extracted to the separate inter¡­,github.com/JetBrains/intellij-community/pull/192/commits/be1e4a50869815f1dc5e1e1dd6b1e34aba73e34b

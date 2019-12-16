@@ -1,0 +1,17 @@
+1215,Another custom Logger.getInstance() inspection
+2019-10-17T23:34:37Z,discuss,I noticed some invocations like:
+2019-10-17T23:34:37Z,discuss,"And, since the actual FQNs are invariably longer than in my example, I naturally began to wonder if any of these
+invocations was misspelled or out-of-date."
+2019-10-17T23:34:37Z,discuss,"So here's an inspection with a quick-fix, which I made by copying the one that rewrites:"
+2019-10-17T23:34:37Z,discuss,to:
+2019-10-17T23:34:37Z,discuss,and then changing the search template appropriately.
+2019-10-17T23:34:37Z,discuss,"(FYI, I did this directly in the XML, because the inspection settings page just felt too ... cramped and modal.)"
+2019-10-17T23:34:37Z,discuss,I was pleasantly surprised that I didn't need to do anything to turn the FQN text into an expression.
+2019-10-17T23:34:37Z,discuss,"P.S. There are invocations like this in, e.g., Kotlin that would need to be handled separately."
+2019-10-17T23:34:37Z,discuss,Signed-off-by: Samuel Bronson naesten@gmail.com
+2019-10-18T04:14:51Z,discuss,"Hmm, I seem to have made a mistake in naming the inspection ... I'll push a fixed version soonish ..."
+2019-10-24T23:34:11Z,discuss,"Well, I was all ready to submit a version with an HTML-safe title, but then I decided I might as well also send you a preview of what happens when you actually apply the quick fix, and it turned out that there were several instances where it generated invalid code (because the FQN from the string did not refer to a class in the compilation classpath)."
+2019-10-24T23:34:11Z,discuss,"So I'm postponing this until I find a satisfactory way of checking whether an FQN resolves to a class.
+(Which might involve also figuring out how to get Groovy injection working on these script attributes.)"
+2019-10-25T14:51:34Z,discuss,"Yes, checking that the reference resolves is a must. And maybe reporting only when the class is the current one."
+2019-10-16T20:28:06Z,commit,Another custom Logger.getInstance() inspection,github.com/JetBrains/intellij-community/pull/1215/commits/efb9c06a8830cc02bf38129c438810967dbfddb3

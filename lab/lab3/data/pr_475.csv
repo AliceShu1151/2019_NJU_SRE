@@ -1,0 +1,8 @@
+475,Make plugins/settings-repository/resources a resources root
+2016-11-28T22:32:18Z,discuss,"бн instead of a sources root, since it contains only a plugin.xml and a .properties file."
+2017-05-06T01:08:49Z,discuss,@develar?
+2017-10-04T07:20:47Z,discuss,@AMPivovarov?
+2018-02-08T07:30:23Z,discuss,@chashnikov?
+2018-02-08T07:32:41Z,discuss,I will review. Sorry for delay.
+2018-05-04T00:02:07Z,discuss,@develar?
+2016-11-28T22:28:14Z,commit,Make plugins/settings-repository/resources a resources root,github.com/JetBrains/intellij-community/pull/475/commits/02906bb660ddd91ee69c0ccbfe79cad5b84f9402

@@ -1,0 +1,17 @@
+721,181.3263
+2018-01-31T03:24:52Z,discuss,"
+No description provided.
+"
+2018-01-30T05:10:16Z,commit,IDEA-185598: Favorite branch mark is lost on restart,github.com/JetBrains/intellij-community/pull/721/commits/067459cbd76ec4635ffcd8f1f9d51b1678f34390
+2018-01-30T08:47:36Z,commit,"Revert ""make default project work with normal FileManagerImpl""",github.com/JetBrains/intellij-community/pull/721/commits/71db27e6711f1578416d04564b3f84e5d14bb169
+2018-01-30T12:17:20Z,commit,drag on empty space (IDEA-185770),github.com/JetBrains/intellij-community/pull/721/commits/8b860941dcf7fc584cef222e007e37d04de3ac49
+2018-01-30T15:44:51Z,commit,limit size for embedded case (IDEA-185771),github.com/JetBrains/intellij-community/pull/721/commits/2f33e07be8030676ebfbb938b172ba2767988831
+2018-01-30T16:03:04Z,commit,fix NPE in embedded mode,github.com/JetBrains/intellij-community/pull/721/commits/c02140b0afcda3e3e51c7c7ff896b23856bad2f9
+2018-01-30T16:54:55Z,commit,"Spellchecker: WI-39832 ""Max number of corrections"" is not saved",github.com/JetBrains/intellij-community/pull/721/commits/21e59296a10439fe5b8839ae83d7c8af87e398c8
+2018-01-30T16:57:12Z,commit,"Spellchecker: WI-39834 IAE in case of empty ""Use single dictionary""",github.com/JetBrains/intellij-community/pull/721/commits/249ec6181d0ea938ce42c64ca8690714aa13f59f
+2018-01-30T16:58:56Z,commit,Spellchecker: WI-39833 Single dictionary for is not saved after restart,github.com/JetBrains/intellij-community/pull/721/commits/a077ae3e723e839f9ad9f29f1cd210736ad2bc65
+2018-01-30T17:51:41Z,commit,PY-23190: Method renamed in UI to match config field,github.com/JetBrains/intellij-community/pull/721/commits/07d231548aafac0e479748b686728c462cb39f8e
+2018-01-30T18:24:29Z,commit,PY-23190: Config field renamed,github.com/JetBrains/intellij-community/pull/721/commits/c9a8c1ed4f33ae699784c635df8234e39e5b01bf
+2018-01-30T18:53:08Z,commit,PY-23190: Config field renamed,github.com/JetBrains/intellij-community/pull/721/commits/a447c247500717f65c8b9aa7d995b30325a0cf80
+2018-01-30T18:56:08Z,commit,PY-23190: Comment added,github.com/JetBrains/intellij-community/pull/721/commits/b9de2f044a7baa97b538db24632f21611d9c1063
+2018-01-30T16:30:57Z,commit,CPP-11820: ui: Make ComboBox work on welcome screen wizards,github.com/JetBrains/intellij-community/pull/721/commits/724c4fd807d25881cb4ba4ab84dfa2e8d604b6fc

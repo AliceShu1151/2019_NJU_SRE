@@ -1,0 +1,8 @@
+1190,fix util_methods.copy on NFS
+2019-08-22T14:37:25Z,discuss,Via: https://youtrack.jetbrains.com/issue/PY-37523
+2019-08-23T16:54:47Z,discuss,@albertz Could you please sign the Contributor Agreement at https://www.jetbrains.com/agreements/cla/?
+2019-08-23T18:06:45Z,discuss,"@east825 Ok, I did that now."
+2019-08-24T19:22:20Z,discuss,"@albertz Sorry, the system didn't receive the CLA for some reason. Could you please try once again? Thanks."
+2019-08-25T20:41:09Z,discuss,I did the CLA again now. Did you get it now?
+2019-08-25T20:47:45Z,discuss,"Yep, we've received the CLA. Thank you."
+2019-08-22T14:36:24Z,commit,fix util_methods.copy on NFS,github.com/JetBrains/intellij-community/pull/1190/commits/c029028839bd38d96f7f6916ed115a089ce6b277

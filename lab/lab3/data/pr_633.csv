@@ -1,0 +1,253 @@
+633,Ep rascal transformation
+2017-09-30T00:20:31Z,discuss,Using the 'rascal' tool we applied an EP transformation.
+2017-09-30T18:14:10Z,discuss,Please recreate the PR on top of the curent master.
+2017-09-27T13:22:33Z,commit,download external dependency for idea model,github.com/JetBrains/intellij-community/pull/633/commits/2385b9b7755f682027b33747f348929053c70e5b
+2017-09-27T14:22:43Z,commit,[java-decompiler] migrates to Gradle,github.com/JetBrains/intellij-community/pull/633/commits/ff4bc674397c55ac0556f85c4543b420c82a82ef
+2017-09-27T14:41:25Z,commit,Math.ceil the size of an icon,github.com/JetBrains/intellij-community/pull/633/commits/127eb0e4135ead34e70f1712cbf5262f75a46e6b
+2017-09-27T13:59:02Z,commit,"CPP-4519 Split Function declaration and Function call in ""Colors and ¡­",github.com/JetBrains/intellij-community/pull/633/commits/d778074174e6d3024cee83af56113bdec1394b23
+2017-09-27T13:34:09Z,commit,performance,github.com/JetBrains/intellij-community/pull/633/commits/11b44c444719a70c5b52ecfe3f4f220003ff148d
+2017-09-27T15:03:46Z,commit,do not depend on internal ModalityStateEx constructor,github.com/JetBrains/intellij-community/pull/633/commits/7e413ec1afcaf5f9768a6c833b02f526facc3828
+2017-09-27T15:23:00Z,commit,IDEA-164682 Removing sdk leads to exception,github.com/JetBrains/intellij-community/pull/633/commits/dd8d43edaea1d928c79b1b52e2c6356f1cbbf7df
+2017-09-27T15:47:53Z,commit,[java-decompiler] adds Gradle wrapper,github.com/JetBrains/intellij-community/pull/633/commits/8fd83d1fcdfe5b957866126789b86431d1454883
+2017-09-27T13:59:18Z,commit,IDEA-179522 Navigation bar ignores context when operated with keyboard,github.com/JetBrains/intellij-community/pull/633/commits/2c5a9acc92a3922011413ea63ab133739788fa8c
+2017-09-27T15:50:06Z,commit,do not select the last item before dismissing the context menu,github.com/JetBrains/intellij-community/pull/633/commits/b8e9ac2192611b0892654fdbc6af2cb369829ad0
+2017-09-27T15:57:34Z,commit,more identity equality for modalities (IDEA-CR-24902),github.com/JetBrains/intellij-community/pull/633/commits/990360354f014f06985970d042332123cf4d8101
+2017-09-27T16:03:46Z,commit,goto file: suggest slashless variants with all possible suffixes (IDE¡­,github.com/JetBrains/intellij-community/pull/633/commits/50c32497ab1caf61d18702ed17d7c28da01189c7
+2017-09-27T14:17:38Z,commit,[groovy] add and use GrGdkMethod#getReceiverType,github.com/JetBrains/intellij-community/pull/633/commits/f23659970396a0789df854c9e48f782741a7744f
+2017-09-27T15:55:37Z,commit,[groovy] prefer extension method w/o conversions (IDEA-178481),github.com/JetBrains/intellij-community/pull/633/commits/d41b72f26b43928318e419318ccc75d32b828696
+2017-09-27T16:19:11Z,commit,PY-25243: typo,github.com/JetBrains/intellij-community/pull/633/commits/8ee2a09303becca8e818dd5972733cf394c1a90d
+2017-09-27T16:29:19Z,commit,[groovy] disable Change To Operator on non-dot calls (IDEA-179683),github.com/JetBrains/intellij-community/pull/633/commits/7ada26d23245a398eb1741448c2263ef310d1704
+2017-09-27T16:48:26Z,commit,InputFilter NotNull added,github.com/JetBrains/intellij-community/pull/633/commits/c4690d8bc39d63ed80157d3ca582a49f2f71cfa8
+2017-09-27T16:39:38Z,commit,add checkCanceled to possibly avoid calculating text on invalid file ¡­,github.com/JetBrains/intellij-community/pull/633/commits/126df35d956c207786689087ee9aaecfd404e1fc
+2017-09-27T16:43:17Z,commit,add a test demonstrating how ModalityState.stateForComponent works,github.com/JetBrains/intellij-community/pull/633/commits/9d523dc36ed5e7786c73b6c0bf3e073f243b08e7
+2017-09-27T16:58:01Z,commit,OrderEntryFix/test: adapt to PSI being invalidated on root change,github.com/JetBrains/intellij-community/pull/633/commits/1a2a18352c818305ac7b132e80b6b18003a0ea05
+2017-09-27T16:59:18Z,commit,[java] read action / validity check in Javadoc linter (EA-108014),github.com/JetBrains/intellij-community/pull/633/commits/a5709fe31c072cf491cf651f8326813975547f88
+2017-09-27T17:09:42Z,commit,goto popup list model can contain null elements when smart pointers d¡­,github.com/JetBrains/intellij-community/pull/633/commits/bae343c4476797f2d68cc7f4189b210dedf9d927
+2017-09-27T17:16:27Z,commit,"Outdated stub in index (IDEA-179342), kudos to Peter Gromov",github.com/JetBrains/intellij-community/pull/633/commits/f0402a8337624f5e8b9008d34b13f6dd3115f411
+2017-09-27T17:21:18Z,commit,add internal test for performance of TransferToEDTQueue,github.com/JetBrains/intellij-community/pull/633/commits/e8d00d8a5195b8f95f199c8065e8b8ca11310103
+2017-09-27T17:34:45Z,commit,[platform] minor optimization (unneeded call),github.com/JetBrains/intellij-community/pull/633/commits/9f129285eebe89ee9c6ddeb817a173ccf44c7f75
+2017-09-27T17:46:28Z,commit,PY-24875: Filter out TC messages in debug console,github.com/JetBrains/intellij-community/pull/633/commits/3ccefc804ebce48afb4c2f39579227b580ef8668
+2017-09-27T17:53:49Z,commit,[groovy] fix test name,github.com/JetBrains/intellij-community/pull/633/commits/18e7aa6a19585424408b918c4add4cb54d6e69e4
+2017-09-27T18:01:45Z,commit,Cleanup (warnings; sane method names; formatting),github.com/JetBrains/intellij-community/pull/633/commits/3340d53357ad10c04cf16251c6120d8e1cf4f0d1
+2017-09-27T16:50:57Z,commit,naming convention: move to lang-impl,github.com/JetBrains/intellij-community/pull/633/commits/6a89f512d731e4de67d852ae4205cf5cc6450043
+2017-09-27T18:03:23Z,commit,naming convention: merge groovy class based inspections (IDEA-179173),github.com/JetBrains/intellij-community/pull/633/commits/9e25d949c15a766e9211cb0c6e13dd44b812bb65
+2017-09-27T18:09:22Z,commit,inspection settings: fix Java group paths,github.com/JetBrains/intellij-community/pull/633/commits/d173700494d65959fd102887bde82a7e1cab2910
+2017-09-27T18:08:37Z,commit,[jvm-lang] register services for Kotlin environment properly,github.com/JetBrains/intellij-community/pull/633/commits/723f1bfd8874d613a53673e52ea63a9b59ff1546
+2017-09-27T18:28:20Z,commit,IDEA-CR-24936: Test added,github.com/JetBrains/intellij-community/pull/633/commits/4d0a8110529aa134fc1e450c9c64fe72dce5b9ea
+2017-09-27T09:07:32Z,commit,DBE-2996 Postgres: Database console sets different timezone in sessio¡­,github.com/JetBrains/intellij-community/pull/633/commits/1471f76292970efa6faee8c4a2ab9f3a5b918c9e
+2017-09-27T20:09:56Z,commit,IDEA-179681 Initial configuration: improve layout on Ubuntu,github.com/JetBrains/intellij-community/pull/633/commits/a5f80c9cda7dff7ba9aec513dec60f353a97c218
+2017-09-27T14:18:09Z,commit,IG: fix private class type detection,github.com/JetBrains/intellij-community/pull/633/commits/4ae9d8ea5d17449a4c2ee2155b4c863133b012c0
+2017-09-27T21:59:01Z,commit,Redo Do not scan texts for changed range but get from uncommitted events,github.com/JetBrains/intellij-community/pull/633/commits/d95b88ad745d887a0dc422b86aa6bdaa20c63dc3
+2017-09-28T03:12:38Z,commit,ControlFlowUtils#getNextReturnStatement: support blocks (IDEA-CR-24815),github.com/JetBrains/intellij-community/pull/633/commits/196ef4dd167a0224f68dba0cec3fcf56ca02fdff
+2017-09-28T03:28:12Z,commit,TailRecursionInspection: switched on (to information level),github.com/JetBrains/intellij-community/pull/633/commits/bff07e490e061ac0edbe0e03c4d6978082319239
+2017-09-28T04:07:51Z,commit,FuseStreamOperationsInspection: fixed method reference handling for d¡­,github.com/JetBrains/intellij-community/pull/633/commits/2af6330cb124693f003a295e4feb5174fdf10d7c
+2017-09-28T04:16:07Z,commit,CollectionAddAllCanBeReplacedWithConstructorInspection: sorting defau¡­,github.com/JetBrains/intellij-community/pull/633/commits/b75c0596db4f46cf562268ab3e4779f9d3c68077
+2017-09-28T04:18:42Z,commit,CollectionAddAllCanBeReplacedWithConstructor: description updated; ca¡­,github.com/JetBrains/intellij-community/pull/633/commits/cac7576b373fa601e2b61e2206e7d9ea9a016021
+2017-09-28T06:15:14Z,commit,ConstantExpressionVisitor: for class access expression return the ope¡­,github.com/JetBrains/intellij-community/pull/633/commits/389e6a828d57b077889d94aa9590848d709888ea
+2017-09-28T06:45:20Z,commit,improve TypedHandlerDelegate javadoc,github.com/JetBrains/intellij-community/pull/633/commits/1021f5331919c3448b0270e3949813cd78f0bdef
+2017-09-28T06:56:52Z,commit,"Revert accidentally committed files from ""ConstantExpressionVisitor: ¡­",github.com/JetBrains/intellij-community/pull/633/commits/92a75b1a1cbeb2ffa726ca26e4c9d3e1be431fe1
+2017-09-28T06:49:15Z,commit,don't load stubs from AST when querying stub index (use StubbedSpine),github.com/JetBrains/intellij-community/pull/633/commits/7eb23f80b5f318784f6f129441010a49037bdd9f
+2017-09-28T07:08:54Z,commit,cf: condition is nullable in ruby,github.com/JetBrains/intellij-community/pull/633/commits/44639a258159eb9ce3bd730b54b0119be134c998
+2017-09-28T07:40:52Z,commit,Dependency2.java: caret moved to fix test (default level was set to I¡­,github.com/JetBrains/intellij-community/pull/633/commits/eefafcc464f38f7ac44c5bc97e96cd299d23e92d
+2017-09-28T08:22:26Z,commit,[java] quickfix for module accessibility issues in functional express¡­,github.com/JetBrains/intellij-community/pull/633/commits/0f373e6142473310b307c906ee1df7c0488c03b3
+2017-09-28T08:26:08Z,commit,UAST-java: `PsiMethodCallExpression` conversion fix for fix,github.com/JetBrains/intellij-community/pull/633/commits/b7124904b28cf5edcf2aef70e3d38abb83dcd68b
+2017-09-28T08:34:48Z,commit,Cleanup (formatting),github.com/JetBrains/intellij-community/pull/633/commits/5833e866efb12e8bf09b352ddeb924582ff85c86
+2017-09-28T08:59:51Z,commit,OverwrittenKeyInspection,github.com/JetBrains/intellij-community/pull/633/commits/26033a5a889f567cf3d129f3c0b2223999fa5f94
+2017-09-28T09:08:40Z,commit,build scripts: allow including output of artifacts configured in project,github.com/JetBrains/intellij-community/pull/633/commits/f548d5dfe51178b92711e2fdececfadbfc5e59aa
+2017-09-28T09:10:14Z,commit,build scripts: include 'debugger-agent.jar' into IDEA distribution,github.com/JetBrains/intellij-community/pull/633/commits/91b2f05df145231ca68b537e9f906ce33c2c8c12
+2017-09-28T09:23:03Z,commit,IDEA project configuration: corrected layout of 'debugger-agent' arti¡­,github.com/JetBrains/intellij-community/pull/633/commits/0904de0d901eb658bbb59ca43b17776ccc0a8cff
+2017-09-28T09:29:49Z,commit,Build view node don't need to updateFileStatus,github.com/JetBrains/intellij-community/pull/633/commits/62e1d41c74aebcb446737d524586f127bce48075
+2017-09-28T09:34:47Z,commit,Moved WSLUtil to platform-impl package,github.com/JetBrains/intellij-community/pull/633/commits/d2ec288fa5f6f061b4040b3c2f3cfa3da1ad68de
+2017-09-28T09:54:36Z,commit,build scripts: fix updating from sources,github.com/JetBrains/intellij-community/pull/633/commits/d47cf3ffbd0870cd54c71f6ddacdcfec50c7acfe
+2017-09-28T09:38:05Z,commit,inspections merger: copy default tools settings for missed scopes (ID¡­,github.com/JetBrains/intellij-community/pull/633/commits/6a820e420795b64a2d1669b0e3dfc93655ce1fbd
+2017-09-28T09:51:41Z,commit,naming convention: groovy: copy old 'java' settings for test classes,github.com/JetBrains/intellij-community/pull/633/commits/80e1f8245a641b903a3b9fc8e91c5f622ea71670
+2017-09-28T09:59:24Z,commit,Cleanup (dead code; warnings; typos; formatting),github.com/JetBrains/intellij-community/pull/633/commits/23b56ce656c27ebc62af125211da84f0c62d7318
+2017-09-28T10:01:08Z,commit,correct caching of font metrics for display of parameter hints,github.com/JetBrains/intellij-community/pull/633/commits/bf0dfd4608cf9983de2e8cb1a87fba2b4802d7cc
+2017-09-28T10:05:49Z,commit,Gradle aware build: use only qualified task names and 'assemble' task¡­,github.com/JetBrains/intellij-community/pull/633/commits/37003df4b11963a7fdcdbdba584c3fd1fdd20325
+2017-08-14T19:09:43Z,commit,Composer Log: show ANSI output,github.com/JetBrains/intellij-community/pull/633/commits/95a0061bcf2c5ea66d558df9967ad270a3324aa8
+2017-09-19T13:38:47Z,commit,Composer log: get rid of forced flushes in console,github.com/JetBrains/intellij-community/pull/633/commits/81cf14991da3fcbc21e7bb690f46b674dda6400d
+2017-09-27T12:42:58Z,commit,WI-38208 Clearing the log throws exception,github.com/JetBrains/intellij-community/pull/633/commits/82bd03ad264170f39700f4458d0770e357c6401e
+2017-09-27T10:34:38Z,commit,SerializationManager needs to be disposed to dispose StringInterner,github.com/JetBrains/intellij-community/pull/633/commits/0080352dee2b6db62232c0ca51e641a6bebdea3d
+2017-09-27T11:12:00Z,commit,customizable index root,github.com/JetBrains/intellij-community/pull/633/commits/abf83d1adcb437c26d28026cd511bfdf7e86fb67
+2017-09-28T10:25:48Z,commit,duplicated key removed,github.com/JetBrains/intellij-community/pull/633/commits/ee212a003d5e241b7bac8743fd08d8fa33be9522
+2017-09-28T10:35:46Z,commit,looks like IGNORE was intended,github.com/JetBrains/intellij-community/pull/633/commits/6cb281d1395bc6c0b48d550f7177f5025919a5d4
+2017-09-28T10:39:49Z,commit,platform: load bundled plugins in tests,github.com/JetBrains/intellij-community/pull/633/commits/cbdc550c15616a5b5cddb3070b613ae42a4d2ff4
+2017-09-28T10:43:31Z,commit,platform: show informative exception message about missing essential ¡­,github.com/JetBrains/intellij-community/pull/633/commits/14a746aa990c832841b1b47a0d86cab6c0feb959
+2017-09-27T11:49:26Z,commit,WI-38189 Initial Configuration: Skip All and Set Defaults applies the¡­,github.com/JetBrains/intellij-community/pull/633/commits/3e785e82d15277b1c65c559812729400ae217c7e
+2017-09-28T10:56:27Z,commit,Gradle aware build: use only qualified task names,github.com/JetBrains/intellij-community/pull/633/commits/aa6797f2d2cdb9e322d6b1ac93f0c17b663f6533
+2017-09-28T11:04:50Z,commit,Bundle *.properties plugin in PyCharm (PY-26261),github.com/JetBrains/intellij-community/pull/633/commits/a1c26110257a437d1b4e634da4794d31ce24a608
+2017-09-28T11:05:55Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/633/commits/089a6eb308cae8d418720e686fdacbb78907878b
+2017-09-28T11:23:23Z,commit,[tests] real JDK for Javadoc lint inspection test,github.com/JetBrains/intellij-community/pull/633/commits/f345fb827ba1757b487b9dabe1bc61f160905bad
+2017-09-28T11:32:53Z,commit,handle missed name on the SchemeManager level because in this case we¡­,github.com/JetBrains/intellij-community/pull/633/commits/9ba4b918ddbbe4fb6d7ab5d36fbecf0cb7a8f1f4
+2017-09-28T11:38:11Z,commit,cleanup (kotlin),github.com/JetBrains/intellij-community/pull/633/commits/7bf70a04f3f5e81b2cdc4834e2485bf76c0fd8ce
+2017-09-28T12:16:22Z,commit,not-nullize SMTestRunnerResultsForm.getTestsRootNode,github.com/JetBrains/intellij-community/pull/633/commits/e74abc614bd49543ce22dbfb477377669ff40212
+2017-09-28T12:23:44Z,commit,External system run configuration greeting folding updated,github.com/JetBrains/intellij-community/pull/633/commits/36fdd8b62db2b96233d00fbc5d91fc2b5c75d4c1
+2017-09-28T12:01:20Z,commit,speefup goto file when slashes are present,github.com/JetBrains/intellij-community/pull/633/commits/cfcfd2b27c0e4d70feb7bede4e7a8d0ce339af9a
+2017-09-28T12:35:18Z,commit,OrderEntryFix: don't fail on invalid code,github.com/JetBrains/intellij-community/pull/633/commits/fe1af5c26349685d2baeb022c8a1b17962d54584
+2017-09-28T12:37:38Z,commit,Make the border thin again,github.com/JetBrains/intellij-community/pull/633/commits/14b31b8251d237896d74a1e8f9ac7f952b66cb01
+2017-09-28T12:49:30Z,commit,build scripts: make field public to workaround groovy bug (IDEA-179615),github.com/JetBrains/intellij-community/pull/633/commits/049f60783b62cf1e6963c6dac6219912c00906fe
+2017-09-26T14:01:08Z,commit,"IDEA-126914 Rename private gist to secret, refactor create gist api",github.com/JetBrains/intellij-community/pull/633/commits/db65279e9d4158fca2087a3b8a250273268f5740
+2017-09-26T14:03:52Z,commit,Fix prepositions in gist test,github.com/JetBrains/intellij-community/pull/633/commits/bc3e358d7ef581795aa58f0b77b480f2c77a9cba
+2017-09-28T12:55:57Z,commit,java mad testing: skip more expectations,github.com/JetBrains/intellij-community/pull/633/commits/e9859e5aeb5114e19c2573f2d1b6f4c17c2a7123
+2017-09-28T13:00:11Z,commit,LeakHunter: skip internal Reference.discovered fields,github.com/JetBrains/intellij-community/pull/633/commits/d6d5e529f7f3dc60678c2025787999a4e10159fb
+2017-09-28T12:17:24Z,commit,merge field naming conventions,github.com/JetBrains/intellij-community/pull/633/commits/a11fdd6abfcaee752361f6270e60e689ca8dcb1d
+2017-09-28T12:33:10Z,commit,remove deprecation,github.com/JetBrains/intellij-community/pull/633/commits/7e80dfcbb6fa0814dcd0ad6ce390fbb3bafa6edb
+2017-09-28T13:04:21Z,commit,sm tests: distinguish ignored/non-started tests for notification,github.com/JetBrains/intellij-community/pull/633/commits/c2c8ad7bc4651975019b8dfbfa9a42a4fe0b69df
+2017-09-27T10:54:48Z,commit,Use file path as toString of FakeRevision,github.com/JetBrains/intellij-community/pull/633/commits/3ee314b26a1bbbda8239a2a31719d8a684e366fd
+2017-09-28T12:17:32Z,commit,write DeprecatedModuleOptionManager in the external storage if only m¡­,github.com/JetBrains/intellij-community/pull/633/commits/1640d1582b2a388016319c39c61c7772fdf43102
+2017-09-28T13:12:50Z,commit,[groovy] fix duplicate map entries (IDEA-CR-24946),github.com/JetBrains/intellij-community/pull/633/commits/eaa741fadabb96de748ae0066aa8081b2047cd34
+2017-09-28T13:31:45Z,commit,ExternalStorage: schedule reimport if storage missed (cache invalidated),github.com/JetBrains/intellij-community/pull/633/commits/4381c55213f19ffe472838b6c380efa704c8f02d
+2017-09-28T13:35:31Z,commit,debugger agent: support installed versions,github.com/JetBrains/intellij-community/pull/633/commits/0012b704cd546015229bab02400e7561cb9feabc
+2017-09-27T17:15:35Z,commit,removed spam,github.com/JetBrains/intellij-community/pull/633/commits/f063aae6cadad981f4108d7be19f6ba084f180ef
+2017-09-28T11:29:03Z,commit,test should not be run in headless mode,github.com/JetBrains/intellij-community/pull/633/commits/8f3d3dd028172098b56c81c17d13278eab4f4cb1
+2017-09-28T11:29:36Z,commit,performance,github.com/JetBrains/intellij-community/pull/633/commits/c8e3e5ceb8e2d69303cbc01f6275a9b3c40d1734
+2017-09-28T11:30:10Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/633/commits/6c4788b6e03b54deadefa1f3f59c138c4d311ff9
+2017-09-28T13:24:12Z,commit,test fix,github.com/JetBrains/intellij-community/pull/633/commits/6632789055c4045755f083c6c9adc25c82dfcd30
+2017-09-28T14:00:47Z,commit,build scripts: do not ignore internal errors logger by build process,github.com/JetBrains/intellij-community/pull/633/commits/9a4fb20004f3c2d88425c61fa231c6e2296f9d67
+2017-09-28T13:54:51Z,commit,"reindex offending file after ""unable to get stub builder"" and other e¡­",github.com/JetBrains/intellij-community/pull/633/commits/c61cba1e1ec32fd165724229d48487843f8157ac
+2017-09-28T14:00:39Z,commit,adapt various tests to psi invalidation on root change,github.com/JetBrains/intellij-community/pull/633/commits/f7367a4a64321b7586df305c13a1e3ded6818c8d
+2017-09-28T14:13:16Z,commit,[java] fixes degenerate enums parsing (IDEA-179650),github.com/JetBrains/intellij-community/pull/633/commits/f502283de7d37548a58596107fddc473789a33f6
+2017-09-28T11:29:18Z,commit,CPP-4519 Rollback the serialization name for function call (OC.FUNCTI¡­,github.com/JetBrains/intellij-community/pull/633/commits/87a102267c2e049d1ceb4834bb2bf3dba695faf5
+2017-09-28T14:40:37Z,commit,Build tool window tab icons,github.com/JetBrains/intellij-community/pull/633/commits/2489789c490eadd54e42f26fad5eda570755ff12
+2017-09-28T13:44:20Z,commit,debugger agent: fixed no agent check,github.com/JetBrains/intellij-community/pull/633/commits/935963c0a93a7a3c28905393d18de0a5374426a3
+2017-09-28T14:40:50Z,commit,debugger agent: do not load agent class if not available already,github.com/JetBrains/intellij-community/pull/633/commits/bfee598cfe6f1003007ad21ace7a15178e9c5ab5
+2017-09-28T14:46:07Z,commit,greenify NullableNotNullDialog,github.com/JetBrains/intellij-community/pull/633/commits/83935c0ce0ea768c9921c6b4905ea9b38bc89962
+2017-09-28T14:49:05Z,commit,IDEA-178632 Switching Default/Darcula themes on mac breaks combobox b¡­,github.com/JetBrains/intellij-community/pull/633/commits/3eb83d888cb1bd50b33e5144088aea6dde20fe17
+2017-09-28T11:46:30Z,commit,show popup for a parameter also after closing full parameter info,github.com/JetBrains/intellij-community/pull/633/commits/83cbf9031b4502faa2627974b25c293f02ad2a56
+2017-09-28T14:44:39Z,commit,fix autopopup not showing sometimes with completion hints disabled,github.com/JetBrains/intellij-community/pull/633/commits/fd8abeeb6dac6cebde6d555773c19607f780f8ec
+2017-09-28T14:23:58Z,commit,DBE: circumvent DBE-5060. With option not todo so,github.com/JetBrains/intellij-community/pull/633/commits/1fa07e4677154cd33d3cd1c2433225ce90480a17
+2017-09-28T15:27:43Z,commit,"PY-26255: Rephrase validation message, check python qualified name",github.com/JetBrains/intellij-community/pull/633/commits/54eb0035b713d66dc5f36b298b85dbe6910ecd73
+2017-09-28T14:18:38Z,commit,add external library: show dialog with download suggestion (IDEA-CR-2¡­,github.com/JetBrains/intellij-community/pull/633/commits/ff5f84987c59b2aa5ae7b1b1e99c7970ee135d89
+2017-09-28T14:57:48Z,commit,naming conventions: provide equals/hashcode for custom beans,github.com/JetBrains/intellij-community/pull/633/commits/264f23ffdfc98ae5ee817c5f1e8979d69f701d9c
+2017-09-28T09:00:18Z,commit,BackgroundTaskUtil.executeOnPooledThread: better disposable registration,github.com/JetBrains/intellij-community/pull/633/commits/91f3baa83854bf0f9fcc8a6d285eb2dea922d007
+2017-09-28T15:52:59Z,commit,Create directory if path doesn't exist,github.com/JetBrains/intellij-community/pull/633/commits/f8ca0b9074f82507e129058ab6d28a4c4053a59e
+2017-09-28T15:54:13Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/633/commits/782f1887e3cfc530fd2269baebde94d6237048a1
+2017-09-28T15:55:36Z,commit,env tests fixed,github.com/JetBrains/intellij-community/pull/633/commits/bc0a192e100a4b8ff28077f8cc497188629e957d
+2017-09-28T16:06:10Z,commit,test fix,github.com/JetBrains/intellij-community/pull/633/commits/64fd62e0a9ad1860a8c28a602533c5f7b432ca76
+2017-09-28T16:04:00Z,commit,[jvm-lang] register services for Kotlin environment properly (take 2),github.com/JetBrains/intellij-community/pull/633/commits/5ad1ca21c746b6c631a0a73c3cb7c62f9c628ee9
+2017-09-27T14:15:01Z,commit,cleanup yellow code,github.com/JetBrains/intellij-community/pull/633/commits/edd8eba48142f5dd33b37e8ef965a1b5401e54b7
+2017-09-27T14:15:28Z,commit,cleanup yellow code,github.com/JetBrains/intellij-community/pull/633/commits/2be11024ea2b52ff1354ed1d33f3473fa3f224ee
+2017-09-28T09:47:06Z,commit,properties: make move resource bundle available with f6 (IDEA-179376),github.com/JetBrains/intellij-community/pull/633/commits/fcb1eb2997c4377e86bb8c3e4720607ccd890809
+2017-09-28T13:15:10Z,commit,resource bundle: make resource bundle node provide array of propertie¡­,github.com/JetBrains/intellij-community/pull/633/commits/cf2580c579a3bc5d214b7d6f43f745e5ca573704
+2017-09-28T13:41:13Z,commit,i18n dialog: the value is not updated if already exists (IDEA-179738),github.com/JetBrains/intellij-community/pull/633/commits/d626a0316313db9be7a9fe213bfea111f713d91e
+2017-09-28T13:44:41Z,commit,i18n dialog: don't show error message under write action IDEA-179722,github.com/JetBrains/intellij-community/pull/633/commits/445024a98145a0599f53639c96a64fa8c18046a5
+2017-09-28T14:21:30Z,commit,resource bundle editor: use selected prefix as initial value for new ¡­,github.com/JetBrains/intellij-community/pull/633/commits/0428afcdd9058b0b4523913bfd7e2db6b4347669
+2017-09-28T16:07:08Z,commit,i18n dialog: make preview visible again,github.com/JetBrains/intellij-community/pull/633/commits/02864a9d810ba076ff4ce98dda744d157c2b5a5c
+2017-09-28T16:12:48Z,commit,fix CCE in AddNewPropertyFileAction,github.com/JetBrains/intellij-community/pull/633/commits/ee399b7d91737a61e11b4a20867c369ec514089a
+2017-09-28T16:18:45Z,commit,resource bundle editor: listener should respect new files in resource¡­,github.com/JetBrains/intellij-community/pull/633/commits/c92e81b4b4cc2e1810d1a08fbf959e403d7019fa
+2017-09-28T13:37:44Z,commit,do not access to the model from an obsolete command,github.com/JetBrains/intellij-community/pull/633/commits/f7a62bc676534e14d40eb5a84f09d02f736b56e6
+2017-09-28T15:22:19Z,commit,introduce TransferToEDTQueue.DEFAULT_THRESHOLD to improve UI responsi¡­,github.com/JetBrains/intellij-community/pull/633/commits/8b636f00788e724d0e832b1c16adc3e51c438985
+2017-09-28T15:26:32Z,commit,use default threshold for runnable merger,github.com/JetBrains/intellij-community/pull/633/commits/7f9e048065780e3205f065ac3a6bc8075d4c604e
+2017-09-28T15:57:20Z,commit,add ability to switch off second attempt of search in tree,github.com/JetBrains/intellij-community/pull/633/commits/42f6ea20393c9398e7215146650d433d20e113da
+2017-09-28T14:59:15Z,commit,reverted wrong commit,github.com/JetBrains/intellij-community/pull/633/commits/795d1e02b068d38993bd59f7389572f2998c51e6
+2017-09-28T16:59:33Z,commit,more logging for strange hotswap not reloading classes issue,github.com/JetBrains/intellij-community/pull/633/commits/a0a986107a3900e9e4d3507e83796820c22004e6
+2017-09-28T17:09:13Z,commit,debugger agent: generate location to speedup stack frames population,github.com/JetBrains/intellij-community/pull/633/commits/8167c325ebdbc821af9591fc0e249b209a566aae
+2017-09-28T17:33:10Z,commit,Maven: add the support to reimport maven projects in the ExternalSyst¡­,github.com/JetBrains/intellij-community/pull/633/commits/ef6654c0afb44059b2f0016e001eb88a519bf1ae
+2017-09-28T16:07:01Z,commit,disable intentions on invalid code (IDEA-179752),github.com/JetBrains/intellij-community/pull/633/commits/2d1affbc0e43b6a258fe934bcb40c62d568de0c0
+2017-09-28T17:00:53Z,commit,avoid 'null' string in version; cleanup to showAndGet(IDEA-CR-24915),github.com/JetBrains/intellij-community/pull/633/commits/0a9c875608369ee04795bcd60d6b0e4a2b2c7bf7
+2017-09-28T17:24:15Z,commit,junit: don't see inner classes as tests for known runners (IDEA-179766),github.com/JetBrains/intellij-community/pull/633/commits/f67e07801c948becd2069fb895ede018b073f659
+2017-09-28T17:30:09Z,commit,debugger agent: do not check anonymous classes,github.com/JetBrains/intellij-community/pull/633/commits/5a89804f73659391c0d3d480173244b25699559a
+2017-09-28T17:41:55Z,commit,Maven: ep name cleanup,github.com/JetBrains/intellij-community/pull/633/commits/0359c02521fe0343ceef38c7bbb568ed0aa6d9d7
+2017-09-28T17:42:15Z,commit,Maven: ep name cleanup,github.com/JetBrains/intellij-community/pull/633/commits/d5dd26a49527d46be44aa383772e41549b65a02c
+2017-09-28T17:41:41Z,commit,IG: don't warn on package-info files in invalid package (IDEA-179360),github.com/JetBrains/intellij-community/pull/633/commits/a88eddfef706ab73a440cbd2a92de0fcdfc61160
+2017-09-28T18:22:59Z,commit,[platform] simple API for deleting temp. files on process termination,github.com/JetBrains/intellij-community/pull/633/commits/0b6649492e65ceeb9a7b44b3d9a00737a0f5493b
+2017-09-28T18:56:17Z,commit,[groovy] don't inject into empty groovy literals (EA-108157),github.com/JetBrains/intellij-community/pull/633/commits/5b2fe2ae3b916e4bd4c02dccfb831a5e0ca28443
+2017-09-28T19:06:28Z,commit,[groovy] fix AE in GrUnresolvedAccessChecker (EA-108245),github.com/JetBrains/intellij-community/pull/633/commits/01e038aef457c0315f9bb514f429bb70ae3bb2c7
+2017-09-28T19:18:31Z,commit,[groovy] get rid of CallInfo#getHighlightElementForCategoryQualifier,github.com/JetBrains/intellij-community/pull/633/commits/f06ba6a9a3cfaaacddab557abd2300e9c68b4de2
+2017-09-28T19:18:36Z,commit,create from text to prevent invalid psi (IDEA-CR-24971),github.com/JetBrains/intellij-community/pull/633/commits/a4b595baca195cf5d382fa6819fee9480adec626
+2017-09-28T20:29:33Z,commit,"PY-24875: Filter messages in console, do not use InputFilter EP",github.com/JetBrains/intellij-community/pull/633/commits/354078660d2bb6f49e0c04be0f1137e5ee8888f6
+2017-09-29T05:32:35Z,commit,StandardInstructionVisitor: non-negative range for Enum.ordinal(),github.com/JetBrains/intellij-community/pull/633/commits/d835b789fa9174c300ec471618375cd1bf541156
+2017-09-29T05:44:29Z,commit,SubtractionInCompareTo: reduce false-positives,github.com/JetBrains/intellij-community/pull/633/commits/03583e2b7211b78dcfd8fb58585f37c05f5d5fbd
+2017-09-29T06:46:55Z,commit,Project Structure dialog: keep module name after changing selection (¡­,github.com/JetBrains/intellij-community/pull/633/commits/d92b2473e19a70ab120938028aa696c26da9ae21
+2017-09-29T06:49:09Z,commit,Project Structure dialog: show actual module name if 'flatten modules¡­,github.com/JetBrains/intellij-community/pull/633/commits/3e6980dc7cdb9478143a231df14a2a288ea0211a
+2017-09-29T07:52:56Z,commit,java ast index: ignore primitive types under jdk<8 (IDEA-179781),github.com/JetBrains/intellij-community/pull/633/commits/7ac8213d0b1bb366d76a7c1cb7cc273d183b0344
+2017-09-29T07:33:09Z,commit,InvertIfConditionAction: nullability warnings fixed,github.com/JetBrains/intellij-community/pull/633/commits/a64cada7e120cfd6a1fecc06be530850719b6956
+2017-09-29T08:19:23Z,commit,InvertIfConditionAction: preserve comments after last statement,github.com/JetBrains/intellij-community/pull/633/commits/e7d2193a5642ca33e626295d995fd91ecac73a5e
+2017-09-29T08:31:29Z,commit,even shorter copyright,github.com/JetBrains/intellij-community/pull/633/commits/796409a3ab3058ce00f6b4fca3e4e8c0d1432026
+2017-09-29T08:32:43Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/633/commits/cab0504a91b5f4f333ce38ad074e039f573ef038
+2017-09-29T08:28:03Z,commit,debugger agent: fixed original return value and support more capture ¡­,github.com/JetBrains/intellij-community/pull/633/commits/2b9ab5f9339b53709c1b6a763085929da8f16fc4
+2017-09-29T08:37:01Z,commit,debugger agent: simplified wrapper generation,github.com/JetBrains/intellij-community/pull/633/commits/65b7f5e530539ce441b4a181e147730d74a4040c
+2017-09-29T08:45:13Z,commit,do not throw exceptions in CoreProgressManager.assertUnderProgress(),github.com/JetBrains/intellij-community/pull/633/commits/e2161a6d6264e35f3466b57b16b0c5966cf759a9
+2017-09-29T08:45:44Z,commit,sandbox attribute completion (WEB-20599),github.com/JetBrains/intellij-community/pull/633/commits/0cd98ce757bd2a96bbbef617a8202afb6a3516b7
+2017-09-29T09:23:02Z,commit,type migration: build migration tree under progress (IDEA-179378),github.com/JetBrains/intellij-community/pull/633/commits/a1842c39149668523a6e341441a23cd410f405cb
+2017-09-29T10:17:32Z,commit,"Add tests to ""Convert to @CompileStatic"" action (IDEA-95853)",github.com/JetBrains/intellij-community/pull/633/commits/9c33a91492ed6c1dc031860496238c95aca44d54
+2017-09-29T09:10:41Z,commit,DFA: NotNull annotations,github.com/JetBrains/intellij-community/pull/633/commits/0dbc34c94e8eb969eae393dfc387fbb5dc853679
+2017-09-29T09:32:06Z,commit,DataFlowInspectionBase: minor code simplifications,github.com/JetBrains/intellij-community/pull/633/commits/d17a66cb3c5c3de7bae5fe73dd17ee52778aa505
+2017-09-29T10:30:43Z,commit,SetInspectionOptionFix; used in DataFlowInspectionBase,github.com/JetBrains/intellij-community/pull/633/commits/96c5bbef2f1eb9d433b9cab24ad56afeb12fdbe2
+2017-09-29T10:38:35Z,commit,SubtractionInCompareToInspectionBase: simplify overflow check,github.com/JetBrains/intellij-community/pull/633/commits/b3596b56d5c0b8cedce82ad529c530ca775c392f
+2017-09-29T10:46:37Z,commit,inspection view: allow specify container element for every inspection¡­,github.com/JetBrains/intellij-community/pull/633/commits/0c19a4c6958d9858ff9470bc82df02659c6c54f6
+2017-09-29T10:51:50Z,commit,InspectionsBundle.properties: unused constant removed,github.com/JetBrains/intellij-community/pull/633/commits/d5967a270ec66fdbe51b9253e22db464ea6e4d82
+2017-09-29T10:57:58Z,commit,DataFlowInspectionBase#isAssertionEffectively simplified via stripBraces,github.com/JetBrains/intellij-community/pull/633/commits/999f9032b46b30ea1f9bd805b9e154762a5d6c93
+2017-09-28T16:50:00Z,commit,change in global libraries roots should lead to rootsChanged() in all¡­,github.com/JetBrains/intellij-community/pull/633/commits/7609356953bee541278118901b5b7a8f67f4164f
+2017-09-29T11:14:59Z,commit,IDEA-179740 Better testdata file pairs resolving,github.com/JetBrains/intellij-community/pull/633/commits/548e259a2329456f4839ece35187bd501e2a53e5
+2017-09-28T16:21:32Z,commit,Exclude help from cross-platform distributions,github.com/JetBrains/intellij-community/pull/633/commits/399b064ba6fd3408c6dc0dca85603328e39b50ca
+2017-09-29T09:55:55Z,commit,EA-104878: use immutable char sequence,github.com/JetBrains/intellij-community/pull/633/commits/b89462305c6972f1c704a7f2b347e71727fc60a1
+2017-09-29T11:20:32Z,commit,Build scripts: add dependencies file into cross-platform distribution,github.com/JetBrains/intellij-community/pull/633/commits/5e3232dc74eb911ce232af4f663e8c6e3093b2db
+2017-09-29T11:17:47Z,commit,test fix,github.com/JetBrains/intellij-community/pull/633/commits/1625f9a7cd08406a86f28bade2c8575bca7d3ca9
+2017-09-29T11:22:44Z,commit,removed deprecated method,github.com/JetBrains/intellij-community/pull/633/commits/80925bf40bdf4904d42e14846b32e3c2e88ea429
+2017-09-29T11:19:06Z,commit,DataFlowInspectionBase: exterminate onTheFly parameter where possible,github.com/JetBrains/intellij-community/pull/633/commits/8bb4898806c418af81e5cacbb2b21468dcf13620
+2017-09-29T11:35:29Z,commit,SetInspectionOptionFix: cancel icon; undoable,github.com/JetBrains/intellij-community/pull/633/commits/c8ae5ff3dc63f502d23c8aabbc0015972c824925
+2017-09-29T11:45:48Z,commit,Add error outline for EditorTextField,github.com/JetBrains/intellij-community/pull/633/commits/4d2622f7f524b3ab36adb61ca0c828a25e82b21d
+2017-09-29T11:51:35Z,commit,Dummy build view manager for tests,github.com/JetBrains/intellij-community/pull/633/commits/4202b408e958d97b3b9ec1de3b4e0dcee1aca46b
+2017-09-29T11:55:16Z,commit,[groovy] force gant to proparate log level to ant (IDEA-179747),github.com/JetBrains/intellij-community/pull/633/commits/b9a4ad29de3af6061a3a58b3ddfcf4d838eb001a
+2017-09-29T10:12:12Z,commit,more logging for strange hotswap not reloading classes issue,github.com/JetBrains/intellij-community/pull/633/commits/26b17fe90c31971602bdd7857dcd06f3b7481499
+2017-09-29T12:12:23Z,commit,"debugger agent: do not create temp files, use bundled asm",github.com/JetBrains/intellij-community/pull/633/commits/7bd283262234577046a62402a8a21e37627145de
+2017-09-29T12:14:06Z,commit,debugger agent: suppress warnings,github.com/JetBrains/intellij-community/pull/633/commits/a38d7c16978c2d68685c59ba94626dfd412be560
+2017-09-28T15:07:24Z,commit,fix possible Alpha out of range exception,github.com/JetBrains/intellij-community/pull/633/commits/b51e114ad7d3dba1a20e796c8348f975998b1f60
+2017-09-28T15:41:28Z,commit,add new Project View as experimental feature for 10% of internal users,github.com/JetBrains/intellij-community/pull/633/commits/81e8e0644d0e2b7807bde348078c7272577db73f
+2017-09-29T12:17:52Z,commit,remove unused registry keys,github.com/JetBrains/intellij-community/pull/633/commits/d16658c7785e39a06dd37e85d3a6d21ed7f39d9c
+2017-09-29T02:44:14Z,commit,[groovy] pass default limit into constructor of complexity ispections,github.com/JetBrains/intellij-community/pull/633/commits/4a378df556341fa807995e06f4f3cd820e6f5d51
+2017-09-29T02:48:59Z,commit,[groovy] get rid of GroovyMethodMetricInspection#getConfigurationLabel,github.com/JetBrains/intellij-community/pull/633/commits/27d2d245ee3094546bb4211c412392f7b0564910
+2017-09-29T07:51:49Z,commit,EA-107068 - assert: PsiElementListNavigator.lambda$navigateOrCreatePo¡­,github.com/JetBrains/intellij-community/pull/633/commits/81730cbe8e29f8d2b4fd07bfd5c84bb4ecd21608
+2017-09-29T10:30:27Z,commit,method references: don't swallow errors during method ref inference (¡­,github.com/JetBrains/intellij-community/pull/633/commits/9728678ff41ff5bfe7ad739672555cd178f691f3
+2017-09-29T10:45:38Z,commit,naming convention: ability to enable convention by default (IDEA-162912),github.com/JetBrains/intellij-community/pull/633/commits/b78fd740f773767447e0fb08f146c7c7ee8de910
+2017-09-29T11:30:06Z,commit,naming convention: delegate to inherited convention (IDEA-179812),github.com/JetBrains/intellij-community/pull/633/commits/e7343a53cdc9c33f36d9eb735a7b6c70ea43de52
+2017-09-29T12:31:37Z,commit,speed up LaterInvocator,github.com/JetBrains/intellij-community/pull/633/commits/6060d68511209dcdc901ceddcb23e04e77ac33bf
+2017-09-29T12:36:24Z,commit,removed by merge. rollback,github.com/JetBrains/intellij-community/pull/633/commits/b6a757a34fe199f9b2da04464b98a233e959844e
+2017-09-29T12:39:02Z,commit,[groovy] cleanup,github.com/JetBrains/intellij-community/pull/633/commits/f9e31aadf86b914481ba8fe42aef18bb844d9fa4
+2017-09-29T12:39:37Z,commit,changed by merge. rollback,github.com/JetBrains/intellij-community/pull/633/commits/b94bfba3310f96bf8e85f72c7914ab0adaee6282
+2017-09-29T12:51:09Z,commit,Do not try to dispose committed(non writable) ModifiableModuleModel,github.com/JetBrains/intellij-community/pull/633/commits/92bdb531b68a79c1e9d945746b6b361eef61a24c
+2017-09-29T12:52:42Z,commit,IDEA-177880 fix lost antialiasing and wrong checkmark color,github.com/JetBrains/intellij-community/pull/633/commits/5c5f6838cad6d2c6d7d65c859a43d678a892c09c
+2017-09-29T12:56:52Z,commit,add FinderRecursivePanelSelectionUpdateTest.testUpdateSelectedPath,github.com/JetBrains/intellij-community/pull/633/commits/7260965ec1f4703d0ccb9b6fa54e200535504aab
+2017-09-29T12:59:50Z,commit,FinderRecursivePanelSelectionUpdateTest.testUpdate: cleanup,github.com/JetBrains/intellij-community/pull/633/commits/e40fed6c555a8f41082dfb0933b1e5d115a6a0a0
+2017-09-28T19:08:02Z,commit,simpler valid package check,github.com/JetBrains/intellij-community/pull/633/commits/9a53a56a2ec57f48e5f6e811d0067a2a876d031b
+2017-09-29T12:32:05Z,commit,"IG: Fix ""Lambda-unfriendly overload"" false positive (IDEA-166385)",github.com/JetBrains/intellij-community/pull/633/commits/6102359903d020334710bd47b9d3942d4160638b
+2017-09-29T13:16:30Z,commit,avoid AIOOBE in not-null instrumenter (IDEA-179615),github.com/JetBrains/intellij-community/pull/633/commits/3689ff3e1c8c82b9fb335a969b727541ab84d582
+2017-09-29T13:19:09Z,commit,"Color scheme plugin generator, initial version",github.com/JetBrains/intellij-community/pull/633/commits/679effc3a6a8557ff57ce91778417b07040743f4
+2017-09-29T13:25:17Z,commit,FinderRecursivePanel.updateSelectedPath(): throw ISE instead of asser¡­,github.com/JetBrains/intellij-community/pull/633/commits/960f03d7584f30416a53d16748fa9d2456b19ae5
+2017-09-29T13:27:29Z,commit,IPP: leave,github.com/JetBrains/intellij-community/pull/633/commits/48c7a479fec5bf53d37a2ce7da37f44a477a4452
+2017-09-29T13:49:46Z,commit,IDEA-168781 Mnemonics for run actions is broken in case of '_' and '&',github.com/JetBrains/intellij-community/pull/633/commits/af7a1a83c679702454c7364a9db95b4243f175da
+2017-09-29T14:11:00Z,commit,Maven: manifest generation tests fixed,github.com/JetBrains/intellij-community/pull/633/commits/7a91e505fea42ccd9b217ba74d07bb9abf5f82b3
+2017-09-29T14:09:43Z,commit,Do not evaluate variables if Variables View is hidden (PY-26289),github.com/JetBrains/intellij-community/pull/633/commits/139f8af5e7ca50d3c801c149fec49b51754ed39a
+2017-09-29T14:43:45Z,commit,Maven: cleanup tests,github.com/JetBrains/intellij-community/pull/633/commits/d288af233e27bde8e5bf101f028502e9ae97491d
+2017-09-29T14:24:31Z,commit,remove redundant suppression,github.com/JetBrains/intellij-community/pull/633/commits/ef9d3eba80b04f6694b797f9aaca37a090365199
+2017-09-29T14:47:44Z,commit,IG: detect lambda-unfriendly overloads with multiple functional param¡­,github.com/JetBrains/intellij-community/pull/633/commits/43757476d82a63002b1526e3be44df284c43927b
+2017-09-29T15:00:32Z,commit,IG: don't warn on method implementing or overriding super methods (ID¡­,github.com/JetBrains/intellij-community/pull/633/commits/20f0869259daedef706d48bc0f87cefe927b49b1
+2017-09-29T15:02:37Z,commit,"Add warning outline for TextFields, ComboBoxes and Spinners",github.com/JetBrains/intellij-community/pull/633/commits/a5be7241b30b0d725318a160a0709a2bbbf5e3ad
+2017-09-29T13:48:24Z,commit,Visual Guide color in Darcula,github.com/JetBrains/intellij-community/pull/633/commits/92399d8608b80fc7134d6583401db73c6f29899f
+2017-09-29T14:35:15Z,commit,"Cleanup, nullability check",github.com/JetBrains/intellij-community/pull/633/commits/2091cf2dd2bb3f84cc40e08999ef33746518980b
+2017-09-29T15:04:07Z,commit,Rename options as suggested in UI spec,github.com/JetBrains/intellij-community/pull/633/commits/6eacb87a4255f049a708f9099e983806f0ee3d47
+2017-09-27T08:52:17Z,commit,Refactored remote SDK creation (changes API),github.com/JetBrains/intellij-community/pull/633/commits/d3e8fd80f7922bf31de8e3e23fada47ddbe94110
+2017-09-29T15:18:51Z,commit,Dispose external system process handler,github.com/JetBrains/intellij-community/pull/633/commits/b18f014f9aeeaa635175d9223c6a60608be50efa
+2017-09-29T15:24:08Z,commit,list-popup: add speed-search; fix sticking icon for nulls,github.com/JetBrains/intellij-community/pull/633/commits/d2632940e626d1eba23cab4052a5f65a8f477bd9
+2017-09-29T15:26:18Z,commit,speed-search: KEY_TYPED events only (non-ISO shortcuts) & double ENTE¡­,github.com/JetBrains/intellij-community/pull/633/commits/7c7f90ffe663ad3a6f3cc81af26c1ce146b27375
+2017-09-29T15:32:58Z,commit,Smaller editable table fields,github.com/JetBrains/intellij-community/pull/633/commits/460adba01c40d70f31343815105d85b36e497759
+2017-09-29T15:31:49Z,commit,EDU-1059 Debugger doesn't work in 4.0.1,github.com/JetBrains/intellij-community/pull/633/commits/684c3300e0ceb94f5f7d90c0cf0e340c3c966579
+2017-09-29T13:38:14Z,commit,create file from template: restore PSI after sudden file reparse (IDE¡­,github.com/JetBrains/intellij-community/pull/633/commits/da459e783e3241666c116a197f0e95ef010fa2f5
+2017-09-29T14:36:40Z,commit,speedup LaterInvocator (IDEA-CR-24988),github.com/JetBrains/intellij-community/pull/633/commits/cc18387cb9ccb158be2b584c426093855fab83dc
+2017-09-29T15:39:48Z,commit,"Add ""Show HiDPI Info"" action",github.com/JetBrains/intellij-community/pull/633/commits/b80dd39578cb6f558039b90a3942e37e1e87ee7b
+2017-09-29T16:05:16Z,commit,move RunConfigurationBase#isCompileBeforeLaunchAddedByDefault -> RunP¡­,github.com/JetBrains/intellij-community/pull/633/commits/3506acb0de41d3acf371825e5c18c61d19ee959f
+2017-07-27T15:40:09Z,commit,PY-20889 Fixed: Unresolved attribute after isinstance check in boolea¡­,github.com/JetBrains/intellij-community/pull/633/commits/8d3d94ee88bb69965a8f110160bc7d6959410fed
+2017-09-29T15:43:46Z,commit,IG: don't perform expensive search on public fields with common name ¡­,github.com/JetBrains/intellij-community/pull/633/commits/486ad966637fd1d11dab288df099b3f0d14f8bbe
+2017-09-29T15:37:26Z,commit,"speed-search: KEY_TYPED events only (non-ISO shortcuts): keyPressed, ESC",github.com/JetBrains/intellij-community/pull/633/commits/4dcbe12f392752d71fa5971973364d5a9448cb49
+2017-09-29T15:41:21Z,commit,debugger agent: avoid dead lock on getRelatedStack invocation from th¡­,github.com/JetBrains/intellij-community/pull/633/commits/e722b44127d27a642b84369b6ce75fb8917bb9c3
+2017-09-29T15:56:33Z,commit,debugger agent: suppress warnings,github.com/JetBrains/intellij-community/pull/633/commits/071d1759983c23778e01db37910dc1fc51e746fd
+2017-09-29T16:22:34Z,commit,debugger agent: restrict to jre 1.8 or later,github.com/JetBrains/intellij-community/pull/633/commits/6642b38017fc8273d192f8f96d97d76af2b670de
+2017-09-29T16:33:09Z,commit,debugger agent: allow on jre 1.6 or later,github.com/JetBrains/intellij-community/pull/633/commits/c500882b5342d3b0d7a4e725dac151d6d7e7e411
+2017-09-29T17:07:59Z,commit,junit 5: fix framework name,github.com/JetBrains/intellij-community/pull/633/commits/166e25af6b0f88a31b6300a5798f39081fc598c5
+2017-09-29T17:33:54Z,commit,junit 5: show engine node when more than one engine provides tests,github.com/JetBrains/intellij-community/pull/633/commits/60a5d4dbc668162d4044a203400e65f05d23f189
+2017-09-29T17:48:54Z,commit,[platform] a console filter for viewing contents of argument files,github.com/JetBrains/intellij-community/pull/633/commits/fe64b37d90a0917ae00f883d47c00aac80a7361a
+2017-09-29T17:51:42Z,commit,NPE fix: myFallbackAttributes can be null,github.com/JetBrains/intellij-community/pull/633/commits/1f3777665ebb062a955c0962b2a574dd63b6f583
+2017-09-29T17:59:37Z,commit,[java] Javadoc runner improvements,github.com/JetBrains/intellij-community/pull/633/commits/e2f515825b0f6d842d25ff7d96ef46795cac0e98
+2017-09-29T19:21:24Z,commit,Reuse FileSelectInContext where it is possible (1 part of EA-107932),github.com/JetBrains/intellij-community/pull/633/commits/624380dccf5086e12622777872796dee19edd3ab
+2017-09-30T00:16:51Z,commit,EP RASCAL TRANSFORMATION,github.com/JetBrains/intellij-community/pull/633/commits/4de36baeac6b9074b51c496ee7c003c18b85304b

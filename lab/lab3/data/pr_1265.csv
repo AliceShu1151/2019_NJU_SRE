@@ -1,0 +1,4 @@
+1265,"IDEA-227734: report ""return null"" statements inside non-null methods"
+2019-11-29T08:35:28Z,discuss,"https://youtrack.jetbrains.com/issue/IDEA-227734
+The ReturnNullInspection is enhanced to report return null statements inside non-null methods."
+2019-11-29T08:30:52Z,commit,"report ""return null"" statements inside non-null methods (fix: IDEA-22бн",github.com/JetBrains/intellij-community/pull/1265/commits/11cc49e942799fd89f2433410ec2099456a249b1

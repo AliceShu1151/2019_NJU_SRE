@@ -1,0 +1,10 @@
+1031,IDEA-205629 Shift text range when getStartTagNameElement is null
+2019-01-17T23:30:29Z,discuss,"Apply necessary range shift both to startToken and original tag to avoid
+¡°Argument rangeInElement ¡­ endOffset must not exceed descriptor text range¡±"
+2019-04-23T02:29:30Z,discuss,Just FYI we're starting to dig into this again. I updated the YouTrack issue with more details: https://youtrack.jetbrains.com/issue/IDEA-205629
+2019-04-23T02:29:30Z,discuss,"Thanks!
+David"
+2019-04-24T20:51:30Z,discuss,This was marked as fixed in YouTrack (https://youtrack.jetbrains.com/issue/IDEA-205629). It may be worth closing this issue as well. (I'm still having trouble finding the github commit that resolves the issue though)
+2019-05-28T19:12:13Z,discuss,@dmitry-avdeev Is IDEA-205629 fixed? What commit(s) fixed it?
+2019-05-29T11:22:40Z,discuss,@dahlstrom-g It's fixed by JetBrains/android@3a148a4
+2019-01-16T22:38:43Z,commit,IDEA-205629 Shift text range when getStartTagNameElement is null,github.com/JetBrains/intellij-community/pull/1031/commits/42af17f5bcb13edc6f6794fb6479994aa1dafafb

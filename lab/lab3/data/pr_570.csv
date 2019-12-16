@@ -1,0 +1,11 @@
+570,Remove usages and deprecate some obsolete StringUtil methods
+2017-05-12T21:28:01Z,discuss,"Following the discussion here
+https://intellij-support.jetbrains.com/hc/en-us/community/posts/115000240144
+I removed usages and deprecated some obsolete / duplicating methods in com.intellij.openapi.util.text.StringUtil."
+2017-05-12T21:28:01Z,discuss,"Namely:
+replaceChar(String,char,char) was replaced with String.replace(char,char)
+charsEqual(char,char,boolean) was replaced with charsMatch(char,char,boolean)
+charsEqualIgnoreCase(char,char) was replaced with charsMatch(char,char,boolean)"
+2017-05-12T21:28:01Z,discuss,"Also usages of indexOf(CharSequence,char) applied to String were replaced with txt.indexOf(char)."
+2017-12-06T08:25:52Z,discuss,Pushed long ago (see bb8ba29 )
+2017-05-12T21:12:57Z,commit,Remove usages and deprecate some obsolete StringUtil methods,github.com/JetBrains/intellij-community/pull/570/commits/7cfb7c83f8a268c02a44600316de9c864af95e45

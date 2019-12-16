@@ -1,0 +1,10 @@
+21,IDEABKL-5131: Web Proxy: Auto-configuration URL
+2012-09-22T03:52:50Z,discuss,Fixes http://youtrack.jetbrains.com/issue/IDEABKL-5131
+2012-09-22T03:52:50Z,discuss,"Adds proxy-vole as a dependency to enable proxy pac usage.
+http://code.google.com/p/proxy-vole/wiki/UsageExamples"
+2012-09-22T03:52:50Z,discuss,An extra tick box has been added in the settings to enable using the feature
+2012-09-28T19:22:39Z,discuss,"This looks good in general. It'll need some additional changes to be properly integrated into our build (such as specifying the license for the proxy-vole library), but we'll take care of it ourselves."
+2012-09-28T19:22:39Z,discuss,"Have you signed the contributor agreement? If not, could you please do so?
+http://www.jetbrains.org/display/IJOS/Contributor+Agreement"
+2012-10-08T16:44:41Z,discuss,I've committed a change based on the pull request.
+2012-09-22T02:14:35Z,commit,IDEABKL-5131: Web Proxy: Auto-configuration URL,github.com/JetBrains/intellij-community/pull/21/commits/555c0ad40a096981b8d82063c0a4f3a1c415a6a5

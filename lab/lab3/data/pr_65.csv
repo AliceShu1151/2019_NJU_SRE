@@ -1,0 +1,12 @@
+65,"Standard ordering expand/collapse all, expand all is always first"
+2013-04-02T17:38:55Z,discuss,"
+No description provided.
+"
+2013-04-02T17:38:04Z,discuss,Unused method return values.
+2013-05-17T16:52:24Z,discuss,"Today I noticed that several tool windows in IntelliJ 12 Ultimate have a different ordering too: EJB, Web, JavaEE:App, Persistence, CDI"
+2013-05-17T16:52:24Z,discuss,Should I create a defect in youtrack so the improvement is tracked for IntelliJ 13?
+2013-12-26T14:58:46Z,discuss,"@lehnerj
+It would be best if you create a YouTrack issue and mention this pull request there (and backwards)."
+2014-01-06T11:59:56Z,discuss,Thanks for your reply. I created a new issue: IDEA-119065.
+2014-01-06T11:59:56Z,discuss,"I just noticed that this pull request has already been merged on 04.04.2013 (git revision: fe94b55), you can close it."
+2013-04-02T17:27:45Z,commit,"Standard ordering expand/collapse all, expand all is always first",github.com/JetBrains/intellij-community/pull/65/commits/74d1aa255a581fd0ef568fff6ada0e8898b8b57e

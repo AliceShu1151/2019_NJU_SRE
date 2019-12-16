@@ -1,0 +1,13 @@
+1146,Use get arrow button preferred size combo box instead
+2019-05-31T20:54:04Z,discuss,Of arrowButton.getPreferredSize(). There are times when getSizeWithButton gets called with a null arrowButton.
+2018-06-07T18:25:13Z,commit,Delete to the first newline after indexToDeleteTo,github.com/JetBrains/intellij-community/pull/1146/commits/d4d287560df4bae7910f2a8b24c877ee2f1bb0e5
+2018-06-12T19:14:46Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/802e60830e32f7df60de6cb520f9f414defe575c
+2019-01-31T01:58:47Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/ae32b94fade4170f99f944ee2de46a046fce83a6
+2019-01-31T21:22:02Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/c605b6c5f487f1646d071bd16ddcb3fed2774bee
+2019-04-06T00:38:11Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/a350c80b09b0f07077a01848cd9156a825aa1268
+2019-05-01T02:22:16Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/ddb483d3b31ac0f0f49dad3091dcb9fa2cf6be45
+2019-05-03T18:50:01Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/b3d07aa37c01178afe758654615276a8bca82e7e
+2019-05-03T19:24:33Z,commit,Use DarculaTableSelectedCellHighlightBorder,github.com/JetBrains/intellij-community/pull/1146/commits/2926b234c536a2748bfb72fdd2c8a870adaec567
+2019-05-29T21:26:30Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/2e2ce4b3039aeeb6579457f2e5b2a5d102daca2e
+2019-05-31T19:59:01Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/1146/commits/07c316c577c2d19550b4a0c8e95bfb8e39d50162
+2019-05-31T20:41:04Z,commit,Use getArrowButtonPreferredSize(comboBox) instead,github.com/JetBrains/intellij-community/pull/1146/commits/32937886b48313d90cb990e4b638603f4f4c394c

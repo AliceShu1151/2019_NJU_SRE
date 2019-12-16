@@ -1,0 +1,4 @@
+1063,Use String::join instead of hand-written joining pattern
+2019-02-13T15:18:42Z,discuss,subj
+2019-02-18T04:30:19Z,discuss,"Merged, thanks."
+2019-02-12T10:19:16Z,commit,Use String::join instead of hand-written joining pattern,github.com/JetBrains/intellij-community/pull/1063/commits/61571682cca54490d5ec37987942c481f4e7ec98

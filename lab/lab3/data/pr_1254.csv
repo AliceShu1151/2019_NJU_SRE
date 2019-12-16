@@ -1,0 +1,11 @@
+1254,Make line info public and add line number and original line number to it.
+2019-11-19T12:22:04Z,discuss,"Make line info public and add line number and original line number to it.
+More info is in the thread."
+2019-11-19T12:22:04Z,discuss,https://intellij-support.jetbrains.com/hc/en-us/community/posts/360006634979-I-want-to-extend-the-Annotate-view-of-Git-VCS-But-?page=1#community_comment_360000966480
+2019-11-19T12:32:22Z,discuss,Force push a modification with latest master. No conflicts now.
+2019-11-19T13:06:07Z,discuss,Add delegate to CommitInfo in LineInfo.
+2019-11-20T14:31:52Z,discuss,Force push a new commit. It follows the reviews.
+2019-11-21T10:33:36Z,discuss,"@SetoKaiba
+Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-11-21T10:54:16Z,discuss,Signed.
+2019-11-20T14:29:45Z,commit,Make line info public and add line number and original line number to¡­,github.com/JetBrains/intellij-community/pull/1254/commits/5186786d624379f0e449759d996c1387e1a0a56d

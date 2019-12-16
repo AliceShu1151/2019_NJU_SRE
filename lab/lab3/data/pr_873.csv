@@ -1,0 +1,7 @@
+873,Add an explicit import for com.intellij.openapi.module.Module
+2018-09-26T07:20:35Z,discuss,to disambiguate with java.lang.Module under JDK 9.
+2018-09-26T07:20:35Z,discuss,"This is a work-around for:
+https://youtrack.jetbrains.net/issue/KT-27141"
+2018-09-26T07:22:09Z,discuss,@develar? @cdracm?
+2018-09-26T10:39:08Z,discuss,"pushed, thanks"
+2018-09-25T17:45:34Z,commit,Add an explicit import for com.intellij.openapi.module.Module,github.com/JetBrains/intellij-community/pull/873/commits/b6fbdb94a3345e933cdda9c8046a4299c8d7b92e

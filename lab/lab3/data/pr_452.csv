@@ -1,0 +1,4 @@
+452,Update IDE setup instructions
+2016-10-13T13:26:32Z,discuss,Why do you think that sd-jdi.jar is required? Could you please describe what exact problem is caused by its absence?
+2016-10-13T13:45:07Z,discuss,"I checked again and you are right, it's not needed. It must have been a coincidence that compilation started working after adding sd-jdi.jar. The reason I added it was because compilation was failing because not finding some com.sun.jdi.* class, but those are already in tools.jar so it has nothing to do with the problem I had. I had added tools.jar, but I kept getting the error, but I must have done something wrong my self."
+2016-10-12T10:33:23Z,commit,Update IDE setup instructions,github.com/JetBrains/intellij-community/pull/452/commits/f522ba36a7b501eb64b2fd483a7cc33a74733733

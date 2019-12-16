@@ -1,0 +1,9 @@
+450,Ensuring project directory is given priority prior to settings import
+2016-09-26T14:28:20Z,discuss,"I'm developing a reusable Django app which has settings in example_project.settings. The example_project provides a project which is both a bare-bones example, and a bootstrap for the tests."
+2016-09-26T14:28:20Z,discuss,"However ¨C and perhaps unsurprisingly ¨C another Django app also contained an example_project. Moreover, my project directories entry on sys.path only appears towards the end of the list, after many dependencies. In my case, the result was that the incorrect settings file would be imported."
+2016-09-26T14:28:20Z,discuss,"I don't think this change should have any negative consequences, but I'm very much open for input."
+2016-09-26T14:28:20Z,discuss,PS. I couldn't see an email address to send the CLA to
+2016-09-26T16:27:30Z,discuss,"For the CLA, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-09-27T12:01:56Z,discuss,Done
+2016-09-28T15:42:32Z,discuss,We've received the CLA. Thanks.
+2016-09-26T14:04:26Z,commit,Ensuring project directory is given priority prior to settings import,github.com/JetBrains/intellij-community/pull/450/commits/137828b272aefbddd1492b134301c901b9aed2c3

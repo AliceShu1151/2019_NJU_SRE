@@ -1,0 +1,6 @@
+114,PY-9343 Add to OOTB console folding rules the *sys-package-mgr* lines
+2013-10-21T12:20:19Z,discuss,"
+No description provided.
+"
+2013-10-21T17:54:34Z,discuss,Merged manually (the change actually goes to a different file). Thanks anyway. :)
+2013-10-21T12:19:33Z,commit,PY-9343 Add to OOTB console folding rules the *sys-package-mgr* lines,github.com/JetBrains/intellij-community/pull/114/commits/9c2ab7817e28468e6f57c36791fb3340b8a71334

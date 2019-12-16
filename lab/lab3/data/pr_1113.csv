@@ -1,0 +1,6 @@
+1113,Recognize Chrome OS in SystemInfo
+2019-04-08T22:54:55Z,discuss,Android Studio (and the Android plugin) would benefit from having the detection done in platform code.
+2019-04-08T22:56:06Z,discuss,@trespasserw
+2019-04-09T15:39:49Z,discuss,Thank you!
+2019-04-09T16:13:43Z,discuss,"Welcome! If any other changes are needed to make the platform work in ChromeOS, please let me know."
+2019-04-08T22:50:33Z,commit,Recognize Chrome OS in SystemInfo,github.com/JetBrains/intellij-community/pull/1113/commits/1af983240cfd18f9515a8a4254f33f9501f3afc8

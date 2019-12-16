@@ -1,0 +1,17 @@
+725,Support fetch for svn bridged repos
+2018-02-04T12:45:26Z,discuss,This is related with IDEA-26427
+2018-03-05T16:59:01Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-03-05T17:43:22Z,discuss,@klikh Done. I've already signed it. Should I rework the commit with any signature?
+2018-03-05T17:45:26Z,discuss,"We've received the CLA, no additional actions are needed, thank you."
+2018-03-06T17:42:30Z,discuss,@kirillk This is just the start. I think this will need more PR to be feature complete:
+2018-03-06T17:42:30Z,discuss,"I expected to discuss implementation on a bugtracker (something like an epic issue ""support git-svn"" with those subtasks) and implement features one by one doing code review"
+2018-03-06T17:42:30Z,discuss,If I can do anything to speed up the process let me known.
+2018-07-24T06:59:33Z,discuss,Thanks for the contribution. But tbh I'm not sure about the proposed implementation: I'd avoid hardcoding the git-svn stuff right into common logic (like in the GitFetcher) and common structures (like in GitRemote).
+2018-07-24T06:59:33Z,discuss,"It would be preferable to add support for git-svn via some extension, maybe even via a separate plugin. Of course, git4idea can be extended to provide necessary API. Do you think you could try this approach?"
+2018-07-24T09:37:02Z,discuss,Sure! I will try that. Any tips or an initial WIP branch with some boilerplate skeleton would be appreciated. I will close this PR as soon as I have something reworked on top of git4idea
+2018-07-24T15:07:28Z,discuss,"Nope, sorry, we didn't start working on git-svn in any way yet. But please don't hesitate to ask, should you need an advice about API and something like that."
+2018-07-24T15:26:31Z,discuss,Since I was mentioned here (by a mistake) let me take this chance to say hello to @klikh! Long time no see!
+2018-07-24T17:29:59Z,discuss,Let's close this request for now then.
+2018-07-24T17:31:23Z,discuss,"Btw, in past there was an attempt to do some git-svn: see GitSvnRemoteBranch. Not very successful, though, but might be a start. An extension (subclass, maybe) of GitRemote might be needed as well."
+2018-07-24T18:47:50Z,discuss,Sounds like a plan! Let me work on it
+2018-02-04T11:43:48Z,commit,git: IDEA-26427 Support fetch for svn bridged repos,github.com/JetBrains/intellij-community/pull/725/commits/c1d4290a3926c4447d948f5dbf177506abc3a075

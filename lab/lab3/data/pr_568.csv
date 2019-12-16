@@ -1,0 +1,8 @@
+568,Additional line number pattern matching for the Open File Dialog
+2017-05-02T18:38:20Z,discuss,"Additional line number pattern matching for the Open File Dialog (TreeFileChooserDialog), # and ?l= are now matched covering web source code viewers such as"
+2017-05-02T18:38:20Z,discuss,Chromium: https://cs.chromium.org/chromium/src/apps/app_restore_service_factory.cc?l=15
+2017-05-02T18:38:20Z,discuss,and
+2017-05-02T18:38:20Z,discuss,Android: https://android.googlesource.com/device/sample/+/master/apps/LeanbackCustomizer/src/com/google/android/leanbacklauncher/partnercustomizer/PartnerReceiver.java#100
+2017-05-02T18:38:20Z,discuss,Some more context/ additional improvement on: https://youtrack.jetbrains.com/issue/IDEA-162418
+2017-05-03T18:25:35Z,discuss,"Merged manually, thanks!"
+2017-05-02T18:35:57Z,commit,Additional line number pattern matching for the Open File Dialog (Tre¡­,github.com/JetBrains/intellij-community/pull/568/commits/cf945a65684c575b26e4febedf813037519eda32

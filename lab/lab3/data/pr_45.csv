@@ -1,0 +1,6 @@
+45,"IDEA-99364 Highlighting constructor correction - highlight only javaReference, without type parameters"
+2013-03-07T13:00:25Z,discuss,"
+No description provided.
+"
+2013-03-07T18:13:41Z,discuss,Merged. Thanks!
+2013-03-07T12:58:52Z,commit,IDEA-99364 Highlighting constructor correction - highlight only javaR¡­,github.com/JetBrains/intellij-community/pull/45/commits/137d73db691f14246a205f69c06da594fbea3b89

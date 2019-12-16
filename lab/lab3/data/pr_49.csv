@@ -1,0 +1,12 @@
+49,IDEA-31957 Permit grouping and/or move up/down for build files in Ant toolwindow
+2013-03-09T13:06:43Z,discuss,Comments welcome
+2013-03-09T14:06:51Z,discuss,
+2018-12-19T12:56:20Z,discuss,Please update the PR.
+2018-12-19T12:57:25Z,discuss,Hello. I'm not interest in this PR anymore. Sorry
+2013-03-08T13:00:33Z,commit,IDEA-31957 Permit grouping and/or move up/down for build files in Ant¡­,github.com/JetBrains/intellij-community/pull/49/commits/ba514d4290e85bbfd38e19f82ef155bc30307c3d
+2013-03-08T21:23:53Z,commit,fixed broken icon paint for AntBuildFileTreeNode,github.com/JetBrains/intellij-community/pull/49/commits/1f0538be9e94f739891b3d12805735df30d36131
+2013-03-09T09:44:08Z,commit,"use module list, not module list based on FS",github.com/JetBrains/intellij-community/pull/49/commits/5ce3c148271aad562a23e14abb71855c5a8cdf29
+2013-03-09T10:04:14Z,commit,ant groups - initial,github.com/JetBrains/intellij-community/pull/49/commits/6ebb52185112b0fb44a1e735da275a29d5ee68f6
+2013-03-09T10:10:37Z,commit,Merge branch 'master' into IDEA-31957,github.com/JetBrains/intellij-community/pull/49/commits/5395c2193b3b316046669bedc00c018c23e2e4cb
+2013-03-09T12:54:50Z,commit,support user grouping in AntExplorer (IDEA-31957),github.com/JetBrains/intellij-community/pull/49/commits/d185dd139706f60d0f9cc4e918490b46b2d2458e
+2013-03-09T13:18:20Z,commit,remove unused code,github.com/JetBrains/intellij-community/pull/49/commits/3b57c359f1f6ff1cbffa289fbbf426eab57d1e3a

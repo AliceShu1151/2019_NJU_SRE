@@ -1,0 +1,13 @@
+744,"Allow ""Switch after create"" when creating branch from repository location in SVN plugin"
+2018-02-24T19:19:48Z,discuss,"The common scenario where I work is to create a branch from repository location (i.e. trunk) in one commit and then in a separate one commit the changes. Unfortunately the option to automatically switch after create is not available when branching from repository location, which forces us to switch manually, which can be easily forgotten and leads to accidental commits to wrong branch. This pull requests makes this checkbox available for both options."
+2018-03-13T18:36:45Z,discuss,Consider the following case:
+2018-03-13T18:36:45Z,discuss,Note that working copy location and repository location will be set according to the file in the editor.
+2018-03-13T18:36:45Z,discuss,"My concern is that the user could set necessary repository location and ""copy to"" parameters - so the correct branch will be created. But ""switch after create"" option will switch only that one file (opened in the editor). And this could be confusing."
+2018-03-13T18:36:45Z,discuss,"Probably we should disable this checkbox for some cases, or detect working copy path to switch (based on repository location) and specify it explicitly in the checkbox text, or something else. What do you think?"
+2018-05-13T14:16:00Z,discuss,"I'm sorry to react so late, but as I got assigned to another team at work and stopped using SVN, I had little motivation to pursue it futher. (Un)fortunately I am back to SVN, so I found some time to work on it."
+2018-05-13T14:16:00Z,discuss,"I added a text field which informs the user which working copy location will be switched when selecting the checkbox. When choosing repository location as a source, it displays the file which was chosen when opening the ""Create branch or tag"" popup. I hope the typical case for this functionality is to branch & switch whole project (when it's clear what will happen) and in the other cases the provided information should alleviate the possible confusion. What do you think? ;)"
+2018-07-30T10:51:42Z,discuss,Any progress with this pull request? My team has same problem.
+2018-07-30T10:57:48Z,discuss,My team is also interested. Is it going to be included?
+2018-08-08T17:20:08Z,discuss,"I've made some changes (just specify path to switch in the checkbox label) and merged your pull request - see 38a8522.
+Thanks!"
+2018-02-24T20:12:40Z,commit,"Allowed ""Switch after create"" when creating branch from repository lo¡­",github.com/JetBrains/intellij-community/pull/744/commits/0e36a97df73f5f3704a3238a8e5edbef39b7c249

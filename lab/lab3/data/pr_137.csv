@@ -1,0 +1,18 @@
+137,add ghost mode to tool window properties (IDEABKL-3654)
+2013-12-05T14:33:57Z,discuss,It addresses 7-years-old issue here http://youtrack.jetbrains.com/issue/IDEABKL-3654
+2013-12-05T14:33:57Z,discuss,This patch adds an option 'Ghost mode' to tool panel. With this option enabled strip button for tool window is hidden from docking toolbar.
+2013-12-05T14:33:57Z,discuss,"Below are two screens about it - before and after checking that option in context menu
+
+"
+2013-12-05T14:33:57Z,discuss,"Windows is still enabled and can be shown via menu View->Tool Windows or any other way.
+This patch is actually affects only visibility of strip button."
+2013-12-05T14:33:57Z,discuss,And the state (if changed from visible to ghost only) is saved in workspace.xml
+2013-12-05T14:48:03Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2013-12-05T15:13:53Z,discuss,signed-n-emailed just now
+2015-09-11T14:22:01Z,discuss,Hi guys.
+2015-09-11T14:22:01Z,discuss,Is there a problem with my pull request? Why it's delayed for years without apply or reject?
+2015-09-11T21:17:34Z,discuss,I'm here to deal with it as soon as possible.
+2015-09-14T20:45:39Z,discuss,"The patch hasn't been applied ""as is"" but it was used for implementation. Thank you!"
+2015-09-15T08:14:24Z,discuss,"Always welcome.
+Then this request might be closed, I think."
+2013-12-05T14:11:12Z,commit,add ghost mode to tool window properties,github.com/JetBrains/intellij-community/pull/137/commits/eb7cf2cc50cb221b23f741b8e767e9035bec4745

@@ -1,0 +1,4 @@
+547,PyConsoleCopyHandler fixes
+2017-06-13T20:51:58Z,discuss,Merged.
+2017-04-12T21:04:28Z,commit,fixed extra \n appended when copying from console,github.com/JetBrains/intellij-community/pull/547/commits/bed22fae11aa34ca8779b362a7535b227a6be9f3
+2017-04-12T21:07:00Z,commit,fixed columnar selection in console,github.com/JetBrains/intellij-community/pull/547/commits/53131e34e19dbe534258ec69dbdfd7aa8a5fe224

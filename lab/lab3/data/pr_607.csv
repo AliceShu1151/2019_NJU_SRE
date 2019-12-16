@@ -1,0 +1,14 @@
+607,"IDEA-149976 Added ""Reveal in Terminal"" action."
+2017-08-01T16:47:54Z,discuss,Hello.
+2017-08-01T16:47:54Z,discuss,I've decided to speed up things a bit and implement the https://youtrack.jetbrains.com/issue/IDEA-149976 feature.
+2017-08-01T16:47:54Z,discuss,"The implementation was pretty straightforward except for new methods in ToolWindow interface, I have some doubts about them as a way of achieving the functionality required.
+The idea was to be able to pass a file, selected by user, to external modules like plugins.
+I've provided a default implementation of the methods in case some external code have used the interface."
+2017-08-01T16:47:54Z,discuss,"If there is something that can be improved, please let me know."
+2017-11-19T17:02:38Z,discuss,And it seems JetBrains won't do things speedily 
+2017-11-20T09:39:03Z,discuss,"Yeah, I wish they've commented the issue at least :)"
+2017-11-20T15:45:06Z,discuss,I'm very disappointed in JetBrains on how they deal with issues and pull requests.
+2017-11-20T15:45:06Z,discuss,"They have ton of issues on YouTrack but they can't manage them well even they developed YouTrack, just my own opinion."
+2017-11-21T19:02:10Z,discuss,Merged
+2017-11-21T19:32:07Z,discuss,"Whoa, awesome!"
+2017-07-31T22:09:58Z,commit,"IDEA-149976 Added ""Reveal in Terminal"" action.",github.com/JetBrains/intellij-community/pull/607/commits/3a723f97b0a839ea2c952aa7c91fe7eca933198b

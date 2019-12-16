@@ -1,0 +1,10 @@
+803,Eliminating tail recursion in JBDiff#split
+2018-06-05T23:25:18Z,discuss,"Previously, on large-ish files, JBDiff#split would sometimes cause
+StackOverflowExceptions due to the use of tail recursion. Changed to
+use stacks to maintain state during iteration, and eliminated the
+recursion.
+Also updating variable names to be more readable."
+2018-06-05T23:25:18Z,discuss,(cherry picked from commit 59aee5d)
+2018-06-05T23:25:35Z,discuss,@trespasserw?
+2018-06-12T16:29:19Z,discuss,Thanks!
+2016-02-04T20:58:00Z,commit,Eliminating tail recursion in JBDiff#split,github.com/JetBrains/intellij-community/pull/803/commits/aa2cd6f4d49ea9d684e1486bcd49546a623ded23

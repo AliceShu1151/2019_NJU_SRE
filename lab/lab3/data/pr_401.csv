@@ -1,0 +1,4 @@
+401,IDEA-137640: New FileTemplate time variables
+2016-05-16T09:48:06Z,discuss,"I was looking to add the FILE_PATH variable too, but can't find how to do it."
+2016-05-15T22:03:36Z,commit,New FileTemplate time variables,github.com/JetBrains/intellij-community/pull/401/commits/4eec3465ef877d3ed46a2198738463d006b67105
+2016-05-16T09:52:39Z,commit,Documentation for variables,github.com/JetBrains/intellij-community/pull/401/commits/78b41927b5b0c86a707997bc572e912c3a37b447

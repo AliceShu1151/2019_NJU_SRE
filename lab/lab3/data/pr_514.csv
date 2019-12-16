@@ -1,0 +1,7 @@
+514,Pasting mvn dependency with classifier to gradle
+2017-02-17T20:07:12Z,discuss,Gradle supports maven classifiers https://docs.gradle.org/current/userguide/dependency_management.html#sub:classifiers. This change adds support for classifiers in PasteMvnDependencyPreProcessor.
+2017-02-17T20:07:12Z,discuss,I've signed CLA.
+2017-05-22T19:23:13Z,discuss,What do you think about this change? Is there anything missing?
+2017-05-25T09:38:33Z,discuss,"Sorry for the delay, the change looks good to me. I've merged it.
+Thanks for the contribution!"
+2017-02-16T20:21:25Z,commit,Pasting mvn dependency with classifier to gradle,github.com/JetBrains/intellij-community/pull/514/commits/a0b3d0a74fa2730b2f0756e130911b50486608a8

@@ -1,0 +1,9 @@
+394,[Fernflower] Support Asserts that have the throw in the else clause instead of the if clause
+2016-04-26T13:29:46Z,discuss,As the title says: the throw new AssertionError() of a compiled assertion can be in the if or the else clause. Currently Fernflower only deals with the case where it is in the if clause.
+2016-04-26T13:29:46Z,discuss,"Example:
+https://github.com/droid666/intellij-community/blob/398801bec078efc14529078b22e4b109f7efcadf/plugins/java-decompiler/engine/testData/src-stdout/javadefault/assertions/Assert1.java"
+2016-04-26T13:29:46Z,discuss,"In this example the method foo(Object x) is the problem, the assertion in it decompiles to: if($assertionsDisabled || ... with the throw in the else clause."
+2016-04-26T13:29:46Z,discuss,"The example is part of this pull request: #390
+It is deactivated in that pull by default because it fails without this fix."
+2016-10-14T15:37:45Z,discuss,"merged into community, thanks!"
+2016-04-26T13:13:24Z,commit,Supports Asserts that have the throw in the else clause instead of th¡­,github.com/JetBrains/intellij-community/pull/394/commits/41dff90623a3ba6c01c99fa222d4da31fe459e11

@@ -1,0 +1,8 @@
+311,Added `Convert to Operator` Groovy inspection
+2015-10-22T18:00:11Z,discuss,Fixes https://youtrack.jetbrains.com/issue/IDEA-95818
+2016-03-22T15:20:30Z,discuss,"@dovchinnikov, @maxmedvedev, @ignatov ?"
+2016-03-22T18:53:12Z,discuss,I'm sorry for long responses btw.
+2016-03-24T16:49:28Z,discuss,"Added a few more error checks for places which I thought were already covered, I hope all NPEs and AIOOBEs are eliminated now :)"
+2016-03-24T16:49:28Z,discuss,"What should I do about the untestable cases (they're working from the IDE, not from JUnit)?"
+2016-03-28T12:58:16Z,discuss,@paplorinc JFYI 5153f72
+2016-03-05T11:09:05Z,commit,Added `Convert to Operator` Groovy inspection,github.com/JetBrains/intellij-community/pull/311/commits/ed6338e645524adbb0525f0e83d613e192b8454e

@@ -1,0 +1,4 @@
+1211,IDEA-224349: Don't pass a partially initialized object to a different¡­
+2019-10-07T21:15:07Z,discuss,¡­ thread
+2019-10-14T09:49:20Z,discuss,"pushed, thanks"
+2019-10-07T21:10:47Z,commit,IDEA-224349: Don't pass a partially initialized object to a different¡­,github.com/JetBrains/intellij-community/pull/1211/commits/bff7a2f64594ad8eb4fd35574fc6905f5ae7c147

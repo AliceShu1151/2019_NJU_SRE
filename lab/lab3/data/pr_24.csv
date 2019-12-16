@@ -1,0 +1,19 @@
+24,New highlights
+2012-10-22T19:52:32Z,discuss,"As a former Eclipse user, I really miss highlights for abstract and inherited method calls.
+That's why I wrote some code to have it working."
+2012-10-22T19:52:32Z,discuss,"Implementing abstract method calls hightlights was trivial, but inherited method calls was a little harder as PsiMethod.getMethodReceiver() isn't giving expected information."
+2012-10-22T19:52:32Z,discuss,Hope this helps.
+2012-10-23T12:50:44Z,discuss,"Instead of all this code, please use enclosingClass.isInheritor(method.getContainingClass(), true)"
+2012-10-23T12:51:03Z,discuss,"PsiTreeUtil.getParentOfType(element, PsiClass.class)"
+2012-10-23T12:55:16Z,discuss,"This is wrong. You need to find a parent PsiMethodCallExpression for elementToHighlight, then get its method expression and check what kind of qualifier the method expression has."
+2012-10-23T12:57:04Z,discuss,"Before we can merge your pull request, you'll need to submit a contributor license agreement:
+http://www.jetbrains.org/display/IJOS/Contributor+Agreement
+The easiest way to do so is to print out the PDF, fill the information, sign it, scan and email to contribute@jetbrains.com"
+2012-10-23T19:09:18Z,discuss,"Thanks to your comments, I've made changes to use existing methods."
+2012-10-24T21:02:51Z,discuss,"As you can see, I added 2 commits on the pull request for Enum and Constants (i.e. static final) hightlights"
+2012-10-26T14:07:52Z,discuss,I've merged your pull request. Thanks for your contribution!
+2012-10-19T20:44:53Z,commit,Added highlight for Java abstract methods calls,github.com/JetBrains/intellij-community/pull/24/commits/943e2d4d697180f268c442cd6003e0faf2eb9a72
+2012-10-22T19:39:11Z,commit,Added highlight for Java inherited methods calls,github.com/JetBrains/intellij-community/pull/24/commits/b9cedbcb83242636449ab84b6a9bf5511983acd7
+2012-10-23T19:01:06Z,commit,Enhancement to use existing methods of Psi API,github.com/JetBrains/intellij-community/pull/24/commits/dd468702818cbbb366298da4e2b791159a18784f
+2012-10-24T19:52:25Z,commit,Added highlight for Java enums,github.com/JetBrains/intellij-community/pull/24/commits/4bddcfab54076e8938bb1293fc1f454d3dbfeff8
+2012-10-24T20:19:55Z,commit,Added highlight for Java constants (i.e. static final),github.com/JetBrains/intellij-community/pull/24/commits/c83d509094532c240bcc529ce1796e211588b5f9

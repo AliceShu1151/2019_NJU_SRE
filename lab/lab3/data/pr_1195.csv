@@ -1,0 +1,8 @@
+1195,Restore module intellij.jsp.base to java-api.jar
+2019-09-07T05:00:24Z,discuss,"This was removed by commit 4438460 but runtime dependencies on it remain
+for example in module intellij.jsp where JspFile extends BaseJspFile."
+2019-09-07T05:00:33Z,discuss,@chashnikov
+2019-09-09T08:54:34Z,discuss,"intellij.jsp.base shouldn't be included to Java plugin layout, because it's used in JSP plugin which may be installed in non-java IDEs (e.g. WebStorm). So we need to restore it in the platform layout for Java IDEs instead. Actually it was already done for IDEA Community by 3aac73a. I'll improve that fix by including the module to BaseIdeaProperties#JAVA_IDE_API_MODULES instead, so it'll be available in all Java-based IDEs including Android Studio."
+2019-09-09T14:06:07Z,discuss,"Done: f854c6b, so this change isn't needed anymore."
+2019-09-09T14:18:47Z,discuss,BTW it would be simpler to avoid such problems in future if you move AndroidStudioProperties.groovy from your fork of intellij-community repository (tools/idea) to Android plugin repository (tools/adt/idea).
+2019-09-07T05:00:00Z,commit,Restore module intellij.jsp.base to java-api.jar,github.com/JetBrains/intellij-community/pull/1195/commits/0bdc1e667578fe54dba5f5fbadc9e6a8649bc656

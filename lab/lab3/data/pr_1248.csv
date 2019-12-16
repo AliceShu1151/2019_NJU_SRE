@@ -1,0 +1,8 @@
+1248,Update kotlin style format to kotlin style guide
+2019-11-15T17:59:24Z,discuss,"This change is generated from Kotlin's code style setting menu. Click on ""Set from..."" and then choosing ""Kotlin style guide""."
+2019-11-15T23:30:16Z,discuss,Let's remake the commit by opening the intellij-community project in IDEA instead of copy-pasting from the Android Studio project in a text editor.
+2019-11-18T18:52:32Z,discuss,done
+2019-11-18T19:00:11Z,discuss,It looks like this isn't done. (?)
+2019-11-19T20:00:07Z,discuss,It doesn't look like it. I tried this with IDEA 2019.2.4 and got different results¡ªI'm all but certain commit 324dfc5 is contaminated with settings from the Android Studio project.
+2019-11-19T23:00:03Z,discuss,"Yes, commit 03922a7 matches what I saw with both 2019.2.3 and 2019.2.4. Thanks!"
+2019-11-19T20:57:59Z,commit,Update kotlin style format to kotlin style guide,github.com/JetBrains/intellij-community/pull/1248/commits/03922a7340cee92352f0abae84019d57d028c766

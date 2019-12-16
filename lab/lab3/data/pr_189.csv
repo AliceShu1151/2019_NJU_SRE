@@ -1,0 +1,12 @@
+189,fileContentIndexingVoter extension point
+2014-06-01T00:28:47Z,discuss,"A proposal for introducing fileContentIndexingVoter extension point which would allow to control file content indexing, effectively providing a way for overcoming issues described in IDEA-23537 (has 8 linked issues, including IDEA, WI and WEB spaces), IDEA-96277 and so on."
+2014-06-01T00:28:47Z,discuss,"I've assembled a small plugin shyiko/ijignore to demonstrate how it can be used. Once .ijignore is in place, opening a project (sandbox home was forcefully rm -rf'ed, so no cheating) with"
+2014-06-01T00:28:47Z,discuss,where .ijignore looked like
+2014-06-01T00:28:47Z,discuss,"was almost instantaneous (in comparison to ""without .ijignore""). Tested on 2 year old Macbook Pro (with SSD)."
+2014-06-01T00:28:47Z,discuss,Same extension point could be used (for example):
+2014-06-01T00:28:47Z,discuss,"This would be really helpful for projects with frequent filesystem changes, significantly reducing time spent on ""Indexing..."" where it's not really needed."
+2014-06-01T00:28:47Z,discuss,Please let me know if you have any concerns regarding the pull request's content. I'm willing to make any changes you deem appropriate.
+2014-06-01T00:28:47Z,discuss,Thank you.
+2014-06-04T19:18:47Z,discuss,After talking to @bulenkov (who generously agreed to review the PR) it was decided (together with @chashnikov) that there should be a better way. Closing PR as a result.
+2014-06-04T22:27:58Z,discuss,Proper way of handling files exclusion is to fix http://youtrack.jetbrains.com/issue/IDEA-23537
+2014-05-31T23:40:53Z,commit,fileContentIndexingVoter extension point,github.com/JetBrains/intellij-community/pull/189/commits/f0fe72777ec9f16a193d34860e1597fef3f8418d

@@ -1,0 +1,21 @@
+149,Correctly interpret python __slots__ that are external references
+2014-02-11T09:21:43Z,discuss,"The commit message for 8a038fa is the whole story, but the short version is that PyCharm should flag attribute references that it can prove are incorrect."
+2014-02-11T09:21:43Z,discuss,This is pretty much the opposite of PY-10158 :-)
+2014-02-11T09:21:43Z,discuss,"BTW, I ran the PyCharm test suite and there were two failures before I touched it:"
+2014-02-11T20:11:05Z,discuss,I just found out that there is a circumstance under which the change I made blows up the indexing:
+2014-02-11T20:11:05Z,discuss,"I will try to look at it when I get home, or if the pros know what rookie Psi mistake I made, I would love to learn what not to do next time."
+2014-02-12T05:45:41Z,discuss,@traff Sorry for the hassle; I believe ce914ae addresses the IndexNotReadyException.
+2014-02-13T06:12:12Z,discuss,@klikh Is ce914ae going to be included in the upstream? I don't see that change in the commit logs but this PR was closed.
+2014-02-13T06:12:12Z,discuss,"Without that patch, it is very likely that reindexing will throw the exception mentioned above."
+2014-02-13T09:57:39Z,discuss,"@mdaniel Sorry, I was under impression that all changes were incorporated by traff and you were referring a commit that was already merged. I'll ask traff to take a look once again."
+2014-02-13T21:06:32Z,discuss,"Hi mdaniel, I've temporary reverted the change. I'll include it later together with your latest fix of INRE
+The problem with it now that it makes some of our professional edition tests to hang."
+2014-02-14T04:49:09Z,discuss,"No problem, thank you for your help so far."
+2014-02-14T04:49:09Z,discuss,"If you find the cause of the test hang, I would like to know how to do a better job next time. The Psi system is still dark magic (and I'm pretty surprised I got as far as I did), but I always enjoy the chance to learn."
+2018-07-21T15:06:39Z,discuss,"It looks that the original issue has been fixed, @traff, right?
+@mdaniel, please reopen if needed."
+2018-07-21T15:06:59Z,discuss,cc @vlasovskikh.
+2018-07-23T02:09:46Z,discuss,I believe this problem is no longer relevant. Feel free to re-open it in case it occurs again.
+2014-02-11T08:51:15Z,commit,Test for slots as external references,github.com/JetBrains/intellij-community/pull/149/commits/8a038fa37044c06feec72035bf351fcfa61e409c
+2014-02-11T08:51:15Z,commit,Allow slots to be a reference expression,github.com/JetBrains/intellij-community/pull/149/commits/7f3af36085c5a3f57c0cad49effbbf60ceb578d4
+2014-02-12T05:37:10Z,commit,Address the IndexNotReadyException,github.com/JetBrains/intellij-community/pull/149/commits/ce914ae340d4b808bbc92d9798101604b00ea411

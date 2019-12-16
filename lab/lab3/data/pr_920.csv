@@ -1,0 +1,6 @@
+920,Fix mouse wheel scrolling in image editor (IDEA-180216)
+2018-11-16T00:05:37Z,discuss,"
+No description provided.
+"
+2018-11-21T15:24:01Z,discuss,Thanks you for the fix.
+2018-11-16T00:00:06Z,commit,Fix mouse wheel scrolling in image editor (IDEA-180216),github.com/JetBrains/intellij-community/pull/920/commits/1581f6002d2ca7091f9927d2fa31f331a5d1ff14

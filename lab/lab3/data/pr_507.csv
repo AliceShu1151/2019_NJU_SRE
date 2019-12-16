@@ -1,0 +1,6 @@
+507,allow replacing items on patch application in ConsoleUI
+2017-01-27T09:45:05Z,discuss,This fix should help fixing patches application in Toolbox app.
+2017-01-27T09:45:05Z,discuss,#ALL-1292
+2017-01-29T19:52:21Z,discuss,Obsolete (discussed in the issue).
+2017-01-27T09:43:24Z,commit,allow replacing items on patch application in ConsoleUI. This fix sho¡­,github.com/JetBrains/intellij-community/pull/507/commits/4d9ca8fdb7c9e304e7fba72a964b307049b0d02e
+2017-01-27T09:58:54Z,commit,toggle patcher version,github.com/JetBrains/intellij-community/pull/507/commits/6dc1214fefdd25f9957f0be855a992fc609d844b

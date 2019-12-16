@@ -1,0 +1,14 @@
+226,Fixed flow for Ant build file validation
+2014-11-24T03:38:11Z,discuss,Pull request to fix AntConfiguration flow when a build file is added.
+2014-11-24T03:38:11Z,discuss,Currently the build file is marked as Ant file prior to inner structure validation.
+2014-11-24T03:38:11Z,discuss,"It means that although the validation is performed, it does not throw an exception for build files without required attributes."
+2014-11-24T03:38:11Z,discuss,"The flow just falls to less strict check and hence the invalid Ant build file is added. Due to the previous call of marking the file as Ant file, pretty much any XML file can be added as Ant file."
+2014-11-24T03:38:11Z,discuss,I changed the order that marking the file as Ant file is happening after the inner structure validation.
+2014-11-24T10:40:21Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2014-11-24T19:00:25Z,discuss,Sent out just moments ago.
+2014-11-25T10:02:31Z,discuss,"Agreement received, thanks."
+2014-12-02T15:02:14Z,discuss,"Thanks for your contribution.
+Unfortunately, I must reject the change because it breaks the intended functionality. The method addBuildFileImpl containing the code"
+2014-12-02T15:02:14Z,discuss,"AntSupport.markFileAsAntFile(file, xmlFile.getProject(), true);"
+2014-12-02T15:02:14Z,discuss,"is called when the file is explicitly added by the user to the list of ant build files in the ""Ant"" toolwindow. This code explicitly tells the IDE to treat the file as an ant file."
+2014-11-24T03:27:13Z,commit,Fixed flow for Ant build file validation,github.com/JetBrains/intellij-community/pull/226/commits/a01eefeab79b897d43ccec5720240c6619a76b55

@@ -1,0 +1,253 @@
+18,Idea 91145
+2012-09-06T15:10:21Z,discuss,Proposition to implement http://youtrack.jetbrains.com/issue/IDEA-91145
+2012-09-06T15:11:38Z,discuss,Sorry I didn't create the push request correctly. I will open another one
+2012-05-21T08:38:46Z,commit,IDEA-84573 (Maven: configurable generate-sources behavior - use it as¡­,github.com/JetBrains/intellij-community/pull/18/commits/0efc202f7303fe1dc628ebe8ae3a7232390d3bf4
+2012-05-21T08:39:07Z,commit,IDEA-84573 (Maven: configurable generate-sources behavior - use it as¡­,github.com/JetBrains/intellij-community/pull/18/commits/b6f495c0ed9c1197ba297cff520488a369a3d25c
+2012-05-21T08:45:04Z,commit,IDEA-53817 (Environment variable is red (not set) despite the fact it¡­,github.com/JetBrains/intellij-community/pull/18/commits/6eeab6d83282afb79daef34a1d302a39bf3849ac
+2012-05-21T12:16:31Z,commit,[r=roman] watch compiler generated sources,github.com/JetBrains/intellij-community/pull/18/commits/974f61e868f255f7d72c7b127a734e7b61ff7378
+2012-05-21T13:56:37Z,commit,IDEA-86356 Ant console creates too many range markers,github.com/JetBrains/intellij-community/pull/18/commits/a4a00ac05c333aeea9e68fe40206f931ec9a873a
+2012-05-21T14:18:35Z,commit,fixing tests,github.com/JetBrains/intellij-community/pull/18/commits/dcc10c6ee014cf85e23b6262529edb51f09ae6a6
+2012-04-27T12:04:55Z,commit,IDEA-84488 control flow of try with some catches,github.com/JetBrains/intellij-community/pull/18/commits/a062cefe81e8c5de5ad68085db5e31d6b96e8830
+2012-05-22T10:02:51Z,commit,Correct wrap processing at the core formatter (PhpFormatterTest.testR¡­,github.com/JetBrains/intellij-community/pull/18/commits/2e0fc5909f4ff556b7560db34839eb8cb7a4f2cf
+2012-05-22T11:00:02Z,commit,avoid evaluations under readAction - this may lead to UI lock when th¡­,github.com/JetBrains/intellij-community/pull/18/commits/1b4ac6b73a47044b49b571cfc5ac00a93eacf703
+2012-03-26T10:44:48Z,commit,determine per-module encoding for compiler,github.com/JetBrains/intellij-community/pull/18/commits/8cc7d11d44fe9f8d8b1c8c0f36d74ed0a864e22d
+2012-05-21T13:36:44Z,commit,Cleanup,github.com/JetBrains/intellij-community/pull/18/commits/685859574d7eeeb799e7955c410238cfaa06bb94
+2012-04-10T15:00:21Z,commit,Linux file watcher: do not dive into flat roots,github.com/JetBrains/intellij-community/pull/18/commits/b924aebb7ea2525d5e74d524beecd957f54c8445
+2012-05-22T08:17:12Z,commit,Centralize constant,github.com/JetBrains/intellij-community/pull/18/commits/dcf63041098540f2cca3dfa90c29d4930c8b8ca1
+2012-04-19T12:40:20Z,commit,SCSS Lexer tess refactored,github.com/JetBrains/intellij-community/pull/18/commits/37cb4307952785cef377ff709b583a04b6ea5d17
+2012-03-26T14:54:25Z,commit,make use of CompilerEncodingService to compile modules with preferred¡­,github.com/JetBrains/intellij-community/pull/18/commits/a8390c997784d4fd5d541a7b922877503f8ddb82
+2012-05-22T12:07:41Z,commit,Merge branch '117' of git.labs.intellij.net:idea/community into 117,github.com/JetBrains/intellij-community/pull/18/commits/ef505a85745708e99acc31fd54729a05f4d1325e
+2012-05-22T12:26:35Z,commit,integrate dfa inspection fixes for IDEA-26389 & IDEA-43250,github.com/JetBrains/intellij-community/pull/18/commits/f819c4259bdd3360e94d682fb8a2919bc4af1322
+2012-05-22T12:57:47Z,commit,"IDEA-81494 (Frequent ""language level changed"" notifications when re-i¡­",github.com/JetBrains/intellij-community/pull/18/commits/b13f6b982fa4f7fe27ed1f6da3879917245a61c0
+2012-05-22T12:47:18Z,commit,IDEA-85027 Create Web project from boilerplate should be available wh¡­,github.com/JetBrains/intellij-community/pull/18/commits/1033a6771d6245ebdaccf659c19ce54c15a9f91c
+2012-05-22T13:12:55Z,commit,IDEA-85027 Create Web project from boilerplate should be available wh¡­,github.com/JetBrains/intellij-community/pull/18/commits/56a57c9d93ebc097fc53e1dc05bdb839170c1a8b
+2012-05-22T19:41:49Z,commit,backport,github.com/JetBrains/intellij-community/pull/18/commits/ec9ab13ec93f6be667de507e498c7af17b9708cb
+2012-05-22T19:29:35Z,commit,IDEA-86457 Nothing is saved when I try to save all content of the Dat¡­,github.com/JetBrains/intellij-community/pull/18/commits/6ecaa3dafb6fd0ea130092b5bfd137c1e56770d7
+2012-05-22T20:36:17Z,commit,fix tableview layout once again,github.com/JetBrains/intellij-community/pull/18/commits/7f13b9295f66ba1f85fe40f686ea9d1bafdc39ba
+2012-05-23T08:04:08Z,commit,Hg: limit maximum string logged into the console.,github.com/JetBrains/intellij-community/pull/18/commits/fc96f19b0a8579eaae86d2e4a98941580bbc6620
+2012-05-23T08:04:27Z,commit,IDEA-85797 Fix OOM,github.com/JetBrains/intellij-community/pull/18/commits/b0518afa79c77dac26a3bd0a55ec21bbc6e2b6f0
+2012-05-23T08:04:38Z,commit,hg cosmetics: don't log empty messages,github.com/JetBrains/intellij-community/pull/18/commits/799c1a652d40da08ed0e2a07f3004555db0f4ff9
+2012-05-23T08:04:49Z,commit,[hg] EA-28334 Fix EOFE: read only as much bytes as available.,github.com/JetBrains/intellij-community/pull/18/commits/2b7d7444630d9990be8167b4b0c262676fe4b9fd
+2012-05-23T08:16:07Z,commit,IDEA-55075 git annotate: ignore whitespace change.,github.com/JetBrains/intellij-community/pull/18/commits/98bc0afb3b6ff57701b6d953261e168e92d06c70
+2012-05-23T08:16:38Z,commit,IDEA-80121 VCS Push screen should separate folders with nothing to push,github.com/JetBrains/intellij-community/pull/18/commits/009f79beebfac5f0aaad8abfcd94755c96c74b7d
+2012-05-23T08:16:51Z,commit,[hg] Better fix for EOFE in EA-28334: don't read more than is been aw¡­,github.com/JetBrains/intellij-community/pull/18/commits/568040aea781a8197b260addf227c32761dc4a51
+2012-05-23T08:17:03Z,commit,[git] Remove an obsolete comment,github.com/JetBrains/intellij-community/pull/18/commits/8c651f2c9fb015122c2e82389c1cf32696ec9ed1
+2012-05-23T08:17:39Z,commit,fix tests,github.com/JetBrains/intellij-community/pull/18/commits/a67d568046669d27dcdeef345f47a31431728ac1
+2012-05-22T11:02:42Z,commit,disable 'pointless arithmetic' inspection. make it a little bit smarter,github.com/JetBrains/intellij-community/pull/18/commits/02f6c06b04892f0e9c3ba42c1459ad3ac46a4aab
+2012-05-22T11:45:52Z,commit, 'pointless arithmetic' detects binary numbers,github.com/JetBrains/intellij-community/pull/18/commits/5c731083ae0416f231bb9c50e1b42edd94a475a5
+2012-05-23T10:11:10Z,commit,refresh file (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/eeba07f57558cdc02fc43dc7ac31b199dd88bffa
+2012-05-23T10:16:44Z,commit,optimization (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/a726faedada3781a9636ac4e372d2726ec674d57
+2012-05-23T10:31:58Z,commit,clear aapt output directory (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/89a8d551a777a62bec527c59810133f2e237ede8
+2012-05-23T10:36:41Z,commit,"IDEA-86184 refactor, provide error/warning message if package name do¡­",github.com/JetBrains/intellij-community/pull/18/commits/3fefa59cb224f063795acefcfaeee3c35456c284
+2012-05-23T10:42:02Z,commit,IDEA-79211 extend signed jar builder to not pack file into itself,github.com/JetBrains/intellij-community/pull/18/commits/729c00afbb7f4b13ac7434727cedda6d8466017f
+2012-05-23T10:43:08Z,commit,"IDEA-79211 ""native libs dir"" and ""assets dir"" options can be empty (c¡­",github.com/JetBrains/intellij-community/pull/18/commits/3e8d24fd4e8d1d481784ae7cd0e6e0b1a33f9f2f
+2012-05-23T10:44:28Z,commit,IDEA-79211 prevent packaging output res-apk to itself,github.com/JetBrains/intellij-community/pull/18/commits/bc54767b821c3eedc98d088f91d7ceb128afb2ac
+2012-05-23T11:04:30Z,commit,IDEA-85963 android: format generated project (cherry picked from commit ,github.com/JetBrains/intellij-community/pull/18/commits/47e6c2ecc68698478c5901abe95fa234abd350a7
+2012-05-23T11:06:49Z,commit,"clean up messages for android ""old-api"" compilers (cherry picked from¡­",github.com/JetBrains/intellij-community/pull/18/commits/bd910a67ac73480dd96ba982be1e56d6fecf894d
+2012-05-23T11:07:35Z,commit,add logging,github.com/JetBrains/intellij-community/pull/18/commits/09fe8e631f8533b4c1de8e111da4abba1fe41dcf
+2012-05-23T11:08:09Z,commit,"show ""attach to process"" button in minimized toolbar",github.com/JetBrains/intellij-community/pull/18/commits/bfd113dbfac0f0a42d1f0f0a43c5d48fcb864c31
+2012-05-23T15:23:29Z,commit,android+maven: fix paths of apklib module (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/719d1b0403c4896763c98bc13a5d90df1faf49e0
+2012-05-24T05:58:16Z,commit,IDEA-67453: java files inside jars displayed as uncompiled when mixin¡­,github.com/JetBrains/intellij-community/pull/18/commits/ba8d6d5b99abb48f62c03df32305e1abbf068528
+2012-05-24T11:13:13Z,commit,Better diagnostic message for block realignment (cherry picked from c¡­,github.com/JetBrains/intellij-community/pull/18/commits/bbdf45e4903d07ee72f44ebebda451d3a97f0a80
+2012-05-24T13:07:43Z,commit,IDEA-62722 import project source encoding from maven config (cherry p¡­,github.com/JetBrains/intellij-community/pull/18/commits/125b58d32e16c5427f6ed3f6cff414b20a7ee2b6
+2012-05-24T14:07:50Z,commit,Fixed WI-10681 Download Error dialog doesn't close on pressing Close ¡­,github.com/JetBrains/intellij-community/pull/18/commits/6758e14514466da39055cae646ac528e6f0d7488
+2012-05-24T14:30:11Z,commit,"IDEA-84399 pack native libs provided by ""so"" artifacts into apk",github.com/JetBrains/intellij-community/pull/18/commits/5258c0073332df25e2a7b020357ebc07de269a4b
+2012-05-24T14:36:16Z,commit,even better column layout,github.com/JetBrains/intellij-community/pull/18/commits/24b2faf3281b56b1ca4d2fb3f047bf0547aa83f3
+2012-05-24T16:14:16Z,commit,forbid negative diff,github.com/JetBrains/intellij-community/pull/18/commits/05f13f6c243e73e1df8b2c58248f947f92a356e3
+2012-05-24T16:17:57Z,commit,"[^anima] resolving freemarker imports from jars (IDEA-86192, IDEA-53342)",github.com/JetBrains/intellij-community/pull/18/commits/f2970916ce7249ae0e6e640876d59def24b233ab
+2012-05-25T11:49:01Z,commit,fix test names,github.com/JetBrains/intellij-community/pull/18/commits/9bd05170a0ca540358d212fdddafda2c7c69475f
+2012-05-25T11:49:48Z,commit,Merge branch '117' of git.labs.intellij.net:idea/community into 117,github.com/JetBrains/intellij-community/pull/18/commits/d8d6e898eedd6e475204436ed19dccc0e61a9dda
+2012-05-25T11:46:18Z,commit,"IDEA-86237, EA-33926 (separate leaf/composite Javadoc element)",github.com/JetBrains/intellij-community/pull/18/commits/6e3427f5c9b5e75a5f10ff9e94131a2c2c543950
+2012-05-25T12:08:21Z,commit,Correct skipping of UI-dependent Gradle test,github.com/JetBrains/intellij-community/pull/18/commits/afc2acb502de8724bd6c7c34078536c4d663a237
+2012-05-25T12:15:20Z,commit,Fix test data,github.com/JetBrains/intellij-community/pull/18/commits/7c2e47f6b58c097be9fecd016e9fd46b8e262b67
+2012-05-25T12:19:33Z,commit,Comment out test which isn't going to be fixed,github.com/JetBrains/intellij-community/pull/18/commits/ac8a04bf5abc270981f759b79ee73241fb70da85
+2012-05-25T13:17:22Z,commit,IDEA-86631 Debugger doesn't work in a class which name contains dolla¡­,github.com/JetBrains/intellij-community/pull/18/commits/30620e3abc4cef03b016bfec4c521848ac891445
+2012-05-25T13:04:05Z,commit,IDEA-83955 Latest 11.1 build keeps displaying out of memory dialog no¡­,github.com/JetBrains/intellij-community/pull/18/commits/d303ad524dff9f72763e6647680a22618809be91
+2012-05-25T15:15:37Z,commit,IDEA-86231 (Bug with unnecessary call to String.valueOf() inspection),github.com/JetBrains/intellij-community/pull/18/commits/54ee186e0d5b51616e8d8394380f3318f3a069df
+2012-05-25T15:21:52Z,commit,IDEA-86027 (Replace '+=' with '=' intention action causes irregular t¡­,github.com/JetBrains/intellij-community/pull/18/commits/dafe3d8ba2b4d7bb63ca157def23f02741e36cc6
+2012-05-25T15:22:25Z,commit,fix one more case for IDEA-86027 and fix test,github.com/JetBrains/intellij-community/pull/18/commits/c494b3ec693716e612b35e2bb428db95257b5a7f
+2012-05-25T15:28:38Z,commit,IDEA-85807 ('Show as tree' not working in Version Control History win¡­,github.com/JetBrains/intellij-community/pull/18/commits/21627f2ae9fdd1bed6d93df7cbc33714410c9dc1
+2012-05-25T15:29:39Z,commit,"IDEA-85620 (Inspection ""'StringBuffer' can be replaced with 'String'""¡­",github.com/JetBrains/intellij-community/pull/18/commits/2e5d1701125d0e8fd40576104cd6d3fad37e8da9
+2012-05-25T15:30:18Z,commit,better fix for IDEA-85620,github.com/JetBrains/intellij-community/pull/18/commits/95b1702b8cf80978e73e0804693e0c02f7da11fc
+2012-05-25T15:51:26Z,commit,[^irina] IDEA-86317 Getting a revision from Perforce when a file is n¡­,github.com/JetBrains/intellij-community/pull/18/commits/aa236822283c7446ec3e6cb680d4b166a0e1b94f
+2012-05-25T16:08:22Z,commit,IDEA-86495 Throwable at com.intellij.ide.util.treeView.AbstractTreeUi¡­,github.com/JetBrains/intellij-community/pull/18/commits/a67b672036e495c57a234d7b212d12b95baa4597
+2012-05-28T13:14:33Z,commit,WI-11477 Add the separator before the client-side types of applicatio¡­,github.com/JetBrains/intellij-community/pull/18/commits/1369502fc1cdca4f00478770d108e9aa2241365c
+2012-05-28T23:55:13Z,commit,Support change signature for EcmaScript 6 arrow functions (IDEA-83938),github.com/JetBrains/intellij-community/pull/18/commits/0e6b47634ea6d4af14eac67b29949fc67a170515
+2012-05-29T10:22:37Z,commit,Use GZip when download plugins list. (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/59832ebc93bf74447e793843e0aaabf4d1a36dfc
+2012-05-29T13:45:57Z,commit,IDEA-78410 Maven provided scope dependency is not resolved properly (¡­,github.com/JetBrains/intellij-community/pull/18/commits/5369f24b5ad795b76c5dff745d3713ae2b90eb88
+2012-05-29T13:10:43Z,commit,switch off testng serialization protocol,github.com/JetBrains/intellij-community/pull/18/commits/828a9a6c30842f89bfebe985679e221dbefb003e
+2012-05-29T13:13:08Z,commit,testng: hide expected exceptions from console,github.com/JetBrains/intellij-community/pull/18/commits/b02a711b028fc99960ff2f7e7d8e6a6de7f25dc6
+2012-05-15T12:12:50Z,commit,"clear cached installation status in place, otherwise it would be clea¡­",github.com/JetBrains/intellij-community/pull/18/commits/68cbc16e55569512d4d9c15bf85b889c14a78b55
+2012-05-16T17:27:08Z,commit,IDEA-86035: commit document between applying quick fixes in case of o¡­,github.com/JetBrains/intellij-community/pull/18/commits/08e6ffbcf864d07fa80a61553a88cad038deeac7
+2012-05-21T09:10:50Z,commit,inplace rename: include the whole file in rename scope. when the subs¡­,github.com/JetBrains/intellij-community/pull/18/commits/5d4f124520f8a2ae12d010e9640521d2d92f420f
+2012-05-21T10:03:25Z,commit,change signature detection: do not detect signature change too aggres¡­,github.com/JetBrains/intellij-community/pull/18/commits/5745d6d2ca18e1406eef9f7c802ed27a926c905c
+2012-05-21T11:13:22Z,commit,add command to replace duplicates,github.com/JetBrains/intellij-community/pull/18/commits/92e73aa028ab6b33134eb63264c426b9d805b683
+2012-05-21T16:48:05Z,commit,third-party nullable as first class citizens: suggest to add,github.com/JetBrains/intellij-community/pull/18/commits/921c71a82b0440bcd42545a0743d634dd9ec23ca
+2012-05-29T13:24:02Z,commit,ignore type substitution on override (IDEABKL-6365),github.com/JetBrains/intellij-community/pull/18/commits/b78acbcb96f9d04c2811dcc3d403ca681f60f900
+2012-05-29T13:24:59Z,commit,inline superclass: correct super references in extends/implements lis¡­,github.com/JetBrains/intellij-community/pull/18/commits/ff395cd422e84890dc975614336fd1d79c5e3b11
+2012-05-29T13:51:37Z,commit,Fix test data,github.com/JetBrains/intellij-community/pull/18/commits/684939177c966fcbfd53e95f3f25cbb46820d6f8
+2012-05-29T15:05:50Z,commit,IDEA-79442 (re-fix),github.com/JetBrains/intellij-community/pull/18/commits/fe435b0cc08bf2bda9723bdc9e19ac6a9fc332b1
+2012-05-29T21:26:21Z,commit,short diff: correctly process situation when file status is deleted b¡­,github.com/JetBrains/intellij-community/pull/18/commits/52009793eb123b7747e4849c7ba83db224b1da5d
+2012-05-29T21:43:30Z,commit,VCS: remember splitter proportion for Changes | Local,github.com/JetBrains/intellij-community/pull/18/commits/b64e79e0779469232938ce6ef07d1efd2886c28f
+2012-05-29T21:44:29Z,commit,fix apply patch exception (check whether files reported as changed - ¡­,github.com/JetBrains/intellij-community/pull/18/commits/f989448f988048e514a041c2947cf4080350ea2f
+2012-05-29T21:46:18Z,commit,svn: fix assertion in live provider (that loads revision history for ¡­,github.com/JetBrains/intellij-community/pull/18/commits/b40c656e0d9c51c09d37f7cb4a4d1ba84b7f4966
+2012-05-29T21:46:50Z,commit,apply patch as system operation: no user confirmation should be asked,github.com/JetBrains/intellij-community/pull/18/commits/72b99f7db97cf0935c5076fce58424c5d57a12d2
+2012-05-29T21:47:41Z,commit,svn: local changes provider used to report changes differently for di¡­,github.com/JetBrains/intellij-community/pull/18/commits/4f9ad28d878c77a376d752f9ce4c82dc3c19e5f5
+2012-05-29T21:48:50Z,commit,vcs: - unneeded synchronizes in LocalChangeListImpl; init local chang¡­,github.com/JetBrains/intellij-community/pull/18/commits/c8c836f21cf18863589f0c48e279a0f057a21713
+2012-05-29T21:54:51Z,commit,svn: fix AE in tests,github.com/JetBrains/intellij-community/pull/18/commits/3398b040535e2e008df0f2ea8be155a7294d413a
+2012-05-29T21:56:12Z,commit,SVN: better local changes reporting for the case when directory is ig¡­,github.com/JetBrains/intellij-community/pull/18/commits/2c1c87f6d22110143abd4ef54e5839344ecc00cc
+2012-05-29T21:57:15Z,commit,IDEA-86413 Commit button is enabled when no changes are selected for ¡­,github.com/JetBrains/intellij-community/pull/18/commits/c8c3b1a5611ff6255e6f1c0805152413d5b46144
+2012-05-29T21:57:59Z,commit,IDEA-85480 Major Commit Bug,github.com/JetBrains/intellij-community/pull/18/commits/394cbbb732ff69def349d333f95627dab97a3e7e
+2012-05-29T21:58:44Z,commit,"IDEA-86210 VCS Confirmation ""empty changelist is no longer active"": w¡­",github.com/JetBrains/intellij-community/pull/18/commits/163c174ef8da74614de9a525fd89b55e1cf0d824
+2012-05-29T22:01:47Z,commit,IDEA-86349 SVN ignore-externals (cherry-picked from,github.com/JetBrains/intellij-community/pull/18/commits/afa9f3b206b01b3f96e71c5496e1b98e881191d2
+2012-05-29T22:02:38Z,commit,IDEA-86492 F4 (Go to Source) is not working in diff pane of 'Commit c¡­,github.com/JetBrains/intellij-community/pull/18/commits/99c7312084d9d9f8109cf1b89c5d79bd70a6ff6b
+2012-05-29T22:03:27Z,commit,SVN: bug when grouping individual change requests into non-recursive ¡­,github.com/JetBrains/intellij-community/pull/18/commits/13f0d6a7a2d3b781d973ab103fec6751c3fd1a0e
+2012-05-29T22:04:17Z,commit,"SVN: local changes: correctly ask status for passed files, don't assu¡­",github.com/JetBrains/intellij-community/pull/18/commits/818b869fec75d263202565ecb161c17da6313da2
+2012-05-29T22:04:57Z,commit,IDEA-86660 Local change list performance problem on large projects,github.com/JetBrains/intellij-community/pull/18/commits/39ea74ab54ed1de265b1e2acd27019a74836815e
+2012-05-29T22:05:32Z,commit,fix SvnChangesCorrectlyRefreshedTest.testAddDirEditFileAndAfterRevert,github.com/JetBrains/intellij-community/pull/18/commits/699bf7624803fa3ed72b00353e93d90dba82ea5d
+2012-05-29T22:06:15Z,commit,"fix tests (incorrectly performed ""SVN: bug when grouping individual c¡­",github.com/JetBrains/intellij-community/pull/18/commits/835c58f30e8a25a491c632232663057b739fbefb
+2012-05-29T22:06:54Z,commit,SVN: for IDEA-85496 Getting svn: E200030: Commit failed (details foll¡­,github.com/JetBrains/intellij-community/pull/18/commits/f834e29e1d1ecd353648bb08c9255dae0a918e15
+2012-05-29T22:07:33Z,commit,VCS: cancel code should be used when closing commit dialog to perform¡­,github.com/JetBrains/intellij-community/pull/18/commits/4d089b929527debbf8bc6bb755e7735ced63c8e7
+2012-05-29T22:08:18Z,commit,SVN: correctly pass 'inner copy' flag in status provider internal wor¡­,github.com/JetBrains/intellij-community/pull/18/commits/41e407ea2525027a2b4baa206acce86515dfeb52
+2012-05-30T08:13:48Z,commit,svnkit 1.7.5 build 9249,github.com/JetBrains/intellij-community/pull/18/commits/9719868bdd3f35795976cd4dcbf88fcdd4aeb104
+2012-05-30T09:04:06Z,commit,Revert bad fix.,github.com/JetBrains/intellij-community/pull/18/commits/bb6b897c5e0d0dbafd4fc0fa7ab85fc2dac02ea6
+2012-05-30T16:41:30Z,commit,IDEA-86764 (plain shell compatibility),github.com/JetBrains/intellij-community/pull/18/commits/fcefba62e2c9217f3d505ce6a4bac5ef198d04cd
+2012-05-30T17:37:36Z,commit,IDEA-86765 (plain grep compatibility),github.com/JetBrains/intellij-community/pull/18/commits/0b623bf1f12ecdcfa663803bcec3cbca23c646b3
+2012-05-30T18:02:00Z,commit,EA-36229 - NFE: RegExpQuantifierImpl.getCount,github.com/JetBrains/intellij-community/pull/18/commits/c08d99b3390777d2070c76639de522a53e87171c
+2012-05-31T08:07:45Z,commit,11.1.3 EAP,github.com/JetBrains/intellij-community/pull/18/commits/459321e65885b3bf04471763dac6e5fb785f2342
+2012-05-31T15:19:32Z,commit,"IDEA-86776 fix filtering of process name, add ""show all"" checkbox (ch¡­",github.com/JetBrains/intellij-community/pull/18/commits/27fff09a50bd7c74c3f7c5fb80e934df2b0cb007
+2012-05-31T15:20:46Z,commit,"IDEA-86800 do not get dom for filtered manifest, because it can be in¡­",github.com/JetBrains/intellij-community/pull/18/commits/6f5d00d00935483baa42e159bfc990a83fd2377d
+2012-05-31T17:58:43Z,commit,do not recreate directory (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/158d8bb4b1b395838d3a1a75fe27501ad19a30b5
+2012-06-01T13:17:22Z,commit,WI-11384 SVN: can't commit file (correct encoding for input stream pa¡­,github.com/JetBrains/intellij-community/pull/18/commits/426ad33b3dc6d46308abfeed64f7404b78a08040
+2012-06-01T13:21:14Z,commit,IDEA-85179 Missing apply or save button in unshelve/patch dialog,github.com/JetBrains/intellij-community/pull/18/commits/cfbf20e5509ab52e7d07091206576cc8d6686b79
+2012-06-01T13:21:45Z,commit,"IDEA-82496 Typo ""Coulnd't"" in warning message for applied patch",github.com/JetBrains/intellij-community/pull/18/commits/fda85028e77b9e9d7153477076f82fda5a78520c
+2012-06-01T13:25:07Z,commit,"VCS: changes | local : save splitter proportion in projectClosed(), n¡­",github.com/JetBrains/intellij-community/pull/18/commits/10d0355fb20d3803984543bc05a02addf92ca191
+2012-06-01T13:25:42Z,commit,IDEA-85831 Branching and merging problems,github.com/JetBrains/intellij-community/pull/18/commits/27433c3cc67070d384da789014576265ac6e2677
+2012-06-01T13:26:36Z,commit,IDEA-84062 Subversion: after project Sharing the CleanupWoringCopies ¡­,github.com/JetBrains/intellij-community/pull/18/commits/340e2d25cb8cc3e3084fb88b47b39d01bbe03e2e
+2012-06-01T13:27:12Z,commit,"IDEA-85034 Git: ""Contained i branches"" shows always the ""Loading status""",github.com/JetBrains/intellij-community/pull/18/commits/2d467f4df32469ad8aab302d34136cc27265b55a
+2012-06-01T13:27:49Z,commit,"IDEA-86767 Compare two text files shows no differences, while files a¡­",github.com/JetBrains/intellij-community/pull/18/commits/f87d448de2be01830ea565003dd4e503246ef622
+2012-06-01T13:32:48Z,commit,IDEA-85741 subversion integration autodetection broken for 1.7 workin¡­,github.com/JetBrains/intellij-community/pull/18/commits/12b8603046fb033f912da5afa6f4a8cd16f3c19a
+2012-06-01T13:36:22Z,commit,SVN: use standard configuration directory on Mac and Unix as well,github.com/JetBrains/intellij-community/pull/18/commits/4c0c7015890a8dc1c687c9eb17159bd1b398e4ac
+2012-06-01T13:37:48Z,commit,svnkit 1.7.5 9277 - better logging (does not affect performance),github.com/JetBrains/intellij-community/pull/18/commits/97b17cc196c14f76523c24390a8bb4e0ebb9bf59
+2012-06-01T13:38:52Z,commit,Merge remote branch 'origin/117' into 117,github.com/JetBrains/intellij-community/pull/18/commits/8ab85a47b6d29f3e131ef4e9a8313c3b684e2796
+2012-06-02T15:06:38Z,commit,correct URL of third-party plugin helpset (IDEA-86315),github.com/JetBrains/intellij-community/pull/18/commits/36bd2325e2117bb57376b5e7ebb3e5bb21bf1f11
+2012-06-01T13:33:45Z,commit,PyCharm's skeletons are stored under 'system' and need to be indexed;¡­,github.com/JetBrains/intellij-community/pull/18/commits/2a7508b9082a24ba9f30d23d22b3c71c8c70d7da
+2012-06-04T14:29:48Z,commit,IDEA-86914 Subversion: folder with subfolders rename works incorrectl¡­,github.com/JetBrains/intellij-community/pull/18/commits/2c913addae37e79c7054d3980c06cfd353dd5601
+2012-06-04T14:30:54Z,commit,IDEA-86908 Subversion: background processes (file changed on server c¡­,github.com/JetBrains/intellij-community/pull/18/commits/823cdd83cc2385e00f06fd13f84a860b9c182027
+2012-06-04T14:31:24Z,commit,IDEA-86973 Add '...' to the end of 'Enable Version Control Integratio¡­,github.com/JetBrains/intellij-community/pull/18/commits/329b112b448349a3d9c9cd97c0666025374151da
+2012-06-04T16:28:20Z,commit,IDEA-86854 GitLog should not be available with all projects closed or¡­,github.com/JetBrains/intellij-community/pull/18/commits/28adb46b8f335737d8ccc2649b57c53af71f8cc2
+2012-06-05T07:11:06Z,commit,IDEA-86997 Cannot open settings dialog,github.com/JetBrains/intellij-community/pull/18/commits/a8484af3601e34e30fed1666e612ed3496517d6c
+2012-06-05T16:56:50Z,commit,[^anima] recreate completion file copy when the previous one is outdated,github.com/JetBrains/intellij-community/pull/18/commits/0bba76f7afbe8acab001f23797a0632447c1d180
+2012-06-06T13:51:14Z,commit,IDEA-87078 Hibernate query validation fails with new Hibernate DTD,github.com/JetBrains/intellij-community/pull/18/commits/839000af23d2121be9538eb916e3e940fefdd344
+2012-05-28T13:37:47Z,commit,avoid calls in fast path of eof ~ -4s,github.com/JetBrains/intellij-community/pull/18/commits/437713110f65367c4d355042f1c06685ea0369b1
+2012-06-06T14:13:33Z,commit,on OOME clean data buffer and throw CorruptedException (WI-11507),github.com/JetBrains/intellij-community/pull/18/commits/52cdd4069d043e20c67f0a7103251bf7d3dfe3b8
+2012-06-06T18:01:55Z,commit,complete entities in HTML5 documents,github.com/JetBrains/intellij-community/pull/18/commits/1adbaceb052382186901c4a0694f193898ce5ac3
+2012-06-07T12:23:28Z,commit,"IDEA-86962 delete mnemonics from ""Device"" and ""Clear log"" labels",github.com/JetBrains/intellij-community/pull/18/commits/7d4cc432d9709578bb2e1a85949ceb8d176e0066
+2012-06-07T12:24:41Z,commit,IDEA-86928 regenerate all sources if sdk was changed,github.com/JetBrains/intellij-community/pull/18/commits/cf750100c79a4e5964470df48105759baa1cff41
+2012-06-07T12:27:58Z,commit,"clean up, do not choose any build target if it cannot be read from xml",github.com/JetBrains/intellij-community/pull/18/commits/ab1a93a78443805837dfecfc78401cef83c5482b
+2012-06-07T12:29:06Z,commit,"IDEA-86892 android-dom: add ""rotate"" element",github.com/JetBrains/intellij-community/pull/18/commits/a39ebb9b27262e5b7fcfbd5ceb266a238cbba4d9
+2012-06-08T13:01:37Z,commit,EA-36469 (diagnostic),github.com/JetBrains/intellij-community/pull/18/commits/5b28fbe5c4ee47b73952633ee9ade24dc12560f0
+2012-06-08T13:36:26Z,commit,IDEA-74254: jboss-har modules not correctly recognized as local modules,github.com/JetBrains/intellij-community/pull/18/commits/63a07f62b433ae1837298478dca08d07052c237f
+2012-06-08T15:50:04Z,commit,"FileTypeDescriptor supports extensions with dot (i.e. ""tar.gz""). (che¡­",github.com/JetBrains/intellij-community/pull/18/commits/3dee6f45d3fd15f43c61ed196aa6095995ef7441
+2012-06-09T15:53:42Z,commit,fix mnemonics,github.com/JetBrains/intellij-community/pull/18/commits/df57360ce11b060a95e559df68ddf8d78af72d6c
+2012-06-09T16:52:16Z,commit,IDEA-78338 pass canonical adb path (cherry-picked from,github.com/JetBrains/intellij-community/pull/18/commits/63d7b2ef2a127480acbd7855c46f85b679927ad7
+2012-06-11T09:47:08Z,commit,defensive copy to prevent CME (EA-36064 - CME: JBTabsImpl.updateConta¡­,github.com/JetBrains/intellij-community/pull/18/commits/d36f826fa2e760600caadc52228747f2971876a4
+2012-06-11T09:43:43Z,commit,"fix exception under JDK 7 (EA-28757 - ISE: TabLabel.paintOffscreen, I¡­",github.com/JetBrains/intellij-community/pull/18/commits/f97e701bb16ebfffa39a7b8d86547d29c22e1e18
+2012-06-11T09:36:25Z,commit,don't try to highlight name identifier ranges which are empty or inva¡­,github.com/JetBrains/intellij-community/pull/18/commits/09b3910669f00c885e961fa3c04f01d666262062
+2012-06-11T14:47:18Z,commit,less brain-dead way of calculating array size when reallocating (IDEA¡­,github.com/JetBrains/intellij-community/pull/18/commits/0e87cedf1d841797e2e330c258209a7ee1097acd
+2012-06-13T12:18:43Z,commit,avoid project leak (cherry-picked from,github.com/JetBrains/intellij-community/pull/18/commits/ac5301ace19893509b076f5797ff21d794f011b9
+2012-06-14T10:13:42Z,commit,IDEA-80408 android-dex: optimize option (cherry-picked from,github.com/JetBrains/intellij-community/pull/18/commits/f9a15ba6790b17c01aec9057092c893ef7e1f2be
+2012-06-14T11:27:48Z,commit,"Rename field ""Goals"" to Command line: (cherry picked from commit",github.com/JetBrains/intellij-community/pull/18/commits/c77f480f8068290320df1347733f701746b30266
+2012-06-14T11:28:13Z,commit,IDEA-86814 Maven 3 do not support '-cpu / -npu' options (cherry picke¡­,github.com/JetBrains/intellij-community/pull/18/commits/b6db2645bc349cb0e50a823665d57e4fa6f20d75
+2012-06-14T12:14:19Z,commit,test fixed,github.com/JetBrains/intellij-community/pull/18/commits/c5ca50200d969917e7ba4cdac559502126f22124
+2012-06-14T13:38:42Z,commit,IDEA-86814 Maven 3 do not support '-cpu / -npu' options,github.com/JetBrains/intellij-community/pull/18/commits/39678fd04024602cc1978a847994c39938c9dfa0
+2012-06-14T13:40:02Z,commit,IDEA-87280 ('Create new maven module' does not create standard maven ¡­,github.com/JetBrains/intellij-community/pull/18/commits/482e95524e2ab9db85b58a5a07aa99623aea45fc
+2012-06-14T15:37:21Z,commit,"IDEA-86565 (Maven -> Refactor -> Extract Property results in ""You hav¡­",github.com/JetBrains/intellij-community/pull/18/commits/fd50d9af6d986fbd783002bcb27caf9c7373c8c1
+2012-06-14T17:27:32Z,commit,IDEA-86228: Putting fresh trove wasn't enough to really have it fixed.,github.com/JetBrains/intellij-community/pull/18/commits/e0cc5dd598ac44e2a9436a81d1b120b8068136e3
+2012-06-14T17:56:41Z,commit,IDEA-87310: Make sure Backspace works where Delete is advertised,github.com/JetBrains/intellij-community/pull/18/commits/056c62fc1b29f1db2cd0df5c985e89a2136ffa22
+2012-06-15T10:16:01Z,commit,IDEA-79442 (workaround for another useless Metacity clone),github.com/JetBrains/intellij-community/pull/18/commits/135b370d2345b5b891edb02cb03e60fa8e47eee6
+2012-06-15T21:41:48Z,commit,Spellchecker avoid IOOBE,github.com/JetBrains/intellij-community/pull/18/commits/8e1ffe5f7c1a1b5ec431dcf675fdc121832775d5
+2012-06-16T09:57:43Z,commit,"Move to GitHub API v3, refactor. IDEA-85769",github.com/JetBrains/intellij-community/pull/18/commits/1e0c6af98e2552f6770b2c2ce1a52e94106dbdb2
+2012-06-16T09:57:52Z,commit,[github] Handle GithubShareAction result in EDT: show error or refres¡­,github.com/JetBrains/intellij-community/pull/18/commits/8a42fdb1596e5a4ff443f20f85cb617ab3dd4e22
+2012-06-16T09:57:57Z,commit,"[github] No need in 'git remote update', because it is equal to fetch¡­",github.com/JetBrains/intellij-community/pull/18/commits/43a7aabd39aff99ff4dd8549d4643ef2b74cb036
+2012-06-16T09:58:10Z,commit,None,github.com/JetBrains/intellij-community/pull/18/commits/fc45ac18e735882f6e04b80211d81461cbb9da12
+2012-06-16T09:58:15Z,commit,logging,github.com/JetBrains/intellij-community/pull/18/commits/93adf71336918011ed9c812c4d6f91e973381c9d
+2012-06-16T09:58:21Z,commit,[git] refresh after rebase.,github.com/JetBrains/intellij-community/pull/18/commits/9181986621f91eccbd23828f20b2efaa27bc8c4a
+2012-06-18T15:03:24Z,commit,EA-36715 (better detect doc comment before conversion),github.com/JetBrains/intellij-community/pull/18/commits/3575fc7505273731674208658c72218d33af4ca3
+2012-06-18T15:32:17Z,commit,"[github] Share on GitHub via HTTPS, not SSH.",github.com/JetBrains/intellij-community/pull/18/commits/b0f2f7608a392525c6f5a7146cee9c92c1cec0b7
+2012-06-18T15:32:22Z,commit,"[github] ""Rebase my GitHub fork"": add the parent upstream remote url ¡­",github.com/JetBrains/intellij-community/pull/18/commits/969c7e1b8f9506d1a2eaa3f1111b8ee8e364bcb6
+2012-06-19T12:47:15Z,commit,IDEA-86404 android-apt: add styleable attrs to validity state,github.com/JetBrains/intellij-community/pull/18/commits/182168c4121431e7c51036280288608f84b532e3
+2012-06-19T15:24:01Z,commit,ensure changes to object's state are visible to other threads,github.com/JetBrains/intellij-community/pull/18/commits/2456b775e54fb6cba91d1e5f779660dab870dc93
+2012-06-19T15:25:55Z,commit,Merge remote branch 'origin/117' into 117,github.com/JetBrains/intellij-community/pull/18/commits/115470a00cc9fc079c828133bbc2ca464cb636d2
+2012-06-20T11:49:25Z,commit,fix NPE,github.com/JetBrains/intellij-community/pull/18/commits/d7cc9f67ca01a02175653c0c7225b25eba21bd33
+2012-06-20T12:00:02Z,commit,revert,github.com/JetBrains/intellij-community/pull/18/commits/41c962523a96dfafb4f700c49d7c634265e9e062
+2012-06-20T12:08:02Z,commit,ensure the path is never null,github.com/JetBrains/intellij-community/pull/18/commits/7e1c9c6ccaed1d010ad79aae584f2a9474673cc1
+2012-06-20T12:18:04Z,commit,ignore collected types,github.com/JetBrains/intellij-community/pull/18/commits/e78b41472aca63df873978407fd28dd26f0d0e8b
+2012-06-21T10:30:28Z,commit,IDEA-87600 regenerate R.java in project if attr inside some styleable¡­,github.com/JetBrains/intellij-community/pull/18/commits/9163ddda3beadd9eb326f8b57d9a024104551d5a
+2012-06-21T13:00:41Z,commit,fix deadlock (IDEA-87643),github.com/JetBrains/intellij-community/pull/18/commits/aaa15aa1b266961d1857cca6832ce5dcad0dd5d5
+2012-06-21T13:03:31Z,commit,Merge remote branch 'origin/117' into 117,github.com/JetBrains/intellij-community/pull/18/commits/fadc524c5515901b933a3e8f2792b96874c20572
+2012-06-21T19:29:59Z,commit,ensure access to dependency cache is synchronized,github.com/JetBrains/intellij-community/pull/18/commits/bb636d8ebdaba7426cb7c4589a5a2741bbbd217e
+2012-06-22T05:40:14Z,commit,Miising file from,github.com/JetBrains/intellij-community/pull/18/commits/e2bf9bfa134d88f98221a5c9a5d772b8f773c183
+2012-06-22T11:41:35Z,commit,Platform: Retina support,github.com/JetBrains/intellij-community/pull/18/commits/7c97c22eb0cd7292f75a1813813d81f158c70f32
+2012-06-23T13:00:18Z,commit,IDEA-87685 Compiler does not include *.java files in output,github.com/JetBrains/intellij-community/pull/18/commits/b703341a5c88ab781971f07c0dc1a6037fc19bce
+2012-06-25T13:57:50Z,commit,[git] IDEA-87513 Support quotes in file names (Git escapes them); rem¡­,github.com/JetBrains/intellij-community/pull/18/commits/9dae1acbd790f9fc201c24f2ddb4c74aa61554d7
+2012-06-27T14:03:38Z,commit,IDEA-87833 Hungry Backspace (from Emacs cc-mode),github.com/JetBrains/intellij-community/pull/18/commits/69c4941847b58ad1b351bd93447aac4a0a125d92
+2012-06-27T15:03:22Z,commit,IDEA-87295 Reformatting code on a folder unsets the dialog visibility¡­,github.com/JetBrains/intellij-community/pull/18/commits/6435a48df35759aa11762c2c69127f9b3c68e87e
+2012-06-28T07:30:54Z,commit,IDEA-87174 cursor is rendered in wrong position,github.com/JetBrains/intellij-community/pull/18/commits/7a7e0c930a4bcafc4b0df48840a5b3addf304dc0
+2012-06-25T08:58:15Z,commit,"IDEA-82338 ""Collapse All"" Collapses only comments",github.com/JetBrains/intellij-community/pull/18/commits/27d5bd3fd3c947430a6ab273c341aa2301058463
+2012-06-28T15:45:53Z,commit,compilation fix,github.com/JetBrains/intellij-community/pull/18/commits/1c4480f01a29561a3c055004bf0a30f14d137558
+2012-06-28T17:20:50Z,commit,do not crash if IllegalCharsetNameException happens because of <encod¡­,github.com/JetBrains/intellij-community/pull/18/commits/dee3920b0ea939e6934eaf0add8b547c8109d569
+2012-06-29T18:31:54Z,commit,Java regexps do support possessive quantifiers (IDEA-81507),github.com/JetBrains/intellij-community/pull/18/commits/5f601a6253a58b9199051a600765687bafc5e9f9
+2012-06-29T19:07:10Z,commit,add Latvian to list of Alt-Gr aware languages (IDEA-85942),github.com/JetBrains/intellij-community/pull/18/commits/367b055c888636d0b5677e88485729f2b9627fb6
+2012-06-30T20:15:13Z,commit,WI-11652 Add extension handling for Office 2007+ file extensions,github.com/JetBrains/intellij-community/pull/18/commits/eb6a4929a8f9cfd97330cb450bc404d6518c50e5
+2012-06-25T19:17:19Z,commit,"IDEA-87812 The button ""Clear the contents of the console"" on the debu¡­",github.com/JetBrains/intellij-community/pull/18/commits/65937ad9825dfaa096266a440439f2ce2066fe32
+2012-07-02T17:00:19Z,commit,show description in tooltip,github.com/JetBrains/intellij-community/pull/18/commits/972724c471667e872ac20d8f6f0728906c14219f
+2012-07-02T18:52:23Z,commit,a cleaner parameters panel 2,github.com/JetBrains/intellij-community/pull/18/commits/1f9152433aab36f6283adc39631c0bd278a4bdd8
+2012-07-03T05:22:43Z,commit,"IDEA-87120 IDEA not usable anymore after ""Indent"" some java code",github.com/JetBrains/intellij-community/pull/18/commits/be5ae42f72cac27a0e59cd92947fb4a1448727c9
+2012-07-03T10:18:13Z,commit,[git] Again IDEA-66115: default fo line separator conversion is ASK.,github.com/JetBrains/intellij-community/pull/18/commits/49a19e976c92cb85a0df201b1d4e7a235e47bb86
+2012-07-03T10:28:47Z,commit,[github] [tasks] Move basic methods to work with Github API v3 from G¡­,github.com/JetBrains/intellij-community/pull/18/commits/e032e69ddc3e6b167b345a83f8925c80f6f39656
+2012-07-03T13:30:05Z,commit,[tasks] IDEA-87529 Github Task Server: move to Github API v3,github.com/JetBrains/intellij-community/pull/18/commits/f77e5a473853543df7875f06ab8c11d41c225824
+2012-07-03T17:59:46Z,commit,"focus handling fix, improved ""can insert"" detection",github.com/JetBrains/intellij-community/pull/18/commits/2aaecf9c61efe5ade1284e2c9c6cc2ed15f0aaad
+2012-06-18T10:21:22Z,commit,"initialize PsiViewer blockTree, if only checkBox is selected; PsiView¡­",github.com/JetBrains/intellij-community/pull/18/commits/7952a19814741288f601cce72ac9dc5320f57bcc
+2012-07-04T14:49:30Z,commit,Send UUID when downloading plugin. (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/9f240f06c1c7a5e470eeedcb2446cabce4f187d3
+2012-07-04T14:49:41Z,commit,"IDEA-88215 (Maven: typo in ""Error running"" message) (cherry picked fr¡­",github.com/JetBrains/intellij-community/pull/18/commits/99d04f661a01cb40e1041583405171f0c63a52a1
+2012-07-04T19:34:33Z,commit,IDEA-87384 (file channel copying appear to be slower and less reliable),github.com/JetBrains/intellij-community/pull/18/commits/10ae3cdb737e3d49358dca2cadac50f3a7d9d3d5
+2012-07-04T19:58:47Z,commit,[^maxim] IDEA-86137 Intellij Freeze (cherry-picked from,github.com/JetBrains/intellij-community/pull/18/commits/a278fc0e237fd313e4477dc9ca7f35e8ed6fd924
+2012-07-05T08:39:32Z,commit,upgrade android libraries,github.com/JetBrains/intellij-community/pull/18/commits/096bf487d280d773a9f78d28feac5d2ee248b285
+2012-07-05T13:29:00Z,commit,IDEA-88338 fix android logcat filtering on android 4.1,github.com/JetBrains/intellij-community/pull/18/commits/53e1dc794938d3d7dca822caf678d99e8ed7b784
+2012-07-05T17:25:10Z,commit,IDEA-63258 Database table editor: Escape does not work in cell editin¡­,github.com/JetBrains/intellij-community/pull/18/commits/82c1a1281bb4432562c9647b4ae761bec800dc47
+2012-07-06T12:14:35Z,commit,EA-35830 fix npe,github.com/JetBrains/intellij-community/pull/18/commits/664279a7c0ba203d13edbad4042fee2bf9d7bfbd
+2012-07-06T12:15:06Z,commit,EA-34797 check if range is valid,github.com/JetBrains/intellij-community/pull/18/commits/7d6c67c0b9f605ab018126c22103cb095f78c13d
+2012-07-06T12:59:11Z,commit,IDEA-87978 add 'plurals' resource type to android dom model,github.com/JetBrains/intellij-community/pull/18/commits/0bbf52297575ced6cccf0cd67fde37bf2ce2dea0
+2012-07-06T14:12:38Z,commit,warning: manifest merging is not supported,github.com/JetBrains/intellij-community/pull/18/commits/cf6ccc25b35e7ac8f7dc03e1f8e6fffeee89287e
+2012-07-06T15:19:31Z,commit,integrate:,github.com/JetBrains/intellij-community/pull/18/commits/35dea9d939c57e44e67059eea507a1cf768a8d5a
+2012-07-06T15:52:56Z,commit,EA-29052 - EE: RemoteProcessSupport.acquire: crash handling fix,github.com/JetBrains/intellij-community/pull/18/commits/4a468fb7da486647550bb0dcfee858081b90ff41
+2012-06-21T18:26:54Z,commit,multiline text editing in DB editor & IDEA-84962 100K editing limit,github.com/JetBrains/intellij-community/pull/18/commits/d9f3a2adf52047d4fdf685c5bfe97f5c6079a13f
+2012-06-25T16:27:21Z,commit,large tables handling: fast addRow & resultSet scrolling,github.com/JetBrains/intellij-community/pull/18/commits/a83c10c5b420d1c86772ea1b7f9db8e90e08f046
+2012-07-08T13:07:17Z,commit,do not escape colons in target hash string,github.com/JetBrains/intellij-community/pull/18/commits/813f39d3216c6d7e554dc6bed5127d9eb14192ba
+2012-07-08T15:00:56Z,commit,`fix integration with proguard: generate temp proguard config by aapt,github.com/JetBrains/intellij-community/pull/18/commits/d4548711909e4c1d092447eff57727574755c748
+2012-07-08T16:33:32Z,commit,refresh generated proguard cfg file,github.com/JetBrains/intellij-community/pull/18/commits/9c6ce01a30481d5aa3afc6e325527332fb35ea4a
+2012-07-09T11:41:11Z,commit,WI-9871 Valid HTML file is highlighted invalid,github.com/JetBrains/intellij-community/pull/18/commits/f86d5c5dc6d19e7094a1a414f8de747d5cb50aed
+2012-07-09T14:42:23Z,commit,IDEA-88488 Refresh after pull,github.com/JetBrains/intellij-community/pull/18/commits/bca21fe8ca9f5a2a83936c1f5a9a0c88684f4e77
+2012-07-09T14:42:29Z,commit,GitPullDialog: initial focus on the branch selector,github.com/JetBrains/intellij-community/pull/18/commits/a8d015d9c9f114ecf1adf059f46895e4b7244062
+2012-07-09T17:13:44Z,commit,some diagnostics for plugin installation failures,github.com/JetBrains/intellij-community/pull/18/commits/cc099bcd9cab91bb364a355ceb5490839552beae
+2012-07-09T18:34:52Z,commit,Untie FileUtil from registry,github.com/JetBrains/intellij-community/pull/18/commits/984c962010178836b4e46dfa3f12d436ab7bbd5d
+2012-07-10T11:27:08Z,commit,Fix,github.com/JetBrains/intellij-community/pull/18/commits/dc8a00bbc708e21d005f27d8e69457751f637a32
+2012-07-10T11:28:02Z,commit,Cleanup,github.com/JetBrains/intellij-community/pull/18/commits/3793b80b454588bbdf8b946ea4eb9875987a6267
+2012-07-10T13:20:31Z,commit,fix tests,github.com/JetBrains/intellij-community/pull/18/commits/0e2c5212d5b3124abce704630c50455561c19219
+2012-07-11T12:07:30Z,commit,fix recursive tree traversal when building AntDomPattern,github.com/JetBrains/intellij-community/pull/18/commits/93f7a7edd66a214f9590f1cc189acd75a3f43618
+2012-07-11T14:03:04Z,commit,EA-37365 - SE: StreamRemoteCall.executeCall,github.com/JetBrains/intellij-community/pull/18/commits/6ab34d2618dd37afe1e0f4b5006d8cf7fd0c76fe
+2012-07-11T14:43:55Z,commit,EA-36576 (NPE),github.com/JetBrains/intellij-community/pull/18/commits/b13ffe6a468032ebc9ac6bc369684973958b09ae
+2012-07-11T14:56:58Z,commit,Project files updated by IDEA,github.com/JetBrains/intellij-community/pull/18/commits/4cbac52c1d5ad0b5dd79ab1b6b6c6e9ce1b1edc3
+2012-07-12T07:09:18Z,commit,"IDEA-88337 Reformatting code in file forces ""Do not show this dialog ¡­",github.com/JetBrains/intellij-community/pull/18/commits/a7cbefa5741cd1dedcedb2684bab81be0677ef6d
+2012-07-12T07:29:30Z,commit,"IDEA-88337 Reformatting code in file forces ""Do not show this dialog ¡­",github.com/JetBrains/intellij-community/pull/18/commits/c9f1c12cb31d26b61a6689a1ec4f94e3c2549a90
+2012-07-12T22:25:36Z,commit,optimisation: less garbage (cherry picked from commit,github.com/JetBrains/intellij-community/pull/18/commits/01abd46a2b8c7645b24080b01bc4d3b2c8c5ce96
+2012-07-16T19:06:06Z,commit,IDEA-80927 Change Default Shortcut to stop edititing embedded Groovy (2),github.com/JetBrains/intellij-community/pull/18/commits/fc1d4be2e343b6ca4bf2c3122c704b660329b2fb
+2012-04-03T15:32:47Z,commit,NPE fix,github.com/JetBrains/intellij-community/pull/18/commits/c9a52035eae3d51e772d9e1a9a08902615c7c7c8
+2012-07-20T04:00:03Z,commit,IDEA-87758 Inspection popups close themselves too quickly (recommit o¡­,github.com/JetBrains/intellij-community/pull/18/commits/116cb0b587f876ad3efba0fb7f2b6c47e9515663
+2012-07-20T11:02:10Z,commit,IDEA-89012 Live Template - Edit Variable - variable order is ignored,github.com/JetBrains/intellij-community/pull/18/commits/48135f54c275556c64883f9afc26bd8b8535eb49
+2012-07-23T11:16:31Z,commit,IDEA-89080 (Unable to open a maven project),github.com/JetBrains/intellij-community/pull/18/commits/538cc23ba0c5a8be9a7544139a97771bbd3c1470
+2012-07-23T13:49:20Z,commit,11.1.3 non-EAP,github.com/JetBrains/intellij-community/pull/18/commits/f2f0afbb09badb08e87e150ed93f9acab66c6d45
+2012-08-15T12:03:36Z,commit,[IDEA-91145] Merge maven-embedder-1.1-SNAPSHOT into maven2-server-impl,github.com/JetBrains/intellij-community/pull/18/commits/1d7685981f1a8e98772ae68e7b561e8b8549f3d4
+2012-09-06T14:43:04Z,commit,[IDEA-91145] Add a new MavenEmbedderWrapper#execute method that permi¡­,github.com/JetBrains/intellij-community/pull/18/commits/aa9abebdf5eb051cee90f317ce3b01c9dbdd9069
+2012-09-06T14:47:43Z,commit,[IDEA-91145] Add methods to find Maven root projects,github.com/JetBrains/intellij-community/pull/18/commits/4f75cbc32c97f382de8449f141ec20d15c89a90d

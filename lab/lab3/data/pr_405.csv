@@ -1,0 +1,11 @@
+405,"Allow to set breakpoints in non-"".py"" files."
+2016-05-25T11:48:36Z,discuss,"As Python allows to define your own module loaders it can be arbitrarly extended by custom DSL modules, that are imported via import statement.
+A typical use case is a templating engine, which compiles the template to python VM code and which allows to import the templates via import-statement. Due to the source maps integrated into the python VM code you can even debug these templates then."
+2016-05-25T11:48:36Z,discuss,But in PyCharm this is supported only partly:
+2016-05-25T11:48:36Z,discuss,But:
+2016-05-25T11:48:36Z,discuss,This Pull Request changes this behaviour to allow settings breakpoints in any non-python file (in python file it keeps the current behaviour)
+2018-02-21T13:12:42Z,discuss,"Hi @mrh1997! I understand your problem, but the suggested fix isn't ok, because it can break something outside of PyCharm. For example, now you can put Python breakpoints on .java files and it can lead to confusion. This breakpoint won't work in java file, but breakpoint's type isn't visible for user, and they won't understand why it doesn't work.
+An IntelliJ platform has a rich plugin system and it allows to define different file types to distinguish them from each other. A proper fix for this problem will be to define a separate file type (see PythonFileType) for your templates, define its features and make it work correctly with PyLineBreakpointType.
+Moreover, you can implement this solution as PyCharm (Intellij IDEA) plugin and develop it independantly."
+2018-02-21T13:12:42Z,discuss,Thank you for your interest! You can learn more about plugin development here: https://www.jetbrains.org/intellij/sdk/docs/basics.html
+2016-05-25T11:26:09Z,commit,"Allow to set breakpoints in non-"".py"" files.",github.com/JetBrains/intellij-community/pull/405/commits/c8fecd165d09f3ef10aaed52995d1022c81a39f2

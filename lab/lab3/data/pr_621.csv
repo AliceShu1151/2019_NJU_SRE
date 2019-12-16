@@ -1,0 +1,4 @@
+621,Fix nested test classes run in delegate to Gradle mode
+2017-08-29T22:09:44Z,discuss,"Nested classes should be qualified with $
+Fix passing test selector with $ to Gradle tooling API"
+2017-08-29T22:07:23Z,commit,Fix nested test classes run in delegate to gradle mode,github.com/JetBrains/intellij-community/pull/621/commits/1cf13fb54f379861963f62e656e3cd63ea4560a7

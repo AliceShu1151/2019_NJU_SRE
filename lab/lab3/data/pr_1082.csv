@@ -1,0 +1,9 @@
+1082,PY-16945: Support .coveragerc file
+2019-03-08T15:46:35Z,discuss,Fix https://youtrack.jetbrains.com/issue/PY-16945
+2019-03-10T13:02:24Z,discuss,Thanks for the fix! Please add a tiny improvement and I'll merge it in.
+2019-03-10T14:45:45Z,discuss,"Thanks @traff.
+I don't understand, what should I add as an improvement?"
+2019-03-11T12:36:01Z,discuss,"Sorry, for some reason my comment is lost. Could you please write the path of the rcfile that is loaded to the message that is printed."
+2019-03-11T12:39:33Z,discuss,"@traff Your comment is not lost, I've just clicked on ""resolve the conversation"" as I added the path of the rcfile to the printed message. I amended my previous commit, for avoiding making two commits. You can check the actual code ;)"
+2019-03-12T16:54:59Z,discuss,Thanks! Merged
+2019-03-08T15:45:38Z,commit,Support .coveragerc file,github.com/JetBrains/intellij-community/pull/1082/commits/3e1c2728ba5ec92e89c701bb53c23b63c6ad17ba

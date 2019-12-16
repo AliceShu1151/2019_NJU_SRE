@@ -1,0 +1,6 @@
+617,PY-13273: Fix args in decorators assigned to incorrect scope
+2017-08-26T12:22:53Z,discuss,"
+No description provided.
+"
+2017-09-07T21:21:04Z,discuss,Thanks for your pull request! I've fixed this issue in a different way allowing the visitors to accept all children of PyClass and PyFunction but PyDecoratorList.
+2017-08-26T12:21:53Z,commit,PY-13273: Fix args in decorators assigned to incorrect scope,github.com/JetBrains/intellij-community/pull/617/commits/1220e63ff5d384ae0ab50fb8113faa1558ebd080

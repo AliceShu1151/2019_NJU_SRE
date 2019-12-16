@@ -1,0 +1,4 @@
+173,IDEA-123665 richcopy enabled for console and highlighters [2]
+2014-04-14T23:49:17Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-123665
+2014-04-14T23:49:17Z,discuss,this one uses both markup models - old discussion: krasa@135e75d#commitcomment-5984870
+2014-04-14T23:35:25Z,commit,IDEA-123665 richcopy enabled for console and highlighters,github.com/JetBrains/intellij-community/pull/173/commits/4b09c700284b7c8a9cb2f16c7ab42e527c8718e4

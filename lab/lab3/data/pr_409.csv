@@ -1,0 +1,4 @@
+409,Ability to select and remove more than one Breakpoint in Favorites View
+2016-06-11T10:29:56Z,discuss,To improve usability allow removing multiple breakpoints at once in the Favorites View through multi selection.
+2016-06-28T19:07:37Z,discuss,Thank you! Your pull-request has been pushed to master branch.
+2016-06-11T10:16:54Z,commit,Adding ability to be able to select and remove more than one Breakpoi¡­,github.com/JetBrains/intellij-community/pull/409/commits/7590ce986b78f072fd81b16860f826ad5a7ce3ed

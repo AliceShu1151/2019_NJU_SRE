@@ -1,0 +1,12 @@
+786,PY-26863 Support 3dsmaxpy.exe
+2018-05-06T13:58:45Z,discuss,https://youtrack.jetbrains.com/issue/PY-26863
+2018-05-06T13:58:45Z,discuss,"Simply support to allow PyCharm to recognize 3ds Max's 3dsmaxpy.exe, this approach is based on the PythonSdk flavor approach that was used to make PyCharm work with Maya's mayapy."
+2018-05-30T16:24:46Z,discuss,@cmcpasserby Thanks for your pull request! I've noticed that there are not that many votes for this issue. Have you considered making it a separate plugin like the one that supports Maya? I guess there will be other feature requests specific to 3ds Max that the users might want to see in the future. These improvements will be easier to implement and maintain as a separate plugin.
+2018-05-30T16:49:44Z,discuss,"yeah, i can easily do that. I made it a PR since PyCharm supports the mayapy interpreter name out of the box already."
+2018-05-30T16:58:08Z,discuss,"@cmcpasserby The reason PyCharm supports mayapy inside its code base is that historically the Maya integration was a part of PyCharm. When a third-party plugin with extra features for Maya had appeared, we decided to drop built-in support for Maya, leaving just the ability to specify it as an interpreter for backwards compatibility."
+2018-05-30T17:01:26Z,discuss,"@cmcpasserby I've just realized that you're the author of MayaCharm, sorry for explaining obvious facts to you. Are you OK with having 3ds Max support as a third-party plugin? I'll close this pull request then."
+2018-05-30T20:01:19Z,discuss,"ok, yeah might as well close it then and i will submit it as a plugin to the repo later this week then."
+2018-05-30T20:01:19Z,discuss,@vlasovskikh so currently my MayaCharm plugin does not add a sdk flavour for mayapy since it was already a supported interpreter. Should i add it as a SDK flavour to the plugin as well now if you say the built in support will be dropped?
+2018-05-31T14:13:57Z,discuss,"@cmcpasserby With the SDK flavor for Maya we just wanted not to break backwards compatibility for those who had been using our Maya integration without your plugin. For 3ds Max it's better to start off with a separate plugin. If it get popular and if the license will permit it, we might consider bundling it."
+2018-05-31T14:13:57Z,discuss,Thanks for your MayaCharm plugin and the future plugin for 3ds Max!
+2018-05-06T00:30:54Z,commit,support for the 3dsmaxpy python interperter,github.com/JetBrains/intellij-community/pull/786/commits/0d783a7992f24f83fa2b84ebbffea85f88b13392

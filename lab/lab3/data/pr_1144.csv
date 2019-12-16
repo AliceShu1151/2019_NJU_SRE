@@ -1,0 +1,15 @@
+1144,IDEA-182029: Improve New Package dialog usability
+2019-05-23T14:17:27Z,discuss,Implements the requested functionality: https://youtrack.jetbrains.com/issue/IDEA-182029
+2019-05-23T14:17:27Z,discuss,The new package creation dialog for a single package looks like:
+2019-05-23T14:17:27Z,discuss,
+2019-05-23T14:17:27Z,discuss,"When you press the ""+"" button or a combination of Shift + Enter, a new input field is added:"
+2019-05-23T14:17:27Z,discuss,
+2019-05-23T14:17:27Z,discuss,Also includes: #1068
+2019-05-23T14:17:27Z,discuss,"The dialog expands on its own when the package name reaches the edge of the input field. Also added an empty space in front of the right edge, so that the name does not hide behind the right edge. It was requested here: https://youtrack.jetbrains.com/issue/IDEA-209397"
+2019-05-23T14:17:47Z,discuss,"Just want to ask, how should I notify the user about the presence of a hot-key Shift + Enter, which adds a new input field?"
+2019-05-23T14:17:47Z,discuss,"I thought about adding it to the ¡°+¡± button in the tooltip, but it would create the illusion that this combination is available from any part of the dialog, whereas it is available only when the window is focused on the input field."
+2019-05-24T09:05:31Z,discuss,"Cool! For consistency, you could add the ""generate/add new"" shortcut that works basically anywhere there is an ""add"" bttton."
+2019-05-24T09:05:31Z,discuss,How does this a interact with multiple source/test roots?
+2019-05-24T12:22:28Z,discuss,Did not quite understand what shortcut you mean?
+2019-05-24T12:22:28Z,discuss,This dialog allows you to create packages at the same time only within the same root. It seems to me that the possibility of creating a few roots too much complicates the dialogue.
+2019-05-23T12:48:16Z,commit,Improve New Package dialog usability,github.com/JetBrains/intellij-community/pull/1144/commits/0884aea0b3245c7c5d8bf97482734447802e76fe

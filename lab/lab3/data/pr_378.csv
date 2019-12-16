@@ -1,0 +1,16 @@
+378,Fix incorrect manual watch root calculations.
+2016-04-04T21:14:22Z,discuss,"Previously, if these were met:"
+2016-04-04T21:14:22Z,discuss,"You would get spurious ""Cannot be watched"" notifications
+and manual watch roots from the system."
+2016-04-06T17:03:08Z,discuss,Thanks!
+2016-04-07T15:11:58Z,discuss,"No problem. Any chance this could get cherry-picked across to one of your
+dot releases? It should be safe, and it's a fairly brutal experience for us
+when the entire code base suddenly becomes ""manual watch roots"" because
+it's all on a local drive."
+2016-04-07T15:11:58Z,discuss,"On Wed, Apr 6, 2016 at 1:03 PM, Roman Shevchenko notifications@github.com
+wrote:"
+2016-04-07T15:44:44Z,discuss,"I'm going to backport it to 145 branch, it will end up in 2016.1.2 eventually. Is this enough?"
+2016-04-07T15:46:54Z,discuss,"Yes, certainly. We can work around the issue until then. Thank you!"
+2016-04-07T15:46:54Z,discuss,"On Thu, Apr 7, 2016 at 11:45 AM, Roman Shevchenko notifications@github.com
+wrote:"
+2016-04-04T21:10:23Z,commit,Fix incorrect manual watch root calculations.,github.com/JetBrains/intellij-community/pull/378/commits/fa213634c125d1d1ca1de32b926ea5533a482b2d

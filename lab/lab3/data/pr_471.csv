@@ -1,0 +1,6 @@
+471,Make plugins/svn4idea/resources a resources root
+2016-11-22T23:37:55Z,discuss,"бн instead of a sources root, since it contains only PNG icons."
+2016-11-22T23:37:55Z,discuss,This follows up commit cc7588b by Olesya.Smirnova@jetbrains.com.
+2017-05-06T01:06:24Z,discuss,@pchel-?
+2017-05-10T22:16:53Z,discuss,I've applied the fix as part of the commit above.
+2016-11-22T23:33:03Z,commit,Make plugins/svn4idea/resources a resources root,github.com/JetBrains/intellij-community/pull/471/commits/06f4a028f54a5902d2dd69c0304caceeb6f04506

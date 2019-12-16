@@ -1,0 +1,6 @@
+105,"MismatchedCollectionQueryUpdateInspection -- added ""compute"" update prefix"
+2013-09-19T15:29:53Z,discuss,From j.u.Map in JDK8
+2013-09-19T15:50:57Z,discuss,Merged and pushed. Thanks for your contribution!
+2013-09-19T16:11:57Z,discuss,"Well, there are more complicated problems related to Java 8 collections, which I can't patch so easily :)
+http://youtrack.jetbrains.com/issue/IDEA-113826"
+2013-09-19T15:28:30Z,commit,"MismatchedCollectionQueryUpdateInspection -- added ""compute"" prefix (бн",github.com/JetBrains/intellij-community/pull/105/commits/73c963fc13c422f9d47c7d735b8e2c0a2c215a86

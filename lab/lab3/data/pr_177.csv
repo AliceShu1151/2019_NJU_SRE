@@ -1,0 +1,4 @@
+177,Fix passing idea version when creating RunProfileState in
+2014-05-07T13:32:53Z,discuss,"Not sure what this broke, but it doesn't seem right.
+Feel free to do apply the fix manually, as I haven't signed the CLA yet. If merging is preferred let me know and I'll send in the CLA."
+2014-05-07T13:10:51Z,commit,Fix passing idea version when creating RunProfileState in,github.com/JetBrains/intellij-community/pull/177/commits/95a20ad1d551835f991f7f8e565d2678f061627b

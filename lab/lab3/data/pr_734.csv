@@ -1,0 +1,6 @@
+734,Merge mockito libraries
+2018-02-14T01:57:39Z,discuss,"After this, commit c619a32 can be reverted."
+2018-02-14T01:58:40Z,discuss,@chashnikov?
+2018-02-14T07:54:20Z,discuss,"@dahlstrom-g thank you, I'll run our tests with this change."
+2018-02-14T13:59:29Z,discuss,"Merged manually and reverted changes made in c619a32, thank you for the contribution!"
+2018-02-14T01:49:46Z,commit,Merge mockito libraries,github.com/JetBrains/intellij-community/pull/734/commits/463baaf75c5d05a5ed931b828ed898a529538007

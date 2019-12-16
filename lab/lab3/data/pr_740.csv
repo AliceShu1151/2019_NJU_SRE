@@ -1,0 +1,18 @@
+740,JPS: add extension to provide additional constant affection resolvers
+2018-02-20T21:57:37Z,discuss,"JVM languages such as Kotlin can inline constant values at use-site.
+When a constant's value is changed, all use-sites must be recompiled.
+Since values are inlined, there are no references in bytecode
+so Java builder does not know when a Java constant is referenced in Kotlin.
+Kotlin builder knows where each FQ-name is used, but does not know
+when a Java constant is changed."
+2018-02-20T21:57:37Z,discuss,"To fix KT-16091, Kotlin plugin needs to provide additional ConstantAffectionResolver,
+so it would be notified when a constant value is changed."
+2018-02-20T21:57:37Z,discuss,"In this commit ConstantSearchProvider class is added.
+Additional instances of ConstantAffectionResolver provided by ConstantSearchProvider
+implementations are used only when ""main"" ConstantAffectionResolver
+(that searches using Intellij) is used (otherwise Java builder forces rebuild,
+so it does not make sense)."
+2018-02-20T21:57:37Z,discuss,// cc @chashnikov
+2018-02-21T10:40:42Z,discuss,"I have replaced it with the composite implementation of Callbacks.ConstantAffectionResolver which is used as a ConstantSearch service, if there are some custom extensions. So so code in Mappings remains the same"
+2018-02-21T12:07:39Z,discuss,"Merged into master with changes, thanks!"
+2018-02-20T21:34:50Z,commit,JPS: add extension to provide additional constant affection resolvers,github.com/JetBrains/intellij-community/pull/740/commits/38a8a80514cd7cedb869960b208f7c899d4088f8

@@ -1,0 +1,4 @@
+372,fix constructor arguments for extended inner classes
+2016-03-19T18:48:30Z,discuss,"Apparently, there has been a regression cause by some cleanup. Judging by the commit message, I assume that it was just an oversight. (All existing tests were passing with or without this change)."
+2016-03-19T18:48:30Z,discuss,23878c2#diff-745316dcc3cf87aa41f4f0820f9add5bL365
+2016-03-19T18:44:29Z,commit,fix constructor arguments for extended inner classes,github.com/JetBrains/intellij-community/pull/372/commits/fecb1dd5450fe72fd0fbeb65711e341dc1e4353c

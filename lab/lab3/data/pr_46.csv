@@ -1,0 +1,10 @@
+46,"IDEA-99403 Dont highlight 'super' / 'this' keywords, while highlighting 'Constructor Call'"
+2013-03-07T13:10:46Z,discuss,"
+No description provided.
+"
+2013-03-07T19:34:14Z,discuss,Merged manually. Thanks!
+2013-03-08T21:04:42Z,discuss,Why i cant find this change at master branch ?
+2013-03-10T08:14:56Z,discuss,"I committed this change as myself. Since you used some weird characters (parentheses) in your branch name, I couldn't do a proper merge."
+2013-03-10T09:05:50Z,discuss,"sry for that. I was create branch with wrong name - and then create with ""(valid)"""
+2013-03-10T09:24:16Z,discuss,Idk - but no change in /HighlightVisitorImpl  at last revision
+2013-03-07T13:08:56Z,commit,"IDEA-99403 Dont highlight 'super' / 'this' keywords, while highlighti¡­",github.com/JetBrains/intellij-community/pull/46/commits/2a06b18a320e361ef4a884a44357f80ce55cef98

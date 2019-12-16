@@ -1,0 +1,4 @@
+63,IDEA-76357 Favorites View improvements: add expand all
+2013-03-31T11:36:54Z,discuss,"Doesn't solve the issue completely, just the last part."
+2013-04-02T12:02:51Z,discuss,"We don't provide the Expand All button in Project view and Favorites view intentionally. A user can add a large subtree (i.e. a module) to Favorites, and trying to expand it recursively will lock the UI for a very long time."
+2013-03-31T11:30:55Z,commit,IDEA-76357 Favorites View improvements: add expand all,github.com/JetBrains/intellij-community/pull/63/commits/81ea6162a1522b229fd8c400632f8a63d278a220

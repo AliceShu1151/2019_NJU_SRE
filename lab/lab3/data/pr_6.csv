@@ -1,0 +1,27 @@
+6,IDEA-69292 make merge possible from console
+2012-02-08T17:02:48Z,discuss,"Commit makes possible to run merge tool from console.
+Run format is:
+/path_to_IDEA_bin/idea.sh merge /path/left.txt /path/right.txt /path/original.txt /path/result.txt"
+2012-02-11T12:13:38Z,discuss,Waiting this ticket for a long time. This will be de-facto standalone merge tool. :) Especially with Git.
+2012-09-11T07:45:53Z,discuss,Have been implemented.
+2012-09-19T00:34:20Z,discuss,@klikh it does not look like this has been implemented.
+2012-09-19T00:34:20Z,discuss,Ive checked here: http://git.jetbrains.org/?p=idea/community.git;a=blob;f=platform/platform-resources-en/src/messages/DiffBundle.properties;hb=HEAD
+2012-09-19T00:34:20Z,discuss,and here: https://github.com/JetBrains/intellij-community/blob/master/platform/platform-resources-en/src/messages/DiffBundle.properties
+2012-09-19T00:34:20Z,discuss,"i do not see the line
+""merge.application.usage.parameters.and.description=Usage: idea merge    """
+2012-09-19T00:34:20Z,discuss,is this expected to be released in a community edition build at some point?
+2012-09-19T00:34:20Z,discuss,"the following issue
+http://youtrack.jetbrains.com/issue/IDEA-69292?projectKey=IDEA&query=%23issues
+implies that it has been integrated"
+2012-09-19T00:34:20Z,discuss,how can i find a build with this much needed feature integrated?
+2012-09-19T08:09:11Z,discuss,"@afoong
+IDEA-69292 has been implemented, but we used a bit different approach than proposed by crazyproger. The functionality is available in EAP builds of IntelliJ IDEA 12 (Here is the latest EAP: http://blogs.jetbrains.com/idea/2012/09/intellij-idea-12-eap-build-122327-is-available/)."
+2012-09-19T08:09:11Z,discuss,Nevertheless we appreciate this pull request made by crazyproger since it made us work on this problem and fix it.
+2012-09-19T09:39:11Z,discuss,"@klikh thanks for the reply and the link! is there any documentation on how to use the merge tool from the command line? i cannot find any refernce to IDEA-69292 or ""commandline"" in the EAP page. Any help would be greatly appreciated. Thanks!"
+2012-09-19T09:55:53Z,discuss,"To use it as a merge tool invoke IDEA executable with the ""merge"" parameter. It will give you the basic usage information:"
+2012-09-19T09:55:53Z,discuss,I've created a task to update the documentation: http://youtrack.jetbrains.com/issue/IDEA-91791
+2012-09-19T20:54:31Z,discuss,thank you !
+2012-02-05T20:17:05Z,commit,IDEA-69292 make merge possible from console,github.com/JetBrains/intellij-community/pull/6/commits/b7dc07e0e010500ea553cfa57e8cc6fab491efc0
+2012-02-09T17:21:33Z,commit,Merge branch 'master' into consoleMergeTool,github.com/JetBrains/intellij-community/pull/6/commits/637e5aeadaddae306af5a3bdc2ed23a1830b9c72
+2012-02-09T17:38:38Z,commit,using IDEA's file cache,github.com/JetBrains/intellij-community/pull/6/commits/0d1ebb6f8bbad780d23c5582639acc2f8ccb2a6d
+2012-02-09T17:41:28Z,commit,Update copyright author,github.com/JetBrains/intellij-community/pull/6/commits/5fee9f550ab82e8c47814a46f28635cdc901ccfe

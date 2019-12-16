@@ -1,0 +1,6 @@
+17,FogBugz tasks integration for IntelliJ
+2012-09-01T18:46:57Z,discuss,"Hello, Please consider this FogBugz case/task integration patch for IntelliJ."
+2012-09-01T18:46:57Z,discuss,A brief note about the patch: TasksCoreIcons.java contains this warning
+2012-09-01T18:46:57Z,discuss,"I could not find icons.gant (or anything like it) in the code base. If you can give me a pointer, I would be happy to amend."
+2012-09-28T19:32:17Z,discuss,This was merged by Dmitry Avdeev a few weeks ago.
+2012-09-01T18:28:49Z,commit,IDEA-70696 Support Fogbugz for Tasks (issue tracker integration),github.com/JetBrains/intellij-community/pull/17/commits/de7ae34218764063ad39e0b392e7fadfae6b434e

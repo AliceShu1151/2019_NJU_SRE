@@ -1,0 +1,35 @@
+55,Fixes IDEA-84220 CTRL-F5 shortcut doesn't work in Hierarchy view!
+2013-03-16T17:58:52Z,discuss,"
+No description provided.
+"
+2013-03-26T19:58:29Z,discuss,"The unregistration happens in inner classes that extend Tree, so 'this' in that context also means a Tree instance. Please fix this so that the unregistration matches the registration."
+2013-04-21T17:43:27Z,discuss,Unfortunately my previous fix (myRefreshAction.registerShortcutOn(this);) didn¡¯t work. It was just bad luck that it seamed to work.
+2013-04-21T17:43:27Z,discuss,"There were two problems with this fix:
+Sometimes the shortcut of the call hierarchy is unregistered right after opening the call hierarchy, I have no idea why this is happening and can't reproduce it very often - it sometimes occurred right after starting IDEA and opening call hierarchy. In this case the shortcut doesn't work.
+Second my fix seamed to work, because the shortcut was never unregistered. Thank you very much for your hint."
+2013-04-21T17:43:27Z,discuss,"Would you be so kind and explain me, why it is necessary to unregister some shortcuts?"
+2013-04-21T17:43:27Z,discuss,"What do you think of calling myRefreshAction.registerShortcutOn(this); inside addNotify?
+It worked in all my test cases."
+2013-04-21T17:43:27Z,discuss,"A small test case which is absolutely reproducible:
+Open call hierarchy, Press Ctrl+F5 (Refresh) it should work
+Pin the tab, Open another call hierarchy, Press Ctrl+F5 it should still work.
+Switch to first call hierarchy Ctrl+F5 doesn't work anymore.
+Switch back to second, it doesn't work either."
+2013-04-21T17:43:27Z,discuss,It would be interesting for me which test case Maxim Shafirov executed on issue IDEA-84220.
+2013-04-21T17:43:27Z,discuss,Best regards
+2013-04-21T17:43:27Z,discuss,Josef
+2014-03-30T09:07:50Z,discuss,"After one year I analyzed it again and suggest the solution from GitLogUI.
+The code doesn't unregister the shortcut, there is no conflict between the call hierarchy views and I¡¯ve checked that the garbage collector cleans the instances properly."
+2014-03-30T09:07:50Z,discuss,Do I miss something?
+2014-03-30T09:07:50Z,discuss,It would be nice if you could review this patch.
+2014-03-30T09:07:50Z,discuss,Thank you.
+2014-03-30T09:07:50Z,discuss,My test case: http://youtu.be/H9gQlUV8FiQ
+2018-07-21T15:03:25Z,discuss,"@lehnerj, please rebase the PR, cc @bulenkov."
+2018-09-01T09:17:15Z,discuss,"Thank you for you fix! I've applied slightly modified version:
+845a493"
+2013-03-16T17:48:00Z,commit,IDEA-84220 CTRL-F5 shortcut doesn't work in Hierarchy view!,github.com/JetBrains/intellij-community/pull/55/commits/e83efaddf0c1a1896859d05d0ffa2a95349eeda3
+2013-03-16T18:21:59Z,commit,Merge remote-tracking branch 'upstream/master' into IDEA-84220,github.com/JetBrains/intellij-community/pull/55/commits/a55f7601f4a8416c018d11b3fbb1d78dd8239fb9
+2013-03-30T16:32:40Z,commit,"Fix IDEA-84220, registerShortcutOn(tree) wasn't called after unregist¡­",github.com/JetBrains/intellij-community/pull/55/commits/9bb0c9ec9601eb714d505fa155d3e41acc4294da
+2014-03-30T08:26:22Z,commit,Merge branch 'master' into IDEA-84220,github.com/JetBrains/intellij-community/pull/55/commits/3db8bf6359d70c5ed8da67d18c992c45663a3639
+2014-03-30T08:37:28Z,commit,Merge branch 'master' into IDEA-84220,github.com/JetBrains/intellij-community/pull/55/commits/51e03eff388c9077c3ea22b996aea28f5feec490
+2014-03-30T08:58:33Z,commit,Fix IDEA-84220 Refresh shortcut was unregistered when two or more cal¡­,github.com/JetBrains/intellij-community/pull/55/commits/9b06a80da5066da2b8dd4ff5c4c61b5a8d7d273c

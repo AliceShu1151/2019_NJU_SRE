@@ -1,0 +1,12 @@
+709,Improve malformed identifiers handling in `-ren=1` mode
+2018-01-14T04:12:19Z,discuss,This patch propose following improvements to the default renaming functionality:
+2018-01-14T04:12:19Z,discuss,"All identifiers should be compliant to the JLS9 section 3.8 and SHOULD NOT contains so-called ""ignorable"" characters.
+Ignorable characters are silently removed by javac during the compilation and thus may appear only in specially crafted obfuscated classes.
+For more information about ""ignorable"" characters see JDK-7144981."
+2018-01-14T04:12:19Z,discuss,Add dedicated unit tests for org.jetbrains.java.decompiler.modules.renamer.ConverterHelper class.
+2018-01-23T17:28:14Z,discuss,@Maccimo thank you.
+2018-01-23T17:28:14Z,discuss,Could you please update the PR so that it doesn't change formatting in toBeRenamed() method? And I'm not sure the new method deserves such a thorough test :)
+2018-01-23T20:27:08Z,discuss,"@trespasserw I've updated PR, please review.
+Tests attempt to cover original toBeRenamed() behaviour as well as changes made by this PR.
+IMHO better to have test coverage than not to have."
+2018-01-23T20:09:09Z,commit,Treat identifiers containing `ignorable` characters as invalid; Add u¡­,github.com/JetBrains/intellij-community/pull/709/commits/5ea28c3080e2f877312e370771ef4d1c4100e99f

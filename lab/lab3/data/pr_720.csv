@@ -1,0 +1,4 @@
+720,py/build: target the community plugin gant script
+2018-01-31T01:26:28Z,discuss,The only python plugin gant file in the repository is named python_community_plugin_build.gant.
+2018-02-08T17:32:29Z,discuss,Thanks for your pull request! I've rebased it onto master.
+2018-01-31T01:08:59Z,commit,py/build: target the community plugin gant script,github.com/JetBrains/intellij-community/pull/720/commits/030fb5f2f90db5c6edc48fd6f4e3f665f7c4ceb3

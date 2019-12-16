@@ -1,0 +1,3 @@
+1057,IDEA-206965 Mark focused component when opening UI Inspector
+2019-02-08T16:55:38Z,discuss,Implements https://youtrack.jetbrains.net/issue/IDEA-206965
+2019-02-08T16:54:16Z,commit,IDEA-206965 Mark focused component when opening UI Inspector,github.com/JetBrains/intellij-community/pull/1057/commits/1a6eb23d25fd064ea9850c1bc958d212995a740e

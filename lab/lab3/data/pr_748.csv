@@ -1,0 +1,7 @@
+748,Let unused TypeEvalContext instances be gc-ed
+2018-03-01T02:45:00Z,discuss,"The problem here is that while the map holding cached values is softly referenced , the values themselves are not. This means the GC can either collect the entire map or none of it. Since the collector uses an LRU policy to collect soft refs and the reference to the map is usually 'recently used' it does not get collected until the memory situation becomes critical.  This becomes a problem when running inspections in batch mode on a large enough workload."
+2018-03-01T02:45:00Z,discuss,This patch makes the cached values themselves softly referenced so that the gc can collect TypeEvalContext instances that have no been recently used.
+2018-03-19T15:15:58Z,discuss,I am ok with this change except put => putIfAbsent change which is not clear for me.
+2018-03-19T19:35:01Z,discuss,@throwable-one putIfAbsent is a little bit more accurate as in cases where two threads concurrently create a new value then one will be discarded and the other shared.
+2018-03-01T02:33:03Z,commit,make values in TypeEvalContextBasedCache soft,github.com/JetBrains/intellij-community/pull/748/commits/f2f54441b79bb6d44be7a5618540c79a6c2f147f
+2018-03-01T02:36:46Z,commit,minor: anonymous ThreadLocal class -> ThreadLocal.withInitial,github.com/JetBrains/intellij-community/pull/748/commits/44d758b1dbfabae62a19de96046051ead667f579

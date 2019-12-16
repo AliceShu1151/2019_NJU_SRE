@@ -1,0 +1,8 @@
+265,IDEA-132005 fix performance problem in ErrorPaneConfigurable.java
+2015-05-05T17:27:29Z,discuss,"Concatenating string without StringBuilder, as result if user have 2000+ problem and total size of result html string will be more 50mb then ""Project structure"" panel freeze all."
+2015-05-05T17:27:29Z,discuss,"I wait 30 minutes but ui keep freeze, after very simple patch all work fine"
+2015-05-06T11:13:45Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-05-06T13:47:10Z,discuss,Yes. I already sent a letter with CLA today.
+2015-05-06T13:53:05Z,discuss,"Agreement received, thank you."
+2015-06-17T22:33:43Z,discuss,Thanks for the patch. Rewrote and pushed into master. Alarm should work on pooled thread.
+2015-05-05T17:03:05Z,commit,IDEA-132005 fix performance problem in ErrorPaneConfigurable.java,github.com/JetBrains/intellij-community/pull/265/commits/f1ec92f690ef90d1f0d4af3eeb46376b22c14cda

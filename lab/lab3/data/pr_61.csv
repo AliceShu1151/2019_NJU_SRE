@@ -1,0 +1,12 @@
+61,Code cleanup
+2013-03-29T14:08:20Z,discuss,"
+No description provided.
+"
+2013-12-26T14:56:00Z,discuss,"@VISTALL Sorry for the delay. Currenty this pull request can't be automatically merged. Could you please recreate it from the recent master, if this is still actual."
+2013-12-26T15:46:27Z,discuss,"@klikh  i think this pull u can close, i am not interest anymore in this or other pulls"
+2013-03-29T13:24:41Z,commit,delete duplicate MavenUtil.isEmptyOrSpaces,github.com/JetBrains/intellij-community/pull/61/commits/e8ea915fa37d477848a3e1fd50fa287e8a3a3bb6
+2013-03-29T13:29:46Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/61/commits/19fe4af268c702e4c7cbd10e77d24396a94c5033
+2013-03-29T13:39:47Z,commit,"cleanup, better code",github.com/JetBrains/intellij-community/pull/61/commits/71d1640f92002678963db15047133d8452eae351
+2013-03-29T13:46:45Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/61/commits/bda6585a59ae4603bea63aeff1f0851efe3ad7b7
+2013-03-29T13:49:40Z,commit,removed BaseToolManager.convertString,github.com/JetBrains/intellij-community/pull/61/commits/32011198a28109d62b2ebade614f43d2fc6e3b52
+2013-03-29T14:04:06Z,commit,JavadocConfigurable cleanup,github.com/JetBrains/intellij-community/pull/61/commits/04ed71c4c6988f9e4a4d78b1b4ed2712f0dc7212

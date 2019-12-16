@@ -1,0 +1,6 @@
+1143,IDEA-214615: Deactivate caret on dispose to avoid a memory leak
+2019-05-21T01:10:43Z,discuss,"
+No description provided.
+"
+2019-06-06T14:00:15Z,discuss,Fix accepted.
+2019-05-21T01:08:53Z,commit,IDEA-214615: Deactivate caret on dispose to avoid a memory leak,github.com/JetBrains/intellij-community/pull/1143/commits/7a0a6a47e9abe683c5adac523dc3f16ca331d702

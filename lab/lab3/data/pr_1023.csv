@@ -1,0 +1,5 @@
+1023,Fix invalid decompiled missing inner class references
+2019-01-03T15:59:33Z,discuss,Fix for https://youtrack.jetbrains.net/issue/IDEA-204298
+2019-01-20T11:02:24Z,discuss,"@trespasserw, please let me know where to add tests for this to validate the change"
+2019-01-23T19:42:13Z,discuss,"All decompiler tests live in plugins/java-decompiler/engine/test/org/jetbrains/java/decompiler/ directory. It's just not clear, what are expected results."
+2019-01-03T15:42:28Z,commit,Fix invalid decompiled missing inner class references,github.com/JetBrains/intellij-community/pull/1023/commits/bf00c861c83c163154ca039fe818370851f68b5f

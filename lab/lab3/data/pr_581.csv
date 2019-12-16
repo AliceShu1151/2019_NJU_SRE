@@ -1,0 +1,8 @@
+581,Add Nullable for YAMLKeyValue::getParentMapping to sync it with YAMLKeyValueImpl
+2017-06-03T12:53:31Z,discuss,npe issue because of not seeing nullable return value: Haehnchen/idea-php-symfony2-plugin#942
+2018-07-21T13:20:57Z,discuss,@Haehnchen is it still valid?
+2018-07-21T13:21:27Z,discuss,cc @valich
+2018-07-23T14:21:15Z,discuss,"This is still actual. I've reviewed some of our usages of this method and found some newly appeared warnings. I've fixed them and also added ""pure"" contract to simplify checks/assertions."
+2018-07-23T14:21:15Z,discuss,@Haehnchen Thank you very much and sorry for the delay.
+2018-07-23T14:21:29Z,discuss,Merged.
+2017-06-03T12:53:19Z,commit,Add Nullable for YAMLKeyValue::getParentMapping to sync it with YAMLK¡­,github.com/JetBrains/intellij-community/pull/581/commits/c3998d202d3358820c283f0eab4c947a1c83f8a2

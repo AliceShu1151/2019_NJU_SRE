@@ -1,0 +1,9 @@
+668,Simplify Arrays.asList().sublist().toArray()
+2017-11-16T20:58:07Z,discuss,Expression
+2017-11-16T20:58:07Z,discuss,can be simplified to
+2017-11-16T20:58:07Z,discuss,"giving both performance enhancement and code simplicity.
+See inspection request: https://youtrack.jetbrains.com/issue/IDEA-182206"
+2017-11-22T02:30:58Z,discuss,"Merged, thanks"
+2017-11-22T02:30:58Z,discuss,d14e695
+2017-11-15T15:58:42Z,commit,simplify Arrays.asList().sublist().toArray(),github.com/JetBrains/intellij-community/pull/668/commits/95316395b5ba16d0219dbdfd913d953ab5e59b5d
+2017-11-17T19:52:55Z,commit,revert irrelevant signature change,github.com/JetBrains/intellij-community/pull/668/commits/a34886823fb23cad1177932557b803c8f3e1850d

@@ -1,0 +1,4 @@
+420,Implemented SmartTemplateLanguageErrorFilter
+2016-06-23T16:02:50Z,discuss,"Alternative implementation of TemplateLanguageErrorFilter, indended to fix following problem: https://intellij-support.jetbrains.com/hc/en-us/community/posts/206918249-TemplateLanguageErrorFilter-for-postfix-errors"
+2018-07-21T13:03:26Z,discuss,@hurricup please manage the RP yourself :)
+2016-06-23T16:00:58Z,commit,"Implemented SmartTemplateLanguageErrorFilter, variation of TemplateLa¡­",github.com/JetBrains/intellij-community/pull/420/commits/6698ccf6fb3be5c10a9126a48b5b44fea39e0345

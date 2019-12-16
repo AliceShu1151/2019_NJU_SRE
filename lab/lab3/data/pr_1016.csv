@@ -1,0 +1,10 @@
+1016,IDEA-204408 - Stop ignoring exceptions that occur during included bui¡­
+2018-12-18T13:24:48Z,discuss,¡­ld configuration
+2018-12-18T13:34:44Z,discuss,"I can't see a reason as to why we would want to ignore all exceptions coming from here and I imagine it would be safe to remove. Is there tests that cover this area? I couldn't seem to find any tests that cover this specifically, everything in intellij.gradle.toolingExtension.tests seems unchanged when removing this."
+2018-12-19T10:34:50Z,discuss,LGTM
+2018-12-19T11:13:09Z,discuss,"Composite project import is covered by org.jetbrains.plugins.gradle.importing.GradleCompositeImportingTest
+Also, while having error message is indeed required, the import should continue to work on other included builds."
+2018-12-19T11:13:09Z,discuss,"What we really need, is to create a stub module for failed included build, with content root pointing to included project's root to allow a user to see files in project structure tree, to navigate to them and to fix the content, so that project can eventually be imported.
+At the moment, if the included build is outside root project, files will be missing."
+2018-12-19T15:15:39Z,discuss,"That makes sense, thanks for the explanation. In Android Studio (and Android projects in general) this causes very odd error messages which completely hide the issue. For example if a buildscript dependency fails to resolve the error we surface is ""Plugin with id 'com.android.application' not found."" which is really not helpful. I'm guessing this is due to later configuration outside the try { } catch { } (most probably triggered by the Android Gradle Plugin) failing."
+2018-12-18T12:38:37Z,commit,IDEA-204408 - Stop ignoring exceptions that occur during included bui¡­,github.com/JetBrains/intellij-community/pull/1016/commits/dec5d91ca0ce972a12cab88cccfad1de8096a791

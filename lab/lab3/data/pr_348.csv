@@ -1,0 +1,10 @@
+348,Sort when writing plugin list
+2016-01-26T00:09:30Z,discuss,This sorts plugin lists when writing to disk.
+2016-01-26T00:09:30Z,discuss,"I try to keep as much of my IntelliJ configuration in version control as possible. disabled_plugins.txt is an obnoxious file because it gets jumbled into a different order every time it's written to disk, resulting in a lot of unnecessary diffs. So it's nice to have it sorted just to keep the order consistent."
+2016-01-26T00:09:30Z,discuss,"I haven't been able to successfully build this project yet, so this change is untested. I'm hoping it's simple enough, though."
+2016-01-27T15:18:59Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-05-25T16:38:24Z,discuss,I've now submitted the CLA.
+2016-05-26T08:01:09Z,discuss,The CLA was received. Thanks.
+2016-05-26T16:11:14Z,discuss,"Thank you for the contribution. However 'iterator()' in PriorityQueue isn't guarantied to process elements in sorted order, so I've implemented this myself by copying collection into array and sorting it."
+2016-05-26T16:46:17Z,discuss,Thanks @chashnikov.
+2016-01-26T00:03:22Z,commit,Sort when writing plugin list,github.com/JetBrains/intellij-community/pull/348/commits/15c08bd506d6942f1017f63692282b6487d181e1

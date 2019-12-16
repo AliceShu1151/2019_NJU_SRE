@@ -1,0 +1,6 @@
+664,PY-27004: Use multiResolve to check if Python refs match
+2017-11-14T23:23:29Z,discuss,"
+No description provided.
+"
+2017-12-29T06:49:27Z,discuss,@fitermay Thanks for your PR! I've rebased it onto master.
+2017-11-14T23:07:39Z,commit,PY-27004: Use multiResolve to check if Python refs match,github.com/JetBrains/intellij-community/pull/664/commits/b192dda6115306c08c79652657505976e522b2eb

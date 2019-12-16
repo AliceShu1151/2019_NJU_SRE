@@ -1,0 +1,13 @@
+333,Scan files on more threads.
+2015-12-08T22:14:15Z,discuss,"On a benchmark project the scanning phase goes from 123 seconds -> 34
+seconds with this change."
+2015-12-08T22:14:15Z,discuss,Change-Id: Ib9daccd1f0188adbb4a9c56e6bf69c2c857c5ebf
+2015-12-08T23:52:45Z,discuss,"Hi,
+Thanks for you request!
+Some comments were added inline."
+2015-12-08T23:52:45Z,discuss,"On Tue, Dec 8, 2015 at 11:14 PM, tomlu-google notifications@github.com
+wrote:"
+2015-12-09T11:16:10Z,discuss,Thanks! Merged manually.
+2015-12-09T16:10:40Z,discuss,"I think we're seeing this drastic difference in performance because we have 12-core machines and it's traversing a networked (but quite fast) file system for a few thousand output jars. We are also seeing similar performance gains in indexing by increasing the index thread count via a system property, so for us it's very nice to have the same characteristics here."
+2015-12-09T16:10:40Z,discuss,"Anyway, thanks so much!"
+2015-12-08T21:59:37Z,commit,Scan files on more threads.,github.com/JetBrains/intellij-community/pull/333/commits/66e8c6aed2c5486aabbae72600793a300675ad0b

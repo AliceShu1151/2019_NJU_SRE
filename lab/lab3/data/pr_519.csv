@@ -1,0 +1,5 @@
+519,IDEA-105458 XML nodes shouldn't be always treated as leafs
+2017-02-23T01:44:55Z,discuss,IDEA-105458 XML nodes shouldn't be always treated as leafs
+2017-02-23T01:44:55Z,discuss,Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+2018-06-04T12:17:42Z,discuss,@zdary Could you please provide a test (or an example XML) to ensure that the fix solves the issue?
+2017-02-23T01:43:30Z,commit,IDEA-105458 XML nodes shouldn't be always treated as leafs,github.com/JetBrains/intellij-community/pull/519/commits/8d2e4a00e200687a5cf68dd2627d0911bf213021

@@ -1,0 +1,6 @@
+643,IDEA-180447: Hide Synchronize action when it is unlikely to be used
+2017-10-11T21:09:27Z,discuss,"
+No description provided.
+"
+2017-10-11T21:06:23Z,commit,Hide Synchronize action when it is unlikely to be used,github.com/JetBrains/intellij-community/pull/643/commits/5cc39de5280f44acad64cf0b004543524b6a8798
+2017-10-13T01:03:01Z,commit,IDEA-180548 Introduce PlatformUtils.isAndroidStudio method,github.com/JetBrains/intellij-community/pull/643/commits/3c85f1e11811c82008c9628cc54a961afe89b66d

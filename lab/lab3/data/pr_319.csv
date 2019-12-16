@@ -1,0 +1,5 @@
+319,Add parent settings in Java Code Style
+2015-10-30T15:16:26Z,discuss,"Deprecate CodeInsightColors and remove SyntaxHighlighterColors
+Cf : https://youtrack.jetbrains.com/issue/IDEA-146984
+Cf : https://devnet.jetbrains.com/message/5561711"
+2015-10-30T15:16:26Z,discuss,The pull request impact the Android plugin too. This is the patch:

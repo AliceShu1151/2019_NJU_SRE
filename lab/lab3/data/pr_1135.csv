@@ -1,0 +1,23 @@
+1135,IDEA-212479 Prioritize overrides and getter/setter generation when sensible in auto complete
+2019-05-10T22:38:10Z,discuss,See https://youtrack.jetbrains.com/issue/IDEA-212479
+2019-05-13T06:27:16Z,discuss,Could you please add some tests (e.g. in NormalCompletionOrderingTest) showing how this behaves in all scenarios you're trying to address?
+2019-05-18T09:19:11Z,discuss,"Would the comments be lost if I pushed my rebased branch here? If so, I can transfer my additional work back to the original branch and push them here so we can continue with the current comments."
+2019-05-18T09:19:11Z,discuss,"I have added a few test cases, let me know if that's the direction you intended for the tests.
+In the meantime, you can see them here:
+master...alshain:IDEA-212479-previewdiff-8c7153275601179f7e67ee8f6fd33fefL883"
+2019-05-20T12:25:03Z,discuss,Who knows... But probably they won't if you just add new commits here without rebasing.
+2019-05-20T12:25:03Z,discuss,"The link above gives me ""There isn¡¯t anything to compare."" that I don't know how to resolve. However I've managed to find tests in your fork: alshain@792600c . The direction looks right, except that I wouldn't go into leading space assertions and leave things as they are right now: the change is complicated enough already."
+2019-05-24T09:07:59Z,discuss,@donnerpeter Thanks. About the leading spave assertions: do you mean I should instead include the leading spaces in the test case expectations?
+2019-05-24T09:07:59Z,discuss,Because currently I make the test framework pretend that there are never any leading spaces.
+2019-05-25T07:28:12Z,discuss,"I think that the test framework should reflect the reality, not pretend it's something else. The test assertion could be rewritten in some way (e.g. using contains) to avoid mentioning leading space explicitly."
+2019-05-26T20:31:28Z,discuss,"@donnerpeter  I see. I prefer the tests to model my intentions, that's why I had removed them. I have now re-added the leading spaces in the tests and transferred my changes back to this branch."
+2019-07-08T07:46:44Z,discuss,@donnerpeter Anything you need from me for this PR?
+2019-07-10T09:09:08Z,discuss,"There's still the confusing new API in OverrideImplementUtil, TreeElementPattern and a couple more unresolved comments"
+2019-05-10T22:35:26Z,commit,IDEA-212479 Prioritize overrides and getter/setter generation when se¡­,github.com/JetBrains/intellij-community/pull/1135/commits/9403c712683dcdc2bafc27ba0a7ce70d079c7e96
+2019-05-17T16:20:51Z,commit,IDEA-212479 Prioritize overrides and getter/setter generation when se¡­,github.com/JetBrains/intellij-community/pull/1135/commits/a53fc81d34d105be6435c37f1a248a80cbb7979b
+2019-05-18T08:52:14Z,commit,IDEA-212479 EditorTestFixture comments: Trim leading spaces in lookup¡­,github.com/JetBrains/intellij-community/pull/1135/commits/37760269405651bbca65ad71775293c834fb7e94
+2019-05-18T09:00:34Z,commit,IDEA-212479 EditorConfigTest: Trim leading spaces when dumping lookup¡­,github.com/JetBrains/intellij-community/pull/1135/commits/2865632f01d521c966a8adbbf252c5f1a9849cf4
+2019-05-18T09:20:15Z,commit,IDEA-212479 Simplify,github.com/JetBrains/intellij-community/pull/1135/commits/a0bee6fca8736a4db5934edacd5e87c861de12ea
+2019-05-26T18:33:46Z,commit,"Revert ""IDEA-212479 EditorConfigTest: Trim leading spaces when dumpin¡­",github.com/JetBrains/intellij-community/pull/1135/commits/6aced894a0ae1790edb523aee91abe810d229c46
+2019-05-26T18:34:11Z,commit,"Revert ""IDEA-212479 EditorTestFixture comments: Trim leading spaces i¡­",github.com/JetBrains/intellij-community/pull/1135/commits/37f9672fa06e5aeb6d8754036b7ed85015b098af
+2019-05-26T20:29:49Z,commit,IDEA-212479 Include leading spaces in lookup-assertions for completio¡­,github.com/JetBrains/intellij-community/pull/1135/commits/447870ac3ddcbb973d4915c068730d7e4a81cfff

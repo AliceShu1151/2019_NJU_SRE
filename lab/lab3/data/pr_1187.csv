@@ -1,0 +1,23 @@
+1187,[Gradle] Avoid task configuration in tooling model builders.
+2019-08-12T22:59:17Z,discuss,"When building Gradle tooling models, there are a few usages of
+TaskCollection.all, which triggers creation and configuration of
+all registered tasks.
+To avoid this expensive operation, replace the usage with lighter
+API - TaskCollection.withType, which only configures the affected
+tasks."
+2019-08-12T22:59:17Z,discuss,"Besides, introduce project property idea.do.not.resolve.task.list.
+When defined, the task list in ExternalProject will not be populated.
+Because this operation requires configuration for all tasks and there
+is no light-weight alternatives.
+This property provides a way to disable task configuration from idea."
+2019-08-23T14:39:18Z,discuss,Thank you for the request.
+2019-08-23T14:39:18Z,discuss,"What is the intended usage of idea.do.not.resolve.task.list ? Without tasks information from Gradle multiple issues may rise (still to be checked with the patch): missing autocomplete in different places, problems runnig unit tests in delegated mode, maybe other..."
+2019-08-28T00:54:05Z,discuss,"We hope to have some approach to disable the task list tree in Gradle tools window. Android projects usually have much more tasks than non-Android projects. For example, one of our customers' project has 10,000+ tasks. Disabling the task tree improves performance for them.
+This flag is intended to be set from Preferences if user doesn't use the task tree and would like to avoid the overhead of populating it."
+2019-08-28T00:54:05Z,discuss,I am not aware of all of the side effects this may cause. Is it possible to use alternative APIs to only get certain tasks?
+2019-08-29T12:07:50Z,discuss,"We can introduce some kind of filters to exclude certain tasks. Is it possible to distinguish such ""useless"" for IDE and IDE user android tasks? Maybe by task type or task naming pattern?"
+2019-09-20T19:06:34Z,discuss,"I simplified this change to only replace TaskCollection.all with TaskCollection.withTypes.
+Will address the task filtering problem separately."
+2019-09-23T11:17:37Z,discuss,"Thanks, Ying!
+merged"
+2019-08-12T22:46:00Z,commit,[Gradle] Avoid task configuration in tooling model builders.,github.com/JetBrains/intellij-community/pull/1187/commits/82efac5b127e914427115d6544ed7cde68233a77

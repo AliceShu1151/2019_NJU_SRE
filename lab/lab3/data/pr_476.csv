@@ -1,0 +1,4 @@
+476,Test Comparable IteratorPosition using assertThat
+2016-11-29T04:18:53Z,discuss,"бн which makes failure messages (and maybe assertion code) more readable, and avoids http://errorprone.info/bugpattern/SelfComparison."
+2016-12-08T12:15:53Z,discuss,fixed
+2016-11-29T04:04:37Z,commit,Test Comparable IteratorPosition using assertThat,github.com/JetBrains/intellij-community/pull/476/commits/0c948c93e589e032963f44b7530c330325ab27f0

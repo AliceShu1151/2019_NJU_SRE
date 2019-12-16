@@ -1,0 +1,19 @@
+638,PY 24880: Fix console execution freeze with IPython + Jedi
+2017-10-06T14:14:26Z,discuss,"
+No description provided.
+"
+2017-11-09T14:27:40Z,discuss,"Hi @fitermay! Thank you very much for the pull request!
+I have a question related to your changes in PydevXmlRpcClient.kt. I've been trying to reproduce the problem you're trying to fix there, but I failed. I tried different use cases, but I failed to raise an exception on line 71. Could you please describe steps for reproducing?"
+2017-11-10T04:00:11Z,discuss,@Elizaveta239 The code prevents cancelled completions requests from forming a convoy. You are unable to reproduce it because that exception will happen very rarely (only if something is very wrong).  The usual way for that block to be aborted is for ProcessCancelledException to be thrown.
+2017-11-10T04:00:11Z,discuss,The difference to previous behavior is that only one request at a time will be sent. If there are requests pending they will not be sent out until the current request is complete. These allows requests to be cancelled before they are sent out.
+2017-11-10T04:00:11Z,discuss,"To illustrate. Let's say I type 'df.head' into the console. This results in 4 completion requests:
+'df.h', 'dh.he', 'df.hea', 'df.head'."
+2017-11-10T04:00:11Z,discuss,Previously:
+2017-11-10T04:00:11Z,discuss,End result: Python ends up processing 3 cancelled requests before it gets to the final request
+2017-11-10T04:00:11Z,discuss,After patch:
+2017-11-10T04:00:11Z,discuss,End result: Only one cancelled request ends up being processed.  Now if use executed a command he will only be delayed by a backlog of a single request.
+2017-11-10T04:00:11Z,discuss,Keep in mind on the Python side the console is single threaded. For debugger commands there is a little bit of concurrency but mostly not due to GIL.  It is best to keep cancellable requests on the Java side until the Python side is available for processing.
+2017-11-10T12:12:45Z,discuss,"@fitermay Ok, I got it. Thank you very much for detailed explanation and for your pull request!"
+2017-11-14T12:57:36Z,discuss,Thank you for the pull request!
+2017-10-06T13:35:09Z,commit,PY-24880: Prevent Jedi from being enabled in IPython console.,github.com/JetBrains/intellij-community/pull/638/commits/a17d12a0ae77fbafc82879f49236a5f91d1ea06f
+2017-10-06T14:08:49Z,commit,PY-24880: Prevent multiple slow requests from forming a convoy,github.com/JetBrains/intellij-community/pull/638/commits/60bcc7a95fe92e3f72b188e4d30fd61780d2764b

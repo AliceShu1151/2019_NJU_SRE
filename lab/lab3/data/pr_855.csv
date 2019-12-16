@@ -1,0 +1,6 @@
+855,[Decompiler] Fix super qualifier for default interfaces
+2018-09-11T19:40:16Z,discuss,"
+No description provided.
+"
+2018-09-12T11:24:37Z,discuss,"manually merged, thanks!"
+2018-09-11T19:29:06Z,commit,Fix super qualifier for default interfaces,github.com/JetBrains/intellij-community/pull/855/commits/1e0a7cc26d69badebbe4314d438b60364bfcd0f3

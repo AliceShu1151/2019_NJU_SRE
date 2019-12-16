@@ -1,0 +1,8 @@
+423,(PY-19967) Fix code code completion in cases of namedtuple inheritance
+2016-07-02T23:36:22Z,discuss,"
+No description provided.
+"
+2016-07-05T12:22:56Z,discuss,@fitermay Thank you! I'll review your patch this week.
+2016-07-06T16:37:07Z,discuss,@sproshev Could please you take a look at this PR?
+2016-07-07T14:07:05Z,discuss,@fitermay Thanks! Applied. Soon it will be available in master :)
+2016-07-02T23:30:31Z,commit,pass TypeEvalContext when checking replaceable subclasses,github.com/JetBrains/intellij-community/pull/423/commits/4d0bb48517a65c6eec3a1704b1542ff39f366736

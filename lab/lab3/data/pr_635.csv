@@ -1,0 +1,8 @@
+635,Extends IdeaModuleBase to support jars
+2017-10-04T00:16:11Z,discuss,"IdeaModuleBase already extends a file set that supports zips or directories as inputs. This changes it so if the output of the model is a .jar, it will use the zip code path. It's unfortunate that the ant base class has two variables and expects only one of them to be set."
+2018-07-21T11:27:48Z,discuss,cc @chashnikov
+2018-07-23T09:18:02Z,discuss,"Sorry for the late reply, we somehow missed this pull request.
+Why do you need this? IdeaModuleBase describes location of module classes, and it's used to pack them into JARs to build IDE distribution (see org.jetbrains.intellij.build.impl.DistributionJARsBuilder). If it refers to a JAR file it means that that JAR file will be packed into another JAR file in IDE distribution and this won't work."
+2018-07-23T09:18:02Z,discuss,Also this change will cause problems if there is an existing module which output directory name ends with .jar (e.g. because the module name ends with .jar).
+2018-07-23T09:18:02Z,discuss,"If you want to build a distribution of an IDE by taking compiled classes from JARs, this should be done at a different level, see org.jetbrains.intellij.build.impl.CompilationTasksImpl#compileModules which already does something similar."
+2017-08-02T23:43:56Z,commit,Extends IdeaModuleBase to support jars,github.com/JetBrains/intellij-community/pull/635/commits/ea80f5bdcdcbbbdab3654388158d2732d1e5ff85

@@ -1,0 +1,9 @@
+572,pydevconsole unicode error ignore
+2017-05-16T09:19:13Z,discuss,"
+No description provided.
+"
+2017-05-16T09:45:29Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-07-21T12:12:37Z,discuss,cc @Elizaveta239
+2018-08-08T12:44:48Z,discuss,"Hi @likaiguo! Sorry for the late response, your changes are merged. Thank you very much for your pull request!"
+2017-05-16T09:09:33Z,commit,pydevconsole unicode error ignore,github.com/JetBrains/intellij-community/pull/572/commits/df88347cbdd007f6bc1138678526a6290f03afee
+2017-05-16T09:35:27Z,commit,Update pydevconsole.py,github.com/JetBrains/intellij-community/pull/572/commits/93d194faba8e29cf304a0a24ca9c86bbf8e482a1

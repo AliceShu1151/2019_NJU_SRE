@@ -1,0 +1,5 @@
+332,Allow passing productPropertiesPath to build.
+2015-12-07T22:06:16Z,discuss,Allows storing product properties files outside of tools/idea.
+2015-12-07T22:06:16Z,discuss,Change-Id: Ie1ee7520c570214e9b7bfc809c9eaa7088936054
+2015-12-08T08:35:43Z,discuss,Merged manually.
+2015-12-07T21:58:03Z,commit,Allow passing productPropertiesPath to build.,github.com/JetBrains/intellij-community/pull/332/commits/d6a044d6bd57f25615f044fada30f024d51d0fdf

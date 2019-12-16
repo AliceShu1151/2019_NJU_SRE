@@ -1,0 +1,7 @@
+856,Unintended autocomplete when typing B or P in Kotlin
+2018-09-12T15:28:59Z,discuss,Fix for https://youtrack.jetbrains.com/issue/KT-8474.
+2018-10-24T10:10:21Z,discuss,I'd say:
+2018-11-30T18:33:46Z,discuss,I'd say we need to rethink OTHER context type. Why Kotlin context matches Other context type?
+2018-11-30T18:43:02Z,discuss,There was a suggestion by Peter do not show templates in auto popup if there is nothing but them. I'm still not sure about it but I'll try to implement it
+2018-12-06T16:24:49Z,discuss,Merged manually
+2018-09-12T15:28:25Z,commit,Unintended autocomplete when typing B or P in Kotlin,github.com/JetBrains/intellij-community/pull/856/commits/0f003fa92064f7702cc5eebc8529db4a9364dde0

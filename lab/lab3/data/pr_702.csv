@@ -1,0 +1,3 @@
+702,Do not use a hard-coded color for active tool header
+2018-01-05T14:21:16Z,discuss,"It would be easier to theme this, like I'm doing with the Material Theme UI plugin"
+2018-01-05T14:20:42Z,commit,Do not use a hard-coded color for active tool header,github.com/JetBrains/intellij-community/pull/702/commits/360ebfdf0277b38e81a4349d0404b3c7091c7df5

@@ -1,0 +1,4 @@
+756,[PY-19218] Do not inherit parent environment ignored for PYTHONPATH
+2018-03-12T20:40:47Z,discuss,Possible fix for the issue.
+2018-03-16T18:14:42Z,discuss,Fixed
+2018-03-15T18:58:22Z,commit,"if PYTHONPATH is set in IDE, don't inherit parent env's PYTHONPATH",github.com/JetBrains/intellij-community/pull/756/commits/0a066ab8702005707eaafbedb56f6203b3f4dbf6

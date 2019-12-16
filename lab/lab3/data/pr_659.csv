@@ -1,0 +1,7 @@
+659,Splice side effect from String concatenation
+2017-11-08T22:02:45Z,discuss,According to https://bugs.openjdk.java.net/browse/JDK-8043677
+2017-11-08T22:02:45Z,discuss,is slower than
+2017-11-08T22:02:45Z,discuss,I've created a feature request https://youtrack.jetbrains.com/issue/IDEA-181103 (wtih measurement results) to have IDEA detecting such cases automatically and replaced them in the code of CE.
+2017-11-09T09:08:43Z,discuss,Closing since it was decided not to implement this kind of inspections.
+2017-11-09T09:08:43Z,discuss,But thanks for your contribution at any case!
+2017-10-24T19:53:36Z,commit,exclude side effect from String concatenation,github.com/JetBrains/intellij-community/pull/659/commits/d29fcd061977f9364334354ea2211f11297440e1

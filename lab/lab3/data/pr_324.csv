@@ -1,0 +1,14 @@
+324,Make NativeFileWatcherImpl more generic
+2015-11-12T18:22:29Z,discuss,"NativeFileWatcherImpl is nearly generic. It currently hard codes
+the property name to look up to find the path to fsnotifier and
+the property name to look up to see if the file watcher should
+be disabled."
+2015-11-12T18:22:29Z,discuss,"This pushes those values into a provider that subclasses can
+provide."
+2015-11-12T18:24:45Z,discuss,"We'd like to make use of a customized fs notifier and if we could supply native file watcher impl with a different exec path, we could just extend the class, provide the path, and be done."
+2015-11-12T18:24:45Z,discuss,I'm open to any solution that would allow us to do that. A similar solution would be to make these getter methods part of the class that subclasses could directly override.
+2015-11-13T15:40:51Z,discuss,Pushed upstream. Thanks!
+2015-11-12T16:57:11Z,commit,Make NativeFileWatcherImpl more generic,github.com/JetBrains/intellij-community/pull/324/commits/ba521ce9aaf4161b2094b3e2abd30e0ed38b1d6c
+2015-11-13T14:19:04Z,commit,Using simple overridable methods because it results in a smaller chan¡­,github.com/JetBrains/intellij-community/pull/324/commits/1c723064d1296d3c6e6d44416d1680cb312b536c
+2015-11-13T14:54:44Z,commit,removed wrapper call,github.com/JetBrains/intellij-community/pull/324/commits/3449e5323d7ebeaf2b1d96fe48f8bd0b6f9d3009
+2015-11-13T15:09:00Z,commit,cleaned up comments,github.com/JetBrains/intellij-community/pull/324/commits/f3708a53e7642f985aeb6f0fd4219d340d3e55bb

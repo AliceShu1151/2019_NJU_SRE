@@ -1,0 +1,28 @@
+1084,"Upgrade pip, setuptools and virtualenv"
+2019-03-09T07:11:04Z,discuss,"Removed the old modules as pip, setuptools and virtualenv and added all the new once."
+2019-03-09T07:11:04Z,discuss,I did a test changing my PyCharm as this steps:
+2019-03-09T07:11:04Z,discuss,"I created a new project with virtualenv:
+"
+2019-03-09T07:11:04Z,discuss,"Notice that the versions are old because it take pip v10 and setuptools 39.
+"
+2019-03-09T07:11:04Z,discuss,"I searched in the directory and I found this files here ./helpers
+"
+2019-03-09T07:11:04Z,discuss,"I replaced the file ./pycharm/lib/pycharm.jar and changed the versions for pip, setuptools and virtualenv.
+"
+2019-03-09T07:11:04Z,discuss,"I closed the Pycharm and I open it again then create a new project and Bingo the python modules were always updated to this last version.
+"
+2019-03-09T07:11:04Z,discuss,Then I checked in the GitHub official project and I notice that the file .src/com/jetbrains/python/packaging/PyPackageManagerImpl.java has the references for these modules.
+2019-03-09T07:11:04Z,discuss,"Resources I used:
+PyPI: PIP
+PyPI: Setuptools
+PyPI: Virtualenv"
+2019-03-09T07:11:04Z,discuss,"NOTE:
+The setuptools file is a zip file which I extracted and then compressed into a tar.gz"
+2019-03-11T15:27:13Z,discuss,"Have you signed our contributors agreement already? If you haven't, could you please go to https://www.jetbrains.com/agreements/cla/ and sign it electronically?"
+2019-03-11T15:38:16Z,discuss,No but I signed a few minutes ago.
+2019-03-12T11:32:59Z,discuss,"Great! Everything looks good to me (in particular, pip and setuptools are in sync with their versions bundled with virtualenv). Merged. We were actually going to do exactly that for the upcoming 2019.1 release, but you turned out to be slightly ahead :)"
+2019-03-12T11:32:59Z,discuss,"Also, we're unlikely to backport these updated packages to 2018.3 as all of them no longer support Python both 2.6 and 3.3 that we're compatible with there."
+2019-03-12T11:32:59Z,discuss,"By the way, no need to reverse-engineer PyCharm -- feel free to directly ask us about the implementation in the issue if you want to submit a pull request"
+2019-03-12T11:32:59Z,discuss,"Anyway, thanks for your contribution!"
+2019-03-18T13:51:43Z,discuss,Integrated as 41dba7b.
+2019-03-09T06:51:01Z,commit,"Removed the old modules as pip, setuptools and virtualenv and added a¡­",github.com/JetBrains/intellij-community/pull/1084/commits/ff67ef84ed01b2739d772c51e65d18cfd0e88273

@@ -1,0 +1,6 @@
+995,[external-system] make IDE grouping by external project path
+2018-11-28T17:52:15Z,discuss,"In the IDE grouping we want to pursue the same structure as we have projects structured on a disk. In this situation it makes sense to switch to grouping by an external project path. With the current implementation if, for example, a Gradle sub-project in a projects/foo folder overrides group in build.gradle like this:"
+2018-11-28T17:52:15Z,discuss,Then the current grouping will put :project:foo under com.example.foo node which is not what we want.
+2018-11-29T12:28:17Z,discuss,"Looks good, thank you. Will merge soon."
+2018-11-29T12:46:49Z,discuss,merged manually as 56bfaf3
+2018-11-28T17:47:22Z,commit,[external-system] make IDE grouping by external project path,github.com/JetBrains/intellij-community/pull/995/commits/043af637c2c079fffb262a43de69a4d60ecf8514

@@ -1,0 +1,7 @@
+717,"Improve description of ""Type can be weakened"" inspection"
+2018-01-27T13:57:08Z,discuss,"Bold font should be used to draw attention. Type names and method names
+are not the important eye catchers here, it's the names of the
+configuration knobs."
+2018-07-21T11:04:37Z,discuss,"@BasLeijdekkers, please take a look."
+2018-07-26T11:11:15Z,discuss,"Applied manually to Master with some minor changes, thanks for your contribution! I like how the unclear ""use the second checkbox to..."" was improved."
+2018-01-27T13:55:02Z,commit,"Improve description of ""Type can be weakened"" inspection",github.com/JetBrains/intellij-community/pull/717/commits/efa92fcc484fdb43d96b42dcdc7f9c4df6fe879b

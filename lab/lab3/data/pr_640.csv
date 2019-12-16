@@ -1,0 +1,5 @@
+640,Don't display parameter names for functional interfaces
+2017-10-08T10:26:19Z,discuss,Displaying predicate.test(t: this) (for java.util.function.Predicate) is hardly useful.
+2018-07-21T11:42:04Z,discuss,@xfix please add a test for the fix.
+2018-07-21T11:49:41Z,discuss,@JB-Dmitry reassing to Roman Ivanov if needed.
+2017-10-08T10:26:06Z,commit,Don't display parameter names for functional interfaces,github.com/JetBrains/intellij-community/pull/640/commits/563fa897dcc088be8db377635a3b50d1c888b374

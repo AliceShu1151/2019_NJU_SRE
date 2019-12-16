@@ -1,0 +1,3 @@
+1247,IDEA-227006 Associate stdout/stderr JUnit5 ReportEntry/reporting entries with proper test in IntelliJ as regular stdout/stderr
+2019-11-15T15:11:28Z,discuss,See https://youtrack.jetbrains.com/issue/IDEA-227006
+2019-11-15T15:08:43Z,commit,IDEA-227006 Associate stdout/stderr JUnit5 report entries with corres¡­,github.com/JetBrains/intellij-community/pull/1247/commits/15e6ea181f3c065dbefcb0db932429b47ef6b3d2

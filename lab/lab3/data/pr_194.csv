@@ -1,0 +1,5 @@
+194,"IDEA-126459: Fix ""Extract chained constructor"" checkbox not showing up"
+2014-06-23T21:54:51Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-126459
+2014-06-24T08:58:30Z,discuss,"Exactly, it is not set yet. Your change would allow to extract e.g. method with return value from first statements of the constructor so it would produce red code."
+2014-06-24T08:58:30Z,discuss,Fixed by moving this check after return type was calculated
+2014-06-23T21:52:45Z,commit,"IDEA-126459: Fix ""Extract chained constructor"" checkbox not showing up",github.com/JetBrains/intellij-community/pull/194/commits/1ce4cd52f12a736d85c52a5288b1aa971fca949e

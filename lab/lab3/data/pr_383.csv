@@ -1,0 +1,25 @@
+383,Fixed issues with Jump to source/ Jump to Type in python debugger
+2016-04-13T03:05:51Z,discuss,"--Fixed issue with jump to type not working unless type is imported directly in the scope. Usually the type won't be imported in the scope, so it wasn't working in the common case
+--Added support for jump to type, jump to source for frames other than the topmost frame
+--Fixed issue with jump to source not working if the element is a module name"
+2016-04-13T15:12:03Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-04-13T17:20:15Z,discuss,Sent
+2016-04-13T17:21:08Z,discuss,"Received, thanks."
+2016-04-14T13:21:20Z,discuss,@fitermay Thank you for the pull request! Could you please provide an example which shows the functionality added by these changes?
+2016-04-15T00:25:04Z,discuss,Example:
+2016-04-15T00:25:04Z,discuss,"In variables view select foo_object, jump to type source
+Behavior before: Doesn't work because FooClass is not imported directly (actually most common case)
+Behavior with change: Jumps to FooClass declaration"
+2016-04-15T00:25:04Z,discuss,"In variables view select foo_object-> field_1, jump to source
+Behavior before: Doesn't work because field_1 is inside inner frame
+Behavior with change: Jumps to field_1 assignment in the constructor"
+2016-04-15T00:25:04Z,discuss,"In variables view select module_b-> FooClass, jump to type source
+Behavior before: Goes to the 'type' type which is useless
+Behavior with change: Jumps to 'FooClass'"
+2016-04-15T11:42:37Z,discuss,"It looks very nice!
+Some Java code style remarks: please, always use braces even in single statement if-blocks and leave the brace at the end of the line."
+2016-04-15T11:49:49Z,discuss,"Sorry, forgot to reformat before push. I assume you can reformat after merging?"
+2016-04-15T12:12:18Z,discuss,"Yes, of course."
+2016-04-01T00:47:31Z,commit,--Properly resolve types in the debugger using the fully qualified ty¡­,github.com/JetBrains/intellij-community/pull/383/commits/051f29974e13d1a99af1d1850b4b1979cdad44be
+2016-04-01T18:23:59Z,commit,--Properly process objects which are type definitions,github.com/JetBrains/intellij-community/pull/383/commits/d43ef125813e24ecc01efbcab26a1090b8a8b49c
+2016-04-01T19:57:18Z,commit,--Add support for resolving source positions inside inner level elements,github.com/JetBrains/intellij-community/pull/383/commits/584d23dd9f6d667bbed186e85702262c8415fc87

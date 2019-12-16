@@ -1,0 +1,4 @@
+181,Joined two console CompositFilters into one
+2014-05-07T22:48:38Z,discuss,CompositeFilter uses all filters by default and merges results (skips intersecting hyperlinks) - to hopefully remove a need to introduce a new interface for ordering of filters
+2014-05-23T15:46:53Z,discuss,Another pull request created with more fixes
+2014-05-07T22:17:25Z,commit,joined two console CompositFilters into one,github.com/JetBrains/intellij-community/pull/181/commits/c22f13d7da3f5280cfae4f65f583c0523604bf70

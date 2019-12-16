@@ -1,0 +1,14 @@
+710,Custom iterator for SmartList
+2018-01-17T21:45:25Z,discuss,Current implementation of SmartList calls super.iterator() for size > 1 which means AbstractList.Itr is utilized. There's more effective implementation of Iterator provided in ArrayList so I used it as a prototype for this one (SmartList is also array-based for size > 1).
+2018-01-17T21:45:25Z,discuss,Effectiveness is measured with benchmark:
+2018-01-17T21:45:25Z,discuss,yielding this result:
+2018-01-18T08:47:20Z,discuss,"Thanks for caring, but I'd need something more than one microbenchmark to justify code complication and duplication. Any real scenarios that noticeably benefit from this change? Could you please also try BlackHole.consumeCPU to ensure the effect doesn't disappear in a more realistic situation?"
+2018-01-18T19:18:32Z,discuss,@donnerpeter I've made requested measurements with Blackhole.consumeCPU. Here tokens params is what was fed to consumeCPU:
+2018-01-18T19:18:32Z,discuss,"enhanced iterator wins all of them, except one (size 100, tokens 32), but the difference is within error."
+2018-01-18T19:18:32Z,discuss,Assuming currently SmartList has over 700 usages in IDEA CE (and I guess there's some more in enterprise edition and plugins ) I hope this optimization will help the whole IDE.
+2018-01-29T14:02:50Z,discuss,"Thanks! This optimization might help but might also hurt, because it increases the amount of code to be loaded at runtime and compiled by JIT. By a small degree, of course, but the performance improvements also seem to be relatively small. Can you find any real, not-so-microbenchmark cases it improves?"
+2018-02-12T22:05:30Z,discuss,"Initially I wanted to measure time needed to import and index IDEA's source code with and without my changes, but I've run into this issue https://youtrack.jetbrains.com/issue/IDEA-186491. As soon as it's fixed I'll do the measurement."
+2018-07-24T10:23:57Z,discuss,Any updates?
+2018-07-24T10:57:00Z,discuss,"If the usage of SmartList will be reduced in favour of ArrayList then this ticket should be closed and changes dropped. As for non-microbenchmark usage I'm not sure my measurements are correct, so those changes are not very valuable anyway."
+2018-07-24T11:14:14Z,discuss,"SmartListss are still valuable for saving memory, so in these places they're unlikely to be changed to ArrayList. But I'm not yet convinced the performance gain is justified by code growth."
+2018-01-17T20:51:46Z,commit,custom SmartList iterator,github.com/JetBrains/intellij-community/pull/710/commits/e39e47357093736ff4f5a42fc62ca403cd8ff871

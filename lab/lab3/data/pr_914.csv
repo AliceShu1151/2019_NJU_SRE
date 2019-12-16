@@ -1,0 +1,13 @@
+914,Show modules in bold on Project View
+2018-11-09T23:58:39Z,discuss,"When a GradleModuleDirectoryNode is shown the name of the module is
+appended in boldeface, unless it is the same as the path, but since
+shouldShowModuleName is overloaded to return false, this causes that the
+module's directory is not shown in bold face."
+2018-11-09T23:58:39Z,discuss,"This change causes the name of the module to appear in bold face when
+the module name is not appended. This fixes this bug:"
+2018-11-09T23:58:39Z,discuss,https://issuetracker.google.com/issues/77235561
+2019-11-25T14:06:31Z,discuss,"Thanks for the contribution, however the change causes unexpected presentation of the Gradle source set modules on Project View:
+"
+2019-11-25T14:06:31Z,discuss,I've fixed it using the following commit f74f118
+2019-11-25T14:06:31Z,discuss,"Please, let me know if it doesn't work for you."
+2018-11-09T23:48:32Z,commit,Show modules in bold on Project View,github.com/JetBrains/intellij-community/pull/914/commits/d56f54bf8370680058345af2668f79f8903ae90f

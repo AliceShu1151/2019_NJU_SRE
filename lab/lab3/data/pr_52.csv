@@ -1,0 +1,10 @@
+52,CheckboxTreeBase.CheckPolicy was called with uncheckChildrenWithUnchecke...
+2013-03-14T19:16:14Z,discuss,"Dear IntelliJ Team,"
+2013-03-14T19:16:14Z,discuss,I would like contributing a few small changes to enhance your great product.
+2013-03-14T19:16:14Z,discuss,This is my first time sending a pull request to an open source project and the first time using GitHub & Git so please give me a hint if I do something wrong.
+2013-03-14T19:16:14Z,discuss,"I signed the contribution agreement a few weeks ago and sent it by post, but I didn¡¯t receive any acknowledgement."
+2013-03-14T19:16:14Z,discuss,Best regards
+2013-03-14T19:16:14Z,discuss,Josef
+2013-03-26T20:09:48Z,discuss,Merged manually. Thanks for your contribution Josef!
+2013-03-26T20:53:58Z,discuss,Thanks Dmitry for reviewing my patches. I will send you a few additional pull requests in the near future.
+2013-03-14T18:26:04Z,commit,CheckboxTreeBase.CheckPolicy was called with uncheckChildrenWithUnche¡­,github.com/JetBrains/intellij-community/pull/52/commits/8eec6704b1c880df46259ba41bb762a06c8b78e5

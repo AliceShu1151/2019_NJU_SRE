@@ -1,0 +1,14 @@
+384,Minor pycharm fixes
+2016-04-15T05:02:18Z,discuss,"Details:
+One issue is refreshing the sdk in details dialog invokes PySdkUpdater, which in turn invalidates the modificator. the dialog tries to then use the invated modificator causing an assertion error and an NPE."
+2016-04-15T05:02:18Z,discuss,Issue two is framewok updater waits for process output on UI thread causing a major lockup
+2016-04-20T08:33:02Z,discuss,@vlasovskikh ping
+2016-04-24T23:37:08Z,discuss,"@fitermay Thanks for your PR. We've already fixed the first issue with NPE. I'll get back to this PR in a few days, sorry for the delay."
+2016-04-25T00:30:07Z,discuss,"@vlasovskikh
+Hi,
+I've seen the fix to the NPE. I'm pretty sure it leaves an issue of not picking up further changes in the dialog after the first Sdk refresh. That is if user refreshes Sdk then makes other changes those changes won't be picked up."
+2016-04-26T15:14:23Z,discuss,@fitermay Please rebase your PR on top of the master branch and I'll merge it.
+2016-04-26T15:40:08Z,discuss,@vlasovskikh Done
+2016-04-27T19:30:23Z,discuss,@fitermay Thank you for the PR.
+2016-04-14T22:46:42Z,commit,--fix NPE in PythonSdkDetailsDialog.java,github.com/JetBrains/intellij-community/pull/384/commits/3c68a65b3d026c5c3791ed7d22ed1a2c52009392
+2016-04-14T23:52:06Z,commit,--fix framework listener locking up UI thread,github.com/JetBrains/intellij-community/pull/384/commits/86b9e026d7433dbad4459228b81f44a443bf7be1

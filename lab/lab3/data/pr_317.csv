@@ -1,0 +1,15 @@
+317,IDEA-147080 Groovy Pointless Boolean Inspection should remove double negation
+2015-10-30T07:19:33Z,discuss,"Groovy Pointless Boolean Inspection should simplify by removing
+the double negation when it is the case."
+2016-03-01T09:31:47Z,discuss,"you could use Boolean.parseBoolean(operand) here, and .toString it later"
+2016-03-01T09:31:58Z,discuss,can be single line also
+2016-03-01T09:32:31Z,discuss,"this seems dangerous (will replace a single negation also), and is repeated in the code"
+2016-03-01T09:33:58Z,discuss,"Please provide some examples in the description of the commit, it's not obvious to me what happened before, and what happens now."
+2016-03-01T09:33:58Z,discuss,"Also, more tests might help as well :)"
+2016-03-01T09:34:37Z,discuss,same as below...
+2016-03-01T09:35:07Z,discuss,5 is a microoptimization
+2016-03-01T09:35:35Z,discuss,! is not a sign (you call it prefix below)
+2018-07-25T16:57:10Z,discuss,"@vladmm, please rebase the PR"
+2019-06-23T00:37:27Z,discuss,"hey @vladmm
+could you resolve the conflicts?"
+2015-10-30T07:06:04Z,commit,Groovy Pointless Boolean Inspection in double negation context,github.com/JetBrains/intellij-community/pull/317/commits/32ca7a03197d94bbb0643c05b45b6e5096591463

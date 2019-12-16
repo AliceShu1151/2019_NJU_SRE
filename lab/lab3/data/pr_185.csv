@@ -1,0 +1,59 @@
+185,Console filters merging of results
+2014-05-23T14:44:49Z,discuss,"
+No description provided.
+"
+2014-05-07T18:36:50Z,discuss,Is this optimization needed? The callee might not expect that the list will be modified.
+2014-05-07T19:37:21Z,discuss,"I've spent some time in yourkit and maybe 20 exception filters, and the memory allocation of this merge was huge, with this optimization it was minimal, but yes it has this huge problem :("
+2014-05-07T19:50:32Z,discuss,"Did you profile allocations or CPU sampling? Huge allocations don't imply ""slow"" in general.
+Huge allocations could be avoided in another way. E.g. don't allocate a new list for every CompositeFilter component in applyFilter loop."
+2014-05-07T20:06:08Z,discuss,"I think it initially ate me some time on GC, so I looked into memory allocation and fixed this. I will try to make it better"
+2014-05-07T18:37:59Z,discuss,"I'd understand ""overlap"" in a more general way, as ""intersect"""
+2014-05-07T19:27:05Z,discuss,"In my understanding:
+-two straight non parallel lines can intersect = http://www.mathsisfun.com/definitions/intersect.html
+-parallel lines overlap, and this case can be represented as two parallel lines"
+2014-05-07T19:37:16Z,discuss,I meant something in the spirit of TextRange.intersect*
+2014-05-07T19:59:43Z,discuss,"ok then, if you already use ""intersect"" for it, than I should continue..."
+2014-05-07T20:03:05Z,discuss,"It's set-theoretic intersection: containing common points. Actually, I think that you might as well delegate to one of those TextRange methods. It'll require some allocations though, so careful profiling would help. But then there'll be no duplication, which is good."
+2014-05-07T21:24:48Z,discuss,"From mathematical theory standpoint yes. I personally imagine it as those ranges(straight lines) do not have intersection but overlay, so overlap is more natural to me."
+2014-05-07T21:24:48Z,discuss,"Anyway, d55db84
+Memory allocation with 40 exception filters: http://i.imgur.com/NreII38.png"
+2014-05-10T20:58:54Z,discuss,"""Overlap"" is ok as a term. But this version of code is checking something else, at least not what TextRange.intersect* do."
+2014-05-07T18:39:51Z,discuss,Breaks API used in some plugins
+2014-05-07T18:41:24Z,discuss,"Ah I see, fixed later"
+2014-05-07T18:40:22Z,discuss,So what was the ugly hack?
+2014-05-07T19:00:20Z,discuss,"My initial idea from the first commit to just make a new ConsoleBuilder in DefaultDebugEnvironment and set it, but better is to just create a ConsoleBuilder with the right scope in the first place"
+2014-05-07T18:40:50Z,discuss,Add Nullable annotation?
+2014-05-07T19:41:21Z,discuss,"I do not dare to put it there. Since more places will give me a warning, and it looks like really a something which should not permit null."
+2014-05-07T19:51:46Z,discuss,"But you've fixed some NPE, so there are clients that pass null there.
+Anyway, this pull request will probably be reviewed by someone other than me, who understands that stuff more :)"
+2014-05-07T19:57:47Z,discuss,"I caused that NPE also :)
+This logic is same as before, if you have ExecutionEnvironment then construct ConsoleBuilder. I only changed that ConsoleBuilder"
+2014-05-07T20:01:06Z,discuss,Then don't cause NPEs ;) OK
+2014-05-10T20:59:00Z,discuss,"iterator() allocations can be avoided very easily, by index-based iteration (itli live template).
+Isn't it possible to make type system help you and pass this MyArrayList (or plain old mutable ArrayList) explicitly and avoid casting?"
+2014-05-10T22:32:19Z,discuss,BTW there seems to be O(n^2) complexity in the number of intersectsStrict calls.
+2014-05-11T19:14:17Z,discuss,"Cool, thanks. :-)
+I do not see how, other than using some wrappers. Or it could be deleted as premature optimization.
+Yes, but I can't think of any case where it would matter, so it is hard to optimize."
+2014-05-11T19:32:42Z,discuss,"It's OK to use one list as an optimization, this might matter in case of many filters. I'd just prefer if it was always a separate list created specifically for merging, where the elements are just added. In case there's just one ResultItem, there could be a more explicit optimization avoiding that intermediate list allocation. But it can be added later if it's needed, and made more explicit. Right now it's not clear from the code which cases it is optimizing."
+2014-05-11T19:32:42Z,discuss,"O(n^2) might matter when there are many filters all returning some highlights. Not sure how realistic that is though. And you're right, it's hard to fix. Maybe, if our interval tree is smart enough, it could be reused and the intersection could be done when actually adding the hyperlinks."
+2014-05-11T21:45:37Z,discuss,"It actually makes quite a difference when there are a lot of filters (which we do not have).
+It is optimized even more so that no Result object is created for just a wrapping of the final merged list, which you would need for that separate list.(if I understand you right) The code would probably made more sense, but it would not be as effective, and there is on problem, Result object actually contains data for flow control (Result#myNextAction), so you cannot have simply a list alone.
+SingletonList creation from Filter.Result could be removed but more simple code is better in this case imho."
+2014-05-11T21:45:37Z,discuss,"Agree, it would be better in the tree."
+2014-05-12T07:29:46Z,discuss,"I'd start with simple code (which makes sense) unless it's really slow. Not in terms of allocations, but in terms of milliseconds with profiling disabled."
+2014-05-12T07:29:46Z,discuss,It would be better in the tree if a) tree supports that b) it's important in performance terms.
+2014-05-12T07:57:13Z,discuss,"Ok, I will try it."
+2014-05-16T21:28:47Z,discuss,"@donnerpeter So I finally simplified it. The speed is fine, better in some cases, worse in others, nothing important. 9c9ad0a"
+2014-05-23T15:47:51Z,discuss,"Merged manually, thanks!"
+2014-05-23T16:29:09Z,discuss,Thank you!
+2014-05-05T16:53:09Z,commit,"do not call ExceptionFilters#getFilters manually, it will be called a¡­",github.com/JetBrains/intellij-community/pull/185/commits/c04bf2dffe31258c47be6283d4d03b99ddf7c1f2
+2014-05-05T17:32:01Z,commit,removed ugly hack in DefaultDebugEnvironment,github.com/JetBrains/intellij-community/pull/185/commits/7ae19759adb55803ef90a3b646019fd9dc639373
+2014-05-05T17:35:09Z,commit,npe fix,github.com/JetBrains/intellij-community/pull/185/commits/2851d489ef869508e327a0ca5a887e6618026c0f
+2014-05-05T17:40:02Z,commit,better to not break someone,github.com/JetBrains/intellij-community/pull/185/commits/667dfa94da1cefaa2f2d9c1cea168e13ce438bd6
+2014-05-05T21:20:24Z,commit,"use all filters, merge results, skip overlapping hyperlinks",github.com/JetBrains/intellij-community/pull/185/commits/e6e5e67d62b359d8dd049d1906e327a6e990d7b0
+2014-05-07T21:07:18Z,commit,"safer ArrayList, overlaps->intersects",github.com/JetBrains/intellij-community/pull/185/commits/d55db840828a2a22cae0143d127abe2dbf245618
+2014-05-11T20:53:11Z,commit,"indexed for loops to reduce memory allocation, cleanup",github.com/JetBrains/intellij-community/pull/185/commits/14fac37316d82e255235250c1fe3b10af1053979
+2014-05-11T21:50:22Z,commit,code reformat,github.com/JetBrains/intellij-community/pull/185/commits/29fc4ef93800d15c6a1ae0945b694a40aa4f2307
+2014-05-11T21:52:50Z,commit,javadoc,github.com/JetBrains/intellij-community/pull/185/commits/cd3501247ed4696996de960a179cb49c2bf21900
+2014-05-16T18:44:01Z,commit,simplified CompositeFilter,github.com/JetBrains/intellij-community/pull/185/commits/9c9ad0ae61fd07dd3222aecf0f239823f07958b7

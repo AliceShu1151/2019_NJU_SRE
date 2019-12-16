@@ -1,0 +1,6 @@
+187,Convert ModuleFileIndex to a module-level service.
+2014-05-23T15:58:10Z,discuss,"
+No description provided.
+"
+2014-05-23T16:06:57Z,discuss,Merged manually
+2014-05-23T15:55:58Z,commit,Convert ModuleFileIndex to a module-level service.,github.com/JetBrains/intellij-community/pull/187/commits/4be8c9b455d2ba4de93210c3ef15cf516fcca0c4

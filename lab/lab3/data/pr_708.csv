@@ -1,0 +1,19 @@
+708,Fix incorrect closing streams in sanselan IOUtils
+2018-01-11T18:28:49Z,discuss,"
+No description provided.
+"
+2018-01-13T16:30:31Z,discuss,This class is deprecated and is not intended to be used. It was not removed only to keep compatibility with plugins which have not yet been updated.
+2018-01-13T16:37:03Z,discuss,"To keep compatibility, it must work properly.
+The method, however, has a bug that cannot copy streams of which size less than the size of a buffer.
+So, not updated plugins won't work properly, and I'm using one of them."
+2018-01-13T16:44:00Z,discuss,"Nope, ""keeping compatibility"" means ""not breaking the stuff that used to work""."
+2018-01-13T16:44:00Z,discuss,"Maybe you could send a pull request to the plugin, to help the author in migrating to new API?"
+2018-01-13T16:58:08Z,discuss,"The bug will ""break the stuff that used to work"".
+This class was just ""added"" at 2017.3 with removing org.apache.sanselan package.
+(change notes, commit log)
+I cannot find the original source of your customized org.apache.sanselan package, but it doesn't have the same bug. (Please refer this source)
+Please refer the original source from here."
+2018-01-13T17:02:32Z,discuss,@gregsh Please have a look.
+2018-03-27T11:13:49Z,discuss,@dplusic Thanks for the fix and sorry for delay! Will see it back-ported.
+2018-03-27T11:13:49Z,discuss,"UPD Back-ported to 173, 181, 181.4445 (2018.1.1)."
+2018-01-11T18:17:52Z,commit,fix incorrect closing streams in sanselan IOUtils,github.com/JetBrains/intellij-community/pull/708/commits/bcc99b7af8d955a6b6847c783c5f378fb464b3d7

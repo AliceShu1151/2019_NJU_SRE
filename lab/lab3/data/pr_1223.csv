@@ -1,0 +1,5 @@
+1223,Null check is added for PopupChooserBuilder.myItemChosenRunnable:crea¡­
+2019-10-29T11:19:19Z,discuss,Null check is added for PopupChooserBuilder.myItemChosenRunnable:createPopup
+2019-10-29T11:19:19Z,discuss,When I try to create JBPopup like:
+2019-10-29T11:19:19Z,discuss,I have to invoke setItemChoosenCallback with a stub to prevent NPE:
+2019-10-29T10:54:42Z,commit,Null check is added for PopupChooserBuilder.myItemChosenRunnable:crea¡­,github.com/JetBrains/intellij-community/pull/1223/commits/fdde9cfe61d5f282b64822806241277d974f0fe0

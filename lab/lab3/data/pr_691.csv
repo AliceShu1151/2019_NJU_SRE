@@ -1,0 +1,4 @@
+691,IDEA-184002 Fix validation of resource directory names
+2017-12-19T22:06:20Z,discuss,Proposed fix for https://youtrack.jetbrains.com/issue/IDEA-184002
+2017-12-20T19:19:57Z,discuss,Fixed in com.intellij.psi.impl.file.JavaDirectoryServiceImpl#getPackage instead. Thanks for looking at it!
+2017-12-19T21:01:25Z,commit,IDEA-184002 Fix validation of resource directory names,github.com/JetBrains/intellij-community/pull/691/commits/e3c4a78756ee4bef8bfffbdbce348a878f0087ce

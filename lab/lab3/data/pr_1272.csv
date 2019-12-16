@@ -1,0 +1,16 @@
+1272,Fix CustomizedActionGroup refresh
+2019-12-12T17:30:56Z,discuss,"Currently, if the underlying ActionGroup that is wrapped by a
+CustomizedActionGroup changes after the CustomizedActionGroup
+is created, this change is not recognized and the
+CustomizedActionGroup will display stale Actions in the
+toolbar."
+2019-12-12T17:30:56Z,discuss,"The fix adds property change firings to DefaultActionGroup on
+Action add/remove/reset/replacement/etc..., with the
+CustomizedActionGroup acting as the property change listener.
+Once the property change fires, the CustomizedActionGroup
+refreshes its children by querying the DefaultActionGroup
+again."
+2019-12-12T20:31:06Z,discuss,"The CL is just one way of going about fixing the issue. Basically, CustomizedActionGroup never gets notified that the underlying DefaultActionGroup has changed. I suspect prior to 2019.3 (your org's recent code optimization/cleanup effort), CustomizedActionGroup always gets initialized after Executors are created and registerd in the Run/Debug DefaultActionGroup. I'm guessing that because the recent release (some CL in that time frame) flips the order, it's causing this issue."
+2019-12-12T20:31:06Z,discuss,"The PR CL basically just sends notifications to the CustomizedActionGroup if the underlying DefaultActionGroup changes. I didn't want to use the Schema change mechanism, since I believe that should be reserved for users modifying the customization. But if all know of a better way (perhaps changing/reverting the ordering or initialization), then go with that instead."
+2019-12-13T20:33:20Z,discuss,This fix was merged to master branch with some changes: now DefaultActionGroup has own modificationTimeStamp and getter for it (as well as CustomActionsSchema has its own stamp) and we check these modifications in the same way. Thank you!
+2019-12-06T23:30:53Z,commit,Fix CustomizedActionGroup refresh,github.com/JetBrains/intellij-community/pull/1272/commits/44e52bfb381696737b1f0428fd008c5f7ba41b11

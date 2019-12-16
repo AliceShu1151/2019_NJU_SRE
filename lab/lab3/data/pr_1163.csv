@@ -1,0 +1,3 @@
+1163,IDEA-212715 - fixed snapshooter's ClassNotFoundException on startup
+2019-06-28T11:00:11Z,discuss,Full description available at the issue's page comment IDEA-212715
+2019-06-28T10:59:15Z,commit,IDEA-212715 - fixed snapshooter's ClassNotFoundException on startup,github.com/JetBrains/intellij-community/pull/1163/commits/0941aca18c19496a5dc93bbd8dd954a306de4b21

@@ -1,0 +1,6 @@
+1233,fix potential NullPointerException in Graphics2DLog
+2019-11-05T21:39:03Z,discuss,This PR contains the following changes:
+2019-11-07T11:15:07Z,discuss,Merged manually. Thanks for the contribution.
+2019-11-05T21:06:42Z,commit,- fix potential NullPointerException in drawImage (img can be null),github.com/JetBrains/intellij-community/pull/1233/commits/08343cb1bc2b9dd0837cf1415ecbfc3c362f9dd8
+2019-11-05T21:15:49Z,commit,- log the right method name,github.com/JetBrains/intellij-community/pull/1233/commits/26baf380b74b6e3cecfff6e43c66dfaf24de958d
+2019-11-05T21:21:15Z,commit,- remove 'String.format' if not required,github.com/JetBrains/intellij-community/pull/1233/commits/61ced5eda97532fef5309422734784479a058a50

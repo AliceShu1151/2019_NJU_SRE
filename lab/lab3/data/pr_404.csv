@@ -1,0 +1,6 @@
+404,PsiPrimitiveType#getText(): avoid call to PsiType#getAnnotations() if redundant
+2016-05-24T15:31:33Z,discuss,"
+No description provided.
+"
+2017-06-09T09:27:49Z,discuss,Was fixed last year in a very similar manner.
+2016-05-24T15:30:39Z,commit,PsiPrimitiveType#getText(): avoid call to PsiType#getAnnotations() if¡­,github.com/JetBrains/intellij-community/pull/404/commits/798dd8d6ea7cc2ce1389d95506dae96484d9d83c

@@ -1,0 +1,3 @@
+147,IDEA-119665 Memory leak in RemoteMavenServer when buildnumber plugin is used
+2014-02-01T15:56:46Z,discuss,Addressing issue by monitoring shutdown hooks before and after maven execute.
+2014-02-01T15:54:34Z,commit,IDEA-119665 Memory leak in RemoteMavenServer when buildnumber plugin бн,github.com/JetBrains/intellij-community/pull/147/commits/87211c7cf389edeb54dfa56c2d7707e7a32e3d63

@@ -1,0 +1,55 @@
+27,Add right margin guideline to commit message editor
+2012-12-06T03:17:25Z,discuss,This pull adds a configurable right margin to the commit message editor. See IDEA-96737 for more context.
+2012-12-06T03:17:25Z,discuss,Definitely let me know if you have any questions/suggestions; I'd be glad to make any changes you folks would like to see to get this in.
+2012-12-06T03:17:25Z,discuss,(My signed contributor agreement should be in the contribute@jetbrains.com inbox)
+2012-12-06T14:26:18Z,discuss,"Thank you for the pull request.
+I've took a look at the changes and let me share some comments:"
+2012-12-06T21:02:36Z,discuss,"Hey @klikh, thanks for the notes.  Here's my thoughts:"
+2012-12-06T21:02:36Z,discuss,"Also noticed something while re-testing this: the new configuration string (""Commit message right margin (columns)"") is not showing up for searches in the Settings dialog.  What am I missing there?  In my experience, new things are always picked up by search automatically, but I've never looked into how that happens. (Solved!  See comment below)"
+2012-12-12T18:18:06Z,discuss,Update: config search works great!
+2012-12-12T18:18:06Z,discuss,I worked out that com.intellij.ide.ui.search.TraverseUIStarter generates an updated /search/searchableOptions.xml (knowing that there was search-related build/release process was the piece I was missing before).  I did this locally and confirmed that search on the new config works brilliantly.
+2012-12-12T18:18:06Z,discuss,Looking forward to your response to my notes above and getting this merged.  Thanks!
+2013-01-27T20:18:55Z,discuss,"Hey @klikh, just wanted to check if there were any updates on this."
+2013-01-27T20:18:55Z,discuss,"I'm worried my quick questions got buried in the context I was trying to provide above, making this seem more complex than it is.  I apologize if that was the case."
+2013-01-27T20:18:55Z,discuss,"To try and help things along, here's a summary of the outstanding questions:"
+2013-01-27T20:18:55Z,discuss,"Once we've settled those, it feels like we'll be really close to done here..."
+2013-01-30T14:20:35Z,discuss,"Hello @dmarcotte,"
+2013-01-30T14:20:35Z,discuss,I'm sorry for long delay with the answer. Indeed this pull request was forgotten by me buried by other tasks.
+2013-01-30T14:20:35Z,discuss,"Design
+I have indeed overlooked that Feature was just an on/off property. In that case your design decision makes sense. But it would be much better not to introduce another method to the EditorTextFieldProvider, but improve the Feature itself: make it not a enum, but an interface with several trivial instances (SOFT_WRAP, SPELL_CHECK, etc. - current ones which provide just on/off ability, they would be instances of a simple Feature implementation which could be called SimpleFeature or OnOffFeature or something like that). CommitMessage would introduce a separate implementation of the Feature for our task - commit message line margin, that would customize the editor as needed.
+I have consulted with our expert on Editor subsystem, and he also thinks that improving Feature is better than adding another getEditorField version to the EditorTextFieldProvider."
+2013-01-30T14:20:35Z,discuss,"Turning the setting on/off by default
+I think the best decision would be to turn the setting off by default (because such conventions are not widely used in other VCSs), but turn it on for Git. This can be a bit tricky, because the setting is not Git specific. One of solutions I could think of would be to save it as Boolean, default it to null, and initialize (if it is null) to true from the Git plugin initializer. It would be nice if you propose something better :)"
+2013-01-30T14:20:35Z,discuss,"VcsCheckBoxWithSpinnerConfigurable
+From my point of view, spinner is better, since it is a common control for numbers. Probably the control in Code Style settings should be changed as well ;)"
+2013-01-30T14:20:35Z,discuss,"Other
+I've also noticed that SOFT_WRAP and ADDITIONAL_PAGE_AT_BOTTOM Features seem to be forgotten in new code. Could you please return them back?"
+2013-01-30T16:30:48Z,discuss,No worries on the delay @klikh; I appreciate the time you're putting into this.
+2013-01-30T16:30:48Z,discuss,As for your notes: these look great.  I'll push some updates to my branch soon.
+2013-01-30T16:30:48Z,discuss,Thanks again!
+2013-02-03T20:07:01Z,discuss,Added commits to address your notes:
+2013-02-03T20:07:01Z,discuss,"Design
+Converted the enum to an interface as suggested (actually, an abstract class).  This left the core of the existing approach intact, let us add the new configuration for right margin, and had the nice benefit of simplifying some of the code somewhat."
+2013-02-03T20:07:01Z,discuss,"Turning the setting on/off by default
+Commit message margin now defaults to off.  (Decided to keep it simple for the purposes of this pull; I may give it some more thought and send a followup pull trying to implement something smarter just for the git case as you alluded to.)"
+2013-02-03T20:07:01Z,discuss,"VcsCheckBoxWithSpinnerConfigurable
+Done.  Updated Code Styles page for you too :)"
+2013-02-03T20:07:01Z,discuss,"Other
+Restored those settings.  (Nice catch!)"
+2013-02-03T20:07:01Z,discuss,Also: I rebased from master to ensure you a clean merge.
+2013-02-03T20:07:01Z,discuss,"Hopefully we're good to go, but don't hesitate to hit me with other notes/questions."
+2013-02-14T17:53:01Z,discuss,This fix looks good to me. I've applied the pull request.
+2013-02-14T17:53:01Z,discuss,"As you correctly mentioned above, this change introduced real overhead in EditorFeature + EditorCustomization structure. So we've decided to simplify it to leave only one of these instances. Please see the change here: 1d93cac"
+2013-02-14T17:53:01Z,discuss,"Let me note a couple of organizational items on contributing procedure (this time it's fine, just for future):"
+2013-02-14T17:53:01Z,discuss,Thanks a lot for you collaboration! We expect more pull requests :)
+2013-02-14T21:20:37Z,discuss,Fantastic!
+2013-02-14T21:20:37Z,discuss,As for your notes on contributing procedure: totally makes sense.  I'll definitely keep this in mind in future contributions.  Thanks for letting me know what you need.
+2013-02-14T21:20:37Z,discuss,Also: 1d93cac looks great.  The extra module dependencies seem like a great trade for removing so much complexity.
+2013-02-14T21:20:37Z,discuss,Thanks again for helping get this in!
+2012-12-06T02:48:26Z,commit,Add right margin guideline to commit message editor,github.com/JetBrains/intellij-community/pull/27/commits/7729e52141c339a2e8aafd1c67f5b91c312c543e
+2012-12-06T20:48:27Z,commit,Remove duplicated editor setup,github.com/JetBrains/intellij-community/pull/27/commits/929303d4857645dec3a35c2b2b044f3bf3098087
+2013-02-03T14:54:43Z,commit,Use spinner control for VcsCommitMessageMarginConfigurable,github.com/JetBrains/intellij-community/pull/27/commits/100beb07ba304b70dbe9337474428814a7944060
+2013-02-03T15:22:26Z,commit,Use spinner control for Code Style->General right margin,github.com/JetBrains/intellij-community/pull/27/commits/057e98d608a7b1485779dfb2c851706acb3699fa
+2013-02-03T15:35:15Z,commit,Default commit message right margin to off,github.com/JetBrains/intellij-community/pull/27/commits/20f8315a066cfe5953cc032fc2e4d6a71258ed8e
+2013-02-03T19:07:13Z,commit,Refactor EditorTextFieldProvider to support more features,github.com/JetBrains/intellij-community/pull/27/commits/10fae7dee849f2ba11be0625dcba46ff9875d122
+2013-02-03T19:53:13Z,commit,Restore commit message editor configs,github.com/JetBrains/intellij-community/pull/27/commits/5e49dded8ddf6888f8e082aae54a52b53f1251d8

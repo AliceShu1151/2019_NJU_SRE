@@ -1,0 +1,16 @@
+1183,IDEA-22407: Comply with XDG Base Directory Specification on Linux
+2019-08-03T20:12:40Z,discuss,"Implement platformPath for the XDG Base Directories Specification and
+split the IDEA configuration into the corresponding XDG_CONFIG_HOME,
+XDG_DATA_HOME & XDG_CACHE_HOME directories."
+2019-08-03T20:12:40Z,discuss,"In case no old configuration directory under XDG_CONFIG_HOME exists
+then import the last old configuration from the home directory. But
+move the plugins directory into the corresponding directory under
+XDG_DATA_HOME."
+2019-08-03T20:12:40Z,discuss,Parameters are renamed to indicate the usage on multiple systems.
+2019-08-04T07:11:22Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-08-04T09:05:08Z,discuss,I submitted the CLA.
+2019-08-07T19:40:20Z,discuss,Thanks!
+2019-08-07T19:40:20Z,discuss,"I have a couple of remarks to changes in the import code, though, and it would be nice to add some tests. Would you like to improve the patch yourself or rather want me fix it?"
+2019-08-08T16:30:47Z,discuss,"Since it's only a small patch, it'll be quicker if you just fix it."
+2019-09-24T21:00:35Z,discuss,"Status update: we've planned the change for IDEA 2020.1, along with a similar one for Windows."
+2019-08-03T19:42:19Z,commit,IDEA-22407: Comply with XDG Base Directory Specification on Linux,github.com/JetBrains/intellij-community/pull/1183/commits/481be16712aa3ccea6ba16dd10b516368cbcc272

@@ -1,0 +1,8 @@
+674,Fix an ildefined comparator in AbstractTreeUi.
+2017-12-04T12:32:04Z,discuss,"Hi,"
+2017-12-04T12:32:04Z,discuss,"this patch is to fix an ildefined comparator in AbstractTreeUi which causes a lot of crashes related to https://youtrack.jetbrains.com/issue/IDEA-181904. (#IDEA-181904) However, please note that the patch does not fix the problem entirely. I suspect it is not the root cause but just something triggered by too many null descriptors or similar.
+Attn:  @vladsoroka"
+2017-12-04T18:17:08Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-12-04T18:22:49Z,discuss,"Ah, it was not clear from your profile. You don't have to sign a separate CLA indeed."
+2017-12-05T13:10:20Z,discuss,"Thanks for the contribution, Yuriy! I've merged the PR using the following commit adc31c9"
+2017-12-04T12:21:20Z,commit,Fix an ildefined comparator in AbstractTreeUi.,github.com/JetBrains/intellij-community/pull/674/commits/0dae6f23ef522f11efaa0eacaf0313cf4f614ce0

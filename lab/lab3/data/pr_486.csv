@@ -1,0 +1,16 @@
+486,make console patcher work
+2016-12-07T18:00:16Z,discuss,"Current implementation of consoleUI for patcher did not check ANY errors and conflicts that may be found during the process. Moreover, it used to skip all error and apply changes as-is"
+2016-12-07T18:00:16Z,discuss,The patch provides a logging and error reporting for that case.
+2016-12-07T18:00:16Z,discuss,"I failed to find integration tests for console running patcher, so tests were not added to check this case"
+2016-12-07T18:05:25Z,discuss,Only last two commits are actually the fix. The rest are here my mistake
+2016-12-08T15:33:45Z,discuss,@jonnyzzz Please rebase against current origin/master and remove commits that are not needed. Thanks.
+2016-12-08T15:34:58Z,discuss,This branch was merged by @bulenkov. Gonna close it now
+2016-12-07T17:02:22Z,commit,nodejs rc producer using yml config file ¡ª fix isConfigurationFromCon¡­,github.com/JetBrains/intellij-community/pull/486/commits/a048035d971c9807748b0df370c063275acea552
+2016-12-07T17:05:41Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/486/commits/e8a4c0addf7c2c5881b1dc56e0c76adb2556a0ad
+2016-12-07T16:51:56Z,commit,Java: Added a test case to DefUseTest for nested 'try/finally' within¡­,github.com/JetBrains/intellij-community/pull/486/commits/fcf94c75d8e3736a3f56af8c389dc19485e094c4
+2016-12-07T17:17:33Z,commit,Run Configurations dialog: limit minimum size for the tree (now width¡­,github.com/JetBrains/intellij-community/pull/486/commits/de96a58e25fd3890bd03e4c4e5e812f901f5ccc9
+2016-12-07T17:35:28Z,commit,"display the file name in ""Outdated stub in index"" message",github.com/JetBrains/intellij-community/pull/486/commits/b5389da6573fbcd3253e2418d2107b1331c8db60
+2016-12-07T11:21:37Z,commit,new inference: check intersection type of upper bound to detect subst¡­,github.com/JetBrains/intellij-community/pull/486/commits/4290a37a08df4ce2e8a2320b183dd847e168a3cb
+2016-12-07T17:41:36Z,commit,ensure no whitespaces/comments left after dequalify with type annotat¡­,github.com/JetBrains/intellij-community/pull/486/commits/b086783d8d8ddbeaf8c1696ffe22cb77fc5cd359
+2016-12-07T17:39:48Z,commit,make sure all possible exceptions are logged and error result is retu¡­,github.com/JetBrains/intellij-community/pull/486/commits/0a3d44230cdabdf351fb471754550762ed372d1e
+2016-12-07T17:43:06Z,commit,dump validation messages and fail if there are some conflicts and/or ¡­,github.com/JetBrains/intellij-community/pull/486/commits/3cfa5435714f50f934842787e62776dd7ab6d178

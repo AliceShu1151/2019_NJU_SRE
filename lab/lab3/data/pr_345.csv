@@ -1,0 +1,5 @@
+345,Allowes to create WordScanner for cacheBuilder with thread-unsafe lexer
+2016-01-10T15:38:30Z,discuss,"CacheBuilderEP caches WordScanner, so if your Lexer used in scanner is not thread-safe - you've got a problem. This PR allowes to override lexer getter and create new lexer instance on each request."
+2016-01-10T15:34:47Z,commit,Allowes to create WordScanner for cacheBuilder with thread-unsafe lexer,github.com/JetBrains/intellij-community/pull/345/commits/331fc8069573d208cd1ddefddd5691e6d7fcb693
+2016-03-03T04:53:42Z,commit,Merge branch 'master' of git://git.jetbrains.org/idea/community,github.com/JetBrains/intellij-community/pull/345/commits/0c39671e0d475261d0ba4520a7d89815e677420e
+2016-03-03T05:12:03Z,commit,Removed Perl extensions from defaultFileTypes to make enable offering¡­,github.com/JetBrains/intellij-community/pull/345/commits/603d2d2b975b4378c4927ed03401e541edfbf935

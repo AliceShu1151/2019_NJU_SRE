@@ -1,0 +1,6 @@
+767,PY-29092: Merge PYTHONPATH instead of overriding in console debugger
+2018-03-22T03:58:30Z,discuss,"
+No description provided.
+"
+2018-08-07T12:50:24Z,discuss,Merged in PyCharm 2018.2
+2018-03-22T03:57:07Z,commit,PY-29092: Merge PYTHONPATH instead of overriding in console debugger,github.com/JetBrains/intellij-community/pull/767/commits/b311ea4957824ea693be4b0a30e45ec8558447d7

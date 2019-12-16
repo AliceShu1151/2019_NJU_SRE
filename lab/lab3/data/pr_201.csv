@@ -1,0 +1,32 @@
+201,Awesome WM support for IntelliJ
+2014-07-18T09:38:57Z,discuss,"Awesome WM has some issues with Java applications (https://awesome.naquadah.org/wiki/Problems_with_Java). When you start IntelliJ while using Awesome WM you just get a gray window. To fix this you basically have to fake the window manager name using the wmname tool.
+The lines I added first test if the wmname tool is available and then use it to set the window manaer name to LG3D (which apparently is one that java likes).
+It would be awesome if you could pull this one in. Feel free to remove the huge comment I put there to justify the 3 lines of code I added."
+2014-07-18T09:49:21Z,discuss,"BTW, I am not going to sign something and send it as a letter to prague just for 3 lines of code. Feel free to reject the pull request and steal/copy paste the 3 lines. That should keep you out of legal troubles; I just want the feature, I do not need the credits."
+2014-07-18T10:04:55Z,discuss,You could send a photo of the document via email...
+2014-07-18T10:06:36Z,discuss,"OK, if you promise to accept the pull request I will do that ;-)"
+2014-07-18T10:06:36Z,discuss,"On Fr 18 Jul 2014 12:05:03 CEST, Vojt¨§ch Kr¨¢sa wrote:"
+2014-07-18T10:23:26Z,discuss,"I promise to accept it, into my fork. :-)"
+2014-07-18T10:28:27Z,discuss,"That is very nice of you, but would I need to sign the paperwork for your fork?"
+2014-07-18T10:53:01Z,discuss,"Nope, but I do not suggest signing the paperwork for me, but for JetBrains."
+2014-07-18T10:53:01Z,discuss,"You required my promise, so I gave you one. Whether you actually want to pull into my fork is up to you, you have my promise nevertheless. You can now send the document to contribute@jetbrains.com as you said you would ;-)"
+2014-07-18T11:48:35Z,discuss,"@erniejunior We can't accept a pull request without Contributor Agreement. That's not because we are corporate monsters of bureaucracy. That is simply necessary for legal reasons. However, signing an agreement and emailing it doesn't seem to hard to me. Actually, it looks like the time frame required for it is not significantly larger than we've already spent for this discussion :)"
+2014-07-18T11:53:54Z,discuss,"If you accept it by email, I'll send it over."
+2014-07-18T11:53:54Z,discuss,"On Fr 18 Jul 2014 13:48:43 CEST, Kirill Likhodedov wrote:"
+2014-07-18T12:02:39Z,discuss,"Sure, we accept agreements by email. Just print it, sign, scan or take a photo - and send."
+2014-07-18T12:04:47Z,discuss,@klikh It would be nice if you updated http://www.jetbrains.org/display/IJOS/Contributor+Agreement to contain this information.
+2014-07-18T12:07:21Z,discuss,"@krasa Yep, I've just noticed that possibility to send agreement via email is missing from that document. Was pretty sure that it is so, especially since my template comment here on GitHub is:"
+2014-07-18T13:10:33Z,discuss,It's out
+2014-07-18T13:14:05Z,discuss,"Received, thanks."
+2014-07-18T14:09:52Z,discuss,"@erniejunior sorry, we won't merge this request because of it's side effects. Also, have you tried IDEA 14 EAP? It should contain a build-in workaround for this problem."
+2014-07-18T14:54:59Z,discuss,"Yes, I am using the EAP (138.1029).
+This is how the splash screen looks:
+
+This is IntelliJ after the splash screen (without my patch):
+
+Apparently it is not fixed yet?
+I understand your concerns with the side effects. Would you accept a version that only triggers the window manager name change when awesome wm is actually used?"
+2014-07-18T20:47:09Z,discuss,"Or is broken in some other way.
+Which versions of Java and Awesome do you use?"
+2014-07-18T20:54:21Z,discuss,"Switching WM name on the fly may affect other programs regardless of current WM, at least one such case is mentioned here:  http://youtrack.jetbrains.com/issue/IDEA-116527#comment=27-751858"
+2014-07-18T09:38:20Z,commit,Awesome WM support for IntelliJ,github.com/JetBrains/intellij-community/pull/201/commits/9ab6f1813e068b14247192f08dc9c71e4ac4f972

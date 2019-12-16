@@ -1,0 +1,4 @@
+473,Make platform/dvcs-impl/resources a resources root
+2016-11-28T22:32:04Z,discuss,"бн instead of a sources root, since it contains only icons."
+2016-12-06T17:30:14Z,discuss,Merged manually. Thanks.
+2016-11-28T22:25:33Z,commit,Make platform/dvcs-impl/resources a resources root,github.com/JetBrains/intellij-community/pull/473/commits/ab91eb2b1b5a00ab5437e5eab428029db5977d07

@@ -1,0 +1,8 @@
+1091,pytest: fix comparing asserts
+2019-03-14T09:03:31Z,discuss,"The plugin adapts pytest's output of (in)equality assertions to the format expected by PyCharm's comparison tool. However it gets truncated values from pytest which makes the comparison mostly useless. This fix overrides the truncation(s), and further improves the comparison by making it multiline (for comparing complex structures)."
+2019-03-14T09:23:48Z,discuss,
+2019-03-18T11:08:09Z,discuss,"Hello.
+Thank you for your contribution. PyCharm uses teamcity-messages packages (https://github.com/JetBrains/teamcity-messages), could you please send this PR to it?"
+2019-03-18T11:08:09Z,discuss,Thank you.
+2019-04-06T06:10:00Z,discuss,(created JetBrains/teamcity-messages#210)
+2019-03-14T09:03:23Z,commit,pytest: fix comparing asserts,github.com/JetBrains/intellij-community/pull/1091/commits/ac68314d8b6e87d350e8a2c22df6d6cea541abb8

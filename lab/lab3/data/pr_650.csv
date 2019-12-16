@@ -1,0 +1,7 @@
+650,Support creation and importing Gradle projects with Kotlin DSL build scripts
+2017-10-17T12:47:56Z,discuss,"
+No description provided.
+"
+2017-10-19T09:11:19Z,discuss,Thanks for the contribution. I will backport the change to 173 as well.
+2017-10-16T20:41:03Z,commit,Gradle: Allow import and open projects with gradle.kts build scripts,github.com/JetBrains/intellij-community/pull/650/commits/27594043156402d2cc89b45e3cd0698aa1e1a3db
+2017-10-16T18:55:33Z,commit,Gradle: Add Kotlin dsl support in new gradle project wizard,github.com/JetBrains/intellij-community/pull/650/commits/a89617abb8c248a092d14c1d937fe17fba34fecd

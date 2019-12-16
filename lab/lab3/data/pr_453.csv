@@ -1,0 +1,12 @@
+453,Fix memory leak inside the Gradle daemon caused by Idea Gradle plugin
+2016-10-12T11:12:14Z,discuss,This fixes a memory leak inside the Gradle daemon caused by Idea Gradle plugin.
+2016-10-12T11:12:14Z,discuss,"Here's a description of the memory leak:
+The custom classloader created by ijinit.gradle was not garbage collected and it was keeping references to a lot of object instances. The instances were held in the static ExtraModelBuilder.buildersLoader field. This field referenced an instance of ExternalProjectBuilderImpl which has a cache field with a lot of instances.
+Each new call using the same Gradle daemon instance would leak more memory."
+2016-10-13T06:28:05Z,discuss,@vladsoroka Could you take a look at this PR?
+2016-10-13T06:37:00Z,discuss,I prefixed the commit messages with Gradle: and re-pushed the commits to my PR branch.
+2016-10-13T16:26:17Z,discuss,"PR merged, thanks for the contribution Lari!"
+2016-10-12T10:58:56Z,commit,Gradle: Replace custom classloader in ijinit with a supported way,github.com/JetBrains/intellij-community/pull/453/commits/84d2a1c81d0ddaa488facad1f86763da00120c09
+2016-10-12T10:43:27Z,commit,Gradle: Wire a single instance to all plugin instances,github.com/JetBrains/intellij-community/pull/453/commits/7421d44a2f5f22797cadd7894c0c3d47ce5a11e8
+2016-10-12T10:39:53Z,commit,Gradle: Change static field to instance field,github.com/JetBrains/intellij-community/pull/453/commits/f89a05f8e346a706513c7b0d1058c06faf91d8aa
+2016-10-12T10:51:09Z,commit,Gradle: ServiceLoader instance isn't required,github.com/JetBrains/intellij-community/pull/453/commits/0579d273e8a0ab5228cee087002786d99e1cb6a2

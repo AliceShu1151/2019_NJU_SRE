@@ -1,0 +1,5 @@
+70,fix commit error on non-ansi Windows and OSX.
+2013-04-15T01:30:50Z,discuss,"It works well on Windows 7 sp1 kr, OS X 10.8.3 kr"
+2013-04-15T01:35:41Z,discuss,"I have miss-type ""encodinge"".
+It should be ""encoding"""
+2013-04-15T01:30:39Z,commit,fix commit error on non-ansi Windows and OSX.,github.com/JetBrains/intellij-community/pull/70/commits/664653a03d3318ed9df1c5b233d9933787c0f6a7

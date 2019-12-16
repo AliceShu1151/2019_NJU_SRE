@@ -1,0 +1,16 @@
+697,"[PY-27710] Fix for erroneous ""Too few arguments for format string"""
+2017-12-23T19:49:52Z,discuss,"
+No description provided.
+"
+2018-01-12T14:49:27Z,discuss,"Hi!
+Thank you for your pull request!
+I've reviewed your changes and noticed that they broke two tests:"
+2018-01-12T14:49:27Z,discuss,com.jetbrains.python.intentions.PyConvertToFStringIntentionTest#testFormatMethodWrapExpressionsInParentheses
+2018-01-12T14:49:27Z,discuss,com.jetbrains.python.intentions.PyConvertToFStringIntentionTest#testFormatMethodAttributeReferences
+2018-01-12T14:49:27Z,discuss,"Please, fix them."
+2018-01-12T14:49:27Z,discuss,Valentina Kiryushkina
+2018-01-12T15:14:10Z,discuss,I will take a look at it over the weekend. Thanks for pointing it out!
+2018-02-08T17:27:40Z,discuss,"I have updated my fix. It was more complicated than I expected, because I had to make sure I did not break anything else while trying to fix this."
+2018-07-21T11:05:52Z,discuss,"Has been already fixed, thanks for PR. See https://youtrack.jetbrains.com/issue/PY-27710"
+2017-12-23T19:47:17Z,commit,"[PY-27710] Fix for erroneous ""Too few arguments for format string""",github.com/JetBrains/intellij-community/pull/697/commits/fc2316963bc48167106dacb081e7be983b62aa08
+2018-02-08T17:23:42Z,commit,"[PY-27601] Updated fix for ""Too few arguments for format string""",github.com/JetBrains/intellij-community/pull/697/commits/e136d72477ab3aa4b47b034ba8dea090ec0ed6e3

@@ -1,0 +1,13 @@
+174,IDEA-51438 Maven: Allow explicit disabling of profiles
+2014-04-17T08:31:40Z,discuss,It adds support of explicit disabling of maven profiles using 3-state check boxes:
+2014-04-17T08:31:40Z,discuss,Summary of changes:
+2014-04-17T08:31:40Z,discuss,"Some maven tests were failed, but they failed without my changes too:
+Test Maven: 963 total, 32 failed, 931 passed"
+2014-07-04T11:30:47Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-07-07T21:30:46Z,discuss,Signed and sent contributor agreement now.
+2014-07-07T21:48:28Z,discuss,Should I rebase changes onto latest master to solve merge conflicts?
+2014-07-08T14:50:17Z,discuss,"Agreement has been received.
+Yes, rebase changes onto the latest master please (I'm not sure if you'd be able to stay within this pull request or need to open a new one)."
+2014-07-09T00:02:06Z,discuss,Rebased successfully. Content of pull request was automatically updated after push and should be merged without conflicts.
+2014-04-17T00:43:40Z,commit,extract MultiStateElementsChooser from ElementsChooser to support mor¡­,github.com/JetBrains/intellij-community/pull/174/commits/84e21f1ad9c1f0768aee83f832aa704082f0859a
+2014-04-15T23:55:59Z,commit,IDEA-51438 Maven: Allow explicit disabling of profiles,github.com/JetBrains/intellij-community/pull/174/commits/b5d66b5fce26d3ab93fee1a29dcb698c0cbadeac

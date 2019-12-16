@@ -1,0 +1,11 @@
+662,PY-25655: Store super classes text in stub
+2017-11-14T19:53:15Z,discuss,@vlasovskikh Wanted to get this in because it involves stub changes so it's only possible to get it in before a major release. Implementation is slightly strange to preserve compatibility.
+2017-12-01T13:03:22Z,discuss,"Our initial intend was to get rid of the list of base classes in the class presentation altogether (since no other language support seems to do that) rather than store additional information in stubs. But after giving it some thought we decided that in may be beneficial in a longer term in other places in code insight (generics, six.with_metaclass, special ""keyword"" base classes in typing, etc.)."
+2017-12-01T13:36:00Z,discuss,"Regarding your last comment. Storing the text will not be very useful for code analysis IMO because class names can be aliased in multiple ways. On the other hand, speaking as a user, I personally find this information very useful when performing ¡®find class¡¯."
+2017-12-04T15:32:23Z,discuss,@east825 After thinking about it  -- you're right. There is no point of keeping the method nullable for compatibility since it's a new method. Requested changes applied.
+2018-01-08T17:41:22Z,discuss,@east825 ping
+2018-01-11T16:35:11Z,discuss,A few minor complaints about code style and nullability contracts.
+2018-01-11T16:46:58Z,discuss,"Sorry, I was on Christmas/New Year holidays that are somewhat lengthy in Russia. I left a few comments about code style and inspection warnins, but apparently forgot to submit them  (not that familiar with reviewing on GitHub) and already fixed everything myself. Do you mind me squashing your two commits into one?"
+2018-01-12T05:32:50Z,discuss,"@east825 Sure, squash away. By the way, the formatting issue is what the IDEA precommit formatter did to the code. Please direct complaints about it to JetBrains "
+2017-11-14T19:50:09Z,commit,PY-25655: Store super classes text in stub,github.com/JetBrains/intellij-community/pull/662/commits/4ceca0ec0c49d2389661999d8b30c106898d78c0
+2017-12-04T15:30:55Z,commit,changes after review,github.com/JetBrains/intellij-community/pull/662/commits/d14a6a77e6959a4d6dff3e8f06e7bab853e9b12a

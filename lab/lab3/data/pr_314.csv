@@ -1,0 +1,11 @@
+314,Disabled `PointlessBoolean` inspection for Spock's data tables
+2015-10-25T21:16:09Z,discuss,"Spock's data tables aren't real boolean expressions, and shouldn't be flagged as PointlessBoolean, e.g."
+2015-10-25T21:16:09Z,discuss,"(I did this PR, because it has id #314 :p)
+"
+2016-03-01T09:51:54Z,discuss,I don't think where is allowed to have the and label; otherwise it should be skipped here
+2016-03-22T15:20:06Z,discuss,"@dovchinnikov, @maxmedvedev, @ignatov ?"
+2017-04-11T21:19:04Z,discuss,... too bad
+2017-11-13T20:36:25Z,discuss,@dovchinnikov any reason this was not merged?
+2019-05-21T09:32:14Z,discuss,@dovchinnikov ? would it make sense for me to rebase this?
+2019-06-24T12:09:26Z,discuss,@paplorinc nope. This was fixed as part of https://youtrack.jetbrains.com/issue/IDEA-114247
+2015-10-25T20:49:08Z,commit,Disabled `PointlessPointlessBoolean` inspection for Spock's data tables,github.com/JetBrains/intellij-community/pull/314/commits/e11bc2bda626cae309ed180bbaff81f42a35d708

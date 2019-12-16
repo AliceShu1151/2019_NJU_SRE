@@ -1,0 +1,3 @@
+510,Pass the project as a parameter to getDefaultFolder.
+2017-02-06T16:40:34Z,discuss,This is something we want to be able to do in our internal Google plugin. Thanks!
+2017-02-06T16:36:13Z,commit,Pass the project as a parameter to getDefaultFolder.,github.com/JetBrains/intellij-community/pull/510/commits/248aabf6e2ca29ee7464f968868d70723ff7fb2c

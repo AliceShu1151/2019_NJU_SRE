@@ -1,0 +1,8 @@
+79,"SSH agent authentication for git4idea, svn4idea"
+2013-05-28T18:29:42Z,discuss,"Hi Charles,
+Have you submitted a contributor agreement? If not, could you please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and print it out, scan and send to contribute@jetbrains.com? Thanks!"
+2013-05-28T18:34:10Z,discuss,"This is a work-for-hire for my employer; I've asked our legal department to approve a CA, and will report back after it's executed."
+2013-05-28T18:34:10Z,discuss,"Any chance code review could happen in the interim, so we're ready to merge when the paperwork is ready?"
+2013-06-25T16:54:44Z,discuss,"Closing this pull request -- updated version to be submitted from corporate github account (having a contributor agreement executed on behalf of my employer, which owns copyright to this code)."
+2013-05-28T16:17:42Z,commit,SSH agent support for git and svn integrations; separate out old tril¡­,github.com/JetBrains/intellij-community/pull/79/commits/20bd8566ef7e0dbcefb2b6b290a8332d9b11ecf5
+2013-05-31T16:35:25Z,commit,Add missing dependency on jna-platform / jna-utils for pageant suppor¡­,github.com/JetBrains/intellij-community/pull/79/commits/f3de0b24b6a6665ac4efc6b306fd6fc49dde4e57

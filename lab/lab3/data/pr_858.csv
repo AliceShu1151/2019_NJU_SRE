@@ -1,0 +1,13 @@
+858,Add support for .editorconfig language
+2018-09-14T18:11:27Z,discuss,"This pull request extends functionality of EditorCondfig plugin, adding support for it's language, including code completion, inspection & quickfixes, navigation and more.
+See editorconfig site"
+2018-09-17T20:32:32Z,discuss,Note that behaviour I added depends on several registry keys:
+2018-09-17T20:32:32Z,discuss,"EditorConfigRoslynOptionDescriptorProvider#EDITORCONFIG_CSHARP_SUPPORT_KEY defines whether or not to show complex keys from .NET world in completion, which probably is not required in products other than Rider, and"
+2018-09-17T20:32:32Z,discuss,EditorConfigBreadcrumbsProvider#EDITORCONFIG_BREADCRUMBS_SUPPORT_KEY defines whether or not to show breadcrumbs in .editorconfig files
+2018-09-17T20:40:05Z,discuss,Also note that plugin uses so-called descriptors to operate with known options. This makes it easy to add new possible key/value pairs. See EditorConfigDescriptor.
+2018-09-17T20:40:05Z,discuss,"Support for .NET is incomplete since number of those keys is too big for me to work with them manually. However, they are pretty simple, so there has to be a way to generate descriptors for all of them"
+2018-10-05T16:12:36Z,discuss,"The pull request with all corrections is tested and finally merged into master branch.
+Thanks to all!"
+2018-08-30T12:58:28Z,commit,Fix typo in comments,github.com/JetBrains/intellij-community/pull/858/commits/8de9a9304e0b6975dde4f74dee9c2955f2bdb2fa
+2018-08-30T12:53:10Z,commit,Improve support for exact filename languages,github.com/JetBrains/intellij-community/pull/858/commits/9d455bb429c587489cfb313c7849f4077d775fbd
+2018-08-30T12:50:28Z,commit,Add support for .editorconfig language,github.com/JetBrains/intellij-community/pull/858/commits/02eb3c7ec424eabe2127be85ed3ddf9ef0132e5c

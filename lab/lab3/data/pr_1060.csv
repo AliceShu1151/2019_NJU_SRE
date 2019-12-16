@@ -1,0 +1,4 @@
+1060,"IDEA-201693 New SE: popup position should be relative to IDE, not to screen"
+2019-02-08T20:37:37Z,discuss,Fixes https://youtrack.jetbrains.net/issue/IDEA-201693
+2019-10-15T17:57:50Z,discuss,"This should be merged. On 32"" inch (4K - 100%) is a pain having the SE popup not inside the IDE window."
+2019-02-08T20:34:59Z,commit,"IDEA-201693 New SE: popup position should be relative to IDE, not to бн",github.com/JetBrains/intellij-community/pull/1060/commits/6628a47a32f8c37027590740ddb78173825e73bc

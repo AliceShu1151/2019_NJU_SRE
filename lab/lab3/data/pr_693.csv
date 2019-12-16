@@ -1,0 +1,8 @@
+693,IDEABKL-6449 Enable ISO-8601 date format via system property
+2017-12-21T11:39:51Z,discuss,"Setting the system property date.iso8601 to true (java -Ddate.iso8601=true), enables the ISO-8601 format in the DateFormatUtil."
+2017-12-21T11:39:51Z,discuss,This addresses https://youtrack.jetbrains.com/issue/IDEABKL-6449.
+2017-12-21T11:39:51Z,discuss,I'm not sure whether and how to test this contribution: programmatically setting the system property would have to be done prior to the first access of DateFormatUtil (in all variations of running the tests).
+2018-07-21T11:19:00Z,discuss,"@simon04, please update the PR due to conflicts, cc @klikh."
+2018-07-22T16:19:05Z,discuss,Done. Please take less than 7 months for reviewing / commenting this PR! (This is not motivating at all for spare-time contributions to open-source projects!)
+2019-09-16T09:20:06Z,discuss,"Finally, the issue has been fixed in 2019.3. It was decided to implement it not as a JVM property, but provide a UI in the Settings."
+2017-12-21T11:28:46Z,commit,IDEABKL-6449 Enable ISO-8601 date format,github.com/JetBrains/intellij-community/pull/693/commits/1e58b334e50b9e68e0b5b0209ebcc02828bd80ac

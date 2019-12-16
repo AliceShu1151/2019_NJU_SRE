@@ -1,0 +1,6 @@
+341,Add improvements to the Redmine task tracker
+2016-01-03T19:45:08Z,discuss,This adds the following improvements to the Redmine task tracker:
+2016-01-03T19:45:08Z,discuss,"About the CLA, do I need to add my username or the username of my company @CVO-Technologies (a GitHub organization)?"
+2018-07-21T12:18:16Z,discuss,"@Marlinc, please rebase the PR, cc @dmitry-avdeev"
+2016-01-03T19:40:06Z,commit,Add support for comments and tracker information to Redmine tasks,github.com/JetBrains/intellij-community/pull/341/commits/be829f7749e70317212ab991e25456cdf1afdcd3
+2016-01-03T19:48:37Z,commit,Add ability to set states on Redmine tasks,github.com/JetBrains/intellij-community/pull/341/commits/c243fc222e6d65381f9bb6e7bb7cf7d8f8c2d202

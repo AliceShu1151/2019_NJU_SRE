@@ -1,0 +1,15 @@
+812,Create project level notification configuration implementation
+2018-06-16T21:55:48Z,discuss,Hook up non managed pom notification configuration to project level
+2018-06-16T22:00:19Z,discuss,Our environment at Salesforce requires this change. We have a specialized Maven project that does not use the IntelliJ maven plugin. We have our own code generator to generate the IntelliJ project structure so we do not need to import the project. We would like to disable to import notification at the project level to prevent developers from accidentally importing the project.
+2018-06-16T22:00:19Z,discuss,Happy to talk more about our use case more outside of github comments.
+2018-07-21T10:58:52Z,discuss,"@chashnikov, please reassign the PR if needed."
+2018-07-25T07:38:28Z,discuss,"Sorry for the late reply, we somehow missed your pull request."
+2018-07-25T07:38:28Z,discuss,"I have some questions about your implementation, but I firstly want to understand your use case. How does your generator work? Do you generate .iml file and .idea directory in it? Why did you decide to implement your own generator instead of creating a plugin for IntelliJ which extends functionality of IntelliJ Maven plugin to properly support your projects?"
+2018-07-25T16:04:15Z,discuss,"Hey @chashnikov ,"
+2018-07-25T16:04:15Z,discuss,"No worries for the delay.
+I agree, a plugin would be best, and that is what I have in mind down the line. The reason I went with a maven plugin to generate the .iml and modules.xml files (everything in .idea is checked into source control except for module.xml and .name) is there is a bunch of code already implemented by our build team that handles setting up the project structure for developers. Creating a maven plugin inherits all of this logic and allows the plugin to use mostly native maven plugin APIs. This was the easiest path forward for me."
+2018-07-25T16:04:15Z,discuss,"To be honest, there is currently no official team working on IntelliJ support here, I have been spending my free time to improve the functionality to support IntelliJ on our build. We currently have roughly 70% Eclipse users (Which is maintained by a team) and roughly 30% IntelliJ users (Its been slowly going up as ease of development has been improved)."
+2018-07-25T16:04:15Z,discuss,"Like I mentioned, a plugin is ultimately the best solution. The team working on Eclipse integration has spent a lot of time improving the M2E plugin to work with our maven environment. This work would be more or less the same work I would need to do for the IntelliJ maven plugin. Its just a matter of me finding free time to sink into this project."
+2018-07-25T16:04:15Z,discuss,"Like I mentioned earlier, if you are interested in more details of our maven environment, shoot me an email at brian.mcnamara@salesforce.com"
+2018-07-25T16:04:15Z,discuss,Thanks for following up!
+2018-06-16T21:24:29Z,commit,Create project level notification configuration implementation,github.com/JetBrains/intellij-community/pull/812/commits/b7ad323fa6a1c0bd5d171c3a3409a483f73d4ccc

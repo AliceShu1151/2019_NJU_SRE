@@ -1,0 +1,8 @@
+96,Fix for Kotlin compiler
+2013-09-09T15:10:59Z,discuss,When we don't have any dependency(after f4a27e8) we should use ModificationTracker.NEVER_CHANGED instead empty array.
+2013-09-09T15:10:59Z,discuss,(Fix for Kotlin compiler).
+2013-09-10T10:18:23Z,discuss,Maybe we should  move this file and JavaCoreProjectEnvironment.java and something else(?) to Kotlin repo if they don't have other usages. They don't have any usages into intellij-community.
+2013-09-10T10:18:23Z,discuss,"@yole, @abreslav, what do You think?"
+2013-09-10T10:23:25Z,discuss,These files are also used by UpSource.
+2013-09-10T11:26:18Z,discuss,Merged and pushed. Thanks!
+2013-09-09T15:04:24Z,commit,When we don't have any dependency(after,github.com/JetBrains/intellij-community/pull/96/commits/a2beba8d5816577e7c9f409c953645c8a96849fe

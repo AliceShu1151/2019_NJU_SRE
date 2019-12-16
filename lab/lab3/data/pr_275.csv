@@ -1,0 +1,6 @@
+275,added and marked as deprecated removed constructor ArchiveHandler.Ent¡­
+2015-06-15T14:22:34Z,discuss,¡­ryInfo
+2015-06-15T14:22:34Z,discuss,This is import in order to support Kotlin plugin
+2015-06-15T14:33:48Z,discuss,"@cdracm
+Please take a look"
+2015-06-15T14:14:57Z,commit,added and marked as deprecated removed constructor ArchiveHandler.Ent¡­,github.com/JetBrains/intellij-community/pull/275/commits/2d8efc1e2789ca8f2f73fe51cddfcbf212dce91a

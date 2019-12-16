@@ -1,0 +1,4 @@
+1142,Update sphinx_runner to use Sphinx >= 2
+2019-05-20T19:49:19Z,discuss,"sphinx_runner does not work with Sphinx >= 2.0 since it checks for sphinx >= 1.7, < 2 instead of checking for sphinx >= 1.7."
+2019-06-10T11:35:41Z,discuss,Merged manually. Thank you for the pull request!
+2019-05-20T19:49:07Z,commit,Update sphinx_runner to use Sphinx >= 2,github.com/JetBrains/intellij-community/pull/1142/commits/bce85bd12fd176054b641cfafe4c7208e2ec2938

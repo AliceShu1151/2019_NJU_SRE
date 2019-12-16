@@ -1,0 +1,3 @@
+214,Improve notifications in GithubRebaseAction
+2014-10-11T09:29:48Z,discuss,"Ensures proper GitHub branding is used, as well as improve the message a non-forked repository spits out."
+2014-10-11T09:28:11Z,commit,Improve notifications in GithubRebaseAction,github.com/JetBrains/intellij-community/pull/214/commits/ca1d9f6fde0f1ccade2d2ef402928fdc89e38af6

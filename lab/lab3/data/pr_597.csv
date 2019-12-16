@@ -1,0 +1,8 @@
+597,collecting variables debugger hang fix
+2017-06-25T18:10:08Z,discuss,"For large dictionaries the debugger can freeze completely, this checks for dictionaries, sets, and frozensets to avoid that."
+2017-06-26T15:33:45Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-08-04T09:53:47Z,discuss,@klikh Yup I signed now.
+2017-09-03T03:22:38Z,discuss,Any updates on this?
+2018-07-21T11:53:14Z,discuss,"@stevenxxiu, please update the RP, cc @Elizaveta239."
+2018-08-07T12:48:56Z,discuss,"Sorry for the late response, your pull request is merged. Thank you very much!"
+2017-06-25T18:06:36Z,commit,collecting variables debugger hang fix,github.com/JetBrains/intellij-community/pull/597/commits/cbdb8e0fef55585ccc6511b39840f7491792347e

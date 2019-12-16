@@ -1,0 +1,6 @@
+279,Usage View: Remove usages (like in Eclipse)
+2015-06-25T13:52:27Z,discuss,Added context menu to remove usages from the usage tree instead of just excluding them.
+2015-06-25T13:52:27Z,discuss,This is a possible solution to https://youtrack.jetbrains.com/issue/IDEA-22996.
+2015-06-25T14:00:30Z,discuss,Contribution Agreement has been received.
+2015-07-01T12:26:31Z,discuss,"integrated, thanks for the patch."
+2015-06-25T13:32:51Z,commit,Added context menu to remove usages from the usage tree instead of ju¡­,github.com/JetBrains/intellij-community/pull/279/commits/fab33ff5195ac98def093688d560d6458cc9aea4

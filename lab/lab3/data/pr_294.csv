@@ -1,0 +1,6 @@
+294,Debug log level for project data services
+2015-08-14T19:02:58Z,discuss,For really big projects there are too much output to idea.log
+2015-08-15T12:29:24Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-08-17T17:48:22Z,discuss,@klikh done.
+2015-08-18T09:20:46Z,discuss,"the pr merged, thanks Fedor!"
+2015-08-14T19:01:30Z,commit,Debug log level for project data services,github.com/JetBrains/intellij-community/pull/294/commits/d1449f3614a3c7147986a92bc3e71c383e089469

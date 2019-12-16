@@ -1,0 +1,12 @@
+1049,Make Gradle's ProjectImportAction more flexible
+2019-01-29T16:30:54Z,discuss,"This change gives more flexibility providers of GradleProjectResolverExtensions to inject logic when requesting models from Gradle during the ProjectImportAction. We allow extensions to provide a ProjectImportExtraModelProvider instead of a set list of classes, this provider has two methods which are both run within the build action. Each method provides a consumer-like interface for the provider to register the models that they are interested in so they are visible to the resolver context during setup."
+2019-01-29T16:30:54Z,discuss,
+2019-01-29T16:30:54Z,discuss,
+2019-01-29T16:30:54Z,discuss,I've ran any tests that I could that look like they might be affected. E.g in intellij.gradle.tests the results are consistent with or without the change (though both end up with ~100 failures). Any instruction on how best to test the new functionality would be appreciated.
+2019-01-29T16:30:54Z,discuss,Thanks!
+2019-02-01T11:26:01Z,discuss,so far looks good to me. I will run this patch through our TeamCity (CI server)
+2019-02-01T14:06:21Z,discuss,"Cool, thanks!"
+2019-02-01T14:15:49Z,discuss,Our integration tests went fine. Will merge the request manually
+2019-02-01T14:28:08Z,discuss,Merged manually. Thank you!
+2019-02-01T17:06:28Z,discuss,Thanks for the quick review!
+2019-01-28T15:41:45Z,commit,Make Gradle's ProjectImportAction more flexible,github.com/JetBrains/intellij-community/pull/1049/commits/23f2dfb1be72c37e59468b4b3c5e8e3854f45a4a

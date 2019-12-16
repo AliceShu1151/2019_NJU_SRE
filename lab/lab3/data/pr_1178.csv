@@ -1,0 +1,6 @@
+1178,"JBR-1337: add logs on JavaFX init errors, prevent stuck IDE"
+2019-07-19T22:27:25Z,discuss,This PR is a proof-of-concept that:
+2019-07-19T22:27:25Z,discuss,Please advise if a different kind of notification for the user would be appropriate.
+2019-07-19T22:27:25Z,discuss,"I was unable to build the complete IDE locally, but I tested the code as part of the AsciiDoc plugin including the ""stuck"" detection."
+2019-09-13T13:46:35Z,discuss,"Thank you for the contribution. However, the original cause of the deadlock was fixed right in JavaFX we ship with our JBR 11. Please find it here: JetBrains/jdk8u_jfx@0fcd66f"
+2019-07-19T22:15:35Z,commit,"JBR-1337: add log entries when JavaFX initialization fails, avoid blo¡­",github.com/JetBrains/intellij-community/pull/1178/commits/67e454ac648fc87f62ffc2904c236b272a815517

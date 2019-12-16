@@ -1,0 +1,8 @@
+1029,Fix a bug in JBLoadingPanel in setBounds method.
+2019-01-11T01:52:20Z,discuss,"When JBLoadingPanel#setBounds is called it only updates its boundaries and its underlying LoadingDecorator panel doesn't get updated resulting an unexpected layouts.
+This patch fixes it by overriding setBounds method and propagating the update to LoadingDecorator properly."
+2019-01-11T01:52:20Z,discuss,https://youtrack.jetbrains.net/issue/IJSDK-545
+2019-04-26T21:10:56Z,discuss,"I commented in https://youtrack.jetbrains.net/issue/IDEA-205343:
+Cannot see the problem, setBounds() in JBLoadingPanel causes revalidation and finally calls LoadingDecorator.MyLayeredPane#doLayout
+Can you give an example of noticeable ""unexpected layout""?"
+2019-01-11T01:41:37Z,commit,Fix a bug in JBLoadingPanel in setBounds method.,github.com/JetBrains/intellij-community/pull/1029/commits/202d6e1d8d7713c22676bfd5a1e5c15c38601f97

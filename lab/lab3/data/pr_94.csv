@@ -1,0 +1,10 @@
+94,Extract inheritor candidate check into separate InheritanceChecker interface
+2013-08-27T18:31:06Z,discuss,This change is aimed at better interoperability with Kotlin plugin: default inheritor check via PsiClass.isInheritor() filters out traits inheriting from classes and hence is not applicable for search.
+2013-08-27T18:56:21Z,discuss,How do you expect it to be used? Is it correct that only those clients of ClassInheritorsSearch that specifically pass the new inheritance checker will get the results you expect?
+2013-08-27T21:28:26Z,discuss,"Yes, those clients that want to change filtering of direct inheritors pass specific instance of inheritance checker. If it's not passed then ClassInheritorsSearch falls down to default behavior."
+2013-08-28T18:25:21Z,discuss,I've had to fix a couple of issues with the pull request (the important one is that you lost the value of nameCondition in one of the overloaded constructors). Next time please ensure that IntelliJ IDEA doesn't show any new warnings in the lines you've changed.
+2013-08-28T18:25:21Z,discuss,The pull request is merged.
+2013-09-03T11:21:36Z,discuss,Thanks
+2013-09-03T11:21:36Z,discuss,Could you also merge it into IDEA 12?
+2013-09-04T17:29:52Z,discuss,Backported to branch 129.
+2013-08-27T18:21:13Z,commit,Extract inheritor candidate check into separate InheritanceChecker in¡­,github.com/JetBrains/intellij-community/pull/94/commits/a2210a414f5a9076c7bf76b445b91409a20d06c8

@@ -1,0 +1,8 @@
+646,IDEA-180614: Rename Synchronize action to Synchronize with File System
+2017-10-13T21:38:58Z,discuss,"
+No description provided.
+"
+2018-07-21T11:08:16Z,discuss,cc @bulenkov
+2019-06-25T10:25:32Z,discuss,"The action is now called ""Reload from disk""."
+2019-06-25T10:49:08Z,discuss,"We now have some problems with publishing new commits to GitHub repository, so the commit with the change isn't available here yet. I hope the problems will be fixed soon."
+2017-10-13T21:32:48Z,commit,IDEA-180614: Rename Synchronize action to Synchronize with File System,github.com/JetBrains/intellij-community/pull/646/commits/0d7c3ead3b3d0144f52976422ef356912187db50

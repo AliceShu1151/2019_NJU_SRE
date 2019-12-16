@@ -1,0 +1,6 @@
+863,Add dependencies on KotlinTest
+2018-09-18T08:49:42Z,discuss,"бн seemingly necessitated by commits 7c5dcca, d0e8ab3, and 192b4eb."
+2018-09-18T08:50:28Z,discuss,"@dmitry-avdeev, @pchel-, @xiexed, @SvetlanaZem?"
+2018-09-19T11:58:24Z,discuss,"Actually, we have kotlin-test.jar as part of KotlinJavaRuntime library, but it is more by mistake. So I'll remove it and merge your request as well. Thanks!"
+2018-09-20T12:37:28Z,discuss,See linked commits and also e4c0702.
+2018-09-18T08:23:45Z,commit,Add dependencies on KotlinTest,github.com/JetBrains/intellij-community/pull/863/commits/2d4b95bdce00420339ccbb834ef6027261976e0c

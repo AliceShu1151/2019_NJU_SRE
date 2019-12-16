@@ -1,0 +1,5 @@
+255,IDEA-57472 new tool window mode using frames
+2015-03-18T23:06:23Z,discuss,"Maybe it needs a better name, but it is very useful with multiple monitors nevertheless."
+2015-03-18T23:06:23Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-57472
+2015-03-20T21:27:30Z,discuss,merged as part of b79bf47
+2015-03-18T22:48:38Z,commit,IDEA-57472 new tool window mode using frames,github.com/JetBrains/intellij-community/pull/255/commits/b6e67ea25ca0ef69aa77c7f44fc4d33fb9f84735

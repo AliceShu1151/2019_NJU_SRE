@@ -1,0 +1,6 @@
+639,[Fernflower] prevent null to be cast as short/byte
+2017-10-07T18:04:33Z,discuss,Prevent casting null as primitive.
+2017-10-07T18:04:33Z,discuss,Instead of
+2017-10-07T18:04:33Z,discuss,We will have
+2017-10-25T16:43:56Z,discuss,"merged into master, thanks!"
+2017-10-07T15:03:43Z,commit,[Fernflower] prevent null to be cast as short/byte,github.com/JetBrains/intellij-community/pull/639/commits/310ec7ef85f1cc26651d43b4a1487c0ad4b2a36f

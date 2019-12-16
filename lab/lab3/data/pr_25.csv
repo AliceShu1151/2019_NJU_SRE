@@ -1,0 +1,6 @@
+25,IDEA-95644 Support console input filtering
+2012-11-22T22:31:46Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-95644
+2012-11-28T21:13:16Z,discuss,"oops, I guess I should have created a new branch for that new issue..."
+2012-11-22T22:28:16Z,commit,IDEA-95644 Support console input filtering,github.com/JetBrains/intellij-community/pull/25/commits/4b35e66fb4d1835047c25ba798849c11d6e43764
+2012-11-28T20:48:15Z,commit,IDEA-96119 - CompositFilter - merging results from multiple Filters,github.com/JetBrains/intellij-community/pull/25/commits/aec9c280252428028db35e4fdf837480bfb32125
+2012-11-28T20:52:32Z,commit,IDEA-96119 - migrated to enum,github.com/JetBrains/intellij-community/pull/25/commits/d5177cc45a3f1a2839179035c38d4f9050eab431

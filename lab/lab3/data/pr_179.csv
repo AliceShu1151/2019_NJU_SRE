@@ -1,0 +1,8 @@
+179,Small console improvements
+2014-05-07T22:10:46Z,discuss,"
+No description provided.
+"
+2014-05-11T13:06:12Z,discuss,So markup model returns nonvalid highlighters? Pity.
+2014-05-11T13:17:04Z,discuss,"I am no expert, it could be just a hoax."
+2014-05-05T21:47:31Z,commit,check validity of RangeHighlighter,github.com/JetBrains/intellij-community/pull/179/commits/a104c466684d99d9a8997b603f5f60ca52c19449
+2014-05-04T21:18:21Z,commit,magic number moved to registry,github.com/JetBrains/intellij-community/pull/179/commits/08cf753fd6083c6d063fc448f9d98936099db711

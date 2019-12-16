@@ -1,0 +1,6 @@
+121,preventing ClassCastException in move refactoring
+2013-10-31T09:25:37Z,discuss,"
+No description provided.
+"
+2013-11-14T11:00:46Z,discuss,Merged
+2013-10-31T09:19:25Z,commit,getContainingFile() instead of getParent() to eliminate ClassCastExce¡­,github.com/JetBrains/intellij-community/pull/121/commits/513077f70cf5d0d7344275053cde1e2a4141f698

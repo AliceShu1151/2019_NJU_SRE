@@ -1,0 +1,45 @@
+444,Better Python Console
+2016-09-12T02:07:12Z,discuss,Implement proper multi-line console for PyCharm.
+2016-09-12T02:07:35Z,discuss,This is a work in progress. Submitting a PR now for JB to keep track
+2016-09-12T16:43:14Z,discuss,"Thank you for these changes, the code looks nice. Just a few minors after a short testing:"
+2016-09-12T17:33:37Z,discuss,Could you please send me a screencast of how to reproduce these issues? I cannot reproduce them on my machine.
+2016-09-14T04:42:46Z,discuss,The last commit should fix PY-13029. There are some other issues I see like connection being closed on UI thread I want to fix here before I go ahead with the actual implementation of the console code...
+2016-09-15T12:38:34Z,discuss,@fitermay Thank you for your fixes and improvements! I'm not able to reproduce my phantom bug anymore.
+2016-09-15T12:38:34Z,discuss,"A small, but important reminder: if you fix some bug, please, find its id in our tracker and add it to your commit message. If you can't find it, feel free to create it. It will help us to distinguish refactoring commits and bug fixing commits. Also it will make a testing process easier. Thank you!"
+2016-09-18T22:33:43Z,discuss,"Ok, this completes what I had planned for this PR. At some point I'd like to implement more enchancements such as a multiplexing console that switches between debug console when process is suspended and regular console when running. These will be submitted as a different PR when I have time to work on them."
+2016-09-19T13:50:38Z,discuss,"Thank you very much for your job! I've found some bugs, please, look at them: PY-20848, PY-20847, PY-20849, comment in PY-20836.
+Also I've created a tag ""PR 444"" for all issues related to your pull request."
+2016-09-20T03:14:18Z,discuss,"PY-20847: As designed. It waits for indent to be 0 to execute. Compare with IPython and IDLE console -- they work the same way
+PY-20848,20849,: Fixed
+Comment in PY-20836: Yes, it's a bug. Fixed."
+2016-09-20T03:33:23Z,discuss,Oops. Never mind. IPython also executes on blank lines.Fixed
+2016-10-10T21:56:51Z,discuss,"Hi Yuli, this was huge!
+Thanks for the contribution.
+The changes were tested and seem to be working quite well."
+2016-10-10T21:56:51Z,discuss,Though I have some questions regarding your design decisions: why did you choose to implement it with Executor and Startup activity instead of normal ToolWindow like it was before?
+2016-10-11T10:41:05Z,discuss,I've reverted the implementation from Executors to ToolWindow API as it was before. All other fixes were preserved.
+2016-10-11T11:07:06Z,discuss,Does rerun action still work properly after the revert? I relied on the reuse content reuse behavior of RunContenrManager to get restart action to work correctly. I'll try to explain more when I have some time today.
+2016-10-11T15:24:51Z,discuss,"Ok, this is why I chose to get rid of the Toolwindow."
+2016-10-11T15:24:51Z,discuss,From general considerations:
+2016-10-11T15:24:51Z,discuss,Specific reasons:
+2016-10-13T12:33:18Z,discuss,"Yes, your points are valid and your implementation worked well. The problem is that extending Executor to support console is bit of a API misuse. Toolwindow API was designed exactly for this purpose. So it we think that it doesn't work as it should, we just need to fix it instead making another extension point."
+2016-10-13T12:33:18Z,discuss,Also there was a tiny problem that the startup activity was launched later then tool window intitializers which resulted into Python Console tool window appear later then other tool windows in the the corresponding panel.
+2016-10-13T12:33:18Z,discuss,Anyway now the code look simpler then before there is only one PythonConsoleToolWindow(with it's factory) which reflects PythonConsoleExecutor with a startup activity.
+2016-10-13T12:33:18Z,discuss,As for the rerun - it works fine now.
+2016-10-13T12:33:18Z,discuss,"Yes there is now exception which happens sometimes on execute line action due to some async misconfiguration, but I am going to fix it for the next release."
+2016-10-13T12:47:55Z,discuss,"Yes, my main concern not so much duplication but having to work with two different APIs for handling execution in console toolwindow vs run toolwindow. Maybe we can think of a way to converge them and also make the toolwindow API smarter..."
+2016-09-12T01:59:07Z,commit,"Get rid of PythonConsoleToolWindow, PythonConsoleToolWindowFactory, P¡­",github.com/JetBrains/intellij-community/pull/444/commits/a9da284ebe054899a42cd8ac3677cefbc6918ac9
+2016-09-12T02:03:15Z,commit,PY-20839: previous console listeners get rerun on console restart!,github.com/JetBrains/intellij-community/pull/444/commits/7453729752444568d08ba293258c5c505e31bfc8
+2016-09-14T00:35:26Z,commit,-- get rid of inheritance from AbstractConsoleRunner with history. It¡­,github.com/JetBrains/intellij-community/pull/444/commits/8746012dbb1796d7c7239e714aceec169836827f
+2016-09-14T01:07:09Z,commit,PY-13029: Console restart action does not pick up new console setting¡­,github.com/JetBrains/intellij-community/pull/444/commits/5767661445e7c1d1ab051d2e68536cf20a33b19f
+2016-09-16T18:09:43Z,commit,Fix PY-20831: Do not let console lock up UI thread for a long time,github.com/JetBrains/intellij-community/pull/444/commits/5aa91a6baba93178d824137819994e900eacef70
+2016-09-17T04:44:27Z,commit,Allow to display gutter annotations for empty documents. Needed for m¡­,github.com/JetBrains/intellij-community/pull/444/commits/ec4459b82d9ebfa305fb83a0f2b5bbb074280529
+2016-09-17T04:45:01Z,commit,"PY-20619,PY-20618,PY-20617,PY-20616,PY-20615, PY-20615,PY-15731,PY-15¡­",github.com/JetBrains/intellij-community/pull/444/commits/707f6a5ac4af9c2b0ec5b2e8d9f2ffdf2fb643aa
+2016-09-17T05:02:18Z,commit,Fix PY-20836: Fix unindent when at end of document. Especially notica¡­,github.com/JetBrains/intellij-community/pull/444/commits/1590d5e16ec89ecffce62e64f29285f3d028bb52
+2016-09-17T23:05:46Z,commit,PY-13498 : Remove prompt from text when copying from history,github.com/JetBrains/intellij-community/pull/444/commits/8237a3fca2d7db389ea04e0b0853d8b1163cd69b
+2016-09-18T06:31:25Z,commit,PY-19613: Add variable viewer when launching with 'show command line ¡­,github.com/JetBrains/intellij-community/pull/444/commits/e0c2b16dc930f7c89e077b5a8f46c83d87c0b259
+2016-09-20T03:00:35Z,commit,PY-20849: Don't increment IPython prompt counter on blank input,github.com/JetBrains/intellij-community/pull/444/commits/9d85b8ef7e6fdeb2e887b74e4ee90680c933a867
+2016-09-20T03:10:14Z,commit,do not execute if line on which 'enter' was pressed is indented,github.com/JetBrains/intellij-community/pull/444/commits/2df0e1c5803c50dde3c6af5707d0d1fb553affe4
+2016-09-20T03:32:00Z,commit,PY-20847: Send line to console on blank line,github.com/JetBrains/intellij-community/pull/444/commits/e53e5f78ce234bbcb7d459b9cf8fa4646938b8ed
+2016-09-20T03:53:38Z,commit,fix off by one error in handling of triple nodes,github.com/JetBrains/intellij-community/pull/444/commits/233f1798fb72e86eb4371d60288c7b73df9b2d18
+2016-09-21T06:57:56Z,commit,PY-20847: Rewrite ConsoleEnterHandler and add sufficient testing,github.com/JetBrains/intellij-community/pull/444/commits/03ccfc0ef8c6c53443e255e15afe8d5bb564cdfc

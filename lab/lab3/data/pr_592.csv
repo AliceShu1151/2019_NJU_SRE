@@ -1,0 +1,6 @@
+592,git annotate show author time instead of committer time
+2017-06-15T00:11:35Z,discuss,default git blame command seems to display author time. why does intellij idea git annotate display committer time?
+2017-06-15T09:19:37Z,discuss,"Thank you for the pull request. It addresses https://youtrack.jetbrains.com/issue/IDEA-85484.
+Unfortunately simply changing commit time to author time is not correct, because the time is used for revision coloring, and author time can't be used for this. So, display time and sorting time should be different ones in this case.
+We'll try to address the issue soon."
+2017-06-15T00:11:06Z,commit,git annotate show author time instead of committer time,github.com/JetBrains/intellij-community/pull/592/commits/2ad4da8db823195afd7f1385b8fd3b11beaf3ce5

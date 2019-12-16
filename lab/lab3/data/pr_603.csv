@@ -1,0 +1,11 @@
+603,Enhance Java builder completion for superclasses and generics
+2017-07-19T19:51:55Z,discuss,"Adding the ability for builder completion to understand when the build method is defined in an interface, and also enabling it to handle generic types. Tested on the following sample code:"
+2017-07-19T19:51:55Z,discuss,A base-builder defined in an interface:
+2017-07-19T19:51:55Z,discuss,An implementation as follows:
+2017-07-19T19:51:55Z,discuss,"The builders in V2 of the AWS Java SDK are structured in this way, see interface and example implementation."
+2017-07-19T19:57:22Z,discuss,I'll add tests shortly - wanted to get this out to get some initial feedback.
+2017-07-19T20:17:14Z,discuss,Now with tests!
+2017-07-20T05:06:18Z,discuss,"Thanks! But why do you use substitutionMap, doesn't PsiSubstitutor#substitute solve the problem?"
+2017-07-20T16:15:52Z,discuss,"@donnerpeter no good reason, didn't realise the substitute method did what I wanted. I've amended the code."
+2017-07-24T13:37:00Z,discuss,"Thanks, merged manually!"
+2017-07-18T22:15:06Z,commit,Enhance Java builder completion for superclasses and generics,github.com/JetBrains/intellij-community/pull/603/commits/a63b233e8446b6d7464b287a8a95af9f5c66f56b

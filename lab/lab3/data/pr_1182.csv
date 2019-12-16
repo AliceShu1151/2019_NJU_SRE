@@ -1,0 +1,4 @@
+1182,Debugger inconsistent when using with pyspark DataFrames
+2019-08-02T12:03:08Z,discuss,An assumption that a DataFrame is only from pandas results in many of the following warning messages and also causes the interactive debugger not to work well when using libraries other than pandas containing a DataFrame class. This is particularly noticeable when debugging pyspark.
+2019-08-02T12:02:06Z,commit,Debugger outputs many spurious messages regarding: AttributeError: 'D¡­,github.com/JetBrains/intellij-community/pull/1182/commits/65c202079e5993646d962f454fd2725ab1bb4d44
+2019-09-23T11:54:38Z,commit,Merge branch 'master' into patch-1,github.com/JetBrains/intellij-community/pull/1182/commits/b0ffb5a48635eb8f1adf403847fce9430afe9110

@@ -1,0 +1,8 @@
+825,Add RecentlyNullable and RecentlyNonNull to nullable list
+2018-07-09T22:01:23Z,discuss,"These two new magic names are also known to the
+Kotlin compiler as nullness annotations representing
+recently migrated nulls, which will be treated as
+warnings rather than errors when violated."
+2018-07-09T23:25:59Z,discuss,@donnerpeter?
+2018-07-10T05:19:59Z,discuss,"Cherry-picked manually, thanks!"
+2018-07-09T21:34:48Z,commit,Add RecentlyNullable and RecentlyNonNull to nullable list,github.com/JetBrains/intellij-community/pull/825/commits/2c3c043f3c127afce109931dcb411ac4867881ed

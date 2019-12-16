@@ -1,0 +1,9 @@
+613,PY-20537: Flush scope caches on content reload
+2017-08-17T05:15:21Z,discuss,"
+No description provided.
+"
+2017-08-18T21:07:03Z,discuss,"Hello @fitermay
+Please check my comment here: https://youtrack.jetbrains.com/issue/PY-20537#comment=27-2376326"
+2017-08-18T21:07:03Z,discuss,"Right place to clear cache is PsiFile#clearCaches.
+See c193685"
+2017-08-17T05:13:42Z,commit,PY-20537: Flush scope caches on content reload,github.com/JetBrains/intellij-community/pull/613/commits/1c7478de04eafecbfb8a221de39576da27f40005

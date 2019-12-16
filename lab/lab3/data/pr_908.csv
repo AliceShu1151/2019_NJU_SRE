@@ -1,0 +1,13 @@
+908,Add option 'ignore != 0' to inspection 'Conditional expression with negated condition
+2018-11-02T20:34:54Z,discuss,"
+No description provided.
+"
+2018-11-15T08:07:27Z,discuss,"Hi @rillig, is there a YouTrack request open for this? If not, could you create one?"
+2018-11-15T17:55:27Z,discuss,@BasLeijdekkers I just created https://youtrack.jetbrains.com/issue/IDEA-202323 for it.
+2018-11-20T13:53:26Z,discuss,@BasLeijdekkers The next try is ready.
+2018-11-20T13:53:26Z,discuss,"Is there a better way for testing different options of one inspection? I'd rather have liked a method doTest(inspection) instead, but currently both calls to getInspection are during the setup phase of the test, and I also didn't find a hook for modifying the inspection before actually applying it."
+2018-11-21T13:58:28Z,discuss,"Thanks for your efforts, merged manually as d001216
+For next time: please squash all commits into one, this makes merging into our project easier (unfortunately we can't use GitHub's automatic pull request merging).
+Thanks again."
+2018-11-20T13:44:00Z,commit,Add 'ignore != 0' to inspection for negated conditions (IDEA-202323),github.com/JetBrains/intellij-community/pull/908/commits/b8676eefed3ab90132bdbbc1d37986352bdd7b9c
+2018-11-20T18:51:11Z,commit,Improve test for NegatedConditionInspection (IDEA-202323),github.com/JetBrains/intellij-community/pull/908/commits/2fb5ae6912acc9ce10656c048edd8d7f15129e6b

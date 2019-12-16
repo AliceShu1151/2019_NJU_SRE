@@ -1,0 +1,7 @@
+329,Do allocation-less clear() operations for empty structures.
+2015-12-02T21:53:35Z,discuss,"In SLRUMap, HashMap and LinkedHashMap, the clear() operation performs
+allocations when these structures are already empty. These are called on
+worker threads regularly, resulting in a lot of allocations being made
+for what is essentially a no-op."
+2015-12-03T13:41:03Z,discuss,"Thanks, merged manually"
+2015-12-02T21:46:13Z,commit,Do allocation-less clear() operations for empty structures.,github.com/JetBrains/intellij-community/pull/329/commits/f02daa246721e44bf1a80d876cd991db8edc56a9

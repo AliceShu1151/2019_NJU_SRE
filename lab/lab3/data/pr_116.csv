@@ -1,0 +1,5 @@
+116,IDEA 114933
+2013-10-22T13:57:33Z,discuss,"Don't trigger SearchAnywhere action by pressing Shift two times
+if any shortcut was configured for it in current keymap."
+2013-10-22T13:43:30Z,commit,IDEA-114933,github.com/JetBrains/intellij-community/pull/116/commits/c86c286a14c32f5d86b1bbb429d3ce3671e6c298
+2013-10-22T13:53:20Z,commit,Move action id string to constant,github.com/JetBrains/intellij-community/pull/116/commits/0440dfa7ae71154879163dcfd49c443dd42bcb26

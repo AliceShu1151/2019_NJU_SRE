@@ -1,0 +1,5 @@
+148,Remove plugin references that are not part of CE
+2014-02-05T19:22:38Z,discuss,The Django one causes the following kaboom after running unittest.TestCase based test suites in community edition:
+2014-02-05T19:22:38Z,discuss,The duplicates.profile just turns red but thankfully has not yet caused any exceptions
+2014-02-11T16:33:13Z,discuss,Fixed.
+2014-02-05T19:16:44Z,commit,Remove plugin references that are not part of CE,github.com/JetBrains/intellij-community/pull/148/commits/b1ef08a79e7b307725c80824f459dd376523ba3f

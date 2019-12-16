@@ -1,0 +1,13 @@
+806,IDEA-193617 Fix a11y of combo boxes
+2018-06-08T18:33:27Z,discuss,This addresses a regression introduced by change 54c98ac.
+2018-06-08T18:33:27Z,discuss,See comment in code for description of the fix.
+2018-06-08T18:36:54Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-06-08T18:51:23Z,discuss,@klikh I am a member of the Android Studio team @ Google.
+2018-06-08T18:58:09Z,discuss,"Ah, OK. This info is not visible on your profile page. Thanks for clarification, no CLA is needed in this case."
+2018-06-08T19:09:41Z,discuss,"Oh, I didn't realize this info was private. I just made it public. Also, I have contributed many a11y fixes in the past couple of years, feel free to contact @forantar, he helped me merge a few dozens of them already."
+2018-06-12T21:22:54Z,discuss,@klikh @forantar ping?
+2018-06-13T08:14:56Z,discuss,"@rpaquay Yep, everything is fine with the legal part now, thanks."
+2018-06-13T08:14:56Z,discuss,"I've forwarded the pull request for responsible developers, they'll review it soon."
+2018-06-14T10:44:59Z,discuss,"Hi Renaud,
+Thank you for the fix, your contribution to a11y support is very welcome!"
+2018-06-08T18:29:52Z,commit,IDEA-193617 Fix a11y of combo boxes,github.com/JetBrains/intellij-community/pull/806/commits/17b1f3f4682f62d74b1d60d655ff855f4367b447

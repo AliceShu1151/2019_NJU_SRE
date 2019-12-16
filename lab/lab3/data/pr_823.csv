@@ -1,0 +1,14 @@
+823,"Add ""delete unversioned"" action shortcut in commit changes dialog"
+2018-07-08T18:43:46Z,discuss,This PR fixes the https://youtrack.jetbrains.com/issue/IDEA-160857 issue.
+2018-07-23T18:39:09Z,discuss,"Actually, I think, it's not quite OK to add ""DELETE"" shortcut to the ""ChangesView.DeleteUnversioned"" action, because it is enabled ""almost everywhere"" and will highly intersect with common ""$Delete"" action (though the implementation is quite the same)."
+2018-07-23T18:39:09Z,discuss,"I'll make changes to use ""$Delete"" action instead of ""ChangesView.DeleteUnversioned"" (and so delete shortcut will also be available)."
+2018-07-23T21:35:05Z,discuss,"If I've understood you correctly, I need to edit VcsActions.xml only."
+2018-07-23T21:35:05Z,discuss,"If I do that, then I the delete icon disappears from the context menu.
+Will it be ok?
+"
+2018-07-23T21:35:05Z,discuss,"Otherwise it works on both Linux and macOs, thanks for the tip."
+2018-07-24T16:39:54Z,discuss,"I've pushed several changes related to the topic - see 023f55d, 9bae28b, 7627ae1, c4f3bd9."
+2018-07-24T16:39:54Z,discuss,Thanks!
+2018-07-24T20:53:59Z,discuss,"Great, thanks a lot for the fix."
+2018-07-08T16:08:38Z,commit,"Add ""Delete"" key shortcut for ""ChangesView.DeleteUnversioned"" action.",github.com/JetBrains/intellij-community/pull/823/commits/50c24c2ca72c2cd93aefc9d4f4a3d4f0a7f90a7a
+2018-07-08T18:31:53Z,commit,Add explicit shortcut set to support macOs backspace shortcut.,github.com/JetBrains/intellij-community/pull/823/commits/d55c6eeef4aab7c08bc6f4384efca05785c94826

@@ -1,0 +1,3 @@
+14,IDEA-80292 RunProfile name are too much truncated in file context popup menu
+2012-08-06T11:59:57Z,discuss,Bug fix according to IDEA-80292. The name show in the context menu is no more truncated.
+2012-08-06T11:47:00Z,commit,IDEA-80292 do not truncate RunProfile name in context menu,github.com/JetBrains/intellij-community/pull/14/commits/c407aace4c20bd028c5f5ce85240b364a2b253f2

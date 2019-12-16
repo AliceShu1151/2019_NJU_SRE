@@ -1,0 +1,14 @@
+654,Fix NPE when decompiling constructor
+2017-10-25T05:25:54Z,discuss,Fix NPE when decompiling constructor with call to the absent constructor of the same class.
+2017-10-25T14:14:09Z,discuss,"@gorrus we need an option which would allow decompiling incorrect code (off by default, on in IdeaDecompiler)."
+2017-10-25T16:51:52Z,discuss,"@trespasserw we do not stop on such errors, just the failing method is marked as // $FF: Couldn't be decompiled"
+2017-10-25T16:59:05Z,discuss,@Maccimo please describe when do you need it. Why constructors are better than any other methods in this case?
+2017-10-26T00:44:20Z,discuss,@gorrus The question is not clear. Need what?
+2017-10-26T00:44:20Z,discuss,As long as I can see only call to the absent constructor of the class from one of methods of class itself (not only <init>)  will cause decompilation problem.
+2017-10-26T00:44:20Z,discuss,Concerning suggestion of @trespasserw I personally think it would be handy to show disassembly in such cases.
+2017-10-26T08:51:06Z,discuss,@Maccimo I will clarify: in what cases do you decompile classes with missing constructor calls? Is it possible that other methods are missing but being called?
+2017-10-26T22:20:56Z,discuss,"This particular bug was revealed while debugging code generation tool.
+Obviously, it is possible that any method or field may be missed while it is not causing class loading problems."
+2017-10-26T22:20:56Z,discuss,"I saw other places in decompiler where result returned by getMethodWrapper() is dereferenced without nullability check, but not investigated that places yet."
+2018-04-27T12:10:33Z,discuss,"manually merged, thanks for the contribution!"
+2017-10-25T05:02:30Z,commit,Fix NPE when decompiling constructor with call to the absent construc¡­,github.com/JetBrains/intellij-community/pull/654/commits/c39c459ff51ace8355a67adfd9fde178b407973e

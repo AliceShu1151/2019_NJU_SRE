@@ -1,0 +1,8 @@
+590,UI: allow customizing the TabsUtil constants through PropertiesComponent
+2017-06-11T07:18:15Z,discuss,"It would be useful for plugin makers to be able to customize the tab vertical padding, border and underline height using the PropertiesComponent instead of hard-coded fixed values."
+2017-06-19T16:04:46Z,discuss,"I don't understand your case and the problem to be solved. It's so easy to spoil UI...
+As for IconProvider, it should return 16x16 icon (or 32x32 in case of HiDPI) otherwise we'll got a zoo from different providers in tabs and trees. Small icons should be wrapped (for example try IconUtil.IconSizeWrapper) to get proper size."
+2017-06-19T16:41:55Z,discuss,This commit wasn't about the icon provider. The reference was from another case that apparently has been solved.
+2017-06-19T16:41:55Z,discuss,"This change about tabs is making the vertical padding customizable by plugin makers, like myself. This way during component initialization I can simply invoke PropertiesComponent.setValue() and allow bigger tabs. This would be useful for implementing custom LAFs as I do."
+2017-06-27T21:17:31Z,discuss,@bulenkov maybe you can help
+2017-06-11T06:08:04Z,commit,UI: allow customizing the TabsUtil constants through PropertiesComponent,github.com/JetBrains/intellij-community/pull/590/commits/dd5d992f332452af05ab57ecfc40530b8002133f

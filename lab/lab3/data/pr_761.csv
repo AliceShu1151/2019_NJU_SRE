@@ -1,0 +1,8 @@
+761,Symmetric start and end points for init ProgressIndicator
+2018-03-15T20:14:49Z,discuss,Fixed with changing total width value.
+2018-03-15T20:14:49Z,discuss,"Before (Now):
+
+After:
+"
+2018-03-17T10:50:54Z,discuss,The proposed change will break desing guidelines for Splash screens. Start and end points are correct in current implementation
+2018-03-15T20:05:28Z,commit,Changed total width value,github.com/JetBrains/intellij-community/pull/761/commits/679831990143cb21430d6eed4c610b81ef7eb8ba

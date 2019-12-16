@@ -1,0 +1,8 @@
+1093,IDEA-208067: Fix memory leak via InlayModelImpl$AfterLineEndElementTree
+2019-03-20T01:54:13Z,discuss,"AfterLineEndElementTrees register themselves as document listeners in
+their constructor, but the disposal call in InlayModelImpl which removes
+this listener was omitted."
+2019-03-20T16:13:23Z,discuss,Patch has been pushed to master. It will also be merged into 191 branch.
+2019-03-20T16:19:18Z,discuss,"Sorry forgot to set 'Author' field, so the commit doesn't have your name in it :(
+(We apply pull requests manually in our repository)."
+2019-03-20T01:45:20Z,commit,IDEA-208067: Fix memory leak via InlayModelImpl$AfterLineEndElementTree,github.com/JetBrains/intellij-community/pull/1093/commits/ac5bfaae5ee71da527c797850fc09d5c4e585e39

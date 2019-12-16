@@ -1,0 +1,3 @@
+276,Don't provide intentions or fixes that will modify generated sources
+2015-06-18T08:56:11Z,discuss,see discussion in https://youtrack.jetbrains.com/issue/IDEA-140807
+2015-06-18T08:47:26Z,commit,Don't provide intentions or fixes that will modify generated sources,github.com/JetBrains/intellij-community/pull/276/commits/6f06d33ebd3b64842bbfb88d4b7876ec8e2b6200

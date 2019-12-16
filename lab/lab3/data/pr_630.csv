@@ -1,0 +1,9 @@
+630,"IDEA-179472: Fix maven module not retrieving ""release"" version from config"
+2017-09-23T14:40:15Z,discuss,"
+No description provided.
+"
+2018-07-21T11:25:28Z,discuss,@vladsoroka ping
+2018-07-23T13:35:51Z,discuss,"Thanks for the contribution, I'm sorry for the late answer.
+However similar change was already added for another ticket, you can track it at https://youtrack.jetbrains.com/issue/IDEA-173143"
+2017-09-23T14:13:12Z,commit,Add method to return new release option in config,github.com/JetBrains/intellij-community/pull/630/commits/bee6aa4fa58f9b15e4e1bb52207ee8856a1be624
+2017-09-23T14:16:56Z,commit,Allow to retrieve maven module version from release config,github.com/JetBrains/intellij-community/pull/630/commits/52fafc8bb9063735c678666161e6917092d8aab7

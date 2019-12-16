@@ -1,0 +1,5 @@
+1000,Fix missing type parameter
+2018-12-04T14:59:04Z,discuss,"FilteringListModel can have type parameter added to more of its methods
+to avoid compilation error when the delegated list is not casted."
+2018-12-06T13:00:02Z,discuss,Merged the commit. Thanks!
+2018-12-04T14:53:50Z,commit,Fix missing type parameter,github.com/JetBrains/intellij-community/pull/1000/commits/528842aa3acf7f7ab7e7aae21ff4ffa4ad6a951d

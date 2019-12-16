@@ -1,0 +1,4 @@
+1061,"IDEA-207075 Better diagnosis for ""scheduleIndexRebuild, reason: File type change"""
+2019-02-11T14:24:07Z,discuss,Implements https://youtrack.jetbrains.com/issue/IDEA-207075
+2019-02-15T09:41:09Z,discuss,Pull request was merged manually. Thank you for the contribution!
+2019-02-11T14:20:00Z,commit,"IDEA-207075 Better diagnosis for ""scheduleIndexRebuild, reason: File бн",github.com/JetBrains/intellij-community/pull/1061/commits/d95f157bd834e6eb1fd64c11f52f307480190baa

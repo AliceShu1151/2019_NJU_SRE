@@ -1,0 +1,5 @@
+875,IDEA-199694 Preserve line breaks in XML when reformatting.
+2018-09-28T19:38:28Z,discuss,"The line breaks of Xml comments at the end of an XML file were
+not preserved when the file was reformatted."
+2018-09-28T19:38:28Z,discuss,Change-Id: If8ebc954f4cdc8f0f3e385e2474ff50466ce88ff
+2018-09-28T19:24:33Z,commit,IDEA-199694 Preserve line breaks in XML when reformatting.,github.com/JetBrains/intellij-community/pull/875/commits/222be1ff6f8bb37b2e692f7fe0562495c2759e0e

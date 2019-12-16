@@ -1,0 +1,3 @@
+403,Preserve original file when performing copy for postfix template
+2016-05-24T11:46:26Z,discuss,"It's necessary change to properly implement postfix templates for Kotlin, at the same time preserving original file is required by PsiFile contract"
+2016-05-23T15:07:43Z,commit,Preserve original file when performing copy for postfix template,github.com/JetBrains/intellij-community/pull/403/commits/66bec63a70a753cf51a78724f7900c3241aa117b

@@ -1,0 +1,4 @@
+1264,IDEA-227649 LocalCanBeFinal: false negative in lambda body
+2019-11-26T14:10:42Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-227649
+2019-11-26T20:32:21Z,discuss,"Merged manually, thanks!"
+2019-11-26T14:08:55Z,commit,LocalCanBeFinal: fix false negative in lambda body,github.com/JetBrains/intellij-community/pull/1264/commits/9f32504d8a1c0de48d08924aca15364bb5495031

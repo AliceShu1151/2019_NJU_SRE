@@ -1,0 +1,9 @@
+1218,Enable brace highlighting for read-only viewers
+2019-10-24T15:35:26Z,discuss,"The current implementation of brace highlighter is written in such a way that brace highlighting is disabled for editors in read-only mode (editor.isViewer()==true). There is no obvious reason to do that, so this one-liner pull-request enables brace highlighting in this situation. Brace Highlighting tests in platform.lang.test pass normally after this change."
+2019-10-25T10:09:25Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-10-25T11:15:22Z,discuss,Do I need one if I am already a JB employee? Did this anyway.
+2019-10-25T11:19:58Z,discuss,"No, of course not."
+2019-11-06T07:19:48Z,discuss,"@chashnikov You've disabled brace highlighting for viewers long time ago (in commit 4887978 with message ""FBQ-11657 fixed""). Any chance you remember why it was done?"
+2019-11-07T10:12:18Z,discuss,"@JB-Dmitry This was done 15 years ago, unfortunately I don't remember why I did that. The issue is from JIRA project for JetBrains Fabrique product which was never released and this JIRA instance isn't available anymore. So I think it's ok to revert my change."
+2019-11-07T10:27:04Z,discuss,"OK, pushed the fix."
+2019-10-24T15:05:22Z,commit,Enable brace highlighting for read-only viewers,github.com/JetBrains/intellij-community/pull/1218/commits/1f6c57206a7f0998811ce1b27cea71794c7e236c

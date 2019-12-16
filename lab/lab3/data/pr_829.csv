@@ -1,0 +1,21 @@
+829,Auto-hide editor scrollbars
+2018-07-14T23:56:47Z,discuss,"Since editor.xcode.like.scrollbar seems broken, I decided to make few changes to make it at least somewhat usable."
+2018-07-14T23:56:47Z,discuss,Demo https://youtu.be/ro2A7EzjrB0 with editor.xcode.like.scrollbar enabled after change.
+2018-07-14T23:56:47Z,discuss,cc @ignatov (based on git blame)
+2018-07-16T09:51:33Z,discuss,"@nvartolomei thanks, will check it out."
+2018-07-16T20:12:39Z,discuss,"Thank you for the fix. I'm testing it locally, but I do not want to push it into master as is.
+First, I think many people will ask to return old behaviour and we should provide such a way.
+Second, I need to discuss suggested solution with our designer who is on vacation now.
+Stay tuned!"
+2018-07-16T21:50:10Z,discuss,"@SergeyMalenkov old behaviour is? For me editor.xcode.like.scrollbar turns scrollbar into a black rectangle, is this intended?"
+2018-07-16T21:50:10Z,discuss,
+2018-07-16T21:50:10Z,discuss,"To me that looked like a bug/abandoned feature, so I came up with this patch which hides editor scrollbar handle (thumb) only when this registry entry is set to true. When editor.xcode.like.scrollbar is false, this patch should not change anything, if it does than it is my fault."
+2018-07-17T07:11:25Z,discuss,"@SergeyMalenkov I agree with @nvartolomei, the option is experimental and we should fix the original behavior, there's nothing to discuss with UI team."
+2018-07-17T10:59:20Z,discuss,@nvartolomei I mean 2 scenarios for scroll thumb in editor:
+2018-07-17T10:59:20Z,discuss,"@ignatov We should discuss which behaviour should be used by default, at least.
+And I think we are going to leave the current behaviour, because no one use editor.xcode.like.scrollbar."
+2018-07-17T11:11:52Z,discuss,"@SergeyMalenkov I think you misinterpreted the code a bit. Re-compile with this patch applied and test both cases (editor.xcode.like.scrollbar=true/false) and you'll see that default behaviour is not changed, only behaviour under editor.xcode.like.scrollbar=true is changed."
+2018-07-17T11:54:50Z,discuss,"Sorry. Seems that patch was applied incorrectly first time. Or full rebuild helped...
+I'll test a bit and then push these changes into master."
+2018-07-14T23:29:31Z,commit,IDEA-194379: Always render error stripes panel,github.com/JetBrains/intellij-community/pull/829/commits/f550f5470dabc0c3b166ee089646ef6fc349f138
+2018-07-14T23:36:04Z,commit,Avoid useless calculation if thumb is not visible,github.com/JetBrains/intellij-community/pull/829/commits/b676fb42a898e68d26f8193324f812631b3038c5

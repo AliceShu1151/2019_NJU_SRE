@@ -1,0 +1,4 @@
+349,Fix broken link in plugin README
+2016-01-28T13:02:24Z,discuss,Link to GitHub was broken due to missing https prefix (was treated as https://github.com/JetBrains/intellij-community/blob/master/plugins/settings-repository/www.github.com).
+2018-07-21T13:26:15Z,discuss,"Thanks, merged."
+2016-01-28T13:00:57Z,commit,Fix broken link in plugin README,github.com/JetBrains/intellij-community/pull/349/commits/5c063a274acd94a61cd77e84eba9281793f46b51

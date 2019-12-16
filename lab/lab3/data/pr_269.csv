@@ -1,0 +1,8 @@
+269,Allowing users to specify environment variables in their embedded terminal sessions
+2015-05-23T23:09:50Z,discuss,"I've added the environment variables dialog to the Embedded Terminal Settings. Any macro variables in the values are expanded. This provides a hook for passing in things like the PROJECT_DIR (IDEA-126640), IDEA_HOME (IDEA-134992), and anything else the user might want. I settled on PROJECT_DIR as the default because I wanted it myself, it seemed like a good example to show what users could do with the dialog, and it seemed it would provide a good base for a lot of tricks users might dream up."
+2015-05-24T09:21:25Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-05-24T14:58:18Z,discuss,"@klikh Ok, done. It's been sent."
+2015-05-25T11:23:43Z,discuss,The agreement was received. Thank you.
+2018-07-21T14:53:50Z,discuss,"@sblundy, please rebase the PR, cc @traff."
+2018-10-22T15:53:53Z,discuss,I've merged the pull request. @sblundy Thanks!
+2015-05-23T22:35:12Z,commit,Allowing users to specify environment variables in their embedded ter¡­,github.com/JetBrains/intellij-community/pull/269/commits/e3455055716325aa229fb6365c8a56c84c3da1e2

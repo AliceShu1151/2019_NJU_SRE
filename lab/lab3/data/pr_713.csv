@@ -1,0 +1,4 @@
+713,IDEA-185286: fix bug in PopupFactoryImpl
+2018-01-21T08:31:45Z,discuss,IDEA-185286
+2018-01-21T08:31:45Z,discuss,PopupFactoryImpl.guessBestPopupLocation(Editor) returns a wrong coordinate when the caret is behind a parameter name hint.
+2018-01-21T08:28:54Z,commit,IDEA-185286: fix bug in PopupFactoryImpl,github.com/JetBrains/intellij-community/pull/713/commits/84497812cecd032dd643e3c7af43b17dbfbce939

@@ -1,0 +1,10 @@
+1037,IDEA-197682 Dispose the CloseTab action with the editor.
+2019-01-22T20:40:19Z,discuss,"Currently the shadow action for the CloseTab action is disposed
+with the project (via the editor tabs)."
+2019-01-22T20:40:19Z,discuss,"It seems more correct to dispose this with the editor, since the
+UiNotifyConnector created with the action is hooked up to the
+editor component. The hook (addHierarchyListener) should be
+released with the editor."
+2019-01-22T20:40:19Z,discuss,This fixes a leak detected in Android Studio.
+2019-01-22T20:40:19Z,discuss,Change-Id: Ia5084df74fc1a3a93b951d384acc565fcc7dd560
+2018-08-16T19:58:32Z,commit,IDEA-197682 Dispose the CloseTab action with the editor.,github.com/JetBrains/intellij-community/pull/1037/commits/e77d6b05ad79b7fb9ff1d14723a585b6eb31deb8

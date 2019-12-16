@@ -1,0 +1,7 @@
+145,Possibility to modify CreateTestDialog for scala plugin
+2014-01-23T07:38:40Z,discuss,"
+No description provided.
+"
+2014-08-08T10:47:02Z,discuss,Done
+2014-01-23T07:35:02Z,commit,Suggested test name and construction of a CreateTestDialog refactored¡­,github.com/JetBrains/intellij-community/pull/145/commits/e12d136df7f2c76234952a53532a5f5194e41b72
+2014-01-23T09:57:30Z,commit,Protected method for finding search scope,github.com/JetBrains/intellij-community/pull/145/commits/dc1b66f2a99663eb27f645800ba7e723f9ee332b

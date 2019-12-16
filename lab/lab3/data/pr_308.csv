@@ -1,0 +1,2 @@
+308,Fixed `BoolUtils#isNegation` to check for *logical* (instead of *bitwise*) negation
+2015-10-19T22:19:30Z,discuss,"Since there were multiple BoolUtils present, the actual fix was their merger, eliminating the faulty method as a side-effect."

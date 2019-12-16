@@ -1,0 +1,39 @@
+219,IDEA-132199 Fix Git get repo for python projects that are also installed in virtualenv
+2014-11-08T00:28:00Z,discuss,"For a python project that is also installed in virutalenv, and has a non-git parent directory, git4idea will try to get the VCS root using a library specific logic, failed to find the correct root, thus failed to find the correct repository.The git branch pop thus failed to pop up when called."
+2014-11-08T00:28:00Z,discuss,"------ Original bug report description ------
+Assuming a project structure of following:
+workspace
+| module_A (library home)
+| module_B (library home)
+| module_C
+| non_python_module
+Where module A and B are installed on project's virtualenv, module C isn't installed, all four modules are 4 separate git root, and workspace has no vcs root."
+2014-11-08T00:28:00Z,discuss,"Then when module_A  or module_B  is selected, the git branches dialog will not pop out when selecting VCS>Git>Branches... (right click>Git>Repository>Branches... doesn't work either)"
+2014-11-08T00:28:00Z,discuss,"The dialog would pop up when module_C  or non_python_module  is selected, and the dialog would still correctly recognise all 4 repositories."
+2014-11-08T00:28:00Z,discuss,see https://youtrack.jetbrains.com/issue/IDEA-132199
+2014-11-12T11:00:27Z,discuss,"getVcsRootOrGuess is actually the method which should get that very Git root which contains the specified file. So the fix should affect getVcsRootOrGuess method, and not this one."
+2014-11-12T11:00:27Z,discuss,"I wonder, why getRepositoryForFile does find the root for the python library, while getVcsRootOrGuess doesn't. Does it happen because the latter immediately goes into DvcsUtil.getVcsRootForLibraryFile (without checking for ProjectLevelVcsManager.getVcsRootFor) which doesn't find the root? Could you please check  what happens there?"
+2014-11-12T11:00:27Z,discuss,"At any case, it looks like the correct fix would be to patch DvcsUtil.getVcsRoot so that it first tries ProjectLevelVcsManager.getVcsRootFor (without checking if the file is in library), and try getVcsRootForLibraryFile only if the first one returns null."
+2014-11-12T11:39:46Z,discuss,"Correct, that is the issue."
+2014-11-12T11:39:46Z,discuss,"The code assumes library files and project files are mutually exclusive, which is true for Java, as a file must either from JDK/dependencies (count as library) or from project file itself. But in python we have this case where a project file is installed in python virtualenv. fileIndex will count the file as library file, but the underlying file structure is still a project file."
+2014-11-12T11:39:46Z,discuss,"Question is, should we still count those file as library files? If not, then we should fix fileIndex construction so that it excludes project file."
+2014-11-12T11:39:46Z,discuss,I'll submit a fix tonight with what you propose. If you think we should fix the fileIndex instead then let me know
+2014-11-12T11:46:17Z,discuss,"I think it's better to fix just DvcsUtil.getVcsRoot because such fix seems to be safe at any case, while modifying ProjectFileIndex behaviour might breaking things in different areas."
+2014-11-12T11:46:17Z,discuss,"However, I'll ask my colleague from python team to check if this ProjectFileIndex behaviour is correct."
+2014-11-12T12:40:41Z,discuss,"Hi Adrian! Mutually exclusiveness is valid in Python as in Java - a file can be a library or a project one. If you install your project file to your virtualenv then it will have another path there being installed and will be treated as library.
+If I correctly understand what you are trying to achieve."
+2014-11-12T21:52:39Z,discuss,"@klikh Reverted the original changes and added what you've suggested. Let me know if you need anything else before this could merge.
+@traff That is the current behaviour, indeed. Is that desired thou?"
+2014-11-13T00:55:17Z,discuss,Did a merge and the change is now in DvcsUtil
+2014-11-17T12:13:56Z,discuss,"Adrian, have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2014-11-30T17:26:03Z,discuss,@klikh Sent. Please Confirm
+2014-12-02T10:51:10Z,discuss,"Agreement received, thanks."
+2014-12-02T12:22:21Z,discuss,"I've merged the fix, thanks."
+2014-12-02T12:22:21Z,discuss,For future contributions please consider the following items:
+2014-12-02T12:22:21Z,discuss,Thanks for your contribution!
+2014-11-05T21:04:16Z,commit,IDEA-132199 Fix Git get repo for python projects that are also instal¡­,github.com/JetBrains/intellij-community/pull/219/commits/bc7811f518cf1083c13df7f02238a347382061c1
+2014-11-07T00:09:14Z,commit,IDEA-132199 Fix Git get repo for python projects that are also instal¡­,github.com/JetBrains/intellij-community/pull/219/commits/13eaea2814683225e57f38abfeec764230162e81
+2014-11-07T00:09:14Z,commit,IDEA-132199 Fix Git get repo for python projects that are also instal¡­,github.com/JetBrains/intellij-community/pull/219/commits/1f0fa30d905aa7b27f9aadbb504ce43431a5d7b4
+2014-11-11T20:56:41Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/219/commits/70e84d2598a271dfa7671375af8e67a5d428ba4d
+2014-11-12T01:11:22Z,commit,Merge remote-tracking branch 'updatrea/master',github.com/JetBrains/intellij-community/pull/219/commits/67228eeb62913095217d43c564bb4a62f77ce362
+2014-11-12T01:14:14Z,commit,IDEA-132199 Fix Git get repo for python projects that are also instal¡­,github.com/JetBrains/intellij-community/pull/219/commits/457657db88e998b45e8ad4a84c6d6b0a55d16fbf

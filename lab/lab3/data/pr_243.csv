@@ -1,0 +1,6 @@
+243,fix IDEA-128528
+2015-02-15T15:43:03Z,discuss,loads annotation processor options from bsc.maven.plugin
+2015-02-15T15:48:02Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-02-17T14:54:13Z,discuss,is it possible to compile this plugin standalone and replace the one thats shipped with my 14.1 EAP ? or get it into the next EAP ? I need this change desperately!
+2015-04-07T10:58:20Z,discuss,CA received.
+2015-02-15T15:39:29Z,commit,fixes IDEA-128528,github.com/JetBrains/intellij-community/pull/243/commits/11615db06d58ea8b8264b31ab98bc38f17c12089

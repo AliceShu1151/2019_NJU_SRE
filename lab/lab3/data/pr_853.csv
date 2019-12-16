@@ -1,0 +1,16 @@
+853,Created configurable group for tool window context menu
+2018-09-11T09:57:17Z,discuss,"
+No description provided.
+"
+2018-09-11T10:23:57Z,discuss,"Hi Oleg! Not sure if it is needed in your case, but could you please sign the CLA at http://www.jetbrains.com/agreements/cla/?"
+2018-09-11T10:23:57Z,discuss,Could you please also rebase the PR to get rid of these merge commits. Thanks!
+2018-09-11T12:10:46Z,discuss,Done that
+2018-09-11T12:12:50Z,discuss,Thanks! @Vassiliy-Kudryashov could you please take a look?
+2018-09-17T12:54:00Z,discuss,"And again, no ""Merge remote-tracking branch"" commits please ;)"
+2018-09-17T12:59:06Z,discuss,@klikh I would just make this PR obsolete. I have the new one: #861 with more comprehensive work.
+2018-09-11T09:11:05Z,commit,Created configurable group for tool window context menu,github.com/JetBrains/intellij-community/pull/853/commits/eaf72102c4fb5ea7da217152f1d282b38d6eef1f
+2018-09-17T07:00:32Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/853/commits/510a98ed7c2b7631b0cdb4e97e21df89ddc21948
+2018-09-17T07:33:09Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/853/commits/a06a7d3ff77e2e07695c5036bc6da93450cffbb4
+2018-09-17T07:40:31Z,commit,"Native tabs for terminal tool window: part I (no renaming of tabs, no¡­",github.com/JetBrains/intellij-community/pull/853/commits/b343ff03c828e8df2ccecca8782e8c7542f1b38c
+2018-09-17T12:28:48Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/853/commits/d4b4ac6389662e443d30a0e63378721133479938
+2018-09-17T12:33:23Z,commit,Merge branch 'JetBrains-master',github.com/JetBrains/intellij-community/pull/853/commits/0eb21d5bcbafcc2219938b2734aaddcdb2bd44fc

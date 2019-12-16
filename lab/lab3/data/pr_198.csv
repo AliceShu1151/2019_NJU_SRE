@@ -1,0 +1,7 @@
+198,Make AdvancedEnhancer jarjar'able
+2014-07-03T15:29:50Z,discuss,"Patching in an upstream change from CGLIB:
+cglib/cglib@e90a0c9
+cglib/cglib@6adc087"
+2014-07-03T15:49:21Z,discuss,Created an issue for tracking: http://youtrack.jetbrains.com/issue/IDEA-126889
+2014-07-03T18:35:59Z,discuss,Merged manually
+2014-07-03T15:28:06Z,commit,Make AdvancedEnhancer jarjar'able,github.com/JetBrains/intellij-community/pull/198/commits/a7a4786f254cd394da121c2fabb77b6d05fc008a

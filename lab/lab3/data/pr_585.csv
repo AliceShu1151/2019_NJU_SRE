@@ -1,0 +1,7 @@
+585,IDEA-170926 Do not show parameter hint when it matches the argument name
+2017-06-07T21:39:12Z,discuss,"There is no point to show parameter hint when it's the exact duplicate of the passed argument. As in insert([pos:] pos, [value:] value).
+This patch addresses that."
+2017-06-07T21:39:12Z,discuss,It also disables parameter hint when the argument is a method call and the called method name ends with the parameter name. For example save([stats:] collectStats())
+2017-06-27T10:52:46Z,discuss,"Thanks for submitting!
+Currently, hints for non-literals are shown only when multiple params with the same type occur in the call expression, so proper fix will require modifying logic there. I've pushed more appropriate fix."
+2017-06-07T21:21:33Z,commit,IDEA-170926 Do not show parameter hint when it matches the argument name,github.com/JetBrains/intellij-community/pull/585/commits/7d8495fd73213d6830ff8367b0a6653d37c50e07

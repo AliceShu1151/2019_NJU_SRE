@@ -1,0 +1,17 @@
+291,Pluggable file watcher
+2015-07-21T11:01:53Z,discuss,"This implements a new extension point that allows plugins to provide their own implementation of file watchers, not requiring a different fsnotify binary."
+2015-07-09T12:18:35Z,commit,PluggableFileWatcher extension point,github.com/JetBrains/intellij-community/pull/291/commits/0a20df1a55d5e2534f805796c7758f3c94ad02b1
+2015-07-09T12:18:35Z,commit,PluggableFileWatcher extension point,github.com/JetBrains/intellij-community/pull/291/commits/730953a4a39e617036c8262d3cec88f193d06304
+2015-07-10T11:29:24Z,commit,monor perf impr,github.com/JetBrains/intellij-community/pull/291/commits/7a7073dcf248813887cc76238261c581bb0b3368
+2015-07-10T16:46:23Z,commit,Minor fixes,github.com/JetBrains/intellij-community/pull/291/commits/eadc6db3ee997566b514c033c82f7e67a7e72c72
+2015-07-10T16:48:43Z,commit,Stray change,github.com/JetBrains/intellij-community/pull/291/commits/af228082c225a6054929b2be99962fd3e312fbb8
+2015-07-10T16:51:20Z,commit,Merge branch 'pluggable-file-watcher' of,github.com/JetBrains/intellij-community/pull/291/commits/62eea410fc9b0179bf5b6d1a785d25ece6a7253d
+2015-07-16T13:10:44Z,commit,Fixed getManualWatchRoots() + moved classes around.,github.com/JetBrains/intellij-community/pull/291/commits/25c04053b826f2ac464f4299cf498f9e501b2ef8
+2015-07-09T12:18:35Z,commit,PluggableFileWatcher extension point,github.com/JetBrains/intellij-community/pull/291/commits/7b69e025163018221bc1dd94f822e1fa9546d44e
+2015-07-10T11:29:24Z,commit,monor perf impr,github.com/JetBrains/intellij-community/pull/291/commits/181d26c0c8c48c8c6b9719e9c6b781c0a7ff7294
+2015-07-10T16:46:23Z,commit,Minor fixes,github.com/JetBrains/intellij-community/pull/291/commits/8a2d2b874705ed846ed7600b2de8dfe015002489
+2015-07-10T16:48:43Z,commit,Stray change,github.com/JetBrains/intellij-community/pull/291/commits/a8e86feea16417c3928f70af49d4e52f32885f49
+2015-07-16T13:10:44Z,commit,Fixed getManualWatchRoots() + moved classes around.,github.com/JetBrains/intellij-community/pull/291/commits/e4dfd48ded8edc6a7a79cdb9cf819bbc77318c2f
+2015-07-20T09:17:12Z,commit,rebase,github.com/JetBrains/intellij-community/pull/291/commits/953d71621a1f6156ecd4fa2f8d0c7f1fd4e3d8d3
+2015-07-20T09:23:14Z,commit,rebase,github.com/JetBrains/intellij-community/pull/291/commits/b0995b25446b2ed89e19c0726e98f00bd4c3cc23
+2015-07-20T11:00:02Z,commit,Rebase + extra clean-up,github.com/JetBrains/intellij-community/pull/291/commits/55ed70d92deaf9e79cb5a04fac9ca9e4cdfa45f4

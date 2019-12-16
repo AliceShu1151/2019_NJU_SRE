@@ -1,0 +1,3 @@
+892,"added ""EvaluateExpression"" to TouchBar"
+2018-10-19T17:45:27Z,discuss,"I really missed the ""EvaluateExpression"" on the touch bar, so I added it on my own. I think I found an acceptable position for this."
+2018-10-19T17:26:28Z,commit,"added ""EvaluateExpression"" to TouchBar while in debug and pressing th¡­",github.com/JetBrains/intellij-community/pull/892/commits/7bd7ee9058fa6928db317ebf6d4b039909250b88

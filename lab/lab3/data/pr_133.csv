@@ -1,0 +1,6 @@
+133,brace matcher-based select word in custom file types (IDEA-117225)
+2013-12-03T11:27:54Z,discuss,"
+No description provided.
+"
+2013-12-09T19:04:20Z,discuss,Merged manually
+2013-12-03T08:45:34Z,commit,brace matcher-based select word in custom file types (IDEA-117225),github.com/JetBrains/intellij-community/pull/133/commits/dcfdfa00c47a5a80c0ad981984edf0ae8f22269e

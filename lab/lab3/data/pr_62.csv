@@ -1,0 +1,9 @@
+62,IDEA-104221 Console folding rules allow to add empty substring and after this console folding is not working anymore
+2013-03-29T22:24:52Z,discuss,"Possible fix for IDEA-10221.
+Please review."
+2013-03-31T10:26:33Z,discuss,This will look much nicer if you implement InputValidatorEx and return the error message from its getErrorText() method. Then you won't need to show the error message in a modal dialog.
+2013-04-02T08:11:05Z,discuss,In the last 2 commit:
+2013-04-02T12:00:31Z,discuss,Merged manually. Thanks a lot for your contribution!
+2013-03-29T22:19:34Z,commit,IDEA-104221 Console folding rules allow to add empty substring and af¡­,github.com/JetBrains/intellij-community/pull/62/commits/ccd81f5a343864f09cb27d7cef6f03243dca5edf
+2013-03-31T12:03:37Z,commit,IDEA-104221 Console folding rules allow to add empty substring and af¡­,github.com/JetBrains/intellij-community/pull/62/commits/1656fe0e433b85f542db57d4090dff8f7513e3c7
+2013-04-02T08:03:12Z,commit,IDEA-104221 Console folding rules allow to add empty substring and af¡­,github.com/JetBrains/intellij-community/pull/62/commits/49fceab86487a7cbe4480f574cd8ede7e3892317

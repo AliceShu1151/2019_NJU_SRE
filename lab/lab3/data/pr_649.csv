@@ -1,0 +1,10 @@
+649,Fix POP2 opcode handling bug with two category 1 values at the stack top.
+2017-10-16T04:53:58Z,discuss,Decompiler has bug in handling POP2 opcode when two top values belong to category 1 (JVMS9 ¡ì2.11.1)
+2017-10-16T07:15:45Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-10-16T20:27:21Z,discuss,Done.
+2017-10-17T14:16:39Z,discuss,"Hi, do you have a test case for this?"
+2017-10-17T14:35:05Z,discuss,"13 out of 14 files in this commit is a parts of added testcases.
+See testPop2* in SingleClassesTest.java"
+2017-10-17T15:08:51Z,discuss,"Ups, sorry, I did not notice :)"
+2017-10-18T17:07:43Z,discuss,"merged, thanks!"
+2017-10-16T05:13:24Z,commit,Fix POP2 opcode handling bug with two category 1 values at the stack ¡­,github.com/JetBrains/intellij-community/pull/649/commits/3a61a585d85e77fa418073968405371fe364f162

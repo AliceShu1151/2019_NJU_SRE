@@ -1,0 +1,8 @@
+1052,IDEA-171758 Support Guava collections in 'Suspicious collections method calls' inspection
+2019-02-06T21:36:07Z,discuss,"
+No description provided.
+"
+2019-02-07T09:34:16Z,discuss,"Could you please sign CLA
+https://www.jetbrains.com/agreements/cla/ ?"
+2019-02-07T09:51:38Z,discuss,@batya239 done
+2019-02-06T21:32:55Z,commit,IDEA-171758 Support Guava collections in 'Suspicious collections meth¡­,github.com/JetBrains/intellij-community/pull/1052/commits/a1afeb0d55d41ee205fcb6e11975094ef4d357a8

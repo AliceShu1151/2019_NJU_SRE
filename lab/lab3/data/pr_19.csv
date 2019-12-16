@@ -1,0 +1,10 @@
+19,IDEA-91145 Enhance org.jetbrains.idea.maven.server.MavenEmbedderWrapper#execute to be able to specify the project list and explicit profile exclusions
+2012-09-06T22:13:44Z,discuss,Proposition of implementation of http://youtrack.jetbrains.com/issue/IDEA-91145
+2012-09-28T19:25:40Z,discuss,"Have you signed the contributor agreement? If not, could you please do so?
+http://www.jetbrains.org/display/IJOS/Contributor+Agreement"
+2012-10-05T16:09:40Z,discuss,I'm checking with my employer if I can sign it or if it is to him to sign it.
+2012-10-18T07:18:14Z,discuss,The CLA will be send today (Jetbrains.net ID: systar)
+2012-10-23T12:46:47Z,discuss,Thanks! We've received the CLA.
+2012-08-15T12:03:36Z,commit,[IDEA-91145] Merge maven-embedder-1.1-SNAPSHOT into maven2-server-impl,github.com/JetBrains/intellij-community/pull/19/commits/7cc2ed78ddf20843f7cc3da481636009ff428dde
+2012-09-06T14:43:04Z,commit,[IDEA-91145] Add a new MavenEmbedderWrapper#execute method that permi¡­,github.com/JetBrains/intellij-community/pull/19/commits/b596794fb04f3a559ad77ad78eac5e3d59c401cf
+2012-09-06T14:47:43Z,commit,[IDEA-91145] Add methods to find Maven root projects,github.com/JetBrains/intellij-community/pull/19/commits/d88d26418edb5bca31ad4c5caa5d9274f7fac10d

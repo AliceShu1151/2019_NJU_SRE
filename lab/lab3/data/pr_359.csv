@@ -1,0 +1,10 @@
+359,Fixed `FlipCommaIntention` for Groovy files
+2016-02-22T20:36:01Z,discuss,I have checked that Change signature is still working.
+2016-02-22T20:36:01Z,discuss,"@maxmedvedev, @ignatov"
+2016-02-29T11:23:09Z,discuss,@paplorinc see GrIntentionTestCase and its inheritors for examples.
+2016-02-29T11:41:39Z,discuss,"Thanks @dovchinnikov, will create a test for it soon :)"
+2016-02-29T11:41:39Z,discuss,Could you please take a look at my other PRs in the meantime?
+2016-02-29T11:43:00Z,discuss,"@paplorinc yeah, sure"
+2016-02-29T22:29:25Z,discuss,"@dovchinnikov, done, corrected the flip for lists also"
+2016-03-22T12:12:40Z,discuss,"Merged manually, thanks."
+2016-02-22T19:55:58Z,commit,Fixed `FlipCommaIntention` for Groovy files,github.com/JetBrains/intellij-community/pull/359/commits/52c11841cf96a5c7c6e25fc702bb023dc908a46c

@@ -1,0 +1,7 @@
+336,Notify frameworks about absence of library
+2015-12-29T11:57:01Z,discuss,"It's easy to skip configuring library during project creation but it can be difficult to configure libraries afterwards.
+It can cause problems for Kotlin (KT-10488), Scala, Groovy"
+2015-12-29T11:57:01Z,discuss,"This callback can be used to give an additional warning similar to ""No SDK Specified"" (title.no.jdk.specified)"
+2016-02-02T14:03:35Z,discuss,There is no sense to add additional API for this. FrameworkSupportInModuleConfigurable already has isOnlyLibraryAdded method. If it returns 'true' it makes no sense to select a framework without choosing a proper library. I've pushed a commit which will cause IDEA to always show error message in such cases.
+2016-02-02T18:47:08Z,discuss,See aa46c7a
+2015-12-28T17:27:29Z,commit, Notify frameworks about absence of library,github.com/JetBrains/intellij-community/pull/336/commits/8a8b64a2e9d0fa15f132001203697d416e5850ea

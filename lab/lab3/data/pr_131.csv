@@ -1,0 +1,10 @@
+131,Run ant headless so no dock icon will appear
+2013-11-25T02:54:11Z,discuss,"It not only appears in the dock, but because it appears in the dock it
+steals focus from whatever you are doing at the time."
+2013-11-25T02:54:11Z,discuss,Specifying java.awt.headless=true as a JVM arg stops this annoying behavior.
+2013-11-25T02:54:11Z,discuss,q.v. https://discussions.apple.com/message/6052815#6052815
+2013-11-25T02:54:11Z,discuss,"I tested this on Windows to ensure that it still functions as designed, and it worked for me."
+2014-01-23T09:12:56Z,discuss,Merged manually. Thank you for contribution!
+2014-01-23T17:12:56Z,discuss,"Great, thanks so much for your help with this!"
+2013-11-23T04:03:19Z,commit,Run ant headless so no dock icon will appear,github.com/JetBrains/intellij-community/pull/131/commits/efe9a31c2e86dbcfcda33839d028682f3d46c6b6
+2013-11-25T17:58:50Z,commit,Add comments to explain why headless is true,github.com/JetBrains/intellij-community/pull/131/commits/2359f2982abaccb71b1f83313818ff03969b50ab

@@ -1,0 +1,5 @@
+614,IJSDK-299 Fix stack overflow in EditorTextField.requestFocus()
+2017-08-18T17:21:38Z,discuss,Fixes https://youtrack.jetbrains.com/issue/IJSDK-299.
+2017-08-18T17:21:38Z,discuss,"It seems ""super."" was just accidentally removed in 556290b"
+2018-07-21T11:24:47Z,discuss,"@WolfieMario, please update the PR, cc @denis-fokin."
+2017-08-18T16:57:52Z,commit,Call super.requestFocus() in EditorTextField.requestFocus().,github.com/JetBrains/intellij-community/pull/614/commits/8784c6739a5c70643377653b73d4c8a5500892c4

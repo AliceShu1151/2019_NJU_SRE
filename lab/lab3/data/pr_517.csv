@@ -1,0 +1,4 @@
+517,"IDEA-168575 introduced ant ansi color based on message type (error, w¡­"
+2017-02-22T08:41:13Z,discuss,"IDEA-168575 introduced ant ansi color based on message type (error, warning, info, debug)"
+2017-02-22T08:41:13Z,discuss,Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+2017-02-22T09:05:41Z,commit,IDEA-168525 introduced AntExecutionListener ExtensionPoint for plugin¡­,github.com/JetBrains/intellij-community/pull/517/commits/62e926758f22046d70ddcd5b5f4e6ee0c3e7ede3

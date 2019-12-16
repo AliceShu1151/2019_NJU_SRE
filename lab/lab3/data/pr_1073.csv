@@ -1,0 +1,10 @@
+1073,Check that build view is not null before sending events
+2019-03-01T20:18:32Z,discuss,"There is a NPE when multiple projects are open in Android Studio, the
+reason is that if there are multiple build views, the map that holds
+them can be updated by other threads. Every time this map::get method is
+called in MultipleBuildsView.java the code checks that the value is not
+null, except for a case."
+2019-03-01T20:18:32Z,discuss,"This change also makes sure that the view is not null in the missing
+part."
+2019-07-18T04:09:33Z,discuss,@vladsoroka Can you attend to this?
+2019-03-01T20:10:01Z,commit,Check that build view is not null before sending events,github.com/JetBrains/intellij-community/pull/1073/commits/1ddf8d566a460a51721522f87ec1645d36a74823

@@ -1,0 +1,24 @@
+675,Fix sporadic exceptions in AbstractTreeUi.
+2017-12-05T15:59:37Z,discuss,"AbstractTreeUi has been sporadically failing in different places and
+most often at"
+2017-12-05T15:59:37Z,discuss,in sortChildren().
+2017-12-05T15:59:37Z,discuss,"The other manifistation of the problem was ""null"" nodes sometimes
+appearing in the tree (nodes that visually appear with text ""null"")."
+2017-12-05T15:59:37Z,discuss,"The root cause of the problem is getNodeForElement() which disposes
+any node that is not in the tree. However, because of async nature of
+queued updates a node which is being dosposed can be already scheduled
+for addition to the tree."
+2017-12-05T15:59:37Z,discuss,"Here is the original comment from the commit from 2008 thad added
+diposing:"
+2017-12-05T15:59:37Z,discuss,"IDEADEV-29853 - invalid nodes, found by custom builders are disposed"
+2017-12-05T15:59:37Z,discuss,"This CL replaces the getNodeForElement() with the equiavalent code that
+does not dispose any nodes.
+Attn: @vladsoroka"
+2017-12-05T15:59:37Z,discuss,"Test: ""null"" node does not appear visually. makeSimpleApplication() UI
+test passes.
+Bug: IDEA-181904
+Change-Id: I837f2f4d3ab7a235d8b9ec6cb1afb215b4c230e4"
+2017-12-05T17:58:24Z,discuss,"The PR basically removes the fix introduced at 768178e
+for the queued updates case."
+2017-12-06T11:05:18Z,discuss,"Looks good, thank you! I've megred it to master branch (267d7b4) and when related tests will remain green the change will be cherry-picked  to 173."
+2017-12-05T15:43:48Z,commit,Fix sporadic exceptions in AbstractTreeUi.,github.com/JetBrains/intellij-community/pull/675/commits/932256d0ace6d382e2e7e24531ebe3162357d573

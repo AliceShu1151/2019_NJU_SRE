@@ -1,0 +1,25 @@
+106,Improved XmlSerializerUtil#copyBean -- moved type compatibility checks to compile time instead runtime.
+2013-10-14T13:26:32Z,discuss,"Fixed bug when copying a instance of Base class to a instance of Derived class.
+Added XmlSerializerUtil#mergeBeans.
+Suppressed some warnings."
+2013-10-14T15:45:45Z,discuss,Merged manually. Thanks!
+2013-10-14T15:49:19Z,discuss,"Sorry, I've had to revert this. The new signature breaks the following pattern:
+public class DeploymentConfigurationBase extends DeploymentConfiguration implements PersistentStateComponent {
+@override
+public PersistentStateComponent<?> getSerializer() {
+return this;
+}"
+2013-10-14T15:49:19Z,discuss,"@nullable
+@override
+public Self getState() {
+return (Self)this;
+}"
+2013-10-14T15:49:19Z,discuss,"@override
+public void loadState(Self state) {
+XmlSerializerUtil.copyBean(state, this);
+}
+}"
+2013-10-15T10:40:27Z,discuss,"Ok, but I didn't find any usage of DeploymentConfigurationBase, it is need?
+I find same problem in ServerConfigurationBase and I made simple fix."
+2013-10-15T11:18:31Z,discuss,"I sent new PR #107. I didn't drop the DeploymentConfigurationBase just fixed it, but seems you can do it."
+2013-10-14T13:21:27Z,commit,Improved XmlSerializerUtil#copyBean -- moved type compatibility check¡­,github.com/JetBrains/intellij-community/pull/106/commits/273381919e4aef35e97fe651599c310a853a7b5f

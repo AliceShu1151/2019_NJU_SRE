@@ -1,0 +1,4 @@
+97,Refactor method search classes for better reusability
+2013-09-10T15:57:34Z,discuss,"This refactoring allows to change some aspects of method search behavior in subclasses, namely:"
+2013-09-10T19:17:03Z,discuss,Merged. Thanks!
+2013-09-10T15:32:59Z,commit,Refactor method search classes for better reusability,github.com/JetBrains/intellij-community/pull/97/commits/a75c57d4503a65e79bcee594dab6ab0fc44d5c54

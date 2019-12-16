@@ -1,0 +1,29 @@
+553,SystemHealthMonitor: fix notification race
+2017-04-14T16:27:28Z,discuss,"Android Studio defines a custom first-run wizard, which exposes
+a race condition in displaying notifications in SystemHealthMonitor."
+2017-04-14T16:27:28Z,discuss,"The root problem is that the appFrameCreated callback happens before
+the frame is actually visible, see IdeaApplication where we have:"
+2017-04-14T16:27:28Z,discuss,"lifecyclePublisher.appFrameCreated(args, willOpenProject)
+... followed by, later
+WelcomeFrame.showNow()"
+2017-04-14T16:27:28Z,discuss,"And WelcomeFrame.showNow() first goes through extensions before making
+itself available:"
+2017-04-14T16:27:28Z,discuss,"if (ourInstance == null) {
+...
+for (WelcomeFrameProvider provider : EP.getExtensions()) {
+frame = provider.createFrame();
+}
+...
+ourInstance = frame;
+}"
+2017-04-14T16:27:28Z,discuss,"For any non-trivial extension that displays a dialog and starts
+consuming events from the AWT queue, this leads to a race condition:
+if SystemHealthMonitor has notifications to show, it may not see
+any visible frame and throw an NPE because the welcome frame didn't
+get a chance to initialize itself."
+2017-04-14T16:27:28Z,discuss,"We propose to use the appStarting callback, which is guaranteed to
+happen later in a separate transaction."
+2017-04-14T16:27:28Z,discuss,Bug: http://b.android.com/241387
+2018-07-21T12:11:52Z,discuss,"@rsauciuc, please rebase the PR, cc @trespasserw."
+2018-07-23T10:02:12Z,discuss,The issue should to be solved by ba01935. Sorry!
+2017-04-14T16:13:06Z,commit,SystemHealthMonitor: fix notification race,github.com/JetBrains/intellij-community/pull/553/commits/5f796b854b451dbcbc1ed889e36fd8f9497f29ae

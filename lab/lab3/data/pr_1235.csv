@@ -1,0 +1,8 @@
+1235,Let TypeMigrationProcessor handle primitive/non-primitive conversion
+2019-11-06T15:24:47Z,discuss,Let be:
+2019-11-06T15:24:47Z,discuss,"When I ask TypeMigrationProcessor to migrate method bar return type from int to long, I end up with:"
+2019-11-06T15:24:47Z,discuss,foo return type is migrated from Integer to long. This is incorrect and will cause issues among which null pointer exceptions.
+2019-11-06T15:24:47Z,discuss,"The current PR let TypeMigrationProcessor maintain the primitive/non-primitive aspect of type during the migration. e.g. Integer -> long migration will be turned to Integer -> Long before executing it. Although I think it should be the default behaviour, the new behaviour is introduced as an opt-in."
+2019-11-18T19:10:26Z,discuss,Tests added
+2019-12-10T16:50:12Z,discuss,Hello?
+2019-11-06T15:17:34Z,commit,Let TypeMigrationProcessor handle primitive/non-primitive conversion,github.com/JetBrains/intellij-community/pull/1235/commits/fa4bde558ec226a8699bcffb13bf815c65714a9b

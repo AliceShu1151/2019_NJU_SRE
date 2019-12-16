@@ -1,0 +1,6 @@
+380,Inplace renaming of elements from different Psi trees
+2016-04-07T18:36:43Z,discuss,Current implementation does not allow inplace renaming when related elements are in different subtrees of a MultiPsi file. This should fix this
+2016-04-11T17:56:04Z,discuss,it was disabled intentionally to avoid performance problems during inplace rename inside jsp. What issue do you fix?
+2016-04-11T17:58:17Z,discuss,No issues. Just didn't know it was disabled intentionally. Was surprised that inplace not working in different psi trees.
+2016-04-11T18:06:30Z,discuss,"It is tricky to predict all consequences of such change, hopefully we would rewrite this code one day and there won't be such restrictions anymore. Sorry for that"
+2016-04-07T18:29:02Z,commit,Allows to use MemberInplaceRenamer when elements are in different Psi¡­,github.com/JetBrains/intellij-community/pull/380/commits/6cc9ac7b78a4ff00d69ccad2ae813c44a26f1737

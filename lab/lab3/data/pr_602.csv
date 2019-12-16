@@ -1,0 +1,5 @@
+602,Provide API for extending Create Field/Method from Usage
+2017-07-19T10:51:15Z,discuss,"The goal is to support cross-language ""Create from Usage"" (see, for example, https://youtrack.jetbrains.com/issue/KT-7641 for Java->Kotlin case)"
+2017-07-11T15:58:39Z,commit,Create Field from Usage: Support language-specific intention action f¡­,github.com/JetBrains/intellij-community/pull/602/commits/1b68cc0dc71893fe7296e877c90e458132981830
+2017-07-17T14:13:41Z,commit,Create Method from Usage: Support language-specific intention action ¡­,github.com/JetBrains/intellij-community/pull/602/commits/d4874bd5c4cc7710c8d3af3f2b8bacb6f0e9dd0a
+2017-07-19T10:33:08Z,commit,Create Constructor from Usage: Support language-specific intention ac¡­,github.com/JetBrains/intellij-community/pull/602/commits/b31ec136944178f82ed59c9426bfa536008c3ed7

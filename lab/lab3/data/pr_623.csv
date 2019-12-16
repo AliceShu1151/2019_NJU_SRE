@@ -1,0 +1,6 @@
+623,Run all nested tests in delegate to gradle mode
+2017-08-31T20:10:14Z,discuss,"
+No description provided.
+"
+2017-09-04T08:47:31Z,discuss,"As discussed, this is not correct fix."
+2017-08-31T20:06:51Z,commit,Run all nested tests in delegate to gradle mode,github.com/JetBrains/intellij-community/pull/623/commits/92712f873605a2f1cd0a2b1ffb02b986b7273f84

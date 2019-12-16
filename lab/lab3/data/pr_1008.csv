@@ -1,0 +1,14 @@
+1008,[IDEA-123039] Use non-recursive Xalan str:tokenize() extension function instead of the recursive XSLT 1.0 hack
+2018-12-10T00:02:57Z,discuss,This fixes the IDEA-123039 bug.
+2018-12-10T00:02:57Z,discuss,"For more information about Xalan EXSLT extensions go to:
+https://xalan.apache.org/xalan-j/extensionslib.html#exslt"
+2018-12-10T15:05:00Z,discuss,that's lovely but it would be even better if you'd put add some guidelines how to do this.
+2018-12-10T19:45:48Z,discuss,"@smoczyna, how to do what? I don't really understand your statement.
+I've provided the fix and now @akozlova from JetBrains should review and merge it."
+2018-12-10T20:16:38Z,discuss,"@smoczyna, take a look at the changes of this pull request and stop trolling. PR contains changes in the code, not only a title that you don't understand."
+2018-12-12T13:12:29Z,discuss,"Look you rosti or perhaps rusty dickhead. I've been directed here by JetBrain support to get the solution of my problem which is exactly the same. However there is not any ""solution"" here I can use straight away, thus my comment."
+2018-12-12T14:28:52Z,discuss,"@smoczyna
+I've hidden your latest comment. Please refrain from insulting people. It is neither acceptable nor productive."
+2018-12-18T19:53:33Z,discuss,"@akozlova, ping."
+2019-01-22T15:53:10Z,discuss,"Sorry for late response. PR is merged manually, the fix should appear in the second 2019.1 EAP"
+2018-12-09T23:57:16Z,commit,[IDEA-123039] Use non-recursive Xalan str:tokenize() extension functi¡­,github.com/JetBrains/intellij-community/pull/1008/commits/7eee4ee960ab43cde5d0949f5fb8fd992d2aaf9d

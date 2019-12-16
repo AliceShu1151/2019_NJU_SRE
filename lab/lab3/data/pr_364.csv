@@ -1,0 +1,13 @@
+364,Correctly decompile interface object fields
+2016-03-06T21:07:38Z,discuss,This commit fixes decompiling interfaces that have object references which fail sometimes.
+2016-03-06T21:07:38Z,discuss,for instance
+2016-03-06T21:07:38Z,discuss,decompiles to
+2016-03-06T21:07:38Z,discuss,which is wrong.
+2016-03-06T21:07:38Z,discuss,(I submitted a contributor license agreement a while back.)
+2016-03-17T20:58:35Z,discuss,I never faced a problem with static initializers in any other context other than interfaces and i really do believe that it's less impacting to just have the interface check.
+2016-03-17T20:58:35Z,discuss,"I created another branch where I modified isExprentIndependent but that will change the current behavior in a lot of classes. Mostly it inlines a lot of field initializations as you would expect. The thing is that the current behavior is not really incorrect for static initializers, they can have it either way, inlined when declaring the field or in a static initializer but interfaces have no choice."
+2016-03-17T20:58:35Z,discuss,"If you still think that I should submit the modified version that inlines fields that ""may be independent"" please let me know and I will update this pull request."
+2016-03-17T20:58:35Z,discuss,P.S. I removed the exists() call from SingleClassesTest
+2016-03-18T16:37:08Z,discuss,"OK, convinced."
+2016-03-07T16:52:37Z,commit,correctly decompile interface object fields,github.com/JetBrains/intellij-community/pull/364/commits/87b6f90fec4723471f021a3df6ceba58526a98df
+2016-03-17T21:15:54Z,commit,add additional tests for static initializers,github.com/JetBrains/intellij-community/pull/364/commits/75a98d155a5f6735f0dc93ca5ef0cc975ca6b687

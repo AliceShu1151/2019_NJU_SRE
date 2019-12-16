@@ -1,0 +1,6 @@
+1229,IDEA-226021: Fix unnecessary memory use
+2019-11-01T00:43:31Z,discuss,"
+No description provided.
+"
+2019-11-04T17:33:06Z,discuss,Obsolete in light of 14fd0d7.
+2019-11-01T00:41:35Z,commit,IDEA-226021: Fix unnecessary memory use,github.com/JetBrains/intellij-community/pull/1229/commits/593e6658ebd53fad3334427475db7aa23935ba5e

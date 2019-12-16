@@ -1,0 +1,5 @@
+151,Fix maven-surefire-plugin argList.
+2014-02-12T02:41:26Z,discuss,"When maven-surefire-plugin's argList is given, it contains a bash-style
+list of VM args, not just one."
+2014-02-12T02:48:33Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-120642
+2014-02-12T02:38:02Z,commit,IDEA-120642 Fix maven-surefire-plugin argList.,github.com/JetBrains/intellij-community/pull/151/commits/ab3f054c5f1df1cf108aa3325727ebe0fc5e617a

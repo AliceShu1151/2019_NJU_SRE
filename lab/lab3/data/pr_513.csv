@@ -1,0 +1,38 @@
+513,Adds new macro expansion $MODULE_CONTENT_ROOT$
+2017-02-16T15:54:14Z,discuss,"This new macro is expanded to the current module's content root when a
+the module only has one content root.
+I have never seen a case were a module has multiple content roots, and
+am therefore unable to decide what to do in these cases.
+When a project uses the file based project descriptor (*.iml), this
+should be strictly equivalent to $MODULE_DIR$
+When a project uses the directory based project description (.idea/*),
+this macro points to the content root instead of the parent directory of
+the module file."
+2017-02-16T15:54:14Z,discuss,"I am unfamiliar with the codebase and was unable to find a test which
+exercises the code path I changed. I tried writing one based on
+PathMacroManagerTest but was unable to make it work as it seems to
+requires a lot of setup which goes beyond the setup already provided.
+Given guidance I am willing to try and add a test for it. Running the IDE
+seemed to resolve it well enough."
+2017-02-16T15:54:14Z,discuss,Please consider including this since it opens a way to fixing:
+2017-02-16T15:54:14Z,discuss,"https://youtrack.jetbrains.com/issue/IDEA-152227
+https://youtrack.jetbrains.com/issue/SCL-9296
+https://youtrack.jetbrains.com/issue/IDEA-121819
+https://youtrack.jetbrains.com/issue/IDEA-153852
+And probably a few more $MODULE_DIR$ related issues"
+2017-02-17T10:00:15Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-02-17T13:13:56Z,discuss,"Hi @klikh,"
+2017-02-17T13:13:56Z,discuss,I thought I had a contributor license agreement since I contributed to intellij-scala before but it may not be the same.
+2017-02-17T13:13:56Z,discuss,"I just went through the process and signed the agreement, just to make sure."
+2017-02-17T13:13:56Z,discuss,"best regards
+Jean"
+2017-02-17T14:11:17Z,discuss,@jeantil We've received the CLA. Thanks.
+2017-03-10T15:32:49Z,discuss,"Sorry for the late reply, I was on vacation. Unfortunately the suggested solution won't work.
+Firstly, you changed ModulePathMacroManager which works for module-level component, but run configurations are store in project-level component, so your code won't be called for them. Secondly, you changed only getExpandMacroMap, but didn't change getReplacePathMap, so if your code is executed, it'll replace the macro by the full path when the project is opened, but won't replace the full path by the macro when configuration is saved, so you'll end up with absolute paths in iml. Thirdly if we implement replacement in 'getReplacePathMap' it won't work correctly, because the content root are also saved in iml file so its path will be replaced by the macro, and information will be lost."
+2017-03-10T15:32:49Z,discuss,It looks like that these issues shouldn't be fixed on PathMacroManager's level. We'll think about a proper solution for these problems. Anyway thank you for your attempt to fix this.
+2017-03-10T16:35:03Z,discuss,"As I tried to explain, it opens the way to fixing the issues, it is not a full fix in itself. What I wanted was to be able to :"
+2017-03-10T16:35:03Z,discuss,I thought I would then be able to detect the $MODULE_ROOT$ working path within the test configuration runner and request the ModulePathMacroManager to extract the proper path. I was confident the java and scala test configuration runners would already have access to module level information since they are able to use $MODULE_DIR$ as a working directory  and to refer to the classpath of a given module (usually the module enclosing the test class)
+2017-03-10T16:35:03Z,discuss,This plan is most certainly idealistic but the intellij codebase is quite a beast :) If you can provide guidance I will definitely have a look into improving this further.
+2017-03-10T16:35:03Z,discuss,Maybe populating the expandMacro map is useless if the runner has access to the module itself it will be able to retrieve the module root.
+2017-03-10T16:35:03Z,discuss,Also looking up things which depended on com.intellij.openapi.components.impl.ModulePathMacroManager#getExpandMacroMap I ended up in com.intellij.execution.util.JavaParametersUtil#configureConfiguration which looks very promising with regards to evaluating parameters of run configurations since it is used in com.intellij.execution.JavaTestFrameworkRunnableState#createJavaParameters
+2017-02-16T13:38:31Z,commit,Adds new macro expansion $MODULE_CONTENT_ROOT$,github.com/JetBrains/intellij-community/pull/513/commits/a6c317a7d89dd7105cf07a1595acdcac576a4494

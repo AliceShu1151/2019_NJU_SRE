@@ -1,0 +1,4 @@
+1101,IDEA-205103 Sort maven archetype versions
+2019-03-26T09:58:55Z,discuss,Use maven version sorting instead of lexicographical order
+2019-03-26T09:58:55Z,discuss,Closes IDEA-205103
+2019-03-26T09:54:16Z,commit,IDEA-205103 Sort maven archetype versions,github.com/JetBrains/intellij-community/pull/1101/commits/9573466ebabcf6dc45eec80d9e4d99518d3b4ff3

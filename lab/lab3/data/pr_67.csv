@@ -1,0 +1,8 @@
+67,removed duplicate class IElementType.Predicate (use com.intellij.util.containers.Predicate)
+2013-04-05T06:33:33Z,discuss,"§ãurrently util have dependency 'guava' - it have Predicate(analog), and util class Predicates, but it not exported to others modules"
+2013-04-05T06:34:40Z,discuss,"Or removed Predicate by NotNullFunction<E, Boolean>"
+2013-04-05T11:01:47Z,discuss,This change breaks the plugin API (we do use this API in code which is not part of CE) and makes the API less clear (matches() is a better name in this context than apply()) for the sake of saving three lines of code. I don't see how this is an improvement.
+2013-04-05T11:53:40Z,discuss,I thought this answer
+2013-04-05T11:53:40Z,discuss,maybe use NotNullFunction ?
+2013-04-05T11:53:40Z,discuss,"badly that u not reply my email, this pull ill not exists"
+2013-04-05T06:31:54Z,commit,removed duplicate class IElementType.Predicate (use com.intellij.util¡­,github.com/JetBrains/intellij-community/pull/67/commits/869ba50c64bf31435d11eba2212a1593a1cfc8e3

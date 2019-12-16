@@ -1,0 +1,27 @@
+335,Open/Close Task Dialogs improvement.
+2015-12-21T15:39:57Z,discuss,Add possibility to extend open and close task dialogs.
+2015-12-21T15:47:58Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-12-21T21:31:13Z,discuss,I have done it.
+2015-12-22T14:21:36Z,discuss,"Received, thank you."
+2016-01-13T12:54:19Z,discuss,What is it for? What is your use case?
+2016-01-13T22:15:22Z,discuss,It gives ability to add custom options in open/close task dialogs.
+2016-01-13T22:15:22Z,discuss,"The developer will override methods getOpenTaskControlPanelProvider and getCloseTaskControlPanelProvider to extend open and close task dialogs (add some unique functional). Add assignee to task, Add task to folder or update task status."
+2016-01-13T22:15:22Z,discuss,"Example:
+"
+2016-02-01T16:12:57Z,discuss,Did I write enough information or need more details?
+2016-02-04T14:10:14Z,discuss,"Hi, AFAIK we already have ""Update issue state"" feature."
+2016-02-04T15:38:36Z,discuss,"Hi, current functionality is not enought to manage statuses in Wrike."
+2016-02-24T12:34:14Z,discuss,It seems we need more general approach to meet requests like this one: OpherV/gitflow4idea#104.
+2016-02-26T10:31:00Z,discuss,Do you mean that I need to create extension point for plugin 'Tasks' in this case to satisfy to both problems?
+2016-02-29T17:45:13Z,discuss,"Hi, I have created such an API:
+f7a02a6.
+Please review and check if it satisfies your needs."
+2016-02-29T17:45:13Z,discuss,2016-02-26 13:31 GMT+03:00 DmitryKachurin notifications@github.com:
+2016-03-01T12:44:46Z,discuss,I have checked and it satisfies my needs. Thanks!
+2015-12-17T09:44:12Z,commit,Update TaskRepository.java,github.com/JetBrains/intellij-community/pull/335/commits/6c4e991d688f9d6f47b0e7f750748f74a1d908ec
+2015-12-17T09:46:24Z,commit,Update OpenTaskDialog.java,github.com/JetBrains/intellij-community/pull/335/commits/07602db514dc5f218ce0a345068f9a7eb53fdd50
+2015-12-17T09:48:01Z,commit,Update CloseTaskDialog.java,github.com/JetBrains/intellij-community/pull/335/commits/b77130c1ad96bd8263ac7267c85f439623f1c655
+2015-12-17T09:49:38Z,commit,Update CloseTaskDialog.form,github.com/JetBrains/intellij-community/pull/335/commits/110709ecced3304769ea954db1c319bc2c5bc7a5
+2015-12-17T09:50:06Z,commit,Update OpenTaskDialog.form,github.com/JetBrains/intellij-community/pull/335/commits/8c29ff78029b02844b949edfcbcf4f6598935324
+2015-12-21T15:34:21Z,commit,Open/Close Task Dialogs improvement.,github.com/JetBrains/intellij-community/pull/335/commits/04e2c953ffddc45b215b4d57790bc64954eb2389
+2015-12-21T15:53:18Z,commit,Open/Close Task Dialogs improvement.,github.com/JetBrains/intellij-community/pull/335/commits/a2ce56c992b02dceefe89ff9512182df5bcbbbc3

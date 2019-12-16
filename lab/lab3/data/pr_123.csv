@@ -1,0 +1,9 @@
+123,IDEA-116247 Path does not exist with cyrillic chars at Git
+2013-11-10T20:06:40Z,discuss,"Unescaping git path cuts char after escape sequence. Upper iteration loop iterates over string, when gets slash char inner loop starts iterate over string to collect bytes. After last iteration of inner loop pointer stayed at char next by escape sequence, but after next iteration of outer loop pointer moved to next char."
+2013-11-10T20:06:40Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-116247
+2014-11-30T15:43:16Z,discuss,"Sorry that it took so long to analyze the patch. The fix is correct for cyrillic paths and most of other non-ASCII as well, but if a path contains diacritics more support is needed, because git always returns these paths in escaped NFD forms (decomposed)."
+2014-11-30T15:43:16Z,discuss,"To solve all these issues at once I made a change to always call git with ""-c core.quotepath=false"" which makes Git return paths exactly as they were stored in the database. This solves both simple (cyrillic) and complex (diacritical) cases."
+2014-11-30T15:43:16Z,discuss,"Unfortunately, Git understands ""-c"" only since 1.7.2 while we support 1.7.1+. Therefore the ""octal"" part of GitUtil.unescapePath will still be in use for older Git versions, while for newer ones character will be passed as is."
+2014-11-30T15:43:16Z,discuss,Here is the commit: 0273d29
+2014-11-30T15:43:16Z,discuss,Thank you for your contribution!
+2013-11-10T19:22:49Z,commit,fix git unescape cyrillic names,github.com/JetBrains/intellij-community/pull/123/commits/655fd0f6c783b765882d7c319214317284d9e6f0

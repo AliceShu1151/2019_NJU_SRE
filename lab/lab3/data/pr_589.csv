@@ -1,0 +1,8 @@
+589,meta element tag closing fix in HTML file template
+2017-06-10T17:06:38Z,discuss,meta tag closing is wrong in default HTML template file. Thymeleaf gives an error while processing.
+2017-06-10T17:19:14Z,discuss,Detailed log for thymeleaf error:
+2018-07-21T13:10:32Z,discuss,cc @denofevil
+2018-07-25T09:28:42Z,discuss,"Thank you for your contribution and very sorry for the delay with the reply!
+This exception seems to be a Thymeleaf error (thymeleaf/thymeleaf#457) which is fixed now, so no extra slash is needed."
+2017-06-10T17:05:01Z,commit,meta element tag closing fix in HTML file template,github.com/JetBrains/intellij-community/pull/589/commits/c2df4529eb03a2faa20c675736a85079fd32a418
+2017-06-25T15:28:25Z,commit,merge from upstream master branch,github.com/JetBrains/intellij-community/pull/589/commits/d3b0bff9780a5fb4fd43cc2068126899eff437e4

@@ -1,0 +1,8 @@
+790,[PY-27594] disable debug when Python gets input from stdin
+2018-05-13T17:03:02Z,discuss,See https://youtrack.jetbrains.com/issue/PY-27594 for more details. Resolves fabioz/PyDev.Debugger#103.
+2018-05-13T17:03:02Z,discuss,"Note this is a workaround, as it will have the effect of not breaking things (as it does now). However, it will not allow users to debug library calls from within the stdin content."
+2018-05-13T17:03:02Z,discuss,"If we could interpret the whole input, write it to a temp file, that would allow the user to debug. However, I think that will require a significant refactor of this monkey patching."
+2018-06-20T15:54:02Z,discuss,Any updates on this? Thanks!
+2018-07-03T18:07:11Z,discuss,@gaborbernat Thank you! Merged.
+2018-07-04T16:40:36Z,discuss,Thanks!
+2018-05-13T16:52:27Z,commit,[PY-27594] disable debug when Python gets input from stdin,github.com/JetBrains/intellij-community/pull/790/commits/d6313cadfa540f059f42d67973f702c0d9b068c1

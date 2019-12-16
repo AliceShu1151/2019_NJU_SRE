@@ -1,0 +1,4 @@
+913,Fixed assigning single elements to varargs in named form.
+2018-11-08T21:57:06Z,discuss,Kotlin 1.3.0 reports such cases as errors.
+2018-11-09T12:06:27Z,discuss,Thanks. Merged manually
+2018-11-08T21:48:45Z,commit,Fixed assigning single elements to varargs in named form.,github.com/JetBrains/intellij-community/pull/913/commits/9b77390e830591ad59e08ee07a95173552223947

@@ -1,0 +1,7 @@
+670,Enumerate module roots directly in ModuleHighlightUtil.getModuleDescriptor
+2017-11-21T10:21:17Z,discuss,"This is faster than going through FilenameIndex which would call
+GlobalSearchScope.accept for all ""module-info.java"" files in the
+project, and there can be many of those"
+2017-11-21T15:54:08Z,discuss,"That's not quite correct. These files may live anywhere in module sources, not just under a source root."
+2017-11-21T15:54:08Z,discuss,Would it help you if I add caching to the method?
+2017-11-21T10:17:17Z,commit,Enumerate module roots directly in ModuleHighlightUtil.getModuleDescr¡­,github.com/JetBrains/intellij-community/pull/670/commits/652056b4efd30af9d4e877735eec228c25834f25

@@ -1,0 +1,7 @@
+1226,Remove final keyword from IdeTooltipManager
+2019-10-29T19:00:36Z,discuss,"This was added incidentally by commit 977a1d1
+breaking tests that mock the class."
+2019-11-12T02:00:02Z,discuss,@develar?
+2019-11-12T11:14:35Z,discuss,"Mockito is able to mock final classes, please see files likes org.mockito.plugins.MockMaker (there are two in android repo)."
+2019-11-13T06:00:48Z,discuss,"We use standard Mockito. I appreciate the pointer that we could use extensions providing alternative mock implementations, but I'd rather not ask folks on the Android Studio team to rework many of our existing tests when we could with much less effort simply not add final modifiers that weren't there when the tests were written. Frankly there are many more significant issues demanding attention. Can we agree on that and move forward with this and #1228?"
+2019-10-28T21:00:00Z,commit,Remove final keyword from IdeTooltipManager,github.com/JetBrains/intellij-community/pull/1226/commits/a7f2480116b11b91377a7a7390110dc7adad8562

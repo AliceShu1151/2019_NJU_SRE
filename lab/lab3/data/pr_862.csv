@@ -1,0 +1,6 @@
+862,Filter out more Gradle progress events
+2018-09-17T21:40:31Z,discuss,Hide more events under gradle.progress.verbose.events flag
+2018-09-17T21:40:31Z,discuss,Fixes IDEA-198560
+2018-10-01T09:13:31Z,discuss,"Thanks for the contribution!
+Merged using the following commit d703a34"
+2018-09-17T21:39:05Z,commit,Filter out more Gradle progress events,github.com/JetBrains/intellij-community/pull/862/commits/845dfac4afb422c982ef6c7e53f4fbd231bbc8cd

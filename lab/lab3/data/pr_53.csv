@@ -1,0 +1,13 @@
+53,Change Signature -> Propagate Exceptions -> Toolbar added with Expand Al...
+2013-03-14T20:10:12Z,discuss,"Dear IntelliJ Team,"
+2013-03-14T20:10:12Z,discuss,this pull request adds an Expand All / Collapse All toolbar button.
+2013-03-14T20:10:12Z,discuss,If you want to propagate an exception to all methods in a deep call hierarchy it can be automatically expanded which saves a lot of time.
+2013-03-14T20:10:12Z,discuss,"The only problem is, that it can take a lot of time if the hierarchy is very big and I don't know yet how to display a progress bar which let's the user cancel the operation."
+2013-03-14T20:10:12Z,discuss,It would be nice if you could add this functionality to IntelliJ. Thanks.
+2013-03-14T20:10:12Z,discuss,Best regards
+2013-03-14T20:10:12Z,discuss,Josef
+2013-03-14T20:09:16Z,discuss,"Changing from SINGLE_TREE_SELECTION to DISCONTIGUOUS_TREE_SELECTION allows the user to press CTRL+A to select every node in the tree and afterwards he can press SPACE to select all check boxes.
+I don't expect any bad side effects but I am not a Swing expert."
+2013-03-26T20:01:00Z,discuss,"I don't think this is valuable. The ""Expand all"" action does take a huge amount of time for a large call graph, and propagating the exception to a large call hierarchy without any review is most certainly a bad idea."
+2013-03-26T20:03:33Z,discuss,"By the way, the selection model was set to single in order to avoid the confusion between whether the checked or the selected nodes are going to have the exceptions propagated to."
+2013-03-14T19:49:44Z,commit,Change Signature -> Propagate Exceptions -> Toolbar added with Expand¡­,github.com/JetBrains/intellij-community/pull/53/commits/453d3f317c7cdbb08bc81764daa0d0f72666fecf

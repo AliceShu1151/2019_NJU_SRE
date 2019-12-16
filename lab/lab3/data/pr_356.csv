@@ -1,0 +1,2 @@
+356,Create From Usage: Introduce JVMElementMutableView to create/modify elements in other JVM-compliant languages
+2016-02-16T12:37:42Z,discuss,The main goal is to allow applying Java quick fixes to Kotlin classes (e.g. KT-7641)

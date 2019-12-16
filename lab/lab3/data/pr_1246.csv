@@ -1,0 +1,6 @@
+1246,TypeMigrationLabeler should traverse PsiParenthesizedExpression
+2019-11-15T13:31:53Z,discuss,"
+No description provided.
+"
+2019-12-10T16:50:00Z,discuss,Hello?
+2019-11-15T11:39:10Z,commit,TypeMigrationLabeler should traverse PsiParenthesizedExpression,github.com/JetBrains/intellij-community/pull/1246/commits/cf55bbe6064cc824005576120caa5235816aebe2

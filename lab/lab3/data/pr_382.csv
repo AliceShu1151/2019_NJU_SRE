@@ -1,0 +1,17 @@
+382,Fix Pydevd breakpoint issues on windows
+2016-04-13T02:12:29Z,discuss,Fixed a number of issues with debugger path handling on windows.
+2016-04-13T02:12:29Z,discuss,"--Breakpoints weren't being hit inside bdist .egg files on windows
+--Breakpoints weren't being in modules inside zip/egg files where the module name has an upper case letter
+--Breakpoints not hit when the module is loaded from a short path names on windows (which is actually somewhat common)"
+2016-04-13T02:12:29Z,discuss,Fixes:PY-16767
+2016-04-13T08:50:02Z,discuss,"Sorry typo PyLocalPositionConverter 175:
+return file.substring(0, ind + 4) + file.substring(ind + 4); ->
+return file.substring(0, ind + 4).toLowerCase()+ file.substring(ind + 4);"
+2016-04-14T14:59:10Z,discuss,"@fitermay Thank you for the pull request! Please, fix the problems and we will merge it into the PyCharm."
+2016-04-14T15:31:10Z,discuss,Thanks for the comments. Could you please clarify the inner function comment? I will make the suggested changes ASAP. I also added tests that I will add to the pull request.
+2016-04-15T04:55:33Z,discuss,Updated with tests and fixed type plus the unicode thing.
+2016-04-13T00:42:56Z,commit,--Fix translation of 'bdist' paths inside of eggs on windows,github.com/JetBrains/intellij-community/pull/382/commits/f092bb5d8da55a8bacd1dd99bf1d5aa1d666b0d6
+2016-04-13T01:06:09Z,commit,--Fix issue with breakpoints not being hit on windows inside .zip and¡­,github.com/JetBrains/intellij-community/pull/382/commits/8c33b3c9c15d840d3b7c70bafd9cdfc1280d20db
+2016-04-13T01:40:28Z,commit,--Handle normalization of short pathnames on windows,github.com/JetBrains/intellij-community/pull/382/commits/085e06c5ab4453081d044919109493f27be9e0f4
+2016-04-13T18:48:55Z,commit,--test for windows egg breakpoints,github.com/JetBrains/intellij-community/pull/382/commits/e95982ce7053261628a04bcc39cdc4796ac47f79
+2016-04-13T19:28:26Z,commit,--test for short path to long windows pathname normalization in pydev¡­,github.com/JetBrains/intellij-community/pull/382/commits/fe7c47d68869ac1e5f2f8b3a6a789a1f131ebeca

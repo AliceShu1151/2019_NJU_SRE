@@ -1,0 +1,8 @@
+884,[Fernflower] Cleanup of collections-related classes
+2018-10-10T05:09:27Z,discuss,"I'm not 100% sure how useful this actually is, but this PR cleans up some of the different collections classes Fernflower has.  Originally prompted by me seeing VBStyleCollection and running away in fear."
+2018-10-10T05:09:27Z,discuss,"This does include some various renames.  I don't think that the new names are perfect, though.  I've changed VBStyleCollection to KeyedList and FastSparseSet/FastFixedSet to UniversedSet.  I didn't rename SFormsFastMapDirect since I don't fully understand the more general context of its use."
+2018-10-10T05:09:27Z,discuss,The code should behave exactly the same both before and after this change; all tests remain the same as before.
+2018-08-11T22:33:16Z,commit,Clean up ListStack,github.com/JetBrains/intellij-community/pull/884/commits/8f97de18761b18d131df0a40893c970b57357849
+2018-08-14T18:30:05Z,commit,Clean up VBStyleCollection (now KeyedList),github.com/JetBrains/intellij-community/pull/884/commits/d81cb39a895068e143e6f8a88774726dd82932d8
+2018-10-07T20:55:01Z,commit,Merge and clean FastSparseSetFactory and FastFixedSetFactory to Universe,github.com/JetBrains/intellij-community/pull/884/commits/f4fd5c186e1ab4c2acc1185d2ee7c87821b03e54
+2018-10-08T03:29:59Z,commit,Clean up SFormsFastMapDirect,github.com/JetBrains/intellij-community/pull/884/commits/7ecbb1b5ac7dc4a691d3bf73c9c8823dc2e0778c

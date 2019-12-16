@@ -1,0 +1,13 @@
+809,IDEA-189671: Refresh Editor Focus after closing split
+2018-06-14T02:44:31Z,discuss,"
+No description provided.
+"
+2018-06-17T17:52:39Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-06-20T02:00:03Z,discuss,I have signed the contributor license agreement now.
+2018-06-25T21:45:26Z,discuss,"Thank you, but the fix you suggested is a bit tricky, I've fixed the problem in more obvious way (I believe)."
+2018-06-27T18:59:08Z,discuss,"the reason i fixed it this way is because there are quite a few edge cases which just get fixed by ""resyncing"" the state. it would obviously be better to make sure that things are always kept in sync, but that would involve a much bigger change."
+2018-06-27T18:59:08Z,discuss,All I do basically is ask for what the current window should be and then make sure that what should be the current window actually is focused.
+2018-06-27T18:59:08Z,discuss,"I also tried getting to the bottom of why it ended up in an inconsistent state in the first place but I gave up after about an hour, because I just didn't have the time to chase after this."
+2018-06-27T18:59:08Z,discuss,"In that sense this is rather a Hotfix, that (having run this for a few days now) has been working properly for me."
+2018-07-21T10:03:54Z,discuss,"@lumie1337 thanks for the fix, the original issue has been fixed in master."
+2018-06-14T02:03:18Z,commit,IDEA-189671: Refresh Editor Focus after closing split,github.com/JetBrains/intellij-community/pull/809/commits/1b06013ed3ce343e1c15e8bf9ddef7b2f35df810

@@ -1,0 +1,4 @@
+157,"Fixed a warning, run maven build in maven 3.2.1"
+2014-04-01T14:36:36Z,discuss,"Fix was applied, thanks!"
+2014-04-01T14:36:59Z,discuss,"Fix was applied, thanks!"
+2014-03-03T02:16:19Z,commit,"Fixed a warning, run maven build in maven 3.2.1",github.com/JetBrains/intellij-community/pull/157/commits/1441da4ab03bb36f1d532a2e5f5a6a47b6c1c540

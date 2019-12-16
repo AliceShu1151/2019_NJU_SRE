@@ -1,0 +1,16 @@
+1087,IDEA-207347 Allow a JTextComponent to avoid a swing undo manager.
+2019-03-12T19:00:24Z,discuss,"The base class: UndoRedoAction calculates the undo manager based
+on the class of the component. If the component is a JTextComponent
+(that is not a main text editor) the undo manager will use the
+Swing undo manager."
+2019-03-12T19:00:24Z,discuss,"In the property editor in Android Studio this is unwanted.
+Here we want to be able to undo events from the IJ undo manager
+when a JTextComponent has focus and has no pending swing undo
+operations."
+2019-03-12T19:00:24Z,discuss,"This CL adds a ClientProperty on the JTextComponent such that the
+Swing undo manager will only be used if there are pending undo
+operations. If not the Intellij undo manager is allowed to undo
+or redo the latest recorded undo/redo event."
+2019-03-12T19:00:24Z,discuss,Change-Id: I3e8d7a6681e51d30bc9f6052b3e74d7467fcca1c
+2019-10-21T20:59:52Z,discuss,This was fixed. Thank you.
+2019-03-11T22:44:37Z,commit,IDEA-207347 Allow a JTextComponent to avoid a swing undo manager.,github.com/JetBrains/intellij-community/pull/1087/commits/2bdfdc0317cee0e6cbaa27dc264ba44f1ed0fa01

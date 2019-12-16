@@ -1,0 +1,4 @@
+129,Move to java-psi-impl to make classes available in intellij-core.jar
+2013-11-14T13:42:14Z,discuss,We are going to use those classes in Kotlin as it already done with LightMethod.
+2013-11-19T20:14:40Z,discuss,Backported to 133.
+2013-11-14T12:30:27Z,commit,Move to java-psi-impl to make classes available in intellij-core.jar,github.com/JetBrains/intellij-community/pull/129/commits/56e1974fdb021948f64913524a5241ce06fc48a9

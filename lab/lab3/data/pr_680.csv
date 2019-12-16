@@ -1,0 +1,8 @@
+680,Git integration check-ignore command
+2017-12-10T08:57:30Z,discuss,Added check-ignore command for git integration to allow check if separate pathname/filename under .gitignore. To see specification for command click on link check-ignore
+2018-01-02T17:40:45Z,discuss,Doesn't git ls-files --ignored solve the task?
+2018-01-06T15:53:10Z,discuss,@klikh git ls-files --ignored shows list of all ignored paths and you need to check all list to find out if your pathname under .gitignore. git check-ignore pathname checks only selected pathname without additional actions
+2018-01-06T16:36:57Z,discuss,"Nope, you can still give a path to ls-files as well. For example:"
+2018-01-08T17:25:07Z,discuss,@klikh Thank you so much! ls-files is much more powerful than I imagined before.
+2018-01-08T17:25:07Z,discuss,I'll close MR.
+2017-12-10T08:54:38Z,commit,Git integration check-ignore command,github.com/JetBrains/intellij-community/pull/680/commits/2fd8f63e4370b68203d0e698e71c70e0d372163d

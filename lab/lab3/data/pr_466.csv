@@ -1,0 +1,20 @@
+466,Add a custom python package identifier extension point
+2016-11-07T23:10:13Z,discuss,"This allows bypassing the default 'is package' check in PyUtil, giving the option of foregoing init.py files prior to python 3.3."
+2016-11-07T23:10:13Z,discuss,"We're writing a plugin allowing python development with IntelliJ at Google. The only blocker is the requirement for init.py files through the source tree, which we can't practically enforce."
+2016-11-07T23:10:13Z,discuss,"This patch should have minimal risk or performance cost, and would provide a big benefit to our internal users."
+2016-11-14T17:02:21Z,discuss,"Hi there, how does this sound? I believe it poses minimal risk, and allows python imports without corresponding init.py files."
+2016-11-14T17:02:21Z,discuss,"It's unlikely to be widely useful, but would help us a lot. Thanks!"
+2016-11-24T02:24:57Z,discuss,"Hi guys, Tom here, lead of the Google internal IntelliJ team."
+2016-11-24T02:24:57Z,discuss,"Would it be at all possible to entertain this pull request? While the pull request seems safe and small, we would totally respect a rejection as it's very likely not needed by anyone but us. However we would love a decision or comment from you, as we would in that case at least know and probably move to building a custom plugin ourselves. Thanks!"
+2016-11-24T11:24:07Z,discuss,"Hi guys! Sorry for the delayed response - we were busy with the new 2016.3 release. I can accept the pull request.
+After another collegue reviews it, I'll merge it in."
+2016-11-24T12:17:48Z,discuss,@brendandouglas I'm generally OK with this change. Could you please add querying your extension point to the other isPackage(PsiFile) as well?
+2016-11-28T14:07:42Z,discuss,"@vlasovskikh thanks! I'm happy to add another method to the extension point, and query that from isPackage(PsiFile). Could overriding the behaviour of that method have unintended consequences though?"
+2016-11-28T14:07:42Z,discuss,"As I understand it, it's not used to determine whether a directory is a python package (at least, not without also checking the containing directory, so it doesn't need to be bypassed for python 3.3+), only whether a file should be treated as an __init__.py file. Are there use cases where different files should be treated as __init__.py files?"
+2016-11-28T14:27:07Z,discuss,"@brendandouglas There are some Python dialects that have different conventions for package files. For example, in Cython a package can be marked by __init__.pxd, for Python type hinting stubs it can be __init__.pyi, and so on."
+2016-11-28T14:27:07Z,discuss,If you don't use custom files like these for marking a directory as a package then you would just return false in YourExtension.isPackage(PsiFile).
+2016-11-28T14:35:01Z,discuss,@vlasovskikh sounds good -- I've updated the pull request to include that method.
+2016-11-28T16:50:08Z,discuss,"@brendandouglas Thanks! I've rebased your commit onto master, it will appear on GitHub in a few hours."
+2016-11-28T16:58:15Z,discuss,Thanks @vlasovskikh. Is there any chance this could make it into a 2016.3 dot release?
+2016-11-28T17:12:33Z,discuss,@brendandouglas It will be included into EAP versions of 2017.1.
+2016-11-07T22:51:42Z,commit,Add a custom python package identifier extension point,github.com/JetBrains/intellij-community/pull/466/commits/170ac7cd681ef2fbdc71bacd33af302f36da44ea

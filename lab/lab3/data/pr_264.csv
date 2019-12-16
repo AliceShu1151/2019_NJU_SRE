@@ -1,0 +1,32 @@
+264,Backport KeyFMap changes
+2015-05-05T12:47:46Z,discuss,"
+No description provided.
+"
+2015-05-05T12:48:37Z,discuss,@chashnikov please take a look
+2015-05-05T12:52:38Z,discuss,"I'm not sure about backporting changes in interning, @donnerpeter what do you think?"
+2015-05-05T12:53:26Z,discuss,"I am against, performance implications of first commit isn't yet known. And there is no (regression) time to fix the possible consequences"
+2015-05-05T13:13:18Z,discuss,"Well, I excluded changes in UserDataInterner."
+2015-05-05T13:18:53Z,discuss,"What about breaking API ?
+Please provide reasons why we should do the backport in 141"
+2015-05-05T13:33:10Z,discuss,Mainly it covers internal things and which (I think) doesn't have many usages.
+2015-05-05T13:33:10Z,discuss,I don't know your policies about changes like this.
+2015-05-05T13:33:10Z,discuss,I did these changes for Kotlin and I'd like to backport them if it possible.
+2015-05-05T17:07:10Z,discuss,"In 141 we are in end of regular updates of IntelliJ Idea 14.1.X and any noncritical thing backported needs reasonable justification because of risk of regress. E.g. I don't see it in this case of using some platform utility class in new way with some of the public methods renamed. The API changes can be done in more reliable way for 14.1, e.g. leaving old methods deprecated."
+2015-05-06T12:29:28Z,discuss,"Actually this PR didn't rename anything in current public API (ArrayBackedFMap#getKeys added and renamed during this PR).
+But it added a method to KeyFMap, is it OK?"
+2015-05-06T12:34:38Z,discuss,Adding method is ok.
+2015-05-06T12:34:38Z,discuss,"On Wed, May 6, 2015 at 2:29 PM, Zalim Bashorov notifications@github.com
+wrote:"
+2015-05-06T14:25:16Z,discuss,"So, can you merge it?"
+2015-05-06T14:43:02Z,discuss,Let's backport If we don't change / decrease existing API
+2015-05-06T14:43:02Z,discuss,"On Wed, May 6, 2015 at 4:25 PM, Zalim Bashorov notifications@github.com
+wrote:"
+2015-05-06T17:22:12Z,discuss,"Well, could anybody merge it?"
+2015-05-06T17:22:12Z,discuss,//cc @nicity @chashnikov
+2015-05-07T15:39:23Z,discuss,"I backported your changes to 141 manually, please review"
+2015-05-07T15:59:39Z,discuss,"I see, thanks a lot!"
+2015-03-24T11:26:19Z,commit,intern recent vfs user data with more than one key-value mapping,github.com/JetBrains/intellij-community/pull/264/commits/3e441f190922e4cc5c06c2f6428b0b2a69668510
+2015-04-28T19:15:36Z,commit,ArrayBackedFMap: getKeys -> getKeyIds,github.com/JetBrains/intellij-community/pull/264/commits/bb45ac07b7014de646928b0e5d0ff188833cf0e9
+2015-04-27T16:34:44Z,commit,Add the ability to get keys and values from KeyFMap,github.com/JetBrains/intellij-community/pull/264/commits/42ff3c04b7fa4e5a9e45b960f7c43c86734e1628
+2015-04-28T19:34:05Z,commit,Use KeyFMap#getKeys in ExportableUserDataHolderBase to simplify and i¡­,github.com/JetBrains/intellij-community/pull/264/commits/c7d5684bae000d27fb563c84285dbdb3a23f6db4
+2015-05-04T07:46:24Z,commit,Generate keys and values in each test case instead of use hardcoded c¡­,github.com/JetBrains/intellij-community/pull/264/commits/5c41db483c7a80e846a146239d57bc9cca798b8b

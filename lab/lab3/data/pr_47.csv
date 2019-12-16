@@ -1,0 +1,9 @@
+47,IDEA-99287 ANT toolwindow: prevent duplicate build files
+2013-03-08T13:31:25Z,discuss,"
+No description provided.
+"
+2019-06-22T23:08:32Z,discuss,@eugenezh @ignatov what are we waiting for? :)
+2019-06-22T23:08:32Z,discuss,please merge it or leave a comment indicating why this can't be done.
+2019-07-23T13:51:20Z,discuss,"Thanks for pointing to the ""duplication"" problem. We have fixed the problem but in a different way.
+We can't accept the proposed solution because"
+2013-03-08T13:12:49Z,commit,IDEA-99287 ANT toolwindow: prevent duplicate build files,github.com/JetBrains/intellij-community/pull/47/commits/96fbf3c74155179f96f9ee47b42433f953586e16

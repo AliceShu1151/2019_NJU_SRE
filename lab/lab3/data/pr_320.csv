@@ -1,0 +1,7 @@
+320,"IDEA-147131 ""Add Copy Subject"" action to VCS history context menu"
+2015-10-31T00:27:25Z,discuss,"See https://youtrack.jetbrains.com/issue/IDEA-147131
+"
+2015-11-02T13:18:08Z,discuss,"As discussed in the tracker ticket, the functionality is already covered by the plain Copy action."
+2015-11-02T13:19:05Z,discuss,"Btw, have you submitted a contributor license agreement? If not, you'll need it for future contributions.
+You can download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-10-31T00:26:14Z,commit,"IDEA-147131 ""Add Copy Subject"" action to VCS history context menu",github.com/JetBrains/intellij-community/pull/320/commits/ac34eb384d7ebfb545efce3fb43bb1aca7b6612f

@@ -1,0 +1,16 @@
+605,Fix WideSelectionListUI for *_WRAP orientation
+2017-07-27T17:46:00Z,discuss,"The WideSelectionListUI that fixes the bug
+https://youtrack.jetbrains.com/issue/IDEA-160777
+was causing another bug on Linux and Window where the background were
+drawn over component on the left of the one selected in VERTICAL_WRAP
+or HORIZONTAL_WRAP."
+2017-07-27T17:46:00Z,discuss,This change just skip the fix if the layout orientaion is not VERTICAL
+2017-07-27T17:46:00Z,discuss,Bug: https://youtrack.jetbrains.com/issue/IDEA-176759
+2017-07-27T17:46:00Z,discuss,"Test: This fix a bug inside the paint() method and can't be
+automatically tested."
+2017-07-28T15:10:09Z,discuss,"Thank you for the fix, but it can be improved:
+we should not repaint a whole line if layout orientation is not vertical.
+http://upsource.jetbrains.com/idea-ce/review/IC-CR-78"
+2017-07-28T15:21:52Z,discuss,"Nice! Thanks!
+I wanted my edit to have the smallest impact possible to avoid breaking anything considering the wide usages of JBList."
+2017-07-27T17:40:16Z,commit,Fix WideSelectionListUI for *_WRAP orientation,github.com/JetBrains/intellij-community/pull/605/commits/0f61e74f14fc1f83b2a8c91af356775c895c9ced

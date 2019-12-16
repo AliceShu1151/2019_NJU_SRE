@@ -1,0 +1,10 @@
+817,New unified build procedure in README.md (IJSDK-50)
+2018-06-26T15:34:04Z,discuss,"Combining the build instructions from intellij-community, intellij-sdk-docs, and jetbrains.org."
+2018-06-26T15:34:04Z,discuss,Changes will follow so that intellij-sdk-docs and jetbrains.org build instructions simply point at this page.
+2018-06-28T19:54:49Z,discuss,"New commit incorporating your requested changes.
+I kept stumbling over rephrasing this line in the original file: ""If this git repository is not on 'master' branch you need to checkout the same branches/tags in android and android/tools-base git repositories.""
+Hopefully I've clarified the meaning in the new version. Let me know."
+2018-06-29T13:56:32Z,discuss,"Looks good now, thank you!
+I've merged your changes to 'master' branch, they will appear on github in an hour."
+2018-06-26T14:45:05Z,commit,Adding feedback from YT IJSDK-50,github.com/JetBrains/intellij-community/pull/817/commits/2e297e3a6ed5e8461ae4534a7e1f9945536dfa34
+2018-06-28T19:40:46Z,commit,Incorporated feedback from,github.com/JetBrains/intellij-community/pull/817/commits/6f9f61806119eff75bb07d865c21382436773ed5

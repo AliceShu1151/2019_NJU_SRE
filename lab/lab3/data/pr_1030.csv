@@ -1,0 +1,33 @@
+1030,Don't modify TestPlan
+2019-01-13T12:35:12Z,discuss,"Although TestPlan exposes an add(TestIdentifier) method, it was only
+ever intended for internal use by JUnit's DefaultLauncher which
+already adds dynamic test identifiers to the TestPlan. The JUnit team
+is going to make the add() throw an exception on modifications from
+listeners. Thus, this commit removes the unnecessary call."
+2019-01-13T12:35:12Z,discuss,@akozlova Please have a look and let me know what you think.
+2019-01-14T10:04:25Z,discuss,"So it was added after an issue in junit 5 tracker, see https://youtrack.jetbrains.com/issue/IDEA-181642 (unfortunately I can't find corresponding junit issue). This means that for older versions of junit, IDEA would  stop to work. On the other side, we would need to publish 4 releases for older IDEA versions, 2017.3-2018.3 to support new junit 5 versions so people would be able to use it. And don't forget that people would need to download those versions, update to them, etc. This means that everyone would spend a lot of time on that. Are you sure that it's a good idea to change junit 5 this way?"
+2019-01-14T11:51:26Z,discuss,Thanks for finding that issue link! 
+2019-01-14T11:51:26Z,discuss,TBH I'm a bit confused. The TestIdentifier has always been added to the TestPlan by the JUnit Platform (at least since JUnit 5.0.0-ALPHA) so I'm wondering what was actually fixed by adding it again in IDEA's listener. Do you remember how you reproduced the issue?
+2019-01-14T11:51:26Z,discuss,"For now, we'll emit a warning and ignore any attempt to modify the TestPlan. However, if there really was an issue that was fixed by calling add() (again), that would break it so we should really try to get to the bottom of this issue."
+2019-01-14T12:11:17Z,discuss,I don't remember but I think it was something about restarting parameterized tests or similar
+2019-01-14T12:11:42Z,discuss,"I investigated a bit further and found out that up until 5377617 IDEA used the TestPlan returned by discover() to look up elements instead of the one passed to TestExecutionListener.testPlanExecutionStarted(TestPlan). Thus, it was necessary to add() it to the TestPlan but now it isn't anymore."
+2019-01-14T12:11:42Z,discuss,We'll deprecate this behavior (calling TestPlan.add()) in JUnit but won't break it until 2018.3 is no longer supported.
+2019-01-14T12:11:42Z,discuss,@akozlova I think we should still merge this PR so IDEA no longer relies on TestPlan.add().
+2019-01-14T12:27:53Z,discuss,"Ok, but please don't break older IDEA versions"
+2019-01-14T12:31:40Z,discuss,Please submit the contribution agreement https://www.jetbrains.com/agreements/cla/.
+2019-01-14T12:51:57Z,discuss,Done.
+2019-01-14T13:18:44Z,discuss,Thanks. Merged manually
+2019-01-14T13:24:25Z,discuss,Thanks! 
+2019-01-14T15:29:46Z,discuss,
+2019-03-12T13:33:03Z,discuss,"What release should it be fixed in?
+As getting the error with IntelliJ Ultimate 2018.3.5."
+2019-03-12T13:33:03Z,discuss,"The code which is throwing it is;
+@org.junit.jupiter.api.TestFactory
+public java.util.stream.Stream<org.junit.jupiter.api.DynamicTest> tests() {
+return xxx.stream()
+.map(p -> DynamicTest.dynamicText(p, () -> {
+yyy
+}));
+}"
+2019-03-12T14:43:19Z,discuss,"@nhojpatrick in 2019.1, EAP builds are already available"
+2019-01-13T12:33:50Z,commit,Don't modify TestPlan,github.com/JetBrains/intellij-community/pull/1030/commits/a7442d41c9967a7e520f248b7e7745ea5a84a28f

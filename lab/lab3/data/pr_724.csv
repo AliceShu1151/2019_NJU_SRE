@@ -1,0 +1,7 @@
+724,GO-5316 allow to change scratch files silently
+2018-02-02T19:28:36Z,discuss,"
+No description provided.
+"
+2018-02-02T19:30:42Z,discuss,@cdracm please take a look
+2018-06-25T16:03:48Z,discuss,Merged as e90455d
+2018-02-02T18:55:14Z,commit,GO-5316 allow to change scratch files silently,github.com/JetBrains/intellij-community/pull/724/commits/9991cc3d8702334235f6f1988cfa4e490580aa29

@@ -1,0 +1,13 @@
+26,IDEA-96000 + IDEA-96001
+2012-11-27T19:29:05Z,discuss,Includes fixes for
+2012-11-27T19:29:05Z,discuss,All contributions were made during Hackergarten meetings :-)
+2012-11-28T16:46:10Z,discuss,autoExternalize.gdsl has an extra parenthesis
+2012-11-28T16:46:10Z,discuss,https://github.com/aalmiray/intellij-community/commit/14425fe15b306f8a1b54dc42f17e2b7e249e81ee
+2013-01-30T20:01:47Z,discuss,merged manually
+2012-11-27T17:52:44Z,commit,[GDSL] Add missing documentation to bindable and vetoable,github.com/JetBrains/intellij-community/pull/26/commits/dec7ff5db9ae2ec1ac00dc7614e50e458df9542a
+2012-11-27T17:53:26Z,commit,[GDSL] add dsl definitions for missing AST transformations,github.com/JetBrains/intellij-community/pull/26/commits/3393bb2d1ce4fe99fb255f8ae4b3f4782226c8cd
+2012-11-27T19:34:05Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/26/commits/cd2c74a41f0246055fa8bc6213580e4f7fb30cdc
+2012-11-28T16:35:29Z,commit,IDEA-96001 Remove extra parenthesis on AutoExternalize.gdsl,github.com/JetBrains/intellij-community/pull/26/commits/14425fe15b306f8a1b54dc42f17e2b7e249e81ee
+2012-11-28T16:36:16Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/26/commits/2492210a22aec07b2f27c899f0871194bd193c6e
+2013-01-13T10:58:53Z,commit,"Remove redundant GDSLs, they are covered by AutoExternalizeContributo¡­",github.com/JetBrains/intellij-community/pull/26/commits/d2f46f6ed530306269d27caf7db107be99273631
+2013-01-13T11:06:12Z,commit,Avoid potential NPEs and AIOOBEs,github.com/JetBrains/intellij-community/pull/26/commits/989396e6be08a51db9ae39297fdaa575d291844b

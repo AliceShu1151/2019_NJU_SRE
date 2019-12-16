@@ -1,0 +1,9 @@
+1089,Surface error nodes on top of build steps
+2019-03-13T14:32:46Z,discuss,"Hi @vladsoroka,"
+2019-03-13T14:32:46Z,discuss,"This is the PR for the work we discussed on the BOW.
+Instead of attaching nodes to the root, I created an intermediate build step node. If an error group with a failure is created, it will be attached to the root, before the build steps."
+2019-03-13T14:32:46Z,discuss,"Feel free to ping me if you have another idea.
+Thanks,
+Vadim"
+2019-03-13T14:35:27Z,discuss,"I'm having one issue though, which is that I wanted the first error lead node to be expanded but it does not seem to work."
+2019-03-13T12:02:09Z,commit,Surface error nodes on top of build steps,github.com/JetBrains/intellij-community/pull/1089/commits/af08fc8d991685ec868e7992686aa4dfa404ca8b

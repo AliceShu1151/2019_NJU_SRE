@@ -1,0 +1,10 @@
+222,Gradle dependency import should honor file name
+2014-11-16T15:28:59Z,discuss,"When importing dependencies from Gradle Intellij identifies them by 'groupId:artifactId:version[:classifier]'. While being sufficient for conventional layouts, it still may fail with custom Ivy repositories. Consider the following example:"
+2014-11-16T15:28:59Z,discuss,"Upon import Intellij creates only one of these deps, ignoring the second one as a duplicate. Proposed fix addresses the problem by appending a filename for dependencies which does not follow Maven naming convention."
+2014-11-16T15:48:57Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-11-17T13:42:43Z,discuss,"@klikh, done"
+2014-11-18T11:28:20Z,discuss,"Received, thanks. Btw, I didn't notice that you're working at JetBrains so you've actually already signed an agreement :)"
+2014-12-08T13:53:20Z,discuss,"Evgeny, the fix was applied with modifications, so no need to merge the pull request, however thanks for the contribution!
+you can find the change at 1fbc39e"
+2014-12-08T15:27:54Z,discuss,"@vladsoroka, thanks a lot"
+2014-11-16T14:57:19Z,commit,Gradle dependency import should honor file name,github.com/JetBrains/intellij-community/pull/222/commits/b416fa413af8c9c7c926749e78c0f0d7330a1e0f

@@ -1,0 +1,7 @@
+1206,Add invokeLater helper
+2019-09-26T11:00:48Z,discuss,"Hi,"
+2019-09-26T11:00:48Z,discuss,"I am Android Studio developer and I have found myself using ApplicationManager.getApplication().invokeLater quite often, so I think it deserves a helper function."
+2019-09-27T10:33:20Z,discuss,There is runInEdt defined in the same file. It calls invokeLater if it is being invoked not on the EDT. Are you sure you need to invokeLater on the EDT so frequently?
+2019-09-27T14:58:50Z,discuss,"Oh, okay, this is probably what I need. Maybe we should rename (or do something similar) it then because current name is not very discoverable. Not sure, but I think that nobody in the Studio team is aware of this helper."
+2019-10-01T08:54:06Z,discuss,Thanks! I've refactored the code a bit so there is now an invokeLater helper.
+2019-09-26T10:59:10Z,commit,Add invokeLater helper,github.com/JetBrains/intellij-community/pull/1206/commits/4f67572c42209daea1c7e658b2986382047f40ff

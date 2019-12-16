@@ -1,0 +1,9 @@
+234,Fixes to CoreJavaFileManager
+2015-01-13T18:02:19Z,discuss,Needed for Kotlin. See https://youtrack.jetbrains.com/issue/KT-6444
+2015-01-14T11:20:08Z,discuss,Merged manually. Thanks!
+2015-01-13T12:44:35Z,commit,Refactor and improve CoreJavaFileManagerTest,github.com/JetBrains/intellij-community/pull/234/commits/58514e34f6b5b6d878b10c52f776bd7c960d7862
+2015-01-13T13:27:34Z,commit,Fix CoreJavaFileManager for top level classes with dollar in name,github.com/JetBrains/intellij-community/pull/234/commits/6dbe78cdff212170d16d4011e49defc997f35482
+2015-01-13T14:56:48Z,commit,CoreJavaFileManagerTest: add negative scenarios,github.com/JetBrains/intellij-community/pull/234/commits/15989988f699ac074c0edf0644702c4b11214186
+2015-01-13T15:56:15Z,commit,CoreJavaFileManager: find main class in file with several classes pre¡­,github.com/JetBrains/intellij-community/pull/234/commits/90e2339adfda6f865cc28cc904dcc9fb9a8cc538
+2015-01-13T16:03:35Z,commit,CoreJavaFileManager: check scope when searching for classes,github.com/JetBrains/intellij-community/pull/234/commits/d5bd063a5a0898376faa8c96dac7948dd3e2c40c
+2015-01-13T17:51:54Z,commit,CoreJavaFileManager: avoid constructing unneeded list,github.com/JetBrains/intellij-community/pull/234/commits/f9bbc71f84a6ef7ad9aa5605893497b05b76ddfa

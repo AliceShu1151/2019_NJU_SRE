@@ -1,0 +1,5 @@
+770,use equals for module name comparison
+2018-03-24T20:16:51Z,discuss,"This will trigger a bug when a module name starts with another module name, for example, statistics and stat."
+2018-07-21T11:01:31Z,discuss,"@traff, please reassign the PR to the right person if needed."
+2018-10-24T10:20:47Z,discuss,"@guoci Thanks for the PR, but it is already invalidated by #771"
+2018-03-24T20:16:22Z,commit,use equals for module name comparison,github.com/JetBrains/intellij-community/pull/770/commits/f2c4343c369b3e65f0bee0c0443c66a1bb833b9b

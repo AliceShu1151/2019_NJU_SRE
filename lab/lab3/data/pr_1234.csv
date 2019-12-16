@@ -1,0 +1,7 @@
+1234,Add SpeedSearch in GitHub PullRequest List
+2019-11-06T05:10:39Z,discuss,"Currently PRList search queries through GitHub API, which might be slow for unstable network connection to GitHub.
+Also keep consistency with other listview components which support SpeedSearch."
+2019-11-07T10:25:32Z,discuss,"Looks good, thank you.
+Will fix the comparator thing during the merge."
+2019-11-06T05:00:41Z,commit,Add SpeedSearch in GitHub PullRequest List,github.com/JetBrains/intellij-community/pull/1234/commits/34ad7f7c1ffd32a728addacc39a14dfc29097cfd
+2019-11-07T09:31:23Z,commit,Merge branch 'master' into master,github.com/JetBrains/intellij-community/pull/1234/commits/bd24d1eb4a04245282a79746cce9fb846a81800d

@@ -1,0 +1,11 @@
+542,IDEA-140862 Extend DefaultMutableTreeNode to support restoring tree selection.
+2017-04-08T20:32:05Z,discuss,"DefaultMutableTreeNode does not implement equals() and hashCode().
+Because of that it is impossible to re-apply stored selection after re-building tree model."
+2017-04-08T20:32:05Z,discuss,"A new sub-class implements these methods (delegating the calls to ""user object"").
+This fixes the selection reset when changing the filter in ""Version Control > Repository"" view."
+2017-04-14T02:24:37Z,discuss,"Would not recommend doing the lambda expression instead of just the anonymous interfaces, as adding lambda's would essentially make those classes java 8 dependent which might not be for the best."
+2017-04-14T16:40:32Z,discuss,@Notoh Why is it not for the best? The vcs-impl module is already fully under Java 8.
+2017-04-14T18:51:12Z,discuss,"Lambdas won't add anything other than slight readability (at least in this instance alone) which can sacrifice compatibility if this were to be used with java 7 or earlier.
+Because it is java 8 already, at the end of the day its just semantics about the principal of good practice."
+2017-04-08T20:26:57Z,commit,Extend DefaultMutableTreeNode to support restoring tree selection.,github.com/JetBrains/intellij-community/pull/542/commits/da358ce57d8986e18e897c7f664265a80feffb31
+2017-05-01T20:25:07Z,commit,Merge branch 'master' into tree-selection-fix,github.com/JetBrains/intellij-community/pull/542/commits/e301c571320ade5a45444fbb735c5cecaddee027

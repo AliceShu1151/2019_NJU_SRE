@@ -1,0 +1,8 @@
+899,IDEA-200434: Avoid creation of new ijinit.gradle scripts
+2018-10-25T11:49:13Z,discuss,In GradleExecutionHelper improved check that ijinit.gradle script with corresponding content does not exist. Avoiding creation of new gradle init scripts should improve performance of configuration phase of a gradle build.
+2018-10-29T08:56:44Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-10-29T11:38:08Z,discuss,Done
+2018-11-01T11:51:22Z,discuss,Also we can avoid unnecessary file content comparison using different prefixes for most of scenarios.
+2018-11-01T11:51:22Z,discuss,"Thanks for the PR, I've pushed the fix with modifications.
+You can find the change at 5c5cc8b"
+2018-10-25T11:42:52Z,commit,IDEA-200434: Avoid creation of new ijinit.gradle scripts if correspon¡­,github.com/JetBrains/intellij-community/pull/899/commits/50ecf723f6c1cc3ab391145e285c37cd73399f05

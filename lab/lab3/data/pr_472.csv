@@ -1,0 +1,4 @@
+472,Fix mismatching varargs/array params in overrides
+2016-11-23T02:48:20Z,discuss,Maybe @akozlova would do the honors of reviewing this one? ;-)
+2016-11-25T18:25:11Z,discuss,"I've merged 3 files. ArrayConsumer was not changed as I can imagine external usages with varargs call. Our internal overrides are different - some use array, some varargs and it's impossible to make super class to use varargs (varargs are not allowed in type arguments), so I prefer to leave it as is. If it's a problem, we can suppress it in the code just say how to do that. Thanks for the contribution!"
+2016-11-23T02:32:18Z,commit,Fix mismatching varargs/array params in overrides,github.com/JetBrains/intellij-community/pull/472/commits/0d0ede19e61dfe4bcd85c298c8847ff03bcf80eb

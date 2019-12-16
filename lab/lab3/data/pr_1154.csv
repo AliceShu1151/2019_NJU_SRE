@@ -1,0 +1,7 @@
+1154,Use the total column width instead of the component width
+2019-06-10T20:03:31Z,discuss,"Otherwise the last column looks wider than it actually is when a table's
+auto resize mode is set to AUTO_RESIZE_OFF"
+2019-06-20T12:08:52Z,discuss,Hi! We require our users to submit contributor agreements for any contributions. So could you please visit https://www.jetbrains.com/agreements/cla/  and sign CLA to make me able to apply your patch.
+2019-06-20T12:33:04Z,discuss,"@sokolov-m We've got a corporate agreement with Google, there is no need to sign an individual one."
+2019-06-20T12:38:06Z,discuss,"Sorry, my bad. Going to apply patch"
+2019-06-10T19:52:31Z,commit,Use the total column width instead of the component width,github.com/JetBrains/intellij-community/pull/1154/commits/45064c6319446e28d6701d2d665da10fa29f41fd

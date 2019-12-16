@@ -1,0 +1,6 @@
+726,Pycharm community project config fixes
+2018-02-07T03:20:22Z,discuss,Fixes to take some pain out of properly configuring the project
+2018-02-09T12:01:31Z,discuss,Thanks for your pull request! I've rebased it onto master.
+2018-02-07T03:15:55Z,commit,exclude gradle build folders from project and add to .gitignore,github.com/JetBrains/intellij-community/pull/726/commits/6a926be1afb31cebd95a99523e62cb5e510d63f4
+2018-02-07T03:17:07Z,commit,helpers/pydev should be a source root with output prefix 'pydev',github.com/JetBrains/intellij-community/pull/726/commits/94a02085d9c38466c0572c9ea51daae48ca80cff
+2018-02-07T03:17:31Z,commit,chmod +x setup-test-environment gradle wrapper,github.com/JetBrains/intellij-community/pull/726/commits/7d96ef1808cee2679e82903a819fd10b7fe8631d

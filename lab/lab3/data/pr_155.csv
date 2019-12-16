@@ -1,0 +1,4 @@
+155,fix problem with single quote in project path
+2014-02-25T13:02:29Z,discuss,http://youtrack.jetbrains.com/issue/PY-10179
+2014-02-25T12:46:32Z,commit,fix problem with single quote in project path,github.com/JetBrains/intellij-community/pull/155/commits/bf7f424b6599b6b662a69c63d5028263dcbee88b
+2014-02-25T16:25:41Z,commit,fix multi-line string with single quotes problem PY-12223,github.com/JetBrains/intellij-community/pull/155/commits/3d19968c081143250f644efafd93a2e3799263e5

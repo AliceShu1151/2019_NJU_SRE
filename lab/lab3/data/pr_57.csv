@@ -1,0 +1,4 @@
+57,Update ParametersList.java
+2013-03-26T16:41:02Z,discuss,Check nullability of pathMacros cause MockApplication doens't have it
+2013-03-26T16:45:08Z,discuss,I've applied this manually and correctly (the second 'for' loop does not depend on PathMacros and must not be surrounded with the null check).
+2013-03-26T16:40:39Z,commit,Update ParametersList.java,github.com/JetBrains/intellij-community/pull/57/commits/3b4fcf430f8b6d8b88c65f7595eae34a081cd1ab

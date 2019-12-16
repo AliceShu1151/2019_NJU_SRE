@@ -1,0 +1,9 @@
+195,Fixed adding property to XML properties file
+2014-06-25T19:51:22Z,discuss,"When adding new property to properties in XML format, the underlying file is never updated. New element is created, but not attached to root element of properties file."
+2014-06-25T19:51:22Z,discuss,This functionality is used for example in wicketforge plugin.
+2014-06-25T19:51:22Z,discuss,"Method was not covered by tests, so I added also a test for it."
+2014-07-04T11:36:46Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-07-04T11:51:02Z,discuss,"Hi @klikh, I sent signed CLA today to Eugene Toporov (after twitter discussion).  I hope he will forward it to responsible person :-)"
+2014-07-04T13:32:43Z,discuss,"Thanks, the request is pulled into IDEA master. Do you want it to be backported into 13.1.x branch?"
+2014-07-04T18:35:35Z,discuss,"Thank you! Backport would be nice, but not really necessary."
+2014-06-23T15:39:09Z,commit,Fixed adding property to XML properties file,github.com/JetBrains/intellij-community/pull/195/commits/c3cb50244a901c254173deec5bc6fe9686d1eddd

@@ -1,0 +1,19 @@
+501,Fill subject and description in Github Pull Request creation dialog
+2017-01-08T12:20:45Z,discuss,"When you create PR now the title is the first line of commit message and description is another text.
+It's the same behaviour that used when you create PR from Github website or using hub (Github CLI tools)"
+2017-01-16T09:22:32Z,discuss,Thanks for your contribution!
+2017-01-16T09:22:32Z,discuss,It looks like there are some differences with GitHub's behaviour:
+2017-01-16T09:22:32Z,discuss,"If you want, I can merge this PR and fix them later."
+2017-01-16T09:41:47Z,discuss,"@AMPivovarov Yes, it's a little bit different with GitHub website behaviour, when the title is too long GitHub web site crops title, but GitHub CLI utils hub  always use the first line as title and never crops too long titles."
+2017-01-16T09:41:47Z,discuss,"Actually, personally, I prefer CLI hub behaviour, because if I format my commit message myself (first line title, empty line, description) I don't want to get cropped title in case if my title is little bit longer than 50 characters, in this case, it require to join title in editor and delete ellipsis manually"
+2017-01-16T09:41:47Z,discuss,"But if you think is better to mimic to website behaviour, I will fix my PR and crop too long titles"
+2017-01-17T12:44:21Z,discuss,"@gildor
+I think, that both options are perfectly fine here (with a small personal bias towards the ""do not crop"")."
+2017-01-17T12:44:21Z,discuss,"But cropping only ""oneline"" commit messages is rather inconsistent: (test will pass with the current implementation)"
+2017-01-17T12:55:04Z,discuss,"@AMPivovarov Yeah I know about the case with a really long commit + small appendix on the next line
+So, maybe I should remove crop at all for better consistency and straight-forward behaviour and keep only line-formatting behaviour for now?
+If you say ""yes"", I will update PR"
+2017-01-17T13:06:28Z,discuss,@gildor Yes.
+2017-01-17T13:45:55Z,discuss,"@AMPivovarov I've updated PR and rebased it. No more crop, tests fixed according new behaviour"
+2017-01-17T16:12:42Z,discuss,"Merged, thanks."
+2017-01-08T12:07:50Z,commit,Fill subject and description in Github Pull Request creation dialog,github.com/JetBrains/intellij-community/pull/501/commits/aa738c33abf618fa23d91c01380c8a2afe827f3f

@@ -1,0 +1,60 @@
+429,IDEA-157915: Fix symbolic-ref in HEAD #2
+2016-07-21T18:01:11Z,discuss,"
+No description provided.
+"
+2016-07-21T18:10:34Z,discuss,"@klikh Here is a fix for problem with packed-refs.
+For now there is only a problem with drawing of Branch view (ctrl+V->7)
+It correctly says that master is a current branch.
+The problem is that you can't switch from sym-link branch to original one: you don't have it 'Local Branches' section.  (See the attached image)
+I don't know what is the best solution here.
+And I don't know where to look for the code of this dialog =("
+2016-07-21T18:10:34Z,discuss,"Example:
+Branch view after executing git checkout ilzi, which points to master
+"
+2016-07-25T15:21:47Z,discuss,"OK, it seems that the problem is a bit more complex than it seemed at first. I think we have to decide on the UI first, and then make an implementation so that it matches the UI we agree on."
+2016-07-25T15:21:47Z,discuss,"Here are my thoughts on this:
+0. Let user checkout ilzi branch which is a link to master."
+2016-07-25T15:21:47Z,discuss,"What do you think about 2, and what other use cases there are?"
+2016-07-25T15:24:24Z,discuss,"Hm. Have you rebased the pull request? I don't see neither code comments, nor the pull request discussion. Or are they hidden somewhere inside github UI?"
+2016-07-25T15:29:34Z,discuss,"I didn't manage to reopen old PR. Either I am github newbie, or github thinks that reopening merged PR is strange, or both of them. So I created a new PR."
+2016-07-25T15:31:46Z,discuss,"Ah, my bad. I thought that you've opened a new PR, but didn't find it because I didn't look in closed PRs. Here it is for reference: #424"
+2016-07-25T15:45:30Z,discuss,"Regarding usecases, as I understand there are quite few symlink usecases:"
+2016-07-25T15:45:30Z,discuss,"All the other time git works with normal physical branches.
+I don't think that IDEA should behave in different way from 'official' git client. Official git client shows master as a current branch, and I think that we should do the same.
+I would think about fixing branch view to understand symlinks in head: i.e. 'Current branch: master(ilzi)', not filtering of master from branch list, etc.
+But we can also introduce some cool method getRealBranchFromHead and call it from almost everywhere..."
+2016-07-25T16:14:14Z,discuss,"It seems that to solve these issues, instead of treating symrefs as normal branches and resolving them while reading the repository, we'll have to introduce a special conception for them, e.g. something like GitSymbolicRef that would link an actual GitBranch (or a symbolic ref of previous level) and resolve to the hash or to the branch when needed."
+2016-07-25T16:14:14Z,discuss,"Btw, could you please share your use cases: why do you use links at all, instead of operating the real branches? AFAIK they are not an official feature of Git: back in 2011 Junio said that only the HEAD and refs/remotes/origin/HEADs are officially supported links. Has something changed after that?"
+2016-07-25T16:28:41Z,discuss,"Well... we have quite a long names of branches. I want to have alias stable for stable branch =)
+Actually IntelliJ's branch view solves this problem, but I perform checkout from terminal, because it usually requires couple more actions.
+Not sure if something has changed since Junio's answer, I just wanted to make my work a bit more comfortable."
+2016-07-26T15:07:17Z,discuss,So do you mind trying the approach with separate class for symbolic refs?
+2016-07-26T15:07:17Z,discuss,It is GitBranchPopup. Note that multi-repository case is supported there: branches common for all repositories are displayed at the top-level.
+2016-07-26T15:07:17Z,discuss,"Since we see that there is no official support of symbolic refs, following git client looks less necessary. On the other hand, the approach with braces looks nice. Just in reverse order: ""stable (master)"". IMHO it would be weird to see ""Current branch: master"" after checking out ""stable"", wouldn't it? In addition to that, if we display master (or even ""master (stable)""), it would be unclear why there is ""master"" in Git | Branches popup."
+2016-07-26T15:14:12Z,discuss,"Yes, I'll probably try to do something about this"
+2016-07-26T15:14:12Z,discuss,"Well, it a good point =) I've just written first to come in mind."
+2016-07-26T15:14:12Z,discuss,What is the case of multi-repository? 2 modules from different folders in one project? git repo inside other git repo?
+2016-07-26T15:25:45Z,discuss,"Both, and anything else you can imagine. For example, full intellij-community project consists of 3 repositories nested one into another: this one + /android + /tools-base. We have users with dozens of repositories (usually, some web frameworks with many small repositories for each of web site modules)."
+2016-07-26T15:25:45Z,discuss,"And we even have users with mixed VCS projects having e.g. a Git repository, a Hg repository and an SVN repository in a single project. However, this case is not related to the original issue: here we care only about multiple Git repositories."
+2016-07-26T15:25:45Z,discuss,Repositories are registered in Settings | Version Control by specifying the path and the VCS.
+2016-07-26T15:25:45Z,discuss,"In IDEA some operations are synchronous for all repositories by default (Update Project, Push, Commit), some have no sync support yet (e.g. Git | Pull, Git | Stash). Branches can operate synchronously or individually depending on the value of Settings | Version Control | Git | Control repositories synchronously. If this checkbox is enabled, you can e.g. checkout a common branch in all repositories. See this blog post for details."
+2016-08-22T20:33:16Z,discuss,"@klikh
+Here is a draft of fix.
+Please, have a look at this.
+Current branch is written as 'ilzi(master)', symbolic-refs in list of branches point at actual remote.
+"
+2016-08-22T20:33:16Z,discuss,"Push is being performed to actual remote, pull also works.
+"
+2016-08-22T20:33:16Z,discuss,"If this is OK, I will continue with some tests for it"
+2016-08-26T12:54:44Z,discuss,"Looks good. I'd add a space between ""ilzy"" and ""(master)""."
+2016-08-26T12:54:44Z,discuss,Will add some comments to the code.
+2016-08-26T12:54:44Z,discuss,"And could you please squash 39b8698 and 7966365, to avoid unfinished work in history ;)"
+2016-08-26T13:01:09Z,discuss,Please add tests at least for the following cases:
+2016-08-26T13:01:09Z,discuss,"You may use either GitNewRepositoryReader or GitRepositoryReader approach, as you wish. Personally, I find New one more clear since it allows to prepare the case manually, and not to look into testData to understand the test case."
+2018-07-22T16:10:14Z,discuss,@illabefat So is this feature is still actual for you?
+2016-07-05T21:53:04Z,commit,IDEA-157915: Fix symbolic-ref in HEAD,github.com/JetBrains/intellij-community/pull/429/commits/593217dd28c6ef7923f630e2d1d1de4162179b8e
+2016-07-18T19:39:49Z,commit,IDEA-157915: Fix symbolic-ref in HEAD. After code review,github.com/JetBrains/intellij-community/pull/429/commits/3a794efbc1a5f5d68439cba21e0bed68c7e8e8a3
+2016-07-19T08:09:10Z,commit,IDEA-157915: Fix symbolic-ref in HEAD. Support packed-refs,github.com/JetBrains/intellij-community/pull/429/commits/301c9e272bee29d7a58fc093af4e36d0b141205a
+2016-08-08T14:21:03Z,commit,IDEA-157915: Create GitSymbolicRef.java,github.com/JetBrains/intellij-community/pull/429/commits/39b86986862cc93eb984f0f7837891971e783a1f
+2016-08-09T08:06:17Z,commit,IDEA-157915: almost ready,github.com/JetBrains/intellij-community/pull/429/commits/79663656d1c0142cb8130629f3186530cc3eaa11
+2016-08-22T20:27:06Z,commit,IDEA-157915: Fix for push dialog to get actual tracked info,github.com/JetBrains/intellij-community/pull/429/commits/349556c8425460623ff87e1e219f16fa3bfbda58

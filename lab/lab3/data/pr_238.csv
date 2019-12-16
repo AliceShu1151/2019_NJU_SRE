@@ -1,0 +1,9 @@
+238,check myAssertThreading before using assertIsDispatchThread
+2015-01-29T04:58:42Z,discuss,"The DocumentImpl constructor takes an argument called forUseInNonAWTThread, which is stored in the myAssertThreading field. While this field is checked before some assertions, it is not checked before others."
+2015-01-29T04:58:42Z,discuss,"This change checks the field before all assertIsDispatchThread calls, enabling users to use more features of DocumentImpl outside the dispatch thread (as indicated by the constructor parameter)."
+2015-01-29T04:58:42Z,discuss,"(It is unclear to me why the assertIsDispatchThread assertions are there at all -- the functions don't seem to require it at all. This is the least intrusive change, remove the assertions completely should maybe be considered.)"
+2015-01-29T11:58:20Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-01-29T14:14:14Z,discuss,Just sent the CLA.
+2015-01-29T14:51:31Z,discuss,"Received, thanks."
+2015-02-02T15:10:08Z,discuss,"Merged manually, thanks!"
+2015-01-29T04:55:37Z,commit,check myAssertThreading before using assertIsDispatchThread,github.com/JetBrains/intellij-community/pull/238/commits/cd28806c1b8a6576eb44ad3c38b9cb9dc814defe

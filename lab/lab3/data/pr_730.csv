@@ -1,0 +1,19 @@
+730,Improve operations for document listeners
+2018-02-11T14:48:31Z,discuss,Purpose
+2018-02-11T14:48:31Z,discuss,Currently access to myDocumentListeners is prohibited so I implemented 2 public methods in DocumentImpl.
+2018-02-11T14:48:31Z,discuss,Thanks.
+2018-02-16T09:49:18Z,discuss,"Why do you need this? Note that you can track yourself whether you've added your listener or not. Double addition/removal is probably a bug somewhere in the client, and the new API would obscure that bug."
+2018-02-16T10:36:51Z,discuss,"@donnerpeter
+Thank you for comments!"
+2018-02-16T10:36:51Z,discuss,"My plugin will add documentListener and remove it every time several specific events happen. Of course I can manage these things by myself but it makes my code complicated. To simplify it, I wanted to access myDocumentListeners to verify whether it is already added or removed but I made new public methods instead."
+2018-02-16T10:36:51Z,discuss,"Hmm, I thought if there are no special reasons then developers can choose to use existing methods so that they can detect double addition/removal."
+2018-02-16T11:39:47Z,discuss,Unfortunately people too often invoke a method with convenient-looking name without giving much thought :(
+2018-02-16T12:04:48Z,discuss,"I understood.
+Then how about making public boolean existDocumentListener(@NotNull DocumentListener listener)?
+(1) If people invoke this method without giving much thought but I believe it will not obscure bugs.
+(2) People can easily implement simple codes to verify whether a listener has already added or not."
+2018-02-16T12:04:48Z,discuss,"But if you still think this method produces bad result or it is not needed in core API then I will close PR, if not then I will update codes. (If you have better method name, plz let me know)"
+2018-02-19T20:22:19Z,discuss,"I think the existence of such a method doesn't promote better practices of working with document listeners, with clean install/remove lifecycle, preferably with a parent disposable. So I'd prefer not to add such method to API, sorry."
+2018-02-20T09:07:46Z,discuss,"@donnerpeter
+OK, thank you for the comment. Let me close this PR."
+2018-02-11T08:50:16Z,commit,improve operations for document listeners,github.com/JetBrains/intellij-community/pull/730/commits/b502f6c587dde7bfdde702bf37f7da6ba58ccde3

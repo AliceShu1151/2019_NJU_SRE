@@ -1,0 +1,64 @@
+385,mistake
+2016-04-19T01:49:13Z,discuss,Before you go
+2015-06-16T08:26:10Z,commit,Pulling in branding project,github.com/JetBrains/intellij-community/pull/385/commits/666effe313ea561f1e459886d9fbe07eb3efeef8
+2015-06-16T08:49:43Z,commit,Putting everything in robovm/,github.com/JetBrains/intellij-community/pull/385/commits/baf061eaa54469e99f5bc4e158a576d72d06eb5d
+2015-06-16T08:55:15Z,commit,Added main module,github.com/JetBrains/intellij-community/pull/385/commits/0156e6372d0e61663a0010b9172549799b39e249
+2015-06-16T10:37:04Z,commit,Custom RoboVM Studio build,github.com/JetBrains/intellij-community/pull/385/commits/5f2c1901dd3170a114d5e8a75bea302281f4c352
+2015-06-16T13:45:16Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/850679168c5714ec27e6a5beee24c2b6a5615933
+2015-06-16T13:46:14Z,commit,More build improvements,github.com/JetBrains/intellij-community/pull/385/commits/a3819197ca5d84087f36b276cbcde6ecf6d36717
+2015-06-16T14:50:02Z,commit,More build system changes,github.com/JetBrains/intellij-community/pull/385/commits/312ed240ba06cc452952e090b3d7f11ad7761aa1
+2015-06-16T14:50:26Z,commit,RoboVM Studio build script,github.com/JetBrains/intellij-community/pull/385/commits/41de04c820bb0e2e87a1c66ef02131af6e038cc4
+2015-06-17T10:27:17Z,commit,"Fixed up icons (hopefully), distribution build, version (still funky)",github.com/JetBrains/intellij-community/pull/385/commits/e0869f57b4d1ea4801639d58eb8eab9efd627e4b
+2015-06-17T12:26:14Z,commit,Fixed versioning of .app bundle and path selector,github.com/JetBrains/intellij-community/pull/385/commits/73d41f5444d05db7bf955b40f70769de70306595
+2015-06-18T08:46:20Z,commit,Updated README and build,github.com/JetBrains/intellij-community/pull/385/commits/51032810086d074af5200a4684c89da0dbe77c9b
+2015-06-18T08:47:17Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/d34fd8406bdfe4f315ba73776f03b1df63eb9863
+2015-06-18T11:50:29Z,commit,"Moved branding project into this tree, added dmg scripts & assets",github.com/JetBrains/intellij-community/pull/385/commits/6e176dc3917a36718251ae7f0eac1ca9f3756a5b
+2015-06-18T15:19:27Z,commit,final tweaks to first EAP build,github.com/JetBrains/intellij-community/pull/385/commits/87897498c0a64574a3ac2ace1df4455003b91f85
+2015-06-18T15:50:11Z,commit,Need to delete the dmg before creating a new one,github.com/JetBrains/intellij-community/pull/385/commits/78fa27b0b1af1de823dc6f92cd1ad531e009c582
+2015-06-18T16:33:20Z,commit,set -e was a bad idea...,github.com/JetBrains/intellij-community/pull/385/commits/4d50f3fdaa9de4a513b97994bc150d50ebb754b6
+2015-06-18T18:32:14Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/bef72b12efc0e7071d89b51f812fc343563d5857
+2015-06-18T18:46:33Z,commit,Need to remove idea-version from robovm plugin when bundling it with ¡­,github.com/JetBrains/intellij-community/pull/385/commits/71e9b3f433c22c22be8c39ece8a52d922f7bfbef
+2015-06-18T18:49:42Z,commit,Fixed up awk replacement,github.com/JetBrains/intellij-community/pull/385/commits/3d07a0053dc58e51c552cd0f4e3525f13ff5d7ea
+2015-06-19T08:42:54Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/3f0e6740b0bb6dc94e4b0053a8da45b18f1a3564
+2015-06-19T08:45:19Z,commit,Ignoring jps-build-data,github.com/JetBrains/intellij-community/pull/385/commits/e07dd7948b1c4006a0eae9e0703d7f3ae60afc71
+2015-06-22T10:36:29Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/c73dea19c5de53f6066e2041bcf895f8bac0ab7d
+2015-06-22T10:37:24Z,commit,Merged with upstream,github.com/JetBrains/intellij-community/pull/385/commits/fe0ca82c0d2fad3419fdcd29291130f2b858865d
+2015-06-23T11:30:26Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/dd79211560564041ce7b082cbd54e37251b8fb0d
+2015-07-02T08:25:51Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/5191802b5f92a96df568a388a06f4c751f1617a6
+2015-07-02T08:43:09Z,commit,"Updated to latest IC, merged new build files from build/ to build-rob¡­",github.com/JetBrains/intellij-community/pull/385/commits/575578caf6b6c9c1f26affd81bcf2e67adbea10c
+2015-07-02T09:15:33Z,commit,"Updated app info xml, added cache/settings clear script for testing",github.com/JetBrains/intellij-community/pull/385/commits/a18e2126909477efb4acf4a513d4dbc2daf5e657
+2015-07-02T10:07:12Z,commit,"Fixed API version, set to 142.0",github.com/JetBrains/intellij-community/pull/385/commits/ede7089631f4946485cab6e18d79149fca502d22
+2015-07-02T10:42:55Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/2a53b3841d2224f3f09c3b7faa1d4d9222849bdc
+2015-07-02T12:58:48Z,commit,"Closes #1, default path for projects is now ~/RoboVMStudioProjects",github.com/JetBrains/intellij-community/pull/385/commits/b86d6c1fee2ce2f8a510a86392b6bc7d83e3c5d5
+2015-07-02T14:42:34Z,commit,"Closes #1, default path,",github.com/JetBrains/intellij-community/pull/385/commits/e6127e7ce1649d2f44912922ddf90742f50d7109
+2015-07-06T09:25:45Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/dc9520476bee86ce3a3a6b63c92a8dd1b1f57e38
+2015-07-06T11:03:27Z,commit,"Added Versioning class, used in build-robovm-studio.sh to apply versi¡­",github.com/JetBrains/intellij-community/pull/385/commits/4a49df48ef493e6b8216c864f459bd512d4d4249
+2015-07-06T11:10:54Z,commit,More fixes to versioning script,github.com/JetBrains/intellij-community/pull/385/commits/c751dc2153043cec61f633d97d293334aed8ff7d
+2015-07-06T11:12:38Z,commit,Another versioning fix,github.com/JetBrains/intellij-community/pull/385/commits/fa0cc0a426cba9bf5a63a3725b9f2064eb1eb713
+2015-07-06T12:23:49Z,commit,Fixed up build & versioning,github.com/JetBrains/intellij-community/pull/385/commits/fa44ebd3d885bcd414d05b050f41c75258824042
+2015-07-06T12:25:31Z,commit,Fixed clear settings script,github.com/JetBrains/intellij-community/pull/385/commits/603d9b6641d5fae68abe2fe0fad602123821f1c5
+2015-07-06T13:34:15Z,commit,"Fixed up getPlugins, clones the IDEA plugin everytime",github.com/JetBrains/intellij-community/pull/385/commits/653cba82eb116bc71d82d4b7bb2d83b7151fef08
+2015-07-06T15:42:47Z,commit,Fixed dmg.json,github.com/JetBrains/intellij-community/pull/385/commits/3f45dd3c0062db469835748eae4f0d0dd0246d70
+2015-07-06T15:43:20Z,commit,Fixed up getPlugins.sh,github.com/JetBrains/intellij-community/pull/385/commits/652f7587e61c78f46352ced44a346fd17e964b7f
+2015-07-07T11:56:19Z,commit,Added update.xml,github.com/JetBrains/intellij-community/pull/385/commits/f26518c032ffb40f61b6d1088cac3c571197439f
+2015-07-07T11:57:27Z,commit,Update URL,github.com/JetBrains/intellij-community/pull/385/commits/219a50a7cf9bca4ab617597ded2a75f961d136f8
+2015-07-07T13:15:03Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/dbcf34ada5579541cd4aa63e74cde9b3322a5a56
+2015-07-08T12:41:51Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/7241eae6bc88b5e5a393a07496d6f512356d5c02
+2015-07-08T15:07:51Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/cf973b6e0a566682d4734a73671fd0d992abb5ee
+2015-07-08T15:48:18Z,commit,"Fixed FrameWrapper, AvdListDialog would pass a null dimensionKey on c¡­",github.com/JetBrains/intellij-community/pull/385/commits/bba6a2817c2499325cea5557a014573ffbb18e74
+2015-07-08T16:23:02Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/385/commits/8a01906a7841d8389858d6f2be43b024f8e7fe1b
+2015-08-05T18:46:19Z,commit,Fixed up plugins getter script to use a specific version of the andro¡­,github.com/JetBrains/intellij-community/pull/385/commits/125a384fec1f5adc350efb9facac4d57606c5549
+2015-08-06T11:02:01Z,commit,Added -U so snapshots are resolved,github.com/JetBrains/intellij-community/pull/385/commits/3717e80b470fc4be21d383bf70c04bafe7f4055c
+2015-08-06T11:43:41Z,commit,Updated update xml,github.com/JetBrains/intellij-community/pull/385/commits/05e6ab77ff31ed6336c404581cbd2c071b678797
+2015-08-06T11:43:58Z,commit,Update update.xml,github.com/JetBrains/intellij-community/pull/385/commits/e6aca23397eaf81d202732bb0618bdc338c007ba
+2015-08-06T11:46:38Z,commit,Update update.xml,github.com/JetBrains/intellij-community/pull/385/commits/d34f50bcef33319246a381041d7f89321c3e1427
+2015-08-06T11:48:08Z,commit,Update update.xml,github.com/JetBrains/intellij-community/pull/385/commits/82fe2a25dbefea39950e10147a43117b416a320b
+2015-09-03T07:07:10Z,commit,Updated update.xml for newest release,github.com/JetBrains/intellij-community/pull/385/commits/aadee894071ba9af4ddef89c2527048b1874d63b
+2015-09-16T22:25:15Z,commit,1.8.0 release,github.com/JetBrains/intellij-community/pull/385/commits/6c5cb26b77a3eede40b6533807b54f8852e058b6
+2015-10-20T23:25:39Z,commit,1.9.0 release,github.com/JetBrains/intellij-community/pull/385/commits/56e28936eb0f93f364f4a385245976d62a2554ec
+2015-11-20T08:24:00Z,commit,RoboVM 1.11 release,github.com/JetBrains/intellij-community/pull/385/commits/ab72da61bd8f2b7bf35474bccd0a8d6cb23e230f
+2015-12-17T09:13:37Z,commit,Updated update.xml to 1.12.0,github.com/JetBrains/intellij-community/pull/385/commits/2a36176211ed092e30cbf92c118a05c3c02df12b
+2016-01-27T11:02:42Z,commit,Updated update.xml for 1.13.0 release,github.com/JetBrains/intellij-community/pull/385/commits/d8fa79062fffbf1368226f95a6ed3e8b43bf341e
+2016-02-29T20:14:29Z,commit,Added version 1.14.0,github.com/JetBrains/intellij-community/pull/385/commits/2432b936eee8d4e07f95140bfec5c4b65c739f8f
+2016-02-29T20:15:00Z,commit,Commented until official release,github.com/JetBrains/intellij-community/pull/385/commits/f1cdbb47ae88acf631ca22099c1e925e0458fff1
+2016-03-01T07:58:39Z,commit,Added 1.14.0 to update.xml,github.com/JetBrains/intellij-community/pull/385/commits/462c81e2a6f9970cd20da2be8dd588a805503be1

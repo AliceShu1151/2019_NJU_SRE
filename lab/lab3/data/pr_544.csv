@@ -1,0 +1,4 @@
+544,XML element not closed
+2017-04-12T10:45:17Z,discuss,A simple typo: not closing span element.
+2017-04-13T09:21:47Z,discuss,Merged manually. Thanks!
+2017-04-12T10:29:25Z,commit,XML element not closed,github.com/JetBrains/intellij-community/pull/544/commits/6c34ca4960ed7f00079fdc285ef3d6fcdfa6617d

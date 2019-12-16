@@ -1,0 +1,16 @@
+455,Bugfix for migration to Stream API for sum() of List<Integer>
+2016-10-21T16:48:57Z,discuss,"This commit is a patch for an incorrect refactoring of a foreach loop over a List to a sum() call on a Stream.
+When the loop variable's type is a primitive int rather than an Integer, the current implementation did not add a mapToInt() call to obtain a specialized IntStream object first."
+2016-10-21T16:48:57Z,discuss,"The code above would refactor to:
+int sum = values.stream().sum();"
+2016-10-21T16:48:57Z,discuss,"The correct refactoring is:
+int sum = values.stream().mapToInt(i -> i).sum();"
+2016-10-22T14:07:09Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2016-10-22T15:55:08Z,discuss,I have signed the agreement.
+2016-10-22T15:56:02Z,discuss,"Received, thank you."
+2016-10-24T11:15:13Z,discuss,"Thank you for discovering this bug and providing a pull-request. Indeed this case was not covered. Unfortunately the way you fixed this is not correct. First, it breaks primitive arrays iteration. For example:"
+2016-10-24T11:15:13Z,discuss,"This case should be converted to Arrays.stream(array).sum(), but after applying your patch, it adds mapToInt(x -> x) step which is incorrect. Also it does not cover more complex problems. For example:"
+2016-10-24T11:15:13Z,discuss,"Here check(int) is called. After applying your fix we have compilable code, but it adds mapToInt after filter which silently changes the code semantics (calls check(Integer) now). What we should do is to modify the CollectionStream code generation adding mapToInt there. I decided that it would be easier to decline your pull request and fix this by myself in a proper way (see d51f09d). Nevertheless I really appreciate that you've found a bug in my code. Thank you and looking forward for new pull requests from you!"
+2016-10-24T22:40:48Z,discuss,"Alright, that's fine, I'm still in the process of learning how everything in the stream migration system operates. Thank you for the detailed overview!"
+2016-10-21T16:18:09Z,commit,Bugfix for migration to Stream API for sum() of List<Integer>,github.com/JetBrains/intellij-community/pull/455/commits/7328e2f0cbd3d312d89dead10d3fa3c03b8361e8
+2016-10-24T01:24:17Z,commit,Merge remote-tracking branch 'JetBrains/master',github.com/JetBrains/intellij-community/pull/455/commits/4ceef7af8ac89855b00c682479bb5887972ae2b7

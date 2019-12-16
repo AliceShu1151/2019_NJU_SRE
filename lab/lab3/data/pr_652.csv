@@ -1,0 +1,5 @@
+652,make EmptyList compatible with java.utilCollections.EmptyList
+2017-10-22T15:17:44Z,discuss,Current implementation of ContainerUtilRt.EmptyList invokes methods of java.util.AbstractList. As a result
+2017-10-22T15:17:44Z,discuss,These behaviour can be avoided by this patch.
+2017-10-25T09:21:28Z,discuss,"Thanks, merged manually!"
+2017-10-22T06:56:08Z,commit,make EmptyList compatible with java.utilCollections.EmptyList,github.com/JetBrains/intellij-community/pull/652/commits/3b6d8bf6e9944b87bb559f925639ffc38ca47980

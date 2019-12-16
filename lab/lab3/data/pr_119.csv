@@ -1,0 +1,7 @@
+119,"svn4idea plugin, IDEA-96825: consider the ""longest"" (most specific) path..."
+2013-10-23T07:18:43Z,discuss,Fix for http://youtrack.jetbrains.com/issue/IDEA-96825.
+2013-10-30T16:29:59Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2013-10-31T07:09:01Z,discuss,I have sent the signed agreement on 23.10.2013 20:30 via fax to JetBrains s.r.o..
+2014-01-15T12:19:37Z,discuss,"It seems no custom filtering is necessary for file history, so I just removed it - all history should be shown correct now. See 9bba592."
+2014-01-15T12:19:37Z,discuss,"And for your url correction logic - probably it'll also be useful for some other bug fixes, but I did not apply it now. Currently I think of using peg revisions for such cases (and not calculating previous paths manually)."
+2013-10-23T07:15:22Z,commit,"svn4idea plugin, IDEA-96825: consider the ""longest"" (most specific) p¡­",github.com/JetBrains/intellij-community/pull/119/commits/70346be7c4acd4f2d6261e5ad71ebc299fd4d1ca

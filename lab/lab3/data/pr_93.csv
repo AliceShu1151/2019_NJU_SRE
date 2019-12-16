@@ -1,0 +1,7 @@
+93,Expose a commit's branch in a few different places:
+2013-08-27T06:35:18Z,discuss,"Compared to the previous pull request, I've made the following changes:"
+2013-08-27T06:35:18Z,discuss,"I've changed myColumn to be typed as ChangeListColumn<CommittedChangeList>, but the problem is that the column comes from calling com.intellij.openapi.vcs.CommittedChangesProvider#getColumns which isn't typed (it's simply returns ChangeListColumn[]), so somewhere I'll have to cast. For now, I've put that cast in the CustomChangeListColumnGroupingStrategy ctor."
+2013-08-27T06:35:18Z,discuss,"An inspection of the implementations of the getColumns() method shows that all the columns returned could be described as `ChangeListColumn<? extends CommittedChangeList>``, but changing the signature of that method is not easy."
+2013-08-27T06:35:18Z,discuss,"I've reverted the combobox prototype back to it's original value: getComboBox().setPrototypeDisplayValue(""Date+"");, though I'm happy to remove it altogether if you believe that's the right thing to do."
+2013-09-04T16:39:45Z,discuss,"Thanks a lot, Jay! I've merged and pushed your patch with a few changes."
+2013-06-28T14:30:27Z,commit,Expose a commit's branch in a few different places:,github.com/JetBrains/intellij-community/pull/93/commits/64b542052f4188322478892f8a8e6ee1cc4cc1b7

@@ -1,0 +1,9 @@
+773,WIP: Pydevd native trace
+2018-03-26T23:45:15Z,discuss,@Elizaveta239 Please take a look:
+2018-03-26T23:45:15Z,discuss,This is work in progress. It works but needs to be productionized. I gave you access to the branch in case you have time to work on this.
+2018-03-27T11:01:28Z,discuss,Hi @fitermay! It looks very interesting. At the moment we're going to have a 2018.1 release and we're going to fix regressions and bugs in new features in minor updates. But after that we can discuss your implementation. Thank you!
+2018-08-07T12:53:57Z,discuss,"Hi @fitermay! Sorry for the late response, but unfortunately I didn't have time to prepare it for release in PyCharm 2018.2. I'll do my best to merge it in PyCharm 2018.3."
+2018-03-26T23:14:10Z,commit,Tracing by using native 'PyEval_SetTrace',github.com/JetBrains/intellij-community/pull/773/commits/91fbdbfb85cee16765bdb0b1fc9aa85dbbbb5eb7
+2018-03-26T23:24:24Z,commit,remove 'SafeCallWrapper',github.com/JetBrains/intellij-community/pull/773/commits/b5e28a81c32720f8d5b221adb4cdd5a6e83b5967
+2018-03-26T23:35:21Z,commit,use a no-op native dummy trace for frame eval debugger,github.com/JetBrains/intellij-community/pull/773/commits/241663aad1a2aed64b85a84610f87978a929335e
+2018-03-26T23:40:28Z,commit,revert local change,github.com/JetBrains/intellij-community/pull/773/commits/b509bdcf4279f6573b659b05f268f455036e41f4

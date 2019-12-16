@@ -1,0 +1,12 @@
+342,LightVirtualFile type fix
+2016-01-07T09:54:13Z,discuss,LigthVirtualFile contains incorrect file type when created from text but has originalFile
+2016-01-11T15:13:35Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-01-11T17:37:13Z,discuss,Done
+2016-01-12T09:31:57Z,discuss,We didn't receive it yet. Could you please re-send?
+2016-01-12T09:36:08Z,discuss,Sent again
+2016-01-12T09:36:46Z,discuss,Now I see it. Thanks!
+2016-01-13T12:08:40Z,discuss,"@hurricup, this fix looks ok for me, but probably it would be better to override getFileType in LightVirtualFile to delegate to original file if it's present.
+@nicity, what do you think?"
+2016-01-13T12:31:08Z,discuss,"That was my first intention, but, my mentor been afraid that such solution may affect platforms or other plugins code. So used the most safe way to my knowlege."
+2016-05-23T08:33:53Z,discuss,Added delegation of getFileType to the original file
+2016-01-07T09:50:03Z,commit,"LightVirtualFile type migth be incorrect if created from text, withou¡­",github.com/JetBrains/intellij-community/pull/342/commits/3238b4eed4ec8b138f3ea6278514806a15bea525

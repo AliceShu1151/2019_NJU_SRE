@@ -1,0 +1,10 @@
+1240,Fix PY-38963
+2019-11-08T12:55:37Z,discuss,"Fix formatting string exception
+Related issue: PY-38963"
+2019-11-21T12:35:22Z,discuss,"Hello @moznuy,"
+2019-11-21T12:35:22Z,discuss,thank you for the PR!
+2019-11-21T12:35:22Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-11-21T12:35:22Z,discuss,"After the contributor license agreement is signed, I'll be able to merge your changes."
+2019-11-21T12:35:22Z,discuss,Thanks again!
+2019-11-21T12:53:26Z,discuss,I've submitted contributor license agreement.
+2019-11-08T12:51:57Z,commit,Fix PY-38963,github.com/JetBrains/intellij-community/pull/1240/commits/4a87dd4ee9502735b3179df9c97e11a7c0660b29

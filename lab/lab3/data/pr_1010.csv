@@ -1,0 +1,8 @@
+1010,[external-system] faster module select
+2018-12-11T18:50:13Z,discuss,There is no need to explicitly set selected state for nodes. It will be taken care of by CheckboxTree.
+2018-12-11T18:50:13Z,discuss,I've tested it on a multi-project. Just selected/deselected node.
+2018-12-11T18:50:13Z,discuss,I found it while profiling a ~20 seconds UI freeze while operating with select project dialog.
+2018-12-11T18:50:13Z,discuss,to: @vladsoroka @nskvortsov
+2018-12-29T13:17:35Z,discuss,"this code not only sets selected states for nodes, but also sets ignored states for all children of a data node recursively.
+While other tree nodes will be taken care of by CheckboxTree, there are some data nodes (not used as tree nodes, but still presented in the graph) that should be ignored too"
+2018-12-11T18:45:43Z,commit,[external-system] faster module select,github.com/JetBrains/intellij-community/pull/1010/commits/374924a0854055554b6e532a5b24d6293dbe5e9e

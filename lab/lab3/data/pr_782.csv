@@ -1,0 +1,4 @@
+782,IDEA-190710 Add Gitlab Time Tracking integration
+2018-04-22T03:00:00Z,discuss,"This allows for GitLab Time Tracking through the Tasks plugin. GitLab already supports this feature, but never got support in the IDE."
+2018-06-20T14:56:45Z,discuss,GitLab v11 has removed the API v3 and this PR is no longer valid.
+2018-04-22T02:56:18Z,commit,IDEA-190710 Add Gitlab Time Tracking integration,github.com/JetBrains/intellij-community/pull/782/commits/75d2ffd9b6bf2f7e18d769e140d19a34be3db7c9

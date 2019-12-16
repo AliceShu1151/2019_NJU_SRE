@@ -1,0 +1,25 @@
+1038,Re-enable canonicalization cache
+2019-01-23T16:24:05Z,discuss,"This CL still keeps the canonicalization prefix cache disabled since
+that is known to have consistency issues.
+The canonicalization cache helps to address performance issues on the
+Windows platform where the File.getCanonicalPath is significantly slower
+than in other platforms."
+2019-01-23T16:24:05Z,discuss,"As per my conversation with @trespasserw, this was disabled back in Apple JDK6 since it didn't handle correctly symlinks and kept re-indexing parts of the JDK. I've tested this locally and it seems to work correctly now."
+2019-02-04T17:29:16Z,discuss,"Hey @trespasserw, did you have a chance to look into this?"
+2019-02-04T17:32:53Z,discuss,"Sorry, not yet :( Thank you for pinging, will try to look at it tomorrow."
+2019-02-07T11:47:39Z,discuss,How exactly would I test this change?
+2019-02-07T11:53:22Z,discuss,@yole look for VFS events for .jar files under the project JDK root (IIRC they were happening on a project open).
+2019-02-19T17:47:35Z,discuss,@yole Did you have chance to look into this?
+2019-02-19T17:47:35Z,discuss,Thanks!
+2019-02-20T11:31:33Z,discuss,I¡¯m terribly sorry for this to take so long. Started looking.
+2019-02-21T14:23:03Z,discuss,"It seems to me that the problem was caused by a combination of two factors: how IDEA's main class loader work and how Java SDK class paths are organized. Since IDEA no longer runs on Java 6 and class paths organization was changed since then, the problem is no longer actual."
+2019-02-21T14:23:03Z,discuss,"In my tests, I didn't see a difference between sun.io.useCanonPrefixCache=false and sun.io.useCanonPrefixCache=true - so maybe drop the option completely and go with the default?"
+2019-02-25T15:13:49Z,discuss,"Hey @trespasserw, thanks for looking into it. The only reason why I used useCanonPrefixCache=false is that it is known to have consistency issues and that's partly the reason why it will be removed in the future.
+An example is https://bugs.java.com/bugdatabase/view_bug.do?bug_id=7066948"
+2019-02-25T15:13:49Z,discuss,I wanted to stay on the safe side.
+2019-02-28T10:16:24Z,discuss,"Okay, makes sense.
+Merged, should be available on GH within an hour.
+Thanks!"
+2019-02-28T10:24:04Z,discuss,"One problem, though. I just noticed that the cache is disabled by default in Java 12."
+2019-02-28T10:24:04Z,discuss,Are there any particular places in the code where a slowness of File.getCanonicalPath is particularly noticeable?
+2019-01-23T16:09:14Z,commit,Re-enable canonicalization cache,github.com/JetBrains/intellij-community/pull/1038/commits/c2b400143b77d97af691d8cda5b2bc4f413fe743

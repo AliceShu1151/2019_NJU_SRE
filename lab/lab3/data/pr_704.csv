@@ -1,0 +1,15 @@
+704,IDEA-163705: Add option to not log error on missing jars in JarLoader
+2018-01-08T10:49:42Z,discuss,"Android Studio preview makes use of the UrlClassLoader to load
+classes that are part of the project. In some cases, like when building,
+some classes might be temporarily missing.
+The preview handles that case correctly but the JarLoader logs an error
+that shows the error notification.
+This change adds an option that its used from Android Studio to disable
+that behaviour in the preview."
+2018-01-09T15:23:15Z,discuss,"AFAIS you work for Google, right? Could you please join Google organization on GitHub?"
+2018-01-19T15:09:47Z,discuss,I was already part of the Google org but it was private. Now it's set to public.
+2018-01-19T15:09:47Z,discuss,Thanks!
+2018-01-23T07:19:01Z,discuss,"@klikh, is this ready for review?"
+2018-01-23T15:45:01Z,discuss,"@dahlstrom-g Yep, @dmitry-avdeev will look at this one shortly."
+2018-01-25T21:07:19Z,discuss,Thanks! Merged manually with 5ed7313
+2018-01-08T10:47:37Z,commit,Add option to not log error on missing jars in JarLoader,github.com/JetBrains/intellij-community/pull/704/commits/e2472bbe0f638f433d4f28b41912b6f24cf833be

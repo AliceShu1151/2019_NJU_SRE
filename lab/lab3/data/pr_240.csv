@@ -1,0 +1,11 @@
+240,Fix loading of C native library on FreeBSD with JNA < 4.1.0.
+2015-02-02T09:58:04Z,discuss,For reference: java-native-access/jna#279
+2015-02-02T10:56:43Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-02-02T11:11:46Z,discuss,CLA submitted.
+2015-02-02T12:36:11Z,discuss,"Received, thanks."
+2015-02-02T15:50:50Z,discuss,"Actually I'm thinking it could make more sense to rebuild the old jna library with this patch: https://people.freebsd.org/~jkim/jna.diff
+This would fix not only this issue, but also other libraries (pty4j, jtermios, etc.) that uses jna to load the libc. What's your opinion?"
+2015-02-02T16:33:51Z,discuss,Sounds reasonable. Just need to check what holds us back from JNA upgrade.
+2015-02-13T14:37:45Z,discuss,Status update: we're in the process of migrating to JNA 4.1 - upgrading and checking dependent libraries one-by-one.
+2015-09-21T17:41:31Z,discuss,Finished the migration to JNA 4.1 (finally :/). Sorry for it to take so long.
+2015-02-02T08:52:13Z,commit,Fix loading of C native library on FreeBSD with JNA < 4.1.0.,github.com/JetBrains/intellij-community/pull/240/commits/1a12559821bacb65cfa341c55cb4893e76f1ee17

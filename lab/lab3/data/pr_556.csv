@@ -1,0 +1,5 @@
+556,Date: remove usage of deprecated API
+2017-04-17T16:02:30Z,discuss,"Replaced Date for Calendar.
+Two implementation notes:"
+2017-05-05T17:01:20Z,discuss,Merged manually. Thanks!
+2017-04-17T15:20:29Z,commit,Date: remove usage of deprecated API,github.com/JetBrains/intellij-community/pull/556/commits/4d6dc4d6ebdfa7c9f1f4677ee1022cf2a686a5ce

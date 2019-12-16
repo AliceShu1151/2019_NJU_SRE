@@ -1,0 +1,17 @@
+753,Add an onStart method to ExternalProjectRefreshCallback
+2018-03-10T00:57:35Z,discuss,"When ExternalSystemUtil#refreshProject is called, a rerun import action is
+created and attached to the build view. This action is called when the
+""Refresh"" button is pressed and what it does is simply call refreshProject
+again with the same parameters. For Android Studio, we do some setup
+before calling refreshProject, but since this rerun action calls
+refreshProject directly, we cannot do this inicial setup."
+2018-03-10T00:57:35Z,discuss,"This CL adds an onStart method to ExternalProjectRefreshCallback which
+allows any setup steps to be done before starting project refresh,
+causing those steps to be repeated when the refresh button is pressed."
+2018-07-25T11:41:47Z,discuss,"ExternalProjectRefreshCallback was intended to be used to get the result of the async execution of the project refresh.
+There are many other places where the project refresh can be triggered, e.g. ""Refresh"" button from the Gradle tool window, auto-import, plugins code etc.
+If you run your setup using ExternalProjectRefreshCallback all those import invocations will not get it."
+2018-07-25T11:41:47Z,discuss,"You can use ExternalSystemTaskNotificationListener#EP_NAME extension point to make your setup of android projects refresh available for the gradle refresh triggered not by android plugin code.
+It should be possible to use ExternalSystemTaskNotificationListenerAdapter#onStart(ExternalSystemTaskId, String) for that purpose (please, do not forget to add the check if the current project is backed by 'gradle' and is android-specific and ExternalSystemTaskId.getType() == ExternalSystemTaskType.RESOLVE_PROJECT)?
+(Please, look at com.android.tools.idea.gradle.AndroidGradleImportTaskNotificationListener class.)"
+2018-03-10T00:50:40Z,commit,Add an onStart method to ExternalProjectRefreshCallback,github.com/JetBrains/intellij-community/pull/753/commits/8c848fd7c60a40c9bea0558acee853365428e51e

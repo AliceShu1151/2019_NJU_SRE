@@ -1,0 +1,6 @@
+637,Fix for IDEA-180133: allow hg4idea to set hg executable per-project
+2017-10-06T01:54:49Z,discuss,Details at https://youtrack.jetbrains.com/issue/IDEA-180133
+2017-10-06T09:52:54Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-10-20T15:11:33Z,discuss,"@klikh - Just a gentle reminder that this is still out here.  If there's anything else I should do (perhaps pull-request to the 173 branch instead of 172?), just let me know."
+2017-10-25T14:00:56Z,discuss,"@mkillianey Thanks for your contribution. My colleague answered in the related issue that we're going to implement this a bit differently to overcome the usability issue. We plan to make the fix soon, both for Git and Hg."
+2017-10-04T03:47:44Z,commit,Allow projects to override the hg executable on a per-project basis.,github.com/JetBrains/intellij-community/pull/637/commits/19e816fb9ec006b9c1ee4dbe26968fb7db7468ca

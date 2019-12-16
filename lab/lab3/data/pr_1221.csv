@@ -1,0 +1,3 @@
+1221,"IDEA-225647 ""View Mode"" menu item text changes"
+2019-10-25T20:22:55Z,discuss,Now using proper strings from resource bundles so the mnemonics work.
+2019-10-22T23:13:08Z,commit,"IDEA-225647 Updates to the way menu text is generated for ""View Mode""бн",github.com/JetBrains/intellij-community/pull/1221/commits/8fd65c13014112f03337a58d4a8b316324476edd

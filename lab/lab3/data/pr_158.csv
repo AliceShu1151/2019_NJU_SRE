@@ -1,0 +1,20 @@
+158,IDEA-121616 Plugin API improvement: there no ability to detect any settings change in the idea from plugin.
+2014-03-04T13:19:26Z,discuss,"Propose of improvement of Plugin API, to be able to detect any settings
+change in the IDEA Platform product from a plugin."
+2014-03-04T13:19:26Z,discuss,http://devnet.jetbrains.com/message/5510639
+2014-03-04T13:19:26Z,discuss,
+2014-03-04T13:36:30Z,discuss,"If you have opinion that method signature should be changed or need to
+call listener on each time using one configurable than let me know.
+But I think that from performance perspective we need to have one call on all changes."
+2014-03-04T13:36:30Z,discuss,"I pass id extension point to the listener for security reason to
+prevent possible injection or mess. Because plugin in another case  will have access to
+Configurable object itself which is possible security ""hole""."
+2014-03-04T13:36:30Z,discuss,"Best Regards,
+Vladimir"
+2014-03-04T14:30:11Z,discuss,"Also if OptionsEditor is not one place where we need to notify all
+registered listeners, please let me know also."
+2018-07-21T15:13:51Z,discuss,"@vkravets, thanks for the PR, please rebase the PR and clarify your use case, cc @chashnikov."
+2018-07-25T07:22:43Z,discuss,Sorry for the late reply and thank you for your work!
+2018-07-25T07:22:43Z,discuss,However the suggested implementation works only if settings are changed via Settings dialog. But some settings may be changed by accessing the corresponding service via API (e.g. when user invokes an intention action) or when a project configuration is reimported from Maven/Gradle or reloaded from the configuration files after user updates the project from VCS. So it won't work reliably.
+2018-07-25T07:22:43Z,discuss,"We have plans to create a unified model to store all settings, and it'll support notification about changes, but until it's done I think it's better to describe which specific setting you want to listen for changes, and we'll be able to provide a special listener for it which will work inside its service so all the cases will be supported."
+2014-03-03T17:48:08Z,commit,SettingsChangeListener implementation,github.com/JetBrains/intellij-community/pull/158/commits/8fa995141ff51d89986ddd6456640155d8641010

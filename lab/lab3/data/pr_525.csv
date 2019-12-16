@@ -1,0 +1,11 @@
+525,IDEA-169037 Fix Kotlin download failure.
+2017-03-02T18:36:26Z,discuss,"
+No description provided.
+"
+2017-03-02T21:57:02Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2017-03-02T23:06:06Z,discuss,"@klikh done, I think"
+2017-03-02T23:07:35Z,discuss,"Actually I keep getting ""Something is wrong. Please, try again later or reach out to us at ..."""
+2017-03-02T23:09:46Z,discuss,"Oh whoops, looks like it did work--I didn't realize it sent me docusign thing. Or rather it sent me one docusign thing for each time I clicked submit...I signed one of them."
+2017-03-02T23:14:51Z,discuss,"We received the CLA, thank you."
+2017-03-03T07:42:33Z,discuss,This is already fixed in fbd745f
+2017-03-02T18:34:50Z,commit,(IDEA-169037) Fix Kotlin download failure.,github.com/JetBrains/intellij-community/pull/525/commits/e377a94c423295445f37267ab6f16e590f3c3813

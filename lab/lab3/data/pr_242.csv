@@ -1,0 +1,15 @@
+242,Add support for paramaterizing varargs in PyCharm
+2015-02-11T01:10:21Z,discuss,"Previously, *args and **kwargs were skipped when matching against parameterized types in the type checker.  This prevented pycharm from understanding type hints on functions whose return type are a function of the varardic parameters."
+2015-02-11T01:10:21Z,discuss,This can be reproduced with the following code:
+2015-02-15T15:49:14Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-02-15T21:49:11Z,discuss,Sent!
+2015-03-10T23:20:48Z,discuss,"@klikh, is there anything I can do to help this PR along?"
+2015-03-11T11:58:52Z,discuss,I've forwarded your request to the PyCharm developer. He'll look at this one soon. Sorry for delay.
+2016-05-01T23:37:51Z,discuss,@klikh Anything I should do to bump this again?
+2016-05-19T16:29:18Z,discuss,@kroo Thanks for your PR! Sorry for the late reply.
+2016-05-19T16:29:18Z,discuss,"We would like the type hints notation for varargs to be compatible with PEP 0484, where you don't have to state that *args is a tuple of some type; you just specify the type of the elements in that tuple. For example, we would like this:"
+2016-05-19T16:29:18Z,discuss,to be similar to PEP 0484 syntax:
+2016-05-26T20:17:33Z,discuss,"Thanks, this makes sense.  I'll give it a go."
+2016-11-25T16:05:36Z,discuss,Fixes related to PY-19723 are in master.
+2015-02-09T17:49:05Z,commit,Add support for paramaterizing varargs in PyCharm,github.com/JetBrains/intellij-community/pull/242/commits/97d1c3ba269e8bf9e07c7f9e860315cbe0b92912
+2016-05-27T08:58:56Z,commit,Update paramaterized varargs to match PEP484,github.com/JetBrains/intellij-community/pull/242/commits/10d1593592b81d892191eb09903bbfd8ceebe488

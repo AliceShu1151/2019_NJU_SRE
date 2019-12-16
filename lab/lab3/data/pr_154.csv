@@ -1,0 +1,7 @@
+154,Fixes path so that local modules get priority
+2014-02-23T02:59:30Z,discuss,By using sys.path.extend() the local source and content directories are given lower priority than the global python site-path. This can be problematic if the module being developed is also installed in the site-path.
+2014-02-23T03:02:38Z,discuss,This patch will give priority to the local source and content directories. This way developers can test their modules while developing them.
+2018-03-02T12:25:00Z,discuss,"Hi @allfro! Sorry for a very late response.
+It's a default starting command for Python Console and it can be changed in Python Console Settings ""Starting Script"". I don't think we should change it for all the users.
+Thank you very much for your interest!"
+2014-02-23T02:59:23Z,commit,Fixes path so that local modules get priority,github.com/JetBrains/intellij-community/pull/154/commits/972808d0242e1d10122eecd9da61cb9d7fb19b79

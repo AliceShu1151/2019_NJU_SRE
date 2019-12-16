@@ -1,0 +1,4 @@
+735,py/pydev Add real directory of target to syspath
+2018-02-15T00:23:42Z,discuss,See PY-27886
+2018-02-21T12:21:48Z,discuss,Thank you very much! Your fix was merged.
+2018-02-15T00:18:13Z,commit,py/pydev Add real directory of target to syspath,github.com/JetBrains/intellij-community/pull/735/commits/9fd5b99302217573a7fa29a54ff0048681e00376

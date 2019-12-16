@@ -1,0 +1,7 @@
+248,add getContainingIds method to StubIndexImpl
+2015-03-04T07:41:06Z,discuss,This pull request concerns IDEA-137196
+2015-03-04T07:41:06Z,discuss,"I'm wondering whether this is the correct approach for adding the ability to obtain the files touched by a given symbol, in order to iterate over them later, or whether the interface should look different (e.g. wrapping the Collection inside a ValueContainer.IntIterator, taking a Processor argument, or also restricting the set using a IdFilter)."
+2015-03-04T07:41:06Z,discuss,I'd be grateful for guidance to make this as painless to integrate as possible.
+2015-03-18T10:28:02Z,discuss,"I am concerned with copying logic of working with index just to get ids. Also having Collection is quite wasteful in terms of memory. I've attached prototype code to the original ticket https://youtrack.jetbrains.com/issue/IDEA-137196#comment=27-949780, please take a look"
+2015-03-25T09:23:01Z,discuss,"Yep, that is clearly better, and it will work for me."
+2015-03-04T07:23:38Z,commit,add getContainingIds method to StubIndexImpl,github.com/JetBrains/intellij-community/pull/248/commits/9c98d0986c738456395bcc6c16510d29a9e4333e

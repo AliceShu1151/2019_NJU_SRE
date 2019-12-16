@@ -1,0 +1,9 @@
+263,IDEA-139903 TaskManagement: Trello: Change 'number' placeholder in commit message
+2015-05-02T22:00:38Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-139903
+2015-05-03T11:35:13Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-05-03T11:42:58Z,discuss,"Not yet, I'll when I get my hands on a printer (is printing out the document absolutely needed by the way?)"
+2015-05-03T11:46:35Z,discuss,"If you already have your signature scanned, you can insert it to the document image. But the signature is necessary."
+2015-05-03T12:27:57Z,discuss,The e-mail was just sent! Let me know if there's any problem :)
+2015-05-03T12:30:46Z,discuss,Agreement was received. Thanks!
+2015-05-08T22:08:54Z,discuss,@maximethebault I see no problems here. Thanks!
+2015-05-02T21:57:39Z,commit,IDEA-139903 TaskManagement: Trello: Change 'number' placeholder in co¡­,github.com/JetBrains/intellij-community/pull/263/commits/ea161b35d315c63aa674841eaf985ebf571c6111

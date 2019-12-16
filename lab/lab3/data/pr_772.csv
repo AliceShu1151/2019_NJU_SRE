@@ -1,0 +1,6 @@
+772,IDEA-187826 Remove Unlimited checkbox in Structural Search
+2018-03-25T22:39:48Z,discuss,"
+No description provided.
+"
+2018-03-30T15:31:35Z,discuss,Merged manually with some minor changes.
+2018-03-25T19:50:08Z,commit,IDEA-187826 Remove Unlimited checkbox in Structural Search,github.com/JetBrains/intellij-community/pull/772/commits/ed4ab11bf47df4f81c228458ef6b0fb847cf5fcc

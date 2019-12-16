@@ -1,0 +1,6 @@
+1011,[external-system] don't always validate recursively
+2018-12-12T21:08:25Z,discuss,checkIsSerializable is simply trying to write the object to noop object writer. Let's first see if we can serialize at all and if not try to find a particular node and fix it.
+2018-12-12T21:08:25Z,discuss,This fixes a nasty ~20 seconds UI freeze on updating project data.
+2018-12-12T21:08:25Z,discuss,to: @vladsoroka @nskvortsov
+2018-12-29T12:50:56Z,discuss,This patch only checks if ProjectData stored in root DataNode can be serialized and does no assertions on any other nodes. Actual serialization is not performed by externalProjectStructure.checkIsSerializable();
+2018-12-12T21:05:48Z,commit,[external-system] don't always validate recursively,github.com/JetBrains/intellij-community/pull/1011/commits/8e75ffde8d68752dd8d4b004806bf13fbf6bcc9b

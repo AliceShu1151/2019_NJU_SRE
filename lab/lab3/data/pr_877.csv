@@ -1,0 +1,12 @@
+877,[Fernflower] add test case for bad variable initialization
+2018-09-29T15:49:26Z,discuss,Add a test case for bad initialization of variables. The test is @ignored so that it won't fail the build but it will be there to know that there is a case that has to be fixed. Also uncommented the tests that are currently failing and marking them as @ignored so it will be obvious when running the test suite that there are test cases that have to be fixed.
+2018-09-30T04:29:04Z,discuss,I have also attempted to fix the issue by scanning all statements in the block to try and override the contant exprent type. Not sure if this is the proper place or way to deal with the situation but at least it fixes the problem.
+2018-10-10T09:51:04Z,discuss,"I'm observing strange effects with this:
+javax.swing.text.html.AccessibleHTML.TableElementInfo.TableCellElementInfo#invalidate
+has become:"
+2018-10-10T09:51:04Z,discuss,"com.sun.xml.internal.messaging.saaj.packaging.mime.internet.AsciiOutputStream#longLine
+initialization is now:
+private boolean longLine = 0;
+and so on.
+It seems like this requires more work."
+2018-09-29T15:40:42Z,commit,attempt to fix bad variable initialization,github.com/JetBrains/intellij-community/pull/877/commits/4df481974dbce2cf97e44d2dad0a1559015e1e21

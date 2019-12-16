@@ -1,0 +1,7 @@
+834,Add GitLab time tracking IDEA-190710
+2018-07-20T16:42:29Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-190710
+2018-07-20T21:20:32Z,discuss,@dmitry-avdeev please take a look.
+2018-07-26T15:21:32Z,discuss,@east825 I've added another commit to resolve the requested changes above.
+2018-08-08T18:38:59Z,discuss,Thanks for you contribution! Accepted. I also made this feature available only for API V4 servers (and removed the test as we don't have such server yet if you don't mind).
+2018-07-20T16:30:54Z,commit,Add GitLab time tracking IDEA-190710,github.com/JetBrains/intellij-community/pull/834/commits/c352c997300351242073823fd7493d04a86229ce
+2018-07-26T15:19:33Z,commit,Resolve Pull Request revisions IDEA-190710,github.com/JetBrains/intellij-community/pull/834/commits/58bb24410368f23dda3c7d48b5290dc5df64e306

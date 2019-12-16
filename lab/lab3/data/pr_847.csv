@@ -1,0 +1,14 @@
+847,Respect conf.d of fish
+2018-08-14T14:22:25Z,discuss,"I have been using oh-my-fish along with fish shell for a long while, and have fish separately worked well in IDEA's embedded terminal. However now I got a boring message after I upgraded my All Product Pack to 2018.2"
+2018-08-14T14:22:25Z,discuss,"IDEA now load all my functions from ~/fish/.config/fish/functions/. but one of them, fish_prompt.fish, is based on git_is_repo which is provided by oh-my-fish.
+No matter where oh-my-fish itself locates, it is bootstrapped by ~/fish/.config/fish/conf.d/omf.fish, which should be loaded by IDEA."
+2018-08-14T14:22:25Z,discuss,"From official document of fish, these files located in ~/fish/.config/fish/conf.d/ are called Configuration snippets and will be evaluated on startup of fish. Beside, it is noted that they are sourced before ~/.config/fish/config.fish"
+2018-08-14T14:22:25Z,discuss,Source all snippets in ~/fish/.config/fish/conf.d/
+2018-08-14T14:22:25Z,discuss,"PS:
+I used to point out this part but seemed to be ignored months ago.
+#749 (comment)"
+2018-08-15T06:40:32Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-08-21T04:21:41Z,discuss,"Thanks @klikh , have signed it via DocuSign"
+2018-08-27T14:09:32Z,discuss,"Merged, thanks."
+2018-08-29T03:26:59Z,discuss,Thanks @artspb
+2018-08-09T13:32:43Z,commit,Respect conf.d of fish,github.com/JetBrains/intellij-community/pull/847/commits/7b72bedcd3335cb72702d2e65134ae4bfee6243e

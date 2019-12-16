@@ -1,0 +1,12 @@
+1007,IDEA-203912: assertTrue and assertFalse with a negative expression can be simplified
+2018-12-09T19:59:53Z,discuss,This is the code for IDEA-203912.
+2018-12-09T19:59:53Z,discuss,"It marks the code, when using assertTrue or assertFalse with a negated expression. This assertion can be changed to the opposite method and without the negation."
+2018-12-10T09:45:17Z,discuss,"Could you please rebase the pull request so that it doesn't contain these ""Merge pull request"" commits? Thanks!"
+2018-12-12T13:49:58Z,discuss,"Sorry, I have currently problems with my local git. So, here's the change as a patch.
+IDEA-203912.zip"
+2018-12-14T12:28:32Z,discuss,Thanks. Merged with some small fixes
+2018-08-19T14:48:59Z,commit,Merge pull request #1 from JetBrains/master,github.com/JetBrains/intellij-community/pull/1007/commits/7eb4755f8d3b96ee70584a4855700725432c7354
+2018-11-19T13:28:33Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/1007/commits/8ba2897ada0b00e105b2cee2fafbc58619c9879b
+2018-11-26T22:48:52Z,commit,First part of additional JUnit-Inspections.,github.com/JetBrains/intellij-community/pull/1007/commits/b183c2b572c1cd8b926de570782e749ca56022c7
+2018-12-09T19:44:53Z,commit,Added static import.,github.com/JetBrains/intellij-community/pull/1007/commits/c1320df0df7fa1c632bd595c4b76aa66a5e77dce
+2018-12-09T19:51:08Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/1007/commits/2f9266e80eb2c68ef8914f30bdbefc5fe6472758

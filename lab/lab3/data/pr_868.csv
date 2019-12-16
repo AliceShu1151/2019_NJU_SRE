@@ -1,0 +1,12 @@
+868,JDWP: Ignore vmVersion number when attached to dalvik/Art
+2018-09-20T22:43:53Z,discuss,"This number is somewhat meaningless on android and varies based on the
+android version. It should be ignored and the values returned by
+VirtualMachine.Capabilities and VirtualMachine.CapabilitiesNew should
+be considered the sole source of truth."
+2018-09-20T22:43:53Z,discuss,Bug: https://youtrack.jetbrains.com/issue/IDEA-199236
+2018-09-21T13:24:21Z,discuss,"Hi, have you signed https://www.jetbrains.com/agreements/cla/ ?"
+2018-09-21T15:45:25Z,discuss,Yes.
+2018-09-21T17:08:58Z,discuss,"merged into master, thanks for your contribution!"
+2018-09-20T22:31:08Z,commit,JDWP: Ignore vmVersion number when attached to dalvik/Art,github.com/JetBrains/intellij-community/pull/868/commits/bdb9a3ecbbdea321304438188cb6505a01688e13
+2018-09-21T15:43:02Z,commit,Use com.intellij.debugger.engine.DebuggerUtils#isAndroidVM,github.com/JetBrains/intellij-community/pull/868/commits/b4a345ce404a63ebe671ef8985f76de3c0f67dcd
+2018-09-21T15:53:59Z,commit,Sort includes in VirtualMachineProxyImpl,github.com/JetBrains/intellij-community/pull/868/commits/9b82cf93f8fd9430187c5a933a6445ef4ae33e8e

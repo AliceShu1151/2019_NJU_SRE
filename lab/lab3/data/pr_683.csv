@@ -1,0 +1,5 @@
+683,Attach LeakHunter output to the exception message
+2017-12-13T23:49:53Z,discuss,бн for better diagnostic output in test results.
+2017-12-13T23:50:54Z,discuss,@cdracm?
+2017-12-14T13:13:06Z,discuss,"pushed, thanks"
+2017-09-08T14:56:21Z,commit,Attach LeakHunter output to the exception message,github.com/JetBrains/intellij-community/pull/683/commits/c3f29949f077fc2e111290b9f3cde2600e2b137b

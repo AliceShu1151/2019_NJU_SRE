@@ -1,0 +1,4 @@
+481,Replace assertTrue(stable.equals(stable))
+2016-12-01T02:10:20Z,discuss,"бн with assertEquals(stable, stable), to avoid inspection EqualsWithItself and http://errorprone.info/bugpattern/SelfEquals."
+2016-12-06T17:44:59Z,discuss,Merged manually. Thanks!
+2016-12-01T02:07:15Z,commit,Replace assertTrue(stable.equals(stable)),github.com/JetBrains/intellij-community/pull/481/commits/5d077db4daee9956b0bec48b45fc9ccd5b735aa9

@@ -1,0 +1,6 @@
+1227,IDEA-225846: Cache GitRepositoryImpl instances to save memory
+2019-10-30T02:10:15Z,discuss,"
+No description provided.
+"
+2019-10-30T11:11:34Z,discuss,"Thanks, but this fix is incorrect for the reasons described in the ticket."
+2019-10-30T02:07:32Z,commit,IDEA-225846: Cache GitRepositoryImpl instances to save memory,github.com/JetBrains/intellij-community/pull/1227/commits/289497bcbb596e92afdb27ecde03773e7d73570f

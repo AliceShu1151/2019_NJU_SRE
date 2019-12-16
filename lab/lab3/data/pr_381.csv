@@ -1,0 +1,5 @@
+381,Make the `createCompleteMatchInfo` method public
+2016-04-08T08:59:09Z,discuss,"Please make the createCompleteMatchInfo method public. I'm working on a plugin that uses structural search to find potential coding issues, and I need a custom structural search dialog, that reuses some of the existing structural search UI code."
+2018-07-21T13:26:59Z,discuss,"@brainoutsource, please rebase the PR, cc @bulenkov."
+2018-07-23T17:38:35Z,discuss,It's public now
+2016-04-08T08:58:55Z,commit,Make the `createCompleteMatchInfo` method public,github.com/JetBrains/intellij-community/pull/381/commits/96b91f192d55d985b612957a73dbe6c20834d500

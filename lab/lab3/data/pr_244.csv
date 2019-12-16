@@ -1,0 +1,10 @@
+244,fsNotifier: Fix glibc version specifier for ppc64
+2015-02-16T21:05:12Z,discuss,"On Linux/PPC64, glibc does not contain memcpy@GLIBC_2.0, so changing that to memcpy@GLIBC_2.3 which does exist."
+2015-02-16T22:57:53Z,discuss,What about 32-bit PPC?
+2015-02-17T08:44:38Z,discuss,"PPC32 does have memcpy@GLIBC_2.0, so that part is fine."
+2015-02-17T08:44:38Z,discuss,"Incidentally, I just checked AArch64 and it needs memcpy@GLIBC_2.17, but maybe that can wait...     32-bit ARM needs memcpy@GLIBC_2.4 (note that e.g. Android doesn't use glibc though, so no versioned variant of the symbol exists).  Those were the Linux arches I have up at the moment, can check MIPS later..."
+2015-02-17T15:04:16Z,discuss,"MIPS also supports memcpy@GLIBC_2.0, and so does SPARC."
+2015-02-17T15:08:05Z,discuss,"I kind of wonder if it's not possible to use the unversioned symbol on all arches except amd64 though, since that's the only one where I saw more than one version actually being available..."
+2015-02-25T12:51:53Z,discuss,"The symbol is there to make binaries we provide compatible with older versions of glibc. And, right, since we only provide binaries for x86 and amd64, it makes sense to specify the version only for these two."
+2015-02-25T14:35:41Z,discuss,Pushed upstream. Thanks!
+2015-02-16T20:57:08Z,commit,fsNotifier: Fix glibc version specifier for ppc64,github.com/JetBrains/intellij-community/pull/244/commits/d029e2d4a1f3909fd7fea312d62022ea0fc621de

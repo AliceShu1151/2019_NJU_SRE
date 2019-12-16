@@ -1,0 +1,4 @@
+594,Corrected typo
+2017-06-19T15:30:56Z,discuss,Corrected typo in the constructor.
+2017-06-19T18:49:48Z,discuss,"Our skeletons are no longer supported, we're moving to typeshed. Pyi-stubs for datetime module are enabled in PyCharm."
+2017-06-19T15:28:46Z,commit,Corrected typo,github.com/JetBrains/intellij-community/pull/594/commits/0e8987b3e8dd5d722f98f38350f4f690eaff4344

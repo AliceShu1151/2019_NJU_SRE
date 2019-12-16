@@ -1,0 +1,6 @@
+208,Add support choosing Gradle JVM
+2014-08-30T23:42:26Z,discuss,Add support choosing Gradle JVM
+2014-09-26T08:44:05Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-11-14T16:18:43Z,discuss,Yes. Just sent it.
+2014-12-15T13:40:44Z,discuss,"Andrii, the change merged, thanks for the contribution!"
+2014-08-30T23:40:58Z,commit,Add support choosing Gradle JVM,github.com/JetBrains/intellij-community/pull/208/commits/7b76816413b03128ee101624bea61b9671ea6355

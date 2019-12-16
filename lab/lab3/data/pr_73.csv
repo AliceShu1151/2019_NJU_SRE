@@ -1,0 +1,48 @@
+73,IDEA-105387 svn working copy root should never be marked as ignored
+2013-04-17T19:33:06Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-105387
+2013-05-22T08:26:26Z,discuss,Thanks for the pull request.
+2013-05-22T08:26:26Z,discuss,"I think org.jetbrains.idea.svn.SvnUtil#isWorkingCopyRoot can be used to determine if the file is a subversion root, without introducing a new method for this. The rest of the change looks fine."
+2013-05-22T18:02:52Z,discuss,"Yes, it would also work.
+I just tried performance, and my solution is slower on the start, but then faster on every refresh of the changelist."
+2013-05-22T18:02:52Z,discuss,"3 existing items in ignore, the third one is wc root. Start of the IntelliJ and few refreshes :"
+2013-05-22T18:02:52Z,discuss,"svn 1.6
+#isWorkingCopyRoot:
+1ms = 493240 nanoseconds
+0ms = 266241 nanoseconds
+480ms = 480669466 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"0ms = 234546 nanoseconds
+0ms = 224886 nanoseconds
+5ms = 4769696 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"0ms = 258393 nanoseconds
+1ms = 214019 nanoseconds
+4ms = 4363089 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"current solution:
+4ms = 3863510 nanoseconds
+3ms = 2870692 nanoseconds
+642ms = 642955334 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"0ms = 10565 nanoseconds
+0ms = 6339 nanoseconds
+0ms = 4528 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"0ms = 11169 nanoseconds
+0ms = 10263 nanoseconds
+0ms = 5735 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"svn 1.7
+#isWorkingCopyRoot:
+8ms = 7906629 nanoseconds
+10ms = 10127114 nanoseconds
+3ms = 3508222 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"6ms = 5420204 nanoseconds
+4ms = 3770236 nanoseconds
+8ms = 7832673 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"current solution:
+79ms = 79352147 nanoseconds
+92ms = 92029679 nanoseconds
+0ms = 6037 nanoseconds"
+2013-05-22T18:02:52Z,discuss,"0ms = 9961 nanoseconds
+0ms = 8452 nanoseconds
+0ms = 5433 nanoseconds"
+2013-05-22T18:02:52Z,discuss,So do you still want to use SvnUtil#isWorkingCopyRoot?
+2013-05-27T09:17:05Z,discuss,"Your solution is obviously faster (the difference is not very significant though), because it just compares with a map of RootsToWorkinCopies, while SvnUtil.isWorkingCopyRoot checks the File itself.
+I think your solution can be used then."
+2013-05-27T09:28:12Z,discuss,The pull request was merged. Thanks!
+2013-04-17T19:27:41Z,commit,IDEA-105387 svn working copy root should never be marked as ignored,github.com/JetBrains/intellij-community/pull/73/commits/1d804abce77dc3e3e26973aece3bac7b821e91f4

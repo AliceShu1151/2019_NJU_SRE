@@ -1,0 +1,11 @@
+760,Fix ThreeComponentsSplitter focus cycle
+2018-03-14T20:14:22Z,discuss,"Allow tab to navigate focus between the 3 panels of
+ThreeComponentsSplitter by changing the traversal policy and removing
+ThreeComponentsSplitter as the focus cycle root. This allows for users
+of the component the control of the focus cycle instead."
+2018-03-14T20:14:22Z,discuss,Also allows for StripeButton to be focused.
+2018-03-14T20:14:22Z,discuss,JetBrains Contributor License Agreement signed under kelvinhanma@google.com
+2018-03-14T20:15:54Z,discuss,@denis-fokin would you take a look based on your most recent edit on ThreeComponentSplitter. This PR helps fix some a11y issues in Android Studio. Thanks
+2018-05-07T11:29:49Z,discuss,"@PureSin The idea of the traversal policy is to find the best child in a split component. As far as I remember LayoutFocusTraversalPolicy does not always satisfy this approach. The problem is in the split component structure. Usually, they are composite components and layout does not suggest the best component to focus."
+2018-05-07T11:29:49Z,discuss,We have a ScreenReader class which is supposed to enable accessibility features. Could you surround your code by ScreenReader methods?
+2018-03-14T18:58:58Z,commit,Fix ThreeComponentsSplitter focus cycle,github.com/JetBrains/intellij-community/pull/760/commits/68967c38d5e4a0652cf2f5db6b125eddac785d2d

@@ -1,0 +1,17 @@
+375,Make NativeFileWatcherImpl#isRepetition protected.
+2016-03-24T22:22:20Z,discuss,"Some file systems aren't 100% accurate in their VFS events,
+causing missed events. For instance, consider for a single file:"
+2016-03-24T22:22:20Z,discuss,CHANGE - DELETE - CREATE - CHANGE
+2016-03-24T22:22:20Z,discuss,"If the create is missed, then the file won't be updated because
+it looks like a repetition."
+2016-03-24T22:22:20Z,discuss,"This allows implementors for those file systems to override this
+and get the CHANGE event."
+2016-03-30T14:47:47Z,discuss,"VFS refresh in IDEA works in two stages: the file watcher notifications are used to mark parts of VFS tree as dirty, then the marked parts are scanned for actual changes. This way there is no need in duplicate notifications - once the file is marked dirty, it will be scanned. So, I'm not against the change - just wonder, what events are missing."
+2016-03-30T15:21:29Z,discuss,"One of our file systems isn't sending the CREATE inotify response, just the
+MODIFY. So you can get MODIFY DELETE (CREATE not sent) MODIFY, and the
+MODIFY is missed and the file appears not to exist (because it appears to
+be a duplicate). Really it's a problem with the particular file system not
+being accurate, and not the file watcher, but making this method protected
+would allow us to work around the issue."
+2016-03-30T15:21:29Z,discuss,"On Wed, Mar 30, 2016 at 10:48 AM, Roman Shevchenko <notifications@github.com"
+2016-03-24T22:16:49Z,commit,Make NativeFileWatcherImpl#isRepetition protected.,github.com/JetBrains/intellij-community/pull/375/commits/4d0c7bd7e0bf2277b9c3916fae0da474d6fd10e3

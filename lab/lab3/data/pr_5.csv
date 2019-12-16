@@ -1,0 +1,8 @@
+5,"Hi, this is a bugfix IDEA-78472"
+2011-12-15T17:59:29Z,discuss,"
+No description provided.
+"
+2012-05-04T16:27:06Z,discuss,"The changes were applied.
+I've changed _ to & in resource files.
+Thanks."
+2011-12-15T14:23:05Z,commit,IDEA-78472 added default chortcut in RollbackChangesDialog,github.com/JetBrains/intellij-community/pull/5/commits/f5a76e64490beb989779ea87fd5c93c37c223019

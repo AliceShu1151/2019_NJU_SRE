@@ -1,0 +1,7 @@
+1256,TypeMigration converts some method arguments without checking compliance with the parameter declaration type
+2019-11-19T18:55:56Z,discuss,Let be:
+2019-11-19T18:55:56Z,discuss,When asking to migrate migrationMethod from int to long I obtain the following result:
+2019-11-19T18:55:56Z,discuss, Integer.toString(migrationMethod()) does not compile anymore.
+2019-11-19T18:55:56Z,discuss,This PR disable covariantPosition (if necessary) and adds a OverloadedMethodsConversionRule allowing to keep this kind of conversion working when a equivalent method accepting the new parameter type exists.
+2019-12-10T16:50:33Z,discuss,Hello?
+2019-11-22T18:02:27Z,commit,TypeMigration converts some method arguments without checking complia¡­,github.com/JetBrains/intellij-community/pull/1256/commits/d4a0f4eb4ee6a31a441eef448e6223b5c842f437

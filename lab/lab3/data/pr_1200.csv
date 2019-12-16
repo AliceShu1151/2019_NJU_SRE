@@ -1,0 +1,13 @@
+1200,Fix path bug ('/' instead of ':' on osx for example)
+2019-09-17T16:48:19Z,discuss,"Simple bug, but critical.  IJ shouldn't be looking on the path to find binaries
+that are relative, such as ./myBinary.  pathSeparatorChar actually is the
+character used to separate elements in the PATH environment variable, not
+the character used to separate directories in the filesystem."
+2019-09-17T16:48:19Z,discuss,"https://docs.oracle.com/javase/7/docs/api/java/io/File.html#pathSeparatorChar
+vs
+https://docs.oracle.com/javase/7/docs/api/java/io/File.html#separatorChar"
+2019-09-21T11:30:40Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-09-21T13:21:50Z,discuss,"@klikh Yup, done."
+2019-09-23T12:44:53Z,discuss,"@klikh @trespasserw Any thoughts on merging this?  It's pretty simple fix, but damn is the underlying bug super annoying and frankly pretty dangerous (can lead to execution of unexpected programs by IJ pretty easily)."
+2019-09-23T12:53:04Z,discuss,"Thanks for the fix! I've merged it already, should appear in GH in an hour (we don't host sources here, it is used as a mirror)."
+2019-09-17T16:47:56Z,commit,Fix path bug ('/' instead of ':' on osx),github.com/JetBrains/intellij-community/pull/1200/commits/8606aa81ecdc1a4b5386a6db6fd78fbcfb8707f9

@@ -1,0 +1,4 @@
+1267,Remove final modifiers added by commit eb5cf4a
+2019-12-03T19:00:19Z,discuss,бн which break tests that mock these classes. See related commit d8d2676.
+2019-12-05T07:00:39Z,discuss,@develar?
+2019-11-23T00:20:00Z,commit,Remove final modifiers added by commit,github.com/JetBrains/intellij-community/pull/1267/commits/484b369ff83db4083b451b1858c942212ca10035

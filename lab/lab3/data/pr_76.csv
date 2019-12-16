@@ -1,0 +1,5 @@
+76,IDEA-103973 Gradle wrapper detection is more generic
+2013-05-05T03:33:44Z,discuss,Changed gradle wrapper home directory discovery to act the same way that the gradle wrapper does rather than using a pattern of gradle-*-bin.zip.  This fixes http://youtrack.jetbrains.com/issue/IDEA-103973 and http://youtrack.jetbrains.com/issue/IDEA-106491.
+2013-05-05T03:33:44Z,discuss,"I modeled the wrapper resolution code after the gradle wrapper project directly, see: https://github.com/gradle/gradle/blob/master/subprojects/wrapper/src/main/java/org/gradle/wrapper/PathAssembler.java"
+2013-05-21T22:03:12Z,discuss,Closing pull request as it was manually merged by Denis.
+2013-05-05T03:24:02Z,commit,IDEA-103973 Wrapper detection is more generic,github.com/JetBrains/intellij-community/pull/76/commits/d1d53571f24ed84905e0e293cb08a71c631af88a

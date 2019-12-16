@@ -1,0 +1,4 @@
+1241,Expose Invoker#useReadAction to StructureTreeModel
+2019-11-08T19:15:01Z,discuss,"We load data from the network in the background using a StructureTreeModel, this exposes the Invoker's useReadAction so that the read lock is not captured during the background actions of the Tree / AsyncTreeModel"
+2019-12-10T21:53:07Z,discuss,@SergeyMalenkov Thoughts on this change?
+2019-11-08T19:12:12Z,commit,Expose Invoker#useReadAction to StructureTreeModel,github.com/JetBrains/intellij-community/pull/1241/commits/8ec6cbd6dab991e65909d62bd80e79fd66c01da4

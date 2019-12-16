@@ -1,0 +1,4 @@
+454,PY-20616
+2016-10-16T08:00:30Z,discuss,Fixed PY-20616 and added implementation notes for PyConsoleEnterHandler
+2016-10-16T07:18:03Z,commit,PY-20616: Fix handling of empty blocks. Switch to a more robust imple¡­,github.com/JetBrains/intellij-community/pull/454/commits/41ad11a3b6c2c9d73f4a7fd8761bda7188b323f0
+2016-10-16T07:55:26Z,commit,add implementation notes,github.com/JetBrains/intellij-community/pull/454/commits/3049ac33a28d3f1e652734431cfe23b92622bc50

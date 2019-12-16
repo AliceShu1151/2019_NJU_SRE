@@ -1,0 +1,4 @@
+993,Update pydev_monkey_qt.py
+2018-11-27T07:41:16Z,discuss,pyside2 support
+2019-01-30T13:52:26Z,discuss,Hi @dzh21! We've already got these changes from PyDev.Debugger and they will appear in PyCharm 2019.1. Thank you very much for the pull request!
+2018-11-27T07:40:36Z,commit,Update pydev_monkey_qt.py,github.com/JetBrains/intellij-community/pull/993/commits/d3297aedc0ff3312d4549afe479c943bb28b3076

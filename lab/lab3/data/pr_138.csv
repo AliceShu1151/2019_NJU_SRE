@@ -1,0 +1,22 @@
+138,"add menu item ""Navigation"" -> ""Scroll from source"""
+2013-12-06T13:39:13Z,discuss,"Actually, the only reason the item was added - to get an ability to assign keyboard shortcut on it.
+Use case follows: I have a project with huge source tree. And I want to see files in the same folder for source file I edit. Navigation project tree is way simpler than using navigation bar (with Alt+Home). And I should move mouse twice - first to icon 'scroll to source' in pane, and the second to files in tree.
+With this change one may assign shortcut on 'scroll to source' (or whatever you name it), to save some time."
+2013-12-06T13:39:13Z,discuss,"Below are 2 shots describing changes
+
+"
+2013-12-06T13:39:13Z,discuss,"ps. I added support for this menu item in project view and groovy mvc project view both. Luckly without any troubles.
+pps. maybe it's a good ide to disable action (menu item) while scroll-from-source providers won't response to action."
+2013-12-06T23:08:31Z,discuss,This functionality already exists: View | Select In | Project View (Alt-F1 1 in the default keymap).
+2013-12-07T13:03:46Z,discuss,"That's good. I just wanted to short the way in first place. With Alt+F1 it require even more actions. So I should look into it (because it works in many places, say ""changes"" tool window) to form a plugin to just assign shortcut for 'select in project view' without popups.
+The second - this change is not limited to project view, but any component or plugin that export ScrollFromSourceProvider."
+2013-12-07T13:03:46Z,discuss,"btw, I like the way how it's being organized:"
+2013-12-07T13:03:46Z,discuss,"At the end, I don't insist on this pull request, cause I have way more to deal with. Repo owner may close this any time."
+2013-12-07T13:08:03Z,discuss,"I think, making able to assign a shortcut to an item from Alt+F1 popup would be the best decision."
+2013-12-07T14:22:35Z,discuss,"unfortunately, I wasn't able to find that item in keymap"
+2013-12-07T14:35:32Z,discuss,"That's because items from Alt+F1 are not actions.
+I mean: a change in the code could be not creating a dedicated action for ""Scroll from Source"", but making all of Alt+F1 items to be actions, which would automatically put them into the keymap."
+2013-12-07T23:34:38Z,discuss,"yes, my fault - i got it wrong, sorry.
+will look into that"
+2013-12-07T23:35:24Z,discuss,may i close this pull?
+2013-12-06T13:23:27Z,commit,"add menu item ""Navigation"" -> ""Scroll from source""",github.com/JetBrains/intellij-community/pull/138/commits/7a4ba6f4c939271615c8380c014e3a3438d3b75b

@@ -1,0 +1,11 @@
+388,Comment out checking maven settings by file name
+2016-04-22T13:38:53Z,discuss,"Comment out checking maven settings by file name.
+This check prevents navigation to maven profile defined in file with name differs from ""settings.xml"".
+Mentioned navigation usually very helpful from Maven Projects tool window by pressing F4 key on corresponding profile."
+2016-04-22T15:36:41Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-04-22T17:36:58Z,discuss,"Thanks for point me out!
+Already send."
+2016-04-27T15:43:45Z,discuss,We've received the CLA. Thanks.
+2016-04-27T15:45:13Z,discuss,"By the way, it is preferrable to remove the code which is not needed instead of commenting it out."
+2016-04-28T10:42:18Z,discuss,"merged, thanks for the contribution!"
+2016-04-22T13:06:18Z,commit,Comment out checking maven settings by file name.,github.com/JetBrains/intellij-community/pull/388/commits/54055eb650cbfb3388e69497e0166e2ec3c1bab6

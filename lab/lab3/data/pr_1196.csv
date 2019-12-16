@@ -1,0 +1,5 @@
+1196,IDEA-26855 Move system and config directories in Windows under %LOCALAPPDATA%
+2019-09-09T00:25:09Z,discuss,"The new location of the system and config directories is under %LOCALAPPDATA%\Company Name\Product Name\N.M, where N and M are the major and minor version."
+2019-09-24T20:57:29Z,discuss,"Sorry for the later reply.
+We've planned the change for IDEA 2020.1, along with a similar one for Linux."
+2019-08-23T21:02:46Z,commit,Move system and config directories in Windows under %LOCALAPPDATA%,github.com/JetBrains/intellij-community/pull/1196/commits/dea51e54ac1b89f37f24bdcbd9c3efbaa5d16cdc

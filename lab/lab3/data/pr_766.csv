@@ -1,0 +1,6 @@
+766,PY-29051: Fix breakpoints on lines that throw exceptions
+2018-03-22T01:33:08Z,discuss,@Elizaveta239 Please take a look. I think this is a pretty serious issue.
+2018-04-24T22:34:06Z,discuss,@Elizaveta239 Did you get a chance to look at this one?
+2018-04-25T09:36:23Z,discuss,"Hi! Yes, it's already tested and reviewed and it will be included into one of the upcoming PyCharm 2018.2 EAPs."
+2018-08-07T12:52:26Z,discuss,Merged in PyCharm 2018.2
+2018-03-22T01:30:28Z,commit,PY-29051: Fix breakpoints on lines that throw exceptions,github.com/JetBrains/intellij-community/pull/766/commits/0bcb1ad8f49c97ea8b81e9b0d30009f2a2708c76

@@ -1,0 +1,5 @@
+1180,Minor improvements in editorconfig language support
+2019-07-27T06:55:13Z,discuss,"'No matching files' inspection used to fail with assertion error when header was incomplete, like in the newly added test"
+2019-07-30T19:20:37Z,discuss,Pushed to master
+2019-07-27T03:51:45Z,commit,Remove redundant calls to getText,github.com/JetBrains/intellij-community/pull/1180/commits/d0de0350f9fbe4871a2249a0cac8cb4db3de83c3
+2019-07-27T03:52:16Z,commit,Fix crash on too small headers,github.com/JetBrains/intellij-community/pull/1180/commits/6b5a62f31d872a61c74bff24f41744152cb472e6

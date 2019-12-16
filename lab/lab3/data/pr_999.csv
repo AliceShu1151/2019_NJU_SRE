@@ -1,0 +1,18 @@
+999,Don't call setLoggerFactory() of DefaultArtifactResolver and of Defau¡­
+2018-12-03T19:50:03Z,discuss,¡­ltRepositorySystem when Maven 3.6.0+ is used.
+2018-12-03T19:50:03Z,discuss,"Those methods were removed by the MRESOLVER-36 task resolution of maven-resolver 1.3.0:
+apache/maven-resolver@e197676"
+2018-12-03T19:50:03Z,discuss,This commit fixes IDEA-201282
+2018-12-03T20:10:00Z,discuss,Link to the bug report: https://youtrack.jetbrains.com/issue/IDEA-201282
+2018-12-03T20:10:00Z,discuss,Tested with Maven 3.6.0 and also with Maven 3.5.4
+2018-12-03T20:10:00Z,discuss,Steps to test this fix or reproduce this bug before fix:
+2018-12-03T20:10:00Z,discuss,Create a new Maven module
+2018-12-03T20:10:00Z,discuss,"Add some dependency, for example this one:"
+2018-12-03T20:10:00Z,discuss,Configure your IntelliJ IDEA to use Maven 3.6.0
+2018-12-03T20:10:00Z,discuss,Make sure you don't have sources of that dependency on your local Maven repository. In case of the above dependency in %HOMEDRIVE%%HOMEPATH%\.m2\repository\org\apache\commons\commons-lang3\3.8.1 files: commons-lang3-3.8.1-sources.jar and commons-lang3-3.8.1-sources.jar.sha1 must be removed.
+2018-12-03T20:10:00Z,discuss,"By pressing Ctrl+N go to some class of the dependency, for example to StringUtils, and press to the ""Download Sources"" link in the top right side of the editor."
+2018-12-03T20:10:00Z,discuss,You may repeat steps 4 and 5 several times and with different Maven versions after closing that dependency class.
+2018-12-04T08:27:55Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-12-04T09:52:17Z,discuss,"@klikh, I submitted a contributor license agreement now."
+2018-12-05T11:18:34Z,discuss,Thanks for the contribution! I've merged the PR using the following commit 655c0a6
+2018-12-03T19:46:01Z,commit,Don't call setLoggerFactory() of DefaultArtifactResolver and of Defau¡­,github.com/JetBrains/intellij-community/pull/999/commits/89cb4b05264f90b5bc1982e7aa885c50e914f2e9

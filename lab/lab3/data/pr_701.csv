@@ -1,0 +1,10 @@
+701,Add mechanism to trigger resolution on jars
+2018-01-04T20:57:07Z,discuss,"
+No description provided.
+"
+2018-01-04T20:58:52Z,discuss,"@nicity, word has it you ¡°seemed amenable¡± to this change. ;-)"
+2018-01-23T07:17:14Z,discuss,"@nicity, could you review this, or call it to someone else's attention?"
+2018-01-26T10:05:29Z,discuss,"I remember from previous email discussions that this functionality was requested only for tests.
+Is it still the case ?"
+2018-01-26T12:06:24Z,discuss,Thanks! Merged manually with d48f0a8
+2017-10-15T19:33:17Z,commit,Add mechanism to trigger resolution on jars,github.com/JetBrains/intellij-community/pull/701/commits/4787dda93437efabbfded2b2c18fd1112df22d7d

@@ -1,0 +1,21 @@
+824,Allow override implementation handlers to customize result
+2018-07-09T21:06:37Z,discuss,"The OverrideImplementsAnnotationHandler extension point
+allows plugins to specify names of annotations that
+should be copied into overriding methods."
+2018-07-09T21:06:37Z,discuss,"This CL adds an additional optional method on the interface:
+""cleanup"", which runs afterwards. This allows plugins to
+do further post processing on the annotations. In particular,
+this will let plugins rename annotations (which we're
+using to for example rename the new @RecentlyNullable
+and @RecentlyNonNull annotations that are specially recognized
+by the Kotlin compiler as nullable annotations with
+@Migrate, which means violations should be treated as only
+warnings). However, the cleanup step can do other tasks too,
+such as additing additional annotations not present in the
+overridden method, or changing attribute values, etc."
+2018-07-09T21:06:57Z,discuss,@cdracm?
+2018-07-21T11:14:39Z,discuss,cc @akozlova
+2018-07-23T11:52:12Z,discuss,What do you think about extracting transferToTarget method. Should work well for your case and it's more clear what to expect in the implementations.
+2018-09-19T21:47:04Z,discuss,"Sorry, I missed this earlier. Yes, that LGTM!"
+2018-09-21T17:21:08Z,discuss,Merged manually. Thanks
+2018-07-09T19:52:41Z,commit,Allow override implementation handlers to customize result,github.com/JetBrains/intellij-community/pull/824/commits/166b31bc72986f6aa6ca483121eab4ef5c0be412

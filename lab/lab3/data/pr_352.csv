@@ -1,0 +1,6 @@
+352,Push Down: Introduce extension points to support interoperability with other languages
+2016-02-11T15:21:23Z,discuss,"
+No description provided.
+"
+2016-02-22T18:59:37Z,discuss,"this doesn't work for existing implementations (covers java but not ruby, php, python, javascript). I'd like to create a normal api for all languages and then kotlin would also profit from it. Just extracting some interfaces for kotlin only - is totally wrong, sorry"
+2016-02-10T09:49:31Z,commit,Push Down: Introduce extension points to support interoperability wit¡­,github.com/JetBrains/intellij-community/pull/352/commits/b45efcc437ab0df9498ebb076cc70c8a616fe8a3

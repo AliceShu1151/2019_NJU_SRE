@@ -1,0 +1,21 @@
+669,PY-20075: Fix false positive unused imports
+2017-11-17T03:48:24Z,discuss,When importing multiple modules from the same package
+2018-01-17T01:59:11Z,discuss,@sproshev ping!
+2018-02-07T00:23:46Z,discuss,"@sproshev @vlasovskikh I've looked over the code again and I think we can get rid of
+PyImportedModuleType."
+2018-02-07T00:23:46Z,discuss,"Right now it's a bit of a mess:
+import pkg1.pkg2.m1
+ref pkg1 resolves to PyImportedModuleType
+ref pkg1.pkg2 is PyModuleType unless it's a namespace package."
+2018-02-07T00:23:46Z,discuss,Maybe introduce a type specifically for namespace packages e.g PyNamespacePackageType and have both PyNamespacePackageType as well as PyModuleType derive from a common base class?
+2018-02-07T00:23:46Z,discuss,What do you think?
+2018-02-07T16:06:55Z,discuss,@sproshev @vlasovskikh
+2018-02-07T16:06:55Z,discuss,Also found issues https://youtrack.jetbrains.com/issue/PY-28393 and https://youtrack.jetbrains.com/issue/PY-28392 while digging through this code. I think the confusion with PyImportedModuleType/PyModuleType is largely to blame for PY-28393
+2018-02-07T18:04:34Z,discuss,"In general I'm OK with the code, @vlasovskikh please check"
+2018-02-08T07:47:36Z,discuss,"@sproshev @vlasovskikh I've decided to try another approach to fixing this. Instead of using collectImportedSubmodules I reuse the code in PyModuleType.resolveMember which already handles most cases correctly.
+#728"
+2018-02-08T07:47:36Z,discuss,This should also fix PY-28332 and PY-28393. Tests pending for PY-28332 and PY-28393 pending. Will try to finish them tomorrow. All existing tests pass.
+2018-02-08T14:25:49Z,discuss,@fitermay I like the approach you've taken in #728. May I close this one in favor of #728?
+2018-02-09T12:03:18Z,discuss,@fitermay Shall we close it?
+2017-11-17T03:45:01Z,commit,PY-20075: Fix false positive unused imports,github.com/JetBrains/intellij-community/pull/669/commits/2f663da5475a19b7321a31b947e1d276f46fab42
+2018-02-07T04:30:33Z,commit,Merge branch 'master' into PY-20075,github.com/JetBrains/intellij-community/pull/669/commits/fd953447abec2d5905af99dfb8d6ac68ada0dc53

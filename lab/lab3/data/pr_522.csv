@@ -1,0 +1,25 @@
+522,Add a way to skip git pre-commit and pre-push hooks (IDEA-115914)
+2017-02-27T22:11:55Z,discuss,"Git supports a pre-commit and pre-push hooks that are executed
+after a commit or a push accordingly (https://git-scm.com/docs/githooks).
+Sometimes it's needed to skip the hooks and bypass the checks for them.
+For that purpose git supports a parameter no-verify.
+With that commit inside the git commit dialog a checkbox ""Skip hook"" will be
+available if any of the repositories have a pre-commit hook installed.
+Similar way in the push dialog it will be possible to bypass the
+pre-push hook.
+Options are not visible and not used when there's no such hooks installed."
+2017-02-27T22:11:55Z,discuss,"Currently only local hooks (inside .git/hooks folder) are supported.
+It doesn't support a new git configuration variable core.hooksPath
+that allows customizing where the hook directory is (since git 2.9.0)."
+2017-03-01T11:15:46Z,discuss,"Nice work! I don't see any serious issues with this pull request, so almost ready to merge."
+2017-03-01T11:15:46Z,discuss,"However, we are not sure about the UI of the option: where should it be added and whether its selection should be preserved or not. So please share your use cases in the YouTrack ticket. Thanks."
+2017-03-01T13:32:36Z,discuss,"@klikh thank you.
+I shared my use cases and put them to the comments (https://youtrack.jetbrains.com/issue/IDEA-115914#tab=Comments).
+Gave a better thought on the selection preserving and probably it makes more sense not to remember the selection to avoid accidental pushes without hooks verification.
+I can remove the selection storing part from the commit if you agree. Any more concerns?"
+2017-03-02T21:49:17Z,discuss,@klikh I noticed that the branch got conflicts with the upstream. So I repushed the branch again with the next changes:
+2017-03-23T22:28:08Z,discuss,"It appears that there are more conflicts after my recent changes in master. Don't worry about them: I've already applied your changes to a private branch, and currently I'm making some small additional changes and they are passing review. So I'll resolve these conflicts on my own."
+2017-03-23T22:36:16Z,discuss,Thank you! I've recently noticed the conflicts and was about to start fixing them. You are right on time :)
+2017-03-31T22:42:21Z,discuss,The fix was merged manually with some cleanups and additional changes discussed in https://youtrack.jetbrains.com/issue/IDEA-115914. Thanks for your contribution!
+2017-03-31T22:42:21Z,discuss,"If you're interested, here are the hashes of all related commits: fdf6978..ed116f2 (should appear at GitHub within an hour)."
+2017-03-02T21:40:10Z,commit,Add a way to skip git pre-commit and pre-push hooks (IDEA-115914),github.com/JetBrains/intellij-community/pull/522/commits/030eb1d66445ad4dad6541b839b001eda576db8c

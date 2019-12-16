@@ -1,0 +1,15 @@
+1138,ComboboxUI: Use user defined background if available
+2019-05-15T17:17:20Z,discuss,"If a background color has been defined on a combobox, use it instead of
+the default on."
+2019-05-15T17:17:20Z,discuss,"This allows usage of the Combobox on Component with the non-default
+background color"
+2019-05-15T17:22:44Z,discuss,"Hi @gregsh, in Android Studio, we have some panel which are not using the default background color for JPanel. The current implementation of ComboboxUI ignores any custom background set on the Combobox causing color bleeding around the combobox. This PR fixes the issue by using the custom background color if defined."
+2019-05-17T12:10:44Z,discuss,"@vcaen Can you please share screenshots of that panel with
+both Darcula LaF and MacIntelliJ (Default on macOS)?"
+2019-05-21T09:17:45Z,discuss,@gregsh Here they are:
+2019-05-21T09:17:45Z,discuss,
+2019-05-21T09:17:45Z,discuss,
+2019-05-21T09:17:45Z,discuss,
+2019-05-23T15:02:07Z,discuss,"Thanks, I've pushed Darcula and MacIntelliJ changes to master,
+and discuss WinIntelliJComboBoxUI which also needs update."
+2019-05-15T17:14:35Z,commit,ComboboxUI: Use user defined background if available,github.com/JetBrains/intellij-community/pull/1138/commits/c21d5c2695b6f04d5f6a5a3326118637a12a4b14

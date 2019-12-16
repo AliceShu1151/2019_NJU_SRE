@@ -1,0 +1,7 @@
+80,IDEA-108385: Allow to specify a rule which controls namespace attribute ...
+2013-06-05T08:34:26Z,discuss,"Trying to fix this issue:
+http://youtrack.jetbrains.com/issue/IDEA-108385"
+2013-06-05T08:34:26Z,discuss,It's my first time looking at IntelliJ code so I'm not sure if this is the correct way to fix this and/or what implications it might have on the rest of the code.
+2013-06-05T08:34:26Z,discuss,I've compiled a version for me and so far seems to be working properly and fix my issue.
+2013-08-28T18:37:07Z,discuss,Looks like the pull request is no longer valid and the issue was fixed by our team anyway. Closing.
+2013-06-05T09:06:58Z,commit,IDEA-108385: Allow to specify a rule which controls namespace attribu¡­,github.com/JetBrains/intellij-community/pull/80/commits/d9de7b32bed791382631f23c54a1b3f2d4df4036

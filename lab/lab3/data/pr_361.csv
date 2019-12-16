@@ -1,0 +1,25 @@
+361,New GIT option to disable fast-forward when merging into master from a log window
+2016-03-02T13:40:55Z,discuss,This is a PR for git4idea plugin.
+2016-03-02T13:40:55Z,discuss,"Merging with a context menu from a log window is very convenient, however it is not possible to specify Merge options when doing so."
+2016-03-02T13:40:55Z,discuss,"One merge option I am missing very much is ""No fast forward""."
+2016-03-02T13:40:55Z,discuss,"This PR adds an option to automatically set ""No fast forward"" for any non-trivial merges into selected branches (typically to ""master"")."
+2016-03-02T15:39:57Z,discuss,"Thanks a lot for your contribution! Unfortunately, we are not going to merge this pull request, because it introduces a rather strange UI decision which we try to avoid: a separate checkbox in the settings for a single use case affecting only merging from the log."
+2016-03-02T15:39:57Z,discuss,"A correct fix would be to provide all sorts of necessary merge customizations, in particular both --ff-only and --no-ff options, probably in a dialog appearing on selecting the ""Merge"" command, but not too distractive (or maybe with a ""don't show again"" checkbox). There is a request about this task (https://youtrack.jetbrains.com/issue/IDEA-86425), and the UI problem is one of the reasons why this task hasn't been implemented yet."
+2016-03-02T15:39:57Z,discuss,"Could you please also clarify the need of the list of branches which should never be merged fast-forward, can you give an example when this can be useful? And the same question about ""trivial"" (single commit) merges."
+2016-03-02T15:39:57Z,discuss,Please also note that in this PR you are calling Git command from the EDT thread which will likely freeze the UI (MergeAction#actionPerformed() calls TrivialMergeDetector#isTrivial).
+2016-03-02T15:40:33Z,discuss,"Btw, have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-03-02T15:47:31Z,discuss,"@klikh My CLA sent now - I sent it before, but to busdev@jetbrains.com, as that seemed most appropriate  from addresses I was able to find. I see now the mail address is listed on http://www.jetbrains.org/display/IJOS/Contribute, but not in the CLA itself, which only mentions a fax numer (see http://www.jetbrains.org/display/IJOS/Contributor+Agreement)."
+2016-03-02T15:48:08Z,discuss,We've received the CLA. Thanks.
+2016-03-02T15:51:39Z,discuss,"I understand your rejection, I will check if I am able to make it more along the lines of what you write."
+2016-03-02T15:51:39Z,discuss,"As for the motivation: currently I almost never use Merge from log, as it does not allow me to prevent FF. The only situation where FF seems appropriate to me is when merging a single commit. I would like to make it usable for me, as it is much easier to access than the corresponding menu command."
+2016-03-02T15:56:06Z,discuss,Can you give a concrete example of this situation? I really don't see much difference in 1 commit compare to 2 or 5 commits :)
+2016-03-02T15:56:06Z,discuss,"The main problem here is to make it usable for all users. To be honest, sometimes that's the most difficult part of the development process of a desktop app."
+2016-03-02T16:00:21Z,discuss,"The difference is how the history looks like and how it can be handled in the log viewer. When multiple commits are merged into master, I want to see the commits grouped by the merge (which also makes the merge commit collapsible in the UI)."
+2016-03-02T16:00:21Z,discuss,"None of this is applicable when merging one commit only. See attached screenshot of a history of two merges. First merge is two commits, second is one commit. Having an additional merge commit when merging a single commit seems to provide no additional information or functionality - see the second screenshot."
+2016-03-02T16:00:21Z,discuss,
+2016-03-02T16:00:21Z,discuss,
+2016-03-01T15:22:02Z,commit,"Introduced a new option ""Disable fast forward for merge from log"".",github.com/JetBrains/intellij-community/pull/361/commits/64a66bde7113718a4d16bb405ebb5a8748e85d06
+2016-03-01T16:32:11Z,commit,"Option ""Disable fast forward for merge from log"" working.",github.com/JetBrains/intellij-community/pull/361/commits/0532247ab4c3a8f7469d43cb7c4663935432be1f
+2016-03-02T08:43:01Z,commit,Fixed possible null exception.,github.com/JetBrains/intellij-community/pull/361/commits/df6cfc40b379e1a2476ebd28dcc910e958aa3067
+2016-03-02T12:33:30Z,commit,Never disable fast-forward for trivial (one-commit) merges.,github.com/JetBrains/intellij-community/pull/361/commits/f1b482fea19744c1057061da49a04c077bcf4f88
+2016-03-02T13:06:54Z,commit,"Removed TODO, logging exception instead.",github.com/JetBrains/intellij-community/pull/361/commits/9dcd35afc327f92992cb2f3353d3c670ccd30bb1

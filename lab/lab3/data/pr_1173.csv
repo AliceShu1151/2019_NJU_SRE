@@ -1,0 +1,8 @@
+1173,Replace boolean expression with literal and comment
+2019-07-14T17:01:48Z,discuss,@rendner
+2019-07-14T23:41:54Z,discuss,"@dahlstrom-g :
+I'm not a collaborator. I only tried to answer your question."
+2019-07-15T10:49:04Z,discuss,See also the discussion here:
+2019-07-15T10:49:04Z,discuss,ac2e862#r34298268
+2019-09-07T05:00:14Z,discuss,This still strikes me as a definite improvement. Shall we merge it?
+2019-07-14T17:00:00Z,commit,Replace boolean expression with literal and comment,github.com/JetBrains/intellij-community/pull/1173/commits/088e3a9b4be68893396aeb2d42f223a5cfb95a30

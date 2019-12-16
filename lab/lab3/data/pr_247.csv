@@ -1,0 +1,8 @@
+247,Fixed method clear in TestProjectBuilderLogger
+2015-02-27T10:15:09Z,discuss,"
+No description provided.
+"
+2015-03-02T15:36:10Z,discuss,"Why do you need this? In fact myLogLines isn't cleared in 'clear' method intentionally, it allows us to get full log after performing several builds. Though I agree that the name isn't good."
+2015-03-03T10:02:09Z,discuss,"In kotlin we have a test, which rebuilds project many times(over 150) and size of this log is very large(100 mb)"
+2015-03-03T11:05:48Z,discuss,I've added a separate method 'clearLog' to TestProjectBuilderLogger.
+2015-02-27T10:07:58Z,commit,Fixed method clear in TestProjectBuilderLogger,github.com/JetBrains/intellij-community/pull/247/commits/32d68e79adf589d54956b00327ec7cab0fd9267b

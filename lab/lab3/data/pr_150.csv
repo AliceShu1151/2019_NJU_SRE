@@ -1,0 +1,254 @@
+150,ff
+2014-02-11T12:49:24Z,discuss,"
+No description provided.
+"
+2014-02-06T13:15:33Z,commit,svn: Refactored SvnCommittedChangesProvider.getOneList - simplify cod¡­,github.com/JetBrains/intellij-community/pull/150/commits/0c9d76ee0915eaf9fe74434589fe458f13609989
+2014-02-06T13:04:30Z,commit,Zen coding: do not commit while checking availability,github.com/JetBrains/intellij-community/pull/150/commits/f00e6c62f7048a56d715575d1955087a7edcb498
+2014-02-06T13:20:31Z,commit,Add custom templates to completion list if corresponding Registry-key¡­,github.com/JetBrains/intellij-community/pull/150/commits/d9fb5143ca37f31d3c36811b8050816ef8a8ab79
+2014-02-06T10:33:24Z,commit,Groovy: red code in plugin.xml,github.com/JetBrains/intellij-community/pull/150/commits/927951ad549bbc5fd638624c0ab061d378447322
+2014-02-06T12:39:28Z,commit,Groovy: 'implement interface' intention should work with generic classes,github.com/JetBrains/intellij-community/pull/150/commits/5383da83266aab6251c495e19b621bf6317dfc98
+2014-02-06T13:23:41Z,commit,IDEA-97800 Groovy: remove annotation quick fix,github.com/JetBrains/intellij-community/pull/150/commits/0cf2990914f93f9b8239e64f0897c14e94e9cc7a
+2014-02-06T11:31:00Z,commit,don't add duplicate patterns,github.com/JetBrains/intellij-community/pull/150/commits/c07a1297d8efae1264d729b3cd2146dbdaab9a11
+2014-02-06T13:57:29Z,commit,svn: Removed unnecessary SvnLoadingRepositoryLocation,github.com/JetBrains/intellij-community/pull/150/commits/feced992b9baa8b561cd9c42aa7853116c8395d9
+2014-02-06T13:56:23Z,commit,support filters in breakpoint adapter,github.com/JetBrains/intellij-community/pull/150/commits/d57662b92e7daaf854a2281f0bee92e920de47c3
+2014-02-06T13:57:14Z,commit,avoid NPEs in breakpoint dialog,github.com/JetBrains/intellij-community/pull/150/commits/9d4fa47febc89ed6575e8d43e1c0e96345c42214
+2014-02-06T09:48:08Z,commit,javadoc added,github.com/JetBrains/intellij-community/pull/150/commits/b467cbe4523f17a52de1b231ef53ebcc8ca8a5cb
+2014-02-06T14:13:10Z,commit,external build: save list of GWT modules to file before compilation t¡­,github.com/JetBrains/intellij-community/pull/150/commits/df9c4347969ce2638fb9ee2804b481b317668e75
+2014-02-06T14:26:49Z,commit,Looks like a typo.,github.com/JetBrains/intellij-community/pull/150/commits/53e055ffc3c7fe51b84863a3288e698d47dcf712
+2014-02-06T14:28:50Z,commit,svn: Removed unnecessary LocationDetector and accompanying logic,github.com/JetBrains/intellij-community/pull/150/commits/486a6086c1fc6435165d1f6a7a86d4b6229618ff
+2014-02-04T10:59:06Z,commit,"Code cleanup for ""membersManager"" package to make it type-safe",github.com/JetBrains/intellij-community/pull/150/commits/24c879c5f5cbfa4c90e837e48f26f4cef5f7ae9e
+2014-02-06T14:32:55Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/be252b2bb9d74eef5f9ee073f812ef69693c6732
+2014-02-06T15:06:33Z,commit,fixed PY-12052 Can't run django tests with nosetests because of `nose¡­,github.com/JetBrains/intellij-community/pull/150/commits/6f783feb5f2c5cd2d9bd15f9b3c3e8ad67eb0b4a
+2014-02-06T13:47:34Z,commit,actually cache GrModifierListImpl.getAnnotations,github.com/JetBrains/intellij-community/pull/150/commits/ab8284b414bdfc4350abdb159968f5580db093fa
+2014-02-06T15:13:09Z,commit,don't suggest lowercase non-imported classes in autopopup (IDEA-114348),github.com/JetBrains/intellij-community/pull/150/commits/3fd5b8e306802e9201bb6d6d9eeb7fa4bb8bb854
+2014-02-06T15:34:57Z,commit,Merge branch 'check-physical-in-go-to-class' of,github.com/JetBrains/intellij-community/pull/150/commits/e8d0cbb2d1c097de0527941d0ad204b660cdde07
+2014-02-06T15:41:01Z,commit,Python function parsing fixed: any function has statement list now,github.com/JetBrains/intellij-community/pull/150/commits/2f65c9678387a8860af4e48d3b5d21940fdc0abc
+2014-02-06T15:41:35Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/e34c4076960b7f98b950e8a5129e95e06fdfb90d
+2014-02-06T16:25:35Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/8b6e62bea24e6051b6cf47a9ade37594452d293e
+2014-02-06T15:04:26Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/150/commits/e80c761e5daddc44daf1d39dcfa4326e122680d1
+2014-02-06T16:48:13Z,commit,show error if we cannot launch browser,github.com/JetBrains/intellij-community/pull/150/commits/0cdea4e19dd1e2ace115b8ca1ff0904958e511f1
+2014-02-06T16:54:34Z,commit,"reverted ""move FileTypeFactory to core-*"": jps-model modules must not¡­",github.com/JetBrains/intellij-community/pull/150/commits/9636378db959084a040fb93a0189d2263de61939
+2014-02-06T17:14:05Z,commit,add PlainTextFileType registration,github.com/JetBrains/intellij-community/pull/150/commits/c8afa74cc8decab040d0b3f98bf02417d7881a1f
+2014-02-06T17:02:50Z,commit,live templates should be at the bottom of the completion list,github.com/JetBrains/intellij-community/pull/150/commits/bf547fd41a4ad23d5acde89821363ce53acf9dac
+2014-02-06T17:16:31Z,commit,optimize class in package search,github.com/JetBrains/intellij-community/pull/150/commits/88910bdfa4d8a803d412ae5a22032a82355e0e4f
+2014-02-06T18:16:45Z,commit,svn: Refactored SvnCommittedChangesProvider.getOneList - simplify par¡­,github.com/JetBrains/intellij-community/pull/150/commits/26d23a9b09659b61b967d3e1f909901632c6f6b1
+2014-02-06T08:51:46Z,commit,new inference: different parameterizations condition/wildcards parame¡­,github.com/JetBrains/intellij-community/pull/150/commits/0bb6aa540bd857ae222bb12f0e7bf0ababc42e8e
+2014-02-06T10:02:50Z,commit,new inference: incorporation of capture constraint,github.com/JetBrains/intellij-community/pull/150/commits/10d4a519b7ceccf37614d7a5b88e5985d1ea842e
+2014-02-06T10:28:17Z,commit,new inference: incorporation of capture constraint: captured wildcard¡­,github.com/JetBrains/intellij-community/pull/150/commits/dd1c5d9cee4db81ef8cdfde688152ddaedb994c6
+2014-02-06T12:29:13Z,commit,new inference: wildcard parameterization inference,github.com/JetBrains/intellij-community/pull/150/commits/865a535fa7163b3c482f105ff6e963489872d4ba
+2014-02-06T13:23:05Z,commit,new inference: non-wildcard parameterization,github.com/JetBrains/intellij-community/pull/150/commits/d24e9838267e4933cdb4096d31140a276e9141a9
+2014-02-06T13:53:55Z,commit,new inference: well formed check,github.com/JetBrains/intellij-community/pull/150/commits/ff66c1b01a3f00720bbd60f478bdd8ae793eff52
+2014-02-06T18:12:47Z,commit,method refs: separate inference from conflict resolution (to be conti¡­,github.com/JetBrains/intellij-community/pull/150/commits/18d0ee619be0e913919b55aacc11512a2a95af6b
+2014-02-06T18:49:03Z,commit,IDEA-120385 'Generate Test method' doesn't work,github.com/JetBrains/intellij-community/pull/150/commits/9a7568e923d49c08e43f142ccfa1328d15617a21
+2014-02-06T18:57:00Z,commit,svn: Refactored SvnCommittedChangesProvider.getOneList - logic extrac¡­,github.com/JetBrains/intellij-community/pull/150/commits/a0363cba9906a6ac1a1f70ecddeabf12c8047814
+2014-02-06T19:00:29Z,commit,svn: Refactored SvnCommittedChangesProvider - SingleCommittedListProv¡­,github.com/JetBrains/intellij-community/pull/150/commits/80dedd3039794fa794daa1c3a59ad0a65f7e7896
+2014-02-06T19:26:17Z,commit,workaround for log user filter if select ME value,github.com/JetBrains/intellij-community/pull/150/commits/deb294ed7441772931a913df36896380d460887d
+2014-02-06T19:37:16Z,commit,IDEA-119721 License dialog to include JBA fields,github.com/JetBrains/intellij-community/pull/150/commits/a82d1cd152bb193f98af39ee42368a7aa6dbc253
+2014-02-06T19:52:55Z,commit,"IDEA-119372 Search results tree ""looses"" items while scrolling",github.com/JetBrains/intellij-community/pull/150/commits/a6cb3075bd4766c1dd7e0f040661e1103b953ec4
+2014-02-06T19:54:46Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/f5b28217371325b09eb52c4e2077099f90a8d4ad
+2014-02-06T19:33:16Z,commit,Logging,github.com/JetBrains/intellij-community/pull/150/commits/205ae9516c961386f4b1b44a28f82bc59714dffb
+2014-02-06T19:56:06Z,commit,platform: file scope made tolerant to default project,github.com/JetBrains/intellij-community/pull/150/commits/c0c4908f7c1624d13665bf5ecd5a49f062e5133a
+2014-02-06T19:59:47Z,commit,cosmetics,github.com/JetBrains/intellij-community/pull/150/commits/f6e061c4bdc929c796459549f086c6a02e7e87c2
+2014-02-06T20:06:25Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/43f6124848fa9916866a8d311339cd39edcbecd8
+2014-02-06T20:23:31Z,commit,fix groovy test,github.com/JetBrains/intellij-community/pull/150/commits/346252dd3905a27b1f9a1dda97394f439d0caab0
+2014-02-06T20:41:54Z,commit,java: do not infer expression type and value for decompilation into text,github.com/JetBrains/intellij-community/pull/150/commits/cae527f1b3fffbbece5a95fc250ec70931bc1939
+2014-02-06T20:48:03Z,commit,Don't change commandLine.exePath in RemoteSdkUtil.,github.com/JetBrains/intellij-community/pull/150/commits/af3f020264f7191a586e02bffa4aa4e659fd2319
+2014-02-06T20:48:56Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/23caa0858c72910ce8a00a8f467d56f3abf10320
+2014-02-07T00:41:50Z,commit,new community logo for EAP,github.com/JetBrains/intellij-community/pull/150/commits/583925057ab7889193a5ebae4607baf255dd7158
+2014-02-07T00:42:36Z,commit,new community about screen for EAP,github.com/JetBrains/intellij-community/pull/150/commits/8aa0248dab800dac2f6f45558a146f99d0addb73
+2014-02-07T00:44:08Z,commit,update AppInfo for EAP,github.com/JetBrains/intellij-community/pull/150/commits/0d7e21c73df34f21411900de4669148e2a724c0a
+2014-02-07T00:44:47Z,commit,paint about info text a bit lower,github.com/JetBrains/intellij-community/pull/150/commits/a216d7d32a479aa23f53de6ad95d559f4856fc6a
+2014-02-07T07:35:08Z,commit,'show serialized xml' action: fixed instantiation of bean class,github.com/JetBrains/intellij-community/pull/150/commits/8cfcf7858b9439df2e3e758da0c8018a22f7a7ce
+2014-02-06T19:23:38Z,commit,new inference: apply non-wildcard parameterization for method refs,github.com/JetBrains/intellij-community/pull/150/commits/a080b75f640e739256a3ce403489ae4df11b40ca
+2014-02-07T08:32:44Z,commit,NPE fix,github.com/JetBrains/intellij-community/pull/150/commits/60cd07e69efd5de776e49b13130b573f5d2c860a
+2014-02-07T08:35:28Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/9506a68c4e3d91590d04b8df43cd3a0480569b5c
+2014-02-07T08:45:53Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/b35e1d95ca5de193ef3251549f089d22531ab7df
+2014-02-07T08:28:43Z,commit,- forceUpdate also process limited number of files out of current sco¡­,github.com/JetBrains/intellij-community/pull/150/commits/c003973cfee27003256d5dcc80585a5a40a6884e
+2014-02-07T09:12:18Z,commit,Scala 0.32.512 and Php 133.679 marked as incompatible,github.com/JetBrains/intellij-community/pull/150/commits/90acbc859968e05c9a3aa36e6f62f3d0c9446543
+2014-02-07T09:14:33Z,commit,be ready for large keys: DataOutputStream.writeUTF schokes on strings¡­,github.com/JetBrains/intellij-community/pull/150/commits/4e65421780739c9ec0c393e263eeb682dc61fb5e
+2014-02-07T10:05:19Z,commit,gson version added,github.com/JetBrains/intellij-community/pull/150/commits/7eb0d93c2fafac31df01f83b7d54f5db44df4a8a
+2014-02-07T10:40:45Z,commit,"Fix maven test add groups ""org.codehaus.plexus"" and ""intellij.test""",github.com/JetBrains/intellij-community/pull/150/commits/89bdb116ff510589a388f26548c51c91c9742f85
+2014-02-07T11:19:25Z,commit,EA-49128 if project already disposed return default charset,github.com/JetBrains/intellij-community/pull/150/commits/a1378e834e7ec37763107409083f9fdf2ade0af2
+2014-02-07T11:29:12Z,commit,Support java 1.8,github.com/JetBrains/intellij-community/pull/150/commits/d97ccc0ac17b7f6d55a35a85c6116ab58aaeb926
+2014-02-07T11:33:15Z,commit,WEB-10894: increase the width of surround with Emmet popup,github.com/JetBrains/intellij-community/pull/150/commits/188dbc71749480d92cc1996b1ed99987bdd2131b
+2014-02-07T11:34:13Z,commit,WEB-10894: increase the width of surround with Emmet popup,github.com/JetBrains/intellij-community/pull/150/commits/cc5c729b795365602d857575967f033b716e9734
+2014-02-07T11:48:35Z,commit,Bug fix: embedderJdk is not saved between restart of IDEA,github.com/JetBrains/intellij-community/pull/150/commits/6164b563611161d2f02531de1d7df323c952eae8
+2014-02-07T12:12:56Z,commit,Move PlainTextParserDefinition to core-impl,github.com/JetBrains/intellij-community/pull/150/commits/4c31d6dd7aca3a112c181c974dbb8d8803073706
+2014-02-07T12:29:55Z,commit,IDEA-118917 Gradle: multiple war artifact configuration issue,github.com/JetBrains/intellij-community/pull/150/commits/366f1e9a9fdf5ed20a364ea1ed72480d3012c6d9
+2014-01-27T06:51:09Z,commit,"hotfix: IDEA-119851 Gradle: the ""out-of-process"" mode doesn't work",github.com/JetBrains/intellij-community/pull/150/commits/bbe8aaa49efff4e386e45c2f9f800154f74222be
+2014-02-07T13:18:17Z,commit,test fixed,github.com/JetBrains/intellij-community/pull/150/commits/49a4da31c0d4c5a66f42492d2f123ca411845624
+2014-02-07T13:38:54Z,commit,Cython and Python parsers should never create functions with out of s¡­,github.com/JetBrains/intellij-community/pull/150/commits/669cff70426447a479e15cc849ff47ef7b0d8854
+2014-02-07T13:40:26Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/306f284a9b3aedce7bbb622e4257cdfa9180dd64
+2014-02-07T13:52:07Z,commit,fix typo,github.com/JetBrains/intellij-community/pull/150/commits/03171ce71bf0ad4d476555519cd9d276d937818a
+2014-02-03T15:19:57Z,commit,PyCharm 3.1 artwork,github.com/JetBrains/intellij-community/pull/150/commits/89bffcd11110d446c54b84a5589a5c889c27e6ac
+2014-02-04T14:06:20Z,commit,Logo updated: 'Tools matter' moved.,github.com/JetBrains/intellij-community/pull/150/commits/e914322d1cd35784c4e2dfebca794f6c9f008237
+2014-02-07T14:22:11Z,commit,Python plugin for IDEA 13.1 EAP.,github.com/JetBrains/intellij-community/pull/150/commits/ab018551488c9d2aebb0f1c6fc3fc3b2f7dfcdaf
+2014-02-07T14:40:50Z,commit,Bomb maven tests,github.com/JetBrains/intellij-community/pull/150/commits/651545ed7e3ebf3f7e0f0b19c61761758bd32204
+2014-02-06T11:55:17Z,commit,don't highlight the entire expression,github.com/JetBrains/intellij-community/pull/150/commits/bbfa3ce0a9d08f5d507c25648835d80a19a27a22
+2014-02-06T13:03:18Z,commit,better warning message & more tests,github.com/JetBrains/intellij-community/pull/150/commits/f761cebead50e54d65dcad52c7ae1bae4da420d3
+2014-02-06T13:54:44Z,commit,don't highlight the entire expression and add test,github.com/JetBrains/intellij-community/pull/150/commits/0859e0e42120a4481b7e26b964957c96b0ce128b
+2014-02-06T14:03:21Z,commit,don't highlight the entire expression and add test,github.com/JetBrains/intellij-community/pull/150/commits/ad2647fcc827c1ccf28713cebb65d6beec1f6aa3
+2014-02-07T15:41:42Z,commit,IDEA-13489 background tasks window should have a minimum size,github.com/JetBrains/intellij-community/pull/150/commits/503440c4d0ecbe6a85414cbb85348e456419b74a
+2014-02-07T15:27:17Z,commit,IDEA-91883 Edit breakpoint dialog: cannot click on combo if it expand¡­,github.com/JetBrains/intellij-community/pull/150/commits/b0f499740a3164bede9e4ab2082451675c4b5660
+2014-02-07T15:49:23Z,commit,remove redundant check on import (we'll check on creating suite),github.com/JetBrains/intellij-community/pull/150/commits/39bf62099a677934f546f75e2f1fef51d1586b6a
+2014-02-07T15:49:47Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/f41d2be82bf3a2e6aa0c4e502578c7e636b72a95
+2014-02-07T15:50:05Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/08cf6b332760fc6fadea135c39169f154493ce0a
+2014-02-07T09:00:09Z,commit,show message ¡ª pass project,github.com/JetBrains/intellij-community/pull/150/commits/5054ae058e5f981e702d3457b454bd17ee533463
+2014-02-07T09:05:51Z,commit,extract button.fix resource,github.com/JetBrains/intellij-community/pull/150/commits/a7753550834c48f62f9365ffa8b3edd6d5412fb1
+2014-02-07T09:48:09Z,commit,"continue: add ""Fix"" button ¡ª open web browser settings",github.com/JetBrains/intellij-community/pull/150/commits/4c2d519369515dcc18f763cdeaea1d0619373165
+2014-02-07T09:53:50Z,commit,"continue: add ""Fix"" button ¡ª open web browser settings",github.com/JetBrains/intellij-community/pull/150/commits/3395850d7ab8fe7ae7124a03bea82368076766c4
+2014-02-07T09:57:38Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/150/commits/e7200d54c76f05ad9f1b54371e58bf3ba3560196
+2014-02-07T10:09:59Z,commit,move BrowserFamily to upper level,github.com/JetBrains/intellij-community/pull/150/commits/4389b6606ea8189d1003a9bb34dbfd4963281908
+2014-02-07T10:11:03Z,commit,remove deprecated BrowsersConfiguration,github.com/JetBrains/intellij-community/pull/150/commits/ab3c2925a425c9f42bfbd963051ebe60f684d665
+2014-02-07T10:27:37Z,commit,update since-build,github.com/JetBrains/intellij-community/pull/150/commits/a6892528d352a73c670c4669758abdfab3676a20
+2014-02-07T10:45:32Z,commit,extract WebBrowserBase,github.com/JetBrains/intellij-community/pull/150/commits/ddd555fd16234756db88c38b2c365781cfc404c3
+2014-02-07T10:46:37Z,commit,extract WebBrowserBase,github.com/JetBrains/intellij-community/pull/150/commits/1bce66590a5105b82ce18c9e8ace53e0b834728a
+2014-02-07T10:54:12Z,commit,prepare to move UrlOpener to platform-api,github.com/JetBrains/intellij-community/pull/150/commits/aecf185bba87196c910af428fb421da45b04a1d2
+2014-02-07T11:00:33Z,commit,prepare to move UrlOpener to platform-api,github.com/JetBrains/intellij-community/pull/150/commits/982376729fd996b3d656b170f526a1e83017e55e
+2014-02-07T11:06:25Z,commit,move UrlOpener to platform-api,github.com/JetBrains/intellij-community/pull/150/commits/ac8d9f560435434393e4e791fb386b02e82e262b
+2014-02-07T15:40:28Z,commit,move impl to BrowserLauncher,github.com/JetBrains/intellij-community/pull/150/commits/613c3be0820ee54c905b6ae289b83982fdd6b126
+2014-02-07T15:44:29Z,commit,It is safe now to deprecate launchBrowser,github.com/JetBrains/intellij-community/pull/150/commits/708466048e13f63c86b85c7f484152c8732d89f1
+2014-02-07T17:03:14Z,commit,gwt code server run on module A.,github.com/JetBrains/intellij-community/pull/150/commits/94f05f9d776782174ea3925685cb42e440e7f4e4
+2014-02-07T15:34:13Z,commit,Cleanup (test),github.com/JetBrains/intellij-community/pull/150/commits/5c8aa9588f91e3cec0589396a12acfd689033087
+2014-02-07T12:19:03Z,commit,new inference: method reference inference,github.com/JetBrains/intellij-community/pull/150/commits/8ab67db6c535c862e25c2f4761e6e2e8ab593aa4
+2014-02-07T13:13:26Z,commit,new inference: method constructor inference,github.com/JetBrains/intellij-community/pull/150/commits/c0cbeb959bf6335b69f8fa0e7561512ce3eaae52
+2014-02-07T13:20:51Z,commit,new inference: method ref inference cleanup,github.com/JetBrains/intellij-community/pull/150/commits/3bda220da49f9c6f5798b734b0d1fc228d9e3556
+2014-02-07T16:18:29Z,commit,new inference: check containing class type params if they are in bounds,github.com/JetBrains/intellij-community/pull/150/commits/5fb1dbb2ce2ea6444a8806b11dc0e8ec3ee54ed5
+2014-02-07T17:12:06Z,commit,new inference: method ref inference: postpone return type inference i¡­,github.com/JetBrains/intellij-community/pull/150/commits/6efef684ce275612e86e89fb9849ba8ebdac3347
+2014-02-07T17:40:44Z,commit,"hide embedded scene builder under ""embed.scene.builder"" property [",github.com/JetBrains/intellij-community/pull/150/commits/a8237f5eb18f610f0f0a115400e7539f43ff002b
+2014-02-07T18:07:37Z,commit,JavaFX Scene Builder integration,github.com/JetBrains/intellij-community/pull/150/commits/e54fc5bde0b99a85d4d7a6dea125431501569772
+2014-02-07T18:23:54Z,commit,JavaFX Scene Builder integration,github.com/JetBrains/intellij-community/pull/150/commits/6cf7b4ab8930c6f5a8f8b16070e0495ca987ba5f
+2014-02-07T18:09:29Z,commit,new inference: testdata for IDEA-120376,github.com/JetBrains/intellij-community/pull/150/commits/5358bd270eb5a963c11167ca6365523d7a8d72b2
+2014-02-07T18:36:05Z,commit,spi files: do not override std file types (IDEA-120291),github.com/JetBrains/intellij-community/pull/150/commits/a80cc8ea707b3857e34f6a60a7ef7419ae3449f6
+2014-02-07T18:45:32Z,commit,invalid assertion for red code removed,github.com/JetBrains/intellij-community/pull/150/commits/91b0fd735521700a82edd5edd1ea8c5bde09ad74
+2014-02-07T18:50:52Z,commit,presentation (IDEA-120353),github.com/JetBrains/intellij-community/pull/150/commits/f22cff3bfb04a6f81370eeed862852f2225249fd
+2014-02-07T20:14:26Z,commit,static methods in interfaces should not have abstract by default,github.com/JetBrains/intellij-community/pull/150/commits/29b6eefac6f3819e1d97868fc3ca7877801d5156
+2014-02-07T20:16:38Z,commit,pull up: support static methods and interfaces for java 8,github.com/JetBrains/intellij-community/pull/150/commits/d516dd3b1ce6a5d0db53e375c2f758cb7760fec2
+2014-02-07T20:34:07Z,commit,fix regress: invalidateIndices shouldn't schedule indexing for nonind¡­,github.com/JetBrains/intellij-community/pull/150/commits/83758fecf1d87cfb2e2478bbc8ab9145c928615b
+2014-02-07T21:48:29Z,commit,this is mostly revert of my last year commit,github.com/JetBrains/intellij-community/pull/150/commits/db734f342561f4256e4a1966e48e6978e1e8baf1
+2014-02-08T07:29:21Z,commit,WEB-10858 File Watchers plugin doesn't work,github.com/JetBrains/intellij-community/pull/150/commits/05bb24eb443905e5fe7f54e94a9383b2a9f36a3c
+2014-02-09T10:19:52Z,commit,Fix a typo (PY-12077).,github.com/JetBrains/intellij-community/pull/150/commits/aac150d6168e9b1e7850378128234b7332dd7278
+2014-02-09T19:44:01Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/3c4388c48931cb2143b3aa1722e3dc1eba26d8de
+2014-02-09T21:08:33Z,commit,load installed packages in a background thread,github.com/JetBrains/intellij-community/pull/150/commits/7318d5d0a6ae44dfd979caaf595340ad83dc202d
+2014-02-07T09:00:16Z,commit,cleanup default option searching,github.com/JetBrains/intellij-community/pull/150/commits/a4a7cd5af7e16e2a0338a94a15aa7dcbf7528900
+2014-02-07T09:08:39Z,commit,Groovy ControlFlowBuilder: make some fields final,github.com/JetBrains/intellij-community/pull/150/commits/d9c547ac6391590e6004c5bd511f2e960f9da51b
+2014-02-07T09:14:33Z,commit,Groovy ControlFlowBuilder: additional logging,github.com/JetBrains/intellij-community/pull/150/commits/c2e137a60c118d4c1a46164f63e7ff378febf356
+2014-02-07T10:33:57Z,commit,EA-49782 - assert: TextRange.<init>,github.com/JetBrains/intellij-community/pull/150/commits/48f76aeaa7aca185dfeed02e86ce161532750374
+2014-02-07T13:29:06Z,commit,Groovy: in-place introduce field from local var,github.com/JetBrains/intellij-community/pull/150/commits/f3a4b5f7ee464ba20ddcb17a777f001ac596ae6f
+2014-02-08T15:30:21Z,commit,Groovy: in-place introduce from variable always process all occurrences,github.com/JetBrains/intellij-community/pull/150/commits/edfbd5e99fd049a00bfd49d67ff6938e5997865d
+2014-02-09T11:27:17Z,commit,Groovy: introduce parameter from local variable (both in-place and vi¡­,github.com/JetBrains/intellij-community/pull/150/commits/ec8c847972f36a0c59eb30d87cd62b6b8b014ff5
+2014-02-09T19:50:13Z,commit,Groovy: in-place introduce parameter: show parameters to remove in pr¡­,github.com/JetBrains/intellij-community/pull/150/commits/37b45f030326f228713794f4853c3029710eab50
+2014-02-10T06:58:36Z,commit,EA-52671 - assert: AbstractMappingStrategy.processFoldRegion,github.com/JetBrains/intellij-community/pull/150/commits/143c66bc11f3e63c54b5f47ee26eaf031bf37698
+2014-02-10T07:48:12Z,commit,fix NPE,github.com/JetBrains/intellij-community/pull/150/commits/9c3260d17bd0f7d46af5980c0588170b2ffc5e60
+2014-02-10T08:00:52Z,commit,IDEA-120265 Incorrect whitespaces (tab) painting when cursor change p¡­,github.com/JetBrains/intellij-community/pull/150/commits/46fce02e4b9a103bed2401754a27303e98cbe7cd
+2014-02-07T09:10:28Z,commit,don't rely on SmartPOinterManager to load document,github.com/JetBrains/intellij-community/pull/150/commits/539ccf88b13ff54340c2f037240b08a31e381b9c
+2014-02-07T09:37:38Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/150/commits/9d46ee9c3f9209192fc4003f39068418ee9d210d
+2014-02-07T09:38:30Z,commit,moved PostHighlightingPass to analysis,github.com/JetBrains/intellij-community/pull/150/commits/1cf0b70a2101a37509d78b0cde07319bf4672c9c
+2014-02-07T10:03:08Z,commit,moved to right package,github.com/JetBrains/intellij-community/pull/150/commits/261824e6137bd971262e97bb8ea6b8df51c4a22f
+2014-02-07T11:05:25Z,commit,notnull,github.com/JetBrains/intellij-community/pull/150/commits/42f69a2a2ff92a1f3e5191d3f3cf07b895b3f53c
+2014-02-07T12:04:48Z,commit,less dependent on UnusedDeclarationInspection,github.com/JetBrains/intellij-community/pull/150/commits/ec61769b7e6019a5dba5a7044d95224febddff91
+2014-02-10T08:41:15Z,commit,proper fix for PY-12052 Can't run django tests with nosetests because¡­,github.com/JetBrains/intellij-community/pull/150/commits/393fe4bd0bc0dbc647dbe42d412dd66da91528c8
+2014-02-10T08:41:41Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/d6c5296639fdb89c186163f70b1fcff20d0c1d80
+2014-02-10T08:54:53Z,commit,don't find local variable in extract method,github.com/JetBrains/intellij-community/pull/150/commits/5df8b8b1b39045592917a3a392565c5517d8f6cb
+2014-02-10T10:06:06Z,commit,svn: Fixed SingleCommittedListProvider - use previous logic to check ¡­,github.com/JetBrains/intellij-community/pull/150/commits/27794a5278ab54f3d9129179c376143187bc600c
+2014-02-10T10:19:31Z,commit,"svn: Refactored SingleCommittedListProvider - renames, removed duplic¡­",github.com/JetBrains/intellij-community/pull/150/commits/7f04cc28f84267eee4033eed4b468bd536eb34cf
+2014-02-10T10:44:27Z,commit,fixed updater logger in accordance with the review's recomendations.,github.com/JetBrains/intellij-community/pull/150/commits/d68b3f506926c9b1c0dcef6240441eef1ec56f54
+2014-02-10T10:48:31Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/a5b9e92f22a89bb1b2fdd043b4f5281ce0fd5038
+2014-02-10T10:51:27Z,commit,fix assertion ¡ª we must reset settings on family change,github.com/JetBrains/intellij-community/pull/150/commits/d8472bd2799642bf6972a0c0d1575c22863c9503
+2014-02-10T11:17:04Z,commit,ensure EDT,github.com/JetBrains/intellij-community/pull/150/commits/31f16653c6e4701311060714d5e162e86021a6c6
+2014-02-10T11:30:06Z,commit,select value in combobox on action,github.com/JetBrains/intellij-community/pull/150/commits/8654ea36387c2d116e5875f62816b29ab4263259
+2014-02-10T11:51:18Z,commit,IDEA-115128 Status bar: exception count font,github.com/JetBrains/intellij-community/pull/150/commits/0caff0481c02ed569911dfde631d64f5840ba8cf
+2014-02-10T11:51:41Z,commit,IDEA-120410 It's not possible to select old values of the variable vi¡­,github.com/JetBrains/intellij-community/pull/150/commits/fbfc7d0c3ca75ba325caaf4fd083e2f2f55189a4
+2014-02-10T11:52:51Z,commit,IDEA-120528 Minimum size is not applied to VCS Log user filter popup,github.com/JetBrains/intellij-community/pull/150/commits/d5682233ca1e799ab1681a27baabff15337c6006
+2014-02-07T15:21:06Z,commit,save RootIndex memory,github.com/JetBrains/intellij-community/pull/150/commits/44e47f8f8afba3cdfc7668c91c86895be30328a3
+2014-02-10T12:23:42Z,commit,svn: Implemented command line support for SingleCommittedListProvider,github.com/JetBrains/intellij-community/pull/150/commits/d7df2d4b336e0b5ccb9a3f2578de86f855399e94
+2014-02-10T12:23:47Z,commit,Allow run indenting processor not only from the beginning of the file¡­,github.com/JetBrains/intellij-community/pull/150/commits/711229d57548af9800dbfa2c53671171cbd1d192
+2014-02-10T12:25:42Z,commit,Apply visitor filters for all languages of the view provider (PY-11658),github.com/JetBrains/intellij-community/pull/150/commits/27d26d6fb0068d7572f04a1ec23771939c9248f8
+2014-02-10T12:28:04Z,commit,Disable StringLiteralQuotesAnnotator for multi-PSI files (PY-11658),github.com/JetBrains/intellij-community/pull/150/commits/0b47cef289eaf0e3fdf9fbfc8b986f58738e843f
+2014-02-10T12:28:33Z,commit,rename parameters,github.com/JetBrains/intellij-community/pull/150/commits/dfa6f6334282607254984019d07d36df0e4ca401
+2014-02-10T12:34:02Z,commit,Merge branch 'python-fixes',github.com/JetBrains/intellij-community/pull/150/commits/e53366b5b282834a2c8fbe72618ad0c839639ca6
+2014-02-10T12:40:38Z,commit,IDEA-120338 Create log for update to the same place where idea (idea ¡­,github.com/JetBrains/intellij-community/pull/150/commits/57674762d9ce3174e3eb101afa9c729e01868297
+2014-02-10T12:44:23Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/12c7874463dc1b4d076787116dda580793b3d28a
+2014-02-10T12:45:28Z,commit,IDEA-95952 Debugger tooltip is shown in the incorrect place and overl¡­,github.com/JetBrains/intellij-community/pull/150/commits/50eb71a01bc47f0d908e5cdb7348ca3bd1dae634
+2014-02-10T12:49:08Z,commit,added openapi.jar as dependency for updater.,github.com/JetBrains/intellij-community/pull/150/commits/d15b588965ca94ba64fc956a6dc52790d807ec36
+2014-02-10T12:50:51Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/1c724d9d0eb577089ce667582deaa8adbda860cf
+2014-02-10T12:51:36Z,commit,IDEA-118222 Closure to SAM interface coercion doesn't handle contrava¡­,github.com/JetBrains/intellij-community/pull/150/commits/cb73b8d2d26255f7f799e775f4f9e30f239d49f8
+2014-02-10T13:06:47Z,commit,"IDEA-118646 Determine client factory for ""revert"" operation based on ¡­",github.com/JetBrains/intellij-community/pull/150/commits/353d5579c20b06f46999cc6d8688ae7c5b183b97
+2014-02-10T11:33:00Z,commit,move js debugger platform up,github.com/JetBrains/intellij-community/pull/150/commits/5c74ffe0313f0227984bf3f4192212ad85192b66
+2014-02-10T13:08:14Z,commit,Gradle: war artifact/facet creation fix.,github.com/JetBrains/intellij-community/pull/150/commits/58c879183e127882b4117ab724dff210ad30205f
+2014-02-10T10:30:23Z,commit,[log] can happen during log initialization while the table is empty,github.com/JetBrains/intellij-community/pull/150/commits/c823985f215b6f89a3481841dbb61559e1dcf3c9
+2014-02-10T12:53:22Z,commit,[git log] Fix multi-value filter by user,github.com/JetBrains/intellij-community/pull/150/commits/b5d20bd22d3d789c93c2e35575176bbf7da60b15
+2014-02-10T13:21:27Z,commit,IDEA-120502 Support renamed gmaven-plugin plugin (groovy-maven-plugin),github.com/JetBrains/intellij-community/pull/150/commits/043c3e9e7638ca3b31d2720be3c62424de8a70e5
+2014-02-10T14:01:39Z,commit,"IDEA-116775 Use idea home directory as working directory for ""revert""¡­",github.com/JetBrains/intellij-community/pull/150/commits/b7569fae96e57d7bc0e7a3cc7414e334d8e3ab35
+2014-02-10T14:39:52Z,commit,mock groovy 2.3,github.com/JetBrains/intellij-community/pull/150/commits/70706772363eb2f679ff312b7342e7ccd3edf4ad
+2014-02-10T14:49:44Z,commit,support actions history,github.com/JetBrains/intellij-community/pull/150/commits/1c0199f06fa8764302db6343121dedab85932bde
+2014-02-10T15:03:00Z,commit,mark setPassShellEnvironmentAsParent and isPassShellEnvironmentAsPare¡­,github.com/JetBrains/intellij-community/pull/150/commits/176b06d5e276c4f19676825488251554e91ce409
+2014-02-10T14:55:46Z,commit,InheritanceUtil: some contracts,github.com/JetBrains/intellij-community/pull/150/commits/ebffbc9ceba01ddca5cfe396108d7cf9fd6d9948
+2014-02-10T15:01:28Z,commit,IDEA-118234 Closure to SAM coercion: infer generic by SAM return type,github.com/JetBrains/intellij-community/pull/150/commits/7128707d9eaa580c1be28166c8028e8e3dee0ef6
+2014-02-10T15:10:58Z,commit,kill duplicates,github.com/JetBrains/intellij-community/pull/150/commits/094e633d0a05cafe08d48d111636c8b9dae7dc22
+2014-02-10T15:43:34Z,commit,WEB-1171 javascript live console,github.com/JetBrains/intellij-community/pull/150/commits/fdcdfce72bc5221fc4cf6221412df25bbcba3e0d
+2014-02-10T14:53:29Z,commit,spare some memory in vcs log,github.com/JetBrains/intellij-community/pull/150/commits/fbae0107fc34567853338da78d00e7e4c6cc73c7
+2014-02-10T15:51:44Z,commit,svn: Implemented command line support to logic that preserves changed¡­,github.com/JetBrains/intellij-community/pull/150/commits/840b6bee800ebb6c4c312338d927d1ba684de18a
+2014-02-10T12:16:31Z,commit,Update message about unsupported JIRA version,github.com/JetBrains/intellij-community/pull/150/commits/f1ff8312849c1316f5f41f9ea58cd34ba7473de6
+2014-02-10T13:29:28Z,commit,Dispose tree builder in disposeUIResources() to prevent memory leak,github.com/JetBrains/intellij-community/pull/150/commits/ec7edd329f6670880acb95d0a735a87638c16ea0
+2014-02-10T15:56:38Z,commit,svn: Refactored SvnUtil.getFileContents - reuse factory selection log¡­,github.com/JetBrains/intellij-community/pull/150/commits/340659b5e5dcca46af03a083150c37cdc822bc63
+2014-02-10T15:59:40Z,commit,[git] amend: don't add \n to the commit message,github.com/JetBrains/intellij-community/pull/150/commits/a0cc7111c7d4e326ac5ed1ae0d45cdebda29bb8c
+2014-02-10T09:20:33Z,commit,notnull,github.com/JetBrains/intellij-community/pull/150/commits/78581c66760678a337b57f7d3a99e56e31278ffb
+2014-02-10T09:37:43Z,commit,optimisation: do not load document during smart pointer creation,github.com/JetBrains/intellij-community/pull/150/commits/9464870afd9d403305ea4f8cedec01ae1dfb2439
+2014-02-10T14:22:56Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/150/commits/e0792ea2f7ffa9b95bc96621452b1eb27a83ebf3
+2014-02-10T14:30:37Z,commit,correct level in highlighting:,github.com/JetBrains/intellij-community/pull/150/commits/ad661d92e48301be744961e2f54344ae7e51ac50
+2014-02-10T14:59:13Z,commit,IDEA-120535 SelectableChannel.register should have the same magic con¡­,github.com/JetBrains/intellij-community/pull/150/commits/ea3cf29feba99b528c07c785279b6da4408d6f6c
+2014-02-10T16:07:16Z,commit,Merge branch 'svn_18_3',github.com/JetBrains/intellij-community/pull/150/commits/32aa1a8830f49b7e82e491503496b8607337db92
+2014-02-10T16:12:45Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/132042fa2a3dff8e4c108530d28d26f61c9d9e14
+2014-02-10T16:33:54Z,commit,StringUtil.splitByLinesKeepSeparators javadoc,github.com/JetBrains/intellij-community/pull/150/commits/78b379e2182284a7987dc36b3e4b4d6a7e19f467
+2014-02-10T17:25:20Z,commit,respect default browser,github.com/JetBrains/intellij-community/pull/150/commits/7c3e5b9f04a47bd70cbf32a6d9d4f2de060f0488
+2014-02-10T17:32:47Z,commit,respect default browser: jstd ¡ª use BrowserSelector,github.com/JetBrains/intellij-community/pull/150/commits/3104edd1b95c96dc1ccbd12d7c9611743a0dcd90
+2014-02-10T16:25:33Z,commit,fixture-based NullableStuffInspectionTest,github.com/JetBrains/intellij-community/pull/150/commits/4757fc901f86a02a8e07b81e6e3fc64514e16145
+2014-02-10T16:38:58Z,commit,parameter nullity annotation should have higher-priority than package¡­,github.com/JetBrains/intellij-community/pull/150/commits/750013c06445ff072e30a5228c6190dc4723dae6
+2014-02-10T17:52:49Z,commit,faster html tag selectioner using psi,github.com/JetBrains/intellij-community/pull/150/commits/5b8af7def7b34cc1e01d71936a20b544067a98e1
+2014-02-10T18:21:15Z,commit,"+ ""facelet""",github.com/JetBrains/intellij-community/pull/150/commits/a28195118431b514179fffe75c9ef5ed1247d6a6
+2014-02-10T19:22:20Z,commit,New decompiler API,github.com/JetBrains/intellij-community/pull/150/commits/f6c6bec7361fba61ecb3aa955e4145a789d4ed97
+2014-02-10T19:57:19Z,commit,Refactoring to make PushDown use the same engine as other refactoring¡­,github.com/JetBrains/intellij-community/pull/150/commits/735084d8d48aaa14d1923115679277cec6ed41a5
+2014-02-10T20:55:50Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/dd6e05bc32095d2dfa22ea5571fb7ac7139d7949
+2014-02-10T21:05:16Z,commit,Refactoring to make PushDown use the same engine as other refactoring¡­,github.com/JetBrains/intellij-community/pull/150/commits/2a3f6b354900e6e133d99c64ea34ece57b22c6e1
+2014-02-10T21:58:40Z,commit,"show ""Loading ..."" label on fetching installed package list",github.com/JetBrains/intellij-community/pull/150/commits/6c1effc099bc31f08b80a5987a7238dc45546bfb
+2014-02-10T19:31:12Z,commit,Thread problems with updateTo action fixed,github.com/JetBrains/intellij-community/pull/150/commits/828b80f5cbfe6e587015c6f4f7aeb1e2628cf58b
+2014-02-10T18:36:53Z,commit,#WEB-10913 fixed,github.com/JetBrains/intellij-community/pull/150/commits/500f1b91a3f9ac40e475b18001842dead792aa1f
+2014-02-11T07:53:41Z,commit,IDEA-120265 Incorrect whitespaces (tab) painting when cursor change p¡­,github.com/JetBrains/intellij-community/pull/150/commits/344bf8b0b74096bd0178398e129363df7244ee87
+2014-02-10T11:00:53Z,commit,'com.intellij.modules.ruby' module included into Ruby plugin to allow¡­,github.com/JetBrains/intellij-community/pull/150/commits/e16e79f11c1e919cc010ade06b30a73dda4b444e
+2014-02-10T11:34:56Z,commit,'com.intellij.modules.python' module included into Python plugin to a¡­,github.com/JetBrains/intellij-community/pull/150/commits/e4b9feabea34e876c5f00bf7451ff866903e0d51
+2014-02-11T08:10:47Z,commit,Gradle: respect build classpath order and use both classes and source¡­,github.com/JetBrains/intellij-community/pull/150/commits/472e58b7517b88a5f32b7e26e5285baf8142e57c
+2014-02-11T08:33:40Z,commit,"fixed build of patches, and corrected updater dependency.",github.com/JetBrains/intellij-community/pull/150/commits/2daa62596d118f3b83bf81ec5a6da535e2e900eb
+2014-02-11T08:35:48Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/a73a84fbc67470a03a24b007526694d747b373e8
+2014-02-10T09:22:40Z,commit,new inference: subtyping/equality constraints interoperability,github.com/JetBrains/intellij-community/pull/150/commits/b9ef7b60c77c8c5c87d9fb77e79063dfdd90c2b6
+2014-02-10T11:14:50Z,commit,new inference: exclude return constraints/non pertinent to applicabil¡­,github.com/JetBrains/intellij-community/pull/150/commits/4889751ded041600ebb309b4cf12abd48c68e336
+2014-02-10T13:23:04Z,commit,new inference: strict subtyping constraint: null processing,github.com/JetBrains/intellij-community/pull/150/commits/cb5a0b729bddd32f40911fc0e45c0e4f0c89eb5c
+2014-02-10T19:49:06Z,commit,new inference: method references: process varargs,github.com/JetBrains/intellij-community/pull/150/commits/2b5764d82a16621637b94bcc5c56ad11b44a857c
+2014-02-10T19:55:51Z,commit,new inference: do not infer based on wrong number type params,github.com/JetBrains/intellij-community/pull/150/commits/49a2d0ad54a27bcd029aeb3e4c90b0309147d932
+2014-02-10T20:33:41Z,commit,new inference: method refs overload resolution: filter static problem¡­,github.com/JetBrains/intellij-community/pull/150/commits/fd00ca6f9115b3429ea5e3da1c2c308a79a92ae0
+2014-02-11T08:54:31Z,commit,testdata fixed,github.com/JetBrains/intellij-community/pull/150/commits/0072e05c026ac570d3406e8bee754688cd927975
+2014-02-11T09:07:36Z,commit,Gradle: add Gradle SDK sources before classes in a build classpath an¡­,github.com/JetBrains/intellij-community/pull/150/commits/6d9052c59e2de5180555738f0f0ca7fc434d1c9f
+2014-02-11T09:07:50Z,commit,IDEA-120544 13.1 EAP (134.1007): impossible to add empty Web module t¡­,github.com/JetBrains/intellij-community/pull/150/commits/800eaba9f6e12c795aa7f2c84740ef2de10683bb
+2014-02-11T09:20:51Z,commit,changes reverted,github.com/JetBrains/intellij-community/pull/150/commits/74fcddb3d0e270b3b57163a22b22a3ec3d65f2f7
+2014-02-11T09:20:23Z,commit,Add template text to live template quick doc,github.com/JetBrains/intellij-community/pull/150/commits/0ccaddd010bd8f4b38b4db666da8ad2e9c70cf85
+2014-02-11T09:22:18Z,commit,'Static Web' module type available in IntelliJ IDEA Community Edition¡­,github.com/JetBrains/intellij-community/pull/150/commits/bd557716f55f70bee2a0919ff3c591d882394a47
+2014-02-11T09:37:51Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/150/commits/9d349c827e531ef9b88675934d5f0326d20ca7a8
+2014-02-11T09:42:35Z,commit,IDEA-120544 13.1 EAP (134.1007): impossible to add empty Web module t¡­,github.com/JetBrains/intellij-community/pull/150/commits/a6a8745b77eb1ec31753a1a6f1f69f0d335401ea
+2014-02-10T16:12:15Z,commit,do not log PCE,github.com/JetBrains/intellij-community/pull/150/commits/c823858dd5008634832efb1c8e95a815471d92c1
+2014-02-11T09:51:19Z,commit,New decompiler API (ability to call default decompiler from extensions),github.com/JetBrains/intellij-community/pull/150/commits/a582b91c0ce31ad713010492f05af9085db42a4e
+2014-02-11T09:55:09Z,commit,Cleanup (var names),github.com/JetBrains/intellij-community/pull/150/commits/e59ab4793ad278f2c10dddb43fa332ad44ffdd71
+2014-02-11T10:01:53Z,commit,IDEA-120591 Simplify new Flash module creation in 13.1,github.com/JetBrains/intellij-community/pull/150/commits/fdf1dd4fce41151db5c48cfbf39ffeda97d87a3e
+2014-02-11T10:32:11Z,commit,IDEA-117674 please rebuild and commit runnerw.exe,github.com/JetBrains/intellij-community/pull/150/commits/fc583db073fd0dc4df8c0a209ceec54b4a067c53
+2014-02-11T10:37:18Z,commit,IDEA-120562 IntelliJ 13.0.2 does not respect Gradle IdeaModel Configu¡­,github.com/JetBrains/intellij-community/pull/150/commits/d04ed7bf6af033e766622b30b51f1e9298af0e4b
+2014-02-11T10:39:26Z,commit,update runnerw configuration files to Visual Studio 13,github.com/JetBrains/intellij-community/pull/150/commits/a42e228c96bd785b555b54048280ec080a5a3007
+2014-02-11T11:11:38Z,commit,"fix problem when action is disabled in popup menu, but working from k¡­",github.com/JetBrains/intellij-community/pull/150/commits/e78c7d768e9a842838092182614068f45a52cac6
+2014-02-11T11:47:02Z,commit,"Fix ""DummyHolder cannot be cast to com.jetbrains.python.psi.PyFile""",github.com/JetBrains/intellij-community/pull/150/commits/4e3b4a7715e23df67303b2edbdd85ba3c0d77bf8
+2014-02-11T11:47:45Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/150/commits/ecc247901bcbb60bcb014391ff43e55aa021c160
+2014-02-11T11:52:16Z,commit,WEB-10924 Bower: provide indication for loading description,github.com/JetBrains/intellij-community/pull/150/commits/d4b9fd472ea84c1294124078754a4a6ef6cc9e9a
+2014-02-11T11:58:25Z,commit,IDEA-120588 Gradle plugin broken with Gradle 1.12 dev builds,github.com/JetBrains/intellij-community/pull/150/commits/b0e96de032e41b957977a0a71a3b093611b4c0e2
+2014-02-11T12:10:38Z,commit,no space,github.com/JetBrains/intellij-community/pull/150/commits/1485108db147fd090229df51cf498c1439ef6657
+2014-02-11T12:23:16Z,commit,Gradle: fix gant scripts,github.com/JetBrains/intellij-community/pull/150/commits/2ba5cc799b24304d780f4fdbe576057ff7697d35
+2014-02-11T12:16:43Z,commit,listen to internal model for notifications,github.com/JetBrains/intellij-community/pull/150/commits/8570ff14c1fd236f5bc0501d2b3c067869275ea5
+2014-02-11T12:28:04Z,commit,rollback. Selection is broken,github.com/JetBrains/intellij-community/pull/150/commits/d7f87c33a0e16d31251a8a3bc077ca0cba883ab4
+2014-02-11T12:30:57Z,commit,WEB-10929 Bower: Throwable on Uninstall package,github.com/JetBrains/intellij-community/pull/150/commits/7ef6dd206b6a52fa368b9e575be80b2b5e8df8e5
+2014-02-11T12:37:24Z,commit,Gradle: data models implements Serializable added to retain out-of-pr¡­,github.com/JetBrains/intellij-community/pull/150/commits/34512ba0f4721bb06cf31aee72ea0158630703c0

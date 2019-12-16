@@ -1,0 +1,13 @@
+1164,Focus lost upon opening certain important dialogs.
+2019-06-30T12:37:28Z,discuss,"this fixes absence of focus in edit field upon opening ""Find in Path"" dialog and
+""Evaluate expression"" dialog."
+2019-06-30T12:37:28Z,discuss,"Symptoms: sometimes (there's racing somewhere) focus and caret remain in code editor window
+after launch of specified dialogs. Arch(Manjaro) Linux, Cinnamon or KDE. Same racing is very rare
+on non-compositing mode openbox WM."
+2019-06-30T12:37:28Z,discuss,"Cause: under some conditions native awt peer refuses to focus window which has not been yet created
+and workarounds found around in awt do not work. JDK versions 11 and 8 (oracle/JB/openjdk) show same behavior."
+2019-06-30T12:37:28Z,discuss,"Fix: making sure focus is requested AFTER window has been opened, not relying on awt magic to track and  properly route focus requests scheduled in advance. Thankfully, JB code does not need much work."
+2019-06-30T12:37:28Z,discuss,"JB, PLEASE fix same stuff in CLion PLEASE! Impossible to work."
+2019-06-30T13:49:30Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-07-13T11:09:46Z,discuss,Probably fixed in today's beta.
+2019-06-30T12:25:34Z,commit,"this fixes absence of focus in edit field upon opening ""Find in Path""бн",github.com/JetBrains/intellij-community/pull/1164/commits/ac53b8c2c773034c52746c1c9e295e0427496568

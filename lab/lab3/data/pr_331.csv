@@ -1,0 +1,16 @@
+331,Optimize setting watch roots.
+2015-12-04T17:26:48Z,discuss,"The file system operations in local file system and canonical path map
+can be slow when done in serial for a large number of roots. Run
+these in parallel on an executor."
+2015-12-04T17:26:48Z,discuss,"On our benchmarks with about 8000 roots this saves ~700ms, or about 70%,
+when setting watch roots."
+2015-12-04T17:26:48Z,discuss,Change-Id: I6bd8e4fb52b9d1d43714e936f4d3d8a04049d2c1
+2015-12-04T19:50:53Z,discuss,Let me know if there's a better way to execute a bunch of tasks in parallel than what I added in ParallelUtil. Application#executeOnPooledThread isn't happy to accept 1000 tasks at once without starting to dump threads.
+2015-12-05T19:43:05Z,discuss,I updated the pull request to use BoundedTaskExecutor and removed the guava dependency. Benchmarks look the same.
+2015-12-05T20:35:49Z,discuss,Thanks! I added couple of comments inline
+2015-12-05T20:35:49Z,discuss,"05 §¥§Ö§Ü 2015 §Ô. 20:43 §á§à§Ý§î§Ù§à§Ó§Ñ§ä§Ö§Ý§î ""tomlu-google"" notifications@github.com
+§ß§Ñ§á§Ú§ã§Ñ§Ý:"
+2015-12-07T16:27:44Z,discuss,I changed the containers to ContainerUtil and iterate futures in reverse order.
+2015-12-09T16:11:01Z,discuss,Have you had a chance to look at this? Muchos gracias!
+2015-12-10T19:27:40Z,discuss,Pushed upstream. Thanks!
+2015-12-04T17:00:22Z,commit,Optimize setting watch roots.,github.com/JetBrains/intellij-community/pull/331/commits/8a4ca6d68aa5265a1b50bf52909bfc1083ecd751

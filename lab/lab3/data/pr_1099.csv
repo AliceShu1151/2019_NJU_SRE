@@ -1,0 +1,12 @@
+1099,IDEA-188964 prefer an older but compatible plugin
+2019-03-25T23:14:56Z,discuss,"We expand on the fix for IDEA-188964 from commit 11b64c4, by also
+taking into account the possibility that the first plugin version
+(loaded from the user's config) is newer but incompatible, while the
+version bundled with the platform is compatible."
+2019-03-25T23:14:56Z,discuss,"This is a recurring problem for Studio and the Kotlin plugin, whenever
+we update the platform: http://issuetracker.google.com/129260858"
+2019-03-25T23:16:25Z,discuss,@trespasserw
+2019-03-26T16:12:17Z,discuss,Tried to collapse both cases into a single condition. Please take a look and let me know if I did miss something.
+2019-03-26T16:12:17Z,discuss,Thanks!
+2019-03-26T18:35:56Z,discuss,"Looks good, thank you for the quick turnaround!"
+2019-03-25T23:08:44Z,commit,IDEA-188964 prefer an older but compatible plugin,github.com/JetBrains/intellij-community/pull/1099/commits/ae20cbed0b1b468b64242ecea7f621c15c3a6e76

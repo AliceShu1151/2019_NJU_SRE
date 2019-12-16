@@ -1,0 +1,16 @@
+867,Fix bug in ScrollColorProducer.
+2018-09-20T01:14:30Z,discuss,"The ScrollBarProducer has code to produce a color based on the
+view that is hosting the scrollbar.
+If the hosting view has not changed its background color
+instance then the background color of the scrollbar will remain
+the same."
+2018-09-20T01:14:30Z,discuss,"This works fine unless the hosting view uses a JBColor for its
+background, in which case the color never changes after a theme
+change."
+2018-09-20T01:14:30Z,discuss,"Bug: IDEA-197981
+Change-Id: I6d9c3482ae9712cc3add6f3c9465a0edd2dc6cd5"
+2018-10-02T17:42:50Z,discuss,"Any chance this will be accepted?
+We would like to cherrypick this into Android Studio."
+2018-10-04T12:33:56Z,discuss,"@jlauridsen I don't think so. Problem is not in ScrollColorProducer, but in ColorUtil which doesn't work correctly with JBColor. I have fixed it here 36e49ca Could you please check if this solves your problems in Android Studio?"
+2018-10-04T17:07:41Z,discuss,"This issue has been fixed in a different way, closing the pull request."
+2018-09-20T00:49:31Z,commit,Fix bug in ScrollColorProducer.,github.com/JetBrains/intellij-community/pull/867/commits/d5b76d63456afbfc172239592005daa12762b0b1

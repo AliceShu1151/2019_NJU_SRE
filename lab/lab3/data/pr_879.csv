@@ -1,0 +1,5 @@
+879,[Fernflower] Improve output for float and double literals
+2018-09-30T21:09:27Z,discuss,This PR does a few things regarding float and double literals:
+2018-09-30T21:09:27Z,discuss,"With regards to possible future work on this, there are two things I can think of:"
+2018-09-30T21:09:27Z,discuss,Previously submitted to a fork at MinecraftForge/ForgeFlower#24.  I meant to upstream this a while back but I was busy and then forgot about it.  This does have a few differences from that: I did a bigger diff here; I have unit tests; and also negative MAX_VALUE/MIN_VALUE/etc are supported (which was done later in MinecraftForge/ForgeFlower#37).
+2018-08-09T19:39:11Z,commit,Improve float and double literals,github.com/JetBrains/intellij-community/pull/879/commits/5592119d1d6d0e404248ef8d78a675329f8feaf3

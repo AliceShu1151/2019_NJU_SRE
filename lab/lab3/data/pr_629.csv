@@ -1,0 +1,9 @@
+629,SyntheticLibrary::getBinaryRoots()
+2017-09-15T14:46:51Z,discuss,"
+No description provided.
+"
+2017-09-17T07:53:12Z,discuss,"Please rebase the pull request on top of the current master, to avoid merge conflicts."
+2017-09-18T08:29:05Z,discuss,https://upsource.jetbrains.com/idea-ce/review/IC-CR-82
+2018-02-12T15:51:41Z,discuss,merged manually
+2017-09-13T12:23:38Z,commit,SyntheticLibrary: support binary roots,github.com/JetBrains/intellij-community/pull/629/commits/d4ab73ceaeac695c4575ae115bd0de7f04ff531b
+2017-09-13T13:50:05Z,commit,Support navigating to source of SyntheticLibrary binaries for Java,github.com/JetBrains/intellij-community/pull/629/commits/56dc6c49ab5fa0d31837dd802a907483a824a8a2

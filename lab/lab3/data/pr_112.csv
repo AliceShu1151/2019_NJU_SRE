@@ -1,0 +1,7 @@
+112,Instructions for building with ant
+2013-10-21T12:01:42Z,discuss,"If somebody don't have IDEA yet, he should be able to build it for himself."
+2013-10-21T13:35:15Z,discuss,Thanks for the pull request! I've added a simpler version of those instructions to readme.md.
+2013-10-21T13:56:55Z,discuss,@yole  Did you push it?
+2013-10-21T13:58:26Z,discuss,"I pushed it to our internal repo, it'll appear on github within an hour."
+2013-10-21T12:01:13Z,commit,Instructions for building with ant,github.com/JetBrains/intellij-community/pull/112/commits/c3abf3e6aeebcffb4dbefa13f7e2fd30b5e1ac1e
+2013-10-21T12:08:01Z,commit,You don't even have to install gant,github.com/JetBrains/intellij-community/pull/112/commits/b9d96fcc5a35d08eb5e9809b810a2ebccad5c5be

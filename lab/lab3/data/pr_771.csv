@@ -1,0 +1,44 @@
+771,Improving Python's standard library external documentation feature
+2018-03-25T19:56:48Z,discuss,Stdilb objects now map to its corresponding webpage
+2018-03-25T19:56:48Z,discuss,"['ast',
+'ensurepip',
+'logging.config',
+'logging.handlers',
+'pdb',
+'tarfile',
+'turtle']"
+2018-03-25T19:56:48Z,discuss,none
+2018-03-25T19:56:48Z,discuss,"['asyncio',
+'collections.abc',
+'contextvars',
+'email.contentmanager',
+'email.headerregistry',
+'email.message.Message',
+'email.policy',
+'ensurepip',
+'enum',
+'faulthandler',
+'http',
+'ipaddress',
+'lzma',
+'pathlib',
+'pdb',
+'secrets',
+'selectors',
+'statistics',
+'tracemalloc',
+'turtle',
+'typing',
+'unittest.mock',
+'urllib',
+'venv',
+'xmlrpc',
+'zipapp']"
+2018-03-25T19:56:48Z,discuss,['fpectl']
+2018-04-12T15:05:19Z,discuss,"@yole, may I request you to review this PR? You wrote most of the code for this feature."
+2018-04-12T15:18:38Z,discuss,"I haven't done any work on PyCharm since 2013, so no, I'm not going to review this PR."
+2018-10-24T09:57:49Z,discuss,@guoci Thanks for the PR! I've cleaned it up a bit to avoid duplication of the strings in the map and merged it in.
+2018-03-25T19:53:48Z,commit,update Python 3 module list,github.com/JetBrains/intellij-community/pull/771/commits/de711a704613c14e76dbd13a7ad7b79ceef93600
+2018-03-26T18:54:49Z,commit,update Python 2 module list,github.com/JetBrains/intellij-community/pull/771/commits/505f63f8d1d282665d18e977b323c5ed9babd69a
+2018-03-27T20:26:35Z,commit,map module name to webpage name,github.com/JetBrains/intellij-community/pull/771/commits/ed74e851865b7f7d8707b60fe9f5edd64d0cbb94
+2018-04-07T17:40:17Z,commit,map stdlib builtin objects to URL,github.com/JetBrains/intellij-community/pull/771/commits/1ae6a37218d5c0c754f6af246ce98d8f4552519c

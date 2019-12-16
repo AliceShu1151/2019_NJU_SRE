@@ -1,0 +1,4 @@
+1015,IDEA-204310: Decompiler adds redundant imports for lambdas
+2018-12-18T02:04:08Z,discuss,Please see https://youtrack.jetbrains.com/issue/IDEA-204310
+2018-12-18T13:39:19Z,discuss,"merged, thanks for contribution!"
+2018-12-18T02:02:07Z,commit,IDEA-204310: Decompiler adds redundant imports for lambdas,github.com/JetBrains/intellij-community/pull/1015/commits/8114333ef0b854818dd0a058f8fa349c49a8914c

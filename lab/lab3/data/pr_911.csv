@@ -1,0 +1,7 @@
+911,removed deprecated option --recompile-scripts
+2018-11-03T19:00:30Z,discuss,"Gradle 5.0 has deprecated --recompile-scripts
+see gradle/gradle#1425"
+2018-11-03T19:00:30Z,discuss,"Gradle considers that it is useless to have such flags as caching
+should always be correct."
+2018-11-15T15:56:54Z,discuss,"Thanks, it seems the flag was removed today by @nskvortsov, see 9400931"
+2018-10-09T21:28:57Z,commit,removed deprecated option --recompile-scripts,github.com/JetBrains/intellij-community/pull/911/commits/1724c351e482d07f0b6d5437f83b19e2f2d39f9a

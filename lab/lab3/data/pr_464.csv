@@ -1,0 +1,5 @@
+464,Expose finding class files for alternative bytecode viewers
+2016-11-05T14:16:09Z,discuss,The logic of finding the class file that is associated with a PsiElement is non-trivial and can be reused by other bytecode viewers with this simple change.
+2016-11-05T14:16:09Z,discuss,Alternative bytecode viewers want to depend on the built-in bytecode viewer anyway because of the classSearcher extension point.
+2016-11-05T14:04:26Z,commit,Make it possible for alternative bytecode viewers to reuse the logic ¡­,github.com/JetBrains/intellij-community/pull/464/commits/1eb7f94175f7cbc493077c3644e05a311d8185b2
+2016-11-05T15:43:29Z,commit,Return VirtualFile instead of content byte array when locating a clas¡­,github.com/JetBrains/intellij-community/pull/464/commits/1535b1488d97c8099b7325f0c070be082200c862

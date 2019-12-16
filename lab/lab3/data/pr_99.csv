@@ -1,0 +1,5 @@
+99,Fixed TypeConversionUtil#getAllBoxedTypeSupers (after f4a27e8).
+2013-09-11T13:37:42Z,discuss,Register ProjectRootManager and ProjectRootModificationTracker services in JavaCoreProjectEnvironment.
+2013-09-11T13:37:42Z,discuss,(It's necessary for Kotlin compiler)
+2013-09-11T13:45:42Z,discuss,"Why, do you think, was there previously no dependency from java-psi-impl on lang-impl? If you're not sure, please review http://confluence.jetbrains.com/display/IDEA/IntelliJ+Platform+Modules"
+2013-09-11T13:32:12Z,commit,Fixed TypeConversionUtil#getAllBoxedTypeSupers (after,github.com/JetBrains/intellij-community/pull/99/commits/1f39a36a63fee29073f15cbf18573eb7a70fffcc

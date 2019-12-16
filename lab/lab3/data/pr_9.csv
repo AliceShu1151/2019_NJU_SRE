@@ -1,0 +1,4 @@
+9,IDEA-88526 When applying dark color scheme and ColorIde plugin then several types of tree nodes are always have black text color
+2012-07-11T12:42:51Z,discuss,Bug fix according to issue IDEA-88526. Instead of using hardcoded value for background compute it using tree background color.
+2012-07-19T16:03:45Z,discuss,pushed to trunk
+2012-07-11T12:31:33Z,commit,fix for IDEA-88526 When applying dark color scheme and ColorIde plugi¡­,github.com/JetBrains/intellij-community/pull/9/commits/2d385e33791c7b0f9ca70d4ae6be75b5797b33be

@@ -1,0 +1,4 @@
+1162,FileTypeManager logger message correction
+2019-06-26T20:31:35Z,discuss,Current message cause to break log output like this:
+2019-06-27T12:06:03Z,discuss,"Thanks you for the contribution. I've applied the pull request manually, and shortened the message a bit."
+2019-06-26T20:28:24Z,commit,FileTypeManager logger message correction,github.com/JetBrains/intellij-community/pull/1162/commits/9f3b5f54d2e187aabdc18c398313bb38bb49f463

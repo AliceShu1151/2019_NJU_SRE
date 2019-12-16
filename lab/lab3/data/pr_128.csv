@@ -1,0 +1,8 @@
+128,IDEA-57875: Add Missing property quick fix
+2013-11-13T03:37:24Z,discuss,"http://youtrack.jetbrains.com/issue/IDEA-57875
+IDEA-57875 No quick fix to create property from a usage of unknown property in Ant"
+2013-11-13T03:37:24Z,discuss,"This brings back the features that were available in v9.
+It should create a property as an xml tag in the current file or as a property if a build.properties exists.
+If multiple build properties exist you get multiple intentions pop up as well as the option to just include it in the current file."
+2013-11-13T20:05:40Z,discuss,Thanks! With some modifications commited and pushed to master and branch 133 (IDEA 13 release branch)
+2013-11-12T03:28:43Z,commit,IDEA-57875: Add Missing property quick fix,github.com/JetBrains/intellij-community/pull/128/commits/83658d50381670261d41634574bdc4767e7a136b

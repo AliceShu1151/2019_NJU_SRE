@@ -1,0 +1,5 @@
+277,Fix annotation for `Iterable.iterator`
+2015-06-23T09:43:47Z,discuss,"Add FQ name to return type.
+It's necessary because findExternalAnnotation uses fully-qualified names when matching annotations."
+2018-07-23T14:31:12Z,discuss,Fixed in 318f983.
+2015-06-23T09:25:09Z,commit,Fix annotation for `Iterable.iterator`,github.com/JetBrains/intellij-community/pull/277/commits/4095df408b681d4a9c92649de1ca0b91e44b844c

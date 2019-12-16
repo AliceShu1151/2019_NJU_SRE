@@ -1,0 +1,43 @@
+562,IDEA-171697 Omit explicit arrays for vararg parameters in decompiled code
+2017-04-19T21:35:23Z,discuss,"The patch gets rid of the explicit arrays creation for vararg parameters. So the decompiler output will change from
+String.format(""value: %d"", new Object[]{this.value});
+to
+String.format(""value: %d"", this.value);"
+2017-04-19T21:35:23Z,discuss,"""Vararg-ness"" is checked for methods known to the decompiler (e.g. in the same class). And also for any external classes available on the classpath (like e.g. String.format()).
+I.e. for better results external libraries should be added to the decompiler classpath."
+2017-04-20T11:45:04Z,discuss,"Checking the classpath is super cool!
+However the whole classpath seems to be too dangerous, maybe add some filters like ""sun."", ""java.""?"
+2017-04-20T12:06:35Z,discuss,"Pre-defined filters won't cut it.
+Imagine I'm decompiling a class that uses some ""vararg-heavy"" library. It would be really great if the calls to the library classes were formatted nicely."
+2017-04-20T12:06:35Z,discuss,"A better solution would be to use a separate ClassLoader, independent from the decompiler own classpath.
+And when decompiling a class (in IDEA) you'd configure the ClassLoader with the library jar the class belongs to as well as all its dependencies. This will give the best ""coverage"" for vararg detection."
+2017-04-20T12:06:35Z,discuss,I don't have much experience with implementing custom isolated ClassLoaders though.
+2017-04-20T12:06:35Z,discuss,"What's the ""danger"" of checking the whole classpath? Picking the wrong version of a class and mis-detecting the vararg?"
+2017-04-20T12:23:38Z,discuss,"There's ""-e"" option already which allows to specify a library which will not be decompiled but used for reference. This option is not used inside IDEA, but we could fix it."
+2017-04-20T12:39:47Z,discuss,"Looks like exactly what is needed here.
+I will check how to access the classes of that library in the decompiler and re-wire classpath checking to use that approach."
+2017-04-20T12:50:05Z,discuss,the downside is that it needs to read basic info for all classes from that lib :(
+2017-04-20T12:55:12Z,discuss,"So it does run them through a (limited) decompilation?
+It could still be faster than using reflection over big classpath. But needs to be checked, of course."
+2017-04-20T12:55:12Z,discuss,"And I hope it supports multiple libs? (via several ""-e"" on the command line?)"
+2017-04-20T13:02:59Z,discuss,"On the other hand rt.jar is on the classpath ""for free"". But decompiler will have to do a lot of work when processing it via ""-e"".
+Do you know by the way if ""-e"" library is loaded class-by-class on demand?"
+2017-04-20T21:14:31Z,discuss,"Unfortunately libraries specified with ""-e"" option are all scanned during decompiler startup.
+So adding something like -e=rt.jar will increase decompiler start time significantly."
+2017-04-21T10:04:22Z,discuss,"yes, loading rt.jar is not an option :(
+We may try to load class to the custom class loader with the Bootstrap class loader parent. This will allow fast jdk classes load and should not pollute the main class loader.
+Something like:
+Class cls = new ClassLoader(null) {}.loadClass(targetClass);
+What do you think?"
+2017-04-21T13:08:18Z,discuss,And what about 3rd party libraries? Say a class uses SLF4J vararg calls..
+2017-04-21T13:08:18Z,discuss,"By the way, how IDEA calls decompiler? Does it specify the whole jar file?
+I.e. when decompiling some class are other classes from the same library ""known"" to the decompiler?"
+2017-04-21T13:12:34Z,discuss,"Right now a file is decompiled on it's own, no libs are provided.
+We can (and probably should) introduce a way to provide the class information from the IDEA indexes, but let's not get it from the classpath."
+2017-04-21T14:07:53Z,discuss,"So if I understood it right, for now I should just change the classpath checking part to use bootstrap classloader parent?"
+2017-04-21T14:44:50Z,discuss,"Yes, please"
+2017-04-24T13:26:57Z,discuss,"fix is merged into master, thanks!"
+2017-04-18T20:16:52Z,commit,Avoid explicit array creation for vararg parameters,github.com/JetBrains/intellij-community/pull/562/commits/d8e50e8a250678c38d3acc7fa0f7f711c5317cb1
+2017-04-18T21:34:08Z,commit,Detect external vararg methods too (if available on the classpath),github.com/JetBrains/intellij-community/pull/562/commits/2a3be64c6e6a367f612692ef18e122939aa12990
+2017-04-19T20:19:45Z,commit,Fixed tests after rebasing to the latest master,github.com/JetBrains/intellij-community/pull/562/commits/5bd951094e159fbd49f622962f06da4ccabe1f81
+2017-04-21T19:35:03Z,commit,Use bootstrap classloader to only provide access to JRE classes,github.com/JetBrains/intellij-community/pull/562/commits/da122efe53ddaeaf7cdbaf35e954e1d0026f6384

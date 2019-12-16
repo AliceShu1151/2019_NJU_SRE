@@ -1,0 +1,9 @@
+175,IDEA-124294 remove the extra call to scheduleImport
+2014-04-22T17:43:36Z,discuss,Fix for http://youtrack.jetbrains.com/issue/IDEA-124294
+2014-07-04T11:33:36Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-07-05T13:08:06Z,discuss,Yes I already submitted the contributor license agreement some years ago
+2014-07-17T09:00:25Z,discuss,"xfournet Unfortunately we can't find the agreement from you. I'm pretty sure that you did sent it (and we simply lost is somehow), because I remember you contributing to our issue tracker and repository for quite a long time, but to honour all formalities, could you please resend the agreement. Sorry for inconvenience.
+Agreement is fine, sorry for the inconvenience."
+2014-12-15T13:36:44Z,discuss,This patch is still needed with IDEA 14
+2014-12-23T10:03:52Z,discuss,The fix was applied manually. Thanks for the contribution.
+2014-04-22T17:42:38Z,commit,IDEA-124294 remove the extra call to scheduleImport,github.com/JetBrains/intellij-community/pull/175/commits/8595199851076711d92af12f449d1d3b35209fac

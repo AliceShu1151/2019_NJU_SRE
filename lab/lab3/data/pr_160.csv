@@ -1,0 +1,5 @@
+160,IDEA-90069 Keymap: allow resetting the changed key mapping to default.
+2014-03-23T17:40:35Z,discuss,"In my case such behavior was added to popup menu. Need to add ""del""
+keypress behavior."
+2014-03-23T17:40:35Z,discuss,
+2014-03-23T17:25:50Z,commit,Add ability to reset shortcuts and abbreviation from parent keymap (R¡­,github.com/JetBrains/intellij-community/pull/160/commits/16e7dd75c985497586de3d7b1459b42ece88fb76

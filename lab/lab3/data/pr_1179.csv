@@ -1,0 +1,8 @@
+1179,Check for settings file when looking for location
+2019-07-23T22:23:43Z,discuss,... in Gradle errors.
+2019-07-23T22:23:43Z,discuss,We currently have these patterns for Gradle errors with locations:
+2019-07-23T22:23:43Z,discuss,"Build file '(.)' line: ([\d]+)
+Build file '(.)'"
+2019-07-23T22:23:43Z,discuss,"But this type of messages can also be generated with Settings files and
+thus those patterns need to be updated to also consider that."
+2019-07-17T22:34:56Z,commit,Check for settings file when looking for location,github.com/JetBrains/intellij-community/pull/1179/commits/d635acfa46b576287ae05f5402da60574b54bfdf

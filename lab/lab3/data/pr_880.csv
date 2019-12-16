@@ -1,0 +1,5 @@
+880,Decompiler updates regarding Kotlin - 2
+2018-10-03T15:34:23Z,discuss,Points addressed:
+2018-10-04T10:34:45Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-10-03T15:19:32Z,commit,Preventing duplicate field access,github.com/JetBrains/intellij-community/pull/880/commits/b1e5504d0b51b7aab089934d65de54fce40fec7c
+2018-10-03T15:21:01Z,commit,Handling some cases of obfuscated exception ranges,github.com/JetBrains/intellij-community/pull/880/commits/cb3b67f8b94d211f17791126d97ad3d28ae4f693

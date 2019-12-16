@@ -1,0 +1,8 @@
+1141,Fix the variable name to not conflict with the implicit setter
+2019-05-20T06:33:42Z,discuss,"Otherwise there is a following error caused by the methods having
+the same signature."
+2019-05-20T06:33:42Z,discuss,"Platform declaration clash: The following declarations have the same JVM signature (setPluginDescriptor(Lcom/intellij/openapi/extensions/PluginDescriptor;)V):
+private final fun (<set-?>: PluginDescriptor?): Unit defined in com.intellij.openapi.util.registry.RegistryKeyBean
+@transient public open fun setPluginDescriptor(pluginDescriptor: PluginDescriptor?): Unit defined in com.intellij.openapi.util.registry.RegistryKeyBean"
+2019-05-31T02:37:21Z,discuss,@develar Any update on this issue?
+2019-05-20T06:30:27Z,commit,Fix the variable name to not conflict with the implicit setter,github.com/JetBrains/intellij-community/pull/1141/commits/4d7fbf21a14e499204381922f98c5260b691f17c

@@ -1,0 +1,4 @@
+1025,"IDEA-195932 enable ""Check connection"" for ""No proxy"""
+2019-01-08T13:20:16Z,discuss,Solves https://youtrack.jetbrains.com/issue/IDEA-195932
+2019-01-08T13:20:16Z,discuss,"Currently, ""Check connection"" is disabled for ""No proxy"", which doesn't make sense."
+2019-01-08T13:19:22Z,commit,"IDEA-195932 enable ""Check connection"" for ""No proxy""",github.com/JetBrains/intellij-community/pull/1025/commits/7f3f6e1f28c2b0b9035485ee360dad4710a71318

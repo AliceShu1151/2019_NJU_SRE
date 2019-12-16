@@ -1,0 +1,8 @@
+832,Switch JavaHelp license type to match bundled version
+2018-07-18T03:18:54Z,discuss,"License text is from:
+javaee/javahelp@3ca862d"
+2018-07-18T03:18:54Z,discuss,"We ""Mavenized"" this library in the recent merge, and we're now
+using javax.help:javahelp:jar:2.0.02."
+2018-07-18T03:19:06Z,discuss,@yole?
+2018-07-18T09:28:43Z,discuss,"Merged manually, thank you for the contribution. I've also corrected information about that library in 'Third-party Software Used by IntelliJ IDEA' list (it's shown when you click on 'powered by open source software' link in About popup."
+2018-07-17T22:15:08Z,commit,Switch JavaHelp license type to match bundled version,github.com/JetBrains/intellij-community/pull/832/commits/b9abe3c4e780708e052f5d9a2531ad19f00edd67

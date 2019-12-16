@@ -1,0 +1,6 @@
+42,Make possible to use AddSupportForSingleFrameworkDialog as a standalone dialog
+2013-03-06T16:22:38Z,discuss,"
+No description provided.
+"
+2013-03-12T14:54:33Z,discuss,The patch was integrated.
+2013-03-06T16:11:01Z,commit,Add ability to use AddSupportForSingleFrameworkDialog not only from p¡­,github.com/JetBrains/intellij-community/pull/42/commits/37cae8d0fd447d298271fc55cbce91029aa6abb3

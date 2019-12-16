@@ -1,0 +1,6 @@
+520,IDEA-151925: IntelliJ should be aware that a custom sourceSet contains Test sources for production code
+2017-02-23T20:31:08Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-151925
+2017-08-08T12:34:19Z,discuss,"Thanks for your time working on the PR but I have to reject it for now (see the details in the above comment).
+I've added resolving of the 'test' IDEA module for custom source set based on the idea.module.testSourceDirs API. The change will be available in 2017.2.3, please check if it will work for you."
+2016-12-19T21:54:05Z,commit,IDEA-151925: IntelliJ should be aware that a custom sourceSet contain¡­,github.com/JetBrains/intellij-community/pull/520/commits/1d15b51a96ce5c7c2191500340a2b2fa2712b7a7
+2017-07-23T07:37:55Z,commit,Merge branch 'master' into IDEA-151925,github.com/JetBrains/intellij-community/pull/520/commits/48f2af9367ff48ffe77d2b3ff9d7ccdd80e732ab

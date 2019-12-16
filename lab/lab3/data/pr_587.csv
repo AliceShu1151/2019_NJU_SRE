@@ -1,0 +1,4 @@
+587,Introduce HighlighterLayer.WEAK_WARNING
+2017-06-08T14:24:54Z,discuss,"Otherwise weak warnings are at the same layer as semantic highlighting,
+that provides strange effects like KT-18212"
+2017-06-08T13:58:57Z,commit,Introduce HighlighterLayer.WEAK_WARNING,github.com/JetBrains/intellij-community/pull/587/commits/6449a3f0444a1f2ffc0a90f15c6d879d77caa07a

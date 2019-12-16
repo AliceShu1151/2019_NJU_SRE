@@ -1,0 +1,5 @@
+22,IDEA-35950  Generate ant build adds generated file to Ant Build window
+2012-09-23T23:40:40Z,discuss,"http://youtrack.jetbrains.com/issue/IDEA-35950
+IDEA-35950  Generate ant build dialog could have an option to add generated file to project build files list (in Ant Build window)"
+2012-09-23T23:40:40Z,discuss,This does mean adding a dependency on the ant module.
+2012-09-23T23:37:20Z,commit,Generate ant build adds generated file to project build files list (i¡­,github.com/JetBrains/intellij-community/pull/22/commits/2604961baeefe56cfb9b997817c0f635f2f87b93

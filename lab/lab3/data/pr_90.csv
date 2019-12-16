@@ -1,0 +1,7 @@
+90,IDEA-105361 - Subversion: Compare action doesn't work for revisions in History after path rename
+2013-08-21T09:11:45Z,discuss,"Not sure if this is right, but I have been using it for some time and it seems to work ok."
+2013-08-21T09:11:45Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-105361
+2013-08-30T09:10:15Z,discuss,"In general your fix make sense for this particular case, but this method from SvnUtil is also used from other places."
+2013-08-30T09:10:15Z,discuss,Please see fix that was actually applied - 165ccf7.
+2013-08-30T11:43:33Z,discuss,Closing pull request because a different fix for this problem was applied.
+2013-08-21T09:07:07Z,commit,IDEA-105361 svn compare fix,github.com/JetBrains/intellij-community/pull/90/commits/4ef90937617c7e443fcc0eca33b78058ed8f210a

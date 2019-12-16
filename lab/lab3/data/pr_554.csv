@@ -1,0 +1,18 @@
+554,Added VC notification
+2017-04-17T15:01:49Z,discuss,"We have several actions that auto sync remote sources locally, I am guessing similar to AutoSVN updater. For this we inherit 'AbstractCommonUpdateAction'. Unfortunately we need a little bit more control of the action that 'AbstractCommonUpdateAction' offers, so we added some extensions. The other option would be not to inherit 'AbstractCommonUpdateAction' and instead copy the code. We'd really like to avoid doing this as 'AbstractCommonUpdateAction' implementation handles some very esoteric low level details and we'd like to ensure we receive any updates/bugfixes to it."
+2017-04-17T15:01:49Z,discuss,"CommitChangeListDialog:
+We need to be able to pass a parameter to CheckinEnvironment depending on the CommitExecutor. There is currently no way to do this cleanly. Passing the executor(not null) allows CheckinHandler to pass in a parameter to CheckinEnvironment"
+2017-07-19T17:02:24Z,discuss,"@klikh
+We're going to be withdrawing this request as we decided to implement our own action fully rather than inheriting from AbstractCommonUpdateAction so we can have better control."
+2017-07-19T17:02:24Z,discuss,There is a fairly serious 'performance leak' in showing 'UpdateInfoTree' when a large number of files is involved.  When expanded each 'FileTreeNode' registers as a root in 'VirtualFilePointerManager'. This causes VirtualFilePointerManager to traverse a large number of paths for every VFS update. I've seen this cause UI freezes of up to 4 minutes with a large change (over 8k files) followed by a large VFS update.
+2017-07-19T17:05:56Z,discuss,@klikh I'd still like 8f218e6 merged if possible.  It allows to the 'CheckinHandlerFactory' to pass extra parameters to the CheckinEnvironment via 'additionalDataConsumer' depending on the executor chosen.
+2017-07-19T17:05:56Z,discuss,"For example, right now to handle 'CommitAndPush' you rely on an essentially global variable (myCheckinEnvironment.setNextCommitIsPushed(true)). I think it would be cleaner to pass it as a parameter to the CheckinEnvironment."
+2017-07-20T14:40:30Z,discuss,@fitermay 8f218e6 has already been applied as 9e49ea2
+2017-07-20T14:40:30Z,discuss,"We'll check the performance issue in UpdateInfoTree, thanks!"
+2017-07-20T14:40:30Z,discuss,"So, you don't need the adjustments needed for Update Project to be silent and modal anymore?"
+2017-07-20T23:01:16Z,discuss,"Yes, I think it's better to roll our own implementation from scratch rather than inheriting from AbstractCommonUpdateAction. This will avoid complicating your codebase and will let us customize as we need. We should be able to work with changes already merged. Thanks so much for your help!"
+2017-07-20T23:02:08Z,discuss,@da1z Could you please close this PR?
+2017-04-12T20:13:10Z,commit,Fixed VcsContextWrapper.getSelectedFilePathsStream returning duplicates,github.com/JetBrains/intellij-community/pull/554/commits/20db7e2ad6feb2684658dbed8319dfbd91f9b9f9
+2017-04-12T20:16:54Z,commit,Fixed race Condition in UpdateRequestsQueue,github.com/JetBrains/intellij-community/pull/554/commits/002c3f30fbdaa0648b90d77cc579277dbbc8cfe1
+2017-04-12T20:36:27Z,commit,Allow update action to override update completion notifications and t¡­,github.com/JetBrains/intellij-community/pull/554/commits/71dd73ab3e7544d021850a8bb62cf02e00b07732
+2017-04-12T20:55:18Z,commit,Pass executor parameter to checkinhandler. Necessary for checkinHandl¡­,github.com/JetBrains/intellij-community/pull/554/commits/8f218e64e1e6770419f76b5e6e78a3a0aad171d8

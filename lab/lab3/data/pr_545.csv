@@ -1,0 +1,3 @@
+545,Change return type of PydevConsoleRunnerFactory
+2017-04-12T18:46:17Z,discuss,Changed return type to PydevConsoleRunner to add ability to extend this factory with returning your own PydevConsoleRunner that just implements the interface but not extends PydevConsoleRunnerImpl.
+2017-04-12T18:42:13Z,commit,Change return type of PydevConsoleRunnerFactory to PydevConsoleRunner¡­,github.com/JetBrains/intellij-community/pull/545/commits/a85d0ad03a869d6c42fc5f74bcba4bc7e2fab8a0

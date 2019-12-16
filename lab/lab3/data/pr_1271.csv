@@ -1,0 +1,251 @@
+1271,"193.5233:   Use svn plugin, default changelist: updating .        Update time is too long"
+2019-10-29T09:54:55Z,commit,[change-reminder] Wrap Collection<FilePath> used as the result of cal¡­,github.com/JetBrains/intellij-community/pull/1271/commits/a89f1f9b824a187eed85b85066d4d7238d280158
+2019-10-29T10:01:15Z,commit,[change-reminder] Don't send calculation time for every prediction,github.com/JetBrains/intellij-community/pull/1271/commits/85a2c071e2496b404d15e6231e76d82cd5dea812
+2019-10-29T10:54:31Z,commit,[change-reminder] IDEA-222454: Cache last prediction,github.com/JetBrains/intellij-community/pull/1271/commits/ae6da72a441c72ad643c9c6744bfe17ce7794c94
+2019-10-29T14:26:29Z,commit,[change-reminder] IDEA-216369: Predict VirtualFile instead of FilePat¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b22a9329f819ad9a5481348839fb3b3784d57c3a
+2019-10-31T14:07:06Z,commit,[change-reminder] Don't request calculation few times for same changes,github.com/JetBrains/intellij-community/pull/1271/commits/e8e46c6c12522161a30ef532b500f907f7dc6bf4
+2019-11-01T07:27:45Z,commit,[change-reminder] Convert PredictionResult to PredictionData which al¡­,github.com/JetBrains/intellij-community/pull/1271/commits/ced1f2555e5e044134a8bdfb13ee26d73d67d362
+2019-11-01T10:25:13Z,commit,[change-reminder] FUS: add statistics about predictions quality,github.com/JetBrains/intellij-community/pull/1271/commits/38f522c5cdd735f3990b5872ba9cefc62d240a38
+2019-11-01T10:49:48Z,commit,[change-reminder] FUS: collect data about prediction before commit,github.com/JetBrains/intellij-community/pull/1271/commits/8d71fd71081d9044be9fc35b5655cb2960acd82d
+2019-11-04T12:40:31Z,commit,IDEA-CR-54759: Avoid showing Settings dialog in semi-disposed state w¡­,github.com/JetBrains/intellij-community/pull/1271/commits/c86e5f45038013ce32c357e6745fc1b2ee24078f
+2019-11-05T10:32:01Z,commit,[change-reminder] FUS: update collector's version to 2,github.com/JetBrains/intellij-community/pull/1271/commits/e300866e6c8f4c65a0c95b3cbe8ecc59da343e8d
+2019-11-05T17:27:52Z,commit,OC-19059 AppCode: Unfold all warning messages on build finish when no¡­,github.com/JetBrains/intellij-community/pull/1271/commits/bd8d7513d3e74f37e8d7a75125d8a888f0af19c9
+2019-11-06T11:36:12Z,commit,[change-reminder] Use PredictionData as userObject in ChangeReminderB¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d5a3a3844d59c6e416a978783d831283cb33bac4
+2019-11-06T11:49:25Z,commit,[change-reminder] FUS: add statistic about ChangeReminder node expansion,github.com/JetBrains/intellij-community/pull/1271/commits/4dc6785753e181f96d45b3bd1b28afeb8084ecd4
+2019-11-07T17:54:04Z,commit,drop PluginPublishingSpec,github.com/JetBrains/intellij-community/pull/1271/commits/8aec2511f8b0dadc101552fffbc2104c4205382b
+2019-11-07T19:53:32Z,commit,IDEA-CR-55010: update bundled Kotlin plugin to `1.3.60-eap-143-IJ2019¡­,github.com/JetBrains/intellij-community/pull/1271/commits/adf6e4481e5660fc503eee9136b55db3335efb2e
+2019-11-07T22:08:38Z,commit,make buildAllCompatiblePlugins=true by default,github.com/JetBrains/intellij-community/pull/1271/commits/9ab1f64042e600e23dcc494fd77639fd04ccea21
+2019-11-07T22:15:21Z,commit,make scrambleMainJar=true by default,github.com/JetBrains/intellij-community/pull/1271/commits/8a71fea807f4fe6d1e054a49dc6ea1873abb25c6
+2019-11-08T16:19:32Z,commit,"IDEA-CR-54759: Cancel all modified configurables, not just the curren¡­",github.com/JetBrains/intellij-community/pull/1271/commits/9e4b0bce889d240d8e2e486679e51cd5e60524f7
+2019-11-08T17:09:37Z,commit,mark WideSelectionTreeUI deprecated,github.com/JetBrains/intellij-community/pull/1271/commits/3624f8db80553bf46fd117c7a19edc4e3404cdba
+2019-11-11T10:49:40Z,commit,IDEA-CR-55010: update bundled Kotlin lib names cleanups + cache-redir¡­,github.com/JetBrains/intellij-community/pull/1271/commits/e71505bcfe190089b251e92f118b9fe9976a3278
+2019-11-11T11:07:14Z,commit,"IDEA-226608 ""ReSharper (macOS)"" keymap is shown on Windows",github.com/JetBrains/intellij-community/pull/1271/commits/b612a6aa20ef5daeb819061e6069132e81b2f35e
+2019-11-11T13:11:31Z,commit,IDEA-CR-55010: update bundled Kotlin: exclude some exclusions in `kot¡­,github.com/JetBrains/intellij-community/pull/1271/commits/64eb1fc8505064e0aebeb79846c1c647b4e54322
+2019-11-11T15:36:11Z,commit,IDEA-CR-55049: html embedded content folding (WEB-12164),github.com/JetBrains/intellij-community/pull/1271/commits/ec3d7d3ef2cedc9a42ba15b196a1a2a612de894d
+2019-11-11T16:36:21Z,commit,IDEA-CR-55057: customize VCS tw name,github.com/JetBrains/intellij-community/pull/1271/commits/ea4b8c8b7eac0bd28e238fe65ab1d55fa20a2b45
+2019-11-11T17:00:24Z,commit,"fix ""Visual Studio"" keymap plugin id",github.com/JetBrains/intellij-community/pull/1271/commits/db7fe8590dea99f0a0713148035035c05ab4d087
+2019-10-31T12:53:44Z,commit,IDEA-CR-54501 Better test logging,github.com/JetBrains/intellij-community/pull/1271/commits/06246d2d2ca949a81e43df9da260d615aa33b127
+2019-10-31T12:58:22Z,commit,IDEA-CR-54501 If method is declared several times in one file then re¡­,github.com/JetBrains/intellij-community/pull/1271/commits/20e6e63e292e38ff992b7aeaf6e52b65ffb3ff53
+2019-11-06T12:55:53Z,commit,IDEA-CR-54501 Compare files not by path but by PsiFile,github.com/JetBrains/intellij-community/pull/1271/commits/47088d66db6424313c4d8af305de5fe026583772
+2019-11-08T20:35:55Z,commit,IDEA-CR-55024: java inference: ease assertion for lambdas in non-gene¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b8b3954692281b41c88a667e5748071671d22448
+2019-11-11T14:44:25Z,commit,IDEA-CR-55045: [platform] using @argfiles for classpath shortening in¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b2ca5ba3b0196c195d635024f25ce6a4f44bc5ae
+2019-11-11T18:15:57Z,commit,Revert quickdoc on hover (too late to enable it by default now),github.com/JetBrains/intellij-community/pull/1271/commits/668dd5797fba1e4059a8caa3533709567a55092f
+2019-11-12T06:01:08Z,commit,Updating versions of project dependencies: secondJreBuild->u222b1626.3,github.com/JetBrains/intellij-community/pull/1271/commits/bbd689e6d116d828a8a2132a6bf3a7fe26accbd7
+2019-11-12T06:01:31Z,commit,ui: use default product version suffix for IDEA,github.com/JetBrains/intellij-community/pull/1271/commits/3340e6c6d47587a8a59afff89a697090cab363c5
+2019-11-01T07:30:17Z,commit,IDEA-CR-54586: IDEA-224228 Refactor dialog appears when trying to ope¡­,github.com/JetBrains/intellij-community/pull/1271/commits/c8c29cd65a345102051b484cf94239568597f2d9
+2019-11-04T13:24:08Z,commit,Don't remove plugin from list of loaded plugins when disabling it (ID¡­,github.com/JetBrains/intellij-community/pull/1271/commits/73672d0f191d0d416d01ee64fa1ae66893fe68f0
+2019-11-04T13:48:30Z,commit,"Always notify listeners when installing dynamic plugins, don't depend¡­",github.com/JetBrains/intellij-community/pull/1271/commits/5d900a8f97257fdb3c3fda7d486a9e340351b6a9
+2019-11-08T16:52:38Z,commit,Don't change current theme when updating theme plugin unrelated to cu¡­,github.com/JetBrains/intellij-community/pull/1271/commits/75b9cf2f496a0e590325ebe5225d48a347958187
+2019-11-08T16:58:29Z,commit,Don't duplicate dynamic plugin in the list when enabling it,github.com/JetBrains/intellij-community/pull/1271/commits/ee3896d932dd151b1b43aa973ce888e8dc8391d5
+2019-11-12T14:53:38Z,commit,IDEA-CR-55129: [kubernetes] IDEA-226647 Helm. Dependencies: chart and¡­,github.com/JetBrains/intellij-community/pull/1271/commits/0ec73069d382065c9389faf0965b03c7775860d7
+2019-10-25T18:00:07Z,commit,IDEA-CR-54723: IDEA-222801 MacOS: Opening a recent project from fulls¡­,github.com/JetBrains/intellij-community/pull/1271/commits/3f59b309fe36c4bc1c57e46371ff3fc7db325ce2
+2019-10-29T15:23:12Z,commit,IDEA-CR-54723: IDEA-225710 NPE on IDE opening in MacMainFrameDecorato¡­,github.com/JetBrains/intellij-community/pull/1271/commits/a7284a482b02274864859c0660dda79e84b0bd45
+2019-11-05T12:19:34Z,commit,IDEA-CR-54723: Conceal the methods,github.com/JetBrains/intellij-community/pull/1271/commits/241d91004d1175b6a21c236d947e016bf694d53e
+2019-11-11T12:33:44Z,commit,IDEA-CR-55035: IDEA-226539: Only one file is opened after drag-and-dr¡­,github.com/JetBrains/intellij-community/pull/1271/commits/048609f30889cdadcb659f29ec145d136a81fcf5
+2019-11-11T14:37:28Z,commit,CPP-17970 - allow write access for backward compatibility,github.com/JetBrains/intellij-community/pull/1271/commits/a97a69eed6861c021a0e4c2d888aca81313970fa
+2019-11-11T12:12:50Z,commit,IDEA-CR-54465 Fix JBTreeTable scroll is not synchronous on Windows,github.com/JetBrains/intellij-community/pull/1271/commits/8887861f3c7a234cda93d47b479de20b75f8747a
+2019-11-12T16:15:01Z,commit,IDEA-CR-54965 introduce JetBrainsProductProperties,github.com/JetBrains/intellij-community/pull/1271/commits/f1f1c4f3bdef2a5f9277b49574551075a93e7c9d
+2019-11-12T17:02:06Z,commit,"Debugger: fix the ""Pause"" button status.",github.com/JetBrains/intellij-community/pull/1271/commits/bae07e2e1c8e9b54634258650d5c8f2539442f82
+2019-11-12T18:02:52Z,commit,tweak current scheme management when adding/removing EP,github.com/JetBrains/intellij-community/pull/1271/commits/6d0c62fc0ab42567bf462cf1b6458c0837f77e76
+2019-11-13T08:42:54Z,commit,tweak current scheme management when adding/removing EP 2,github.com/JetBrains/intellij-community/pull/1271/commits/5e4834272b239e668b97e8daf0f13f9199ce432c
+2019-11-13T09:47:38Z,commit,IDEA-CR-54465 IDEA-226746 Selection is not synced between tree and ta¡­,github.com/JetBrains/intellij-community/pull/1271/commits/65e0dec7cc39e00a61d33a05a566e6e2a160e132
+2019-11-14T12:37:48Z,commit,RUBY-25323 Export Settings doesn't work,github.com/JetBrains/intellij-community/pull/1271/commits/c7f7a684e5f405aa8af8b5915982b693ced7c03d
+2019-11-14T13:10:05Z,commit,IDEA-CR-55259 Removed RubyMine obsolete hack,github.com/JetBrains/intellij-community/pull/1271/commits/f0ae3500e7bce45c2e0cc2729cf54ecd179cb0d9
+2019-11-06T12:47:22Z,commit,PY-38704 Backport attach to process updates from PyDev (IDEA-CR-54791),github.com/JetBrains/intellij-community/pull/1271/commits/a7dcff1c940fb542cc0a82a9bcfc0d46eed98674
+2019-11-13T15:11:22Z,commit,Fix Windows platform detection for IronPython (IDEA-CR-55238),github.com/JetBrains/intellij-community/pull/1271/commits/3bd845a6793b094f5f7fb68334109512dffaa306
+2019-11-13T19:32:59Z,commit,IDEA-CR-54088 replace `android-capable` with `java-capable`,github.com/JetBrains/intellij-community/pull/1271/commits/281db3e194674eed3128cc82b14172b4578eb878
+2019-11-14T10:59:13Z,commit,IDEA-225181 fixed missing Pin button tooltip,github.com/JetBrains/intellij-community/pull/1271/commits/2f91bb2c651ddf68c291af0d0bd2297f6aaf0465
+2019-11-15T06:45:25Z,commit,IDEA 2019.3 release licensing,github.com/JetBrains/intellij-community/pull/1271/commits/f793652a8b098075f2d4e2e86cbafb942a3bdd33
+2019-10-28T08:30:29Z,commit,github: stop disable directory field in clone dialog to avoid problem¡­,github.com/JetBrains/intellij-community/pull/1271/commits/39b56e0bea072fd2aa0136a82496bac8264d6e79
+2019-10-29T17:30:56Z,commit,IDEA-CR-55397: FUS: record java find usages as counter collector (FUS¡­,github.com/JetBrains/intellij-community/pull/1271/commits/13e2d31171abfb818e3018c94885b4bdbe11bf13
+2019-10-30T13:37:36Z,commit,Fix IDEA-225607.,github.com/JetBrains/intellij-community/pull/1271/commits/87276877c55dba2bcd709b4063d37d622850ec5d
+2019-10-30T16:27:32Z,commit,IDEA-CR-54747: PY-37770 Add tox config for running debugger Python tests,github.com/JetBrains/intellij-community/pull/1271/commits/65c09560823032f1d0c951f82d8cffebb5c2ce41
+2019-11-05T15:09:51Z,commit,PY-38490 Fix debugging when special symbols are in file path (IDEA-CR¡­,github.com/JetBrains/intellij-community/pull/1271/commits/f8ff148b6959a9f9d36fdbd4992683ddfb9908d7
+2019-11-12T13:39:39Z,commit,IDEA-CR-55128: IDEA-226370: Expand folded regions with updated placeh¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d71c443ec8e85ab66d5b89ae7df26bcce9faf02a
+2019-11-12T14:19:04Z,commit,IDEA-CR-55344: IDEA-225436: additional checks for operations with memory,github.com/JetBrains/intellij-community/pull/1271/commits/bd3b46e578b1c73e22d1dc720becdfde9a6ac60e
+2019-11-14T10:05:39Z,commit,IDEA-CR-55272 Add flavour parameter for Markdown parsing,github.com/JetBrains/intellij-community/pull/1271/commits/277000a3c6cf4c988e58c45b7ba08b9dd319a4a1
+2019-11-14T14:28:20Z,commit,vcs: fix an empty box if there are no actions in account submenu,github.com/JetBrains/intellij-community/pull/1271/commits/ded95cbdbda9f51d3a5531e10b3a45fcd5b949a8
+2019-11-15T09:44:40Z,commit,IDEA-CR-55344: IDEA-225436: fixed text length mismatch,github.com/JetBrains/intellij-community/pull/1271/commits/e0d566c669664bf509cce538ce7d8f3220279785
+2019-11-15T16:10:55Z,commit,IDEA-CR-55381: IDEA-225233 NPE on 'Show error info' after navigation ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/9877c2da42f08bee31a418dcc48e4927c85bce23
+2019-11-18T11:39:52Z,commit,IDEA 2019.3 art work,github.com/JetBrains/intellij-community/pull/1271/commits/518edffb4bc6f5e00d32eb8be90f8761d5b4748d
+2019-11-18T13:36:47Z,commit,deprecate ReadOnlyASTNode,github.com/JetBrains/intellij-community/pull/1271/commits/3f5c76d973fcc2fe9a340d50ff8653191bdc56fd
+2019-11-18T17:02:37Z,commit,IDEA-CR-55451: Java-specific dependencies are actually IntelliJ IDEA ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/1a0d0c55d9a920631e2cbc4f38edbf9be95df3e3
+2019-08-11T15:40:08Z,commit,"IDEA-CR-55496: PY-34019 Turn generator3.py into a package, move pycha¡­",github.com/JetBrains/intellij-community/pull/1271/commits/84e01d96918e677c081fa00d807c85311f253e85
+2019-08-11T17:22:33Z,commit,IDEA-CR-55496: PY-34019 Launch skeleton generator from its new package,github.com/JetBrains/intellij-community/pull/1271/commits/a43bb305b53f8f2bbd82310309ebbb6606ba1080
+2019-08-11T17:23:52Z,commit,"IDEA-CR-55496: PY-34019 Move bundled pyparsing to the dedicated ""_ven¡­",github.com/JetBrains/intellij-community/pull/1271/commits/e95a432a7ea11d4119c351fd23d0d29f426e3d3b
+2019-08-11T17:33:52Z,commit,IDEA-CR-55496: PY-34019 Rename __init__.py to core.py (separate commi¡­,github.com/JetBrains/intellij-community/pull/1271/commits/867a5b50e5756644cc703a2f4b487655124c09d7
+2019-08-11T18:24:57Z,commit,"IDEA-CR-55496: PY-34019 Add back __init__.py, extract __main__.py pac¡­",github.com/JetBrains/intellij-community/pull/1271/commits/7922c487d785c1a2509aa9170ebe0bbaa97cae0e
+2019-08-12T14:32:12Z,commit,IDEA-CR-55496: PY-34019 Initial implementation of single process skel¡­,github.com/JetBrains/intellij-community/pull/1271/commits/2ac351dfa11cd67ebb73b543cdd814f2d97e1ffb
+2019-08-12T16:23:26Z,commit,IDEA-CR-55496: PY-34019 Propagate progress indication from generator'¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b45ff598ad649c8040016bb79393e812bfff54d3
+2019-08-12T16:47:35Z,commit,IDEA-CR-55496: PY-34019 Better handling of generator messages on Java¡­,github.com/JetBrains/intellij-community/pull/1271/commits/a007a516fa59c5c5b7cdef553edc470cf995c5b6
+2019-08-12T17:02:32Z,commit,IDEA-CR-55496: PY-34019 Enable checks of existing SDK skeletons valid¡­,github.com/JetBrains/intellij-community/pull/1271/commits/23eeec2c2b1ce3ed249c445faaec8d475cdde8aa
+2019-08-12T18:46:11Z,commit,IDEA-CR-55496: PY-34019 Properly log messages from the generator as s¡­,github.com/JetBrains/intellij-community/pull/1271/commits/792eeebed5646b06d024c1a38553b9484247a1d4
+2019-08-12T19:01:01Z,commit,IDEA-CR-55496: PY-34019 Collapse user home in progress messages as we¡­,github.com/JetBrains/intellij-community/pull/1271/commits/e5155fc06c32199ca74f40492c48090fb0d2eec8
+2019-08-12T19:06:31Z,commit,IDEA-CR-55496: PY-34019 Move generator functions not directly related¡­,github.com/JetBrains/intellij-community/pull/1271/commits/43af22f8d5d40437c8b56c455c9f46201b2b7862
+2019-08-16T17:38:03Z,commit,IDEA-CR-55496: PY-34019 Rename SkeletonCachingTest to just SkeletonGe¡­,github.com/JetBrains/intellij-community/pull/1271/commits/c2853d18f6c02a6bb955021e87e76c6580d28084
+2019-08-16T18:13:52Z,commit,IDEA-CR-55496: PY-34019 Dump generator's stdout/stderr only on a test¡­,github.com/JetBrains/intellij-community/pull/1271/commits/8bd16f530428108eb1411684e572084fdbfc7c5b
+2019-08-16T18:40:15Z,commit,IDEA-CR-55496: PY-34019 Restore Python 2 compatibility for creation a¡­,github.com/JetBrains/intellij-community/pull/1271/commits/62f2278fa12c58afb79cba95abba1f41e0a7ba3f
+2019-08-16T18:42:05Z,commit,IDEA-CR-55496: PY-34019 Lower the default logging level in tests,github.com/JetBrains/intellij-community/pull/1271/commits/ce6f0c86606e74d04c5fde475abdec9cd956995c
+2019-08-29T14:39:27Z,commit,IDEA-CR-55496: PY-34019 Switch generator control messages (logs and p¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b12efe86627096017ad698097b3810435e7aad27
+2019-08-29T14:39:42Z,commit,IDEA-CR-55496: PY-34019 Test generation of skeletons for multiple mod¡­,github.com/JetBrains/intellij-community/pull/1271/commits/83fc38e85ec6401211cff2ead54582f84d0744e7
+2019-08-29T17:40:44Z,commit,IDEA-CR-55496: PY-34019 Add a decorator to reuse test data between tests,github.com/JetBrains/intellij-community/pull/1271/commits/fb9e15e1d2a524beca7b5ec3129326cf54160028
+2019-08-29T18:04:12Z,commit,IDEA-CR-55496: PY-34019 Report intermediate results during skeleton g¡­,github.com/JetBrains/intellij-community/pull/1271/commits/40382ac96535860829161f4962bdedb896133a58
+2019-08-30T18:25:52Z,commit,IDEA-CR-55496: PY-34019 Start implementing new builder-like SkeletonG¡­,github.com/JetBrains/intellij-community/pull/1271/commits/df0bd161295f73de755a58fa2336cb88c9fc0e96
+2019-08-30T19:09:35Z,commit,IDEA-CR-55496: PY-34019 Continue streamlining SkeletonGenerator API,github.com/JetBrains/intellij-community/pull/1271/commits/d91bbe86a7761399d5ee955f60ee84254326c477
+2019-09-01T19:26:45Z,commit,IDEA-CR-55496: PY-34019 Migrate GenerateBinaryStubsFix to the new API¡­,github.com/JetBrains/intellij-community/pull/1271/commits/9e3ea0d73c16a6fa34c004d4c73126bc3d692776
+2019-09-02T10:02:30Z,commit,IDEA-CR-55496: PY-34019 Remove now redundant generator mode allowing ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/02913f7beb7a0f5d11532b3f10d7e817440ea865
+2019-09-02T11:06:52Z,commit,IDEA-CR-55496: PY-34019 Remove now redundant generator mode for listi¡­,github.com/JetBrains/intellij-community/pull/1271/commits/506b98f23eb30f56ea878eaec59380e66541bdd6
+2019-09-02T11:30:39Z,commit,IDEA-CR-55496: PY-34019 Remove SkeletonGenerator and SkeletonRefreshe¡­,github.com/JetBrains/intellij-community/pull/1271/commits/6b4c1f251ca67a7d3bd4858c5ef4cd333b05235a
+2019-09-02T11:35:06Z,commit,IDEA-CR-55496: PY-34019 Remove methods for reading and storing .black¡­,github.com/JetBrains/intellij-community/pull/1271/commits/12a068f167ea5979e250d2fcc56d12339464d8db
+2019-09-02T12:49:33Z,commit,IDEA-CR-55496: PY-34019 Properly log the list of modules for which ge¡­,github.com/JetBrains/intellij-community/pull/1271/commits/32cf3c3627ad4f8131c8d505f39fc951764458cd
+2019-09-02T15:37:28Z,commit,IDEA-CR-55496: PY-34019 Add a fallback for runProcessWithLineOutputLi¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b14bf4ba169685f74622ea71c2f1a1aede705fdc
+2019-09-02T15:42:31Z,commit,IDEA-CR-55496: PY-34019 Slightly re-arrange and cleanup PySkeletonRef¡­,github.com/JetBrains/intellij-community/pull/1271/commits/0e4e3746ed4dcb2209d358027d39d5021ea6df40
+2019-09-02T17:53:48Z,commit,IDEA-CR-55496: PY-34019 Fix refreshing of skeletons after generation,github.com/JetBrains/intellij-community/pull/1271/commits/c47b06e0e6d40c4541c782bf02da188b06ed7282
+2019-09-02T18:45:53Z,commit,IDEA-CR-55496: PY-34019 Extract PySkeletonGenerator.Builder allowing ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d14e51e8ba1eb9f81c2172bb285126573dc17505
+2019-09-04T17:31:29Z,commit,IDEA-CR-55496: PY-34019 Start integrating new skeleton generator with¡­,github.com/JetBrains/intellij-community/pull/1271/commits/5fff75697f0badd8ad1797eaa9531b58c65339b3
+2019-09-04T18:15:18Z,commit,IDEA-CR-55496: PY-34019 Properly filter out all the sys.path roots th¡­,github.com/JetBrains/intellij-community/pull/1271/commits/44326b7ec1ae1cccd01d2e9f38da7af4698ab5b0
+2019-09-04T19:06:57Z,commit,IDEA-CR-55496: PY-34019 Forcibly add helpers dir in sys.path on gener¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d8e19405b9fbe782831c48085906458a66d8ef45
+2019-09-04T19:21:13Z,commit,"IDEA-CR-55496: PY-34019 Filter out only ""generator3"" and ""helpers"" di¡­",github.com/JetBrains/intellij-community/pull/1271/commits/c7c9013a6d8bebbc71440dc6c3bca027e19912ee
+2019-09-05T12:26:28Z,commit,IDEA-CR-55496: PY-34019 Remove now redundant generator3 mode where it¡­,github.com/JetBrains/intellij-community/pull/1271/commits/72d3750152655762b4d112b7ccbcf953e8c229ee
+2019-09-05T12:27:02Z,commit,IDEA-CR-55496: PY-34019 Add a missing explicit exit code,github.com/JetBrains/intellij-community/pull/1271/commits/effc552636b1d12e2098d90ff8576ccdc0e63575
+2019-09-05T12:32:38Z,commit,IDEA-CR-55496: PY-34019 Rename confusing anchor path,github.com/JetBrains/intellij-community/pull/1271/commits/8daff3e7fe29877330d0efaaab1265fce08fecf5
+2019-09-05T13:00:28Z,commit,IDEA-CR-55496: PY-34019 Prettify API of Builder allowing to pass extr¡­,github.com/JetBrains/intellij-community/pull/1271/commits/bf674d268345873595793a561ea239894cc8e7dc
+2019-09-05T13:15:58Z,commit,IDEA-CR-55496: PY-34019 Move all the environment initialization insid¡­,github.com/JetBrains/intellij-community/pull/1271/commits/cd79a0454c6cfb4b2135f39e346d0de106e90dd7
+2019-09-05T13:20:32Z,commit,IDEA-CR-55496: PY-34019 Reorder fields of PySkeletonGenerator for con¡­,github.com/JetBrains/intellij-community/pull/1271/commits/4bd41e3c1645a75860a1e06590b651905259ebcc
+2019-09-05T13:24:02Z,commit,IDEA-CR-55496: PY-34019 Remove awkward MINUTE constant from the gener¡­,github.com/JetBrains/intellij-community/pull/1271/commits/17203b4b80cca945ebaee26a52c8bfd0beccf3a3
+2019-09-05T14:53:59Z,commit,IDEA-CR-55496: PY-34019 Remove now redundant SkeletonVersionChecker a¡­,github.com/JetBrains/intellij-community/pull/1271/commits/4041941c18cb36ebd9cdbc8eb9d544bc4521f4a5
+2019-09-06T14:51:40Z,commit,IDEA-CR-55496: PY-34019 Set prebuilt skeletons mode only via command ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/99261699851ae399d7ac3d0f5cc443364153ea50
+2019-09-09T12:12:52Z,commit,IDEA-CR-55496: PY-34019 Add naive real-time indication of the generat¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d28b5699516ffa6bb11fcb910182c2b190d060c9
+2019-09-09T12:55:23Z,commit,IDEA-CR-55496: PY-34019 Turn LineWiseProcessOutputListener into a sta¡­,github.com/JetBrains/intellij-community/pull/1271/commits/76e6af1b1cb5e9949be701e50aa6b56f3188ceaf
+2019-09-09T17:33:15Z,commit,IDEA-CR-55496: PY-34019 Add javadoc for the updated PySkeletonGenerator,github.com/JetBrains/intellij-community/pull/1271/commits/80e879c0f1f1eb26fb7d730059588199e24828a1
+2019-09-09T17:36:48Z,commit,IDEA-CR-55496: PY-34019 Remove hardly useful methods for running the ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/395da3f4b8150a3909c155286d2dac555208886f
+2019-09-19T13:56:23Z,commit,IDEA-CR-55496: PY-34019 Fix numerous unresolved references after rebase,github.com/JetBrains/intellij-community/pull/1271/commits/e37674afbf74a501beae6330db16bbf1423fe5a7
+2019-09-19T14:29:43Z,commit,IDEA-CR-55496: PY-34019 Remove all duplicated constants and methods t¡­,github.com/JetBrains/intellij-community/pull/1271/commits/fa3ac1fb8155c46513670796aef470f2aecaa5a0
+2019-09-19T14:30:18Z,commit,IDEA-CR-55496: PY-34019 From PySkeletonHeader remove now unused const¡­,github.com/JetBrains/intellij-community/pull/1271/commits/386f6f2ca35ecc6db4656ab0596a4a06e435063a
+2019-09-20T19:12:04Z,commit,"IDEA-CR-55496: PY-34019 Better handling of test data directories, fai¡­",github.com/JetBrains/intellij-community/pull/1271/commits/75461f592c973596efdc09e7e01f1839ba0634c4
+2019-09-22T12:52:50Z,commit,IDEA-CR-55496: PY-34019 Support passing sdk skeletons state via JSON ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/958326f8e2c00c9f456465fb403c4d7bca5d1132
+2019-09-22T18:54:03Z,commit,IDEA-CR-55496: PY-34019 Updated failed skeletons according to the pas¡­,github.com/JetBrains/intellij-community/pull/1271/commits/9d880342407cac8339a73809ed2724be6e0e926b
+2019-09-23T09:52:21Z,commit,IDEA-CR-55496: PY-34019 Update skeletons for modified binaries detect¡­,github.com/JetBrains/intellij-community/pull/1271/commits/3f8388e08450be221cf39916951f1e824c29b6dd
+2019-09-23T14:29:27Z,commit,IDEA-CR-55496: Remove obsolete skeleton generation container caching ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/e38102778df09fa09270aedbaa8b8c68179357b3
+2019-09-26T11:57:13Z,commit,IDEA-CR-55496: PY-34019 Don't pass excess state for all skeletons in ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/cd565fca273c35d4360735d36f305022bff9434b
+2019-09-26T13:20:39Z,commit,IDEA-CR-55496: PY-34019 Split unwieldy SkeletonGenerationTest into se¡­,github.com/JetBrains/intellij-community/pull/1271/commits/1500fee0cc1b7d543256fa792edbc503b117db1e
+2019-09-26T15:11:29Z,commit,IDEA-CR-55496: PY-34019 Move test data around and remove redundant pr¡­,github.com/JetBrains/intellij-community/pull/1271/commits/3427707fd9d3823e25f5a6df77eac19e6d89d12a
+2019-09-26T15:23:57Z,commit,"IDEA-CR-55496: PY-34019 Rename state marker file to "".state.json""",github.com/JetBrains/intellij-community/pull/1271/commits/059deaee5be1aa6e1788fbf1b0257d3ea98b748d
+2019-09-27T15:47:34Z,commit,IDEA-CR-55496: PY-34019 Split reading/writing of skeletons state in t¡­,github.com/JetBrains/intellij-community/pull/1271/commits/90f8a1b2ca4f61a697e251e8c7ee8d57d05f78fe
+2019-09-30T12:09:27Z,commit,IDEA-CR-55496: PY-34019 Try to make skeleton generation for remote in¡­,github.com/JetBrains/intellij-community/pull/1271/commits/2f3ede0fe2abc195dd625f77e4859a6c1b74bb4a
+2019-10-16T19:47:11Z,commit,IDEA-CR-55496: PY-34019 Make sure that we populate .state.json for bu¡­,github.com/JetBrains/intellij-community/pull/1271/commits/5b34d5c753e105adfa4e0f1b790dced047ffb1bc
+2019-10-17T08:48:17Z,commit,IDEA-CR-55496: PY-34019 Save binary modification times for new skelet¡­,github.com/JetBrains/intellij-community/pull/1271/commits/24069f68519ff019166d6419bb4bf475ffe54f41
+2019-10-17T08:52:31Z,commit,"IDEA-CR-55496: PY-34019 Remove obsolete ""GENERATOR3_STANDALONE_MODE"" ¡­",github.com/JetBrains/intellij-community/pull/1271/commits/c526c0aefa2c357b4ba0694d68972497dbc5eba2
+2019-10-17T12:28:23Z,commit,IDEA-CR-55496: PY-37530 Don't pack skeletons.zip inside itself,github.com/JetBrains/intellij-community/pull/1271/commits/3663748595294ed2494b6b25814b84524344b6f4
+2019-10-18T13:09:14Z,commit,IDEA-CR-55496: PY-34019 Properly generate .state.json for up-to-date ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/8b8ff902cd7b28993d30a9afdc0a99c8885d5ba6
+2019-10-18T13:32:26Z,commit,IDEA-CR-55496: PY-34019 Test that we don't update version of already ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/db4cd4aa61a14e282115cc4e6b7c63f616ff9900
+2019-10-18T13:42:18Z,commit,IDEA-CR-55496: PY-34019 Simplify building .state.json for failing mod¡­,github.com/JetBrains/intellij-community/pull/1271/commits/7528bfd3e3a2b5e06f8d7ef366e53ddd541fbdda
+2019-10-18T15:28:13Z,commit,IDEA-CR-55496: PY-34019 Properly take into account versions of cached¡­,github.com/JetBrains/intellij-community/pull/1271/commits/7fff8288cff564789c36318d31836a8133ec3c4b
+2019-10-20T21:15:17Z,commit,IDEA-CR-55496: PY-34019 Don't remove .state.json file in cleanup phas¡­,github.com/JetBrains/intellij-community/pull/1271/commits/a23eb512c92f3b70d6bf9197773779ddf34cb6f5
+2019-10-20T21:28:27Z,commit,IDEA-CR-55496: PY-34019 Read skeleton state passed via stdin in a sin¡­,github.com/JetBrains/intellij-community/pull/1271/commits/0e338bc19edbdd9c3415bb706ca7ec028d55e322
+2019-10-21T13:57:48Z,commit,IDEA-CR-55281: annotations,github.com/JetBrains/intellij-community/pull/1271/commits/fef5b3f98c45b73bb066d7ef405a8974dedb7b5f
+2019-10-23T10:15:16Z,commit,IDEA-CR-55281: shorten editor tabs names,github.com/JetBrains/intellij-community/pull/1271/commits/0b2bec7293bb43d55655acb75080098c7be75531
+2019-10-26T15:15:15Z,commit,IDEA-CR-55496: PY-34019 Start implementing class-based generator API ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/4d3e2ceb3a0a0fc048189cce14d6002ea9345512
+2019-10-26T16:49:02Z,commit,IDEA-CR-55496: PY-34019 Continue refactoring to a class-based generator,github.com/JetBrains/intellij-community/pull/1271/commits/a29b5840212cb018d06545c54595d0d62072b8de
+2019-10-26T16:59:14Z,commit,IDEA-CR-55496: PY-34019 Type hint skeleton statuses and generation re¡­,github.com/JetBrains/intellij-community/pull/1271/commits/c9a80cd60c11b75a4ff1f1c8b011817180aaaa48
+2019-10-26T17:13:06Z,commit,IDEA-CR-55496: PY-34019 Type hint more utility functions,github.com/JetBrains/intellij-community/pull/1271/commits/d01fe41c89addcd0c3f08dbdbbad37070d841b42
+2019-10-26T17:28:49Z,commit,IDEA-CR-55496: PY-34019 Turn more top-level functions into methods of¡­,github.com/JetBrains/intellij-community/pull/1271/commits/fa1783416e1f89f0ef30ff3422fe877d0b33eed1
+2019-10-26T18:38:47Z,commit,IDEA-CR-55496: PY-34019 Start using the standard Python facilities fo¡­,github.com/JetBrains/intellij-community/pull/1271/commits/6a0197c8c28f1f0fd0c6148fb11a18166cb9273c
+2019-10-28T15:02:47Z,commit,IDEA-CR-55496: PY-34019 Hide some excess logging under TRACE level,github.com/JetBrains/intellij-community/pull/1271/commits/e18f24d0c2c5884daf3bd07ba8ece693d29aea9e
+2019-10-28T15:30:36Z,commit,IDEA-CR-55496: PY-34019 Better name for options related to writing/re¡­,github.com/JetBrains/intellij-community/pull/1271/commits/a33f0362d11b0df25427ab9527fb45c297b6b76e
+2019-10-28T16:13:06Z,commit,IDEA-CR-55496: PY-34019 Make sure that trailing slashes in paths don'¡­,github.com/JetBrains/intellij-community/pull/1271/commits/9a5577762d78945defd1c2bc250fec56df41fe86
+2019-10-28T17:58:30Z,commit,IDEA-CR-55496: PY-34019 Properly remove records for no longer existin¡­,github.com/JetBrains/intellij-community/pull/1271/commits/81d3f6e1d336927f9f0963ccc15cbae91420ec7a
+2019-10-28T18:09:54Z,commit,IDEA-CR-55496: PY-34019 Be more explicit about reading/writing .state¡­,github.com/JetBrains/intellij-community/pull/1271/commits/af734456d5539d5478c3980e5f8a0bff86e07998
+2019-10-28T18:18:13Z,commit,IDEA-CR-55496: PY-34019 Extract faulthandler initialization,github.com/JetBrains/intellij-community/pull/1271/commits/df2c3f8d359dd780f6dc763e9d6393f7a8ff0f1d
+2019-10-29T15:39:34Z,commit,"IDEA-CR-55496: PY-34019 Finally switch to standard ""argparse"" module ¡­",github.com/JetBrains/intellij-community/pull/1271/commits/cfd68560259c9ff74867830d286896258940c0ae
+2019-10-29T18:03:16Z,commit,"IDEA-CR-55496: PY-34019 Fix tests broken after ""-b"" option had been r¡­",github.com/JetBrains/intellij-community/pull/1271/commits/2817845b04e49b45a42d9dbb0783f615c4321e56
+2019-10-29T18:35:30Z,commit,"IDEA-CR-55496: PY-34019 Move tests on former ""builtins-only"" generati¡­",github.com/JetBrains/intellij-community/pull/1271/commits/c648d32d946359db7177776452ee14b36de36f30
+2019-10-29T18:47:03Z,commit,IDEA-CR-55496: PY-34019 Restore command-line flag to run generation o¡­,github.com/JetBrains/intellij-community/pull/1271/commits/1c8fce5c6c8ed3c5c8855999fb10cd7d4e786f53
+2019-10-29T18:54:17Z,commit,IDEA-CR-55496: PY-34019 Remove pointless parameter of check_generator¡­,github.com/JetBrains/intellij-community/pull/1271/commits/e5134238b79bfb466306590ac8dac00e8ce8ce91
+2019-10-30T09:07:21Z,commit,IDEA-CR-55496: PY-34019 Remove debug_mode flag altogether since it wa¡­,github.com/JetBrains/intellij-community/pull/1271/commits/5a9f6c2c702d29c8e293bca7e578bea4bd276508
+2019-10-30T15:16:16Z,commit,"IDEA-CR-55496: PY-34019 Remove usage of now absent ""-x"" option. It br¡­",github.com/JetBrains/intellij-community/pull/1271/commits/519f93b8723c0965fd6a8bcd9ac8c782b48c0ed7
+2019-10-30T15:23:27Z,commit,IDEA-CR-55496: PY-34019 Remove unused setter in the generator builder¡­,github.com/JetBrains/intellij-community/pull/1271/commits/1562a2b48fc8ccf58f15a730b149139df256780c
+2019-10-30T15:34:40Z,commit,IDEA-CR-55496: PY-34019 Write a line with .state.json in all interpre¡­,github.com/JetBrains/intellij-community/pull/1271/commits/613e3592e730a26edee91b47b88f38c4424169b6
+2019-10-31T14:14:36Z,commit,IDEA-CR-55496: PY-34019 Restore generator version in names of artifac¡­,github.com/JetBrains/intellij-community/pull/1271/commits/553c584d73f2f6b353cf1e30ab973eb30905181d
+2019-10-31T14:37:11Z,commit,IDEA-CR-55496: PY-34019 Update progress indicator messages for skelet¡­,github.com/JetBrains/intellij-community/pull/1271/commits/f1d9843e97884bcaa2ac86f04403ed8009eaf292
+2019-10-31T16:36:43Z,commit,IDEA-CR-55496: PY-34019 Read the current generator version directly f¡­,github.com/JetBrains/intellij-community/pull/1271/commits/f515e54d61bf12e118cec44e919429abee6137e9
+2019-11-01T12:20:42Z,commit,"IDEA-CR-55496: PY-34019 Use ""logging"" module API directly instead of ¡­",github.com/JetBrains/intellij-community/pull/1271/commits/9c25bc5ccf1d51e5e029364dada7b0ef09730613
+2019-11-05T13:09:17Z,commit,IDEA-CR-55496: PY-34019 Change excess visibility level of data class ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/e9adaf0052afcd02e7fb9727bd54d238efdcd207
+2019-11-05T14:01:22Z,commit,IDEA-CR-55496: PY-34019 Simplify a call to File.mkdirs(),github.com/JetBrains/intellij-community/pull/1271/commits/c5807438514611f873acbfeb1c4dc337f77c9f51
+2019-11-05T14:58:13Z,commit,IDEA-CR-55496: PY-34019 Add a comment about why TYPE_CHECKING=False c¡­,github.com/JetBrains/intellij-community/pull/1271/commits/4049301a7afec5b9d2e4a696373dfb33b250be35
+2019-11-06T08:51:19Z,commit,IDEA-CR-55496: PY-34019 Explicitly terminate lines sent to stdin with¡­,github.com/JetBrains/intellij-community/pull/1271/commits/f7d9f12a3d39a8cfb445e1652b788635700e1039
+2019-11-11T11:36:14Z,commit,IDEA-CR-55496: PY-34019 Cleanup PySkeletonGenerator.Builder according¡­,github.com/JetBrains/intellij-community/pull/1271/commits/6b7cf250327ee44a570e74845f5269497043cf08
+2019-11-11T12:25:11Z,commit,IDEA-CR-55496: PY-34019 Add a designated logger for capturing output ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/da37f6dc70cefc1c03c379abb6fa3fe758313a6e
+2019-11-11T13:10:24Z,commit,IDEA-CR-55496: PY-34019 Remove path to the executable from generator'¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d28017ef07384691a82ff58c2e3fb10eb248c56f
+2019-11-11T19:07:21Z,commit,"IDEA-CR-55496: PY-34019 Fix ""_Py_HashRandomization_Init: failed to ge¡­",github.com/JetBrains/intellij-community/pull/1271/commits/a73b0424825a9ae821e13f77c3053dd771b6829f
+2019-11-11T19:13:29Z,commit,IDEA-CR-55496: PY-34019 Fix pickling error by making local helper fun¡­,github.com/JetBrains/intellij-community/pull/1271/commits/7ead85a95dd3c19da16e761e0d81f6a6f2d5181c
+2019-11-13T14:04:32Z,commit,IDEA-CR-55194: Built-in web server: Sporadic 502 when loading pages (¡­,github.com/JetBrains/intellij-community/pull/1271/commits/50e5908970abdd881f560b2d8c1c903a76775d6e
+2019-11-13T18:01:35Z,commit,IDEA-CR-55496: PY-34019 Comment why we need to use Queue.get_no_wait(¡­,github.com/JetBrains/intellij-community/pull/1271/commits/d03b4b4d5cc855dcaf81bbfb64195fb2a3801456
+2019-11-13T18:57:17Z,commit,IDEA-CR-55496: PY-34019 Use multiprocessing.Pipe instead of a queue t¡­,github.com/JetBrains/intellij-community/pull/1271/commits/c5913550a4b2a958216294c687e73dda2b4d9d4f
+2019-11-13T19:11:19Z,commit,IDEA-CR-55496: PY-34019 Don't call instance methods with multiprocess¡­,github.com/JetBrains/intellij-community/pull/1271/commits/8965c2999802e36e1de8b485546edc90293425c6
+2019-11-14T09:53:08Z,commit,[cidr] setup tasks for native dependencies,github.com/JetBrains/intellij-community/pull/1271/commits/1f0bc983fd78936dcd6db7a1c9fde2e3fe1873f9
+2019-11-14T14:56:43Z,commit,"IDEA-CR-55281: fix RIDER-35074, RIDER-34349",github.com/JetBrains/intellij-community/pull/1271/commits/67854e7913f43e27f6c4b6be903db28b0ab77a46
+2019-11-14T16:16:44Z,commit,IDEA-CR-55281: cleanup + revert fix with preferredFocusComponent due ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/3ac152ac73e5e6c0519a803ec3c7512e41d0cfe0
+2019-11-14T16:19:15Z,commit,IDEA-CR-55281: move EscapeHandling under 'show.log.as.editor.tab',github.com/JetBrains/intellij-community/pull/1271/commits/1232dbdc84abd4a07ccbc6256257fd3e1a075121
+2019-11-15T17:42:02Z,commit,expose api to close and open diff preview in editor,github.com/JetBrains/intellij-community/pull/1271/commits/fa18c39f6bc22c032f3ab714cd6f1914c775c5cf
+2019-11-18T14:21:30Z,commit,fix RIDER-35134 + do not show empty content on selection,github.com/JetBrains/intellij-community/pull/1271/commits/765b6e86c483cce32cf68fda6380a3d767d9f982
+2019-11-18T21:28:36Z,commit,decrease the timeout due to review,github.com/JetBrains/intellij-community/pull/1271/commits/aaf732886c896408623cf245251b1d04b002d33b
+2019-11-19T12:39:30Z,commit,EA-218119 - F: ProjectTitlePane.setProject,github.com/JetBrains/intellij-community/pull/1271/commits/6282b446699f43959a69b4b9ac91ed4870b5c567
+2019-11-19T13:44:52Z,commit,IDEA-CR-55503: turn off log as editor tab by default,github.com/JetBrains/intellij-community/pull/1271/commits/febe7a0b391eb033b1348251aa0af7c4521b6ef5
+2019-11-08T14:47:20Z,commit,IDEA-CR-45718: PY-34628 Bundle miniconda with PyCharm,github.com/JetBrains/intellij-community/pull/1271/commits/d0e6000673705f135d71b9a9a7687d89c5b5cf33
+2019-11-15T17:01:13Z,commit,IDEA-CR-55492: remove duplicated registration of com.jetbrains.python¡­,github.com/JetBrains/intellij-community/pull/1271/commits/61990a1d35c8826dc8020f42ca96bdd9a392eb44
+2019-11-16T04:44:51Z,commit,Updating versions of project dependencies: jdkBuild->11_0_4b520.11,github.com/JetBrains/intellij-community/pull/1271/commits/8290730e30ca909eb57d560fa8ed79fb81bdd86d
+2019-11-19T12:22:39Z,commit,IDEA-CR-55544: update bundled Kotlin plugin to `1.3.60-release-155` (¡­,github.com/JetBrains/intellij-community/pull/1271/commits/a4fd0d1f4dc357591aafb4b640ff08f3fafc3aa8
+2019-11-19T16:21:58Z,commit,IDEA-CR-55519: do not open listen for selection if focus is in editor,github.com/JetBrains/intellij-community/pull/1271/commits/8da1d7b5ecd54f4190a20241f214003ee95830d5
+2019-11-19T17:27:00Z,commit,IDEA-CR-55541: Build both python plugins together with pycharm instal¡­,github.com/JetBrains/intellij-community/pull/1271/commits/c6bebad260851cee5b48010285dd628f00a16060
+2019-11-20T09:34:26Z,commit,IDEA-CR-55570: Refactor PyCharm OS customizers,github.com/JetBrains/intellij-community/pull/1271/commits/5e7550907e14ab422f3109733f066bbee3f9c665
+2019-11-20T09:36:20Z,commit,IDEA-CR-55492: fixer after review,github.com/JetBrains/intellij-community/pull/1271/commits/d6251bdc9dfe1e820f99b1a17ea3827a333294be
+2019-11-20T10:46:24Z,commit,"shelve: fix non-batch shelving is there are no text changes, only bin¡­",github.com/JetBrains/intellij-community/pull/1271/commits/10248e637348121b897090219365cd1e3cc4d0ee
+2019-11-20T11:20:54Z,commit,IDEA-CR-55572: PY-39039 Release artwork for PyCharm Professional & Co¡­,github.com/JetBrains/intellij-community/pull/1271/commits/73d4e69921990602d94b3b7d1cf806d3457fb5b7
+2019-11-20T11:29:59Z,commit,IDEA-CR-55573: PY-39154 Release licensing for PyCharm 2019.3,github.com/JetBrains/intellij-community/pull/1271/commits/a1e1143fe4676f74ca09392f3dfb98a2888ffc0c
+2019-11-20T14:30:10Z,commit,IDEA-CR-55574 IJSDK-649 Change deprecation description,github.com/JetBrains/intellij-community/pull/1271/commits/1d06874c95745aba37b61bfd6ca1452d2a4431cf
+2019-11-15T13:14:56Z,commit,IDEA-CR-55343: add productProperties.customProductCode param to be ab¡­,github.com/JetBrains/intellij-community/pull/1271/commits/1ab4100309d49c765e572ae2e411d30a4c513d78
+2019-11-15T13:15:34Z,commit,IDEA-CR-55343: formatting,github.com/JetBrains/intellij-community/pull/1271/commits/3b0dee70954502994e184dcca71a11081ac9049c
+2019-11-15T13:21:40Z,commit,IDEA-CR-55343: fix relying on productProperties.productCode cause it'¡­,github.com/JetBrains/intellij-community/pull/1271/commits/ff7dc9c3c692d6c75eec9ec3a7930e67b359aa39
+2019-11-20T20:16:01Z,commit,IDEA-CR-55492: fixer after review,github.com/JetBrains/intellij-community/pull/1271/commits/e33e0735f2a2ba9d85db196cd80bf3be402b1139
+2019-11-21T07:31:03Z,commit,PyCharm with Anaconda plugin: skip some build steps,github.com/JetBrains/intellij-community/pull/1271/commits/9710dd80927ee924b0158a550a9c01927789dc0b
+2019-11-21T10:09:36Z,commit,IDEA-CR-55612: do not open listen for selection if the Commit tw is n¡­,github.com/JetBrains/intellij-community/pull/1271/commits/21b658d276753418ae1f53ee6e4b3485bb5995e5
+2019-11-21T10:54:49Z,commit,"IDEA-CR-55618: fix RIDER-35601, do not close the tab after changes in¡­",github.com/JetBrains/intellij-community/pull/1271/commits/37a7a36123993ab1d537d9f6cb10da1c8c36cf0a
+2019-11-21T14:20:51Z,commit,IDEA-CR-55649: side by side viewer as default,github.com/JetBrains/intellij-community/pull/1271/commits/6e5efaa55c25132a1fcac0c453681900b9c157e7
+2019-11-21T16:05:46Z,commit,"IDEA-CR-55649: apply patch by Lesha for IDEA-CR-55649, refactor code,¡­",github.com/JetBrains/intellij-community/pull/1271/commits/c091ad48f35b1050845dc69a92608fe97e4d9ffa
+2019-11-21T17:32:36Z,commit,update jet-sign to 42.48,github.com/JetBrains/intellij-community/pull/1271/commits/91ab1809eeb8643351fe36026a68da23f8eec0dc
+2019-10-30T12:40:58Z,commit,RunOnceUtil: javadoc,github.com/JetBrains/intellij-community/pull/1271/commits/e409eb5fe41ad0000b19bbca0fc1ff64e138d49a
+2019-11-22T18:16:29Z,commit,register keymaps as in 192,github.com/JetBrains/intellij-community/pull/1271/commits/1e0fe817ff7911696f8f0caad12bfa08b0b9ad47
+2019-11-22T20:14:22Z,commit,disable plugins for bundled keymaps,github.com/JetBrains/intellij-community/pull/1271/commits/61cccac7a3dcf6af6c4536ef3c04ae456dd64ea6
+2019-11-20T12:47:15Z,commit,Escape process names and command lines (add support for command lines¡­,github.com/JetBrains/intellij-community/pull/1271/commits/02a12011089a30fd9749b07bdadeed9ae1c9feb6
+2019-11-20T13:32:00Z,commit,Fix suggestions from IDEA-CR-55562 review,github.com/JetBrains/intellij-community/pull/1271/commits/ef1e140cd51ceb30c5ea617d4de6add15e8f5257
+2019-11-20T13:58:13Z,commit,Add compiled WinProcessListHelper (fix RIDER-34308),github.com/JetBrains/intellij-community/pull/1271/commits/0ae73a296b7fa564831da3ef6a0b6beb6bf23536
+2019-11-21T14:08:38Z,commit,IDEA-CR-55648: always use actual debugger node presentation during up¡­,github.com/JetBrains/intellij-community/pull/1271/commits/59c3297d39e6de0a9ea1abf8a77a9d43c491f511
+2019-11-22T08:55:18Z,commit,Replace unescapeString with StringUtil.unescapeStringCharacters,github.com/JetBrains/intellij-community/pull/1271/commits/bbf1dabf789785dff206780ff975305d19bd8fc4
+2019-11-22T10:43:55Z,commit,IDEA-227350 Deleted projects automatically reappear on welcome screen¡­,github.com/JetBrains/intellij-community/pull/1271/commits/67a80a092f9a9ac8cc0b8d5a9605bc84cfffb573
+2019-11-22T11:07:54Z,commit,Extend test and replace Log.info with Log.error,github.com/JetBrains/intellij-community/pull/1271/commits/19fdbca4c170b2966a808fd840e05956111a2d28
+2019-11-22T11:35:39Z,commit,Return unescapeString method and add test-safe logging,github.com/JetBrains/intellij-community/pull/1271/commits/50126edb06f42544987cd1af2d9bd2238390f9c9
+2019-11-22T13:46:22Z,commit,IDEA-227350 Deleted projects automatically reappear on welcome screen¡­,github.com/JetBrains/intellij-community/pull/1271/commits/6399ad8b99f2c4ea0431d92c51a7d3b48818a424
+2019-11-25T08:33:39Z,commit,Add prefixes to process arguments in WinProcessListHelper,github.com/JetBrains/intellij-community/pull/1271/commits/71c344de9ab657a1cb60c1cc8e50846685c5fdf6
+2019-11-25T08:36:59Z,commit,Update tests for WinProcessListHelper output parsing,github.com/JetBrains/intellij-community/pull/1271/commits/3597ced0fb59558f2518b98b35bc13fdfc03e77c
+2019-11-25T09:02:34Z,commit,Add executable WinProcessListHelper,github.com/JetBrains/intellij-community/pull/1271/commits/f7b2d5501ad0fcdb1e198afb93d1dd1c14d4bf63
+2019-11-25T10:35:47Z,commit,tweak current scheme management when adding/removing EP 3,github.com/JetBrains/intellij-community/pull/1271/commits/2389c2177919b3950559270557e5f53703ff8193
+2019-11-22T14:57:29Z,commit,IDEA-CR-55710: [vfs] freeze in DirectoryAccessChecker#<clinit> (EA-21¡­,github.com/JetBrains/intellij-community/pull/1271/commits/39f8271f8e71e0db41caa80502d5150c093d5925
+2019-11-25T16:36:46Z,commit,IDEA-CR-55788: visit functions to determine that __all__ is modified ¡­,github.com/JetBrains/intellij-community/pull/1271/commits/b73168a178dbd0db08ee8978d12465bc43875160
+2019-11-25T16:45:27Z,commit,IDEA-CR-55788: resolve directories with binary modules to both origin¡­,github.com/JetBrains/intellij-community/pull/1271/commits/9f9f9bf8159eedec24824a41639c2564576299fc
+2019-11-25T17:11:41Z,commit,IDEA-CR-55788: review fixes for skeleton resolve (PY-39171),github.com/JetBrains/intellij-community/pull/1271/commits/d17915c217993130f3077bbfb63b7c063c0242fd
+2019-11-25T20:55:01Z,commit,IDEA-CR-55710: [vfs] schedules initial directory filter loading (IDEA¡­,github.com/JetBrains/intellij-community/pull/1271/commits/3882015dd00561e16e538a58dd085e685f402ce2
+2019-11-26T10:17:18Z,commit,"IDEA-CR-55829: Revert ""Debugger: fix the ""Pause"" button status."" (see¡­",github.com/JetBrains/intellij-community/pull/1271/commits/1dddbc3750cf4acee6b114451dd9b8bee9553bf2
+2019-11-26T14:02:16Z,commit,IDEA-CR-55788: preference for typeshed and stubs (PY-39171),github.com/JetBrains/intellij-community/pull/1271/commits/5c78367bf65eb895f1d6c8b3d6bd1f68eb1f577a
+2019-11-26T16:47:07Z,commit,IDEA-CR-55869: Added AWS Toolkit to the list of featured plugins in P¡­,github.com/JetBrains/intellij-community/pull/1271/commits/5516d1147ce1f7eea07e389746f67e35973f1b6a
+2019-11-25T14:48:39Z,commit,IDEA-CR-55797: fix non-ascii character in both PyCharmCondaProperties¡­,github.com/JetBrains/intellij-community/pull/1271/commits/785eca784c5503b046b3165b7c7a71c1ed232252
+2019-11-25T17:37:05Z,commit,IDEA-CR-55797: fix non-ascii PyCharmCondaProperties class namings,github.com/JetBrains/intellij-community/pull/1271/commits/37502bec42258b27d4547dbe8593ba3427bfcc49
+2019-11-26T18:46:03Z,commit,PyCharm 2019.3: Remove RC suffix,github.com/JetBrains/intellij-community/pull/1271/commits/9d8c8357647fc1e1870ef519c36ef6cebc20deb6
+2019-11-27T07:16:27Z,commit,fix merge - add missing import,github.com/JetBrains/intellij-community/pull/1271/commits/ae05bb34f874af6e49e1705c70c4b7dbd15e533a
+2019-11-27T09:41:27Z,commit,IDEA-CR-55888: skeletons are always included in resolve result (PY-39¡­,github.com/JetBrains/intellij-community/pull/1271/commits/f94d4a3283b1f980211fca4af6cd694613ff7e0f
+2019-11-27T12:40:32Z,commit,"IDEA-CR-55907: expose api to perform commit right away, without waiti¡­",github.com/JetBrains/intellij-community/pull/1271/commits/98a1930149dc8a6a44c4d64b2f38413ba85150fa
+2019-11-27T16:23:27Z,commit,IDEA-CR-55927: PY-39320 Incorrect PythonApplicationInfo.xml values fo¡­,github.com/JetBrains/intellij-community/pull/1271/commits/768dd0bac2159a1e97adc396da7747dcfe69421c
+2019-11-19T13:33:02Z,commit,EA-214908 - PIEAE: PsiUtilCore.ensureValid,github.com/JetBrains/intellij-community/pull/1271/commits/34d831dca68b86ad9a7429c7c9bd19e4b63fb0c0
+2019-11-26T11:25:26Z,commit,IDEA-227619 'Pause' button is always disabled in debugger tool window,github.com/JetBrains/intellij-community/pull/1271/commits/45d28a0ed97669c2522aaac0cb8119a2cc13a472
+2019-11-28T15:27:54Z,commit,IDEA-CR-55971: expose api to hide commit action from then toolbar,github.com/JetBrains/intellij-community/pull/1271/commits/ef79270914c991c3c985ea5a0f9fbff696314511
+2019-11-28T16:17:27Z,commit,DBE-9664 hide missing keymaps the other way,github.com/JetBrains/intellij-community/pull/1271/commits/36ec5d7b10e989e7ee5913c0726bbe543432549c

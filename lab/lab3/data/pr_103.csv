@@ -1,0 +1,5 @@
+103,IDEABKL-1141 Allow plugins to use FoldingListener
+2013-09-15T01:48:23Z,discuss,see http://youtrack.jetbrains.com/issue/IDEABKL-1141
+2013-09-16T13:44:46Z,discuss,Please don't move classes between packages.
+2013-09-16T13:46:50Z,discuss,"I've looked at the code and there is really nothing to fix there at this point. The distinction between OpenAPI and non-OpenAPI classes is immaterial at this point, and there is nothing that prevents plugins from using the FoldingModelEx interface."
+2013-09-15T01:26:49Z,commit,IDEABKL-1141 Allow plugins to use FoldingListener,github.com/JetBrains/intellij-community/pull/103/commits/0d498fd04f94a0eddea7bb80239be481616d2c5f

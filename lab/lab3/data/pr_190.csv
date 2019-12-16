@@ -1,0 +1,16 @@
+190,unix launch script: ensure filenames with special characters survive the...
+2014-06-01T13:58:52Z,discuss,... 'eval' call.
+2014-06-01T13:58:52Z,discuss,"Just using ""$@"" fails with names with spaces or parenthesises in them.
+While the initial ""$@"" properly quotes all args passing to eval, the
+submit which eval does of the result misses the quotes. Hence this.
+At least I think that's what's happening. And with this change it works.
+Tested against bash 4.3.011 on Arch Linux.
+Test call:"
+2014-06-01T13:58:52Z,discuss,"Prior to the patch, with debug enabled by adding -x option to the
+shebang (and without parenthesises, as the eval call fails with them):"
+2014-06-01T13:58:52Z,discuss,With patch:
+2014-06-01T13:58:52Z,discuss,"As a side note: the --line xx argument does not work for the parameter
+with the parentesises in it, but for the two others. Removing the
+parenthesises makes it work, so it's not the quoting but presumably the
+code handling the --line option."
+2014-06-01T13:38:00Z,commit,unix launch script: ensure filenames with special characters survive бн,github.com/JetBrains/intellij-community/pull/190/commits/e82a7c6c44deed350d9df3a0bace9aa61a0a639d

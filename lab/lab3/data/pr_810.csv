@@ -1,0 +1,10 @@
+810,Have common Icons for nodes in build view
+2018-06-15T14:38:24Z,discuss,"When there are multiple builds on the build view, each one of them get
+its Icon from AbstractViewManager#getIcon, but the icons used are not
+consistent with the ones used in ExecutionNode."
+2018-06-15T14:38:24Z,discuss,"This change causes getIcon to use a new function (getEventResultIcon)
+that shares the same icons as ExecutionNode#getCurrentIcon. Also, the
+icons are defined using constants to cause any change on them to be used
+in both functions."
+2018-06-18T16:20:13Z,discuss,Thank you for the contribution! I've merged the change using the following commit 23b13ba
+2018-06-15T14:22:53Z,commit,Have common Icons for nodes in build view,github.com/JetBrains/intellij-community/pull/810/commits/7e678d2abb4636f9436ab9474eb4d2babdbde236

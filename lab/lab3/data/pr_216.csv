@@ -1,0 +1,4 @@
+216,Add ipnb and the edu modules to repair PyC build
+2014-10-16T17:58:07Z,discuss,"If one opens the Module Settings in IJ, the main_pycharm_ce module is in error, as is the main_pycharm_edu module. This also impacts the command-line build of PyCharm using ant because after the build, the packaging step complains about a missing ipnb module and dies."
+2014-10-16T17:58:07Z,discuss,This fixes both of these problems.
+2014-10-16T17:48:02Z,commit,Add ipnb and the edu modules to repair PyC build,github.com/JetBrains/intellij-community/pull/216/commits/5cf0977dac2027d0eac901f6bea8e1f7b10c5df2

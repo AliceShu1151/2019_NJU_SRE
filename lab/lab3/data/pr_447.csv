@@ -1,0 +1,4 @@
+447,IDEA-161410: Quick Documentation: double opening angle brackets are printed as single brackets
+2016-09-21T08:17:41Z,discuss,We've received the CLA. Thanks.
+2016-09-30T07:15:05Z,discuss,Closing as it has been fixed meanwhile: IDEA-161410
+2016-09-18T14:58:07Z,commit,IDEA-161410: Quick Documentation: double opening angle brackets are p¡­,github.com/JetBrains/intellij-community/pull/447/commits/bf119019707a2aa1d09133a6f285b433b6ffcfcd

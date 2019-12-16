@@ -1,0 +1,7 @@
+267,Show line numbers by default
+2015-05-13T17:42:27Z,discuss,The EditorSettingsExternalizable class is used in the EditorAppearanceConfigurable  class to set the selected state of the 'Show line numbers' JCheckBox by reading the value from the isLineNumbersShown() method which returns the default value of the setting.
+2015-05-13T17:42:27Z,discuss,Why show line numbers by default?
+2015-05-13T17:47:15Z,discuss,I'll answer all of your points:
+2015-05-13T17:47:15Z,discuss,"The year isn't 1975 any more, so it's no longer necessary to refer to line numbers when working with code, when you have tools that actually understand it on a deeper level."
+2015-05-13T18:09:37Z,discuss,@yole
+2015-05-13T17:29:10Z,commit,Show line numbers by default,github.com/JetBrains/intellij-community/pull/267/commits/49ee18201b1d8f3eaafcf934a2852b5f1431e5cf

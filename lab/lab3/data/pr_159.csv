@@ -1,0 +1,4 @@
+159,Add extension point for preprocessing of inner class usages
+2014-03-12T11:34:53Z,discuss,Add usages processor (with corresponding extension point) which is invoked when inner class is moved to top level. The goal is to provide other languages with a way to modify constructor invocations (e.g. in Kotlin A().B() should become B(A())).
+2014-05-23T10:48:26Z,discuss,It'd be nice to have these changes in the IDEA 14 EAP. Thanks
+2014-03-12T10:56:16Z,commit,Add extension point for preprocessing of inner class usages,github.com/JetBrains/intellij-community/pull/159/commits/f6302349d800fad0201fd8139002fe184fdf0341

@@ -1,0 +1,9 @@
+303,Add a new postfix completion template
+2015-09-19T06:45:28Z,discuss,"This is what I was making as a separate plugins.
+https://plugins.jetbrains.com/plugin/7950?pr="
+2015-09-19T06:45:28Z,discuss,"I think it is very useful in the coding of Java8.
+Does this template is not officially required?"
+2015-09-19T12:10:32Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-09-21T13:06:42Z,discuss,The CLA was received. Thanks.
+2016-01-26T09:38:48Z,discuss,Merged manually. Thank you
+2015-09-19T06:11:32Z,commit,Add a new postfix completion template,github.com/JetBrains/intellij-community/pull/303/commits/7c5bffdd2dc9158cf77f187f9324c77cdfa4c6da

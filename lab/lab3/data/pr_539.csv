@@ -1,0 +1,6 @@
+539,Added ability to extends PreferredSdkComparator
+2017-04-04T17:42:30Z,discuss,Added extension point to preferred sdk comparator to be able to extend functionality of it
+2017-03-29T19:42:07Z,commit,Added extension point to allow extend functionality of Python Preferr¡­,github.com/JetBrains/intellij-community/pull/539/commits/52e45d04f2821981490b80f9fba27a389d3a7e2d
+2017-04-04T17:10:04Z,commit,Moved extension comparing to beginning,github.com/JetBrains/intellij-community/pull/539/commits/0086ec4a70558464542154777c477c9f38af511d
+2017-04-12T21:36:40Z,commit,Refactored to actually compare sdk instead of weight providing,github.com/JetBrains/intellij-community/pull/539/commits/2bf4d8e5cedca05a59063fb630a8f008eae82886
+2017-04-12T21:40:01Z,commit,removed unnecessary import,github.com/JetBrains/intellij-community/pull/539/commits/b80b5b11b2e7b0f1268fa3ef7fe5cce8806794e4

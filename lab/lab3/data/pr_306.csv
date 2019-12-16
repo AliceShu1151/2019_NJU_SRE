@@ -1,0 +1,9 @@
+306,Improve cross-compilation
+2015-10-01T12:27:57Z,discuss,Improve make.sh to correctly manage system architecture and cross-compilation.
+2015-10-01T12:55:30Z,discuss,"Actually, -D_DEFAULT_SOURCE should be enough - could you please check on your system?"
+2015-10-01T13:08:48Z,discuss,No problem. I just wasn't sure about it. Search I did wasn't clear about the -D_XOPEN_SOURCE=500.
+2015-10-01T14:16:23Z,discuss,Pushed the change upstream. Thanks!
+2015-10-01T12:23:27Z,commit,Improve cross-compilation,github.com/JetBrains/intellij-community/pull/306/commits/af7eea961926e6c9f3930e1af4dec9268a4faefc
+2015-10-01T12:26:04Z,commit,Remove uname based check,github.com/JetBrains/intellij-community/pull/306/commits/52a43235ddc22c6583b29a899409421bef5fef89
+2015-10-01T12:31:18Z,commit,Remove non-used variable,github.com/JetBrains/intellij-community/pull/306/commits/8af3a5c625e48770def9b9add76b012fa79e5ebb
+2015-10-01T13:07:46Z,commit,Remove useless defines,github.com/JetBrains/intellij-community/pull/306/commits/53d0a09c86937ff9b58c6f958cfdcb45750cb859

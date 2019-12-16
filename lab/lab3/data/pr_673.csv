@@ -1,0 +1,30 @@
+673,improve contains() and containsAll() of SmartList and HashSet
+2017-11-29T21:44:45Z,discuss,I've made some measurements with benchmark available here for both com.intellij.util.containers.HashSet and com.intellij.util.SmartList and got the following results:
+2017-11-29T21:44:45Z,discuss,Case 1: argument is collections/item of type Integer and value 1
+2017-11-29T21:44:45Z,discuss,Case 2: argument is collections/item of type Integer and value null
+2017-11-29T21:44:45Z,discuss,Patch also prevents allocating iterator in case when argument collection does not support element access by index (e.g. HashSet) in AbstractCollections.containsAll():
+2017-11-30T13:07:35Z,discuss,Have you checked that this change doesn't degrade performance for cases with non-empty collections involved?
+2017-11-30T13:07:35Z,discuss,"What's this change inspired by, any real-life scenario when this is important?"
+2017-12-11T19:14:31Z,discuss,I've looked into com.luxoft.logeek.collections.HashSet.clear() which has the same optimization.
+2017-12-11T19:14:31Z,discuss,As for the measurements I wrote benchmarks for the following scenarios:
+2017-12-11T19:14:31Z,discuss,"1.1 Empty HashSet parametrized for simple DTO (link)
+1.2 Non-empty HashSet parametrized for simple DTO link"
+2017-12-11T19:14:31Z,discuss,"2.1 Empty HashSet parametrized for Integer link
+2.2 Non-empty HashSet parametrized for Integer link"
+2017-12-11T19:14:31Z,discuss,"3.1 Empty SmartList parametrized for simple DTO link
+3.2 Non-empty SmartList parametrized for simple DTO link"
+2017-12-11T19:14:31Z,discuss,"4.1 Empty SmartList parametrized for Integer link
+4.2 Non-empty SmartList parametrized for Integer "
+2017-12-11T19:14:31Z,discuss,The command to run benchmarks is:
+2017-12-11T19:14:31Z,discuss,"java -jar target/benchmarks.jar [benchmark classes] -f 200 -wi 10 -i 10 --jvmArgsAppend=""-XX:+UseParallelGC -Xms4g -Xmx4g"" -foe true"
+2017-12-11T19:14:31Z,discuss,"My results (Intel Core i3-3220 3,3 GHz) are:"
+2017-12-11T19:14:31Z,discuss,"As a result: for Dto there's only one scenario with pessimization: measureContainsAllInNonEmptyIdeaHashSet (11,81%)"
+2017-12-11T19:14:31Z,discuss,"for Integer there are two scenarios with pessimization:
+measureContainsAllInNonEmptyIdeaHashSet (12,574%)
+measureEnhancedContainsAll (8,050%)"
+2017-12-15T20:35:31Z,discuss,"Thanks for thorough testing! Since there are performance degradations and no known real-life scenarios to improve, why should we accept this PR then? :)"
+2018-01-18T10:52:41Z,discuss,Initially I've looked into the code of idea's custom hashmap which overrides clear(). It's designed for optimization of empty map but brings pessimization for non-empty map due to size() call. Why do you then keep this custom HashMap?
+2018-01-18T11:50:13Z,discuss,"It was added in some ancient times, and I'm not aware of the use case. It appears that now it doesn't add much value, so probably should be deprecated, thanks!"
+2018-01-18T18:56:25Z,discuss,"@donnerpeter BTW, what you wrote in your last commit seems to be true also for com.intellij.util.containers.hash.HashSet, com.intellij.util.containers.HashSet and com.intellij.util.containers.hash.HashMap"
+2018-01-18T19:49:37Z,discuss,"This indeed seems to apply to some more classes from com.intellij.util.containers, but com.intellij.util.containers.hash are less obvious: they either require less memory or feature different algorithms from JDK, which are claimed to have been helpful for some data structures at some moment. So they require more thorough investigation and will remain until someone does that."
+2017-11-29T21:09:45Z,commit,improve contains() and containsAll() of SmartList and IDEA's HashSet,github.com/JetBrains/intellij-community/pull/673/commits/7b26e0edbc962f32c0672af8dc12c6a804331b8d

@@ -1,0 +1,9 @@
+861,Terminal tool window native tabs
+2018-09-17T12:54:14Z,discuss,"
+No description provided.
+"
+2018-09-17T16:23:22Z,discuss,@traff you can take a look at the functionality while it's being reviewed if you want
+2018-10-03T03:59:27Z,discuss,"Oleg, thanks a lot for the pull request! I've create a separate branch based on it and will subsequently merge it in the master after a couple of minor cosmetic fixes."
+2018-09-11T09:11:05Z,commit,Created configurable group for tool window context menu,github.com/JetBrains/intellij-community/pull/861/commits/06f189f1013cabe20424ee8c11e28d128f7245b5
+2018-09-17T07:40:31Z,commit,"Native tabs for terminal tool window: part I (no renaming of tabs, no¡­",github.com/JetBrains/intellij-community/pull/861/commits/833ab4566f906b6788671010e63a03302e644d95
+2018-09-20T08:39:24Z,commit,"Native tabs for terminal tool window: renaming of tabs, drag&drop (th¡­",github.com/JetBrains/intellij-community/pull/861/commits/04f88867a98c370f24fc6728808a83497a9bad95

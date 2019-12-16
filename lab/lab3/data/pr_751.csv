@@ -1,0 +1,16 @@
+751,Leak hunter sometimes uses stale roots
+2018-03-08T22:35:28Z,discuss,"LeakHunter.processLeaks() gets a list of root objects, typically a result
+of LeakHunter.allRoots() call. As a part of leak search, LeakHunter will
+flush all outstanding tasks in AWT EventQueue, which should also include
+all tasks schedules with LaterInvocator."
+2018-03-08T22:35:28Z,discuss,"allRoots() call gets all LaterInvocator tasks and uses them as roots for
+leaks search. This list will become stale (i.e. will include runnables that
+were already executed and removed from the LaterInvocator queue) after
+processLeaks() flushes all events. To fix this the list of roots should be
+computed after all event flushing is completed."
+2018-03-08T22:35:28Z,discuss,"Fix: processLeaks() now takes a supplier for roots collection, so the set
+of root objects can be computed after all events are flushed."
+2018-03-08T22:35:28Z,discuss,"This fix has already been applied in Android Studio source tree as some
+test runs intermittently reported failures because of these timing issues."
+2018-03-12T13:01:29Z,discuss,"pushed, thanks"
+2018-03-08T00:51:12Z,commit,Leak hunter sometimes uses stale roots,github.com/JetBrains/intellij-community/pull/751/commits/3ade341b1a54ab39f8c024e146f35afb4af07c25

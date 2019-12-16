@@ -1,0 +1,10 @@
+108,Properly calculate short name for inner class with $
+2013-10-15T14:06:51Z,discuss,"
+No description provided.
+"
+2013-10-15T14:07:17Z,discuss,Please also merge it with 12.1.* branch
+2013-10-15T14:11:28Z,discuss,We don't plan to release any further 12.1 updates.
+2013-10-15T14:25:08Z,discuss,"Ok, just 13 one"
+2013-10-22T09:33:04Z,discuss,Slightly modified and pushed upstream.
+2013-10-22T09:33:04Z,discuss,As a side note: please stop abusing $ in identifiers.
+2013-10-15T14:00:12Z,commit,Properly calculate short name for inner class with $,github.com/JetBrains/intellij-community/pull/108/commits/1c4fd812ad9006889bcb9a1409e4f0ccabc3fed6

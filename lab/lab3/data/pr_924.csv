@@ -1,0 +1,6 @@
+924,Make code in UnnecessaryUnicodeEscapeInspection shorter
+2018-11-20T19:33:32Z,discuss,"The keyword ""while"" at the beginning of a line usually starts a while
+loop instead of ending a do-while loop. To avoid further confusion,
+replace the do-while loop with a typical while-loop."
+2018-11-21T13:52:43Z,discuss,"Merged manually as e94a196, thanks!"
+2018-11-20T19:31:44Z,commit,Make code in UnnecessaryUnicodeEscapeInspection shorter,github.com/JetBrains/intellij-community/pull/924/commits/db9fb0b759a8fbaa530367b50438060164f1e421

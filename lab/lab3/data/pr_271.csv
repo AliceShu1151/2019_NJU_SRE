@@ -1,0 +1,5 @@
+271,[IDEA-140807] Added an extension that allows to redirect navigation f¡­
+2015-06-04T13:47:25Z,discuss,¡­rom a requested editor to another
+2015-06-08T10:50:42Z,discuss,"I really don't like this API, because it can break a lot of features in the product. There is a lot of code that opens a certain file in the editor and then starts modifying editor text, for example, to offer a live template of some kind. That code will randomly corrupt text if the navigation policy replaces the requested file with a different one behind the caller's back."
+2015-06-16T07:17:56Z,discuss,Closing as per discussion in https://youtrack.jetbrains.com/issue/IDEA-140807
+2015-06-03T12:22:09Z,commit,[IDEA-140807] Added an extension that allows to redirect navigation f¡­,github.com/JetBrains/intellij-community/pull/271/commits/18116c8d1875f827698bb49f62ad02e10ecddcfc

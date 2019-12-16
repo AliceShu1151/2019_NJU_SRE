@@ -1,0 +1,10 @@
+560,Fix 'with as' statement for union types
+2017-04-19T19:58:01Z,discuss,"Fix type inference for with statement when context manager is union type. For example, before the fix PyCharm could not infer the type of f in the following code:"
+2017-04-28T16:03:50Z,discuss,"Please add unit tests that show that your changes actually fix an existing problem (I'm sure they do, but we need an automated way of checking it). See PyTypeTest for tests that check the type of a single expression. There are also tests for code completion and code inspections, but in this case a simple type test would be enough."
+2017-04-28T16:03:50Z,discuss,There are also a couple of minor comments about the code itself. It would be great to take them into account as well.
+2017-05-01T16:20:26Z,discuss,Added all requested changes
+2017-06-27T22:23:48Z,discuss,@vlasovskikh please take a look at this
+2017-07-01T16:55:46Z,discuss,Please use rebase instead of merge for your commits. We use rebase extensively and merge commits make it difficult to rebase branches.
+2017-07-01T21:47:44Z,discuss,@vlasovskikh Fixed according to review. Thanks for catching our instanceof check error.
+2017-07-03T19:07:32Z,discuss,@da1z @fitermay Thanks! I've rebased the PR onto master.
+2017-04-19T17:50:56Z,commit,Fix 'as' statement for union types,github.com/JetBrains/intellij-community/pull/560/commits/dae3e3989289c0edd977d71f1295f83673e5cca9

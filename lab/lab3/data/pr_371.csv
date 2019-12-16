@@ -1,0 +1,10 @@
+371,spell checker: levenshtein->damerau-levenstein
+2016-03-19T14:37:57Z,discuss,"Word distance algorithm changed to Damerau-Levenshtein
+https://en.wikipedia.org/wiki/Levenshtein_distance
+https://en.wikipedia.org/wiki/Damerau¨CLevenshtein_distance"
+2016-03-19T14:37:57Z,discuss,"motivation: transposition error is really common
+For example: versoin (Typo:Change to...).
+expected: version.
+actual: vermin, vernon ..."
+2016-03-20T09:52:33Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-03-19T13:56:38Z,commit,spell checker: levenshtein->damerau-levenstein,github.com/JetBrains/intellij-community/pull/371/commits/1a2e84ddfa113dc2516ee1daae6a5511e70ff35f

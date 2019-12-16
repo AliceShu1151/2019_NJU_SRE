@@ -1,0 +1,20 @@
+784,Fix L&F change in ProjectView panel
+2018-05-03T00:38:25Z,discuss,"Switching L&F didn't use to update the ProjectView panes except the one
+that was displayed at the time."
+2018-05-03T00:38:25Z,discuss,http://b.android.com/208136
+2018-05-03T00:38:42Z,discuss,@SergeyMalenkov? @xtmq?
+2018-05-03T16:56:05Z,discuss,Thanks! Merged 210f54d
+2018-05-03T20:06:13Z,discuss,I can't reproduce the problem in question in IntelliJ IDEA Ultimate.
+2018-05-03T20:06:13Z,discuss,"The case is already handled via UIUtil.NOT_IN_HIERARCHY_COMPONENTS key.
+See ProjectViewImpl.MyPanel#init (ProjectViewImpl:996)"
+2018-05-03T20:06:13Z,discuss,If for some reason that does not work we shall investigate why so.
+2018-05-03T20:06:13Z,discuss,This pull request shall be reconsidered.
+2018-05-03T20:16:42Z,discuss,"@gregsh Do you prefer to revert commit 210f54d then?
+@jgaillard85 What's your understanding of the situation?"
+2018-05-03T21:15:10Z,discuss,"@gregsh Thanks! I started Android Studio from sources from master and can't reproduce the problem with or without the fix. So, we probably need to revert it."
+2018-05-03T21:15:10Z,discuss,"P.S.
+The only thing I noticed is wrong foreground for Design Editor
+"
+2018-05-03T21:15:10Z,discuss,"@dahlstrom-g Please, use JBColor with function for such cases
+"
+2017-03-29T16:55:59Z,commit,Fix L&F change in ProjectView panel,github.com/JetBrains/intellij-community/pull/784/commits/4c193d1adbef5e4e5b9ba082d6c73e262a0d3379

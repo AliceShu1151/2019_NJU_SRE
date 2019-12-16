@@ -1,0 +1,11 @@
+611,Move 'dropSelf' to PyFunctionType
+2017-08-14T00:19:15Z,discuss,@sproshev  In our framework we have decorators that add certain attributes to the functions that they decorate. To handle these decorators my plugin returns a PyFunctionType from 'provider.getCallableType' that handles these extensions.  I do not want to return a simple 'PyCallableType' as it isn't handled as well as 'PyFunctionType' by the rest of PyCharm code.
+2017-08-14T00:19:15Z,discuss,"Anyways, these used to work in 2016.3. In 2017 the change '804354727e46f3c1f02b23faa264f6b1a80c4837' broke it because 'dropSelfForInstanceMethod' drops the concrete implementation of PyFunctionType always replacing it with 'PyFunctionTypeImpl'"
+2017-08-14T00:19:15Z,discuss,This change delegates 'dropSelf' to PyFunctionType so that the concrete class can be preserved.
+2017-08-22T02:27:23Z,discuss,@sproshev applied changes and rebased onto latest master
+2017-08-22T08:36:35Z,discuss,LGTM. Let's wait for approvement from @vlasovskikh
+2017-09-07T19:14:08Z,discuss,"@fitermay The pull request makes sense, although PyFunctionType (as well as other PyType inheritors) wasn't really meant for extending. We don't guarantee that we won't break compatibility in our future releases. A more reliable solution would be to add a calable members provider similar to to PyClassMembersProvider and PyModuleMembersProvider. This class would accept a PyCallable and resolve / provide its extra members."
+2017-09-07T19:32:01Z,discuss,@fitermay Thanks! I've cherry-picked the commits from this PR. Could you please consider introducing a PyCallableMembersProvider for your case?
+2017-09-08T02:02:30Z,discuss,@vlasovskikh That sounds like a good idea. I will check and see if it will work
+2017-08-10T00:37:32Z,commit,Move drop self to PyFunction type,github.com/JetBrains/intellij-community/pull/611/commits/88267204693a79155e9e40d26a226185bba887fc
+2017-08-22T02:26:27Z,commit,fixes after review,github.com/JetBrains/intellij-community/pull/611/commits/adf79cd98c40007a6fb30c6f8eccbd2e23af8fc7

@@ -1,0 +1,8 @@
+656,Improve the doc-comment on PsiNameIdentifierOwner
+2017-10-31T13:01:16Z,discuss,"While implementing reference resolve and rename in a custom language
+plugin, I ran into a subtle bug caused by failing to override
+PsiElement#getTextOffset(). I eventually figured it out by tracing
+the code into TargetElementUtil and finding a useful comment about
+the importance of overriding the text offset on named elements."
+2017-11-02T13:01:37Z,discuss,"Merged manually, thanks!"
+2017-10-31T12:58:58Z,commit,Improve the doc-comment on PsiNameIdentifierOwner,github.com/JetBrains/intellij-community/pull/656/commits/04e453fada1f6ea47c7a00c5ceff31585b339efe

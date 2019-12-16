@@ -1,0 +1,5 @@
+15,IDEA-74131 Maven interpolation error: Failed to interpolate field
+2012-08-06T12:04:40Z,discuss,"The synchronized keyword on the method interpolateObject was not enough because the cache in StringSearchModelInterpolator is static, so we need to protect concurrent access whatever the instance of CustomModelInterpolator. Here I simply use the CustomModelInterpolator class as synchronization object.
+I never see the error again since I applied this fix."
+2012-09-28T19:34:01Z,discuss,"Fixed (in a slightly different way) by Sergey Evdokimov,"
+2012-08-06T11:42:46Z,commit,IDEA-74131 avoid concurrent access to the static cache in StringSearc¡­,github.com/JetBrains/intellij-community/pull/15/commits/278e05edc33787b613349cd98475f189d4d45141

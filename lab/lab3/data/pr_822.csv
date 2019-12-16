@@ -1,0 +1,4 @@
+822,Updated FiraCode font to version 1.205
+2018-07-05T06:26:28Z,discuss,Changes introduced since 1.200 contain mostly ligatures changes. Spark developers will be delighted to see ligature for new Column inequality operator =!= which (due to operator priority) replaced !==.
+2018-07-11T14:13:58Z,discuss,"Thank you for the contribution, merged as ed61454"
+2018-07-05T05:40:45Z,commit,Updated FiraCode font to version 1.205,github.com/JetBrains/intellij-community/pull/822/commits/38aabdba62d5712554520891c96dd78cce22dd32

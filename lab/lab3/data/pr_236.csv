@@ -1,0 +1,5 @@
+236,Correct capitalization on VCS
+2015-01-23T08:36:05Z,discuss,"The correct abbreviation is VCS, this commit is to reflect that"
+2015-01-23T08:38:11Z,discuss,Closed due to lack of mergability
+2015-01-23T12:12:24Z,discuss,I've applied the change manually. Thanks!
+2015-01-23T08:35:52Z,commit,Correct capitalization on VCS,github.com/JetBrains/intellij-community/pull/236/commits/ea8235287db3ce34646470b00d7671ec505c3676

@@ -1,0 +1,5 @@
+290,Fix IDE history when exception thrown
+2015-07-17T12:19:42Z,discuss,Fix IDE history when exception thrown
+2015-07-17T15:11:18Z,discuss,"Merged manually, thanks!"
+2015-07-17T12:18:25Z,commit,Fix IDE history when exception thrown,github.com/JetBrains/intellij-community/pull/290/commits/0ebe7936bc6c72f1157c1b8faf617c36e8cbcb98
+2015-07-17T12:23:07Z,commit,Fix IDE history when exception thrown (forward),github.com/JetBrains/intellij-community/pull/290/commits/060f2ac4c6c93e92cff266a60d67b972d09ab464

@@ -1,0 +1,6 @@
+346,Expose UpdateChecker.NOTIFICATIONS as public field for java usages
+2016-01-11T14:43:58Z,discuss,"
+No description provided.
+"
+2016-01-11T15:39:10Z,discuss,We've ported the change to 143. Thanks.
+2016-01-11T14:37:45Z,commit,Expose UpdateChecker.NOTIFICATIONS as public field for java usages (a¡­,github.com/JetBrains/intellij-community/pull/346/commits/4c2a706558682cf125693f2ae9c1d5e956113900

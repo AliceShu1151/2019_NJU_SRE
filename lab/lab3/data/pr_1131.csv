@@ -1,0 +1,20 @@
+1131,fsNotifier: fix build on musl
+2019-05-04T23:18:52Z,discuss,"
+No description provided.
+"
+2019-05-06T07:08:28Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-05-06T07:59:36Z,discuss,"Just signed it, thanks for the heads up."
+2019-05-06T21:16:38Z,discuss,"Hm, maybe it's time to drop the limit completely? It defaults to 2.14 - which doesn't look too strict now. What do you think?"
+2019-05-07T08:25:34Z,discuss,"Yup, AFAICS about every distro has at least 2.14 in its repos: https://repology.org/project/glibc/versions"
+2019-05-07T08:48:24Z,discuss,"OK, just dropped the symbols. Thanks!"
+2019-05-07T09:00:40Z,discuss,Thank you :)
+2019-05-07T09:00:40Z,discuss,"Maybe it'd be possible to distribute musl versions of the FsNotifier with IntelliJ products, so it works out of the box (or to just statically built it against musl)?"
+2019-05-07T09:29:33Z,discuss,Then it won't work on systems without musl :(
+2019-05-07T09:29:33Z,discuss,"Linking statically is a variant I'd very match like to avoid - the IDEs are used on a pretty broad spectrum  of kernel versions, and AFAIK inotify ABI has changed a couple of times in the past."
+2019-05-07T09:47:01Z,discuss,"Ah, meant to make fsnotifier*-musl variants"
+2019-05-07T09:47:01Z,discuss,"Ah, I'm not very well versed with C (mostly Rust, thanks for the awesome tooling you provide :), can we just link libc statically and leave the rest be? Musl is pretty good at being linked statically (at least in Rust it's used by default for static linking)"
+2019-05-07T11:22:20Z,discuss,"Well, I'm not sure whether or when we will bundle -musl variants, but a feature request certainly won't harm."
+2019-05-07T11:22:20Z,discuss,libc is exactly the thing which shields the binary from kernel ABI changes - that's why it shouldn't be linked statically. There are no other dependencies.
+2019-05-07T11:34:30Z,discuss,"Derp, sorry."
+2019-05-07T11:34:30Z,discuss,"Will open a feature request, thanks :)"
+2019-05-04T23:13:08Z,commit,fsNotifier: fix build on musl,github.com/JetBrains/intellij-community/pull/1131/commits/fa1b2a67e84754416b551b7ca1d841ad14a040ab

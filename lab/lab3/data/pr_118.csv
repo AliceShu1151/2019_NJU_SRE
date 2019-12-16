@@ -1,0 +1,3 @@
+118,Fix for stable changes in JUnit 4.12-SNAPSHOT (should also work with earlier versions of JUnit).
+2013-12-31T12:25:26Z,discuss,Merged. Thanks
+2013-10-22T23:29:12Z,commit,Fix for changes in JUnit 4.12-SNAPSHOT (should also work with earlier¡­,github.com/JetBrains/intellij-community/pull/118/commits/1399facd373988a7c7dae0fdda326f56eaac9175

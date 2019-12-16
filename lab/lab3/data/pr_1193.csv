@@ -1,0 +1,5 @@
+1193,Make descriptor loading lazy in editorconfig plugin
+2019-09-01T10:46:27Z,discuss,"A descriptor is an internal structure used by the plugin. It is not required until an editorconfig file is opened, so it can be initialized lazily. This should slightly speed up startup"
+2019-09-03T19:44:06Z,discuss,"Cleanup is okay, but absolutely not necessary. As for improving the startup time, services are lazily instantiated by default, meaning it will be created on the first EditorConfigOptionDescriptorManager.Companion#getInstance call, creating an additional provider won't help there in any possible way"
+2019-08-11T16:00:21Z,commit,Cleanup,github.com/JetBrains/intellij-community/pull/1193/commits/2d06994dbb83c52dd8b044499662f6337d48f246
+2019-08-11T17:32:22Z,commit,Make descriptor management lazy,github.com/JetBrains/intellij-community/pull/1193/commits/b4c94cdbcdf82aaa45942105ee4b6ec4c4309f55

@@ -1,0 +1,7 @@
+893,IDEA-200871 Tool Window should NOT transfer focus unconditionally.
+2018-10-19T22:00:30Z,discuss,"Only transfer focus if this tool window has the focus in the first
+place."
+2018-10-19T22:00:30Z,discuss,Change-Id: Icad107068eb5f2de46de218c87f8de471367e320
+2019-05-20T22:00:00Z,discuss,could remove the Change-Id footer from the commit message
+2019-10-21T20:57:44Z,discuss,This was fixed. Thank you.
+2018-10-19T21:01:00Z,commit,IDEA-200871 Tool Window should NOT transfer focus unconditionally.,github.com/JetBrains/intellij-community/pull/893/commits/d2f236977e885c95beeddc6a93de395db001cf13

@@ -1,0 +1,11 @@
+1109,Fix Gradle Daemons window with Gradle 5.3
+2019-04-02T00:43:22Z,discuss,"The constructor of DaemonParameters class in Gradle tooling API
+is updated since Gradle 5.3. It now takes FileCollectionFactory
+as required parameter.
+This change calls the constructor by reflection if current Gradle
+version is newer than 5.3."
+2019-04-02T00:43:22Z,discuss,Change-Id: I21eeb8f1e95267892ab378a98ca4517eb3d50e07
+2019-04-10T09:26:34Z,discuss,"Thanks for the contribution!
+I've merged the change using the following commit 77ee05b"
+2019-04-10T09:26:34Z,discuss,"Also I've fixed the same issue when Stop Selected action is used, see the commit at 55a0d66"
+2019-04-01T23:29:35Z,commit,Fix Gradle Daemons window with Gradle 5.3,github.com/JetBrains/intellij-community/pull/1109/commits/4c3efbb4d5535235d0e16aca3edcff9050e356d6

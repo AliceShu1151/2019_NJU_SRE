@@ -1,0 +1,11 @@
+598,PY-24987/PY-22496 (probably others): Search class attributes in implicit ref resolve and 'goto symbol'
+2017-07-01T20:23:58Z,discuss,https://youtrack.jetbrains.com/issue/PY-24987
+2017-07-09T23:45:56Z,discuss,Fixed according to review
+2017-07-11T03:42:34Z,discuss,I've made the changes but maybe we can do even better if we can avoid creating stubs for instance attributes entirely by getting rid of:
+2017-07-11T03:42:34Z,discuss,"Inside 'PyTargetExpressionElementType'. However, I'm not sure if this is needed by any custom stub types or not."
+2017-07-12T19:47:52Z,discuss,"@fitermay The stubs for instance attributes are used heavily. For example, look into PyClassImpl.findInstanceAttribute(): it comes down to PyClassImpl.getTargetExpressions(PyFunction) that finds the target expression children of the function stub."
+2017-07-12T20:00:57Z,discuss,@fitermay Thanks for your PR! I've cherry-picked it into master. It will go through QA and is likely to appear in the next major version after 2017.2.
+2017-07-01T20:23:00Z,commit,PY-24987/PY-22496 (probably others): Search class attributes in impli¡­,github.com/JetBrains/intellij-community/pull/598/commits/7f65f7082ba425befb2b70005a4e1c3ad7771598
+2017-07-09T23:45:36Z,commit,PY-24987/PY-22496: Fixes according to review,github.com/JetBrains/intellij-community/pull/598/commits/87c67c1f0fd43578a641c9a6c99621c42867c530
+2017-07-11T03:29:39Z,commit,PY-24987/PY-22496: Combine PyClassAttributesIndex.findClassAtrributes¡­,github.com/JetBrains/intellij-community/pull/598/commits/ec4c733e42f81ed92e810dfea5e035d5a4d34b6c
+2017-07-11T03:30:57Z,commit,PY-24987/PY-22496: Remove now unused PyInstanceAttributeIndex,github.com/JetBrains/intellij-community/pull/598/commits/636fb9b37d937086ac50f348afa354eab393dd55

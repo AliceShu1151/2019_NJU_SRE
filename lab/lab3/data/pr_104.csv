@@ -1,0 +1,6 @@
+104,IDEA-112775 git file history  make use of git describe command
+2013-09-16T09:23:21Z,discuss,IDEA-112775 git file history  make use of git describe command
+2014-05-15T11:20:59Z,discuss,+1
+2014-12-20T13:13:51Z,discuss,"evra, thank you for the contribution! However, adding a special column for the tag doesn't seem a good decision to me. I'd rather display this information in the commit details, and also request this asynchronously."
+2014-12-20T13:13:51Z,discuss,We plan to reuse the Log tab UI & internals to display file history in Git and Mercurial. There we'll also be able to calculate the last containing tag very quickly. Please stay turned with https://youtrack.jetbrains.com/issue/IDEA-134580 and https://youtrack.jetbrains.com/issue/IDEA-98963.
+2013-09-16T09:20:29Z,commit,IDEA-112775 git file history make use of git describe command,github.com/JetBrains/intellij-community/pull/104/commits/34d853d40772b03b5e82a4350348b9ffc0de9185

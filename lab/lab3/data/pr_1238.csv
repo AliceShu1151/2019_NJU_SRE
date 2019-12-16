@@ -1,0 +1,4 @@
+1238,Implement serialization bindings for byte and char primitives
+2019-11-08T10:50:37Z,discuss,"Currently, neither byte nor char primitives can be serialized.
+This adds the missing bindings for those types."
+2019-11-08T10:36:42Z,commit,Implement serializers for char and byte primitives,github.com/JetBrains/intellij-community/pull/1238/commits/db3b4e762d3ec268538cd18d1ccbe6dfd9c1a914

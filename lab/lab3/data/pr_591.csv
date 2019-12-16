@@ -1,0 +1,13 @@
+591,[Fernflower] autoboxing primitives should not always be ignored
+2017-06-11T14:10:53Z,discuss,"This commit puts more restrictions on when we can safely ignore the boxing primitives.
+The initial restrictions were a bit too loose. cdecb09"
+2017-07-15T09:22:13Z,discuss,I resolved the merge conflicts.
+2017-07-15T09:22:13Z,discuss,@gorrus did you get a chance to have a look at this pull request?
+2017-07-25T10:18:11Z,discuss,"Not yet, but it is in the list, sorry for the delay."
+2017-08-05T07:59:11Z,discuss,"Yes, it does feel like overkill, the new tests pass with your suggested improvement."
+2017-08-05T07:59:11Z,discuss,The reason why I had made it so specific was to make sure that this doesn't potentially break any other scenario that I can't think of right now so I made it as specific as I could get.
+2017-08-05T07:59:11Z,discuss,I removed the highly specific boxing restrictions using another commit rather than amending the previous one just in case it turns out that this is too broad and someone in the future will go through the commit log to see these original restrictions. If you prefer that I squish these commits into one please let me know and I will.
+2017-08-28T10:20:30Z,discuss,"Hi, thanks for changes, please make it in one commit, thanks!"
+2017-08-30T06:34:14Z,discuss,done
+2017-08-30T09:37:34Z,discuss,Thanks! Manually merged into master.
+2017-06-11T14:01:12Z,commit,[Fernflower] autoboxing primitives should not always be ignored,github.com/JetBrains/intellij-community/pull/591/commits/fdb797cb1cbd365dc74e3d2fb88a11dc8607bf1e

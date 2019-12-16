@@ -1,0 +1,12 @@
+482,Fix: createDirectories doesn't handle symbolic links
+2016-12-03T15:34:25Z,discuss,"Let's handle it to support symbolic links in configuration
+See https://youtrack.jetbrains.com/issue/IDEA-164639"
+2016-12-03T15:42:29Z,discuss,I will take a look Monday. Thanks for contribution.
+2016-12-03T17:38:24Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2016-12-06T17:51:59Z,discuss,The CLA was received. Thanks.
+2017-03-25T01:05:41Z,discuss,"Just a friendly inquiry, are we still merging this PR?"
+2017-07-13T02:03:01Z,discuss,NOTE: still seeing this in 2017.2 - for example when changing the runtime applicable to PHP for the project. Some settings can be saved however.
+2017-07-13T02:03:01Z,discuss,"bump - I'm getting errors due to symlinks which break saving settings...
+"
+2017-10-06T13:30:17Z,discuss,"Fixed in 2017.3 Fix in our common path.kt, because there are other places where default Java NIO implementation is not suitable."
+2016-12-03T15:30:55Z,commit,[fix] storageUtil: getOrCreateVirtualFile doesn't handle symbolic links,github.com/JetBrains/intellij-community/pull/482/commits/6b15142132680944fbc662924d2c9e7e0263623d

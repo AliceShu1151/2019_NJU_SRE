@@ -1,0 +1,7 @@
+235,Fixes issue with uncomment action removing a space after a comment prefix which ends with a space; refs IDEA-135341
+2015-01-19T16:40:31Z,discuss,"
+No description provided.
+"
+2015-01-20T10:54:37Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2018-07-21T14:57:27Z,discuss,"Already fixed by @JB-Dmitry, @carymrobbins thanks for the PR."
+2015-01-18T23:28:28Z,commit,Fixes issue with uncomment action removing a space after a comment pr¡­,github.com/JetBrains/intellij-community/pull/235/commits/976b962dd3a32eb4f375d30879893747cbab6742

@@ -1,0 +1,8 @@
+909,fix IDEA-142594
+2018-11-02T22:59:33Z,discuss,add support for ANNOTATION_PARAMETERS_LPAREN_ON_NEXT_LINE and ANNOTATION_PARAMETERS_RPAREN_ON_NEXT_LINE
+2018-11-06T09:41:47Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-11-06T20:23:19Z,discuss,@klikh just did
+2019-07-23T08:44:19Z,discuss,Please update the PR.
+2019-07-23T08:45:01Z,discuss,@dyadix please review
+2019-08-09T12:03:39Z,discuss,"The code is outdated, JavaCodeStyleBean was removed."
+2018-11-02T22:57:55Z,commit,IDEA-142594 add support for ANNOTATION_PARAMETERS_LPAREN_ON_NEXT_LINE¡­,github.com/JetBrains/intellij-community/pull/909/commits/3caf40163be6a5b341fcb607e2c84b157dd9f0d2

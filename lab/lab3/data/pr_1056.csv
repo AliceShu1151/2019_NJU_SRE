@@ -1,0 +1,4 @@
+1056,"IDEA-201941 Add countdown to ""resolve changelist conflict"" dialog to prevent accidental confirmations via the keyboard"
+2019-02-08T16:32:08Z,discuss,Fixes https://youtrack.jetbrains.net/issue/IDEA-201941
+2019-03-26T14:06:06Z,discuss,"Thanks for the idea and for the contribution. Unfortunately, have to decline the PR for the reasons mentioned in the mentioned YouTrack issue."
+2019-02-08T16:28:34Z,commit,"IDEA-201941 Add countdown to ""resolve changelist conflict"" dialog to бн",github.com/JetBrains/intellij-community/pull/1056/commits/53765f2c59d5cf6daac48fb9ac08c38676793a83

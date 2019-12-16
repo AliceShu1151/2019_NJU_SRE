@@ -1,0 +1,32 @@
+711,Improvements to ¡°Execute Line in Console¡± feature in PyCharm.
+2018-01-18T00:00:11Z,discuss,"This PR suggests some improvements to the ¡°Execute Line in Console¡± feature in PyCharm. Currently, that feature submits a line to the Python console, even when the line is an incomplete input. A screencast demonstrating the new feature in this PR is shown below.
+"
+2018-01-18T00:00:11Z,discuss,"In this PR, the following changes are implemented:"
+2018-01-18T00:00:11Z,discuss,"When the cursor is on a line and that line is an incomplete input, submit a minimum amount of lines to produce a complete input."
+2018-01-18T00:00:11Z,discuss,"After that, the cursor in the editor is advanced accordingly."
+2018-01-18T00:00:11Z,discuss,"Because of my unfamiliarity with the source code, I have used some code that is clearly not acceptable. Would appreciate if the reviewers can help with improving the code."
+2018-02-02T19:51:38Z,discuss,I have attached a video clip above to help visualize the feature.
+2019-01-17T18:26:47Z,discuss,@Elizaveta239 is this PR ok? Let me know if I need to do more.
+2019-01-23T16:15:47Z,discuss,"Hi @guoci! Yes, the PR is ok, thank you! The feature looks interesting, but we still can't estimate its usefulness.
+Why don't you want to publish it as a separate plugin and share it within JetBrains plugin repository? If it's popular, we'll merge it into PyCharm code base."
+2019-01-23T17:49:20Z,discuss,@Elizaveta239 thanks! I will need some time to get that done.
+2019-01-31T17:15:05Z,discuss,"@Elizaveta239 where are the instructions for creating a PyCharm plugin? I can find one for creating a Intellij plugin https://www.jetbrains.org/intellij/sdk/docs/, but not for a PyCharm plugin."
+2019-02-01T14:05:05Z,discuss,"@guoci In fact all PyCharm plugins are Intellij IDEA plugins. So you should develop it as IDEA plugin, and mention in settings, that your plugin is compatible only with PyCharm, not with other Intellij-based IDEs."
+2019-02-01T14:05:05Z,discuss,"We even had a webinar about plugin development recently: https://blog.jetbrains.com/pycharm/2019/01/webinar-recording-live-development-of-a-pycharm-plugin-with-joachim-ansorg/
+So you can follow steps from it: https://github.com/jansorg/pycharm-webinar-base"
+2019-02-03T22:31:03Z,discuss,"Now published as PyCharm plugin.
+https://plugins.jetbrains.com/plugin/11945-python-smart-execute"
+2019-02-04T14:45:57Z,discuss,"Great news! Usually plugin approval takes a few days, I'll ask to make it faster.
+Thank you very much for your contribution!"
+2019-07-19T15:45:51Z,discuss,"Hi @guoci. I just wanted to thank you for he creation of this plugin. For those of us who are learning Python after a background in R, this comes very very handy. Thanks!"
+2019-08-30T15:30:48Z,discuss,"@carlosahumada89 Thanks. Me too, I tried to implement this feature to emulate RStudio's Run Selected Line(s) Crtl+Enter feature. Since Python is not a curly-brace language, the implementation is more complicated."
+2019-08-30T15:30:48Z,discuss,"AFAIK, no Python IDE has this feature."
+2019-08-30T15:53:01Z,discuss,"@Jmarks199 yes, I am the author of that plugin, link below. The code is based on this PR.
+https://plugins.jetbrains.com/plugin/11945-python-smart-execute"
+2019-11-01T20:22:12Z,discuss,@guoci @Elizaveta239 @traff Maybe it's time to merge it? I've just implemented pretty the same feature for R plugin. Looks like that's really useful for DataScience mode.
+2019-11-05T13:18:39Z,discuss,"@vedun-z Sure, but at the moment it requires some steps from one of the JetBrains team members. We need to:"
+2019-11-05T13:18:39Z,discuss,"Unfortunately, I'm currently busy with other tasks. @vedun-z You're welcome to do these steps."
+2019-11-05T18:41:37Z,discuss,"@Elizaveta239 Thank you for great opportunity, but as long as this feature are not going to 2019.3 anyway, there's no reason to rush.  We could schedule it to 2020.1, what do you think?"
+2019-11-06T11:04:03Z,discuss,Sure! I've created a feature request for it: https://youtrack.jetbrains.com/issue/PY-38919
+2018-01-17T23:56:51Z,commit,initial commit,github.com/JetBrains/intellij-community/pull/711/commits/52d68c00b3af6b0f9d22c7d0a6f7b636b577b9af
+2018-09-24T18:11:56Z,commit,create a new action,github.com/JetBrains/intellij-community/pull/711/commits/2ca418ca02a1a55ddf07d523a63c6b6eaa75e1d6

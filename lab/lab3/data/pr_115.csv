@@ -1,0 +1,13 @@
+115,Proper fix of PY-9356
+2013-10-22T06:52:58Z,discuss,Use $py.class instead of .$py.class
+2013-10-22T06:56:23Z,discuss,I'm very apologize but I miss some very important thing in the #111
+2013-10-22T06:56:23Z,discuss,"In the fix we try to delete .$py.class instead of
+$py.class"
+2013-10-22T06:56:23Z,discuss,"I prepare this pull request which was fully tested and fix the issue
+for sure."
+2013-10-22T06:56:23Z,discuss,"Best Regards,
+Vladimir"
+2013-10-30T16:45:25Z,discuss,Pushed a simpler fix to this issue.
+2013-10-30T17:41:06Z,discuss,"Yes, fix which you pushed is more simpler =)
+Thanks"
+2013-10-22T06:40:18Z,commit,PY-9356 Clean .pyc should include $py.class files if jython interpret¡­,github.com/JetBrains/intellij-community/pull/115/commits/5be12fbb11805f9d784836690dc0309eb3a135b5

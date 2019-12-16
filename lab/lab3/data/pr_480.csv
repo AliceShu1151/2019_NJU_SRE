@@ -1,0 +1,5 @@
+480,Test Hash comparisons using assertThat
+2016-12-01T02:02:17Z,discuss,"бн which makes failure messages (and maybe assertion code) more readable, and avoids http://errorprone.info/bugpattern/SelfEquals and inspection EqualsWithItself."
+2016-12-02T20:57:02Z,discuss,I didn't close this. Something went wrong with the branch and GitHub closed it automatically.
+2016-12-06T17:43:32Z,discuss,Merged manually. Thanks!
+2016-12-01T01:59:11Z,commit,Test Hash comparisons using assertThat,github.com/JetBrains/intellij-community/pull/480/commits/4830920e8ace99a7cb4492172301fce223ee9f0e

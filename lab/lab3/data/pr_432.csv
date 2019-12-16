@@ -1,0 +1,10 @@
+432,"Fix PY-20227,PY-20251,PY-20332,PY-20468"
+2016-07-28T23:31:01Z,discuss,"
+No description provided.
+"
+2016-07-28T23:18:29Z,commit,--do not pass empty format to getArrayItems,github.com/JetBrains/intellij-community/pull/432/commits/810fe5236e63ceea48f2f54fbff96f7fe941ac66
+2016-07-28T23:26:45Z,commit,--do not use PyDebuggerException for flow control (makes it very diff¡­,github.com/JetBrains/intellij-community/pull/432/commits/6493fa0a2d978cab16c9fe3960f1840347ca96f6
+2016-08-19T03:43:45Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/432/commits/13b4c7df4b2e793fb536d83ab8452a4a6546f128
+2016-08-19T04:07:17Z,commit,Fix PY-20332: Fix code that causes constant revalidation during repaint,github.com/JetBrains/intellij-community/pull/432/commits/9e1240a0f2e8be3815b0f536a0d39aa68be8168f
+2016-08-19T04:22:27Z,commit,--Fix PY-20251: Remember the previous renderer state,github.com/JetBrains/intellij-community/pull/432/commits/c7fc19c3a1487c3a161fa694a328f7a1b47b2dd8
+2016-08-19T04:26:25Z,commit,Fix PY-20468,github.com/JetBrains/intellij-community/pull/432/commits/a7a51e1aee70f659ce01b0b243dd2c1566c1d2c3

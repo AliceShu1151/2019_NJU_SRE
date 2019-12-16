@@ -1,0 +1,8 @@
+142,Add method ignore in i18n/Hard coded string inspection
+2014-01-18T01:03:14Z,discuss,"All is said. It can be used to filter out all the hard coded string used with a logger methods.
+Using com.example.myclass#myfunction pattern"
+2014-01-19T18:13:44Z,discuss,"What do you have against @NonNls annotation? You can annotate a method parameter/method return value which is not possible with your solution.
+Thanks"
+2014-01-19T18:20:34Z,discuss,I have nothing against @NonNls. It's just another way to exclude some hardcoded strings.
+2014-01-19T18:36:03Z,discuss,Why do you need it? In which way is it better than @NonNls annotation which is already there?
+2014-01-19T18:36:03Z,discuss,"Moreover you ignore all args of the method though the first one could be a string constant (=enum, which was intended to be ignored) and the second one is a user visible message."

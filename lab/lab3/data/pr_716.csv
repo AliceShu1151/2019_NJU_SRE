@@ -1,0 +1,12 @@
+716,More detailed tests for UnnecessaryUnicodeEscapeInspection
+2018-01-27T12:43:12Z,discuss,"I had been confused when I saw the do while loop in the code since it
+looked like an obvious endless loop. Therefore I wrote some tests to
+make sure this code is covered (which it already was before)."
+2018-01-27T12:43:12Z,discuss,"Since extracting the escape sequences from the source code is
+independent of reporting the errors, I extracted that code to its own
+method, which made it easily testable on its own."
+2018-07-21T11:16:25Z,discuss,cc @BasLeijdekkers
+2018-11-20T15:43:27Z,discuss,"Hi @rillig,
+Sorry I have to decline this pull request. In my opinion this change makes the code harder to read than it already was. The increased tests I like, but I would prefer it if the existing test was just expanded instead. I hope you don't mind (I like your other pull requests:-)"
+2018-11-20T19:34:41Z,discuss,Follow-ups:
+2018-01-27T10:57:48Z,commit,More detailed tests for UnnecessaryUnicodeEscapeInspection,github.com/JetBrains/intellij-community/pull/716/commits/481894be1234fc2083173d955358b3772ec7722f

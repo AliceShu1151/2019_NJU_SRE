@@ -1,0 +1,8 @@
+493,Added keymap loading using BundledKeymapProvider class resource loader
+2016-12-12T19:21:43Z,discuss,"
+No description provided.
+"
+2016-12-21T16:04:01Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2016-12-21T17:13:46Z,discuss,Just did it.
+2016-12-22T15:52:49Z,discuss,We've received the CLA. Thanks.
+2016-12-12T19:18:36Z,commit,Added keymap loading using BundledKeymapProvider class resource loader,github.com/JetBrains/intellij-community/pull/493/commits/2898a9228def7c1a28d2df9f2d6d0a97abb917a7

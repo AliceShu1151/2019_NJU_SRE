@@ -1,0 +1,254 @@
+500,163
+2017-01-02T05:07:10Z,discuss,"
+No description provided.
+"
+2016-12-05T10:34:52Z,commit,Fix exception after reopening tool window (PY-20850),github.com/JetBrains/intellij-community/pull/500/commits/df43ee79c35c30ce248cb28bfa379cb47beff46b
+2016-12-06T12:45:37Z,commit,PyCharm 2016.3.1,github.com/JetBrains/intellij-community/pull/500/commits/8006f7ea3759d025f411e06ca15722e1a7277ec1
+2016-11-01T13:20:37Z,commit,CPP-860 Add various New Project Templates,github.com/JetBrains/intellij-community/pull/500/commits/8cb5c0830df94d86bdf761cb6914ae75e1921d79
+2016-12-01T18:54:56Z,commit,CPP-8171 File Cache Conflict and 'AWT events are not allowed inside w¡­,github.com/JetBrains/intellij-community/pull/500/commits/816350a664238629df0155b6866944fcf1eddb67
+2016-12-06T17:22:25Z,commit,[vfs] fixes missed notifications on flat file watch root changes on m¡­,github.com/JetBrains/intellij-community/pull/500/commits/ee6db1b575cbf753439cf547a501d83978993c90
+2016-12-06T13:57:13Z,commit,project configuration: minimum required version of Kotlin set to 1.0.5,github.com/JetBrains/intellij-community/pull/500/commits/23c1d2f47688144bff4455610ce0d5a25a14c651
+2016-12-02T16:22:24Z,commit,basic tests for PsiErrorElementUtil (IDEA-CR-16497),github.com/JetBrains/intellij-community/pull/500/commits/58c2e11101450243629e0c98bc55931ba19755c4
+2016-12-06T11:38:13Z,commit,EA-92667 - assert: FileDocumentManagerImpl.saveDocument,github.com/JetBrains/intellij-community/pull/500/commits/3fb89cbfd7361d8a662168b42093b5ef777a84c9
+2016-12-06T12:38:53Z,commit,util: cleanup PathEnvironmentVariableUtil (get rid of odd logging),github.com/JetBrains/intellij-community/pull/500/commits/e879cb1d46187eccbab680e80d0a189498c2ddb5
+2016-12-02T19:02:09Z,commit,IDEA-101953 File not showing under project pane / Missing files (blan¡­,github.com/JetBrains/intellij-community/pull/500/commits/1f1349e5840de7eca8155bd82ea866d5c16e64e5
+2016-12-06T10:42:49Z,commit,IDEA-164094 Horizontal scrolling with SHIFT key is no longer working,github.com/JetBrains/intellij-community/pull/500/commits/b47a87d5f8b56b2308dd69a5003754ae440c5b2d
+2016-12-05T10:41:14Z,commit,"PY-21575 (False positive: ""Unclosed group reference"" for backreferenc¡­",github.com/JetBrains/intellij-community/pull/500/commits/ddad15c157b4d38eb41762e5a012cd4e58d8826d
+2016-12-07T13:03:17Z,commit,NPE when setting tabbed content icons fixed (compatibility fix with C¡­,github.com/JetBrains/intellij-community/pull/500/commits/4652ee194286864e6e3d0f9f6e2dee88e64b1259
+2016-12-01T16:28:40Z,commit,[^dAvdeev] make dfa inspection JspWhileStatement-friendlier (IDEA-18499),github.com/JetBrains/intellij-community/pull/500/commits/b4288eea77094c6418186ab2d1d2fab85f821c78
+2016-12-02T12:06:45Z,commit,[^dany] java/groovy completion: suggest non-imported classes after ne¡­,github.com/JetBrains/intellij-community/pull/500/commits/57999a642c6c8e8c142fba168ae62f9d556d8305
+2016-12-07T13:47:56Z,commit,[^cdr] don't increment psi mod counts on file writability change,github.com/JetBrains/intellij-community/pull/500/commits/da455785160a52a674dcf07fbd92280855cf9b2e
+2016-12-07T09:53:13Z,commit,fix doubled run current file linemarker,github.com/JetBrains/intellij-community/pull/500/commits/b199b759f2af908dd68b78e504e241ed52ac0c13
+2016-12-07T11:11:38Z,commit,fix EDU-755 Submissions from PyCharm Edu 3.0 on Stepic,github.com/JetBrains/intellij-community/pull/500/commits/457d4322a4a1690f2991dbe7d5cb881a511a3c6a
+2016-12-07T11:58:52Z,commit,fix EDU-743 Disable create button in new project dialog if no course ¡­,github.com/JetBrains/intellij-community/pull/500/commits/2cf15dffa8727b87eaaa5e8ea553c0374074b4f9
+2016-12-07T12:51:42Z,commit,fix EDU-701 Make Cyphers course python 2 only,github.com/JetBrains/intellij-community/pull/500/commits/a9489b612aa87e5bbd938bdbadf6c985c4b3fb38
+2016-12-07T13:07:27Z,commit,fix EDU-696 Get course from Stepic for course creators,github.com/JetBrains/intellij-community/pull/500/commits/a610e6840336866f826e114de8725c318dc8d77b
+2016-12-07T13:15:22Z,commit,reinitialize client after user login,github.com/JetBrains/intellij-community/pull/500/commits/e7c822c7f83e187a946d2d043a9b542efb4a84c6
+2016-12-07T14:45:29Z,commit,updated bundled course to the new json version,github.com/JetBrains/intellij-community/pull/500/commits/b456c023777ead817eb0f386689dc8d3bca3c7e3
+2016-12-07T14:45:53Z,commit,show bundled course info in case of no internet connection,github.com/JetBrains/intellij-community/pull/500/commits/92c4a2c386c865ef9b7bfbde7dae0207fe60ced3
+2016-12-07T15:16:37Z,commit,cosmetics usage of .idea,github.com/JetBrains/intellij-community/pull/500/commits/f2251d2567914a8feed6fce52c8c2c4f4bb6d724
+2016-12-07T15:29:54Z,commit,fix EDU-796 Do not run skeleton generation for base python 2.7 interp¡­,github.com/JetBrains/intellij-community/pull/500/commits/38e7f8d24b7a32befcbaa5c12772ca87d409de61
+2016-11-11T10:55:09Z,commit,[tests] additional test case for for update targeting,github.com/JetBrains/intellij-community/pull/500/commits/42c4e6c3429258fc7e33f8c09e94e301058937ac
+2016-11-11T19:58:10Z,commit,"[platform] on checking for updates, suggests the same baseline build ¡­",github.com/JetBrains/intellij-community/pull/500/commits/9602f22878be2f393b4a569b813908365502e24c
+2016-11-14T13:48:59Z,commit,[tests] comments,github.com/JetBrains/intellij-community/pull/500/commits/e2d3c448cb9ba9f7ad625d66249b7715caf94b16
+2016-12-01T09:30:17Z,commit,IDEA-161959 Regression: Null checks in JSPs are not working any more,github.com/JetBrains/intellij-community/pull/500/commits/6ce5753232a81ac3038798edd69871265d293d44
+2016-12-07T14:20:10Z,commit,IDEA-140717 Opened form files are not opened in UI designer after res¡­,github.com/JetBrains/intellij-community/pull/500/commits/e6b4f1dfb86d8e96bacde2afbd2f406158136dce
+2016-12-07T05:37:54Z,commit,Remove fields from the loop nonFinalVariables (Fix for IDEA-165119 Ne¡­,github.com/JetBrains/intellij-community/pull/500/commits/4f34bd225e6868d984f750224996d1ddd6498a05
+2016-11-21T08:02:21Z,commit,Fix unclosed Files.list(...) stream,github.com/JetBrains/intellij-community/pull/500/commits/3dcd687ac0cedd266b48f7db71e7bb7ae72596b1
+2016-12-07T10:50:23Z,commit,Added option idea.max.content.load.filesize to open big files without¡­,github.com/JetBrains/intellij-community/pull/500/commits/f0b11c1dfb5cf9510cd60135d6d2407d34d7af06
+2016-12-08T12:48:05Z,commit,build scripts: set more precise since-build for plugins,github.com/JetBrains/intellij-community/pull/500/commits/c4e8e03b7e6eac2696a86bb561b0644449ab3e90
+2016-12-08T14:45:38Z,commit,2016.3.2,github.com/JetBrains/intellij-community/pull/500/commits/d0e818e0a827b86bd13bc1d70f2bea01a45b2917
+2016-11-25T15:08:39Z,commit,WEB-24362 JSON Schema: NullPointerException is thrown on saving chang¡­,github.com/JetBrains/intellij-community/pull/500/commits/b596bb00220db102f7cec581e784e66021e5ebda
+2016-11-17T20:42:10Z,commit,[git] extract method that generate reference name combined with track¡­,github.com/JetBrains/intellij-community/pull/500/commits/df3c5cd4145ff79916ed561babe481c1f96216b3
+2016-11-17T20:52:58Z,commit,"[git] if no track info is present for a local branch, try to match wi¡­",github.com/JetBrains/intellij-community/pull/500/commits/7867ba0d66dec8e8d68d6ae3f03546d2ca8486ba
+2016-12-07T13:09:28Z,commit,WI-34248 Blade: parameter info is not shown in PHP tags,github.com/JetBrains/intellij-community/pull/500/commits/c08205d50518790cef316ecd1783e6fc08b772fb
+2016-12-08T13:28:06Z,commit,same login with platform util method for WI-34248 Blade: parameter in¡­,github.com/JetBrains/intellij-community/pull/500/commits/62ccf89508f04aeed82a18e1dccb286bb7cb9c21
+2016-11-28T10:41:57Z,commit,git: use actual local changes for diff after cherry-pick,github.com/JetBrains/intellij-community/pull/500/commits/ded172b89a2f3363834ecc5f3306dcf0eb7e173e
+2016-12-07T13:27:08Z,commit,fix OutputStream leak in Patcher's Bootstrap,github.com/JetBrains/intellij-community/pull/500/commits/860c84735eba73bd93d76cc3cb36c9f76ad93a30
+2016-12-07T18:23:14Z,commit,Clean up + better logging and error handling from Eugene Petrenko,github.com/JetBrains/intellij-community/pull/500/commits/bc2524ca19e4d38e003511c88e2c20b80d80535c
+2016-12-07T18:25:40Z,commit,catch all exceptions while applying a patch,github.com/JetBrains/intellij-community/pull/500/commits/0b4488bc921a8ad60451dff0c386f9b038672641
+2016-10-11T08:26:21Z,commit,new inference: postpone unresolved variables in favor to variables wi¡­,github.com/JetBrains/intellij-community/pull/500/commits/0e52e47316fb69fd25c5f95e32f573bcc9ca762c
+2016-11-03T12:17:46Z,commit,don't erase method invocation type iff unchecked conversion was requi¡­,github.com/JetBrains/intellij-community/pull/500/commits/d9c3287ca14685756fb429a09821fa2057076f76
+2016-11-15T13:48:31Z,commit,inference: don't distinguish parameterizations with 2 different inter¡­,github.com/JetBrains/intellij-community/pull/500/commits/8ca5071b873c600508ee5c237e3a6e0ef6fa0db2
+2016-11-21T16:27:56Z,commit,inference: mark call unchecked required when proper types are compare¡­,github.com/JetBrains/intellij-community/pull/500/commits/c44b9bf5d44ed54a3218477300f7cc76767317ca
+2016-11-22T10:39:08Z,commit,NPE,github.com/JetBrains/intellij-community/pull/500/commits/85a6301964ff56c90c2622d1a503f66f4b0710ce
+2016-11-23T09:52:31Z,commit,postpone check for accessible to prevent access to another (lombok) i¡­,github.com/JetBrains/intellij-community/pull/500/commits/956605b23a9cdb9d3ffeb44e6bdd84f8cbc7b5af
+2016-11-23T10:51:57Z,commit,inference: don't erase types when target type is parameterized with u¡­,github.com/JetBrains/intellij-community/pull/500/commits/e6d68db27b270785412930727cf678879e3f468b
+2016-11-25T10:46:26Z,commit,check constructor only implicitly called constructor (IDEA-164500),github.com/JetBrains/intellij-community/pull/500/commits/ceff032a61a49be16c1783d213e0f48ec8d97fee
+2016-11-30T14:21:38Z,commit,include package local methods into method hierarchy (IDEA-164557),github.com/JetBrains/intellij-community/pull/500/commits/e629ab7cb853bde50cf342f790b389a25323ce89
+2016-12-01T10:40:03Z,commit,allow functional expressions in nested conditional expressions (IDEA-¡­,github.com/JetBrains/intellij-community/pull/500/commits/e011d648c5a4c11f70e4217a05d6266875c7f359
+2016-12-01T17:25:48Z,commit,ensure no conflicts with user's settings (IDEA-164850),github.com/JetBrains/intellij-community/pull/500/commits/6aadae630441af9f5b48384effc23b6719e6d9d4
+2016-12-02T10:47:10Z,commit,skip injected files in pattern set; pass containing file for injectio¡­,github.com/JetBrains/intellij-community/pull/500/commits/ae2793be684bc9f79fffa43128a5de5f72043188
+2016-12-05T18:58:50Z,commit,precise rethrow: special case for catch Exception (IDEA-164241),github.com/JetBrains/intellij-community/pull/500/commits/0fff21871cc1334e3e35aceae3eeaad95b9240d6
+2016-12-06T11:11:39Z,commit,turn refs to super: don't touch implicit return types (IDEA-161252),github.com/JetBrains/intellij-community/pull/500/commits/bd57dac960d644cb898835fc75f15b7aaadcc9ac
+2016-12-06T16:19:20Z,commit,isEffectivelyFinal: disallow effectively final variables to be initia¡­,github.com/JetBrains/intellij-community/pull/500/commits/176d5f4adcc94647eca3e88d7aba96000b02d151
+2016-12-07T11:21:37Z,commit,new inference: check intersection type of upper bound to detect subst¡­,github.com/JetBrains/intellij-community/pull/500/commits/b560549d81662aceef581871889ca03ab72f89d0
+2016-12-07T17:41:36Z,commit,ensure no whitespaces/comments left after dequalify with type annotat¡­,github.com/JetBrains/intellij-community/pull/500/commits/2f1545f85f5226a937269ced20729bdcf66a6a87
+2016-12-09T14:37:48Z,commit,collapse to diamond during completion: don't walk up from statement (¡­,github.com/JetBrains/intellij-community/pull/500/commits/5e52b32bfe6c33f5c737a3ea6cf1ea48aafd88d9
+2016-11-14T11:21:32Z,commit,presort descriptions per file (IDEA-163879),github.com/JetBrains/intellij-community/pull/500/commits/ebb3c2722da216d4e34998d12241ec64b733862d
+2016-11-15T18:35:38Z,commit,"distinguish interfaces inside type args, see RedundantCast15Test#test¡­",github.com/JetBrains/intellij-community/pull/500/commits/71473bf51d3b0c4f17193ed38efb85bd8496444e
+2016-12-12T12:39:37Z,commit,[platform] tolerates inaccessible JDK 9 methods,github.com/JetBrains/intellij-community/pull/500/commits/8e4f446e76f78d651f775f2e674d7598b178739a
+2016-11-23T18:54:22Z,commit,[vcs-log] index commits one by one,github.com/JetBrains/intellij-community/pull/500/commits/45bfd379f4ca961ef3b929b69dc0cb4274f5bfd6
+2016-11-24T03:01:34Z,commit,[vcs-log] pass a single VcsFullCommitDetails instance to storeDetails¡­,github.com/JetBrains/intellij-community/pull/500/commits/4bfa535ce7e0ed045e907b186ca1b3628e0b4701
+2016-11-24T03:09:23Z,commit,"[vcs-log] minor: move constant to the place it is actually used, add ¡­",github.com/JetBrains/intellij-community/pull/500/commits/f3d8f9b051823196ad246ef5bd8690f132fe1c6c
+2016-12-08T16:18:20Z,commit,[vcs-log] util method for getting details synchronously,github.com/JetBrains/intellij-community/pull/500/commits/24012a06de81f29da6572076aaee312a207d728d
+2016-12-06T16:20:10Z,commit,Prettify content entries configurables,github.com/JetBrains/intellij-community/pull/500/commits/21b226d7da078b5672646c36cb6f9fba76ba1fe1
+2016-11-18T13:55:38Z,commit,[formatter tests] new way of specifying test formatting model,github.com/JetBrains/intellij-community/pull/500/commits/49cf2469df6ae62de789b5333b2e5e897498ce26
+2016-11-24T13:45:57Z,commit,[formatter] allow empty blocks IDEA-162000,github.com/JetBrains/intellij-community/pull/500/commits/948b19463d4a1643033310cce195283dd668ee7e
+2016-12-12T13:51:47Z,commit,pycharm edu 3.5 eap,github.com/JetBrains/intellij-community/pull/500/commits/8c22d3c09d3d473e77feb89d91198363f0aff289
+2016-12-12T14:09:06Z,commit,proper icon for pycharm edu,github.com/JetBrains/intellij-community/pull/500/commits/137806b3dc1be5e49572c2155678b0915edec5df
+2016-11-10T17:35:16Z,commit,CPP-7531 CMake tool window is activated and error icons updated only ¡­,github.com/JetBrains/intellij-community/pull/500/commits/8df41de9a6f6b0f56e9e27a1452f589f8b05f1a9
+2016-11-17T11:30:05Z,commit,dictionary: variadic,github.com/JetBrains/intellij-community/pull/500/commits/3b17150029a14dc441338d5709658a44c4fe8959
+2016-11-21T11:16:16Z,commit,allow removing implicitly ignored directories (CPP-8028 Exclude gener¡­,github.com/JetBrains/intellij-community/pull/500/commits/cc5750aa82a7031063108c788758f40d5e03f250
+2016-11-23T21:05:20Z,commit,CPP-8004 Set CLion's project name from CMake's ${PROJECT_NAME}: reset¡­,github.com/JetBrains/intellij-community/pull/500/commits/44490ea1f002294d591cfbcfbf891f2a92c4763e
+2016-12-01T10:56:38Z,commit,convert WebBrowserUrlProvider to kotlin,github.com/JetBrains/intellij-community/pull/500/commits/47ab4feb0087490c4cd18e8321444b194da46c5b
+2016-12-01T10:56:59Z,commit,convert WebBrowserUrlProvider to kotlin,github.com/JetBrains/intellij-community/pull/500/commits/bd6cb479ab86f92d81aa786c8656fde2791dc29b
+2016-12-12T18:04:17Z,commit,IDEA-165350 XXE Injection with Maven,github.com/JetBrains/intellij-community/pull/500/commits/053c7814549561bbf850533d172b9f4b93f8f72d
+2016-12-02T10:41:25Z,commit,IDEA-164734 Update screen is too big,github.com/JetBrains/intellij-community/pull/500/commits/c808408f11a1f06de89427b2aa43f6067fcb550d
+2016-11-07T19:00:40Z,commit,Choice problems UI prototype,github.com/JetBrains/intellij-community/pull/500/commits/bb4c3e40460340f1570ce55129524f299a14164f
+2016-11-10T11:34:22Z,commit,Show choice variants on task description panel,github.com/JetBrains/intellij-community/pull/500/commits/494c887da86ff7ba9964f9c89bef4dedf47abef0
+2016-11-11T12:13:04Z,commit,"Use authorized client to get current user, otherwise we always receiv¡­",github.com/JetBrains/intellij-community/pull/500/commits/bf0397c239296d2f0bf5ec161342dbf0130c2387
+2016-11-11T12:18:41Z,commit,Get choice problems from stepik,github.com/JetBrains/intellij-community/pull/500/commits/5de4efd8b8c64ea2193fe3d999b8bf9c8ac355eb
+2016-11-11T12:25:10Z,commit,"Cleanup: remove unused variables, add final modifiers, add ""my"" prefix",github.com/JetBrains/intellij-community/pull/500/commits/e077ede462d5f7e339795cc8340d261f91351fcf
+2016-11-11T16:43:29Z,commit,Add choice task check,github.com/JetBrains/intellij-community/pull/500/commits/8db1ada66c60d5e099bfff5be911d490556b08bf
+2016-11-21T11:37:32Z,commit,Refactor getting task text from task,github.com/JetBrains/intellij-community/pull/500/commits/765770aa5979a3679247c962696b34a15236222f
+2016-11-21T14:34:20Z,commit,When adding a recommendation copy choice problem task parameters,github.com/JetBrains/intellij-community/pull/500/commits/f0b45855b1ba1b6285242d94fa49fdedff706160
+2016-11-22T15:59:10Z,commit,Rewrite choice problems UI with JavaFX controls,github.com/JetBrains/intellij-community/pull/500/commits/8828699fb2f674afffa074afb0498c0af140c047
+2016-11-23T11:42:15Z,commit,Refactor task class choice part,github.com/JetBrains/intellij-community/pull/500/commits/4a20e42256a8a049add2edb103fcb89f836ae92c
+2016-11-24T09:43:14Z,commit,Fix problem with check choice task: create a new attempt if there's n¡­,github.com/JetBrains/intellij-community/pull/500/commits/3f97785cad3973edf1457acd134ad843484e703b
+2016-11-25T10:39:45Z,commit,Change choice task check notifications: 1) Do not show test tool wind¡­,github.com/JetBrains/intellij-community/pull/500/commits/2f3149e75ac030fb3912bfb64a655ddd3bcbfd06
+2016-11-25T11:08:57Z,commit,Cleanup: 1) Add,github.com/JetBrains/intellij-community/pull/500/commits/ff9de4cda5e8af5ecf82250613d831ee322ae2af
+2016-11-25T11:25:56Z,commit,Remove UI for choice problems with EditorNotification Rename ChoicePa¡­,github.com/JetBrains/intellij-community/pull/500/commits/ca2b1296314e03c4b454ce9295d5223b392d9604
+2016-11-25T11:38:41Z,commit,Save selected choice variants Shuffle choice variants after wrong answer,github.com/JetBrains/intellij-community/pull/500/commits/6f7cefee2a61480e90c090875c9d9ddfaf1a39ca
+2016-11-25T12:39:59Z,commit,Extract choice task related fields into separate class,github.com/JetBrains/intellij-community/pull/500/commits/e463154ac1802ad24d6ffd698ae8c4cb3c15dbc9
+2016-11-28T16:15:53Z,commit,Do not show test results message for choice problems check output,github.com/JetBrains/intellij-community/pull/500/commits/5abf83f41ee4ad4e3c95b2364a899f1a988beb7e
+2016-11-28T16:37:37Z,commit,Serialize choice parameters as a ChoiceParameters object: add transie¡­,github.com/JetBrains/intellij-community/pull/500/commits/a4b36b649bc77655533d33fe2ff19c019ce84bad
+2016-11-28T17:25:40Z,commit,Reset choice variants in reset task file action,github.com/JetBrains/intellij-community/pull/500/commits/aad8f65bf8b26c42922d3e76f0e24286509415fb
+2016-12-01T17:18:38Z,commit,Minor Annotate parameters with NotNull Inline hintText function param¡­,github.com/JetBrains/intellij-community/pull/500/commits/7b92a1f85b7da4b664246b2fe6a177885b3b61cf
+2016-12-01T18:34:16Z,commit,Fix EDU-775 Hints: edit button is disabled if there are no hints,github.com/JetBrains/intellij-community/pull/500/commits/75c45b66b9e402b56ded74fc8a33a38cf4d25140
+2016-12-01T18:37:47Z,commit,Add ability to remove first hint using RemoveHint button,github.com/JetBrains/intellij-community/pull/500/commits/c4b8755d16f85a2ab06ce22d0b9d525fe31fe529
+2016-12-02T09:39:12Z,commit,Fix EDU-773 Hints: adding hint in the middle makes text of the last h¡­,github.com/JetBrains/intellij-community/pull/500/commits/b1996d7818aaecd83775e2dbcaad26dde9db2b93
+2016-12-02T12:41:19Z,commit,Cosmetics Make answer placeholder text selected on focus,github.com/JetBrains/intellij-community/pull/500/commits/c55a93828dfe120ccf52db5bc833a38be331f5fc
+2016-12-06T09:54:47Z,commit,Refactor getCurrentUser for readability: pass client as parameter ins¡­,github.com/JetBrains/intellij-community/pull/500/commits/3a887498d173d9360c065923b4a83a3e48de072e
+2016-12-12T13:14:05Z,commit,Fix after merge: add missing parameter,github.com/JetBrains/intellij-community/pull/500/commits/36a1f6282ed4aa16594d175a034b93a82f9a9856
+2016-12-12T13:15:16Z,commit,Minor Extract choice task text type,github.com/JetBrains/intellij-community/pull/500/commits/700901b3b2b5aa720aa338f07bf3366e0de37639
+2016-12-12T15:19:38Z,commit,refactored implementation of EDU-745,github.com/JetBrains/intellij-community/pull/500/commits/e699b114c860265ad4aad302fdaade01cd827630
+2016-12-12T15:20:48Z,commit,do not add src/ when checking task description files,github.com/JetBrains/intellij-community/pull/500/commits/bd426ae1b8666440eb5f7a83f0ee4211c56a0e9a
+2016-12-12T15:21:52Z,commit,handle src dir correctly in project view,github.com/JetBrains/intellij-community/pull/500/commits/cd9d0d062f4d7e9e628bb6355ff69c351758a2a5
+2016-12-12T15:23:52Z,commit,wrong progress info: course is never completed,github.com/JetBrains/intellij-community/pull/500/commits/ed30797e4eceea8f7578bf5fe1e72e499f193b96
+2016-12-12T15:25:20Z,commit,"compute relative path to src dir, not to actual task dir",github.com/JetBrains/intellij-community/pull/500/commits/c345cf6321dfd6f97ff130dafdf1cbd2c6606f17
+2016-12-12T15:32:12Z,commit,remove redundant parameter and use correct taskDir,github.com/JetBrains/intellij-community/pull/500/commits/af309bb7b7865d353fdd0eba1ddbb9593ed7d854
+2016-12-12T16:57:28Z,commit,check size (IDEA-CR-16735),github.com/JetBrains/intellij-community/pull/500/commits/cfc652af6aa58c6fd177fa5077dc5b4cbcc916c6
+2016-12-12T17:14:18Z,commit,Wrap text in checkboxes/radio buttons on ChoicePanel,github.com/JetBrains/intellij-community/pull/500/commits/52145c15ee3c7f995c7981961c29897249523c13
+2016-12-13T09:50:17Z,commit,extracted progress counting to separate methods (IDEA-CR-16736),github.com/JetBrains/intellij-community/pull/500/commits/f7c82dd9a05af5e102bb0691ac1f2f65b2ea3124
+2016-12-13T10:51:52Z,commit,Show notification if no there's no recommendations for a task,github.com/JetBrains/intellij-community/pull/500/commits/69f0fa3200e1f6adf23d2a42fcaa0ceedd1d1a9d
+2016-12-12T16:25:34Z,commit,IDEA-164679 Intellij IDEA 2016.2/3 ignores <xsd:sequence> validation,github.com/JetBrains/intellij-community/pull/500/commits/7070910ba0a38a4384d335691aa08cf4ff379f5b
+2016-12-13T15:07:42Z,commit,gradle: do not include the same module twice if it included both in t¡­,github.com/JetBrains/intellij-community/pull/500/commits/2ae5818f4f0403c666126e1777a79077aa6603b3
+2016-12-10T17:16:11Z,commit,CPP-8120 CLion doesn't reload Cmake project after import project from¡­,github.com/JetBrains/intellij-community/pull/500/commits/c8026c95a24448ce957c3c58c66ca6e60cd32a92
+2016-11-17T18:50:12Z,commit,PY-21490: Fixing NPE,github.com/JetBrains/intellij-community/pull/500/commits/7ded51ed59c5135a87583669ac8bb7491e98ae3e
+2016-12-06T15:07:14Z,commit,Fix conda env auto activation in the terminal (PY-21643),github.com/JetBrains/intellij-community/pull/500/commits/ecc4d72f9739f00c683a8e458aff83930fe5ac48
+2016-11-29T14:43:18Z,commit,PY-21447 Jupyter Notebook fails to properly handle IPython.display Ma¡­,github.com/JetBrains/intellij-community/pull/500/commits/ad5994564a78d1b05b1acc04cf379e4cf3f034e3
+2016-12-12T18:21:25Z,commit,PY-20967 Do not warn about missing return statemtents in coroutines d¡­,github.com/JetBrains/intellij-community/pull/500/commits/338017422e2a87419de2542ea5a02d0b12ebd342
+2016-12-12T19:22:52Z,commit,PY-20709 Properly detect annotated return types of generators in type¡­,github.com/JetBrains/intellij-community/pull/500/commits/1bec7072b6b4d0bf54828b12b0a65e5fcc5bf070
+2016-12-13T19:53:58Z,commit,2016.3.3,github.com/JetBrains/intellij-community/pull/500/commits/e10aea226c36e83be5410be05dc09e82f638d0af
+2016-12-14T09:29:46Z,commit,update patcher version,github.com/JetBrains/intellij-community/pull/500/commits/4cd84c10c83e5e9fbb0cd9c089489c25a61f00ea
+2016-11-14T16:04:48Z,commit,EA-88548 - IAE: TObjectHash.throwObjectContractViolation,github.com/JetBrains/intellij-community/pull/500/commits/6760edff598144d299871b0cc46f58b2d7c37bd4
+2016-11-24T09:07:24Z,commit,merge: execute finally block on `registerUndoRedo` failure,github.com/JetBrains/intellij-community/pull/500/commits/414bb625a894dc555bfa6872e330bf100f061091
+2016-12-07T14:44:26Z,commit,diff: do not rely on Change.hashCode implementation,github.com/JetBrains/intellij-community/pull/500/commits/a9b2bc6b7034ae74f2b7173947a5ad835ef2bfe8
+2016-12-13T15:34:57Z,commit,EDU-798 Task text editing is broken,github.com/JetBrains/intellij-community/pull/500/commits/01db977f57b735136b12c27a653d2c8d9f9d3ec8
+2016-12-13T16:48:55Z,commit,Do no try to get user id if user failed to login,github.com/JetBrains/intellij-community/pull/500/commits/f3ee70396f9fdad19b34d58a183423f757cd893b
+2016-12-13T16:49:39Z,commit,Fix EDU-799 Unable to delete login/password from settings,github.com/JetBrains/intellij-community/pull/500/commits/83e76d2f81c5ab4f2391756aaff7bb9915d24dd6
+2016-12-14T12:52:57Z,commit,"A separate option to keep trailing spaces on caret line, IDEA-164345 ¡­",github.com/JetBrains/intellij-community/pull/500/commits/ed4d9277fca1a75b8733f3e0a913c9f5157d75c8
+2016-12-12T13:46:18Z,commit,"WI-34109 Can't open the link in the ""PHP interpreter is not configure¡­",github.com/JetBrains/intellij-community/pull/500/commits/e6083113b2f539fafddbfd3b7bb42f7b143c86c4
+2016-12-13T11:59:05Z,commit,"temporary fix for PY-21905 Jupyter notebook hangs on cell ""run""; 403 ¡­",github.com/JetBrains/intellij-community/pull/500/commits/4895e3419f3f6c3c9560d3f62a7be1177914c96b
+2016-12-14T13:29:48Z,commit,Restore the ability to add maya interpreter to PyCharm (PY-21723),github.com/JetBrains/intellij-community/pull/500/commits/63f51bca08f1f29df088c330a027aab73a63b3a1
+2016-12-14T15:14:23Z,commit,fix according IDEA-CR-16798 for issue PY-21905,github.com/JetBrains/intellij-community/pull/500/commits/c04fa5d5a6ef2a04bf2c3d500b3d7513603cf19f
+2016-12-12T15:25:26Z,commit,[project view] fix reopening saved pane (IDEA-164733),github.com/JetBrains/intellij-community/pull/500/commits/94bc3dae5ede1a581569f6bb925c783005fe175e
+2016-12-14T16:30:34Z,commit,[groovy] fix exception on super reference in trait without supertypes¡­,github.com/JetBrains/intellij-community/pull/500/commits/255e4b612871ea8b91c046382a40779d5bb637f4
+2016-12-15T08:24:36Z,commit,EDU-800 Broken adaptive course creation,github.com/JetBrains/intellij-community/pull/500/commits/d1a27712904e4cacc03f29f2df33314b3431d19a
+2016-12-15T11:14:12Z,commit,Restart Run Profile: check if project is not disposed,github.com/JetBrains/intellij-community/pull/500/commits/9462a3669f7b0abd2df765b969cc7722491c339c
+2016-10-28T17:34:41Z,commit,test output order: ensure that tree view with predefined structure se¡­,github.com/JetBrains/intellij-community/pull/500/commits/3efb31ef6c4ef0620810aae633c7385737e90902
+2016-11-07T17:33:12Z,commit,ensure sending tree is specified for root node even (IDEA-163309),github.com/JetBrains/intellij-community/pull/500/commits/8fe365669bcfa83bd05d241f04ac096ce61d4492
+2016-12-15T10:02:18Z,commit,EDU-794 Disable stepik settings if no educational projects are opened,github.com/JetBrains/intellij-community/pull/500/commits/79d69f18d4c94efb4a5651cea8df0cb5aa3f100f
+2016-12-15T13:11:30Z,commit,Fix EDU-801 Empty window instead of choice task: use proper class loa¡­,github.com/JetBrains/intellij-community/pull/500/commits/b6736ae0c6399e97f0d2855aa32d873192418632
+2016-12-15T14:39:11Z,commit,there is no need of intellilang in pycharm edu,github.com/JetBrains/intellij-community/pull/500/commits/4c6467390d27538584aabecd066cd2657e180843
+2016-12-14T15:54:26Z,commit,[platform] restores and documents update channel selection behavior,github.com/JetBrains/intellij-community/pull/500/commits/e86b03d9cd28dceacbd1b2c341ef2e072751613d
+2016-12-15T17:04:26Z,commit,do not use our new format in EAP due to stepik restrictions,github.com/JetBrains/intellij-community/pull/500/commits/b5381ce45d34189a1dfdf6c3723ccfb4dcafc0f7
+2016-12-15T17:05:04Z,commit,set last_subtask_index properly,github.com/JetBrains/intellij-community/pull/500/commits/c3ab8ac229cdc7698ebce68a3eca95cc800de0b1
+2016-12-16T12:22:19Z,commit,create your own private course,github.com/JetBrains/intellij-community/pull/500/commits/05c7cb5710809875666914b8cf2b7a4e07cbc83e
+2016-12-16T12:40:33Z,commit,EDU-806 Upload task descriptions and tests for all subtasks,github.com/JetBrains/intellij-community/pull/500/commits/c92c69d4ed3b4a1137fb4ea1bf892f202ca8e964
+2016-12-16T12:59:38Z,commit,remove pycharm additional lessons,github.com/JetBrains/intellij-community/pull/500/commits/73e0bd7957c6c922c02888cd24cf1dca66618699
+2016-12-16T13:35:15Z,commit,do not login twice,github.com/JetBrains/intellij-community/pull/500/commits/c4d47c05ba1b2a46a228166e15bcdc4654f13290
+2016-12-15T13:11:30Z,commit,Fix EDU-801 Empty window instead of choice task: extract methods,github.com/JetBrains/intellij-community/pull/500/commits/1905417fa888a46b978e80effc78d585a3d6e6a5
+2016-12-16T14:57:40Z,commit,store stepic user per application,github.com/JetBrains/intellij-community/pull/500/commits/e86b19eec5a071d7b462fedf2c0d29e6c8df3eca
+2016-12-16T15:05:11Z,commit,do not create sdk if project generation failed,github.com/JetBrains/intellij-community/pull/500/commits/c7032a919fb9336a0728a5c8e0c8bd8db3d2eae2
+2016-12-16T16:30:39Z,commit,enroll to all courses created from stepic,github.com/JetBrains/intellij-community/pull/500/commits/03a88ac8a738a5dafd1200934b18bc0e6288d462
+2016-12-16T16:35:43Z,commit,do not try to enroll to course if not logged in,github.com/JetBrains/intellij-community/pull/500/commits/bc3378ca47f96fa03b136f21740a661120425697
+2016-12-16T16:36:02Z,commit,disable testing from samples by default,github.com/JetBrains/intellij-community/pull/500/commits/93fada05a7bd39bae629d64f4e7102447727e9c3
+2016-12-17T13:57:56Z,commit,store stepic user in study task manager (per project),github.com/JetBrains/intellij-community/pull/500/commits/0a1c06b7436e784b0fbbd9e6651f733e692ebbc4
+2016-12-17T15:05:52Z,commit,fix NPE,github.com/JetBrains/intellij-community/pull/500/commits/4d932461938fdecdf51de1a11bff924c4ed547bb
+2016-12-17T16:57:24Z,commit,Add darcula laf for choice variants panel,github.com/JetBrains/intellij-community/pull/500/commits/27f483389a58c26f9e3511ef2abe7bad57cee3ca
+2016-12-18T17:34:27Z,commit,separate config for pycharm edu 3.5,github.com/JetBrains/intellij-community/pull/500/commits/fe778f724a2d43ac6aba1c85a258f484f66d4cc3
+2016-12-19T08:58:25Z,commit,npe stepic user could be null,github.com/JetBrains/intellij-community/pull/500/commits/ff6f815e36f42994bd7c0e2f4e13e8933a10cfce
+2016-12-19T09:16:55Z,commit,fix int overwlow in max heap size calculations for external javac pro¡­,github.com/JetBrains/intellij-community/pull/500/commits/68502054afe002fc257b10e8eb87dab806adce74
+2016-12-19T09:29:27Z,commit,stepic user could be null,github.com/JetBrains/intellij-community/pull/500/commits/8b07455526a40334228e7dbb370c1d2f982d79b5
+2016-12-19T10:22:01Z,commit,EDU-809 Possible to break answer placeholder,github.com/JetBrains/intellij-community/pull/500/commits/5cf8f0e226bf01ea40e53bc00fbc3a6cc27e6ac6
+2016-12-19T12:03:10Z,commit,project view toolwindow icon should be 13x13 (26x26),github.com/JetBrains/intellij-community/pull/500/commits/67af2c5b5be4aec4280fbaaf93434d28d789fdc8
+2016-12-19T12:03:35Z,commit,clear cached state when compiler-related project settings change,github.com/JetBrains/intellij-community/pull/500/commits/e6effb38b67d4eee8527b4593f6b04e87e4bd174
+2016-12-19T12:41:43Z,commit,IDEA-165447 Warning for 'Clear output directory on rebuild' shown on ¡­,github.com/JetBrains/intellij-community/pull/500/commits/5b1d856bb2a45878cac36d6131e2a7bb7ba4e939
+2016-12-17T16:13:49Z,commit,Allow to dispose actions in Create Project dialogs,github.com/JetBrains/intellij-community/pull/500/commits/1c6ae1d8874e4d27997070d1e2c8bf6c018750f9
+2016-12-19T08:13:14Z,commit,disable 'Use compiler from module JDK' option in IDEA community project,github.com/JetBrains/intellij-community/pull/500/commits/61f9b768fcbc6296b1cb109e0b5d92890a2843cf
+2016-12-19T08:35:03Z,commit,Copy task multiple choice parameter in task copy,github.com/JetBrains/intellij-community/pull/500/commits/9423d206a5ae8b27fe5bee2c49fc63fabf56f33b
+2016-12-19T09:49:27Z,commit,Do not save empty choice parameters for non-choice tasks,github.com/JetBrains/intellij-community/pull/500/commits/f6ce5c21127b67f3cd2536af773fe761e2096f31
+2016-12-19T11:31:39Z,commit,Fix EDU-807 Edit Hint does nothing,github.com/JetBrains/intellij-community/pull/500/commits/556938cad15f0cd674dd96ce148383c67d51e155
+2016-12-19T16:19:11Z,commit,Fix EDU-803 Small visual glitches,github.com/JetBrains/intellij-community/pull/500/commits/a335385c83caed3b172073cbed50b55aab88fec5
+2016-12-19T16:32:41Z,commit,Use the same color for choice panel and browser panel in both lafs in¡­,github.com/JetBrains/intellij-community/pull/500/commits/80b929ee3d2401ceb30fb57491a3ccc472f110c6
+2016-12-19T14:09:53Z,commit,EA-92905 - PCE: AbstractProgressIndicatorBase.checkCanceled,github.com/JetBrains/intellij-community/pull/500/commits/f653050b2c300f84bd51f11220dd11f3c52564b6
+2016-12-20T10:59:15Z,commit,fix migration for local courses created before subtasks,github.com/JetBrains/intellij-community/pull/500/commits/63ff206793a969220c02cd8db34bb6b31e19bf0d
+2016-12-20T12:26:07Z,commit,refresh http client on login,github.com/JetBrains/intellij-community/pull/500/commits/55910ee0504ad78c1e959f8a1a9cb878b00683f1
+2016-12-19T14:14:40Z,commit,[groovy] fix inspection description (IDEA-155037),github.com/JetBrains/intellij-community/pull/500/commits/194231d05f51c1cb25718b1f5b06f78b1a5d4175
+2016-12-15T16:37:52Z,commit,RegexpChecker: continue transaction IDEA-165426,github.com/JetBrains/intellij-community/pull/500/commits/ecd145edf488a451e356befc878e6ff5b004099d
+2016-12-19T23:30:53Z,commit,Handle correctly 'Confirm open new project' option when project attac¡­,github.com/JetBrains/intellij-community/pull/500/commits/4b1687134119011681842bee7372fa0b0f613b42
+2016-12-20T10:07:54Z,commit,Allow to choose files in attach project dialog (PY-17836),github.com/JetBrains/intellij-community/pull/500/commits/68b5ee619969a839a977230a385a82f752230429
+2016-12-20T11:02:09Z,commit,stepic user per application,github.com/JetBrains/intellij-community/pull/500/commits/6b10825e309c537216c3a7c03f6078f83ec96c25
+2016-12-20T14:13:30Z,commit,do not copy introduction course multiple times,github.com/JetBrains/intellij-community/pull/500/commits/1bfff33229401890dde68a025aa7b28826979f1b
+2016-12-20T15:39:25Z,commit,get only bundled intro course for introduction course action,github.com/JetBrains/intellij-community/pull/500/commits/d488b45e78f4f07e9d7bd578578bcdc6637faa62
+2016-12-21T09:05:02Z,commit,WEB-24629 js.debugger.node.use.inspect,github.com/JetBrains/intellij-community/pull/500/commits/ff8382e231aa024b9cbfd3df6f047f954c73e2cc
+2016-12-20T21:05:42Z,commit,propagate shortcut to the intention wrapper,github.com/JetBrains/intellij-community/pull/500/commits/0cc9ad9f3f5a4c66dfb7a9ebe9e174bbd64bc4f7
+2016-11-30T18:04:45Z,commit,PY-21645 Disable some inspections in function type comments,github.com/JetBrains/intellij-community/pull/500/commits/8d86051428f2fd467feaacb38c4b7a5bfd0467d8
+2016-12-12T20:04:17Z,commit,PY-20657 Loose return types of generators annotated to return not typ¡­,github.com/JetBrains/intellij-community/pull/500/commits/fd8ef055838b5c5ea75704d62685e25728dedb45
+2016-12-13T14:19:27Z,commit,PY-20657 Add an additional test case where warning was displayed on a¡­,github.com/JetBrains/intellij-community/pull/500/commits/bea3ff9e6332e906d6cf23b3028248778ec1c304
+2016-12-08T22:13:20Z,commit,Logging improvement,github.com/JetBrains/intellij-community/pull/500/commits/2929e73ea16eabbfa53e6f124454a9aae9716eba
+2016-12-15T19:14:16Z,commit,"Old python removed from tox test, logging improved",github.com/JetBrains/intellij-community/pull/500/commits/d2e64979315ca0f5b26e3fc280af2399f3f609ba
+2016-12-01T17:10:38Z,commit,PY-21750: Fix flask creation for Plugin.,github.com/JetBrains/intellij-community/pull/500/commits/e4522814ef249423b819f492be582ab189957423
+2016-11-24T16:34:03Z,commit,"PY-21617, PY-21614: Project name not passed to Django in plugin leadi¡­",github.com/JetBrains/intellij-community/pull/500/commits/d985b7d779466266bba88437855e1ebd7cff6ef8
+2016-12-15T13:12:35Z,commit,PY-21447 Jupyter Notebook fails to properly handle IPython.display Ma¡­,github.com/JetBrains/intellij-community/pull/500/commits/3d940108f01e0053fb0d79495ed7a4c87b2eba00
+2016-12-14T15:46:57Z,commit,Fix conda activation on Windows (PY-21923),github.com/JetBrains/intellij-community/pull/500/commits/0cb9ab80fd401852934cd8365f4b231ee01b8f83
+2016-12-21T14:02:59Z,commit,Print test tree to improve test verbosity,github.com/JetBrains/intellij-community/pull/500/commits/e32a7c13e193d2b870e6820dc93837bbfc21aed9
+2016-12-21T14:34:05Z,commit,Build scripts: doesn't build separated artifacts with jre x86 for IU ¡­,github.com/JetBrains/intellij-community/pull/500/commits/a6fc02e691d37ee5dba016a2ee5ced65782ec0e3
+2016-12-21T10:23:06Z,commit,IDEA-133794 console source links not underlined (nor clickable) if fo¡­,github.com/JetBrains/intellij-community/pull/500/commits/bc7faab05a70652b84fb95b62576a1e2fb1e72e8
+2016-12-21T15:17:24Z,commit,IDEA-133794 console source links not underlined (nor clickable) if fo¡­,github.com/JetBrains/intellij-community/pull/500/commits/2713e854277d08615ce4e436a1ff19a3348666ef
+2016-12-16T21:29:28Z,commit,[vcs-log] statistic for number of branches,github.com/JetBrains/intellij-community/pull/500/commits/6b845d5d1d66888111443f73c62cfc0444c8ea4d
+2016-12-19T19:36:28Z,commit,"IDEA-162905 ""Select Target -> Project View"" doesn't work",github.com/JetBrains/intellij-community/pull/500/commits/d6e45bcb2f074730ff6f2e72daee945e6922040d
+2016-12-20T12:08:30Z,commit,"IDEA-160450 ""Select Target -> Project View"" doesn't work if Project V¡­",github.com/JetBrains/intellij-community/pull/500/commits/353bca6c65edd1c35c4cf186967bfd115d9859af
+2016-11-07T09:22:00Z,commit,IDEA-163532 Speed search in popups preselects the last match instead ¡­,github.com/JetBrains/intellij-community/pull/500/commits/3c687bad930b1373c6efa8b4ba64263559a744c6
+2016-12-14T09:50:58Z,commit,diff: notify caller that command was cancelled because document is Re¡­,github.com/JetBrains/intellij-community/pull/500/commits/8bd8b31e89d7e41d19c9fbd9ad77971bce474373
+2016-12-14T10:51:50Z,commit,merge: abort merge resolve in read-only documents,github.com/JetBrains/intellij-community/pull/500/commits/a36675b777bc2c06949242c5cc49ffeba2e5fdbc
+2016-12-14T09:48:12Z,commit,merge: abort patch applying in read-only documents,github.com/JetBrains/intellij-community/pull/500/commits/944acd3dfcd3aaf827593d99e935bc95bc173f2e
+2016-12-13T11:30:35Z,commit,IDEA-164692 Only one instance of password is saved,github.com/JetBrains/intellij-community/pull/500/commits/55fcc8092d8a3965cf229fa7041cdea6e3768d19
+2016-12-21T13:20:44Z,commit,Avoid OOME in native code by writing patched contents in chunks (IDEA¡­,github.com/JetBrains/intellij-community/pull/500/commits/2cdab39a5f29f7174a984a2e4631eaa6f4d31e9d
+2016-12-23T00:40:08Z,commit,update patcher version,github.com/JetBrains/intellij-community/pull/500/commits/04338509f7cd2b779f238c707d1f19000180cd27
+2016-12-21T15:14:29Z,commit,[groovy] fix FromAbstractTypeMethods support (IDEA-165684),github.com/JetBrains/intellij-community/pull/500/commits/4c581b74a2977caa0e4c525a51105045ff29f259
+2016-12-23T13:12:27Z,commit,"Revert ""coverage: hide coverage on view disposal (IDEA-162273)""",github.com/JetBrains/intellij-community/pull/500/commits/4f9c6dc3709e0a0ad1c991e0091980df58bd7055
+2016-11-29T14:42:36Z,commit,"Java: Fixed false positive ""unreachable statement"" in the control flo¡­",github.com/JetBrains/intellij-community/pull/500/commits/30c9003c98984bebf95caa993e8e77f6a5b7f96c
+2016-11-30T11:58:32Z,commit,Java: Fixed IOOBE in processing of sub-range of a control flow (IDEA-¡­,github.com/JetBrains/intellij-community/pull/500/commits/53a21e86dcc753de9af917a6dc48e431c87c7ef4
+2016-12-02T17:58:40Z,commit,Java: Fixed IOOBE in processing of sub-range of a control flow (IDEA-¡­,github.com/JetBrains/intellij-community/pull/500/commits/7f0abac3443aa746f45f8030903cbadcfbff6adc
+2016-11-28T14:16:39Z,commit,Java: Avoid endless loop while searching for unused variables in the ¡­,github.com/JetBrains/intellij-community/pull/500/commits/5e118cc671fb71d3b9414da3568e5e10bcf9a784
+2016-11-28T15:35:42Z,commit,Java: Refactored InstructionKeySet - get rid of duplicate collections¡­,github.com/JetBrains/intellij-community/pull/500/commits/ec9310aa509cba7834fd73c219e84e10472af8ff
+2016-11-28T15:45:15Z,commit,Java: Refactored DefUseUtil - moved method-local classes to nested cl¡­,github.com/JetBrains/intellij-community/pull/500/commits/6b77de25173c63d541e2b7ff11a56e54d4c86212
+2016-12-07T16:51:56Z,commit,Java: Added a test case to DefUseTest for nested 'try/finally' within¡­,github.com/JetBrains/intellij-community/pull/500/commits/d56f9296aedc37ed8be34a316271d7deccfc59fc
+2016-12-05T12:24:54Z,commit,update FiraCode (IDEA-164888),github.com/JetBrains/intellij-community/pull/500/commits/e4d95187c902b2f0a3f627481a89d897ccbe9807
+2016-12-27T15:23:43Z,commit,2016.3.4,github.com/JetBrains/intellij-community/pull/500/commits/b8904bf6b0b24e996992fa6f865d8943bfdb9cd1
+2016-12-21T09:24:49Z,commit,register deleted path in round deltas,github.com/JetBrains/intellij-community/pull/500/commits/60f45fbad4d0c3513c5b084eb5ad08443d962000
+2016-12-21T09:35:03Z,commit,fix compilation,github.com/JetBrains/intellij-community/pull/500/commits/40fbb79e970ecb3a8e2cc2b6497954ac40717321
+2016-12-21T12:08:26Z,commit,IDEA-165741 JPS: ChainedTargetsBuildListener should not mark dirty fi¡­,github.com/JetBrains/intellij-community/pull/500/commits/0cfa00ed96282de6f66bcd65a451072306d4c6f2
+2016-12-21T18:32:10Z,commit,reworked (CR follow-up) IDEA-165741 JPS: ChainedTargetsBuildListener ¡­,github.com/JetBrains/intellij-community/pull/500/commits/96c366a402681f862a12b0c9f3f9bc4bf3fd76db
+2016-12-27T14:04:19Z,commit,Cleanup (warnings; formatting),github.com/JetBrains/intellij-community/pull/500/commits/0c7452d998e362e56b4829ffa1fdfddf638112b2
+2016-12-28T08:22:20Z,commit,[platform] restores dynamic VM options support in classpath file mode¡­,github.com/JetBrains/intellij-community/pull/500/commits/df811fba2565f40084e7be416199e1effad82ff6
+2016-12-28T15:00:41Z,commit,update ecj batch compiler to v 4.6.2 (follow-up IDEA-162726),github.com/JetBrains/intellij-community/pull/500/commits/6b910461a12d1fe03dd60aab63da7045e91657f6
+2016-11-29T15:51:35Z,commit,set read timeout for the ipython notebook starting connection,github.com/JetBrains/intellij-community/pull/500/commits/6ce5928e7dff8a9859a3b2509b6650672316b342
+2016-12-23T11:26:00Z,commit,PY-22032 Jupyter 403 error: _xsrf argument missing from POST,github.com/JetBrains/intellij-community/pull/500/commits/f4d24ddb57cc50150e678397e60e71b922351dbf
+2016-12-23T12:26:02Z,commit,PY-22032 Jupyter 403 error: _xsrf argument missing from POST,github.com/JetBrains/intellij-community/pull/500/commits/6435a316c3c1e5c8b00e6ddc94f8c92b7035bbaf
+2016-12-23T12:48:07Z,commit,PY-22032 Jupyter 403 error: _xsrf argument missing from POST,github.com/JetBrains/intellij-community/pull/500/commits/2f0eb0cc3ffc7fff2cdfddd1c5cd0641a2c26205
+2016-12-29T10:06:33Z,commit,IDEA-166029 static access to EP_NAME,github.com/JetBrains/intellij-community/pull/500/commits/c66a95e7fbdee831665d2a36ce5ed495825f6fce
+2016-12-28T16:27:45Z,commit,project configuration: fixed Eclipse library in 'community' project,github.com/JetBrains/intellij-community/pull/500/commits/03c04a83fc4d16070c75be10ac762fa364dd6fd7
+2016-12-30T10:58:50Z,commit,add broken plugins com.intellij.phing,github.com/JetBrains/intellij-community/pull/500/commits/7bcce4dfb0789ae3ca6b479912232239bcdda917
+2016-12-30T11:20:29Z,commit,add broken plugins com.jetbrains.php.behat,github.com/JetBrains/intellij-community/pull/500/commits/58d11645c9eb6d28f0a29dfbe71b8d44658a986e
+2016-12-30T12:46:22Z,commit,add broken plugins com.jetbrains.php.wordPress,github.com/JetBrains/intellij-community/pull/500/commits/6e2475adc55d64e71db37ed87898d44a5fda75f4
+2016-12-30T12:47:35Z,commit,add broken plugins org.jetbrains.plugins.phpstorm-remote-interpreter,github.com/JetBrains/intellij-community/pull/500/commits/d50559aef559f48a6f0fb57b8e550d3083c9ac05
+2016-12-30T12:49:31Z,commit,add broken plugins AngularJS,github.com/JetBrains/intellij-community/pull/500/commits/485e3d5adcf47ff6b5becd2a78ef0fb4be456f31
+2016-12-30T12:53:38Z,commit,"add broken plugins com.jetbrains.intellij.api.watcher, Dart, NodeJS",github.com/JetBrains/intellij-community/pull/500/commits/d90091500e8ca6e8ed277fcf51aa12e2cfb87173
+2016-12-30T12:56:39Z,commit,"add broken plugins com.jetbrains.performancePlugin, com.jetbrains.php¡­",github.com/JetBrains/intellij-community/pull/500/commits/162ceaba844904b6e896816834b119fd1ec52d49
+2016-12-30T12:57:50Z,commit,add broken plugins org.jetbrains.kotlin,github.com/JetBrains/intellij-community/pull/500/commits/b8a09601fe771cada5c4347adb9584bbdb8a006c
+2016-12-30T13:14:42Z,commit,mute DirectoryBasedStorageTest (163 branch),github.com/JetBrains/intellij-community/pull/500/commits/f0c3bdb1f2e4dc216789ac52b86730ea7caa1c9e
+2016-12-30T15:45:04Z,commit,"add broken plugins org.jetbrains.kotlin, com.intellij.plugins.html.in¡­",github.com/JetBrains/intellij-community/pull/500/commits/96d7d8aa51cca3300fea7676e30696d292592b75

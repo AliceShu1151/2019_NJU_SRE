@@ -1,0 +1,20 @@
+282,Gradle wrapper location fix IDEA-145249
+2015-07-02T20:16:32Z,discuss,"IDEA fails to locate the gradle wrapper at project import if there is a settings.gradle in the parent directory.
+It finds the wrapper, but then ignores its own detection and delegates to Gradle tooling API, which looks for it in the parent directory and fails.
+A related PR was submitted to Gradle: gradle/gradle#474"
+2015-07-03T09:37:40Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-07-03T16:30:11Z,discuss,Done
+2015-07-03T16:42:09Z,discuss,"CA was received, thank you."
+2015-07-09T15:02:47Z,discuss,it looks like gradle tooling api issue and should be handled at gradle side.
+2015-07-09T20:14:55Z,discuss,Not really.
+2015-07-09T20:14:55Z,discuss,"True, gradle tooling could do a better job at detecting the wrapper location, but it is IDEA that ignores it in the first place. This only happens when DEFAULT_WRAPPED is selected."
+2015-07-09T20:14:55Z,discuss,"IDEA detects the settings correctly, but throws them away at the last moment, and defers to Gradle tooling."
+2015-07-09T20:14:55Z,discuss,This PR fixes it.
+2018-07-21T14:54:20Z,discuss,"@idlsoft, please rebase the PR, cc @vladsoroka."
+2018-07-21T21:53:06Z,discuss,"@ignatov @vladsoroka
+Done"
+2019-06-23T00:17:49Z,discuss,@vladsoroka you marked the associated ticket IDEA-145249 as resolved in 2015. does it mean that this Pull Request is no longer needed and can be safely closed?
+2019-06-23T00:17:49Z,discuss,@ignatov why do you (A) ask @idlsoft for more contribution on a problem that is solved years ago and then (B) continue to ignore this pull request after the update?
+2019-06-23T04:28:06Z,discuss,"FWIW the PR is still relevant.
+IDEA doesn't pick up the correct wrapper, when a master directory is being used."
+2015-07-02T20:03:15Z,commit,Gradle wrapper location fix IDEA-145249,github.com/JetBrains/intellij-community/pull/282/commits/dfa8ab3468d8df545866b80ad64b06fc04e750f5

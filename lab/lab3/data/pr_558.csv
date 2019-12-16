@@ -1,0 +1,3 @@
+558,Use same timeout for MultiProcessDebugger as for RemoteDebugger
+2017-04-17T16:53:49Z,discuss,Changed MultiProcessDebugger timeout to same timeout as RemoteDebugger. In our case sometimes it takes longer than 10000 to start process. If it is not okay to use same timeout as for RemoteDebugger I can change it to use value from IDEA registry or some where else. I just need to be able to override this value or be it as 60 000. Just let me know.
+2017-04-17T16:48:29Z,commit,use same timeout for MultiProcessdebugger as for RemoteDebugger,github.com/JetBrains/intellij-community/pull/558/commits/64db1737de745f43f4aefa868a7eae5e60c62dcb

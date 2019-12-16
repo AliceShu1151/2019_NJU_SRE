@@ -1,0 +1,19 @@
+1071,IDEA-208185: Fix a memory leak
+2019-03-01T01:22:40Z,discuss,"
+No description provided.
+"
+2019-03-05T00:27:53Z,discuss,"Sorry, I think this commit is an opposite to the memory leak fix. Could you please post a heapdump demonstrating the leak, preferably to the https://youtrack.jetbrains.com/issues/IDEA ?"
+2019-03-05T00:44:02Z,discuss,"Oh I see, it's discussed already. Pushed, thanks."
+2019-03-05T00:49:43Z,discuss,"The Disposer.register(project, component) call in the line 136 of IntentionHintComponent.java makes the component a child of the project in the Disposer's tree. Please notice that this cancels the effect of the EditorUtil.disposeWithEditor(myEditor, this) call in line 356 since a node in the Disposer's tree may not have multiple parents. A project has a much longer lifespan than an editor. This means that IntentionHintComponent objects belonging to closed and disposed editors are still strongly referenced by the Disposer's tree. This is not a permanent leak since the components will still be disposed when the project is closed, but it is a memory leak for all practical purposes since the number of IntentionHintComponent objects may grow without bounds as editors are being opened, used and closed."
+2019-03-05T00:49:43Z,discuss,"The heap dump was captured on a user machine and was analyzed by the Android Studio's embedded heap analysis tool. We don't have access to the heap dump because it may contain user proprietary information. Here is a part of the Disposer tree analysis section of the automatically generated report that was produced from the heap dump:
+Disposed but still strong-referenced objects: 67 com.intellij.openapi.editor.impl.CaretModelImpl, most common paths from GC-roots:
+ROOT: Static field: com.intellij.openapi.util.Disposer.ourTree: 60 objects (89%)
+60 89% 1 com.intellij.openapi.util.objectTree.ObjectTree
+60 89% 1 gnu.trove.THashMap
+60 89% 1 java.lang.Object[]
+22 32% 22 com.intellij.codeInsight.intention.impl.IntentionHintComponent
+22 32% 22 com.intellij.openapi.editor.impl.EditorImpl
+22 32% 22 com.intellij.openapi.editor.impl.CaretModelImpl"
+2019-03-05T00:49:43Z,discuss,In total there are 31 live IntentionHintComponent objects parented by a single ProjectImpl.
+2019-03-05T00:49:43Z,discuss,"For reference, here is a link to the source code of the Android Studio's embedded heap analysis tool: https://android.googlesource.com/platform/tools/adt/idea/+/refs/heads/mirror-goog-studio-master-dev/android/src/com/android/tools/idea/diagnostics/hprof/analysis"
+2019-03-01T01:20:08Z,commit,IDEA-208185: Fix a memory leak,github.com/JetBrains/intellij-community/pull/1071/commits/51395fdd980935aa9e039840c83e038462d2ba44

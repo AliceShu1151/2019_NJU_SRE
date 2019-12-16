@@ -1,0 +1,9 @@
+852,Fix patching args in monkey patched subprocess module.
+2018-09-08T22:15:21Z,discuss,Commit taken from: fabioz/PyDev.Debugger@c0b2a44
+2018-09-08T22:15:21Z,discuss,Example script:
+2018-09-08T22:15:21Z,discuss,Here is the error output from when you debug this script with PyCharm's debugger on Linux:
+2018-09-08T22:15:21Z,discuss,remove_quotes_from_args changed:
+2018-09-08T22:15:21Z,discuss,to:
+2018-09-08T22:15:21Z,discuss,Output after applying changes from this commit:
+2018-09-25T00:30:09Z,discuss,@Elizaveta239 could you please review this? Are there any plans to upgrade the PyDev.Debugger bundled with PyCharm to the latest release version?
+2018-09-08T21:53:45Z,commit,Fix patching args in monkey patched subprocess module.,github.com/JetBrains/intellij-community/pull/852/commits/1f606505feee68222342df4f88d2eb325cefd946

@@ -1,0 +1,4 @@
+8,IDEA-88520 When applying dark color scheme and ColorIde plugin then settings tree is displayed incorrectly
+2012-07-11T12:41:02Z,discuss,Bug fix according to issue IDEA-88520. Instead of using hardcoded value for background compute it using tree background color.
+2012-07-19T16:03:01Z,discuss,pushed to trunk
+2012-07-11T12:37:22Z,commit,fix for IDEA-88520 When applying dark color scheme and ColorIde plugi¡­,github.com/JetBrains/intellij-community/pull/8/commits/d766705332316d56fece606c67c550a9ba1f3f8a

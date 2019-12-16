@@ -1,0 +1,8 @@
+127,Pycharm skeletons submodule
+2013-11-13T00:57:22Z,discuss,"This is more controversial, so I saved it for last."
+2013-11-13T00:57:22Z,discuss,"The instructions in python/README.md talk about dropping down to a command-line and checking out the python-skeletons project, but git is smart enough to manage that stuff for you. This is especially relevant since the python-skeletons module is so small it would be a rounding error next to the weight of cloning intellij-community."
+2013-11-13T00:57:22Z,discuss,"The con against landing this commit is that submodules are an edge case in the typical git workflow, and they can be weird if one isn't used to treating the directory as a separate module."
+2013-11-13T00:57:22Z,discuss,"If you like it, land it, and if not I just thought I would suggest the idea (and do the work!)."
+2013-11-13T11:12:28Z,discuss,"We're certainly aware that Git supports submodules. Unfortunately they aren't super well supported by our toolchain, so we prefer to use separate GIt repositories."
+2013-11-13T00:21:19Z,commit,Add in the pycharm skeletons as a submodule,github.com/JetBrains/intellij-community/pull/127/commits/880b3ba40c96b7b665bc171ab965f23a21f34b84
+2013-11-13T00:38:44Z,commit,Update the python README with the submodule info,github.com/JetBrains/intellij-community/pull/127/commits/67a9f1148d5f1dafb93be6fe6c72ba5f67b2b7f7

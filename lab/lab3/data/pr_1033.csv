@@ -1,0 +1,5 @@
+1033,IDEA-205705 Include file name in tab title for pom.xml and gradle build scripts (like plugin.xml)
+2019-01-19T14:19:25Z,discuss,Fixes IDEA-205705 Access Gradle and Maven files easier via Recent files by including file name in title
+2019-01-19T14:19:25Z,discuss,https://youtrack.jetbrains.net/issue/IDEA-205705
+2019-01-19T14:19:25Z,discuss,Same format used as in org.jetbrains.idea.devkit.dom.ide.PluginDescriptorEditorTabTitleProvider.getEditorTabTitle
+2019-01-19T14:11:50Z,commit,IDEA-205705 Include file name in tab title for pom.xml and gradle bui¡­,github.com/JetBrains/intellij-community/pull/1033/commits/caadc8969a9a19b763d12337fe7fc714ab058774

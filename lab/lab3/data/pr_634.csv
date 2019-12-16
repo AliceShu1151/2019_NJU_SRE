@@ -1,0 +1,10 @@
+634,generate hashCode: prefer HashCodeBuilder with default constructor
+2017-10-01T11:47:27Z,discuss,"Hi,
+hashCode generator uses template with builder class with two parameters constructors. There is default constructor with same constants as in current template. It should be handy not to duplicate this constants and use default constructor instead. Second point of view could be that when you have hard-coded constants many of static code analysis tools marks them as magic numbers.
+Is it this change ok for you?
+Thx,
+Ivos"
+2017-10-01T11:51:47Z,discuss,YouTrack issue is https://youtrack.jetbrains.com/issue/IDEA-179868
+2018-07-21T11:47:46Z,discuss,"Already fixed, thanks for PR."
+2018-08-03T10:31:31Z,discuss,"Sorry, but I have checked current IntelliJ IDEA 2018.3 EAP (Community Edition) and that constants are still there. Do i have to change some settings in IDEA?"
+2017-10-01T11:41:02Z,commit,generate equals/hashCode: prefer HashCodeBuilder with default constru¡­,github.com/JetBrains/intellij-community/pull/634/commits/85d48b6860e74844a3ab292f97b2a650c82ed16c

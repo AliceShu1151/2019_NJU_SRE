@@ -1,0 +1,11 @@
+165,PY-11531 Update module_redeclarator.py
+2014-04-02T08:07:05Z,discuss,"In my system I have both PyQt4 and PyQt5, they run using different sip versions so when trying to import PyQt4 it will crash raising a runtime error like:
+RuntimeError: the sip module implements API v11.0 but the PyQt4.QtGui module req
+uires API v9.1"
+2014-04-02T08:07:05Z,discuss,This halts any generation of PyQt5 skeletons also which is bad.
+2014-04-02T08:07:05Z,discuss,"Also, the code _initializeQApp will return if PyQt4 can be loaded and a QCoreApplication instance created and thus leaving out PyQt5 generation."
+2014-04-02T08:07:05Z,discuss,Breaking these up in two cases (qt4 and qt5) solves the partial issue of not generating qt5-skeletons but still qt4-skeletons isnt generated due to the sip-version problem.
+2014-04-02T08:07:05Z,discuss,"After a reinstallation of PyQt4 built on a more recent version of sip everything works out now. Without this patch however I get the error:
+RuntimeError: the PyQt4.QtCore and PyQt5.QtCore modules both wrap the QObject class"
+2014-04-02T08:07:05Z,discuss,when generating PyQt5 skeletons.
+2014-04-02T07:52:48Z,commit,Update module_redeclarator.py,github.com/JetBrains/intellij-community/pull/165/commits/5ff05186b81b4f1d4b8b19258dfe6d6733cdfcee

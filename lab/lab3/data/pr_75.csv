@@ -1,0 +1,6 @@
+75,removed unused libs and dependencies
+2013-04-21T20:30:56Z,discuss,"removed rhino-js and sass-std (and some broken module dependencies) to fix errors that appear in Project Structure).
+More description here:
+http://youtrack.jetbrains.com/issue/IDEA-105886"
+2013-05-02T17:08:51Z,discuss,Fixed manually.
+2013-04-21T18:29:12Z,commit,removed unused libs and dependencies,github.com/JetBrains/intellij-community/pull/75/commits/abf1e140a28ca42f2d1a2e755b9f4de64505b799

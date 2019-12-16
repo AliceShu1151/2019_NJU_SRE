@@ -1,0 +1,254 @@
+377,145
+2016-04-01T06:20:31Z,discuss,"
+No description provided.
+"
+2016-02-26T15:02:39Z,commit,testdata for IDEA-152179,github.com/JetBrains/intellij-community/pull/377/commits/2be3fc65fe1e1d2fda3abd263b29bb8e8c1349b7
+2016-02-26T16:58:35Z,commit,fixed initial default,github.com/JetBrains/intellij-community/pull/377/commits/ec7c8f7e7bf41c82fff18a6fd0a8b9a31b1a8959
+2016-02-29T11:15:29Z,commit,restrict dependencies to changed method signature or self change (fol¡­,github.com/JetBrains/intellij-community/pull/377/commits/b32172a79193f43bd3a10d0aed931c5fa5b33250
+2016-02-29T17:44:25Z,commit,move destination: check directories in project (IDEA-152320),github.com/JetBrains/intellij-community/pull/377/commits/ed87d8d313d5172f41911bed4aa2288cf9314fbe
+2016-02-29T18:34:38Z,commit,testdata for IDEA-152332,github.com/JetBrains/intellij-community/pull/377/commits/f9f32724ed0c2a47970909dad79182104c6929a0
+2016-03-01T10:03:28Z,commit,inference: retrieve all type parameters from owner to get correct inf¡­,github.com/JetBrains/intellij-community/pull/377/commits/1f203fac7947ea784b3fa6abe33c3dd5553a3ae7
+2016-03-01T13:09:53Z,commit,extract method suggester: unique parameter names (IDEA-152334); updat¡­,github.com/JetBrains/intellij-community/pull/377/commits/c8294b55ca325c58d9440831b78353cf57125598
+2016-03-01T15:42:32Z,commit,safe delete: search for conflicts in usages (IDEA-152126),github.com/JetBrains/intellij-community/pull/377/commits/8a6e9ee2fa9e21dabcf2ffffef7c703f93c2cc82
+2016-03-03T10:34:32Z,commit,inference: skip lambda content and all its dependants when lambda typ¡­,github.com/JetBrains/intellij-community/pull/377/commits/50e92e53755e9307ea96d52fd08f33d7058a59f6
+2016-03-03T11:54:10Z,commit,inference: don't check bounds for variables which may depend on anoth¡­,github.com/JetBrains/intellij-community/pull/377/commits/359c19e880aac999bab8c462ae988ccf684af011
+2016-03-03T12:41:25Z,commit,invert boolean: leave final fields without initializer as is (IDEA-15¡­,github.com/JetBrains/intellij-community/pull/377/commits/0e83dbd0d6597a004a09155c91f8ffada1397de2
+2016-03-03T14:22:36Z,commit,additional testdata (following IDEA-CR-8743),github.com/JetBrains/intellij-community/pull/377/commits/cb736f33b5fd1ff098f55c695cda07719ef5138e
+2016-03-04T11:19:21Z,commit,inference: proper exceptions thrown checks (IDEA-152577),github.com/JetBrains/intellij-community/pull/377/commits/f030a8f56971f846b19c4b5fe467e8b0057b4f24
+2016-03-09T09:27:50Z,commit,lambda: proceed c-like arrays declarations in parameters for lambda w¡­,github.com/JetBrains/intellij-community/pull/377/commits/8821ce9660f2097a724029fdecb10dac62fa38a6
+2016-03-09T10:18:20Z,commit,inference for non-poly expressions: isAssignable already contains loo¡­,github.com/JetBrains/intellij-community/pull/377/commits/3f878fe4673d16ab4fb1c8f64e8e3767c2be5052
+2016-03-09T10:36:48Z,commit,testdata for IDEA-152659,github.com/JetBrains/intellij-community/pull/377/commits/69d51dc90677ad90f47ff5691a431b4800b6ee70
+2016-03-09T19:55:53Z,commit,NPE,github.com/JetBrains/intellij-community/pull/377/commits/fc35d72290e22a388e96864333bcc343821ffdd5
+2016-03-11T08:31:45Z,commit,unrelated defaults: don't check type parameters,github.com/JetBrains/intellij-community/pull/377/commits/4b004896c0c59e73ee86dd9a03b2779a1d5b7983
+2016-03-11T09:02:54Z,commit,unrelated defaults: ignore type parameters check for abstract methods¡­,github.com/JetBrains/intellij-community/pull/377/commits/6cbade47f9123cd2acb6f4a1cb8c146a3ae48ce9
+2016-03-10T17:21:07Z,commit,generate tests: order methods by methods order in the source class (I¡­,github.com/JetBrains/intellij-community/pull/377/commits/5bc71f0356513a9a1907748857a1dea695bb9c79
+2016-03-10T17:33:59Z,commit,"replace constructor with factory: warn if method already exist, reuse¡­",github.com/JetBrains/intellij-community/pull/377/commits/cd4b8251ff928907b6ac43f9f82e5f7e8103a46a
+2016-03-10T19:06:41Z,commit,redundant cast: compare base types for anonymous classes,github.com/JetBrains/intellij-community/pull/377/commits/52ddaaa1cbd0b64fa531779246edc739df6cb4a8
+2016-03-10T20:21:05Z,commit,redundant cast: open capture to compare old and new result types,github.com/JetBrains/intellij-community/pull/377/commits/3d03a957ac4b94ecf783ac8081ac271ae12027ce
+2016-03-11T10:40:41Z,commit,redundant cast: remove redundant postpone refactorings on non-physica¡­,github.com/JetBrains/intellij-community/pull/377/commits/c2d57b5806ad33882abbab714e74e3941918531c
+2016-03-11T14:03:12Z,commit,copy reference: fix isReferenceTo check (IDEA-152601),github.com/JetBrains/intellij-community/pull/377/commits/40078c08519e2a5662e1fc8f48a0d0f089b51069
+2016-03-11T15:59:42Z,commit,testng: include @Before/AfterGroups when needed (IDEA-152857),github.com/JetBrains/intellij-community/pull/377/commits/c30c79944134dceee077e13a1bfe7bf80cc351c4
+2016-03-11T16:05:43Z,commit,copy reference testdata: avoid same class to be present simultaneousl¡­,github.com/JetBrains/intellij-community/pull/377/commits/c24228d4a2b52d31e5a95dff80cc3f6648e7235a
+2016-03-11T17:29:06Z,commit,copy ref: update fqn when constructor is replaced with class,github.com/JetBrains/intellij-community/pull/377/commits/438e9a74e6caea486878f749b535afd9b8d69abb
+2016-03-14T11:44:15Z,commit,inference: unchecked warning in type params bounds (IDEA-152758),github.com/JetBrains/intellij-community/pull/377/commits/18611b9d5123b147b805de459944ecbff9048c74
+2016-03-14T12:36:56Z,commit,copy to final: effectifely final is enough fot java 8 (IDEA-152934); ¡­,github.com/JetBrains/intellij-community/pull/377/commits/f7d3df8b26ce43c5eaa527a2085d972668368e56
+2016-03-14T13:47:38Z,commit,eclipse: don't add combineaccessrules if attribute was not present in¡­,github.com/JetBrains/intellij-community/pull/377/commits/b5209bc58b297ddd220d678e33b88c8b46e8c5d9
+2016-03-14T14:35:17Z,commit,testdata based on IDEA-152768,github.com/JetBrains/intellij-community/pull/377/commits/900ac9549f9937ed618dd0aaeca9b353996b9930
+2016-03-14T15:58:48Z,commit,revert (IDEA-152685),github.com/JetBrains/intellij-community/pull/377/commits/d3e6823b8d3510a965181a3323dfc4d776d2553a
+2016-03-14T18:28:06Z,commit,non-static fields should not be available in static context even if t¡­,github.com/JetBrains/intellij-community/pull/377/commits/22abe81121287434cb5d94252fc80fc879b61db1
+2016-03-14T20:29:22Z,commit,don't expand exclude step by timer (IDEA-152991),github.com/JetBrains/intellij-community/pull/377/commits/fd945cb02c3477ff678ccb565e3d6f82062df0a7
+2016-03-15T09:01:35Z,commit,SOE with recursive type parameter dependencies,github.com/JetBrains/intellij-community/pull/377/commits/a414dbb435a3f8d9da4377a98710cdef6f4a747c
+2016-03-15T09:58:08Z,commit,EA-80374 - IAE: QuickFixFactoryImpl.createMethodReturnFix,github.com/JetBrains/intellij-community/pull/377/commits/9e12dc67bf481b7679775a26a0a709c740945f23
+2016-03-15T17:34:43Z,commit,show static import suggestion: ensure normal inference process for me¡­,github.com/JetBrains/intellij-community/pull/377/commits/36236d4caca59813437fd881b8c072bc0a401198
+2016-03-15T17:43:23Z,commit,replace constructor with factory: skip new expression inside old fact¡­,github.com/JetBrains/intellij-community/pull/377/commits/64b2cccd5d1a2473b087a75e156cbd991b58c448
+2016-03-16T12:32:41Z,commit,lambda -> method ref: compare denotable types (IDEA-153054),github.com/JetBrains/intellij-community/pull/377/commits/d92e1b29076a0e27716c53a44db74f2e9abdfe63
+2016-03-16T14:28:43Z,commit,accessibility checks: stop at library level,github.com/JetBrains/intellij-community/pull/377/commits/69812707ae7e1c867fba0c8fe96972d955d0e887
+2016-03-16T16:38:04Z,commit,move class or package: open in editor option doesn't depend on select¡­,github.com/JetBrains/intellij-community/pull/377/commits/f2f6654dcd899477b48a57ad09e05ce8ed34da3f
+2016-03-17T14:52:25Z,commit,unchecked warnings: don't warn about generics array creation if arg o¡­,github.com/JetBrains/intellij-community/pull/377/commits/87f6ad68f61f738729578ecd0b881cdfcf0b6c10
+2016-03-17T16:38:17Z,commit,make type denotable: ensure that array type is not created over wildcard,github.com/JetBrains/intellij-community/pull/377/commits/ef244963ef13ea8ecb9c6f49b1fd702ac910b8f6
+2016-03-17T16:57:08Z,commit,redundant cast: recapture wildcards for non-physical elements (IDEA-1¡­,github.com/JetBrains/intellij-community/pull/377/commits/d9bf07af3dfb641d69d48176430e13c6d52f6588
+2016-03-17T20:21:41Z,commit,inference: don't include constraints to resolve if input bounds have ¡­,github.com/JetBrains/intellij-community/pull/377/commits/4433d5d4ac6ddbda4dcadb5ab5547e5c257d4156
+2016-02-23T17:28:23Z,commit,don't check super type accessibility for classes from outside root mo¡­,github.com/JetBrains/intellij-community/pull/377/commits/c69d6880cfc08c647d56de2d8f17133c01b73edb
+2016-03-14T11:44:15Z,commit,inference: unchecked warning in type params bounds (IDEA-152758),github.com/JetBrains/intellij-community/pull/377/commits/22043749e21c4714390e2c580eda702fd05df49a
+2016-03-18T12:03:31Z,commit, merge II,github.com/JetBrains/intellij-community/pull/377/commits/aab60c7dd4b2feaa2f9d90bda33006a1e95a557d
+2016-03-17T12:17:34Z,commit,[^pavel.fatin] IndexNotReadyException: include start trace as an atta¡­,github.com/JetBrains/intellij-community/pull/377/commits/38da7b3534a52d5f55bc63fb7ffb3640e57093eb
+2016-03-05T09:16:16Z,commit,[^maxim] speed up UrlFilter,github.com/JetBrains/intellij-community/pull/377/commits/81e41166ad81cc7aae55c5153e088bc6240f55d7
+2016-03-18T12:24:12Z,commit,Merge remote-tracking branch 'origin/145' into 145,github.com/JetBrains/intellij-community/pull/377/commits/e4bb59bc6a0570f0370ae45ea2566d697a1e2de0
+2016-03-15T12:26:08Z,commit,IDEA-153021 refresh repo info after fetching during Update Project,github.com/JetBrains/intellij-community/pull/377/commits/10dec504fa82f42d26ef4ed9fa99be00476c9ddd
+2016-03-15T12:28:19Z,commit,simplify: remove redundant fetch result initialization,github.com/JetBrains/intellij-community/pull/377/commits/10405988e4d73763c18ec0a55a6e2638b8a4e8c6
+2016-03-18T14:01:54Z,commit,IDEA-152542 Windows uninstaller: cancelling the warning shown on atte¡­,github.com/JetBrains/intellij-community/pull/377/commits/641f9c0aefa2ed75bd075fbb3edeb5879f4cc517
+2016-03-15T13:24:01Z,commit,IDEA-146638 Customize IDEA dialog for Community Edition suggests Java¡­,github.com/JetBrains/intellij-community/pull/377/commits/463cc3683d09052ede31cfba70d78e1bb91a7b6b
+2016-03-15T14:51:15Z,commit,IDEA-148970 Unprintable symbols in Customize Idea wizard,github.com/JetBrains/intellij-community/pull/377/commits/19668e585729ff8f47c39f9e44e93a7142a042a9
+2016-03-16T15:57:11Z,commit,IDE wizard dialog: show full product name in title,github.com/JetBrains/intellij-community/pull/377/commits/683c8831e14357761d001c097557e0e0c402de38
+2016-03-16T16:27:41Z,commit,IDE wizard dialog: get rid of italic font in descriptions,github.com/JetBrains/intellij-community/pull/377/commits/87de31ebbcc919b4fee29856e1f3437f9f64509d
+2016-03-16T18:04:01Z,commit,IDEA-125585 Cosmetic changes for featured plugins in the first start ¡­,github.com/JetBrains/intellij-community/pull/377/commits/0f1b136567bad874f13d28326493168000fd3260
+2016-03-17T17:49:01Z,commit,don't call cell edit if selection key is enabled,github.com/JetBrains/intellij-community/pull/377/commits/391d5581aad1977ef47d78621f3c08fb71a1c818
+2016-03-16T15:13:12Z,commit,file reference: code simplification,github.com/JetBrains/intellij-community/pull/377/commits/f4eeaa5d3ffc406e489b31a4a3666dce7142a656
+2016-03-16T19:54:19Z,commit,IDEA-142781 Scroll preview,github.com/JetBrains/intellij-community/pull/377/commits/0cfbe99c90c4d5f803e783ed59ec6a94e40cbc8b
+2016-03-19T14:56:27Z,commit,cross-compilation: fork javac process decision is based on required t¡­,github.com/JetBrains/intellij-community/pull/377/commits/aea9bbbd16a40f9bf225dc4f46afb8d6768ab336
+2016-03-17T15:35:48Z,commit,updated some licence links,github.com/JetBrains/intellij-community/pull/377/commits/80b50ae32d9dc8d0a219ba45b0caac2bee4b3263
+2016-03-18T07:08:49Z,commit,prevent recursion while building stubs from text (IDEA-150940 & EA-80¡­,github.com/JetBrains/intellij-community/pull/377/commits/278d9385bc9c26961a1bf6af405da8f9126f53c3
+2016-03-17T12:49:44Z,commit,[vcs]: remove unnecessary ChangesViewManager refresh to avoid UI hang¡­,github.com/JetBrains/intellij-community/pull/377/commits/ae29d13c7762a80473cdbb1a4cd4e7a440a00182
+2016-03-20T22:13:34Z,commit,Fix test,github.com/JetBrains/intellij-community/pull/377/commits/5c226c19dd6636c5bf887267297eceb4554e4210
+2016-03-19T11:01:57Z,commit,simplify code,github.com/JetBrains/intellij-community/pull/377/commits/5c89fa81c38e0944186f70d291ba3fb60afbdaed
+2016-03-21T09:30:59Z,commit,WEB-20882 Preserve setting `toggle auto-test` between IDEA restarts,github.com/JetBrains/intellij-community/pull/377/commits/d5c93a5e9f1a4a09e48ff3dca7f00ff378b42c66
+2016-03-19T11:59:11Z,commit,[platform] completely skips paid upgrade check (IDEA-CR-9403),github.com/JetBrains/intellij-community/pull/377/commits/200ea7c46ea5e0dbea4bbabb732dab72ce7c08ea
+2016-03-21T13:30:03Z,commit,Merge remote-tracking branch 'origin/145' into 145,github.com/JetBrains/intellij-community/pull/377/commits/43b1c9a68edc58694b85709073f1bd3bad0496ae
+2016-03-16T09:27:07Z,commit,fix scrolling to caret at the end of soft wrapped line,github.com/JetBrains/intellij-community/pull/377/commits/c1cb41c9da959700507aa6cb586f311dcb761572
+2016-03-21T14:20:15Z,commit,another case of IDEA-149939 CCE in com.intellij.execution.stacktrace.¡­,github.com/JetBrains/intellij-community/pull/377/commits/7546e5968c532e3d14ccf06ef0b766c615a13ed7
+2016-03-14T15:45:08Z,commit,gradle: set TestModuleProperties production-module only for 'test' mo¡­,github.com/JetBrains/intellij-community/pull/377/commits/3b4300ed0da246d7f270ed115965c8fcd1ee4da6
+2016-03-15T11:24:59Z,commit,IDEA-137118 Intellij debug through Gradle with a JavaExec dependent t¡­,github.com/JetBrains/intellij-community/pull/377/commits/0d336c9e23b3ec4a9ff6e75ae8b2812a1e1d4962
+2016-03-18T09:27:33Z,commit,gradle: introduce an option to gather performance stats for custom to¡­,github.com/JetBrains/intellij-community/pull/377/commits/fcef7c65e44a367cbd05fd2b8bf44d2d08ca79fc
+2016-03-18T10:19:47Z,commit,external system: deprecated method removed,github.com/JetBrains/intellij-community/pull/377/commits/7ac826eec798f3a8ad45decf5b8549297cccfcdc
+2016-03-18T10:34:10Z,commit,gradle: debug logging of project import steps performance stats,github.com/JetBrains/intellij-community/pull/377/commits/308f480a93cae093a9515c783418218044fb94e8
+2016-03-18T10:35:58Z,commit,external system: cleanup,github.com/JetBrains/intellij-community/pull/377/commits/ce19132182b7f31f8bfc9cea04f611049a0551f9
+2016-03-18T10:56:51Z,commit,external system: cleanup,github.com/JetBrains/intellij-community/pull/377/commits/6f854a1dfb1bbcfcd3137e4d77694d0e560bda02
+2016-03-18T15:14:39Z,commit,IDEA-153003 Dependent project appears twice in the gradle project view,github.com/JetBrains/intellij-community/pull/377/commits/bef2a9aa875ba4b7fab1cf069f19f013bb6d88bc
+2016-03-18T15:17:17Z,commit,IDEA-150685 Gradle multi module project's dependency hierarchy is des¡­,github.com/JetBrains/intellij-community/pull/377/commits/bf8899d2cc6aec3450e607395ed074fc15f38ac6
+2016-03-21T15:09:51Z,commit,more url fixes,github.com/JetBrains/intellij-community/pull/377/commits/70f2949210866af98ab007fb918ab2291d6bed3f
+2016-03-18T17:10:54Z,commit,Fix #PY-18836 ClassCastException in com.jetbrains.python.codeInsight.¡­,github.com/JetBrains/intellij-community/pull/377/commits/edcc4cf2cc497ef0f9c5fe335bf4502e8af498f9
+2016-03-21T02:08:10Z,commit,Don't run console with Pty on Windows (PY-18231),github.com/JetBrains/intellij-community/pull/377/commits/7fb90e014132f5ff812721b969ea66a2a7e333b3
+2016-03-21T15:47:17Z,commit,Don't send ESC when ALT pressed for non cursor keys (IDEA-152291),github.com/JetBrains/intellij-community/pull/377/commits/f470cfe06052e5ee52c97c17835eadf20682ffd8
+2016-03-21T16:00:36Z,commit,Don't show horizontal scrollbar in python console editor until it is ¡­,github.com/JetBrains/intellij-community/pull/377/commits/31f8e28930650ab67f64d3b454b3cce026175b15
+2016-03-21T16:47:44Z,commit,Always send ESC for backspace,github.com/JetBrains/intellij-community/pull/377/commits/31fad814a7117862faead268c8be1b0857673c95
+2016-03-18T14:28:00Z,commit,overload resolution: clear inference errors from nested calls when to¡­,github.com/JetBrains/intellij-community/pull/377/commits/1d1da72e02d27553781afd1a72fb0d7e4833050b
+2016-03-18T14:33:36Z,commit,testdata for IDEA-150754,github.com/JetBrains/intellij-community/pull/377/commits/5deb1efbc1f3ae4b609d5879f0b7ea194a72fe51
+2016-03-18T14:40:31Z,commit,testdata for IDEA-151214,github.com/JetBrains/intellij-community/pull/377/commits/7906a03bb6cd217038fdff8a9444a9b8d07bd814
+2016-03-18T18:24:54Z,commit,anonymous -> lambda: treat class initializers as fields when forward ¡­,github.com/JetBrains/intellij-community/pull/377/commits/b6b3712946fc1bd883950698d262b899620433e3
+2016-03-18T18:50:21Z,commit,anonymous -> method ref: collapse receiver method references to raw r¡­,github.com/JetBrains/intellij-community/pull/377/commits/38a52ad02c207a0b142fe198d0cf2eef27344de0
+2016-03-21T10:11:42Z,commit,process override equivalent methods when check for functional interfa¡­,github.com/JetBrains/intellij-community/pull/377/commits/0555331648b197045403345e82c43ea6ba56c48c
+2016-03-21T11:07:25Z,commit,testdata for IDEA-153284,github.com/JetBrains/intellij-community/pull/377/commits/e46000eb4f277881b34903675643d7746b4c0864
+2016-03-21T11:38:29Z,commit,disable replace with collect for raw collection substitutors (IDEA-15¡­,github.com/JetBrains/intellij-community/pull/377/commits/d5d6760579baf6b486d5e886b0d77879895337a4
+2016-03-21T11:49:44Z,commit,"suspicious method calls: don't ignore array types, captures, etc (IDE¡­",github.com/JetBrains/intellij-community/pull/377/commits/589d34b37e85075fdaea8086dacc263ffae15764
+2016-03-21T14:44:45Z,commit,overload resolution: testdata for java 8 bug,github.com/JetBrains/intellij-community/pull/377/commits/8578fd23e2c671b2cc6ea25232d4c9e43e3d692b
+2016-03-21T17:56:05Z,commit,most specific check for proper functional types fixed,github.com/JetBrains/intellij-community/pull/377/commits/716784ef3457537af4b2e0e3bd7ccf743d13833a
+2016-03-21T19:22:48Z,commit,junit: respect chosen class to detect if method is runnable (IDEA-153¡­,github.com/JetBrains/intellij-community/pull/377/commits/95143da3eb170dffe6a20655940dd4bbce8d374a
+2016-03-21T19:42:44Z,commit,show error if uninitialized field is referenced from lambda inside in¡­,github.com/JetBrains/intellij-community/pull/377/commits/f021de56bd33a234b909f9c124fba78f6a2fc5c4
+2016-03-21T20:10:05Z,commit,anonym -> lambda: reject refs to the next static from static field in¡­,github.com/JetBrains/intellij-community/pull/377/commits/d1032f0903ccaa224c74bba8fc18ff02423382fb
+2016-03-16T10:34:08Z,commit,testdata for IDEA-153076,github.com/JetBrains/intellij-community/pull/377/commits/5d91e8983db794b71bf3c4a3ebe5f6a9d7b5fd6e
+2016-03-17T12:01:22Z,commit,don't use GlyphVector.getVisualBounds() to determine clip region when¡­,github.com/JetBrains/intellij-community/pull/377/commits/8bb49e2886161e8b817458de0f4c73023ce03550
+2016-03-17T12:09:19Z,commit,don't use GlyphVector.getVisualBounds() to determine clip region when¡­,github.com/JetBrains/intellij-community/pull/377/commits/a774f0c854c277d122f085f42561be8145e0ea01
+2016-03-22T09:56:29Z,commit,IDEA-153252 IDEA 2016.1 Can't Reference Third-Party Project Gradle Co¡­,github.com/JetBrains/intellij-community/pull/377/commits/5afb7caa10a233c79baa87cfa7878f0448b94851
+2016-03-21T15:41:02Z,commit,EA-80772 - VMDE: MethodReturnValueWatcher.createExitRequest,github.com/JetBrains/intellij-community/pull/377/commits/acc7c264e4cf155e4d6f96af88b75feb7685fc89
+2016-03-22T11:44:37Z,commit,auto test: protect from NPE,github.com/JetBrains/intellij-community/pull/377/commits/006e03cd16d56e024951762dff722139a82a5c1e
+2016-03-22T14:20:22Z,commit,WI-31168 Unable to save settings after upgrade to 2016.1,github.com/JetBrains/intellij-community/pull/377/commits/5b98073eca637cc47b8a235f4b2c454e164aa5ba
+2016-03-01T11:52:16Z,commit,do not stop on breakpoints in evaluated methods in resume one thread ¡­,github.com/JetBrains/intellij-community/pull/377/commits/e6af628e5eb00cf0c834e7176a8febd02608ca33
+2016-03-22T12:05:40Z,commit,Avoid second editor disposing (EA-77898),github.com/JetBrains/intellij-community/pull/377/commits/aa40e5a8519179a11558677b6f9a63039f53757e
+2016-03-10T15:54:30Z,commit,"[vcs-log] got to ref jumps to the first reference that matches, not t¡­",github.com/JetBrains/intellij-community/pull/377/commits/e4019774c538f10a43bc8f024a3a4fa1982aab45
+2016-03-22T15:57:33Z,commit,skipping BOM for PersistentUserId,github.com/JetBrains/intellij-community/pull/377/commits/c8f2a270e0a69fb9d9f6d4371f2ee55247fc050d
+2016-03-22T17:39:35Z,commit,"Disabled references in formatted strings due to PY-18824, PY-18769, P¡­",github.com/JetBrains/intellij-community/pull/377/commits/7aeb4347dba7e4efd8086c59f686f911586d9e43
+2016-03-22T18:19:45Z,commit,fixing NPE,github.com/JetBrains/intellij-community/pull/377/commits/ac073c4e3bdd9464299db3e6d29315ed1218e63f
+2016-03-09T15:01:05Z,commit,WEB-20680 ES6 unicode code points escape sequences are not supported ¡­,github.com/JetBrains/intellij-community/pull/377/commits/5fc036ce1fff9237c9f7f3da907200aee8230f4f
+2016-03-23T09:46:28Z,commit,NPE (EA-80827),github.com/JetBrains/intellij-community/pull/377/commits/08fa8ee6945d341142e91cd96760e25f45bc83c3
+2016-03-23T05:45:57Z,commit,IDEA-153235 Package named 'main' is not correctly recognized in Gradl¡­,github.com/JetBrains/intellij-community/pull/377/commits/21367e3780cbb8150c50d65440e7ea0714a7e3c8
+2016-03-23T07:44:09Z,commit,IDEA-152976 Gradle tooling API for Scala projects is incompatible wit¡­,github.com/JetBrains/intellij-community/pull/377/commits/983a1a800bdd8aba8af8bf3914558c4aa21cf618
+2016-03-23T07:46:05Z,commit,gradle versions list for integration test revised,github.com/JetBrains/intellij-community/pull/377/commits/8048f403f60167aaf4d7914b7819ed9844ea64df
+2016-03-18T15:44:36Z,commit,postfix templates: log error instead of fail if there is a duplicate ¡­,github.com/JetBrains/intellij-community/pull/377/commits/107208cdab4c0685d559198fc101d6e2de122b18
+2016-03-21T10:20:33Z,commit,postfix templates: improve error message,github.com/JetBrains/intellij-community/pull/377/commits/089236bfbbd56041cafa856516cf63a86ec3029f
+2016-03-23T11:18:10Z,commit,version and since are not required anymore,github.com/JetBrains/intellij-community/pull/377/commits/54faf4536285e227f8e85b156eebc4c04e6d62d2
+2016-03-22T15:11:33Z,commit,vcs: IDEA-153272 Don't discriminate unversioned and ignored files,github.com/JetBrains/intellij-community/pull/377/commits/86f41070f3af79c357a18b7010b9eebcbc9ad875
+2016-03-22T15:16:55Z,commit,vcs: simplify the code,github.com/JetBrains/intellij-community/pull/377/commits/5e14e56b0bc366e2d5d9709864431bbc247fcacf
+2016-03-22T15:58:03Z,commit,"IDEA-153453 copying a file should mark new file dirty, not the original",github.com/JetBrains/intellij-community/pull/377/commits/b1fd66a5205ab1e72c9121375c341bceddf09729
+2016-03-22T16:15:50Z,commit,IDEA-153464 fix a typo in TODO pre-commit warning message,github.com/JetBrains/intellij-community/pull/377/commits/145d97afcbc0a08592fe67ad7db54eaa4552eb1a
+2016-03-22T16:36:15Z,commit,cleanup: convert anonymous to lambda,github.com/JetBrains/intellij-community/pull/377/commits/8c30d33cebbd1da7674052eff8b151eec94222cc
+2016-03-23T13:37:17Z,commit,fix compilation: add an import removed by a cherry-picked commit,github.com/JetBrains/intellij-community/pull/377/commits/2a29d4f57b98da97dc6748d6e10ba2b723f186ad
+2016-03-23T16:02:26Z,commit,eap=true,github.com/JetBrains/intellij-community/pull/377/commits/4635000542f67dbed73d2de22ed87761fd16382d
+2016-03-23T16:42:32Z,commit,added new check for nested access of indices (that might lead to dead¡­,github.com/JetBrains/intellij-community/pull/377/commits/8d306a27b64a30c126b93bc0b08c9ea518da0fc0
+2016-03-23T19:03:05Z,commit,Update dialog adjusted to the new version format,github.com/JetBrains/intellij-community/pull/377/commits/4669202633d656bef0a08ca2db9a04cc3fd43063
+2016-03-17T16:00:20Z,commit,ToolbarDecor: multi-selection movements,github.com/JetBrains/intellij-community/pull/377/commits/de18938012cbcfb3015dde2b7ea682e81dedd3d3
+2016-03-17T16:52:40Z,commit,JSON Schema: move to Schemas & DTDs,github.com/JetBrains/intellij-community/pull/377/commits/ce10436f8d312de94563607b17e37b6443c9f425
+2016-03-21T14:55:09Z,commit,IDEA-126952 Scratches should have an extension,github.com/JetBrains/intellij-community/pull/377/commits/986c48dae2a07be4d0fe29a8b24a71fe9c6827ca
+2016-03-21T18:22:22Z,commit,convert to io.File API to avoid write-action on startup,github.com/JetBrains/intellij-community/pull/377/commits/955c62428980d3442e70b2c3a15a88599e8b8a3f
+2016-03-22T15:45:36Z,commit,in-debug mode fixed,github.com/JetBrains/intellij-community/pull/377/commits/33ddfd20b88af1de7381f95324d012887a3a43a7
+2016-03-22T21:04:29Z,commit,UIInspector: basic editing capabilities,github.com/JetBrains/intellij-community/pull/377/commits/556f545e34621f69adecadf0853d6dfcf9dfbd74
+2016-03-22T21:18:12Z,commit,Run configurations UI: limit combobox sizes for very long Python SDK ¡­,github.com/JetBrains/intellij-community/pull/377/commits/ec00124e1df92c67bdf589b273d9904ebc11ebdc
+2016-03-23T17:20:03Z,commit,UIInspector: basic editing capabilities: 2,github.com/JetBrains/intellij-community/pull/377/commits/15dbde238e0f34e77364a9dec078b3376b421c5e
+2016-03-10T17:29:59Z,commit,Improve performance of AppearanceConfigurable loading:,github.com/JetBrains/intellij-community/pull/377/commits/554a852a8e2e20a64f6e4c799bfe14de960ef7b6
+2016-03-24T14:00:39Z,commit,IDEA-153364 Warning 'Cannot modify read-only scheme' when no one sett¡­,github.com/JetBrains/intellij-community/pull/377/commits/6d60beb1b47b77eb02936e5ff915252b499c9cf8
+2016-03-09T18:35:07Z,commit,speed search in results preview based on file names of results (IDEA-¡­,github.com/JetBrains/intellij-community/pull/377/commits/78f69c1479d25f40640c3d3302ab21f2deaa7695
+2016-03-22T15:50:40Z,commit,IDEA-153426 Debugging streams and lamdas: debugger enters unexpectedl¡­,github.com/JetBrains/intellij-community/pull/377/commits/3c778047c986e59640f51a66674780a5643ae5cb
+2016-03-16T16:24:53Z,commit,remove invalid jdk annotation (IDEA-153063),github.com/JetBrains/intellij-community/pull/377/commits/1e4ea112a23cc292b8e42375bbc047fe232cedcc
+2016-03-18T15:06:39Z,commit,IDEA-152736 IntelliJ IDEA refuses to print with no space between cast,github.com/JetBrains/intellij-community/pull/377/commits/764570f7db225edcb4b73932948586e0988544b9
+2016-03-25T10:27:10Z,commit,gradle: clean-up resolver temporary cached data,github.com/JetBrains/intellij-community/pull/377/commits/7b3d44c939f24f054866a0e285d604e38c4fe6b3
+2016-03-25T10:28:34Z,commit,IDEA-153485 Test Module dependencies defined in Gradle is not correct¡­,github.com/JetBrains/intellij-community/pull/377/commits/a268a152930a5325a11978551ddad05c0958ad2c
+2016-03-23T17:21:34Z,commit,DBE-874 Ability to group files by their purposes; don't show project ¡­,github.com/JetBrains/intellij-community/pull/377/commits/837780a0adbbf0de4961447f27207c99534100ed
+2016-03-23T20:29:59Z,commit,remove author and date,github.com/JetBrains/intellij-community/pull/377/commits/ad3cc9d2e2adf81bef445a9540824ce0b67b7431
+2016-03-25T11:04:36Z,commit,find settings: add *.sql to recent extensions list,github.com/JetBrains/intellij-community/pull/377/commits/168f221fc787ab4c7769d51f961bbfc2b5f4059c
+2016-03-24T18:57:02Z,commit,use file's directory as context root when resolving references in Fil¡­,github.com/JetBrains/intellij-community/pull/377/commits/b40dea880696a750bb07af87a0e8012e1f058967
+2016-03-25T11:52:55Z,commit,reuse utility code to resolve CSS import references; improve the prev¡­,github.com/JetBrains/intellij-community/pull/377/commits/2bf422a3de3f1e9ddf0d1108a42c9fead5c2b088
+2016-03-25T10:58:47Z,commit,js.debugger.fix.jspm.source.maps,github.com/JetBrains/intellij-community/pull/377/commits/2158485bfb4b8995b810b072adeb7668857e518d
+2016-03-11T13:05:13Z,commit,update netty to 4.1.0-CR3,github.com/JetBrains/intellij-community/pull/377/commits/d7d0b7143d83a1ad5049f9102e3b5e7ac73f5ebd
+2016-03-25T13:53:42Z,commit,[groovy] resolve wildcard type methods (IDEA-153208) (IDEA-CR-9613),github.com/JetBrains/intellij-community/pull/377/commits/6413a37380eb96c810d92a33974207010c03e023
+2016-03-26T17:21:04Z,commit,"WEB-20340 JavaScript debugger doesn't show ""this"" reference with ES6 ¡­",github.com/JetBrains/intellij-community/pull/377/commits/d93ab79ac5306c9a9880e16438147eafe137f039
+2016-03-28T10:30:23Z,commit,artifacts: determine fileOrDir copy output kind based on the content ¡­,github.com/JetBrains/intellij-community/pull/377/commits/efb417747233210e6e327b61b51cd5f4fd4b5f68
+2016-03-25T15:30:56Z,commit,Minified Files: consider line breaks as unneeded whitespaces (WEB-20528),github.com/JetBrains/intellij-community/pull/377/commits/13df313de38caedda6dfb1c7812ac30bc969e980
+2016-03-28T10:56:17Z,commit,IDEA-153402 optimize imports does nothing in new classes,github.com/JetBrains/intellij-community/pull/377/commits/ba698a8fad998ed497fb1bed7024274de1438196
+2016-03-28T12:40:31Z,commit,"IDEA-153534, EA-77497 fix exception in EditorSizeManager.reset",github.com/JetBrains/intellij-community/pull/377/commits/ac9e6f29bfa53867d9d0dd435fbfba340be612b8
+2016-03-28T13:51:57Z,commit,"IDEA-153534, EA-77497 fix exception in EditorSizeManager.reset",github.com/JetBrains/intellij-community/pull/377/commits/1d7de3ebe5af7ba8ec20db0be7e05e2ce55a94f4
+2016-03-24T14:02:59Z,commit,EA-80965 - IAE: BraceMatchingUtil.getBraceMatcher,github.com/JetBrains/intellij-community/pull/377/commits/a133cac07c6ae11471938b71c1fde56e8262c54a
+2016-03-24T10:20:16Z,commit,don't lose precision during constant comparison in dfa (IDEA-153532),github.com/JetBrains/intellij-community/pull/377/commits/f09e3308866a365a8bf672902fe76366495d9894
+2016-03-24T08:47:29Z,commit,tolerate invalid selected lookup elements during typing (EA-79715 - I¡­,github.com/JetBrains/intellij-community/pull/377/commits/0973ae97d34197e8f276363ef451eef75a288c4f
+2016-03-22T16:26:32Z,commit,DumbServiceImpl: handle PCE from runWhenSmart runnables,github.com/JetBrains/intellij-community/pull/377/commits/5efe776e5ade4be0a6f077f1bb62c00599e79426
+2016-03-22T10:07:03Z,commit,enable slow resolve when creating a java class from template during i¡­,github.com/JetBrains/intellij-community/pull/377/commits/c4a67bba18c12d4f4ab9a57bae7dbca6c2c64e59
+2016-03-22T13:46:04Z,commit,"browse tests: set focus in the tree, enable speedsearch (IDEA-153424)",github.com/JetBrains/intellij-community/pull/377/commits/1e3a3f49d36e5b22c38ab780e52513d1594dbd64
+2016-03-22T16:28:46Z,commit,old inference: include type parameter's bounds in result as intersect¡­,github.com/JetBrains/intellij-community/pull/377/commits/1ff596957970ca0478a54d38adf89ac3f49c28e9
+2016-03-22T16:49:36Z,commit,fix warning text when no fix was found in batch mode (IDEA-153451),github.com/JetBrains/intellij-community/pull/377/commits/0991d32e71f8868ba5a2e66fa34f1d45709caf22
+2016-03-22T18:36:03Z,commit,change error message (IDEA-153156),github.com/JetBrains/intellij-community/pull/377/commits/685e867e688d27e1e2571f554dfdbe6a8fa79351
+2016-03-23T12:36:47Z,commit,pattern configurations: don't find one-class pattern for method confi¡­,github.com/JetBrains/intellij-community/pull/377/commits/6386058b0ca3df5f4e5c4ba7a6b6769311ee70ee
+2016-03-23T14:23:23Z,commit,bind params to fields: accept field assignments if not exactly the pa¡­,github.com/JetBrains/intellij-community/pull/377/commits/26577e9f8eed39be4b78d32b91dd5a4cb628331c
+2016-03-23T14:44:01Z,commit,convert field to local: reject when field is used from javadoc (IDEA-¡­,github.com/JetBrains/intellij-community/pull/377/commits/330fbfa0bf8d284ba4e3acaa1b0a57aec1500e73
+2016-03-23T17:52:49Z,commit,check if editor was already disposed,github.com/JetBrains/intellij-community/pull/377/commits/d536b7adac2377a48f032b1b9a6bca6e94356a36
+2016-03-23T19:01:59Z,commit,backward dependencies: search for navigation elements in maps provide¡­,github.com/JetBrains/intellij-community/pull/377/commits/71cc84389ba25f1b433a91a56c5f19b8a5f46371
+2016-03-24T10:04:39Z,commit,don't change wildcards on erasure; fix erasure for captured wildcards,github.com/JetBrains/intellij-community/pull/377/commits/c0bd2bf7ffa405ebfcd99e91f0a6c02903eec4c6
+2016-03-24T10:05:41Z,commit,proceed with wildcards separately to raw types: don't abuse erasure w¡­,github.com/JetBrains/intellij-community/pull/377/commits/2289ec435dd9e1bb11d3b0728f0728cc8e813795
+2016-03-24T10:07:31Z,commit,convert type to denotable before creating array type from it: wildcar¡­,github.com/JetBrains/intellij-community/pull/377/commits/58c1c0f394122e4d5ec0c379e7b1d5fd17dbfd17
+2016-03-24T10:44:44Z,commit,new inference: avoid inferring partly raw types (in case of unchecked¡­,github.com/JetBrains/intellij-community/pull/377/commits/847b2038a380ee3e7591ed7f000f223de1aeeb8b
+2016-03-24T12:10:49Z,commit,highlight invalid method call: search for most probable argument-caus¡­,github.com/JetBrains/intellij-community/pull/377/commits/4e7dd5b10fbe923e70e05ad10149e8fd8ad232b8
+2016-03-24T13:47:43Z,commit,testrunner: don't increase failed tests number if same test fails mul¡­,github.com/JetBrains/intellij-community/pull/377/commits/819cf185b1b09fab30b3246b924dba746ea3ee23
+2016-03-24T14:55:27Z,commit,inline local: don't check assignability before decoding (IDEA-152883),github.com/JetBrains/intellij-community/pull/377/commits/7f2c2c87a4076fa23fb9740468f3c7f630f98187
+2016-03-24T16:53:39Z,commit,proceed static factories instead of constructors to calculate expecte¡­,github.com/JetBrains/intellij-community/pull/377/commits/d184f4a0975a08b5fbf1fe237561d6be351bd473
+2016-03-24T17:06:44Z,commit,ensure filter is respected for project scope (IDEA-153571),github.com/JetBrains/intellij-community/pull/377/commits/6f2697c6305f11ededde011121fcdbe222f86c0f
+2016-03-24T20:20:13Z,commit,testdata fixed,github.com/JetBrains/intellij-community/pull/377/commits/ac36dac57cebf369776f2d99cd83ad0faefcef81
+2016-03-29T10:41:28Z,commit,analysis scope: don't check if file is in the project/module content ¡­,github.com/JetBrains/intellij-community/pull/377/commits/85db56ea649750075ab1116c6a81cc6da7862ab6
+2016-03-29T10:51:15Z,commit,CCE,github.com/JetBrains/intellij-community/pull/377/commits/0174e66f85b17b0ec13750c2e1bda5eb195d99a1
+2016-03-29T11:53:30Z,commit,lambda should be treated as simple assignment (IDEA-153782),github.com/JetBrains/intellij-community/pull/377/commits/7d7d66fe43c4adbf126061fd2d08b2f2068f6aae
+2016-03-28T15:15:20Z,commit,gradle: cleanup shared source folders (between source sets of the sam¡­,github.com/JetBrains/intellij-community/pull/377/commits/3f9d4a958ed486c717c96d548add3e12643e5818
+2016-03-29T13:59:55Z,commit,gradle: honor project dependency with non-default project configurati¡­,github.com/JetBrains/intellij-community/pull/377/commits/131728c337cc79a1502a6a4b26a76690c82c0d3a
+2016-03-30T15:02:33Z,commit,"[ui] fixes ""Attach sources"" chooser cancellation (IDEA-153651)",github.com/JetBrains/intellij-community/pull/377/commits/14a8ae9421bc75ffa50b30c5aa0f1d25acfbe81a
+2016-03-30T14:24:44Z,commit,"Revert ""Disabled references in formatted strings due to PY-18824, PY-¡­",github.com/JetBrains/intellij-community/pull/377/commits/26f5f991475d18cf1444441a235da228ce2b856a
+2016-03-14T12:01:25Z,commit,PY-18684 Fixed: incorrect auto compleat for __rpow__ method,github.com/JetBrains/intellij-community/pull/377/commits/801101beb65e52ab5c3e1e74ac16ae378e87474b
+2016-03-14T17:02:54Z,commit,PY-18543 Fixed: Package requirements.txt does not respect pip -rfilen¡­,github.com/JetBrains/intellij-community/pull/377/commits/c277378123aa699ddd406bd4e17d3aede1537300
+2016-03-22T20:31:36Z,commit,test logging improved,github.com/JetBrains/intellij-community/pull/377/commits/f3de7c099275d9247cfbd22f67bd1afff84fc261
+2016-02-18T15:08:09Z,commit,PyNamedTupleStub:,github.com/JetBrains/intellij-community/pull/377/commits/c1504be7f8cf7f6d4e53ab956bd74ac1802db6a1
+2016-03-23T17:16:08Z,commit,Set INSERT_TYPE_DOCSTUB=true in test,github.com/JetBrains/intellij-community/pull/377/commits/cb07882333d105ccbd5be630ac7e3fddd9a42809
+2016-03-23T17:58:24Z,commit,PyNamedTupleType.getMemberNames implementation which has been lost af¡­,github.com/JetBrains/intellij-community/pull/377/commits/42ec843dd1f9975acae4444a41f693e5ee166e09
+2016-03-23T11:42:40Z,commit,PY-18291 Python console fixed for Docker interpreter based on UNIX fi¡­,github.com/JetBrains/intellij-community/pull/377/commits/2d90f996b633e5e97fafb9a78de22ac2e9a4dcce
+2016-03-24T14:16:11Z,commit,Test that type for unsupported namedtuple is not calculated from AST,github.com/JetBrains/intellij-community/pull/377/commits/8097b7a173237841019dbbb74ec3b8f84a7593c6
+2016-03-24T12:53:52Z,commit,Pass environment from settings to console process.,github.com/JetBrains/intellij-community/pull/377/commits/e9f662bca7fcf540b47a8206f7bfcbcea234fb75
+2016-03-24T14:43:11Z,commit,Respect python console path mapping settings (PY-14198),github.com/JetBrains/intellij-community/pull/377/commits/1f6e79dd5c513671925303fd69d94945a6eace42
+2016-03-24T20:10:07Z,commit,PY-18926: Wrapping AttributeError,github.com/JetBrains/intellij-community/pull/377/commits/a948131b1ea819104fad01448d97662923f5a45e
+2016-03-25T09:16:38Z,commit,PY-18922 Typo in the example of a postfix template,github.com/JetBrains/intellij-community/pull/377/commits/391f66b28f41af86214a8160b6bfc07ac0803c8e
+2016-03-25T11:03:39Z,commit,PY-18948 Inconsistent indent in postfix completion examples,github.com/JetBrains/intellij-community/pull/377/commits/ef0661dd5bc9742defdcac559bc8ccb2c5d7da71
+2016-03-24T10:07:09Z,commit,"PY-18881 Recognize flag ""X"" in functions of re module to inject verbo¡­",github.com/JetBrains/intellij-community/pull/377/commits/0736dc1c44b4763891468af873274965b22b6f26
+2016-03-24T14:13:19Z,commit,PY-18892 Update bundled docutils to 0.12,github.com/JetBrains/intellij-community/pull/377/commits/c617a676cab4075b0b8719cad68af61ad336434d
+2016-03-25T13:12:03Z,commit,PY-18892 Always use UTF-8 to interact with rest_formatter.py helper s¡­,github.com/JetBrains/intellij-community/pull/377/commits/f4f7c8c0860066a5936378cda5b2555d5dd5ff1d
+2016-02-29T15:19:19Z,commit,PY-16814 Fixed: No Language Injection for PostgresQL WITH statements,github.com/JetBrains/intellij-community/pull/377/commits/1fcd231e3e7bfb794ab7f0642b5d468ec70b7505
+2016-03-25T16:29:53Z,commit,PY-18928 fix multiline comments folding to handle custom folding regi¡­,github.com/JetBrains/intellij-community/pull/377/commits/ea92251fb533ca0df935c9447fa48b42d27e15d9
+2016-03-28T12:12:29Z,commit,"PY-18522 ""Smart indent on paste"" preserves original indent of stateme¡­",github.com/JetBrains/intellij-community/pull/377/commits/008da9c52b8fd712004496dbe03132b34f76f5e6
+2016-03-28T13:09:45Z,commit,PY-18486 Fixed off-by-one error in BaseQuoteHandler,github.com/JetBrains/intellij-community/pull/377/commits/caff1091faa0f89487f45602866a9f99a9141567
+2016-03-28T17:48:23Z,commit,"PY-18486 Don't auto close quotes that start docstring, so PythonEnter¡­",github.com/JetBrains/intellij-community/pull/377/commits/a724e3390a56faf5b6c5712eb958405c2486a268
+2016-03-22T17:37:34Z,commit,"Fix false positives #PY-18769, #PY-18752, #PY-18837, #PY-18115",github.com/JetBrains/intellij-community/pull/377/commits/1b3233ffbc7c4b85201bef6cf374afde88083053
+2016-03-23T16:01:55Z,commit,"Fix highlighting substitutions in formatted strings #PY-18859, #PY-18¡­",github.com/JetBrains/intellij-community/pull/377/commits/235929cfa365f22466425de37857cb6e68f96ffa
+2016-03-24T16:01:35Z,commit,In percent string resolve positional substitution on first position t¡­,github.com/JetBrains/intellij-community/pull/377/commits/ed376d763598474d8d6172571fc0cfda39ac85ff
+2016-03-25T14:54:47Z,commit,Fixes according to review IDEA-CR-9573,github.com/JetBrains/intellij-community/pull/377/commits/363dab39fb657c3cb31467643bb39269c1577b65
+2016-03-30T12:38:10Z,commit,PY-18486 Better solution: on enter generate content for empty docstri¡­,github.com/JetBrains/intellij-community/pull/377/commits/6ebd3303f4dffa08dad402b4ea32319dc3022352
+2016-03-21T11:22:05Z,commit,Fix deadlock in remote debugger (PY-18546),github.com/JetBrains/intellij-community/pull/377/commits/7d3e1c6d454fe458a6ede67bf3693e9ad8b23b17
+2016-03-21T16:21:56Z,commit,"The correct way to ignore libraries, even if virtual env is situated ¡­",github.com/JetBrains/intellij-community/pull/377/commits/c918f7c3e9e4dbb1a05b9f8c3db59502598e4cea
+2016-03-23T09:25:46Z,commit,Updates from PyDev: Fixing test-runner issues in pytest and django > 1.8,github.com/JetBrains/intellij-community/pull/377/commits/68b91ca384ee14c229847d62816026dc56b45bc2
+2016-03-23T09:28:32Z,commit,Updates from PyDev: Removing un-nedded auto declaration (patch from s¡­,github.com/JetBrains/intellij-community/pull/377/commits/e9727ea4ba855e3a71e3f8cb2506813e7abe5e75
+2016-03-23T09:30:15Z,commit,Updates from PyDev: Fix for #PyDev-662: Celery Cannot Run in Debug Mode.,github.com/JetBrains/intellij-community/pull/377/commits/90a9ce10ada7844331c6f46dff1aa57234bc80f0
+2016-03-23T09:48:35Z,commit,Updates from PyDev: Fixes for runner with latest pytest.,github.com/JetBrains/intellij-community/pull/377/commits/6d4fe2f4e933b890305573bfecb0190bfd5305e9
+2016-03-23T12:16:13Z,commit,The possible fix of the thread leak in DebuggerReader,github.com/JetBrains/intellij-community/pull/377/commits/a37b902209511a54b0f8bbb1066d0ef355a9c73a
+2016-03-16T13:57:46Z,commit,Fix expanding collections with long values in debugger (PY-16866),github.com/JetBrains/intellij-community/pull/377/commits/b18479a000ebe3484c18df2640ee308b5d699dfe
+2016-03-23T15:29:16Z,commit,Fix test TemplateSyntaxErrorExceptionBreakpoint,github.com/JetBrains/intellij-community/pull/377/commits/e225983133007bdfaa80d3f95ba7c798120bda68
+2016-03-25T11:17:46Z,commit,Ignore empty library roots (PY-16899),github.com/JetBrains/intellij-community/pull/377/commits/dc8591b21f71f8cdc8cd5250beff32415dff8551
+2016-03-25T11:19:11Z,commit,Clear Filters even if testSteppingFilter failed,github.com/JetBrains/intellij-community/pull/377/commits/04934b4409a120c79693bbf08ea29ae1394f5bd2
+2016-03-29T17:43:59Z,commit,PyCharm debugger breaks django form validation (PY-14578),github.com/JetBrains/intellij-community/pull/377/commits/be4d0a287b99eff7a25d660f79ffed6377daeba1
+2016-03-28T11:41:56Z,commit,Try to force encoding when reading template source with python 3 (PY-¡­,github.com/JetBrains/intellij-community/pull/377/commits/1ce093c3729ddbb8e0c09bff8515dd875a5c5ce1
+2016-03-30T15:56:04Z,commit,Fix behaviour with Python3 (PY-17987),github.com/JetBrains/intellij-community/pull/377/commits/41de1fed7cc3c48a11040a690824e86e83c7cf3f
+2016-03-30T12:54:03Z,commit,EA-81233 - IAE: ScopePaneSelectInTarget.isSubIdSelectable,github.com/JetBrains/intellij-community/pull/377/commits/8509b2f1d7e06d66b1ad08c65a4e1ab473f2481e
+2016-03-29T11:16:02Z,commit,"IDEA-153759 diff: remember ""Disable editing"" toggle state",github.com/JetBrains/intellij-community/pull/377/commits/1193c93cbd6b0131f33216b25cc1cc05f3aeefb7
+2016-03-29T11:41:38Z,commit,"IDEA-114505 diff: remember ""Preview Diff"" toggle state in LocalChanges",github.com/JetBrains/intellij-community/pull/377/commits/29c0af574c082c45787874e5ba321b92c8824ced
+2016-03-29T12:18:41Z,commit,"IDEA-114505 diff: treat empty selection as ""all changes selected"" in ¡­",github.com/JetBrains/intellij-community/pull/377/commits/b0d3ed82731a1381e14cbe9506680f1ad30e0daf
+2016-03-31T15:46:01Z,commit,revert,github.com/JetBrains/intellij-community/pull/377/commits/8504cf6a299612e7457f35d678537483bca3167a
+2016-03-29T17:35:50Z,commit,[groovy] honor default imports in FromStringHintProcessor (IDEA-15378¡­,github.com/JetBrains/intellij-community/pull/377/commits/ee69372c40322cfa5f922bc48af9cfd2b6a126d3
+2016-03-30T13:02:42Z,commit,[groovy] more readable description for expected closure parameter typ¡­,github.com/JetBrains/intellij-community/pull/377/commits/ec061c31a9bd77d6f7ec1f177dd04d936ce07307
+2016-03-30T14:11:46Z,commit,[groovy] do not use context in resolve of FromString options (IDEA-15¡­,github.com/JetBrains/intellij-community/pull/377/commits/0f71cf9c4ef3612987cf28df473d1b50ad1ce32b
+2016-03-30T14:15:45Z,commit,[groovy] tests for IDEA-153785 (IDEA-CR-9695),github.com/JetBrains/intellij-community/pull/377/commits/ed717a3c653fd458b39f48f1ac808d3db8e7329b
+2016-03-30T14:51:20Z,commit,[groovy] follow-up (IDEA-153785) (IDEA-CR-9695),github.com/JetBrains/intellij-community/pull/377/commits/e0a59a634840a13c6ff8e79fbccc12e0282d2bce
+2016-02-29T15:41:54Z,commit,IDEA-152156 Test,github.com/JetBrains/intellij-community/pull/377/commits/324d3f86d17a06b390191dbb53f934c6c912c5e1
+2016-03-01T13:21:53Z,commit,FIXED IDEA-152156 Unable to save new colors for old existing theme,github.com/JetBrains/intellij-community/pull/377/commits/9e263cc6ed98bea0726f6e43d30f7863dc82f906
+2016-03-31T14:08:20Z,commit,Fixed settings folder name for PyCharm 2016.1.1,github.com/JetBrains/intellij-community/pull/377/commits/2d7b5a39cdd48a97d104d052dbcb60f621d0b280
+2016-03-30T15:54:54Z,commit,Several minor improvements in API and javadoc of PyIndentUtil class,github.com/JetBrains/intellij-community/pull/377/commits/c9620344274090e40373f22337be23863cf619ad
+2016-03-31T13:05:11Z,commit,PY-18522 Always try to infer expected indent when pasting into empty ¡­,github.com/JetBrains/intellij-community/pull/377/commits/e1eed714d12d9b3d56cc2414535637d82d3b6bdd
+2016-03-31T17:01:22Z,commit,"Debugger doesn't stop on breakpoints in threads if ""Gevent compatible¡­",github.com/JetBrains/intellij-community/pull/377/commits/2ec1a4847752ef66bebc9fbb3c2a98f6df82594e

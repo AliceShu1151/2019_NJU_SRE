@@ -1,0 +1,18 @@
+315,IDEA-146898 DoubleNegationInspection only for booleans
+2015-10-26T19:35:17Z,discuss,The DoubleNegationInspection should only register error for booleans and conditional statements.
+2015-10-27T13:19:49Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-10-27T13:47:51Z,discuss,"Hi @klikh ,
+Thank you for the reminder. I sent it."
+2015-10-27T13:54:35Z,discuss,Received. Thanks.
+2016-03-01T09:37:10Z,discuss,you might want to i18n this
+2016-03-01T09:38:19Z,discuss,formatting
+2016-03-01T09:39:47Z,discuss,"hmmm, this signature (and naming) is suspicious, please review it"
+2016-03-01T09:41:06Z,discuss,"you could import GroovyTokenTypes statically, to make it more readable"
+2016-03-01T09:43:57Z,discuss,"the loop will get the parent, you should skip it here:
+PsiElement parent = expression;
+ad preferably move it to a separate method (though I'm sure there are helper methods for this already)"
+2016-03-01T09:48:00Z,discuss,PsiType.BOOLEAN.isAssignableFrom(expression.getType()) ? (might need the nullcheck also)
+2018-07-21T12:43:31Z,discuss,"@vladmm, please rebase the PR, cc @dovchinnikov."
+2019-06-24T14:41:59Z,discuss,"The code is okay, but there are other boolean contexts such as assert statement or ternary expression. Support for all of them is needed before this could be merged."
+2019-06-24T14:41:59Z,discuss,Please reopen the request once it is ready.
+2015-10-26T19:32:10Z,commit,IDEA-146898 DoubleNegationInspection only for booleans,github.com/JetBrains/intellij-community/pull/315/commits/77060e17f15719017f3693642611a886ef8b73cc

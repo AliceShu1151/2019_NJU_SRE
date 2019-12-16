@@ -1,0 +1,6 @@
+254,"added ""Add Maven Dependency"" quick fix for groovy"
+2015-03-15T08:09:06Z,discuss,"added ""Add Maven Dependency"" quick fix for groovy"
+2015-03-16T15:54:37Z,discuss,Contributor Agreement was received.
+2018-07-21T14:58:08Z,discuss,"@sangjin-park, please rebase the PR, cc @vladsoroka."
+2018-08-14T09:46:15Z,discuss,"I'm closing the PR as outdated, please comment if you're still interested"
+2015-03-15T02:55:43Z,commit,"added ""Add Maven Dependency"" quick fix for groovy",github.com/JetBrains/intellij-community/pull/254/commits/132738d5c0e5bc0253e43bafc906d23fbd2dbd39

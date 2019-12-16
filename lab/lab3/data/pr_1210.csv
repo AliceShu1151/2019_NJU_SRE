@@ -1,0 +1,9 @@
+1210,Add linux-ppc64le check-condition to support fsnotifier-ppc64le binary usage
+2019-10-07T12:15:29Z,discuss,fsnotifier (which lives under native/fsNotifier/linux for Linux platforms) can be compiled on various linux platforms.
+2019-10-07T12:15:29Z,discuss,"For Linux based 64-bit platforms, NativeFileWatcherImpl.java only knows about x86_64 and arm. This tiny pull-request adds ppc64le to the mix."
+2019-10-07T12:15:29Z,discuss,This will give people on Little-Endian Power systems the ability to run IntelliJ and its deratives with a fast filesystem changes notifier.
+2019-10-18T20:30:54Z,discuss,Sorry for the late reply.
+2019-10-18T20:30:54Z,discuss,"At the moment, JB does not want to support other architectures besides x86/x86-64. Starting from the next 2019.3 build, IDEs will provide a user with instructions on building and installing the fsnotifier binary on their system."
+2019-10-18T21:19:07Z,discuss,You¡¯re supporting arm already..
+2019-10-20T21:43:24Z,discuss,Not anymore.
+2019-10-07T12:10:16Z,commit,Add linux-ppc64le check-condition to support fsnotifier-ppc64le binar¡­,github.com/JetBrains/intellij-community/pull/1210/commits/54c8bdd9e7be8c5840fe2388dd525d536309710d

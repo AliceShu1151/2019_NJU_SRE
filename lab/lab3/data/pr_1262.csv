@@ -1,0 +1,6 @@
+1262,"Make getters public again, like their setters"
+2019-11-22T23:00:21Z,discuss,"Commit 3cf5f1d made getters package-private but left setters public
+which triggers KT-20602 (¡°Cannot set synthetic property¡±)."
+2019-11-22T23:00:31Z,discuss,@cdracm?
+2019-11-25T14:11:56Z,discuss,pushed
+2019-11-22T23:00:00Z,commit,"Make getters public again, like their setters",github.com/JetBrains/intellij-community/pull/1262/commits/06bff90e3ae841bcc263808eb44c37c53a23fd6a

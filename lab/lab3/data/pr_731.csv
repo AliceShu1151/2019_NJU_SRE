@@ -1,0 +1,254 @@
+731,173
+2018-02-11T16:29:02Z,discuss,I need IntelliJ IDEA source code for the purpose of developing a new plugin. Thanks!
+2018-02-12T10:24:52Z,discuss,"@baocatsamac you do not need to create malformed pull requests to develop plugins for IntelliJ IDEA.
+Start reading docs from this page: https://www.jetbrains.org/intellij/sdk/docs/welcome.html"
+2017-12-18T05:09:08Z,commit,JavaTargetElementEvaluator#findOverridingMethod: run DFA only if meth¡­,github.com/JetBrains/intellij-community/pull/731/commits/88e4fb506c408fe87f50d8366cd742128b78924d
+2017-12-21T09:48:29Z,commit,improve message for diagnostic,github.com/JetBrains/intellij-community/pull/731/commits/8911919b8bdae6bb6f4294a9aed86f7d70e0abcb
+2017-12-21T10:43:59Z,commit,Merge remote-tracking branch 'origin/173' into 173,github.com/JetBrains/intellij-community/pull/731/commits/55156fc1bd939cdf9b41b2b7628f5ccd6217bd83
+2017-12-19T14:11:13Z,commit,EA-113885 - IVFAE: VirtualDirectoryImpl.doFindChild,github.com/JetBrains/intellij-community/pull/731/commits/238159a9fef77290dd3fd572fc6fea596c9b3496
+2017-12-20T13:01:20Z,commit,"Don't log any errors for CustomRegionTreeElements, they are perfectly Ok",github.com/JetBrains/intellij-community/pull/731/commits/b63d66189ae215afff4a9c2ce5f0ec30d91a72fa
+2017-12-19T05:59:08Z,commit,Build toolwindow icon,github.com/JetBrains/intellij-community/pull/731/commits/f7d0230cf2ffc45ecbba1cf88e4a97bed8b8cc7b
+2017-12-20T12:16:41Z,commit,ES: merge frequent importing requests for the same project,github.com/JetBrains/intellij-community/pull/731/commits/1634f2b2ca92dd1695618d5f4efd1c83adf8146c
+2017-12-21T12:36:12Z,commit,Gradle: obsolete notice updated,github.com/JetBrains/intellij-community/pull/731/commits/f3d6367db7f17c72df2aa35fb53f96517533fe0b
+2017-12-21T13:51:13Z,commit,Increase max allowed continuation indent size (see IDEA-183665),github.com/JetBrains/intellij-community/pull/731/commits/8b2b3606e4597028658e518550d209f80ab47308
+2017-12-21T15:01:02Z,commit,fix hanging on saving,github.com/JetBrains/intellij-community/pull/731/commits/4139fd834624981acee79cbef5b74de6b7ad94bf
+2017-12-21T17:25:08Z,commit,use fallback font for Splash screen,github.com/JetBrains/intellij-community/pull/731/commits/6a63735cf23bd2720724d15b648a78176806ccd9
+2017-12-14T12:21:01Z,commit,Java: Don't try to use anonymous class as outer class when matching d¡­,github.com/JetBrains/intellij-community/pull/731/commits/8f420d3390d0b5a39809ce8173c4b5d4c9d84c1c
+2017-12-05T15:43:48Z,commit,Fix sporadic exceptions in AbstractTreeUi.,github.com/JetBrains/intellij-community/pull/731/commits/6772704a7007d058a27add1dc0b8f81c4afb589f
+2017-12-22T12:59:30Z,commit,IDEA-184156 be able to handle null values as master doesn't write def¡­,github.com/JetBrains/intellij-community/pull/731/commits/91dc445faec7cffd3372b012e43d1f86a1cde95d
+2017-12-18T11:31:56Z,commit,junit 5: add standard engines if no custom engines are found(IDEA-183¡­,github.com/JetBrains/intellij-community/pull/731/commits/6a5e0d3cba28a1e419d309ea367e9e7cd247fe84
+2017-12-22T17:58:22Z,commit,[groovy] allow to skip file caches while resolving annotation,github.com/JetBrains/intellij-community/pull/731/commits/13bd7c1ca0c2ecbf2f25418bf7ce4218e0d3bed5
+2017-12-14T20:28:09Z,commit,"Use ""merge from"" url as is if used wc is not under any branch location",github.com/JetBrains/intellij-community/pull/731/commits/1a1b2ab400f73c8816e28e99d1ebf8566dee4103
+2017-12-25T13:14:11Z,commit,"Spellchecker: IDEA-179653 Broken ""Change to"" quickfix in Commit dialog",github.com/JetBrains/intellij-community/pull/731/commits/bb971c52b0cf1eea86b349d5578e8f6eb34489de
+2017-12-25T13:25:31Z,commit,Spellchecker: (minor) package -> public constructor,github.com/JetBrains/intellij-community/pull/731/commits/cfc6d60e89a7067d69653bfdd8af4c992a24aa02
+2017-12-21T14:07:47Z,commit,project view: do not create implicit module group nodes if they names¡­,github.com/JetBrains/intellij-community/pull/731/commits/2d2261b0d3b5ee1170c4ffb3e8f9f3534145e22a
+2017-12-21T17:15:29Z,commit,project view: improved fix for duplicating module and group names,github.com/JetBrains/intellij-community/pull/731/commits/666fcf51531b40639b5a299a81084ffc800a2beb
+2017-12-22T14:50:59Z,commit,project view: add 'Flatten Modules' option (IDEA-183022),github.com/JetBrains/intellij-community/pull/731/commits/3090e45c1af44a23c030a556f4f4e9a2147537ed
+2017-12-25T08:57:28Z,commit,refactoring: rename method and add comments in ProjectViewPane,github.com/JetBrains/intellij-community/pull/731/commits/6c1ff265b3f2c3d9a111793afc8d595ca1fff826
+2017-11-24T08:20:31Z,commit,Branch 173 now targets IJ 2017.3.4,github.com/JetBrains/intellij-community/pull/731/commits/f2faa0be6e12d88ec4d5dc0c8fdf0f3ff77620c1
+2017-12-17T14:13:56Z,commit,EA-107268 Fix possible NPE,github.com/JetBrains/intellij-community/pull/731/commits/a5a67f6cff4315464d2c6428983f8cbd6a2853eb
+2017-12-17T15:14:58Z,commit,EA-102460 Check that VM supports instances info before getting them,github.com/JetBrains/intellij-community/pull/731/commits/57410b2a456ad00263041dc3ca43e0423080e31c
+2017-12-17T15:28:33Z,commit,Update log level for the trace expression: Info -> Debug,github.com/JetBrains/intellij-community/pull/731/commits/bbce28789b6286a9b730e2803505a3856b6b7e14
+2017-12-17T15:36:10Z,commit,Implement toString in GenericTypeImpl (for diagnostics purposes),github.com/JetBrains/intellij-community/pull/731/commits/50cad77b5208de0b2f26ae77d37e29d872306a33
+2017-12-19T07:47:29Z,commit,Minor: fix a typo,github.com/JetBrains/intellij-community/pull/731/commits/461e1cce4687168e9a5b41046621f88cd39e5aac
+2017-12-17T17:15:23Z,commit,Fix possible NPE in IdentityResolver when some value in chain are null,github.com/JetBrains/intellij-community/pull/731/commits/c3140ee0c42344b0aef8cf6d64e4d0d07bdd6364
+2017-12-17T17:39:37Z,commit,Avoid using of subList to avoid possible n^2 algorithm / SOE,github.com/JetBrains/intellij-community/pull/731/commits/c975506d349929aa86dfd263da98c0a3e4acfb05
+2017-12-19T07:47:06Z,commit,EA-109614 EA-103301 Fix NPE when chain contains null-values,github.com/JetBrains/intellij-community/pull/731/commits/0cc3757da741f68657a8dccc384e1e12f0295027
+2017-12-19T07:54:21Z,commit,Fix possible memory leak when the ExceptionView not disposed,github.com/JetBrains/intellij-community/pull/731/commits/3fc594b6fe9fca05016f964ac7afa9577a749cf7
+2017-12-19T08:17:42Z,commit,Minor: remove redundant annotations,github.com/JetBrains/intellij-community/pull/731/commits/12f7df86d1670821f2a44bc52fb4a24bfe28c956
+2017-12-18T15:22:32Z,commit,"Unmark testData directory as a ""Test Rosource""",github.com/JetBrains/intellij-community/pull/731/commits/630c5ae8e8d3864f77b202aef5f8990b258b75d9
+2017-12-19T08:19:55Z,commit,Minor: remove unused method,github.com/JetBrains/intellij-community/pull/731/commits/43e66487edf6da25f204af7f304a9ad51535c9e4
+2017-12-27T17:48:24Z,commit,replicate cdr's change to facilitate merge,github.com/JetBrains/intellij-community/pull/731/commits/1b35dfaab83ac3a9c93f709c1c3f246abb25ff16
+2017-12-11T10:23:43Z,commit,"GDPR support: Consents; PrivacyPolicy->EULA, initial",github.com/JetBrains/intellij-community/pull/731/commits/15ad260db8ffb6a33272c0e4c5ac10e73ed9cff9
+2017-12-12T14:27:09Z,commit,GDPR support: improvements in Consents-related UI,github.com/JetBrains/intellij-community/pull/731/commits/6ffb64d45da7d9b0826d733522e7e94f4062ad11
+2017-12-13T17:44:59Z,commit,Let user accept 'User License Agreement' when it's been fully scrolled,github.com/JetBrains/intellij-community/pull/731/commits/c463bf8cbbb47642c3bdee3d1ce4c601765b7e24
+2017-12-14T19:31:21Z,commit,Codestyle cleanup,github.com/JetBrains/intellij-community/pull/731/commits/5e732f84272e7a049b1609028a11c4a5999d3ec2
+2017-12-14T19:13:52Z,commit,GDPR support: menu action for Data Sharing Options,github.com/JetBrains/intellij-community/pull/731/commits/04354eac8635b2091e3d1cf75033006118d697ab
+2017-12-15T08:36:39Z,commit,GDPR support: improvements in Consents-related UI (after-review patch),github.com/JetBrains/intellij-community/pull/731/commits/885bd5fca90fb6cfa978e535ce973daff58d453b
+2017-12-18T13:47:36Z,commit,general tests for consent options,github.com/JetBrains/intellij-community/pull/731/commits/ad45d551fd74efc9c5297c9619ce90a9051ed2b5
+2017-12-18T18:30:52Z,commit,GDPR support: improvements in Consents-related UI (layouting & font),github.com/JetBrains/intellij-community/pull/731/commits/33d25f3245c42f58662a9273a797d63897983834
+2017-12-18T19:58:34Z,commit,GDPR support: improvements in Consents-related UI in 'GTK+' LAF,github.com/JetBrains/intellij-community/pull/731/commits/999b0a9e94cb9851fc385c54f19226095d27f9eb
+2017-12-19T15:40:09Z,commit,GDPR support: improvements in Consents-related UX,github.com/JetBrains/intellij-community/pull/731/commits/0c1ba1e12a3b5644f12061fd6f5a9e839af9e2f2
+2017-12-20T19:58:43Z,commit,"GDPR support: fix wrong border, show a hint when consents are empty",github.com/JetBrains/intellij-community/pull/731/commits/19432ce4db5811666bb06e1d248c3af119090c6d
+2017-12-21T20:08:02Z,commit,"GDPR support: fix borders, get rid of autoscrolling and custom fonts",github.com/JetBrains/intellij-community/pull/731/commits/27daac2982c4e14236b01b380d6fae860683f862
+2017-11-14T18:55:07Z,commit,clean up statistics settings (remove radio buttons),github.com/JetBrains/intellij-community/pull/731/commits/24026ab430bfa0f365072d986bc91dcf6c287f33
+2017-12-21T14:48:52Z,commit,GDPR support: SentUsageStatistics.isAllowed flag is now part of Conse¡­,github.com/JetBrains/intellij-community/pull/731/commits/98b4849fbfec8bb528e3dc292fe1c78958cb4f0b
+2017-12-23T12:25:48Z,commit,ability to disable consents confirmation for tests,github.com/JetBrains/intellij-community/pull/731/commits/2b22c4233473ca0301ac47c4995b1dab12210c0b
+2017-12-27T21:26:57Z,commit,"Make 'Data Sharing' dialog wider, enable horizontal scrollbar",github.com/JetBrains/intellij-community/pull/731/commits/52ac4b1f866af7dbb596b46d77166f9eaca4623d
+2017-12-22T14:05:01Z,commit,IDEA-184054 follow-up,github.com/JetBrains/intellij-community/pull/731/commits/62c090ac8854f084bc4639cc43f7df7f89159a9e
+2017-12-28T13:15:49Z,commit,fail-save conversion to json;,github.com/JetBrains/intellij-community/pull/731/commits/aa055c097e75af7936841e4708040abb8ec4459e
+2017-12-28T14:04:42Z,commit,Changed criterion whether cross-compilation is required: target bytec¡­,github.com/JetBrains/intellij-community/pull/731/commits/b33beda0596311df4baa5f564fa3ecefab1cb154
+2017-12-20T13:05:55Z,commit,NPE in JpsProjectLoader.loadFromDirectory() when trying to run a Run ¡­,github.com/JetBrains/intellij-community/pull/731/commits/4d1b8da86d3697fdc69bea1bc20c654ca5b93b53
+2017-12-28T13:34:26Z,commit,IDEA-CR-28041 use old name to avoid reimport,github.com/JetBrains/intellij-community/pull/731/commits/7fd1cd6cfb78196c7005482ff707fd9cba76d11e
+2017-12-28T16:25:15Z,commit,"quick fix for GoLand ""Imports sorting for default project is not appl¡­",github.com/JetBrains/intellij-community/pull/731/commits/4946ab4c36be2510e9d210e4923eeab1d5c1b565
+2017-12-28T16:11:27Z,commit,Misprint: Lincence -> Lisense,github.com/JetBrains/intellij-community/pull/731/commits/0489f13c59a9fb02d6ab3b09a394a03f5ca7f78c
+2017-12-28T10:51:31Z,commit,Use com.intellij.openapi.util.Pair instead of kotlin.Pair,github.com/JetBrains/intellij-community/pull/731/commits/e88a984d924fac1eb450d59be488111edb06389a
+2017-12-28T17:29:11Z,commit,IDEA-CR-28226 kotlinize ¡ª prefer data class instead of Pair,github.com/JetBrains/intellij-community/pull/731/commits/9010e8c6daed6d55123237199380bac38a56c48b
+2017-12-25T21:15:02Z,commit,IDEA-149061 Tool Window docking issue,github.com/JetBrains/intellij-community/pull/731/commits/b675e1b7527cca0b9fadbaa98326b677ffd6e04b
+2017-12-29T07:40:04Z,commit,IDEA-184156 be able to handle null values as master doesn't write def¡­,github.com/JetBrains/intellij-community/pull/731/commits/f9cf77f3d09b40231c7a7ebf4b82290dea583fe1
+2017-12-28T14:45:46Z,commit,IDEA-176554 Module rename isn't reflected in dependent module imls,github.com/JetBrains/intellij-community/pull/731/commits/ab37adf722a649fa184924f586e81631dd7c5408
+2017-12-28T16:00:14Z,commit,IDEA-CR-28221 Simply call stateChanged ¡ª more robust and simple fix f¡­,github.com/JetBrains/intellij-community/pull/731/commits/200382a066f48722d775f3c9e429f57964b7874c
+2017-12-29T15:48:27Z,commit,cancel applying fixes (IDEA-184412),github.com/JetBrains/intellij-community/pull/731/commits/1cbf48fd9fbd05ca1b3606776d5a5af1f0e3922f
+2017-10-24T09:37:57Z,commit,IDEA-180862 'Wrap using Collections.singletonList' intention doesn't ¡­,github.com/JetBrains/intellij-community/pull/731/commits/79d37f1ca58dcaa52b1553444f4220a9d26ff78e
+2018-01-02T10:32:11Z,commit,WrapWithAdapterMethodCallFix: add more diagnostics for EA-114444.,github.com/JetBrains/intellij-community/pull/731/commits/653287fb697be7f90e1ce5dd9f28b1d998d633bc
+2018-01-06T08:42:38Z,commit,StandardInstructionVisitor: fixed EA-114599 - IAE: DataFlowInspection¡­,github.com/JetBrains/intellij-community/pull/731/commits/13632009ca04d6bf431d8cf32a69d59a0728a36b
+2018-01-02T18:51:18Z,commit,don't dispose smart pointers explicitly (IDEA-184471),github.com/JetBrains/intellij-community/pull/731/commits/7e0176fa774fb59cd3e4ce87e18f6c8548665880
+2017-12-20T15:27:45Z,commit,restore customizations (IDEA-179312),github.com/JetBrains/intellij-community/pull/731/commits/efb3968b577b649ce92df58631eda0c5595a265b
+2018-01-08T09:46:17Z,commit,statistics: extentions are not allowed (any plugin could override sta¡­,github.com/JetBrains/intellij-community/pull/731/commits/6073a5fc0f5d5b2b74109a1b335bb38d0b6f11cd
+2018-01-08T13:41:43Z,commit,"Revert ""VM property `idea.set.proxy.selector` to disable setting glob¡­",github.com/JetBrains/intellij-community/pull/731/commits/08a1cd83843e87ae6d936c056e86b807133e766c
+2018-01-09T07:28:11Z,commit,Gradle: make CompositeBuildData serializable.,github.com/JetBrains/intellij-community/pull/731/commits/a139b14583b651a2178b4e945951ffbf1eaaa47d
+2017-12-22T13:03:49Z,commit,EA-105889 - CCE: DebuggerTreeNodeExpression.substituteThis,github.com/JetBrains/intellij-community/pull/731/commits/4c4f088602b4349aaf99d13fdb36e7350fd0e4b7
+2018-01-09T11:31:42Z,commit,"[ui] even better quotes paths for ""Show in Explorer"" action (IDEA-183¡­",github.com/JetBrains/intellij-community/pull/731/commits/5f70f543bdb3fc0fd091f9d2dab8bba95bb485eb
+2017-11-24T08:20:31Z,commit,All .gitignore plugin versions are marked as incompatible (IDEA-184685),github.com/JetBrains/intellij-community/pull/731/commits/5e7a2474acb05e99a0d4d73f9bb8fbf4af688095
+2017-11-01T18:03:40Z,commit,Attribute error while loading matplotlib with qt5 (PY-26652),github.com/JetBrains/intellij-community/pull/731/commits/1ddf4039ef74e33e0636d9d393938d589206f3e1
+2017-12-13T13:58:07Z,commit,PY-27229: Use system-dependent path separator for interpreter name,github.com/JetBrains/intellij-community/pull/731/commits/ec11865c8632d272066e0e96240dadc9af9c844c
+2017-12-18T16:00:19Z,commit,PY-27266 Don't use ALIGN_MULTILINE_PARENTHESIZED_EXPRESSION in Python¡­,github.com/JetBrains/intellij-community/pull/731/commits/b0b00f2cfd7903b8641aad53a2aae5ab77e1267a
+2017-12-22T09:49:39Z,commit,Compare ints as big ints in python package version comparator,github.com/JetBrains/intellij-community/pull/731/commits/f29c899183089ba6ff389a36063ef7597c609101
+2017-12-22T12:52:40Z,commit,Drop first parameter when getting instance parameters from `__call__`,github.com/JetBrains/intellij-community/pull/731/commits/fc10bc85f0c85d89473011850ef8dc508cdb71c1
+2017-12-29T12:37:44Z,commit,"Revert ""Special case `typing` for Python < 3.5 (PY-22945)""",github.com/JetBrains/intellij-community/pull/731/commits/b598bef53860c65c4b67e665fe84fcac1925c1f5
+2018-01-09T13:47:37Z,commit,"java compiler indices based inheritor search should not use ""useScope¡­",github.com/JetBrains/intellij-community/pull/731/commits/1b722434643fe69185f955f92681ef956c3d8393
+2018-01-05T15:31:52Z,commit,"IDEA-123287 Multiple ""Updating indices"" bg tasks after external file ¡­",github.com/JetBrains/intellij-community/pull/731/commits/415141fb073de9c618edb66498baa29e3944f05d
+2018-01-09T21:25:47Z,commit,"Revert ""IDEA-123287 Multiple ""Updating indices"" bg tasks after extern¡­",github.com/JetBrains/intellij-community/pull/731/commits/0a5e8afba8c83c86ee0d8340aa5b0564b44d7218
+2018-01-09T15:09:51Z,commit,Gradle: handle and report errors happened before the gradle invocatio¡­,github.com/JetBrains/intellij-community/pull/731/commits/d68cb63f523c4c71aa3a05b2aaa33bf19e711c95
+2018-01-10T07:34:18Z,commit,Gradle: handle and report errors happened before the gradle invocatio¡­,github.com/JetBrains/intellij-community/pull/731/commits/f00a8d126c6ce68610b3ef0c289f0eccd3f11156
+2018-01-10T07:42:37Z,commit,typo fix (IDEA-184726),github.com/JetBrains/intellij-community/pull/731/commits/8a90cadd324ce471e6c9c52fb18af411733f0694
+2017-12-05T14:06:44Z,commit,IDEA-182831 paste of maven GAV co-ordinates into gradle file results ¡­,github.com/JetBrains/intellij-community/pull/731/commits/d2fcbbab6ec548e241738aaca33e5bffc94d2565
+2017-12-13T06:34:15Z,commit,Maven: do not pollute the IDEA tests classpath with maven2 jars,github.com/JetBrains/intellij-community/pull/731/commits/428898ce3e398d4fc37e046b22f86723f6eadcc4
+2017-12-22T11:56:07Z,commit,Maven: highlighting tests fix,github.com/JetBrains/intellij-community/pull/731/commits/06a05c6d8427060bc740461ac180c760280061a3
+2018-01-08T17:03:52Z,commit,NPE: NonProjectFileWritingAccessDialog.lambda$setTextAndMnemonicAndLi¡­,github.com/JetBrains/intellij-community/pull/731/commits/fee2887c820749f7e0e978ff6f1a1ec0f2c7cf0a
+2018-01-10T13:29:11Z,commit,IDEA-184156 safe parseFloat,github.com/JetBrains/intellij-community/pull/731/commits/85ddd5d44ccf0f9f7829fa23e89f0db22c8ea500
+2017-11-10T23:56:08Z,commit,support smart select provider for discontinuous tree selection mode,github.com/JetBrains/intellij-community/pull/731/commits/88c4b81ff4683c2c2dd4783f6a89a5279a8b36c7
+2017-11-11T23:01:57Z,commit,support smart select provider for contiguous tree selection mode,github.com/JetBrains/intellij-community/pull/731/commits/45a1dd318dce7f26485a8b8f726f592f946043ec
+2017-11-12T22:54:13Z,commit,disable smart select provider for single tree selection mode,github.com/JetBrains/intellij-community/pull/731/commits/2aae0b2e26ae1d9b2816040188fe39e84b8c2610
+2017-11-12T23:18:45Z,commit,copy TreeSmartSelectTest.testSelectionDoesntJumpTooQuickly from Kotli¡­,github.com/JetBrains/intellij-community/pull/731/commits/4517127b2ef3bc5b158496bd748e098de7705f38
+2017-11-13T08:30:12Z,commit,test that decrease selection does not clear it,github.com/JetBrains/intellij-community/pull/731/commits/fea3291fb26d70cec0bf947e46baa4781343ceaa
+2017-11-14T17:54:14Z,commit,Add ability to user to interrupt expanding asynchronous tree by colla¡­,github.com/JetBrains/intellij-community/pull/731/commits/441fc64bb7944fc9cf778eec33de6b6676173165
+2017-11-15T11:41:24Z,commit,support interruptible expanding,github.com/JetBrains/intellij-community/pull/731/commits/680da2c4d6e58e36124ab611191ae0eb458b0b09
+2017-11-15T18:36:15Z,commit,"always use new descriptor, because some structures have equal nodes w¡­",github.com/JetBrains/intellij-community/pull/731/commits/c112f7695eba1bbf88cbdf2b852adb4170ac0f1a
+2017-11-17T14:06:48Z,commit,do not update an internal state before an exception may be thrown,github.com/JetBrains/intellij-community/pull/731/commits/a1c68b4ba10cea01bfc27a0f5363734c8d989f2e
+2017-11-17T18:51:29Z,commit,use containing file instead of element to update Project View,github.com/JetBrains/intellij-community/pull/731/commits/e437ca4c7e2d4b32d51b30f474de7b9f71da94fe
+2017-11-22T19:27:46Z,commit,add new base implementation of tree visitor,github.com/JetBrains/intellij-community/pull/731/commits/25d3a4edff3d7bead3a9b9f16c5b5792b9105705
+2017-11-22T19:56:07Z,commit,remove unused implementations of tree visitor,github.com/JetBrains/intellij-community/pull/731/commits/3e38b6fad5f8976c70caa19c5a1f8e7c8c34538d
+2017-11-22T20:08:49Z,commit,rename method according to the corresponding method in base implement¡­,github.com/JetBrains/intellij-community/pull/731/commits/156b606da68f9d473e4532581ea1401608e2b8a6
+2017-11-23T13:42:07Z,commit,add ability to search by a path without root for test purposes,github.com/JetBrains/intellij-community/pull/731/commits/b1d32de83e6e0baf75dd26087a8ae171f36e35d1
+2017-11-23T15:17:12Z,commit,do not restore a tree state twice on showing a project view,github.com/JetBrains/intellij-community/pull/731/commits/ea21034727f3fbbfa844e6155e8adacd8c4a11e7
+2017-11-24T14:58:04Z,commit,add ability to visit childrne of the found node,github.com/JetBrains/intellij-community/pull/731/commits/15cc951c5fcd3b62c1f6aa2d38c0c74a68e5982e
+2017-11-27T16:23:29Z,commit,implement makeVisible for TreePath,github.com/JetBrains/intellij-community/pull/731/commits/45d39bb55b3b3f359f6fe0c3a35a48cee09bbad3
+2017-11-28T16:15:45Z,commit,do not use a tree builder from a project view directly,github.com/JetBrains/intellij-community/pull/731/commits/659ed6e241a27105abefe6c6d0fc13e60cc8c7ab
+2017-11-29T12:46:35Z,commit,com.intellij.util.Function instead of java.util.function.Function,github.com/JetBrains/intellij-community/pull/731/commits/89b5a03221da21e6b319993da56afea137dbcdf8
+2017-11-29T18:15:32Z,commit,remove TreeVisitor.Base implementation,github.com/JetBrains/intellij-community/pull/731/commits/f80d9667bbc25fa4bdda653ada64e15605be5506
+2017-12-04T16:27:39Z,commit,rename accept to visit and add ability to visit only visible rows,github.com/JetBrains/intellij-community/pull/731/commits/7330a3ad51308c81473bfae51baf36d134455765
+2017-12-20T13:08:35Z,commit,IDEA-183950 start visiting after processing background tasks to ensur¡­,github.com/JetBrains/intellij-community/pull/731/commits/01bdd88ef6617eca56b316504a5e36de3ab71b5a
+2017-12-22T10:29:53Z,commit,fix empty lines after removing a last package in compact middle packages,github.com/JetBrains/intellij-community/pull/731/commits/119ed8e47c805080988fa21e30d3570fe3076697
+2017-12-23T13:24:05Z,commit,IDEA-180143 Deleting empty package causes Project View to reset selec¡­,github.com/JetBrains/intellij-community/pull/731/commits/c9f9e95a44d1b20a0e614bc96e5d0b03a3042a67
+2018-01-10T13:44:53Z,commit,Fix text after massive cherry-pick by another approach (see IDEA-CR-2¡­,github.com/JetBrains/intellij-community/pull/731/commits/ae787e58c9fb5cf7e17396e407396f0ddfa41cef
+2017-12-12T20:04:42Z,commit,make ChooseByNameTest.test fix keyboard layout more robust to non-java,github.com/JetBrains/intellij-community/pull/731/commits/edc7089d5d30cbaacf8a67d81002f0afa3cd410e
+2018-01-09T09:03:19Z,commit,[^maxim] don't create 2 pooled threads (!) after each (!) Perforce pr¡­,github.com/JetBrains/intellij-community/pull/731/commits/5298242607af780f8de8a262fc186848ffd7ba5e
+2018-01-05T10:59:49Z,commit,[^k.likh] don't let accidental PCE during <clinit> spoil code insight¡­,github.com/JetBrains/intellij-community/pull/731/commits/05f3c955e20000dd20b0db9162da1e2ac6b80906
+2017-12-19T16:55:16Z,commit,"[file-history] register ""diff with local"" providers from changes view¡­",github.com/JetBrains/intellij-community/pull/731/commits/027bd1d00fb98c193fece3fe31c961d8d68269f9
+2017-11-30T11:56:02Z,commit,maven - remove excess maven2-server-impl dependency from maven module,github.com/JetBrains/intellij-community/pull/731/commits/7a6cb32be8a271ca664ae768b70652b9b153eda4
+2018-01-11T08:17:11Z,commit,Revert: Maven: highlighting tests fix,github.com/JetBrains/intellij-community/pull/731/commits/db17970d8596d7ea7f17f65c3efd0a865ca49e43
+2018-01-10T15:44:06Z,commit,Build view: merge frequent edt events,github.com/JetBrains/intellij-community/pull/731/commits/00de6dd409fbfff8553c01f46e7d688371fb628c
+2018-01-10T15:45:23Z,commit,Tree table: merge frequent edt events,github.com/JetBrains/intellij-community/pull/731/commits/1fc16de9d4fdcc3e60322a859a82866676eceb07
+2018-01-11T09:25:10Z,commit,PyCharm 2017.3.3,github.com/JetBrains/intellij-community/pull/731/commits/d369db36a793aeb870fe37cd233b3aac6434b45e
+2018-01-10T09:53:44Z,commit,PyCharm doesn't allow to finish input (PY-27881),github.com/JetBrains/intellij-community/pull/731/commits/3ea5328fb2ad998548675f9e1b59bb371935559c
+2018-01-09T15:13:24Z,commit,PY-26758 Check that detected file type of *-nspkg.pth files is not bi¡­,github.com/JetBrains/intellij-community/pull/731/commits/e42654ea9b40620cdcd4c33c2227bf3b7acafa8b
+2017-12-19T14:19:06Z,commit,PY-27656 PY-27604 Exclude ancestors of metaclasses from class hierarchy,github.com/JetBrains/intellij-community/pull/731/commits/77e1410cffce5f9ee1677ddd31c57f4490329e24
+2018-01-09T20:17:03Z,commit,PY-27604 Exclude instantiated metaclasses from ancestor types of a class,github.com/JetBrains/intellij-community/pull/731/commits/98368281a7404d4cb17bb27d2912db2cf18e3c2c
+2018-01-10T19:49:45Z,commit,PY-27604 Move enhanced ancestors-aware metaclass detection to PyClass,github.com/JetBrains/intellij-community/pull/731/commits/b7f7419d29a4bdb1742cb1dc280abc4392cfb35a
+2017-12-15T21:21:58Z,commit,"IDEA-183823 diff: enable ""Compare With ..."" actions in modal context",github.com/JetBrains/intellij-community/pull/731/commits/1a57ff03c0305465e6ec4c3850f653cc7390eb89
+2017-12-15T21:19:10Z,commit,IDEA-183691 vcs: update legend when commit dialog is shown,github.com/JetBrains/intellij-community/pull/731/commits/4d7ab87dd3f18008710f0fa29c1bf49c89844495
+2018-01-11T11:53:00Z,commit,Gradle: optimize sources/javadoc attachment from gradle cache (IDEA-1¡­,github.com/JetBrains/intellij-community/pull/731/commits/28018b395dfebfbe1a068a6459ecbacfcd3ceb5d
+2018-01-11T13:59:37Z,commit,"wording ""solutions"" -> ""projects""",github.com/JetBrains/intellij-community/pull/731/commits/54e01f8740896d14936e5eda6eb51b0a224b6d91
+2018-01-09T10:21:10Z,commit,IDEA-183664 Debugger does not start anymore,github.com/JetBrains/intellij-community/pull/731/commits/5654e231f426692df695d50ac0e7f1c833f344b0
+2018-01-11T02:41:47Z,commit,handleFlush: do not use inherent nullability for unknown values,github.com/JetBrains/intellij-community/pull/731/commits/e7b32a416a281a382b26bd12782f5dd4a2b3db8d
+2018-01-11T05:19:53Z,commit,"Fixes IDEA-184723 ""Data flow algorithm complexity"" removing excessive¡­",github.com/JetBrains/intellij-community/pull/731/commits/8d1b3f21b307c3bb3a980c40d58da712f2ddde6b
+2018-01-12T10:04:57Z,commit,IDEA-184845 Gradle: Provide a way to delegate build actions to gradle¡­,github.com/JetBrains/intellij-community/pull/731/commits/a93f6292bc6132e143e7632b7bff9bdd8890d475
+2018-01-12T08:57:37Z,commit,"Gradle: refactoring, use Files.walkFileTree",github.com/JetBrains/intellij-community/pull/731/commits/b7e128db47190d857add8c39371b91cc53c25a58
+2018-01-12T09:20:41Z,commit,"Gradle: refactoring, use Files.walkFileTree",github.com/JetBrains/intellij-community/pull/731/commits/b009a86dcdeb2865c80a3d9dbe1e7de427ac414a
+2018-01-12T12:16:23Z,commit,Gradle test runner: enable ansi coloring for sout only,github.com/JetBrains/intellij-community/pull/731/commits/ea696eac0948299ff41d1606b44de846d1639175
+2018-01-12T12:36:00Z,commit,IDEA-184844 Gradle: when delegating IDE run action to gradle test std¡­,github.com/JetBrains/intellij-community/pull/731/commits/5f75501d8c1ff066b223e00576ce5ccf8d080428
+2018-01-12T12:39:10Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/731/commits/3b9b57b95fb8481044e53c9c3572a4cd77575540
+2018-01-12T14:19:47Z,commit,[platform] synchronizes YourKit parameters between Linux and other pl¡­,github.com/JetBrains/intellij-community/pull/731/commits/d9411eae6896a7d61468b45d72283b376924038d
+2018-01-12T09:39:03Z,commit,[groovy] make inner enums have static modifier (IDEA-184624),github.com/JetBrains/intellij-community/pull/731/commits/527add49a3cc6ac8a8e9e39e1314148a98b8e9c6
+2017-12-01T17:56:41Z,commit,IDEA-182999 find in path dialog is not initialized from text selections,github.com/JetBrains/intellij-community/pull/731/commits/934e915d5c1411cf8611bd99d953f6e4f02f2fd5
+2017-12-04T13:50:03Z,commit,IDEA-182999 find in path dialog is not initialized from text selections,github.com/JetBrains/intellij-community/pull/731/commits/e3eb09b77c1b3cf21dcd001bb7cda0976249c3d8
+2017-12-26T20:57:35Z,commit,IDEA-182999 find in path dialog is not initialized from text selections,github.com/JetBrains/intellij-community/pull/731/commits/d43112784b8ad91a2502cf546b4daf961d320abc
+2018-01-12T09:09:24Z,commit,Cleanup: codestyle & javadoc,github.com/JetBrains/intellij-community/pull/731/commits/24cd0bc4060f39f84d067b49f5ed5eea46a3df12
+2018-01-12T17:51:31Z,commit,Merge remote-tracking branch 'origin/173' into 173,github.com/JetBrains/intellij-community/pull/731/commits/daed276b2a034e0cfc02ab8ed2b8d33b57861ccc
+2018-01-13T15:33:14Z,commit,Correctly handle removal of 'protected' access flag on fields (IDEA-1¡­,github.com/JetBrains/intellij-community/pull/731/commits/6d2029b895b5af3a5df18c9c326ad6e570615727
+2018-01-15T09:29:52Z,commit,usage constrains fixes and optimizations for 'added' fields; more tes¡­,github.com/JetBrains/intellij-community/pull/731/commits/4d957c02058aaecc7becf9269bced8dde43547e7
+2018-01-15T09:56:58Z,commit,reviw follow-up: using != instead of > in bit checks for clarity,github.com/JetBrains/intellij-community/pull/731/commits/b7347dcd870ca20c5ed6e8f2624a2810432292ac
+2017-12-15T16:33:50Z,commit,[^d.batk] java completion: lambda items should be higher than recentl¡­,github.com/JetBrains/intellij-community/pull/731/commits/3eab311b2dbe6804c763608b3de39ef773ccfd5e
+2018-01-12T18:20:47Z,commit,[groovy] highlight void array types with error (IDEA-184355),github.com/JetBrains/intellij-community/pull/731/commits/2f05c9863118d7d158254fbc39869d69abf7fbd4
+2017-12-26T16:13:08Z,commit,Find In Path: stop hiding pin button in registry,github.com/JetBrains/intellij-community/pull/731/commits/e2888c4007dca941a2d6bb8dc74f4e378f94f037
+2018-01-12T12:59:12Z,commit,properties: add more tests for project view with resource bundles,github.com/JetBrains/intellij-community/pull/731/commits/a686c7c6a0f5a3e4871961b915d9abd2fca88363
+2018-01-11T11:25:57Z,commit,resource bundles: make grouper depend linearly on number of prop file¡­,github.com/JetBrains/intellij-community/pull/731/commits/8d6243638a370dcec09df308cc72d43504d622b2
+2018-01-15T14:40:01Z,commit,IDEA-184929 JDOMExternalizableStringList must not require `class` att¡­,github.com/JetBrains/intellij-community/pull/731/commits/b07b9a47247cde2e9ab2ecbe46c30bf9f758a58b
+2018-01-15T13:32:28Z,commit,groovy debugger: allow to find psi file by location using the ScriptP¡­,github.com/JetBrains/intellij-community/pull/731/commits/48bf9b53cc24eaeb4ff59d797b7e9c7eaa44d4e1
+2018-01-15T14:13:46Z,commit,gradle: do not use gradle daemon while debugging gradle scripts using¡­,github.com/JetBrains/intellij-community/pull/731/commits/4b0e3f1a7fc2a65888093912ebd158e8d7b3d24f
+2018-01-11T15:49:03Z,commit,Report statistics of stream debugger usage (IDEA-CR-28448),github.com/JetBrains/intellij-community/pull/731/commits/286c62c23aa2da63cbc254dd274e4c249e3dfc2d
+2018-01-15T19:39:40Z,commit,Gradle: catch invalid path exceptions during sources/javadoc attachment,github.com/JetBrains/intellij-community/pull/731/commits/9e5d29b2987d1c91b8789bc70ea8325950fdf6a9
+2018-01-16T08:32:27Z,commit,new EXA icon DSGN-4371,github.com/JetBrains/intellij-community/pull/731/commits/7faf2c3a19e65f276a4d6145edacd1beddb7e164
+2018-01-16T10:08:16Z,commit,"IDEA-182983 ""Import Maven projects automatically"" setting is not resp¡­",github.com/JetBrains/intellij-community/pull/731/commits/e1adc4a6659c8ea218da68cfce36c8690ca791ee
+2018-01-16T10:59:09Z,commit,IDEA-184994 revert IDEA-171404 in Linux for IDEA 2017.3,github.com/JetBrains/intellij-community/pull/731/commits/68a0c3c4f81297b81fc339af7487a2879fc8afbc
+2017-11-06T09:54:29Z,commit,Escape ' symbol in CucumberJVM 2 formatter,github.com/JetBrains/intellij-community/pull/731/commits/061396b03bc016d4ea138ed9cd20c1b7e5d32476
+2017-11-24T08:20:31Z,commit,173 now targets 2017.3.5,github.com/JetBrains/intellij-community/pull/731/commits/b4a53e0ea814ff7ad46499448ec42013cfd5a8d3
+2018-01-15T15:58:14Z,commit,IDEA-183580 New background image feature covers up background color o¡­,github.com/JetBrains/intellij-community/pull/731/commits/0c08cae6359f38c12e6d6a9fb1ae6994a0f457d8
+2018-01-17T09:56:22Z,commit,IDEA-172467 Maven Integration jgitver - multiple projects (IDEA-184983),github.com/JetBrains/intellij-community/pull/731/commits/68e40d0430ded819988faf507154c4c4225baf5e
+2018-01-17T15:30:32Z,commit,call projectRunConfigurationFirstLoaded for non-ipr projects,github.com/JetBrains/intellij-community/pull/731/commits/b109fa9d64412025a70ea00fea9589b0148426b4
+2017-10-24T07:37:09Z,commit,javac ast indices: fix NPE when lambda type is not resolved by javac ¡­,github.com/JetBrains/intellij-community/pull/731/commits/e53a9914b54e077e30f214270eccce6ce72e48e1
+2018-01-18T09:59:41Z,commit,Fix of the bug in PersistentHashMap's backward compact,github.com/JetBrains/intellij-community/pull/731/commits/8a530f83d68ece4ff4b9ddceeaeac5e160162fd8
+2018-01-17T16:07:53Z,commit,always select the result node on evaluate,github.com/JetBrains/intellij-community/pull/731/commits/164819a081f87e5bfa860fd40a585f84d604cdbb
+2018-01-17T16:31:13Z,commit,IDEA-158873 Evaluate window: cannot TAB from expression into results ¡­,github.com/JetBrains/intellij-community/pull/731/commits/b8184573ac2098b855dbc00e0fcf1b4ad772c721
+2018-01-18T09:11:15Z,commit,always select the result node on evaluate - fix for IDEA-CR-28582,github.com/JetBrains/intellij-community/pull/731/commits/4bd2e6c6f24d4a82090c325111f488e552b701df
+2018-01-18T12:04:31Z,commit,bundle java9-capable eclipse ecj java compiler (IDEA-184951),github.com/JetBrains/intellij-community/pull/731/commits/b0275a8eeb2a59758a5ea639bc481989a364e295
+2018-01-18T13:58:58Z,commit,updated ecj jar with java9-capable eclipse compiler,github.com/JetBrains/intellij-community/pull/731/commits/ae4e4ec3af8a2c8eeb53367742dd1fce99b0152d
+2018-01-18T13:21:38Z,commit,update eclipse compiler library definitions,github.com/JetBrains/intellij-community/pull/731/commits/7986048cec18eeee812469313c8d74edad803979
+2017-12-01T11:30:22Z,commit,IDEA-182786 GUI Designer generated $$$getFont$$$ is not used,github.com/JetBrains/intellij-community/pull/731/commits/e1df429d97d070cc8b70b22bdb44f3879c037dda
+2017-12-05T10:57:50Z,commit,IDEA-182786 GUI Designer generated $$$getFont$$$ is not used,github.com/JetBrains/intellij-community/pull/731/commits/d7f19046d8460addc1b091f982dbc947b69ee548
+2017-12-05T16:58:57Z,commit,Renderer performance: image cache,github.com/JetBrains/intellij-community/pull/731/commits/cdcde15cb922bbee48b64b4c9a1f91bce7009130
+2017-12-07T15:32:27Z,commit,IDEA-183434 syntax error at ide.sigint.ignored.url?,github.com/JetBrains/intellij-community/pull/731/commits/6d5fbb3de7926c8df8fa629946ad66820113d17d
+2017-12-13T14:42:43Z,commit,IDEA-170615 No scrollbars in database diagram,github.com/JetBrains/intellij-community/pull/731/commits/d40a839a452e8c23bc4f73bd0e78176876ea9998
+2017-12-14T19:23:59Z,commit,IDEA-172583 show changes allows infinite scroll,github.com/JetBrains/intellij-community/pull/731/commits/88b5483d035add9443c725b7c9c75d149946e96d
+2017-12-14T20:16:00Z,commit,IDEA-172583 show changes allows infinite scroll,github.com/JetBrains/intellij-community/pull/731/commits/7ff3f3f078607c79656fb7a609120168a07b1db9
+2018-01-22T16:15:28Z,commit,disable search for tests in the output,github.com/JetBrains/intellij-community/pull/731/commits/2ebb2783cee8d23ce3a2dff7878ef33cf373e340
+2018-01-22T18:16:34Z,commit,fix testdata,github.com/JetBrains/intellij-community/pull/731/commits/0414d9a5005e73194db3a0ac20c1e973126653bc
+2018-01-12T13:46:45Z,commit,Need to rebuild ATM-based Structure View on structureView.ModelListen¡­,github.com/JetBrains/intellij-community/pull/731/commits/8510526f7663f89be01330a77c9f39d34b4d29db
+2017-12-29T10:48:16Z,commit,fix NPE while searching in empty JBIterable,github.com/JetBrains/intellij-community/pull/731/commits/c8e407a844838d7045c2e83137269b9e5f08d1a7
+2018-01-22T19:10:41Z,commit,IDEA-185359 Focus jumps to parent folder after item rename,github.com/JetBrains/intellij-community/pull/731/commits/b6f231781c44b9ff22538ab1337064e318fa97a7
+2018-01-23T10:11:26Z,commit,Add a detail to MessageEventResult to show more information in BuildView,github.com/JetBrains/intellij-community/pull/731/commits/620223dfc0e547592388f0ca59ea23f2348991e4
+2018-01-23T11:51:55Z,commit,Build view: fix api breaking change,github.com/JetBrains/intellij-community/pull/731/commits/11b70dea1f0fccf63a49b3c8fc2c9d50d7d7c307
+2018-01-23T11:52:09Z,commit,Build view: reuse event description field for the message details,github.com/JetBrains/intellij-community/pull/731/commits/391d7a8343191849486827495f4b370621344d88
+2018-01-23T11:52:53Z,commit,Build view: do not encourage methods like readUntil(with condition wh¡­,github.com/JetBrains/intellij-community/pull/731/commits/f4b65733ffb705404039ac6ec349fa2a6252f564
+2018-01-23T11:53:39Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/731/commits/7bbd135cf58bf579d48fc6e0712b587d68fa9e3f
+2018-01-23T13:07:18Z,commit,Build view: kotlinc output parser push back unrelated line,github.com/JetBrains/intellij-community/pull/731/commits/9d22bc7195605d61189c1d515b22056a16bde14d
+2018-01-23T13:09:14Z,commit,"Build view: javac output parser handle 'Note' messages, e.g. notes ab¡­",github.com/JetBrains/intellij-community/pull/731/commits/8d0cd12fb0917593990f69093bf103d256215bfe
+2017-10-17T14:24:22Z,commit,IG: fix autoboxing detection for unary expressions (IDEA-180676),github.com/JetBrains/intellij-community/pull/731/commits/f144b5c329995c3052479c5bda14909523e0fbb7
+2017-12-11T19:21:22Z,commit,[git] stop process that refuses to be softly killed,github.com/JetBrains/intellij-community/pull/731/commits/9a06c091e2d2c00d2de40fb8fdb3a886c32b5bfc
+2017-12-11T19:26:55Z,commit,[git] reduce wait time out,github.com/JetBrains/intellij-community/pull/731/commits/2a3f5b9903745bfd66f1bb6aa9e6d9e2190d6890
+2017-12-11T19:34:06Z,commit,[git] do not use runner mediator for git log commands,github.com/JetBrains/intellij-community/pull/731/commits/068d1b9d3585a5c1997cb447117f54a54ad286b0
+2018-01-26T15:05:04Z,commit,java make: recompile method usages of deleted method when it is repla¡­,github.com/JetBrains/intellij-community/pull/731/commits/e5a6cffd4d38c08cac8f96b01abeedea8941691c
+2018-01-26T17:07:44Z,commit,remove usage uses shortcut of $Cut instead of SafeDelete (IDEA-144928),github.com/JetBrains/intellij-community/pull/731/commits/7ff5eb5d27998f7be2d7eaac3ab93e97ab16b50f
+2018-01-27T13:36:56Z,commit,add incompatible versions of NodeJS plugin,github.com/JetBrains/intellij-community/pull/731/commits/9abc926c049bf57321b87eae706a0c4fbea0c0cd
+2017-11-24T08:20:31Z,commit,registry option for starting dumb mode when many files were changed,github.com/JetBrains/intellij-community/pull/731/commits/3346a778761d76eb23ac906c1305f2be73703c80
+2017-11-24T08:20:31Z,commit,better registry property description,github.com/JetBrains/intellij-community/pull/731/commits/bb5b0f4c31145a4690ba0fc5a6aa176a2f9e1a96
+2018-01-17T21:56:53Z,commit,"GPUB: allow predicate rules be public, left and recoverable",github.com/JetBrains/intellij-community/pull/731/commits/138cc09b3b4b4a8d0a587ffeb6bb8a857c5224a7
+2018-01-22T15:02:41Z,commit,IDEA-147495 New Java scratch should have a class declaration and a ca¡­,github.com/JetBrains/intellij-community/pull/731/commits/9aeb38f20f70d1ecf516a18aea45771f60d56301
+2018-01-22T16:42:29Z,commit,IDEA-168477 Renaming scratch files shouldn't suggest to search for us¡­,github.com/JetBrains/intellij-community/pull/731/commits/e5d040bc7f0a581a2a647fc3d872d2349a2b5598
+2018-01-22T21:52:24Z,commit,"IDEA-177859 ""Sort by Type"" does not function when viewing Scratches",github.com/JetBrains/intellij-community/pull/731/commits/8c0a7b3b6841fb4277aa6e891dda92786a265a68
+2018-01-22T22:39:31Z,commit,enable File->New & VCS->Local History on scratch root nodes,github.com/JetBrains/intellij-community/pull/731/commits/2d6799ebb34cce2d62412bf35e0a23d41925d8b3
+2018-01-23T00:08:31Z,commit,make project dir a default copy target for scratches (IDEA-152160),github.com/JetBrains/intellij-community/pull/731/commits/74c0452476db1b0ade692aa70c1918d2cfad8758
+2017-12-15T20:42:08Z,commit,close files on deletion in test FileEditorManager,github.com/JetBrains/intellij-community/pull/731/commits/aaf76dec07394357f876b841d465601bdc0a4b5c
+2018-01-23T10:56:19Z,commit,implement missing TestEditorManagerImpl#openEditor(OpenFileDescriptor),github.com/JetBrains/intellij-community/pull/731/commits/1556d73a6f28c72f075ff179b4a1f22d5adea0ec
+2018-01-23T02:35:26Z,commit,IDEA-143918 Scratch files: on Undo scratch file deleting it is recrea¡­,github.com/JetBrains/intellij-community/pull/731/commits/89e1fca973412ce2aa80d97796dd4495cca6d70a
+2018-01-23T13:38:27Z,commit,support TempFileSystem in LightPlatformCodeInsightFixtureTestCase,github.com/JetBrains/intellij-community/pull/731/commits/5157d831298dea424b4b100d73044fab2a8f4678
+2018-01-23T21:47:49Z,commit,"do not leak projects, dispose stuff",github.com/JetBrains/intellij-community/pull/731/commits/99a12135238da351b1ce8c0245989a8bf3a690a9
+2018-01-24T11:42:48Z,commit,do not record undo for already disposed projects,github.com/JetBrains/intellij-community/pull/731/commits/2d78184eb6f0a6fc2ab1bdf7b18785f20abb8ea7
+2018-01-26T15:11:24Z,commit,tree iterators: backtrace after hasNext fix,github.com/JetBrains/intellij-community/pull/731/commits/7e8724dad3faf94b6e5ae9e68cfc0a269457403e
+2018-01-17T22:03:51Z,commit,DomFileElement.createStableCopy should survive PsiFile invalidation (¡­,github.com/JetBrains/intellij-community/pull/731/commits/4bc38f9bb4a6c59194a322c8f28544a5953f7db7
+2018-01-29T15:14:34Z,commit,Tabs: allow customize componentOrientation of the tab label,github.com/JetBrains/intellij-community/pull/731/commits/a2b1beb711d5bf4afa64d5f5d12018af555ac946
+2018-01-29T15:17:10Z,commit,Green progress indicators 'null' icons can be created of custom size,github.com/JetBrains/intellij-community/pull/731/commits/59f02f00c4b96db1be1e356b41e87de2069ac5b6
+2018-01-29T15:22:01Z,commit,Build view: make tab label center aligned with green progress indicat¡­,github.com/JetBrains/intellij-community/pull/731/commits/17825eed5a029e66c9677823bf5cd87c6a6cb74f
+2018-02-01T03:44:26Z,commit,CommonDataflow: disable in power-save mode,github.com/JetBrains/intellij-community/pull/731/commits/7da8d2e882d6134cfaaef5ead7e8ec334a22aff4
+2018-01-29T17:50:06Z,commit,"background-aware status-bar, stripes and TW headers (IDEA-183442)",github.com/JetBrains/intellij-community/pull/731/commits/e417d5efcc3e8db4b54ac46a29973ae565fb584e
+2018-01-29T11:21:51Z,commit,TreeTraversal: extract common ancestor for PRE/POST traversal,github.com/JetBrains/intellij-community/pull/731/commits/99758b49909c0a007198d27886e6fd7481f03a9d
+2018-01-30T13:12:17Z,commit,fail hard in tests,github.com/JetBrains/intellij-community/pull/731/commits/cc3ed653d5da49ea0bcbd0adc4b48fc696bacefa
+2018-01-31T08:50:03Z,commit,"background-aware status-bar, stripes and TW headers: update test",github.com/JetBrains/intellij-community/pull/731/commits/2ef9eb5f82c430e843eaee54073a61238514123b
+2018-02-01T17:16:15Z,commit,do not hold cached files forever (+ get-cached-files performance),github.com/JetBrains/intellij-community/pull/731/commits/f1472fc203c158559fe7fec63c0b23151b91d75f
+2018-02-02T11:40:39Z,commit,IDEA-185789 Creating a scratch from the VCS local changes diff previe¡­,github.com/JetBrains/intellij-community/pull/731/commits/e97adee3f2f839293a0eada096611ed3babec917
+2018-02-02T14:23:53Z,commit,honor unfocused selection background colors,github.com/JetBrains/intellij-community/pull/731/commits/35e5a19080a18d2c54450925d789a8bbbc7b3a88
+2018-02-05T05:53:47Z,commit,Updating versions of project dependencies: jdkBuild->u152b1024.12,github.com/JetBrains/intellij-community/pull/731/commits/3ea1bdd944299ad17bce276cd7c47f7fce043ee8
+2018-02-01T16:53:38Z,commit,IDEA-149061 Tool Window docking issue,github.com/JetBrains/intellij-community/pull/731/commits/684d76c54ba80d673a8c68be92224eb4b3c1fcbc
+2018-02-05T11:56:23Z,commit,delete unused PlatformFileEncodingConfigurable,github.com/JetBrains/intellij-community/pull/731/commits/a1b54edb3ddac71eb03a31a2925900407991d898
+2018-02-05T12:47:35Z,commit,"IDEA-134458 disregard common ""virtual space"" option in console input",github.com/JetBrains/intellij-community/pull/731/commits/dba03e40ff8fc26feb037493ca72af40c273dfa4
+2018-02-05T15:23:31Z,commit,IDEA-184837 'Search with google' doesn't support Unicode,github.com/JetBrains/intellij-community/pull/731/commits/ada001af5e06431cc8cd6efc678271a396de964c
+2018-02-05T16:13:55Z,commit,Import correct version of XmlElement (by dahlstrom-g),github.com/JetBrains/intellij-community/pull/731/commits/d20b51755331b98319b8e1ed864cbf142809aa8c
+2018-02-05T17:36:17Z,commit,don't leak ChooseByNameBase instances via never ending incremental up¡­,github.com/JetBrains/intellij-community/pull/731/commits/3a8b0b4901cdd8d2e3eec166281af22a0d80f382
+2018-02-06T10:40:46Z,commit,ensure atomic lazy initialization for remote repository configuration¡­,github.com/JetBrains/intellij-community/pull/731/commits/266e15be3d428ebbfee149fd97b6a028495d1fec
+2018-02-06T11:57:35Z,commit,Updating versions of project dependencies: jdkBuild->u152b1024.14,github.com/JetBrains/intellij-community/pull/731/commits/e11be8d3b8bba5101c1823c78d41552b06d3ae8f
+2018-02-01T17:07:15Z,commit,"disallow PsiCorrectedClassType matryoshkas, take 2 (IDEA-CR-28932, ID¡­",github.com/JetBrains/intellij-community/pull/731/commits/37c374fe3739d33d999730664d5aa0c2b9877d3e
+2018-02-07T17:22:55Z,commit,IDEA-186347 Update embedded consent options and related text,github.com/JetBrains/intellij-community/pull/731/commits/f761473f34c1ad06f7a447bf8cd134dddb923373
+2018-02-07T12:36:48Z,commit,"IDEA-134545 Change Signature dialog uses syntax highlight colors, but¡­",github.com/JetBrains/intellij-community/pull/731/commits/b32842f007b656669cfb02d773cf489583bae5a4
+2018-02-08T13:27:52Z,commit,PY-23114 ability to cut and paste multiple lines from console history,github.com/JetBrains/intellij-community/pull/731/commits/7f31c3707b04187319eecd0be78aa03c8992c0ab
+2018-02-08T19:00:53Z,commit,"IDEA-177714 ""Commit Message History"" items are trimmed unnecessarily",github.com/JetBrains/intellij-community/pull/731/commits/218e4ccfd2996b193a291b78906b572e6a29d535

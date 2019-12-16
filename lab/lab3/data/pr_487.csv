@@ -1,0 +1,6 @@
+487,Rename each Maven3 module-library
+2016-12-07T22:35:10Z,discuss,"бн to indicate its version, since that matters to the module."
+2016-12-07T22:41:49Z,discuss,@vladsoroka?
+2018-07-21T13:01:00Z,discuss,"@dahlstrom-g, please rebase the PR, cc @vladsoroka."
+2018-07-21T18:36:02Z,discuss,At this point I'm not sure it's worthwhile to reimplement the change.
+2016-12-07T22:29:42Z,commit,Rename each Maven3 module-library,github.com/JetBrains/intellij-community/pull/487/commits/ac9f6fafbd74984a61c405ffadd14dcd3e7aee58

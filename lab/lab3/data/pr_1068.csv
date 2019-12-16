@@ -1,0 +1,14 @@
+1068,Changes the behavior of the package creation dialog
+2019-02-23T10:46:14Z,discuss,Creating multiple packages in the current IDEA version required specific efforts.
+2019-02-23T10:46:14Z,discuss,"To create packages, for example, com.example.project.sample and com.example.project.test, there are several options:"
+2019-02-23T10:46:14Z,discuss,"As a correction of this situation, I suggest that when creating a package in the initialText of dialog, set the name of the package on which the action of creating a new package was performed.
+For example:
+"
+2019-02-23T10:46:14Z,discuss,"To implement this functionality, I had to split the validator of the entered text in the old code of the CreateDirectoryOrPackageAction action, which was previously used simultaneously to create a directory and to create a package. Saving the CreateDirectoryOrPackageAction class allowed maintaining compatibility with all dependent code, and CreateDirectoryOrPackageHandler is still used to create the directory. Actions are delegated to it by CreateDirectoryHandler."
+2019-02-23T10:46:14Z,discuss,"I think it¡¯s worth thinking about split actions handler itself into two kinds, but this can disrupt the work of a lot of old code. And it may also be worth adding drop-down hints when entering the names of existing packages."
+2019-02-26T08:38:10Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-02-26T14:22:33Z,discuss,"Ok, I submitted the contributor license agreement."
+2019-03-04T16:10:46Z,discuss,Thanks! It looks like this addresses the first part of https://youtrack.jetbrains.com/issue/IDEA-182029.
+2019-03-04T16:13:24Z,discuss,Merged into master with minor changes
+2019-03-22T09:00:31Z,discuss,People complain: https://youtrack.jetbrains.com/issue/IDEA-209397
+2019-02-23T08:28:47Z,commit,Changes the behavior of the package creation dialog.,github.com/JetBrains/intellij-community/pull/1068/commits/deb55cb3947bcf1229edacc5b04be029bd56c50e

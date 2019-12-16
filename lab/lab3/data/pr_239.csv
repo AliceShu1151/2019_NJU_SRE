@@ -1,0 +1,18 @@
+239,Add method override autocompletion for Groovy Plugin
+2015-01-29T19:44:28Z,discuss,"This was created as a separate plugin in https://plugins.jetbrains.com/plugin/7571,
+but it fits better inside the official Groovy plugin."
+2015-01-30T09:30:34Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-02-01T19:25:51Z,discuss,I got accepted as a contributor this morning. Thank you.
+2015-02-02T10:54:20Z,discuss,Agreement received. Thanks.
+2015-02-03T07:59:37Z,discuss,"Hi Jorge!
+This is really cool. I'll accept the pull request after some improvements."
+2015-02-03T11:52:22Z,discuss,Don't worry about tests. Not a big deal actually. I'll write one or two examples to guarantee the feature won't be broken in future.
+2015-02-09T13:15:17Z,discuss,Sorry for the delay. We will accept your commit in a few day. Thanks!
+2015-02-09T14:44:03Z,discuss,"That's really nice to know! I have a question, though: if I wanted this to be included on the next version of Android Studio should I add another PR to the 135 branch? Thank you "
+2015-02-09T15:59:28Z,discuss,If you want we can try to cherry-pick this to 135. But are you sure Android Studio uses the 135 branch?
+2015-02-09T16:14:00Z,discuss,"It is, as far as I know. The about me dialog shows 135 as build number and this answer in SO seems to support that."
+2015-03-10T08:36:33Z,discuss,"Hi, is there any way I can help to make this PR merge? It's been almost a month since the last update."
+2016-03-23T13:25:14Z,discuss,"Merged manually with updates.
+@Arasthel actually it was like year ago, sorry for no notification."
+2015-01-29T19:35:15Z,commit,Add method override autocompletion for Groovy Plugin.,github.com/JetBrains/intellij-community/pull/239/commits/69a4e069b6303f980cfb340410855a278726104b
+2015-02-03T11:45:06Z,commit,Improved Groovy method override completion code as suggested,github.com/JetBrains/intellij-community/pull/239/commits/7befb3d7b0824c9ea0013663f1d0c835449ca010

@@ -1,0 +1,252 @@
+658,how to edit privacy policy
+2017-11-08T19:36:31Z,discuss,
+2012-12-26T16:41:18Z,commit,icon of hideable panel under darcula changed,github.com/JetBrains/intellij-community/pull/658/commits/4dbc170408353e473bcce889f25b21deb91b60bf
+2012-12-26T16:42:42Z,commit,Run Configurations dialog doesn't jumping on expanding/collapsing of ¡­,github.com/JetBrains/intellij-community/pull/658/commits/6839a8dfd194d7c6631ee8354eff867b4a47ad06
+2012-12-26T16:43:18Z,commit,color for issues in goto task popup under darcula fixed,github.com/JetBrains/intellij-community/pull/658/commits/1fb8271d48f59ac70eb39aa874c5325627ef3b7e
+2012-12-24T16:41:37Z,commit,[^maxim] IDEA-98040 Groovy completion of a long underscore is hanging,github.com/JetBrains/intellij-community/pull/658/commits/8071baee872113f84192d087f1f2daa81e2bf5bb
+2012-12-24T17:05:24Z,commit,[^maxim] IDEA-98012 Code completion bug in HTML files,github.com/JetBrains/intellij-community/pull/658/commits/fda8ee4260090387eb2399b6c9dca7f6cfb9a5a0
+2012-12-26T19:08:43Z,commit,IDEA-96793 RecentFiles popup should show go to class popup if nothing¡­,github.com/JetBrains/intellij-community/pull/658/commits/f153d24cad0b0a6a9cac51a5e2b4b307a55280df
+2012-12-19T16:57:30Z,commit,ftlvariable/vtlvariable to jetbrains dictionary,github.com/JetBrains/intellij-community/pull/658/commits/b417802e5d291a03f33ddf8188dc9910f81c0b1c
+2012-12-26T16:07:40Z,commit,IDEA-98203 Type of local variables is not visible,github.com/JetBrains/intellij-community/pull/658/commits/b633cfdae27168972bcc281ad69a3aad69ef4267
+2012-12-26T17:24:02Z,commit,ensure that library kinds are registered before first library is load¡­,github.com/JetBrains/intellij-community/pull/658/commits/fa82159b08fe749177c8f639d5d87ffcf9abcdbb
+2012-12-27T11:38:33Z,commit,IDEA-95807 Argument 0 for,github.com/JetBrains/intellij-community/pull/658/commits/ea120cd6121715dc91748468d62a980959c7c303
+2012-12-27T11:49:47Z,commit,IDEA-98129 Idea 12 is broken [jeka],github.com/JetBrains/intellij-community/pull/658/commits/db61b44f50b90c261d2d3e47908f1c4f92fe4860
+2012-12-27T13:56:43Z,commit,[r=Peter.Gromov] EA-41254 - IAE: TObjectHash.throwObjectContractViola¡­,github.com/JetBrains/intellij-community/pull/658/commits/90a9d480fcc03b49bc72e519a82991d88e659743
+2012-12-26T14:23:46Z,commit,IDEA-97740 'Organize imports' breaks static imports from Groovy class¡­,github.com/JetBrains/intellij-community/pull/658/commits/23d877a794720b6ef6ca33f75713c69eb852f01c
+2012-12-26T14:25:06Z,commit,IDEA-98113 create field intention unnecessarily makes the field stati¡­,github.com/JetBrains/intellij-community/pull/658/commits/b2bd6ed8cd6aee46040d94b9ecbf51ad9142e3f1
+2012-12-06T19:45:23Z,commit,goto implementations: show chooser in case of inner classes (IDEA-96852),github.com/JetBrains/intellij-community/pull/658/commits/83f7ca53c0f30b9e9deb9083e06e15d9c0cd4508
+2012-12-27T17:39:15Z,commit,IDEA-97239 Go To Implementation on EJB2 method no longer works,github.com/JetBrains/intellij-community/pull/658/commits/5e8e7db9d27dc5d15921e921e3884ad42aae8d94
+2012-12-27T18:52:40Z,commit,retina icons,github.com/JetBrains/intellij-community/pull/658/commits/268391a7c8d24903fe0cccfaf4a458872e5ab320
+2012-12-27T18:51:51Z,commit,fix tests.,github.com/JetBrains/intellij-community/pull/658/commits/95708ce25256cdcd3ae027328e1515ca9d8df123
+2012-12-27T18:53:06Z,commit,IDEA-97741 Links in Quick Documentation view hardly readable (Darcula),github.com/JetBrains/intellij-community/pull/658/commits/7371737dd4cff20318e017618b1bf4af782a216e
+2012-12-27T18:53:52Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/1c89b81fb87cf6e2dc1ab72d6a9d1eaf6fd51a86
+2012-12-27T19:18:01Z,commit,IDEA-97741 Links in Quick Documentation view hardly readable (Darcula),github.com/JetBrains/intellij-community/pull/658/commits/3053496cbc74179e43a265ac82c61055e0a16e04
+2012-12-28T12:39:43Z,commit,JSP validation fixed for external build [rev by Jeka],github.com/JetBrains/intellij-community/pull/658/commits/19f6b954c6a578ffbdc1591ad7cc47f40d368ebb
+2012-12-28T12:46:37Z,commit,jps: include project output to excluded list of containing module (ID¡­,github.com/JetBrains/intellij-community/pull/658/commits/858e7f560a069e8fdfd7e69cfe677dafa15bc7d0
+2012-12-28T17:39:19Z,commit,IDEA-94187 TODO items from SQL files are double-counted,github.com/JetBrains/intellij-community/pull/658/commits/6128b2f673dbfc42406ccdb709224939b0557503
+2012-12-29T13:49:50Z,commit,EA-42422 - NPE: TemporaryPlacesRegistry$.addInjectionInPlace,github.com/JetBrains/intellij-community/pull/658/commits/0663c7a501c8c69f8a12133436cb56fa5bb54014
+2012-12-29T14:32:13Z,commit,IDEA-97381 (Cloneable class in secure context wrongly prompts for gen¡­,github.com/JetBrains/intellij-community/pull/658/commits/796399acaebf575d3093ada28dcd065c1d8ce2f3
+2012-12-29T14:32:46Z,commit,"IDEA-97330 (Change default pattern of ""Enumerated constant naming"")",github.com/JetBrains/intellij-community/pull/658/commits/b2861073761863644ca6672e72f673e7b80e0246
+2012-12-29T14:33:04Z,commit,IDEA-97460 (Java intention 'Replace for-each with iterator 'for' loop¡­,github.com/JetBrains/intellij-community/pull/658/commits/07118733629ef5aba274d7d306b4797fdf0ba1a8
+2012-12-29T14:33:21Z,commit,"improve ""Extended 'for' statement"" inspection quickfix",github.com/JetBrains/intellij-community/pull/658/commits/8f4ce4a4d52fb0e510c2f947f6ef69c434df3a60
+2012-12-29T14:35:08Z,commit,IDEA-97999 (Interface which has only one direct inheritor inspection ¡­,github.com/JetBrains/intellij-community/pull/658/commits/2ea6c06efaafb5ba3a9ce90cf6aada951acf6f3c
+2012-12-29T14:35:25Z,commit,"IDEA-98213 (Bogus ""Unnecessary fully qualified name"" for names in cur¡­",github.com/JetBrains/intellij-community/pull/658/commits/af4bc27b3ff4307984dd1437e52a33651283fef7
+2012-12-29T14:35:49Z,commit,fix inspection option text,github.com/JetBrains/intellij-community/pull/658/commits/cb50ed69c45fa7d3b1386336bd0bfa16cf59846d
+2012-12-29T14:36:03Z,commit,"IDEA-98143 (false positive ""instance field used before initialized"" w¡­",github.com/JetBrains/intellij-community/pull/658/commits/28cd251b1700eaaef8efb6479edf697fae614639
+2012-12-29T14:36:15Z,commit,always warn on raw use of parameterized type in array creation,github.com/JetBrains/intellij-community/pull/658/commits/27fbdfaffbacf5b5e0c132c63dea6da68b69b69e
+2012-12-29T18:52:09Z,commit,fix test,github.com/JetBrains/intellij-community/pull/658/commits/1ab77d73eef68ab22146ba08f3d6386c27d8af9b
+2012-12-17T15:40:22Z,commit,"IDEA-97632, IDEA-64572 Correctly sort changes in tree view + test",github.com/JetBrains/intellij-community/pull/658/commits/dd5461f047a5c54fd594b5e16fae44e9a7b505d8
+2012-12-28T15:24:34Z,commit,IDEA-97332 Icons for Import and Exports Settings on Welcome Screen,github.com/JetBrains/intellij-community/pull/658/commits/4f03ca8f08dccc453222dd63f2e52855030da9a2
+2012-12-28T15:26:12Z,commit,IDEA-98261 AdditionalTextAttributes for scheme,github.com/JetBrains/intellij-community/pull/658/commits/66ac1ccdfcc277696e79c4bc7c1bc8b07aee8024
+2012-12-31T14:16:35Z,commit,IDEA-98382 Can't create module because of wrong SDK,github.com/JetBrains/intellij-community/pull/658/commits/a8122f6c2d08fc9ca0e2b2432805bdd24bff8811
+2012-12-30T12:21:07Z,commit,IDEA-98305 'Use Darcula aware JBColor' inspection is triggered in non¡­,github.com/JetBrains/intellij-community/pull/658/commits/b12613d4dea582beaf0cbe90e4696cf88c28e6e1
+2013-01-03T12:23:50Z,commit,IDEA-98443 Structure view is empty after invoking and closing Languag¡­,github.com/JetBrains/intellij-community/pull/658/commits/14f856452277f16f24946f806a27bd42d345ed7e
+2013-01-02T20:19:14Z,commit,IDEA-98421 (parse super call type arguments),github.com/JetBrains/intellij-community/pull/658/commits/0ed07081dbf5a1feaa78946ee0b645327f44b6c9
+2013-01-03T11:58:03Z,commit,retina icons,github.com/JetBrains/intellij-community/pull/658/commits/61193481f0fbfb30f14c51d6279c2e1893cfc40f
+2012-12-18T08:13:44Z,commit,IDEA-91218 Resourcebundle editor is collapsed after lost focus,github.com/JetBrains/intellij-community/pull/658/commits/d4a93d4265b4d4955c2f614f5ec7681889d11e7c
+2012-12-17T13:14:01Z,commit,IDEA-97430 Out of memory during reformat code,github.com/JetBrains/intellij-community/pull/658/commits/7fdd61de392d0aebd2ba5766963efd81af984323
+2012-12-19T09:30:23Z,commit,IDEA-13269 Sync Resource Bundle view with text view for a properties ¡­,github.com/JetBrains/intellij-community/pull/658/commits/33d6333eeec4f90a7879915c2f9e31f6675421f3
+2012-12-19T12:50:27Z,commit,IDEA-97826 Java arrangement: Don't insert unnecessary line feeds for ¡­,github.com/JetBrains/intellij-community/pull/658/commits/5dd9b2fcc253cc4016a36d761678e2a605f5fbcc
+2012-12-20T16:42:54Z,commit,"IDEA-97890 (Mac OSX) Highlight word or filename in rename dialogue, t¡­",github.com/JetBrains/intellij-community/pull/658/commits/7f43e0a8b81d62e90ee8f27bc344a351090c5654
+2013-01-05T17:12:17Z,commit,IDEA-98549 Expand and collapse icons are inconsistent with default ones,github.com/JetBrains/intellij-community/pull/658/commits/6f339669b14cccc57c0a97a95ce07c2f780809a0
+2013-01-05T17:14:41Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/1f512848142d5f465a411a7ddf44f8ce34476480
+2013-01-05T23:35:07Z,commit,new Darcula Progress Bar UI,github.com/JetBrains/intellij-community/pull/658/commits/94a868e1089d0420fb6ecbe4713750022e940f06
+2013-01-06T17:29:35Z,commit,+AA,github.com/JetBrains/intellij-community/pull/658/commits/15bd13ad34249b87bc35b30d75a5050aea83169a
+2013-01-06T17:57:42Z,commit,IDEA-98574 white lines in commit button popup menu,github.com/JetBrains/intellij-community/pull/658/commits/3e57881d301addf38031b7f7127f8361e31b9c21
+2013-01-07T08:27:31Z,commit,EA-42391 - PIEAE: PsiElementBase.getContainingFile,github.com/JetBrains/intellij-community/pull/658/commits/81bcc8099568cc6f50efe0bbc38da3fd6551538a
+2012-11-29T09:48:40Z,commit,Diagnostics for NSME (EA-39972),github.com/JetBrains/intellij-community/pull/658/commits/cb3c856a58689997a8baee27fa0e7f1e6cc78c16
+2013-01-07T10:19:13Z,commit,fix tests,github.com/JetBrains/intellij-community/pull/658/commits/c78948d18a9bf2b6ab26ab15926fbd07038cd964
+2012-12-05T15:09:45Z,commit,when detect inaccessible classes in static context take into account ¡­,github.com/JetBrains/intellij-community/pull/658/commits/3a20786bb97376e6d0d919f482f9d902082a3714
+2012-12-07T12:23:05Z,commit,"import module: cleanup builders after import; init ""update"" state (ID¡­",github.com/JetBrains/intellij-community/pull/658/commits/66a0a6fa0514671a2614cb22918df0e0f9d7c64f
+2012-12-10T15:31:28Z,commit,typo (IDEA-97120),github.com/JetBrains/intellij-community/pull/658/commits/44c8b6dfd2191459078759ba4960a0d23924679d
+2012-12-10T15:14:05Z,commit,use range markers to prevent e.g. copyright to break the text,github.com/JetBrains/intellij-community/pull/658/commits/c624f4c4be890bfa3127b4981a66fa602cdd30e3
+2012-12-10T17:10:13Z,commit,do not multiply downloaded plugins on enable/disable filter (IDEA-97153),github.com/JetBrains/intellij-community/pull/658/commits/7fcaae27da216d961879ff4ceec2131b58c8a80d
+2012-12-11T13:17:40Z,commit,restore new expressions correctly (IDEA-97001),github.com/JetBrains/intellij-community/pull/658/commits/2864fa94c8dfa7e6e8e702e54551854021be6458
+2012-12-12T14:45:35Z,commit,find action: close popup before settings dialog is shown (IDEA-97352),github.com/JetBrains/intellij-community/pull/658/commits/0a5f212370e1ac5719f05070254ce475ecad3b06
+2012-12-13T13:50:35Z,commit,introduce field: choose anchor corresponding to used fields without i¡­,github.com/JetBrains/intellij-community/pull/658/commits/14ed01125bbc3ab1540d33e83a62814bd5fd7dd0
+2012-12-13T19:29:37Z,commit,do not suggest,github.com/JetBrains/intellij-community/pull/658/commits/4ad5e90d029fd8b0cacc13a91de942be5444cece
+2013-01-07T13:23:30Z,commit,no enclosing instance (IDEA-97063),github.com/JetBrains/intellij-community/pull/658/commits/1714a0db74b7e69717add412c5f504c38df544f1
+2012-12-14T12:35:08Z,commit,inplace introduce: do not replace identifier with method expr even wh¡­,github.com/JetBrains/intellij-community/pull/658/commits/ef9f5a2acbf1638b46325312b131925e09599db9
+2012-12-17T15:40:08Z,commit,inplace extract: from injected editor (IDEA-97682),github.com/JetBrains/intellij-community/pull/658/commits/8a8df45cbb24f6fe103e1f79d304609496e7f1af
+2012-12-17T17:37:44Z,commit,pull up: delete,github.com/JetBrains/intellij-community/pull/658/commits/bad82b546423cada9aece7bee93e58d2eddc349e
+2012-12-17T20:41:47Z,commit,java api checker: support,github.com/JetBrains/intellij-community/pull/658/commits/5bb4d4bcd13c4f08e2f907654f9f4b690e167ed1
+2012-12-18T11:27:16Z,commit,revert: use always top level editor in java only,github.com/JetBrains/intellij-community/pull/658/commits/483e271482a05e0791bd6a8c64d400fd70146ddd
+2013-01-07T15:42:43Z,commit,comment test,github.com/JetBrains/intellij-community/pull/658/commits/49a5bc3fb33c05724e1b4461e2852c9761ac5ab4
+2013-01-07T17:23:53Z,commit,EA-42594 - NPE: StructureViewWrapperImpl.setFile,github.com/JetBrains/intellij-community/pull/658/commits/a5169cf5f73cca2ba2f4189ae0a86042d7de71d5
+2013-01-07T17:46:43Z,commit,[r=Roman.Shevchenko] deadlock on startup (IDEA-98468),github.com/JetBrains/intellij-community/pull/658/commits/1ae57c588a6c64f709456d7c0383107a6898bedc
+2013-01-07T19:41:02Z,commit,[r=Roman.Shevchenko] Cannot build artifact for big project - IU 12 Pr¡­,github.com/JetBrains/intellij-community/pull/658/commits/3790028873d7d7a81c6684d2c4020c89f1828c06
+2013-01-07T19:34:19Z,commit,IDEA-98542 (help a guy to poison$ poor actor),github.com/JetBrains/intellij-community/pull/658/commits/b62e8c67408c31af88be7995fd9659e9b0b9b9eb
+2013-01-07T19:40:38Z,commit,proper NPE fix,github.com/JetBrains/intellij-community/pull/658/commits/ec4cc8435ad8bba7f3a520e583cf3d19be62ebfa
+2013-01-08T13:19:28Z,commit,Broken Icons API fixed,github.com/JetBrains/intellij-community/pull/658/commits/9fe9e5a44a9c2bea7e441f72fb7896cd0b172698
+2013-01-08T17:25:39Z,commit,add CoreLocalFileSystem.findFileByIoFile,github.com/JetBrains/intellij-community/pull/658/commits/1fbe2aa4848d4a1e46080fb6b95c7c8c07c7afae
+2012-12-24T16:12:44Z,commit,[nik] BuildRootDescriptor default impl,github.com/JetBrains/intellij-community/pull/658/commits/d7d01bbfb175756772a2abe632338d04d1e8172c
+2013-01-09T11:27:15Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/7cad838b667fee288057d3f0cd5f877920aea810
+2013-01-09T14:06:56Z,commit,DEA-13269 Sync Resource Bundle view with text view for a properties file,github.com/JetBrains/intellij-community/pull/658/commits/3aad0d9a11862c087c8452096b3664aa95d5d8a1
+2013-01-09T16:20:34Z,commit,fix AllIcons.Actions.RefreshUsages?,github.com/JetBrains/intellij-community/pull/658/commits/ca4d33c89f7b907f6e8058e309728ce43e80596c
+2013-01-09T16:52:19Z,commit,Startup crash on icon loading fixed,github.com/JetBrains/intellij-community/pull/658/commits/f0ac1c4a00b18b10240ea471fcdda7f359a68af9
+2013-01-10T08:26:49Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/da5e7a9cf7ac02cf31a3b418d016f3e2132da256
+2012-12-25T14:27:42Z,commit,IDEA-97932 Maven project ignoring dependencies in profiles.,github.com/JetBrains/intellij-community/pull/658/commits/d2f0de6ed7f9a01a250d27ddcecf992de619012b
+2013-01-10T14:53:52Z,commit,IDEA-97476 Connection through a proxy is not working,github.com/JetBrains/intellij-community/pull/658/commits/5e99a6dc28ab344d375f98b98b7e6e230b4d3f2d
+2013-01-10T16:16:08Z,commit,IDEA-98233 Problem with debugger in Grails 2.2.0 + Intellij 12.0.2 (b¡­,github.com/JetBrains/intellij-community/pull/658/commits/33f6a2d54f22766bf7a00f890d81035d012e06a7
+2013-01-09T17:17:28Z,commit,an attempt to fix diagram performance (IDEA-98769),github.com/JetBrains/intellij-community/pull/658/commits/ae5a06413f750f283e99b8955b3ff9a99588d8de
+2013-01-11T07:28:41Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/4eafb96547deb23d1d05f9a7a37b87bf751cfe31
+2013-01-10T11:47:14Z,commit,IDEA-98807 Resource compiler: resources not copied to target director¡­,github.com/JetBrains/intellij-community/pull/658/commits/56595240d63a9ad06fe7c841ef9bb28147ffda12
+2013-01-11T08:46:54Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/acf4fa7d9b62fcb50ebd0469b0f66c951cd1037d
+2013-01-11T09:52:49Z,commit,Revert: refreshUsages icon properly fixed,github.com/JetBrains/intellij-community/pull/658/commits/b230f0bc1d6a1c7927db0934bdd61dfda4f64a74
+2012-11-29T18:35:28Z,commit,IDEA-95534: skip warning about same method signatures for empty class¡­,github.com/JetBrains/intellij-community/pull/658/commits/f89741547e7c61a6f66971b0b8674afa3e98089c
+2013-01-10T15:48:04Z,commit,[^kb] groovy cannot find source file renamed to java: fix,github.com/JetBrains/intellij-community/pull/658/commits/479c92ae9c01ddd674ae8eab1f4573db04523854
+2013-01-11T14:27:47Z,commit,[^maxim.mossienko] IDEA-98263 IntelliJ IDEA very high CPU usage,github.com/JetBrains/intellij-community/pull/658/commits/33260e2e49fc3af5177d82408cf9a6c6aeadf8b5
+2013-01-13T12:47:45Z,commit,icons,github.com/JetBrains/intellij-community/pull/658/commits/bc3230b6c6c6c2baf26cad5d4c4eb3b1dbb451e2
+2013-01-12T18:56:35Z,commit,IDEA-95627 Postgres stored functions cannot be formatted,github.com/JetBrains/intellij-community/pull/658/commits/3836cbb46687ac3f2ca40faff723beec2ec9c6f5
+2013-01-14T10:03:18Z,commit,eap = false,github.com/JetBrains/intellij-community/pull/658/commits/f989f8ce3e4a090b18078b035e1de71efbd52426
+2013-01-14T10:03:51Z,commit,release splashes,github.com/JetBrains/intellij-community/pull/658/commits/dec1211be2f40a55a3907621d1ddc78033d2d227
+2013-01-14T11:10:37Z,commit,http://ea.jetbrains.com/browser/ea_problems/41965,github.com/JetBrains/intellij-community/pull/658/commits/ba3eebb9d07f60408eb6fb899ca1fe33c9abbfaa
+2013-01-14T11:49:37Z,commit,IDEA-98111 auto completion can result in compilation problems by shad¡­,github.com/JetBrains/intellij-community/pull/658/commits/d6f3148436f9281d4155c57f0bf9fe0cea3ea711
+2013-01-11T14:58:00Z,commit,"[^nik,maxim] IDEA-96730 Searching for usages on commonly used method ¡­",github.com/JetBrains/intellij-community/pull/658/commits/e21123ae73fa99e65c4fd2fef7c0bda5644ccc2c
+2013-01-14T13:04:38Z,commit,IDEA-98980 Resource bundle editor: Provide explicit ability to show a¡­,github.com/JetBrains/intellij-community/pull/658/commits/513b652e9f763c7d97494b4dc1f02801f5ca4ced
+2013-01-14T13:18:44Z,commit,[git] IDEA-98236 Escape ^ for git.cmd and only for it.,github.com/JetBrains/intellij-community/pull/658/commits/67ceb416162cb41c286ddc302cbc2a2df3fb4bb5
+2013-01-14T13:19:44Z,commit,[git] IDEA-98433 Git push changes the branch.master.rebase value to a¡­,github.com/JetBrains/intellij-community/pull/658/commits/681cb2ed9955a6e7ecb5c3adca9ea893261247dc
+2013-01-14T13:04:56Z,commit,fixed building of configurables tree - the case with more than two-de¡­,github.com/JetBrains/intellij-community/pull/658/commits/eb335355f4032c94a111574af38f458cf6ee4b5e
+2013-01-14T14:01:55Z,commit,revert IDEA-96730 Searching for usages on commonly used method names ¡­,github.com/JetBrains/intellij-community/pull/658/commits/7f25fc208f1888b1ee9cb8ab1c7253727a803ffd
+2013-01-14T14:32:57Z,commit,android icons,github.com/JetBrains/intellij-community/pull/658/commits/7955138a8c55e7700b0a329cff342ff28ae0f468
+2013-01-14T14:33:40Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/86a84b2a0a64749c5a0f83966755a5023df14bb1
+2013-01-14T15:25:08Z,commit,"IDEA-97979 android-jps: make all storages per target [rev=jeka,nik]",github.com/JetBrains/intellij-community/pull/658/commits/31478d3e6860c84af2c407ced776f342b83a9976
+2013-01-14T20:06:15Z,commit,synchronously save sources and resources generated by annotation proc¡­,github.com/JetBrains/intellij-community/pull/658/commits/42bf9f15d04a23b5103fff20907e4fab96fba212
+2013-01-14T20:18:47Z,commit,synchronously save sources and resources generated by annotation proc¡­,github.com/JetBrains/intellij-community/pull/658/commits/99a56f84e40eccaa65e8e4757dbbd198bea3c43d
+2013-01-15T11:33:49Z,commit,IDEA-98218 (diagnostic),github.com/JetBrains/intellij-community/pull/658/commits/f51727bc498cf1c50c2903032f2f4fcfcb529970
+2013-01-15T12:26:03Z,commit,IDEA-73542 Task/Jira Connection: All Jira Tasks are marked as resolved,github.com/JetBrains/intellij-community/pull/658/commits/28beb3c9b1a3d1f7971a1f74689312e7c78a20b8
+2013-01-15T14:49:13Z,commit,cherry-pick,github.com/JetBrains/intellij-community/pull/658/commits/a5aefa08443cff6875d8e98ae9751eb49cca6c6f
+2013-01-16T09:40:32Z,commit,12.0.3 eap,github.com/JetBrains/intellij-community/pull/658/commits/84f2b64c6220a4fac9810280b0fb76816fc25f79
+2013-01-16T11:17:33Z,commit,EA-41596 - assert: EditorWindow.isFilePinned,github.com/JetBrains/intellij-community/pull/658/commits/a804732d12485d8138d0b947c377b0676ca4a3e4
+2013-01-16T12:46:33Z,commit,"IDEA-97815 If Maven project has two resources-folders, neither is cop¡­",github.com/JetBrains/intellij-community/pull/658/commits/9cda752a308ae3fb63ffcdd2ab27fd7718577344
+2013-01-16T12:46:58Z,commit,Revert bad fix.,github.com/JetBrains/intellij-community/pull/658/commits/ccfc13b0d75bd675b1094b1016cf22b2006d9c5b
+2013-01-16T12:47:10Z,commit,Add license for plexus-utils-2.0.6.jar,github.com/JetBrains/intellij-community/pull/658/commits/c6765d6d282bebe809d279d9561e274c0e1a04e0
+2013-01-16T12:47:29Z,commit,"IDEA-97815 If Maven project has two resources-folders, neither is cop¡­",github.com/JetBrains/intellij-community/pull/658/commits/a10a2cccec7512473cecfc24f4c0b4ee76994cd3
+2013-01-16T12:48:21Z,commit,"IDEA-97815 If Maven project has two resources-folders, neither is cop¡­",github.com/JetBrains/intellij-community/pull/658/commits/0d80e27c7ddf0c0207adef243b6e807dd4f1223a
+2013-01-16T12:50:40Z,commit,"IDEA-97815 If Maven project has two resources-folders, neither is cop¡­",github.com/JetBrains/intellij-community/pull/658/commits/55bf522d6960da82af532cf8932bcd262281f5bb
+2013-01-16T12:52:15Z,commit,IDEA-98976 Spock: double pipe in table header,github.com/JetBrains/intellij-community/pull/658/commits/711bc20263a0ebf189cedf09a4401f37d215de2f
+2013-01-16T13:29:08Z,commit,diagnostics for EA-39864 - SIOOBE: TextRange.substring,github.com/JetBrains/intellij-community/pull/658/commits/6fb4073d3bd8a577233c5cd2b3c4d3c5de7dfc3e
+2013-01-16T14:28:06Z,commit,explicitly adding project sdk to the candidate sdk list when launchin¡­,github.com/JetBrains/intellij-community/pull/658/commits/001fdaf974c51f2d350288dd30340bf404e3c6ee
+2013-01-03T18:39:41Z,commit,formatter: field groups alignment: correctly process range (IDEA-9836¡­,github.com/JetBrains/intellij-community/pull/658/commits/63de68b3cf3aa8c239a81d9e193a1f4a90e1e895
+2013-01-16T17:09:33Z,commit,ability to specify explicitly preferred JDK installation to be used t¡­,github.com/JetBrains/intellij-community/pull/658/commits/fcbe5c1d8bdd0c50e0ed844ef2053df121c67f0d
+2013-01-17T06:08:27Z,commit,IDEA-96415 Groovy code style: 'next line' for class class declaration¡­,github.com/JetBrains/intellij-community/pull/658/commits/fbf4f8e74c27729667c1b620bafc412f158f9e0d
+2013-01-17T06:38:35Z,commit,IDEA-99080 Incorrect Groovy stubs generated by IDEA in case of vararg¡­,github.com/JetBrains/intellij-community/pull/658/commits/2db4f7b64fe08a348770766c6f2320876e99924f
+2013-01-17T11:03:22Z,commit,New in 12,github.com/JetBrains/intellij-community/pull/658/commits/f644b97b01fbc398826bd272f43f5ed05a917a47
+2013-01-17T11:08:48Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/dbe88374b2c4b22e685ade0a35475439686dc88d
+2013-01-17T12:15:41Z,commit,IDEA-99237 Property precedence is not the same when filtering resourc¡­,github.com/JetBrains/intellij-community/pull/658/commits/eb9d1f415419287e987cd5f2ec7fc7b90427432f
+2013-01-17T16:34:14Z,commit,additional trace inserted,github.com/JetBrains/intellij-community/pull/658/commits/e7529f9aa0168c7e32a463431e289025ac6c433e
+2013-01-17T16:39:54Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/89eaab2ae26ac6ee3111c4fad6de35421dfffe59
+2013-01-17T14:39:19Z,commit,[r=Peter.Gromov] IDEA-99248 Freeze by deadlock,github.com/JetBrains/intellij-community/pull/658/commits/a85c7f70561a7e9cd2a7aaa71539e3c6ec36b91d
+2013-01-17T14:19:54Z,commit,[r=Peter.Gromov] do not do invokeLater on disposed animator,github.com/JetBrains/intellij-community/pull/658/commits/c5fa3006763fc087d7d54c63ea36c866882a834b
+2013-01-17T16:50:52Z,commit,[r=Peter.Gromov] correct dispose of parameter info controller upon ed¡­,github.com/JetBrains/intellij-community/pull/658/commits/4a94e6fe902b0e06c964ab55e971d7bf60e7a45b
+2013-01-17T16:53:33Z,commit,"[r=Peter.Gromov] avoid project memory leak, no need for extension poi¡­",github.com/JetBrains/intellij-community/pull/658/commits/b70aad4c011d80d7530b11020306df3ba6cd2084
+2013-01-18T07:35:10Z,commit,Fix spelling.,github.com/JetBrains/intellij-community/pull/658/commits/a71598768b1630336a0dd2c9e84637c4f76a776e
+2013-01-18T14:17:58Z,commit,RUBY-12696 Darcula theme has dark symbols against an already dark bac¡­,github.com/JetBrains/intellij-community/pull/658/commits/2abd1b6acf6cea7fe9f58fb3a798e266d773f9d4
+2013-01-18T14:20:31Z,commit,RUBY-12696 Darcula theme has dark symbols against an already dark bac¡­,github.com/JetBrains/intellij-community/pull/658/commits/6048ecafc123b7ac876b8ec9b28b176c9140e8e6
+2013-01-15T15:04:07Z,commit,"improve Alt-F8 behaviour: instanceof expressions, constructors & etc.",github.com/JetBrains/intellij-community/pull/658/commits/eebf02f62639c545ac8ae915e06b391eb4b8e8ab
+2013-01-18T11:47:40Z,commit,"[r=Peter.Gromov, Maxim.Shafirov] replace scheduleAtFixedRate with sch¡­",github.com/JetBrains/intellij-community/pull/658/commits/78283e3a14e53df97adecece346a2d178d8f3484
+2013-01-20T09:25:11Z,commit,DevKit: support AppCode 1.6 and 2.0,github.com/JetBrains/intellij-community/pull/658/commits/ca2b8ed49eeb906d688b74c08f4f2f8ea790346e
+2013-01-17T09:38:28Z,commit,[^nik] jsch updated up to 0.1.49,github.com/JetBrains/intellij-community/pull/658/commits/b7d150e1c4e35a26b9b8346e68a5959e200baabb
+2013-01-21T08:42:57Z,commit,"additional trace inserted, 2",github.com/JetBrains/intellij-community/pull/658/commits/14f77938f00c37dc8d4e7793f4d61ff90887c3aa
+2013-01-21T08:45:20Z,commit,additional trace inserted,github.com/JetBrains/intellij-community/pull/658/commits/131bbf18b5ab4848b99c34d25c8100eeeeead22b
+2013-01-18T13:32:54Z,commit,IDEA-99260 Open Task - Mark as 'In Progress' not persistent,github.com/JetBrains/intellij-community/pull/658/commits/15c63c850a8a242c9e0ae38ed072af05cc8257dc
+2013-01-21T13:28:01Z,commit,IDEA-98282 return namespace for custom xml attrs,github.com/JetBrains/intellij-community/pull/658/commits/2cdf96dec5aa53e487b3883ca73513f0bc24c21f
+2013-01-21T13:54:47Z,commit,"IDEA-88322 do not ignore ProcessCanceledException, because then we re¡­",github.com/JetBrains/intellij-community/pull/658/commits/13ac0f369bddd6385473db8af89d64d80db3cd8e
+2013-01-21T13:56:40Z,commit,IDEA-98267 always perform rendering of Android layouts in the same th¡­,github.com/JetBrains/intellij-community/pull/658/commits/9969569fa0109439e407de9e2f0d6c550774c9e9
+2013-01-21T14:23:03Z,commit,"refactoring: rename OWN_THREAD -> POOLED_THREAD, SINGLE_THREAD -> OWN¡­",github.com/JetBrains/intellij-community/pull/658/commits/8fe36fb0f019196c518b8d259a95d589c6d14e00
+2013-01-04T12:48:09Z,commit,avoid deadlock due to first accessing a component from outside of EDT¡­,github.com/JetBrains/intellij-community/pull/658/commits/ae882b7a6eb21652b20770141aaa1eb1b3c18009
+2013-01-21T14:45:00Z,commit,"IDEA-99337 Intention ""Convert [] Form to index method"" (Before->After¡­",github.com/JetBrains/intellij-community/pull/658/commits/fb7aeb430133a7e1c1f2e547b6a7587b69453af0
+2013-01-21T15:06:21Z,commit,IDEA-99196 Groovy: valueOf for Groovy enums with sinlge String arg re¡­,github.com/JetBrains/intellij-community/pull/658/commits/3cb342ca3fbace6997a3977d8adc7a18757c3ae6
+2013-01-21T15:07:18Z,commit,EA-42796 generate 'methodMissing' while standing on class header rev=¡­,github.com/JetBrains/intellij-community/pull/658/commits/781500588148eef0d810e6f9bc0836a3c112eb98
+2013-01-22T07:26:18Z,commit,EA-42932 - NPE: check qualifier before suggest 'create inner class' r¡­,github.com/JetBrains/intellij-community/pull/658/commits/d0cc4002d920a61cf9620d90ca97fbaeb65cea82
+2013-01-22T07:32:58Z,commit,EA-42553 - diagnostics rev=Peter,github.com/JetBrains/intellij-community/pull/658/commits/56b5682dad8259448e539aa52cc69a5d6a7b1842
+2013-01-22T09:32:14Z,commit,Diagnostics for NSME (EA-39972) broken - CodeSource can be null (EA-4¡­,github.com/JetBrains/intellij-community/pull/658/commits/b9cf500a06f689a37e1611a8224b596cb74a0e1a
+2013-01-21T17:19:56Z,commit,[^maxmedvedev] groovy 2 reports source path as url,github.com/JetBrains/intellij-community/pull/658/commits/bbe7e5504e6de7848bd5f1999639b38d0d831ead
+2013-01-17T16:26:59Z,commit,[^maxmedvedev] don't exit groovyc immediately when indy option is on,github.com/JetBrains/intellij-community/pull/658/commits/20fc11a1fb17e4d234ccd399c162d73db772a203
+2013-01-22T15:24:24Z,commit,Support spring loaded for remote process.,github.com/JetBrains/intellij-community/pull/658/commits/cf1f8c9dbc450cf01ead1e6170f9142184988193
+2013-01-22T15:24:35Z,commit,Support spring loaded for remote process.,github.com/JetBrains/intellij-community/pull/658/commits/2f8c7ca314b0ff39dcf869457e0c15514a158aba
+2013-01-22T16:22:59Z,commit,"IDEA-99477 Before Launch task shows console in ""reserved"" tab",github.com/JetBrains/intellij-community/pull/658/commits/58b9a8940350d5d5f962cd1f52771a90bcb8e774
+2013-01-23T15:29:36Z,commit,even more trace,github.com/JetBrains/intellij-community/pull/658/commits/430d26e38a4d0168ab4d33aee4035ace73e6a1d3
+2013-01-23T15:37:54Z,commit,"even more trace, 2",github.com/JetBrains/intellij-community/pull/658/commits/8a94049ab0db6b90f6c5b6d50ad13fabeaffbe5d
+2013-01-24T08:20:46Z,commit,"even more trace, 3",github.com/JetBrains/intellij-community/pull/658/commits/a369445cd083c43f307cb1a6ca0ca2e7b07f6253
+2013-01-24T10:04:09Z,commit,IDEA-98425 IntelliJ does not include Maven transitive dependencies in¡­,github.com/JetBrains/intellij-community/pull/658/commits/f472e009a18b3867a42b4784844b829ec72f3c2d
+2013-01-24T16:47:18Z,commit,Better refresh diagnostic,github.com/JetBrains/intellij-community/pull/658/commits/a20cf33133a3e97e93abb7d041c669223b5ff49f
+2013-01-24T10:54:14Z,commit,[r=Nikolay.Chashnikov] calculation of projectContainsFile() should no¡­,github.com/JetBrains/intellij-community/pull/658/commits/bf8f1d4e7e139a6c45fef380cc8930d53fb66f83
+2013-01-25T08:22:37Z,commit,[r=Konstantin.Bulenkov] isFocused calculated lazily: only for selecte¡­,github.com/JetBrains/intellij-community/pull/658/commits/9e6b6e685f005aa2e743a1bb3be0110c6781abdf
+2013-01-25T08:14:17Z,commit,[git] reduce logging noise,github.com/JetBrains/intellij-community/pull/658/commits/8f725a05c74dcb3513cd71f0812f5bcb66a14f59
+2013-01-25T09:06:38Z,commit,restore module choice for analyze actions (IDEA-99650),github.com/JetBrains/intellij-community/pull/658/commits/0ba2937f5dd6856fc0106ec0469b0435d9613607
+2013-01-11T09:53:02Z,commit,icons update,github.com/JetBrains/intellij-community/pull/658/commits/e25d7de4fd828dc4cea57bdf75dff53647936dc3
+2013-01-11T09:46:14Z,commit,hex constants,github.com/JetBrains/intellij-community/pull/658/commits/f03386c31c220afbe86d4128ff9854620d2d0a5f
+2013-01-25T12:41:22Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/6eec2f19b8d4b278f5069f70fa1294148ec2c55e
+2013-01-17T14:49:24Z,commit,new download icon,github.com/JetBrains/intellij-community/pull/658/commits/3ea0826b41048a68e8f055816694a53fb05b40a9
+2013-01-25T12:47:54Z,commit,several problems with black foreground,github.com/JetBrains/intellij-community/pull/658/commits/3b5b3141677cada5f4eea977fe1ceda13e8ad7f3
+2013-01-17T17:17:03Z,commit,IDEA-99121 Darcula: EJB (Dom) editor captions are white,github.com/JetBrains/intellij-community/pull/658/commits/fc2d0de20b68bdac74505193214fb8d2da825222
+2013-01-20T14:28:00Z,commit,jbcolor.red,github.com/JetBrains/intellij-community/pull/658/commits/37eab0ec74e3c9ee4cca5f765b26dcd1b7a16075
+2013-01-20T14:29:29Z,commit,live template customization,github.com/JetBrains/intellij-community/pull/658/commits/36b439a01e96096c31903c44cb29077721a85315
+2013-01-22T13:03:16Z,commit,new icons,github.com/JetBrains/intellij-community/pull/658/commits/36dca3ef5e3eaf3590e24aae0e1a5176d7086f58
+2013-01-22T16:02:10Z,commit,IDEA-95058 An option to set regular font size on editor's tab titles,github.com/JetBrains/intellij-community/pull/658/commits/c03f02b58efc0080bdbd84cd9321ab96b72220b0
+2013-01-25T12:51:54Z,commit,IDEA-98794 Rendering of Deployment -> Sync screen is broken,github.com/JetBrains/intellij-community/pull/658/commits/b66c277a05ca644bad59ab6d5331c17dcda2005c
+2013-01-25T12:53:19Z,commit,IDEA-99686 No icons for toolwindows in recent files and switcher,github.com/JetBrains/intellij-community/pull/658/commits/9e8de949d8eb724fd9f16c51ea5c85e3635b84ae
+2013-01-25T15:52:12Z,commit,eclipse: read language level for jps (IDEA-99463),github.com/JetBrains/intellij-community/pull/658/commits/1ba285f978cd6b595bbf30bfcd6c3094a29eae42
+2013-01-26T10:07:31Z,commit,removed extra code for detecting IDEA-95035,github.com/JetBrains/intellij-community/pull/658/commits/72df7b768cc1fc67dc5158c70e2c4c2f414fb068
+2013-01-26T10:15:16Z,commit,"Cannot build artifact for big project - IU 12 Preview (IDEA-95035),",github.com/JetBrains/intellij-community/pull/658/commits/0a199e2fd3e4a0cf67e4517455b286ba00f8fec8
+2013-01-28T08:49:14Z,commit,WEB-6302 fix migrating from obsolete buggy setting html5 language lev¡­,github.com/JetBrains/intellij-community/pull/658/commits/115e5d64a71ef4298308c7b24e66bd6fa4fedd99
+2013-01-28T09:24:57Z,commit,"IDEA-99412 execute zipalign after signing, not before [rev=max.medvedev]",github.com/JetBrains/intellij-community/pull/658/commits/9c65ca2d7b5c86495e68e9f44c46141f233d4081
+2013-01-28T09:25:53Z,commit,IDEA-95988 there is no finish button anymore [rev=max.medvedev],github.com/JetBrains/intellij-community/pull/658/commits/48320ca07dd86f0cdf497758665f45ea2d298ac5
+2013-01-28T10:38:47Z,commit,"[git] IDEA-99849 Force checkout as new branch reports ""branch already¡­",github.com/JetBrains/intellij-community/pull/658/commits/99dd3db27d8c9c7d3964446a0baeb862b2753001
+2013-01-28T13:45:11Z,commit,external build: fixed caches for files extracted from archives (IDEA-¡­,github.com/JetBrains/intellij-community/pull/658/commits/45f94a8c28171792fa5926b9a8e41bc92c488678
+2013-01-28T13:44:23Z,commit,IDEA-99479 (`package.html` may be converted to `package-info.java` in¡­,github.com/JetBrains/intellij-community/pull/658/commits/9fe8d30177a404e4dc50e87e9a35b177ffa02438
+2013-01-28T13:44:51Z,commit,IDEA-99394 (Unnecessary fully qualified name inspection reports wrong¡­,github.com/JetBrains/intellij-community/pull/658/commits/aaafcb0191d92945c9489d633588c30924850aec
+2013-01-28T13:45:50Z,commit,"IDEA-99440 (""Missing",github.com/JetBrains/intellij-community/pull/658/commits/b2ed4f4feb743dea761bb3dd931e1d6114fe4ff5
+2013-01-28T13:48:02Z,commit,IDEA-97384 (Replace constructor with factory method inspection shall ¡­,github.com/JetBrains/intellij-community/pull/658/commits/0dd2e4aaeb3a4893094e348badb60170f914582a
+2013-01-28T13:48:18Z,commit,IDEA-98682 (Class extends utility class does not ignore on empty chil¡­,github.com/JetBrains/intellij-community/pull/658/commits/4baf6347729f184e54fcc15b020d1c34926ad73a
+2013-01-28T16:48:32Z,commit,"IDEA-81901: RelaxNG Compact ""as you type validator"" may render Intell¡­",github.com/JetBrains/intellij-community/pull/658/commits/21591b340ab14977b84e5f723db1160d878c5e53
+2013-01-29T10:40:38Z,commit,2013 copyright,github.com/JetBrains/intellij-community/pull/658/commits/69595e476371fcd07e202ab6c1e9632076b44faa
+2013-01-29T10:41:52Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/68a3fd6048319f909a009cb1a36aa0c983742aa2
+2013-01-29T11:20:05Z,commit,isEAP=false,github.com/JetBrains/intellij-community/pull/658/commits/9c34b85795abb0d7a45f409a484a35060df88e55
+2013-01-24T11:47:29Z,commit,propagating project for scala,github.com/JetBrains/intellij-community/pull/658/commits/75fff30570e7fe51c43a5bf3c1c513968c041bc6
+2013-01-30T08:55:28Z,commit,"IDEA-99591 ""New Module"" does not remember last selected module type",github.com/JetBrains/intellij-community/pull/658/commits/4ca8668a32dfdb11fd762cb8bbc4a7c6f48847c4
+2013-01-30T16:37:50Z,commit,external artifact builder: workaround for problem in PersistentHashMa¡­,github.com/JetBrains/intellij-community/pull/658/commits/75beef49c1f2c1ec661ded31e9541c90ee16ef8c
+2013-01-30T17:16:27Z,commit,IDEA-100092 Eclipse compiler cannot handle UTF-8 chars,github.com/JetBrains/intellij-community/pull/658/commits/6b5330e8d9541a2335434863652809bbd3dc56b8
+2012-12-14T13:06:48Z,commit,IDEA-96597 Find Usages not working [nik]: fixing ParentStrategy for s¡­,github.com/JetBrains/intellij-community/pull/658/commits/eef4d1835c6c8a94ac9110808f930c7a10967bfe
+2013-01-31T14:57:30Z,commit,[r=Eugene.Juravlev] fix OOME caused by increase of indexed file above¡­,github.com/JetBrains/intellij-community/pull/658/commits/ddcb1babd02adb893dbc01714a8eeab948de0791
+2013-01-31T16:12:01Z,commit,12.0.4 eap,github.com/JetBrains/intellij-community/pull/658/commits/c905ae46d840534eac0aaa6247306a8b4c023fe6
+2013-02-01T07:52:39Z,commit,IDEA-81697 Could not setup connection to JIRA server,github.com/JetBrains/intellij-community/pull/658/commits/38c97f733f6e3ace913a721d0397beaedb02a5c2
+2013-02-01T11:22:26Z,commit,minor dynamic languages support fixes,github.com/JetBrains/intellij-community/pull/658/commits/25e832dea761e21ac1cafc979cf2aafe4b075f34
+2013-02-01T16:34:16Z,commit,fix for NPE PsiChangeHandler.queueElement(PsiChangeHandler.java:178),github.com/JetBrains/intellij-community/pull/658/commits/95d5163364cecfbb298efb858a5095e766707a6a
+2013-01-16T12:22:49Z,commit,@vm_params place when using force dynamic vm options fixed (IDEA-97769),github.com/JetBrains/intellij-community/pull/658/commits/49ae132a98b8f6fe745196a594ac45dba2697f0f
+2013-02-04T07:14:44Z,commit,"do not throw exceptions for invalid DOM, just log problems",github.com/JetBrains/intellij-community/pull/658/commits/41cca8e8945b72864e9995f3faffaa35479fa4b9
+2013-01-23T19:08:24Z,commit,[^yann] minor performance,github.com/JetBrains/intellij-community/pull/658/commits/3f4ee576d0168fe45c7bd49a173839bc8a4c3b1d
+2013-01-08T20:17:19Z,commit,[yann] getContexts(): avoid costly LOG.assertTrue,github.com/JetBrains/intellij-community/pull/658/commits/73d8da5b129f65dd0439ce9574ea70e237124c9d
+2013-02-05T12:13:59Z,commit,"[r=sergey evdokimov] ensure output roots are refreshed before ""make f¡­",github.com/JetBrains/intellij-community/pull/658/commits/65a68ea20459831e569d0754500d9ea7a6c42cb9
+2013-02-05T15:48:10Z,commit,Merge remote-tracking branch 'origin/123' into 123,github.com/JetBrains/intellij-community/pull/658/commits/3e1679f55c06b4ae813656f4d62b0703559144c0
+2012-12-03T15:54:23Z,commit,"[^nobody, it works in master] fix psi seeming invalid during stub-ast¡­",github.com/JetBrains/intellij-community/pull/658/commits/06f84b9b98346bf6c8c48b022ef4c6745d88a6d9
+2013-01-17T16:19:02Z,commit,allow to start inplace introduce over same local variable (IDEA-93772),github.com/JetBrains/intellij-community/pull/658/commits/422b6771a74a920af34c1482af3bd477fc7bd273
+2013-01-16T05:12:13Z,commit,IDEA-98318 Text Replace replaces wrong text if IntelliJ has a high CP¡­,github.com/JetBrains/intellij-community/pull/658/commits/7044749c3c806a0edc4579c9cbb6e26aa344d7a4
+2013-01-31T12:13:09Z,commit,"IDEA-99912 Replace in Path not functional when clicking ""Replace All""",github.com/JetBrains/intellij-community/pull/658/commits/5beabae6621efa5b6e460cf8aea72315babe5405
+2013-02-06T14:09:41Z,commit,on CR-IC-1,github.com/JetBrains/intellij-community/pull/658/commits/400fe7273864e33c8aa39919ec435bddf8c04326
+2013-02-07T19:18:53Z,commit,external build make: correctly handle situations when more accessible¡­,github.com/JetBrains/intellij-community/pull/658/commits/b30d745a695e3ce7a082ededf4302da85a2f7451
+2013-02-07T13:44:50Z,commit,IDEA-100152 IntelliJ 12 freezes for 5-20 seconds while editing Javasc¡­,github.com/JetBrains/intellij-community/pull/658/commits/44f6d9a51e3737cea460c7109949e2f7ff40337f
+2013-02-07T18:25:13Z,commit,IDEA-100518 Goto popups: prefer items with exactly typed prefix,github.com/JetBrains/intellij-community/pull/658/commits/6d765c5495853f9e3780e170c0203b8fc5ce6e86
+2013-02-08T12:59:24Z,commit,"Use system property ""idea.maven.import.enabled.profiles"" when imports¡­",github.com/JetBrains/intellij-community/pull/658/commits/7221267e5c02c3161b04efaf4a3c1ac2b073f4b7
+2013-02-08T14:11:11Z,commit,"Use system property ""idea.maven.import.settings.file"" when imports fr¡­",github.com/JetBrains/intellij-community/pull/658/commits/e258a12808fb07a56c04627b02376cb696765393
+2013-02-08T09:25:05Z,commit,Typo,github.com/JetBrains/intellij-community/pull/658/commits/e57186282a01499d6b0ffa97eb12b0d9e5db8ffc
+2013-02-08T16:37:31Z,commit,IDEA-100690 (use build.txt as a fallback if application info is incom¡­,github.com/JetBrains/intellij-community/pull/658/commits/f816437f502613d3347477f77dd6b6acba85fab5
+2013-02-08T17:42:40Z,commit,GDSL fixed,github.com/JetBrains/intellij-community/pull/658/commits/dc4e3bbc404db578e6a07acd0b5a0edb3ef819bc
+2013-02-06T13:09:25Z,commit,CoreJavaFileManager.findClass: properly resolve $ in inner class names,github.com/JetBrains/intellij-community/pull/658/commits/5166e42a4a3a5ec4ac8bd60e7851d4967c13804e
+2013-02-06T13:39:35Z,commit,CoreJavaFileManager.findClass: properly resolve $ in inner class names,github.com/JetBrains/intellij-community/pull/658/commits/cfb58e770463e5314f1c02858e93c8a2173f2e0a
+2013-02-06T15:27:22Z,commit,"Test for pull request ""CoreJavaFileManager.findClass: properly resolv¡­",github.com/JetBrains/intellij-community/pull/658/commits/49fc479b55207886585a5bb0d5c699d84126021c
+2013-02-06T15:48:22Z,commit,"Test for pull request ""CoreJavaFileManager.findClass: properly resolv¡­",github.com/JetBrains/intellij-community/pull/658/commits/1c18c041318c52edadfa5a3aaa149daeb40cfb8b
+2013-02-07T06:58:52Z,commit,Small refactoring,github.com/JetBrains/intellij-community/pull/658/commits/62496a24089ea26a241ed2c029e7b4acf77c3a3a
+2013-02-07T19:31:04Z,commit,rename test class appropriately,github.com/JetBrains/intellij-community/pull/658/commits/5b17e0aeb19219adda08998a9555d99dbfca5ad5
+2013-02-11T12:59:39Z,commit,IDEA-100647 'this' is not available in Grails debugging,github.com/JetBrains/intellij-community/pull/658/commits/211c61fd0b23ca00dd57518fb05b957a140c7195
+2013-02-12T18:16:06Z,commit,isEAP = false,github.com/JetBrains/intellij-community/pull/658/commits/c71502fb5578586e80ddb9d8e11b7921a9938f6f
+2012-12-06T08:11:19Z,commit,IDEA-96256 Android: it could be possible to configure Android SDK if ¡­,github.com/JetBrains/intellij-community/pull/658/commits/23e40aaaee9cb0f92264c170db33d9dc5cb5f616
+2013-02-14T14:50:48Z,commit,"external build: when choosing JDK to be used for build process, consi¡­",github.com/JetBrains/intellij-community/pull/658/commits/8a1a270c0ba99e1c3be0b6582ab9bd8281cbb736
+2013-02-14T16:09:01Z,commit,trim profiles name,github.com/JetBrains/intellij-community/pull/658/commits/5c496b526d8c6c817dd90b6684671cc2aa567762
+2013-02-15T09:50:55Z,commit,Meaningful logging,github.com/JetBrains/intellij-community/pull/658/commits/98692ea2a6afb2aab713d5d9435aff6debc86b5b
+2013-02-15T16:07:08Z,commit,decide if the build has work left to be done by scanning all availabl¡­,github.com/JetBrains/intellij-community/pull/658/commits/637748faf71e27d3b8785deb5ac3c6f6cc9394ed
+2013-02-17T15:58:25Z,commit,hasworktodo is checked only for module-based targets,github.com/JetBrains/intellij-community/pull/658/commits/65b104e4f3c6023ca3636a0fd2aabb326b69f847
+2013-02-18T10:39:45Z,commit,IDEA-101185 IntelliJ does not use systemPropertyVariables defined in ¡­,github.com/JetBrains/intellij-community/pull/658/commits/10435e2e9584f1f987931f5e95eea74b3041e993
+2013-02-20T12:27:55Z,commit,IDEA-98756 (IDEA is unable to resolve AspectJ compiler JAR if Maven 3¡­,github.com/JetBrains/intellij-community/pull/658/commits/e5e48f29068bd6dd3d3fb99c012d6530293c1ede
+2013-02-25T13:35:59Z,commit,IDEA-101783 Throwable at com.intellij.execution.rmi.RemoteProcessSupp¡­,github.com/JetBrains/intellij-community/pull/658/commits/4dad2e0bb535cdd8d53141db3d4303591b6696ac

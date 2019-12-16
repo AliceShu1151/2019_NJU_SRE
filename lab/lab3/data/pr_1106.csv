@@ -1,0 +1,12 @@
+1106,Fix bug in BuildOutputInstantReaderImpl
+2019-03-29T03:44:38Z,discuss,"The bug is that the buffer size stops at 50 though myCurrentIndex keeps
+going up. So after finishing reading 50 lines, myCurrentIndex would
+always go over the buffer size, in which case getCurrentLine() would
+always return null."
+2019-03-29T03:44:38Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-209816
+2019-04-13T04:43:13Z,discuss,"Thanks for the contribution, I've added some tests for the reader and it finds additional issues with or w/o the change. You can find the following commits fixing found issues:
+e8c6f16
+fbef901"
+2019-04-13T04:43:13Z,discuss,"Please, verify if it fixes issue with your BuildOutputParser-s and let me know if it doesn't."
+2019-03-29T03:43:56Z,commit,Fix bug in BuildOutputInstantReaderImpl,github.com/JetBrains/intellij-community/pull/1106/commits/cd771648a3ecdd2a825054258c87eb02c22d6a72
+2019-03-29T16:43:46Z,commit,Update BuildOutputInstantReaderImpl.java,github.com/JetBrains/intellij-community/pull/1106/commits/a7f51ebad4aa314dd808db975d71e4e978df0dbd

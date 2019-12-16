@@ -1,0 +1,4 @@
+494,"i18n: TogglePresentationModeAction, ToggleDistractionFreeModeAction, TabsPlacementAction"
+2016-12-14T18:07:02Z,discuss,"There're several Actions that are not prepared for localization and/or have their messages hard-coded at declaration.
+I've tried to follow how similar classes are implemented to fix some of these cases.
+If this pull request is accepted, I'll try to continue to check other cases like these ones."

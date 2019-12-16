@@ -1,0 +1,39 @@
+109,IDEA-114955 Add support for filtering by regular expressions in Subversion repository view
+2013-10-15T21:42:48Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-114955
+2013-10-15T21:42:48Z,discuss,Regex filtering is enabled only when the checkbox is selected.
+2013-10-15T21:42:48Z,discuss,
+2013-10-16T07:38:55Z,discuss,"Peter, have you submitted a contributor agreement? If not, could you please download the CLA from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and send to contribute@jetbrains.com? Thanks!"
+2013-10-16T08:05:06Z,discuss,"This doesn't look perfect solution. I think, it would be better to show nothing & somehow indicate the error."
+2013-10-16T23:02:27Z,discuss,"I changed this in 22268d7 to hide all commits if regex is invalid. Instead, a message explaining the error is displayed in the center of the panel."
+2013-10-16T23:02:27Z,discuss,"Also, b4d9541 changes the background color of the search box to red if regex is invalid or if the search doesn't match any commits. This makes the search box behavior consistent with ""Ctrl-F"" search in the main source code editor."
+2013-10-16T17:43:12Z,discuss,"[cosmetics] Please add braces inside if-else block, even if there is only one statement."
+2013-10-16T22:54:20Z,discuss,Fixed in f2800a9.
+2013-10-16T17:43:52Z,discuss,[cosmetics] my-prefix is preferable even in inner classes.
+2013-10-16T22:53:49Z,discuss,Fixed in f2800a9.
+2013-10-16T18:01:02Z,discuss,"Btw, is ""filter on the fly"" active in this view? Maybe the delay should be made longer or filter-on-the-fly should be turned off if ""Regexp"" is selected. Otherwise user may be confused, because usually it takes longer to form a regexp. Could you please check this?"
+2013-10-16T23:40:00Z,discuss,"Yes, the delay is currently the same for regex and no-regex searches. I looked at how is this handled elsewhere in IDEA and the same situation occurs in Ctrl-F search in the main editor. In that case user gets immediate feedback for both regex and no-regex search. I actually find it pretty useful to see the results as I type the regex - it means many mistakes are caught immediately.
+Let me know if this should still be changed or not."
+2013-10-20T16:17:20Z,discuss,With the proper message displayed as the empty text it looks nice.
+2013-10-17T11:51:38Z,discuss,Contributor agreement is submitted now.
+2013-10-20T16:18:45Z,discuss,"Hm. For me the filter is never empty. And it shouldn't be, because it is just the text inside the filter text field, isn't it?
+I guess some other condition should be used here to indicate the erroneous regexp."
+2013-10-21T20:59:42Z,discuss,"Not sure I understand. For me getFilter() returns an empty String initially, before I type anything into the filter text field, or if I type something and then delete it."
+2013-10-21T20:59:42Z,discuss,"Currently the red background appears when either regex has an error, or when the filter is valid but it doesn't match any commits. I did it this way intentionally - to match the behavior of Ctrl-F search box in the main editor."
+2013-10-21T20:59:42Z,discuss,"The second part of the condition (!myFilterComponent.getFilter().isEmpty()) is to handle the case when the list of changes has not been initialized yet - in that case result.size() is always zero, so the background of the search box would be permanently red."
+2013-10-23T10:53:21Z,discuss,"Somehow I'm not able to get the red background for invalid regexp. Do I miss something?
+"
+2013-10-23T20:28:06Z,discuss,"Interesting. Which theme are you using? For me the red background works fine with ""Alloy. Bedouin Theme"" (see screenshot below), but with ""GTK+"" I'm just getting white background all time time. This seems to be a bug unrelated to this pull request, because the same problem affects the Ctrl-F search box in the main editor (it never changes to red with GKT+ theme)."
+2013-10-23T20:28:06Z,discuss,"Could you try if the red background works for you with ""Alloy. Bedouin Theme"" and if the red background in Ctrl-F search box works with your current theme?"
+2013-10-23T20:28:06Z,discuss,
+2013-10-24T09:48:53Z,discuss,"Nice catch. I'm on Mac, using the Default theme. In Darcula the highlighting works indeed.
+I've fired a bug for this problem: http://youtrack.jetbrains.com/issue/IDEA-115340"
+2013-10-20T16:20:22Z,discuss,I wouldn't save it in a field. I think it is better just to call UiUtil.getTextFieldBackground() here to get the default background color.
+2013-10-21T20:23:39Z,discuss,Fixed in a41e00a.
+2013-10-21T20:23:39Z,discuss,"By the way, the same technique is also used in com.intellij.find.EditorSearchComponent, so that class can probably also be changed to use UIUtil.getTextFieldBackground()."
+2013-10-24T09:56:39Z,discuss,"Everything looks nice now.
+I've merged the pull request. Thanks a lot for your contribution!"
+2013-10-15T21:09:34Z,commit,IDEA-114955 Add support for filtering by regular expressions in Subve¡­,github.com/JetBrains/intellij-community/pull/109/commits/d580831f20bb620fcdcb083e452153ec75ec3025
+2013-10-16T20:34:57Z,commit,IDEA-114955 Cosmetic code style changes,github.com/JetBrains/intellij-community/pull/109/commits/f2800a977420b80287c2e611baaebe779ede78ca
+2013-10-16T22:29:56Z,commit,IDEA-114955 Display an error message when invalid regex is entered,github.com/JetBrains/intellij-community/pull/109/commits/22268d7fc823c83eeb04a9e1ae2bf759197094e3
+2013-10-16T22:39:19Z,commit,IDEA-114955 Show red background in the search box if it doesn't match¡­,github.com/JetBrains/intellij-community/pull/109/commits/b4d954149aa93a9c61f2e2c88aeda7fe80dd7037
+2013-10-21T20:07:04Z,commit,IDEA-114955 Use existing helper method to get the default background ¡­,github.com/JetBrains/intellij-community/pull/109/commits/a41e00a8042a45918e99450fc626d953b76269b8

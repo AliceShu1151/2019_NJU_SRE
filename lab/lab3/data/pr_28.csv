@@ -1,0 +1,3 @@
+28,IDEA-94184 hardcoded value ChooseByNameBase#REBUILD_DELAY moved to registry.properties
+2012-12-07T12:39:15Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-94184
+2012-12-07T12:35:46Z,commit,IDEA-94184 hardcoded value ChooseByNameBase#REBUILD_DELAY moved to re¡­,github.com/JetBrains/intellij-community/pull/28/commits/98ebdab195f6eb3ccf29375bc0e5422bfc2dc5a1

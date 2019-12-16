@@ -1,0 +1,4 @@
+1020,IDEA-202032 replace '/' with '.' when typing class name in the Create New Class dialog
+2018-12-22T06:05:14Z,discuss,Link to the ticket: https://youtrack.jetbrains.com/issue/IDEA-202032
+2019-01-17T16:12:37Z,discuss,"Thank you for the pull request! Sorry, but I can't accept it. First, the issue in question isn't going to be fixed until we see more convincing use cases. Second, even if it is, this change introduces too ad hoc API to already overdesigned code, and this way of solving the problem doesn't look right to me."
+2018-12-22T06:03:10Z,commit,IDEA-202032 replace '/' with '.' when typing class name in the Create¡­,github.com/JetBrains/intellij-community/pull/1020/commits/c750199fdeab989fe5725d4b104699cadac675a2

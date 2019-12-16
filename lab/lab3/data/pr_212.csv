@@ -1,0 +1,12 @@
+212,"IDEA-130394 TestNG, diff link is not displayed when hamcrest is used"
+2014-09-25T20:24:41Z,discuss,"
+No description provided.
+"
+2014-09-26T08:39:41Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-09-26T09:05:01Z,discuss,@klikh Done
+2014-09-26T09:14:46Z,discuss,"Received, thanks"
+2014-09-22T12:43:36Z,commit,Display diff link in TestNG test when hamcrest test fails.,github.com/JetBrains/intellij-community/pull/212/commits/7485127d227c7a811a5da7d288930c8b9cf20392
+2014-09-22T13:57:06Z,commit,Display diff link in TestNG test when hamcrest test fails. Support ma¡­,github.com/JetBrains/intellij-community/pull/212/commits/e39143a361076de4f56ecf3ceea8b884e43bc81e
+2014-09-22T14:09:34Z,commit,Display diff link in TestNG test when hamcrest test fails. Fixed a ca¡­,github.com/JetBrains/intellij-community/pull/212/commits/13af7ff10728ce335c0b1fb633cf8d51b0c3d2eb
+2014-09-25T08:48:01Z,commit,Display diff link in TestNG test when hamcrest test fails. Added supp¡­,github.com/JetBrains/intellij-community/pull/212/commits/64c5c46c07ca0d2be9218bad6318e921ca804a25
+2014-09-29T09:16:12Z,commit,Display diff link in TestNG test when hamcrest test fails. Regexp mad¡­,github.com/JetBrains/intellij-community/pull/212/commits/2a5692b75a14a1820b51c3e58f104dccc2c7d415

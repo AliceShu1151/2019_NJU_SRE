@@ -1,0 +1,5 @@
+1237,Allow TypeMigrationProcessor to stop on first failed conversion
+2019-11-07T14:04:33Z,discuss,"For performance reason, this PR allows to let the TypeMigrationProcessor stop on the first failed conversion."
+2019-11-18T19:20:30Z,discuss,Tests added
+2019-12-10T16:50:08Z,discuss,Hello?
+2019-11-07T14:03:05Z,commit,Allow TypeMigrationProcessor to stop on first failed conversion,github.com/JetBrains/intellij-community/pull/1237/commits/a374b1704706a5e689248ff54b40a066711c03b2

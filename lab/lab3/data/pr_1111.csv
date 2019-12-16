@@ -1,0 +1,8 @@
+1111,IDEA-210360 Make arrows in the navigation bar scale aware
+2019-04-03T17:37:44Z,discuss,"This ensures that the navigation bar arrows are not blurry on Windows
+with HiDPI screens."
+2019-10-31T14:59:58Z,discuss,"Thank you, I've slightly modified your fix to use ScaleContext.Cache and pushed it."
+2019-10-31T14:59:58Z,discuss,"I had to make two commits, because in the first I forgot to mention you as the author (sorry).
+fb739440f79d79ba82ed606f05befc064f77fd2d
+9302d44332d1205f8f377de2caac8bb52d08f09f - this is authored by you with the link to pull-request"
+2019-04-03T17:32:29Z,commit,IDEA-210360 Make arrows in the navigation bar scale aware,github.com/JetBrains/intellij-community/pull/1111/commits/db12df7b308bc3f33f37021740d051823a98cc1a

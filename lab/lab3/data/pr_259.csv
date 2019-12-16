@@ -1,0 +1,5 @@
+259,IDEA-119938 copy reference of a field opened a new window
+2015-04-13T21:34:45Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-119938
+2018-07-21T14:52:30Z,discuss,"@krasa, please rebase the PR, cc @bulenkov."
+2018-07-22T14:42:49Z,discuss,Thanks. It's already been fixed
+2015-04-13T21:30:20Z,commit,IDEA-119938 copy reference of a field opened a new window when the mo¡­,github.com/JetBrains/intellij-community/pull/259/commits/98cfd04c6122864f15203fc865e57e205b1a53b9

@@ -1,0 +1,15 @@
+425,Fix PY-1177 Control flow analysis doesn't detect while/break
+2016-07-10T05:45:38Z,discuss,"
+No description provided.
+"
+2016-07-11T14:46:30Z,discuss,Thanks for your PR! I'll review it later.
+2016-07-11T14:46:30Z,discuss,"We would like to unify our static evaluation code (PyConstantExpressionEvaluator, PyEvaluator, and others) and make it explicit what get evaluated and how much it affects performance."
+2016-07-11T15:33:11Z,discuss,Does it mean I need to change something or is it just a general comment?
+2016-07-11T15:33:11Z,discuss,"On Monday, July 11, 2016, Andrey Vlasovskikh notifications@github.com
+wrote:"
+2016-07-11T15:52:26Z,discuss,"@fitermay No, your code looks OK at first glance."
+2016-09-30T12:51:57Z,discuss,ping?
+2016-10-03T12:22:10Z,discuss,Thank you! Merged
+2016-07-10T05:21:34Z,commit,Handle control flow for statically true condition in while statement,github.com/JetBrains/intellij-community/pull/425/commits/d097b2243fb98984b9ec842a28e095d54a23006f
+2016-07-10T05:26:13Z,commit,"remove yellow code (unecessary checks, lambidy, ...)",github.com/JetBrains/intellij-community/pull/425/commits/384a4170642df8d44e59e79b33a1697bef768c9f
+2016-07-10T05:43:40Z,commit,Extends PyConstantExpressionEvaluator.evaluateBoolean to work for int¡­,github.com/JetBrains/intellij-community/pull/425/commits/2e34a11c39e21af72fec803b9173e7720dc4cf9a

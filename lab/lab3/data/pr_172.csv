@@ -1,0 +1,7 @@
+172,Don't repeat exception message twice
+2014-04-14T13:46:28Z,discuss,Don't repeat message in exception if it's already present in IdeaLogginEvent.getMessage().
+2014-04-14T13:46:28Z,discuss,
+2014-04-14T13:54:35Z,discuss,I'd rather fix the code which stacks exceptions instead of rethrowing an original one.
+2014-04-14T14:53:27Z,discuss,"I'm not sure I understood your proposal well as there's no rethrowing in the fix. It looks like LogMessage is created badly from accurately initialized  IdeaLoggingEvent, that's why fix is local. If you think that some structure changes of the logging system should be done, I think you can simply close PR :)"
+2014-04-14T15:26:10Z,discuss,"Sorry, misread the patch. Makes sense."
+2014-04-14T11:56:51Z,commit,Don't repeat exception message twice,github.com/JetBrains/intellij-community/pull/172/commits/336e79912a48da655e61f8b007d856ba98b6947e

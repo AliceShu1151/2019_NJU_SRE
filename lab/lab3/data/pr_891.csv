@@ -1,0 +1,7 @@
+891,GuiDesigner update
+2018-10-17T10:14:54Z,discuss,"This is a GuiDesigner update. Now it's possible to select a Look and Feel from a list in
+Form properties and see how it changes the design of the desired form.
+Some component properties are initialized based on selected look and feel.
+I have also started to implement a way to load custom look and feel, but I can't make it works...
+So I hope someone can do it in next updates."
+2018-10-17T10:13:01Z,commit,GuiDesigner update,github.com/JetBrains/intellij-community/pull/891/commits/4381105ab77263736ad7362008532b6129c0a90e

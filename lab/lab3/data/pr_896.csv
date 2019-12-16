@@ -1,0 +1,7 @@
+896,[gradle] allow to customize resolving modules per source set
+2018-10-24T19:26:10Z,discuss,It will be nice to specify the default for this setting. On a big projects it does make sense to not have 2 modules per project. 
+2018-10-25T07:38:30Z,discuss,"Hi, the gradle test source set and other custom source set might have dependencies which can not be correctly expressed using the single IDEA module. And the only option for such projects is to use separate module per sources set. However indeed, for gradle projects that have more simple configuration the single IDE module can be more convenient."
+2018-10-25T07:38:30Z,discuss,Anyway now you can choose which mode you'd want to use on the initial import and also you can change the option further in the Gradle IDEA settings.
+2018-10-25T07:38:30Z,discuss,"Also we have the gradle plugin which is intended to bring the IDE specific configuration from the build, so it will be shared with other project's users."
+2018-10-25T07:38:30Z,discuss,You can vote for the related issue at JetBrains/gradle-idea-ext-plugin#22
+2018-10-24T19:17:50Z,commit,[gradle] allow to customize resolving modules per source set,github.com/JetBrains/intellij-community/pull/896/commits/db59315dce7d3df14f33d8d88c516b6166346712

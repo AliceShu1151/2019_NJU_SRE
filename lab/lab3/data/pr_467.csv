@@ -1,0 +1,3 @@
+467,Add ability to provide name on MockModule for testing
+2016-11-09T00:18:04Z,discuss,Used by Android Plugin tests (as of Android Studio 2.3)
+2016-11-09T00:11:42Z,commit,Add ability to provide name on MockModule for testing,github.com/JetBrains/intellij-community/pull/467/commits/41c815b1e2b203029f8cc2cdf902ed6eea05a0db

@@ -1,0 +1,10 @@
+338,Make compilable both with latest Kotlin and beta4
+2015-12-30T16:09:08Z,discuss,"Fix type projection usages, deprecated symbols cleanup"
+2015-12-30T16:45:46Z,discuss,I've used kotlin 1.0.0-beta-5233 and 1.0.0-beta-4584-IJ143-12 to compile
+2015-12-31T13:04:58Z,discuss,LGTM.
+2015-12-29T20:31:25Z,commit,Add use site variance (co- and contra-) to methods of Promise<T> to eбн,github.com/JetBrains/intellij-community/pull/338/commits/802555a278afb2f19507c6c8aeec06935bb0f97f
+2015-12-30T14:26:37Z,commit,"Accept SuspendContext<*> in SuspendContextManager.isContextObsolete, бн",github.com/JetBrains/intellij-community/pull/338/commits/b9c08a91fe180a910451626ad09fdb6599fcabce
+2015-12-30T14:29:07Z,commit,Precisely specify type of breakpointTypeClass to be compatible with tбн,github.com/JetBrains/intellij-community/pull/338/commits/48479b6b3820b9f8173c8e8d87e14e6587732802
+2015-12-29T20:31:25Z,commit,Cleanup deprecated Kotlin symbol usages.,github.com/JetBrains/intellij-community/pull/338/commits/08d8cb572a3d3e7b237970cc3f4cb2124d5af9bc
+2015-12-30T16:05:14Z,commit,Make property constant to access it as static field from java.,github.com/JetBrains/intellij-community/pull/338/commits/3ae58e5a44b4e9811746dbf9e8fc4c6518c91952
+2015-12-30T15:41:23Z,commit,"Temporary fixes to compile with Kotlin beta4, revert after migrating бн",github.com/JetBrains/intellij-community/pull/338/commits/29b49373f4aa639384befe9eff10c710f3c73279

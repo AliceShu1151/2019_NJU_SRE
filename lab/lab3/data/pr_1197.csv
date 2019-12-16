@@ -1,0 +1,14 @@
+1197,[Sh] Change visibility of properties of ShRunConfiguration
+2019-09-14T17:37:15Z,discuss,"This pull request makes the properties of ShRunConfiguration public to allow 3rd-party plugins to use the run configuration.
+This would allow 3rd-party plugins to add debug support, for example. Properties of ShRunConfiguration should be accessible to allow reuse."
+2019-09-14T17:37:15Z,discuss,"It's not strictly needed to have public setter-methods. But public getter-methods and package-level setter-methods seems a bit awkward. I'm happy to change this if you want me to, though."
+2019-10-05T09:18:29Z,discuss,Is it the only way how you may add debug support? I'll be happy to review the way how you're planning to use information from these fields.
+2019-10-10T14:26:49Z,discuss,"@ignatov Thank you for you reply.
+The higher level reason is that to launch a Bash debugger (i.e. bashdb) it's required to execute bash --debugger <script.sh> [args configured by user, etc.].
+This may also need an updated environment, etc. There are several ways to launch a bashdb debugger, bash --debugger is just one possibility."
+2019-10-10T14:26:49Z,discuss,"To implement this, access to the properties of ShRunConfiguration is needed because a new process needs to be setup and launched.
+If you know of any other way, I'd be happy to hear about it.
+(read-access to properties will also allow and simplify other 3rd-party plugins using Sh)"
+2019-10-10T14:26:49Z,discuss,Here's a Kotlin example:
+2019-10-10T14:26:49Z,discuss,This is registered as a <programRunner/> in plugin.xml:
+2019-09-14T17:20:17Z,commit,Make properties of ShRunConfiguration public to allow 3rd-party plugi¡­,github.com/JetBrains/intellij-community/pull/1197/commits/0dc0f7a4c7dd8a47a421c0620b97158e7bf76f58

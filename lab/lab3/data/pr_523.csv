@@ -1,0 +1,5 @@
+523,Remove  the  `usleep` in fsNotifier main loop
+2017-03-02T16:12:02Z,discuss,The loop is already throttled by select. It seems that usleep was added to facilitate batch processing of inotify events here.
+2017-03-02T16:12:02Z,discuss,"The usleep can have a real performance hit. For example, if one has to re-register watchable roots up to hundreds of times in relatively short timeframe."
+2017-03-02T16:12:02Z,discuss,If removal of the usleep is not feasible then either reducing the value passed to usleep or moving the usleep directly before processing inotify events would also help with the use case described.
+2017-03-02T15:33:29Z,commit,Remove the unnecessary usleep,github.com/JetBrains/intellij-community/pull/523/commits/29edc5354d7b60aa68765ef62cbbf1ee143fcdb4

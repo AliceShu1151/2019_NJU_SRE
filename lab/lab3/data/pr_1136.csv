@@ -1,0 +1,8 @@
+1136,IDEA-212508: Reduce memory footprint of MultipleBuildsView.myBuildsMap
+2019-05-13T00:40:43Z,discuss,The change is based on the observation that build events with java.lang.Object IDs never have child events.
+2019-06-06T10:22:09Z,discuss,"Thanks for the contribution, Sergey!"
+2019-06-06T10:22:09Z,discuss,"The change fixes some issue with the memory footprint of MultipleBuildsView.myBuildsMap, however it looks more like a workaround for the bad events routing implemented for parallel builds.
+I'd not add a new method to BuildEvent interface as a workaround.
+Please, find the following change at 3a8e9d0
+It should do the same as your change but w/o changing of the BuildEvent interface."
+2019-05-13T00:24:08Z,commit,IDEA-212508: Reduce memory footprint of MultipleBuildsView.myBuildsMap,github.com/JetBrains/intellij-community/pull/1136/commits/5f3fa353f84b94fc4adc23c37820624a6173d33e

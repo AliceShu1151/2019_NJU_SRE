@@ -1,0 +1,21 @@
+74,"Update tip of the day, fix invalid menu items, shortcuts, typos"
+2013-04-21T17:33:39Z,discuss,"Hi IntelliJ team,"
+2013-04-21T17:33:39Z,discuss,"I went through all tip of the day of IntelliJ Ultimate 12.1.1 and corrected a few mistakes.
+Unfortunately a lot of images in the tips aren't displayed if I build IntelliJ Community Edition by myself
+Environment: Windows 7 32 Bit, Java 6/7, latest source version from github
+Failed: images/ctrl_shift_i_lookup.gif
+Success: images/properties_completion.gif"
+2013-04-21T17:33:39Z,discuss,The images are shown correctly if I use the packaged version from Jetbrains. Is this normal?
+2013-04-21T17:33:39Z,discuss,It would be nice if you would include this patch in one of the following releases.
+2013-04-21T17:33:39Z,discuss,Best regards
+2013-04-21T17:33:39Z,discuss,Josef
+2013-11-19T12:57:27Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2013-11-19T14:52:51Z,discuss,"Yes, I have already submitted a contributor license agreement."
+2013-11-19T14:52:51Z,discuss,"My pull request is probably outdated, I will go through the tips of the day again and send you a new pull request soon."
+2013-11-22T06:53:52Z,discuss,"Yep, it can't be merged without conflicts.
+Sorry for the delay with this pull request. Hope to hear from you."
+2013-11-24T14:56:07Z,discuss,"I'm sorry, I got ill, it will take one or two weeks until you get the updated patch."
+2013-11-30T15:01:21Z,discuss,"I finished my pull request, please use #132 instead of this one."
+2013-11-30T15:01:21Z,discuss,Best regards
+2013-11-30T15:01:21Z,discuss,Josef
+2013-04-21T11:42:57Z,commit,"Update tip of the day, fix invalid menu items, shortcuts, typos",github.com/JetBrains/intellij-community/pull/74/commits/83dc947a2446785e2510d2e7b672963df9645cdd

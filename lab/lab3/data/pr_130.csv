@@ -1,0 +1,32 @@
+130,PY-11317 Incorrect type detection for formatter string with java String ...
+2013-11-22T10:36:13Z,discuss,"Improve skeleton generator to using predefined return type in the doc generator
+via user  PREDEFINED_MOD_CLASS_SIGS map."
+2013-11-22T10:36:13Z,discuss,"The main issue which is exists here related to that the str or unicode
+in mod method don't have any return type in the doc string."
+2013-11-22T10:36:13Z,discuss,We have such things:
+2013-11-22T10:36:13Z,discuss,"After applying 1 option I think that everything should work. But not =(
+It seems that doc string have more priority then returned type (?) =("
+2013-11-22T10:36:13Z,discuss,"Thus I also perform operation of adding additional description to the doc
+which describe return type in format which idea is parsing.
+Please note that such behavior performs only for
+PREDEFINED_MOD_CLASS_SIGS map"
+2013-11-22T10:36:13Z,discuss,After regenerating the skeleton we have such picture:
+2013-11-22T10:36:13Z,discuss,And Idea detects correct type for formating string behavior.
+2013-11-26T14:52:41Z,discuss,A better place for this fix is python-skeletons.
+2013-12-02T14:36:15Z,discuss,"Do you mean python/skeletons folder? To fix this you proposed update
+such skeletons:"
+2013-12-02T14:36:15Z,discuss,"If not, could you please describe a little bit more where the better
+place to fix this?"
+2013-12-02T14:44:54Z,discuss,No. Please take a look at JetBrains/python-skeletons repo. The idea behind Python skeletons + how to use/modify them is described in README.md.
+2013-12-02T14:58:43Z,discuss,"Ahhh... Thanks a lot... So this possible fix is not convenient for plugin/pycharm?
+Should I close it?"
+2013-12-02T15:13:36Z,discuss,"Created pull request:
+JetBrains/python-skeletons#1"
+2013-12-02T15:53:49Z,discuss,"Issue after using python-skeletons is reproduce... Reopen
+It seems stubs which is generated have more priority then
+python-skeletons...."
+2013-12-02T15:53:49Z,discuss,Any suggestions how to fix this?
+2013-12-02T22:07:44Z,discuss,Resolve issue with python-skeletons after perform such steps:
+2013-12-02T22:07:44Z,discuss,Close again... Sorry for this monologue =)
+2013-11-22T09:58:34Z,commit,PY-11317 Incorrect type detection for formatter string with java Stri¡­,github.com/JetBrains/intellij-community/pull/130/commits/bbb60905b2387be3c0218a4984ac78fa40b6df6e
+2013-11-22T10:53:54Z,commit,Update version of generator.,github.com/JetBrains/intellij-community/pull/130/commits/90cf158d59a0239a44bbaa0893c56c85f7181c6f

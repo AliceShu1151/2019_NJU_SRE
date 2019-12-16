@@ -1,0 +1,5 @@
+549,Patch command line in PyPackageManager
+2017-04-13T14:38:37Z,discuss,Added patching command line in PyPackageManager
+2017-06-27T22:27:21Z,discuss,@vlasovskikh please take a look at this
+2017-06-30T01:43:07Z,discuss,@da1z Rebased your commit and pushed it to master. Sorry for the delay. I will review the rest of your commits soon.
+2017-04-13T14:32:56Z,commit,Patch command line in PyPackageManager,github.com/JetBrains/intellij-community/pull/549/commits/8a05cd48ba8ade9dd3f0b2b9c79a0f0275178d6b

@@ -1,0 +1,3 @@
+754,PY-28911: Prevent pydevd_tracing.SetTrace from being reentered
+2018-03-10T21:41:26Z,discuss,As it causes a deadlock on a non-recursive lock
+2018-03-10T21:38:34Z,commit,PY-28911: Prevent pydevd_tracing.SetTrace from being reentered,github.com/JetBrains/intellij-community/pull/754/commits/d683cd14928f7c50cbb00473dd2248f2fe951677

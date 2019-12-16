@@ -1,0 +1,7 @@
+1022,IDEA-204927 Add divider resize listener to Splitter.
+2019-01-03T00:10:24Z,discuss,"Add a listener for user generated resize events of the first and
+end components in a ThreeComponentsSplitter.
+Hookup these resize events onto mouse release events for the
+dividers."
+2019-10-21T20:58:40Z,discuss,This was fixed. Thank you.
+2019-01-02T23:17:41Z,commit,IDEA-204927 Add divider resize listener to Splitter.,github.com/JetBrains/intellij-community/pull/1022/commits/505dee89ab5b1619e74c52fec4c14e3be51eb35e

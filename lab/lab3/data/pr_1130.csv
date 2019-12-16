@@ -1,0 +1,5 @@
+1130,Use DarculaTableSelectedCellHighlightBorder
+2019-05-03T19:51:59Z,discuss,"For Table.focusCellHighlightBorder. Otherwise text shifts when you deselect
+a cell."
+2019-05-30T22:32:14Z,discuss,This is a friendly reminder to take a look at this when you have the chance. Thanks!
+2019-06-06T20:38:54Z,commit,Use DarculaTableSelectedCellHighlightBorder,github.com/JetBrains/intellij-community/pull/1130/commits/34548502ef2f4fb1e347b8202e3109c5717f29c9

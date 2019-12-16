@@ -1,0 +1,5 @@
+232,Support several result requests in createPrepareRequests method
+2014-12-18T14:09:00Z,discuss,Fix for first part of https://youtrack.jetbrains.com/issue/IDEA-134483
+2014-12-18T14:09:41Z,discuss,Pls merge it to 14.0.3
+2014-12-23T10:15:39Z,discuss,fix is integrated into master
+2014-12-18T13:12:51Z,commit,Support several result requests in createPrepareRequests method,github.com/JetBrains/intellij-community/pull/232/commits/3c2e002c8d8d19ff3210dea53d49b5f10b46a945

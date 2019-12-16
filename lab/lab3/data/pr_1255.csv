@@ -1,0 +1,8 @@
+1255,Add the extension point for extending Annotate view.
+2019-11-19T16:17:22Z,discuss,"Add the extension point for extending Annotate view.
+More info is in the thread."
+2019-11-19T16:17:22Z,discuss,https://intellij-support.jetbrains.com/hc/en-us/community/posts/360006634979-I-want-to-extend-the-Annotate-view-of-Git-VCS-But-?page=1#community_comment_360000966480
+2019-11-20T17:03:26Z,discuss,Force push a commit using the suggested approach to achieve it.
+2019-11-20T17:58:07Z,discuss,"I can fix mentioned minor issues while merging the patch, if you want."
+2019-11-21T03:47:42Z,discuss,"Please. Thank you. Could you please expose the getStyle getColor getBgColor to LineAnnotationAspect as well? If they're return null, just use the super from AnnotationFieldGutter in AspectAnnotationFieldGutter."
+2019-11-20T17:01:46Z,commit,Add the extension point for extending Annotate view.,github.com/JetBrains/intellij-community/pull/1255/commits/3edae74ffa878653b33a61a946f41a2e82f68911

@@ -1,0 +1,7 @@
+857,Add a programmatic way to switch between views in the Build toolwindow.
+2018-09-13T01:10:19Z,discuss,Extract functionality from SwitchViewAction and provide a public method (toggleView) to expose this.
+2018-09-13T01:10:19Z,discuss,"This will be used by Android Studio in order to provide a actionable link to increase awareness of the full text output view. It will also guide people to problems when the graphical tree view only surfaces Gradle error messages such as ""Compilation failed; see the compiler error output for details.""."
+2018-09-13T01:10:19Z,discuss,"Also I can't seem to find any tests that cover this area, any pointers to how to test this would be appreciated. Or if there is a better way to achieve the above effect with the current setup."
+2018-09-13T01:10:19Z,discuss,Thanks
+2018-09-12T21:26:40Z,commit,Add a programmatic way to switch between views in the Build toolwindow.,github.com/JetBrains/intellij-community/pull/857/commits/3b98d1dc1ab04b5288e6978b4a522c5332d4e2b8
+2018-12-18T12:20:42Z,commit,Stop JetGradlePlugin from ignoring errors from composite builds.,github.com/JetBrains/intellij-community/pull/857/commits/8bccad5e2b62d618e1247e4768b88c37c1ea4e11

@@ -1,0 +1,10 @@
+796,Add @Nullable annotation to DomElement.getXmlTag()
+2018-06-01T18:08:58Z,discuss,"This was misleading consumer of xmlTag causing NPE in Android Studio.
+Also changed some koltin code that was expecting a non-nullable type."
+2018-06-14T16:25:45Z,discuss,"@donnerpeter
+There are 300+ usages of this method in IntelliJ IDEA Ultimate sources, and in many places the result is checked for null. It's probably make sense to merge this change and add checks for null where it's missing. What do you think?"
+2018-06-16T14:26:19Z,discuss,"@chashnikov @vcaen Not totally sure about that. In many cases, the return value is not-null on a specific type, it's actually more of an exception when getXmlTag returns null. Just like with PsiElement#getParent which intentionally isn't marked as nullable."
+2018-06-22T20:03:13Z,discuss,"If we mark this method as nullable, implementation class can still mark it as not-null I believe.
+I really think it would help to have the annotation, whether it is then handled with an exception or a null check. At least there wouldn't be any bad surprise."
+2018-07-04T08:02:53Z,discuss,"Reasonable. Thanks for the suggestion, I performed the change myself in master."
+2018-06-01T18:04:37Z,commit,Add,github.com/JetBrains/intellij-community/pull/796/commits/a4ec3ac6f4c2f97d5a18646e9051d7685abca68e

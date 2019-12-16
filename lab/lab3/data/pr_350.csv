@@ -1,0 +1,7 @@
+350,Ignore Screens with a width or height of 0
+2016-01-30T23:44:36Z,discuss,Fixes IDEA-151060.
+2016-01-30T23:45:07Z,discuss,About to sign CLA.
+2016-01-31T00:06:00Z,discuss,Emailed CLA to contribute@jetbrains.com.
+2016-02-02T14:50:39Z,discuss,We've received the CLA. Thanks.
+2016-02-24T13:44:27Z,discuss,Merged
+2016-02-03T19:37:44Z,commit,Ignore Screens with a width or height of 0,github.com/JetBrains/intellij-community/pull/350/commits/df76ac356b2c8696130843b9aebd24fcc3cfba7c

@@ -1,0 +1,19 @@
+34,CoreJavaFileManager.findClass: properly resolve $ in inner class names
+2013-02-06T13:44:43Z,discuss,"
+No description provided.
+"
+2013-02-06T13:53:25Z,discuss,Would be really great to have a test or at least a link to an issue showing how the current logic resolves it improperly.
+2013-02-06T14:00:43Z,discuss,"For Nested.Inner$ CoreJavaFileManager.findClassInClasspathRoot returns null:
+public class Nested {
+public class Inner$ {}"
+2013-02-06T14:00:43Z,discuss,}
+2013-02-06T14:00:43Z,discuss,http://youtrack.jetbrains.com/issue/KT-3324
+2013-02-06T14:18:10Z,discuss,"I would really appreciate a test. The logic looks correct to me, but it's rather convoluted, and it would be much easier to verify with a test."
+2013-02-06T15:19:27Z,discuss,What is the best way to provide test: by comment or add it to pull request?
+2013-02-06T15:22:32Z,discuss,Of course it's better to add it to the pull request.
+2013-02-07T19:34:03Z,discuss,Merged manually. In the future:
+2013-02-06T13:09:25Z,commit,CoreJavaFileManager.findClass: properly resolve $ in inner class names,github.com/JetBrains/intellij-community/pull/34/commits/c78c66d5afd961dbd8cea95db9ceb07771e717f9
+2013-02-06T13:39:35Z,commit,CoreJavaFileManager.findClass: properly resolve $ in inner class names,github.com/JetBrains/intellij-community/pull/34/commits/13d9eb8b3580d0e03f0900cb64be183c85e9dabb
+2013-02-06T15:27:22Z,commit,"Test for pull request ""CoreJavaFileManager.findClass: properly resolv¡­",github.com/JetBrains/intellij-community/pull/34/commits/5bf812a43db6afad3eed2590d5d2da0c74a595ff
+2013-02-06T15:48:22Z,commit,"Test for pull request ""CoreJavaFileManager.findClass: properly resolv¡­",github.com/JetBrains/intellij-community/pull/34/commits/3e24970835f735c42c0bc2f72399c4a748e868be
+2013-02-07T06:58:52Z,commit,Small refactoring,github.com/JetBrains/intellij-community/pull/34/commits/50fbff7668df8c454d6a1dd1439b3d576f416e8a

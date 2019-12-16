@@ -1,0 +1,11 @@
+422,emit first key event when second keystroke timeout
+2016-06-30T10:34:42Z,discuss,"hi there,
+I use ¡°semicolon¡± as my shortcut first keystroke, but I can not input ¡°semicolon¡± any more.
+should we emit first keystroke when second keystroke timeout or there is a wrong second keystroke?"
+2016-06-30T14:38:43Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-07-01T10:53:15Z,discuss,"hello klikh
+I have sent the agreement a few hours ago, please check."
+2016-07-02T14:30:13Z,discuss,"Received, thanks."
+2017-01-04T18:50:33Z,discuss,+1 to merge onto upstream. Awesome feature!
+2016-06-30T05:57:52Z,commit,emit first key event when second keystroke timeout,github.com/JetBrains/intellij-community/pull/422/commits/2c133a6b9727832d7e2314f1c0b199e191d6d740
+2016-06-30T05:58:53Z,commit,Merge remote-tracking branch 'upstream/master',github.com/JetBrains/intellij-community/pull/422/commits/796fb89160bb700d682f0a34fc32f60dea3f795c

@@ -1,0 +1,9 @@
+727,Make data-sharing consent company-specific
+2018-02-07T22:09:05Z,discuss,"Android Studio needs separate data-sharing consent described by
+different language referring to Google and its privacy policy."
+2018-02-07T22:09:05Z,discuss,(cherry picked from commit d601c06)
+2018-02-28T06:11:29Z,discuss,@eugenezh?
+2018-02-28T13:12:47Z,discuss,"Merged manually to master. The data on disk and bundled resource name is now vendor-specific, though I retained previous paths and names for JetBrains products for compatibility with already released versions."
+2018-02-28T13:12:47Z,discuss,Do you need these changes in 2017.x versions?
+2018-02-28T15:14:37Z,discuss,"Not necessarily. I believe the new consents system is in IDEA 2017.3.4 only; that release was merged into Android Studio 3.2 before Canary 3, which also included commit d601c06 on our side."
+2018-02-07T18:57:32Z,commit,Make data-sharing consent company-specific,github.com/JetBrains/intellij-community/pull/727/commits/dfb15be4e027737645596c3284c77bd95679cc64

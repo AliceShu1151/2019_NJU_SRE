@@ -1,0 +1,14 @@
+577,Added support for anchors and aliases (YAML)
+2017-05-26T11:33:54Z,discuss,This commit adds navigation support for YAML anchors and aliases.
+2017-05-26T11:33:54Z,discuss,"For example, a user is able to navigate from ""*example"" to ""&example""
+in the following YAML by placing cursor at ""*example"":"
+2017-05-26T11:33:54Z,discuss,More about YAML anchors at http://www.yaml.org/spec/1.2/spec.html
+2017-05-26T11:33:54Z,discuss,I discovered the need for this feature from https://github.com/zalando/intellij-swagger. Navigating YAML anchors help users to write Swagger specs which tend to be big.
+2017-05-26T14:58:03Z,discuss,"Thanks! I'll review the PR soon, just leaving a an issue on YT here: https://youtrack.jetbrains.com/issue/RUBY-12492"
+2017-06-07T12:16:59Z,discuss,I updated the PR files. I modified the lexer to detect anchor tokens. Following anchors are supported:
+2017-06-07T12:16:59Z,discuss,
+2017-06-07T12:16:59Z,discuss,I introduced a new interface which YAML elements can implement if they support anchors. YAMLKeyValue and YAMLSequenceItem extend this interface.
+2017-06-07T12:16:59Z,discuss,Feedback is appreciated!
+2018-12-19T12:15:31Z,discuss,"@semonte Sorry, it looks I completely lost this PR :(( Anyway, one of my coworkers has been introducing massive improvements to YAML subsystem lately, and the anchors/aliases are supported thoroughly, including refactorings on them.
+I'll close this PR now."
+2017-06-07T11:46:40Z,commit,Added support for YAML anchors,github.com/JetBrains/intellij-community/pull/577/commits/c3bb67f1336b4889546041d410fb21c9e36c9ca8

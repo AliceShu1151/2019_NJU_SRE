@@ -1,0 +1,7 @@
+272,Fixed decompilation of annotation values nested in arrays
+2015-06-05T12:19:52Z,discuss,see https://youtrack.jetbrains.com/issue/IDEA-141133
+2015-06-07T09:21:59Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-06-08T06:55:47Z,discuss,I signed the CLA.
+2015-06-08T13:42:28Z,discuss,"The CA was received, thanks."
+2015-06-08T14:24:54Z,discuss,Pushed upstream. Thanks!
+2015-06-05T12:15:10Z,commit,Fixed decompilation of annotation values nested in arrays,github.com/JetBrains/intellij-community/pull/272/commits/598e2947ad92f8c17588e282b0e89a6d3cc5792d

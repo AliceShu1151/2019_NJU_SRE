@@ -1,0 +1,11 @@
+1122,FunctionalExpressionsIdentity inspection (IDEA-154488)
+2019-04-15T10:30:38Z,discuss,"Reports objects which are a subtype of java.util.Set or java.util.Map that may contain keys of functional interface type.
+In such situations non-captured lambdas/method references could be stored
+in sets which could lead to unexpected results because lambdas can be reused."
+2019-05-24T19:49:28Z,discuss,"Please rebase on master as we have monorepo now, sorry for that!"
+2019-04-15T10:04:28Z,commit,"FunctionalExpressionsIdentity inspection added, CollectionContainsUrl¡­",github.com/JetBrains/intellij-community/pull/1122/commits/53c4322ec15fd72dc8b2972aca9aad6f67722cf6
+2019-04-15T10:10:05Z,commit,"FunctionalExpressionsIdentity, CollectionContainsUrl inspections test¡­",github.com/JetBrains/intellij-community/pull/1122/commits/25e417c005a78ec9ffff7723df3e87bd92552f87
+2019-06-25T22:50:27Z,commit,FunctionalExpressionsIdentityInspection method checks added,github.com/JetBrains/intellij-community/pull/1122/commits/b46e01264f74fef774b04f505ecee81f0f2d31fe
+2019-06-27T00:04:27Z,commit,FunctionalExpressionsIdentityInspection tests added,github.com/JetBrains/intellij-community/pull/1122/commits/d3bbc9841762e60eaaebbc4f2a0320de289780ab
+2019-06-29T22:54:31Z,commit,FunctionalExpressionsIdentity inspection tests added,github.com/JetBrains/intellij-community/pull/1122/commits/4844f1a9bbfe3106cd0a064ea863fc3318eb4a0e
+2019-06-30T20:34:59Z,commit,FunctionalExpressionsIdentity inspection cleanup,github.com/JetBrains/intellij-community/pull/1122/commits/3ed335b1eab88c5a7dbdb480aadda71b79aba1fa

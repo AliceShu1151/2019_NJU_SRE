@@ -1,0 +1,11 @@
+313,Disabled `PointlessArithmetic` inspection when the expression is non-resolvable
+2015-10-25T21:15:28Z,discuss,"Spock's Mock interactions shouldn't be flagged as PointlessArithmeticExpression, e.g.
+0 * mockAmazonCloudWatchClient.putMetricAlarm(_)"
+2016-03-22T15:21:17Z,discuss,"@dovchinnikov, @maxmedvedev, @ignatov ?"
+2017-04-11T21:19:15Z,discuss,... too bad
+2017-11-13T20:36:59Z,discuss,@dovchinnikov any reason this was not merged? This is a really annoying false positive.
+2017-11-14T09:27:14Z,discuss,"@leonard84 most probably it got lost in notifications, sorry."
+2017-11-14T09:27:14Z,discuss,"I've checked the request, while it's okay as disabling inspection for non-resolvable, I think the problem is that such expression are unresolvable in the first place, and to make them resolvable we need bigger changes in the API. I was working on such API recently, but it got delayed due to other unfinished tasks."
+2017-11-15T15:14:19Z,discuss,"@dovchinnikov, personally I think a temporary working solution that partially fixes things is better than none.
+I've committed a few more similar PRs, please check them too"
+2015-10-25T19:20:01Z,commit,Disabled `PointlessArithmeticExpression` inspection when the expressi¡­,github.com/JetBrains/intellij-community/pull/313/commits/e27385543cc6adce531030a56a3d1c2c9e7f3c53

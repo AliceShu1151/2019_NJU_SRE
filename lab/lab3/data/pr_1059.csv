@@ -1,0 +1,3 @@
+1059,"IDEA-206970 When copying task into LocalTaskImpl, grab original icon"
+2019-02-08T18:14:08Z,discuss,Implements https://youtrack.jetbrains.net/issue/IDEA-206970
+2019-02-08T18:11:01Z,commit,"IDEA-206970 When copying task into LocalTaskImpl, grab original icon",github.com/JetBrains/intellij-community/pull/1059/commits/28ace4bc681867ceac8c976ea1ba0f643a755eae

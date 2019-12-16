@@ -1,0 +1,9 @@
+439,"Implement parameter info in Console (PY-9939, PY-18586)"
+2016-08-29T01:03:53Z,discuss,"
+No description provided.
+"
+2016-08-30T18:50:13Z,discuss,I've merged that in.
+2016-08-29T00:55:10Z,commit,add support for parameter info in console,github.com/JetBrains/intellij-community/pull/439/commits/4484907fe92f3372a6c9bfa28307a9b50c8e021f
+2016-08-29T00:55:47Z,commit,consider language level in console parser to currectly provide parame¡­,github.com/JetBrains/intellij-community/pull/439/commits/1207ea5d1bd6f07f121a15b1721b3de90ce972ab
+2016-08-23T23:39:55Z,commit,bug fix: PyDevDocumentation provider should use best available parent¡­,github.com/JetBrains/intellij-community/pull/439/commits/e1aa4eac1fa3d36c796567e0f4e40c4e42c66171
+2016-08-25T01:45:52Z,commit,--handle getDescription in debugger,github.com/JetBrains/intellij-community/pull/439/commits/70db0e9bbff7bc6c1837626151f148c509e21c4a

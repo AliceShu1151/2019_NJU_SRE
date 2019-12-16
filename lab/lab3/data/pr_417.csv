@@ -1,0 +1,5 @@
+417,Implemented charAt(int) method
+2016-06-21T09:59:40Z,discuss,Implemented charAt(int) method to improve readability of source code.
+2018-07-21T13:07:58Z,discuss,"@collinsmith, please rebase the PR, cc @trespasserw."
+2018-07-21T19:29:31Z,discuss,@collinsmith it turned out I already made exactly the same change some time ago. Sorry!
+2016-06-21T09:58:45Z,commit,Implemented charAt(int) method,github.com/JetBrains/intellij-community/pull/417/commits/38d87b444155765a4602dc1e0f3158fac71322de

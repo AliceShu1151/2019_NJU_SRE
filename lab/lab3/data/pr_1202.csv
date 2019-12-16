@@ -1,0 +1,8 @@
+1202,PY-25689 image Sphinx directive doesn't work in docstring documentation
+2019-09-22T02:02:06Z,discuss,"Fix the problem: the prefix ""file: //"" was not added to local image references."
+2019-09-22T02:02:06Z,discuss,
+2019-09-22T02:02:06Z,discuss,ref: https://youtrack.jetbrains.com/issue/PY-25689
+2019-09-22T02:02:06Z,discuss,contributor license agreement -> ready
+2019-10-05T14:35:18Z,discuss,hi @ignatov Is there any way to move this forward?
+2019-10-06T11:25:18Z,discuss,"@denofevil and @JB-Dmitry, please look on this."
+2019-09-22T01:44:06Z,commit,PY-25689 image Sphinx directive doesn't work in docstring documentation,github.com/JetBrains/intellij-community/pull/1202/commits/609fc199faa53b7c6148503a0bad4460d5983bbc

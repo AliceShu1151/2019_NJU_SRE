@@ -1,0 +1,5 @@
+1013,Display multiline replacements in the preview (IDEA-204269)
+2018-12-15T18:51:38Z,discuss,"Fixes IDEA-108476.
+Fixes IDEA-108477."
+2018-12-27T21:04:38Z,discuss,"@rillig your patch was adapted and pushed in master (4f9c877), thank you!"
+2018-12-15T18:45:19Z,commit,Display multiline replacements in the preview (IDEA-204269),github.com/JetBrains/intellij-community/pull/1013/commits/12e3e227b115c8493018a2a1c98bbb6209a38ea7

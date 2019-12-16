@@ -1,0 +1,6 @@
+31,"IDEA-97356 Link ""Specify Master Password"" dialog to the Help topic"
+2012-12-19T23:35:55Z,discuss,Fix for http://youtrack.jetbrains.com/issue/IDEA-97356. added help links to both ChangeMasterKeyDialog and ResetPasswordDialog. both are directly accessible via Passwords settings or as described in the original issue
+2012-12-24T14:34:51Z,discuss,Accepted. Thanks!
+2012-12-24T14:42:35Z,discuss,"Note that your commit does not cause the Help button to appear in the ""Change master key"" dialog, as it overrides the createActions() method. I'll fix this properly.
+Also note that we normally don't use the /** @inheritdoc */ javadoc comments."
+2012-12-19T22:37:20Z,commit,IDEA-97356 add help links to ChangeMasterKeyDialog and ResetPasswordD¡­,github.com/JetBrains/intellij-community/pull/31/commits/930a9c18e872ddd0a80834239448c3827af2d936

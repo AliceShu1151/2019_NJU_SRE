@@ -1,0 +1,17 @@
+125,Guard against awt.HeadlessException during builds
+2013-11-13T00:52:10Z,discuss,This is the exact exception this commit addresses:
+2013-11-19T12:49:15Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2013-11-19T16:42:45Z,discuss,"@klikh yes, I mailed it in via post back in 2009, as confirmed by Dmitry Jemerov."
+2013-11-22T00:02:10Z,discuss,@klikh Were you able to locate my contributor agreement? I am still experiencing this exception while building master.
+2013-11-22T00:02:10Z,discuss,"Or perhaps another question: is PyCharm community built continuously, like I would imagine IJ is? I ask because pull #126 was marked closed but my master (as of d58146c) still dies with a missing help directory."
+2013-11-22T06:51:18Z,discuss,"@mdaniel Yes, I've checked: the agreement was received."
+2013-11-22T06:51:18Z,discuss,"This Github repository is updated each hour from our main repository at JetBrains, so all fixes pushed by our team arrive here in one hour. Maybe the fix was not complete or something else happened. The team will answer you on the pull request page."
+2014-01-18T19:30:50Z,discuss,"Just to be clear, I have opened PY-11860 because the log file asked me to:"
+2014-01-18T19:30:50Z,discuss,and also because I secretly hope that it appearing in the formal bug tracker will yield better results than I've had with a pull request.
+2019-06-22T23:58:05Z,discuss,@mdaniel is it still reproducible? there are chances it was indirectly fixed somewhere between 2014 and 2019...
+2019-06-22T23:58:05Z,discuss,"@bulenkov @klikh
+You promised that the team will answer Matthew on the pull request page. But you perhaps have been very busy for the past 5 years... Just a kind reminder: @mdaniel is still waiting for his contribution to be reviewed and merged."
+2019-06-23T12:56:12Z,discuss,Hi. The problem was fixed a long time ago. Now the method isRetina() starts with
+2019-06-23T12:56:12Z,discuss,and
+2019-06-23T12:56:12Z,discuss,is already inside a try/catch block.
+2013-11-13T00:40:40Z,commit,Guard against awt.HeadlessException during builds,github.com/JetBrains/intellij-community/pull/125/commits/e9194f50eee5ace9c98b4235c032d7b60213aa80

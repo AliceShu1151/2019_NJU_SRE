@@ -1,0 +1,14 @@
+428,Apply hard-coded contracts to assume methods
+2016-07-19T02:20:48Z,discuss,бн just like existing contracts for assert methods.
+2016-07-19T02:20:48Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-158732
+2016-07-19T13:22:07Z,discuss,"Have you submitted a contributor license agreement? If not, please check your inbox: I've just send there the CLA to sign. Thanks."
+2016-07-19T16:59:39Z,discuss,This contribution is work for hire at Google; the company has a contributor license agreement with JetBrains. I can provide contacts for verification if you like.
+2016-07-19T16:59:39Z,discuss,You can also see the account I'm using belongs to the Google organization on GitHub (github.com/google).
+2016-07-21T08:31:42Z,discuss,"We're not aware of such agreement between Google and JetBrains. There were some plans about the CLA, but AFAIK it was not signed yet. So please provide contacts to verify this."
+2016-07-21T18:47:43Z,discuss,Carol Lin carollin@google.com can verify Google's CLA with JetBrains.
+2016-07-21T18:56:20Z,discuss,"Hi @klikh, we've signed a corporate CLA in December of 2009. Please check with your OS contribution office or email me for the actual agreement."
+2016-08-03T07:19:53Z,discuss,Everything is handled with the CLA now. Thanks. We'll review the patch soon.
+2016-08-03T12:21:00Z,discuss,"Pushed to master, thanks for the contribution!"
+2016-06-22T18:26:37Z,commit,Apply hard-coded contract to TestVerb.that,github.com/JetBrains/intellij-community/pull/428/commits/9ab16ef8544729cba8f26b05c0748e2206504919
+2016-06-22T22:56:36Z,commit,Apply hard-coded contract to Assume.assumeThat,github.com/JetBrains/intellij-community/pull/428/commits/f258f4ae016609623f7da87ce9f9eefb865c5a3e
+2016-06-22T22:57:46Z,commit,Apply hard-coded contract to Assume methods,github.com/JetBrains/intellij-community/pull/428/commits/77476742420c02fe890ea691402bb09db96693a7

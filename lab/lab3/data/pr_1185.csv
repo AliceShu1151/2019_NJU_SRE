@@ -1,0 +1,8 @@
+1185,IDEA-220057: NPE in findWindowForBalloon()
+2019-08-06T17:59:14Z,discuss,"
+No description provided.
+"
+2019-08-06T18:00:14Z,discuss,I'm not 100% certain what to do in the case that wrapper == null. For now I just break out of the loop and return frame.
+2019-10-21T20:44:18Z,discuss,It looks like this was fixed in fff0a77
+2019-10-21T20:44:18Z,discuss,This PR can probably be closed.
+2019-08-06T17:51:21Z,commit,IDEA-220057: NPE in findWindowForBalloon(),github.com/JetBrains/intellij-community/pull/1185/commits/ea113b5c75966b1b932f5e5f138e912c6b655a62

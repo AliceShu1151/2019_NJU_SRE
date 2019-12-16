@@ -1,0 +1,6 @@
+1169,Improve support for gmavenplus-plugin
+2019-07-11T07:45:13Z,discuss,"This pull requests improves existing GMavenPlus support by injecting Groovy language for parameter scripts > script of GMavenPlus plugin.
+(documentation says this parameter can contain inline Groovy scripts)"
+2019-07-11T07:45:13Z,discuss,"GMavenPlus is a rewrite of GMaven, a Maven plugin that allows to integrate Groovy into Maven projects. GMavenPlus has features that GMaven does not have (e.g. it supports latest Groovy versions) and is actively maintained.
+So it makes sense to provide same quality IDE support for GMavenPlus as is provided for GMaven."
+2019-07-11T07:21:11Z,commit,Improve support for gmavenplus-plugin. Inject Groovy language to 'scr¡­,github.com/JetBrains/intellij-community/pull/1169/commits/b5f5b5f38904b32c459203633e4ea17dc2736827

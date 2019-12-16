@@ -1,0 +1,4 @@
+1104,Use StringJoiner instead of hand-written joining pattern
+2019-03-28T08:07:39Z,discuss,§ã§Ñ§Ò§Ø
+2019-04-03T02:35:36Z,discuss,I think using Stream API for these cases would produce more readable code. Will convert to streams instead.
+2019-03-27T10:36:42Z,commit,Use StringJoiner instead of hand-written joining pattern,github.com/JetBrains/intellij-community/pull/1104/commits/97fbdb1425788c266d21406382521e8bfb55dcb0

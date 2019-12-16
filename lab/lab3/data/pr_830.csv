@@ -1,0 +1,9 @@
+830,YouTrack connector updates for task management plugin
+2018-07-16T12:37:36Z,discuss,Contribution agreement has been signed already: #222
+2018-07-21T09:56:20Z,discuss,"@dmitry-avdeev, please take a look."
+2018-08-24T11:21:53Z,discuss,@dmitry-avdeev any updates?
+2018-08-26T17:35:26Z,discuss,"@chashnikov could you help please, @jk1 is from the YouTrack team, it's a pity that we couldn't process the PR from our colleagues in a month and a half."
+2018-08-27T10:23:51Z,discuss,"Integrated into master and 182, thanks!"
+2018-08-27T10:33:06Z,discuss,"@ignatov @dmitry-avdeev thanks a lot, I appreciate that."
+2018-07-16T12:21:47Z,commit,Updated YouTrack icons for task plugin to match contemporary YouTrack¡­,github.com/JetBrains/intellij-community/pull/830/commits/016afcd85b030bd50059ac30ef8f84f5bfcb8f64
+2018-07-16T12:23:47Z,commit,Don't suggest YouTrack search language for scratch files,github.com/JetBrains/intellij-community/pull/830/commits/fca081d21dcb659c5ecc31db2d7a038966070d4c

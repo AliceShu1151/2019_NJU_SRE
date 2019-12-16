@@ -1,0 +1,5 @@
+72,IDEABKL-6771 Add optional parameter 'exceptionMessage' to @NotNull annotation
+2013-04-17T11:40:34Z,discuss,"
+No description provided.
+"
+2013-04-17T11:11:10Z,commit,IDEABKL-6771 Add optional parameter 'exceptionMessage' to,github.com/JetBrains/intellij-community/pull/72/commits/6eef63fadcc897d3dde03c5cbbfdb148e0556e4d

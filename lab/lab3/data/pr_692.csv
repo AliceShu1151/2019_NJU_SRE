@@ -1,0 +1,3 @@
+692,Introduce ScratchFileLanguageProvider
+2017-12-21T06:42:17Z,discuss,It is needed for kotlin plugin to create scratch files with .kts extension instead of .kt.
+2017-12-20T14:07:26Z,commit,Introduce ScratchFileLanguageProvider,github.com/JetBrains/intellij-community/pull/692/commits/384512b131af0d13873174636421a1aafe901132

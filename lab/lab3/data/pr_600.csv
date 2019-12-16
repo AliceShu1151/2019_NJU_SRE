@@ -1,0 +1,8 @@
+600,IDEA-175089 Move updateHistoryEntry call
+2017-07-07T18:36:15Z,discuss,¡­ from TextEditorComponent.dispose to EditorWindow.clear.
+2017-07-07T18:36:15Z,discuss,"Calling this method updates the last used editor to the current editor.
+In TextEditorComponent.dispose, the editor may already be removed from
+an EditorWithProviderComposite, causing updateHistoryEntry to record the
+wrong editor as most recent for the file."
+2017-11-15T23:44:39Z,discuss,resolved by commits 99b53ca and 050ffff
+2017-06-28T17:00:33Z,commit,IDEA-175089 Move updateHistoryEntry call from TextEditorComponent.dis¡­,github.com/JetBrains/intellij-community/pull/600/commits/291ad7f106b40ea14f6f318521d8b1552e134128

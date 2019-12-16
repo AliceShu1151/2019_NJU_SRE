@@ -1,0 +1,4 @@
+200,IDEA-106381 GUI Designer: JComboBoxes list does not populated under JDK7...
+2014-07-17T10:11:40Z,discuss,IDEA-106381 GUI Designer: JComboBoxes list does not populated under JDK7 and works fine under JDK6. Removed generics specifications from interface signatures added in JDK1.7 and above.
+2018-07-21T15:11:17Z,discuss,"Already fixed, @pdradx, thanks for PR."
+2014-07-17T10:10:54Z,commit,IDEA-106381 GUI Designer: JComboBoxes list does not populated under J¡­,github.com/JetBrains/intellij-community/pull/200/commits/e85ac6e29900fe4d130f7b3ca7ded7d130e58878

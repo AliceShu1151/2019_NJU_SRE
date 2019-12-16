@@ -1,0 +1,9 @@
+848,Add support for multiple type parameters
+2018-08-15T11:35:20Z,discuss,"Until now, multiple type parameters (e.g T, U) were parsed as  without commas. We added commas and test to check integrity."
+2018-08-15T18:07:50Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-08-19T10:58:39Z,discuss,"I signed the document and it was accepted by jetbrains.
+@klikh"
+2018-08-19T15:08:35Z,discuss,"We've received the CLA, thanks."
+2018-08-19T15:08:35Z,discuss,@akozlova Could you please have a look?
+2018-08-20T10:05:29Z,discuss,Merged manually with small modifications. Thanks!
+2018-08-15T11:32:26Z,commit,Add support for multiple type parameters,github.com/JetBrains/intellij-community/pull/848/commits/5b467c1893ca27719979092694c40ee6cd51bff2

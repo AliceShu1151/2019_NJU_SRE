@@ -1,0 +1,3 @@
+548,PyConsoleUtil HELP_PROMPT field to public
+2017-04-12T21:18:10Z,discuss,Made HELP_PROMPT public
+2017-04-12T21:16:08Z,commit,HELP_PROMPT to public field,github.com/JetBrains/intellij-community/pull/548/commits/04cc285c0aafedfb2b0c05b3ae0b367ab51170ca

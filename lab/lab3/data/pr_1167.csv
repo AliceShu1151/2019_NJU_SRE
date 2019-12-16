@@ -1,0 +1,12 @@
+1167,Expose TextEditorWithPreview actions to subclasses
+2019-07-09T11:00:30Z,discuss,"Subclasses of TextEditorWithPreview might want to customize the
+presentation of ToggleActions used to change the editor mode. That can
+be achieved by exposing the actions creation to subclasses through
+protected methods. Subclasses, in turn, can create their own actions,
+using TextEditorWithPreview's as delegates."
+2019-07-09T11:00:30Z,discuss,"An advantage of this approach is also providing subclasses the ability
+to create listeners for actions selection, selecting an action
+programatically, etc."
+2019-07-13T13:58:14Z,discuss,Thanks. Pushed to master with some customizations. Will be automatically synced with GitHub later.
+2019-07-16T19:00:32Z,discuss,I gather that's commit ec7128a. Can this be included in IDEA 2019.2?
+2019-07-09T10:52:57Z,commit,Expose TextEditorWithPreview actions to subclasses,github.com/JetBrains/intellij-community/pull/1167/commits/754522bf67e19383b6c171a4081c4a5ac98feb0e

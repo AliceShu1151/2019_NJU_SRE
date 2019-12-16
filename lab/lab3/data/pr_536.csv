@@ -1,0 +1,6 @@
+536,Allow jrt file system to be created in CoreApplicationEnvironment
+2017-03-29T09:04:38Z,discuss,"This is needed to allow the Kotlin compiler to read the Java 9 runtime
+image via a custom VirtualFileSystem implementation similar to
+JrtFileSystem/JrtFileSystemImpl"
+2017-03-29T10:13:33Z,discuss,Merged manually.
+2017-03-29T08:48:29Z,commit,Allow jrt file system to be created in CoreApplicationEnvironment,github.com/JetBrains/intellij-community/pull/536/commits/9133c927e01206456ff60810201e8ce8769a0d0e

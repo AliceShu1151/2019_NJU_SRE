@@ -1,0 +1,6 @@
+836,[vcs-log] fix typo in helper method
+2018-07-24T08:20:37Z,discuss,This typo produces NPE
+2018-07-24T20:55:42Z,discuss,"Nice catch, thanks. However, it appears that this method is unused, at least in our sources and the sources of known plugins. Do you need this method?"
+2018-07-24T20:57:46Z,discuss,"Yes, I really need!"
+2018-07-26T10:59:08Z,discuss,"Thanks, pushed."
+2018-07-24T08:14:03Z,commit,[vcs-log] fix typo in helper method,github.com/JetBrains/intellij-community/pull/836/commits/5273aba8ff048ea76459b211ac3f81a05e7e8ab1

@@ -1,0 +1,11 @@
+837,Uniformize all color scheme hexadecimal colors
+2018-07-25T00:50:43Z,discuss,"With the colorSchemes folder left untouched for the past 6 months and my obsession with consistency, I could no longer deal with the mix of uppercase and lowercase hexadecimal color values."
+2018-07-25T00:50:43Z,discuss,"Thus, I've replaced all lowercase hexadecimal colors to uppercase."
+2018-07-25T00:50:43Z,discuss,"Since the color schemes are very unlikely to be modified anyways, I figured it might as well be properly formatted."
+2018-07-25T12:16:04Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-07-25T12:16:14Z,discuss,@dyadix I'd suppose that we need to update https://github.com/JetBrains/colorSchemeTool/blob/master/colorSchemeTool.py#L42 accordingly
+2018-07-25T13:58:12Z,discuss,"@denofevil I already signed the contributor agreement, and good point. I'll do that when I get home."
+2018-07-28T17:09:33Z,discuss,"@denofevil I agree, we should update the conversion tool instead and load the updated schemes."
+2018-07-28T17:55:54Z,discuss,"@dyadix See JetBrains/colorSchemeTool#22, it does just that."
+2018-07-30T11:08:15Z,discuss,"Merged as 8c12470, thank you!"
+2018-07-25T00:40:32Z,commit,Uniformized all color scheme hexadecimal value attribute,github.com/JetBrains/intellij-community/pull/837/commits/9a28fbf60ea44ecfb37019cfd4860bebe5cc0ec5

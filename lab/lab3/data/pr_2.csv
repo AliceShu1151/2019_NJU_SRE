@@ -1,0 +1,7 @@
+2,"git4idea: no ""interactive"" option on rebase by default"
+2011-10-07T20:56:53Z,discuss,"The rebase command is commonly not used with option
+""interactive"". So make this CheckBox non-checked
+by default."
+2011-10-07T20:56:53Z,discuss,Signed-off-by: Ralf Thielow ralf.thielow@googlemail.com
+2011-10-07T21:19:58Z,discuss,There's a movement of the checkbox in this commit.
+2011-10-07T20:38:33Z,commit,"git4idea: no ""interactive"" option on rebase by default",github.com/JetBrains/intellij-community/pull/2/commits/821d516725131285247212f1f76e485989de95fb

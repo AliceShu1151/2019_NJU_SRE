@@ -1,0 +1,11 @@
+787,Fix ThreeComponentsSplitter focus cycle
+2018-05-07T21:47:52Z,discuss,"Allow tab to navigate focus between the 3 panels of
+ThreeComponentsSplitter by changing the traversal policy and removing
+ThreeComponentsSplitter as the focus cycle root. This allows for users
+of the component the control of the focus cycle instead."
+2018-05-07T21:47:52Z,discuss,Also allows for StripeButton to be focused.
+2018-05-07T21:47:52Z,discuss,@denis-fokin will use this PR to follow up on your comment: #760 (comment)
+2018-05-07T21:49:52Z,discuss,So you're ok with this change if I surround the new code with  if (ScreenReader.isActive()) { ?
+2018-05-07T21:49:52Z,discuss,?
+2018-07-21T11:00:08Z,discuss,cc @denis-fokin
+2018-03-14T18:58:58Z,commit,Fix ThreeComponentsSplitter focus cycle,github.com/JetBrains/intellij-community/pull/787/commits/68967c38d5e4a0652cf2f5db6b125eddac785d2d

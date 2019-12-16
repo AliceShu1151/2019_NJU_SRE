@@ -1,0 +1,13 @@
+140,SSH agent support for git and svn integrations
+2013-12-26T19:27:51Z,discuss,"This version allows SSH agent-based authentication to be used for authenticating to SVN or git, as discussed in the ticket http://youtrack.jetbrains.com/issue/IDEA-52034"
+2013-12-26T20:40:17Z,discuss,"@klikh, by the way, a word as to timeline -- it's possible I may only be available to support this patch for another month or two; mid-April on the outside. It'd probably be good to have it merged well within that period."
+2013-12-29T12:59:47Z,discuss,"@charles-dyfis-net
+We'll try to review, test & merge is ASAP after new year holidays."
+2014-01-23T13:46:58Z,discuss,"@charles-dyfis-net
+The issue with conflicting trilead libraries from different plugins is currently kind of known limitation when running IDEA from IDEA - in such configuration, dependencies are not ""scoped"" by plugin and so there could be conflicts. Such issues do not occur in ""public"" builds."
+2014-01-23T13:46:58Z,discuss,So not to fix this issue locally only for trilead library (using packages rename) we propose the following:
+2014-01-23T13:46:58Z,discuss,
+2014-01-23T13:46:58Z,discuss,Thanks a lot! Feel free to ask in case of any questions.
+2017-06-19T16:01:31Z,discuss,Feature added in 8d82a44.
+2013-12-26T18:06:00Z,commit,Upgrade to SVNKit 1.7.11 (release),github.com/JetBrains/intellij-community/pull/140/commits/4f48203927e0251db35a96e94171e4e4f9dbfe06
+2013-12-26T16:01:48Z,commit,SSH agent support for git and svn integrations; separate out old tril¡­,github.com/JetBrains/intellij-community/pull/140/commits/4f05af274e5666b7a455cb043fb3812ae0d7e1a4

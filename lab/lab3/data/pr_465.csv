@@ -1,0 +1,22 @@
+465,Expose finding class files for alternative bytecode viewers
+2016-11-05T18:23:38Z,discuss,The logic of finding the class file that is associated with a PsiElement is non-trivial and can be reused by other bytecode viewers with this simple change.
+2016-11-05T18:23:38Z,discuss,Alternative bytecode viewers want to depend on the built-in bytecode viewer anyway because of the classSearcher extension point.
+2016-11-06T12:48:13Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2016-11-06T17:06:39Z,discuss,I just signed the CLA
+2016-11-07T14:49:54Z,discuss,We've received the CLA. Thanks.
+2016-11-08T13:56:23Z,discuss,How the alternative code viewers are integrated? What API they use? Thanks
+2016-11-08T14:01:21Z,discuss,"I'm currently writing a plugin for jclasslib:
+https://github.com/ingokegel/jclasslib"
+2016-11-08T14:01:21Z,discuss,"The action and the display are completely different from your plugin, but I
+still need to search for the class file for the current selection and make
+use of the the classSearcher extension point. Right now, I need to
+duplicate your code for finding the class file."
+2016-11-08T14:01:21Z,discuss,2016-11-08 14:56 GMT+01:00 Anna Kozlova notifications@github.com:
+2016-11-08T14:56:06Z,discuss,"So you would have strong dependency on a plugin where the only implementation of mentioned extension point is groovy scripts. I'd rather suggest to move the code outside the plugin, based on containing class. You'll be able still to provide optional dependency on plugin for extensions but even without the bytecode viewer your plugin would work for most of cases. Agree?"
+2016-11-08T15:14:46Z,discuss,"Yes, that makes perfect sense and would be much better."
+2016-11-08T15:14:46Z,discuss,2016-11-08 15:56 GMT+01:00 Anna Kozlova notifications@github.com:
+2016-11-08T18:30:58Z,discuss,"I'll close the pull request. Please check my commit 92ad8f3, it should be available on public github later today. Thanks"
+2016-11-09T13:42:01Z,discuss,"Thank you very much, this looks good, I'll use it after 2016.3 is released."
+2016-11-09T14:43:33Z,discuss,"That's in master now, 171.+. The change looks simple but still can't be put to the release branch as we are too close to the release date. Sorry"
+2016-11-09T17:34:12Z,discuss,"OK, got it, no problem."
+2016-11-05T18:21:44Z,commit,Make it possible for alternative bytecode viewers to reuse the logic бн,github.com/JetBrains/intellij-community/pull/465/commits/c23fbb169a74f8cf6e1cc4cfa1e4c7ec79fb4f72

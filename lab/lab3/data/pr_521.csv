@@ -1,0 +1,14 @@
+521,Python: support multiple import source directories with the same qualified name
+2017-02-27T21:43:11Z,discuss,This was supported prior to f0d6fdce.
+2017-02-27T21:43:11Z,discuss,"To support the Bazel build system, we rely on being able to provide multiple import source candidates for a given directory."
+2017-02-27T21:43:11Z,discuss,"This is required for from package import symbol statements, where PyResolveImportUtil::resolveQualifiedName is called with only the from package context, and doesn't resolve to a unique candidate directory."
+2017-03-01T16:47:05Z,discuss,"Hi there! I've added some tests to demonstrate these changes, along with a regression test for PyCustomPackageIdentifer."
+2017-03-07T23:56:44Z,discuss,Returning only first results for non-namespace packages was intentional. This was a fix for problems like PY-18626 where at run-time you actually imported only the first module found on sys.path whereas statically PyCharm suggested all the modules.
+2017-03-07T23:56:44Z,discuss,I agree that this change has introduced a regression since at least for foreign imports you could rely on the fact that all the results were returned. Foreign imports represent custom resolve rules so they should allow to override this resolve-to-first policy of the standard Python import mechanism.
+2017-03-07T23:56:44Z,discuss,The fix you're suggesting would break PY-18626 and PY-9011.
+2017-03-07T23:56:44Z,discuss,What do you think of applying the resolve-to-first policy only to native Python import results and skip it for foreign results? Would it work for your case?
+2017-03-07T23:56:44Z,discuss,"If you're OK with this idea, would you mind updating your PR according to it? I'd like to fix this problem in one way or another before releasing PyCharm 2017.1."
+2017-03-08T00:07:44Z,discuss,The YouTrack issue for this PR is PY-22522.
+2017-03-08T00:38:10Z,discuss,"Thanks, that sounds good. I've updated the PR with your proposed change."
+2017-03-08T14:16:52Z,discuss,Thank you for your pull request. I've rebased it on top of the current master. The fix will be available in the Python plugin the next week. Follow PY-22522 for updates.
+2017-02-27T21:22:20Z,commit,Python import resolution: support multiple import source directories бн,github.com/JetBrains/intellij-community/pull/521/commits/ac321facaaf15b3b1b40ae2fe1ebd2fca16fd766

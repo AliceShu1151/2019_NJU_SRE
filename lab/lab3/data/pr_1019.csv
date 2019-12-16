@@ -1,0 +1,9 @@
+1019,1st stage of fixing IDEA-204628
+2018-12-22T01:51:18Z,discuss,"IntelliJ IDEA can be build by other IntelliJ IDEA but not yet by the 'ant' command.
+I can't figure out how to add the lib/tools.jar of JDK into the compile time classpath.
+Ant calls Gradle and in Gradle you can call 'org.gradle.internal.jvm.Jvm.current().toolsJar'
+to get full path into the lib/tools.jar library, but I didn't find the right place to put it in.
+Standard examples of using it, found in Google, don't work here."
+2018-12-22T01:51:18Z,discuss,Hope someone will help me to figure out how to add lib/tools.jar of JDK into the compile time classpath and I will do it in the second commit in this PR.
+2018-12-22T02:06:15Z,discuss,Link to the bug ticket: https://youtrack.jetbrains.com/issue/IDEA-204628
+2018-12-22T01:48:56Z,commit,1st stage of fixing IDEA-204628,github.com/JetBrains/intellij-community/pull/1019/commits/92988e314e73307a5aa3a2ba2a807f74878526a9

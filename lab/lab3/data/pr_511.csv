@@ -1,0 +1,14 @@
+511,"Make MethodData.methodBody() resilient to non¨Cstub-based PsiMethod implementations, as intended"
+2017-02-11T00:18:08Z,discuss,"BEFORE: (method as StubBasedPsiElement<*>?)?.stub != null
+This will throw a cast exception if not stub-based. And if it is stub-based, the ? in StubBasedPsiElement<*>? has the effect of silently needlessly casting the known-to-be-non-null stub-based PSI element into a nullable one."
+2017-02-11T00:18:08Z,discuss,"AFTER: (method as? StubBasedPsiElement<*>)?.stub != null
+As I believe was probably intended, the parenthesized section in this version will not throw, but instead result in null if method is not a stub-based PSI element, allowing the surrounding if-else control flow to fallback to using ASTNode-based PSI (instead of throwing an exception)."
+2017-02-11T10:08:56Z,discuss,"How can this issue be reproduced? From what I see, methodBody is only invoked after getIndexedData call, which checks if it's PsiMethodImpl (extends StubBasedPsiElementBase)."
+2017-02-12T02:30:28Z,discuss,"If so, then at this moment it can not."
+2017-02-12T02:30:28Z,discuss,Sorry if the fix was confused as a report of an exception that has been encountered in the wild. Let me clarify: it has not yet.
+2017-02-12T02:30:28Z,discuss,"I noticed code that wasn't doing what the developer intended, so I made myself useful and fixed it."
+2017-02-12T02:30:28Z,discuss,"Whether it avoids an error today within this code; whether it avoids an error a year from now when the assumptions you and I make today about the various constantly changing details of the context the code will run within are no longer are true; or whether it avoids an error in completely different code because it might have been caused by a language misunderstanding by the developer rather than just a simple typo, and is thus repeated within code that does trigger the error; I think is not something to ponder about too much. An error is best fixed before it causes problems, rather than after :)"
+2017-02-12T02:30:28Z,discuss,"P.S.: Thank you for the addition of the *Gist API, Peter. It should be rather helpful."
+2017-02-13T08:46:07Z,discuss,"I see your point, thanks! However, I believe that such issues are even better prevented by type system. What do you think of passing PsiMethodImpl everywhere around MethodData instead of PsiMethod?"
+2017-02-14T10:43:11Z,discuss,"Done, thanks for inspiration!"
+2017-02-11T00:14:29Z,commit,Make MethodData.methodBody() resilient to non¨Cstub-based PsiMethod im¡­,github.com/JetBrains/intellij-community/pull/511/commits/5e024cb1906e8b9939a9e468a6482635739651c3

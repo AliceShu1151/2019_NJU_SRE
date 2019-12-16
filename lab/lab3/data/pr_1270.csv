@@ -1,0 +1,5 @@
+1270,IDEA-217968: Force DirectoryBasedStorage VirtualFile to be a directory
+2019-12-06T12:14:09Z,discuss,"That will prevent an IOException such as '[...].idea/codeStyles' is not
+a directory in VFS."
+2019-12-06T12:16:00Z,discuss,That fixes the Android Studio issue described in https://youtrack.jetbrains.com/issue/IDEA-217968#focus=streamItem-27-3614125.0-0
+2019-12-06T12:07:58Z,commit,IDEA-217968: Force DirectoryBasedStorage VirtualFile to be a directory,github.com/JetBrains/intellij-community/pull/1270/commits/d7810f5f5f52652265c2d956039a45aeaf86b02e

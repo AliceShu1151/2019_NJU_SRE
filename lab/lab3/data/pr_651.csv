@@ -1,0 +1,6 @@
+651,Take moved lines into account
+2017-10-20T20:29:55Z,discuss,"This option is useful after a global formatting of a project. At least in Java, as imports can be easily moved by a formatter. (Using the spotless plugin + google java format as an example)."
+2017-10-21T15:48:44Z,discuss,"Please take a look at the discussion in https://youtrack.jetbrains.com/issue/IDEA-133270
+In short, the issue can't be fixed just by adding the ""-M"" option to git blame: it has a performance impact, and annotations are missing full commit comments. Performance issue might be worked around if we make the parameter optional, the other issue requires some work to be done (and also affects the performance)."
+2017-10-21T15:48:44Z,discuss,Suggestions how to overcome these issues would be welcome in the issue.
+2017-10-20T20:29:45Z,commit,Take moved lines into account,github.com/JetBrains/intellij-community/pull/651/commits/32be3da79c6812471c92de76c73a7a9fb29f443f

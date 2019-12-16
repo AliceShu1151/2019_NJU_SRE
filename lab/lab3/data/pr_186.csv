@@ -1,0 +1,4 @@
+186,"When importing nested classes, insert regular rather than static imports..."
+2014-05-23T14:46:32Z,discuss,... (IDEA-121467)
+2014-05-26T14:02:44Z,discuss,done
+2014-05-23T14:44:00Z,commit,"When importing nested classes, insert regular rather than static impo¡­",github.com/JetBrains/intellij-community/pull/186/commits/a25917515486da2f0b67757cb414da29a1b998c1

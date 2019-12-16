@@ -1,0 +1,10 @@
+292,Pluggable file watcher
+2015-07-21T11:17:48Z,discuss,"This implements a new extension point that allows plugins to provide
+their own implementation of file watchers, not requiring a different
+fsnotify binary."
+2015-07-24T09:18:57Z,discuss,Friendly ping
+2015-07-24T09:29:33Z,discuss,"Busy, sorry :( Will review it by the end of next week, promise."
+2015-07-28T17:21:05Z,discuss,Just wondering - how are you going to use this?
+2015-07-28T18:01:16Z,discuss,Pushed upstream with some cosmetic changes.
+2015-07-28T19:35:49Z,discuss,This thread has context: https://devnet.jetbrains.com/message/5545819#5545819
+2015-07-21T11:14:15Z,commit,Pluggable file watcher,github.com/JetBrains/intellij-community/pull/292/commits/947f59b1ececdbafe92ed1e2a0fe452b621fe3b2

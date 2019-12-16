@@ -1,0 +1,19 @@
+508,Speedup gradle test output XML processing
+2017-02-02T00:56:57Z,discuss,As discussed in the https://youtrack.jetbrains.com/issue/IDEA-167449 issue I decided to implement faster XML processing for Gradle plugin that would avoid my most pain point for tests with heavy output flow.
+2017-02-02T00:56:57Z,discuss,"Before the fix, IDEA UI was too overloaded. According to Activity Monitor IDEA process was eating even more CPU than tests worker process. You may find snapshot in the issue."
+2017-02-02T00:56:57Z,discuss,After the fix I see It consumes less CPU wither by IDEA UI responsiveness or by fresh CPU profiling.
+2017-02-02T00:56:57Z,discuss,Current implementation I use XStreams (it was included in classpath) Hierarchical parser that uses KXML pull parser implementation. The whole processing is done within one class.
+2017-02-02T00:56:57Z,discuss,"Unfortunately, I was not able to implement integration tests to measure performance boost more technically as well as to make sure performance will not be lost again. Also, it looks like there are NO tests for test runner integration at all. Just let me know if you have some correct snippet to implement more test."
+2017-02-02T07:56:17Z,discuss,"It would be better to introduce a new interface for text event message handler it should be format independent. Do not remove xpath implemetation for futher comparison. Add new implementation based on kxm library.
+This will allow us easier switch the implementation (e.g. using binary format or other)"
+2017-02-02T07:56:17Z,discuss,And also we need a performance test to be sure we are improving things.
+2017-02-02T10:09:47Z,discuss,"I have force updated commits. Issues should be resolved. We no longer need KXml2 parser as XStream XPP works faster on my tests, which I have added"
+2017-02-03T14:35:12Z,discuss,"Merged, thanks for the contribution!"
+2017-02-01T20:14:15Z,commit,Move GradleTestsExecution#onOutput method to a standalone class to si¡­,github.com/JetBrains/intellij-community/pull/508/commits/f0dbd458ed889fc8856ab8d24fb17ea00dd913b0
+2017-02-01T21:18:28Z,commit,"drop unused code, simplify",github.com/JetBrains/intellij-community/pull/508/commits/c91848ece1da0b8c5fc001de7e1604384525c64f
+2017-02-01T22:42:51Z,commit,consolidate all XML processing into XmlXpathHelper,github.com/JetBrains/intellij-community/pull/508/commits/fb894e71a241efb9fcd1a97c2d5127026fc72c1c
+2017-02-01T22:43:59Z,commit,move helper closer to event classes,github.com/JetBrains/intellij-community/pull/508/commits/33caf732fc096cb621d7082152f97bb63c0a826a
+2017-02-02T08:43:47Z,commit,extract view for XML to implement unit-performance test to compare pe¡­,github.com/JetBrains/intellij-community/pull/508/commits/c00a631f4cdadc1c408a1a93ba7094a8a61af7df
+2017-02-02T08:54:02Z,commit,cleanup extracted API,github.com/JetBrains/intellij-community/pull/508/commits/4537c730f8e810c15cdf1ff347d4060c38a24fc2
+2017-02-02T09:01:37Z,commit,add KXML implementation for parsing + tests,github.com/JetBrains/intellij-community/pull/508/commits/d2263bf722408f0fda32634e14296a6bb2934074
+2017-02-02T09:57:43Z,commit,use XPP parser (faster than KXml2 on big messages) for gradle output ¡­,github.com/JetBrains/intellij-community/pull/508/commits/d452937b26aac8a2774c113f523738592d71b55c

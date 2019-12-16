@@ -1,0 +1,5 @@
+706,Make set next statement work properly for frame eval debugger
+2018-01-10T17:30:15Z,discuss,@Elizaveta239 The CPython interpreter invokes the line trace function under two conditions.
+2018-01-10T17:30:15Z,discuss,The secret sauce here is the conditional jump back instruction after calling _pydev_stop_at_break. This allows us to pass control to the line trace function while staying on the same line.
+2018-01-10T17:30:15Z,discuss,You may also consider using this trick to pass control to the line trace function when _pydev_stop_at_break encounters a breakpoint. So instead of calling debugger.do_wait_suspend from _pydev_stop_at_break set _f_trace on the frame and then pass control to the line trace function. This would allow making the frame eval trace and the rest of the debugger completely orthogonal.
+2018-01-10T17:27:14Z,commit,Make set next statement work properly for frame eval debugger,github.com/JetBrains/intellij-community/pull/706/commits/7fa19f38d64601f499edc1412ca9db633f9b0098

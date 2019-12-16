@@ -1,0 +1,23 @@
+528,[pycharm] [py.test] Issue py.test for multiple source roots [build 171.3780.115]
+2017-03-26T12:50:06Z,discuss,That fixes issue for project with multiple source roots
+2017-03-26T12:50:06Z,discuss,example structure
+2017-03-26T12:50:06Z,discuss,"src [source root]
+©À©¤©¤ applications [source root]
+©¦ ©¸©¤©¤ example
+©¦     ©À©¤©¤ init.py
+©¦     ©À©¤©¤ models.py
+©¦     ©À©¤©¤ tests
+©¦     ©¦ ©À©¤©¤ init.py
+©¦     ©¦ ©¸©¤©¤ test_example.py::TestExample::test_generic
+©¦     ©¸©¤©¤ views.py
+©À©¤©¤ manage.py
+©À©¤©¤ pytest.ini
+©¸©¤©¤ settings.py"
+2017-03-26T12:50:06Z,discuss,"When select run test_example.py file - it okay becasuse pass absolute path to pytest
+and when select run class or method test case - py.test not found test, because pass no absolute path to p;
+as example: example/tests/test_example.py::TestExample::test_generic
+should be
+applications/example/tests/test_example.py::TestExample::test_generic or
+/absolute/path/to/file/applications/example/tests/test_example.py::TestExample::test_generic"
+2017-03-26T12:11:58Z,commit,Fix issue py.test for multiple source roots,github.com/JetBrains/intellij-community/pull/528/commits/844eaace735ac45bef46f53ac99cfc8cfdefe186
+2017-03-26T15:54:36Z,commit,fix backports,github.com/JetBrains/intellij-community/pull/528/commits/2e97502e1955c461d926c845f039ae745a34b097

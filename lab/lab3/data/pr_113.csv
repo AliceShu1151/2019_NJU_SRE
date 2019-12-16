@@ -1,0 +1,5 @@
+113,PY-11175 Add speed search support for Python Integrated Tools
+2013-10-21T12:13:16Z,discuss,"PY-11175 Add speed search support for Python Integrated Tools
+Since it related to core functionality it can be done for all module aware configuration."
+2013-10-21T17:50:54Z,discuss,Merged manually. Thanks a lot!
+2013-10-21T12:12:08Z,commit,PY-11175 Add speed search support for Python Integrated Tools,github.com/JetBrains/intellij-community/pull/113/commits/93294e087369e108f60d287a3750ba5af05e5bb9

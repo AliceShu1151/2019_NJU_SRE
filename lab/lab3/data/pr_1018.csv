@@ -1,0 +1,6 @@
+1018,Fix newline escape sequence in SdkSettingsStep.java
+2018-12-20T16:29:55Z,discuss,"
+No description provided.
+"
+2018-12-22T14:28:12Z,discuss,Merged. Thanks!
+2018-12-20T16:29:24Z,commit,Fix newline escape sequence in SdkSettingsStep.java,github.com/JetBrains/intellij-community/pull/1018/commits/0c4b56e23e17a695f8de87da7b4508468aee4a5f

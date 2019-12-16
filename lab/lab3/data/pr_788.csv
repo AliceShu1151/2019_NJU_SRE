@@ -1,0 +1,4 @@
+788,JavaDoc fix at PsiTreeUtil.findChildrenOfAnyType()
+2018-05-08T18:18:54Z,discuss,looks like copy-past typo from findChildOfType() JavaDoc.
+2018-05-11T13:59:29Z,discuss,Thanks! Merged manually.
+2018-05-08T18:16:47Z,commit,JavaDoc fix at findChildrenOfAnyType(),github.com/JetBrains/intellij-community/pull/788/commits/77088f0163b2316b9c340484a8bc6eb4c26fc1e5

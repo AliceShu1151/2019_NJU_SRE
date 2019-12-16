@@ -1,0 +1,8 @@
+1119,Added comparing description in MessageEvent.equals
+2019-04-11T15:58:24Z,discuss,"In Android Studio we have problem where multiple error messages are
+skipped because they have the same message, although they differ in
+their descriptions."
+2019-04-11T15:58:24Z,discuss,"This changes adds comparing the message description to the equals
+function."
+2019-04-15T09:41:20Z,discuss,"Thanks for the contribution, merged using the following commit d005fdf"
+2019-04-11T15:54:54Z,commit,Added comparing description in MessageEvent.equals,github.com/JetBrains/intellij-community/pull/1119/commits/c4dfcd9673d1e29e776fcf8ef834be1467f1baa5

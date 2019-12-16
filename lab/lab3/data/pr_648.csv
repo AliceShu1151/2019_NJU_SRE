@@ -1,0 +1,4 @@
+648,Duplicate entries in RESERVED_WINDOWS_NAMESPACE and absense of `con`
+2017-10-15T15:58:31Z,discuss,RESERVED_WINDOWS_NAMESPACE contains duplicate entries of aux and doesn't contain con which is reserved name too.
+2017-10-17T19:07:27Z,discuss,Thanks!
+2017-10-15T05:16:02Z,commit,RESERVED_WINDOWS_NAMESPACE contains duplicate entries of `aux` and do¡­,github.com/JetBrains/intellij-community/pull/648/commits/5929a8e87bbacb912ba0a08620162ed8c68d5b05

@@ -1,0 +1,8 @@
+438,Close All non-project
+2016-08-22T14:55:11Z,discuss,This PR adds action in RMB menu of tabs that closes all non-project files.
+2016-08-24T09:49:50Z,discuss,"Have you submitted a contributor license agreement? If not, please check your inbox: I've just send there the CLA to sign. Thanks."
+2016-08-24T10:39:25Z,discuss,"OK, I've just sign it."
+2016-08-25T07:58:24Z,discuss,Received the CLA. Thanks.
+2018-07-21T13:11:29Z,discuss,"@bulenkov, please review."
+2016-08-22T14:36:07Z,commit,Close All non-project,github.com/JetBrains/intellij-community/pull/438/commits/ba0a6c7f57cdc142bfbed98151afb0185705167c
+2016-08-22T14:43:46Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/438/commits/759cd48f7a36a7df41c28fd259fdcf8816cca9d9

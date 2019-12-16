@@ -1,0 +1,10 @@
+1006,[external-system] better message when many selected modules
+2018-12-07T21:26:55Z,discuss,When there are too many selected modules the dialog is also not quite usable.
+2018-12-07T21:26:55Z,discuss,Relates to #901
+2018-12-07T21:26:55Z,discuss,to: @vladsoroka @nskvortsov
+2018-12-10T12:32:44Z,discuss,"Thanks for the pull request!
+Please, use com.intellij.openapi.util.text.StringUtil#pluralize(java.lang.String, int)"
+2018-12-10T16:04:32Z,discuss,@nskvortsov updated! Thanks for the review!
+2018-12-12T10:57:33Z,discuss,"Thanks, merged!"
+2018-12-07T21:19:27Z,commit,[external-system] better message when many selected modules,github.com/JetBrains/intellij-community/pull/1006/commits/2cb9b9fc0c7dacec61cbb3d223b724476af0bc88
+2018-12-10T15:58:56Z,commit,[external-system] use StringUtil#pluralize,github.com/JetBrains/intellij-community/pull/1006/commits/5309d23468877f579d6484b60b8acca5d6b0133d

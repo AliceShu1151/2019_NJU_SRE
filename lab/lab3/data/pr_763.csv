@@ -1,0 +1,8 @@
+763,terminal: quote shell variable when testing
+2018-03-19T21:47:14Z,discuss,"In the case LOGIN_SHELL is undefined, the test becomes:"
+2018-03-19T21:47:14Z,discuss,"if [ -n ]; then
+...
+fi"
+2018-03-19T21:47:14Z,discuss,"which will execute the block inside the if, when it shouldn't."
+2018-10-22T15:56:54Z,discuss,@rohanjoyce Thanks! I've merged the fix in.
+2018-03-19T21:36:14Z,commit,terminal: quote shell variable when testing,github.com/JetBrains/intellij-community/pull/763/commits/112b8e113c35446720136976b039ae15b5d5bf6b

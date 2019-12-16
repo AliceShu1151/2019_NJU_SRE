@@ -1,0 +1,10 @@
+1273,Process the mouse event if it is a click
+2019-12-13T03:01:35Z,discuss,"Hi Kirill, this is Juan with Android Studio"
+2019-12-13T03:01:35Z,discuss,"One of our UI tests creates an Android Instrumented Tests configuration by opening the Run/Debug Configurations dialog, clicking the +, and selecting Android Instrumented Tests in the popup. But the Swing in IDEA never gets the simulated mouse click, the instrumented test configuration is not created, and the test fails."
+2019-12-13T03:01:35Z,discuss,"I traced things to 98a868f. If I revert the commit, things work. Did you mean for that ! to be in front of isClick? The test also passes if I remove only that."
+2019-12-13T03:05:24Z,discuss,@kkmic
+2019-12-13T11:46:36Z,discuss,"Hi Juan.
+I just checked that removing isClick entirely (its calculation and from the condition) works well for the issue I was originally fixing: https://youtrack.jetbrains.com/issue/IDEA-217535
+Please do so and check it your tests pass. If they do I'll remove isClick."
+2019-12-13T21:29:06Z,discuss,Nope. Completely reverting 98a868f does work though.
+2019-12-13T02:47:39Z,commit,Process the mouse event if it is a click,github.com/JetBrains/intellij-community/pull/1273/commits/16122cd4982a65e1771f67f0af89d034433fd492

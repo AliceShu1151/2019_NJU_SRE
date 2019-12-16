@@ -1,0 +1,6 @@
+170,Change visibility of JBTerminalSystemSettingsProvider from package to public
+2014-04-12T14:42:25Z,discuss,I would like to embed a terminal windows in one of my plugins. But with JBTerminalSystemSettingsProvider that have package visibility (this is the only non public class of the terminal plugin) it's a pain to do reflection to create and use it.
+2014-04-12T14:42:25Z,discuss,"Please could you include this fix in the next IDEA 13.1.x ?
+PS: I already the Contributor Agreement some months ago"
+2014-09-07T00:23:53Z,discuss,Integrated.
+2014-04-12T14:28:37Z,commit,Change visibility of JBTerminalSystemSettingsProvider from package to¡­,github.com/JetBrains/intellij-community/pull/170/commits/91e16993556b92749ac3ed4a78862e915dab8a1b

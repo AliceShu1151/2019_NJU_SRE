@@ -1,0 +1,21 @@
+176,Console performance optimizations
+2014-05-03T09:03:45Z,discuss,"
+No description provided.
+"
+2014-05-03T09:55:41Z,discuss,"now, that's better."
+2014-05-03T11:31:41Z,discuss,Merged manually with some changes
+2014-05-01T09:23:58Z,commit,little experiment,github.com/JetBrains/intellij-community/pull/176/commits/ca281fead383d54356d388611117b562908f5d13
+2014-05-01T18:11:29Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/176/commits/bd0acaf62ad11ffea9d6a9ed92bfa71cf9c3cde0
+2014-05-01T22:01:20Z,commit,disable console when there is too much added text,github.com/JetBrains/intellij-community/pull/176/commits/d003a000a0e1e5827ebf06383c4891318ddd3065
+2014-05-02T06:48:40Z,commit,removed myHighlighterToMessageInfoMap,github.com/JetBrains/intellij-community/pull/176/commits/c346c3e0608ceed19c1a39313d886c4be834d09f
+2014-05-02T06:48:40Z,commit,continue processing from last location,github.com/JetBrains/intellij-community/pull/176/commits/3bd5b6478f1f19d7d4fdf927a3fa912930e095a9
+2014-05-02T06:48:40Z,commit,continue processing from last location - commit fix,github.com/JetBrains/intellij-community/pull/176/commits/573032522fc6a7660d487dc634d90ea60fa37263
+2014-05-02T18:08:35Z,commit,removed manual action,github.com/JetBrains/intellij-community/pull/176/commits/1b29d7ddecaae75d069851928e0bf328bdd4229e
+2014-05-02T19:36:27Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/176/commits/d551f0dccd4a8fd611d7e77e294406646ea627e9
+2014-05-02T20:20:00Z,commit,Merge branch 'master' of,github.com/JetBrains/intellij-community/pull/176/commits/9718ae449db7ae4ff823ed04f205f38a1f59ddcd
+2014-05-02T22:04:17Z,commit,"removed todos, no issue here.",github.com/JetBrains/intellij-community/pull/176/commits/09ded6da956084f566e4393d740d1f135f129f24
+2014-05-02T22:39:36Z,commit,more eager disabling,github.com/JetBrains/intellij-community/pull/176/commits/bff46ab753b7528421d56bcd3d570ee656f72579
+2014-05-03T08:55:57Z,commit,continue processing when the output slowed down under the threshold,github.com/JetBrains/intellij-community/pull/176/commits/905a97766794f764084eccf019a5ce2cfb1496a6
+2014-05-03T09:35:19Z,commit,revert of condition,github.com/JetBrains/intellij-community/pull/176/commits/402781c773503a1bcc448ec5c1624dfbe5e6fba7
+2014-05-03T09:53:33Z,commit,continue processing when the output stops,github.com/JetBrains/intellij-community/pull/176/commits/d2a2af8a3621a4a55496ee5ceafd4b63ab0186b6
+2014-05-03T10:01:20Z,commit, disabling of foldings removed,github.com/JetBrains/intellij-community/pull/176/commits/1aa37381cca8cb0b8b215eba46f893f47fc6db62

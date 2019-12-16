@@ -1,0 +1,9 @@
+905,Added test state to AccessibleName of test results entry
+2018-10-30T15:57:55Z,discuss,"This PR adds the state information, visually represented by icons, to the AccessibleName of the entries in the test results tree structure. It partly solves: https://youtrack.jetbrains.com/issue/IDEA-193979"
+2018-10-30T15:57:55Z,discuss,"It does not solve the problem of the ""Hide successful tests"" button not being found by tabbing through the tool window, but the most pressing problem - the test results not being immediately clear, is gone."
+2018-11-15T11:34:44Z,discuss,@forantar Just a little reminder that this exists :)
+2018-12-04T13:20:05Z,discuss,"@forantar could you please have a look? This is a crucial addition, I keep running into tests - and i cannot see if they succeeded. Thanks."
+2019-02-05T10:10:38Z,discuss,"@forantar, a reminder that this exists. I could really use its addition, or a similar fix. I would save me a considerable amount of time."
+2019-04-29T08:51:45Z,discuss,"@forantar Does it make sense for me to fix the conflicts here? I'd really like this to be merged, as it would save me, and anyone else with a screen reader enormous amounts of time. i keep running into situations where I want to no the result of a single test run within a group of tests. But I'll only fix the conflicts if there is a chance of this being merged."
+2018-10-23T10:30:02Z,commit, Fixed test state announcements by screen readers. They should now re¡­,github.com/JetBrains/intellij-community/pull/905/commits/85968ecfd7562bdb1ae72aeb0d3d59a8b73c9180
+2018-10-30T15:26:49Z,commit," A fix for accessible names not updating correctly, which made the sc¡­",github.com/JetBrains/intellij-community/pull/905/commits/ddd8aba50e48f8b8566bf3a5ea8019e86cbb71de

@@ -1,0 +1,4 @@
+1103,Prevent DeprecationWarning
+2019-03-27T17:25:51Z,discuss,DeprecationWarning: invalid escape sequence \o
+2019-06-13T12:40:20Z,discuss,Merged. Thanks a lot!
+2019-03-27T17:25:18Z,commit,Prevent DeprecationWarning,github.com/JetBrains/intellij-community/pull/1103/commits/de85f7cc69b033dc235f28f941a7fa656b64a52a

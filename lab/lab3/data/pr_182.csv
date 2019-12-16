@@ -1,0 +1,13 @@
+182,Add an option to only show trailing whitespace characters.
+2014-05-17T20:36:05Z,discuss,This change adds an option to the editor settings dialog to show only trailing whitespace.
+2014-05-17T20:36:05Z,discuss,"Trailing whitespace is defined as a tab, ' ' or ideographic space character that is not followed by a Character.isWhitespace character before the next new line or the end of the buffer."
+2014-05-17T20:36:05Z,discuss,The isTrailingWhitespace function is inefficient if the file contains extremely long lines.
+2014-07-04T10:28:43Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-07-27T02:40:39Z,discuss,"I'm working with Google legal counsel to get the CLA signed, will let you know when that's done. Thanks!"
+2014-09-11T22:15:03Z,discuss,CLA has been mailed. Do you want me to clean up the merge conflicts?
+2014-09-12T11:31:07Z,discuss,"The agreement was received, thanks."
+2014-09-12T11:31:07Z,discuss,"Yes, please rebase the commit on top of the current master to avoid merge conflicts."
+2014-09-12T21:22:21Z,discuss,"Rebased, please take a look."
+2014-09-12T21:22:21Z,discuss,Thanks!
+2014-09-22T08:29:54Z,discuss,"We had a bit more general request in tracker (http://youtrack.jetbrains.com/issue/IDEA-119234), so I've extended the fix and optimized it somewhat to avoid excessive character scans. Code is in master now."
+2014-05-17T20:05:35Z,commit,Add an option to only show trailing whitespace characters.,github.com/JetBrains/intellij-community/pull/182/commits/3f12975ef07e6cc65df9a50dc5abddbe7246a5a9

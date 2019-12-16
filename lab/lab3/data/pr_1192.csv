@@ -1,0 +1,21 @@
+1192,Additional modules not visible through thread context class loader
+2019-08-31T09:44:04Z,discuss,"We had a problem where compiling GWT on JDK 11 in IDEA would fail due to java.sql module classes not being found even with --add-modules java.sql, but would succeed when done through Maven, which led me to look into the CommandLineWrapper implementation, in particular how it manages the class path entries. I've discovered that URLClassLoader, which is constructed in CommandLineWrapper has its parent set as null, which stands for the Bootstrap class loader.
+With the introduction of modular system I believe this needs to have changed to be the Platform class loader instead.
+I've successfully tested this change by compiling a modified idea-rt.jar and replacing it in my local IDEA installation, which has allowed GWT compilation to succeed."
+2019-09-01T18:41:30Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-09-02T11:54:57Z,discuss,"Thanks @klikh, did it now"
+2019-09-05T04:23:47Z,discuss,Thanks!
+2019-09-05T04:23:47Z,discuss,"CommandLineWrapper have other problems though, which make it ill-suited for modular projects; on Java 9+, @arg files should be used instead. Could you please tell, why CommandLineWrapper? I mean, is it your choice, or IDE's one?"
+2019-10-15T16:28:52Z,discuss,"Unfortunately the IDE uses that automatically for GWT module compilation under Java 11, with no option to use something different. JBoss Server run configurations also don't have an option, but what I've noticed is that under Java 8 it will use the CommandLineWrapper and under Java 11 it is not used."
+2019-10-16T14:58:45Z,discuss,"Could you please check this with 2019.3? It should prefer @arg-files on Java 9+ in more cases, but I'm not sure whether GWT and JBoss are covered. If not, I'd rather fix these places."
+2019-10-17T09:51:20Z,discuss,Tried the 2019.3 EAP - still uses CommandLineWrapper for GWT module compilation
+2019-11-08T20:56:06Z,discuss,"Sorry for the late reply. So far I was unavailable to reproduce the problem neither with my sample project nor with yours (found it accidentally); IDEA clearly prefers @argfiles on Java 11. Please add .idea/ directory to the project, maybe this will help. And please also post a full log with the error."
+2019-11-08T22:04:22Z,discuss,This is the error I get in my project:
+2019-11-08T22:04:22Z,discuss,I tried to make it so that when you import the Maven model it is recognized as a Web Facet and GWT compiler output included in an artifact. Then I just build that artifact and even under JDK11 it uses the following command: java --add-modules=java.sql -Xmx1024m -classpath {path}\idea_rt.jar com.intellij.rt.execution.CommandLineWrapper .IntelliJIdea2019.3\system\compile-server\gwt-compilation-fail-sample_f4a5b4c\_temp_\classpath com.google.gwt.dev.Compiler -logLevel TRACE -war .IntelliJIdea2019.3\system\compile-server\gwt-compilation-fail-sample_f4a5b4c\targets\gwt\gwt-compilation-fail-sample_22bb50e6\gwt-output -style DETAILED org.camoiloc.sample.Sample
+2019-11-08T22:04:22Z,discuss,Is this how you build it?
+2019-11-09T11:20:22Z,discuss,"No, I just issued Build | Build Project, then created a GWT run configuration. Reproduced, thanks!"
+2019-11-11T15:37:00Z,discuss,Fixed the GWT issue (pending review).
+2019-11-11T15:37:00Z,discuss,"So, given that CommandLineWrapper has other issues on Java 9+ besides class lookup, there is little sense in fixing it. Instead, I'll seek to add an assertion against it's use."
+2019-11-11T15:37:00Z,discuss,Thanks!
+2019-11-19T12:07:02Z,discuss,"Thanks, the EAP release with the fix included has solved the problem."
+2019-08-31T09:29:02Z,commit,Do not skip Platform Class Loader,github.com/JetBrains/intellij-community/pull/1192/commits/5e4b7944a0f0bdae09b774a3a867c433cb7bbb3c

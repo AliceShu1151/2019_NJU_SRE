@@ -1,0 +1,6 @@
+739,PY-28562: Add implicit `object` super when class has new style metaclass
+2018-02-19T23:06:31Z,discuss,"
+No description provided.
+"
+2018-03-01T12:07:08Z,discuss,@fitermay Thanks for your pull request! I've merged it into master.
+2018-02-19T23:04:53Z,commit,PY-28562: Add implicit `object` super when class has new style metaclass,github.com/JetBrains/intellij-community/pull/739/commits/94feb563b1086221f4afd26bda9403ad44d1f372

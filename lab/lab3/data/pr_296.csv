@@ -1,0 +1,5 @@
+296,Fixed performance of DataNode#hashCode
+2015-08-29T23:02:26Z,discuss,It appeared on a project with 2000+ modules hashCode for DataNodes was super slow. Also added some additional debug logging for better performance analysis.
+2015-09-03T07:40:03Z,discuss,"Merged manually, thank you for the contribution!"
+2015-08-29T22:59:40Z,commit,Fixed exponential hashCode,github.com/JetBrains/intellij-community/pull/296/commits/26fee5b9350a52d3fceacae574b3edcc9482bc33
+2015-09-02T15:52:16Z,commit,Addressed review comments,github.com/JetBrains/intellij-community/pull/296/commits/d671e303a40595d40675b77064e1d678707b03d7

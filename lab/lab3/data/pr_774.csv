@@ -1,0 +1,7 @@
+774,Simplify `DataKey.create` code
+2018-04-01T08:53:22Z,discuss,"
+No description provided.
+"
+2018-07-21T12:35:16Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-07-21T12:50:32Z,discuss,"@klikh said that we've already had our CLA, so I've merged the PR, thanks."
+2018-04-01T08:46:31Z,commit,simplify DataKey.create code,github.com/JetBrains/intellij-community/pull/774/commits/83679652b672a1823684c34133f54ec096879c98

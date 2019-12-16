@@ -1,0 +1,6 @@
+1035,Allow more variants in Go to Line/Column dialog (IDEA-205713)
+2019-01-20T15:19:37Z,discuss,"
+No description provided.
+"
+2019-01-28T14:58:12Z,discuss,"In this variant, newly added abilities are absolutely non-discoverable. We try to avoid such implementations. Something in the UI should suggest there's an option to address lines in a 'relative' manner. Maybe the feature can be restricted to only '+/-number' case, then the its description can probably be added to the displayed dialog."
+2019-01-20T14:40:55Z,commit,Allow more variants in Go to Line/Column dialog (IDEA-205713),github.com/JetBrains/intellij-community/pull/1035/commits/2239fc95e43bf7d0b8f434534cda779d565b24b2

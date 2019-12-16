@@ -1,0 +1,7 @@
+503,Fix PY-21991
+2017-01-16T04:40:58Z,discuss,Fix PY-21991
+2017-01-20T11:49:06Z,discuss,"@fitermay Thank you very much! It works fine except cases of executing complete multi-line commands. For example, if user selected such lines:"
+2017-01-20T11:49:06Z,discuss,"they should be executed without any additional ""Enter"" pressing."
+2017-01-20T12:03:32Z,discuss,"Good catch, we need to append \n in those cases."
+2017-02-06T06:11:06Z,discuss,Sorry was very busy. Amended the commit now.
+2017-01-16T04:38:26Z,commit,Fix PY-21991,github.com/JetBrains/intellij-community/pull/503/commits/712c478b512d9e858798d14ead8f14361cbf4e3e

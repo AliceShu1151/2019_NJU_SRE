@@ -1,0 +1,5 @@
+741,Synchronize access to mutable fields
+2018-02-23T05:42:51Z,discuss,бн mainly to stop an NPE when closeInput dereferences myTask.
+2018-02-23T05:43:07Z,discuss,@vladsoroka?
+2018-03-06T05:29:41Z,discuss,Please find the fix at d6120cc
+2018-02-23T05:19:16Z,commit,Synchronize access to mutable fields,github.com/JetBrains/intellij-community/pull/741/commits/02001135828c7f47731996fafe86272f7d410707

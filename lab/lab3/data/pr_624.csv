@@ -1,0 +1,6 @@
+624,"Update settings-repository plugin's ""more info"" link"
+2017-09-05T04:55:22Z,discuss,"The formerly independent settings-repository plugin is now bundled with IDEA, but the ""more info"" link in its plugin description still points to what is now a stale, archived GitHub repository. This change updates the link to the current location."
+2017-09-05T04:55:22Z,discuss,"Note that since it is no longer a GitHub project page being linked to, but instead a plugin included within a much larger project, I've decided to link directly to the README.md file, rather than, say, linking to a directory deep within the IDEA source tree that happens to contain the correct README.
+(Either choice would be satisfactory at the moment, given the currently sparse directory contents and the current way in which GitHub renders directories that containing README files.)"
+2018-07-21T12:28:48Z,discuss,"@calexHG thanks, merged."
+2017-09-05T04:47:47Z,commit,"Update settings-repository plugin's ""more info"" link",github.com/JetBrains/intellij-community/pull/624/commits/270d99f4adfa4bed43c3c3f4169ed257f34e8b62

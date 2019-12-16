@@ -1,0 +1,7 @@
+645,IDEA-180447 Reduce UI clutter by hiding Synchronize action from menu and toolbar when it is unlikely to be used
+2017-10-13T01:31:52Z,discuss,"
+No description provided.
+"
+2017-10-13T17:34:52Z,discuss,"Thank you for contribution, but we don't think it's a good idea.
+More details in the issue."
+2017-10-11T21:06:23Z,commit,Hide Synchronize action when it is unlikely to be used,github.com/JetBrains/intellij-community/pull/645/commits/5cc39de5280f44acad64cf0b004543524b6a8798

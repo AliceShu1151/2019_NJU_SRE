@@ -1,0 +1,11 @@
+205,Adds the ability for secondary toolbar buttons to be right aligned.
+2014-08-07T16:58:55Z,discuss,"This right aligning is required in Android Studio to right align our Google Login widget -- which is a
+requirement for common look and feel with other applications that support google login."
+2014-08-07T16:58:55Z,discuss,"This ability must be turned on via the Registry to have any effect.  Otherwise, secondaries will continue
+to function as they do now.  It also must be opted into for each toolbar as secondaries in other toolbars
+use the cogwheel dropdown.
+Right aligned secondaries are placed to the right of the search button."
+2014-07-30T21:40:25Z,commit,Adds the ability for secondary toolbar buttons to be right aligned.,github.com/JetBrains/intellij-community/pull/205/commits/eaf22b6bbb0217434dabf1f70307e7062c43a803
+2014-08-07T15:45:22Z,commit,Adds the ability for secondary toolbar buttons to be right aligned.,github.com/JetBrains/intellij-community/pull/205/commits/53c15c4a14274a0b7c51ff3b77d5226b21a14885
+2014-08-07T15:46:48Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/205/commits/93648c5e331ed30832e7aaf6d9b05921acc93518
+2014-08-07T16:53:52Z,commit,Merge remote-tracking branch 'upstream/master',github.com/JetBrains/intellij-community/pull/205/commits/11ee3505d9cbb1e7e7333e504186a9babd60fa92

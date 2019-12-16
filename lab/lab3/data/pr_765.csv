@@ -1,0 +1,19 @@
+765,Add support for Geb content definition based methods
+2018-03-20T18:53:07Z,discuss,This PR adds support for Geb's content definition based methods (as documented in this chapter in TemplatedPageWithDiv example and implemented here) to complement the current support of content definition based fields.
+2018-03-20T18:53:07Z,discuss,Do not hesitate to let me know if this PR needs more work before it can be merged. I'll happily apply any necessary changes to it.
+2018-03-20T18:53:07Z,discuss,Please note that I have signed the CLA.
+2018-03-20T18:53:07Z,discuss,"Given that this contribution is related to Groovy, I believe that the best person to review it is @dovchinnikov."
+2018-03-22T14:51:45Z,discuss,Hi @erdi! Thank you for the pull request.
+2018-03-22T14:51:45Z,discuss,Note that both PsiField and PsiMethod implement com.intellij.psi.PsiTarget. Could you please try to use it instead of introducing new PsiElementPomTarget class?
+2018-03-22T15:22:43Z,discuss,"Using PsiElement as the value type for the map returned from GebUtil.getContentElements() was what I tried initially but obviously it does not implement PomTarget. I completely missed PsiTarget though, I will look into updating the PR to use PsiTarget ASAP, it should simplify it massively."
+2018-03-22T22:27:52Z,discuss,I've just force pushed the latest changes. In the end I went with using PsiMember as the value type for the map returned from GebUtil.getContentElements() because PsiTarget does not implement PsiElement.
+2018-03-23T16:24:26Z,discuss,"Thank you for the pull request.
+I've pushed it with minor changes in formatting and nullability annotations."
+2018-03-23T16:24:26Z,discuss,ee1b8df
+2018-03-26T09:56:23Z,discuss,Thanks for accepting the PR.
+2018-03-26T09:56:23Z,discuss,Am I correct in thinking that it will be part of the 2018.2 release?
+2018-03-26T10:00:28Z,discuss,"@erdi yes, it's planned for 2018.2, but I think it's safe to backport it to 2018.1.2 or 2018.1.3.
+Would you like me to do it?"
+2018-03-26T10:03:59Z,discuss,I don't have a specific need for it to be backported and do not want to increase your workload unnecessarily given that I might be sending additional PRs in that area your way. I only asked to have an idea which release it would be part of to tweet about it from Geb's account when it ships.
+2018-03-26T10:08:46Z,discuss,"@erdi that's ok, it shouldn't take much time, and it won't require any PRs from your side. You may safely tweet about 2018.2 and then it will be just a nice bonus if we decide to backport it to 2018.1.X."
+2018-03-20T18:32:29Z,commit,Add support for Geb content definition based methods,github.com/JetBrains/intellij-community/pull/765/commits/084df3f365ee04c1dc9e5a4f77b9c10d42ae2c36

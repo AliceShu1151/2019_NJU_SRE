@@ -1,0 +1,4 @@
+1120,Support test parallelization in UsefulTestCase
+2019-04-12T06:42:20Z,discuss,Commit prevents folder clashing on parallel test execution.
+2019-04-15T19:37:12Z,discuss,"Merged, thanks!"
+2019-04-12T06:40:18Z,commit,Support test parallelization in UsefulTestCase,github.com/JetBrains/intellij-community/pull/1120/commits/4ed75beedcd0c2e6336c0adde9289f5fcc3ee92a

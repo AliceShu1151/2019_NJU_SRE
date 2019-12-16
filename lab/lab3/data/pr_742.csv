@@ -1,0 +1,7 @@
+742,PY-28629: Fix resolving skeletons for implicit relative imports
+2018-02-23T05:51:18Z,discuss,"@vlasovskikh
+I would really like to get this fixed before 2018 release as it is causing a lot of problems in Python 2.7 when dealing with older libraries."
+2018-02-23T05:51:18Z,discuss,Tests pending... Is there a fixture I can use to setup the test skeletons?
+2018-02-26T06:00:19Z,discuss,@vlasovskikh added test
+2018-02-26T15:12:34Z,discuss,"@fitermay. Yes, the WithBinaryModules is a good place for testing skeletons. I've rebased your PR onto master with a couple of fixes. Thanks!"
+2018-02-23T05:48:37Z,commit,PY-28629: Fix resolving skeletons for implicit relative imports,github.com/JetBrains/intellij-community/pull/742/commits/c97cbcd7dce50d559d293098b9a53b0985abf287

@@ -1,0 +1,21 @@
+414,enable debugging varargs where the first argument resolves to null
+2016-06-17T19:11:19Z,discuss,Varargs don't get wrapped if the first argument resolves to null (but they do if it is actually null)
+2016-06-17T19:11:19Z,discuss,
+2016-06-17T19:11:19Z,discuss,
+2016-06-17T19:11:19Z,discuss,The original author put in extra effort to make sure that this doesn't case doesn't get wrapped into varargs but he did not provide an explanation as to why this is. Also there are currently no tests that cover varargs conversion in ExpressionBuilderImpl (or any other class in the debugger)
+2016-06-17T19:11:19Z,discuss,"Since we don't know what it was protecting against, I suppose that we can remove it until the case that it was trying to avoid comes up and we can see if we can handle it in a different way?"
+2016-06-17T21:16:44Z,discuss,@gorrus do you remember why the special case for null as the first parameter?
+2016-06-20T17:49:43Z,discuss,"The code fixed the bug https://youtrack.jetbrains.com/issue/IDEA-107925 which is probably actually a jdk bug inside com.sun.tools.jdi.MethodImpl.handleVarArgs which does not do wrapping if the first vararg value is null.
+I'll file a jdk bug on this.
+Not sure it is a good idea to do the wrapping always, this was a workaround and wrapping inside EvaluatorBuilderImpl is much more dangerous as we do not have values yet and so may do incorrect conversions."
+2016-06-21T05:04:20Z,discuss,I just realize that just removing those lines will cause it to succeed if we have elements with the same type but not if they are different. (because of the type inference issue that you mentioned)
+2016-06-21T05:04:20Z,discuss,"However, I'm thinking that substituting the expression that evaluates to null to actually null (inside wrap varargs) would probably work because it works if we manually substitute it. Then the type inference will be just as it is today which works because the first argument's type doesn't play a role in determining the varargs type."
+2016-06-21T05:04:20Z,discuss,What do you think?
+2016-06-22T08:24:40Z,discuss,"I'm not sure.
+I've contacted Oracle support.
+At the same time maybe a better place for the fix is inside com.intellij.debugger.engine.DebugProcessImpl.InvokeCommand.invokeMethodAndFork?
+There is one workaround for varargs case there already (and we have all values there)."
+2016-06-23T08:27:39Z,discuss,"I've just fixed this within https://youtrack.jetbrains.com/issue/IDEA-157321 (and moved all the wrapping code from EvaluatorBuilderImpl into invokeMethodAndFork).
+See 1fa4233
+Thanks for mentioning this."
+2016-06-17T18:59:22Z,commit,enable debugging varargs where the first argument resolves to null,github.com/JetBrains/intellij-community/pull/414/commits/16b071c90ab3a714fe1a547342d7c18e508e7674

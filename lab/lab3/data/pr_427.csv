@@ -1,0 +1,9 @@
+427,Update `parametrize` signature in Pytest skeleton
+2016-07-14T09:16:38Z,discuss,Please advise how I get a CLA arranged.
+2016-07-15T07:45:26Z,discuss,"Could you please share your e-mail address, and I'll send you the CLA form to sign electronically."
+2016-07-15T07:45:26Z,discuss,"Alternatively, you may download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-07-15T07:45:26Z,discuss,We would also like to request you to update your commit authorship with your actual e-mail address instead of @users.noreply.github.com.
+2016-07-15T14:17:18Z,discuss,"@allanlewis Please make a PR in https://github.com/JetBrains/python-skeletons repository. Folder in current repo is a mirror, we sync it manually."
+2017-02-17T13:31:18Z,discuss,Hello! https://github.com/JetBrains/python-skeletons repository is deprecated. We're on our way to support pyi-stubs. Please check typeshed repository and send PR there if needed.
+2016-07-14T09:11:37Z,commit,python-skeletons/pytest: Fix whitespace,github.com/JetBrains/intellij-community/pull/427/commits/57c1882b31fe4cc511755fce609ac575ea2081da
+2016-07-14T09:13:18Z,commit,python-skeletons/pytest: Update signature of `parametrize`,github.com/JetBrains/intellij-community/pull/427/commits/fec0195a66e0de27d4aed81eb44edc9ac1099971

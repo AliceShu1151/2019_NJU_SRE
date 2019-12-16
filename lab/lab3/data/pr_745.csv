@@ -1,0 +1,11 @@
+745,Changes to show sync issues messages on build view.
+2018-02-27T01:55:26Z,discuss,"1.- Add a ExternalSystemTaskId parameter to
+ExternalProjectRefreshCallback#onSucess"
+2018-02-27T01:55:26Z,discuss,"2.- Add a new parameter (showFinishMessage) to
+ExternalSystemUtil#refreshProject to indicate if a FinishBuildEvent
+should be generated when sync has finished."
+2018-02-27T15:26:02Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-02-27T18:40:12Z,discuss,I have submitted a CLA.
+2018-03-06T12:11:50Z,discuss,"I've added the change with modifications.
+Please find them at:"
+2018-02-27T01:51:50Z,commit,Chages to show sync issues messages on build view.,github.com/JetBrains/intellij-community/pull/745/commits/4192e9e3e7d55572eb0baf1f56fb5760a133bf46

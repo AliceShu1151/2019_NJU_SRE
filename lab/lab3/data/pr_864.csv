@@ -1,0 +1,5 @@
+864,Allow to register existing external annotation files
+2018-09-19T04:44:37Z,discuss,"
+No description provided.
+"
+2018-09-19T04:36:59Z,commit,external annotations: allow to register existing file with annotations,github.com/JetBrains/intellij-community/pull/864/commits/fb2067a95bde9fc159ea1f97965b6aa221bf0aa2

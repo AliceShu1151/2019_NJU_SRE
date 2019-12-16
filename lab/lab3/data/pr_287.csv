@@ -1,0 +1,11 @@
+287,IDEA-106194 Search in File structure dialog with paste support
+2015-07-13T18:50:29Z,discuss,"Hi,
+I have created improvement for issues https://youtrack.jetbrains.com/issue/IDEA-106194. I have not made test but if you want some please give me a hint (example test etc.) - then I will create one.
+Hope you will like it.
+Thx,
+Ivos"
+2015-07-14T10:55:36Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-07-14T11:09:32Z,discuss,"CLA printed, signed, scanned and sent to email..."
+2015-07-14T11:19:47Z,discuss,CLA was received. Thank you.
+2015-09-09T12:08:55Z,discuss,"Thanks, manually merged."
+2015-07-13T18:11:14Z,commit,IDEA-106194 Search in File structure dialog with paste support,github.com/JetBrains/intellij-community/pull/287/commits/547107e2722be6c3521a1857c2d6575de59cc8a0

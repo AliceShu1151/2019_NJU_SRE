@@ -1,0 +1,3 @@
+171,Package prefix support for external build systems
+2014-04-13T17:37:19Z,discuss,I'm currently developing a plugin for some build system. Due to recomended project structure it would be really helpful to have an abbility to specify a package prefix for a souce root.
+2014-04-13T17:34:23Z,commit,Package prefix support for external build systems,github.com/JetBrains/intellij-community/pull/171/commits/594451e1d715fc08e9719e828fda80e72feab019

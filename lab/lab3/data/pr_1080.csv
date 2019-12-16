@@ -1,0 +1,11 @@
+1080,IDEA-208611: Fix a memory leak in IdeGlassPaneImpl._addListener
+2019-03-08T03:06:50Z,discuss,Make the removeListener method dispose the object added to the Disposer's tree by the _addListener method.
+2019-03-23T00:32:33Z,discuss,"This latest change introduces a new class DisposableWrapperList that supports associating elements with disposables, so that the elements are removed when their disposables are disposed. I had to use CopyOnWriteList instead of LockFreeCopyOnWriteList as a backing store. Unfortunately, with LockFreeCopyOnWriteList it doesn't seem possible to determine reliably what DisposableWrapper objects were removed from the backing list in the DisposableWrapperList.remove(Object) method."
+2019-03-23T00:32:33Z,discuss,I didn't attempt to fix the leak in IdeGlassPaneImpl.addPainter or any leaks outside of IdeGlassPanelImpl and EventDispatcher to keep the size of the change manageable.
+2019-03-26T00:01:29Z,discuss,Changed DisposableWrapperList to use LockFreeCopyOnWriteList instead of CopyOnWriteList used in the previous version of the change.
+2019-03-26T00:01:29Z,discuss,Please review and let me know if you have any concerns with this change.
+2019-04-01T18:59:09Z,discuss,The latest version of the change uses a volatile int field in conjunction with AtomicFieldUpdater instead of AtomicBoolean in DisposableWrapper class.
+2019-04-02T10:30:51Z,discuss,"Good to know, thanks! But in general, I'd prefer all subsequent changes be done in separate commits, since otherwise (with force-push-overwriting everything) I have to review everything from scratch each time."
+2019-04-02T10:57:28Z,discuss,The same could be made a bit less hacky and yet save the memory by extending AtomicBoolean. Not sure of the result's beauty though.
+2019-04-02T11:41:08Z,discuss,"Merged into master, thanks!"
+2019-03-23T00:24:13Z,commit,IDEA-208611 Fix a memory leak in IdeGlassPaneImpl._addListener,github.com/JetBrains/intellij-community/pull/1080/commits/0f4988ddba3f7c46a3c05a4576ec25183012569c

@@ -1,0 +1,4 @@
+722,python: Remove import that's not needed and absent
+2018-01-31T21:52:24Z,discuss,"The import causes builds to fail (it's missing), but it seems to be unnecessary."
+2018-02-02T12:28:55Z,discuss,Fixed in 51f834d
+2018-01-31T21:46:39Z,commit,python: Remove import that's not needed and absent,github.com/JetBrains/intellij-community/pull/722/commits/f3e11047cc25d5f6fd8ffa894405a4b7704fad99

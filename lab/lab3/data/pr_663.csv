@@ -1,0 +1,5 @@
+663,PY-15360 Error on trailing comma after star args for Py<3.5
+2017-11-14T22:11:38Z,discuss,"
+No description provided.
+"
+2017-11-14T22:10:13Z,commit,PY-15360 Error on trailing comma after star args for Py<3.5,github.com/JetBrains/intellij-community/pull/663/commits/e52fb56fcd6af96b073efb725fd88d786d705d27

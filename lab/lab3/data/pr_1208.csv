@@ -1,0 +1,8 @@
+1208,visually separate DUMMY_IDENTIFIER text from the main text
+2019-10-03T03:12:07Z,discuss,"For the debuging pupose:
+
+"
+2019-10-03T03:12:07Z,discuss,PS Also more zzz might need to be added at the end. ;)
+2019-10-05T10:48:04Z,discuss,"Unfortunately, this change breaks completion in about 10 languages we support, and an unknown amount of third-party plugins. Some languages treat underscore differently from uppercase letters, so parse trees there could change."
+2019-10-05T14:27:38Z,discuss,"Yeah, you are right. Already seen ""IntellijIdeaRulezzz"" string hardcoded inside CMake plugin bandled with Clion..."
+2019-10-03T03:06:53Z,commit,separate DUMMY_IDENTIFIER from the main text,github.com/JetBrains/intellij-community/pull/1208/commits/21c7740fa40d835b431683e09b318c4d3dd076bc

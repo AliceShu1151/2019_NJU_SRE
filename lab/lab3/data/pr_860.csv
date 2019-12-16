@@ -1,0 +1,18 @@
+860,Add the ability to highlight java primitives separately from keywords.
+2018-09-17T05:16:59Z,discuss,Add the ability to highlight java primitives separately from keywords. This leaves the default highlighting unchanged (ie. the same as keywords).
+2018-09-17T05:16:59Z,discuss,
+2018-09-17T05:16:59Z,discuss,"The README.md doesn't cover running tests, so lmk if there's anything else I should do."
+2018-09-17T05:16:59Z,discuss,(CLA should be good from intellij-rust contributions)
+2019-05-24T22:47:13Z,discuss,@dyadix does this look it will be merged eventually?
+2019-07-23T21:16:32Z,discuss,@akozlova please assist.
+2019-07-25T06:53:06Z,discuss,"Why do you want primitives to be highlighted differently from other keywords? The place under ""classes and interfaces"" is unexpected and I doubt that the highlighting would be used by many users."
+2019-07-25T06:53:06Z,discuss,"Moreover, how would you highlight var? I guess, it would be inconsistent as in some cases it must be ""primitive"" and in others ""non-primitive""."
+2019-07-25T17:26:16Z,discuss,"Personally I wanted int and other primitive types to be the same color as classes in my color scheme. I don't know where else in the menus it would go, and I'm not attached to this particular placement."
+2019-07-25T17:26:16Z,discuss,"Primitives are the keywords that are actual type names, whereas var is a non-type keyword. If we really wanted, var and any/every other (type of) keyword could be separately colorable as well (eg. visibility modifiers)."
+2019-07-25T18:10:12Z,discuss,"I believe that var is a type-keyword in java 10+, https://openjdk.java.net/jeps/286"
+2019-07-25T18:10:12Z,discuss,"Frankly saying I don't want to add a feature for the sake of adding a feature. I think, it's a good candidate to be implemented as a plugin, e.g. see how soft keywords are processed com.intellij.codeInsight.daemon.impl.JavaSoftKeywordHighlightingPassFactory"
+2019-07-25T19:02:22Z,discuss,"The implementation slots in very cleanly in a few lines of configuration here, I imagine as a plugin it takes substantially more code and maintenance to implement. I view this in the same vein as being able to highlight class/anonymous class/interface all separately if one chooses, just a little bit more customization."
+2019-07-25T19:02:22Z,discuss,"I don't mean anything pedantic by type-keyword, just that int and long are named types while var is not."
+2019-07-29T08:19:39Z,discuss,"I would be happy to accept the PR with the new API which would make writing the plugin to highlight different keywords easy.
+I feel uncomfortable here because the next PR would ask to highlight boolean differently from int and long and then another one to separate float and double. This makes the settings to mess and complicates the configuration a lot. Thus I think it's better to achieve through the plugin. With good API I can imagine that the plugin could consist mostly from plugin.xml with registered keywords."
+2018-09-17T05:03:11Z,commit,Add the ability to highlight java primitives separately from keywords.,github.com/JetBrains/intellij-community/pull/860/commits/d43fbb33cc2d17fc03d5babc2c3bee554bcc6d13

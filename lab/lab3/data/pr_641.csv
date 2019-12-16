@@ -1,0 +1,14 @@
+641,IDEA-144811
+2017-10-08T17:20:08Z,discuss,Fix for issue https://youtrack.jetbrains.com/issue/IDEA-144811
+2017-10-08T17:20:08Z,discuss,"There are currently application-wide settings for: (1) the path to the git executable and (2) the choice of ssh executable.  This change honors those existing settings, but allows individual projects to choose to override them."
+2017-10-08T17:20:08Z,discuss,"I believe this also fixes/addresses these related issues:
+https://youtrack.jetbrains.com/issue/IDEA-120335
+https://youtrack.jetbrains.com/issue/IDEA-175515"
+2017-10-08T17:20:08Z,discuss,"Without regressing on this closed issue:
+https://youtrack.jetbrains.com/issue/IDEA-66127"
+2017-10-08T17:21:13Z,discuss,Note:  I have signed the contributors agreement (see #637 )
+2017-10-24T15:25:15Z,discuss,"Thank you for your help, @mkillianey
+Unfortunately there's a problem with the approach you suggested - not many users know about ""default project"" setup, so setting up application-wide executable can become a pain in the neck.
+We have come up with a slightly different approach that allows to ""override"" current application-wide setting via a checkbox and will implement this shortly."
+2017-10-24T15:25:15Z,discuss,Ivan Semenov. ivan.semenov@jetbrains.com
+2017-10-08T16:29:00Z,commit,Allow projects to override the path-to-git and ssh preference on a pe¡­,github.com/JetBrains/intellij-community/pull/641/commits/b1955a774082b2c5c5d98ad2efc5d3f58ab19fde

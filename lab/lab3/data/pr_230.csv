@@ -1,0 +1,72 @@
+230,hg4idea: close branch
+2014-12-08T00:34:16Z,discuss,close branch feature for hg4idea
+2014-12-08T09:18:38Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2014-12-08T11:21:10Z,discuss,Done
+2014-12-08T11:23:46Z,discuss,"Agreement received, thank you."
+2014-12-14T16:42:06Z,discuss,"I can't figure out how to commit through CommitChangeListDialog without actual changes, so without changes I show my window for commit message and then perform commit. If there are changes, I invoke CommonCheckinProjectAction."
+2014-12-14T16:56:18Z,discuss,Messed up pull request with rebase. I'll create new one
+2014-12-08T00:29:05Z,commit,hg4idea: close branch,github.com/JetBrains/intellij-community/pull/230/commits/bf00a5edf5617bdab24f166b8325de49569e83f2
+2014-12-09T00:16:03Z,commit,hg4idea: close branch cosmetic fixes,github.com/JetBrains/intellij-community/pull/230/commits/a716e6b12747f6e279d5b7b866f0e94ded288a06
+2014-12-12T12:58:34Z,commit,fixed EDU icons,github.com/JetBrains/intellij-community/pull/230/commits/13908ef5f6c4777f8b19bc5386de2657def34892
+2014-12-12T14:52:34Z,commit,fixed EDU-271 Pycharm Educational doen't resolve stacktraces in Run w¡­,github.com/JetBrains/intellij-community/pull/230/commits/6cad5c2510dfbe8057c7ca77d5ea9cf9e2f7fd5d
+2014-12-12T14:52:54Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/230/commits/6349cdb1f9519eb4ce3ce78911e82b774cc1f346
+2014-12-12T14:43:49Z,commit,[vcs-log] minor: discover setEnabledAndVisible method existence,github.com/JetBrains/intellij-community/pull/230/commits/8c483e22085d5d76a2dacbb00b05e582710b440b
+2014-12-12T14:58:28Z,commit,[vcs-log] minor: add NotNull annotations,github.com/JetBrains/intellij-community/pull/230/commits/f0a8084b29e521acf6c1cd34e4a111dca5ea950f
+2014-12-12T15:10:54Z,commit,[vcs-log] minor: initialize NotNull field,github.com/JetBrains/intellij-community/pull/230/commits/e6becea54d4d80f28ff4b4e5516efc69603bddce
+2014-12-12T15:15:28Z,commit,IDEA-134250 (Intention 'Replace with try with resources' leads to cod¡­,github.com/JetBrains/intellij-community/pull/230/commits/3cc93d164e4ea7b19cd305cc916c003879d1c029
+2014-12-12T15:21:59Z,commit,[vcs-log] minor: reformat code,github.com/JetBrains/intellij-community/pull/230/commits/eeaf6c8b0639acffd6fad9ce39e7cd746eabed20
+2014-12-12T15:27:09Z,commit,"no more dotted borders, use fillRect for SideBorder",github.com/JetBrains/intellij-community/pull/230/commits/b5b34525ff3a858ab05d4750b362e7df66be06e8
+2014-12-12T15:30:17Z,commit,more space for gutter icons,github.com/JetBrains/intellij-community/pull/230/commits/aa428ce711b5ae14d7a0732c3591a06a7826783a
+2014-12-12T15:31:43Z,commit,correct isSyntehtic impl,github.com/JetBrains/intellij-community/pull/230/commits/f88f567c2d651d54a36559093e58d0959a03cd93
+2014-12-11T15:57:17Z,commit,Cleanup in PyChainedComparisonsInspection and ChainedComparisonsQuickFix,github.com/JetBrains/intellij-community/pull/230/commits/564cfbb7e71ca381423ef4202162ff2d8dfc33ef
+2014-12-11T16:44:18Z,commit,PY-14002 Do not alter binary expressions with not comparison operator,github.com/JetBrains/intellij-community/pull/230/commits/a4cbeec1300538168b879e81d7cd7801f9b7cb2e
+2014-12-12T12:54:13Z,commit,IDEA-134191 Add missing pagination in requests to Gitlab REST API,github.com/JetBrains/intellij-community/pull/230/commits/546851f1240aede454b17b073107e064e43e0871
+2014-12-12T15:07:01Z,commit,Cleanup in PyConvertTripleQuotedStringIntention,github.com/JetBrains/intellij-community/pull/230/commits/6111cac5b707ab8795b475dd1013d8eb73ee337c
+2014-12-12T15:49:20Z,commit,update todo color,github.com/JetBrains/intellij-community/pull/230/commits/1da7d5beb0ef77cee4824dfb73dff8159746627b
+2014-12-12T15:53:21Z,commit,IDEA-134246 Step over in synthetic method does step out,github.com/JetBrains/intellij-community/pull/230/commits/8fbae8b3ca3df467228a0b9f26d84c05c17b861e
+2014-12-12T15:47:58Z,commit,[vcs-log] minor: remove unnecessary dependency,github.com/JetBrains/intellij-community/pull/230/commits/b46b713b2c42eac367049c18ce235804ad74a11a
+2014-12-12T15:48:27Z,commit,[vcs-log] minor: unnecessary <p> tag,github.com/JetBrains/intellij-community/pull/230/commits/fc997b3aaad60a30289bf4c133049aa046193dc7
+2014-12-12T15:57:09Z,commit,[vcs-log] code issues: inline some obscure methods,github.com/JetBrains/intellij-community/pull/230/commits/3a26f787e3b47f97c179d86fbcfee76c2688df96
+2014-12-12T16:17:06Z,commit,[vcs-log] minor: not null annotation,github.com/JetBrains/intellij-community/pull/230/commits/2cb8e87e1c96f857ba8ec5bf7362defa7a2891d0
+2014-12-12T16:19:00Z,commit,[vcs-log] minor: do not call method twice,github.com/JetBrains/intellij-community/pull/230/commits/f88fd89ca9a5c919a34ab96f1f2f02c58fff5493
+2014-12-12T16:20:03Z,commit,SOE fix,github.com/JetBrains/intellij-community/pull/230/commits/e29c067652793075775755ca77f3a29c63eb8200
+2014-12-12T16:21:32Z,commit,fixed soft wraps calculation: removed impact of unbreakable lines on ¡­,github.com/JetBrains/intellij-community/pull/230/commits/f618b42f605c69f0983a109f6a690159a8a211d6
+2014-12-12T14:24:59Z,commit,junit should be higher than mocks,github.com/JetBrains/intellij-community/pull/230/commits/b73ca760ce253504910b8d02bff0d134a003d734
+2014-12-12T15:25:05Z,commit,remove deprecated storage on write,github.com/JetBrains/intellij-community/pull/230/commits/97e28466cbc380400d10652541316867745aef58
+2014-12-12T15:27:50Z,commit,fix NPE,github.com/JetBrains/intellij-community/pull/230/commits/a9b796ba4111a5bdde557643900f8b96f6c8850f
+2014-12-12T16:22:17Z,commit,IDEA-132877 Cannot edit 'Default Project Structure' if some project i¡­,github.com/JetBrains/intellij-community/pull/230/commits/29503b73f0c06b98c6a7030803b3c91602f0e7cf
+2014-12-12T16:24:28Z,commit,Default settings and Project Structure titles,github.com/JetBrains/intellij-community/pull/230/commits/8b7e7be4eb68e4b28adf26d74727a2521e6b86bc
+2014-12-12T13:35:06Z,commit,Structure view: do not create caret listeners until somebody asks for it,github.com/JetBrains/intellij-community/pull/230/commits/e4c28360b3c66dbf29535968c4e7975903b2689c
+2014-12-12T16:37:31Z,commit,[vcs-log] minor: remove unused method and make filed private,github.com/JetBrains/intellij-community/pull/230/commits/8df2a7b40d3793b3845080d676a82b63206bb943
+2014-12-12T16:40:25Z,commit,[vcs-log] code issues: use Collections.min,github.com/JetBrains/intellij-community/pull/230/commits/e4cfe23f79f4b4c3cf5235e7378e03b2c72e4d7c
+2014-12-12T16:49:58Z,commit,[vcs-log] minor: unused imports & use ContainerUtil,github.com/JetBrains/intellij-community/pull/230/commits/a71a385a653406f253be64bd271fee8cde0886bc
+2014-12-12T17:38:02Z,commit,get back and deprecate ANIMATION_SPEED,github.com/JetBrains/intellij-community/pull/230/commits/08ce91a93544941cbc2dac108b729599fa99525e
+2014-12-12T16:56:49Z,commit,cleanup,github.com/JetBrains/intellij-community/pull/230/commits/fd775d7ef30055c9cde14cfc2a9ff2cd479e3c76
+2014-12-12T17:43:59Z,commit,HttpRequests ¡ª ability to disable host verification (ssl),github.com/JetBrains/intellij-community/pull/230/commits/b770ecafa1e5dd993bc09500c106029050f85aa6
+2014-12-12T11:39:46Z,commit,stub for package annotator test,github.com/JetBrains/intellij-community/pull/230/commits/721bad235286b2a074b75dc4c7d6f29689f035f2
+2014-12-12T18:10:32Z,commit,fix incorrect loading of jacoco coverage data (end line number for a ¡­,github.com/JetBrains/intellij-community/pull/230/commits/a2509ba6cbd00f31414971c6c32d592cbb709e7c
+2014-12-12T10:50:44Z,commit,introduce functional parameter: ensure resulted method non-static,github.com/JetBrains/intellij-community/pull/230/commits/124c957b7c9b0ea1bd17926e58957b8de0cad08e
+2014-12-12T11:18:28Z,commit,functional interface check optimization,github.com/JetBrains/intellij-community/pull/230/commits/da553663ee7e44734b71efae0d3fcf722ead42b8
+2014-12-12T13:13:42Z,commit,"register functional interfaces from guava, trove, common collections",github.com/JetBrains/intellij-community/pull/230/commits/c138ff43f1d0d09422454689c7f5ebed24914c69
+2014-12-12T14:49:08Z,commit,functional interface suggester: check return types and try to infer,github.com/JetBrains/intellij-community/pull/230/commits/9b4cacf341f30b849cc5dad26d376cadeeddeac4
+2014-12-12T16:51:20Z,commit,functional interface suggester: include return type into signature pr¡­,github.com/JetBrains/intellij-community/pull/230/commits/105cea1b4b7f678da5a1e7ffd14f71bf1cf65853
+2014-12-12T16:53:21Z,commit,introduce parameter dialog: request focus in dialog is not needed bef¡­,github.com/JetBrains/intellij-community/pull/230/commits/6670a429312a93ebcdddcc0b9f922497d819e0dd
+2014-12-12T18:23:20Z,commit,javafx script engines search: ensure resource found,github.com/JetBrains/intellij-community/pull/230/commits/ab8e96f1d3bd5e71797c6029b441ae8769d67316
+2014-12-12T19:57:02Z,commit,method references: site substitution for method references without re¡­,github.com/JetBrains/intellij-community/pull/230/commits/482de672ef350daf162759d4daf46c94fb9a06f6
+2014-12-12T20:00:17Z,commit,alternative id (IDEA-134183),github.com/JetBrains/intellij-community/pull/230/commits/856ed258f043bb13d2a4fd57c1d5fa222093a742
+2014-12-12T21:30:28Z,commit,IDEA-CR-1041 (class loader substitution is only needed on 1.7+),github.com/JetBrains/intellij-community/pull/230/commits/263d0d43a18b609286ff837235b370dfecb25d1e
+2014-12-12T22:18:42Z,commit,check we have can use cache before asking it for data,github.com/JetBrains/intellij-community/pull/230/commits/c355cb2d859496656cba22ae34d983ed14c45482
+2014-12-13T07:24:31Z,commit,evaluating enum constants,github.com/JetBrains/intellij-community/pull/230/commits/d52b0c2e6a2a07dacf99a9173c39c4765847aece
+2014-12-13T09:51:01Z,commit,IDEA-134238 File with breakpoints update may be slow,github.com/JetBrains/intellij-community/pull/230/commits/e9d7a50b3e5746ea9e3dcc40ca5f05c5ea860ed1
+2014-12-13T10:49:07Z,commit,IDEA-132522 Debugger: changes in watches made out of debugger session¡­,github.com/JetBrains/intellij-community/pull/230/commits/4106d54185f221ecb94b7ff264427fb4e641b964
+2014-12-13T10:48:21Z,commit,IG: test for IDEA-134250,github.com/JetBrains/intellij-community/pull/230/commits/593e44649f497f71c3ba494baf915e2ab9cf440b
+2014-12-13T14:51:05Z,commit,IDEA-83316 User is not able to view variable information (Ctrl+MouseP¡­,github.com/JetBrains/intellij-community/pull/230/commits/56b0a94a18ea724f1d4a85bb48a02d35e855208a
+2014-12-14T12:36:37Z,commit,[git] IDEA-134286 Fix reading detached HEAD state from .git,github.com/JetBrains/intellij-community/pull/230/commits/b035775c3200419f4a90946f2d07ad45db57018e
+2014-12-14T13:32:11Z,commit,Fix default focus for password prompt field,github.com/JetBrains/intellij-community/pull/230/commits/64488827d5d8171307feca492e3dfa7f0711c208
+2014-12-14T14:52:32Z,commit,[git] IDEA-133737 Support excluded hosts for git ssh proxy,github.com/JetBrains/intellij-community/pull/230/commits/7b7df88c9d99015c83fe98f0149b0a7ca02fcdc2
+2014-12-14T15:20:24Z,commit,hg4idea: close branch option in commit dialog,github.com/JetBrains/intellij-community/pull/230/commits/2fac2bbbfa24781ccdd752db2d21cd00e9981299
+2014-12-08T00:29:05Z,commit,hg4idea: close branch,github.com/JetBrains/intellij-community/pull/230/commits/3f24bcbb67dd1b9325a14eafb8cda581f3a2d6b4
+2014-12-09T00:16:03Z,commit,hg4idea: close branch cosmetic fixes,github.com/JetBrains/intellij-community/pull/230/commits/f31f3ed699ee0b7dc5afbc55db2875ac46eae892
+2014-12-14T15:20:24Z,commit,hg4idea: close branch option in commit dialog,github.com/JetBrains/intellij-community/pull/230/commits/ad6ac48c7fc52b7ae7aff3e5e99357d37dfd76df
+2014-12-14T16:25:18Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/230/commits/092774d4bcb6602a10e13668a52f27cb2abaffe5
+2014-12-14T16:29:08Z,commit,hg4idea: unused import,github.com/JetBrains/intellij-community/pull/230/commits/b5355997566b8b39bd807e1cc86db85fee5e5ff7

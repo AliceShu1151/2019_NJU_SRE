@@ -1,0 +1,5 @@
+1174,Throw IAE instead of AE from isExcluded
+2019-07-16T02:31:03Z,discuss,Fixes testIllegalArgumentInIsExcludedMethod after commit 1dc7f6b.
+2019-07-16T02:31:12Z,discuss,@cdracm
+2019-07-16T14:02:27Z,discuss,"pushed, thanks"
+2019-07-16T02:17:01Z,commit,Throw IAE instead of AE from isExcluded,github.com/JetBrains/intellij-community/pull/1174/commits/1573ecfdd39ea57572ebcf023f5d04ce6055f71b

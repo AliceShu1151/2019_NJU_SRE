@@ -1,0 +1,4 @@
+1225,IDEA-225826 Update font of ActionButtonWithText
+2019-10-29T14:57:26Z,discuss,when the overall font is changed.
+2019-11-01T22:17:57Z,discuss,"Thank you! The patch (after some tuning) was applied to master, it's going to be cherry-picked to 193 too, just after code-review."
+2019-10-29T14:54:24Z,commit,IDEA-225826 Update font of ActionButtonWithText,github.com/JetBrains/intellij-community/pull/1225/commits/783b18c1065d24b954229ebcf6755e6c74481c40

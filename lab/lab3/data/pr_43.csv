@@ -1,0 +1,6 @@
+43,"IDEA-66284 ant integration - ""description"" attribute for ""attribute"" ele..."
+2013-03-07T09:18:29Z,discuss,"...ment under ""macrodef"" not recognized"
+2018-12-19T12:54:56Z,discuss,Please update the PR.
+2018-12-19T12:56:21Z,discuss,Hello. I'm not interested in this PR anymore. Sorry
+2019-06-22T23:03:10Z,discuss,there's only 1 conflicting file and it looks resolvable. @eugenezh will you please turn your eyes to it? it could be an easy win.
+2013-03-07T09:09:50Z,commit,"IDEA-66284 ant integration - ""description"" attribute for ""attribute"" бн",github.com/JetBrains/intellij-community/pull/43/commits/0d0e5d81282d6153cddad84dfa6c719d3af1e01b

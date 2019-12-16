@@ -1,0 +1,17 @@
+690,Make isImplicitReturnStatement public
+2017-12-19T14:29:06Z,discuss,"Call me a crazy liberal, but is there any reason this method shouldn't be public like the others in this helper class?"
+2017-12-19T14:29:06Z,discuss,"I ended up wanting this method for a custom Annotator, and had to just re-implement it inside my plugin. Yay open source, but why not just let people use it where it is, and thus get updates to the code as well?"
+2018-01-03T19:29:47Z,discuss,This method should belong to some utility class then. ControlFlowUtils is a good candidate.
+2018-01-25T21:24:37Z,discuss,@jonnybot0 Any updates?
+2018-01-31T20:53:03Z,discuss,"@donnerpeter - indeed, I have! Kindly pardon the delay. :)"
+2018-02-02T14:36:59Z,discuss,"@jonnybot0 looks good to me, thank you!"
+2018-02-02T14:36:59Z,discuss,"Have you submitted a contributor license agreement?
+If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-02-08T19:52:22Z,discuss,I believe I have. Is there some way to indicate/prove that?
+2018-02-14T14:03:57Z,discuss,@jonnybot0 Unfortunately I'm not able to find you in our contributors list. Could you please submit again?
+2018-02-15T21:21:19Z,discuss,Done.
+2018-02-22T12:34:56Z,discuss,"I've used static import to preserve the git history in GroovyTypeCheckVisitor.
+eddf087"
+2018-02-22T12:34:56Z,discuss,"Thank you for the contribution!
+This change will be available in the build next week."
+2018-01-31T20:49:46Z,commit,Move isImplicitReturnStatement to ControlFlowUtils and make public,github.com/JetBrains/intellij-community/pull/690/commits/f4e274d97ff722a32e676e6a4a07284752147a31

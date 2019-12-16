@@ -1,0 +1,6 @@
+156,IDEA-120753: Allow tool window weight to be configurable in the .idea.properties
+2014-02-27T16:17:39Z,discuss,Before the toolwindow weight was hardcoded to 0.33f. Now it can be configured in the .idea.properties by uncommenting line 108. This new weight is used whenever a new project is created and a toolwindow NOT configured in window-manager.xml is created (ie: 'Maven Projects').
+2014-03-21T10:06:14Z,discuss,"Settings like this, if made configurable at all, should be configured through the registry (see Registry.java and registry.properties), not through idea.properties."
+2014-03-21T11:26:00Z,discuss,"Apologies, I did not know that! I will make the necessary changes today. Is there by chance a dev guide that explains all of this? I did not see one initially."
+2014-03-23T20:17:11Z,discuss,I accidentally closed the PR by mistake and GitHub won't let me reopen it. I made a new one at #161. Sorry for the inconvenience.
+2014-02-16T16:01:58Z,commit,IDEA-120753: Modified tool window weight to be configurable in the .i¡­,github.com/JetBrains/intellij-community/pull/156/commits/be3f2ce7b0a855ca81927d14ed29daf3a310662f

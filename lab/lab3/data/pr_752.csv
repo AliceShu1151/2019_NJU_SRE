@@ -1,0 +1,29 @@
+752,Polish characters work regardless of locale
+2018-03-08T22:51:46Z,discuss,"On Windows, Polish keyboard layout (and a few others) remaps Right Alt to
+AltGr (Alt Graph) key. For such keyboard layouts pressing right Alt
+sends two key press events: Left Ctrl and Right Alt. This is due to a
+fact that Ctrl+Alt is also used in Windows as a AltGr key mapping."
+2018-03-08T22:51:46Z,discuss,"On such keyboards, to access national characters users have following
+options: Ctrl(any) + Alt (any) + letter or Right Alt + Letter with vast
+majority of users using the latter."
+2018-03-08T22:51:46Z,discuss,"Unfortunately, Android Studio uses plenty of shortcuts in form of
+Ctrl+Alt+letter. These shortcuts take precedence over typing the accented
+character. To make things work, Android Studio uses current locale to
+detect if Polish keyboard layout (or another with similar property) is used."
+2018-03-08T22:51:46Z,discuss,"This is not ideal - locale is not equal to keyboard layout. Users who
+have English locale, but use Polish keyboard are not able to enter
+accented characters that have keybinding mapping defined for them. There
+are two workarounds, none of them satisfactory: add a custom property to
+idea.properties file (hard to discover) or remove keybindings for each
+accented letter."
+2018-03-08T22:51:46Z,discuss,"Fix:
+Java sets keyChar property on KeyEvent whenever a key combination would
+result in typing a character. If the property is set and it would be a
+result of pressing Left Ctrl+Right Alt then ignore and shortcut mappings
+to give precedence to typing a character."
+2018-03-08T22:51:46Z,discuss,Other changes:
+2018-03-08T22:51:46Z,discuss,See Android Studio issue for more context: https://issuetracker.google.com/68750785
+2018-03-08T22:51:46Z,discuss,"Change-Id: I840ffcc9e653ca6e8942242c017056dc1252e1e0
+Test: added IdeKeyEventDispatcherTest.testPolish()"
+2018-07-21T11:02:33Z,discuss,cc @denis-fokin
+2018-01-10T18:46:18Z,commit,Polish characters work regardless of locale,github.com/JetBrains/intellij-community/pull/752/commits/96919739ae38a2848c0b447c789965193672b4dc

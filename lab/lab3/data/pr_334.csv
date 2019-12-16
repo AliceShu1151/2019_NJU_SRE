@@ -1,0 +1,7 @@
+334,Open/close task dialogs improvement
+2015-12-17T09:52:50Z,discuss,Add ability to upgrade open/close task dialog by adding custom panel.
+2015-12-17T09:44:12Z,commit,Update TaskRepository.java,github.com/JetBrains/intellij-community/pull/334/commits/6c4e991d688f9d6f47b0e7f750748f74a1d908ec
+2015-12-17T09:46:24Z,commit,Update OpenTaskDialog.java,github.com/JetBrains/intellij-community/pull/334/commits/07602db514dc5f218ce0a345068f9a7eb53fdd50
+2015-12-17T09:48:01Z,commit,Update CloseTaskDialog.java,github.com/JetBrains/intellij-community/pull/334/commits/b77130c1ad96bd8263ac7267c85f439623f1c655
+2015-12-17T09:49:38Z,commit,Update CloseTaskDialog.form,github.com/JetBrains/intellij-community/pull/334/commits/110709ecced3304769ea954db1c319bc2c5bc7a5
+2015-12-17T09:50:06Z,commit,Update OpenTaskDialog.form,github.com/JetBrains/intellij-community/pull/334/commits/8c29ff78029b02844b949edfcbcf4f6598935324

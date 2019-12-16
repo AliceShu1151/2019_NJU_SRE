@@ -1,0 +1,9 @@
+910,Don't suggest using streams if minSdkVersion < 24
+2018-11-03T03:50:02Z,discuss,"This CL makes the Guava inspection check the JavaFeature
+support lookup instead of being hardcoded to Java 8."
+2018-11-03T03:50:02Z,discuss,"This is the same logical change that was made in commit
+f995b33 to various
+other inspections."
+2018-11-03T03:50:02Z,discuss,Bug: https://issuetracker.google.com/118596848
+2018-11-06T11:58:31Z,discuss,Thanks. Merged manually
+2018-11-03T00:32:36Z,commit,Don't suggest using streams if minSdkVersion < 24,github.com/JetBrains/intellij-community/pull/910/commits/ad3828414eb31c185badbb69d6ef3cf9e636016f

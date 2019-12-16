@@ -1,0 +1,8 @@
+328,Use correct scheme/protocol when generating GitHub clone URL
+2015-11-24T23:06:28Z,discuss,"
+No description provided.
+"
+2015-11-25T09:31:31Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-11-25T15:39:04Z,discuss,I just submitted my signed CLA
+2015-11-26T12:08:12Z,discuss,"Received, thanks."
+2015-11-24T23:03:11Z,commit,Use correct scheme/protocol when generating clone URL,github.com/JetBrains/intellij-community/pull/328/commits/a18fa3e2c54d79d45382f754d2e7dbf8ebef99f9

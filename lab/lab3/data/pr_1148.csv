@@ -1,0 +1,5 @@
+1148,Remove interactive option for shells
+2019-06-02T12:16:14Z,discuss,"Fixes IDEA-215394 (https://youtrack.jetbrains.com/issue/IDEA-215394)
+Tested with bash and fish, removal of the option produces no visible effects for them. For Ion, it allows it to start."
+2019-06-04T07:18:07Z,discuss,"An issue has been fixed differently with 7ac3365, so I'm closing this PR."
+2019-06-02T11:20:30Z,commit,Remove interactive option for shells,github.com/JetBrains/intellij-community/pull/1148/commits/c25dd482a0ed7c1351325b69596ac069317ed8fc

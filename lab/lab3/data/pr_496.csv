@@ -1,0 +1,13 @@
+496,Improve messages displayed when a plugin is disabled or not installed
+2016-12-20T13:42:47Z,discuss,Improve messages displayed when a plugin is disabled or not installed:
+2016-12-20T13:42:47Z,discuss,"File type notification: Change to active (not passive), and properly terminate sentence."
+2016-12-20T13:42:47Z,discuss,"Feature notification: Simplify sentence, and make it more directed towards the action the user can take (current message is very system centric)"
+2016-12-20T13:51:15Z,discuss,Signed CLA submitted.
+2016-12-20T15:18:06Z,discuss,"Updated file dialog:
+"
+2016-12-20T15:18:35Z,discuss,"Updated feature dialog:
+"
+2016-12-20T23:35:56Z,discuss,@alexander-doroshko generally reviews our work into the Dart plugin - do not know if he's the right reviewer here or not.
+2016-12-21T15:03:53Z,discuss,The CLA was received. Thanks.
+2016-12-21T17:19:37Z,discuss,Merged manually with small changes.
+2016-12-20T13:38:42Z,commit,Improve messages display when a plugin is disabled or not installed,github.com/JetBrains/intellij-community/pull/496/commits/fdf58b044ad7894743f593f88c9b89f812359bb0

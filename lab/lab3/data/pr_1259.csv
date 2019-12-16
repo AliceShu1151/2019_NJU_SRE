@@ -1,0 +1,9 @@
+1259,Improve Method's param count evaluation
+2019-11-22T14:02:06Z,discuss,"I've investigated usage of java.lang.reflect.Method.getParameterTypes(); and found that it's frequently called from parts of the application responsible for startup, indexing and PSI:"
+2019-11-22T14:02:06Z,discuss,
+2019-11-22T14:02:06Z,discuss,
+2019-11-22T14:02:06Z,discuss,
+2019-11-22T14:02:06Z,discuss,"Each call to Method.getParameterTypes() clones underlying array, and in many cases the copy is used only to get it's length i.e. number of method params. So I propose to use Method.getParameterCount() which returns number of method's arguments without cloning of underlying array."
+2019-11-22T14:02:06Z,discuss,In some cases it also allows to make a decision about constructor's param count and if it's 0 then we can call Constructor.newInstance() without using vararg.
+2019-12-05T14:26:02Z,discuss,Any updates on this?
+2019-11-22T11:47:33Z,commit,Improve Method's param count evaluation,github.com/JetBrains/intellij-community/pull/1259/commits/eed0d667a7c1d5be8f84fedf18bab35d1cea9cb0

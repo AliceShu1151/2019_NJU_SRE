@@ -1,0 +1,9 @@
+458,Updated YouTrack icons for task plugin to match contemporary YouTrack presentation
+2016-10-27T12:15:47Z,discuss,"
+No description provided.
+"
+2016-11-22T09:22:56Z,discuss,Any updates?
+2016-11-22T10:31:42Z,discuss,"@jk1 as a JetBrains employee you may contact @dmitry-avdeev directly.
+P.S. this PR seems to target some outdated branch, all changes should first land in master branch."
+2016-11-22T12:12:58Z,discuss,Fair enough. Here are the same changes applied against master branch: #470
+2016-10-27T12:10:30Z,commit,Updated YouTrack icons for task plugin to match contemporary YouTrack¡­,github.com/JetBrains/intellij-community/pull/458/commits/fa168877a71e48ec144182b3baa6e3320db7795d

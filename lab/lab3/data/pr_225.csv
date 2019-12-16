@@ -1,0 +1,11 @@
+225,"OverriderUsageInfo: Store overriding PsiMethod in a separate field (to prevent replacement by ""navigation element"")"
+2014-11-17T17:43:19Z,discuss,"The goal is to allow interoperability between Change Signature refactorings in Java and Kotlin (or, in general, Java-compatible language which doesn't use Java PSI).
+When Java method is overriden by Kotlin function, Change Signature creates OverriderUsageInfo using light method which servers as PsiMethod wrapper for Kotlin function. However upon creation it gets replaced by its navigation element (i. e. Kotlin one) which is not a PsiMethod, and Java refactoring fails with type casting error.
+So I suggest to keep overriding PsiMethod (which may be either real Java method, or wrapper of some sort) in a separate field and use it instead of getElement() (in most cases)."
+2014-11-20T11:19:04Z,discuss,done
+2014-11-20T11:22:45Z,discuss,Thanks
+2014-11-20T12:16:32Z,discuss,"Could you merge it to IDEA 13 and upcoming IDEA 14 update (14.0.3, I believe)? Thanks"
+2014-11-20T14:28:40Z,discuss,It's safe enough to get to 14.0.2.
+2014-11-20T14:28:40Z,discuss,"For the best of my knowledge we won't release 13.1.7, why do you think that merge could be useful."
+2014-11-20T14:38:31Z,discuss,It's OK then
+2014-11-17T16:31:35Z,commit,OverriderUsageInfo: Store overriding PsiMethod in a separate field (t¡­,github.com/JetBrains/intellij-community/pull/225/commits/e12b0e876a9acd2c43f387798f30d88ae0a53fe7

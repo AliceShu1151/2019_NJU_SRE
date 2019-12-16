@@ -1,0 +1,6 @@
+644,IDEA-180548 Introduce PlatformUtils.isAndroidStudio method
+2017-10-13T01:24:44Z,discuss,"
+No description provided.
+"
+2017-10-31T08:32:35Z,discuss,"We don't recommend to use PlatformUtils anymore, see the issue for details."
+2017-10-13T01:03:01Z,commit,IDEA-180548 Introduce PlatformUtils.isAndroidStudio method,github.com/JetBrains/intellij-community/pull/644/commits/a6300636d3e430f54cdbe84203f26cd42654dfac

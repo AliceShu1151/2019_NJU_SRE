@@ -1,0 +1,5 @@
+141,Prefer custom code fragment factory on context change
+2014-01-17T09:02:34Z,discuss,For automatically choosing custom code fragment factory on context change
+2014-02-04T11:49:26Z,discuss,Merged
+2014-01-17T08:40:50Z,commit,Prefer custom code fragment factory on context change,github.com/JetBrains/intellij-community/pull/141/commits/ae62cb8617bc6265d65d0026cc2efbab767c515d
+2014-01-20T13:51:55Z,commit,Restore factory with default with least priority;,github.com/JetBrains/intellij-community/pull/141/commits/607f109de040709070439faaf336d4eb9dea5b80

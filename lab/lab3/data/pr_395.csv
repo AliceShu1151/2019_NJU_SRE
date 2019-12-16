@@ -1,0 +1,35 @@
+395,PY-14330: Pandas dataframes viewer in debug or console
+2016-04-27T02:27:54Z,discuss,"PY-14330
+Pandas dataframes viewer in debug or console"
+2016-04-27T14:06:48Z,discuss,Awesome! Thanks!
+2016-04-28T16:40:36Z,discuss,I got an NPE exception trying to view the data frame having suspended the debugger at the last line of the code
+2016-04-28T16:40:36Z,discuss,Exception:
+2016-04-28T22:26:29Z,discuss,"I'll take a look at the exception tonight. To see if I can reproduce. I wasn't sure which way to go on the reuse vs avoiding overloading existing function names with different semantics. I decided to avoid overloading a go with duplication.  I will certainly refactor for reuse. Now looking back at it, it is certainly a better choice."
+2016-04-28T23:59:36Z,discuss,
+2016-04-28T23:59:36Z,discuss,I cannot reproduce the error. What version of Python and Pandas are you testing with?
+2016-04-29T01:35:11Z,discuss,"@traff Reworked according to comments and pushed. Still cannot reproduce error.Tested with Python 2.7 and Python 3.5, pandas version 0.18.0"
+2016-04-29T03:41:03Z,discuss,@traff Tested down to pandas 0.11.0. Still cannot reproduce.
+2016-05-03T14:06:48Z,discuss,is there a binary version available (windows)?
+2016-05-06T04:04:49Z,discuss,@ophiry There will not be a build until this PR hopefully gets accepted by Jetbrains. At that point it should become available in their EAP build.
+2016-05-06T18:14:03Z,discuss,@fitermay I can't reproduce the NPE now.
+2016-05-06T18:40:55Z,discuss,"@fitermay Thanks a lot for the improvements! Still one thing still bothers me in the implemented approach. That is the big portion of duplication of many classes of the data frames support with the existing numpy array support. We plan to make improvements in the array viewer component soon, thus having a code duplication will make the work much harder. This code duplication is basically the classes DataFrameTable and NumpyArrayTable, DataFrameCellRenderer and ArrayTableCellRenderer, PyViewDataFrameAction and PyViewArrayAction, ArrayTableForm and DataFrameTableForm.
+This duplication should be avoided to make the code more maintainable in the future."
+2016-05-06T18:48:35Z,discuss,"@traff I duplicated to reduce the risk of breaking existing code, since there are no tests for the existing ArrayViewer code. A good chunk of it is UI code and cannot be automatically tested, at least not within the existing framework.  If you prefer me to merge them I will do it.  I prefer merging them myself but thought you'd feel more comfortable with existing code being mostly unchanged."
+2016-05-06T19:02:16Z,discuss,@fitermay Regressions aren't a big problem. If it is all well implemented we will a) Test if for regressions b) Include into our EAP for the next version to reveal possible bugs before release
+2016-05-06T19:02:16Z,discuss,"By the way, tests also won't harm. To test things in run-time we have so called Env Tests (look into PythonDebuggerTest for example). They could help to tests models at least."
+2016-05-06T19:21:55Z,discuss,"Ok, I will refactor to remove duplication whenever possible."
+2016-05-11T02:58:53Z,discuss,"@traff Ok, refactored to remove most duplication. Also added some basic env tests."
+2016-05-17T17:08:10Z,discuss,"Yuli, thanks a lot for your effort. Now it looks better. Still I find it a bit more duplicated then it could be, for example NumpyArrayTable/Form and DataFrameTable/Form are basically the same. The only major difference is handling of headers, which could be reflected in two different header models instead of having two different approaches of table initialisation."
+2016-05-19T07:25:58Z,discuss,"@traff Ok, fixed up and moved to the model. I hope it is ok to merge now."
+2016-05-24T18:27:35Z,discuss,"@fitermay Thanks Yuli, looks good for me. I've put the branch into our repository, it will be merged into master after we test it."
+2016-04-24T22:29:47Z,commit,--support column and row headers in ArrayChunk at protocol level,github.com/JetBrains/intellij-community/pull/395/commits/7ba39c75521b775ff26f44320bea1db3dbbab60a
+2016-04-24T22:31:04Z,commit,--create dataframe to xml marshaller,github.com/JetBrains/intellij-community/pull/395/commits/722efa60e7d13266777b98e849da7db0155c0efd
+2016-04-24T22:33:39Z,commit,--extract superclass from NumpyArrayTable to be used for dataframes a¡­,github.com/JetBrains/intellij-community/pull/395/commits/62a1dd8f4175186b7cfa7bc21ceb2869fb6547ea
+2016-04-27T01:50:24Z,commit,--implement java rendering,github.com/JetBrains/intellij-community/pull/395/commits/783cd8ff95968046a8af3df7e217e89970c66f3e
+2016-04-29T01:09:24Z,commit,--overload getArray and CMD_GET_ARRAY to be able to handle DataFrames,github.com/JetBrains/intellij-community/pull/395/commits/6ab075612aefd30b021dd405c0474371e36f6b7e
+2016-05-11T01:47:00Z,commit,--Factor out common code in numpy array viewer and pandas dataframe v¡­,github.com/JetBrains/intellij-community/pull/395/commits/ab8d3cf1da72af6446a2b1be9523b91592b61141
+2016-05-11T02:31:42Z,commit,--add some basic env tests,github.com/JetBrains/intellij-community/pull/395/commits/b9a83b5ec3e10d977e6e0ef56e72ab5ba3ca601a
+2016-05-11T02:56:54Z,commit,--incorporate recent change to master,github.com/JetBrains/intellij-community/pull/395/commits/70d20d551de43e968995178c8bccae4c55ae72c2
+2016-05-17T19:30:52Z,commit,--fix code style and remove unused import,github.com/JetBrains/intellij-community/pull/395/commits/164416d3fd8cce325238b842ea50d3a16ba6f586
+2016-05-19T06:51:21Z,commit,--remove form duplication,github.com/JetBrains/intellij-community/pull/395/commits/fed318c7da36cbae003456da084fd9abdebefedd
+2016-05-19T07:24:00Z,commit,--fixup after rebase,github.com/JetBrains/intellij-community/pull/395/commits/a506ecbf8f9996b565248d5abd5f6190244c06a4

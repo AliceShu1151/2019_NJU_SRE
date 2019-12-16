@@ -1,0 +1,14 @@
+900,Fix JSON index performance
+2018-10-25T18:26:04Z,discuss,The existing implementation of the JsonSchemaFileValuesIndex relies on psi trees to extract just two top level properties $id and $schema. On projects having multiple relatively large JSON files it often takes substantial time. Many larger JSON files come in JARs for some popular third party libraries.
+2018-10-25T18:26:04Z,discuss,This PR replaces the implementation of map() function with a Lexer based extraction.
+2018-10-25T18:26:04Z,discuss,"Apart from the submitted unit tests, it has been tested that the editor properly recognises the JSON schema referred from a JSON file."
+2018-10-29T08:56:05Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-10-29T09:24:08Z,discuss,"Hi Kirill, I believe it is covered by the agreement between companies."
+2018-10-29T09:26:13Z,discuss,"Yes, absolutely. Didn't notice that you're from Google. ;)"
+2018-10-29T10:08:14Z,discuss,"Thanks a lot for the improvement! There's one place that can be improved further. If you agree with that and can fix it, I'll wait before merging. If not, then I'll merge as is, because this PR already significantly optimizes the performance."
+2018-10-29T11:58:38Z,discuss,Thank you for the fast update!
+2018-11-08T21:42:01Z,discuss,@zhuravlikjb  I don't see the commits in master (anywhere in github repo). Did it break any tests ?
+2018-11-09T09:55:14Z,discuss,"@yuriy-solodkyy Sorry, I accepted the PR here, but not to our main repository, and so it was synced back without the commits. Fixed, now the commits will appear here in about an hour. Thanks a lot for reminding!"
+2018-11-09T09:55:14Z,discuss,Also will cherry-pick the fix to the release branch soon.
+2018-10-25T18:12:52Z,commit,Avoid using Psi-tree in JsonSchemaFileValuesIndex.,github.com/JetBrains/intellij-community/pull/900/commits/58a15d76be759154f94de02438d39737d3d5f28b
+2018-10-29T11:53:31Z,commit,Stop parsing scanning on both properties found.,github.com/JetBrains/intellij-community/pull/900/commits/e077a9079c8247b281d5d37ab324370b9c6fccc4

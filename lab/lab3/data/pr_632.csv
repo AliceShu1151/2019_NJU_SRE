@@ -1,0 +1,4 @@
+632,PY-26239: Fix find class usages performance
+2017-09-27T03:23:27Z,discuss,"Instead of searching for ""init"" text. Search for references named the same as the class but with init method target"
+2017-12-29T06:49:18Z,discuss,@fitermay Thanks for your PR! I've rebased it onto master.
+2017-09-27T03:08:32Z,commit,PY-26239: Fix find class usages performance,github.com/JetBrains/intellij-community/pull/632/commits/845f7f488742f9b9fb5cb3264a476d1cf658e996

@@ -1,0 +1,4 @@
+318,Fixing import statement for ipython 4.0.0
+2015-10-30T13:08:46Z,discuss,Due to the warning from ipython.utils.traitlets.py:
+2018-02-21T12:41:43Z,discuss,"Hi! Sorry for the late response, your fix was included into PyCharm."
+2015-10-30T13:07:52Z,commit,Fixing import statement for ipython 4.0.0,github.com/JetBrains/intellij-community/pull/318/commits/3854f54f542c458a78e4b6629d2d0c00c2454deb

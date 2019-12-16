@@ -1,0 +1,3 @@
+164,IDEA-121292 Download Sources does not work for snapshots
+2014-03-31T17:16:21Z,discuss,http://youtrack.jetbrains.com/issue/IDEA-121292
+2014-03-31T17:07:06Z,commit,IDEA-121292 prevent maven from overriding snapshot versions in Legacy¡­,github.com/JetBrains/intellij-community/pull/164/commits/d0dc353f460e171214ab624260dc99526a53742e

@@ -1,0 +1,4 @@
+1048,Add support for Fish completions in terminal
+2019-01-26T19:28:05Z,discuss,"Just like functions from #660, .config/fish can contain completions (I have them for docker-compose for instance).
+This trivial change adds support for them into terminal plugin."
+2019-01-26T19:26:23Z,commit,Add support for Fish completions in terminal,github.com/JetBrains/intellij-community/pull/1048/commits/f9a86f3cbb010c551af736c88851689c1114b2c1

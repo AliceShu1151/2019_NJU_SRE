@@ -1,0 +1,4 @@
+39,IDEA-86115 Build file properties ant command line config is not saved to .idea/ant.xml
+2013-03-06T07:36:34Z,discuss,... .idea/ant.xml
+2013-03-06T12:29:13Z,discuss,Merged manually. Thanks!
+2013-03-06T07:35:01Z,commit,IDEA-86115 Build file properties ant command line config is not saved¡­,github.com/JetBrains/intellij-community/pull/39/commits/fe067086ac92687bd8d50f1c7711b6069b8bfa13

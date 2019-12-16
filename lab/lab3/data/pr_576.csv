@@ -1,0 +1,8 @@
+576,Several fixes in UAST value analysis including
+2017-05-24T12:35:29Z,discuss,Merged manually.
+2017-05-17T10:08:57Z,commit,UAST: improve UComment / JavaUElementWithComments,github.com/JetBrains/intellij-community/pull/576/commits/bfdcf5400305faa19feb5eaf964a2f9e29704c8f
+2017-05-12T19:21:24Z,commit,UAST value analysis: use only analyzable containing declarations,github.com/JetBrains/intellij-community/pull/576/commits/d441bcbd6473ed876f14f7e034b0e891eeb3a639
+2017-05-17T11:38:36Z,commit,UAST evaluator tests: check for correct caching added,github.com/JetBrains/intellij-community/pull/576/commits/dcd8c556b2839566227ca1e859d081b327f2c625
+2017-05-17T16:27:06Z,commit,Clear cache in evaluation context when file is changed,github.com/JetBrains/intellij-community/pull/576/commits/682f91c84c5c7f69742547989b3839fc653910d7
+2017-05-19T15:10:07Z,commit,UAST value analysis: use single map-based state instead of chained ones,github.com/JetBrains/intellij-community/pull/576/commits/ffc9d54cfce3268ed7430cceee75f2ac059e30e2
+2017-05-23T17:34:02Z,commit,UAST value analysis: add checkCancelled into loop analysis,github.com/JetBrains/intellij-community/pull/576/commits/f8f9ac6c9e1024adeb235ca8ea53474043487716

@@ -1,0 +1,4 @@
+183,Show language name instead of internal id to user
+2014-05-20T18:00:04Z,discuss,"I haven't found ""Cannot inline reference from ..."" in test data but didn't run tests too."
+2014-08-08T10:28:16Z,discuss,Done
+2014-05-20T17:03:16Z,commit,Show language name instead of internal id to user,github.com/JetBrains/intellij-community/pull/183/commits/dc5115e7dbffbc57d14a2b0291ef92484c8ff0c8

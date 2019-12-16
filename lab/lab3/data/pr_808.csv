@@ -1,0 +1,5 @@
+808,Make EditorWindow.INITIAL_INDEX_KEY public for plugins
+2018-06-11T01:05:41Z,discuss,"I don't want tabs jumping around when switching between files, so I need to clear it from userData before opening files."
+2018-06-11T01:05:41Z,discuss,For: https://github.com/krasa/EditorGroups
+2018-06-13T10:23:11Z,discuss,I've made the change in master.
+2018-06-11T01:02:09Z,commit,Make EditorWindow.INITIAL_INDEX_KEY public for plugins,github.com/JetBrains/intellij-community/pull/808/commits/eab8e577ed57e15dc9926f9b84d4f221846b339d

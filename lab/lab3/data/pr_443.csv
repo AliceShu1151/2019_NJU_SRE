@@ -1,0 +1,55 @@
+443,Add support Stepik plugin
+2016-09-07T22:29:28Z,discuss,"@ktisha
+Add support Stepik Union plugin."
+2016-09-07T22:29:28Z,discuss,previous version PR
+2018-02-09T12:29:57Z,discuss,Close as not relevant anymore
+2016-07-13T16:24:50Z,commit,Merge pull request #1 from JetBrains/master,github.com/JetBrains/intellij-community/pull/443/commits/cb60fefb6521123cf206b0fe394f5dc0f1120ac3
+2016-07-14T09:11:17Z,commit,save settings,github.com/JetBrains/intellij-community/pull/443/commits/72d132d3b31467c258a7a115282f8b3f2b4ff160
+2016-07-14T13:17:02Z,commit,increase rate of project building,github.com/JetBrains/intellij-community/pull/443/commits/065260958a459f8286e109e881db1b21ff21750b
+2016-07-14T15:35:18Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/443/commits/5c2a86f9de59e26588c6f25852d6c6a432f8f272
+2016-07-15T12:56:55Z,commit,simplify getCourse method,github.com/JetBrains/intellij-community/pull/443/commits/649de64932772e897d0e14eb9db892bc62578e33
+2016-07-15T17:18:03Z,commit,save,github.com/JetBrains/intellij-community/pull/443/commits/f558fff57fa688d003a1d089bec89dee1adc736e
+2016-07-18T17:20:39Z,commit,save,github.com/JetBrains/intellij-community/pull/443/commits/4ad6fe5a5ec3a5f7a6627119be2fff2637713e24
+2016-07-19T16:44:29Z,commit,before init client changes,github.com/JetBrains/intellij-community/pull/443/commits/640d1162027475ad47324da78ccf975918d26d15
+2016-07-19T17:42:56Z,commit,init client is done,github.com/JetBrains/intellij-community/pull/443/commits/7c430b3afb8ebce1dc85c1b3e437b4287bae68a3
+2016-07-20T14:40:27Z,commit,"add OAuth2 password, only access_token;",github.com/JetBrains/intellij-community/pull/443/commits/fcaad0cad8def3a0a9b4d93ebb5d429fbef8926d
+2016-07-21T11:54:19Z,commit,save,github.com/JetBrains/intellij-community/pull/443/commits/0114646b7aeb3cd826ebb5e525b5bc8e56c09b8c
+2016-07-22T16:11:03Z,commit,StepicConnector was split for 4 classes,github.com/JetBrains/intellij-community/pull/443/commits/bfd200764e4ce2e9088532d12989931fed16824d
+2016-07-25T12:20:14Z,commit,fix login,github.com/JetBrains/intellij-community/pull/443/commits/a58cb5edd3a106c63e5851868c1d2b730c57ec97
+2016-07-25T12:31:46Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/443/commits/fc43a10df808efbd190669cb895b7780596bb9df
+2016-07-25T17:14:01Z,commit,TW problem,github.com/JetBrains/intellij-community/pull/443/commits/441d489c6aa838d1ab3655b8a3cadc04db77a83b
+2016-07-26T15:16:48Z,commit,TW problem fix + add online TeX,github.com/JetBrains/intellij-community/pull/443/commits/e3feabccb4a1b5981933f196effe749c561cabe6
+2016-07-26T15:53:43Z,commit,maybe fix StepicUpdater,github.com/JetBrains/intellij-community/pull/443/commits/9198d0e235e8cec187f56f57bec73c1aba0a94eb
+2016-07-26T18:12:52Z,commit,save: work with post action,github.com/JetBrains/intellij-community/pull/443/commits/d1cc6b16bf4b9ba9fe95013c116e368462a1b9a3
+2016-07-27T12:23:19Z,commit,fix step ID,github.com/JetBrains/intellij-community/pull/443/commits/a156a7798fbf38805d691fdedb5278918670f47f
+2016-07-27T12:45:39Z,commit,change SubmissionWrapper to SubmissionContainer,github.com/JetBrains/intellij-community/pull/443/commits/ba0a01309a39ee2750b581b21503e97812b57793
+2016-07-27T13:12:38Z,commit,"fix sections, lessons and steps numbers",github.com/JetBrains/intellij-community/pull/443/commits/8093ed409acc19ae2ec029123a274c48eb6962f0
+2016-07-27T14:39:42Z,commit,improve extending for navigationAction,github.com/JetBrains/intellij-community/pull/443/commits/ad9531963cf81a8fbe0c3b60dcaf1b19e104cfb8
+2016-07-27T16:36:52Z,commit,save,github.com/JetBrains/intellij-community/pull/443/commits/d2fcc3c5300c4978c8530879ef95c83c3ec96313
+2016-07-29T14:39:51Z,commit,course selector 0.5,github.com/JetBrains/intellij-community/pull/443/commits/68fd20304e27398a1c214234a36b215e3e99aa61
+2016-08-16T13:27:01Z,commit,login was split on two types; EduStepicConnector unused now - but it бн,github.com/JetBrains/intellij-community/pull/443/commits/3f66314550d051b6ea21367b9b933956b214b25d
+2016-08-17T08:57:17Z,commit,fix header,github.com/JetBrains/intellij-community/pull/443/commits/c6983c272ca71004200b5df98577e55c7ba67881
+2016-08-19T17:27:01Z,commit,course builder is done,github.com/JetBrains/intellij-community/pull/443/commits/45cfb5e5a75c50d9a24cf6bfa81f5666147bf68d
+2016-08-19T18:32:45Z,commit,add download button,github.com/JetBrains/intellij-community/pull/443/commits/11c68d0dcf9fdb657fe56d1e3035048b226c53ad
+2016-08-23T16:56:00Z,commit,add course chooser in project wizard,github.com/JetBrains/intellij-community/pull/443/commits/53b62acd6eebed9d66852bf76734d779a32fc5c4
+2016-08-25T13:31:18Z,commit,switch lang is work now,github.com/JetBrains/intellij-community/pull/443/commits/f4395b2f6470c53d0f5f57d1b89959ac44bd6246
+2016-08-29T12:56:14Z,commit,naming,github.com/JetBrains/intellij-community/pull/443/commits/f6e2201db53249c92245346f55dc9eb5669f1508
+2016-08-29T17:54:40Z,commit,add refresh token,github.com/JetBrains/intellij-community/pull/443/commits/ce3cebf9e9fc544092b2f68f0dcd8a2b12c54ad9
+2016-08-30T10:58:08Z,commit,"save, metrics 0.5",github.com/JetBrains/intellij-community/pull/443/commits/4ab95306051f93825e344e72c2494ca1c805e0f3
+2016-09-01T17:57:50Z,commit,release 0.3.4,github.com/JetBrains/intellij-community/pull/443/commits/00e9a5ad14c5d1d0b8e68ce638b7287b07065a41
+2016-09-02T14:15:04Z,commit,"fix: create project, course list, remove run test configuration, fix бн",github.com/JetBrains/intellij-community/pull/443/commits/12bebee3ca20a2b22024a90c0e13be49b1ae4b0d
+2016-09-07T16:14:48Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/443/commits/72b5f8b178ee30c4907b7be3e2f7dde43ea812e3
+2016-09-07T20:21:39Z,commit,reset local settings,github.com/JetBrains/intellij-community/pull/443/commits/956cfad3dbe45d5136c8f06b5103c92d10f756ca
+2016-09-07T20:54:53Z,commit,rename myStepikId into stepId and cleaning,github.com/JetBrains/intellij-community/pull/443/commits/2f6807b63f47f4ede83b52b56fe32dc5bebb101f
+2016-09-07T21:01:32Z,commit,"reset EduStepikConnector to EduStepicConnector (13.07.2016), rename aбн",github.com/JetBrains/intellij-community/pull/443/commits/bdc178b719436a29a50813ab7981562625098d24
+2016-09-07T21:18:45Z,commit,cleaning,github.com/JetBrains/intellij-community/pull/443/commits/0178a4d6befaa326bd05fbec9d098277007e5c64
+2016-09-08T08:00:09Z,commit,cleaning 2,github.com/JetBrains/intellij-community/pull/443/commits/d1dd29554e6362dedc4b114c9b7e66a1b85c2288
+2016-09-26T16:36:24Z,commit,"fix: tree view, getting available course",github.com/JetBrains/intellij-community/pull/443/commits/3ea28558b7222f4b86621c34309a239db895d42c
+2016-10-03T08:52:43Z,commit,Stepik Core,github.com/JetBrains/intellij-community/pull/443/commits/99b6983e2276b23e57edfdc262f3ff5a8a247b91
+2016-10-03T11:53:56Z,commit,add src,github.com/JetBrains/intellij-community/pull/443/commits/a4cf3febfc7e307e0d6121cc9f250f822f261f8d
+2016-10-06T11:24:37Z,commit,fix: IDs and building,github.com/JetBrains/intellij-community/pull/443/commits/7beaf7fc89f471e823d24af549a89f717c98d33a
+2016-10-08T14:51:23Z,commit,fix: section dirs contain forbidden symbols,github.com/JetBrains/intellij-community/pull/443/commits/78e96c86022a7b388946d24d848a79b067fc6283
+2016-10-12T11:57:01Z,commit,add hint in to menu,github.com/JetBrains/intellij-community/pull/443/commits/7a7a4cc7fa270f392ea031cd062589ab9b6fb511
+2016-10-12T13:28:30Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/443/commits/324e640c7da05e030b8758c5e976e65d7201279b
+2016-10-13T15:37:17Z,commit,fix IDs,github.com/JetBrains/intellij-community/pull/443/commits/78429107556059224f7cc77b1165a5c704b577ec
+2016-10-13T15:45:43Z,commit,Merge pull request,github.com/JetBrains/intellij-community/pull/443/commits/12c262548430f812b32fa6700669c147d6547fd3

@@ -1,0 +1,12 @@
+393,[Fernflower] Renaming support for .class field access and assertions
+2016-04-26T12:36:42Z,discuss,"If you use renaming, .class field access and assertions don't decompile correctly in some cases (output contains synthetics)."
+2016-04-26T12:36:42Z,discuss,"Examples:
+https://github.com/droid666/intellij-community/tree/398801bec078efc14529078b22e4b109f7efcadf/plugins/java-decompiler/engine/testData/src-stdout/javadefault/renaming"
+2016-04-26T12:36:42Z,discuss,"The examples are part of this pull request: #390
+They are deactivate in the pull by default because they fail without this fix."
+2016-04-26T12:36:42Z,discuss,"Example B needs the first commit of this pull to work (access to .class on renamed class).
+Example A also needs the 2nd commit of this pull to work (Assertion location is not recognized as Assertion without adding renaming there)."
+2016-04-26T12:36:42Z,discuss,The question is if this is the correct fix or if these 2 problems mean something does not work as it should?
+2017-05-02T12:39:13Z,discuss,Is it possible to extract tests specific to this pr and attach here?
+2016-04-25T23:54:12Z,commit,"use renamer on .class references (only needed for 1.4 and 1.5?, just ¡­",github.com/JetBrains/intellij-community/pull/393/commits/ce12680e544d9886f0534217ffa7b97474c88d51
+2016-04-26T12:09:08Z,commit,AssertProcessor needs the same bugfix: must use renamer here too (jus¡­,github.com/JetBrains/intellij-community/pull/393/commits/c1cd2f0cf67a522690e2926d0d5aeeb1197e162d

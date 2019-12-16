@@ -1,0 +1,29 @@
+915,"JUnit5 suggest, make reference and validate @EnumSource¡­"
+2018-11-12T14:22:01Z,discuss,¡­ values from enum constants
+2018-11-12T14:22:01Z,discuss,for details see https://youtrack.jetbrains.com/issue/IDEA-202111
+2018-11-21T12:49:46Z,discuss,"Ivo, I think that the request is feasible. I don't like that the utility functions are available inside the module which means e.g. that you publish very specific com.intellij.execution.junit.codeInsight.enumsource.EnumSourceUtilsKt#getParentOfType. Moreover I am not sure that stopAt arguments are required: they are supposed to stop the traversal but looks like all usages are called inside annotation already and you never got those stop elements.
+So my suggestion is to merge everything about problems into inspection (otherwise package enumsource is separated from the inspection though I hardly can imagine how it can be used outside of it) and have another one class with reference and then make all utilities private or inline them."
+2018-11-21T12:49:46Z,discuss,"It's also not common to have ""see smth"" messages. I'd rather have ""Can't resolve enum constant reference"""
+2018-11-21T12:49:46Z,discuss,I can perform the suggested changes myself. What do you think?
+2018-11-21T17:11:54Z,discuss,"Anna, thx for review, I am going to fix all the issues. :)"
+2018-11-21T18:21:30Z,discuss,"i have fixed all issues and amended commit. i am not sure i really understand ""make all utilities private or inline them"" (i did it) because it leads to duplicate code, or am i missing something? :]"
+2018-11-21T18:46:09Z,discuss,package com.intellij.execution.junit.codeInsight.references still exists?
+2018-11-21T18:49:31Z,discuss,"yep it does... so you mean to move all files from .references one level up? i am sorry, but as i reviewing my changes with your suggestions i can say that i did not exactly understand that moves."
+2018-11-22T08:39:22Z,discuss,"Maybe I am on right track. I have refactored code a bit and hide elements in EnumSourceNamesInsight.kt file. I have moved everything from .reference pkg one level up to not call from child pkg to parent pkg - this is imo codesmell. Are you ok with it? :] Thx, Ivos"
+2018-11-22T09:50:18Z,discuss,"I think, I am ok with current structure. Let me check the details"
+2018-11-22T17:40:08Z,discuss,"Why com.intellij.execution.junit.codeInsight.EnumSourceNamesInsight#checkEnumSourceNames is separated from com.intellij.psi.JavaElementVisitor#checkEnumSource? there would be small duplicates but you won't need passing functions around, etc. I am not sure that I may insist to change kotlin code as mostly I do java but this just looks overcomplicated to me..."
+2018-11-22T19:51:23Z,discuss,I have refactored it a bit / added some comments.
+2018-11-22T19:51:23Z,discuss,"""checkEnumSource"" calls two checks, so I separated ""Names"" check to special method. Currently I removed that recursion for ""value"" array - it is not necessary because @EnumSource has only one ""Class<?>"" value."
+2018-11-22T19:51:23Z,discuss,I have created new code in Kotlin because I thought that Kotlin was primary created to have better language (than Java) for creating new features in IDEA :]
+2018-11-22T19:51:23Z,discuss,"I am open for any suggestion... I can change what ever you want, If you have feeling from code that it is overcomplicated."
+2018-11-22T19:51:23Z,discuss,"In general code for Filter, Reference or Inspection works as follows: First it detects ""mode"" default value from @EnumSource class definition (there are some versions of JUnit5 that does not specify default value for ""mode""). Than it finds ""mode"" value from PsiAnnotation (INCLUDE or EXCLUDE means that string value is interpreted as enum constant by JUnit5, other values are interpreted as regural expression). And finally it compares ""names"" values to constant-fields detected on selected Enum<?>."
+2018-11-22T19:51:23Z,discuss,edit: i have updated PR with refactoring to make it more clear. :]
+2018-11-26T17:02:09Z,discuss,"I slightly changed the code and support additional warnings on duplicated literals, also duplicated constants won't be suggested now. Merged manually. Thanks"
+2018-11-27T07:29:05Z,discuss,"Anna, thank you for merging :-) I have checked changes you made. That duplicate check is cools - I did not recognized it when working on PR. For next time, lesson for me is that you are ok with small duplicates and code should be more inlined than extracted into methods, right? I am ok with it, just to know, be on right track with code-base and not to add more work on your side.
+thx
+Ivos"
+2018-11-27T09:44:12Z,discuss,"Don't get me wrong, I don't like code duplicates but when it just one method call with arguments than I personally prefer to make the structure easier and duplicate the arguments rather than create 2 additional classes."
+2018-11-27T09:50:54Z,discuss,I see :-) anyways it was fun investigating. Looking forward to finding some other thing i can help with PR.
+2018-11-27T10:11:31Z,discuss,"please, submit youtrack issue and ask if PR is feasible first."
+2018-11-12T14:19:43Z,commit,"IDEA-202111 - JUnit5 suggest, make reference and validate @EnumSource¡­",github.com/JetBrains/intellij-community/pull/915/commits/ea1058e5dead42a066a573ae5bd47a5e27fe2711
+2018-11-22T08:35:35Z,commit,IDEA-202111 - Refactor code to remove code duplicates and make elemen¡­,github.com/JetBrains/intellij-community/pull/915/commits/ad9dfe6dcfcc1e5c9e22098292f289a451264b56

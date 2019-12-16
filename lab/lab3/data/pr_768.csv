@@ -1,0 +1,6 @@
+768,PY-29110: Correctly process folders ending in .egg in PythonPathEditor
+2018-03-23T02:20:24Z,discuss,"
+No description provided.
+"
+2018-04-11T18:11:58Z,discuss,@fitermay Thanks for your pull request! I've merged it into master via rebase.
+2018-03-23T02:19:27Z,commit,PY-29110: Correctly process folders ending in .egg in PythonPathEditor,github.com/JetBrains/intellij-community/pull/768/commits/a08b988f57a980838a9c640ca47ebceecf66c621

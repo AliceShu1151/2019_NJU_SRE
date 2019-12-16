@@ -1,0 +1,5 @@
+1097,Do not throw exception when unable to get constant pool
+2019-03-22T23:25:54Z,discuss,"Bug: https://issuetracker.google.com/issues/123863053
+It is becuase ART(Android) JVM doesn't support the 'getConstantPool' capability."
+2019-03-25T11:29:40Z,discuss,"manually merged, thanks for your contribution!"
+2019-03-22T23:08:25Z,commit,Do not throw exception when unable to get constant pool,github.com/JetBrains/intellij-community/pull/1097/commits/8367dd8c6874431847aee2716dbf2ea469d2bc3d

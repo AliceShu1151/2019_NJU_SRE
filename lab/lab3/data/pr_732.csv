@@ -1,0 +1,11 @@
+732,Fixed incorrect handling of nested branch locations in SVN plugin
+2018-02-11T18:23:19Z,discuss,"SVN plugin incorrectly handles cases when one branch location is a subdirectory or another. I.e. in a project I am working on, we extended the standard repository layout (trunk, branches, tags) with a subdirectory for each team inside branches.  For example, we might have the following branches in repo:"
+2018-02-11T18:23:19Z,discuss,"and so on. When switching (or merging, or probably in some other cases too) from AFeatureBranch1 to AFeatureBranch2, the URL incorrectly becomes:
+branches/TeamA/AFeatureBranch2/AFeatureBranch1"
+2018-02-11T18:23:19Z,discuss,"This commit fixes this behaviour by considering the branch locations in order defined by their length, descending."
+2018-02-16T09:10:29Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-02-17T10:11:32Z,discuss,"I just did. It was weird however, as http://www.jetbrains.com/agreements/cla/ kept saying that something went wrong when I used Firefox and couldn't get it work (on two different computers). When I tried Chromium it went smoothly."
+2018-02-19T08:16:31Z,discuss,"@PLkolek There was a bug in our CLA processing engine, we've fixed it and will deploy shortly. Thank you for the report!"
+2018-02-19T08:16:31Z,discuss,The pull request will be reviewed shortly by @pchel-
+2018-03-14T10:02:22Z,discuss,Pushed as 23482b7.
+2018-02-11T19:11:37Z,commit,Fixed incorrect handling of nested branch origins in SVN plugin,github.com/JetBrains/intellij-community/pull/732/commits/237ac126a1c27edd5bd604d8819023731cd5ee52

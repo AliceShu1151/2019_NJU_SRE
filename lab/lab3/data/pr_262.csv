@@ -1,0 +1,8 @@
+262,Generate keys and values in each test case instead of use hardcoded constants
+2015-04-29T15:17:23Z,discuss,"
+No description provided.
+"
+2015-04-29T15:18:08Z,discuss,@chashnikov please take a look
+2015-05-04T10:05:00Z,discuss,Merged manually.
+2015-05-04T17:33:12Z,discuss,Thanks!
+2015-04-29T15:16:00Z,commit,Generate keys and values in each test case instead of use hardcoded c¡­,github.com/JetBrains/intellij-community/pull/262/commits/e82f507f6c9fd54a6b843bdb60390af41ac36c87

@@ -1,0 +1,5 @@
+1191,Should the frame balloon be horizontally centered?
+2019-08-23T08:07:55Z,discuss,Should the frame balloon be horizontally centered?
+2019-08-23T08:07:55Z,discuss,"code: PopupUtil.showBalloonForActiveFrame(""Message..."", MessageType.INFO)"
+2019-08-23T08:07:55Z,discuss,
+2019-08-23T08:03:45Z,commit,Frame balloon should be centered horizontally,github.com/JetBrains/intellij-community/pull/1191/commits/600feb66374c9dfb60d181e9d92987377318b7d0

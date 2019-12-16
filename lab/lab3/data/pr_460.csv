@@ -1,0 +1,4 @@
+460,IDEA-162949 myTaskPriority set to verbosive
+2016-10-27T13:08:45Z,discuss,"myTaskPriority needs to be set to verbose in order to be able to turn it off by AntBuildFileImpl.VERBOSE.set(editPropertyContainer, false);"
+2016-10-27T13:08:45Z,discuss,Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+2016-10-27T13:05:59Z,commit,IDEA-162949 myTaskPriority needs to be set to verbose in order to be бн,github.com/JetBrains/intellij-community/pull/460/commits/5f919dabd9af04b4b67c53d1e8cce4134e112855

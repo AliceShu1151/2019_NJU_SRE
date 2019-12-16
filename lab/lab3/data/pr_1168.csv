@@ -1,0 +1,5 @@
+1168,Fix unstable order of dependencies and modules listed in iml files after import from Gradle
+2019-07-09T12:04:00Z,discuss,What actually done:
+2019-11-25T14:50:17Z,discuss,merged manually
+2019-07-09T07:38:17Z,commit,Make dependencies order reproducible,github.com/JetBrains/intellij-community/pull/1168/commits/53a6b9fc0fdb4ff536b571e19015d7f2440e7444
+2019-07-09T11:35:36Z,commit,Remove all orderEntries if some dependencies are duplicated,github.com/JetBrains/intellij-community/pull/1168/commits/61c52e7ea146dac49f47a306868d73e04b10d8bc

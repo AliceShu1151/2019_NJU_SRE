@@ -1,0 +1,7 @@
+83,"Add ""VCS -> Mercurial -> Browse Changes..."", allowing to browse changes ..."
+2013-06-28T08:10:33Z,discuss,...before/after/within a date range or a before/after/within a range of commits.
+2013-07-11T05:39:54Z,discuss,Any feedback on this?
+2013-07-11T05:39:54Z,discuss,"Thank you,"
+2013-07-11T05:39:54Z,discuss,Jay
+2013-07-11T14:02:20Z,discuss,"Thanks for the contribution, Jay. I've merged and pushed your patch with a few changes."
+2013-06-28T08:07:35Z,commit,"Add ""VCS -> Mercurial -> Browse Changes..."", allowing to browse chang¡­",github.com/JetBrains/intellij-community/pull/83/commits/251a88c951942eb311dbacdbe6beeba05bff6e35

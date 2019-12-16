@@ -1,0 +1,4 @@
+32,IDEA-36137  Drag-n-drop Ant scripts to Ant Build tool window
+2013-01-11T18:16:29Z,discuss,Fix for http://youtrack.jetbrains.com/issue/IDEA-36137 . Added TransferHandler to AntExplorer
+2013-01-15T18:54:13Z,discuss,Thanks Matthew! I have merged your change.
+2013-01-11T17:57:48Z,commit,IDEA-36137 initial commit,github.com/JetBrains/intellij-community/pull/32/commits/2750c3d1153053fadef5e3830dc8cb4767de98dc

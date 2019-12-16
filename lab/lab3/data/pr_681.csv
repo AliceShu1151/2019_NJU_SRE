@@ -1,0 +1,8 @@
+681,"Add scope=""TEST"" to dependencies on *-tests modules"
+2017-12-12T01:41:46Z,discuss,"
+No description provided.
+"
+2017-12-12T01:48:15Z,discuss,@chashnikov?
+2017-12-12T07:43:35Z,discuss,"Merged to 'master', thank you for the contribution!"
+2017-12-12T01:19:26Z,commit,"Add scope=""TEST"" to dependencies on *-tests modules",github.com/JetBrains/intellij-community/pull/681/commits/0617aad583f683069d0d1d8314ce20549bb4ba50
+2017-12-12T01:45:31Z,commit,Remove duplicate java-tests entry,github.com/JetBrains/intellij-community/pull/681/commits/d0bc09552486f4bd29d4b7b7e28077d487e88ad1

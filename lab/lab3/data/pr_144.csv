@@ -1,0 +1,5 @@
+144,Filter out non-physical classes in DefaultClassNavigationContributor
+2014-01-22T07:28:30Z,discuss,"For example, in scala plugin we have fake companion classes. They are paired with real ones and have same containing file, but they are non-physical."
+2014-01-24T08:49:42Z,discuss,I'd consult with Kotlin guys is case they have non-physical classes that should be shown in this list.
+2014-02-06T15:36:49Z,discuss,Merged manually
+2014-01-22T07:15:01Z,commit,Filter out non-physical classes in DefaultClassNavigationContributor,github.com/JetBrains/intellij-community/pull/144/commits/fb06a91c78db0fdccc9651a73ed7e773cf85850f

@@ -1,0 +1,7 @@
+197,Resource bundle filtering
+2014-07-01T18:21:47Z,discuss,This is a fix for http://youtrack.jetbrains.com/issue/IDEA-86919  and adds a filter for invalid elements to the built-in resource bundle editor.
+2018-07-21T15:11:48Z,discuss,"@derkork, please rebase the PR, cc @batya239."
+2018-07-23T05:41:43Z,discuss,"I don't think it is necessary to do this anymore. This feature has been incorporated into IntelliJ around 2015, so this is obsolete now.  I have marked https://youtrack.jetbrains.com/issue/IDEA-86919 as obsolete now."
+2014-07-01T16:13:33Z,commit,IDEA-86919 added filter which shows only invalid elements,github.com/JetBrains/intellij-community/pull/197/commits/6243940bedee12ba06b9ddda8b443a29d9489608
+2014-07-01T16:48:48Z,commit,IDEA-86919 a few cosmetic improvements,github.com/JetBrains/intellij-community/pull/197/commits/bcf09ad6b747fda74fa88dd48646aef2ee0aba18
+2014-07-01T18:20:27Z,commit,IDEA-86919 fixed small typo,github.com/JetBrains/intellij-community/pull/197/commits/485e684277974c8d8c37a3fb50980d13241ab299

@@ -1,0 +1,11 @@
+363,No need to scan scope for global inspection
+2016-03-03T11:12:12Z,discuss,"
+No description provided.
+"
+2016-03-03T14:02:55Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-03-03T14:14:49Z,discuss,"Your case is running ""Inspect Code..."" action with an empty inspection profile?"
+2016-03-03T20:26:37Z,discuss,"@batya239, no, my case is ""Run inspection by name"". I made an inspection that helps me to perform sophisticated refactoring. It is designed to be executed on a whole project at once."
+2016-03-03T20:27:42Z,discuss,"@klikh, no I haven't. Will do it shortly."
+2016-03-04T08:32:29Z,discuss,@klikh Done!
+2016-03-04T10:08:17Z,discuss,We've received the CLA. Thanks.
+2016-03-03T11:09:08Z,commit,Files shouldn't be scanned if there are neither local inspections nor¡­,github.com/JetBrains/intellij-community/pull/363/commits/4ed3b54b4217a200245b994d596cea692697f842

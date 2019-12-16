@@ -1,0 +1,5 @@
+610,UAST: Fix receiverType for JavaUCallExpression
+2017-08-11T16:17:13Z,discuss,"Return correct receiver class for a method call with implicit receiver instead of super class, when method defined in one of super classes"
+2017-08-11T16:17:13Z,discuss,#IDEA-177417 Fixed
+2017-08-11T18:49:28Z,discuss,Merged manually.
+2017-08-10T13:14:20Z,commit,UAST: Fix receiverType for JavaUCallExpression,github.com/JetBrains/intellij-community/pull/610/commits/bebb19fbd5933cadc4b6842a433a8558925be7b8

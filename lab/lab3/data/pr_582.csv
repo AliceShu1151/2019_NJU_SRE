@@ -1,0 +1,3 @@
+582,README.md: escape * and +
+2017-06-05T04:31:20Z,discuss,The globbing characters are treated as bullet points by GFM.
+2017-06-05T04:31:03Z,commit,README.md: escape * and +,github.com/JetBrains/intellij-community/pull/582/commits/5fe9cb2404de968d1d875c4ba4c477756a82f369

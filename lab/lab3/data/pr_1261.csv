@@ -1,0 +1,25 @@
+1261,Pass along existing progress indicator if one exists.
+2019-11-22T17:56:41Z,discuss,"Running a plugin in headless mode, this is overriding my progress bar I have configured to pipe the progress to the terminal. Can't think of a reason we cant use the existing one if it exists."
+2019-11-25T05:55:51Z,discuss,"Could you please add a test for the behavior you need, probably to ProgressIndicatorTest?"
+2019-11-25T17:21:56Z,discuss,"Thanks for taking a look Peter. I have added a test for the write action case, however (please correct me if there is a way), I could not find a way to test the headless && !unitTest case (the case I will use this for)."
+2019-11-27T17:44:34Z,discuss,"Yes, writing tests in !unitTestMode is nontrivial and seems not worth the effort here."
+2019-11-28T08:54:45Z,discuss,"Great, thanks! Do you need this in 2019.3?"
+2019-11-28T11:17:44Z,discuss,"Interestingly, this leads to a failure in a couple tests in Ultimate. So far I haven't investigated why."
+2019-11-28T11:17:44Z,discuss,"Assertion failed
+at com.intellij.testFramework.LoggedErrorProcessor.processError(LoggedErrorProcessor.java:56)
+at com.intellij.testFramework.TestLogger.error(TestLogger.java:40)
+at com.intellij.openapi.diagnostic.Logger.error(Logger.java:166)
+at com.intellij.openapi.diagnostic.Logger.assertTrue(Logger.java:180)
+at com.intellij.openapi.diagnostic.Logger.assertTrue(Logger.java:189)
+at com.intellij.openapi.progress.util.ProgressWindow.start(ProgressWindow.java:113)
+at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:154)"
+2019-11-28T20:29:30Z,discuss,"I'm in no rush, especially with the failures you mentioned."
+2019-11-28T20:29:30Z,discuss,"Weird, I did check the other tests and didn't see any new failures. I assume ultimate tests are internal only. Let me know if there is anything I can do to help."
+2019-11-28T20:29:30Z,discuss,Thanks again for your help looking at this.
+2019-11-22T17:53:52Z,commit,Pass along existing progress indicator if one exists.,github.com/JetBrains/intellij-community/pull/1261/commits/4f7e1e5bbfdb4855dfcdc34dd22771a6a394dff8
+2019-11-25T17:19:42Z,commit,Add test to ProgressIndicatorTest,github.com/JetBrains/intellij-community/pull/1261/commits/fa856aa640420552a8e1023a68318d2a7462242a
+2019-11-25T17:26:09Z,commit,Refactor test to assert two progress indicators are equal,github.com/JetBrains/intellij-community/pull/1261/commits/facae07871eac5f2d9cbc44e959a484381a5cf0e
+2019-11-27T18:00:54Z,commit,Refactor test to be more functional.,github.com/JetBrains/intellij-community/pull/1261/commits/0b7bd69abab9ddea1e7a2b80c1fb2331acb0b5b1
+2019-11-27T18:04:40Z,commit,Use ProgressIndicatorBase to prevent overriding method.,github.com/JetBrains/intellij-community/pull/1261/commits/50af77a51ceb6c3e6e4c1fbcae7293ecbb9aa832
+2019-11-27T18:10:22Z,commit,Fix typo in test method name,github.com/JetBrains/intellij-community/pull/1261/commits/28da8a92e2da0aaba7776d56a20feac4323b9294
+2019-11-28T03:18:25Z,commit,Override is not needed for ProgressIndicatorBase,github.com/JetBrains/intellij-community/pull/1261/commits/97cf02b965fef5080f395cb442fadbeef99809ee

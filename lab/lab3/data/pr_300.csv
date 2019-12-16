@@ -1,0 +1,7 @@
+300,Support modifying directory rendering.
+2015-08-31T19:09:48Z,discuss,"This is used by TreeStructureProviders to suppress the rendering of the
+above."
+2015-08-31T19:09:48Z,discuss,Change-Id: I9c6ccf82b6c85043adebc56c588e714e3e54203f
+2015-09-01T14:37:02Z,discuss,"I've updated the commit with a much more modest change. We are now replacing each PsiDirectoryNode with a replacement instance in our TreeStructureProvider, obviating the need for instance variables."
+2015-09-02T14:03:06Z,discuss,"Merged manually, thank you for the contribution!"
+2015-08-31T15:37:19Z,commit,Support hiding PsiDirectoryNode sources roots.,github.com/JetBrains/intellij-community/pull/300/commits/7d860294fc8d18b60272bee49c8d6225f538b4fa

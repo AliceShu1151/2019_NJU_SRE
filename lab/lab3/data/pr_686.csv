@@ -1,0 +1,4 @@
+686,[IDEA-183953] Add test for unicode command
+2017-12-18T11:45:07Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-183953
+2018-07-21T11:07:23Z,discuss,"Already fixed, thanks for the RP. See https://youtrack.jetbrains.com/issue/IDEA-183953"
+2017-12-18T11:37:44Z,commit,Add unicodeCommand(),github.com/JetBrains/intellij-community/pull/686/commits/0a52287e4e2e96e7114b27df3ab1828726145ea1

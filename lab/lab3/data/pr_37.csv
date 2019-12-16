@@ -1,0 +1,8 @@
+37,IDEA-87874 input task doesn't use the defaultvalue
+2013-03-05T09:59:58Z,discuss,"
+No description provided.
+"
+2013-03-05T11:26:05Z,discuss,Was think as u. Tested all good
+2013-03-05T11:42:02Z,discuss,JComboBox - checked in setSelectionValue for contains in Model
+2013-03-05T15:43:26Z,discuss,Merged manually. Thanks for the contribution!
+2013-03-05T09:01:32Z,commit,IDEA-87874 input task doesn't use the defaultvalue,github.com/JetBrains/intellij-community/pull/37/commits/85eb79b6db132402f3ba04b1dcaec2d8b62b49b6

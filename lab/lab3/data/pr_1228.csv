@@ -1,0 +1,6 @@
+1228,"Revert ""cleanup"""
+2019-10-30T22:00:10Z,discuss,This reverts commit 3d875cb.
+2019-10-30T22:00:10Z,discuss,Making UndoManagerImpl final breaks tests that mock it.
+2019-11-12T02:00:03Z,discuss,@develar?
+2019-11-13T06:00:47Z,discuss,See discussion on #1226.
+2019-10-30T22:00:00Z,commit,"Revert ""cleanup""",github.com/JetBrains/intellij-community/pull/1228/commits/f7f2bb72ff13ae19ae09471f7ab627d87d82107d

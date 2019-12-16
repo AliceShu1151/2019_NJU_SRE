@@ -1,0 +1,7 @@
+330,IDEA-91198 Maximize views in floating mode
+2015-12-03T04:54:43Z,discuss,"by making floating mode window a full-fledged
+frame thus making it possible to expand the window
+by double-click and use multiple desktops feature
+on Mac which is especially useful with split views"
+2015-12-03T12:54:49Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-12-03T04:51:36Z,commit,IDEA-91198 Maximize views in floating mode,github.com/JetBrains/intellij-community/pull/330/commits/e931ed8ff500c161e4c13c4b2bf1c1fb2f031413

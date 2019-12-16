@@ -1,0 +1,13 @@
+1074,Decrement the current index after removing first element from buffer
+2019-03-05T18:09:06Z,discuss,"There is an issue in Android Studio where the build output parsers are
+not receiving all errors. The reason to that is when we try to read the
+next line while the buffer is full, the first element is removed and the
+current index will be pointing to the next element so this line will be
+skipped in the next call of readLine."
+2019-03-05T18:09:06Z,discuss,"This change decrements the current index after the first element is
+removed from the buffer so it will point to the same element before
+the removal."
+2019-04-13T05:11:09Z,discuss,"Thanks for the contribution, I've added some tests for the reader and it finds additional issues with or w/o the change. You can find the following commits fixing found issues:
+e8c6f16
+fbef901"
+2019-04-13T05:11:09Z,discuss,"Please, verify if it fixes issue with your BuildOutputParsers and let me know if it doesn't."

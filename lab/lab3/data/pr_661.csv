@@ -1,0 +1,5 @@
+661,Making pydev compatible with Python 2.6
+2017-11-13T17:18:33Z,discuss,Changed format string to keep pydev compatible with python 2.6
+2017-11-13T18:31:21Z,discuss,@traff @Elizaveta239 One character change needed to make console work against 2.6:)
+2018-02-21T12:39:07Z,discuss,Thank you! Your fix was included into PyCharm 2017.3
+2017-11-13T17:13:01Z,commit,Making pydev compatible with Python 2.6,github.com/JetBrains/intellij-community/pull/661/commits/f428696cf1c0490048258c95f2c57191e371b214

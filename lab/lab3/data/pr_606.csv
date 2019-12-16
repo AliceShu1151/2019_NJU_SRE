@@ -1,0 +1,5 @@
+606,Minor UAST improvements
+2017-07-31T22:47:03Z,discuss,Fix for JetBrains/uast#16
+2017-07-31T22:31:30Z,commit,"UAST: Render annotations for variable, parameter",github.com/JetBrains/intellij-community/pull/606/commits/eb67b19e6c9467fa93a95d429544daf2d793ee8f
+2017-07-31T22:37:57Z,commit,UAST: Add functionalInterfaceType property for ULambdaExpression,github.com/JetBrains/intellij-community/pull/606/commits/c3679a229383a303c59a7028c6961859732318f7
+2017-08-01T19:45:57Z,commit,"UAST: Fix getUastParentOfType, skip psi parents without UElement",github.com/JetBrains/intellij-community/pull/606/commits/75a511fb48d7884b79303e8420255e1ba62dd8bc

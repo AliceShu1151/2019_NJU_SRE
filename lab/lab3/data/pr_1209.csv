@@ -1,0 +1,7 @@
+1209,MethodCallInLoopCondition enhancements
+2019-10-03T21:15:14Z,discuss,added Q.poll to iteration methods; ignoring CAS because of side-effects
+2019-11-14T16:55:12Z,discuss,"Hi,"
+2019-11-14T16:55:12Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-11-14T17:11:00Z,discuss,Yes I have.
+2019-11-15T11:40:26Z,discuss,Thank you. Merged with some bug fixes.
+2019-10-03T21:11:56Z,commit,MethodCallInLoopCondition: added Q.poll to iteration methods; ignorin¡­,github.com/JetBrains/intellij-community/pull/1209/commits/9df2d039115021469fed6e8a88222275f0b514c9

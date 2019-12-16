@@ -1,0 +1,10 @@
+237,Add support for specifying the debugging step size
+2015-01-25T20:20:12Z,discuss,This patch adds the necessary plumbing to allow a language plugin to set the step size when debugging a jvm process.
+2015-01-25T20:20:12Z,discuss,"This is useful, for example, for a bytecode-oriented language, where using a step size of StepRequest.STEP_MIN makes more sense than StepRequest.STEP_LINE"
+2015-01-26T10:11:26Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-01-26T17:49:15Z,discuss,This should be covered under your contributor license agreement with Google.
+2015-02-02T14:12:22Z,discuss,"We don't have such general contributor agreement with Google yet. Until it is fixed, we have to sign the CA with each Google developer individually."
+2015-02-03T21:28:44Z,discuss,"Done, my signed CLA has been sent to contribute@jetbrains.com"
+2015-02-04T08:55:27Z,discuss,"Received, thanks."
+2015-02-09T12:10:29Z,discuss,"pushed to master, thanks!"
+2014-12-30T06:21:26Z,commit,Add support for specifying the debugging step size,github.com/JetBrains/intellij-community/pull/237/commits/0ef4d01a142a9d9c2cb3b85989b191aa888c72a2

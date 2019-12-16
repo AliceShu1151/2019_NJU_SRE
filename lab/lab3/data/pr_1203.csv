@@ -1,0 +1,7 @@
+1203,IDEA-223297 Snap full-size toolbar on right side of main-window
+2019-09-22T16:00:11Z,discuss,"Hi,
+for details see https://youtrack.jetbrains.com/issue/IDEA-223297 .
+Thx,
+Ivos"
+2019-10-15T07:07:53Z,discuss,fixed with f57d697
+2019-09-22T15:57:42Z,commit,IDEA-223297 Snap full-size toolbar on right side of main-window,github.com/JetBrains/intellij-community/pull/1203/commits/131104db6abcdc815126227a8b94a8f468afe3d8

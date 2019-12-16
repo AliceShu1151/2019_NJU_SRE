@@ -1,0 +1,11 @@
+38,IDEA-36076 Ant integration: allow to add and remove multiple files at on...
+2013-03-05T10:01:22Z,discuss,...ce to / from Ant Build Window
+2013-03-05T11:16:06Z,discuss,Please add multiselection handling also to RemoveMetaTargetsOrBuildFileAction.doAction() and remove the method removeBuildFile() which will become unused after you do that.
+2013-03-05T12:16:39Z,discuss,Updated
+2019-06-22T22:39:25Z,discuss,"@VISTALL @yole
+this Pull Request has no activity since 2013. the related ticket IDEA-36076 is resolved in 2014."
+2019-06-22T22:39:25Z,discuss,maybe close this PR?
+2013-03-05T09:34:15Z,commit,IDEA-36076 Ant integration: allow to add and remove multiple files at¡­,github.com/JetBrains/intellij-community/pull/38/commits/7b1bf8fca9ab5d4d3c38f76bbf7ae691e0be7ba8
+2013-03-05T12:14:45Z,commit,removed duplicate code(to prev),github.com/JetBrains/intellij-community/pull/38/commits/a40213769229fb528ac22eaefddd2d10da970f2a
+2013-03-05T18:40:32Z,commit,remove all duplicate action in AntToolWindow,github.com/JetBrains/intellij-community/pull/38/commits/3691f6145e041d980842db75f47d8ec9ec6e7a35
+2013-03-05T20:41:51Z,commit,to prev,github.com/JetBrains/intellij-community/pull/38/commits/0000d4a322b20e6f9876a6ab163d2d40bc9d05c7

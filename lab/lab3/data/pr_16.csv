@@ -1,0 +1,10 @@
+16,Hg4idea create branch
+2012-08-30T15:10:15Z,discuss,This pull request adds a missing feature to the Mercurial plugin : Manage branches. It simply allows to create branches on multilple repositories in the same time and allows to close the current branch.
+2012-08-30T15:10:15Z,discuss,I did not really respect the plugin architecture since it seems to be limited to one repository by command. I may have not did it right but I'm sure many developers needs these features.
+2012-09-28T19:33:04Z,discuss,"Have you signed a contributor agreement? If not, could you please do so?
+http://www.jetbrains.org/display/IJOS/Contributor+Agreement"
+2012-10-23T13:34:08Z,discuss,"Maxime did this work while it was at Systar, so it's covered by the CLA signed by Systar. If you need a confirmation of Maxime, I let him to write a comment here."
+2012-10-23T13:36:32Z,discuss,My work is basicaly under the DWTFYWT licence :) I therefore give Systar and Xavier Fournet (@xfournet)  every rights on it.
+2012-08-28T08:31:51Z,commit,This commit adds the support of branches creation to the Mercurial pl¡­,github.com/JetBrains/intellij-community/pull/16/commits/0b286b4e01556affde09c8971751383ef7ddc611
+2012-08-28T11:57:37Z,commit,This commit adds the possibility to close the current branch.,github.com/JetBrains/intellij-community/pull/16/commits/642a8f23c64be61a7cb0c52c191127b87e8a572b
+2012-09-03T10:09:15Z,commit,This commit patches the issue IDEA-65459 concerning the case-sensitiv¡­,github.com/JetBrains/intellij-community/pull/16/commits/48c310c579bf0095bb14f064e167ba90ed071707

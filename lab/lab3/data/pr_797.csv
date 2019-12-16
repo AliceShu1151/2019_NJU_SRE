@@ -1,0 +1,5 @@
+797,Add an extension point for checking plugin versions during plugin updates
+2018-06-02T01:44:07Z,discuss,The main purpose of this PR is to allow Android Studio to decide which Kotlin plugin to advertise to users.
+2018-06-02T01:44:07Z,discuss,A following PR to Kotlin will change the Kotlin plugin update flow to use this extension point.
+2018-06-08T20:57:23Z,discuss,This PR is no longer needed. Closing
+2018-06-02T01:33:04Z,commit,Add an extension point for checking plugin versions during plugin upd¡­,github.com/JetBrains/intellij-community/pull/797/commits/821158f8f431a702470d200cd0d258573ffbcbeb

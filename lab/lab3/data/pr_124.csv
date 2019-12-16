@@ -1,0 +1,6 @@
+124,Guard against an idea.home with spaces
+2013-11-13T00:51:22Z,discuss,"This came up on Mac OS X where the IJ directory
+is called IntelliJ IDEA CE EAP.app but it could affect users on
+Windows who install into Program Files or such."
+2013-11-19T16:43:54Z,discuss,Pushed upstream. Thanks!
+2013-11-13T00:43:31Z,commit,Guard against an idea.home with spaces,github.com/JetBrains/intellij-community/pull/124/commits/1c355894c5baa6b4ef50334fc2e5de9bd3d44a95

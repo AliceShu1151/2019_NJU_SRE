@@ -1,0 +1,8 @@
+604,Improve diagnostic when failing to delete files in tests
+2017-07-26T22:12:03Z,discuss,"java.io.IOException: Can't delete xxx
+(stack trace)"
+2017-07-26T22:12:03Z,discuss,[0]: java.nio.file.FileSystemException: [myDirectory]\myfile.txt: The process cannot access the file because it is being used by another process.
+2017-07-26T22:12:03Z,discuss,"[1]: java.nio.file.DirectoryNotEmptyException: [myDirectory]
+(stack trace)"
+2017-07-27T09:32:08Z,discuss,"Thanks, merged manually!"
+2017-07-26T18:43:11Z,commit,Improve diagnostic when failing to delete files in tests,github.com/JetBrains/intellij-community/pull/604/commits/4c2d7ef9792704ab724bbd31d8c833b63ea5a179

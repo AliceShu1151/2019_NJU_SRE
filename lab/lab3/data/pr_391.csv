@@ -1,0 +1,9 @@
+391,[Fernflower] new option -osc: solves problems with method/field selection
+2016-04-25T22:53:01Z,discuss,"New option -osc (OVERLOADING_SAFETY_CASTS), turned off by default.
+Fix for IDEA-135385 and others."
+2016-04-25T22:53:01Z,discuss,"Overloaded and hidden fields and methods caused errors. All parameters types and the caller type must match the descriptor exactly, if not a cast is needed. The reason is that the current instance could have been cast to a sub/super class in the original code and we cannot know that. And we don't know if the method/field is overloaded on that sub/super class."
+2016-04-25T22:53:01Z,discuss,"This options adds a lot more casts to the decompiler output, but it is much safer and can solve many cases that fail otherwise.
+Test cases included in this pull request: #390"
+2016-04-25T22:21:54Z,commit,new option: -osc=0/1 (OVERLOADING_SAFETY_CASTS solves problems with o¡­,github.com/JetBrains/intellij-community/pull/391/commits/1c8bf31e3c657028299479a94a71a215886e8c45
+2016-04-25T22:39:51Z,commit,readme.txt,github.com/JetBrains/intellij-community/pull/391/commits/ac982e4973999176c53960f137cd9e3be3d86cfc
+2016-04-25T22:42:14Z,commit,readme.txt,github.com/JetBrains/intellij-community/pull/391/commits/2f47d75a2345328924f2aa24b36265e420f94996

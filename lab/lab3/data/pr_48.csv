@@ -1,0 +1,11 @@
+48,IDEA-99003 Render type parameters in project view
+2013-03-08T17:01:52Z,discuss,"
+No description provided.
+"
+2018-12-19T12:55:58Z,discuss,Please update the PR.
+2018-12-19T12:57:03Z,discuss,Hello. I'm not interest in this PR anymore. Sorry
+2019-06-22T23:18:04Z,discuss,the code in this PR is not touched since 2013. is it still useful? if yes -> please resolve the conflicts and merge. if no -> consider closing this PR.
+2019-06-22T23:18:04Z,discuss,@SergeyMalenkov
+2013-01-15T14:53:07Z,commit,rendering api for type parameters(first part of IDEA-99003),github.com/JetBrains/intellij-community/pull/48/commits/0edb61230e12f9a9bec36c57539b68347b4eb488
+2013-01-15T14:57:05Z,commit,render type parameters in project view(second part of IDEA-99003),github.com/JetBrains/intellij-community/pull/48/commits/d351385a6a3c2ee7ecfdfdb045c70033f4df428b
+2013-03-08T16:58:57Z,commit,IDEA-99003 Render type parameters in project view,github.com/JetBrains/intellij-community/pull/48/commits/87de98ebc4e73788adec97719caf8a9e79230b4a

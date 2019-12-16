@@ -1,0 +1,18 @@
+622,Add copy URL to clipboard for Gist creation dialog in GitHub plugin
+2017-08-30T19:52:03Z,discuss,"Adds an additional check box in the Create Gist dialog to copy the URL to clipboard.
+"
+2017-09-04T10:12:22Z,discuss,"Hi,
+Thanks for the submission."
+2017-09-04T10:12:22Z,discuss,"How do you think, wouldn't it be better to replace these checkboxes with notification actions?
+"
+2017-09-04T16:15:11Z,discuss,"Ah, I knew there was a clipboard manager, just couldn't find it, thanks!"
+2017-09-04T16:15:11Z,discuss,"As for the notification actions suggestion, I do agree that it works a lot cleaner than adding an additional check box to the Gist creation dialog box, but I do personally like having it persistently remember the action. Seeing that the Open in browser action has both a check box and notification action would it be ok to do the same with the copy to clipboard action and have both a check box and notification action?"
+2017-09-12T08:36:10Z,discuss,"Hi!
+If you want this option to be persistently remembered maybe it is better to move the setting to VCS -> GitHub settings page?"
+2017-09-17T13:23:40Z,discuss,"It's kind of something I want to be like the open in browser action. If I selected it last time I want it to remember, and if I didn't last time I don't want it to the next time. It's not something I really want hidden in a settings page, I'd rather have it out front when I'm about to upload."
+2018-07-21T11:35:13Z,discuss,"@h1nk please rebase the PR, cc @AMPivovarov."
+2018-07-27T10:38:04Z,discuss,"Required functionality was implemented based on this pull request and merged.
+See commit abc2fe4934f705cf0fb89ccec2c858a113c5dfd0.
+Thank you, @h1nk."
+2017-08-31T09:47:20Z,commit,added copy URL to clipboard for Gists in GitHub plugin,github.com/JetBrains/intellij-community/pull/622/commits/d7feab8277dc56d06017ad2faf26aa39d9902f31
+2017-09-04T16:27:02Z,commit,use CopyPasteManager for copying content to clipboard,github.com/JetBrains/intellij-community/pull/622/commits/0954f7c35c822a89c61ca21b461eb06c3d847e89

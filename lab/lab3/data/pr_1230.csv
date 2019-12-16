@@ -1,0 +1,4 @@
+1230,Common code function name incorrect
+2019-11-02T20:36:18Z,discuss,s/doSomething/doSomethingBefore
+2019-11-05T09:29:07Z,discuss,"Merged, thanks."
+2019-11-02T20:34:46Z,commit,Common code function name incorrect,github.com/JetBrains/intellij-community/pull/1230/commits/2bd56b574602ac2ffb71dd4cb99e21b2e307cf78

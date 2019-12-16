@@ -1,0 +1,7 @@
+677,Remove unnecessary throws declarations
+2017-12-06T23:05:41Z,discuss,"
+No description provided.
+"
+2017-12-07T16:20:09Z,discuss,I've pushed the fix. Thanks.
+2017-12-07T16:20:09Z,discuss,This method is not unused: it is used in LeakCheck and in ProjectLeakTest.
+2017-12-06T23:02:57Z,commit,Remove unnecessary throws declarations,github.com/JetBrains/intellij-community/pull/677/commits/86927d7b76273fb66c569f98ccc5391695464b3d

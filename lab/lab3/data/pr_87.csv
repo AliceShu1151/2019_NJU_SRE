@@ -1,0 +1,11 @@
+87,CoreJavaFileManager.findClass: properly resolve $ in inner class names
+2013-08-09T09:46:43Z,discuss,More general fix for $ resolve: added ability to resolve Nested.Inner$ class in next case (hello from new akka library):
+2013-08-09T09:46:43Z,discuss,"class Nested {
+class Inner {}
+class Inner$ {}
+}"
+2013-08-09T09:46:43Z,discuss,Please merge it also to nearest 12.1.* release and 13 eap
+2013-08-12T10:45:07Z,discuss,Please remove System.out.println from the tests
+2013-08-28T18:34:54Z,discuss,Merged and backported to branch 129.
+2013-08-09T08:54:57Z,commit,CoreJavaFileManager.findClass: properly resolve $ in inner class names,github.com/JetBrains/intellij-community/pull/87/commits/13539bc26ee786500c639175d286a3137d7b0890
+2013-08-12T11:14:50Z,commit,Update CoreJavaFileManagerTest.java,github.com/JetBrains/intellij-community/pull/87/commits/857bfd57f67c125172adbcc0c20e3854144bcaa1

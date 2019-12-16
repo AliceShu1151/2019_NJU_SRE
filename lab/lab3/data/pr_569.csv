@@ -1,0 +1,9 @@
+569,IDEA-145520 - Don't ask which changelist to make active if there is only one
+2017-05-04T21:32:18Z,discuss,"The confirmation will not appear if only one changelist remains and all the deleted changelists are empty.
+The remaining changelist will then be made active silently."
+2017-05-04T21:32:18Z,discuss,If at least one deleted changelist is not empty the confirmation will be shown to give user a chance to cancel the deletion.
+2017-05-04T21:32:18Z,discuss,"Also 'RemoveChangeList' action text is updated based on the selection size.
+(""Delete Changelists"" looks a bit confusing when only one changelist is selected)"
+2017-06-08T13:02:58Z,discuss,Merged with a few small changes. 05d14ef. Thanks!
+2017-05-04T21:06:30Z,commit,Do not ask which changelist to make active if there is only one option.,github.com/JetBrains/intellij-community/pull/569/commits/f625fff05ad65d76196d6d015f163e3971ca758c
+2017-05-04T21:17:38Z,commit,Change 'RemoveChangeList' action text depending on the selection size,github.com/JetBrains/intellij-community/pull/569/commits/9f7c9c608c1403de949cc3c8f4f372ab189e8b29

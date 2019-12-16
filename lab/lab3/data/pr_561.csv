@@ -1,0 +1,10 @@
+561,Fix PyCustomMember.resolvesToClass
+2017-04-19T20:08:27Z,discuss,Without the fix PyCustomMember.resolvesToClass(classQName) does not work properly.
+2017-04-19T20:08:27Z,discuss,new PyCustomMember(name).resolvesToClass(qName) wont resolve because it would use pass as a target class
+2017-04-28T15:52:09Z,discuss,Please add a unit test that shows what problem you're solving. See the unit tests in PyResolveTest and the test data for them in testData/resolve/.
+2017-06-27T22:24:43Z,discuss,@vlasovskikh please take a look at this
+2017-07-01T16:24:13Z,discuss,@da1z @fitermay Thanks for adding a test! Could you please add a call to PyCustomMember.resolvesToClass(classQName) to the test? It was mentioned by @da1z as the incentive for this PR.
+2017-07-01T16:24:13Z,discuss,Please squash all your commits into one. We strongly prefer that PRs don't contain any merge commits as they have been proven difficult to rebase.
+2017-07-01T23:09:25Z,discuss,@vlasovskikh: Done
+2017-07-03T18:55:45Z,discuss,@da1z @fitermay Thanks for your PR! I've rebased it onto master.
+2017-04-19T18:01:55Z,commit,fix PyCustomMember targeting a class,github.com/JetBrains/intellij-community/pull/561/commits/6db0a15ee35bf22d7cb555fce81f05419395edfc

@@ -1,0 +1,6 @@
+923,Add more tests for UnnecessaryUnicodeEscapeInspection
+2018-11-20T19:19:45Z,discuss,"
+No description provided.
+"
+2018-11-21T13:51:13Z,discuss,"Merged manually as 2e64d3ec3eefd4458f07752e7931f74ab381911c, thanks for your contribution."
+2018-11-20T19:16:36Z,commit,Add more tests for UnnecessaryUnicodeEscapeInspection,github.com/JetBrains/intellij-community/pull/923/commits/dde97b36e470d8c8fa72750b92d465dadcc62e41

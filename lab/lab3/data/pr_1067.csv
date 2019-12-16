@@ -1,0 +1,12 @@
+1067,IDEA-207657 Fix StringIndexOutOfBoundsException in DocumentWindowImpl#replaceString
+2019-02-21T00:40:17Z,discuss,"
+No description provided.
+"
+2019-03-07T13:39:12Z,discuss,"IMHO it would be better to fix the intention, not to suppress it."
+2019-03-08T04:11:05Z,discuss,"Thanks for reviewing, I'd like to add a little more comment about this issue.
+Cause of the issue:"
+2019-03-08T04:11:05Z,discuss,"By fix the intention, do you mean:"
+2019-03-08T04:11:05Z,discuss,Or what's your proposal for fixing the bug?
+2019-03-11T13:21:13Z,discuss,I've created a proper fix for this: d881375
+2019-03-11T18:30:33Z,discuss,Thanks
+2019-02-21T00:21:55Z,commit,IDEA-207657 Fix StringIndexOutOfBoundsException in DocumentWindowImpl¡­,github.com/JetBrains/intellij-community/pull/1067/commits/23493eb3c681449f4d7cfceaef0617d77ace2fa7

@@ -1,0 +1,7 @@
+579,IDEA-173612 added ant log colors configuration
+2017-05-30T09:36:37Z,discuss,added
+2017-05-30T09:36:37Z,discuss,I haven't found build/scripts/icons.gant file so that change was done manually.
+2017-05-30T09:36:37Z,discuss,/**
+2017-05-30T09:36:37Z,discuss,Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+2018-06-18T15:40:32Z,discuss,Thanks! Merged manually with some corrections regarding artwork
+2017-05-30T09:32:47Z,commit,"IDEA-173612 added ant log colors configuration, ant log icons, PRIORI¡­",github.com/JetBrains/intellij-community/pull/579/commits/bf729b1c821040544ed92ea2dda3653ab1f76696

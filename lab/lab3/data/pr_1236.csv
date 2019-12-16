@@ -1,0 +1,6 @@
+1236,IDEA-226374 Constant String field evaluation shows PsiType prefix
+2019-11-06T19:49:21Z,discuss,"Hi, for details see https://youtrack.jetbrains.com/issue/IDEA-226374 .
+Thx,
+Ivos"
+2019-11-08T10:13:41Z,discuss,Merged manually with small fixes. Thanks
+2019-11-06T19:44:29Z,commit,IDEA-226374 Constant String field evaluation shows PsiType prefix,github.com/JetBrains/intellij-community/pull/1236/commits/87b835f770613e7f2dd37af6d534f7f1012585c2

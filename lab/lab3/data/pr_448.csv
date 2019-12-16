@@ -1,0 +1,12 @@
+448,IDEA-146390 Modules generated from Maven sources named using artifact name
+2016-09-22T21:54:23Z,discuss,https://youtrack.jetbrains.com/issue/IDEA-146390
+2016-09-22T21:54:23Z,discuss,"This change adds configuration to the Maven project importer so that IntelliJ Modules can be named as per the name element in the corresponding pom, rather than the artifactId."
+2016-09-22T21:54:23Z,discuss,Existing behaviour is preserved.
+2016-09-22T21:54:23Z,discuss,Main functional change starts on line 134 in MavenModuleNameMapper. The rest is plumbing to pass configuration in.
+2016-09-23T12:53:57Z,discuss,"The CLA was received, thanks."
+2016-11-24T12:30:39Z,discuss,"Hi @klikh, is this in a queue to be reviewed? If it won't be merged, then so be it, but it would be nice to have some closure :)"
+2018-07-21T13:00:20Z,discuss,"@manicmonkey, please rebase the PR, cc @vladsoroka."
+2018-08-01T03:41:19Z,discuss,"Hi @ignatov, I don't mind rebasing if this has a chance of going in - last comment from @vladsoroka on the associated youtrack issue suggested it wouldn't be: https://youtrack.jetbrains.com/issue/IDEA-146390#focus=streamItem-27-1799877-0-0"
+2018-08-01T03:41:19Z,discuss,Please advise...
+2018-08-01T12:31:39Z,discuss,It's up to @vladsoroka; I don't know which January he's talking :)
+2016-09-22T21:31:26Z,commit,IDEA-146390 Modules generated from Maven sources can use Maven projec¡­,github.com/JetBrains/intellij-community/pull/448/commits/1b08867ede164e5e328555e3d97b5c7123940bc7

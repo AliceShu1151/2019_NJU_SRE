@@ -1,0 +1,8 @@
+451,Update appName pattern
+2016-10-04T12:49:45Z,discuss,Update appName pattern to match xdg-mime output of Debian 8 which is org.gnome.Nautilus.desktop
+2016-10-04T12:49:45Z,discuss,Fixes https://youtrack.jetbrains.com/issue/IDEA-162050
+2016-10-04T13:33:00Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2016-10-04T14:21:40Z,discuss,I haven't. Will do soon.
+2016-10-05T05:25:28Z,discuss,Submitted CLA.
+2016-10-05T11:42:41Z,discuss,"We've received the CLA, thanks."
+2016-10-04T12:43:33Z,commit,Update appName pattern,github.com/JetBrains/intellij-community/pull/451/commits/e7d0461395ee54b82b437cf9730b4eaa9e2a51aa

@@ -1,0 +1,5 @@
+1127,Finish pending children ExecutionNode
+2019-04-24T22:11:11Z,discuss,... when a finish event is received in BuildTreeConsoleView#onEvent
+2019-04-24T22:11:11Z,discuss,This fixes https://youtrack.jetbrains.com/issue/IDEA-211609
+2019-04-29T12:35:52Z,discuss,"Thanks for the contribution, the change was merged using the following commit 2799dd1"
+2019-04-24T22:07:11Z,commit,Finish pending children ExecutionNode,github.com/JetBrains/intellij-community/pull/1127/commits/e7a587c61696b77531a7cb9c1b86f18f85f9d7e1

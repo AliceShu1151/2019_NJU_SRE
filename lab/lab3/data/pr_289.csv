@@ -1,0 +1,5 @@
+289,IDEA-96179 Replace with a camel case string and Preserve Case
+2015-07-14T20:24:58Z,discuss,Replace with a camel case string and Preserve Case on converts the string to lower case
+2015-07-16T21:05:10Z,discuss,without test we can not merge the change
+2015-07-17T09:45:05Z,discuss,"I believe the change is not correct: preserving case replacement of 'foo' to 'bar' should (and it works before the change) transform FOO to BAR, after the change it doesn't"
+2015-07-14T20:20:38Z,commit,IDEA-96179 Replace with a camel case string and Preserve Case on conv¡­,github.com/JetBrains/intellij-community/pull/289/commits/6de4e046c667170c3d69d282d0be628979b2d962

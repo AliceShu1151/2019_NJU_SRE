@@ -1,0 +1,7 @@
+161,IDEA-120753: Modified tool window weight to be configurable in the Intellij registry
+2014-03-23T20:13:43Z,discuss,"Made a new PR since I accidentally closed the other one and GitHub wouldn't let me reopen it. Now using the registry to store the UI designer and standard tool window weights. Since these values are floats, I added the necessary functions to handle floats in RegistryValue and Registry (others exist for double, int, string, etc.). By default, they are set to 0.33 as they were hardcoded."
+2014-04-10T03:10:58Z,discuss,Any movement on this issue by chance? Thanks!
+2014-07-30T03:04:35Z,discuss,Updated branch to latest code.
+2014-10-09T03:17:39Z,discuss,Updated branch to latest code.
+2014-12-25T05:56:44Z,discuss,Updated branch to latest code.
+2014-10-09T03:10:14Z,commit,IDEA-120753 Modified tool window weight to be configurable in the Int¡­,github.com/JetBrains/intellij-community/pull/161/commits/30e1dfed3c404f36a49f880da599f378d3b56348

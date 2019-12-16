@@ -1,0 +1,6 @@
+223,"allow for inline noinspections, cf #py-13835"
+2014-11-16T16:44:32Z,discuss,Allow for inline noinspections.
+2014-11-16T16:44:32Z,discuss,It can help to have cleaner code if inspection ignores can be commentted inline. Most python linters & code formatters do this.
+2014-12-05T12:35:58Z,discuss,Closing since Contribution Agreement was not signed.
+2014-12-05T13:00:00Z,discuss,"@klikh If you can't accept my code, then can the feature still be considered? It's a simple fix, really."
+2014-11-16T16:43:00Z,commit,"allow for inline noinspections, cf #py-13835",github.com/JetBrains/intellij-community/pull/223/commits/a6a8fd8638faca329d7729e83a8d8a6b5499be68

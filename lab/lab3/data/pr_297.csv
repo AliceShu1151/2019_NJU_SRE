@@ -1,0 +1,17 @@
+297,Refactored external system services to reduce amount or write actions
+2015-08-30T01:35:31Z,discuss,Description:
+2015-08-30T01:35:31Z,discuss,It appeared that most of the default services were executing a lot of write actions to commit models. Also services were committing models in write actions even if there were no changes to these models.
+2015-08-30T01:35:31Z,discuss,This refactoring tries to collect all the modifiable models and perform all commits in just one write action. Also before a commit all models are checked for changes. It affects performance of an incremental refresh drastically for huge projects.
+2015-08-30T01:35:31Z,discuss,Testing:
+2015-08-30T01:35:31Z,discuss,All 5 tests for external build system are passing. :-) Also manually tested on a project with 2227 modules. Incremental refresh on dependency/library changes was super fast!
+2015-08-30T01:35:31Z,discuss,It would be very nice if you guys can run the change on CI.
+2015-09-08T12:04:23Z,discuss,"Merged to master, thank you for the contribution!"
+2015-09-08T12:04:23Z,discuss,"I also did some fixes myself. Firstly, I changed order of statements in 'LibraryTableBase.LibraryModel#commit', otherwise 'isChanged' will return 'false' during 'commit' so no events will be fired. Secondly, I introduced method 'ExceptionUtil.rethrowAllAsUnchecked' and used it instead of 'rethrowUnchecked' to ensure that if the code will be changed in the future and start producing checked exceptions they won't be silently ignored."
+2015-09-08T16:24:11Z,discuss,"Awesome! §³§á§Ñ§ã§Ú§Ò§à, §¬§à§Ý§ñ!"
+2015-09-08T16:24:11Z,discuss,
+2015-09-10T01:17:26Z,discuss,Does 142.4675.3 include the fix?
+2015-09-10T01:23:06Z,discuss,Nope. It's included in 142.4712.
+2015-09-10T04:21:50Z,discuss,Built IntelliJ from sources. Much faster! But I think there is a room for even more improvements. Will do another round of profiling after my upcoming PTO.
+2015-08-30T00:57:36Z,commit,Refactored external system services to reduce amount or write locks a¡­,github.com/JetBrains/intellij-community/pull/297/commits/7aa4ee08a760460db214cd2819496619f8c5dd4b
+2015-09-03T17:16:34Z,commit,Addressed review comments,github.com/JetBrains/intellij-community/pull/297/commits/a97c24c78e2b77c16e8f4fa604e17546a3157b1b
+2015-09-03T17:56:32Z,commit,Removed redundant final modifiers.,github.com/JetBrains/intellij-community/pull/297/commits/5dfa0eab6dc6a1bd288b51bd1def6e1aa4a0e67e

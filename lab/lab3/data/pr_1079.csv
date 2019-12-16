@@ -1,0 +1,6 @@
+1079,IDEA-208610: Fix memory leaks in MouseDragHelper.attach and MouseDrag¡­
+2019-03-08T01:05:29Z,discuss,Fix memory leaks in MouseDragHelper.attach and MouseDragHelper.start.
+2019-03-08T01:05:29Z,discuss,Make the detach method dispose the object added to the Disposer's tree by the attach method.
+2019-03-08T01:05:29Z,discuss,Make the stop method dispose the object added to the Disposer's tree by the start method.
+2019-03-22T20:16:44Z,discuss,I believe it's better to avoid Disposable at all: add and remove listener in showNotify() and hideNotify() (revision 3dd717a)
+2019-03-08T00:56:17Z,commit,IDEA-208610: Fix memory leaks in MouseDragHelper.attach and MouseDrag¡­,github.com/JetBrains/intellij-community/pull/1079/commits/94cb31930672ebb7499619ea7fd26b6ad67a746f

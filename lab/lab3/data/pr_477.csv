@@ -1,0 +1,5 @@
+477,"In type names, replace type params with concrete types"
+2016-11-29T04:19:46Z,discuss,"бн which makes failure messages (and maybe assertion code) more readable, and avoids http://errorprone.info/bugpattern/SelfComparison."
+2018-07-21T13:02:31Z,discuss,"@dahlstrom-g, please rebase the PR, cc @vladsoroka."
+2018-07-21T18:43:55Z,discuss,This code was deleted by commit ec44930.
+2016-11-29T04:14:13Z,commit,"In type names, replace type params with concrete types",github.com/JetBrains/intellij-community/pull/477/commits/555f4d23de42dfd8204d09435523d901e9366d18

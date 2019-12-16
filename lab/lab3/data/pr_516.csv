@@ -1,0 +1,7 @@
+516,IDEA-168525 introduced AntExecutionListener ExtensionPoint for plugin¡­
+2017-02-21T10:21:15Z,discuss,IDEA-168525 introduced AntExecutionListener ExtensionPoint for plugins to get ant events
+2017-02-21T10:21:15Z,discuss,Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+2017-02-21T21:33:50Z,discuss,Please rebase the pull request on top of the current master: GitHub reports there are conflicts.
+2017-02-21T23:16:54Z,discuss,"Hi @klikh rebase complete, thanks"
+2018-06-04T07:10:55Z,discuss,Has been resolved in cb16f07.
+2017-02-21T23:33:21Z,commit,IDEA-168525 introduced AntExecutionListener ExtensionPoint for plugin¡­,github.com/JetBrains/intellij-community/pull/516/commits/357b5bb9a22994efdb8ea65c0c734a61ae2ef80d

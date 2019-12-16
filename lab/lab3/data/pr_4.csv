@@ -1,0 +1,4 @@
+4,"IDEA-76312 Copyright: ""No Copyright available"" dialog opens empty Settings"
+2011-11-05T15:54:01Z,discuss,This commit fixes opening OptionTree with preselectedConfigurable.
+2011-11-05T15:21:36Z,commit,IDEA-76312 Search preselected Configurable by class instead of hashCo¡­,github.com/JetBrains/intellij-community/pull/4/commits/7d99b1ac48423ea2d78c9366fba799a1b58fba0f
+2011-11-12T10:22:03Z,commit,Merge branch 'master' of git://github.com/JetBrains/intellij-community,github.com/JetBrains/intellij-community/pull/4/commits/323cf50fe5e75cd4afd97784e50812228d2b839f

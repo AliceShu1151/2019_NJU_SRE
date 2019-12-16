@@ -1,0 +1,21 @@
+85,Expose a commit's branch in a few different places:
+2013-07-11T05:39:44Z,discuss,Any feedback on this?
+2013-07-11T05:39:44Z,discuss,"Thank you,"
+2013-07-11T05:39:44Z,discuss,Jay
+2013-07-24T16:04:29Z,discuss,"Is there any chance of having this reviewed? If the code meets the appropriate standards, there are lots of folks at my company who are dying for this functionality..."
+2013-07-24T16:04:29Z,discuss,"Thank you for your consideration,"
+2013-07-24T16:04:29Z,discuss,Jay
+2013-08-22T09:10:07Z,discuss,"I'm not sure: why a prototype value is needed here? Removing it doesn't make combobox look bad, the preferred size is calculated correctly for me."
+2013-08-22T09:13:31Z,discuss,"There is an ""Unchecked assignment"" warning here. I guess, myColumn should be declared with the CommittedChangeList type parameter."
+2013-08-22T09:26:45Z,discuss,"Hi Jay,
+thanks for the pull request and sorry for the delay."
+2013-08-22T09:26:45Z,discuss,"I've reviewed proposed changes. I think that adding the 'branch' group to the Repository view is valuable, but I'm against adding it to the File History view, because:"
+2013-08-22T09:26:45Z,discuss,I've also added a couple of minor comments to the code.
+2013-08-23T15:09:43Z,discuss,"The reason I added the branch to the File History view is because for Mercurial, it seems that all the revisions are listed. Perhaps this is a bug in the Mercurial support? (Although, it's actually very useful to see the whole history, and then be able to filter by branch if desired. Actually, I'd make that filter on by default and have the option to show the whole history. This is one of the reasons our devs are having to go outside of IntelliJ to get the level of Mercurial support desired.)"
+2013-08-23T15:09:43Z,discuss,"(I just did a quick verification of this, where the history for the file I was looking at clearly showed changesets not on my current branch.)"
+2013-08-26T12:13:50Z,discuss,"By default hg log --follow displays the history of the file in the current branch and its ancestor branches, but not in branches which go in parallel with the current one. Mercurial integration behaves the same.
+We need the --follow tag here, because we want to follow moves and renames."
+2013-08-26T12:13:50Z,discuss,"Displaying the whole history in all branches would be nice, but it would require some other sort of the UI which would help to easily distinguish changes in different branches."
+2013-08-26T12:13:50Z,discuss,"That said, I'd like to accept your contribution to the Repository View, but not to the File History panel. Could you please remove the changes for the File History, fix (or respond to) minor comments and create a separate pull request with new change. Thanks."
+2013-08-27T06:32:42Z,discuss,See #93
+2013-06-28T14:30:27Z,commit,Expose a commit's branch in a few different places:,github.com/JetBrains/intellij-community/pull/85/commits/600bbeb30c1655cc7d90fb3aa353dacf3ceb2394

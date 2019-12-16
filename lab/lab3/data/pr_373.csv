@@ -1,0 +1,6 @@
+373,replace increment / decrement synthetic access method
+2016-03-22T05:33:46Z,discuss,Increment / decrement synthetic methods weren't identified and replaced as such.
+2016-03-22T05:33:46Z,discuss,For instance
+2016-03-22T05:33:46Z,discuss,Used to decompile to
+2016-03-28T11:00:06Z,discuss,"manually pushed with minor fixes, thanks!"
+2016-03-27T19:21:39Z,commit,replace increment / decrement synthetic access method,github.com/JetBrains/intellij-community/pull/373/commits/892c8c5388f011e5a0335abf534636ab8433aa0e

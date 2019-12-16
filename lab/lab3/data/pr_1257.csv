@@ -1,0 +1,10 @@
+1257,"enhancement: javadoc inspection ""unexpected param tag order"""
+2019-11-20T22:35:49Z,discuss,This PR adds a new javadoc inspection.
+2019-11-20T22:35:49Z,discuss,From the inspection description:
+2019-11-20T22:35:49Z,discuss,"The main reason for creating this inspection was, that javadoc lists parameters in the order they are documented inside the javadoc comment.
+However the IntelliJ ""Quick Documentation"" displays the parameters in the parameter-declaration order. Therefore the problem is only present/visible in the generated javadocs."
+2019-12-10T08:13:47Z,discuss,The implementation doesn't handle all possible cases.
+2019-11-20T22:30:32Z,commit,"add javadoc inspection ""unexpected param tag order""",github.com/JetBrains/intellij-community/pull/1257/commits/fd6d2088d539438259fd156f6a1f3e45ab6d3672
+2019-11-21T00:13:06Z,commit,"simplify ""falsely indented",github.com/JetBrains/intellij-community/pull/1257/commits/46e2a584200fb8e30380828bad8ecdc6f5068a31
+2019-12-03T23:07:27Z,commit,more strict checking for unexpected parameter order,github.com/JetBrains/intellij-community/pull/1257/commits/7e4f57f179c2893f0389a7b5105af8cb5d013d05
+2019-12-09T10:15:09Z,commit,use a more meaningful error description,github.com/JetBrains/intellij-community/pull/1257/commits/b5d0da4409fcefe9ad221d01a43cba108a45031b

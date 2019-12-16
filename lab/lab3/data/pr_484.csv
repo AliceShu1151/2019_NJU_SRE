@@ -1,0 +1,5 @@
+484,Address FieldAccessor.get compilation failure in JDK 9
+2016-12-06T23:09:54Z,discuss,"The first commit replaces uses of the method, which is all we apparently need at the moment to compile with JDK 9. The second commit removes the method¡ªseparate because I'm not sure if it needs to be kept in case of uses outside the project."
+2016-12-08T02:13:35Z,discuss,@sevdokimov? @vladsoroka?
+2016-12-06T22:59:22Z,commit,Replace calls to FieldAccessor.get,github.com/JetBrains/intellij-community/pull/484/commits/f3e4ee55baa52965d3cb568f10165d9e47b788e1
+2016-12-06T23:03:31Z,commit,Remove method FieldAccessor.get,github.com/JetBrains/intellij-community/pull/484/commits/da33f0123fdbd41c5f41c532d577b8fba192b689

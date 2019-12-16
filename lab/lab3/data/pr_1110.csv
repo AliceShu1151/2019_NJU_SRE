@@ -1,0 +1,7 @@
+1110,IDEA-200272 activate the session scope when looking up AbstractLifecy¡­
+2019-04-02T14:14:00Z,discuss,activate the session scope when looking up AbstractLifecycleParticipant to fix broken  dependency resolution
+2019-04-11T14:12:35Z,discuss,"@vladsoroka Do you need any help to get this merged?
+This is a showstopper for all IntelliJ users in my current project (and all other projects that depend on such maven extensions)."
+2019-04-15T14:25:24Z,discuss,Thanks for the contribution! I've merged the change using the following commit c99273c
+2019-04-15T14:25:24Z,discuss,"Also I've extracted the executeWithMavenSession method to the common module to reuse it for newer maven verions >= 3.6, see the commit at 35dc1cd"
+2019-04-02T14:09:47Z,commit,IDEA-200272 activate the session scope when looking up AbstractLifecy¡­,github.com/JetBrains/intellij-community/pull/1110/commits/273e8b1217667dc5f0068ba92694f758f0923c39

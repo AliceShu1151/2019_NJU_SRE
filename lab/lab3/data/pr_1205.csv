@@ -1,0 +1,6 @@
+1205,Add unit tests for unindent with selection
+2019-09-24T05:34:35Z,discuss,This adds two unit tests that reproduces IDEA-223397.
+2019-09-24T05:34:35Z,discuss,(Sorry I don't know my way around the editor enough to attempt an actual fix for the bug)
+2019-09-27T16:20:20Z,discuss,Cannot push a test which fails (without a fix for the problem).
+2019-09-27T22:16:42Z,discuss,"@JB-Dmitry Note that I didn't expect you to directly merge it with a failing test. This is a demonstration that the bug really exists and is reproducible, to serve as a starting point for someone knowledgeable to address the issue. Is there a way to annotate the test as being expected to fail until the issue is addressed? (equivalent to Python's http://docs.python.org/dev/library/unittest.html#unittest.expectedFailure)"
+2019-09-24T05:07:15Z,commit,Add unit tests for unindent with selection,github.com/JetBrains/intellij-community/pull/1205/commits/16c8901c3552e6677591c9809cf17019ceb06cdd

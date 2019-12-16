@@ -1,0 +1,7 @@
+98,IDEA-111450 - Fixes to redundant cast analysis of primitive comparisons
+2013-09-10T19:23:10Z,discuss,See http://youtrack.jetbrains.com/issue/IDEA-111450
+2013-09-10T19:26:05Z,discuss,"Mike, have you submitted a contributor license agreement? If not, could you please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it, sign, scan and send to contribute@jetbrains.com ? Thanks!"
+2013-09-10T19:28:15Z,discuss,I just attached the scanned PDF to the YouTrack issue a moment ago :).
+2013-09-10T19:39:09Z,discuss,Thanks! That's good enough. :)
+2013-09-13T10:48:56Z,discuss,Merged. Thanks
+2013-09-10T19:18:02Z,commit,IDEA-111450 - Fixes to redundant cast analysis of primitive compariso¡­,github.com/JetBrains/intellij-community/pull/98/commits/4a86d6ad47a22378fdf7fd71b0529b9cc553ebbc

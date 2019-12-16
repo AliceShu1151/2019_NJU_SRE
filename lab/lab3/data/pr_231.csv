@@ -1,0 +1,16 @@
+231,hg4idea close branch feature
+2014-12-14T16:57:00Z,discuss,"
+No description provided.
+"
+2014-12-14T16:57:19Z,discuss,"I can't figure out how to commit through CommitChangeListDialog without actual changes, so without changes I show my window for commit message and then perform commit. If there are changes, I invoke CommonCheckinProjectAction"
+2014-12-22T17:12:43Z,discuss,I've implemented this feature in a little different way. Now you have an ability to  call the commit dialog and perform commit&close branch action from status bar ->  branches widget. Please see appropriate commit ae92a76. Thank you for your contribution.
+2014-12-23T12:00:25Z,discuss,"@NadyaZabrodina, in this way there are no possibility to close branch and ""commit and push"", that's why  i make ""close branch"" kind of commit property and not the action. Anyway, your implementation is fine for me as i not really often use ""commit and push"". Thanks!"
+2014-12-08T00:29:05Z,commit,hg4idea: close branch,github.com/JetBrains/intellij-community/pull/231/commits/bf00a5edf5617bdab24f166b8325de49569e83f2
+2014-12-09T00:16:03Z,commit,hg4idea: close branch cosmetic fixes,github.com/JetBrains/intellij-community/pull/231/commits/a716e6b12747f6e279d5b7b866f0e94ded288a06
+2014-12-14T15:20:24Z,commit,hg4idea: close branch option in commit dialog,github.com/JetBrains/intellij-community/pull/231/commits/2fac2bbbfa24781ccdd752db2d21cd00e9981299
+2014-12-08T00:29:05Z,commit,hg4idea: close branch,github.com/JetBrains/intellij-community/pull/231/commits/3f24bcbb67dd1b9325a14eafb8cda581f3a2d6b4
+2014-12-09T00:16:03Z,commit,hg4idea: close branch cosmetic fixes,github.com/JetBrains/intellij-community/pull/231/commits/f31f3ed699ee0b7dc5afbc55db2875ac46eae892
+2014-12-14T15:20:24Z,commit,hg4idea: close branch option in commit dialog,github.com/JetBrains/intellij-community/pull/231/commits/ad6ac48c7fc52b7ae7aff3e5e99357d37dfd76df
+2014-12-14T16:25:18Z,commit,Merge remote-tracking branch 'origin/master',github.com/JetBrains/intellij-community/pull/231/commits/092774d4bcb6602a10e13668a52f27cb2abaffe5
+2014-12-14T16:29:08Z,commit,hg4idea: unused import,github.com/JetBrains/intellij-community/pull/231/commits/b5355997566b8b39bd807e1cc86db85fee5e5ff7
+2014-12-14T16:58:57Z,commit,unused import in HgUtil,github.com/JetBrains/intellij-community/pull/231/commits/747a33038594b756c282783d7ec5084321b09321

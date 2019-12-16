@@ -1,0 +1,3 @@
+538,Recognize Wayland sessions in SystemInfo
+2017-04-02T21:59:04Z,discuss,See https://fedoraproject.org/wiki/How_to_debug_Wayland_problems
+2017-04-02T21:39:55Z,commit,Recognize Wayland sessions in SystemInfo,github.com/JetBrains/intellij-community/pull/538/commits/7e054a27dcd714a3dd960cdb16e98e2640df602f

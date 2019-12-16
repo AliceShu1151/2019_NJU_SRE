@@ -1,0 +1,11 @@
+881,Added an AccessibleName to Parameters table when refactoring parameters of a method. IDEA-199219
+2018-10-04T14:54:43Z,discuss,"Added an AccessibleName to the Parameters table when refactoring - adding/changing parameters in a method. This is related to issue IDEA-199219, telling screen reader users the usage of the table that currently has focus. Note that this pull request does not fix the entire problem"
+2018-10-05T09:35:26Z,discuss,"Thanks for your contribution. It seems that you've modified  .idea/libraries/pty4j.xml. It doesn't seem relevant to the main issue, is it?"
+2018-10-05T11:17:51Z,discuss,"@klikh no, it is not relevant at all. I did not notice this, it is not immediately obvious for someone using screen readers. By the way, I fixed the entire problem now, should I expand this PR, or wait untill something has been done with this change and create a new one?"
+2018-10-05T11:20:26Z,discuss,"I think the best would be to put the whole fix here (maybe in different commits, if they are atomic), and remove the pty4j.xml file. You may rebase this PR or open a new one."
+2018-10-05T11:47:33Z,discuss,"Done, please let me know if the pty file is still there, as I have a hard time using the local hstory feature with a screen reader. This fix was suggested by Anton Tarasov, I tested it and it works in my specific case, using jaws"
+2018-10-05T12:53:03Z,discuss,"Well, the file is still there: https://github.com/JetBrains/intellij-community/pull/881/files
+But I guess @forantar can remove it himself after reviewing the fix. Anton, could you please take a look?"
+2018-10-08T18:32:18Z,discuss,@molaachir I've pushed the change: 2d98882. Thank you for the contribution.
+2018-10-04T14:34:45Z,commit,Added an AccessibleName to Parameters table when refactoring paramete¡­,github.com/JetBrains/intellij-community/pull/881/commits/67895852b9c2cae370ae474962a5e77a3fc1c516
+2018-10-05T11:40:05Z,commit,"Fixed table row announcements in JBListTable, screen readers now read¡­",github.com/JetBrains/intellij-community/pull/881/commits/20a9ac0afd7ce94685a0109ff85e8bc9ab676172

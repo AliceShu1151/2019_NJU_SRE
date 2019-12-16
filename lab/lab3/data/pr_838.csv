@@ -1,0 +1,8 @@
+838,Move GradleInspectionBundle.properties into resource directory
+2018-07-26T22:04:27Z,discuss,"This resource file was causing an error for Android Studio tests due to
+the unconventional nature of the directory structure. The resource file
+should be found underneath a directory tree that appears as
+org/jetbrains/plugins/gradle/codeInspection."
+2018-07-26T22:04:27Z,discuss,"Additionally, resource files should be kept separate from source files."
+2018-07-26T23:10:11Z,discuss,"Actually, disregard this. I think if we're going to be moving a resource file outside of the source directory without the package prefix, every file in this module should sit in a directory structure without the package prefix. This change should be considered incomplete."
+2018-07-26T21:53:04Z,commit,Move GradleInspectionBundle.properties into resource directory,github.com/JetBrains/intellij-community/pull/838/commits/08f894b3bae1a9a9bb9a05b3cf6cf979150cb14c

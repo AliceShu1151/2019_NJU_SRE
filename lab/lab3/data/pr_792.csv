@@ -1,0 +1,7 @@
+792,build scripts: allow products to define special icons for EAP builds
+2018-05-22T22:19:09Z,discuss,бн following commit 6e3a084 for Mac icns files only.
+2018-05-22T22:19:29Z,discuss,@chashnikov?
+2018-05-22T22:19:29Z,discuss,See Android Studio issue 79871350.
+2018-05-23T09:23:50Z,discuss,"Merged manually, thank you for the contribution!"
+2018-10-10T06:48:38Z,discuss,"Note that it isn't enough to copy proper icons to the product distributions, the IDE also need to use them at runtime. This is now fixed in 183.* builds, see IDEA-192585 for details."
+2018-05-22T22:12:02Z,commit,build scripts: allow products to define special icons for EAP builds,github.com/JetBrains/intellij-community/pull/792/commits/131844232059b908753075f0b4d34dd65e29de03

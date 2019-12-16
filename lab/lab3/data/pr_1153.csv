@@ -1,0 +1,6 @@
+1153,Avoid attaching multiple versions sources
+2019-06-06T10:57:07Z,discuss,"Avoid attaching multiple versions sources and docs with a snapshot dependency
+Fix the issue: https://youtrack.jetbrains.com/issue/IDEA-207941"
+2019-06-07T09:42:16Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2019-06-07T13:21:51Z,discuss,done :)
+2019-06-06T10:55:40Z,commit,Avoid attaching multiple versions sources,github.com/JetBrains/intellij-community/pull/1153/commits/f8c2935227c5fa77e6dbd301ffa84d9278929eaf

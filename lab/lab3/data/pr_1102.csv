@@ -1,0 +1,4 @@
+1102,Remove option USE_PROJECT_PROFILE
+2019-03-26T21:20:16Z,discuss,IntelliJ IDEA 2019.1 deletes it automatically.
+2019-03-28T17:34:33Z,discuss,It is known bug in 191 and older branches and it is fixed in 192. I decided that better to not cherry-pick fix to 191 because actually it is not regression. (fixes are not safe).
+2019-03-26T21:14:14Z,commit,Remove option USE_PROJECT_PROFILE,github.com/JetBrains/intellij-community/pull/1102/commits/0f2c841ebe92ce084dfd01a24c689f4dde0e67c9

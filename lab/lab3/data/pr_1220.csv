@@ -1,0 +1,4 @@
+1220,IDEA-225641: Use SofterReferences instead of SoftReferences
+2019-10-25T17:27:06Z,discuss,Use SofterReferences instead of SoftReferences in ResolveCache
+2019-10-27T20:49:50Z,discuss,Superseded by #1222.
+2019-10-25T17:23:54Z,commit,IDEA-225641: Use SofterReferences instead of SoftReferences in Resolv¡­,github.com/JetBrains/intellij-community/pull/1220/commits/ee95b5ab449ff4a615415a79c0a8db96e3c4b0f2

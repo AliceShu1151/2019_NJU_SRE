@@ -1,0 +1,22 @@
+1115,Unstage file for deletion if it's being reused
+2019-04-11T05:33:40Z,discuss,"Currently in SchemeManagerImpl it is possible for a scheme's containing
+file to be deleted AFTER another scheme of the same containing file name
+starts using the file."
+2019-04-11T05:33:40Z,discuss,"SchemeManagerImpl stages files to be deleted but doesn't actually do so
+until save() is called. While a file is staged for deletion, another
+scheme can be ""soft"" saved with saveScheme(), which saves the scheme in
+memory. saveScheme() does contain code to unstage the scheme's
+containing file for deletion, but there is an edge case where this won't
+happen due to an early exit that assumes no operation is required to
+""soft"" save the scheme if the new scheme is identical to the old one.
+This results in a zero net-change in schemes, and a file staged for
+unintentional deletion."
+2019-04-11T05:33:40Z,discuss,"This moves the ""unstage file for deletion"" code before the exit so
+it's always checked, which fixes the edge case scenario."
+2019-04-11T17:31:35Z,discuss,Thanks a lot.
+2019-04-11T17:31:35Z,discuss,"From what I see, your change is safe, it is quite ok to call it a little bit earlier."
+2019-04-11T17:31:35Z,discuss,It is not true anymore. Fixed already in master.
+2019-04-11T17:38:06Z,discuss,"Your test is passed for me without changes. But anyway I found your change useful, so, merged, thanks again for test and comprehensive description."
+2019-04-11T18:35:27Z,discuss,@dahlstrom-g Cherry-picked to 191.
+2019-04-11T19:02:03Z,discuss,If you do this investigation because of https://youtrack.jetbrains.com/issue/IDEA-210208 (and related issues) ¡ª your fix and my latest fixes don't fix the problem. Right now I can reproduce the issue in our IDEA Ultimate project. I am sure that I will find cause soon.
+2019-04-11T01:58:15Z,commit,Unstage file for deletion if it's being reused,github.com/JetBrains/intellij-community/pull/1115/commits/f14f618f1dec5dcbe87c36070ee2e7234584be57

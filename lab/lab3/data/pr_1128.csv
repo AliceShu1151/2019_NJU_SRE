@@ -1,0 +1,12 @@
+1128,Extend the Gradle project resolver to allow the following customizations
+2019-05-01T01:18:32Z,discuss,"We allow resolver extensions to initialize task running, this allows any model builders
+to set tasks that should be run by Gradle during its invocation. If the tasks are not
+changed by the model builders then this will cause the default task to be run. This is
+currently used in Android IDEA Plugin to allow the Android Gradle Plugin to schedule
+source generation tasks to be run after the build action."
+2019-05-01T01:18:32Z,discuss,"We also add a callback to the resolver (buildFinished) that is called from the Gradle
+connection thread that is called once the whole Gradle operation (including the running
+of tasks) is finished."
+2019-05-13T15:53:04Z,discuss,Thanks for implementing this! I will merge it and add a test later
+2019-05-13T15:53:33Z,discuss,merged manually
+2019-05-01T00:35:07Z,commit,Extend the Gradle project resolver to allow the following customization,github.com/JetBrains/intellij-community/pull/1128/commits/9e8aef49b1fe52a04a4b8f30bdc44c82afcd2351

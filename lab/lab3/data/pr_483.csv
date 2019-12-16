@@ -1,0 +1,10 @@
+483,Added additional method to BudledKeymapProvider extension point to be¡­
+2016-12-06T20:48:36Z,discuss,¡­ able to load keymaps from InputStream
+2016-12-06T20:48:36Z,discuss,Need this because of if you are developing plugin using gradle-intellij-plugin it wont find keymap by file name
+2016-12-06T21:09:44Z,discuss,"How exactly are you specifying the name? If the keymap .xml file is correctly packaged in the plugin jar and if you specify its name correctly, the existing APIs are sufficient to load it. If not, you need to fix either your build script or your BundledKeymapProvider implementation. There is no need to extend the API."
+2016-12-06T21:19:22Z,discuss,i put my keymap.xml into resources/idea/ and my BundledKeymapProvider looks like
+2016-12-06T21:19:22Z,discuss,and DefaultKeymap.java can not locate my keymap
+2016-12-12T16:12:49Z,discuss,"The keymap loader uses the class loader of the URLUtil class, so it never delegates to the plugin classloader. So we either need to return a stream or else be able to specify the classloader to use in order for this extension point to work inside a plugin."
+2016-12-12T16:17:58Z,discuss,"This is indeed a problem that can be fixed, but it doesn't require adding any new APIs. It's possible to load the keymap .xml file from the classloader of the BundledKeymapProvider implementation class."
+2016-12-12T17:03:42Z,discuss,How? i can't find API for this. please give me a few lines example
+2016-12-12T19:22:39Z,discuss,Sent a new pull request. Please check this out #493

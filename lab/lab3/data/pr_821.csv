@@ -1,0 +1,6 @@
+821,Fix for tabs alignment
+2018-07-04T13:32:53Z,discuss,Open Youtrack issue: https://youtrack.jetbrains.com/issue/IDEA-195031
+2018-07-21T10:09:39Z,discuss,@Vassiliy-Kudryashov please take a look.
+2018-07-21T10:10:48Z,discuss,Already fixed by @kkmic.
+2018-07-04T13:29:21Z,commit,Fix for tabs alignment,github.com/JetBrains/intellij-community/pull/821/commits/2686364701ef188713861ce3f3c067b329a63ea7
+2018-07-04T13:35:33Z,commit,Merge branch 'master' into tabs-fix,github.com/JetBrains/intellij-community/pull/821/commits/19adb761a5493a34806578cef63ffda3fce5f1d2

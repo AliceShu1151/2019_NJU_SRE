@@ -1,0 +1,14 @@
+889,IDEA-200509 - More suggested types of constructor method references
+2018-10-14T17:21:47Z,discuss,"Hi,
+pls take a look at ticket https://youtrack.jetbrains.com/issue/IDEA-200509 ... what do you think about changes?
+Thx,
+Ivos"
+2018-10-19T15:55:58Z,discuss,"Thanks for the PR! I've fixed a bug which lead to incorrectly processing of constructors and as you've suggested started to process all available overloads for methods and constructors. In order to ensure that I don't break your idea, I copied the test data from this PR though the code is now completely different so it's committed separately as 40a9a6f, will be available on github shortly"
+2018-10-19T18:58:27Z,discuss,"cool, it was fun to help :) ivos"
+2018-10-20T08:08:26Z,discuss,"ahh i see... i like that overloads change and usage of getElementFactory().createExpressionFromText (much better than mine Main class ""hack"")."
+2018-10-22T09:14:46Z,discuss,"The test data is always very helpful, many thanks for it."
+2018-10-22T09:14:46Z,discuss,"The Main class is totally ok if there are more or less complex situations (like with foo::foo actually) but when the expressions are nearly context independent, I think that explicit creation looks better."
+2018-10-22T09:14:46Z,discuss,"Sorry, that I commit from my name, it would probably better to get your commit and then refactor but it looked too complicated from the first glance."
+2018-10-22T15:36:54Z,discuss,no problem i am signed for this PR :)
+2018-10-22T15:36:54Z,discuss,"i did not noticed that overloads and have refactored it without that knowledge, thats why it looked complicated - to return it ""back""."
+2018-10-14T17:19:24Z,commit,IDEA-200509 - More suggested types of constructor method references,github.com/JetBrains/intellij-community/pull/889/commits/8dd6c1a34e10c22669272341b3b080c67d0ccc03

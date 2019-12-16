@@ -1,0 +1,21 @@
+749,Fish now will respect user's selected prompt
+2018-03-03T05:30:01Z,discuss,Fixes IDEA-173259.
+2018-03-03T05:30:01Z,discuss,See:
+2018-03-05T07:49:45Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it."
+2018-03-05T07:54:59Z,discuss,Just signed it.
+2018-03-10T13:16:07Z,discuss,"This won't work if one happens to use functions in its ~/.config/fish/config.fish.
+It works as expected if the block sourcing the functions is placed before the one loading the
+~/.config/fish/config.fish"
+2018-03-12T06:06:34Z,discuss,@tumasgiu Thanks for catching this issue. I updated the PR to address it.
+2018-04-01T20:05:59Z,discuss,Just applied this patch locally and it works fine. Hope to see this merged before next release.
+2018-05-26T01:14:55Z,discuss,"@traff, what prevents this from being merged? I'm a bit tired to manually patch files after each update."
+2018-06-10T11:20:43Z,discuss,Can we get this merged? This bug is really rather annoying!
+2018-06-13T10:18:11Z,discuss,"Judging by his activity log, it is possible that @traff (the assignee) is on vacation."
+2018-06-23T14:15:11Z,discuss,@Elizaveta239 @bulenkov @vladsoroka @traff any progress on this guys?
+2018-06-25T08:12:54Z,discuss,"Hi @behrangsa
+Can we take care of ~/.config/fish/conf.d/ as well, which is also a important part of configurations of fish,  I think
+https://fishshell.com/docs/current/index.html#initialization"
+2018-06-27T12:55:47Z,discuss,Merged
+2018-03-03T05:26:28Z,commit,Fish now will respect user's selected prompt,github.com/JetBrains/intellij-community/pull/749/commits/c967b6aa086b743bbc68911ed58ed5bffdebd3e5
+2018-03-12T06:05:17Z,commit,Functions should be sourced before config,github.com/JetBrains/intellij-community/pull/749/commits/6b2fa485c4116b9a00774d7b0d4f1673e9606508
+2018-06-23T14:14:51Z,commit,Merge branch 'master' into behrangsa-fish-config,github.com/JetBrains/intellij-community/pull/749/commits/123c4f380e78f03a639cc8729ceb14da552bacc0

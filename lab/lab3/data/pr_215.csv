@@ -1,0 +1,17 @@
+215,Hi DPI Improvements
+2014-10-16T10:55:24Z,discuss,These commits improve the layout and size of some of the dialogs on a hidpi screen by doubling the padding in various places and doubling the default size of the TipsPanel.
+2014-10-16T10:55:24Z,discuss,"I have some screen captures of compatibility mode_, before & after, although this just seems to scale them to 100% width :(
+_ IE windows just doubles everything."
+2014-10-16T10:55:24Z,discuss,"I haven't signed the contributor agreement yet, but will do so if this patch is liable to get included in some form or another. I'd like to submit some more along these lines as well, as using IntelliJ in compatibility mode  on a hi-dpi screen is painful."
+2014-10-16T13:39:56Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com"
+2014-10-16T20:16:45Z,discuss,I have just submitted a CLA.
+2014-10-17T11:02:03Z,discuss,"Received, thanks."
+2014-10-18T09:19:54Z,discuss,"Hi Daniel. The change is not correct in some cases. For instance, our main Hi DPI target is Apple Mac Book Pro with Retina displays. And say new Rectangle(2, 2) has 16 pixels inside automatically on MBP with Retina. The situation is not the same if you're on Windows/Linux installed on MBP with Retina. Windows/Linux just don't have such support for Hi DPI painting and manipulating with simple geom objects. At the moment we're looking for some general solution. Patching all the places in 7MLOC project is not an option. Same with the custom painting. Things like drawLine(x1, y1, x2, y2) should be handled by the system. Not patched."
+2014-10-19T03:39:12Z,discuss,"That makes sense. Unfortunately I don't have a MBP so I wasn't aware how they worked, but it should really have occurred to me it was something like that."
+2014-10-19T03:39:12Z,discuss,"If I amend the patch to only do this on a Windows/Linux (IE. when the is.hidpi flag is set) machine would this be acceptable? Or maybe if it was behind a separate flag (-Dreal.hidpi=true?) I'm only asking, as doing this within the system will then preclude ever using the full DPI of the Hi DPI screens. And I assume at some point that MBP will allow apps to use the full resolution of the screen, rather than ""scaling"" it."
+2014-10-19T03:39:12Z,discuss,"If not, do you have any suggestions, as the text rendering is painful in windows compatibility mode."
+2018-07-23T17:51:56Z,discuss,I think it make sense to close this pull request. Most of HiDPI issues are covered now by combination of changes in JetBrains Runtime (our JRE) + JBUI class.
+2014-10-13T10:29:02Z,commit,Scale the regular panel insets on dialogs using DialogWrapper accordi¡­,github.com/JetBrains/intellij-community/pull/215/commits/1b4e6394e766792e31e6b7f148c907fc583adcc0
+2014-10-13T10:34:36Z,commit,Scale the default size of the Tips panel according to whether it's a ¡­,github.com/JetBrains/intellij-community/pull/215/commits/2f01f211542e36c388a73939d5e17f38b8cf477c
+2014-10-13T10:59:22Z,commit,Scale padding on the Tips panel according to whether it's a retina di¡­,github.com/JetBrains/intellij-community/pull/215/commits/3a26331b2de0313119abd892875d2a08b71148ad
+2014-10-13T11:01:12Z,commit,Scale padding on Dialogs according to whether it's a retina display o¡­,github.com/JetBrains/intellij-community/pull/215/commits/b0036e9616a85586e103e17c5497d3322c9926fa

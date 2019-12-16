@@ -1,0 +1,99 @@
+69,IDEA-102051 Unable to toggle fullscreen view on linux.
+2013-04-08T20:53:00Z,discuss,"Draft of supporting of FullScreen Mode at Linux.
+Checking on JRE 1.7, 1.8 XFCE with SawFish WM"
+2013-04-08T21:09:27Z,discuss,"Since there is some issue with full screen in 1.6 of Java... Supporting only from 1.7... which is checks in the code...
+I don't have ability to check in Gnome3/2 or KDE..."
+2013-04-09T08:00:16Z,discuss,"Unfortunately, we have to check all window managers."
+2013-04-09T08:11:19Z,discuss,"Ok, I will try to do this by using VM... And let you know about results."
+2013-04-09T09:52:41Z,discuss,"Phanteon (Elementary Desktop/OS) - Passed
+KDE - Passed
+Gnome Classic - don't working at all =((( It seems issue with compozite manager, need to check on the latest version
+Gnome Classic (no effect) - Passed
+Gnome Shell - Passed (issue with top bar depth, after switch (alt-tab) or Active IDEA menu e.g. Alt+F everything is ok)
+XFCE - Passed with the same issue with Gnome Shell (after switching (alt-tab) or activating IDEA menu e.g.Alt-F works well)
+Ubuntu Unity - Passed. works well if window is not maximized."
+2013-04-09T09:52:41Z,discuss,"Thus I think in most of cases this code working well, but need to think about some tweaks for Unity and XFCE and Gnome Shell..."
+2013-04-09T09:52:41Z,discuss,Any suggestion how I can check which WM is used?
+2013-04-09T10:11:17Z,discuss,Problem with Gnome Classic is found. Related to Compiz.... To be able to have full screen support in Compiz need to turn on Legacy Fullscreen Support in Workaraund settings.
+2013-04-09T15:27:21Z,discuss,"Gnome Classic issue related to Compiz. In the last version it seems was fixed... Trying to check this now.
+In any case it's able to fix by Compiz Workaround settings - Legacy Fullscreen Support."
+2013-04-09T15:27:21Z,discuss,Ubuntu unity - Need to perform fix for Compiz and update Unity to 0.6 version.
+2013-04-09T15:27:21Z,discuss,Checking now....
+2013-04-09T15:27:21Z,discuss,"About Gnome3 and XFCE still don't know how to fix, but in any case it's not break this functionality at all."
+2013-04-10T17:08:26Z,discuss,"Finally with the last commit, should work with all WMs which support _NET_WM_STATE_FULLSCREEN.
+By now check successfully with:"
+2013-04-10T17:08:26Z,discuss,Enjoy!
+2013-04-11T14:21:06Z,discuss,Working everywhere. Update status of where its was checked:
+2013-04-11T14:21:06Z,discuss,Please review and merge with master
+2013-04-11T14:57:08Z,discuss,"Last behavior of going to Fullscreen mode also support 1.6, 1.7 and 1.8 JRE. Thus checking runtime JRE was removed."
+2013-04-11T18:09:38Z,discuss,"Vladimir,
+we have developed an (almost identical) fix in-house. Really sorry for wasting your time :("
+2013-04-11T18:09:38Z,discuss,"It is disabled by default so you need to specify -Dide.unix.full.screen.enabled=true to unlock it (that's because under Metacity and clones all pop-ups and dialogs go under a main window when in full-screen, so it will stay disabled till we found a solution)."
+2013-04-11T19:28:47Z,discuss,"Mmm... code is more ""true"" for real boss =))) .... using reflection... :/ thinking about the same way, but found this code which is more clean and much small, and in it did't check the 32 or 64 bit system thus it's more small..."
+2013-04-11T19:28:47Z,discuss,Just now I checked using metacity my code and I don't faced with problem which you described above....
+2013-04-11T19:28:47Z,discuss,"The same way using all full screen application. E.g. SmartGit have such functionality. This is git gui written on Java using SWT, since SWT use native binding to GTK use gtk_window_fullscreen... which doing the same: sending only _NET_WM_STATE with _NET_WM_STATE_FULLSCREEN...
+As I see you do the same, but I'm also sending _NET_WM_STATE_ABOVE.... maybe this is solution to prevent this, truly I don't now... BTW also XFlush is calling...
+In any case try my code in yours environment and let me know...
+BTW which environment are you using? Gnome2 or Gnome3 and wich distributuion are you using?"
+2013-04-11T19:28:47Z,discuss,"In any case such ""message"" it's only one way to going to fullscreen on the Linux systems in X11 display server.
+I think such behavior of ""yours"" metacity it's not correct, since all popup and dialogs have parent fullscreen window in this case such popups and dialogs should appeared on top of fullscreen window - the same behavior I see in all tested by me environment. And for me it very strange...."
+2013-04-11T19:28:47Z,discuss,"On my tested envorment I have such output wmctrl -m | grep ""Name"" commang:
+Name: Metacity"
+2013-04-11T19:28:47Z,discuss,Are you have the same?
+2013-04-11T20:18:43Z,discuss,"Faced with non critical issue with Compiz(Gnome Classic) using my code and replay scenario which you described... When dialog appeared, it's visible and located at above fullscreen window as it should be, but also top and bottom panel of the gnome is appeared."
+2013-04-11T20:18:43Z,discuss,It's not critical and with it e.g. I can work... =) And it seems this is a bug of Compiz....
+2013-04-12T05:57:39Z,discuss,Found defect which described yours scenario which was fixed for about a 9  year ago https://bugzilla.redhat.com/show_bug.cgi?id=110045 and it's related to metacity 2.6 =)
+2013-04-12T10:36:06Z,discuss,You don't have to worry about 32/64-bit as JNA should take care of this. Adding _NET_WM_STATE_ABOVE actually makes things worse - as it's become impossible to switch to other app (e.g. Terminal) while IDEA is full-screen. XFlush is also irrelevant here since the code shares a display with AWT.
+2013-04-12T10:36:06Z,discuss,"Anyway, I've tried your patch in one of my test environments (Ubuntu Gnome 12.10 / Gnome Shell 3.6 in VirtualBox 4.2) and it suffers from the same problem: opening e.g. Help | About or Settings dialog place them under the main window. It affects entire Metacity family (Gnome 2 / Gnome 3 / Mate / Cinnamon / whatnot) so a problem surface is significant here."
+2013-04-12T10:36:06Z,discuss,"System panels appearing along with child windows is not a bug, rather implementation details. E.g. Unity and XFCE do this, while KDE and Gnome 3 don't."
+2013-04-12T10:45:25Z,discuss,I don't have such behavior =((( Use VMWare with Ubuntu 12.10 Gnome3/Gnome Classic (no effects/Metacity)/Unity... And I don't have such issue... How I can send to you video to make sure that we are using the same scenario?
+2013-04-12T11:33:31Z,discuss,Thus I said that my code is more small since use JNA =)
+2013-04-12T11:33:31Z,discuss,"Agree, ABOVE flag is extra here to have ability to switch to another windows..."
+2013-04-12T11:33:31Z,discuss,In case if using XlibWrapper.. I agree with you
+2013-04-12T11:33:31Z,discuss,In any case I'd upload video to youtube where show how to work my fix... http://www.youtube.com/watch?v=MpJrxFltP3w
+2013-04-12T11:33:31Z,discuss,waiting your's comment....
+2013-04-12T12:00:18Z,discuss,See video with Gnome Shell (Gnome3) http://www.youtube.com/watch?v=8IBAHVYmqjQ
+2013-04-12T12:27:47Z,discuss,"Thank you for videos, they were very helpful. The reason is in JDK: with Oracle JDK 6 it works, with Oracle/Open JDK 7 it doesn't."
+2013-04-12T12:35:01Z,discuss,=))))))) in this case problem it seems in the java XLib wrapper =) I will check now in the 1.7 and 1.8 JRE
+2013-04-12T12:36:18Z,discuss,BTW  are IDEA supports  OpenJDK? As I know it doesn't....
+2013-04-12T12:41:53Z,discuss,"Yeah, It's bug of a JDK....  =((( I reproduce this issue with my code... Thus problem not in XlibWrapper...."
+2013-04-12T14:59:45Z,discuss,I found some interesting behavior if I will remove from my code ABOVE setting to window and perform alt-tab when e.g. settings dialog is appeared I will sow e.g. terminal and under it settings window.
+2013-04-12T14:59:45Z,discuss,"Mouse hover on Settings Window activate component, but when I click on this window I get focus, but window is draw under the fullscreen window =("
+2013-04-12T17:16:27Z,discuss,"It's related to modality of the dialogs... It's seems that bug which appeared in our case related to this fix:
+http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6532736"
+2013-04-12T17:16:27Z,discuss,"If set XToolkit.setModalExcluded(ideframe); all dialogs will be appeared above full screen window, but will not be modal =("
+2013-04-12T18:48:21Z,discuss,Interesting. For me XToolkit.setModalExcluded() prevents modality but doesn't fix the problem.
+2013-04-12T18:48:21Z,discuss,I do believe the reason is that Java 7 sets _NET_WM_WINDOW_TYPE property of pop-ups and dialogs to _NET_WM_WINDOW_TYPE_NORMAL (Java 6 doesn't set this property) and this tricks Metacity into thinking a new window isn't related to a full-screen one so it should go beneath.
+2013-04-15T09:06:40Z,discuss,I check this behavior and nothing change =( I delete this property before going to fullscreen using such code:
+2013-04-15T09:06:40Z,discuss,Bug still reproduce =(
+2013-04-15T09:29:44Z,discuss,"I had created test application to ""invistigate"" this issue.
+https://github.com/vkravets/FullScreenTest"
+2013-04-15T10:26:07Z,discuss,I sent bug request to Oracle waiting the answer.....
+2013-04-15T11:03:41Z,discuss,"The window type property should be set before a window is mapped by a WM, so deleting it thereafter will have no effect. Unfortunately, AWT code is organized in such a way that no workaround is possible on IDEA side."
+2013-04-15T11:03:41Z,discuss,"I've filed an issue to Oracle too, and also to GNOME. Meanwhile I'll tune IDEA's WM detection code so that the feature will be disabled under known Metacity clones."
+2013-04-15T11:05:57Z,discuss,Thanks a lot waiting the fix from GNOME or JRE...
+2013-04-15T15:18:03Z,discuss,"Bug on Oracle already posted http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=7192269...
+And marked as fixed in the 8 version, but resolution marked as Not an issue =((("
+2013-04-16T06:37:49Z,discuss,"This functionality already checkined by @trespasserw in 6065190 and e1ae8d4
+Closed"
+2013-04-16T16:20:56Z,discuss,"@trespasserw, finnaly found the real problem of the issue... You was absolully rigth about _NET_WM_WINDOW_TYPE... AWT sets this always _NET_WM_WINDOW_TYPE_NORMAL atom for dialogs... and for metacity (and its clones) it's have more priority then WM_TRANSIENT_FOR... Due to this dialogs appeared under ""always on top"" window. So this is not only related to fullscreen window... it's more general issue...."
+2013-04-16T16:20:56Z,discuss,You can find thread about this in the awt-devs mail listing: http://openjdk.5641.n7.nabble.com/lt-AWT-Dev-gt-Modal-dialogs-for-fullscreen-window-td127959.html
+2013-04-16T16:20:56Z,discuss,"And here I described mutter behavior which I noticed in the sources:
+http://openjdk.5641.n7.nabble.com/lt-AWT-Dev-gt-Modal-dialogs-for-fullscreen-window-tt127959.html#a128234"
+2013-04-16T16:20:56Z,discuss,So waiting the fix in the JRE....
+2013-09-27T00:42:00Z,discuss,"just moved to gnome (3.8 on ubuntu).
+i see that this is 5 month old, but i still can't go full screen on intellij idea and android studio.
+any fixes for that?"
+2013-09-27T06:14:39Z,discuss,Have you tried it under Oracle JDK 7u40?
+2013-09-27T11:46:45Z,discuss,"i have a problem reproducing it, because i have already move from gnome (i am a developer, and i am in a kind of hurry).
+i have jdk 7u40 installed. but when i run javac -version i get 7u21."
+2013-09-27T13:17:31Z,discuss,"OK. So, if you're running IDEA build 130.186+ on 7u40+ (you can check this on Help | About dialog), and there is no View | Enter Full Screen menu option, than it's probably a bug and should be reported to the tracker."
+2013-04-08T20:34:41Z,commit,Draft of supporting of FullScreen on Linux.,github.com/JetBrains/intellij-community/pull/69/commits/d9ee3a269366a4c62bcd6ef906e1fb92a1c1d200
+2013-04-08T21:16:05Z,commit,Use linux related behavior only for Linux.,github.com/JetBrains/intellij-community/pull/69/commits/88da5702c6e7d323119f5a998304a752ffb88e3c
+2013-04-08T21:21:02Z,commit,Optimize if check,github.com/JetBrains/intellij-community/pull/69/commits/f5475497dee91a639a9f1a7e4d39818074a9c27d
+2013-04-09T15:21:08Z,commit,Show message if WM is not support FS. Small tweaks.,github.com/JetBrains/intellij-community/pull/69/commits/b557abc597fb92bbb698f240ff44fbe66c8108f2
+2013-04-09T16:34:42Z,commit,Show unsupported WM message only for Linux system,github.com/JetBrains/intellij-community/pull/69/commits/5c88eb98562ae3e9584e80dc11d5be7946e8fbd7
+2013-04-09T21:33:13Z,commit,Change behavior to go to fullscreen mode.,github.com/JetBrains/intellij-community/pull/69/commits/d1b65c9ea02fb87f935b4433767d49406b60bce4
+2013-04-10T16:24:20Z,commit,Small refactoring.,github.com/JetBrains/intellij-community/pull/69/commits/b593003fae6b5dee0f8bebe1e99d7cf49f767084
+2013-04-11T12:15:22Z,commit,Fix assert check,github.com/JetBrains/intellij-community/pull/69/commits/76dcfd48260be9b111b4fdc4e489b6a11c08cf15
+2013-04-11T14:52:36Z,commit,Fullscreen: Support of 1.6 java,github.com/JetBrains/intellij-community/pull/69/commits/12289a6e73c2a1064a927311d33cb102762d68a4

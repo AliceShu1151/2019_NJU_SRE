@@ -1,0 +1,8 @@
+631,fix TODO in ChangesListView.java
+2017-09-24T18:39:04Z,discuss,I found TODO in ChangesListView and fixed it. At runtime changelist view seems to be working as before changes were introduced.
+2017-09-25T13:35:42Z,discuss,"Thanks, merged."
+2017-10-05T09:40:06Z,discuss,"This cleanup introduces an issue with WideSelectionTreeUI.
+https://youtrack.jetbrains.com/v2/issue/IDEA-179663"
+2017-10-05T09:40:06Z,discuss,"Probably, this should be fixed in DnDAwareTree, but doing so would require checking for regressions all around IDE and under different OS and LaF.
+So this pull request is reverted for now."
+2017-09-24T18:36:23Z,commit,fix TODO in ChangesListView.java,github.com/JetBrains/intellij-community/pull/631/commits/cb94916909db059c018e231051c2e90bc8ea0de7

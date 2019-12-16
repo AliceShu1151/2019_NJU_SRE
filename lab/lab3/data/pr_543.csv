@@ -1,0 +1,6 @@
+543,Respect configured up/down user keys in tree views
+2017-04-09T17:20:45Z,discuss,Because up/down keys are painful to use on some laptops
+2017-04-11T14:48:11Z,discuss,"Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+Please also write your email information to the commit."
+2017-04-11T19:40:54Z,discuss,I've updated commit with email & user info
+2018-04-22T10:03:29Z,commit,IDEA-190727 Replace instanceof with null-check could automatically el¡­,github.com/JetBrains/intellij-community/pull/543/commits/53094fd2d209a031929764d1c3e1e06ccae34c23

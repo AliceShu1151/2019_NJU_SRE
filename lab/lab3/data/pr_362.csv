@@ -1,0 +1,8 @@
+362,Removed Perl from default extensions
+2016-03-03T05:32:59Z,discuss,So platform could offer Perl5 plugin from the repo
+2016-03-03T08:42:39Z,discuss,IMO platform should offer the plugin from repo regardless of presence simple custom file type
+2016-03-03T08:45:13Z,discuss,"Yep, agree, but don't know how to do this :)"
+2016-03-03T09:08:09Z,discuss,Am i getting this right that all file types generated from defaultFileType.xml are AbstractFileType or UserBinaryFileType so i just need to add a checking for it into the PluginAdvertiserEditorNotificationProvider#createNotificationPanel ?
+2016-03-03T11:02:02Z,discuss,"Thanks for bringing the issue to our attention. We are working to support this functionality ourselves, it is important part of CE behaviour."
+2016-07-12T04:52:28Z,discuss,Any news on this feature?
+2016-03-03T05:30:38Z,commit,Removed Perl from default extensions,github.com/JetBrains/intellij-community/pull/362/commits/4c630778a560f50bdebe041d589dab9a22f6ecbe

@@ -1,0 +1,14 @@
+1107,FUS  make event logger configurable for IntelliJ plugins
+2019-03-29T23:11:50Z,discuss,@SvetlanaZem
+2019-04-03T17:00:12Z,discuss,Thank you! I've merged these commits manually with some changes.
+2019-03-29T17:44:49Z,commit,FUS move internal classes to impl module upd,github.com/JetBrains/intellij-community/pull/1107/commits/81e375d6aa4cf9adff1e21d007fced8ddf009d9a
+2019-03-29T17:52:58Z,commit,FUS rename classes to separate internal event log functionality from fus,github.com/JetBrains/intellij-community/pull/1107/commits/6478e690d6b9e662e72998e40ef50630cea7155e
+2019-03-29T17:53:34Z,commit,"FUS make logger provider configured with recorder id, version and sen¡­",github.com/JetBrains/intellij-community/pull/1107/commits/02012a391f96f2c74328e0ae1d1f9a2b98714286
+2019-03-29T18:13:41Z,commit,FUS make logger target dir configurable,github.com/JetBrains/intellij-community/pull/1107/commits/41f5178a7c210a56cef499d2f3e5eb677f59664b
+2019-03-29T18:48:38Z,commit,FUS make LogEventRecordRequest configured with recorder id,github.com/JetBrains/intellij-community/pull/1107/commits/fd36dd61ea3c17c1f97ba21b4a2139331d74d474
+2019-03-29T19:12:47Z,commit,FUS add EventLogStatisticService to StatisticsEventLoggerProvider to ¡­,github.com/JetBrains/intellij-community/pull/1107/commits/8019fd3af1ced23f29990fed943267ed5a03fdc6
+2019-03-29T21:14:16Z,commit,FUS move StatisticsEventLogger to StatisticsEventLoggerProvider to ac¡­,github.com/JetBrains/intellij-community/pull/1107/commits/30f6ad65a4a3046e0f586f50a7588870546ec2d9
+2019-03-29T21:20:16Z,commit,FUS fix logging interruption after the log cleanup,github.com/JetBrains/intellij-community/pull/1107/commits/145c5916099a22bba1ebe05aaecd38a753873900
+2019-03-30T23:36:17Z,commit,FUS initialize logger with default value,github.com/JetBrains/intellij-community/pull/1107/commits/e7673f9c7c382900e61d3f89ebcbe3da30fe9ce7
+2019-03-31T22:57:03Z,commit,FUS show notifications only for fus in StatisticsJobsScheduler,github.com/JetBrains/intellij-community/pull/1107/commits/2be530c6e49bd4af46e3dd96679a39912b56dfba
+2019-04-01T19:40:49Z,commit,FUS move custom logs to another directory,github.com/JetBrains/intellij-community/pull/1107/commits/7461201338a5f1737e9b07667b6dc5e266e9ce8a

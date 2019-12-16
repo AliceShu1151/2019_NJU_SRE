@@ -1,0 +1,6 @@
+667,improve performance of logical conjunction
+2017-11-15T22:19:48Z,discuss,I've created inspection request regarding performance of logical conjunction https://youtrack.jetbrains.com/issue/IDEA-182226
+2017-11-15T22:19:48Z,discuss,"This PR contains changes for more effective boolean conjunction, mainly within loops."
+2018-07-25T12:58:04Z,discuss,"Thanks, merged manually"
+2017-11-15T15:47:05Z,commit,improve performance of logical conjunction,github.com/JetBrains/intellij-community/pull/667/commits/6e44bb6f5898f145b91e2097977a06fc540faa14
+2018-07-09T15:40:42Z,commit,Merge branch 'master' into conjunction-improvement,github.com/JetBrains/intellij-community/pull/667/commits/2a971b44db08f72ca96cf68f3235f597d8f42bd7

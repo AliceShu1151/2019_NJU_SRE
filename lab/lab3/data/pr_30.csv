@@ -1,0 +1,4 @@
+30,make the tools/lexer/jflex-1.4/bin/jflex script executable
+2012-12-16T20:50:19Z,discuss,I started experimenting with writing a language plugin and immediatelly found out that the tools/lexer/jflex-1.4/bin/jflex script is not executable (on Linux). This pull request only consists of a result of running chmod +x jflex.
+2012-12-24T14:33:28Z,discuss,Accepted. Thanks!
+2012-12-16T20:46:26Z,commit,make the tools/lexer/jflex-1.4/bin/jflex script executable,github.com/JetBrains/intellij-community/pull/30/commits/714f4ce51d550f42b99765e663728a985ebc7881

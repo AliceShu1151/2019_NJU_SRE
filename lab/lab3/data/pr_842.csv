@@ -1,0 +1,8 @@
+842,Fix format-string mismatch
+2018-07-27T22:18:24Z,discuss,бн introduced by commit 673eddd.
+2018-07-27T22:18:24Z,discuss,See http://errorprone.info/bugpattern/FormatString#missingformatargument.
+2018-07-27T22:18:35Z,discuss,@klikh?
+2018-07-30T07:22:13Z,discuss,"TBH, I don't see a serious issue here, since extra arguments are simply ignored and in this case it is obvious that they are not missing by accident, but I've applied the patch since it improves readability a bit. Thanks!"
+2018-07-30T08:25:09Z,discuss,"I wouldn't call it a serious issue either, but although it's obvious to you as the author nothing was missing by accident, it wasn't obvious to me as a reader. ;-)"
+2018-07-30T08:25:09Z,discuss,Getting this fixed will allow us to renable the analysis we've had to disable because of it. Thank you!
+2018-07-27T22:15:15Z,commit,Fix format-string mismatch,github.com/JetBrains/intellij-community/pull/842/commits/cecb95a995b037c273a5a606a876e8add5419fe0

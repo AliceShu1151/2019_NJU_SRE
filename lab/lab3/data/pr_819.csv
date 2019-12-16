@@ -1,0 +1,11 @@
+819,Print useful debugging info when compilation fails
+2018-06-30T03:10:41Z,discuss,@chashnikov?
+2018-07-05T12:20:44Z,discuss,"Firstly if compilation fails because of errors in source code, Standalone.runBuild won't throw an exception, the errors will be reported to org.jetbrains.intellij.build.impl.JpsCompilationRunner.AntMessageHandler and printed via org.jetbrains.intellij.build.BuildMessages::compilationErrors.
+Secondly, even if Standalone.runBuild fails with exception (which means that it was an internal error in the compiler implementation), context.messages.error will throw BuildException which will stop the build, and its cause will be printed to the output."
+2018-07-05T12:20:44Z,discuss,So why do you need this?
+2018-07-05T21:08:47Z,discuss,Without this change I get inscrutable failures:
+2018-07-05T21:08:47Z,discuss,This change produces more informative output:
+2018-07-12T16:43:18Z,discuss,"Ok, I see, Ant just catches BuildException in org.apache.tools.ant.Main#startAnt method and don't print its stracktrace by default. I'll think how to fix this properly."
+2018-07-13T09:13:32Z,discuss,"I've implemented this in a little different way, by printing stacktrace via BuildMessageLogger. This will work better then build is running under TeamCity. Also it makes sense to stop build by throwing exception, not just print stacktrace."
+2018-07-15T21:55:36Z,discuss,Thank you!
+2018-06-30T03:06:49Z,commit,Print useful debugging info when compilation fails,github.com/JetBrains/intellij-community/pull/819/commits/fe0ae28bdb2c10d21ca1104c69eeceff7ae88784

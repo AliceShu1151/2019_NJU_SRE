@@ -1,0 +1,4 @@
+258,PY-15166 Fixed subtest location marks for correct display in tree.
+2015-04-12T16:07:49Z,discuss,https://youtrack.jetbrains.com/issue/PY-15166
+2015-04-13T10:05:03Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-04-12T15:56:04Z,commit,PY-15166 Fixed subtest location marks for correct display in tree.,github.com/JetBrains/intellij-community/pull/258/commits/25ed35f5b4c4414d470e583a02e764c5145a01d9

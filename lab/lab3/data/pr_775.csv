@@ -1,0 +1,5 @@
+775,map scipy/numpy objects to webpage name
+2018-04-02T22:47:48Z,discuss,map objects in numpy and scipy to the corresponding html page
+2018-07-21T10:27:05Z,discuss,cc @traff
+2018-11-05T22:10:48Z,discuss,@guoci Thanks for the pull-request. I refactored it a bit and merged in.
+2018-04-02T22:43:41Z,commit,map objects to webpage name,github.com/JetBrains/intellij-community/pull/775/commits/bb85ebdd7e9ef0a30548b0ad8e6ca1147a0967ad

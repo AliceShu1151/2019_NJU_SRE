@@ -1,0 +1,3 @@
+307,"IDEA-146472 ""Close Unmodified"" also closes pinned tabs"
+2015-10-16T16:16:43Z,discuss,"This is a fix for https://youtrack.jetbrains.com/issue/IDEA-146472 - using ""Close Unmodified"" also closed pinned tabs."
+2015-10-16T16:13:57Z,commit,"IDEA-146472 ""Close Unmodified"" also closes pinned tabs",github.com/JetBrains/intellij-community/pull/307/commits/b2911fc4732145e105e3336db0b026966e810bb2

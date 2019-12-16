@@ -1,0 +1,6 @@
+180,IDEA-104484 removed redundant console exception filters
+2014-05-07T22:20:32Z,discuss,"
+No description provided.
+"
+2014-06-05T09:37:23Z,discuss,"Patch has been accepted, thanks!"
+2014-05-07T21:48:38Z,commit,IDEA-104484 removed redundant console exception filters,github.com/JetBrains/intellij-community/pull/180/commits/3f80b6a5acfe71035b953577e13c44472d949177

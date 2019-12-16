@@ -1,0 +1,14 @@
+241,FileSystemUtil: Update JNA code to work on Linux/PPC
+2015-02-10T21:28:16Z,discuss,"The struct stat64 offsets were incorrect for Linux/PPC32.
+Add the correct offsets, and use them when OS_ARCH is ""ppc""."
+2015-02-10T21:28:16Z,discuss,"Also, increase the ""ver"" parameter of __xstat64 to ""1"", since the
+Linux/PPC64 libc rejects the value ""0""."
+2015-02-10T21:28:16Z,discuss,"There might be more arches where the default offset table is incorrect,
+but I can't test that right now."
+2015-02-10T21:28:16Z,discuss,"I have tested this patch on Linux/PPC with IBM JDK 1.7.0 (both 32 and 64 bit)
+and on Linux/x86 with Oracle JDK 1.7.0 (64 bit)."
+2015-02-11T11:21:46Z,discuss,"Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com"
+2015-02-12T10:40:43Z,discuss,"Ok, sent it now.  Thanks."
+2015-02-12T13:18:55Z,discuss,Received. Thanks.
+2015-02-13T14:14:22Z,discuss,"Pushed to upstream, thanks!"
+2015-02-10T07:19:07Z,commit,FileSystemUtil: Update JNA code to work on Linux/PPC,github.com/JetBrains/intellij-community/pull/241/commits/33e16a0c45a93664024edb8ede425b6e3a38f6c0

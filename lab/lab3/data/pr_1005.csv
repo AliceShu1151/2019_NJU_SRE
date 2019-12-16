@@ -1,0 +1,11 @@
+1005,[IDEA-201343] Add standard Maven properties to pom.xml of just created Maven based module
+2018-12-07T01:35:10Z,discuss,Properties that are added are:
+2018-12-07T01:35:10Z,discuss,This should resolve the IDEA-201343 improvement ticket submitted by me.
+2018-12-07T15:23:29Z,discuss,"The third commit (75dfbe6) needs maven-compiler-plugin 3.6 or newer. It should be merged after IDEA-183383 is fixed, since the currently bundled Maven 3.3.9 uses an older maven-compiler-plugin."
+2018-12-07T15:23:29Z,discuss,"You can check the maven-compiler-plugin versions according to the Maven releases by links as following:
+http://maven.apache.org/ref/3.3.9/plugin-management.html
+http://maven.apache.org/ref/3.6.0/plugin-management.html"
+2018-12-07T15:23:29Z,discuss,"The first (33ec14a) and the second (6ec8e43) commits could be merged already now, before IDEA-183383 is fixed."
+2018-12-07T01:24:28Z,commit,[IDEA-201343] Add standard Maven properties to pom.xml of just create¡­,github.com/JetBrains/intellij-community/pull/1005/commits/33ec14a9b966e062722809ffcd5eb01a79267048
+2018-12-07T11:57:16Z,commit,Update MavenModuleBuilderHelper.java,github.com/JetBrains/intellij-community/pull/1005/commits/6ec8e43c84fe167c3976deb90c5b7e915e803b81
+2018-12-07T15:12:00Z,commit,[IDEA-201343] Use maven.compiler.release property with JDK 9+,github.com/JetBrains/intellij-community/pull/1005/commits/75dfbe6d9d5616d63e3ad64014b67e5ef9b364b7

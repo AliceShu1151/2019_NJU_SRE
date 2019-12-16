@@ -1,0 +1,16 @@
+584,"Add multi-language support for ""Analyze Data Flow To/From Here"""
+2017-06-07T14:50:30Z,discuss,The immediate goal is to allow mixing Java and Kotlin code in the same data flow graph as well as support grouping by leaf expressions and nullability (see also https://youtrack.jetbrains.com/issue/KT-16833)
+2017-06-07T21:42:34Z,discuss,Thank you for your contribution! I'd expect some tests present in the PR though
+2017-06-13T12:11:42Z,discuss,"As far as I see there are no alternative dataflow implementations at the moment. So I don't think any new tests are necessary as single-language dataflow shouldn't be affected by these changes. Tests corresponding to the mixed Java-Kotlin dataflow will be added in the Kotlin project, though"
+2017-06-25T17:17:40Z,discuss,(A similar one for Scala: https://youtrack.jetbrains.com/issue/SCL-2818. Thanks for working on this generically.) @asedunov do you have plans to implement that for Scala too?
+2017-06-25T17:17:40Z,discuss,"BTW: I think the *Base abstract classes and interfaces might be better put to a different module (not java-impl, maybe java-api?).
+There are a few new methods where nullability is not declared, it probably should be updated."
+2017-07-03T12:02:33Z,discuss,@aborg0: Thanks. Currently I don't plan working on Scala implementation. The main objective of this PR was to add support for Java-Kotlin cross-language dataflow analysis. Groovy implementation is added mainly for the testing purposes
+2017-07-03T18:49:15Z,discuss,"@asedunov Thanks, in this case I'll add Scala. Once a version of this PR gets merged, I'll start working on it (as I do not want to duplicate your work and this is not urgent for me).
+Thanks for rebasing your changes, I'll try to check it during the weekend (or just pull from the main repo if it gets merged ;) ).
+Is there anything I can help?"
+2017-07-04T12:00:06Z,discuss,Merged manually.
+2017-06-06T13:23:05Z,commit,Analyze Data Flow: Support multi-language graphs,github.com/JetBrains/intellij-community/pull/584/commits/b3395ab5bb1582bff960f3500223f6e76969e0a9
+2017-06-21T14:19:31Z,commit,"Analyze Data Flow: Generalize ""Group by leaf expression"" action",github.com/JetBrains/intellij-community/pull/584/commits/9202b490b4025f37e4f463362b445810fa47dbe9
+2017-06-07T13:03:47Z,commit,"Analyze Data Flow: Generalize ""Group by leaf expression nullness"" action",github.com/JetBrains/intellij-community/pull/584/commits/9ec3f42adb05584e20ee19785db0c84777a1a098
+2017-06-13T17:18:57Z,commit,Analyze Data Flow: Initial implementation for Groovy,github.com/JetBrains/intellij-community/pull/584/commits/4128ccf555ad16da6215496ff1cb909fecb38f02

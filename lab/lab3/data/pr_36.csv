@@ -1,0 +1,5 @@
+36,InputFilter - api change for returning List
+2013-02-22T11:21:59Z,discuss,see http://youtrack.jetbrains.com/issue/IDEA-95644
+2013-02-22T11:21:59Z,discuss,extension point is renamed so that old plugins do not throw exceptions :)
+2013-03-05T10:04:37Z,discuss,already pushed by Denis.
+2013-02-22T11:08:06Z,commit,"InputFilter - api change for returning List, rename of extension point",github.com/JetBrains/intellij-community/pull/36/commits/e1630143970b9cb364197e208ff141bc18b5ddfd

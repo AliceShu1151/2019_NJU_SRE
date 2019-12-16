@@ -1,0 +1,16 @@
+616,PY-25794: Prevent unnecessary stub to AST switches in Python inspections
+2017-08-25T04:02:01Z,discuss,"
+No description provided.
+"
+2017-08-29T14:59:05Z,discuss,Thanks for your pull request! I've added stub->AST assertions for the project files and the Python SDK modules to the majority of inspections in a2033f8.
+2017-08-29T14:59:05Z,discuss,"I would like to fix the problem with the PyImportElementImpl in the minor updates for 2017.2 as a part of PY-25491, so I would like to put your in a separate commit that will go into a minor update."
+2017-08-29T14:59:05Z,discuss,"@fitermay If you don't mind, I will extract your fixes for PyImportElementImpl and PyProtectedMemberInspection into separate commits and create unit tests for them."
+2017-08-29T14:59:05Z,discuss,"And as we've discussed in PY-22215, @sproshev will put a simpler fix into master instead of your fix based on the original element visitor."
+2017-08-29T15:05:18Z,discuss,"@vlasovskikh Yes, it makes sense to release any changes that involve reindexing separately, in a major release. The changes are already in separate commits. You can just cherry pick them out of my branch."
+2017-08-29T15:10:35Z,discuss,"@vlasovskikh Also, I didn't include tests in cases except for the stubs because I assumed the existing tests already cover testing the functionality.  The assertions that you added should also take care of checking for unstubbing. So I'm curious what tests you have in mind."
+2017-08-29T15:24:55Z,discuss,"@fitermay After I added stub->AST check in the commit I've mentioned several tests started to fail, but non of them failed due to the unstubbing problems PyProtectedMemberInspection and PyImportElementImpl. I've added a test for your fix for PyProtectedMemberInspection and now I'm thinking of a test for PyImportElementImpl. Do you have any code examples in mind?"
+2017-08-29T19:20:11Z,discuss,My tests: 5e20034 and 5d6c451.
+2017-08-24T01:26:27Z,commit,minor: break early. use loop label instead of boolean flag,github.com/JetBrains/intellij-community/pull/616/commits/2a01cad8da5782f58780e10b7862ea9658c8aca9
+2017-08-25T01:55:25Z,commit,PY-25794: prevent PyImportElementImpl iterateNames from unstubbing files,github.com/JetBrains/intellij-community/pull/616/commits/4b85d357d78a30277a289456b66b3965d5cbb3ee
+2017-08-25T02:42:46Z,commit,PY-25794: prevent abstract class inspection for unstubbing all super ¡­,github.com/JetBrains/intellij-community/pull/616/commits/724de8366dbb358466e0286a01bc8bbbbc318afc
+2017-08-25T03:46:47Z,commit,PY-25794: prevent PyProtectedMemberInspection from unnecessarily unst¡­,github.com/JetBrains/intellij-community/pull/616/commits/472004775eb26ef7fdb29f84df800ecceed3a266

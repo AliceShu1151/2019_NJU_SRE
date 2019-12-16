@@ -1,0 +1,8 @@
+1012,Select first leaf that contains an error on Build view after build
+2018-12-12T22:57:48Z,discuss,"When a build is performed, the build view displays a tree containg the
+tasks including their status. If there are errors or warning it can be
+difficult to find them between the rest of the nodes. To help with that
+this change selects the first node that has an error (or warning if no
+errors are found) and for wich none of its descendants has an error."
+2018-12-12T22:57:48Z,discuss,Fixes https://issuetracker.google.com/issues/76453233
+2018-12-12T22:37:49Z,commit,Select first leaf that contains an error on Build view after build,github.com/JetBrains/intellij-community/pull/1012/commits/8201e858633788e4c0f3736cf7ac56afd4451ea4

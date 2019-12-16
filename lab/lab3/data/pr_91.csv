@@ -1,0 +1,6 @@
+91,Some refactoring for reusing GenerateEquals UI in scala plugin
+2013-08-26T11:39:27Z,discuss,"
+No description provided.
+"
+2013-08-26T11:51:34Z,discuss,"Sorry, I'm not able to accept a pull request that renames all fields in a class so that they no longer match the IntelliJ IDEA coding style. Please make the minimum amount of changes required for your refactoring and follow the style of the codebase you're contributing to."
+2013-08-26T11:29:43Z,commit,Some refactoring for reusing GenerateEquals UI in scala plugin,github.com/JetBrains/intellij-community/pull/91/commits/7046dc4da7001710ef4c399e6f825bfb9402144d

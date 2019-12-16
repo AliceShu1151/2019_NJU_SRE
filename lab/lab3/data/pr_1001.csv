@@ -1,0 +1,4 @@
+1001,Move Arrays::equals to the end of equals()
+2018-12-04T16:05:16Z,discuss,"Small performance improvement, see new inspection request https://youtrack.jetbrains.com/issue/IDEA-170178"
+2018-12-07T08:40:10Z,discuss,Merged manually. Thanks.
+2018-12-04T15:59:37Z,commit,move Arrays::equals to the end of equals(),github.com/JetBrains/intellij-community/pull/1001/commits/0d25264bb6af36d9d9bd8645babe3e379b02dfa7

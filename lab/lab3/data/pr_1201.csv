@@ -1,0 +1,4 @@
+1201,Remove TooltipManager registrations on dispose
+2019-09-17T23:54:01Z,discuss,... otherwise we can potentially hold on to large data structures.
+2019-10-04T11:44:28Z,discuss,Thank you! The fix was merged to master branch (8bafa9a6)
+2019-09-17T23:52:40Z,commit,Remove TooltipManager registrations on dispose,github.com/JetBrains/intellij-community/pull/1201/commits/050730f1200663fbcf977f8efc78b6e4fe5ba0af

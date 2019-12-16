@@ -1,0 +1,12 @@
+618,Git4idea: pushurl without capital u
+2017-08-26T13:09:38Z,discuss,In .git/config the remote parameter 'pushurl' is not written in camel case (although other git parameters are) and therefore the pushurl parameter is never loaded properly. As it defaults to the url value and the tests didn't cover this it has not yet been detected. The tests had faults in the test data and also used the equals() method in GitRemote which only compares the name so this was not covered by the tests.
+2017-08-26T13:09:38Z,discuss,"A fix in the gerrit plugin,
+uwolfer/gerrit-intellij-plugin@d464a7a ,
+is dependent on this change to work properly."
+2017-08-26T14:38:14Z,discuss,"In fact, Git config variables are case insensitive, so this pull request unfortunately doesn't fix the real problem for which we have an issue."
+2017-08-26T14:38:14Z,discuss,"In the manpages, pushurl is written in lowercase indeed, so it might be considered as a better default than pushUrl until the case sensitivity issue is solved. But on the other hand, some people may already depend on the ""pushUrl"", and we don't want to break any functionality for them."
+2017-08-26T14:38:14Z,discuss,"The correct fix to the issue should be making Git config variables case insensitive. It requires either patching init4j library which we use for parsing .git/config, or rewriting the whole parsing code to avoid using the library at all. We'd welcome a contribution for this issue."
+2017-08-26T15:03:37Z,discuss,Thank you for quick feedback. I'll look into the existing issue.
+2017-08-26T15:09:11Z,discuss,"Just in case if you decide to try patching ini4j, here are the sources of our fork of the library: https://github.com/JetBrains/ini4j"
+2017-08-24T12:48:07Z,commit,git4idea: Git config param pushurl is not spelled with capital U in url.,github.com/JetBrains/intellij-community/pull/618/commits/9741e0dcfb84bf584c6ce56dfc032a6a6881fc59
+2017-08-26T05:40:42Z,commit,Added custom equals() in test since GitConfig#equals only compares na¡­,github.com/JetBrains/intellij-community/pull/618/commits/f706995582d805ba0f4355323c66007be1ff4bce

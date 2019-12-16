@@ -1,0 +1,6 @@
+136,structural brace based folding for custom file types (IDEA-83026)
+2013-12-03T12:04:42Z,discuss,"
+No description provided.
+"
+2013-12-09T19:04:15Z,discuss,Merged manually
+2013-12-03T09:14:55Z,commit,structural brace based folding for custom file types (IDEA-83026),github.com/JetBrains/intellij-community/pull/136/commits/e96add834a0242ac0ff0566684843f4c349c5fb0

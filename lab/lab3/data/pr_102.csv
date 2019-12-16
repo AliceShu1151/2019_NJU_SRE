@@ -1,0 +1,5 @@
+102,Fixed TypeConversionUtil#getAllBoxedTypeSupers (after f4a27e8).
+2013-09-13T09:54:04Z,discuss,ProjectRootModificationTracker#getInstance returns NEVER_CHANGED when ProjectRootModificationTracker service not registered.
+2013-09-13T10:03:54Z,discuss,Now that's a good fix. Merged and pushed.
+2013-09-13T10:47:47Z,discuss,Thanks
+2013-09-13T09:29:07Z,commit,Fixed TypeConversionUtil#getAllBoxedTypeSupers (after,github.com/JetBrains/intellij-community/pull/102/commits/c51a79a77640488b5439f8bfe1da9aeab2a5f121

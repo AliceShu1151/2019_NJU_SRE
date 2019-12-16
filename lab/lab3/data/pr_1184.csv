@@ -1,0 +1,4 @@
+1184,cache JAXBContext to avoid overhead on parsing every SVN operation result
+2019-08-05T10:21:24Z,discuss,PR for https://youtrack.jetbrains.net/issue/IDEA-219881
+2019-08-22T05:49:33Z,discuss,"The patch is applied, thanks."
+2019-08-05T10:19:46Z,commit,cache JAXBContext to avoid overhead on parsing every SVN operation re¡­,github.com/JetBrains/intellij-community/pull/1184/commits/9ac5d872b22f541a7eba2901b4337beba81b8e07

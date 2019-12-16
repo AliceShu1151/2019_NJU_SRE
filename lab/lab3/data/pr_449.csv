@@ -1,0 +1,6 @@
+449,PY-20771: Fix dataframe rendering issue in frames 100+ columns
+2016-09-24T08:55:45Z,discuss,"PY-20771: Min and max values for columns 100 and above were computed incorrectly sometimes causing exceptions during rendering.
+The UI exceptions are also one of the reasons for poor performance"
+2016-10-06T15:29:33Z,discuss,"Hi Yuli!
+Thank you for the fix. I've just merged it to master."
+2016-09-24T08:19:35Z,commit,PY-20771: Min and max values for columns 100 and above were computed бн,github.com/JetBrains/intellij-community/pull/449/commits/87da6c5a2c5874b3efa8843f230fa409b88b606a

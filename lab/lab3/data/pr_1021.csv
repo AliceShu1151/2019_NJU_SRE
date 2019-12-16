@@ -1,0 +1,13 @@
+1021,Fix #2 IDEA-141538: XML validator does not use a relative path to the XSD
+2018-12-22T19:33:13Z,discuss,This is a continue of my previous already closed PR: #1014 (Fix IDEA-141538: XML validator does not use a relative path to the XSD) that was partially accepted.
+2018-12-22T19:33:13Z,discuss,Please assign to @dmitry-avdeev
+2018-12-22T19:46:47Z,discuss,This PR contains both the original #1014 and the test fixing commits. My previous PR was accepted only partially because of those tests failure. When you merge this new PR accept its versions of files or revert that partial commit before merging this new PR.
+2018-12-22T21:44:08Z,discuss,@rosti-il do we really need this pull request when we have commit with your partial changes of previous pull request b943c39
+2018-12-22T22:22:54Z,discuss,@nicity I think you do.
+2018-12-22T22:22:54Z,discuss,"Also, the new code is cleaner. I'm also not sure the current code at master resolves entity links like file:./some.dtd always right. This is one of the cases of fixed test fails in XmlHighlightingTest. The if (publicIdUri.isOpaque()) check handles such entity links."
+2018-12-22T22:22:54Z,discuss,Is there any reason not to merge it just because I forgot to run tests before submitting the first PR and @dmitry-avdeev took that PR partially? Please read what he wrote me at #1014 (comment)
+2018-12-27T17:29:24Z,discuss,"This version breaks XmlEntityManagerCachingTest (we do need to call configureEntityManager() in startDocument() to cache the parsed entities). Also, please resolve conflicts with current master branch."
+2018-12-27T21:56:30Z,discuss,"@dmitry-avdeev, interesting. If I select all packages within the intellij.xml.tests module they all pass but if I select only the com.intellij.xml package within that module there are a few tests that fail, including XmlEntityManagerCachingTest. I will fix them."
+2018-12-27T21:56:30Z,discuss,Isn't there some IntelliJ bug in running UnitTests?
+2018-12-16T20:14:26Z,commit,Fix IDEA-141538: XML validator does not use a relative path to the XSD,github.com/JetBrains/intellij-community/pull/1021/commits/f69431a9c73b9e97977834900df83aa301384754
+2018-12-22T19:26:27Z,commit,IDEA-141538: fix tests in XmlHighlightingTest,github.com/JetBrains/intellij-community/pull/1021/commits/2b5c003c776e5fb07930e9d5a74b25deffb2fba9

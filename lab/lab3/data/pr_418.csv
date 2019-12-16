@@ -1,0 +1,5 @@
+418,"Implemented getHashCode(CharSequence,int,int)"
+2016-06-21T21:01:07Z,discuss,"Implemented getHashCode(CharSequence,int,int) overload which can add nodes using a CharSequence as input."
+2018-07-21T13:18:47Z,discuss,@donnerpeter please review.
+2018-07-21T13:37:39Z,discuss,What do you need this for?
+2016-06-21T21:00:54Z,commit,"Implemented getHashCode(CharSequence,int,int)",github.com/JetBrains/intellij-community/pull/418/commits/31660934f6859d975a9d3e3b92c552193c946379
