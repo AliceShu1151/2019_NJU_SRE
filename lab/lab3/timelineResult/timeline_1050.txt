@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1050
+* requirement: Rename Co_verage to Coverage
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-30T07:28:15Z
+* content: Rename Co_verage to Coverage
+* codeUrl: github.com/JetBrains/intellij-community/pull/1050/commits/7bd32d8e9b245a7e54159ad7db0da11632d2d77e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-30T07:30:20Z
+* content: Right-click on a folder shows "Run with Coverage" option:  and is mentioned on documentation page: https://www.jetbrains.com/help/idea/running-test-with-coverage.html
+* time: 2019-01-30T07:30:20Z
+* content: However, right click on a file gives an option that looks like a typo: 
+* time: 2019-02-05T15:42:01Z
+* content: The issue here is that _ character is used to set action mnemonics. When file name is added to the action text, _ from it was used as mnemonic marker instead (see "configtest.go instead of "config_test.go" on your screenshot).
+* time: 2019-02-05T15:42:01Z
+* content: So the proper fix, probably, should be to fix escaping when creating this action. See https://github.com/JetBrains/intellij-community/blob/master/plugins/coverage-common/src/com/intellij/coverage/CoverageExecutor.java#L29
+* time: 2019-02-06T09:06:23Z
+* content: I've pushed fix into master.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 661
+* requirement: Making pydev compatible with Python 2.6
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-13T17:13:01Z
+* content: Making pydev compatible with Python 2.6
+* codeUrl: github.com/JetBrains/intellij-community/pull/661/commits/f428696cf1c0490048258c95f2c57191e371b214
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-13T17:18:33Z
+* content: Changed format string to keep pydev compatible with python 2.6
+* time: 2017-11-13T18:31:21Z
+* content: @traff @Elizaveta239 One character change needed to make console work against 2.6:)
+************************************************************************

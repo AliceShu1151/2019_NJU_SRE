@@ -1,0 +1,21 @@
+************************************************************************
+* id: 399
+* requirement: PY-19541: Fix test runner progress for py.test
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-14T23:46:07Z
+* content: Fix test runner progress for py.test
+* codeUrl: github.com/JetBrains/intellij-community/pull/399/commits/5afa7bc6fa73357322fc2013052fbdaa37d4417d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-15T00:05:57Z
+* content: This change fixes an issue where the PyCharm pytest runner did not report the number of tests to the test runner, resulting in a progress bar stuck at 50%.
+* time: 2016-05-15T00:05:57Z
+* content: https://youtrack.jetbrains.com/issue/PY-19541
+************************************************************************

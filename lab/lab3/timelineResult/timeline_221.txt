@@ -1,0 +1,25 @@
+************************************************************************
+* id: 221
+* requirement: Added the Close All Projects and Close Other Projects actions.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-09T12:01:21Z
+* content: Added the Close All Projects and Close Other Projects actions.
+* codeUrl: github.com/JetBrains/intellij-community/pull/221/commits/5fa29b939479623e5f3cf93f308a020d42567652
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-10T20:15:37Z
+* content: These actions close multiple projects at once.
+* time: 2014-11-10T20:15:37Z
+* content: For the copyright comment, I didn't feel right putting my name in place of JetBrains s.r.o. since the "update" method's only changes were to add the usage of the ProjectManager and a change in verbiage for the presentation text.
+* time: 2014-12-05T12:28:25Z
+* content: Thanks for your contribution. We believe though that these actions are not highly demanded, while at the same time the File menu is already cluttered by many existing actions, so we'd avoid adding new ones unless necessary. Having said that, we can advice you to create a separate plugin that adds these actions to IDEA.
+* time: 2014-12-05T12:31:44Z
+* content: Take a look at Frame Switcher plugin, it already contains an action for closing other projects, I could add even more if you want.
+************************************************************************

@@ -1,0 +1,86 @@
+************************************************************************
+* id: 1261
+* requirement: Pass along existing progress indicator if one exists.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-22T17:53:52Z
+* content: Pass along existing progress indicator if one exists.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/4f7e1e5bbfdb4855dfcdc34dd22771a6a394dff8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-22T17:56:41Z
+* content: Running a plugin in headless mode, this is overriding my progress bar I have configured to pipe the progress to the terminal. Can't think of a reason we cant use the existing one if it exists.
+* time: 2019-11-25T05:55:51Z
+* content: Could you please add a test for the behavior you need, probably to ProgressIndicatorTest?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-25T17:19:42Z
+* content: Add test to ProgressIndicatorTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/fa856aa640420552a8e1023a68318d2a7462242a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-25T17:21:56Z
+* content: Thanks for taking a look Peter. I have added a test for the write action case, however (please correct me if there is a way), I could not find a way to test the headless && !unitTest case (the case I will use this for).
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-25T17:26:09Z
+* content: Refactor test to assert two progress indicators are equal
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/facae07871eac5f2d9cbc44e959a484381a5cf0e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-27T17:44:34Z
+* content: Yes, writing tests in !unitTestMode is nontrivial and seems not worth the effort here.
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-27T18:00:54Z
+* content: Refactor test to be more functional.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/0b7bd69abab9ddea1e7a2b80c1fb2331acb0b5b1
+* time: 2019-11-27T18:04:40Z
+* content: Use ProgressIndicatorBase to prevent overriding method.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/50af77a51ceb6c3e6e4c1fbcae7293ecbb9aa832
+* time: 2019-11-27T18:10:22Z
+* content: Fix typo in test method name
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/28da8a92e2da0aaba7776d56a20feac4323b9294
+* time: 2019-11-28T03:18:25Z
+* content: Override is not needed for ProgressIndicatorBase
+* codeUrl: github.com/JetBrains/intellij-community/pull/1261/commits/97cf02b965fef5080f395cb442fadbeef99809ee
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-28T08:54:45Z
+* content: Great, thanks! Do you need this in 2019.3?
+* time: 2019-11-28T11:17:44Z
+* content: Interestingly, this leads to a failure in a couple tests in Ultimate. So far I haven't investigated why.
+* time: 2019-11-28T11:17:44Z
+* content: Assertion failed at com.intellij.testFramework.LoggedErrorProcessor.processError(LoggedErrorProcessor.java:56) at com.intellij.testFramework.TestLogger.error(TestLogger.java:40) at com.intellij.openapi.diagnostic.Logger.error(Logger.java:166) at com.intellij.openapi.diagnostic.Logger.assertTrue(Logger.java:180) at com.intellij.openapi.diagnostic.Logger.assertTrue(Logger.java:189) at com.intellij.openapi.progress.util.ProgressWindow.start(ProgressWindow.java:113) at com.intellij.openapi.progress.impl.CoreProgressManager.lambda$runProcess$2(CoreProgressManager.java:154)
+* time: 2019-11-28T20:29:30Z
+* content: I'm in no rush, especially with the failures you mentioned.
+* time: 2019-11-28T20:29:30Z
+* content: Weird, I did check the other tests and didn't see any new failures. I assume ultimate tests are internal only. Let me know if there is anything I can do to help.
+************************************************************************

@@ -1,0 +1,4 @@
+************************************************************************
+* id: 307
+* requirement: IDEA-146472 "Close Unmodified" also closes pinned tabs
+the requirement of 307 only has implements, no discussion.

@@ -1,0 +1,4 @@
+************************************************************************
+* id: 602
+* requirement: Provide API for extending Create Field/Method from Usage
+the requirement of 602 only has implements, no discussion.

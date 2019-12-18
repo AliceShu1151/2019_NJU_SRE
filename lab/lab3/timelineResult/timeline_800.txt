@@ -1,0 +1,31 @@
+************************************************************************
+* id: 800
+* requirement: IDEA-177512 added ExternalSystem TOPIC to notify when import has fini…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-04T05:30:39Z
+* content: IDEA-177512 added ExternalSystem TOPIC to notify when import has fini…
+* codeUrl: github.com/JetBrains/intellij-community/pull/800/commits/b9eb83f982201a28c7d9c1a70b1b2cf0555b26d8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-04T05:31:58Z
+* content: added ExternalSystem TOPIC to notify when import has finished
+* time: 2018-06-04T05:31:58Z
+* content: Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+* time: 2018-06-04T10:12:05Z
+* content: Hi Martin, sorry for the late reply on your issue. Have you seen ProjectDataImportListener#onImportFinished api? Could you check if it's applicable for you?
+* time: 2018-06-04T21:08:56Z
+* content: Hi @vladsoroka no, I haven't noticed that api. Although it doesn't give me the new module, it seems to be enough to resolve my problem. Thank you very much.
+* time: 2018-06-04T21:08:56Z
+* content: Martin
+* time: 2018-06-05T09:56:41Z
+* content: Also you can look on the com.intellij.openapi.externalSystem.service.project.manage.ProjectDataService extension point and extended import lifecycle methods in AbstractProjectDataService. It should be enough to get all imported data and/or customize it.
+* time: 2018-06-05T09:56:41Z
+* content: If you need module information you can extends AbstractProjectDataService with the ProjectKeys.MODULE and use IdeModifiableModelsProvider#findIdeModule(ModuleData module) method:
+************************************************************************

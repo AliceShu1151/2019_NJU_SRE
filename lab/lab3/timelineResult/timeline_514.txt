@@ -1,0 +1,23 @@
+************************************************************************
+* id: 514
+* requirement: Pasting mvn dependency with classifier to gradle
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-02-16T20:21:25Z
+* content: Pasting mvn dependency with classifier to gradle
+* codeUrl: github.com/JetBrains/intellij-community/pull/514/commits/a0b3d0a74fa2730b2f0756e130911b50486608a8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-02-17T20:07:12Z
+* content: Gradle supports maven classifiers https://docs.gradle.org/current/userguide/dependency_management.html#sub:classifiers. This change adds support for classifiers in PasteMvnDependencyPreProcessor.
+* time: 2017-02-17T20:07:12Z
+* content: I've signed CLA.
+* time: 2017-05-22T19:23:13Z
+* content: What do you think about this change? Is there anything missing?
+************************************************************************

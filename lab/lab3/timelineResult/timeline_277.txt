@@ -1,0 +1,19 @@
+************************************************************************
+* id: 277
+* requirement: Fix annotation for `Iterable.iterator`
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-06-23T09:25:09Z
+* content: Fix annotation for `Iterable.iterator`
+* codeUrl: github.com/JetBrains/intellij-community/pull/277/commits/4095df408b681d4a9c92649de1ca0b91e44b844c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-06-23T09:43:47Z
+* content: Add FQ name to return type. It's necessary because findExternalAnnotation uses fully-qualified names when matching annotations.
+************************************************************************

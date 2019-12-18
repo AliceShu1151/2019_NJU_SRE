@@ -1,0 +1,37 @@
+************************************************************************
+* id: 626
+* requirement: PY-8933: Fix try with ImportError false positives
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-09-11T19:36:10Z
+* content: PY-8933/PY-8203:Fix false positives in "Import in try block..." inspe…
+* codeUrl: github.com/JetBrains/intellij-community/pull/626/commits/23ccd88b9b6aac5c875807711e5d3caa644d49d7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-09-11T19:38:39Z
+* content:  No description provided. 
+* time: 2017-10-26T20:00:09Z
+* content: @fitermay Thanks for your PR! I've merged it with some changes. There is ScopeUtil.getDeclarationScopeOwner that is similar to your check for a name being defined in an outer scope. This function handles names defined via star-imports and similar wildcard name definers.
+* time: 2017-10-26T20:24:36Z
+* content: FYI here is the commit with my fixes 47679f8.
+* time: 2017-10-26T21:14:44Z
+* content: @vlasovskikh
+* time: 2017-10-26T21:14:44Z
+* content: Was an optimization that prevents crawling up the AST for every instruction.  It's pretty expensive to do so for every instruction.
+* time: 2017-10-27T11:08:57Z
+* content: @fitermay Could you elaborate please? We traverse the control flow graph starting from the except class reference until we are no longer a child of except. If we add the nextIsTerminal check then we will traverse all vertices inside except but the terminal ones. It's still pretty much all the vertices inside except, isn't it? Moreover, nextIsTerminal effectively traverses terminal vertices as well.
+* time: 2017-10-27T11:21:59Z
+* content: @vlasovskikh It's optimized for worst case. Let d be the depth of the AST and n be the number of instructions. With nextIsTerminal we only check isAncestor for terminal nodes, which is effectively constant , making the algorithm worst case O(n+d) when we check every node being an ancestor then it is worst case O(n*d)
+* time: 2017-10-27T11:51:45Z
+* content: @fitermay I agree with your analysis, but I have to mention that d and n are the depth and the control flow graph size inside except ImportError + the edges that start inside except and lead outside (we stop the traversal of the path that leads outside of except by returning false). So controlFlowAlwaysTerminatesInsideGuard traverses only a small part of the control flow graph inside except. Whereas nextIsTerminal forces us to traverse the whole control flow graph up until we reach the terminal vertex on all the paths, doesn't it?
+* time: 2017-10-27T11:57:45Z
+* content: @fitermay And my conclusion is that it's better to have O(n*d) where n and d refer to the internals of except ImportError than to have O(n+d) where n and d refer to the whole contents of a control flow graph that contains except ImportError.
+* time: 2017-10-27T12:23:24Z
+* content: @vlasovskikh I agree that it is a different n in the two cases, I should have mentioned that.  My motivation for traversing the larger n is that I am assuming that traversing the CFG is very cheap as it is just indexed array access whereas performing instanceof checks up the AST is more expensive.
+************************************************************************

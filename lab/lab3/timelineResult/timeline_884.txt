@@ -1,0 +1,30 @@
+************************************************************************
+* id: 884
+* requirement: [Fernflower] Cleanup of collections-related classes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-08-11T22:33:16Z
+* content: Clean up ListStack
+* codeUrl: github.com/JetBrains/intellij-community/pull/884/commits/8f97de18761b18d131df0a40893c970b57357849
+* time: 2018-08-14T18:30:05Z
+* content: Clean up VBStyleCollection (now KeyedList)
+* codeUrl: github.com/JetBrains/intellij-community/pull/884/commits/d81cb39a895068e143e6f8a88774726dd82932d8
+* time: 2018-10-07T20:55:01Z
+* content: Merge and clean FastSparseSetFactory and FastFixedSetFactory to Universe
+* codeUrl: github.com/JetBrains/intellij-community/pull/884/commits/f4fd5c186e1ab4c2acc1185d2ee7c87821b03e54
+* time: 2018-10-08T03:29:59Z
+* content: Clean up SFormsFastMapDirect
+* codeUrl: github.com/JetBrains/intellij-community/pull/884/commits/7ecbb1b5ac7dc4a691d3bf73c9c8823dc2e0778c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-10T05:09:27Z
+* content: I'm not 100% sure how useful this actually is, but this PR cleans up some of the different collections classes Fernflower has.  Originally prompted by me seeing VBStyleCollection and running away in fear.
+* time: 2018-10-10T05:09:27Z
+* content: This does include some various renames.  I don't think that the new names are perfect, though.  I've changed VBStyleCollection to KeyedList and FastSparseSet/FastFixedSet to UniversedSet.  I didn't rename SFormsFastMapDirect since I don't fully understand the more general context of its use.
+************************************************************************

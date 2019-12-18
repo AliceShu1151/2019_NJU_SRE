@@ -1,0 +1,45 @@
+************************************************************************
+* id: 437
+* requirement: fix debuggability for ipy notebook kernels
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-08-11T20:08:49Z
+* content: fix debuggability for ipy kernels
+* codeUrl: github.com/JetBrains/intellij-community/pull/437/commits/1384d22893714f37a3074805e6c0b2cf8eede961
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-08-11T20:22:57Z
+* content: the ipy nb kernels are subprocesses launched with -m ipykernel, while pydev generally has problems in debugging -m startups, the simple modification in this PR has enabled me to debug ipy kernels with PyCharm.
+* time: 2016-08-11T20:22:57Z
+* content: It exploits the fact that __main__ of ipykernel does not fire relative imports as __init__ does. It wouldn't work without this fact.
+* time: 2016-08-11T20:22:57Z
+* content: However I'm not sure whether running __main__ instead of __init__ for a module will break things in other cases.
+* time: 2016-08-12T16:32:08Z
+* content: Is compl.yue@icloud.com your valid e-mail address? I'd like to send you the contributor license agreement to sign, unless you've already done it.
+* time: 2016-08-15T04:41:52Z
+* content: Yes, this is my main email address. I haven't signed the LA.
+* time: 2016-08-31T12:42:37Z
+* content: In the current state the pull request can't be merged as it will break the execution of __init__.py files in general.
+* time: 2016-08-31T12:42:37Z
+* content: Could you please describe what problem you are solving? It's better to do that by submitting an issue to our tracker and posting here a link to it: https://youtrack.jetbrains.com/issues/PY
+* time: 2016-08-31T13:00:41Z
+* content: Seems there's already one: https://youtrack.jetbrains.com/issue/PY-14742
+* time: 2016-08-31T13:09:47Z
+* content: @traff I'm just curious in what cases should __init__.py be executed instead of __main__.py for a package when both exist? I had tried -m for Interpreter options and package name for Script in a run/debug configuration, while it runs okay but debug always fail.
+* time: 2018-10-16T16:40:34Z
+* content: Does this mean there is potential movement on this issue?
+* time: 2018-10-16T16:40:34Z
+* content: If we could only:
+* time: 2018-10-16T16:40:34Z
+* content: ... this would at least change the face of scientific computation.
+* time: 2018-10-16T16:40:34Z
+* content: As far as I can see, this is the main reason MATLAB is still able to compete in the marketplace.  Also Julia is coming, but it currently lacks this ability also.
+* time: 2018-10-19T14:21:09Z
+* content: Hi @p-i-! We're going to update our support for Jupyter Notebooks in PyCharm later, and debugger will be probably added. Feel free to leave comments vote for the issue: https://youtrack.jetbrains.com/issue/PY-14742
+************************************************************************

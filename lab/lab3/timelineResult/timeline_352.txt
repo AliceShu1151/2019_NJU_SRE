@@ -1,0 +1,19 @@
+************************************************************************
+* id: 352
+* requirement: Push Down: Introduce extension points to support interoperability with other languages
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-10T09:49:31Z
+* content: Push Down: Introduce extension points to support interoperability wit…
+* codeUrl: github.com/JetBrains/intellij-community/pull/352/commits/b45efcc437ab0df9498ebb076cc70c8a616fe8a3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-02-11T15:21:23Z
+* content:  No description provided. 
+************************************************************************

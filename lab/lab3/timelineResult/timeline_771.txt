@@ -1,0 +1,51 @@
+************************************************************************
+* id: 771
+* requirement: Improving Python's standard library external documentation feature
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-25T19:53:48Z
+* content: update Python 3 module list
+* codeUrl: github.com/JetBrains/intellij-community/pull/771/commits/de711a704613c14e76dbd13a7ad7b79ceef93600
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-25T19:56:48Z
+* content: Stdilb objects now map to its corresponding webpage
+* time: 2018-03-25T19:56:48Z
+* content: ['ast', 'ensurepip', 'logging.config', 'logging.handlers', 'pdb', 'tarfile', 'turtle']
+* time: 2018-03-25T19:56:48Z
+* content: none
+* time: 2018-03-25T19:56:48Z
+* content: ['asyncio', 'collections.abc', 'contextvars', 'email.contentmanager', 'email.headerregistry', 'email.message.Message', 'email.policy', 'ensurepip', 'enum', 'faulthandler', 'http', 'ipaddress', 'lzma', 'pathlib', 'pdb', 'secrets', 'selectors', 'statistics', 'tracemalloc', 'turtle', 'typing', 'unittest.mock', 'urllib', 'venv', 'xmlrpc', 'zipapp']
+* time: 2018-03-25T19:56:48Z
+* content: ['fpectl']
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-26T18:54:49Z
+* content: update Python 2 module list
+* codeUrl: github.com/JetBrains/intellij-community/pull/771/commits/505f63f8d1d282665d18e977b323c5ed9babd69a
+* time: 2018-03-27T20:26:35Z
+* content: map module name to webpage name
+* codeUrl: github.com/JetBrains/intellij-community/pull/771/commits/ed74e851865b7f7d8707b60fe9f5edd64d0cbb94
+* time: 2018-04-07T17:40:17Z
+* content: map stdlib builtin objects to URL
+* codeUrl: github.com/JetBrains/intellij-community/pull/771/commits/1ae6a37218d5c0c754f6af246ce98d8f4552519c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-12T15:05:19Z
+* content: @yole, may I request you to review this PR? You wrote most of the code for this feature.
+* time: 2018-04-12T15:18:38Z
+* content: I haven't done any work on PyCharm since 2013, so no, I'm not going to review this PR.
+************************************************************************

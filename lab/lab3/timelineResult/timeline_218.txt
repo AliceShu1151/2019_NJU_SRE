@@ -1,0 +1,25 @@
+************************************************************************
+* id: 218
+* requirement: Fix a path unescaping.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-05T22:02:16Z
+* content: Fix a path unescaping.
+* codeUrl: github.com/JetBrains/intellij-community/pull/218/commits/9a42a254dc74a2e6f2264236950507c0275a78ea
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-05T22:09:18Z
+* content: The character following a octal string sequence was skipped. Writing a test is a bit problematic due to 'hardcoded' call to GitConfigUtil.getFileNameEncoding().
+* time: 2014-11-11T19:37:14Z
+* content: BTW - this fixes https://youtrack.jetbrains.com/issue/IDEA-132150.
+* time: 2014-11-30T15:45:53Z
+* content: Thank you for the contribution. It is not entirely correct though: "i--" should happen in both possible branches of this inner "if" statement, e.g. right before "assert n == b.length;".
+* time: 2014-11-30T15:45:53Z
+* content: Anyway, I've applied the correct fix to encoding problem. Please see detailed explanation here: #123
+************************************************************************

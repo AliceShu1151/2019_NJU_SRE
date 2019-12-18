@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1270
+* requirement: IDEA-217968: Force DirectoryBasedStorage VirtualFile to be a directory
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-12-06T12:07:58Z
+* content: IDEA-217968: Force DirectoryBasedStorage VirtualFile to be a directory
+* codeUrl: github.com/JetBrains/intellij-community/pull/1270/commits/d7810f5f5f52652265c2d956039a45aeaf86b02e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-12-06T12:14:09Z
+* content: That will prevent an IOException such as '[...].idea/codeStyles' is not a directory in VFS.
+************************************************************************

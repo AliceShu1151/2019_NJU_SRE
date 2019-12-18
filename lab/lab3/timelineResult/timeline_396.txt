@@ -1,0 +1,23 @@
+************************************************************************
+* id: 396
+* requirement: IDEA-118247 fix application of Color Scheme to Terminal.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-29T01:26:05Z
+* content: IDEA-118247 fix application of Color Scheme to Terminal.
+* codeUrl: github.com/JetBrains/intellij-community/pull/396/commits/7e3cc007bddc613a2dd135370972de4bfc5bd43f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-29T01:44:44Z
+* content: Previously the Terminal view only used ANSI colors 1-6 (the non-bright colors except for black and white) from the Color Scheme and inherited colors 0 and 7-15 from the JediTerm defaults. That resulted in strange partial application of the Color Scheme and, frequently, unreadable text. This corrects the palette implementation to pull all 16 ANSI colors from the Color Scheme.
+* time: 2016-04-29T01:44:44Z
+* content: This resolves IDEA-118247.
+* time: 2016-05-04T15:54:36Z
+* content: The CLA was received. Thanks.
+************************************************************************

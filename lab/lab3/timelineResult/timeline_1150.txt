@@ -1,0 +1,214 @@
+************************************************************************
+* id: 1150
+* requirement: Add explicit types to method parameters intention
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-08T22:24:50Z
+* content: add intention basics
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/a92118393e560a03b2baf6534fb28af54c69c9fb
+* time: 2019-03-08T23:07:19Z
+* content: add correct intention appearance
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/2e27107436582d964d05c61df6de8f6219e75693
+* time: 2019-03-08T23:48:18Z
+* content: rewrite to kotlin
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/27b619499d775ee574eee9c56cbb8a6ef81f384e
+* time: 2019-03-09T19:28:09Z
+* content: add basic inference of generic type parameters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/568fc9937e3639bd380c7e922e3b6a474ef3bdae
+* time: 2019-03-09T22:22:44Z
+* content: add outer type inference for arguments without any type
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/ac8f0185eb89fcc27c4421a6873a7d97e54164ac
+* time: 2019-03-13T04:38:56Z
+* content: quickfix of inference resolution
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/6964c78672934dd44d619ced12bacbb164031db1
+* time: 2019-03-16T09:44:18Z
+* content: add simple tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/ad523809b1d83a4fe3f2f91c36df804f46edbcf5
+* time: 2019-03-16T11:14:10Z
+* content: inherit Intention instead of more abstract IntentionAction
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/4a32e90f5a6e63c24c7dfff2d6835bcd583022f8
+* time: 2019-03-16T13:02:27Z
+* content: type parameters are no longer under inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/42817a62ade9a1628992213f0baeb5bce5150ecd
+* time: 2019-03-16T19:09:26Z
+* content: add very simple inference based on method call in method body
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/b9eeab483046dc77f2b7b3043580d8a1796c8e65
+* time: 2019-03-16T19:13:37Z
+* content: more tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/b4c84c30fd27ff2ce3a2c1a0595bb206103172ed
+* time: 2019-03-23T13:29:12Z
+* content: add inference through type parameters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/9695d426605c2fc591e5549e1dc86960343e18aa
+* time: 2019-03-23T17:30:06Z
+* content: add inference of expressions in method body
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/98bb2af5dbdcc42d3fe0971b687274f64124023a
+* time: 2019-03-23T19:21:29Z
+* content: add support for type parameter inference (much better than before)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/cbab8be59ff80875a8784119a5eb71938c088602
+* time: 2019-03-23T22:03:12Z
+* content: add operator support
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/633cfa6c3ac5bd0450f61b3765a60b7c61edeaa0
+* time: 2019-03-30T19:37:33Z
+* content: fix hardcoded instantiation of inference types
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8438c52006ad57a91afe25b9b66c9e4558e7a9ea
+* time: 2019-03-31T13:59:08Z
+* content: fix propagating variables to nested sessions
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/30be6811b3a0bc4159081982c899e2f0a87cf192
+* time: 2019-03-31T14:38:52Z
+* content: visit only necessary call expressions in method body
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/87081138ebdc9cc9817f4908ce1c3694919ec52f
+* time: 2019-03-31T14:50:52Z
+* content: replace typeIndex with parameterIndex
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/32a7b6609422d4449eee912aabcf2fe63d0a99dc
+* time: 2019-03-31T21:10:04Z
+* content: add new type parameter creation when InferenceSession fails
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/230d71c5cf77b3f77bd84d1dc7ec5568c0da6858
+* time: 2019-04-01T19:55:29Z
+* content: add simple inference of wildcards
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/05d3d7b96a56d3257772f3dc0addd09d0d3525b5
+* time: 2019-04-07T20:02:32Z
+* content: refactor; change wildcard inference tactics
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/53f6cdb5453932a772114a74b94b555a17c79cb0
+* time: 2019-04-07T21:28:32Z
+* content: put all type parameters under inference to avoid session failures
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/6acb9a0db79a66faefe08749beb93bfb473b0105
+* time: 2019-04-09T06:21:29Z
+* content: improve type parameter inference algorithm
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/db711d1d4d0191b834f36abdd115104f747901ba
+* time: 2019-04-13T13:27:42Z
+* content: more uniform inference logic
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/e6869065f459aea9f73a618692ba1d8ccfa4e7a7
+* time: 2019-04-13T15:06:06Z
+* content: add deep propagating of inference variables
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/de5e87541a53595a48bd0963d74a584edf132032
+* time: 2019-04-13T23:37:32Z
+* content: add inference graph
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/390b48b443f3d797494ea341283ac0ed9fc522cb
+* time: 2019-04-14T20:48:02Z
+* content: major refactoring
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/2422c18ade9f8d2c29c7d5d7743234b28f7ac5ed
+* time: 2019-04-14T21:18:36Z
+* content: fix incorrect test hint
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/708c3de1ef462d1a32006d37dddd1e576791460d
+* time: 2019-04-14T21:46:39Z
+* content: fix incomplete inference variable choise
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/b879a649bad40a5011350c5cda9efe77bbbcb979
+* time: 2019-04-20T14:46:59Z
+* content: suppress of redundant type parameters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/f8689bb8a859220878455bcb229aaa75e3b2e4fe
+* time: 2019-04-20T14:47:52Z
+* content: more tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/122cc52b784fae8be16ce42c3508bf075a117155
+* time: 2019-04-20T17:59:59Z
+* content: handle PsiIntersectionType in dependencies
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/387e9305633ae0c665e0ef556af365880d93ac3c
+* time: 2019-04-20T19:28:18Z
+* content: remove unnecessary def keyword (draft)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/672010bbfb28d6eb07c03ad8cdc89d600d8e68e6
+* time: 2019-04-20T21:49:57Z
+* content: add several supertypes resolution
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/4d0ac062f5da6c4595bdafce20e46a64ca1642e3
+* time: 2019-04-20T22:21:52Z
+* content: more generic reference searching
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/e966d48f6a7557122204e8a93a6aeba34336a2b2
+* time: 2019-04-21T18:32:47Z
+* content: better several supertypes handling
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/1caf9b6bea3f141d979fdd4f5661290cd39033a9
+* time: 2019-04-21T20:58:28Z
+* content: refactor
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/a1eefae31b35a08c4f2b5e73531954670f6b5e0c
+* time: 2019-04-22T09:21:38Z
+* content: add dependency resolving for parametrized calls
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/962c0cb55cba962863e3fe86e35301734aaf0b18
+* time: 2019-04-27T08:56:51Z
+* content: add basic multiple interface resolve
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/cb1569ad612df2f906f2b06d6a0c458e6a7f920a
+* time: 2019-04-28T21:15:43Z
+* content: major refactoring, test fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8139f6b6eed47c3a172fa11d63b44eb5325891e3
+* time: 2019-04-29T18:37:28Z
+* content: fix raw types inference; remove redundant type parameters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/7d24e8eeff06e4729aef685e51c755ec13bc3430
+* time: 2019-04-29T19:20:10Z
+* content: more frequent wildcard appearance
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8f1afa3289ec535df1d973c9ca8ec16cf4739538
+* time: 2019-04-29T19:36:47Z
+* content: add default values processing
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/2ef58d826017a65a158b059bee00e2ed9471b628
+* time: 2019-04-29T22:03:01Z
+* content: add diamond parameter lists handling
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/3b1d3a18bdc4dc7b6adb7e7f3af7fb6a6ecf0b17
+* time: 2019-05-04T10:51:54Z
+* content: fix multiple interface inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/93f5c7b7868a6f7982d795a5ab5b42cd0a380d0f
+* time: 2019-05-04T11:38:35Z
+* content: fix constructor parameter inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/086fef2f4d479b2cf472c6d69fbb17c917ea3f60
+* time: 2019-05-04T22:04:13Z
+* content: establish correspondence between test and real-world groovy versions
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/7bb7cc74f317ea510fa97f157bf36504105bc05e
+* time: 2019-05-11T17:46:47Z
+* content: add closure signature inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/55f7e6114f05b99c47846c23786f5e4271c30dca
+* time: 2019-05-11T20:24:22Z
+* content: refactor
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8c256ec03105fd463dd3874523ba4b46cab2c7ef
+* time: 2019-05-13T21:22:55Z
+* content: fix inference algorithm
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8f4b208d393037ca7f81a23952bdbdd1bcee0857
+* time: 2019-05-18T13:50:16Z
+* content: improve wildcard inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/1ff5732c0c9a7993c0d13be129df8263e9221345
+* time: 2019-05-18T18:45:28Z
+* content: improve inference graph logic
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/c0b4245195e4f777ad1911901da359fbe23ae553
+* time: 2019-05-20T09:48:39Z
+* content: change graph structure to immutability
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/22002c717086ff1cd1cd67d794f17b2ac6d75457
+* time: 2019-05-23T14:54:46Z
+* content: add filtering of unused supertypes
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8972d0ace9920e01d17572104b11cac68fe54f16
+* time: 2019-05-23T19:28:36Z
+* content: fix issue with order-dependent inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/41ce9b9a2872cff691fec19d9032bac7db19a167
+* time: 2019-05-23T19:31:46Z
+* content: remove unnecessary doc-comment
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/ed7dfc3ec6af1cfc7274a869c36a723854d7b12e
+* time: 2019-05-23T20:01:08Z
+* content: inherit GroovyInferenceSession
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/f6b03b411afe819d702fabc2b501cf6cb5fdd79a
+* time: 2019-05-23T21:49:15Z
+* content: refactor and cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/c43fdf46e2c1926a1b54a5182e297e7319a32088
+* time: 2019-05-24T13:44:16Z
+* content: graph refactoring
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/b9a23668d732ef8a5f9a2dc448e81bb6b0aa826c
+* time: 2019-05-24T21:50:37Z
+* content: fix inference issue
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8e1fcef0cf2f9a0f47057b21e3b1bc555359adf5
+* time: 2019-05-25T12:29:26Z
+* content: add virtual processing of method
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/29090c64a5602bd62cc0d8aee98ef5ea3c66199b
+* time: 2019-05-25T12:41:22Z
+* content: remove closure support
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/d79b0d18c0217484479d6db9e654c2f38c3c05a2
+* time: 2019-05-25T14:36:22Z
+* content: complete virtual method processing
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/8f9a63eea444edbe57277e13c7697704c1fb63f5
+* time: 2019-06-02T14:17:40Z
+* content: add variance handling
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/bc9f687266426916f2d5f53d058b0850332ef8d5
+* time: 2019-06-04T12:56:22Z
+* content: fix intention description
+* codeUrl: github.com/JetBrains/intellij-community/pull/1150/commits/99061410fdf056eb8657ba4ee9b9c8f213598afd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-04T13:28:45Z
+* content: Feature that introduces possibility to infer omitted parameter types in Groovy.
+************************************************************************

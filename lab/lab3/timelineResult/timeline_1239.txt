@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1239
+* requirement: TypeMigrationStatementProcessor should process non array PsiNewExpression the same way it processes PsiMethodCallExpression
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-08T11:05:58Z
+* content: TypeMigrationStatementProcessor should process non array PsiNewExpres…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1239/commits/70aa0de4fc28dcb114da8b0a26ca207d3694959e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-08T11:12:21Z
+* content: Let be:
+* time: 2019-11-08T11:12:21Z
+* content: When triggering TypeMigration on int i = 0 to migrate int to long, it ends up with the following result:
+* time: 2019-11-08T11:12:21Z
+* content: new Foo(i); does not compile anymore.
+* time: 2019-11-08T11:12:21Z
+* content: This PR fixes it by processing non  array PsiNewExpression the same way as PsiMethodCallExpression.
+* time: 2019-11-18T19:45:25Z
+* content: Tests added
+************************************************************************

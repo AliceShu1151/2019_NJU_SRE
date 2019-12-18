@@ -1,0 +1,4 @@
+************************************************************************
+* id: 334
+* requirement: Open/close task dialogs improvement
+the requirement of 334 only has implements, no discussion.

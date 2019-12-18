@@ -1,0 +1,45 @@
+************************************************************************
+* id: 860
+* requirement: Add the ability to highlight java primitives separately from keywords.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-17T05:03:11Z
+* content: Add the ability to highlight java primitives separately from keywords.
+* codeUrl: github.com/JetBrains/intellij-community/pull/860/commits/d43fbb33cc2d17fc03d5babc2c3bee554bcc6d13
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-17T05:16:59Z
+* content: Add the ability to highlight java primitives separately from keywords. This leaves the default highlighting unchanged (ie. the same as keywords).
+* time: 2018-09-17T05:16:59Z
+* content: 
+* time: 2018-09-17T05:16:59Z
+* content: The README.md doesn't cover running tests, so lmk if there's anything else I should do.
+* time: 2018-09-17T05:16:59Z
+* content: (CLA should be good from intellij-rust contributions)
+* time: 2019-05-24T22:47:13Z
+* content: @dyadix does this look it will be merged eventually?
+* time: 2019-07-23T21:16:32Z
+* content: @akozlova please assist.
+* time: 2019-07-25T06:53:06Z
+* content: Why do you want primitives to be highlighted differently from other keywords? The place under "classes and interfaces" is unexpected and I doubt that the highlighting would be used by many users.
+* time: 2019-07-25T06:53:06Z
+* content: Moreover, how would you highlight var? I guess, it would be inconsistent as in some cases it must be "primitive" and in others "non-primitive".
+* time: 2019-07-25T17:26:16Z
+* content: Personally I wanted int and other primitive types to be the same color as classes in my color scheme. I don't know where else in the menus it would go, and I'm not attached to this particular placement.
+* time: 2019-07-25T17:26:16Z
+* content: Primitives are the keywords that are actual type names, whereas var is a non-type keyword. If we really wanted, var and any/every other (type of) keyword could be separately colorable as well (eg. visibility modifiers).
+* time: 2019-07-25T18:10:12Z
+* content: I believe that var is a type-keyword in java 10+, https://openjdk.java.net/jeps/286
+* time: 2019-07-25T18:10:12Z
+* content: Frankly saying I don't want to add a feature for the sake of adding a feature. I think, it's a good candidate to be implemented as a plugin, e.g. see how soft keywords are processed com.intellij.codeInsight.daemon.impl.JavaSoftKeywordHighlightingPassFactory
+* time: 2019-07-25T19:02:22Z
+* content: The implementation slots in very cleanly in a few lines of configuration here, I imagine as a plugin it takes substantially more code and maintenance to implement. I view this in the same vein as being able to highlight class/anonymous class/interface all separately if one chooses, just a little bit more customization.
+* time: 2019-07-25T19:02:22Z
+* content: I don't mean anything pedantic by type-keyword, just that int and long are named types while var is not.
+************************************************************************

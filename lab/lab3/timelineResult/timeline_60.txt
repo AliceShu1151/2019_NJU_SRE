@@ -1,0 +1,22 @@
+************************************************************************
+* id: 60
+* requirement: IDEA-36388 & IDEA-25232
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-28T21:49:09Z
+* content: IDEA-36388 & IDEA-25232
+* codeUrl: github.com/JetBrains/intellij-community/pull/60/commits/01e046beb2089cacbb80119980bd577c4fccdc90
+* time: 2013-03-29T09:53:48Z
+* content: changed resource-bundle editor ui building(fixed bug with splitter cr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/60/commits/aa140c0c8855f0e9c1c75bfea0f29e8249608dba
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-29T09:57:43Z
+* content:  No description provided. 
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 47
+* requirement: IDEA-99287 ANT toolwindow: prevent duplicate build files
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-08T13:12:49Z
+* content: IDEA-99287 ANT toolwindow: prevent duplicate build files
+* codeUrl: github.com/JetBrains/intellij-community/pull/47/commits/96fbf3c74155179f96f9ee47b42433f953586e16
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-08T13:31:25Z
+* content:  No description provided. 
+* time: 2019-06-22T23:08:32Z
+* content: @eugenezh @ignatov what are we waiting for? :)
+* time: 2019-06-22T23:08:32Z
+* content: please merge it or leave a comment indicating why this can't be done.
+************************************************************************

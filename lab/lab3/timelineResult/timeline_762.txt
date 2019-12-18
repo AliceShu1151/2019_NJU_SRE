@@ -1,0 +1,23 @@
+************************************************************************
+* id: 762
+* requirement: Replace echo with printf to interpret \n as newline
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-16T00:32:55Z
+* content: Replace echo with printf to interpret \n as newline
+* codeUrl: github.com/JetBrains/intellij-community/pull/762/commits/8171ad62ae88c76269b6dc75e468448239e8313a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-16T00:34:29Z
+* content: see https://wiki.ubuntu.com/DashAsBinSh#echo
+* time: 2018-03-16T00:35:54Z
+* content: @trespasserw?
+* time: 2018-03-16T08:52:58Z
+* content: Yep, thanks. But then it needs a trailing newline.
+************************************************************************

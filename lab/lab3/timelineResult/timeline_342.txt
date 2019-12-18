@@ -1,0 +1,33 @@
+************************************************************************
+* id: 342
+* requirement: LightVirtualFile type fix
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-01-07T09:50:03Z
+* content: LightVirtualFile type migth be incorrect if created from text, withou…
+* codeUrl: github.com/JetBrains/intellij-community/pull/342/commits/3238b4eed4ec8b138f3ea6278514806a15bea525
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-07T09:54:13Z
+* content: LigthVirtualFile contains incorrect file type when created from text but has originalFile
+* time: 2016-01-11T15:13:35Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-01-11T17:37:13Z
+* content: Done
+* time: 2016-01-12T09:31:57Z
+* content: We didn't receive it yet. Could you please re-send?
+* time: 2016-01-12T09:36:08Z
+* content: Sent again
+* time: 2016-01-12T09:36:46Z
+* content: Now I see it. Thanks!
+* time: 2016-01-13T12:08:40Z
+* content: @hurricup, this fix looks ok for me, but probably it would be better to override getFileType in LightVirtualFile to delegate to original file if it's present. @nicity, what do you think?
+* time: 2016-01-13T12:31:08Z
+* content: That was my first intention, but, my mentor been afraid that such solution may affect platforms or other plugins code. So used the most safe way to my knowlege.
+************************************************************************

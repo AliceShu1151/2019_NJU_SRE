@@ -1,0 +1,26 @@
+************************************************************************
+* id: 84
+* requirement: Hg show branch name
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-06-28T08:07:35Z
+* content: Add "VCS -> Mercurial -> Browse Changes...", allowing to browse chang…
+* codeUrl: github.com/JetBrains/intellij-community/pull/84/commits/251a88c951942eb311dbacdbe6beeba05bff6e35
+* time: 2013-06-28T09:10:56Z
+* content: Expose a commit's branch in a few different places:
+* codeUrl: github.com/JetBrains/intellij-community/pull/84/commits/af21b2904b894dd8fec5e760118d2719cf5bbfdd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-06-28T09:26:41Z
+* content: (I'm very, very, sorry... for the life of me, I cannot figure out how to get github to create a pull request that has only the 2nd commit, as I previously submitted the first commit in a different pull request.)
+* time: 2013-06-28T11:06:25Z
+* content: Each of your commits should have been in a separate branch. Then GitHub will handle them as two independent pull requests.
+* time: 2013-06-28T13:56:00Z
+* content: I'm apparently no good with git. Despite using IntelliJ to create a new branch, and commit the second changeset to that branch, somehow the first commit also wound up on that 2nd branch.
+************************************************************************

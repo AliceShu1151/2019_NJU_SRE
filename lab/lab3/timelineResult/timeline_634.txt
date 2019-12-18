@@ -1,0 +1,23 @@
+************************************************************************
+* id: 634
+* requirement: generate hashCode: prefer HashCodeBuilder with default constructor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-01T11:41:02Z
+* content: generate equals/hashCode: prefer HashCodeBuilder with default constru…
+* codeUrl: github.com/JetBrains/intellij-community/pull/634/commits/85d48b6860e74844a3ab292f97b2a650c82ed16c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-01T11:47:27Z
+* content: Hi, hashCode generator uses template with builder class with two parameters constructors. There is default constructor with same constants as in current template. It should be handy not to duplicate this constants and use default constructor instead. Second point of view could be that when you have hard-coded constants many of static code analysis tools marks them as magic numbers. Is it this change ok for you? Thx, Ivos
+* time: 2017-10-01T11:51:47Z
+* content: YouTrack issue is https://youtrack.jetbrains.com/issue/IDEA-179868
+* time: 2018-07-21T11:47:46Z
+* content: Already fixed, thanks for PR.
+************************************************************************

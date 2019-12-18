@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1182
+* requirement: Debugger inconsistent when using with pyspark DataFrames
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-02T12:02:06Z
+* content: Debugger outputs many spurious messages regarding: AttributeError: 'D…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1182/commits/65c202079e5993646d962f454fd2725ab1bb4d44
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-02T12:03:08Z
+* content: An assumption that a DataFrame is only from pandas results in many of the following warning messages and also causes the interactive debugger not to work well when using libraries other than pandas containing a DataFrame class. This is particularly noticeable when debugging pyspark.
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 227
+* requirement: resolve IDEA-133439
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-25T10:05:17Z
+* content: resolve IDEA-133439
+* codeUrl: github.com/JetBrains/intellij-community/pull/227/commits/b1a80514ab395c3a842a0cd286d19b5215833d98
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-25T10:05:26Z
+* content:  No description provided. 
+* time: 2014-11-30T13:42:09Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2014-12-08T10:10:40Z
+* content: signed and sent
+* time: 2014-12-08T10:32:48Z
+* content: Received, thank you.
+************************************************************************

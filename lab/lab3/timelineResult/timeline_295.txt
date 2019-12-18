@@ -1,0 +1,28 @@
+************************************************************************
+* id: 295
+* requirement: Decompiler name shadowing resolution
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-21T18:29:17Z
+* content: inner classes that have their parents shadowed are not identified pro…
+* codeUrl: github.com/JetBrains/intellij-community/pull/295/commits/887b10ce8088fd7fc273a654ce9c14e8d011b666
+* time: 2015-08-21T18:32:36Z
+* content: we are not really interested in the parent class, but the child class
+* codeUrl: github.com/JetBrains/intellij-community/pull/295/commits/cfead93cd6d0ebd66c1b1212b9d5ef00299348fe
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-08-21T18:45:16Z
+* content: 'package1.ClassA.ClassB' is falsely identified as 'package1.ClassA' by any class that is in another package other than package1 if that package also contains a class named 'ClassA'.
+* time: 2015-08-22T07:47:50Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-08-22T07:49:19Z
+* content: Sure, I sent the email a couple of hours ago with the subject 'CLA apixandru'
+* time: 2015-08-22T07:53:59Z
+* content: The CLA was received. Thanks.
+************************************************************************

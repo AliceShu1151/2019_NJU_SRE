@@ -1,0 +1,21 @@
+************************************************************************
+* id: 477
+* requirement: In type names, replace type params with concrete types
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-11-29T04:14:13Z
+* content: In type names, replace type params with concrete types
+* codeUrl: github.com/JetBrains/intellij-community/pull/477/commits/555f4d23de42dfd8204d09435523d901e9366d18
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-11-29T04:19:46Z
+* content: … which makes failure messages (and maybe assertion code) more readable, and avoids http://errorprone.info/bugpattern/SelfComparison.
+* time: 2018-07-21T13:02:31Z
+* content: @dahlstrom-g, please rebase the PR, cc @vladsoroka.
+************************************************************************

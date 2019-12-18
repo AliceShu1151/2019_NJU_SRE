@@ -1,0 +1,33 @@
+************************************************************************
+* id: 603
+* requirement: Enhance Java builder completion for superclasses and generics
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-18T22:15:06Z
+* content: Enhance Java builder completion for superclasses and generics
+* codeUrl: github.com/JetBrains/intellij-community/pull/603/commits/a63b233e8446b6d7464b287a8a95af9f5c66f56b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-07-19T19:51:55Z
+* content: Adding the ability for builder completion to understand when the build method is defined in an interface, and also enabling it to handle generic types. Tested on the following sample code:
+* time: 2017-07-19T19:51:55Z
+* content: A base-builder defined in an interface:
+* time: 2017-07-19T19:51:55Z
+* content: An implementation as follows:
+* time: 2017-07-19T19:51:55Z
+* content: The builders in V2 of the AWS Java SDK are structured in this way, see interface and example implementation.
+* time: 2017-07-19T19:57:22Z
+* content: I'll add tests shortly - wanted to get this out to get some initial feedback.
+* time: 2017-07-19T20:17:14Z
+* content: Now with tests!
+* time: 2017-07-20T05:06:18Z
+* content: Thanks! But why do you use substitutionMap, doesn't PsiSubstitutor#substitute solve the problem?
+* time: 2017-07-20T16:15:52Z
+* content: @donnerpeter no good reason, didn't realise the substitute method did what I wanted. I've amended the code.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 877
+* requirement: [Fernflower] add test case for bad variable initialization
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-29T15:40:42Z
+* content: attempt to fix bad variable initialization
+* codeUrl: github.com/JetBrains/intellij-community/pull/877/commits/4df481974dbce2cf97e44d2dad0a1559015e1e21
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-29T15:49:26Z
+* content: Add a test case for bad initialization of variables. The test is @ignored so that it won't fail the build but it will be there to know that there is a case that has to be fixed. Also uncommented the tests that are currently failing and marking them as @ignored so it will be obvious when running the test suite that there are test cases that have to be fixed.
+* time: 2018-09-30T04:29:04Z
+* content: I have also attempted to fix the issue by scanning all statements in the block to try and override the contant exprent type. Not sure if this is the proper place or way to deal with the situation but at least it fixes the problem.
+* time: 2018-10-10T09:51:04Z
+* content: I'm observing strange effects with this: javax.swing.text.html.AccessibleHTML.TableElementInfo.TableCellElementInfo#invalidate has become:
+************************************************************************

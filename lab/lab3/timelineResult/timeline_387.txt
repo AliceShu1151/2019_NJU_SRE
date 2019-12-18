@@ -1,0 +1,81 @@
+************************************************************************
+* id: 387
+* requirement: Field Declaration Order Fix for Fernflower
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-21T21:35:09Z
+* content: Field Declaration Order Fix for Fernflower
+* codeUrl: github.com/JetBrains/intellij-community/pull/387/commits/ef0d23ad0772ccee9ae1a0192f6053998dd7b3e7
+* time: 2016-04-21T21:36:11Z
+* content: Added test case for FDO
+* codeUrl: github.com/JetBrains/intellij-community/pull/387/commits/2dde2dda86c98120804aa6adb9df3de901e29c61
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-21T21:37:07Z
+* content: This fixes an issue I had when decompiling an obfuscated class. (testData/classes/pkg/Class8.class).
+* time: 2016-04-21T21:37:07Z
+* content: Fernflower did not properly order the fields in which the order they are initialized therefore causing the program to break.
+* time: 2016-04-21T21:37:07Z
+* content: Ex:
+* time: 2016-04-21T21:37:07Z
+* content: Output from Fernflower (no field sorting DOESNT WORK):
+* time: 2016-04-21T21:37:07Z
+* content: Output from Fernflower (with field sorting WORKING):
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-21T23:34:39Z
+* content: Merge pull request #1 from JetBrains/master
+* codeUrl: github.com/JetBrains/intellij-community/pull/387/commits/25e75d702ef3e5aecfa28b16d5dfd1892bba097a
+* time: 2016-04-22T18:41:17Z
+* content: Merge pull request
+* codeUrl: github.com/JetBrains/intellij-community/pull/387/commits/a6a308cf9262d856c439b248097dbbd93f8366fc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-25T13:28:35Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-04-25T18:03:43Z
+* content: I've just completed the required documentation and sent it in via email. I'm excited to start helping the community :)
+* time: 2016-04-25T18:04:24Z
+* content: We've received the CLA. Thanks.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-25T18:51:59Z
+* content: Merge pull request
+* codeUrl: github.com/JetBrains/intellij-community/pull/387/commits/83faa44d8d8cb7941e4aaa2e25d507997b547e8c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-03T10:15:58Z
+* content: Hi, you've added fdo preference to control this, any ideas when it shouldn't be turned on?
+* time: 2016-06-03T10:54:53Z
+* content: Please also add a test into SingleClassesTest with the corresponding .dec file (and preferably .java source).
+* time: 2017-04-19T10:07:07Z
+* content: @Jonatino any updates on this?
+* time: 2017-04-19T22:06:23Z
+* content: @gorrus I completely forgot about this. Looking at it now I bet there is a much more elegant solution. I will work on it soon.
+* time: 2017-09-11T05:20:33Z
+* content: Any updates on this? It would be extremely helpful to have this fix merged in because it fixes a major issue that I'm dealing with and frustratingly I'm my restricted to only using master branches... @Jonatino @gorrus
+* time: 2017-09-11T13:46:04Z
+* content: @ccarpenter04 I keep forgetting about this issue. I'll finish it within the next couple days. 
+* time: 2017-09-11T16:34:03Z
+* content: @Jonatino I'd really appreciate that, contact me if there's anyway that I can help. I've worked with the fernflower source in the past and have also signed the CLA here exclusively for making contributions to fernflower (although it's been a while)
+************************************************************************

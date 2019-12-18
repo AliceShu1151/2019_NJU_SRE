@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1152
+* requirement: IDEA-209506 Skip empty classpath roots fed to JUnit5TestRunner
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-05T17:18:51Z
+* content: IDEA-209506 Skip empty classpath roots fed to JUnit5TestRunner
+* codeUrl: github.com/JetBrains/intellij-community/pull/1152/commits/ccdbd0722ff2eb339d4229e8688ee8463623c04a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-05T17:24:46Z
+* content: Change JUnit5TestRunnerUtil to validate emptiness of the classpath roots returned from JUnit 5. Only propagate non-empty results to the test runner. Fixes an issue with recent versions of Android Studio, which don't support the execution of single-module test suites using JUnit 5 at the moment because of an overzealous iterator.
+* time: 2019-06-05T17:24:46Z
+* content: Resolves IDEA-209506.
+* time: 2019-06-11T10:39:54Z
+* content: Merged manually, thanks!
+* time: 2019-08-20T11:56:27Z
+* content: Do you have an info in which Android Studio release this fix will land?
+************************************************************************

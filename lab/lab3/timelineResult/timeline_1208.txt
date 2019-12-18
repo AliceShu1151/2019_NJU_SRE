@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1208
+* requirement: visually separate DUMMY_IDENTIFIER text from the main text
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-03T03:06:53Z
+* content: separate DUMMY_IDENTIFIER from the main text
+* codeUrl: github.com/JetBrains/intellij-community/pull/1208/commits/21c7740fa40d835b431683e09b318c4d3dd076bc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-03T03:12:07Z
+* content: For the debuging pupose:  
+* time: 2019-10-03T03:12:07Z
+* content: PS Also more zzz might need to be added at the end. ;)
+* time: 2019-10-05T10:48:04Z
+* content: Unfortunately, this change breaks completion in about 10 languages we support, and an unknown amount of third-party plugins. Some languages treat underscore differently from uppercase letters, so parse trees there could change.
+************************************************************************

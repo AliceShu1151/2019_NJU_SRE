@@ -1,0 +1,4 @@
+************************************************************************
+* id: 78
+* requirement: svn4idea / git4idea SSH agent support
+the requirement of 78 only has implements, no discussion.

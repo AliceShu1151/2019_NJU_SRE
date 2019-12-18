@@ -1,0 +1,21 @@
+************************************************************************
+* id: 288
+* requirement: Include more details for FS case setting mismatch
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-13T19:23:39Z
+* content: Include more details for FS case setting mismatch
+* codeUrl: github.com/JetBrains/intellij-community/pull/288/commits/77af99cffa1cd4429e383fcd51588ddd55fafdee
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-13T19:28:42Z
+* content: Per the discussion on YouTrack IDEA-135546, the message was updated to detail which system property one should adjust. For those unfamiliar with the situation, the Confluence page will still explain it. For those who see this a lot, the system property will remind them which property needs adjustment.
+* time: 2015-07-13T19:28:42Z
+* content: If one wishes to put back the contraction (doesn't), then please escape the apostrophe ('') since MessageFormat uses apostrophe as its escape character. This bug is even present in the screenshot on the Confluence page.
+************************************************************************

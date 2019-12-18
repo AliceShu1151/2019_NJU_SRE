@@ -1,0 +1,23 @@
+************************************************************************
+* id: 58
+* requirement: String.trim().length() == 0 replaced by StringUtil.isEmptyOrSpaces some elements make deprecated
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-26T18:01:17Z
+* content: String.trim().length() == 0 replaced by StringUtil.isEmptyOrSpaces so…
+* codeUrl: github.com/JetBrains/intellij-community/pull/58/commits/e9ce3ac64296a402233e5237721fdddb1e268162
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-26T18:10:48Z
+* content:  No description provided. 
+* time: 2013-03-26T19:35:32Z
+* content: I don't think this is a valuable contribution. StringUtil.isEmptyOrSpaces(s) is longer than s.trim().length() == 0 and is not particularly more readable; also, I don't think any of the usages are in performance-critical places so the creation of an extra object by trim() doesn't matter. We could accept a separate pull request that removes the functions which duplicate isEmptyOrSpaces() or nullize() and replaces their usages.
+* time: 2013-03-26T19:47:07Z
+* content: np
+************************************************************************

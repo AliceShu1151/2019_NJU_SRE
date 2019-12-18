@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1024
+* requirement: IDEA-204998: Use decompile classes in preference to library classes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-05T02:54:23Z
+* content: IDEA-204998: Use decompile classes in preference to library classes
+* codeUrl: github.com/JetBrains/intellij-community/pull/1024/commits/76422f230382eeadd4eb521b486455a657ac12f0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-05T02:55:57Z
+* content: Fixes https://youtrack.jetbrains.com/issue/IDEA-204998
+* time: 2019-11-13T07:28:38Z
+* content: The change in behavior not only makes sense but due to it's current state it has caused critical issues that have caused me to have to find alternatives to FernFlower in the past. The approach he took to resolving the issue is extremely straight forward with very predictable side effects.
+* time: 2019-11-18T21:37:25Z
+* content: Merged. Sorry for this taking so long.
+************************************************************************

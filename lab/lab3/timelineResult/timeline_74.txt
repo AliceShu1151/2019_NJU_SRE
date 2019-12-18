@@ -1,0 +1,43 @@
+************************************************************************
+* id: 74
+* requirement: Update tip of the day, fix invalid menu items, shortcuts, typos
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-04-21T11:42:57Z
+* content: Update tip of the day, fix invalid menu items, shortcuts, typos
+* codeUrl: github.com/JetBrains/intellij-community/pull/74/commits/83dc947a2446785e2510d2e7b672963df9645cdd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-04-21T17:33:39Z
+* content: Hi IntelliJ team,
+* time: 2013-04-21T17:33:39Z
+* content: I went through all tip of the day of IntelliJ Ultimate 12.1.1 and corrected a few mistakes. Unfortunately a lot of images in the tips aren't displayed if I build IntelliJ Community Edition by myself Environment: Windows 7 32 Bit, Java 6/7, latest source version from github Failed: images/ctrl_shift_i_lookup.gif Success: images/properties_completion.gif
+* time: 2013-04-21T17:33:39Z
+* content: The images are shown correctly if I use the packaged version from Jetbrains. Is this normal?
+* time: 2013-04-21T17:33:39Z
+* content: It would be nice if you would include this patch in one of the following releases.
+* time: 2013-04-21T17:33:39Z
+* content: Best regards
+* time: 2013-04-21T17:33:39Z
+* content: Josef
+* time: 2013-11-19T12:57:27Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2013-11-19T14:52:51Z
+* content: Yes, I have already submitted a contributor license agreement.
+* time: 2013-11-19T14:52:51Z
+* content: My pull request is probably outdated, I will go through the tips of the day again and send you a new pull request soon.
+* time: 2013-11-22T06:53:52Z
+* content: Yep, it can't be merged without conflicts. Sorry for the delay with this pull request. Hope to hear from you.
+* time: 2013-11-24T14:56:07Z
+* content: I'm sorry, I got ill, it will take one or two weeks until you get the updated patch.
+* time: 2013-11-30T15:01:21Z
+* content: I finished my pull request, please use #132 instead of this one.
+* time: 2013-11-30T15:01:21Z
+* content: Best regards
+************************************************************************

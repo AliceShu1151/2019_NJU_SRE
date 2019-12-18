@@ -1,0 +1,19 @@
+************************************************************************
+* id: 802
+* requirement: Fix path for open command in launcher
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-05T09:28:20Z
+* content: Fix path for open command in launcher
+* codeUrl: github.com/JetBrains/intellij-community/pull/802/commits/d5065f3aaffd0250f615538f11f2d34e6b25710c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-05T09:30:38Z
+* content: It's a common pattern for power users to replace open with some other file manager. Since the launcher relies on the OS open command, having the full path will avoid issues with users aliasing open to something else while keeping the current behavior the same.
+************************************************************************

@@ -1,0 +1,30 @@
+************************************************************************
+* id: 233
+* requirement: Fixes minor typo in JS auto-completion keywords
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-01-08T21:52:03Z
+* content: fixed typo: defaul -> default
+* codeUrl: github.com/JetBrains/intellij-community/pull/233/commits/9a7d4ba4c4d2657a3859dc5a661a1e8152f793a9
+* time: 2015-01-08T21:53:28Z
+* content: fixed typo: defaul -> default
+* codeUrl: github.com/JetBrains/intellij-community/pull/233/commits/a31f34cc2bbb1e03ac3a10e8a0b46febb904d457
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-01-08T21:55:00Z
+* content:  No description provided. 
+* time: 2015-01-20T10:56:58Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-01-21T09:27:35Z
+* content: done
+* time: 2015-01-22T13:56:49Z
+* content: Sorry, didn't receive it yet.
+* time: 2015-01-23T14:54:45Z
+* content: hmmm, tried it again from a different mail provider.
+************************************************************************

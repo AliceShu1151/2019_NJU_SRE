@@ -1,0 +1,29 @@
+************************************************************************
+* id: 327
+* requirement: Do not process non-Java methods in JavaChangeSignatureUsageProcessor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-23T15:30:31Z
+* content: Change Signature (Java): Do not process non-Java methods (let
+* codeUrl: github.com/JetBrains/intellij-community/pull/327/commits/0a69ee9f2d190165548e3fb16c49a324fece7d4f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-11-23T15:34:59Z
+* content: It doesn't process non-Java methods (e.g. Groovy, Scala or Kotlin ones) correctly, so it should let language-specific usage processor do the job
+* time: 2015-11-24T11:33:08Z
+* content: Thank you. Is it possible to have #326/#327 included to the next EAP?
+* time: 2015-11-24T11:45:56Z
+* content: It would be included in 15.1 EAP, yes. New features/api changes are normally not included in minor releases, so 15.0.2 won't have them or you may contact Nik and make believe him that these changes are essential for kotlin,
+* time: 2015-11-24T11:45:56Z
+* content: On Tue, Nov 24, 2015 at 12:33 PM, asedunov notifications@github.com wrote:
+* time: 2015-11-24T19:26:34Z
+* content: Usually it's not a problem to include an API change to a minor release branch provided that it doesn't break API compatibility. However if you plan to backport a change to a release branch it would be better to keep the change is small as possible, in particular, don't convert java code to kotlin just because you can.
+* time: 2015-11-24T19:41:04Z
+* content: I've performed refactoring myself and didn't convert to kotlin. That's looks safe but I still don't think that the change can't wait for 15.1 EAP
+************************************************************************

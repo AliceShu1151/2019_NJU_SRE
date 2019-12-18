@@ -1,0 +1,61 @@
+************************************************************************
+* id: 1166
+* requirement: DocumentationComponent: Added Base64 image support
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-07T21:25:06Z
+* content: DocumentationComponent: Added Base64 image support
+* codeUrl: github.com/JetBrains/intellij-community/pull/1166/commits/99adc1bce32d4cd6bf53330c386d3f64be8352f3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-07T21:38:12Z
+* content: This adds Base64 image support to the DocumentationComponent via data uris.
+* time: 2019-07-07T21:38:12Z
+* content: Put this into Javadoc:
+* time: 2019-07-07T21:38:12Z
+* content: Source: https://en.wikipedia.org/wiki/Data_URI_scheme
+* time: 2019-07-07T21:38:12Z
+* content: Certain competitors are able to show base64 encoded images in JavaDoc. So i think IntelliJ should also be able. At work we use that to display the icons behind String constants in the JavaDoc.
+* time: 2019-07-07T21:38:12Z
+* content: Also this fixes the following: https://youtrack.jetbrains.com/issue/IDEA-104317
+* time: 2019-07-12T12:53:22Z
+* content: Hello, Markus, Thanks for your contribution. Could you please fix the following problems I've found:
+* time: 2019-07-13T14:24:25Z
+* content: Hello Dmitry,
+* time: 2019-07-13T14:24:25Z
+* content: I tried to keep the logic for normal images by looking at what the swing ImageView does and copying that, but i will work on your notes in the coming days.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-14T18:46:37Z
+* content: DocumentationComponent: Reworked Base64 support
+* codeUrl: github.com/JetBrains/intellij-community/pull/1166/commits/dbe64d485d4013a5c3dbeffa39d38ff1f7bcc207
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-14T18:55:34Z
+* content: Hello again @JB-Dmitry. I implemented the width/height thing and also set the default border size to 0 as you requested. I does behave different to normal images though... Guess the swing ImageView does something strange... 
+* time: 2019-07-14T18:55:34Z
+* content: The Source for this Test:
+* time: 2019-07-14T18:55:34Z
+* content: I also took a look at the viewToModel method again and why it is different from the swing.ImageView one. I found the swing.IconView, which matches the MyIconView.viewToModel method again.
+* time: 2019-07-14T18:55:34Z
+* content: I'm not sure what version of the method to take, but i went with the ImageView one, as we are displaying a BufferedImage and not just icons. Let me know if that is okay with you.
+* time: 2019-07-15T11:22:59Z
+* content: Hello Markus,
+* time: 2019-07-15T11:22:59Z
+* content: Thanks for the updated fix - looks better to me. As for the image scaling logic in ImageView - it had a bug, which is fixed in JDK 12 (https://bugs.openjdk.java.net/browse/JDK-8208638) and JetBrains Runtime (https://youtrack.jetbrains.com/issue/JBR-588). You've probably used an older JDK version to test.
+* time: 2019-07-15T11:22:59Z
+* content: I see now why you've chosen that particular 'viewToModel' implementation - ImageView has the same one (didn't look at it previously). IMHO, the one in IconView is better, as e.g. a mouse click near the right edge of the image will position the caret at the right edge. But let's leave it as in your implementation, for consistency.
+************************************************************************

@@ -1,0 +1,36 @@
+************************************************************************
+* id: 1254
+* requirement: Make line info public and add line number and original line number to it.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-19T12:22:04Z
+* content: Make line info public and add line number and original line number to it. More info is in the thread.
+* time: 2019-11-19T12:22:04Z
+* content: https://intellij-support.jetbrains.com/hc/en-us/community/posts/360006634979-I-want-to-extend-the-Annotate-view-of-Git-VCS-But-?page=1#community_comment_360000966480
+* time: 2019-11-19T12:32:22Z
+* content: Force push a modification with latest master. No conflicts now.
+* time: 2019-11-19T13:06:07Z
+* content: Add delegate to CommitInfo in LineInfo.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-20T14:29:45Z
+* content: Make line info public and add line number and original line number to…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1254/commits/5186786d624379f0e449759d996c1387e1a0a56d
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-20T14:31:52Z
+* content: Force push a new commit. It follows the reviews.
+* time: 2019-11-21T10:33:36Z
+* content: @SetoKaiba Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+************************************************************************

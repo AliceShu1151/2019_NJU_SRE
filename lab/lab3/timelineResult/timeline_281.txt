@@ -1,0 +1,21 @@
+************************************************************************
+* id: 281
+* requirement: RemoveUsageAction: Now selects a next item from the usage tree…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-02T08:45:50Z
+* content: RemoveUsageAction: Now selects a next item from the usage tree after …
+* codeUrl: github.com/JetBrains/intellij-community/pull/281/commits/ae0e0214f7b0cce1c8bd8a79baa64ce090a57134
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-02T08:50:38Z
+* content: RemoveUsageAction: Now selects a next item from the usage tree after removing one or several items. This makes the function easier to use with the keyboard.
+* time: 2015-07-02T08:50:38Z
+* content: This is an addition to the now merged pull request #279 fixing IDEA-22996. It's basically the same code as I use in my Remove Usage Plugin.
+************************************************************************

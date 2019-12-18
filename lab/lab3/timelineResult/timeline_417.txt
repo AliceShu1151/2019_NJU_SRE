@@ -1,0 +1,21 @@
+************************************************************************
+* id: 417
+* requirement: Implemented charAt(int) method
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-06-21T09:58:45Z
+* content: Implemented charAt(int) method
+* codeUrl: github.com/JetBrains/intellij-community/pull/417/commits/38d87b444155765a4602dc1e0f3158fac71322de
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-21T09:59:40Z
+* content: Implemented charAt(int) method to improve readability of source code.
+* time: 2018-07-21T13:07:58Z
+* content: @collinsmith, please rebase the PR, cc @trespasserw.
+************************************************************************

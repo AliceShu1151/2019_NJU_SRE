@@ -1,0 +1,27 @@
+************************************************************************
+* id: 813
+* requirement: IDEA-192953 Fix replace switch with if on primitive wrapper uses equals
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-19T20:15:32Z
+* content: IDEA-192953 Fix replace switch with if on primitive wrapper uses equals
+* codeUrl: github.com/JetBrains/intellij-community/pull/813/commits/bbaa505001d1c7c7f71b566c8180c9b2c5c84e7d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-19T20:24:25Z
+* content:  No description provided. 
+* time: 2018-06-19T20:25:38Z
+* content: I have submitted a contributor license agreement.
+* time: 2018-07-21T11:11:40Z
+* content: cc @BasLeijdekkers
+* time: 2018-07-23T21:06:12Z
+* content: Thanks for you contribution! Does this fix a YouTrack issue?
+* time: 2018-07-24T07:09:35Z
+* content: Yes, it does. There are tests for replacement with Character and Integer classes.
+************************************************************************

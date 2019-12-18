@@ -1,0 +1,19 @@
+************************************************************************
+* id: 184
+* requirement: Actually allow using RootIndex in an UpSource-like environment. Without ...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-05-23T14:39:29Z
+* content: Actually allow using RootIndex in an UpSource-like environment. Witho…
+* codeUrl: github.com/JetBrains/intellij-community/pull/184/commits/a0dfef5304b61f08a6e04e21c88c02cf6c514870
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-05-23T14:40:36Z
+* content: ...this fix, a cyclic dependency is present (ModuleRootManagerImpl requires passing a DirectoryIndex to its constructor, and the constructor of RootIndex accesses ModuleRootManager.getInstance()).
+************************************************************************

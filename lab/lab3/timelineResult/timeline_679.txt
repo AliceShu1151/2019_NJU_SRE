@@ -1,0 +1,19 @@
+************************************************************************
+* id: 679
+* requirement: IJSDK-340 Using multiple optional dependencies against the same plugin causes one of the config files to be ignored
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-09T00:28:26Z
+* content: IJSDK-340 Using multiple optional dependencies against the same plugi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/679/commits/ddd1a2b64003d0dd18623c2f8c7dfa5645392999
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-09T00:43:19Z
+* content:  No description provided. 
+************************************************************************

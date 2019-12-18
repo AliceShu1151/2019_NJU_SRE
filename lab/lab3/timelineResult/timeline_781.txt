@@ -1,0 +1,25 @@
+************************************************************************
+* id: 781
+* requirement: Avoid thread-unsafe SimpleDateFormat access in PerformanceWatcher
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-19T04:11:46Z
+* content: Avoid thread-unsafe SimpleDateFormat access in PerformanceWatcher
+* codeUrl: github.com/JetBrains/intellij-community/pull/781/commits/d3b05005bf4f1396571105fe151a1784208d3eaa
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-19T04:17:00Z
+* content: PerformanceWatcher.formatTime can be called by multiple threads without synchronization, and SimpleDateFormat isn't thread-safe.
+* time: 2018-04-19T04:17:00Z
+* content: bugs.java.com/bugdatabase/view_bug.do?bug_id=6231579
+* time: 2018-04-19T04:17:56Z
+* content: @cdracm?
+* time: 2018-04-19T04:27:43Z
+* content: I haven't created a YouTrack issue for this, but we saw it when testing Android Studio:
+************************************************************************

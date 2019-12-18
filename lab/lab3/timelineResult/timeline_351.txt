@@ -1,0 +1,21 @@
+************************************************************************
+* id: 351
+* requirement: [Fernflower] Make the default renamer rename classes that have a name that is reserved by the windows namespace
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-03T03:40:00Z
+* content: [Fernflower] When using -ren=1, make the default renamer rename class…
+* codeUrl: github.com/JetBrains/intellij-community/pull/351/commits/6a5802e970be29523d73c04ddf584e6e67abb46d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-02-03T03:48:52Z
+* content: This commit makes fernflowers default renamer rename classes that have a name that is reserved by the windows namespace. See https://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx#naming_conventions for more information on names reserved by the windows namespace. There are currently obfuscators that take advantage of the fact that classes with these names cannot be extracted from a jar. An example of one such obfuscator is Allatori http://www.allatori.com/doc.html#property-classes-naming.
+* time: 2016-02-03T03:48:52Z
+* content: I have previously signed the CLA.
+************************************************************************

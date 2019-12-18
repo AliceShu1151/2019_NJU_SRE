@@ -1,0 +1,55 @@
+************************************************************************
+* id: 853
+* requirement: Created configurable group for tool window context menu
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-11T09:11:05Z
+* content: Created configurable group for tool window context menu
+* codeUrl: github.com/JetBrains/intellij-community/pull/853/commits/eaf72102c4fb5ea7da217152f1d282b38d6eef1f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-11T09:57:17Z
+* content:  No description provided. 
+* time: 2018-09-11T10:23:57Z
+* content: Hi Oleg! Not sure if it is needed in your case, but could you please sign the CLA at http://www.jetbrains.com/agreements/cla/?
+* time: 2018-09-11T10:23:57Z
+* content: Could you please also rebase the PR to get rid of these merge commits. Thanks!
+* time: 2018-09-11T12:10:46Z
+* content: Done that
+* time: 2018-09-11T12:12:50Z
+* content: Thanks! @Vassiliy-Kudryashov could you please take a look?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-17T07:00:32Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/853/commits/510a98ed7c2b7631b0cdb4e97e21df89ddc21948
+* time: 2018-09-17T07:33:09Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/853/commits/a06a7d3ff77e2e07695c5036bc6da93450cffbb4
+* time: 2018-09-17T07:40:31Z
+* content: Native tabs for terminal tool window: part I (no renaming of tabs, no…
+* codeUrl: github.com/JetBrains/intellij-community/pull/853/commits/b343ff03c828e8df2ccecca8782e8c7542f1b38c
+* time: 2018-09-17T12:28:48Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/853/commits/d4b4ac6389662e443d30a0e63378721133479938
+* time: 2018-09-17T12:33:23Z
+* content: Merge branch 'JetBrains-master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/853/commits/0eb21d5bcbafcc2219938b2734aaddcdb2bd44fc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-17T12:54:00Z
+* content: And again, no "Merge remote-tracking branch" commits please ;)
+************************************************************************

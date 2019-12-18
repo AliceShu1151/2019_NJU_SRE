@@ -1,0 +1,4 @@
+************************************************************************
+* id: 538
+* requirement: Recognize Wayland sessions in SystemInfo
+the requirement of 538 only has implements, no discussion.

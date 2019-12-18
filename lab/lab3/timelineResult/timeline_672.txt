@@ -1,0 +1,21 @@
+************************************************************************
+* id: 672
+* requirement: Annotate AnActionEvent parameter in AnAction.update as @NotNull
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-29T13:44:10Z
+* content: Annotate AnActionEvent as
+* codeUrl: github.com/JetBrains/intellij-community/pull/672/commits/ec73c50c5575d10146623586db7206f03df999c0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-29T13:45:15Z
+* content: I can't find any implementation that actually checks to see if this parameter is NULL. If it was ever NULL I think bad things would happen across the board.
+* time: 2017-11-29T13:45:15Z
+* content: Also, my Kotlin stubs always mark it as AnActionEvent? - changing it to AnActionEvent every time is a bit tedious.
+************************************************************************

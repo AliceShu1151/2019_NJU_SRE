@@ -1,0 +1,4 @@
+************************************************************************
+* id: 558
+* requirement: Use same timeout for MultiProcessDebugger as for RemoteDebugger
+the requirement of 558 only has implements, no discussion.

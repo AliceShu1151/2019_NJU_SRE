@@ -1,0 +1,23 @@
+************************************************************************
+* id: 682
+* requirement: IDEA-126094 Edit 'Before launch' entries with mouse left button double click
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-13T23:26:09Z
+* content: IDEA-126094 Edit 'Before launch' entries with double click
+* codeUrl: github.com/JetBrains/intellij-community/pull/682/commits/c4e7ba97ddb4b3b744bb0ce55332042606a90c5a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-13T23:32:10Z
+* content: Subj.
+* time: 2017-12-13T23:32:10Z
+* content: Tested on IDEA CE
+* time: 2017-12-18T12:54:31Z
+* content: I've implemented this feature without suggested pull request, now you can setup custom shortcuts for standard actions ADD/REMOVE/EDIT/UP/DOWN (revision c519bc3) Thank you anyway!
+************************************************************************

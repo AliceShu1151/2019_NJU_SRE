@@ -1,0 +1,21 @@
+************************************************************************
+* id: 71
+* requirement: fix commit error on non-ansi Windows and OSX.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-04-15T01:33:07Z
+* content: fix commit error on non-ansi Windows and OSX.
+* codeUrl: github.com/JetBrains/intellij-community/pull/71/commits/fb3a29be69e6df213dc6511e54717d2d7ed4f10c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-04-15T01:33:16Z
+* content: It works well on Windows 7 sp1 kr, OS X 10.8.3 kr
+* time: 2013-04-15T09:59:56Z
+* content: With that fix you'll always commit in UTF-8, which is not a right decision, is it?
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1191
+* requirement: Should the frame balloon be horizontally centered?
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-23T08:03:45Z
+* content: Frame balloon should be centered horizontally
+* codeUrl: github.com/JetBrains/intellij-community/pull/1191/commits/600feb66374c9dfb60d181e9d92987377318b7d0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-23T08:07:55Z
+* content: Should the frame balloon be horizontally centered?
+* time: 2019-08-23T08:07:55Z
+* content: code: PopupUtil.showBalloonForActiveFrame("Message...", MessageType.INFO)
+************************************************************************

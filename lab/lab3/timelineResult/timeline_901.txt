@@ -1,0 +1,21 @@
+************************************************************************
+* id: 901
+* requirement: [gradle] don't list too many projects in a dialog
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-26T17:36:42Z
+* content: [gradle] don't list too many projects in a dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/901/commits/1bb6f12ee1c2b221fa7f6729400178483c1e8bae
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-26T17:38:37Z
+* content: For a big project it just doesn't make sense to list more than 5 projects. The list will be just too big for a screen. Instead, let's just mention how many additional modules are affected.
+* time: 2018-10-26T17:38:37Z
+* content: to: @vladsoroka
+************************************************************************

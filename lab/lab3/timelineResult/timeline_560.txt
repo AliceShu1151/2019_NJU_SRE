@@ -1,0 +1,31 @@
+************************************************************************
+* id: 560
+* requirement: Fix 'with as' statement for union types
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-19T17:50:56Z
+* content: Fix 'as' statement for union types
+* codeUrl: github.com/JetBrains/intellij-community/pull/560/commits/dae3e3989289c0edd977d71f1295f83673e5cca9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-19T19:58:01Z
+* content: Fix type inference for with statement when context manager is union type. For example, before the fix PyCharm could not infer the type of f in the following code:
+* time: 2017-04-28T16:03:50Z
+* content: Please add unit tests that show that your changes actually fix an existing problem (I'm sure they do, but we need an automated way of checking it). See PyTypeTest for tests that check the type of a single expression. There are also tests for code completion and code inspections, but in this case a simple type test would be enough.
+* time: 2017-04-28T16:03:50Z
+* content: There are also a couple of minor comments about the code itself. It would be great to take them into account as well.
+* time: 2017-05-01T16:20:26Z
+* content: Added all requested changes
+* time: 2017-06-27T22:23:48Z
+* content: @vlasovskikh please take a look at this
+* time: 2017-07-01T16:55:46Z
+* content: Please use rebase instead of merge for your commits. We use rebase extensively and merge commits make it difficult to rebase branches.
+* time: 2017-07-01T21:47:44Z
+* content: @vlasovskikh Fixed according to review. Thanks for catching our instanceof check error.
+************************************************************************

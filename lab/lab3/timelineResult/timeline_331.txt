@@ -1,0 +1,35 @@
+************************************************************************
+* id: 331
+* requirement: Optimize setting watch roots.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-04T17:00:22Z
+* content: Optimize setting watch roots.
+* codeUrl: github.com/JetBrains/intellij-community/pull/331/commits/8a4ca6d68aa5265a1b50bf52909bfc1083ecd751
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-04T17:26:48Z
+* content: The file system operations in local file system and canonical path map can be slow when done in serial for a large number of roots. Run these in parallel on an executor.
+* time: 2015-12-04T17:26:48Z
+* content: On our benchmarks with about 8000 roots this saves ~700ms, or about 70%, when setting watch roots.
+* time: 2015-12-04T17:26:48Z
+* content: Change-Id: I6bd8e4fb52b9d1d43714e936f4d3d8a04049d2c1
+* time: 2015-12-04T19:50:53Z
+* content: Let me know if there's a better way to execute a bunch of tasks in parallel than what I added in ParallelUtil. Application#executeOnPooledThread isn't happy to accept 1000 tasks at once without starting to dump threads.
+* time: 2015-12-05T19:43:05Z
+* content: I updated the pull request to use BoundedTaskExecutor and removed the guava dependency. Benchmarks look the same.
+* time: 2015-12-05T20:35:49Z
+* content: Thanks! I added couple of comments inline
+* time: 2015-12-05T20:35:49Z
+* content: 05 Дек 2015 г. 20:43 пользователь "tomlu-google" notifications@github.com написал:
+* time: 2015-12-07T16:27:44Z
+* content: I changed the containers to ContainerUtil and iterate futures in reverse order.
+* time: 2015-12-09T16:11:01Z
+* content: Have you had a chance to look at this? Muchos gracias!
+************************************************************************

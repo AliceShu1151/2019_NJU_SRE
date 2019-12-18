@@ -1,0 +1,120 @@
+************************************************************************
+* id: 395
+* requirement: PY-14330: Pandas dataframes viewer in debug or console
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-24T22:29:47Z
+* content: --support column and row headers in ArrayChunk at protocol level
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/7ba39c75521b775ff26f44320bea1db3dbbab60a
+* time: 2016-04-24T22:31:04Z
+* content: --create dataframe to xml marshaller
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/722efa60e7d13266777b98e849da7db0155c0efd
+* time: 2016-04-24T22:33:39Z
+* content: --extract superclass from NumpyArrayTable to be used for dataframes a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/62a1dd8f4175186b7cfa7bc21ceb2869fb6547ea
+* time: 2016-04-27T01:50:24Z
+* content: --implement java rendering
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/783cd8ff95968046a8af3df7e217e89970c66f3e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-27T02:27:54Z
+* content: PY-14330 Pandas dataframes viewer in debug or console
+* time: 2016-04-27T14:06:48Z
+* content: Awesome! Thanks!
+* time: 2016-04-28T16:40:36Z
+* content: I got an NPE exception trying to view the data frame having suspended the debugger at the last line of the code
+* time: 2016-04-28T16:40:36Z
+* content: Exception:
+* time: 2016-04-28T22:26:29Z
+* content: I'll take a look at the exception tonight. To see if I can reproduce. I wasn't sure which way to go on the reuse vs avoiding overloading existing function names with different semantics. I decided to avoid overloading a go with duplication.  I will certainly refactor for reuse. Now looking back at it, it is certainly a better choice.
+* time: 2016-04-28T23:59:36Z
+* content: 
+* time: 2016-04-28T23:59:36Z
+* content: I cannot reproduce the error. What version of Python and Pandas are you testing with?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-29T01:09:24Z
+* content: --overload getArray and CMD_GET_ARRAY to be able to handle DataFrames
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/6ab075612aefd30b021dd405c0474371e36f6b7e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-29T01:35:11Z
+* content: @traff Reworked according to comments and pushed. Still cannot reproduce error.Tested with Python 2.7 and Python 3.5, pandas version 0.18.0
+* time: 2016-04-29T03:41:03Z
+* content: @traff Tested down to pandas 0.11.0. Still cannot reproduce.
+* time: 2016-05-03T14:06:48Z
+* content: is there a binary version available (windows)?
+* time: 2016-05-06T04:04:49Z
+* content: @ophiry There will not be a build until this PR hopefully gets accepted by Jetbrains. At that point it should become available in their EAP build.
+* time: 2016-05-06T18:14:03Z
+* content: @fitermay I can't reproduce the NPE now.
+* time: 2016-05-06T18:40:55Z
+* content: @fitermay Thanks a lot for the improvements! Still one thing still bothers me in the implemented approach. That is the big portion of duplication of many classes of the data frames support with the existing numpy array support. We plan to make improvements in the array viewer component soon, thus having a code duplication will make the work much harder. This code duplication is basically the classes DataFrameTable and NumpyArrayTable, DataFrameCellRenderer and ArrayTableCellRenderer, PyViewDataFrameAction and PyViewArrayAction, ArrayTableForm and DataFrameTableForm. This duplication should be avoided to make the code more maintainable in the future.
+* time: 2016-05-06T18:48:35Z
+* content: @traff I duplicated to reduce the risk of breaking existing code, since there are no tests for the existing ArrayViewer code. A good chunk of it is UI code and cannot be automatically tested, at least not within the existing framework.  If you prefer me to merge them I will do it.  I prefer merging them myself but thought you'd feel more comfortable with existing code being mostly unchanged.
+* time: 2016-05-06T19:02:16Z
+* content: @fitermay Regressions aren't a big problem. If it is all well implemented we will a) Test if for regressions b) Include into our EAP for the next version to reveal possible bugs before release
+* time: 2016-05-06T19:02:16Z
+* content: By the way, tests also won't harm. To test things in run-time we have so called Env Tests (look into PythonDebuggerTest for example). They could help to tests models at least.
+* time: 2016-05-06T19:21:55Z
+* content: Ok, I will refactor to remove duplication whenever possible.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-11T01:47:00Z
+* content: --Factor out common code in numpy array viewer and pandas dataframe v…
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/ab8d3cf1da72af6446a2b1be9523b91592b61141
+* time: 2016-05-11T02:31:42Z
+* content: --add some basic env tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/b9a83b5ec3e10d977e6e0ef56e72ab5ba3ca601a
+* time: 2016-05-11T02:56:54Z
+* content: --incorporate recent change to master
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/70d20d551de43e968995178c8bccae4c55ae72c2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-11T02:58:53Z
+* content: @traff Ok, refactored to remove most duplication. Also added some basic env tests.
+* time: 2016-05-17T17:08:10Z
+* content: Yuli, thanks a lot for your effort. Now it looks better. Still I find it a bit more duplicated then it could be, for example NumpyArrayTable/Form and DataFrameTable/Form are basically the same. The only major difference is handling of headers, which could be reflected in two different header models instead of having two different approaches of table initialisation.
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-17T19:30:52Z
+* content: --fix code style and remove unused import
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/164416d3fd8cce325238b842ea50d3a16ba6f586
+* time: 2016-05-19T06:51:21Z
+* content: --remove form duplication
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/fed318c7da36cbae003456da084fd9abdebefedd
+* time: 2016-05-19T07:24:00Z
+* content: --fixup after rebase
+* codeUrl: github.com/JetBrains/intellij-community/pull/395/commits/a506ecbf8f9996b565248d5abd5f6190244c06a4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-19T07:25:58Z
+* content: @traff Ok, fixed up and moved to the model. I hope it is ok to merge now.
+************************************************************************

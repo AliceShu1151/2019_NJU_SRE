@@ -1,0 +1,44 @@
+************************************************************************
+* id: 815
+* requirement: Refactor ExportAction
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-25T19:34:49Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-06-26T09:05:48Z
+* content: @klikh Ok, I've done it.
+* time: 2018-07-09T11:27:25Z
+* content: Any updates? :)
+* time: 2018-10-05T03:58:01Z
+* content: @ekudel there are simple merge conflicts now
+* time: 2018-10-15T07:07:09Z
+* content: @ekudel Please rebase the PR on top of current master.
+* time: 2018-10-15T07:07:09Z
+* content: @akozlova @batya239 please take a look at the PR.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-15T12:19:14Z
+* content: Refactor ExportAction
+* codeUrl: github.com/JetBrains/intellij-community/pull/815/commits/7b79a61fbb7a949b7a55a2a60bb9ad30e82c4521
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-15T12:21:08Z
+* content: @klikh Done
+* time: 2018-10-15T13:12:57Z
+* content: @ekudel Now it's possible to add any action to "InspectionToolWindow.ExportPopup". I don't think it should be a kind of public API. I believe export html/xml actions should be unified and single abstract class should be extracted to export results to arbitrary given format
+* time: 2018-10-15T14:53:14Z
+* content: @batya239 Well, now the only common part of ExportToHTMLAction and ExportToXMLAction is showing "Export" dialog. All other code is completely different: visiting, etc (perhaps it can be changed, but it looks like a quite big task, so I'm just suggesting a small refactoring now). However this dialog is actually HTML-specific (for example it contains "open in browser" checkbox), and for our custom action we don't need it, so I hardly understand what that abstract class (user for all "export" actions) should contain. By the way we want to provide a custom action for exporting to Hybris-compatible XLSX format. However there could be other ways to export inspection results to XLSX provided by the platform or another plugin, so one-to-one relationship between formats and handlers wouldn't seem to work here.
+* time: 2018-10-18T08:21:16Z
+* content: @klikh @batya239 any updates?
+************************************************************************

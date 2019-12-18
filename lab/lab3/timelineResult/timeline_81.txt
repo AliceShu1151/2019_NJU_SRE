@@ -1,0 +1,41 @@
+************************************************************************
+* id: 81
+* requirement: [hg] Per the TODO on HgWorkingCopyRevisionsCommand::parents(), that meth...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-05-31T20:54:03Z
+* content: [hg] Per the TODO on HgWorkingCopyRevisionsCommand::parents(), that m…
+* codeUrl: github.com/JetBrains/intellij-community/pull/81/commits/06608f590d7de31a4f9b071b1487211117c82db8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-06-06T20:30:31Z
+* content: ...od now returns a Pair, matching all the other versions of the parents() method.
+* time: 2013-06-06T20:30:31Z
+* content: I had a really hard time getting the org.zmlx.hg4idea.test.HgUpdateTest#updateShouldMergeButNotCommitWithConflicts to work. I added a bunch of comments explaining what each step of the test does and what the resulting history is supposed to be like. I did not make any attempt at getting the other tests in this class to work.
+* time: 2013-06-10T13:42:15Z
+* content: Thanks for the patch. However, the purpose of the patch is not clear to me. It is just a refactoring of List<HgRevisionNumber> to Pair<HgRevisionNumber, HgRevisionNumber>, isn't it? Although Pair is more logical, since octopus merges are not possible in Mercurial (now), the code after such refactoring doesn't look better or safer: instead of checking for list.size we check for pair.first/second == null and like that. Maybe we could have a special class encapsulating parents of a revision, but I don't think it is worth making such a refactoring right now, especially since a lot is changing in hg4idea API.
+* time: 2013-06-10T13:42:15Z
+* content: Btw, HgTest is deprecated. It is recommended to use HgPlatformTest.
+* time: 2013-06-11T04:56:46Z
+* content: Yes, this is a refactoring.
+* time: 2013-06-11T04:56:46Z
+* content: As I was working through some other changes (which I will hopefully be cleaning up and submitting shortly), I noticed this "TODO". Given that all the other overloads of this method return Pair<>, I agreed with the TODO comment that it would help make the code more consistent if this method also returned Pair<>.
+* time: 2013-06-11T04:56:46Z
+* content: Also, I ran into some confusion because the toString() / asString() method on HgRevisionNumber returns the "revision + ":" + changeset", so viewing the changesets in the debugger I could not understand how List::contains() was finding the changeset. It took some digging to realize that the HgRevisionNumber::compareTo() method checks only the changeset.
+* time: 2013-06-11T04:56:46Z
+* content: For future reference, if there's a TODO in the code, is there any guideline on when I might tackle that TODO vs. when I should leave it alone?
+* time: 2013-06-11T04:56:46Z
+* content: I do appreciate the consideration, and I hope that you'll consider future contributions from me.
+* time: 2013-06-11T04:56:46Z
+* content: Jay
+* time: 2013-06-11T13:15:08Z
+* content: Although, in general, there are no rules about or against refactorings or TODO-items, I'd say that fixing some specific bug or problem is preferable, because it makes the pull request more urgent and valuable, and because the chance that such change would conflict with internal refactorings frequently made by our team between releases is smaller. Also, refactorings are often more difficult to review.
+* time: 2013-06-11T13:15:08Z
+* content: And as I already mentioned, this particular refactoring doesn't really make the code cleaner.
+************************************************************************

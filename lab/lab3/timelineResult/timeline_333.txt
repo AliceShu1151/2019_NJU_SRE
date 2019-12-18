@@ -1,0 +1,29 @@
+************************************************************************
+* id: 333
+* requirement: Scan files on more threads.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-08T21:59:37Z
+* content: Scan files on more threads.
+* codeUrl: github.com/JetBrains/intellij-community/pull/333/commits/66e8c6aed2c5486aabbae72600793a300675ad0b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-08T22:14:15Z
+* content: On a benchmark project the scanning phase goes from 123 seconds -> 34 seconds with this change.
+* time: 2015-12-08T22:14:15Z
+* content: Change-Id: Ib9daccd1f0188adbb4a9c56e6bf69c2c857c5ebf
+* time: 2015-12-08T23:52:45Z
+* content: Hi, Thanks for you request! Some comments were added inline.
+* time: 2015-12-08T23:52:45Z
+* content: On Tue, Dec 8, 2015 at 11:14 PM, tomlu-google notifications@github.com wrote:
+* time: 2015-12-09T11:16:10Z
+* content: Thanks! Merged manually.
+* time: 2015-12-09T16:10:40Z
+* content: I think we're seeing this drastic difference in performance because we have 12-core machines and it's traversing a networked (but quite fast) file system for a few thousand output jars. We are also seeing similar performance gains in indexing by increasing the index thread count via a system property, so for us it's very nice to have the same characteristics here.
+************************************************************************

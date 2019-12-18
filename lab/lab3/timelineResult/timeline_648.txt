@@ -1,0 +1,19 @@
+************************************************************************
+* id: 648
+* requirement: Duplicate entries in RESERVED_WINDOWS_NAMESPACE and absense of `con`
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-15T05:16:02Z
+* content: RESERVED_WINDOWS_NAMESPACE contains duplicate entries of `aux` and do…
+* codeUrl: github.com/JetBrains/intellij-community/pull/648/commits/5929a8e87bbacb912ba0a08620162ed8c68d5b05
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-15T15:58:31Z
+* content: RESERVED_WINDOWS_NAMESPACE contains duplicate entries of aux and doesn't contain con which is reserved name too.
+************************************************************************

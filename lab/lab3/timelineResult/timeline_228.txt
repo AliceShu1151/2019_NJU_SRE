@@ -1,0 +1,23 @@
+************************************************************************
+* id: 228
+* requirement: optimize plugin version checking when update intellij platform version
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-30T11:38:10Z
+* content: optimize plugin version checking when update intellij platform version
+* codeUrl: github.com/JetBrains/intellij-community/pull/228/commits/a995dfb53c7b6f248e1c9144a7cfa6e8fe8ddec6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-30T12:16:21Z
+* content: Allow update the same build number for a plugin.
+* time: 2014-11-30T13:41:07Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2018-07-21T14:56:31Z
+* content: @shlxue is it still relevant? If so, please update the PR, cc @alexander-lobas.
+************************************************************************

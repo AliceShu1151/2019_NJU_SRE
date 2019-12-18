@@ -1,0 +1,76 @@
+************************************************************************
+* id: 335
+* requirement: Open/Close Task Dialogs improvement.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-17T09:44:12Z
+* content: Update TaskRepository.java
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/6c4e991d688f9d6f47b0e7f750748f74a1d908ec
+* time: 2015-12-17T09:46:24Z
+* content: Update OpenTaskDialog.java
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/07602db514dc5f218ce0a345068f9a7eb53fdd50
+* time: 2015-12-17T09:48:01Z
+* content: Update CloseTaskDialog.java
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/b77130c1ad96bd8263ac7267c85f439623f1c655
+* time: 2015-12-17T09:49:38Z
+* content: Update CloseTaskDialog.form
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/110709ecced3304769ea954db1c319bc2c5bc7a5
+* time: 2015-12-17T09:50:06Z
+* content: Update OpenTaskDialog.form
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/8c29ff78029b02844b949edfcbcf4f6598935324
+* time: 2015-12-21T15:34:21Z
+* content: Open/Close Task Dialogs improvement.
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/04e2c953ffddc45b215b4d57790bc64954eb2389
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-21T15:39:57Z
+* content: Add possibility to extend open and close task dialogs.
+* time: 2015-12-21T15:47:58Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-21T15:53:18Z
+* content: Open/Close Task Dialogs improvement.
+* codeUrl: github.com/JetBrains/intellij-community/pull/335/commits/a2ce56c992b02dceefe89ff9512182df5bcbbbc3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-21T21:31:13Z
+* content: I have done it.
+* time: 2015-12-22T14:21:36Z
+* content: Received, thank you.
+* time: 2016-01-13T12:54:19Z
+* content: What is it for? What is your use case?
+* time: 2016-01-13T22:15:22Z
+* content: It gives ability to add custom options in open/close task dialogs.
+* time: 2016-01-13T22:15:22Z
+* content: The developer will override methods getOpenTaskControlPanelProvider and getCloseTaskControlPanelProvider to extend open and close task dialogs (add some unique functional). Add assignee to task, Add task to folder or update task status.
+* time: 2016-01-13T22:15:22Z
+* content: Example: 
+* time: 2016-02-01T16:12:57Z
+* content: Did I write enough information or need more details?
+* time: 2016-02-04T14:10:14Z
+* content: Hi, AFAIK we already have "Update issue state" feature.
+* time: 2016-02-04T15:38:36Z
+* content: Hi, current functionality is not enought to manage statuses in Wrike.
+* time: 2016-02-24T12:34:14Z
+* content: It seems we need more general approach to meet requests like this one: OpherV/gitflow4idea#104.
+* time: 2016-02-26T10:31:00Z
+* content: Do you mean that I need to create extension point for plugin 'Tasks' in this case to satisfy to both problems?
+* time: 2016-02-29T17:45:13Z
+* content: Hi, I have created such an API: f7a02a6. Please review and check if it satisfies your needs.
+* time: 2016-02-29T17:45:13Z
+* content: 2016-02-26 13:31 GMT+03:00 DmitryKachurin notifications@github.com:
+************************************************************************

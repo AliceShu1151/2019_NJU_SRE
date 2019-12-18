@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1202
+* requirement: PY-25689 image Sphinx directive doesn't work in docstring documentation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-09-22T01:44:06Z
+* content: PY-25689 image Sphinx directive doesn't work in docstring documentation
+* codeUrl: github.com/JetBrains/intellij-community/pull/1202/commits/609fc199faa53b7c6148503a0bad4460d5983bbc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-22T02:02:06Z
+* content: Fix the problem: the prefix "file: //" was not added to local image references.
+* time: 2019-09-22T02:02:06Z
+* content: 
+* time: 2019-09-22T02:02:06Z
+* content: ref: https://youtrack.jetbrains.com/issue/PY-25689
+* time: 2019-09-22T02:02:06Z
+* content: contributor license agreement -> ready
+* time: 2019-10-05T14:35:18Z
+* content: hi @ignatov Is there any way to move this forward?
+************************************************************************

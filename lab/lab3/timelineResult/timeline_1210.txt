@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1210
+* requirement: Add linux-ppc64le check-condition to support fsnotifier-ppc64le binary usage
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-07T12:10:16Z
+* content: Add linux-ppc64le check-condition to support fsnotifier-ppc64le binar…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1210/commits/54c8bdd9e7be8c5840fe2388dd525d536309710d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-07T12:15:29Z
+* content: fsnotifier (which lives under native/fsNotifier/linux for Linux platforms) can be compiled on various linux platforms.
+* time: 2019-10-07T12:15:29Z
+* content: For Linux based 64-bit platforms, NativeFileWatcherImpl.java only knows about x86_64 and arm. This tiny pull-request adds ppc64le to the mix.
+* time: 2019-10-07T12:15:29Z
+* content: This will give people on Little-Endian Power systems the ability to run IntelliJ and its deratives with a fast filesystem changes notifier.
+* time: 2019-10-18T20:30:54Z
+* content: Sorry for the late reply.
+* time: 2019-10-18T20:30:54Z
+* content: At the moment, JB does not want to support other architectures besides x86/x86-64. Starting from the next 2019.3 build, IDEs will provide a user with instructions on building and installing the fsnotifier binary on their system.
+* time: 2019-10-18T21:19:07Z
+* content: You’re supporting arm already..
+************************************************************************

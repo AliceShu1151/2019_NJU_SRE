@@ -1,0 +1,35 @@
+************************************************************************
+* id: 887
+* requirement: merge duplicated ArrayUtil.indexOf into single method
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-12T18:06:20Z
+* content: merge duplicated ArrayUtil.indexOf into single method
+* codeUrl: github.com/JetBrains/intellij-community/pull/887/commits/78ed7b7f6560af5cf0670886736dc9e3f76ede27
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-13T14:24:08Z
+* content: There are some duplicates related to indexOf/lastIndexOf methods. I've merged them.
+* time: 2018-10-15T07:41:50Z
+* content: Please leave an explicit indexOf delegate in ArrayUtil class: this is part of a public API, so it would be good to keep it there. Relying on ArrayUtil extends ArrayUtilRt looks fragile to me.
+* time: 2018-10-16T08:11:16Z
+* content: Sure, I'll revert it.  Btw, is it reasonable to use Arrays::asList for indexOf/find? This will bring additional allocation, but from another point of view reduce amount of compiled code.
+* time: 2018-10-16T10:38:19Z
+* content: I think, for such low-level methods specialized implementation is better than delecation to Arrays.asList
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-16T19:05:58Z
+* content: Restore ArrayUtil::indexOf
+* codeUrl: github.com/JetBrains/intellij-community/pull/887/commits/714cb9df8e160d992d7319bf3102655acd086ea6
+************************************************************************

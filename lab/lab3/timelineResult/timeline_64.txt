@@ -1,0 +1,31 @@
+************************************************************************
+* id: 64
+* requirement: Standard shortcut for expand all / collapse all
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-31T14:46:29Z
+* content: Standard shortcut for expand all / collapse all
+* codeUrl: github.com/JetBrains/intellij-community/pull/64/commits/bfdd699bb0dfee28d2d1f91973d600e082e8f25f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-31T14:58:29Z
+* content: Member Chooser uses different shortcuts than the standard ones, is this intentional?
+* time: 2013-03-31T14:58:29Z
+* content: StructureViewComponent adds also Expand All / Collapse All but without shortcuts, are these two buttons in the toolbar really necessary, space is always limited and the buttons are already placed in the title?
+* time: 2013-03-31T14:58:29Z
+* content: /com/intellij/ide/structureView/newStructureView/StructureViewComponent.java:451
+* time: 2013-03-31T14:58:29Z
+* content: DomModelTreeView adds also Expand All / Collapse All without registering shortcuts, but it seams that getPopupActions isn't used anywhere. /com/intellij/util/xml/tree/DomModelTreeView.java:178
+* time: 2013-04-02T11:50:30Z
+* content: Merged manually. Thanks! I don't think the expand/collapse buttons created by StructureViewComponent are actually displayed anywhere.
+* time: 2013-04-06T15:32:17Z
+* content: Thanks for accepting the pull request.
+* time: 2013-04-06T15:32:17Z
+* content: The Buttons are displayed if you select "Show Toolbar" but it isn't a big issue.
+************************************************************************

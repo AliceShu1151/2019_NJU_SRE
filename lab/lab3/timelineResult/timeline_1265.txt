@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1265
+* requirement: IDEA-227734: report "return null" statements inside non-null methods
+the requirement of 1265 only has implements, no discussion.

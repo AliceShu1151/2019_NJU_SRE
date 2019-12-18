@@ -1,0 +1,28 @@
+************************************************************************
+* id: 127
+* requirement: Pycharm skeletons submodule
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-13T00:21:19Z
+* content: Add in the pycharm skeletons as a submodule
+* codeUrl: github.com/JetBrains/intellij-community/pull/127/commits/880b3ba40c96b7b665bc171ab965f23a21f34b84
+* time: 2013-11-13T00:38:44Z
+* content: Update the python README with the submodule info
+* codeUrl: github.com/JetBrains/intellij-community/pull/127/commits/67a9f1148d5f1dafb93be6fe6c72ba5f67b2b7f7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-13T00:57:22Z
+* content: This is more controversial, so I saved it for last.
+* time: 2013-11-13T00:57:22Z
+* content: The instructions in python/README.md talk about dropping down to a command-line and checking out the python-skeletons project, but git is smart enough to manage that stuff for you. This is especially relevant since the python-skeletons module is so small it would be a rounding error next to the weight of cloning intellij-community.
+* time: 2013-11-13T00:57:22Z
+* content: The con against landing this commit is that submodules are an edge case in the typical git workflow, and they can be weird if one isn't used to treating the directory as a separate module.
+* time: 2013-11-13T00:57:22Z
+* content: If you like it, land it, and if not I just thought I would suggest the idea (and do the work!).
+************************************************************************

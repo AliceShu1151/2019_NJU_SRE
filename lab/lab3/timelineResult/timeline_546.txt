@@ -1,0 +1,35 @@
+************************************************************************
+* id: 546
+* requirement: Speed up PyUnresolvedReference inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-12T19:57:17Z
+* content: Prevent PyUnresolvedReferenceInspection from scanning all __init__ fi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/546/commits/e5d0744f85d439a2ff3853756a0772d856b48a75
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-12T19:59:56Z
+* content: Speed up PyUnresolvedReference exception by caching importable names
+* time: 2017-04-19T01:15:32Z
+* content: Justification: We have over 40k __init__ files in our code base. Scanning __init__ files to generate the quick fix takes a prohibitively long time.  Even in medium sized Python projects it is faster to scan for dirs matching package name and then check if it contains __init__ than scan all __init__ files and check that the containing dir matches package name.
+* time: 2017-04-19T01:15:32Z
+* content: Also added cache to further speed it up.
+* time: 2017-06-27T22:27:49Z
+* content: @vlasovskikh please take a look at this
+* time: 2017-07-01T17:20:44Z
+* content: @da1z @fitermay I agree with your point about searching the directories first and then looking for __init__.py inside them being considerably faster.
+* time: 2017-07-01T17:20:44Z
+* content: Adding caching of importable modules by name seems questionable. It directly uses FileBasedIndexImpl which is not considered a part of the public API. It stores cached values in the Project not in the Module (PyCharm's project is really a Module, and Project is a group of projects open in the same window). Different modules may have different Python interpreters. You modification tracker contains references  (hard, not soft) to all the candidates found during search, they won't be reset on cache invalidation.
+* time: 2017-07-01T17:20:44Z
+* content: How much faster is the version with just searching for the directories instead of __init__.py? How much faster is the version with caching? If the caching performance gain is small I would go for the non-cached version.
+* time: 2017-07-01T22:46:37Z
+* content: @vlasovskikh I agree it is probably fast enough without caching, though I no longer recall the exact numbers. I removed the caching. The reason for the 'private' API usage is to avoid looking up the PsiFile for every file scanned and just resolve the directories when scanning for packages. The public API does not provide scanning only directories.
+* time: 2017-07-03T20:50:11Z
+* content: I've changed it to 'processFilesByName'. If it causes slowness in mixed projects I guess we can revisit.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1011
+* requirement: [external-system] don't always validate recursively
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-12T21:05:48Z
+* content: [external-system] don't always validate recursively
+* codeUrl: github.com/JetBrains/intellij-community/pull/1011/commits/8e75ffde8d68752dd8d4b004806bf13fbf6bcc9b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-12T21:08:25Z
+* content: checkIsSerializable is simply trying to write the object to noop object writer. Let's first see if we can serialize at all and if not try to find a particular node and fix it.
+* time: 2018-12-12T21:08:25Z
+* content: This fixes a nasty ~20 seconds UI freeze on updating project data.
+* time: 2018-12-12T21:08:25Z
+* content: to: @vladsoroka @nskvortsov
+************************************************************************

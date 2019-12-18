@@ -1,0 +1,19 @@
+************************************************************************
+* id: 592
+* requirement: git annotate show author time instead of committer time
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-15T00:11:06Z
+* content: git annotate show author time instead of committer time
+* codeUrl: github.com/JetBrains/intellij-community/pull/592/commits/2ad4da8db823195afd7f1385b8fd3b11beaf3ce5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-15T00:11:35Z
+* content: default git blame command seems to display author time. why does intellij idea git annotate display committer time?
+************************************************************************

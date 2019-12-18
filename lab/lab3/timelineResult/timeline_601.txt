@@ -1,0 +1,41 @@
+************************************************************************
+* id: 601
+* requirement: IDEA-154288 - Gradle import: Support jdkName property in IdeaModule
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-09T08:33:13Z
+* content: IDEA-154288 - Gradle import: Support jdkName property in IdeaModule
+* codeUrl: github.com/JetBrains/intellij-community/pull/601/commits/7e513178a310cd505e5e11617f502ee9a1673e80
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-07-09T08:36:23Z
+* content: In
+* time: 2017-07-09T08:36:23Z
+* content: gradle/gradle@8e02bc2
+* time: 2017-07-09T08:36:23Z
+* content: support for this property was added to the Gradle tooling API, now it can be used for the Gradle import in IDEA in order to correctly select the JDK that was configured by the user in the gradle project.
+* time: 2017-07-09T08:36:23Z
+* content: This is important for projects that have modules with different language levels.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-21T14:10:33Z
+* content: Catch org.gradle.tooling.model.UnsupportedMethodException to avoid br…
+* codeUrl: github.com/JetBrains/intellij-community/pull/601/commits/3f524a828e5258885c4f7d038e291123a7115e3c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-07-21T16:12:22Z
+* content: Thank you for the contribution! I'll merge it soon.
+************************************************************************

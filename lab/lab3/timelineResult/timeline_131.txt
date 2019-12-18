@@ -1,0 +1,41 @@
+************************************************************************
+* id: 131
+* requirement: Run ant headless so no dock icon will appear
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-23T04:03:19Z
+* content: Run ant headless so no dock icon will appear
+* codeUrl: github.com/JetBrains/intellij-community/pull/131/commits/efe9a31c2e86dbcfcda33839d028682f3d46c6b6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-25T02:54:11Z
+* content: It not only appears in the dock, but because it appears in the dock it steals focus from whatever you are doing at the time.
+* time: 2013-11-25T02:54:11Z
+* content: Specifying java.awt.headless=true as a JVM arg stops this annoying behavior.
+* time: 2013-11-25T02:54:11Z
+* content: q.v. https://discussions.apple.com/message/6052815#6052815
+* time: 2013-11-25T02:54:11Z
+* content: I tested this on Windows to ensure that it still functions as designed, and it worked for me.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-25T17:58:50Z
+* content: Add comments to explain why headless is true
+* codeUrl: github.com/JetBrains/intellij-community/pull/131/commits/2359f2982abaccb71b1f83313818ff03969b50ab
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-01-23T09:12:56Z
+* content: Merged manually. Thank you for contribution!
+************************************************************************

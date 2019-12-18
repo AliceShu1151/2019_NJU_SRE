@@ -1,0 +1,93 @@
+************************************************************************
+* id: 20
+* requirement: IDEA-73063 / IDEA-83158
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-09-20T22:03:07Z
+* content: Initial commit of HgPushDialog2 (work in progress): dialog allows to …
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/13255cad95ba75e73748d7749c76af263cb14213
+* time: 2012-09-21T05:50:38Z
+* content: Fixed NPE when cancelling the push dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/10d160d00a6fb3eea4fb42f475dc1ffedab2ee10
+* time: 2012-09-21T14:00:40Z
+* content: The checkbox in the list can now be clicked, and it will adjust the s…
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/abc1efab1c23817928600bed9de4cc17499e3c90
+* time: 2012-09-21T14:10:50Z
+* content: The selected state in the list is now kept in sync with the selection…
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/a6386c96ac086248a29ce6f9aab99e643a50dc82
+* time: 2012-09-21T14:30:27Z
+* content: Little UI tweaks
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/c0f65f5c56b0781ddf30c8c826e137b86e372651
+* time: 2012-09-21T14:36:20Z
+* content: Some more UI tweaks
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/bb559917ef62d6f34488158a0c353a9bc7853902
+* time: 2012-09-21T14:44:40Z
+* content: UI now considers the valid state of the repository settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/16a1485e755856f5720648a5070f81f2954c08d8
+* time: 2012-09-21T14:54:38Z
+* content: Only the enabled state of the components is now updated after the cur…
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/4ad02feae3f486fe3a0ea92daf52a658d2577c9c
+* time: 2012-09-21T15:18:25Z
+* content: Shows a warning message when repository is invalid
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/7fa417da95a4afb28058e0606dad54ac8aa31383
+* time: 2012-09-21T17:25:52Z
+* content: Removed the old push dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/13a353de8fc1e0651e2a6ac26a2805665e36ce26
+* time: 2012-09-21T17:27:52Z
+* content: Added copyright notice
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/80f221901253f8924d229ba79bad5b4b5d8f9887
+* time: 2012-09-21T17:30:29Z
+* content: Renamed HgPushDialog2 to HgPushDialog and HgPusher2 to HgPusher
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/39290dd6753b1226740eb2318c59075f1c25dff0
+* time: 2012-09-21T19:02:42Z
+* content: HgPushDialog now follows the IntelliJ code conventions
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/fd4cae2fb76a7eabe20205a1100516006d8f4aa5
+* time: 2012-09-21T19:03:10Z
+* content: Now follows code conventions
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/f3bb21103e7d3c17468f715f725c6ab522113c09
+* time: 2012-09-21T19:03:27Z
+* content: Now follows code conventions
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/aaa728f2fa39bee2560ff86baf61ae6d78b8286f
+* time: 2012-09-21T19:04:05Z
+* content: Now follows code conventions
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/63bd8d004643d8d0975f85c0ec7bd906c7f72044
+* time: 2012-09-21T19:04:47Z
+* content: Now follows code conventions
+* codeUrl: github.com/JetBrains/intellij-community/pull/20/commits/2bc0020a68adc635e1aa448fd8415fbf05f66fb7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-09-21T19:20:15Z
+* content: Partial fix for IDEA-73063 and IDEA-83158 (hg4idea)
+* time: 2012-09-21T19:20:15Z
+* content: The Mercurial push dialog now allows to push all the repositories at once. The same settings as with the previous dialog can be set for each repository.
+* time: 2012-09-21T19:20:15Z
+* content: Only a partial fix for those issues as the dialog is not intelligent enough to detect whether the repository has outgoing changes. It is still left to the user to manually select which repositories he/she wants to push. By default, the dialog will attempt to push all repositories.
+* time: 2012-09-28T19:24:44Z
+* content: Thanks for your pull request! Have you signed the contributor agreement? If not, could you please do so? http://www.jetbrains.org/display/IJOS/Contributor+Agreement
+* time: 2012-09-28T20:52:22Z
+* content: Not yet. What is my 'JetBrains.net Id' that I have to fill in on that form ?
+* time: 2012-10-02T07:49:57Z
+* content: I just faxed the contributor agreement
+* time: 2012-10-06T14:13:40Z
+* content: Thank you for the pull request. I'm in the process of reviewing it. Could you please clarify: what is the purpose of "double" checkboxes in the dialog? There is a checkbox near repository name and another one "Push repository" under the "Settings" group. And they are enabled or disabled simultaneously. Why does one need the latest one?
+* time: 2012-10-06T15:30:32Z
+* content: You do not need them both. I added checkboxes in the list in front of the repository names so you could quickly glance which repositories you are about to push.
+* time: 2012-10-06T15:30:32Z
+* content: At first, I only had the checkbox on the Settings panel, and then you needed too many clicks to select which repositories you needed to push. So I added the checkbox in the list as well, while I retained the one on the settings panel.
+* time: 2012-10-06T15:30:32Z
+* content: If you want to remove one of the two checkboxes, I suggest to remove the one of the settings panel, and keep those in the list.
+* time: 2012-10-06T15:37:04Z
+* content: I will remove the one in the Settings panel then: I agree that checkboxes in the list are much more useful.
+* time: 2012-10-08T14:12:45Z
+* content: Could you please resend the contributor agreement via e-mail (print, sign, scan and send as pdf) to  contribute@jetbrains.com ? Unfortunately, the fax was for some reasons received in almost unreadable format. Thank you.
+* time: 2012-10-08T14:35:47Z
+* content: Resend it by email
+* time: 2012-10-08T16:08:03Z
+* content: Thanks! We've received the contributor agreement correctly now.
+************************************************************************

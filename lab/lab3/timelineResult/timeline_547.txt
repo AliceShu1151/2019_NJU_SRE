@@ -1,0 +1,4 @@
+************************************************************************
+* id: 547
+* requirement: PyConsoleCopyHandler fixes
+the requirement of 547 only has implements, no discussion.

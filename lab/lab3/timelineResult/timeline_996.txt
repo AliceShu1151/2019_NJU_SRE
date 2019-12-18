@@ -1,0 +1,21 @@
+************************************************************************
+* id: 996
+* requirement: In MultithreadSearcher, wrap element comparison in a read action
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-28T23:20:26Z
+* content: In MultithreadSearcher, wrap element comparison in a read action to f…
+* codeUrl: github.com/JetBrains/intellij-community/pull/996/commits/14dc4b56f4dc722b45d3edc9e645b6c2c1bf0646
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-28T23:31:29Z
+* content: to fix IDEA-203179.
+* time: 2018-12-04T14:32:50Z
+* content: Please check if your release branch contains commit b4633e4. It should fix mentioned problem
+************************************************************************

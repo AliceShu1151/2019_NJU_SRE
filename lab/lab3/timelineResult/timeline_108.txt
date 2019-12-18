@@ -1,0 +1,27 @@
+************************************************************************
+* id: 108
+* requirement: Properly calculate short name for inner class with $
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-15T14:00:12Z
+* content: Properly calculate short name for inner class with $
+* codeUrl: github.com/JetBrains/intellij-community/pull/108/commits/1c4fd812ad9006889bcb9a1409e4f0ccabc3fed6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-15T14:06:51Z
+* content:  No description provided. 
+* time: 2013-10-15T14:07:17Z
+* content: Please also merge it with 12.1.* branch
+* time: 2013-10-15T14:11:28Z
+* content: We don't plan to release any further 12.1 updates.
+* time: 2013-10-15T14:25:08Z
+* content: Ok, just 13 one
+* time: 2013-10-22T09:33:04Z
+* content: Slightly modified and pushed upstream.
+************************************************************************

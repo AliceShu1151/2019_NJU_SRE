@@ -1,0 +1,4 @@
+************************************************************************
+* id: 555
+* requirement: Extracted abstract class from PydevConsoleExecuteActionHandler
+the requirement of 555 only has implements, no discussion.

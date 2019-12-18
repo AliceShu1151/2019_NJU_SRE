@@ -1,0 +1,19 @@
+************************************************************************
+* id: 400
+* requirement: Fix regression of PY-8165: Update precedence of pytest keyword format
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-15T00:45:50Z
+* content: Change precedence of pytest keyword filter format
+* codeUrl: github.com/JetBrains/intellij-community/pull/400/commits/5478f0c459ec96f31d6503c5266f3d04d339f46d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-15T00:53:19Z
+* content: Using modern (less than 4 years old) versions of pytest in an environment which PyCharm has trouble detecting the versions of packages causes a regression of PY-8165.  It seems like the old format for pytest keywords filters is sufficiently old that in the absence of the known package version, PyCharm should default to the new format.
+************************************************************************

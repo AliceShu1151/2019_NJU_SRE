@@ -1,0 +1,4 @@
+************************************************************************
+* id: 308
+* requirement: Fixed `BoolUtils#isNegation` to check for *logical* (instead of *bitwise*) negation
+timeline of 308 is empty.

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 103
+* requirement: IDEABKL-1141 Allow plugins to use FoldingListener
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-15T01:26:49Z
+* content: IDEABKL-1141 Allow plugins to use FoldingListener
+* codeUrl: github.com/JetBrains/intellij-community/pull/103/commits/0d498fd04f94a0eddea7bb80239be481616d2c5f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-15T01:48:23Z
+* content: see http://youtrack.jetbrains.com/issue/IDEABKL-1141
+* time: 2013-09-16T13:44:46Z
+* content: Please don't move classes between packages.
+************************************************************************

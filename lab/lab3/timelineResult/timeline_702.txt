@@ -1,0 +1,4 @@
+************************************************************************
+* id: 702
+* requirement: Do not use a hard-coded color for active tool header
+the requirement of 702 only has implements, no discussion.

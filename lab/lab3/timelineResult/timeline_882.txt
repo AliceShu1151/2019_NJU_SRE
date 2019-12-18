@@ -1,0 +1,27 @@
+************************************************************************
+* id: 882
+* requirement: Refactoring - constant described several times
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-05T17:19:25Z
+* content: refactoring
+* codeUrl: github.com/JetBrains/intellij-community/pull/882/commits/02bb3585fb7e71b5f0f139a2fb150041028c1652
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-05T17:22:21Z
+* content: The text variable is used in several places - it replaces the use of a shared constant.
+* time: 2018-10-07T17:59:58Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-10-07T18:00:56Z
+* content: And could you also please provide a better commit message.
+* time: 2018-10-07T18:00:56Z
+* content: I'd also define the constant in the PluginManagerCore, rather than in the JBProtocolHandler, since the first one is more generic. Ah, the latter one is in the util module, so it can't depend on PMC or IdeaApplication. Then let it stay as it is.
+* time: 2018-10-10T08:25:40Z
+* content: So?
+************************************************************************

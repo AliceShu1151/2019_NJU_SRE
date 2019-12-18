@@ -1,0 +1,4 @@
+************************************************************************
+* id: 470
+* requirement: Updated YouTrack icons for task plugin to match contemporary YouTrack presentatoin
+the requirement of 470 only has implements, no discussion.

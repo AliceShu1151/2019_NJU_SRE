@@ -1,0 +1,27 @@
+************************************************************************
+* id: 344
+* requirement: Allow the WolfTheProblemSolver to disable the highlighting pass.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-01-08T19:27:07Z
+* content: Allow the WolfTheProblemSolver to disable the highlighting pass.
+* codeUrl: github.com/JetBrains/intellij-community/pull/344/commits/c711b3f4c6bea527a36ae172c32cca9c62e1d66f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-08T22:50:18Z
+* content:  No description provided. 
+* time: 2016-01-11T10:30:30Z
+* content: @jwren Disabling this highlighting pass breaks functionality for all languages except Dart (where you suggest to call setEnableHightlightingPass(false) in a separate pull request). Imagine that you have Java interface Foo with one method and implementing class FooImpl (in other file) that doesn't implement this method. Once you open FooImpl you get red wave in Project View for it. Now open Foo and remove the method. Current behavior: red wave for FooImpl disappears. With your pull request it stays until you open FooImpl in editor again.
+* time: 2016-01-11T10:30:30Z
+* content: P.S. Unfortunately some source code in the repo is not properly formatted. To avoid changes in code that is not related to the suggested fix next time please reformat only touched code, but not the whole files in the pull requests.
+* time: 2016-01-11T15:52:36Z
+* content: Right.  What if their was one solver per module instead of per project.  It would be a small amount of additional memory, but I think it would solve this issue since there is one language per module.
+* time: 2016-01-11T15:52:36Z
+* content: Unless you say otherwise, I'll take a look at this change, (and make sure to only format the edited parts of the file.)
+************************************************************************

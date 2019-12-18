@@ -1,0 +1,23 @@
+************************************************************************
+* id: 210
+* requirement: Fix minor typo on xml test file.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-09-04T18:36:01Z
+* content: Fix minor typo on xml test file.
+* codeUrl: github.com/JetBrains/intellij-community/pull/210/commits/6e0c8483f7d3d61001e21299f52dce9171be4877
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-09-04T18:36:48Z
+* content:  No description provided. 
+* time: 2014-09-26T08:45:55Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-09-26T18:58:23Z
+* content: @klikh Done!
+************************************************************************

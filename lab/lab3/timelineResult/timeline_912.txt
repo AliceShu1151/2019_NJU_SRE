@@ -1,0 +1,52 @@
+************************************************************************
+* id: 912
+* requirement: Resolving case-sensitivity issues in a package name resulting in compilation failure.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-05T03:20:05Z
+* content: Merge pull request #1 from JetBrains/master
+* codeUrl: github.com/JetBrains/intellij-community/pull/912/commits/2ff655d89c89759db602c0c35a06254a582d2876
+* time: 2018-11-05T16:51:58Z
+* content: Fixing case issue which was causing path issues. Need to do this in s…
+* codeUrl: github.com/JetBrains/intellij-community/pull/912/commits/5cd27e23e516fbe4a2e4658127678ac64760dfd6
+* time: 2018-11-05T18:18:40Z
+* content: Merge pull request
+* codeUrl: github.com/JetBrains/intellij-community/pull/912/commits/014ac4cf9e0f8a123bec0a4c834bd240e8490dc1
+* time: 2018-11-05T18:30:46Z
+* content: Removing further redundant package declarations, and resolving a few …
+* codeUrl: github.com/JetBrains/intellij-community/pull/912/commits/599468eddc31b8dd108c42515231bfd0c48f1c63
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-05T18:32:52Z
+* content: I ran into a number of errors regarding missing symbols when attempting to build IntelliJ under Windows 10, Java 1.8.0-192, IntelliJ 183.2635.13.
+* time: 2018-11-05T18:32:52Z
+* content: These issues were due to a number of mismatches in case sensitivity, both in a single directory's name, several file's references to the package it reflected (both their own package and dependencies), and in a few XML files' references to that package. The compiler was unable to find symbols such as introduceparameterobject.blah and introduceParameterObject.blah due to different files referencing them with different capitalization, and the directory itself being introduceparameterobject.
+* time: 2018-11-05T18:32:52Z
+* content: This standardizes the case of that directory across all files, and matches what appears to be the casing norm elsewhere. This also resolves the build errors for me. This standardizes it to introduceParameterObject, and corrects all usages of it/references to it.
+* time: 2018-11-05T18:32:52Z
+* content: I also resolved several trivial warnings that IntelliJ was warning about.
+* time: 2018-11-05T18:32:52Z
+* content: I did not make an issue for this failure as I felt it was quicker and would waste less time to simply resolve the issue rather than report it. I can generate an issue for it and associate it if it is requested, though.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-05T18:59:23Z
+* content: Current local repository state, mainly configuration files.
+* codeUrl: github.com/JetBrains/intellij-community/pull/912/commits/d9821c19a1e27b6f99a68f62d3f06bb23d6b420e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-06T09:12:04Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+************************************************************************

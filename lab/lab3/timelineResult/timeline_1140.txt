@@ -1,0 +1,106 @@
+************************************************************************
+* id: 1140
+* requirement: native fsNotifier: try to use a rule-based filename as alternative for ex. aarch64
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-18T20:20:16Z
+* content: fix: enable compilation of fsNotifier on aarch64 with gcc (Jetson Nan…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/0d51381b36501a8301b782cfc90efc8c02d40595
+* time: 2019-04-18T20:20:16Z
+* content: fix: enable compilation of fsNotifier on aarch64 with gcc (Jetson Nan…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/2a219224d2761690cfba979dd44e76d80470e59d
+* time: 2019-04-19T12:49:35Z
+* content: set name to "fsnotifier-"+Platform.RESOURCE_PREFIX
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/11aef46a65d4fa8e4c253bc7227eb9ae70825c38
+* time: 2019-04-19T12:49:35Z
+* content: set name to "fsnotifier-"+Platform.RESOURCE_PREFIX
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/0b10807bcdffabe9f61913fcac0e0dd3b4513fc2
+* time: 2019-04-24T18:11:52Z
+* content: added log code for getExecutable()
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/d8cb7a8a4545da1270dc1a88d45536fcff900511
+* time: 2019-04-24T18:11:52Z
+* content: added log code for getExecutable()
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/24a92be2dcb83a5c6c886e874678b29b3bfdc49a
+* time: 2019-04-27T08:28:12Z
+* content: create an executable named fsnotifier-linux-aarch64 as should be
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/c65b56408bc437b8531eb7b488146219be9e0636
+* time: 2019-04-27T08:28:12Z
+* content: create an executable named fsnotifier-linux-aarch64 as should be
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/cd2b3a33f6812a4a45936c5ab2cf19334cab42ca
+* time: 2019-04-27T19:43:03Z
+* content: make the log code for getExecutable() print something useful
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/dab87eb59c52c3d9cab6763b14541854e9fb1662
+* time: 2019-04-27T19:43:03Z
+* content: make the log code for getExecutable() print something useful
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/ace983b79c690278687c7a27dbc7a72f87917834
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-28T19:52:13Z
+* content: Hi there,
+* time: 2019-04-28T19:52:13Z
+* content: just got around testing this a little more. The code does the things I want it to do (with Java being a strange language and all that), only integrating the make of fsnotifier-linux-aarch64 executable into the build is still missing. I couldn't convince my build system to actually generate a package of PyCharm-CE to test on my Jetson Nano system, but IntelliJ-IDEA is running fine now with the native fsnotifier, after also installing /etc/sysctl.d/60-jetbrains.conf`. My hope is to get this merged and to get a new release sometime that is hackable or just works . :)
+* time: 2019-04-28T19:52:13Z
+* content: with best regards
+* time: 2019-04-28T19:52:13Z
+* content: Jens
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-05-18T19:44:16Z
+* content: add fsnotifier-linux-aarch64 binary for the package build
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/efb353e5954011bdedc3e55438b4b15acabc06f0
+* time: 2019-05-18T20:28:54Z
+* content: Fixed filename inconsistency
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/0dde2b00f09c1efb9ebf3aea08fe62b7bca76529
+* time: 2019-05-18T20:46:40Z
+* content: Merge branch 'jg/aarch64_fsNotifier' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/53a21d696010c0716c8c38298b35a34f33394c5c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-05-19T06:54:09Z
+* content: These patches add a platform-specific fsnotifier for linux-aarch64. It also extends NativeFileWatcherImpl.getExecutable() to generate a platform-specific filename to look for if the hardcoded choices are not met. Follow-up on #1126 , please see for more details on the whereabouts. Tried and tested on a Jetson nano, with IDEA and PyCharm 191.7479.
+* time: 2019-06-06T23:11:25Z
+* content: FYI https://www.linuxondex.com is another use case where this would help.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-26T16:47:22Z
+* content: removed use of StringBuilder, analysis showed it as redundant
+* codeUrl: github.com/JetBrains/intellij-community/pull/1140/commits/8dd772b66f1a925e0d57827a89b48380d5c23cb9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-18T20:25:05Z
+* content: Sorry for the late reply.
+* time: 2019-10-18T20:25:05Z
+* content: At the moment, JB does not want to support other architectures besides x86/x86-64. Starting from the next 2019.3 build, IDEs will provide a user with instructions on building and installing the fsnotifier binary on their system.
+* time: 2019-10-18T20:29:58Z
+* content: If this means that the local-arch fsnotifier will be loaded, good. Otherwise, how does this work?
+* time: 2019-10-18T20:33:23Z
+* content: With some help from a user, yes. Here are the instructions: https://confluence.jetbrains.com/display/IDEADEV/Compiling+File+Watcher.
+* time: 2019-10-18T20:36:31Z
+* content: Great, thanks!
+* time: 2019-11-28T13:15:13Z
+* content: Note that IJ 2019.3 with native fsnotifier compiled still logs exception in other part:
+* time: 2019-11-28T13:50:34Z
+* content: ^ Just a warning; one can get rid of it by adding idea.io.use.nio2 = true to Help | Edit Custom Properties.
+* time: 2019-11-30T18:19:23Z
+* content: That's great, should be added to https://confluence.jetbrains.com/display/IDEADEV/Compiling+File+Watcher. No idea if it increases the speed, when I understood the code correctly nio2 is already the fallback when no libc fstat is available.
+************************************************************************

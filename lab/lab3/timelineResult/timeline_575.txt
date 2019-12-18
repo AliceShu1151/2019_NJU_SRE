@@ -1,0 +1,45 @@
+************************************************************************
+* id: 575
+* requirement: + added Git rebase current branch action directly from VCS log
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-23T09:08:48Z
+* content: + added Git rebase current branch action directly from VCS log
+* codeUrl: github.com/JetBrains/intellij-community/pull/575/commits/64c3dd68dd7e7cf46d3ac4f75b15422f93bec7c3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-23T09:34:04Z
+* content: Added Git rebase current branch action directly from VCS log. It is more convinient to do rebase directly from VCS log because user can choose some commit (point in history) and initiate rebase to it. This is a common use case when an user do a lot of "reword" and "edit" rebases.
+* time: 2017-05-23T09:34:39Z
+* content: 
+* time: 2017-05-24T14:59:33Z
+* content: This action should be enabled only for unpushed commits (more precisely, for commits not pushed to a protected branch), like it is already done for GitUncommitAction.
+* time: 2017-05-24T14:59:33Z
+* content: I'm just about to push new "Reword" action, implementation of which generalizes this "enabled only for unpushed commits" stuff. I will take a look at the possibility to integrate this general interactive rebase action after that.
+* time: 2017-05-25T09:41:33Z
+* content: @klikh Thanks for review!
+* time: 2017-05-25T09:41:33Z
+* content: Indeed that would be good to restrict. Also found the following small typo to notice: ParametersListUtil.COLON_LINE_PARSER in fact it should be named SEMICOLON_LINE_PARSER since ; used like a delimiter. The same applied for ParametersListUtil.COLON_LINE_JOINER
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-25T11:38:57Z
+* content: * disable GitRebaseCurrentBranchAction if selected commit in protecte…
+* codeUrl: github.com/JetBrains/intellij-community/pull/575/commits/118a3ceef26385e9badb10d34d56627b2abd5134
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-28T19:10:11Z
+* content: I've added the action in 197d305 with some simplifications to the pull request, since we already have the GitCommitEditingAction which encapsulates the logic of preventing modification of pushed commits.
+************************************************************************

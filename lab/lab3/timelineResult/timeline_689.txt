@@ -1,0 +1,47 @@
+************************************************************************
+* id: 689
+* requirement: Scale should matter only if the type is NOT SVG
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-19T11:26:07Z
+* content: Scale should matter only if the type is NOT SVG
+* codeUrl: github.com/JetBrains/intellij-community/pull/689/commits/66ce52a2d5728f6edbfdaadcc93be399dc55614d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-19T11:26:20Z
+* content: The following project use this loader with SVG format: https://github.com/davidsommer/IconViewer/blob/master/src/ch/dasoft/iconviewer/ImageIconProvider.java
+* time: 2017-12-19T11:26:20Z
+* content: All icons are well displayed except SVG.
+* time: 2017-12-19T11:26:20Z
+* content: My inspection lead me to this ImageLoader class and I try to see what's wrong with SVG.
+* time: 2017-12-20T11:54:59Z
+* content: In IDEA SVG icons are used in two ways: (1) as a predefined icon (2) as an image in the SVG viewer
+* time: 2017-12-20T11:54:59Z
+* content: In (1) case, an SVG file is loaded and is rendered into a buffered image in some scale. The scale can vary depending on the IDE settings and multi-monitor environment. It's assumes the SVG file is not changed in runtime, so the out buffered image is cached, per scale. The code:
+* time: 2017-12-20T11:54:59Z
+* content: cacheKey = path + (type == Type.SVG ? "_@" + scale + "x" : "");
+* time: 2017-12-20T11:54:59Z
+* content: produces keys as follows:
+* time: 2017-12-20T11:54:59Z
+* content: /path/to/my/icon_@2x /path/to/my/icon_@2.5x
+* time: 2017-12-20T11:54:59Z
+* content: So that when the same SVG icon is requested in scale 2, 2.5 (etc.) the proper cached buffered image is used. (Actually, the same logic is applicable to PNG icons. We could have cached them per scale)
+* time: 2017-12-20T11:54:59Z
+* content: The (2) case differs in that the SVG file, being viewed, is eligible for editing. For that case no cache is used, and the SVG is loaded from disk on every request.
+* time: 2017-12-20T11:54:59Z
+* content: As to your code. I can see the only call used for icon loading: ImageLoader.loadFromStream. But it actually loads no svg icons, unlike ImageLoader.loadFromUrl. So, I don't clearly understand your problem. Am I missing something?
+* time: 2017-12-20T13:36:46Z
+* content: I try to get a SVG preview using ImageLoader.loadFromStream, if it's not possible, that's probably my first problem. The davidsommer/IconViewer plugin allow to preview images from the explorer icons. I tried to add SVG support (wished to see SVGs icons as their content), but using the same principle as for PNG/JPG,etc. it just display nothing.
+* time: 2017-12-20T13:36:46Z
+* content: This is what I just did: davidsommer/IconViewer@dae5bcc
+* time: 2017-12-20T13:36:46Z
+* content: And where the SVG is beeing loaded: https://github.com/davidsommer/IconViewer/blob/master/src/ch/dasoft/iconviewer/ImageIconProvider.java#L30
+* time: 2017-12-20T13:36:46Z
+* content: Would you know why we cannot get a SVG file this way?
+************************************************************************

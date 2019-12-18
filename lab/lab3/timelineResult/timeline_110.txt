@@ -1,0 +1,25 @@
+************************************************************************
+* id: 110
+* requirement: PY-10020 Darcula: Python External Documentation Settings panel have not "blue"-dracula styled elements
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-19T08:55:52Z
+* content: PY-10020 Dracula: Python External Documentation Settings panel have n…
+* codeUrl: github.com/JetBrains/intellij-community/pull/110/commits/34473ccb4a81d93631bf1af4e313672f908876f2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-19T09:14:58Z
+* content: Very small fix to support Darcula theme in the Python External Documentation Settings panel. Issue with color in a highlighted strings.
+* time: 2013-10-21T12:28:29Z
+* content: Vladimir, could you please submit a contributor license agreement? Please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then sign it, print it and send to contribute@jetbrains.com Thanks!
+* time: 2013-10-21T16:13:40Z
+* content: Scan of contributor license agreement with my signature was sent just now.
+* time: 2013-10-21T16:13:40Z
+* content: Best Regards, Vladimir
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 918
+* requirement: In the RegExp form, check for HIT_END
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-14T21:55:04Z
+* content: In the RegExp form, check for HIT_END (IDEA-202325)
+* codeUrl: github.com/JetBrains/intellij-community/pull/918/commits/e9da5f863fdd4624109469aced2511afb78b85f0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-15T07:01:32Z
+* content: If the regular expression does not match the current sample text, but a longer input might match, display a hint to the user. This is helpful in deciding whether the regular expression is completely wrong or the sample text is just unfinished.
+* time: 2018-11-19T15:48:08Z
+* content: Merged manually with some changes 227fbd2
+* time: 2018-11-19T15:48:08Z
+* content: Nice change, thanks!
+* time: 2018-11-19T18:29:13Z
+* content: Thanks for adjusting the code and the wording, it reads much more natural now. :)
+************************************************************************

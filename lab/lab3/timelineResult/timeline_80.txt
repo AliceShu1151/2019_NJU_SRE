@@ -1,0 +1,23 @@
+************************************************************************
+* id: 80
+* requirement: IDEA-108385: Allow to specify a rule which controls namespace attribute ...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-06-05T08:34:26Z
+* content: Trying to fix this issue: http://youtrack.jetbrains.com/issue/IDEA-108385
+* time: 2013-06-05T08:34:26Z
+* content: It's my first time looking at IntelliJ code so I'm not sure if this is the correct way to fix this and/or what implications it might have on the rest of the code.
+* time: 2013-06-05T08:34:26Z
+* content: I've compiled a version for me and so far seems to be working properly and fix my issue.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-06-05T09:06:58Z
+* content: IDEA-108385: Allow to specify a rule which controls namespace attribu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/80/commits/d9de7b32bed791382631f23c54a1b3f2d4df4036
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 328
+* requirement: Use correct scheme/protocol when generating GitHub clone URL
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-24T23:03:11Z
+* content: Use correct scheme/protocol when generating clone URL
+* codeUrl: github.com/JetBrains/intellij-community/pull/328/commits/a18fa3e2c54d79d45382f754d2e7dbf8ebef99f9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-11-24T23:06:28Z
+* content:  No description provided. 
+* time: 2015-11-25T09:31:31Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-11-25T15:39:04Z
+* content: I just submitted my signed CLA
+************************************************************************

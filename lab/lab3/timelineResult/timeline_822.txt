@@ -1,0 +1,19 @@
+************************************************************************
+* id: 822
+* requirement: Updated FiraCode font to version 1.205
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-05T05:40:45Z
+* content: Updated FiraCode font to version 1.205
+* codeUrl: github.com/JetBrains/intellij-community/pull/822/commits/38aabdba62d5712554520891c96dd78cce22dd32
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-05T06:26:28Z
+* content: Changes introduced since 1.200 contain mostly ligatures changes. Spark developers will be delighted to see ligature for new Column inequality operator =!= which (due to operator priority) replaced !==.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1250
+* requirement: Type cast expressions should be submitted to conversion rules for type migration
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-16T13:21:36Z
+* content: Type cast expressions should be submitted to conversion rules for typ…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1250/commits/040fdccff82c2cfc2a60b513982b309c368013b2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-16T13:22:15Z
+* content:  No description provided. 
+* time: 2019-11-18T22:47:14Z
+* content: Tests added
+************************************************************************

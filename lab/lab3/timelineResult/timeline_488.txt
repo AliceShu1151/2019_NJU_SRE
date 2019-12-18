@@ -1,0 +1,26 @@
+************************************************************************
+* id: 488
+* requirement: Address versions of trilead-ssh2 library
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-07T23:40:49Z
+* content: Use one trilead-ssh2 library in git4idea and svn4idea
+* codeUrl: github.com/JetBrains/intellij-community/pull/488/commits/83f206f3868d2f63a2b1dd7799f2252b658f14f3
+* time: 2016-12-07T23:42:58Z
+* content: Rename module-library to trilead-ssh2-build213
+* codeUrl: github.com/JetBrains/intellij-community/pull/488/commits/ac7fc1f68014dce2591f22a70a9fda1cf07ad599
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-07T23:48:13Z
+* content: … by using one version in both git4idea and svn4idea, and naming the specific version required by cvs-core.
+* time: 2016-12-07T23:49:27Z
+* content: @pchel-?
+* time: 2017-05-06T01:09:49Z
+* content: @pchel-?
+************************************************************************

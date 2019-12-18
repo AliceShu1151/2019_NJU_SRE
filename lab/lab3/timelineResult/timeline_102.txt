@@ -1,0 +1,21 @@
+************************************************************************
+* id: 102
+* requirement: Fixed TypeConversionUtil#getAllBoxedTypeSupers (after f4a27e8).
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-13T09:29:07Z
+* content: Fixed TypeConversionUtil#getAllBoxedTypeSupers (after
+* codeUrl: github.com/JetBrains/intellij-community/pull/102/commits/c51a79a77640488b5439f8bfe1da9aeab2a5f121
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-13T09:54:04Z
+* content: ProjectRootModificationTracker#getInstance returns NEVER_CHANGED when ProjectRootModificationTracker service not registered.
+* time: 2013-09-13T10:03:54Z
+* content: Now that's a good fix. Merged and pushed.
+************************************************************************

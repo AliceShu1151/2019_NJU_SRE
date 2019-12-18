@@ -1,0 +1,39 @@
+************************************************************************
+* id: 710
+* requirement: Custom iterator for SmartList
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-17T20:51:46Z
+* content: custom SmartList iterator
+* codeUrl: github.com/JetBrains/intellij-community/pull/710/commits/e39e47357093736ff4f5a42fc62ca403cd8ff871
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-17T21:45:25Z
+* content: Current implementation of SmartList calls super.iterator() for size > 1 which means AbstractList.Itr is utilized. There's more effective implementation of Iterator provided in ArrayList so I used it as a prototype for this one (SmartList is also array-based for size > 1).
+* time: 2018-01-17T21:45:25Z
+* content: Effectiveness is measured with benchmark:
+* time: 2018-01-17T21:45:25Z
+* content: yielding this result:
+* time: 2018-01-18T08:47:20Z
+* content: Thanks for caring, but I'd need something more than one microbenchmark to justify code complication and duplication. Any real scenarios that noticeably benefit from this change? Could you please also try BlackHole.consumeCPU to ensure the effect doesn't disappear in a more realistic situation?
+* time: 2018-01-18T19:18:32Z
+* content: @donnerpeter I've made requested measurements with Blackhole.consumeCPU. Here tokens params is what was fed to consumeCPU:
+* time: 2018-01-18T19:18:32Z
+* content: enhanced iterator wins all of them, except one (size 100, tokens 32), but the difference is within error.
+* time: 2018-01-18T19:18:32Z
+* content: Assuming currently SmartList has over 700 usages in IDEA CE (and I guess there's some more in enterprise edition and plugins ) I hope this optimization will help the whole IDE.
+* time: 2018-01-29T14:02:50Z
+* content: Thanks! This optimization might help but might also hurt, because it increases the amount of code to be loaded at runtime and compiled by JIT. By a small degree, of course, but the performance improvements also seem to be relatively small. Can you find any real, not-so-microbenchmark cases it improves?
+* time: 2018-02-12T22:05:30Z
+* content: Initially I wanted to measure time needed to import and index IDEA's source code with and without my changes, but I've run into this issue https://youtrack.jetbrains.com/issue/IDEA-186491. As soon as it's fixed I'll do the measurement.
+* time: 2018-07-24T10:23:57Z
+* content: Any updates?
+* time: 2018-07-24T10:57:00Z
+* content: If the usage of SmartList will be reduced in favour of ArrayList then this ticket should be closed and changes dropped. As for non-microbenchmark usage I'm not sure my measurements are correct, so those changes are not very valuable anyway.
+************************************************************************

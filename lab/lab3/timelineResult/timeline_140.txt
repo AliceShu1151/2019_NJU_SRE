@@ -1,0 +1,34 @@
+************************************************************************
+* id: 140
+* requirement: SSH agent support for git and svn integrations
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-12-26T16:01:48Z
+* content: SSH agent support for git and svn integrations; separate out old tril…
+* codeUrl: github.com/JetBrains/intellij-community/pull/140/commits/4f05af274e5666b7a455cb043fb3812ae0d7e1a4
+* time: 2013-12-26T18:06:00Z
+* content: Upgrade to SVNKit 1.7.11 (release)
+* codeUrl: github.com/JetBrains/intellij-community/pull/140/commits/4f48203927e0251db35a96e94171e4e4f9dbfe06
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-26T19:27:51Z
+* content: This version allows SSH agent-based authentication to be used for authenticating to SVN or git, as discussed in the ticket http://youtrack.jetbrains.com/issue/IDEA-52034
+* time: 2013-12-26T20:40:17Z
+* content: @klikh, by the way, a word as to timeline -- it's possible I may only be available to support this patch for another month or two; mid-April on the outside. It'd probably be good to have it merged well within that period.
+* time: 2013-12-29T12:59:47Z
+* content: @charles-dyfis-net We'll try to review, test & merge is ASAP after new year holidays.
+* time: 2014-01-23T13:46:58Z
+* content: @charles-dyfis-net The issue with conflicting trilead libraries from different plugins is currently kind of known limitation when running IDEA from IDEA - in such configuration, dependencies are not "scoped" by plugin and so there could be conflicts. Such issues do not occur in "public" builds.
+* time: 2014-01-23T13:46:58Z
+* content: So not to fix this issue locally only for trilead library (using packages rename) we propose the following:
+* time: 2014-01-23T13:46:58Z
+* content: 
+* time: 2014-01-23T13:46:58Z
+* content: Thanks a lot! Feel free to ask in case of any questions.
+************************************************************************

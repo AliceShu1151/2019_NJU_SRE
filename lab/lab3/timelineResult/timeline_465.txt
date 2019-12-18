@@ -1,0 +1,47 @@
+************************************************************************
+* id: 465
+* requirement: Expose finding class files for alternative bytecode viewers
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-11-05T18:21:44Z
+* content: Make it possible for alternative bytecode viewers to reuse the logic …
+* codeUrl: github.com/JetBrains/intellij-community/pull/465/commits/c23fbb169a74f8cf6e1cc4cfa1e4c7ec79fb4f72
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-11-05T18:23:38Z
+* content: The logic of finding the class file that is associated with a PsiElement is non-trivial and can be reused by other bytecode viewers with this simple change.
+* time: 2016-11-05T18:23:38Z
+* content: Alternative bytecode viewers want to depend on the built-in bytecode viewer anyway because of the classSearcher extension point.
+* time: 2016-11-06T12:48:13Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2016-11-06T17:06:39Z
+* content: I just signed the CLA
+* time: 2016-11-07T14:49:54Z
+* content: We've received the CLA. Thanks.
+* time: 2016-11-08T13:56:23Z
+* content: How the alternative code viewers are integrated? What API they use? Thanks
+* time: 2016-11-08T14:01:21Z
+* content: I'm currently writing a plugin for jclasslib: https://github.com/ingokegel/jclasslib
+* time: 2016-11-08T14:01:21Z
+* content: The action and the display are completely different from your plugin, but I still need to search for the class file for the current selection and make use of the the classSearcher extension point. Right now, I need to duplicate your code for finding the class file.
+* time: 2016-11-08T14:01:21Z
+* content: 2016-11-08 14:56 GMT+01:00 Anna Kozlova notifications@github.com:
+* time: 2016-11-08T14:56:06Z
+* content: So you would have strong dependency on a plugin where the only implementation of mentioned extension point is groovy scripts. I'd rather suggest to move the code outside the plugin, based on containing class. You'll be able still to provide optional dependency on plugin for extensions but even without the bytecode viewer your plugin would work for most of cases. Agree?
+* time: 2016-11-08T15:14:46Z
+* content: Yes, that makes perfect sense and would be much better.
+* time: 2016-11-08T15:14:46Z
+* content: 2016-11-08 15:56 GMT+01:00 Anna Kozlova notifications@github.com:
+* time: 2016-11-08T18:30:58Z
+* content: I'll close the pull request. Please check my commit 92ad8f3, it should be available on public github later today. Thanks
+* time: 2016-11-09T13:42:01Z
+* content: Thank you very much, this looks good, I'll use it after 2016.3 is released.
+* time: 2016-11-09T14:43:33Z
+* content: That's in master now, 171.+. The change looks simple but still can't be put to the release branch as we are too close to the release date. Sorry
+************************************************************************

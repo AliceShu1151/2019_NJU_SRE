@@ -1,0 +1,25 @@
+************************************************************************
+* id: 111
+* requirement: PY-9356 Clean .pyc should include $py.class files if jython interpreter is used
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-19T08:57:47Z
+* content: PY-9356 Clean .pyc should include $py.class files if jython interpret…
+* codeUrl: github.com/JetBrains/intellij-community/pull/111/commits/8fca1216013da4dc47cf18c4cdfd5ec3deae6866
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-19T09:16:48Z
+* content: PY-9356 Clean .pyc should include $py.class files if jython interpreter is used. Also display label was renamed to have more logical meaning for Jython and Python at one time.
+* time: 2013-10-21T17:47:38Z
+* content: Merged manually (with some additional cosmetic changes). Thanks for your contribution!
+* time: 2013-10-22T06:55:07Z
+* content: I'm very apologize but I miss some very important thing here =(
+* time: 2013-10-22T06:55:07Z
+* content: In the fix we try to delete .$py.class instead of $py.class
+************************************************************************

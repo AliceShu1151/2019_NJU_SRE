@@ -1,0 +1,86 @@
+************************************************************************
+* id: 1245
+* requirement: PY-37802 support pydantic dataclass
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-12T20:36:51Z
+* content: support pydantic dataclass
+* codeUrl: github.com/JetBrains/intellij-community/pull/1245/commits/e1cde2a7488cc0f0f05d523e7053566f8c0c2576
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-12T20:56:27Z
+* content: The PR supports pydantic dataclass Official document
+* time: 2019-11-12T20:56:27Z
+* content: @sproshev Would you please review this PR?
+* time: 2019-11-12T20:56:27Z
+* content: pydantic.dataclasses.dataclass  are almost identical to standard dataclasses. I have implemented the differences
+* time: 2019-11-12T20:56:27Z
+* content: Also, I created unit tests.
+* time: 2019-11-12T20:56:27Z
+* content: https://youtrack.jetbrains.com/issue/PY-37802
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-12T21:10:21Z
+* content: add unittest for pydantic dataclass
+* codeUrl: github.com/JetBrains/intellij-community/pull/1245/commits/05dee94244c0faa8f6768b728153a58592eac4f0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-13T23:30:59Z
+* content: Possible typo for const val DUNDER_PYDATNIC_POST_INIT_POST_PARSE.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-14T04:42:34Z
+* content: fix typo
+* codeUrl: github.com/JetBrains/intellij-community/pull/1245/commits/009edc764e9fd7aaca82b67234faa3ce49e4647e
+* time: 2019-11-23T17:06:29Z
+* content: Merge branch 'master' into support_pydantic_dataclass
+* codeUrl: github.com/JetBrains/intellij-community/pull/1245/commits/16d2c712383ddf8162aaaf7288c1403a90c2a6e5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-27T13:42:46Z
+* content: Amazing work!
+* time: 2019-11-27T13:42:46Z
+* content: At the moment we would like to try to introduce API for dataclasses support since popular cases such as std dataclasses and attrs are already supported but others are less popular and it would take much efforts to maintain if we merged them.
+* time: 2019-11-27T13:42:46Z
+* content: Let's try to apply the following patch to our sources and update your current support in the plugin:
+* time: 2019-11-27T13:42:46Z
+* content: See com.jetbrains.python.codeInsight.PydanticParametersProvider in PyDataclasses as an example for introduced com.jetbrains.python.codeInsight.PyDataclassParametersProvider.
+* time: 2019-11-27T13:42:46Z
+* content: What do you think about this approach? If you have any ideas or suggestions, please let me know.
+* time: 2019-12-02T18:00:45Z
+* content: @sproshev Thank you for creating a great patch.
+* time: 2019-12-02T18:00:45Z
+* content: Sorry, I could not create a plugin because I could not build Intellij as a package by ant. I can build Intellij and run it by Gradle tasks.
+* time: 2019-12-02T18:00:45Z
+* content: I think the patch is a very good approach. I did not know the extensionPoint. I have questions.
+* time: 2019-12-07T19:50:04Z
+* content: 1 It should, I'll update all places like if (type == PyDataclassParameters.Type.STD) to if (type.asPredefinedType == PyDataclassParameters.PredefinedType.STD) and hence if some extension point provides parsing for std-like dataclass it should be supported automatically.
+* time: 2019-12-07T19:50:04Z
+* content: 2 Yep, in this patch PydanticParametersProvider is an example, it should be in the plugin.
+* time: 2019-12-07T19:51:49Z
+* content: What do you think? If it suits you, I'll apply the patch above on the next week. Updated API will be available in master and 2020.1 release.
+* time: 2019-12-09T13:49:16Z
+* content: @sproshev Thank you for answering my questions. I think the patch is great. Would you please add the patch to the master?
+* time: 2019-12-09T13:49:16Z
+* content: I'm looking forward to releasing 2020.1
+************************************************************************

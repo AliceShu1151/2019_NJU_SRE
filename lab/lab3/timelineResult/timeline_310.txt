@@ -1,0 +1,41 @@
+************************************************************************
+* id: 310
+* requirement: Allow disabling HiDPI scaling with -Dhidpi=false
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-21T20:24:28Z
+* content: Allow disabling HiDPI scaling with -Dhidpi=false
+* codeUrl: github.com/JetBrains/intellij-community/pull/310/commits/3f96d0ab8d49529338a957e1d80ab7e83d05f6c5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-22T06:50:51Z
+* content: This is a workaround for the issue described in IDEA-143854.
+* time: 2015-10-22T06:50:51Z
+* content: It allows having larger font size in IDEA ("Appearance > Override default fonts") while keeping the icons at their original size (sharp!).
+* time: 2015-10-22T06:50:51Z
+* content: It does so by short-circuiting calls to JBUI.setScaleFactor() in case -Dhidpi=false has been defined. This brings setScaleFactor() in sync with calculateScaleFactor() behavior. (And also prevents the splash-screen from lubberly changing the scale midway due to the call from LafManagerImpl.patchLafFonts())
+* time: 2015-10-22T06:50:51Z
+* content: I've been using IDEA with this patch since the "HiDPI build". And haven't noticed any undesired effects.
+* time: 2015-10-22T15:11:55Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-10-23T07:34:47Z
+* content: Sent the signed CLA.
+* time: 2015-10-23T14:38:03Z
+* content: The CLA was received. Thanks.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-27T19:32:40Z
+* content: Merge remote-tracking branch 'upstream/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/310/commits/9ea02b4d5415ea49493370cd8fd38d88e3de0a8a
+************************************************************************

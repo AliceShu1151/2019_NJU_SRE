@@ -1,0 +1,23 @@
+************************************************************************
+* id: 865
+* requirement: IDEA-197106 Fix race condition when opening a project
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-08-10T00:36:08Z
+* content: IDEA-197106 Fix race condition when opening a project
+* codeUrl: github.com/JetBrains/intellij-community/pull/865/commits/4387b6cbfe76653f2c186712ab16973b91635aa7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-19T22:22:49Z
+* content: When a project is opened, the thread that is performing the openProject method call (task within ProjectManagerImpl:loadAndOpenProject()) is being run in parallel to ToolWindowManagerImpl:updateToolWindowHeader, which results in a modification to the myIdToInfo THashMap.
+* time: 2018-09-19T22:22:49Z
+* content: This simultaneous access and modification results in a ConcurrentModificationException being thrown.
+* time: 2018-09-19T22:26:18Z
+* content: @develar? @cdracm?
+************************************************************************

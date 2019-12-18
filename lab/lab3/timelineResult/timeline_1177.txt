@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1177
+* requirement: IDEA-218688 Refactor UpdateChecker for flexibility
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-19T00:36:41Z
+* content: IDEA-218688 Refactor UpdateChecker for flexibility
+* codeUrl: github.com/JetBrains/intellij-community/pull/1177/commits/9fc3f69e85377b6973b8bb20c8f625efdde8ec98
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-19T21:22:07Z
+* content: Previously, a call into UpdateChecker.updateAndShowResult would check for updates to the platform, check for updates to plugins, and then show the UpdateInfoDialog prompting the user to accept or decline the update.
+* time: 2019-07-19T21:22:07Z
+* content: With this change, the caller to updateAndShowResult passes in its own UpdateResultCallbackProvider, which creates a custom UpdateResultCallback with the results of platform/plugin updates. Then, the UpdateResultCallback is run inside showUpdateResult. In the regular flow, this callback shows UpdateInfoDialog, and clicking on Update would start the PatchDownloadTask. In custom usages, the UpdateInfoDialog could be skipped and directly start PatchDownloadTask.
+************************************************************************

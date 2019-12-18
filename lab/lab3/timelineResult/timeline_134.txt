@@ -1,0 +1,22 @@
+************************************************************************
+* id: 134
+* requirement: Custom filetype keyword completion
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-12-03T07:03:44Z
+* content: custom file type completion rewritten as completion contributor
+* codeUrl: github.com/JetBrains/intellij-community/pull/134/commits/450bf58195f8049e2420a3d06b2857622a0696ac
+* time: 2013-12-03T07:19:34Z
+* content: in custom file types, don't complete keywords in literals or comments…
+* codeUrl: github.com/JetBrains/intellij-community/pull/134/commits/c8790402964d6db2fbae780eab17017c5ed6ebb8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-03T11:59:24Z
+* content:  No description provided. 
+************************************************************************

@@ -1,0 +1,46 @@
+************************************************************************
+* id: 690
+* requirement: Make isImplicitReturnStatement public
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-19T14:29:06Z
+* content: Call me a crazy liberal, but is there any reason this method shouldn't be public like the others in this helper class?
+* time: 2017-12-19T14:29:06Z
+* content: I ended up wanting this method for a custom Annotator, and had to just re-implement it inside my plugin. Yay open source, but why not just let people use it where it is, and thus get updates to the code as well?
+* time: 2018-01-03T19:29:47Z
+* content: This method should belong to some utility class then. ControlFlowUtils is a good candidate.
+* time: 2018-01-25T21:24:37Z
+* content: @jonnybot0 Any updates?
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-31T20:49:46Z
+* content: Move isImplicitReturnStatement to ControlFlowUtils and make public
+* codeUrl: github.com/JetBrains/intellij-community/pull/690/commits/f4e274d97ff722a32e676e6a4a07284752147a31
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-31T20:53:03Z
+* content: @donnerpeter - indeed, I have! Kindly pardon the delay. :)
+* time: 2018-02-02T14:36:59Z
+* content: @jonnybot0 looks good to me, thank you!
+* time: 2018-02-02T14:36:59Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-02-08T19:52:22Z
+* content: I believe I have. Is there some way to indicate/prove that?
+* time: 2018-02-14T14:03:57Z
+* content: @jonnybot0 Unfortunately I'm not able to find you in our contributors list. Could you please submit again?
+* time: 2018-02-15T21:21:19Z
+* content: Done.
+* time: 2018-02-22T12:34:56Z
+* content: I've used static import to preserve the git history in GroovyTypeCheckVisitor. eddf087
+************************************************************************

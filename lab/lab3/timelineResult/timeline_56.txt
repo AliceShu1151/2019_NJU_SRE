@@ -1,0 +1,49 @@
+************************************************************************
+* id: 56
+* requirement: StringUtil.isEmptyOrSpaces improvements
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-26T16:26:09Z
+* content: StringUtil.isEmptyOrSpaces improvements
+* codeUrl: github.com/JetBrains/intellij-community/pull/56/commits/21ca9910c093bd01a3cb2c0a755d925f35e3f630
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-26T16:33:42Z
+* content: This is remove usage of 'String.trim()' when checking String for empty(ignoring spaces)
+* time: 2013-03-26T16:33:42Z
+* content: Two 'while' replaced by one 'for'
+* time: 2013-03-26T16:41:54Z
+* content: why not just use org.apache.commons.lang.StringUtils#isBlank?
+* time: 2013-03-26T16:47:22Z
+* content: VISTALL, We already have com.intellij.util.text.StringUtilTest, please add your test to the existing class.
+* time: 2013-03-26T16:47:22Z
+* content: krasa, We hate org.apache.commons.lang.everything and have no intention of using it in our code if we can help it.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-26T16:49:53Z
+* content: removed duplicate StringUtilTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/56/commits/b3dd185ac192001c8cd3b5d63f1374d47afdb4d6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-26T16:52:39Z
+* content: updated
+* time: 2013-03-26T18:58:03Z
+* content: Merged manually. Thanks Valeriy!
+* time: 2013-03-26T19:20:42Z
+* content: Note that the condition must be <= ' ' rather than ==.
+* time: 2013-03-26T19:26:15Z
+* content: my mistake, srr for that.
+************************************************************************

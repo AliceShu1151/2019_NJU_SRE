@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1016
+* requirement: IDEA-204408 - Stop ignoring exceptions that occur during included bui…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-18T12:38:37Z
+* content: IDEA-204408 - Stop ignoring exceptions that occur during included bui…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1016/commits/dec5d91ca0ce972a12cab88cccfad1de8096a791
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-18T13:24:48Z
+* content: …ld configuration
+* time: 2018-12-18T13:34:44Z
+* content: I can't see a reason as to why we would want to ignore all exceptions coming from here and I imagine it would be safe to remove. Is there tests that cover this area? I couldn't seem to find any tests that cover this specifically, everything in intellij.gradle.toolingExtension.tests seems unchanged when removing this.
+* time: 2018-12-19T10:34:50Z
+* content: LGTM
+* time: 2018-12-19T11:13:09Z
+* content: Composite project import is covered by org.jetbrains.plugins.gradle.importing.GradleCompositeImportingTest Also, while having error message is indeed required, the import should continue to work on other included builds.
+* time: 2018-12-19T11:13:09Z
+* content: What we really need, is to create a stub module for failed included build, with content root pointing to included project's root to allow a user to see files in project structure tree, to navigate to them and to fix the content, so that project can eventually be imported. At the moment, if the included build is outside root project, files will be missing.
+************************************************************************

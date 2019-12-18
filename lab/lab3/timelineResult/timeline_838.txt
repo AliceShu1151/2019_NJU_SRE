@@ -1,0 +1,21 @@
+************************************************************************
+* id: 838
+* requirement: Move GradleInspectionBundle.properties into resource directory
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-26T21:53:04Z
+* content: Move GradleInspectionBundle.properties into resource directory
+* codeUrl: github.com/JetBrains/intellij-community/pull/838/commits/08f894b3bae1a9a9bb9a05b3cf6cf979150cb14c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-26T22:04:27Z
+* content: This resource file was causing an error for Android Studio tests due to the unconventional nature of the directory structure. The resource file should be found underneath a directory tree that appears as org/jetbrains/plugins/gradle/codeInspection.
+* time: 2018-07-26T22:04:27Z
+* content: Additionally, resource files should be kept separate from source files.
+************************************************************************

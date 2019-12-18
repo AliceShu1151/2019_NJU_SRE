@@ -1,0 +1,25 @@
+************************************************************************
+* id: 117
+* requirement: IDEA-114933 Search everywhere triggers if shift is pressed only once
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-22T13:46:09Z
+* content: IDEA-114933 Search everywhere triggers if shift is pressed only once
+* codeUrl: github.com/JetBrains/intellij-community/pull/117/commits/a727dede59e69d8dd8c7f47573454853e56f7f25
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-22T14:03:24Z
+* content: Fix Linux key autorepeat behavior.
+* time: 2013-10-22T14:03:24Z
+* content: This changes not fully fix the original problem but resolve triggering of SearchEverywhere action by pressing Shift only one time (not releasing).
+* time: 2013-10-22T14:03:24Z
+* content: On my environment on most of cases I able to call SearchEverywhere action by pressing Shift two times, but in some case it's fail unfortunately. It seems it's related to logic which begins under 144 line of original SearchEverywhereAction.java.
+* time: 2013-10-22T14:03:24Z
+* content: In any case it will be great if such code will helps...
+************************************************************************

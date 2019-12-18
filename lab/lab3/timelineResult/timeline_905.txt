@@ -1,0 +1,30 @@
+************************************************************************
+* id: 905
+* requirement: Added test state to AccessibleName of test results entry
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-23T10:30:02Z
+* content:  Fixed test state announcements by screen readers. They should now re…
+* codeUrl: github.com/JetBrains/intellij-community/pull/905/commits/85968ecfd7562bdb1ae72aeb0d3d59a8b73c9180
+* time: 2018-10-30T15:26:49Z
+* content:  A fix for accessible names not updating correctly, which made the sc…
+* codeUrl: github.com/JetBrains/intellij-community/pull/905/commits/ddd8aba50e48f8b8566bf3a5ea8019e86cbb71de
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-30T15:57:55Z
+* content: This PR adds the state information, visually represented by icons, to the AccessibleName of the entries in the test results tree structure. It partly solves: https://youtrack.jetbrains.com/issue/IDEA-193979
+* time: 2018-10-30T15:57:55Z
+* content: It does not solve the problem of the "Hide successful tests" button not being found by tabbing through the tool window, but the most pressing problem - the test results not being immediately clear, is gone.
+* time: 2018-11-15T11:34:44Z
+* content: @forantar Just a little reminder that this exists :)
+* time: 2018-12-04T13:20:05Z
+* content: @forantar could you please have a look? This is a crucial addition, I keep running into tests - and i cannot see if they succeeded. Thanks.
+* time: 2019-02-05T10:10:38Z
+* content: @forantar, a reminder that this exists. I could really use its addition, or a similar fix. I would save me a considerable amount of time.
+************************************************************************

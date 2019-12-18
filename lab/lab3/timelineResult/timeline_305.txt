@@ -1,0 +1,21 @@
+************************************************************************
+* id: 305
+* requirement: IDEA-136729 Find and download plugin dependencies from Enterprise Rep…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-13T17:34:05Z
+* content: IDEA-136729 Find and download plugin dependencies from Enterprise Rep…
+* codeUrl: github.com/JetBrains/intellij-community/pull/305/commits/4f7bc564da037afe4dd25154a92e8a3413a1d23c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-30T09:18:20Z
+* content: …ositories
+* time: 2018-07-21T12:39:00Z
+* content: @slisson, please rebase the PR, @klikh please assign to Ivan Chirkov.
+************************************************************************

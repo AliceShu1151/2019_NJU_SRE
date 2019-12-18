@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1223
+* requirement: Null check is added for PopupChooserBuilder.myItemChosenRunnable:crea…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-29T10:54:42Z
+* content: Null check is added for PopupChooserBuilder.myItemChosenRunnable:crea…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1223/commits/fdde9cfe61d5f282b64822806241277d974f0fe0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-29T11:19:19Z
+* content: Null check is added for PopupChooserBuilder.myItemChosenRunnable:createPopup
+* time: 2019-10-29T11:19:19Z
+* content: When I try to create JBPopup like:
+************************************************************************

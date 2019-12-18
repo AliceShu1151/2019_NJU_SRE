@@ -1,0 +1,35 @@
+************************************************************************
+* id: 897
+* requirement: Guard against NPE from early publication in NonClasspathClassFinder
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-25T03:50:52Z
+* content: Guard against NPE from early publication in NonClasspathClassFinder
+* codeUrl: github.com/JetBrains/intellij-community/pull/897/commits/de7679658608121a3b986f5cecb6aa32bfad480d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-25T04:44:10Z
+* content: As revealed in https://youtrack.jetbrains.com/issue/IDEA-200807, the parent class of GradleClassFinder - NonClasspathClassFinder - will publish references to the object under construction in the NonClasspathClassFinder constructor. This early publication can allow other threads to call methods on the object under construction before the fields of the object under construction are initialized. In this particular case, this led to a NullPointerException (NPE) in the GradleClassFinder class.
+* time: 2018-10-25T04:44:10Z
+* content: A better solution would have been to remove the registration of the listeners out of the constructors completely.  However, the extension system only allows us to instantiate objects of extensions by calling their constructors or by specifying the values for the fields of a bean class. As stated in IDEA-200807, there does not seem to be another spot for registering listeners other than in the constructor of the NonClasspathClassFinder class.
+* time: 2018-10-25T04:44:10Z
+* content: This workaround marks the field as volatile and includes a null check to guard against an NPE. This ensures the threads running GradleClassFinder.clearCache will encounter one of three cases:
+* time: 2018-10-25T04:44:10Z
+* content: The thread reads a null value for the myCaches variable. In this case, the object has not completed construction yet. In this case, the thread will exit from the method without running any method on the object referenced by myCaches. No NPE will be generated. When the myCaches variable finally gets initialized in the constructor, the map will be empty. An empty map is the state the map should be in after the clearCache method is called, so there is no need to actually call clear() on myCaches in this case.
+* time: 2018-10-25T04:44:10Z
+* content: The thread reads a non-null value for myCaches, and the object has not completed construction. In this case, however, the myCaches map should still be empty, so calling clear() on the variable will not change the map.
+* time: 2018-10-25T04:44:10Z
+* content: The thread reads a non-null value for myCaches, and the object has completed construction. In this case, calling clearCache() will empty the map, as expected in the case where clearCache() is called in a more typical context rather than in cases 1 or 2.
+* time: 2018-10-25T04:44:10Z
+* content: Additional considerations we should beware of due to early publication problems are whether or not GradleClassFinder.getCache can be called before the object has completed construction. If getCache() is called before construction is complete, then there may be another NPE generated in getCache. However, there is currently no known path to call getCache() before the object completes construction.
+* time: 2018-10-25T04:44:10Z
+* content: We should also be aware of the myBuildClasspathManager instance variable, as this variable is published prematurely together with the object under construction. If another thread were to read the myBuildClasspathManager instance variable before the object completes construction, it might be possible for the thread to read an uninitialized value for the myBuildClasspathManager variable. However, there is currently no known path to read this variable before the object completes construction.
+* time: 2018-10-25T04:44:55Z
+* content: Attn: @donnerpeter
+************************************************************************

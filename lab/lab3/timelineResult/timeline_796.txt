@@ -1,0 +1,25 @@
+************************************************************************
+* id: 796
+* requirement: Add @Nullable annotation to DomElement.getXmlTag()
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-01T18:04:37Z
+* content: Add
+* codeUrl: github.com/JetBrains/intellij-community/pull/796/commits/a4ec3ac6f4c2f97d5a18646e9051d7685abca68e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-01T18:08:58Z
+* content: This was misleading consumer of xmlTag causing NPE in Android Studio. Also changed some koltin code that was expecting a non-nullable type.
+* time: 2018-06-14T16:25:45Z
+* content: @donnerpeter There are 300+ usages of this method in IntelliJ IDEA Ultimate sources, and in many places the result is checked for null. It's probably make sense to merge this change and add checks for null where it's missing. What do you think?
+* time: 2018-06-16T14:26:19Z
+* content: @chashnikov @vcaen Not totally sure about that. In many cases, the return value is not-null on a specific type, it's actually more of an exception when getXmlTag returns null. Just like with PsiElement#getParent which intentionally isn't marked as nullable.
+* time: 2018-06-22T20:03:13Z
+* content: If we mark this method as nullable, implementation class can still mark it as not-null I believe. I really think it would help to have the annotation, whether it is then handled with an exception or a null check. At least there wouldn't be any bad surprise.
+************************************************************************

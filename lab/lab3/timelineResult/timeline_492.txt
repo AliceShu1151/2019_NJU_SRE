@@ -1,0 +1,23 @@
+************************************************************************
+* id: 492
+* requirement: Make RunContentManagerImpl.DESCRIPTOR_KEY public
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-12T13:28:20Z
+* content: Make RunContentManagerImpl.DESCRIPTOR_KEY public
+* codeUrl: github.com/JetBrains/intellij-community/pull/492/commits/0ae84923948c30ebb1a41d9f4091a14f3879f132
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-12T13:35:34Z
+* content: Rationale: I'm writing a plugin for a profiler integration which defines its own executor. Apart from the live profiling runs that are associated with a console, I want to add other tabs for snapshots and attach sessions to the tool window that have a different layout without any console. Content objects in the tool window need a user data value with the above key, otherwise an exception is thrown.
+* time: 2016-12-12T13:35:34Z
+* content: Current workaround: I'm using Key.findKeyByName("Descriptor") as Key<RunContentDescriptor>, but that is deprecated.
+* time: 2016-12-21T19:12:28Z
+* content: I've moved DESCRIPTOR_KEY into RunContentDescriptor (master branch, 2017.1 EAP)
+************************************************************************

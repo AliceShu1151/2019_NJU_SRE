@@ -1,0 +1,27 @@
+************************************************************************
+* id: 718
+* requirement: IDEA-185872 - Move enum to inner class without static modifier
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-30T20:24:11Z
+* content: IDEA-185872 - Move enum to inner class without static modifier
+* codeUrl: github.com/JetBrains/intellij-community/pull/718/commits/cd5768ede9f065adf0732b48fad97d44fdc14a71
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-30T20:31:41Z
+* content: see https://youtrack.jetbrains.com/issue/IDEA-185872 for info
+* time: 2018-01-31T08:38:39Z
+* content: You did signed the CA, correct?
+* time: 2018-01-31T08:42:10Z
+* content: I found that i have send CLA at 14.07.2015 to contribute@jetbrains.com (email with name ivo smid)
+* time: 2018-01-31T08:43:35Z
+* content: Yes, I saw it on our side, just to be sure that it was you. Thanks again. The change looks good, will merge ASAP
+* time: 2018-01-31T08:44:22Z
+* content: ahh, ok :) thank you
+************************************************************************

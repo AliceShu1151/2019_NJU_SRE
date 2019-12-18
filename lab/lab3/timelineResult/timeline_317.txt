@@ -1,0 +1,37 @@
+************************************************************************
+* id: 317
+* requirement: IDEA-147080 Groovy Pointless Boolean Inspection should remove double negation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-30T07:06:04Z
+* content: Groovy Pointless Boolean Inspection in double negation context
+* codeUrl: github.com/JetBrains/intellij-community/pull/317/commits/32ca7a03197d94bbb0643c05b45b6e5096591463
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-30T07:19:33Z
+* content: Groovy Pointless Boolean Inspection should simplify by removing the double negation when it is the case.
+* time: 2016-03-01T09:31:47Z
+* content: you could use Boolean.parseBoolean(operand) here, and .toString it later
+* time: 2016-03-01T09:31:58Z
+* content: can be single line also
+* time: 2016-03-01T09:32:31Z
+* content: this seems dangerous (will replace a single negation also), and is repeated in the code
+* time: 2016-03-01T09:33:58Z
+* content: Please provide some examples in the description of the commit, it's not obvious to me what happened before, and what happens now.
+* time: 2016-03-01T09:33:58Z
+* content: Also, more tests might help as well :)
+* time: 2016-03-01T09:34:37Z
+* content: same as below...
+* time: 2016-03-01T09:35:07Z
+* content: 5 is a microoptimization
+* time: 2016-03-01T09:35:35Z
+* content: ! is not a sign (you call it prefix below)
+* time: 2018-07-25T16:57:10Z
+* content: @vladmm, please rebase the PR
+************************************************************************

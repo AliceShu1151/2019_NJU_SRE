@@ -1,0 +1,19 @@
+************************************************************************
+* id: 420
+* requirement: Implemented SmartTemplateLanguageErrorFilter
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-06-23T16:00:58Z
+* content: Implemented SmartTemplateLanguageErrorFilter, variation of TemplateLa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/420/commits/6698ccf6fb3be5c10a9126a48b5b44fea39e0345
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-23T16:02:50Z
+* content: Alternative implementation of TemplateLanguageErrorFilter, indended to fix following problem: https://intellij-support.jetbrains.com/hc/en-us/community/posts/206918249-TemplateLanguageErrorFilter-for-postfix-errors
+************************************************************************

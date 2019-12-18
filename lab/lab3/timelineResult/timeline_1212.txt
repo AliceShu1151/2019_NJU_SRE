@@ -1,0 +1,781 @@
+************************************************************************
+* id: 1212
+* requirement: It is recommended to add a json view window.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-09T17:48:58Z
+* content: PY-37720 Impl python ml completion features
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/92e41799f26d01e372462c3de13d273e74f62ee8
+* time: 2019-08-17T10:05:22Z
+* content: git: optimize shelve by reading all base contents in a batch: IDEA-16…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e539c752c790c938a29cd2149d2c01a54a968f2a
+* time: 2019-08-28T08:57:33Z
+* content: enable signature inference by default
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/eb3c2fa1dce8767a9dff713e5861e97e9fbb18e1
+* time: 2019-08-28T14:19:05Z
+* content: remove notion of flexibility in inference graph
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d36851a9105949f7cbe4e057b5675e8dd556a041
+* time: 2019-09-11T12:40:48Z
+* content: providing quick fixes to blocking method inspections
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/98d52579a510e696b72239eb829c78f5ec2c44bb
+* time: 2019-09-16T09:32:45Z
+* content: git: extract method to refresh only the changed part of the VFS, and …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/29df5a844b74e7ed2134672c4fcc31305a9c12d5
+* time: 2019-09-16T09:53:31Z
+* content: git: don't fail if couldn't resolve the HEAD, refresh the whole root …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/1330b6be6bbee41928354fb7d906a79279eab03c
+* time: 2019-09-16T11:33:17Z
+* content: git: rebase: refresh the part of the VFS which actually has changed
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/750c7309044994d8205344cc1427664b73625366
+* time: 2019-09-16T11:35:12Z
+* content: git: abort rebase: refresh the part of the VFS which actually has cha…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5235462c32d0625ff4b045c12200011ac7083a0b
+* time: 2019-09-19T11:38:53Z
+* content: Fix CPP-11844.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/31d51d4587a6d858194522dfe7724e4542cb1292
+* time: 2019-09-22T09:57:24Z
+* content: git: during unstash refresh only the changed part of the VFS
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e0df1c21294f3d6e5fced989e76cc3e0ff8a0373
+* time: 2019-09-22T10:20:58Z
+* content: git: during checkout, merge, reset, refresh only the changed part of …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a0f49296835c537d232fbad519443940128a2f41
+* time: 2019-09-24T14:19:22Z
+* content: remove notion of forbidding types
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/de89aedc6422329ba1c570baf44d5c0ba7f93906
+* time: 2019-09-24T14:23:10Z
+* content: IDEA-221863 SOE in type inlay hint: fix search process in nested clos…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7f3c23f58eca3a041126cf630d325504e1c7c963
+* time: 2019-09-25T15:33:50Z
+* content: IDEA-221863 SOE in type inlay hint: fix endless recreation of DFA for…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/fbd7bc8a46673017082053a3c169de5565d89da4
+* time: 2019-09-26T09:59:38Z
+* content: git: refresh only the changed part of the VFS after calling cherry-pi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/44dce6af337ff3540ac5467838de82ec00970dfb
+* time: 2019-09-26T14:26:45Z
+* content: IDEA-221863 SOE in type inlay hint: better preventing endless recursion
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/95cf4188c926877baaeae8b33a8e4e9a0b2620ee
+* time: 2019-09-26T16:53:56Z
+* content: refactor dealing with TypeUsageInformation
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e057b003c80c90a5891d86e0c1db5f7a60c5af53
+* time: 2019-09-26T18:25:29Z
+* content: IDEA-135179 added wizard content wrapping at scroll pane
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/49766a200ae9d652bcfb1f747c72520dc8fff627
+* time: 2019-09-27T08:24:13Z
+* content: avoid NPE while handling unresolvable classes
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/1da08c1dad28489f6ac1699f743d5f33a05cb0dc
+* time: 2019-09-27T08:44:35Z
+* content: avoid creating intersections from unresolved classes
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f0a1247707ff9d7bcdcc65a49f6fcd0543cc4d13
+* time: 2019-09-27T09:14:47Z
+* content: fix appearance of foreign type parameter among possible inference res…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/40a961ed584320d8b37579370a9b37206c01515e
+* time: 2019-09-27T14:55:36Z
+* content: vcs: move the StopWatch class into vcs-impl to be able to use it outs…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/546bad78bd36d30f17665197a9049468204c73a4
+* time: 2019-09-29T13:59:49Z
+* content: Let report StopWatch measurements under a custom logger
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/76b05a5e27e50af8ea74c74bf0d023998722b1f7
+* time: 2019-09-30T13:05:01Z
+* content: git: don't fail in `git ls-tree` if too many paths are given
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/680d5ae9b9a58745e6ecb52b90ea98a0cababbc8
+* time: 2019-10-03T09:23:39Z
+* content: git: don't call `git rm --cached` to rollback staged modification
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/70fec6f243f9b86b6a4ddc35bf6c7f63fb6b4e9a
+* time: 2019-10-03T10:45:35Z
+* content: vcs: don't query CLM for the Change to save the base revision
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3ee4dfc398762b0a6bd36fe920be3d4a0940122a
+* time: 2019-10-03T10:50:12Z
+* content: vcs: simplify checking that a Change is "big"
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/562896127128e753101773b156f95019032d8532
+* time: 2019-10-03T11:58:57Z
+* content: add parent visiting in inference graph
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a7dab00afd70f27e5bac457abd871b608e23398a
+* time: 2019-10-04T13:48:28Z
+* content: vcs: cleanup: remove usages of the ObjectsConvertor, and deprecate it
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d5f94c08587c571f61b9231f18cf1412e3c1ffed
+* time: 2019-10-05T19:10:19Z
+* content: [intellij-sh] Fix not equal for completion
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d649f86a9bcc5a02a50d932149dd59387d20f8c0
+* time: 2019-10-07T04:53:08Z
+* content: git: fetch with --recurse-submodules=no
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d96caba8ed4cf83838554a87d4ff8cf4d96482a3
+* time: 2019-10-07T04:56:15Z
+* content: git: don't pass anything in service constructor parameters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4013b93c30c875f29a01e449264c96b80e99f8b5
+* time: 2019-10-07T19:08:21Z
+* content: fix creating of invalid PsiType during closure inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4ba5b9cb571449e4a711b819af7ccc1a4b035888
+* time: 2019-10-07T19:14:50Z
+* content: minor cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a50343a2d329a5035f64ac093f9bcdf6b25aba64
+* time: 2019-10-08T09:47:33Z
+* content: use FileBasedIndex#getFileData in StubTreeLoaderImpl
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f7c15f5b0b10d52f7aeef1c5bda7362e34e5df96
+* time: 2019-10-08T12:58:10Z
+* content: always read data from SnapshotInputMappings if it's already stored
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b26c98636548e19f24fce253ce97c5dfbb436c9a
+* time: 2019-10-08T13:04:44Z
+* content: remove old unused key
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0226460c9a6821d07cea663cfd4c709444cc6152
+* time: 2019-10-08T13:31:08Z
+* content: SnapshotInputMappings allows to use manual compression
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/10e40cdeb7adbd5685424f5203d7a42da23ebef7
+* time: 2019-10-08T14:03:42Z
+* content: Fix IDEA-224371: recalculate the resource section virtual addresses a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/87684c117a212319ad7d3637b9fa4b747f7172ce
+* time: 2019-10-08T17:05:44Z
+* content: IDEA-224093 Inspection for Quarkus private field injection
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/236acee119b33cf5884937dfebf4099e0bc37f20
+* time: 2019-10-08T17:17:50Z
+* content: SnapshotInputMappings store only value for SingleEntryFileBasedIndexE…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b240b79468f250a8ad440720fd354f7272377963
+* time: 2019-10-08T17:23:57Z
+* content: stub diff builder: don't rely on input data keys (file-ids)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/56c486c0acb516529e66d40c487532b8e83e427c
+* time: 2019-10-09T05:45:25Z
+* content: don't use forward index for single entry indexes
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f8151e8af1bb9db7ac35e76ab01b02a3c5d14f7a
+* time: 2019-10-09T07:28:28Z
+* content: fix regression with incorrect type resolving for closure parameter
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/93c84a43d9cb4fc8891faaa41eefc9ece148d04d
+* time: 2019-10-09T08:43:24Z
+* content: Inlay hints: minor, make option consistent with others
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d35c8a3758b3170287787afb99cf7ca005ef0093
+* time: 2019-10-09T09:03:42Z
+* content: EA-144939 - IAE: PsiElementUsageTargetAdapter.<init>
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e27b085e71452fc0cebce938bb0622782aa13b84
+* time: 2019-10-09T09:16:15Z
+* content: Inlay hints: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/587360f000a45fbcc9a078c011d931dcf04b6850
+* time: 2019-10-09T09:25:08Z
+* content: fix incorrect searching of GrCall corresponding to closure invocation
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/159f18a6feea7225bb58cb626b8fe8c6b22840e9
+* time: 2019-10-09T09:36:27Z
+* content: EA-212700 - NPE: MavenIndex.handleUpdateException
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7e9137b7dd72688c6306e885a1244f83c4f76074
+* time: 2019-10-09T10:16:16Z
+* content: Update launcher-generator.jar (IDEA-224371)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/33fe2b2223b4f76e24ef1b752c559b5ee14a9c1f
+* time: 2019-10-09T12:18:06Z
+* content: IDEA-216616 Update LaF for IntelliJ / Darcula slider
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b257d34bc978d5da620e26f180be15c0339bc086
+* time: 2019-10-09T12:49:24Z
+* content: Don't show empty confirmation to disable plugins (IDEA-224470)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/caf612c2e0772c7d427a907538e79f2cc7e08abb
+* time: 2019-10-09T12:57:34Z
+* content: Clear list of plugins to install/uninstall on apply (IDEA-224220)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/88c6799aadb0209b9baa52483c231b004d495a64
+* time: 2019-10-09T13:06:26Z
+* content: Remove dead code from BaselinePanel
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d1fd255a24e8508d62c45c044cc5a91515ec1636
+* time: 2019-10-09T13:10:08Z
+* content: Some more dead code in plugin configuration UI
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ac5dea1ba969217e78c46a3e3c1d6f28a90e24dd
+* time: 2019-10-09T13:33:12Z
+* content: IDEA-CR-53226 package private methods used from another plugin
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/346a4d6c1279d06c76e776bc510686939afd0347
+* time: 2019-10-09T13:37:06Z
+* content: Loading/unloading plugin always adds/removes it from loaded plugins l…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/aa55ce2990d1dd211c9bbdf991491a9405d402ad
+* time: 2019-10-09T14:21:39Z
+* content: Fix CCE when trying to uninstall synchronously installed plugin witho…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/82649b8669d100f75499513c1d145981749c0f35
+* time: 2019-10-09T14:24:52Z
+* content: [Gradle] fix tests failing because of :buildSrc:compileGroovy task wa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5eeea18ee4df35316a9dbc4bed7968519e3e593a
+* time: 2019-10-09T14:34:28Z
+* content: cleanup: make types more correct
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3ec615cb680e3b1df80b85d29e0235262db03ba1
+* time: 2019-10-09T14:39:59Z
+* content: IDEA-138917 Time Tracking broken
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/51cd12db0c83b9df936491c620dba9bf8fd087de
+* time: 2019-10-09T14:41:12Z
+* content: Ensure that JBOptionButton text is updated correctly on LAF change (I…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a7badcb83373ef2a22e7cd71167f28730ad9de0e
+* time: 2019-10-09T14:48:42Z
+* content: cleanup: raw types, deadcode
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/283b2ad9ed75509c7ac1810bd710eb96ac330a7b
+* time: 2019-10-09T15:19:40Z
+* content: Clear superclass cache in TypePresentationService when plugin is unlo…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e8018a7ca800e053974786b72ed65fbdbb05e6a4
+* time: 2019-10-09T15:26:33Z
+* content: vcs-ignore: reference completion support for .git/info/exclude for pr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/625ce55bdf20c33fb698a425d9521a3c6178f656
+* time: 2019-10-09T15:26:36Z
+* content: Use WeakValueMap for icons
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5bcd03908e2634682e1a97256126d8b6995d9255
+* time: 2019-10-09T15:39:24Z
+* content: Use TreeAnchorizer in NavBarItem to avoid storing strong references t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/77e5a7a1bc9592a275694186716d1e593b7a10b3
+* time: 2019-10-09T15:44:45Z
+* content: Cleanup (warnings; typos)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/73fd09da6dc1ef3a8b64c03dbff8f0b19eb37337
+* time: 2019-10-09T15:46:53Z
+* content: Cleanup (reverting inadvertent changes)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/22824f24906f716999c8205f4b52fadcf5cbbb51
+* time: 2019-10-09T15:46:54Z
+* content: Avoid storing strong references to plugin classes or classloaders in …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/45bccfe4f02cd900c638444f65702452c12bad9f
+* time: 2019-10-09T15:47:24Z
+* content: Cleanup (warnings; typos)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f0a2b96bef6e27efdd39cd3c01bf48ee7d9862ae
+* time: 2019-10-09T16:04:08Z
+* content: Synchronously update actions when setAdditionalTitleActions is called…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/54311dccc32f1e212505484192a8eb8fefeadb94
+* time: 2019-10-09T16:19:38Z
+* content: Dispatch pending invocation events when unloading plugin (to make sur…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c240c1838b3d98fbaa43ed1e7ffbac198849ccef
+* time: 2019-10-09T16:20:09Z
+* content: Anchorize elements in NavBarModel (to avoid storing strong PSI refere…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5953934cb3808c2602bf76c5ff0dd38d4a39555e
+* time: 2019-10-09T16:20:57Z
+* content: Reimplement CompositeDocumentationProvider building so that it can be…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/27dc9e2e29421230bc2ece601b0b9bcf88a3ad8f
+* time: 2019-10-09T16:21:43Z
+* content: Remove unnecessary extra caching of style documentation provider (to …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d0805d62dacb05a92fa3f9dda8c09637b0496c2b
+* time: 2019-10-09T16:22:17Z
+* content: typo
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7410a9cf65186770e5164add29a85e47bb06d1c2
+* time: 2019-10-09T16:33:41Z
+* content: Support dynamic load/unload for <lang.externalAnnotator> and <lang.do…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3888c54b5802e76776051277860f2f4067caa713
+* time: 2019-10-09T16:35:36Z
+* content: Show 10 closest-to-being-unloadable plugins
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/192c9ed06a48e146241472981b88c7c7140c5f0a
+* time: 2019-10-09T16:47:37Z
+* content: IG: fix "Reuse of local variable" inspection false positives (IDEA-13…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/60741b0f00ab3d384ce7c75439c7b47566199401
+* time: 2019-10-09T17:15:44Z
+* content: Fix slice type for homogeneous tuples (PY-33651)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/abf6bcf9b08faea167b591527eb8129d7c38e924
+* time: 2019-10-09T17:30:54Z
+* content: IDEA-215967 Move custom keymaps to plugins
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0445f1b5739e41e46439cacf0e2c718d9168e339
+* time: 2019-10-09T17:41:31Z
+* content: Goto Class/Symbol models support dynamic load/unload of contributors
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5edc5175b5061dc709c2744343455d571baa8a50
+* time: 2019-10-09T17:47:03Z
+* content: [ES] assert unexpected errors of the external task
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e017a1778d1a87c6396e44a623a68592a1f9564a
+* time: 2019-10-09T17:52:55Z
+* content: More dynamic EPs
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/eb0f40e8e908a8aee57753d24b07452247e14ab5
+* time: 2019-10-09T18:32:29Z
+* content: [platform] extracting IDE starter location code (IDEA-219946)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ad8272c32aec53dfd095c11c669603eedabc81c7
+* time: 2019-10-09T18:33:26Z
+* content: Cleanup (typos)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/400018c548892d1c57c137ae17c654f3a85d397b
+* time: 2019-10-09T18:34:50Z
+* content: incompatible types tooltips: use short type names at varargs position…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5b3ef443c96b6e0cd3784469a7c2d92faf8068ec
+* time: 2019-10-09T18:53:10Z
+* content: convert long menu to a searchable popup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/061dbef73879bdcb9c3d4e306018efc9e42f84da
+* time: 2019-10-09T19:07:52Z
+* content: IDEA-222562 Split view is broken/changed - close tabs and open recent…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7e6d6650af25f6abc0829ab69b1f7789c5dbf2e0
+* time: 2019-10-09T19:23:44Z
+* content: fix test data for different UI settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9475133fbf59b528645aaecdc085d0f224b68fac
+* time: 2019-10-09T19:40:40Z
+* content: Cleanup (IDEA-CR-52564)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/6a5b1f449d60b4a3af807af600d010f31869b576
+* time: 2019-10-09T19:50:44Z
+* content: IDEA-CR-53226 cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d1ca1a55304f1073046b7690e997e99acffef325
+* time: 2019-10-09T21:12:45Z
+* content: IDEA-CR-53353: Allow to write tests for intention actions, important …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/80783d418e1014db0ca89402c45d175ee53324b4
+* time: 2019-10-10T04:06:34Z
+* content: IDEA-224530 Support nullability check for vararg components
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4f50292978a13a04c37554828c8bc0ce525d9627
+* time: 2019-10-10T04:26:51Z
+* content: IDEA-224531 Support Arrays.asList in dataflow analysis
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ea5d1296c73c5d7e7568bfa7f9ec6c45b82afb9b
+* time: 2019-10-10T05:14:16Z
+* content: IDEA-215497 jbr/bin/java Access Denied during update from IC-192.4205…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/edd3eb3b602e37ed7d8909eb483d316cb7749263
+* time: 2019-10-10T06:15:27Z
+* content: [Gradle] fix tests on windows
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a5ac4d9fbd6f1b59cb3db447cbf497b6d583994b
+* time: 2019-10-10T06:16:18Z
+* content: cleanup: fix yellow code
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9d9da2c065049443932ac7fe3046a67f2c6942fe
+* time: 2019-10-10T06:45:10Z
+* content: incompatible types tooltip: append reason when provided for single ar…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0edaac849d196d593b19dde81cb42929e587dc69
+* time: 2019-10-10T06:50:12Z
+* content: incompatible types: highlight parent call instead of lambda when the …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/87deef960c21f9d3d82be84c8bae5cdc64a6774f
+* time: 2019-10-10T07:07:17Z
+* content: macOS build scripts: increase max wait for notarization results to 90…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/34f7b63ff215ed210f60c6d749049046c16c596a
+* time: 2019-10-10T07:11:20Z
+* content: Disable Extract method on annotation values
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f8106e25815300a3d7a4359ccaeacd80b131442d
+* time: 2019-10-10T07:56:06Z
+* content: IDEA-220227 - get rid of old wadl-core library, replaced with simple …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9118f09b00f6d0bd4dd81cc5fa57c21237339f26
+* time: 2019-10-10T08:04:01Z
+* content: IDEA-220227 - get rid of old wadl-core library, removing jar file
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a926913886d32e633c0f6385eb852b6ec794fad9
+* time: 2019-10-10T08:23:29Z
+* content: TextDescriptor#getText:
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/34aa95a47e26a77e4ef10c7ca7d9fa0ba2a4a6c2
+* time: 2019-10-10T08:25:34Z
+* content: IDEA-172876 Purity inference algorithm does not match hardcoded contr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c3b73e2201bc3031b5247e1a84cf0d390d03fb9b
+* time: 2019-10-10T08:28:58Z
+* content: remove unused ProjectAndLibrariesScope#mySearchOutsideRootModel and S…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/41acba664c3126080cb4c7c03450581cf2a43938
+* time: 2019-10-10T08:37:17Z
+* content: [Gradle] fix tests on windows
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/77f77314da30c58eed0e3f54a99202739e0a5679
+* time: 2019-10-10T08:42:08Z
+* content: CharsetObjectCanBeUsedInspection: take into consideration current lan…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/042878d12fbcd54f3ffa65033849610e03917bef
+* time: 2019-10-10T08:51:16Z
+* content: DataFlowInspection: message updated according to review
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/60e001e29e4b014336eb6c4b59af3aef9fda009b
+* time: 2019-10-10T08:53:07Z
+* content: IDEA-223977 [run-anything] fixed access to parameter in command witho…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d4a4501fafe8b007756dda7c5349178e9808ad4a
+* time: 2019-10-10T09:33:13Z
+* content: java method ref highlighting: don't mirror errors of not applicable m…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/589b029a9735556f11f8264a6021576fe6fad2ac
+* time: 2019-10-10T09:41:49Z
+* content: IG: fix typo (IDEA-CR-53219)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/091c6c012c9c66b2841b9f6c042855a472cbf62e
+* time: 2019-10-10T09:50:35Z
+* content: java inference: keep a sign of failed inference on the top level
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/fe78876b142767702f8af832e8971916fcbed8ff
+* time: 2019-10-10T09:52:37Z
+* content: IDEA-201463 IntelliJ LaF: change color from #d5d5d5 to #d4d4d4
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/1d55c646263211d44b2fb637ff109615cf0927e1
+* time: 2019-10-10T10:01:46Z
+* content: [groovy] IDEA-220527 Rewrite 'Create method' using JvmElementActionsF…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3339a4762c4b28a323a42d9fa9e10bfed64cfc2e
+* time: 2019-10-10T10:12:53Z
+* content: IDEA-224546 "Cannot annotate with both
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c2af9c1d1fd11da89f5dbf12e8595a8422a752c7
+* time: 2019-10-10T10:13:21Z
+* content: macOS build scripts: increase max wait for notarization results to 18…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/fe810d1a33c51eec31318d7b08f0cdfcad9a61c2
+* time: 2019-10-10T10:29:22Z
+* content: IDEA-223833 [run-anything] added expected space after help command
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5dc1e9157acc2ca9305c091c927661572315bd32
+* time: 2019-10-10T10:31:38Z
+* content: IG: add javadoc and use PsiUtil.resolveClassInClassTypeOnly()
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d8d244224bf0f4967c2502c0835c9838a29a6623
+* time: 2019-10-10T10:52:10Z
+* content: [run-anything] added natural ordering of gradle completion
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/44038cec96aadbc5a80cba5bcf7abb64c5124726
+* time: 2019-10-10T10:54:28Z
+* content: Java15APIUsageInspection#loadForbiddenApi: return collection instead …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/718dc23930382622160abf304788732eae4c00eb
+* time: 2019-10-10T11:13:34Z
+* content: IDEA-224244 Bad suggestions for fully qualified class in javadoc link
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b76ef269a4bbf44442de806512693ce7445036d5
+* time: 2019-10-10T11:14:30Z
+* content: IDEA-216616 Update LaF for IntelliJ / Darcula slider
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3ad31d8a279d18b0b03d0fca67f3da3cbc21e84f
+* time: 2019-10-10T11:20:52Z
+* content: add javadoc for FileBasedIndexExtension.getInputFilter
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/93d6f7d6e6adf1d404a868a56ad252510291c5c8
+* time: 2019-10-10T11:26:51Z
+* content: IDEA-220634 Completion suggests finalize() first after @Nullable/
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/476bc6682a729cb79ea4f10e1bf5d621ef53b3c1
+* time: 2019-10-10T11:28:31Z
+* content: add a special assertion if FileContentImpl#getPsiFile is called for a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/fe95514af7a15d42f53801e4f38892cda53572c2
+* time: 2019-10-10T11:34:26Z
+* content: JavaEnterInTextBlockHandler: commit document on enter only for java f…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/524e6f6664504ce44f42367e13f41ef592422236
+* time: 2019-10-10T11:48:08Z
+* content: [run-anything] added natural ordering of maven completion
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/df5668beb29d55663825ef6481ef37b7515dc3e4
+* time: 2019-10-10T11:52:53Z
+* content: usages of newer api inspection: update to java 13
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/406a87ab77614f179a54a313f3da64193993d8ed
+* time: 2019-10-10T12:27:36Z
+* content: IDEA-216616 Update LaF for IntelliJ / Darcula slider
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/053c9c954d4f037108d87226370ee249c2d104a4
+* time: 2019-10-10T12:32:01Z
+* content: Remove unnecessary cache, mark fenceLanguageProvider as dynamic
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/92e690b1e7369c42ca6b46e46c4ec678ea9dc35e
+* time: 2019-10-10T12:50:14Z
+* content: IDEA-CR-53262 IDEA-223967 new update dialog merge multiple `also` int…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9cf4537ee359515ad50a91461c71c6dfae7f9416
+* time: 2019-10-10T12:51:04Z
+* content: Don't throw an exception from java wrapping preview when default proj…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a2df87a1d2e9ac8f72bb9c65128e83cc06594158
+* time: 2019-10-10T13:13:38Z
+* content: IDEA-CR-53260 IDEA-217039 add `private static final`
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/6e3f54dd9f196f60936f6dd0812547a7160f5490
+* time: 2019-10-10T13:16:05Z
+* content: Delete unused class
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3f80e2f4d21b5cb499f7c525c7c2167b8ec33163
+* time: 2019-10-10T13:17:03Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/65cfddf7bdc4c7b88ae4bf72257541e748fb610d
+* time: 2019-10-10T13:26:51Z
+* content: Cleanup: static field should be final
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/40c05434e9caaf90ddb43dd7fb824b969362b391
+* time: 2019-10-10T13:27:16Z
+* content: Cleanup: less raw types
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/cabc4c58fe41642a8fdd1dd0d6d75862d7798962
+* time: 2019-10-10T13:27:42Z
+* content: Some more dynamic EPs
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/1712be7ea642cfa90d62aa734b74dd4683f01d77
+* time: 2019-10-10T13:35:34Z
+* content: IDEA-CR-53381 IDEA-217303 Unbundle Vaadin plugin - remove from plugin…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/8f52311f7846169258e6fcea6be93993166038da
+* time: 2019-10-10T13:36:10Z
+* content: ProgressIndicatorUtils.withTimeout: make checkCanceled honor thread's…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f2316a5b17030b5b8a28e6c4e23ca8456e36aa47
+* time: 2019-10-10T13:36:31Z
+* content: coordinate stdout/stderr when printing to ConsoleViewImpl (IDEA-70016)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/556e056ea0b9db365b1e1424607daa77320cfb87
+* time: 2019-10-10T13:42:00Z
+* content: More unloadable EPs
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/458785b730c85e40badbeac6c6f491de8b948ff5
+* time: 2019-10-10T13:46:24Z
+* content: IG: store settings correctly (IDEA-224498)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/dbd3da34082f4657e0dd6df5c5981dd6a43e820a
+* time: 2019-10-10T13:53:28Z
+* content: Don't log PCE
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/04351b1e2f8ea916d4272f23c24782b3e3769620
+* time: 2019-10-10T14:19:21Z
+* content: fix consequences of making PsiParameter/PsiLocalVariable.getName() no…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4c2947341a09453ce005ff664b87497995db30b6
+* time: 2019-10-10T15:39:53Z
+* content: Remove unused constructor
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/2dc258d802730abbfe2b59075b6bb8fc0e5a277e
+* time: 2019-10-10T16:04:41Z
+* content: Typesafe EP_NAME for SpellcheckingStrategy
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e19dab1cc2614ce7d07881e65ab2f7814418e409
+* time: 2019-10-10T16:09:13Z
+* content: Remove unnecessary cache of ProblemFileHighlightFilters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4fdb6e03b434b770912bc4dea9261741ed1fe22a
+* time: 2019-10-10T16:18:01Z
+* content: Remove unnecessary cache of ExtendWordSelectionHandlers
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b90ce009a01cbd2d1572ccad608d87c118d9fe83
+* time: 2019-10-10T16:18:14Z
+* content: [wizard] removed fetching component sizes in headless environment
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/930282093c1799da1e8e6ff076b7f0e773149dee
+* time: 2019-10-10T16:38:15Z
+* content: Fix runner in execution environment after configuration editing on ex…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ec6937be0bf7bab936585f4ad54efe8813ed5155
+* time: 2019-10-10T16:42:22Z
+* content: Action to analyze safety of EP usages
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5ebdd264fad8661f8af1c28063d1f3f02d9ede6e
+* time: 2019-10-10T16:42:59Z
+* content: More dynamic EPs
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9783fc503d95760246ea1553faa473513e7bec60
+* time: 2019-10-10T16:45:35Z
+* content: provide a way to guarantee stdout/stderr messages ordering (IDEA-7001…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c931bdc26839b12ae3b500d154d2ee0fe11b39ad
+* time: 2019-10-10T17:44:56Z
+* content: vcs: non-modal: Only retain commit message area height if it is non-z…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3b36552546e67f362968b0a0570d75e633641a50
+* time: 2019-10-10T17:55:16Z
+* content: jps build: hide/show information messages (IDEA-53161)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3c4b5284a81659e9673b61e4d35ac0ffc231dc8a
+* time: 2019-10-10T18:08:09Z
+* content: IDEA-223967 new update dialog: provide "What's New" notification that…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ef891fef3d57d40de416611f78d8c3bcdee6e2b3
+* time: 2019-10-10T18:31:21Z
+* content: revert
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/301a4b6ab769e99c37a52e92b72bd42869ac730f
+* time: 2019-10-10T19:28:00Z
+* content: extract method with folding: more precise unique name check
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/795fe39b6b512d99ee1ca5be48618c78134979da
+* time: 2019-10-10T20:05:19Z
+* content: fix testdata
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/aaddf8b092c9297964ca748a8fe1c431c0850649
+* time: 2019-10-10T20:05:58Z
+* content: Fix investigation (FileEditorManagerTest.testOpenFileInTablessSplitter)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7eb205d7d037641c63e64fc0defb162e5560ffe8
+* time: 2019-10-10T20:12:05Z
+* content: Cleanup (simpler test configuration; formatting)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3258d1a1ac5db5308a0e19fcef78e8e3577d5d1a
+* time: 2019-10-10T23:21:31Z
+* content: vcs: Use "Commit File" action instead of "Commit" in Local Changes co…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b8ad579e15179ed44d4e5625f60b51c8e1a5c84e
+* time: 2019-10-10T23:36:46Z
+* content: vcs: Enable "Commit File" action on unversioned files
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/78cd61acffa792f2a5b790897732019cd4cf8eca
+* time: 2019-10-11T03:18:07Z
+* content: RawUseOfParameterizedType: WEAK warning
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3ba71d709cfbe7dd3fbc505723447a0f03bc1db5
+* time: 2019-10-11T03:47:57Z
+* content: ConditionalExpressionInspection: unwrap else branch for all statement…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/dab70106dd4b146c809013a8fc187209ba8880df
+* time: 2019-10-11T04:01:16Z
+* content: CatchMayIgnoreExceptionInspectionFixTest: copyright year updated
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/330cdb7b10b05dd54a81fccc84b62a8c3eb2a48f
+* time: 2019-10-11T04:05:06Z
+* content: JoinLinesHandler: == -> >= (EA-213710)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3bae809e7e7db60381a82b915df8cc5f1d633b2e
+* time: 2019-10-11T04:29:16Z
+* content: ImplicitDefaultCharsetUsage: take language level into account
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/04fa97b3a4283e7ac1e00065293c250598fec073
+* time: 2019-10-11T04:49:23Z
+* content: JBTextArea: fix height for error reporting (IDEA-CR-52590)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/cfe5480e022037840c268ebc4c277ead70741f32
+* time: 2019-10-11T04:58:38Z
+* content: CharsetObjectCanBeUsedInspection: reuse language level (IDEA-CR-53366)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0d410a5d3c8f53f4db5beca25eab3441b75eee0f
+* time: 2019-10-11T05:32:12Z
+* content: IDEA-224476 False “May produce NullPointerException“ positive with Co…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b5044991da2c8d2cd1402dc114f4710e92017448
+* time: 2019-10-11T05:57:28Z
+* content: IDEA-224600 Order of Types in Method Hierarchy is not correct.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e9e57efef9a70f12e58568461a0661794ec22516
+* time: 2019-10-11T06:31:16Z
+* content: [Maven] do not add `null`s to maven project indexes list IDEA-217842 …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/1596f169eb4ca46923adf0f6f3fb733632b25805
+* time: 2019-10-11T06:57:11Z
+* content: cache VirtualFileSystemEntry#getFileType
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a84e805c7cd45c3b0f01227c431b053d272b79eb
+* time: 2019-10-11T08:01:37Z
+* content: [intellij-sh] Fix completion test
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0318ee20b956bbd9098220f518c1cf59f9b7bc6c
+* time: 2019-10-11T08:14:29Z
+* content: Effects processing optimization
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/fb7cb90bb26fb3bb6ad2b4c688387be856f0e845
+* time: 2019-10-11T08:17:04Z
+* content: aggregated stats charts - backend changes (versioned URL, corrected n…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/967a58b7db3f779b144396c9b2134aa7978f17ba
+* time: 2019-10-11T08:46:23Z
+* content: ExplicitArrayFillingInspection: check if assigned value is default fo…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/58b4cb2dd3e9b244746ab5fcdbc4534e5db01b82
+* time: 2019-10-11T08:48:26Z
+* content: IDEA-207434 Comprator.comparing(Map.Entry::getKey) -> Map.Entry.compa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/6fdffcb1b58a3c2b1cf0fcc2289add84b139abeb
+* time: 2019-10-11T08:50:45Z
+* content: incompatible types tooltip: highlight generic type components in the …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4e4396b0c81ec0d49888eb126f5bc08f3de2d865
+* time: 2019-10-11T08:50:58Z
+* content: ui: better indication of ActionToolbar groups in UiInspector
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0b3b1357a87abf3a5451c36b7b650a2e193576b4
+* time: 2019-10-11T08:51:31Z
+* content: Use proper gradle home, when it is correct and replace path in field:…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/34a4e401a6838ce93c00e7d40220e9b1bb4b3c56
+* time: 2019-10-11T09:15:05Z
+* content: diff: do not extract actions from DefaultActionGroup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/8614dc271e7eb7265003fce17a51772063f28bfb
+* time: 2019-10-11T09:23:41Z
+* content: EA-212538 - fixed
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/726882dc92d725fb1a1c9662aa5ed68b66421518
+* time: 2019-10-11T09:24:35Z
+* content: Unloadable PsiReferenceContributor
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/098d0ef15d2651dee5aaf86ebc825eb9c027b74f
+* time: 2019-10-11T10:03:24Z
+* content: Fix IDEA-224633 If a file is opened from a command line, the IDE unco…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c396ca2469703fa32f3f987025fae9f608f419f9
+* time: 2019-10-11T10:05:18Z
+* content: Fix inspection in TestCaseLoader and around: "Raw use of parameterize…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7fdbb24abfcb3d137dc59d45768d8427d474bc80
+* time: 2019-10-11T10:10:07Z
+* content: Fix possible Math.abs overflow in `TestCaseLoader#addClassIfTestCase`
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/75af6d5535fd141ede5e623e7c17230661425152
+* time: 2019-10-11T10:26:17Z
+* content: stored property and product workspace file is not experimental anymore
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/001c8c5d6058440c895a4321bc0a7af61c5244f2
+* time: 2019-10-11T10:28:33Z
+* content: prepare refactoring settings statistics (IDEA-222965)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/1e675657bca910fb7b6b95b04d976022d17ef7b1
+* time: 2019-10-11T10:30:19Z
+* content: IDEA-216616 Update LaF for IntelliJ / Darcula slider
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f342c6d61fe8d4e01b6e8f7600524f17d4b29ac4
+* time: 2019-10-11T10:39:48Z
+* content: Avoid keeping strong reference from doc component to PSI element via …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a86be9271191b97dd8a91482be2306e064a046d6
+* time: 2019-10-11T10:51:35Z
+* content: [groovy] IDEA-220527 Support constructor creation in 'Create method'
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ac424b268e6e5b1c610ca1344133254c5b556dd8
+* time: 2019-10-11T10:53:59Z
+* content: file type cache: a shorter and more correct way to listen to project …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7af6f92bc4ad1c21c866244891d3b30994a4a26b
+* time: 2019-10-11T11:05:46Z
+* content: IDEA-217039 terminal custom commands handling - proofread wording
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/2d72157ec5c17d92df1443704d57f1d4fa23a4fb
+* time: 2019-10-11T11:48:41Z
+* content: IDEA-221058 UI Designer preview doesn't work when project uses java 9+
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a598b5c93b43d402d577d849c9a879fd23e7fe69
+* time: 2019-10-11T11:56:27Z
+* content: Use ModalityState.any() for notifyCachedValueComputed() to avoid PSI …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/38c6d2edde1d33a83fe7ec241cb7e79ab88f679e
+* time: 2019-10-11T11:58:02Z
+* content: Cleanup (minor fixes in command-line launcher)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/db8fa759a285c9b5e989f0ce4c983d2c6f1e3e35
+* time: 2019-10-11T12:11:49Z
+* content: Use plugin ID as cache key also for myInstallingInfos (IDEA-224650)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/46ded24d319c11ea2a71a9ab6b97ea661df1daea
+* time: 2019-10-11T12:12:20Z
+* content: IDEA-215497 jbr/bin/java Access Denied during update from IC-192.4205…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c3d4629513183eb20e443725958179f5896f1d1a
+* time: 2019-10-11T12:15:20Z
+* content: vcs: when building a patch from changes, don't search for the date an…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/b9cc2e27fa24c9545a69a1cd0edfdffd88e3ced3
+* time: 2019-10-11T12:20:23Z
+* content: Don't report plugin as close to being unloadable if it has EPs which …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/039e965ea13818fceb08c995515167c135736d42
+* time: 2019-10-11T12:24:20Z
+* content: IDEA-177238 QuickFix for "Casting ... to ... may produce ClassCastExc…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c78392d8020d5e16a939313e8b299f3da0269877
+* time: 2019-10-11T12:33:34Z
+* content: Don't try to disable plugin which has already been uninstalled (IDEA-…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/24e646610449b279cd05cc3a649d6f8f07cba009
+* time: 2019-10-11T12:37:08Z
+* content: aggregated stats charts - backend changes (machine id as string)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/043379cde21ed471f8ca549743193fc119800325
+* time: 2019-10-11T12:37:45Z
+* content: Support custom JavaFX stylesheets
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/826f8b0e3644274d9d08fd38ae3f687403dcb1fe
+* time: 2019-10-11T13:02:55Z
+* content: git: use direct string as a logger category instead of the ::LOG magic
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a73b3b391ee5f7d6c9132464b8f249612d7d56f3
+* time: 2019-10-11T13:57:41Z
+* content: introduce MathUtil.nonNegativeAbs method and use it instead of Math.a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ba3d4d075080c21d08879d18bea271b20e51bde3
+* time: 2019-10-11T14:34:23Z
+* content: vcs-ignore: make action "Open .git/info/exclude" visible only in main…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/a2407d0db38ca0fa73778754fc2d8d4145e07df3
+* time: 2019-10-11T14:57:15Z
+* content: IDEA-224660 Search Everywhere: start matches should be prioritized
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5fe321ff60952d31a0bc0bff3a12e956c00e5a65
+* time: 2019-10-11T14:59:04Z
+* content: [ui] makes the main text label fill the whole width of a progress dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/e871e6f47c561cd6ab7650ba34813088fd6df0ec
+* time: 2019-10-11T15:02:21Z
+* content: [platform] non-blocking delete for local files/directories (IDEA-121070)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9f27c7a875a4951b16115ae7e9b45629dcd62009
+* time: 2019-10-11T15:23:41Z
+* content: IDEA-215497 jbr/bin/java Access Denied during update from IC-192.4205…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/620436b666fc5739ec121867f8e30316299c1ef9
+* time: 2019-10-11T15:27:26Z
+* content: make some clients independent of order of results in Query.findAll()
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/5780cc98041eb8c77792dff370b48910df2557bd
+* time: 2019-10-11T15:28:23Z
+* content: make some clients independent of order of results in Query.findAll()
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/15e30d4520a580e3aa77257b045f79df48430019
+* time: 2019-10-11T15:29:21Z
+* content: make some clients independent of order of results in Query.findAll()
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/2b081e39ab9be77b6d89c67751f82b00fd9997df
+* time: 2019-10-11T15:29:37Z
+* content: randomize order of results in Query.findAll() to uncover errors becau…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ec47a3fb7bfbd28b6026647c75c50478ffbbe643
+* time: 2019-10-11T15:35:48Z
+* content: rename ContainerUtil#optimize -> freeze, add wildcards, add documenta…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/3c693f175e53d0e2be8c5b346456f54a468a4c85
+* time: 2019-10-11T15:51:47Z
+* content: CachedFileType: use less memory for mod count
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/258451a560a7a4b479a9768fb69c8c3f723923f3
+* time: 2019-10-11T15:55:08Z
+* content: Attribute incorrect file type registration diagnostics to responsible…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/9ac60d15b35a9f79419826d08fe11921e87cfdd1
+* time: 2019-10-11T16:02:28Z
+* content: cleanup: fewer sort() calls
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4255ca958b43aa424132ea885d38cbc7b2c923ff
+* time: 2019-10-11T16:26:56Z
+* content: Cleanup (
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/15c4d4e435ac7f990bdfb1be2015ee405e0fff5e
+* time: 2019-10-11T16:35:25Z
+* content: Remove unneeded editorComponentActive check from action update (EA-21…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d081fd2c2e7516c81108d13c5a7ee2dfbb308812
+* time: 2019-10-11T16:45:17Z
+* content: Partial implementation of TextComponentCaretModel.moveCaretRelatively…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d1280b111018357ce171f35d9ae1ef123338cb96
+* time: 2019-10-11T16:59:56Z
+* content: Return empty string as active toolwindow ID if project is disposed (E…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/603077e4eed5a8d8846c4b52bab0539ab685686e
+* time: 2019-10-11T17:08:12Z
+* content: clear file type cache on VFS change
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f3e7e328387724ffdc6e552b3e01218d7a269e93
+* time: 2019-10-11T17:09:22Z
+* content: IDEA-223645 Toolbar buttons are not clickable in full screen mode
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ab557bf86f8dbd9be041043180cd816559dda9e8
+* time: 2019-10-11T17:10:00Z
+* content: Check run configuration validity in read action (EA-214341 - assert: …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/8975c994f13ef077aee41c44e9691d9f8d651b6e
+* time: 2019-10-11T17:35:35Z
+* content: Attribute getDetectedFileTypes() diagnostic to correct plugin (EA-214…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/0b65a3faff29ee11d7d39d553c9c0235e8e28220
+* time: 2019-10-11T18:06:23Z
+* content: module path for tests: filter packages without classes and default pa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/43b98ecd0c8dcf6cc368994d7608fc2689b63c1d
+* time: 2019-10-11T18:47:51Z
+* content: fix memory leak in tests (IDEA-CR-53382)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/366449fdd0320fca403f02432655a59f2e86197f
+* time: 2019-10-11T18:54:46Z
+* content: Attribute error in cloning annotator to correct plugin (EA-142807 - N…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/94e830613ca6d502fce01dafaaecfff5a9d1c2ed
+* time: 2019-10-11T19:18:35Z
+* content: IDEA-224603 Improve Could Not Load Commit Message dialog shown on Amend
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/c275ff4d1e68ef2b1e1053d784d12d4f7b692d5f
+* time: 2019-10-11T19:55:27Z
+* content: [java] adding stub-based "get provided interface" and "get used class…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/dbc31144f99002268a5f41bd0e99346aab4972ff
+* time: 2019-10-11T20:16:26Z
+* content: extract method: disable array access folding by default for cases whe…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/f2d460469a1e5d953ffb541fe041459f97aa1fa5
+* time: 2019-10-11T20:31:03Z
+* content: main method configuration: check method name before suggesting to cre…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/d94fa15312cf6434d399b72aae44a8c4f6e5e00a
+* time: 2019-10-11T20:51:05Z
+* content: delete long deprecated methods, prolong used deprecations with additi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/77f1e33cef6e909e2fce68827a91e47cafeccb9d
+* time: 2019-10-11T21:40:45Z
+* content: IDEA-224617 Find in Path dialog: Path is overlapped by file name
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/4f219faac7fdeefa3700d9c4c740d04aaa4565d5
+* time: 2019-10-11T21:42:08Z
+* content: [java] using stub-based "get provided interface" and "get used class"…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/590686f5f9c65cddd670b98820fced19f1335d14
+* time: 2019-10-11T21:44:05Z
+* content: Cleanup (simpler test configuration; enabled AST assertion; formatting)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/dc578e119b5f85715b952e48dbe5012991264233
+* time: 2019-10-11T21:44:59Z
+* content: Cleanup (formatting)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/317318830eecb3bb9e715cff20221be2ad3db330
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-11T21:48:58Z
+* content: May be better to change default level to WEAK WARNING? Any big codebases will have a lot of yellow code after upgrade to 2019.3. Also consider fact that this inspection doesn't have quick-fix - it will distract a lot after IDEA upgrade.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-11T23:06:03Z
+* content: EA-212325 - assert: CallerMethodsTreeStructure.buildChildren
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/ebc608ed445cf3f3a2277e43b3d51aafd713116f
+* time: 2019-10-11T23:24:47Z
+* content: more on IDEA-160274 Field Call Hierarchy
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/060b465fff5e26b0ca0acfd4c57fd337c6f6733b
+* time: 2019-10-12T03:44:27Z
+* content: Updated debug renderer
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/74d3ccc235e5c6475185141c27498f84f8245993
+* time: 2019-10-12T07:25:14Z
+* content: Updating versions of project dependencies: jdkBuild->11_0_4b520.2
+* codeUrl: github.com/JetBrains/intellij-community/pull/1212/commits/7e258c1dc0c1d9316af342d37f5b8abf65590304
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-12T07:36:00Z
+* content: Many times the String variable is json. If it is displayed in txt format, it is not convenient to read. Add json formatting window for easy reading.
+* time: 2019-10-12T07:36:00Z
+* content:  
+************************************************************************

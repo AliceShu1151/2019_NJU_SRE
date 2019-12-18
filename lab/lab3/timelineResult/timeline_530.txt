@@ -1,0 +1,23 @@
+************************************************************************
+* id: 530
+* requirement: Avoid splitting inline JavaDoc tags when reformatting.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-26T13:16:20Z
+* content: Avoid splitting inline JavaDoc tags when reformatting.
+* codeUrl: github.com/JetBrains/intellij-community/pull/530/commits/f2fd1c0c536bfc762a9563e7b9a8ecf6c2a3fb26
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-26T22:13:42Z
+* content: Fixes IDEA-122233.
+* time: 2017-03-26T22:13:42Z
+* content: There's another small change here with how short lines are handled. The old code would allow the comment line to overrun the right margin if the line would otherwise be less than two-thirds the desired width.
+* time: 2017-03-26T22:13:42Z
+* content: I left this out in the update because I worry that allowing the margin to be overrun in theses cases could cause violations with tools like Checkstyle. I'm happy to re-add this logic if that's preferred.
+************************************************************************

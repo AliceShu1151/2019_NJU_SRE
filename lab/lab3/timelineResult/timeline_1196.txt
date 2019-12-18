@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1196
+* requirement: IDEA-26855 Move system and config directories in Windows under %LOCALAPPDATA%
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-23T21:02:46Z
+* content: Move system and config directories in Windows under %LOCALAPPDATA%
+* codeUrl: github.com/JetBrains/intellij-community/pull/1196/commits/dea51e54ac1b89f37f24bdcbd9c3efbaa5d16cdc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-09T00:25:09Z
+* content: The new location of the system and config directories is under %LOCALAPPDATA%\Company Name\Product Name\N.M, where N and M are the major and minor version.
+************************************************************************

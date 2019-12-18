@@ -1,0 +1,34 @@
+************************************************************************
+* id: 312
+* requirement: Fixed `ResultOfAssignmentUsed` inspection, when it's not in method
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-24T16:34:18Z
+* content: Feel free to check the examples in the provided tests, e.g. https://github.com/paplorinc/intellij-community/blob/ResultOfAssignmentUsed/plugins/groovy/test/org/jetbrains/plugins/groovy/lang/highlighting/GrResultOfAssignmentUsedTest.groovy
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-02T16:54:47Z
+* content: Fixed `ResultOfAssignmentUsed` inspection, when it's not in method
+* codeUrl: github.com/JetBrains/intellij-community/pull/312/commits/1e7810d41c7c84d3412692f87543d07de834c0e1
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-22T15:21:00Z
+* content: @dovchinnikov, @maxmedvedev, @ignatov ?
+* time: 2016-03-23T15:54:03Z
+* content: org.jetbrains.plugins.groovy.refactoring.convertToJava.CodeBlockGenerationTest and org.jetbrains.plugins.groovy.refactoring.convertToJava.FileGenerationTest are failing after this change. This is related to another bug, I'll fix it by myself.
+* time: 2016-03-23T15:54:03Z
+* content: Meanwhile the PR is OK, I'll merge it after I fix that bug.
+* time: 2016-03-23T15:54:51Z
+* content: You may want to fix commit message btw :)
+************************************************************************

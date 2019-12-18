@@ -1,0 +1,29 @@
+************************************************************************
+* id: 123
+* requirement: IDEA-116247 Path does not exist with cyrillic chars at Git
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-10T19:22:49Z
+* content: fix git unescape cyrillic names
+* codeUrl: github.com/JetBrains/intellij-community/pull/123/commits/655fd0f6c783b765882d7c319214317284d9e6f0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-10T20:06:40Z
+* content: Unescaping git path cuts char after escape sequence. Upper iteration loop iterates over string, when gets slash char inner loop starts iterate over string to collect bytes. After last iteration of inner loop pointer stayed at char next by escape sequence, but after next iteration of outer loop pointer moved to next char.
+* time: 2013-11-10T20:06:40Z
+* content: http://youtrack.jetbrains.com/issue/IDEA-116247
+* time: 2014-11-30T15:43:16Z
+* content: Sorry that it took so long to analyze the patch. The fix is correct for cyrillic paths and most of other non-ASCII as well, but if a path contains diacritics more support is needed, because git always returns these paths in escaped NFD forms (decomposed).
+* time: 2014-11-30T15:43:16Z
+* content: To solve all these issues at once I made a change to always call git with "-c core.quotepath=false" which makes Git return paths exactly as they were stored in the database. This solves both simple (cyrillic) and complex (diacritical) cases.
+* time: 2014-11-30T15:43:16Z
+* content: Unfortunately, Git understands "-c" only since 1.7.2 while we support 1.7.1+. Therefore the "octal" part of GitUtil.unescapePath will still be in use for older Git versions, while for newer ones character will be passed as is.
+* time: 2014-11-30T15:43:16Z
+* content: Here is the commit: 0273d29
+************************************************************************

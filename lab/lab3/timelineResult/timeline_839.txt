@@ -1,0 +1,36 @@
+************************************************************************
+* id: 839
+* requirement: Change resolve class scope to include libraries
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-27T04:50:50Z
+* content: Change resolve scope to include dependents and libraries
+* codeUrl: github.com/JetBrains/intellij-community/pull/839/commits/0964b25b3354ca15266738e98050fba3b4d4ec6a
+* time: 2018-07-27T05:56:27Z
+* content: Add optimization to scope
+* codeUrl: github.com/JetBrains/intellij-community/pull/839/commits/b19ffd53c6663ad344782e650985a4aa506dd867
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-27T06:25:04Z
+* content: Wanted to open a conversation about this. The build at salesforce uses libraries to cut down on the amount of compiling that is done on a developers machine. What this means is a developer could have references of classes in their workspace that are part of libraries.
+* time: 2018-07-27T06:25:04Z
+* content: This change is to allow us to search for implementors and usages inside of these libraries.
+* time: 2018-07-27T06:25:04Z
+* content: My concern, something like this is probably only found in very small number of projects such as ours. I do worry that this adds unneeded performance hits for the 99% so wanted to get opinions on whether this should be gated somehow.
+* time: 2018-07-27T06:25:04Z
+* content: This is also a work in progress. I have some comments in the code as to whether I implemented it correctly. I also have not done much testing (its getting late) but I will get around to it.
+* time: 2018-07-30T10:28:27Z
+* content: Hello, thank you for your efforts. However libraries cannot depend on modules in the current implementation of IntelliJ project model, i.e. it's not possible to specify which modules a particular library depends on. So your change will mean that usages of an element from a module will be searched in all libraries and SDKs defined in the project, which may lead to unacceptable performance degradation in big projects. Also note that it isn't enough to change use scope to support this, e.g. if you delete a method used in a library the compiler want warn you and you'll get exceptions at runtime. I don't see how this can be properly supported without doing major changes in our project model. We have plans to do that, but no definite dates yet.
+* time: 2018-07-30T10:28:27Z
+* content: In future please firstly file an issue describing a problem before submitting a pull request with the solution for that problem. This way we can discuss possible ways to solve the problem before we rush into it. Maybe it's possible to do what you want with the current implementation; e.g. you can try adding such sources as modules, but exclude their content from compilation in Settings | Compiler, and add the output as a module library.
+* time: 2018-08-01T02:17:35Z
+* content: @chashnikov No worries, like I mentioned in my OP, I was hoping to use this PR as a means to open a conversation (I prefer to talk around code than over bug reports). I realize our build is unique where the dependency graph is turned upside down. I was hoping we could talk about it over the PR but if you prefer to take it to youtrack I can open an item. My hope was we could have this feature behind a setting or some sort of logic branch to make sure we could benefit from this implementation but not impose the potential performance gap on others.
+* time: 2018-08-01T02:17:35Z
+* content: Anyway, I did this work as a fun side project. I had fun learning some code and navigating the IntelliJ sources. Again, if you prefer the conversation to be taken to youtrack, Ill open a request there.
+************************************************************************

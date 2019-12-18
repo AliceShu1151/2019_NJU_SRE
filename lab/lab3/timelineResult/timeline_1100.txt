@@ -1,0 +1,26 @@
+************************************************************************
+* id: 1100
+* requirement: IDEA-209622: VCS Ignore minor changes option
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-25T23:48:20Z
+* content: VCS Ignore minor changes option:
+* codeUrl: github.com/JetBrains/intellij-community/pull/1100/commits/fb9684c5fa4ad850a476bb0f5206ebe318326562
+* time: 2019-03-25T23:49:27Z
+* content: Merge remote-tracking branch 'remotes/origin/master' into feature/IDE…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1100/commits/543d20e67fc3dbcd7f2f42a417bb3ef554a5aecc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-25T23:52:21Z
+* content: VCS Ignore minor changes option: some VCS changes (e.g. git commit, or github PR) contains only cosmetic changes like formatting, line ending and/or imports reformatting: diff view for those files shows no changes due to used text ignore settings. It makes review and search over vcs history harder.
+* time: 2019-03-25T23:52:21Z
+* content: This PR adds option to ignore minor (in terms of used text ignore settings) changes to VCS History, Github PR, and other VCS-related changes.
+* time: 2019-03-25T23:52:21Z
+* content: Closes IDEA-209622
+************************************************************************

@@ -1,0 +1,19 @@
+************************************************************************
+* id: 615
+* requirement: Add name ID for usage tree component
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-23T22:40:13Z
+* content: Add name ID for usage tree component
+* codeUrl: github.com/JetBrains/intellij-community/pull/615/commits/10a9e91f4ae3af10527cca664ca09f6f7d8ae054
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-23T22:58:40Z
+* content: UI tests benefit from having an identifier set on the view components, since programming UI tests to locate a UI component is much easier when using an identifier.
+************************************************************************

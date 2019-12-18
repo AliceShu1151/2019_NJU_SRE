@@ -1,0 +1,43 @@
+************************************************************************
+* id: 1069
+* requirement: IDEA-137065: Support escape sequences for 8-bit and 24-bit colors in console window
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-27T18:33:15Z
+* content: IDEA-137065: Support escape sequences for 8-bit and 24-bit colors in …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1069/commits/4f72709aa4cf9f2848c63decd18cb2708af856c8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-27T19:37:38Z
+* content: Original PR from Rust plugin - intellij-rust/intellij-rust#3312.
+* time: 2019-02-27T19:37:38Z
+* content: Currently IntelliJ Platform supports only 16 ANSI colors (standard colors and high intensity colors). The old ColoredOutputTypeRegistry instance simply ignores 8-bit and 24-bit ANSI color escapes. In this PR ColoredOutputTypeRegistry replaces unsupported 8-bit and 24-bit colors with nearest (in Euclidean space) supported ANSI colors. Note that user can configure color mapping in editor settings (Preferences | Editor | Console Scheme | Console Colors | ANSI Colors). In addition, some themes also set the colors. So, this solution gives us interoperability with existing themes.
+* time: 2019-02-27T19:37:38Z
+* content: Here is the simple Python script that uses all the 8-bit and 24-bit escape sequences: https://gist.github.com/mgedmin/2762225 The output of this script is shown below:
+* time: 2019-02-27T19:37:38Z
+* content: Embedded local terminal:  
+* time: 2019-02-27T19:37:38Z
+* content: Console window without this fix (just ignores the 8-bit and 24-bit escape sequences):  
+* time: 2019-02-27T19:37:38Z
+* content: Console window with this fix (uses the nearest supported color):  
+* time: 2019-03-01T09:06:03Z
+* content: Currently IntelliJ Platform supports only 16 ANSI colors – do you know where does this restriction come from?
+* time: 2019-03-01T09:28:53Z
+* content: @piotr-dobrogost No, but I think the reason is that we want to give the user the ability to customize the console colors, but now it's impossible to do, because new colors will break the existing color schemes.
+* time: 2019-03-01T14:55:50Z
+* content: Well, I don't see any conflict in supporting any number of colors and allowing to customize the chosen 16 of them.
+* time: 2019-03-04T07:31:07Z
+* content: @piotr-dobrogost For example, a program may explicitly use white (255;255;255) for text. In this case, the user of the console with a white background can change the text color to black. But if the program uses an “almost” white color (e.g. 254;254;254), the user will not be able to configure the color. It looks like a problem.
+* time: 2019-03-04T09:48:26Z
+* content: @mchernyavsky @piotr-dobrogost I don't think that colors from 256-palette or especially true colors must be customizable. While this is possible, I don't think that it can be useful in any imaginable scenario. The corner case of black on black or white on white can be work-arounded by the addition of the slider in the settings which will specify the minimal HSV distance between foreground and background colors and in the case when the actual distance is less than specified, colors are forcibly moved apart from each other until the distance is equal to the specified in the settings.
+* time: 2019-03-04T09:48:26Z
+* content: However, this is not required as well: almost any terminal application, like konsole or gnome shell simply displays the color specified by the application and the problem of matching background and foreground treats as application's problem, not terminal's problem.
+* time: 2019-03-04T09:50:27Z
+* content: Also, personally I'd prefer usage of the exact color, not the nearest one, since otherwise any gradient would become invisible to the user.
+************************************************************************

@@ -1,0 +1,202 @@
+************************************************************************
+* id: 301
+* requirement: Canonicalize paths before sending to file watchers
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-28T15:22:30Z
+* content: Canonicalize paths before sending to file watchers
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/a7462f524d899318da2b8f1edc9a838af9899d3d
+* time: 2015-08-28T15:22:30Z
+* content: Change join to combine
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/e6a9f8403bb9e2706c7bdc76946b9c8b1e9780ea
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-02T19:16:05Z
+* content: Canonicalize paths before sending them to the pluggable FileWatchers and restore paths to their original potentially non-canonical form when they are returned from the file watchers.
+* time: 2015-09-02T19:16:05Z
+* content: This fixes an issue where the fs notifier binary behaved incorrectly when it was presented with symlinks. The fs notifier has some logic to avoid watching certain mount points, but if a user symlinks into a mount, the fs notifier's logic will be bypassed and the mount points will be watched.
+* time: 2015-09-02T19:16:05Z
+* content: This change is done in the FileWatcher rather than the native fs notifier because:
+* time: 2015-09-02T19:16:05Z
+* content: Change-Id: I61fd3ac4e3bfbb8b06c2d92190e6db36e7ff00c1
+* time: 2015-09-08T10:35:09Z
+* content: Setting roots and processing notifications under the same lock may cause a deadlock between JVM and native watcher processes on Linux - we had such issues in the past.
+* time: 2015-09-08T12:13:25Z
+* content: There is a problem with CanonicalFileMapper.getMapping(Collection<String>): because on Windows and OS X the native process effectively reports events from entire disc, the method may be quite hot.
+* time: 2015-09-08T12:19:26Z
+* content: I'd suggest skipping already-canonical paths - ideally, the mapper should introduce little to no overhead when no symlinks are involved.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-10T18:33:58Z
+* content: trie implementation
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/979eefc62b7e67435222328302975085506cf576
+* time: 2015-09-10T22:27:07Z
+* content: add check when a file is watched by a symlink and a canonical path
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/ad48e6fd4e3fef12e4ce0519393f34273fdd2796
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-10T22:30:31Z
+* content: I uploaded a POC for an implementation that uses a tree so almost nothing is done in the case of already canonical paths. There is a problem when there is a symlink watchroot and a canonical watch root that leads to the same file. Currently, it is solved by an extra loop iteration at the end of the method, but I'm not a big fan of it. I'll think more about it tonight. I wanted to get your input on the new implementation though with regards to performance when there are no symlinks present.
+* time: 2015-09-10T22:31:39Z
+* content: With regards to windows and OS X, are you saying that when any file is changed on disk, the filewatcher gets notified?
+* time: 2015-09-18T17:42:58Z
+* content: @trespasserw I was wondering if there were any comments about this approach.
+* time: 2015-09-18T21:12:31Z
+* content: @trespasserw Hold off on a review, i have a few things I want to clean up first
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-18T22:14:46Z
+* content: Correctly match to a flat root if the root itself is reported dirty
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/51a518c7fb4617c5df8e9ac36ebb52032b31b7fe
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-18T22:44:46Z
+* content: Alright, it should be good to look at again
+* time: 2015-09-21T18:02:36Z
+* content: Sorry, had a hard week, will take a look at it tomorrow.
+* time: 2015-09-21T18:02:36Z
+* content: Regarding changes on OS X / Windows - yep, that is true. The current approach is to filter out unwatched changes on the Java side (see NativeFileWatcherImpl.checkWatchable()).
+* time: 2015-09-22T12:23:25Z
+* content: It just came to me that there already exist a very similar kind of path mapping in NativeFileWatcherImpl.checkWatchable() used to handle drive substitutions on Windows. So, unless having a single mapper across all watchers is strictly needed, I feel it would be much simpler to reuse that code - populating myMapping inside setWatchRoots() probably is enough. What do you think?
+* time: 2015-09-22T20:54:21Z
+* content: Just so I understand, we would have to add the canonicalization code that populates myMapping, because it isn't there right now, correct? I didn't notice this myMapping getting populated during my quick test, but I definitely might have missed something.
+* time: 2015-09-23T11:52:35Z
+* content: Exactly. Quick check shows it should work - well, at least it passes your tests :)
+* time: 2015-09-23T11:52:35Z
+* content: You never saw myMapping populated because it requires Windows host - check out FileWatcherTest.testSubst().
+* time: 2015-09-23T21:45:15Z
+* content: Having a single mapper across all watchers isn't strictly needed, but each watcher would have to implement its own. Each file watcher has to know whether a given path belongs to it, and I think it pretty much has to canonicalize to do so. It seems to make sense to have a single one.
+* time: 2015-09-23T21:45:15Z
+* content: Is it a good idea to instead remove myMapping from the native file watcher, if it serves the same purpose?
+* time: 2015-09-24T17:23:50Z
+* content: You see, it is kind of implementation detail. NativeFileWatcherImpl uses OS APIs and gets events by canonical paths hence the mapping is needed - but it's not necessarily true for other watchers.
+* time: 2015-09-24T17:23:50Z
+* content: I think it would be better to extract mapping and path filtering to some shared place so that any watcher may use it but isn't obliged to.
+* time: 2015-09-24T17:59:59Z
+* content: No, it's not necessarily true for other watchers, but we have three and it's turned out true for all of them. I suspect it would be true for almost any file watcher, but sure, it doesn't have to be.
+* time: 2015-09-24T17:59:59Z
+* content: Computation-wise, it seems like we either do it once, or 1 + N times, where N >= 0. If we had to do it ourselves, we'd just stick this watcher implementation into each of our file watchers (which we certainly can - it just seems a nicer interface to the file watchers to know that it's already canonicalized).
+* time: 2015-09-30T12:40:03Z
+* content: OK, three is convincing enough. To avoid multiple computations, both mapping and filtering need to be moved out of NativeFileWatcherImpl into FileWatcher then.
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-30T15:43:07Z
+* content: Move watcher communication out of lock
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/7f0caa51060110c8660a55a6106342b83aa1f40a
+* time: 2015-09-30T17:55:04Z
+* content: Reorg code to move filtering out of native filewatcher
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/ea941af394040f7ac8df3713ef5d076f55478c97
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-30T18:38:37Z
+* content: Ok, that sounds good.
+* time: 2015-09-30T18:38:37Z
+* content: I have a question about the mapping. It would be clean if we could remove that code entirely. Since paths are canonicalized before being sent to the native file watcher, is it still necessary to support the REMAP command in the native file watcher?
+* time: 2015-09-30T18:42:23Z
+* content: AFAIK File.getCanonicalPath() does not resolve substitutions on Windows, so REMAP remains relevant.
+* time: 2015-09-30T18:49:02Z
+* content: Ok, good to know. I'll consolidate the logic and push up a new commit.
+* time: 2015-09-30T22:48:44Z
+* content: I pushed a version of the code where the filewatcher does the filtering. The commit comment sums up the changes. One thing I'm a bit unhappy with is how to deal with the complex filtering logic revolving around the "exact" param from the old checkWatchable method. I mostly ignored it and allowed recursive roots to also match their parent.
+* time: 2015-10-01T11:00:15Z
+* content: That logic is needed to handle notifications on OS X correctly. With the patch applied some tests fail.
+* time: 2015-10-02T18:00:22Z
+* content: Thanks for that info.
+* time: 2015-10-02T18:00:22Z
+* content: I locally rebased on the jetbrains master and ran ant test but didn't see any obvious failures. Can you let me know what tests failed and how to run them?
+* time: 2015-10-02T18:00:22Z
+* content: thanks!
+* time: 2015-10-02T18:26:24Z
+* content: Some of FileWatcherTest tests - 5 or 6; testDirectoryOverlapping certainly was among them. I can post the whole log if you need it.
+* time: 2015-10-02T18:26:24Z
+* content: You need to run the test on OS X to make it fail - because it verifies not only a Java part but native implementations as well, and they all behave differently. Notably, the OS X one produces only directory-level notifications (DIRTY and RECDIRTY) - that's why the "exact" parameter is important.
+* time: 2015-10-02T18:29:24Z
+* content: Thanks, I ran those tests in the IDE on linux but saw no errors (for obvious reasons) and ran ant test on my mac, but it looks like that must not run those tests. I'll run the tests from the IDE and that should give me the errors to investigate. thanks!
+************************************************************************
+*=======================================================================
+* round 4
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-05T16:11:10Z
+* content: Handle imprecise OS X file watcher
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/6aa48b66e5bf7ac6e878fe8a0073b9e24d9fa9ce
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-06T18:02:07Z
+* content: Ok, the tests pass on linux and os x now. I don't have a windows box, so I can't speak to those tests passing or not.
+* time: 2015-10-09T16:37:44Z
+* content: Checking. Meanwhile, could you please take a look at FileWatcherTest.testIncorrectPath()? It now takes 2 minutes on Linux, seemingly because of the mapper freaking out over the non-existing path.
+* time: 2015-10-12T15:28:00Z
+* content: Thanks.
+* time: 2015-10-12T15:28:00Z
+* content: I was able to repro the slowness on OS X, so I'm looking into it there (and will verify any solution on linux). It looks like the problem is actually with the test structure. The test waits (in effect) until some event is sent back from the file watcher impl. Previously, the unwatchable event would cause the waiter to be notified and the test would proceed. With the patch, the invalid path isn't being sent to the file watcher impl, so there will never be a response to notify the waiter. This causes the test to wait until the timeout.
+* time: 2015-10-12T15:28:00Z
+* content: This leads to two questions:
+* time: 2015-10-12T19:12:46Z
+* content: People use it in unexpectedly creative ways :) The test was added to make sure native watchers can tolerate invalid paths - there was a bug in Linux implementation which caused it to terminate prematurely.
+* time: 2015-10-12T19:12:46Z
+* content: I rather agree that non-existing paths shouldn't make it to the helper process. The test should be rewritten then to reflect the fact.
+* time: 2015-10-12T19:12:46Z
+* content: There are also some strange failures on Windows, investigating.
+************************************************************************
+*=======================================================================
+* round 5
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-13T13:27:42Z
+* content: Changed IncorrectPath test
+* codeUrl: github.com/JetBrains/intellij-community/pull/301/commits/4552f94bf6ea79dc89771e6544cc3555f31610ce
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-13T17:59:56Z
+* content: Rebased and updated file watcher tests for non-existing paths. Commit comment has a description of what I did.
+* time: 2015-10-16T01:04:44Z
+* content: Hey, I was wondering if you had updates about the windows test. I can probably get access to a windows VM, but if you happen to already have the failures for me that would be great.
+* time: 2015-10-16T01:04:44Z
+* content: I was also wondering if you had any other comments about the commit.
+* time: 2015-10-16T12:00:20Z
+* content: Sorry, forgot to post an update. Most of those problems were caused by me running tests as a regular user (creating symlinks on Windows requires elevated privileges). The rest are more complicated and partially caused by substitutions handling in IdeaWin*.dll helper, still checking out.
+* time: 2015-10-19T15:45:40Z
+* content: I just pushed an alternative implementation based on your patches. It offloads all the mapping and filtering from NativeFileWatcherImpl to FileWatcher, with actual mapping code extracted to a separate class. Breaks the API a bit but makes pluggable watchers simpler to implement. Please take a look - does it suits your needs?
+* time: 2015-10-19T15:47:58Z
+* content: Regarding non-existing paths - I would like to preserve the current behavior until I figure out how to deal with substitutions and other kinds of NTFS reparse points.
+* time: 2015-10-19T18:02:53Z
+* content: Thanks! It looks good.
+* time: 2015-10-19T18:02:53Z
+* content: My only concern is that the mapping lookup code is linear in the number of paths being watched. What do you think of a new patch on top of your change that replaces the mapping lookup with something that uses a tree or Map so the lookup is on the order of number of path components rather than number of watched roots?
+************************************************************************

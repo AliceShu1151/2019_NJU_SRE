@@ -1,0 +1,41 @@
+************************************************************************
+* id: 1215
+* requirement: Another custom Logger.getInstance() inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-16T20:28:06Z
+* content: Another custom Logger.getInstance() inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/1215/commits/efb9c06a8830cc02bf38129c438810967dbfddb3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-17T23:34:37Z
+* content: I noticed some invocations like:
+* time: 2019-10-17T23:34:37Z
+* content: And, since the actual FQNs are invariably longer than in my example, I naturally began to wonder if any of these invocations was misspelled or out-of-date.
+* time: 2019-10-17T23:34:37Z
+* content: So here's an inspection with a quick-fix, which I made by copying the one that rewrites:
+* time: 2019-10-17T23:34:37Z
+* content: to:
+* time: 2019-10-17T23:34:37Z
+* content: and then changing the search template appropriately.
+* time: 2019-10-17T23:34:37Z
+* content: (FYI, I did this directly in the XML, because the inspection settings page just felt too ... cramped and modal.)
+* time: 2019-10-17T23:34:37Z
+* content: I was pleasantly surprised that I didn't need to do anything to turn the FQN text into an expression.
+* time: 2019-10-17T23:34:37Z
+* content: P.S. There are invocations like this in, e.g., Kotlin that would need to be handled separately.
+* time: 2019-10-17T23:34:37Z
+* content: Signed-off-by: Samuel Bronson naesten@gmail.com
+* time: 2019-10-18T04:14:51Z
+* content: Hmm, I seem to have made a mistake in naming the inspection ... I'll push a fixed version soonish ...
+* time: 2019-10-24T23:34:11Z
+* content: Well, I was all ready to submit a version with an HTML-safe title, but then I decided I might as well also send you a preview of what happens when you actually apply the quick fix, and it turned out that there were several instances where it generated invalid code (because the FQN from the string did not refer to a class in the compilation classpath).
+* time: 2019-10-24T23:34:11Z
+* content: So I'm postponing this until I find a satisfactory way of checking whether an FQN resolves to a class. (Which might involve also figuring out how to get Groovy injection working on these script attributes.)
+************************************************************************

@@ -1,0 +1,19 @@
+************************************************************************
+* id: 45
+* requirement: IDEA-99364 Highlighting constructor correction - highlight only javaReference, without type parameters
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-07T12:58:52Z
+* content: IDEA-99364 Highlighting constructor correction - highlight only javaR…
+* codeUrl: github.com/JetBrains/intellij-community/pull/45/commits/137d73db691f14246a205f69c06da594fbea3b89
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-07T13:00:25Z
+* content:  No description provided. 
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1251
+* requirement: Do not try to migrate string binary expressions
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-16T20:04:26Z
+* content: Do not try to migrate string binary expressions
+* codeUrl: github.com/JetBrains/intellij-community/pull/1251/commits/efe8f4263fb494375b49570066e542a742502578
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-16T20:07:55Z
+* content: Let be
+* time: 2019-11-16T20:07:55Z
+* content: When asking type migration of variable number from int to long, the migration fails because it fails to convert variable query from String to long.
+* time: 2019-11-16T20:07:55Z
+* content: This PR makes type migration consider those kind of assignment as migration compatible, i.e. not requiring any kind of conversion.
+* time: 2019-11-19T00:43:46Z
+* content: Tests added
+************************************************************************

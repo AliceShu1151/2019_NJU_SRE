@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1094
+* requirement: Reduce memory used for comparing branches (IDEA-209343)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-20T23:06:53Z
+* content: Reduce memory used for comparing branches (IDEA-209343)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1094/commits/fc5a6fcd27117dd51791775afea6463abba042a9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-20T23:08:16Z
+* content: Memory consumption is reduced by not creating duplicate String objects. In my testing it reduced amount of memory occupied by the String objects used by the branch comparison by 11x. Opening the comparison dialog became faster by 13%, probably due to reduced memory pressure.
+* time: 2019-03-20T23:08:16Z
+* content: Deduplication of strings is done using a new GitStringInterner class that contains a global string cache. The cache is cleared at the end of the GitBranchWorker.loadCommitsToCompare method. It would be nice to use a local cache and pass it explicitly to all GitLogParser instances created by the branch comparison code, but that would require significant changes to existing APIs.
+************************************************************************

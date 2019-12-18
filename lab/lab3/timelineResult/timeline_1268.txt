@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1268
+* requirement: [Gradle] Always create tooling model copy for GradleExtensions.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-12-05T20:41:43Z
+* content: [Gradle] Always create tooling model copy for GradleExtensions.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1268/commits/e336c896b2a2ecbc2ebc3f70d0f58567a8747888
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-12-05T21:02:04Z
+* content: With custom serialization, multiple projects can share the same instance of tooling model after serialization, because the serialization mechanism uses hashcode as identifier to avoid re-creating objects. While two projects can have the same hashcode if their fields are identical.
+* time: 2019-12-05T21:02:04Z
+* content: This will cause problems if the shared tooling model is updated by one project, and then all projects sharing that instance will get unintended change.
+* time: 2019-12-05T21:02:04Z
+* content: For example, with GradleExtensions model, each project adds their own task list to the same instance of GradleExtensions.
+************************************************************************

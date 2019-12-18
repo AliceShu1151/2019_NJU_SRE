@@ -1,0 +1,33 @@
+************************************************************************
+* id: 809
+* requirement: IDEA-189671: Refresh Editor Focus after closing split
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-14T02:03:18Z
+* content: IDEA-189671: Refresh Editor Focus after closing split
+* codeUrl: github.com/JetBrains/intellij-community/pull/809/commits/1b06013ed3ce343e1c15e8bf9ddef7b2f35df810
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-14T02:44:31Z
+* content:  No description provided. 
+* time: 2018-06-17T17:52:39Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-06-20T02:00:03Z
+* content: I have signed the contributor license agreement now.
+* time: 2018-06-25T21:45:26Z
+* content: Thank you, but the fix you suggested is a bit tricky, I've fixed the problem in more obvious way (I believe).
+* time: 2018-06-27T18:59:08Z
+* content: the reason i fixed it this way is because there are quite a few edge cases which just get fixed by "resyncing" the state. it would obviously be better to make sure that things are always kept in sync, but that would involve a much bigger change.
+* time: 2018-06-27T18:59:08Z
+* content: All I do basically is ask for what the current window should be and then make sure that what should be the current window actually is focused.
+* time: 2018-06-27T18:59:08Z
+* content: I also tried getting to the bottom of why it ended up in an inconsistent state in the first place but I gave up after about an hour, because I just didn't have the time to chase after this.
+* time: 2018-06-27T18:59:08Z
+* content: In that sense this is rather a Hotfix, that (having run this for a few days now) has been working properly for me.
+************************************************************************

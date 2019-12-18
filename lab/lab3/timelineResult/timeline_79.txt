@@ -1,0 +1,33 @@
+************************************************************************
+* id: 79
+* requirement: SSH agent authentication for git4idea, svn4idea
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-05-28T16:17:42Z
+* content: SSH agent support for git and svn integrations; separate out old tril…
+* codeUrl: github.com/JetBrains/intellij-community/pull/79/commits/20bd8566ef7e0dbcefb2b6b290a8332d9b11ecf5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-05-28T18:29:42Z
+* content: Hi Charles, Have you submitted a contributor agreement? If not, could you please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and print it out, scan and send to contribute@jetbrains.com? Thanks!
+* time: 2013-05-28T18:34:10Z
+* content: This is a work-for-hire for my employer; I've asked our legal department to approve a CA, and will report back after it's executed.
+* time: 2013-05-28T18:34:10Z
+* content: Any chance code review could happen in the interim, so we're ready to merge when the paperwork is ready?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-05-31T16:35:25Z
+* content: Add missing dependency on jna-platform / jna-utils for pageant suppor…
+* codeUrl: github.com/JetBrains/intellij-community/pull/79/commits/f3de0b24b6a6665ac4efc6b306fd6fc49dde4e57
+************************************************************************

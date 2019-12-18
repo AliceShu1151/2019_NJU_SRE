@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1155
+* requirement: Skip Kotlin classes in NotNullInstrumentingBuilder
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-07T20:01:19Z
+* content: Skip Kotlin classes in NotNullInstrumentingBuilder
+* codeUrl: github.com/JetBrains/intellij-community/pull/1155/commits/7ea427d54f3ca8c904f06c29bc5e0580cfe14b05
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-10T22:28:19Z
+* content: Kotlin classes already contain null checks for parameters, so they should not be added by Intellij nullability instrumenter (see KT-13563 & KT-31879).
+************************************************************************

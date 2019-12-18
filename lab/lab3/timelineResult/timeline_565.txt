@@ -1,0 +1,19 @@
+************************************************************************
+* id: 565
+* requirement: i18n for Change Type Signature and Thread Dump actions
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-24T16:38:06Z
+* content: i18n for Change Type Signature and Thread Dump actions
+* codeUrl: github.com/JetBrains/intellij-community/pull/565/commits/2e5bb18783d9633a80bbd7df6fb9fe8b615cfc45
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-24T16:47:42Z
+* content: These two actions had their texts hard-coded at declaration. For the Change Type Signature action, it was only necessary to delete the attribute from XML (the bundle had the associated text and description); for the Thread Dump action, I had to manually create the entries.
+************************************************************************

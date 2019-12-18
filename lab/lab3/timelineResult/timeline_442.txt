@@ -1,0 +1,21 @@
+************************************************************************
+* id: 442
+* requirement: IDEA-160742: Ctrl+Shift+F12 doesn't work in Terminal tool window.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-03T14:32:13Z
+* content: Handle 'Collapse All Tool Windows' action in the Terminal tool window.
+* codeUrl: github.com/JetBrains/intellij-community/pull/442/commits/bbc5134c67e4b2bd74441930d068ea57ad89929e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-03T14:36:33Z
+* content: Add 'HideAllWindows' to a whitelist of actions for Terminal tool window.
+* time: 2016-09-28T17:52:45Z
+* content: Merged.
+************************************************************************

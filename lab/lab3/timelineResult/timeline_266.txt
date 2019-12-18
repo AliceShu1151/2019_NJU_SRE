@@ -1,0 +1,37 @@
+************************************************************************
+* id: 266
+* requirement: IDEA-138533 Add checkbox to disable Maven keyboard shortcuts
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-05-08T08:07:25Z
+* content: IDEA-138533 Add checkbox to disable Maven keyboard shortcuts
+* codeUrl: github.com/JetBrains/intellij-community/pull/266/commits/8214ef95cf4ec3485a620d4f2ada6b3335b3c47c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-05-08T08:08:45Z
+* content: See https://youtrack.jetbrains.com/issue/IDEA-138533 for reference. Having loads of Maven modules causes the IDE to freeze. Not loading the keyboard shortcuts will solve this problem.
+* time: 2015-05-08T08:08:45Z
+* content: Thanks, Matthias
+* time: 2015-05-08T08:30:50Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-05-08T10:43:55Z
+* content: @klikh ok, done
+* time: 2015-05-08T11:03:05Z
+* content: Agreement received, thanks.
+* time: 2015-05-11T10:07:41Z
+* content: @klikh Is there anything I can do to help you merge this issue? Thanks, Matthias
+* time: 2015-05-11T11:53:42Z
+* content: @klassm The fix will be reviewed by our Maven specialist soon.
+* time: 2015-05-11T11:53:42Z
+* content: Btw, in general personally I'm against introducing options to the UI to fix performance problems. Maybe there is some other way to fix it. But I'm not familiar with this problem well enough, it is just a wild guess.
+* time: 2015-05-28T04:29:36Z
+* content: For sure, I understand your point - I would be happy to have any other solution to the problem. Currently, the keymap and all the search functionality within the preferences window is absolutely unusable. Any chance to get your Maven specialist look into this any time soon :-)?
+* time: 2015-07-28T10:33:24Z
+* content: Hi Matthias, thanks for your time spent for the contribution! However we will not merge this pull request in favour of another fix, it retains (in a Keymap) only maven actions with a shortcut assigned. You can find the CL at https://upsource.jetbrains.com/idea-community/revision/a6d103fa25185d864b810933a18ea163e1870389
+************************************************************************

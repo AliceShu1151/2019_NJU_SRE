@@ -1,0 +1,21 @@
+************************************************************************
+* id: 640
+* requirement: Don't display parameter names for functional interfaces
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-08T10:26:06Z
+* content: Don't display parameter names for functional interfaces
+* codeUrl: github.com/JetBrains/intellij-community/pull/640/commits/563fa897dcc088be8db377635a3b50d1c888b374
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-08T10:26:19Z
+* content: Displaying predicate.test(t: this) (for java.util.function.Predicate) is hardly useful.
+* time: 2018-07-21T11:42:04Z
+* content: @xfix please add a test for the fix.
+************************************************************************

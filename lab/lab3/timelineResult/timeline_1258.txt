@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1258
+* requirement: When the migrated method parameter is bound to a super class type parameter, migrate the class type parameter
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-21T15:45:53Z
+* content: When the migrated method parameter is bound to a super class type par…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1258/commits/bcc4f773fa07b189cea2bb2326811758be61607b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-21T17:25:34Z
+* content:  No description provided. 
+************************************************************************

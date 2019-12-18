@@ -1,0 +1,25 @@
+************************************************************************
+* id: 907
+* requirement: Fix race conditions in DumbServiceImpl and in ProgressSuspender.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-31T23:03:44Z
+* content: The PR fixes a race condition related to the they way DumbServiceImpl and ProgressSuspender interoperate.
+* time: 2018-10-31T23:03:44Z
+* content: The race condition occurs when a batchChangeStarted() notification is delivered after the last dumb mode task has made its last check- cancelled call (if it does any at all), but before the dumb mode background process has ended.
+* time: 2018-10-31T23:03:44Z
+* content: If the notification arrives between these two events, the following sequence of event happens:
+* time: 2018-10-31T23:03:44Z
+* content: This PR fixes the problem by: a) preemptively setting myCurrentsuspender to null at the earliest possible moment. b) since a) only reduces the probability of the race condition, the close() method is added to ProgressSuspender which corretly cleans up the suspender and unregisters it from the list of check-cancelled hooks, if it happens to remain registered.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-08T17:42:02Z
+* content: Fix race conditions in DumbServiceImpl and in ProgressSuspender.
+* codeUrl: github.com/JetBrains/intellij-community/pull/907/commits/6468b5c2d6d209782d66ddea882a5d1cfd88f19a
+************************************************************************

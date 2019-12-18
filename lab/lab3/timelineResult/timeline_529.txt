@@ -1,0 +1,21 @@
+************************************************************************
+* id: 529
+* requirement: [pycharm] [py.test] Issue for locate test for django [build 171.3780.115]
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-26T12:37:13Z
+* content: py.test fix issue for locate test with django
+* codeUrl: github.com/JetBrains/intellij-community/pull/529/commits/2ca5d7c585c5d14ef980521e7aa3c2d709c63250
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-26T12:52:22Z
+* content: fixes issue for django and py.test in case select target class or method test.
+* time: 2017-03-26T12:52:22Z
+* content: We received that exception, because test files contains django specific code. Before search test modules we need setup django enviroment when enabled django support
+************************************************************************

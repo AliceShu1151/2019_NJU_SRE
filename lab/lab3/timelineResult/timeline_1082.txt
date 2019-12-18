@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1082
+* requirement: PY-16945: Support .coveragerc file
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-08T15:45:38Z
+* content: Support .coveragerc file
+* codeUrl: github.com/JetBrains/intellij-community/pull/1082/commits/3e1c2728ba5ec92e89c701bb53c23b63c6ad17ba
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-08T15:46:35Z
+* content: Fix https://youtrack.jetbrains.com/issue/PY-16945
+* time: 2019-03-10T13:02:24Z
+* content: Thanks for the fix! Please add a tiny improvement and I'll merge it in.
+* time: 2019-03-10T14:45:45Z
+* content: Thanks @traff. I don't understand, what should I add as an improvement?
+* time: 2019-03-11T12:36:01Z
+* content: Sorry, for some reason my comment is lost. Could you please write the path of the rcfile that is loaded to the message that is printed.
+* time: 2019-03-11T12:39:33Z
+* content: @traff Your comment is not lost, I've just clicked on "resolve the conversation" as I added the path of the rcfile to the printed message. I amended my previous commit, for avoiding making two commits. You can check the actual code ;)
+************************************************************************

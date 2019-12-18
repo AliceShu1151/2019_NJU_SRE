@@ -1,0 +1,21 @@
+************************************************************************
+* id: 464
+* requirement: Expose finding class files for alternative bytecode viewers
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-11-05T14:04:26Z
+* content: Make it possible for alternative bytecode viewers to reuse the logic …
+* codeUrl: github.com/JetBrains/intellij-community/pull/464/commits/1eb7f94175f7cbc493077c3644e05a311d8185b2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-11-05T14:16:09Z
+* content: The logic of finding the class file that is associated with a PsiElement is non-trivial and can be reused by other bytecode viewers with this simple change.
+* time: 2016-11-05T14:16:09Z
+* content: Alternative bytecode viewers want to depend on the built-in bytecode viewer anyway because of the classSearcher extension point.
+************************************************************************

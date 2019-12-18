@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1008
+* requirement: [IDEA-123039] Use non-recursive Xalan str:tokenize() extension function instead of the recursive XSLT 1.0 hack
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-09T23:57:16Z
+* content: [IDEA-123039] Use non-recursive Xalan str:tokenize() extension functi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1008/commits/7eee4ee960ab43cde5d0949f5fb8fd992d2aaf9d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-10T00:02:57Z
+* content: This fixes the IDEA-123039 bug.
+* time: 2018-12-10T00:02:57Z
+* content: For more information about Xalan EXSLT extensions go to: https://xalan.apache.org/xalan-j/extensionslib.html#exslt
+* time: 2018-12-10T15:05:00Z
+* content: that's lovely but it would be even better if you'd put add some guidelines how to do this.
+* time: 2018-12-10T19:45:48Z
+* content: @smoczyna, how to do what? I don't really understand your statement. I've provided the fix and now @akozlova from JetBrains should review and merge it.
+* time: 2018-12-10T20:16:38Z
+* content: @smoczyna, take a look at the changes of this pull request and stop trolling. PR contains changes in the code, not only a title that you don't understand.
+* time: 2018-12-12T13:12:29Z
+* content: Look you rosti or perhaps rusty dickhead. I've been directed here by JetBrain support to get the solution of my problem which is exactly the same. However there is not any "solution" here I can use straight away, thus my comment.
+* time: 2018-12-12T14:28:52Z
+* content: @smoczyna I've hidden your latest comment. Please refrain from insulting people. It is neither acceptable nor productive.
+* time: 2018-12-18T19:53:33Z
+* content: @akozlova, ping.
+************************************************************************

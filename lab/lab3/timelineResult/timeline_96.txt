@@ -1,0 +1,27 @@
+************************************************************************
+* id: 96
+* requirement: Fix for Kotlin compiler
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-09T15:04:24Z
+* content: When we don't have any dependency(after
+* codeUrl: github.com/JetBrains/intellij-community/pull/96/commits/a2beba8d5816577e7c9f409c953645c8a96849fe
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-09T15:10:59Z
+* content: When we don't have any dependency(after f4a27e8) we should use ModificationTracker.NEVER_CHANGED instead empty array.
+* time: 2013-09-09T15:10:59Z
+* content: (Fix for Kotlin compiler).
+* time: 2013-09-10T10:18:23Z
+* content: Maybe we should  move this file and JavaCoreProjectEnvironment.java and something else(?) to Kotlin repo if they don't have other usages. They don't have any usages into intellij-community.
+* time: 2013-09-10T10:18:23Z
+* content: @yole, @abreslav, what do You think?
+* time: 2013-09-10T10:23:25Z
+* content: These files are also used by UpSource.
+************************************************************************

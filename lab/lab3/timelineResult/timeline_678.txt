@@ -1,0 +1,25 @@
+************************************************************************
+* id: 678
+* requirement: IDEA-183411 Release lock while updating UI in AbstractTreeBuilder
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-07T12:01:42Z
+* content: IDEA-183411 Release lock while updating UI in AbstractTreeBuilder
+* codeUrl: github.com/JetBrains/intellij-community/pull/678/commits/8f678bbbfe238e8fbd12d5ee748fbbcfa9716994
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-07T12:02:57Z
+* content: It seems that the  purpose of Abstract TreeBuilder async updates is to allow background submition of updates while the UI is being updated in EDT.
+* time: 2017-12-07T12:02:57Z
+* content: All the fields are guarded by the lock (sync(this)) apart from the myTreeBuilder which refers to the UI and the UI should only be update from the EDT. However, performUpdate() keeps the lock while updating the UI which effectively prevents other threads to submit new updates. Under the high load of updates it results in other threads being blocks and thread pools spawning many new threwads.
+* time: 2017-12-07T12:02:57Z
+* content: This change releases makes the performUpdate() hold the lock only while accessing the fields guarded by the lock.  Also, it removes unnecessary null checks on final always-not-null myTreeBuilder to avoid confusion.
+* time: 2017-12-07T12:02:57Z
+* content: Bug: IDEA-183411 Change-Id: I4516f38375e8ba194383ad6060acd4f05225751b
+************************************************************************

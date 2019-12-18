@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1271
+* requirement: 193.5233:   Use svn plugin, default changelist: updating .        Update time is too long
+the requirement of 1271 only has implements, no discussion.

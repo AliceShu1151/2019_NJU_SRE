@@ -1,0 +1,34 @@
+************************************************************************
+* id: 384
+* requirement: Minor pycharm fixes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-14T22:46:42Z
+* content: --fix NPE in PythonSdkDetailsDialog.java
+* codeUrl: github.com/JetBrains/intellij-community/pull/384/commits/3c68a65b3d026c5c3791ed7d22ed1a2c52009392
+* time: 2016-04-14T23:52:06Z
+* content: --fix framework listener locking up UI thread
+* codeUrl: github.com/JetBrains/intellij-community/pull/384/commits/86b9e026d7433dbad4459228b81f44a443bf7be1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-15T05:02:18Z
+* content: Details: One issue is refreshing the sdk in details dialog invokes PySdkUpdater, which in turn invalidates the modificator. the dialog tries to then use the invated modificator causing an assertion error and an NPE.
+* time: 2016-04-15T05:02:18Z
+* content: Issue two is framewok updater waits for process output on UI thread causing a major lockup
+* time: 2016-04-20T08:33:02Z
+* content: @vlasovskikh ping
+* time: 2016-04-24T23:37:08Z
+* content: @fitermay Thanks for your PR. We've already fixed the first issue with NPE. I'll get back to this PR in a few days, sorry for the delay.
+* time: 2016-04-25T00:30:07Z
+* content: @vlasovskikh Hi, I've seen the fix to the NPE. I'm pretty sure it leaves an issue of not picking up further changes in the dialog after the first Sdk refresh. That is if user refreshes Sdk then makes other changes those changes won't be picked up.
+* time: 2016-04-26T15:14:23Z
+* content: @fitermay Please rebase your PR on top of the master branch and I'll merge it.
+* time: 2016-04-26T15:40:08Z
+* content: @vlasovskikh Done
+************************************************************************

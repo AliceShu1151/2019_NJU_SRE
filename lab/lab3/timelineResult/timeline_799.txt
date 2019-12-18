@@ -1,0 +1,29 @@
+************************************************************************
+* id: 799
+* requirement: IDEA-193199 Split ExportHTMLAction into specific implementations, all…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-04T04:20:02Z
+* content: IDEA-193199 Split ExportHTMLAction into specific implementations, all…
+* codeUrl: github.com/JetBrains/intellij-community/pull/799/commits/9fda8ad41b7dba948fcdf4f0b98d9e49be847c7c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-04T04:21:43Z
+* content: Split ExportHTMLAction into specific implementations, allowing plugins to add more export actions though xml registration.
+* time: 2018-06-04T04:21:43Z
+* content: Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+* time: 2018-06-05T14:19:22Z
+* content: May be can be helpful InspectionToolPresentation#exportResults()
+* time: 2018-06-26T05:49:48Z
+* content: Hi @batya239 we have addressed you feedback into #815
+* time: 2019-09-10T09:22:12Z
+* content: @zdary #815 (comment) ?
+* time: 2019-09-10T10:04:06Z
+* content: @batya239 I don't mind the GUI. As long as I can supply a custom code to transfer the result to excel spreadsheet in my custom class. Ideally, the custom exporter would be added as an option in that list.
+************************************************************************

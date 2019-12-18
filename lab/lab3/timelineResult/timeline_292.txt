@@ -1,0 +1,27 @@
+************************************************************************
+* id: 292
+* requirement: Pluggable file watcher
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-21T11:14:15Z
+* content: Pluggable file watcher
+* codeUrl: github.com/JetBrains/intellij-community/pull/292/commits/947f59b1ececdbafe92ed1e2a0fe452b621fe3b2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-21T11:17:48Z
+* content: This implements a new extension point that allows plugins to provide their own implementation of file watchers, not requiring a different fsnotify binary.
+* time: 2015-07-24T09:18:57Z
+* content: Friendly ping
+* time: 2015-07-24T09:29:33Z
+* content: Busy, sorry :( Will review it by the end of next week, promise.
+* time: 2015-07-28T17:21:05Z
+* content: Just wondering - how are you going to use this?
+* time: 2015-07-28T18:01:16Z
+* content: Pushed upstream with some cosmetic changes.
+************************************************************************

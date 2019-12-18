@@ -1,0 +1,19 @@
+************************************************************************
+* id: 694
+* requirement: CONTRIBUTING: link to electronic submission of CLA
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-21T11:42:26Z
+* content: CONTRIBUTING: link to electronic submission of CLA
+* codeUrl: github.com/JetBrains/intellij-community/pull/694/commits/c2e9ecbcf3bbb88d18f23e2624e246e20c7770fb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-21T11:45:32Z
+* content: This adds links CONTRIBUTING.md to https://www.jetbrains.com/agreements/cla/ for an electronic submission.
+************************************************************************

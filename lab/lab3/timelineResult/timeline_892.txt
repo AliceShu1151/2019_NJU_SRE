@@ -1,0 +1,4 @@
+************************************************************************
+* id: 892
+* requirement: added "EvaluateExpression" to TouchBar
+the requirement of 892 only has implements, no discussion.

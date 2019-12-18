@@ -1,0 +1,19 @@
+************************************************************************
+* id: 169
+* requirement: Fix infinite loop in MavenProjectsTree.findRootProject when there is more than one level of aggregate POMs
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-04-12T14:21:19Z
+* content: Fix infinite loop in MavenProjectsTree.findRootProject when there is …
+* codeUrl: github.com/JetBrains/intellij-community/pull/169/commits/1f4117f5d9dc8bf44021a857d866e63fe930977e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-04-12T14:40:19Z
+* content: Fix with it's unittest.
+************************************************************************

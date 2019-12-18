@@ -1,0 +1,53 @@
+************************************************************************
+* id: 239
+* requirement: Add method override autocompletion for Groovy Plugin
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-01-29T19:35:15Z
+* content: Add method override autocompletion for Groovy Plugin.
+* codeUrl: github.com/JetBrains/intellij-community/pull/239/commits/69a4e069b6303f980cfb340410855a278726104b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-01-29T19:44:28Z
+* content: This was created as a separate plugin in https://plugins.jetbrains.com/plugin/7571, but it fits better inside the official Groovy plugin.
+* time: 2015-01-30T09:30:34Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-02-01T19:25:51Z
+* content: I got accepted as a contributor this morning. Thank you.
+* time: 2015-02-02T10:54:20Z
+* content: Agreement received. Thanks.
+* time: 2015-02-03T07:59:37Z
+* content: Hi Jorge! This is really cool. I'll accept the pull request after some improvements.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-03T11:45:06Z
+* content: Improved Groovy method override completion code as suggested
+* codeUrl: github.com/JetBrains/intellij-community/pull/239/commits/7befb3d7b0824c9ea0013663f1d0c835449ca010
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-03T11:52:22Z
+* content: Don't worry about tests. Not a big deal actually. I'll write one or two examples to guarantee the feature won't be broken in future.
+* time: 2015-02-09T13:15:17Z
+* content: Sorry for the delay. We will accept your commit in a few day. Thanks!
+* time: 2015-02-09T14:44:03Z
+* content: That's really nice to know! I have a question, though: if I wanted this to be included on the next version of Android Studio should I add another PR to the 135 branch? Thank you 
+* time: 2015-02-09T15:59:28Z
+* content: If you want we can try to cherry-pick this to 135. But are you sure Android Studio uses the 135 branch?
+* time: 2015-02-09T16:14:00Z
+* content: It is, as far as I know. The about me dialog shows 135 as build number and this answer in SO seems to support that.
+* time: 2015-03-10T08:36:33Z
+* content: Hi, is there any way I can help to make this PR merge? It's been almost a month since the last update.
+************************************************************************

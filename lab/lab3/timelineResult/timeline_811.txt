@@ -1,0 +1,29 @@
+************************************************************************
+* id: 811
+* requirement: IDEA-194080 Provide a way to override the insets in DarculaComboBoxUI
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-15T21:30:43Z
+* content: IDEA-194080 Provide a way to override the insets in DarculaComboBoxUI
+* codeUrl: github.com/JetBrains/intellij-community/pull/811/commits/248a638939243e0646836b9e30db1dde6cd190c0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-15T21:56:24Z
+* content: @kkmic?
+* time: 2018-06-18T10:20:53Z
+* content: What's the purpose of this ?
+* time: 2018-09-22T01:50:56Z
+* content: Does the explanation here help? http://youtrack.jetbrains.com/issue/IDEA-194080
+* time: 2018-09-22T01:50:56Z
+* content: Either way @jlauridsen can clarify. I'm just relaying the commit here.
+* time: 2018-09-22T01:51:55Z
+* content: Wait—I see IDEA-194080 is closed now. Should this PR be abandoned?
+* time: 2018-09-24T08:18:00Z
+* content: If the main purpose was to improve comboboxes in tables then it was fixed by IDEA-194353. Also you can shrink the height of a combobox by setting "JComponent.compactHeight" JComponent client property to Boolean.TRUE
+************************************************************************

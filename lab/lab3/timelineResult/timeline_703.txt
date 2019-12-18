@@ -1,0 +1,39 @@
+************************************************************************
+* id: 703
+* requirement: Update reference from jna-utils.jar to jna-platform.jar
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-05T17:31:30Z
+* content: Update reference from jna-utils.jar to jna-platform.jar
+* codeUrl: github.com/JetBrains/intellij-community/pull/703/commits/f68f9ffb3825a90339e6dfa0506ebbfbbf19434f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-05T17:34:40Z
+* content: … following commit 30a7f90, which replaced one file with the other.
+* time: 2018-01-05T17:36:16Z
+* content: @chashnikov, @trespasserw?
+* time: 2018-01-15T06:41:47Z
+* content: @dahlstrom-g why do you need this target? As far as I can see it doesn't work even after your fix (looks like jarjar 1.0 is too old and doesn't process modern bytecode properly).
+* time: 2018-01-16T05:21:41Z
+* content: If you mean the jarjar taskdef, I don't need it to exist in intellij-community. Shall we remove it?
+* time: 2018-01-16T07:10:56Z
+* content: @dahlstrom-g If you need to have such task for Android Studio it's better to have it in intellij-community repository, not in your code, so we can update it when dependencies of 'updater' module changes.
+* time: 2018-01-16T22:35:18Z
+* content: We need it for Android Studio, but it hasn't been updated for commit 30a7f90; hence this pull request.
+* time: 2018-01-17T23:59:30Z
+* content: @chashnikov: Even if this doesn't fix everything, it addresses the issue in the commit message, right? Is there a reason not to do that?
+* time: 2018-01-22T11:42:04Z
+* content: @dahlstrom-g Ok, I've applied your change. However, 'fullupdater' target still fails on my machine with the following exception:
+* time: 2018-01-22T11:42:04Z
+* content: Updating to jarjar-1.4 fixes this problem, but I don't see why we need jarjar here. Actually the build script doesn't use jarjar's main feature, it just unpacks several jars into a single jar.
+* time: 2018-01-22T11:42:04Z
+* content: So if you need to have an 'updater.jar' with all dependencies included to build patches, I can implement this using regular zip tasks and move this code from xml to groovy build scripts and automatically include all dependencies specified in the project configuration, so we won't need to update paths in build.xml next time dependencies of 'updater' module changes. What do you think?
+* time: 2018-01-22T23:30:56Z
+* content: @chashnikov: A couple of us chatted about this briefly, and getting rid of jarjar there sounds great. Thanks!
+************************************************************************

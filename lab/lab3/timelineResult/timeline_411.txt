@@ -1,0 +1,4 @@
+************************************************************************
+* id: 411
+* requirement: idea.bat: Honor IDEA_JDK_64 environment variable
+the requirement of 411 only has implements, no discussion.

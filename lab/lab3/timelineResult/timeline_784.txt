@@ -1,0 +1,39 @@
+************************************************************************
+* id: 784
+* requirement: Fix L&F change in ProjectView panel
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-29T16:55:59Z
+* content: Fix L&F change in ProjectView panel
+* codeUrl: github.com/JetBrains/intellij-community/pull/784/commits/4c193d1adbef5e4e5b9ba082d6c73e262a0d3379
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-05-03T00:38:25Z
+* content: Switching L&F didn't use to update the ProjectView panes except the one that was displayed at the time.
+* time: 2018-05-03T00:38:25Z
+* content: http://b.android.com/208136
+* time: 2018-05-03T00:38:42Z
+* content: @SergeyMalenkov? @xtmq?
+* time: 2018-05-03T16:56:05Z
+* content: Thanks! Merged 210f54d
+* time: 2018-05-03T20:06:13Z
+* content: I can't reproduce the problem in question in IntelliJ IDEA Ultimate.
+* time: 2018-05-03T20:06:13Z
+* content: The case is already handled via UIUtil.NOT_IN_HIERARCHY_COMPONENTS key. See ProjectViewImpl.MyPanel#init (ProjectViewImpl:996)
+* time: 2018-05-03T20:06:13Z
+* content: If for some reason that does not work we shall investigate why so.
+* time: 2018-05-03T20:06:13Z
+* content: This pull request shall be reconsidered.
+* time: 2018-05-03T20:16:42Z
+* content: @gregsh Do you prefer to revert commit 210f54d then? @jgaillard85 What's your understanding of the situation?
+* time: 2018-05-03T21:15:10Z
+* content: @gregsh Thanks! I started Android Studio from sources from master and can't reproduce the problem with or without the fix. So, we probably need to revert it.
+* time: 2018-05-03T21:15:10Z
+* content: P.S. The only thing I noticed is wrong foreground for Design Editor 
+************************************************************************

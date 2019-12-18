@@ -1,0 +1,23 @@
+************************************************************************
+* id: 646
+* requirement: IDEA-180614: Rename Synchronize action to Synchronize with File System
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-13T21:32:48Z
+* content: IDEA-180614: Rename Synchronize action to Synchronize with File System
+* codeUrl: github.com/JetBrains/intellij-community/pull/646/commits/0d7c3ead3b3d0144f52976422ef356912187db50
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-13T21:38:58Z
+* content:  No description provided. 
+* time: 2018-07-21T11:08:16Z
+* content: cc @bulenkov
+* time: 2019-06-25T10:25:32Z
+* content: The action is now called "Reload from disk".
+************************************************************************

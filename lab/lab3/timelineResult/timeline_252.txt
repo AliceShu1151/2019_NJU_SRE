@@ -1,0 +1,58 @@
+************************************************************************
+* id: 252
+* requirement: fortify GitLogParser to fix IDEA-128280
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-12T11:07:35Z
+* content: Description of the problem: IDEA-128280 GitLogParserTest tests passed
+* time: 2015-03-12T11:24:29Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-03-13T08:51:59Z
+* content: @klikh did it yesterday
+* time: 2015-03-16T12:19:48Z
+* content: @klikh can you review this?
+* time: 2015-03-16T15:19:45Z
+* content: Agreement received. Thank you. Will review the patch shortly.
+* time: 2015-04-01T15:26:55Z
+* content: Can this be cherry-picked to 14.1 branch if patch is OK?
+* time: 2015-04-04T14:41:07Z
+* content: Sorry for delay.
+* time: 2015-04-04T14:41:07Z
+* content: The problem with the patch is that it only works around the ^A character (\u0001). \u0002 characters are not handled (which is OK since they are not handled in the current version either). But what is worse is that the patch breaks the parser if \u0003 is found in the commit message (while in the current version this character is handled fine).
+* time: 2015-04-04T14:57:57Z
+* content: Fixing the parser so that it would survive against any characters in the commit message seems to be kinda tricky.
+* time: 2015-04-04T14:57:57Z
+* content: Here is a way I'm thinking about:
+* time: 2015-04-04T14:57:57Z
+* content: What do you think about this [a bit weird] algorythm? Maybe there is some other some, maybe not 100% reliable, but requiring less changes & not worse than the current version?
+* time: 2015-04-04T16:00:31Z
+* content: I tried to replace \u0001 with \u0003 in commit message and get:
+* time: 2015-04-04T16:00:31Z
+* content: so \u0003 is not handled now too
+* time: 2015-04-04T16:03:09Z
+* content: Hm. I don't get this error: log opens without problems for me when commit message has \u0003 in it. Note that according to the code it shouldn't fail either.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-04-04T17:21:50Z
+* content: fortify GitLogParser to fix IDEA-128280
+* codeUrl: github.com/JetBrains/intellij-community/pull/252/commits/ebeda5a6b429b16b394d3dcf8042ae2e404f23a6
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-04-04T17:32:05Z
+* content: New patch works with both \u0001 and \u0003. Splitted part will be concatenated with next one if it doesn't match ONE_RECORD
+* time: 2015-04-05T13:56:54Z
+* content: This one is nice. I've written a couple of tests against these situations and applied the patch.
+* time: 2015-04-05T13:56:54Z
+* content: Note that it still doesn't cover some exotic situations, e.g. if both \u0001 and \u0003 are found in the commit message, but anyway it is not worse than the current situation.
+************************************************************************

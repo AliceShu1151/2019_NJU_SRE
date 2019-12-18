@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1036
+* requirement: Remove dead code from DebugProcessImpl
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-22T14:46:50Z
+* content: Remove dead code from DebugProcessImpl
+* codeUrl: github.com/JetBrains/intellij-community/pull/1036/commits/98db491469cf79e32c7181a3a07b28d21fd55053
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-22T14:48:03Z
+* content: We don't need to check if we're in unit test mode, as we're going to return executionResult anyway. There used to be a block of code (now commented) to be executed in case we were not testing but it has not been changed in the past several years, so it's unlikely it will ever be uncommented. This commit removes this commented block as well.
+************************************************************************

@@ -1,0 +1,63 @@
+************************************************************************
+* id: 130
+* requirement: PY-11317 Incorrect type detection for formatter string with java String ...
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-22T09:58:34Z
+* content: PY-11317 Incorrect type detection for formatter string with java Stri…
+* codeUrl: github.com/JetBrains/intellij-community/pull/130/commits/bbb60905b2387be3c0218a4984ac78fa40b6df6e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-22T10:36:13Z
+* content: Improve skeleton generator to using predefined return type in the doc generator via user  PREDEFINED_MOD_CLASS_SIGS map.
+* time: 2013-11-22T10:36:13Z
+* content: The main issue which is exists here related to that the str or unicode in mod method don't have any return type in the doc string.
+* time: 2013-11-22T10:36:13Z
+* content: We have such things:
+* time: 2013-11-22T10:36:13Z
+* content: After applying 1 option I think that everything should work. But not =( It seems that doc string have more priority then returned type (?) =(
+* time: 2013-11-22T10:36:13Z
+* content: Thus I also perform operation of adding additional description to the doc which describe return type in format which idea is parsing. Please note that such behavior performs only for PREDEFINED_MOD_CLASS_SIGS map
+* time: 2013-11-22T10:36:13Z
+* content: After regenerating the skeleton we have such picture:
+* time: 2013-11-22T10:36:13Z
+* content: And Idea detects correct type for formating string behavior.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-22T10:53:54Z
+* content: Update version of generator.
+* codeUrl: github.com/JetBrains/intellij-community/pull/130/commits/90cf158d59a0239a44bbaa0893c56c85f7181c6f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-26T14:52:41Z
+* content: A better place for this fix is python-skeletons.
+* time: 2013-12-02T14:36:15Z
+* content: Do you mean python/skeletons folder? To fix this you proposed update such skeletons:
+* time: 2013-12-02T14:36:15Z
+* content: If not, could you please describe a little bit more where the better place to fix this?
+* time: 2013-12-02T14:44:54Z
+* content: No. Please take a look at JetBrains/python-skeletons repo. The idea behind Python skeletons + how to use/modify them is described in README.md.
+* time: 2013-12-02T14:58:43Z
+* content: Ahhh... Thanks a lot... So this possible fix is not convenient for plugin/pycharm? Should I close it?
+* time: 2013-12-02T15:13:36Z
+* content: Created pull request: JetBrains/python-skeletons#1
+* time: 2013-12-02T15:53:49Z
+* content: Issue after using python-skeletons is reproduce... Reopen It seems stubs which is generated have more priority then python-skeletons....
+* time: 2013-12-02T15:53:49Z
+* content: Any suggestions how to fix this?
+* time: 2013-12-02T22:07:44Z
+* content: Resolve issue with python-skeletons after perform such steps:
+************************************************************************

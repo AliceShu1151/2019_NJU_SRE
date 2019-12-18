@@ -1,0 +1,29 @@
+************************************************************************
+* id: 222
+* requirement: Gradle dependency import should honor file name
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-16T14:57:19Z
+* content: Gradle dependency import should honor file name
+* codeUrl: github.com/JetBrains/intellij-community/pull/222/commits/b416fa413af8c9c7c926749e78c0f0d7330a1e0f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-16T15:28:59Z
+* content: When importing dependencies from Gradle Intellij identifies them by 'groupId:artifactId:version[:classifier]'. While being sufficient for conventional layouts, it still may fail with custom Ivy repositories. Consider the following example:
+* time: 2014-11-16T15:28:59Z
+* content: Upon import Intellij creates only one of these deps, ignoring the second one as a duplicate. Proposed fix addresses the problem by appending a filename for dependencies which does not follow Maven naming convention.
+* time: 2014-11-16T15:48:57Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-11-17T13:42:43Z
+* content: @klikh, done
+* time: 2014-11-18T11:28:20Z
+* content: Received, thanks. Btw, I didn't notice that you're working at JetBrains so you've actually already signed an agreement :)
+* time: 2014-12-08T13:53:20Z
+* content: Evgeny, the fix was applied with modifications, so no need to merge the pull request, however thanks for the contribution! you can find the change at 1fbc39e
+************************************************************************

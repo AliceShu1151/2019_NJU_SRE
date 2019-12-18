@@ -1,0 +1,21 @@
+************************************************************************
+* id: 255
+* requirement: IDEA-57472 new tool window mode using frames
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-03-18T22:48:38Z
+* content: IDEA-57472 new tool window mode using frames
+* codeUrl: github.com/JetBrains/intellij-community/pull/255/commits/b6e67ea25ca0ef69aa77c7f44fc4d33fb9f84735
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-18T23:06:23Z
+* content: Maybe it needs a better name, but it is very useful with multiple monitors nevertheless.
+* time: 2015-03-18T23:06:23Z
+* content: https://youtrack.jetbrains.com/issue/IDEA-57472
+************************************************************************

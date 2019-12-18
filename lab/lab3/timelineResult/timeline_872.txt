@@ -1,0 +1,31 @@
+************************************************************************
+* id: 872
+* requirement: IDEA-199485: org.gradle.api.Incubating in Unstable API Inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-25T22:01:45Z
+* content: IDEA-199485: org.gradle.api.Incubating in Unstable API Inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/872/commits/0d1f075503733526c08005e80a8a5f3272fad335
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-25T22:05:35Z
+* content: Closes: https://youtrack.jetbrains.com/issue/IDEA-199485
+* time: 2018-09-25T22:05:35Z
+* content: This is the Gradle Incubating API: https://docs.gradle.org/current/javadoc/org/gradle/api/Incubating.html
+* time: 2018-09-25T22:05:35Z
+* content: I think it would be valuable for plugin developers and build developers to know when they are using Gradle API's annotated with Incubating.
+* time: 2018-09-28T16:54:40Z
+* content: @vladsoroka Do you need any additional information from me?
+* time: 2018-10-01T09:11:41Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-10-01T09:26:33Z
+* content: @vladsoroka We've received the CLA from Jonathan, everything is fine here.
+* time: 2018-10-01T10:16:21Z
+* content: I see, @JLLeitschuh thanks, the change has been merged uinsg the following commit f0be733
+************************************************************************

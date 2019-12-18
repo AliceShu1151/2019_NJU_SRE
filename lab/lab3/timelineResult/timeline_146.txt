@@ -1,0 +1,37 @@
+************************************************************************
+* id: 146
+* requirement: Activate Maven extensions during project resolution.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-01-28T00:28:39Z
+* content: Activate Maven extensions during project resolution.
+* codeUrl: github.com/JetBrains/intellij-community/pull/146/commits/345cb014dfb6be8749d3a99ea4dea65102a0a117
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-01-28T00:38:44Z
+* content: Load extensions so custom transports can be registered, and invoke AbstractMavenLifecycleParticipant#afterSessionStart() and #afterProjectsRead() so extensions have a chance to modify the project model.
+* time: 2014-01-28T00:38:44Z
+* content: Fixes IDEA-119940 Maven extensions not activated http://youtrack.jetbrains.com/issue/IDEA-119940
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-01-28T23:17:09Z
+* content: Make WorkspaceReader available to extensions.
+* codeUrl: github.com/JetBrains/intellij-community/pull/146/commits/de6b045e27fc56bda82de27119f76b20e075a585
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-01-29T00:16:03Z
+* content: Here's the test extension source, also included in maven-extension-1.0-sources.jar:
+************************************************************************

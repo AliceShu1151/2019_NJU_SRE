@@ -1,0 +1,59 @@
+************************************************************************
+* id: 673
+* requirement: improve contains() and containsAll() of SmartList and HashSet
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-29T21:09:45Z
+* content: improve contains() and containsAll() of SmartList and IDEA's HashSet
+* codeUrl: github.com/JetBrains/intellij-community/pull/673/commits/7b26e0edbc962f32c0672af8dc12c6a804331b8d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-29T21:44:45Z
+* content: I've made some measurements with benchmark available here for both com.intellij.util.containers.HashSet and com.intellij.util.SmartList and got the following results:
+* time: 2017-11-29T21:44:45Z
+* content: Case 1: argument is collections/item of type Integer and value 1
+* time: 2017-11-29T21:44:45Z
+* content: Case 2: argument is collections/item of type Integer and value null
+* time: 2017-11-29T21:44:45Z
+* content: Patch also prevents allocating iterator in case when argument collection does not support element access by index (e.g. HashSet) in AbstractCollections.containsAll():
+* time: 2017-11-30T13:07:35Z
+* content: Have you checked that this change doesn't degrade performance for cases with non-empty collections involved?
+* time: 2017-11-30T13:07:35Z
+* content: What's this change inspired by, any real-life scenario when this is important?
+* time: 2017-12-11T19:14:31Z
+* content: I've looked into com.luxoft.logeek.collections.HashSet.clear() which has the same optimization.
+* time: 2017-12-11T19:14:31Z
+* content: As for the measurements I wrote benchmarks for the following scenarios:
+* time: 2017-12-11T19:14:31Z
+* content: 1.1 Empty HashSet parametrized for simple DTO (link) 1.2 Non-empty HashSet parametrized for simple DTO link
+* time: 2017-12-11T19:14:31Z
+* content: 2.1 Empty HashSet parametrized for Integer link 2.2 Non-empty HashSet parametrized for Integer link
+* time: 2017-12-11T19:14:31Z
+* content: 3.1 Empty SmartList parametrized for simple DTO link 3.2 Non-empty SmartList parametrized for simple DTO link
+* time: 2017-12-11T19:14:31Z
+* content: 4.1 Empty SmartList parametrized for Integer link 4.2 Non-empty SmartList parametrized for Integer 
+* time: 2017-12-11T19:14:31Z
+* content: The command to run benchmarks is:
+* time: 2017-12-11T19:14:31Z
+* content: java -jar target/benchmarks.jar [benchmark classes] -f 200 -wi 10 -i 10 --jvmArgsAppend="-XX:+UseParallelGC -Xms4g -Xmx4g" -foe true
+* time: 2017-12-11T19:14:31Z
+* content: My results (Intel Core i3-3220 3,3 GHz) are:
+* time: 2017-12-11T19:14:31Z
+* content: As a result: for Dto there's only one scenario with pessimization: measureContainsAllInNonEmptyIdeaHashSet (11,81%)
+* time: 2017-12-11T19:14:31Z
+* content: for Integer there are two scenarios with pessimization: measureContainsAllInNonEmptyIdeaHashSet (12,574%) measureEnhancedContainsAll (8,050%)
+* time: 2017-12-15T20:35:31Z
+* content: Thanks for thorough testing! Since there are performance degradations and no known real-life scenarios to improve, why should we accept this PR then? :)
+* time: 2018-01-18T10:52:41Z
+* content: Initially I've looked into the code of idea's custom hashmap which overrides clear(). It's designed for optimization of empty map but brings pessimization for non-empty map due to size() call. Why do you then keep this custom HashMap?
+* time: 2018-01-18T11:50:13Z
+* content: It was added in some ancient times, and I'm not aware of the use case. It appears that now it doesn't add much value, so probably should be deprecated, thanks!
+* time: 2018-01-18T18:56:25Z
+* content: @donnerpeter BTW, what you wrote in your last commit seems to be true also for com.intellij.util.containers.hash.HashSet, com.intellij.util.containers.HashSet and com.intellij.util.containers.hash.HashMap
+************************************************************************

@@ -1,0 +1,27 @@
+************************************************************************
+* id: 165
+* requirement: PY-11531 Update module_redeclarator.py
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-04-02T07:52:48Z
+* content: Update module_redeclarator.py
+* codeUrl: github.com/JetBrains/intellij-community/pull/165/commits/5ff05186b81b4f1d4b8b19258dfe6d6733cdfcee
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-04-02T08:07:05Z
+* content: In my system I have both PyQt4 and PyQt5, they run using different sip versions so when trying to import PyQt4 it will crash raising a runtime error like: RuntimeError: the sip module implements API v11.0 but the PyQt4.QtGui module req uires API v9.1
+* time: 2014-04-02T08:07:05Z
+* content: This halts any generation of PyQt5 skeletons also which is bad.
+* time: 2014-04-02T08:07:05Z
+* content: Also, the code _initializeQApp will return if PyQt4 can be loaded and a QCoreApplication instance created and thus leaving out PyQt5 generation.
+* time: 2014-04-02T08:07:05Z
+* content: Breaking these up in two cases (qt4 and qt5) solves the partial issue of not generating qt5-skeletons but still qt4-skeletons isnt generated due to the sip-version problem.
+* time: 2014-04-02T08:07:05Z
+* content: After a reinstallation of PyQt4 built on a more recent version of sip everything works out now. Without this patch however I get the error: RuntimeError: the PyQt4.QtCore and PyQt5.QtCore modules both wrap the QObject class
+************************************************************************

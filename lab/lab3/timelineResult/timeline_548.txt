@@ -1,0 +1,4 @@
+************************************************************************
+* id: 548
+* requirement: PyConsoleUtil HELP_PROMPT field to public
+the requirement of 548 only has implements, no discussion.

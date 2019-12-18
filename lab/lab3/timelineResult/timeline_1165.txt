@@ -1,0 +1,41 @@
+************************************************************************
+* id: 1165
+* requirement: Event log whitelist storage
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-03T08:30:46Z
+* content: move whitelist storage from SensitiveDataValidator to a separate class
+* codeUrl: github.com/JetBrains/intellij-community/pull/1165/commits/a20d66b31ccdad8f67ed74da8feee18c2b497af4
+* time: 2019-07-03T08:36:49Z
+* content: add MergedWhiteListStorage
+* codeUrl: github.com/JetBrains/intellij-community/pull/1165/commits/528373144d9dd339c810510cd66a189418430f89
+* time: 2019-07-03T08:48:46Z
+* content: move event log white list for testing to the separate file
+* codeUrl: github.com/JetBrains/intellij-community/pull/1165/commits/00b9d9b5984f0120c8f67319478ed20744ba73a5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-04T09:56:16Z
+* content:  No description provided. 
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-05T05:36:16Z
+* content: add action for clean up local whitelist
+* codeUrl: github.com/JetBrains/intellij-community/pull/1165/commits/abbd88604ac38c2cda012ff8d9ddf77e07461a42
+* time: 2019-07-05T05:39:12Z
+* content: clean up event data whitelist storage API
+* codeUrl: github.com/JetBrains/intellij-community/pull/1165/commits/2cedf539c7de8c75db1bd743314948f38112abd7
+* time: 2019-07-05T07:30:20Z
+* content: event data whitelist storage API - review fixes
+* codeUrl: github.com/JetBrains/intellij-community/pull/1165/commits/32200610caf749af2c4e4eddca168b2890dc6392
+************************************************************************

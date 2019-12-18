@@ -1,0 +1,4 @@
+************************************************************************
+* id: 142
+* requirement: Add method ignore in i18n/Hard coded string inspection
+the requirement of 142 has no implements.

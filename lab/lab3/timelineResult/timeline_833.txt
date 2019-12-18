@@ -1,0 +1,29 @@
+************************************************************************
+* id: 833
+* requirement: Shorten command line option "Classpath file": Support for Java 9 and …
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-19T22:51:55Z
+* content: Shorten command line option "Classpath file": Support for Java 9 and …
+* codeUrl: github.com/JetBrains/intellij-community/pull/833/commits/e5847b08af7968c2f77fd9bcceff36d5f547d808
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-19T22:53:40Z
+* content: …above
+* time: 2018-07-19T22:53:40Z
+* content: The classloader heirarchy has changed with Java 9. With the modularization the bootstrap classloader has been split into two. One for the core java classes, and a platform classloader which contains miscellaneous classes.
+* time: 2018-07-19T22:53:40Z
+* content: The classloader created in the "Classpath file" uses a null parent to signify that the parent should be the bootstrap classloader. This no longer works with Java 9 and above. The correct way is to just get the parent of the class itself. When running in Java 8 (and below) this will be null which is the bootstrap classloader. When running Java 9 (and above) this will be the platform classloader.
+* time: 2018-07-19T22:57:33Z
+* content: This code will throw ClassNotFoundException when run with the "Classpath file" option because the java.sql.SQLException class is in Java 9 not found in the bootstrap classloader, but rather in the platform classloader
+* time: 2018-07-20T07:48:12Z
+* content: There is dedicated way to shorten classpath for java 9 and above. I doubt that our custom workarounds should be adjusted for the new java versions. Is there anything why you prefer special classpath to the argument file? I'd rather hide other options for java 9 and above.
+* time: 2018-07-20T08:19:28Z
+* content: If the option can be hidden for java 9 and above that's fine. I figured: If the option was available then it should at least work.
+************************************************************************

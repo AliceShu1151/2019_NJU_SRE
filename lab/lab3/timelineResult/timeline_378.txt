@@ -1,0 +1,31 @@
+************************************************************************
+* id: 378
+* requirement: Fix incorrect manual watch root calculations.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-04T21:10:23Z
+* content: Fix incorrect manual watch root calculations.
+* codeUrl: github.com/JetBrains/intellij-community/pull/378/commits/fa213634c125d1d1ca1de32b926ea5533a482b2d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-04T21:14:22Z
+* content: Previously, if these were met:
+* time: 2016-04-04T21:14:22Z
+* content: You would get spurious "Cannot be watched" notifications and manual watch roots from the system.
+* time: 2016-04-06T17:03:08Z
+* content: Thanks!
+* time: 2016-04-07T15:11:58Z
+* content: No problem. Any chance this could get cherry-picked across to one of your dot releases? It should be safe, and it's a fairly brutal experience for us when the entire code base suddenly becomes "manual watch roots" because it's all on a local drive.
+* time: 2016-04-07T15:11:58Z
+* content: On Wed, Apr 6, 2016 at 1:03 PM, Roman Shevchenko notifications@github.com wrote:
+* time: 2016-04-07T15:44:44Z
+* content: I'm going to backport it to 145 branch, it will end up in 2016.1.2 eventually. Is this enough?
+* time: 2016-04-07T15:46:54Z
+* content: Yes, certainly. We can work around the issue until then. Thank you!
+************************************************************************

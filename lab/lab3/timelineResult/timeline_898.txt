@@ -1,0 +1,55 @@
+************************************************************************
+* id: 898
+* requirement: Fixed an issue related to accessibility of changes tree
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-25T06:31:08Z
+* content: Fixed an issue related to accessibility of changes tree
+* codeUrl: github.com/JetBrains/intellij-community/pull/898/commits/c9176946a6886f07f69c4157a0e03e85dfad2536
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-25T07:02:30Z
+* content: Changes tree that shows up when reverting issues and commiting was not accessible to screen readers. File names where not read out, and checked/unchecked states of the files (signaling inclusion of files) where not announced. Fix tested with NVDA and Jaws. NVDA announces a bit too much information for my taste, but that is probably due to settings. Related YouTrack issue: https://youtrack.jetbrains.com/issue/IDEA-201167*
+* time: 2018-10-25T08:18:23Z
+* content: @molaachir Thank you for the patch, let me please test it.
+* time: 2018-10-26T13:20:07Z
+* content: @molaachir Well, it seems we can just use 'myTextRenderer' which is fully capable of the text representation of the cell. Please, try the simplified patch below:
+* time: 2018-10-27T15:51:15Z
+* content: @forantar this does work for the file names, but it does not announce the state of the checkbox, omitting crucial information - at least when using Jaws. This is also the reason i chose to use the checkbox and add the file name to its name instead of using myTextRenderer.
+* time: 2018-10-29T16:40:07Z
+* content: @molaachir I've got your point. Yes, you're right the checkbox state should be included. However, with NVDA I observe some odd behavior. When I select an item in the tree NVDA reads all the path of the item starting from the root. Jaws doesn't do that. As I could quickly identify, this is specific to AccessibleRole.TOGGLE_BUTTON role the ThreeStateCheckBox reports. Same is for AccessibleRole.CHECK_BOX, but when I for experiment change it to, say, AccessibleRole.LABEL then NVDA reads only the selected item. So, my question: is the default NVDA behavior ok from your point of view? If not, should we wrap AccessibleContext here with something more reasonable?
+* time: 2018-10-30T09:21:21Z
+* content: @forantar I found that too. I thought it was specific to my settings, but if you have the same problem, I think we should fix it. it confused me the first time, because it is hard to immediately understand what NVDA is doing there. You need to wait in order to know where you are in the tree, it is an unecessary addition, you don't need the path. I'll resolve this, unless you have the changes ready already? Would you like me to squash my changes? or are two commits ok??
+* time: 2018-10-30T12:15:33Z
+* content: @molaachir No, I don't have fix for that problem. So, I'd appreciate if you investigate it please. Also, as it makes your current fix hard to use, I think we're better to find the solution first and only then commit.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-30T12:32:40Z
+* content: Fixed a problem of NVDA announcing too many things for a three state …
+* codeUrl: github.com/JetBrains/intellij-community/pull/898/commits/4b07487ac23f5808cff61f3f26a04df7b2bfc0b7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-30T12:51:10Z
+* content: @forantar: done. I cannot rebase at the moment, since vim is hard to use with my screen reader and the IntelliJ rebase dialogs need some work to become usable. another problem is that I saw 2 files were committed, but I could not read which files, untill this pr goes through. Please test this, and let me know if it works, and let's see which other file got sucked in to the commit.
+* time: 2018-10-30T14:56:59Z
+* content: @molaachir In your last fix I see that AccessibleChangesTreeRenderer extends AccessibleJTree which doesn't seem right to me. Was it a typo? Anyway, I suppose we want to extend the original AccessibleThreeStateCheckBox, but it is an inner class in ThreeStateCheckBox and we can't do that. Why don't we use our standard approach in this case, namely AccessibleContextDelegate? Please, see the patch below. I also assign the newly created context to the 'accessibleContext' field to match the common pattern used in such case. The only thing I'm not sure about is that we override the role of the checkbox's accessible context to label. Probably this can hide some accessible functionality of a checkbox from accessibility tools. But anyway it provides some basic stuff to a screen reader, so I won't worry about it until we find a real problem with it.
+* time: 2018-10-30T16:36:17Z
+* content: @forantar, I have only just started to contribute, so I guess this was a beginners mistake from me :)
+* time: 2018-10-30T16:36:17Z
+* content: I think your patch makes way more sense, is there a way to directly apply it, or do you want me to test it first? I guess this works the same way as the table fix I added a couple of weeks ago, so I don't see any reason why it wouldn't work.
+* time: 2018-10-31T08:45:04Z
+* content: @molaachir No problem, thank you for the contribution! I've just pushed the fix.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 365
+* requirement: Prevent static field name clashes in local methods
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-07T19:00:21Z
+* content: prevent static field name clashes in local methods
+* codeUrl: github.com/JetBrains/intellij-community/pull/365/commits/36c5eccb60e0a8bc573d5d91f05e0a48074df9e0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-07T19:05:31Z
+* content: This commit fixes the issue where there are name clashes between the local variables and the static state.
+* time: 2016-03-07T19:05:31Z
+* content: Currently, this
+************************************************************************

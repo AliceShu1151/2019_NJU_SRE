@@ -1,0 +1,21 @@
+************************************************************************
+* id: 232
+* requirement: Support several result requests in createPrepareRequests method
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-12-18T13:12:51Z
+* content: Support several result requests in createPrepareRequests method
+* codeUrl: github.com/JetBrains/intellij-community/pull/232/commits/3c2e002c8d8d19ff3210dea53d49b5f10b46a945
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-12-18T14:09:00Z
+* content: Fix for first part of https://youtrack.jetbrains.com/issue/IDEA-134483
+* time: 2014-12-18T14:09:41Z
+* content: Pls merge it to 14.0.3
+************************************************************************

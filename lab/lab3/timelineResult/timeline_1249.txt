@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1249
+* requirement: Bad conversion of Ellipsis method parameter receiving a migrated array
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-16T10:42:09Z
+* content: Use Ellipsis array type instead of the component type when migrating …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1249/commits/9f8cbc463c7c53f18542e1175178bc0f08a28333
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-16T10:48:55Z
+* content: Let be
+* time: 2019-11-16T10:48:55Z
+* content: When asking type migration of array from int[] to long[], the conversion fails.
+* time: 2019-11-18T21:54:35Z
+* content: Tests added
+************************************************************************

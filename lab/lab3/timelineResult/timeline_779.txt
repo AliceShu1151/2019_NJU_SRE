@@ -1,0 +1,25 @@
+************************************************************************
+* id: 779
+* requirement: Fix the type reported in completion dialog for field based Geb page content
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-11T08:43:29Z
+* content: Fix the type reported in completion dialog for field based Geb page c…
+* codeUrl: github.com/JetBrains/intellij-community/pull/779/commits/2d1b42e8a8391cab53f4a318bca7a808af3a0cc4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-11T08:56:42Z
+* content: As previously mentioned to @dovchinnikov, this is another PR around support for Geb.
+* time: 2018-04-11T08:56:42Z
+* content: I've noticed that in recent versions of IntelliJ the return type for field based Geb page content always comes up on the completion dialog as Object even though the right type seems to be known and used when completing symbols on the field itself.
+* time: 2018-04-11T08:56:42Z
+* content: This fixes the above issue.
+* time: 2018-05-12T18:50:02Z
+* content: Is there anything I can do to help in this getting merged?
+************************************************************************

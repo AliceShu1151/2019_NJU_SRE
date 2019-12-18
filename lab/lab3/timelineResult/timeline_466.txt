@@ -1,0 +1,49 @@
+************************************************************************
+* id: 466
+* requirement: Add a custom python package identifier extension point
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-11-07T22:51:42Z
+* content: Add a custom python package identifier extension point
+* codeUrl: github.com/JetBrains/intellij-community/pull/466/commits/170ac7cd681ef2fbdc71bacd33af302f36da44ea
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-11-07T23:10:13Z
+* content: This allows bypassing the default 'is package' check in PyUtil, giving the option of foregoing init.py files prior to python 3.3.
+* time: 2016-11-07T23:10:13Z
+* content: We're writing a plugin allowing python development with IntelliJ at Google. The only blocker is the requirement for init.py files through the source tree, which we can't practically enforce.
+* time: 2016-11-07T23:10:13Z
+* content: This patch should have minimal risk or performance cost, and would provide a big benefit to our internal users.
+* time: 2016-11-14T17:02:21Z
+* content: Hi there, how does this sound? I believe it poses minimal risk, and allows python imports without corresponding init.py files.
+* time: 2016-11-14T17:02:21Z
+* content: It's unlikely to be widely useful, but would help us a lot. Thanks!
+* time: 2016-11-24T02:24:57Z
+* content: Hi guys, Tom here, lead of the Google internal IntelliJ team.
+* time: 2016-11-24T02:24:57Z
+* content: Would it be at all possible to entertain this pull request? While the pull request seems safe and small, we would totally respect a rejection as it's very likely not needed by anyone but us. However we would love a decision or comment from you, as we would in that case at least know and probably move to building a custom plugin ourselves. Thanks!
+* time: 2016-11-24T11:24:07Z
+* content: Hi guys! Sorry for the delayed response - we were busy with the new 2016.3 release. I can accept the pull request. After another collegue reviews it, I'll merge it in.
+* time: 2016-11-24T12:17:48Z
+* content: @brendandouglas I'm generally OK with this change. Could you please add querying your extension point to the other isPackage(PsiFile) as well?
+* time: 2016-11-28T14:07:42Z
+* content: @vlasovskikh thanks! I'm happy to add another method to the extension point, and query that from isPackage(PsiFile). Could overriding the behaviour of that method have unintended consequences though?
+* time: 2016-11-28T14:07:42Z
+* content: As I understand it, it's not used to determine whether a directory is a python package (at least, not without also checking the containing directory, so it doesn't need to be bypassed for python 3.3+), only whether a file should be treated as an __init__.py file. Are there use cases where different files should be treated as __init__.py files?
+* time: 2016-11-28T14:27:07Z
+* content: @brendandouglas There are some Python dialects that have different conventions for package files. For example, in Cython a package can be marked by __init__.pxd, for Python type hinting stubs it can be __init__.pyi, and so on.
+* time: 2016-11-28T14:27:07Z
+* content: If you don't use custom files like these for marking a directory as a package then you would just return false in YourExtension.isPackage(PsiFile).
+* time: 2016-11-28T14:35:01Z
+* content: @vlasovskikh sounds good -- I've updated the pull request to include that method.
+* time: 2016-11-28T16:50:08Z
+* content: @brendandouglas Thanks! I've rebased your commit onto master, it will appear on GitHub in a few hours.
+* time: 2016-11-28T16:58:15Z
+* content: Thanks @vlasovskikh. Is there any chance this could make it into a 2016.3 dot release?
+************************************************************************

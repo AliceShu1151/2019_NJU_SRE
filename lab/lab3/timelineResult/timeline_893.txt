@@ -1,0 +1,23 @@
+************************************************************************
+* id: 893
+* requirement: IDEA-200871 Tool Window should NOT transfer focus unconditionally.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-19T21:01:00Z
+* content: IDEA-200871 Tool Window should NOT transfer focus unconditionally.
+* codeUrl: github.com/JetBrains/intellij-community/pull/893/commits/d2f236977e885c95beeddc6a93de395db001cf13
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-19T22:00:30Z
+* content: Only transfer focus if this tool window has the focus in the first place.
+* time: 2018-10-19T22:00:30Z
+* content: Change-Id: Icad107068eb5f2de46de218c87f8de471367e320
+* time: 2019-05-20T22:00:00Z
+* content: could remove the Change-Id footer from the commit message
+************************************************************************

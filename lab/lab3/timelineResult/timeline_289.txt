@@ -1,0 +1,21 @@
+************************************************************************
+* id: 289
+* requirement: IDEA-96179 Replace with a camel case string and Preserve Case
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-14T20:20:38Z
+* content: IDEA-96179 Replace with a camel case string and Preserve Case on conv…
+* codeUrl: github.com/JetBrains/intellij-community/pull/289/commits/6de4e046c667170c3d69d282d0be628979b2d962
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-14T20:24:58Z
+* content: Replace with a camel case string and Preserve Case on converts the string to lower case
+* time: 2015-07-16T21:05:10Z
+* content: without test we can not merge the change
+************************************************************************

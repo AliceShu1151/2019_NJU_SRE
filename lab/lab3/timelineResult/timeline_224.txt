@@ -1,0 +1,35 @@
+************************************************************************
+* id: 224
+* requirement: Fix to #py-13969
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-16T20:00:25Z
+* content: fix to #py-13969
+* codeUrl: github.com/JetBrains/intellij-community/pull/224/commits/a4eadb84a2ad0599cea33e96d82e4bbd0db7628e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-16T20:30:11Z
+* content: This one took me hours and hours to debug :O
+* time: 2014-11-16T20:30:11Z
+* content: getPsi() is a class instead of a file if a class is nested, and we do not get a fully-qualified name, but we should since sub class definitions are not more "volatile" than class definitions.
+* time: 2014-11-16T20:30:11Z
+* content: This fix appears to work, but I'm not super-familiar with the codebase so please point out any problems.
+* time: 2014-11-16T20:30:11Z
+* content: I sincerely hope that this can be reviewed soon, a lot of my projects depend on it.
+* time: 2014-11-16T22:37:13Z
+* content: Thanks for your pull request! However, this doesn't look like a fully correct fix to me. The qualified name of a nested class should include names of its parent classes, and you're just ignoring the parent class names and building the name out of the qualified name of the containing file and the simple name of the class.
+* time: 2014-11-17T09:50:23Z
+* content: @yole Thanks for looking at this.
+* time: 2014-11-17T09:50:23Z
+* content: I debugged this again, for SubClass2 in my example on youtrack, the name variable in the loop has size 2 and is Class1.SubClass1, so it appears that the superclass's qualified name is correctly obtained via stub.getSuperClasses(), and ignoring classes of type parent is ok since it's just there to get the file and check that we do have a qualified name instead of computing it as well.
+* time: 2014-11-17T09:50:23Z
+* content: Am I interpreting this correctly?
+* time: 2014-11-17T14:40:15Z
+* content: @simonzack Thanks for reporting the issue and suggesting a fix. I've fixed the problem in a broader context.
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 698
+* requirement: [IDEA-179774] fix "Create Test" dialog does not fill test superclass …
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-24T13:05:49Z
+* content: [IDEA-179774] fix "Create Test" dialog does not fill test superclass …
+* codeUrl: github.com/JetBrains/intellij-community/pull/698/commits/2f56714e94273b56eefcdf6ea59971e76e6091bf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-24T13:17:21Z
+* content: …with last used value.
+* time: 2017-12-24T13:17:21Z
+* content: Store last selected superclass per library in CreateTestDialog.
+* time: 2017-12-28T15:45:43Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it. Thanks
+* time: 2018-02-07T08:58:24Z
+* content: Yes, I already signed the agreement
+************************************************************************

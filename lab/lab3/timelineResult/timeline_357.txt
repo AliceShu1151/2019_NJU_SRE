@@ -1,0 +1,21 @@
+************************************************************************
+* id: 357
+* requirement: Create From Usage: Introduce JVMElementMutableView to modify elements in other JVM-compliant languages
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-12T15:09:29Z
+* content: Create From Usage: Introduce JVMElementMutableView to create/modify e…
+* codeUrl: github.com/JetBrains/intellij-community/pull/357/commits/612fd7943b8ccebb9c268b1090af503e1d4e1dd6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-02-16T12:49:18Z
+* content: The primary goal is to allow applying Java quick fixes to Kotlin declarations (see KT-7641)
+* time: 2018-07-21T13:05:00Z
+* content: @asedunov, please rebase the PR, cc @yole, @dovchinnikov.
+************************************************************************

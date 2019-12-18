@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1217
+* requirement: Debugger: Provide MethodsTracker from JavaExecutionStack to PositionManagerEx t…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-21T09:46:37Z
+* content: Provide MethodsTracker from JavaExecutionStack to PositionManagerEx t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1217/commits/49be17fffc803ddb5d474002a9afd4abffcf747e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-21T12:22:17Z
+* content: In JavaExecutionStack.createFrame it tries to create a custom frame (e.g KotlinStackFrame), but PositionManager doesn't obtain MethodsTracker and there's no sane way to get it, so some functionality like recursion depth in frames view doesn't work.
+************************************************************************

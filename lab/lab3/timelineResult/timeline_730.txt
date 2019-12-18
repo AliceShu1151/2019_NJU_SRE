@@ -1,0 +1,39 @@
+************************************************************************
+* id: 730
+* requirement: Improve operations for document listeners
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-11T08:50:16Z
+* content: improve operations for document listeners
+* codeUrl: github.com/JetBrains/intellij-community/pull/730/commits/b502f6c587dde7bfdde702bf37f7da6ba58ccde3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-11T14:48:31Z
+* content: Purpose
+* time: 2018-02-11T14:48:31Z
+* content: Currently access to myDocumentListeners is prohibited so I implemented 2 public methods in DocumentImpl.
+* time: 2018-02-11T14:48:31Z
+* content: Thanks.
+* time: 2018-02-16T09:49:18Z
+* content: Why do you need this? Note that you can track yourself whether you've added your listener or not. Double addition/removal is probably a bug somewhere in the client, and the new API would obscure that bug.
+* time: 2018-02-16T10:36:51Z
+* content: @donnerpeter Thank you for comments!
+* time: 2018-02-16T10:36:51Z
+* content: My plugin will add documentListener and remove it every time several specific events happen. Of course I can manage these things by myself but it makes my code complicated. To simplify it, I wanted to access myDocumentListeners to verify whether it is already added or removed but I made new public methods instead.
+* time: 2018-02-16T10:36:51Z
+* content: Hmm, I thought if there are no special reasons then developers can choose to use existing methods so that they can detect double addition/removal.
+* time: 2018-02-16T11:39:47Z
+* content: Unfortunately people too often invoke a method with convenient-looking name without giving much thought :(
+* time: 2018-02-16T12:04:48Z
+* content: I understood. Then how about making public boolean existDocumentListener(@NotNull DocumentListener listener)? (1) If people invoke this method without giving much thought but I believe it will not obscure bugs. (2) People can easily implement simple codes to verify whether a listener has already added or not.
+* time: 2018-02-16T12:04:48Z
+* content: But if you still think this method produces bad result or it is not needed in core API then I will close PR, if not then I will update codes. (If you have better method name, plz let me know)
+* time: 2018-02-19T20:22:19Z
+* content: I think the existence of such a method doesn't promote better practices of working with document listeners, with clean install/remove lifecycle, preferably with a parent disposable. So I'd prefer not to add such method to API, sorry.
+************************************************************************

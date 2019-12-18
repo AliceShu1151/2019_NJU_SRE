@@ -1,0 +1,29 @@
+************************************************************************
+* id: 345
+* requirement: Allowes to create WordScanner for cacheBuilder with thread-unsafe lexer
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-01-10T15:34:47Z
+* content: Allowes to create WordScanner for cacheBuilder with thread-unsafe lexer
+* codeUrl: github.com/JetBrains/intellij-community/pull/345/commits/331fc8069573d208cd1ddefddd5691e6d7fcb693
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-10T15:38:30Z
+* content: CacheBuilderEP caches WordScanner, so if your Lexer used in scanner is not thread-safe - you've got a problem. This PR allowes to override lexer getter and create new lexer instance on each request.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-03T04:53:42Z
+* content: Merge branch 'master' of git://git.jetbrains.org/idea/community
+* codeUrl: github.com/JetBrains/intellij-community/pull/345/commits/0c39671e0d475261d0ba4520a7d89815e677420e
+************************************************************************

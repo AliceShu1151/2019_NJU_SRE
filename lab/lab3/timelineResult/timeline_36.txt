@@ -1,0 +1,21 @@
+************************************************************************
+* id: 36
+* requirement: InputFilter - api change for returning List
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-02-22T11:08:06Z
+* content: InputFilter - api change for returning List, rename of extension point
+* codeUrl: github.com/JetBrains/intellij-community/pull/36/commits/e1630143970b9cb364197e208ff141bc18b5ddfd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-02-22T11:21:59Z
+* content: see http://youtrack.jetbrains.com/issue/IDEA-95644
+* time: 2013-02-22T11:21:59Z
+* content: extension point is renamed so that old plugins do not throw exceptions :)
+************************************************************************

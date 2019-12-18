@@ -1,0 +1,27 @@
+************************************************************************
+* id: 220
+* requirement: Added the Close All Projects and Close Other Projects actions.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-09T12:01:21Z
+* content: Added the Close All Projects and Close Other Projects actions.
+* codeUrl: github.com/JetBrains/intellij-community/pull/220/commits/4bf4354f2e9173e7ecb7c362d08b05d62dcc65cb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-09T12:06:12Z
+* content: These actions close multiple projects at once.
+* time: 2014-11-09T12:06:12Z
+* content: For the copyright comment, I didn't feel right putting my name in place of JetBrains s.r.o. since the "update" method's only changes were to add the usage of the ProjectManager and a change in verbiage for the presentation text.
+* time: 2014-11-09T12:06:12Z
+* content: I committed these to branch 139 because I figured these would be a nice addition to IntelliJ 14.x.  However, if I should have committed them to trunk, let me know and I'll do that as well.
+* time: 2014-11-10T13:59:57Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-11-10T14:01:26Z
+* content: The branch 139 is for bug-fix updates 14.0.X only, so please re-push to master instead. 14.X will be released from master branch.
+************************************************************************

@@ -1,0 +1,22 @@
+************************************************************************
+* id: 398
+* requirement: IJSDK-152: Settings Search - Spotlight does not work with c.i.u.TabbedPaneWrapper
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-11T14:16:51Z
+* content: Merge pull request #1 from JetBrains/master
+* codeUrl: github.com/JetBrains/intellij-community/pull/398/commits/4453a156d5e0f994907b1fc867db5dee6b50685e
+* time: 2016-05-11T14:45:38Z
+* content: IJSDK-152: Settings Search - Spotlight does not work with c.i.u.Tabbe…
+* codeUrl: github.com/JetBrains/intellij-community/pull/398/commits/fbf2f6884097a819fbc60e83fa7d08f1c4ac0989
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-11T15:12:58Z
+* content: This fix https://youtrack.jetbrains.com/issue/IJSDK-152 see:
+************************************************************************

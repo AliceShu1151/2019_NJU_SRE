@@ -1,0 +1,19 @@
+************************************************************************
+* id: 51
+* requirement: IDEA-78919 Resource Bundle Editor: Splitter forgets its position when switching between "Text" and "Resource bundle" tabs
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-10T19:08:06Z
+* content: IDEA-78919 Resource Bundle Editor: Splitter forgets its position when…
+* codeUrl: github.com/JetBrains/intellij-community/pull/51/commits/18f81d3c4c57f595572f2d7ff1bef3c7d8879586
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-10T19:10:41Z
+* content:  No description provided. 
+************************************************************************

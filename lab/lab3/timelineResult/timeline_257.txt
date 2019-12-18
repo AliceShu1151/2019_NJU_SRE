@@ -1,0 +1,4 @@
+************************************************************************
+* id: 257
+* requirement: [IDEA-138038] Added missing guards against dumb mode in JavaPsiFacadeImp...
+the requirement of 257 only has implements, no discussion.

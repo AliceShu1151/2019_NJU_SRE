@@ -1,0 +1,31 @@
+************************************************************************
+* id: 48
+* requirement: IDEA-99003 Render type parameters in project view
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-01-15T14:53:07Z
+* content: rendering api for type parameters(first part of IDEA-99003)
+* codeUrl: github.com/JetBrains/intellij-community/pull/48/commits/0edb61230e12f9a9bec36c57539b68347b4eb488
+* time: 2013-01-15T14:57:05Z
+* content: render type parameters in project view(second part of IDEA-99003)
+* codeUrl: github.com/JetBrains/intellij-community/pull/48/commits/d351385a6a3c2ee7ecfdfdb045c70033f4df428b
+* time: 2013-03-08T16:58:57Z
+* content: IDEA-99003 Render type parameters in project view
+* codeUrl: github.com/JetBrains/intellij-community/pull/48/commits/87de98ebc4e73788adec97719caf8a9e79230b4a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-08T17:01:52Z
+* content:  No description provided. 
+* time: 2018-12-19T12:55:58Z
+* content: Please update the PR.
+* time: 2018-12-19T12:57:03Z
+* content: Hello. I'm not interest in this PR anymore. Sorry
+* time: 2019-06-22T23:18:04Z
+* content: the code in this PR is not touched since 2013. is it still useful? if yes -> please resolve the conflicts and merge. if no -> consider closing this PR.
+************************************************************************

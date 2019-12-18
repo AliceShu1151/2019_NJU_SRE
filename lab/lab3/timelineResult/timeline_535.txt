@@ -1,0 +1,23 @@
+************************************************************************
+* id: 535
+* requirement: Guess project by file for line separator if document was modified outside of any command
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-28T21:45:35Z
+* content: Guess project by file for line separator if document was modified out…
+* codeUrl: github.com/JetBrains/intellij-community/pull/535/commits/242869ff3bd41f7e04700157bfd73352545bb7ed
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-28T21:47:09Z
+* content:  No description provided. 
+* time: 2017-04-13T14:41:14Z
+* content: Hi @traff Could you take look at this one as well please?
+* time: 2017-04-19T01:23:17Z
+* content: Justification: We had an issue with line seperator setting being sometimes ignored on save and the default fs seperator being used instead. This change fixed it. TBH wasn't able to track down the exact circumstances, just know that this fixes it.
+************************************************************************

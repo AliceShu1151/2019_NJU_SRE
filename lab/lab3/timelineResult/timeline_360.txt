@@ -1,0 +1,39 @@
+************************************************************************
+* id: 360
+* requirement: Fix for Go to Class window loses focus during typing.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-23T22:14:44Z
+* content: Fix for Go to Class window loses focus during typing.
+* codeUrl: github.com/JetBrains/intellij-community/pull/360/commits/466124b084ece43736813c90fa813d051fc2c492
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-02-24T03:13:36Z
+* content: The reason this bug occurs is that when the goto by name dialog dropdown resizes while the mouse is over it. If the window manager uses sloppy focus or focus-follows-mouse, then it will send a focus event to the underlying IDE window since the dialog is not modal. The IDE treats this like any other click in the underlying pane and typically the focus now goes to an underlying editor which is corrupted by further keystrokes, meanwhile, the use thinks she is still typing into the dialog box.
+* time: 2016-02-24T03:13:36Z
+* content: This could be fixed by:
+* time: 2016-02-24T03:13:36Z
+* content: This change uses the third method. It retains focus in the goto dialog if the mouse hasn't moved between a dropdown list resize and the focus loss event.
+* time: 2016-02-24T03:13:36Z
+* content: Please note that the check for the mouse not moved could have false positives and could be tightened up by adding a fast timer, or checking that the focus event.getOpposite() instanceof IdeFrame, however in all my testing I didn't find any case where it behaved unexpectedly, that includes testing it when typing into the dialog, testing when alt-tabbing away from the IDE, switching workspaces, etc.
+* time: 2016-02-24T03:13:36Z
+* content: Tested on Linux/Ubuntu with Cinnamon window manager with sloppy focus, focus-follows-mouse, and click to focus.
+* time: 2016-02-24T03:13:36Z
+* content: Bug: https://youtrack.jetbrains.com/issue/IDEA-112015
+* time: 2016-02-24T13:12:22Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-02-24T20:16:58Z
+* content: Done.
+* time: 2016-02-24T20:16:58Z
+* content: On Wed, Feb 24, 2016 at 5:12 AM, Kirill Likhodedov <notifications@github.com
+* time: 2016-02-25T13:50:00Z
+* content: Received. Thanks.
+* time: 2016-02-29T14:54:03Z
+* content: Hello, mrawl. Thank you for the pull request. At the moment we're working on a more general fix. However, I've slightly modified and put your fix under a registry key. How to enable the fix? Go to "Search Everywhere" or "Go to Action" and type "Registry". Find appropriate action and press Enter. Find "focus.follows.mouse.workarounds" key and check it. Press "Close".
+************************************************************************

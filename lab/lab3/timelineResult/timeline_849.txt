@@ -1,0 +1,21 @@
+************************************************************************
+* id: 849
+* requirement: IDEA-166142 IDEA-198152 find and return also jar:/// files…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-01T03:30:38Z
+* content: find and return also jar:/// files if they are inside contentRootOf
+* time: 2018-09-01T03:30:38Z
+* content: Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-01T05:12:48Z
+* content: IDEA-166142 find and return also jar:/// files if they are inside con…
+* codeUrl: github.com/JetBrains/intellij-community/pull/849/commits/51f606bd0d751e91c3755663be65c32f42d820e5
+************************************************************************

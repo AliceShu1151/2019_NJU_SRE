@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1056
+* requirement: IDEA-201941 Add countdown to "resolve changelist conflict" dialog to prevent accidental confirmations via the keyboard
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-08T16:28:34Z
+* content: IDEA-201941 Add countdown to "resolve changelist conflict" dialog to …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1056/commits/53765f2c59d5cf6daac48fb9ac08c38676793a83
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-08T16:32:08Z
+* content: Fixes https://youtrack.jetbrains.net/issue/IDEA-201941
+************************************************************************

@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1108
+* requirement: Fix a memory leak in DocumentImpl (IDEA-210051)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-30T01:32:40Z
+* content: Fix a memory leak in DocumentImpl (IDEA-210051)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1108/commits/852cd6fc0cd50aae2fe660d8c3e9ec3befabc931
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-30T01:35:28Z
+* content: Keep track of created DocumentListenerDisposable and dispose them in the removeDocumentListener method.
+************************************************************************

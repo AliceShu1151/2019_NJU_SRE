@@ -1,0 +1,42 @@
+************************************************************************
+* id: 616
+* requirement: PY-25794: Prevent unnecessary stub to AST switches in Python inspections
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-24T01:26:27Z
+* content: minor: break early. use loop label instead of boolean flag
+* codeUrl: github.com/JetBrains/intellij-community/pull/616/commits/2a01cad8da5782f58780e10b7862ea9658c8aca9
+* time: 2017-08-25T01:55:25Z
+* content: PY-25794: prevent PyImportElementImpl iterateNames from unstubbing files
+* codeUrl: github.com/JetBrains/intellij-community/pull/616/commits/4b85d357d78a30277a289456b66b3965d5cbb3ee
+* time: 2017-08-25T02:42:46Z
+* content: PY-25794: prevent abstract class inspection for unstubbing all super …
+* codeUrl: github.com/JetBrains/intellij-community/pull/616/commits/724de8366dbb358466e0286a01bc8bbbbc318afc
+* time: 2017-08-25T03:46:47Z
+* content: PY-25794: prevent PyProtectedMemberInspection from unnecessarily unst…
+* codeUrl: github.com/JetBrains/intellij-community/pull/616/commits/472004775eb26ef7fdb29f84df800ecceed3a266
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-25T04:02:01Z
+* content:  No description provided. 
+* time: 2017-08-29T14:59:05Z
+* content: Thanks for your pull request! I've added stub->AST assertions for the project files and the Python SDK modules to the majority of inspections in a2033f8.
+* time: 2017-08-29T14:59:05Z
+* content: I would like to fix the problem with the PyImportElementImpl in the minor updates for 2017.2 as a part of PY-25491, so I would like to put your in a separate commit that will go into a minor update.
+* time: 2017-08-29T14:59:05Z
+* content: @fitermay If you don't mind, I will extract your fixes for PyImportElementImpl and PyProtectedMemberInspection into separate commits and create unit tests for them.
+* time: 2017-08-29T14:59:05Z
+* content: And as we've discussed in PY-22215, @sproshev will put a simpler fix into master instead of your fix based on the original element visitor.
+* time: 2017-08-29T15:05:18Z
+* content: @vlasovskikh Yes, it makes sense to release any changes that involve reindexing separately, in a major release. The changes are already in separate commits. You can just cherry pick them out of my branch.
+* time: 2017-08-29T15:10:35Z
+* content: @vlasovskikh Also, I didn't include tests in cases except for the stubs because I assumed the existing tests already cover testing the functionality.  The assertions that you added should also take care of checking for unstubbing. So I'm curious what tests you have in mind.
+* time: 2017-08-29T15:24:55Z
+* content: @fitermay After I added stub->AST check in the commit I've mentioned several tests started to fail, but non of them failed due to the unstubbing problems PyProtectedMemberInspection and PyImportElementImpl. I've added a test for your fix for PyProtectedMemberInspection and now I'm thinking of a test for PyImportElementImpl. Do you have any code examples in mind?
+************************************************************************

@@ -1,0 +1,45 @@
+************************************************************************
+* id: 611
+* requirement: Move 'dropSelf' to PyFunctionType
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-10T00:37:32Z
+* content: Move drop self to PyFunction type
+* codeUrl: github.com/JetBrains/intellij-community/pull/611/commits/88267204693a79155e9e40d26a226185bba887fc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-14T00:19:15Z
+* content: @sproshev  In our framework we have decorators that add certain attributes to the functions that they decorate. To handle these decorators my plugin returns a PyFunctionType from 'provider.getCallableType' that handles these extensions.  I do not want to return a simple 'PyCallableType' as it isn't handled as well as 'PyFunctionType' by the rest of PyCharm code.
+* time: 2017-08-14T00:19:15Z
+* content: Anyways, these used to work in 2016.3. In 2017 the change '804354727e46f3c1f02b23faa264f6b1a80c4837' broke it because 'dropSelfForInstanceMethod' drops the concrete implementation of PyFunctionType always replacing it with 'PyFunctionTypeImpl'
+* time: 2017-08-14T00:19:15Z
+* content: This change delegates 'dropSelf' to PyFunctionType so that the concrete class can be preserved.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-22T02:26:27Z
+* content: fixes after review
+* codeUrl: github.com/JetBrains/intellij-community/pull/611/commits/adf79cd98c40007a6fb30c6f8eccbd2e23af8fc7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-22T02:27:23Z
+* content: @sproshev applied changes and rebased onto latest master
+* time: 2017-08-22T08:36:35Z
+* content: LGTM. Let's wait for approvement from @vlasovskikh
+* time: 2017-09-07T19:14:08Z
+* content: @fitermay The pull request makes sense, although PyFunctionType (as well as other PyType inheritors) wasn't really meant for extending. We don't guarantee that we won't break compatibility in our future releases. A more reliable solution would be to add a calable members provider similar to to PyClassMembersProvider and PyModuleMembersProvider. This class would accept a PyCallable and resolve / provide its extra members.
+* time: 2017-09-07T19:32:01Z
+* content: @fitermay Thanks! I've cherry-picked the commits from this PR. Could you please consider introducing a PyCallableMembersProvider for your case?
+************************************************************************

@@ -1,0 +1,59 @@
+************************************************************************
+* id: 828
+* requirement: Add a Way To Specify Class Names to Not Import Inner Classes For
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-14T06:16:42Z
+* content: Add a Way To Specify Class Names to Not Import Inner Classes For
+* codeUrl: github.com/JetBrains/intellij-community/pull/828/commits/8bd1990b7826754c6ee573db856ffbfe05439243
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-14T06:21:07Z
+* content: Like Builder, Factory etc
+* time: 2018-07-14T06:21:07Z
+* content: https://youtrack.jetbrains.com/issue/IDEA-135092
+* time: 2018-07-14T06:21:07Z
+* content: Submitted as @google.com
+* time: 2018-07-23T14:21:26Z
+* content: Could you please fix UI issues:
+* time: 2018-07-23T15:03:13Z
+* content: What is the picker for? People don't read the labels when they see the UI which they are used to (and the picker is used normally to choose a fully qualified class name).
+* time: 2018-07-23T15:29:58Z
+* content: I'd suggest to stay with simple text field. Or please explain what you like in picker.
+* time: 2018-07-24T10:23:26Z
+* content: Done. I replaced the Class Picker table with a text only table.
+* time: 2018-07-24T12:37:44Z
+* content: Moreover, it's probably better to have one text field "exclude inner classes matching *Builder", semicolon separated, like for file types:  What do you think?
+* time: 2018-07-24T12:53:36Z
+* content: Fix coming
+* time: 2018-07-24T12:53:36Z
+* content: I was working off an example I found in Run Configurations/Applet/Applet Parameters that inserts a dummy value. AppletConfigurable
+* time: 2018-07-24T12:53:36Z
+* content: I later found another example that does it with a blank value and I already updated the pull request. I still need to handle ignore-empty-values-on-save though.
+* time: 2018-07-24T12:53:36Z
+* content: I was trying very hard to avoid this pattern. I don't like it very much. It requires the user to know what the delimiter is and makes it harder to remove entries. More chance for user error. Personally, I like my original solution with a class picker best. It gives he user a good feeling that he didn't misspell the class name. It also sometimes highlights classes with similar names for example, while entering Builder, I might also decide to add BuilderFactory etc' But since you feel strongly against that, I think a table is better than a text field.
+* time: 2018-07-24T13:02:01Z
+* content: I don't think that separator is a problem, see  Still now it's not evident that the table contains short names.
+* time: 2018-07-24T13:17:42Z
+* content: Yes, I know there's a bunch of places that use this pattern. I still don't like it. There's other places that could use a text field but use a table instead:
+* time: 2018-07-24T13:17:42Z
+* content: 
+* time: 2018-07-24T13:17:42Z
+* content: I really prefer a table.
+* time: 2018-07-24T13:17:42Z
+* content: Not sure what you mean. Is the "Do not import inner classes for" title not clear enough? What would you suggest I call it?
+* time: 2018-07-24T13:20:55Z
+* content: "Exclude inner classes by short name". I'd also align the table to the right so it's clear that it depends on the checkbox above
+* time: 2018-07-24T13:29:27Z
+* content: done & done
+* time: 2018-07-25T12:40:20Z
+* content: Thanks. Merged manually with some small cosmetics changes (in code)
+* time: 2018-07-25T12:57:45Z
+* content: Cool, thanks for the review.
+************************************************************************

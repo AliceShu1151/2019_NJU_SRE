@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1200
+* requirement: Fix path bug ('/' instead of ':' on osx for example)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-09-17T16:47:56Z
+* content: Fix path bug ('/' instead of ':' on osx)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1200/commits/8606aa81ecdc1a4b5386a6db6fd78fbcfb8707f9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-17T16:48:19Z
+* content: Simple bug, but critical.  IJ shouldn't be looking on the path to find binaries that are relative, such as ./myBinary.  pathSeparatorChar actually is the character used to separate elements in the PATH environment variable, not the character used to separate directories in the filesystem.
+* time: 2019-09-17T16:48:19Z
+* content: https://docs.oracle.com/javase/7/docs/api/java/io/File.html#pathSeparatorChar vs https://docs.oracle.com/javase/7/docs/api/java/io/File.html#separatorChar
+* time: 2019-09-21T11:30:40Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2019-09-21T13:21:50Z
+* content: @klikh Yup, done.
+* time: 2019-09-23T12:44:53Z
+* content: @klikh @trespasserw Any thoughts on merging this?  It's pretty simple fix, but damn is the underlying bug super annoying and frankly pretty dangerous (can lead to execution of unexpected programs by IJ pretty easily).
+************************************************************************

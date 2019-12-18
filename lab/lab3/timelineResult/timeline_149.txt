@@ -1,0 +1,62 @@
+************************************************************************
+* id: 149
+* requirement: Correctly interpret python __slots__ that are external references
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-02-11T08:51:15Z
+* content: Test for slots as external references
+* codeUrl: github.com/JetBrains/intellij-community/pull/149/commits/8a038fa37044c06feec72035bf351fcfa61e409c
+* time: 2014-02-11T08:51:15Z
+* content: Allow slots to be a reference expression
+* codeUrl: github.com/JetBrains/intellij-community/pull/149/commits/7f3af36085c5a3f57c0cad49effbbf60ceb578d4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-02-11T09:21:43Z
+* content: The commit message for 8a038fa is the whole story, but the short version is that PyCharm should flag attribute references that it can prove are incorrect.
+* time: 2014-02-11T09:21:43Z
+* content: This is pretty much the opposite of PY-10158 :-)
+* time: 2014-02-11T09:21:43Z
+* content: BTW, I ran the PyCharm test suite and there were two failures before I touched it:
+* time: 2014-02-11T20:11:05Z
+* content: I just found out that there is a circumstance under which the change I made blows up the indexing:
+* time: 2014-02-11T20:11:05Z
+* content: I will try to look at it when I get home, or if the pros know what rookie Psi mistake I made, I would love to learn what not to do next time.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-02-12T05:37:10Z
+* content: Address the IndexNotReadyException
+* codeUrl: github.com/JetBrains/intellij-community/pull/149/commits/ce914ae340d4b808bbc92d9798101604b00ea411
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-02-12T05:45:41Z
+* content: @traff Sorry for the hassle; I believe ce914ae addresses the IndexNotReadyException.
+* time: 2014-02-13T06:12:12Z
+* content: @klikh Is ce914ae going to be included in the upstream? I don't see that change in the commit logs but this PR was closed.
+* time: 2014-02-13T06:12:12Z
+* content: Without that patch, it is very likely that reindexing will throw the exception mentioned above.
+* time: 2014-02-13T09:57:39Z
+* content: @mdaniel Sorry, I was under impression that all changes were incorporated by traff and you were referring a commit that was already merged. I'll ask traff to take a look once again.
+* time: 2014-02-13T21:06:32Z
+* content: Hi mdaniel, I've temporary reverted the change. I'll include it later together with your latest fix of INRE The problem with it now that it makes some of our professional edition tests to hang.
+* time: 2014-02-14T04:49:09Z
+* content: No problem, thank you for your help so far.
+* time: 2014-02-14T04:49:09Z
+* content: If you find the cause of the test hang, I would like to know how to do a better job next time. The Psi system is still dark magic (and I'm pretty surprised I got as far as I did), but I always enjoy the chance to learn.
+* time: 2018-07-21T15:06:39Z
+* content: It looks that the original issue has been fixed, @traff, right? @mdaniel, please reopen if needed.
+* time: 2018-07-21T15:06:59Z
+* content: cc @vlasovskikh.
+************************************************************************

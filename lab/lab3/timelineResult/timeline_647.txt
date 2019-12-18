@@ -1,0 +1,29 @@
+************************************************************************
+* id: 647
+* requirement: Uses native temp file creation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-07T23:12:44Z
+* content: Uses native temp file creation
+* codeUrl: github.com/JetBrains/intellij-community/pull/647/commits/0af481f37d55476e94ce8a3dd9fe8ab6d8aafb93
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-14T18:10:17Z
+* content: This should fix the issue that prevents us from creating patches in parallel. The old way when two patchers run at the same time will likely return the same file for both to use.
+* time: 2017-10-16T19:07:47Z
+* content: AFAIU, the core problem is that two patchers may end up sharing the same temp. directory, right?
+* time: 2017-10-16T19:07:47Z
+* content: I'm ok with the 'getTempDir()' part of the patch, but would like to keep the old scheme inside the temp. directory - it makes update logs more readable.
+* time: 2017-10-16T21:35:55Z
+* content: That is correct, when running patchers in parallel they hit the same directory and things go very wrong :)
+* time: 2017-10-17T08:10:08Z
+* content: OK, I pushed a minimal fix that only changes the directory creation. If you don't see any problem in it, I will backport it to branch 173.
+* time: 2017-10-17T17:57:21Z
+* content: Thanks! I believe the fix will be fine, as the directories will be different. I'd still caution the use of findUniqueName as is inherently not safe.
+************************************************************************

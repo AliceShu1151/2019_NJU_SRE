@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1090
+* requirement: IDEA-208913 : better @AutoValue support in nullability inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-13T16:07:00Z
+* content: IDEA-208913 : use annotations from ConcurrencyAnnotationsManager iso …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1090/commits/fdd2316552c1e551ccf0ea47535305b0db586b92
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-13T16:09:22Z
+* content: IDEA-208913 : use annotations from ConcurrencyAnnotationsManager iso hardcoded string, and add @autovalue to the list of known immutable annotations
+* time: 2019-03-20T14:41:51Z
+* content: Could you please add some tests demonstrating how things should work with AutoValue?
+************************************************************************

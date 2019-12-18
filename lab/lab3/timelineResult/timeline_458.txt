@@ -1,0 +1,23 @@
+************************************************************************
+* id: 458
+* requirement: Updated YouTrack icons for task plugin to match contemporary YouTrack presentation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-10-27T12:10:30Z
+* content: Updated YouTrack icons for task plugin to match contemporary YouTrack…
+* codeUrl: github.com/JetBrains/intellij-community/pull/458/commits/fa168877a71e48ec144182b3baa6e3320db7795d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-10-27T12:15:47Z
+* content:  No description provided. 
+* time: 2016-11-22T09:22:56Z
+* content: Any updates?
+* time: 2016-11-22T10:31:42Z
+* content: @jk1 as a JetBrains employee you may contact @dmitry-avdeev directly. P.S. this PR seems to target some outdated branch, all changes should first land in master branch.
+************************************************************************

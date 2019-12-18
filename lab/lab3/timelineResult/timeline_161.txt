@@ -1,0 +1,32 @@
+************************************************************************
+* id: 161
+* requirement: IDEA-120753: Modified tool window weight to be configurable in the Intellij registry
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-03-23T20:13:43Z
+* content: Made a new PR since I accidentally closed the other one and GitHub wouldn't let me reopen it. Now using the registry to store the UI designer and standard tool window weights. Since these values are floats, I added the necessary functions to handle floats in RegistryValue and Registry (others exist for double, int, string, etc.). By default, they are set to 0.33 as they were hardcoded.
+* time: 2014-04-10T03:10:58Z
+* content: Any movement on this issue by chance? Thanks!
+* time: 2014-07-30T03:04:35Z
+* content: Updated branch to latest code.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-10-09T03:10:14Z
+* content: IDEA-120753 Modified tool window weight to be configurable in the Int…
+* codeUrl: github.com/JetBrains/intellij-community/pull/161/commits/30e1dfed3c404f36a49f880da599f378d3b56348
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-10-09T03:17:39Z
+* content: Updated branch to latest code.
+************************************************************************

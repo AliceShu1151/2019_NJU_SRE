@@ -1,0 +1,100 @@
+************************************************************************
+* id: 728
+* requirement: PY-20075/PY-28393/PY-28332: Correctly resolve PyModuleType
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-17T03:45:01Z
+* content: PY-20075/PY-28393/PY-28332: Correctly resolve PyModuleType
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/da5ca79267f90ce990229ddfba7fe4a4c23dd823
+* time: 2017-11-17T03:45:01Z
+* content: PY-28393: fix import statement dot completion in import nspackage.<>
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/6100319eb9ccc6b99cfbe044a8c910423be2c36e
+* time: 2017-11-17T03:45:01Z
+* content: PY-28332: Fix completions for indirectly imported packages via 'from'
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/874d4df5ea4ade67a829299a5f937ef20b71bd8a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-08T07:41:55Z
+* content:  No description provided. 
+* time: 2018-02-08T14:23:46Z
+* content: Thanks for your pull request! Could you please address some issues found during the review?
+* time: 2018-02-08T15:47:42Z
+* content: Thanks for the comments. I will make the requested changes.
+* time: 2018-02-09T04:48:52Z
+* content: @vlasovskikh @sproshev I've implemented most of the changes and fixed a couple more issues. What's outstanding is:
+* time: 2018-02-09T04:48:52Z
+* content: Figuring out how to create a high level test for the equals and hashCode change. I've made that change not to fix a specific behavior but "из общих соображений"
+* time: 2018-02-09T04:48:52Z
+* content: Removing usages of deprecated methods. It is not always obvious what to do in every case. So this may take a while
+* time: 2018-02-09T04:48:52Z
+* content: collectImportedSubmodules and resolveImplicitPackageMember are now very similar. So that may be worth refactoring...
+* time: 2018-02-09T11:42:11Z
+* content: I've come up with a test for equality:
+* time: 2018-02-09T11:42:11Z
+* content: a.py:
+* time: 2018-02-09T11:42:11Z
+* content: We have a union in the text message even though it's the same imported module. To fix this you'll have to introduce equals and hashCode for PyImportedModuleType as well. See PyUnionType.myMembers, com.jetbrains.python.inspections.Py3UnresolvedReferencesInspectionTest#doMultiFileTest(java.lang.String, java.util.List<java.lang.String>).
+* time: 2018-02-09T11:43:19Z
+* content: @fitermay Could you please fix the issue with equals and hashCode and optionally address some code style comments? I'll be happy to accept this PR after the fix.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-09T12:25:13Z
+* content: fixes after review: ensure gainful employment for ContainerUtil
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/036f746502c66a73fcb975e8f3b4bfccc8b7521a
+* time: 2018-02-09T12:40:34Z
+* content: introduce equals and hashCode for PyImportedModuleType
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/e4b58a2b9f8a82eb21f351202ab0d0139d548c0f
+* time: 2018-02-09T12:44:38Z
+* content: added TODO
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/f13e2cb0ab3f821ae558dcf5b7b28999f46229bf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-09T13:01:47Z
+* content: @vlasovskikh @sproshev Thanks for the review. I've applied the changes
+* time: 2018-02-09T15:55:56Z
+* content: @fitermay I'm afraid one of the tests has become red after the recent changes in code completion: com.jetbrains.python.PythonCompletionTest#testSubmoduleOfIndirectlyImportedPackage. Could you please take a look?
+* time: 2018-02-09T18:33:21Z
+* content: @fitermay It failed for me several times in a row. I have to tell that I was running it with other tests when it failed.
+* time: 2018-02-09T19:52:04Z
+* content: @vlasovskikh
+* time: 2018-02-09T19:52:04Z
+* content: You can comment out tests testExcludedSubPackage() and testExcludedTopLevelPackage() and the test will pass.  Apparently PsiTestUtil.addExcludedRoot(...) stays even after the test is finished and that keeps pkg1 in excluded roots!
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-10T03:10:42Z
+* content: fix `addExcludedRoot` not torn down in PythonCompletionTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/2c9814dcd233b3ca7c1c19bb011de0c8a12ea0e3
+* time: 2018-02-10T03:14:34Z
+* content: use `location` as QualifiedNameFinder foothold
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/08cd2cd4c896fb123ab25a0ab495dc8e8053f76b
+* time: 2018-02-10T03:20:58Z
+* content: QualifiedNameFinder.findImportableQNames should not return duplicates
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/1eb30120ff9dbbe01c040fc4c1ce0edfbc4351ec
+* time: 2018-02-10T04:12:49Z
+* content: fix terminology: anchor->footHold
+* codeUrl: github.com/JetBrains/intellij-community/pull/728/commits/8dc4e446ee07a05311f370c8b0ebd8f436569246
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-10T04:14:50Z
+* content: @vlasovskikh I've fixed the tear down issue in PythonCompletionTest as well as make a few more minor changes
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 878
+* requirement: Detect extra syspath correctly
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-30T16:20:49Z
+* content: Detect extra syspath correctly
+* codeUrl: github.com/JetBrains/intellij-community/pull/878/commits/c6a9e782fd99510eef72cf4afca937b9635cf7f5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-30T16:23:47Z
+* content: Code completion for GTK and other PyGObject based libraries is broken because the stub generation does not work. The reason for this is that the gi-repository directory which contains the typelibs is not detected by PyCharm due to a bug in the extra_syspath.py helper script. This script fails because it assumes that module.__path__ is a string while it actually is a list. This causes the call of p.split() to fail and the script to terminate seemingly successfully (as AttributeErrors are caught and ignored) but without returning an extra syspath directory.
+* time: 2018-09-30T16:23:47Z
+* content: This commit fixes this problem by extracting the first element of the module.__path__ list. After applying this fix stub generation finds the typelibs in the gi-repository and code completion for GTK is working again.
+* time: 2018-09-30T16:23:47Z
+* content: Fixes PY-29817: No code completion for GTK
+* time: 2018-10-01T17:40:57Z
+* content: The patch works great for me. Please include it in the next PyCharm release.
+************************************************************************

@@ -1,0 +1,19 @@
+************************************************************************
+* id: 994
+* requirement: Add OpenJ9 support to Windows Launchers.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-28T01:18:39Z
+* content: Add Openj9 j9vm paths and checks
+* codeUrl: github.com/JetBrains/intellij-community/pull/994/commits/6220697d148f6bffac0d4467018d80c0cdcac280
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-28T01:25:03Z
+* content: This is a proposed fix for https://youtrack.jetbrains.com/issue/IDEA-202981 and makes the Windows launcher comptatible with OpenJ9. The only changes are path checks for the OpenJ9 jvm.dll locations.
+************************************************************************

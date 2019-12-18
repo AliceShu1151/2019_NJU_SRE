@@ -1,0 +1,58 @@
+************************************************************************
+* id: 231
+* requirement: hg4idea close branch feature
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-12-08T00:29:05Z
+* content: hg4idea: close branch
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/bf00a5edf5617bdab24f166b8325de49569e83f2
+* time: 2014-12-08T00:29:05Z
+* content: hg4idea: close branch
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/3f24bcbb67dd1b9325a14eafb8cda581f3a2d6b4
+* time: 2014-12-09T00:16:03Z
+* content: hg4idea: close branch cosmetic fixes
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/a716e6b12747f6e279d5b7b866f0e94ded288a06
+* time: 2014-12-09T00:16:03Z
+* content: hg4idea: close branch cosmetic fixes
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/f31f3ed699ee0b7dc5afbc55db2875ac46eae892
+* time: 2014-12-14T15:20:24Z
+* content: hg4idea: close branch option in commit dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/2fac2bbbfa24781ccdd752db2d21cd00e9981299
+* time: 2014-12-14T15:20:24Z
+* content: hg4idea: close branch option in commit dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/ad6ac48c7fc52b7ae7aff3e5e99357d37dfd76df
+* time: 2014-12-14T16:25:18Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/092774d4bcb6602a10e13668a52f27cb2abaffe5
+* time: 2014-12-14T16:29:08Z
+* content: hg4idea: unused import
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/b5355997566b8b39bd807e1cc86db85fee5e5ff7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-12-14T16:57:00Z
+* content:  No description provided. 
+* time: 2014-12-14T16:57:19Z
+* content: I can't figure out how to commit through CommitChangeListDialog without actual changes, so without changes I show my window for commit message and then perform commit. If there are changes, I invoke CommonCheckinProjectAction
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-12-14T16:58:57Z
+* content: unused import in HgUtil
+* codeUrl: github.com/JetBrains/intellij-community/pull/231/commits/747a33038594b756c282783d7ec5084321b09321
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-12-22T17:12:43Z
+* content: I've implemented this feature in a little different way. Now you have an ability to  call the commit dialog and perform commit&close branch action from status bar ->  branches widget. Please see appropriate commit ae92a76. Thank you for your contribution.
+************************************************************************

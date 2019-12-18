@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1029
+* requirement: Fix a bug in JBLoadingPanel in setBounds method.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-11T01:41:37Z
+* content: Fix a bug in JBLoadingPanel in setBounds method.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1029/commits/202d6e1d8d7713c22676bfd5a1e5c15c38601f97
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-11T01:52:20Z
+* content: When JBLoadingPanel#setBounds is called it only updates its boundaries and its underlying LoadingDecorator panel doesn't get updated resulting an unexpected layouts. This patch fixes it by overriding setBounds method and propagating the update to LoadingDecorator properly.
+* time: 2019-01-11T01:52:20Z
+* content: https://youtrack.jetbrains.net/issue/IJSDK-545
+************************************************************************

@@ -1,0 +1,22 @@
+************************************************************************
+* id: 1193
+* requirement: Make descriptor loading lazy in editorconfig plugin
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-11T16:00:21Z
+* content: Cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1193/commits/2d06994dbb83c52dd8b044499662f6337d48f246
+* time: 2019-08-11T17:32:22Z
+* content: Make descriptor management lazy
+* codeUrl: github.com/JetBrains/intellij-community/pull/1193/commits/b4c94cdbcdf82aaa45942105ee4b6ec4c4309f55
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-01T10:46:27Z
+* content: A descriptor is an internal structure used by the plugin. It is not required until an editorconfig file is opened, so it can be initialized lazily. This should slightly speed up startup
+************************************************************************

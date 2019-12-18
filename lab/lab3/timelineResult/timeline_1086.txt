@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1086
+* requirement: ActionButton component should be focusable.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-12T14:59:17Z
+* content: ActionButton component should be focusable.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1086/commits/62a72b599b217b572496a572527870fca3c75fde
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-12T15:03:15Z
+* content: Keyboard navigation can be needed not only for user using a screen reader but also for user with difficulties using a mouse.
+* time: 2019-03-12T15:03:15Z
+* content: Enabling focus on ActionButton allows a better focus traversal policy.
+* time: 2019-03-12T15:07:53Z
+* content: @rpaquay You are the one adding the screen reader condition. What do you think about this change?
+* time: 2019-03-12T19:24:42Z
+* content: @vcaen I think it is ok. AFAIK, this is the behavior I have seen in most app I have tried (e.g. Visual Studio).
+* time: 2019-03-12T19:24:42Z
+* content: The reason I made this conditional in the first place was to avoid friction when submitting PRs, i.e. I did not want to enter into a long argument about whether it is the right thing to do or not for all users. I was focused on improving keyboard navigation for a11y users.
+* time: 2019-03-12T19:24:42Z
+* content: FYI, there are many other conditional code paths like this.
+* time: 2019-03-12T19:29:58Z
+* content: Well I'm definitely not an a11y expert but I agree that this is a common behavior in most app. Unless the guideline is that all actions should be accessible via the Search Action Popup.
+* time: 2019-04-03T13:49:00Z
+* content: @Vassiliy-Kudryashov Do you have any update on the PR?
+************************************************************************

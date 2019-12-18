@@ -1,0 +1,21 @@
+************************************************************************
+* id: 193
+* requirement: BaseAnalysisAction now respects ignored directores.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-06-23T17:25:45Z
+* content: BaseAnalysisAction now respects ignored directores.
+* codeUrl: github.com/JetBrains/intellij-community/pull/193/commits/f5a5b845eed65a5e8fdeab4a7bcc0267c02ab73d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-06-23T17:44:02Z
+* content: When traversing the files looking for candidates BaseAnaysisAction would blindly traverse all directories and all files below any directory contained in the project, disregarding subdirectories that have been marked as excluded. For projects that contain large subdirectories mapped to network devices or joined, caching file systems, this is prohibitively expensive; sometimes appearing to hang IDEA on such things as right-clicking in the project view.
+* time: 2014-06-23T17:44:02Z
+* content: With this change BaseAnalysisAction will no longer traverse the content of directories that have been excluded from the project.
+************************************************************************

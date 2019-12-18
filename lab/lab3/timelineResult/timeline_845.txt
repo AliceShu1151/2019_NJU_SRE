@@ -1,0 +1,33 @@
+************************************************************************
+* id: 845
+* requirement: Decompilation of inverted floating point comparisons (IDEA-196302)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-08-01T16:31:36Z
+* content: Fix incorrect decompilation of inverted floating point comparisons wi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/845/commits/8838f58be160bbec264088e4899c24bdc59f218f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-08-02T07:08:40Z
+* content: Bug report This is a copy of my original PR (as mentioned in the issue), see MinecraftForge/ForgeFlower#11.
+* time: 2018-08-02T07:08:40Z
+* content: a<b and !(a>=b) have different results if either a or b is NaN/"Not a number". In that case the first expression will be false, the second will be true. The fix is fairly straightforward, I replace a<b with !(a>=b) (and the same for other comparisons) when the statement should be true for NaN and prevent simplification of negated floating point comparisons. The test class contains tests for non-inverted and inverted floating point comparisons as well as non-inverted and inverted integer comparisons (the last case can safely be simplified).
+* time: 2018-08-03T21:05:18Z
+* content: Throwing my support for this, for what it is worth. I've spent the last several days verifying the changes and how they effect the resulting code. Targeting Minecraft's decompile specifically, which has many instances of this issue. It all seems to be consistent with the functionality of the pre-decompiled code.
+* time: 2018-08-04T07:52:11Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-08-04T08:37:13Z
+* content: I did sign the CLA.
+* time: 2018-08-04T09:38:39Z
+* content: For some reason, I can't find the CLA in our records. Could you please sign or resend it once again?
+* time: 2018-08-04T10:11:36Z
+* content: I signed it again, but I guess I'm doing something wrong if it didn't work the first time. The instructions aren't entirely clear (and I haven't used DocuSign before): Do I need to manually send the document after signing it on the DocuSign website or does DocuSign do that automatically?
+* time: 2018-08-04T10:29:44Z
+* content: Now we've received the CLA, everything is fine now. Thanks.
+************************************************************************

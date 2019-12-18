@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1014
+* requirement: Fix IDEA-141538: XML validator does not use a relative path to the XSD
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-16T20:14:26Z
+* content: Fix IDEA-141538: XML validator does not use a relative path to the XSD
+* codeUrl: github.com/JetBrains/intellij-community/pull/1014/commits/f69431a9c73b9e97977834900df83aa301384754
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-16T20:17:11Z
+* content: Fixes https://youtrack.jetbrains.com/issue/IDEA-141538 and probably https://youtrack.jetbrains.com/issue/IDEA-146915
+* time: 2018-12-18T17:58:05Z
+* content: The original code before this fix had registered two instances of EntityResolver three times: 1) myXmlResourceResolver; 2) DefaultHandler (that also implements EntityResolver); 3) myXmlResourceResolver again by a dirty trick with startDocument(). My fix not only fixes the bug but also makes the code clean and only one instance of EntityResolver is created and then registered in the myParser only once.
+* time: 2018-12-18T18:00:58Z
+* content: I accidentally closed this PR in posting my previous comment. I reopened it now.
+* time: 2018-12-18T18:41:00Z
+* content: When you debug this code you probably want to debug the Xerces code as well. To do so with a debugger you need to make and use your own build of Xerces with debug property turned on because the official release contains JAR without any debug information including the line number information.
+* time: 2018-12-18T18:41:00Z
+* content: For discussion about why they did so go to http://markmail.org/thread/qkbaup5dzjrx5ffj
+* time: 2018-12-20T10:11:10Z
+* content: Thanks @rosti-il, unfortunately this cannot be accepted as-is because it breaks some tests from XmlHighlightingTest (mainly XInclude support). Based on your main idea of providing systemId to the original InputSource I've mastered a minimal patch to be backported to 2018.3 bugfix updates. Thanks again for great job and feel free to submit corrected patch with other improvements, we'll take it into our master.
+* time: 2018-12-20T10:54:06Z
+* content: @dmitry-avdeev ok. Could you advise me what is the right way to run all tests before commit? It's not clearly explained in the README.md.
+* time: 2018-12-20T11:09:52Z
+* content: Running all tests from intellij.xml.tests would be enough.
+************************************************************************

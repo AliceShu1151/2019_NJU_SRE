@@ -1,0 +1,41 @@
+************************************************************************
+* id: 908
+* requirement: Add option 'ignore != 0' to inspection 'Conditional expression with negated condition
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-02T20:34:54Z
+* content:  No description provided. 
+* time: 2018-11-15T08:07:27Z
+* content: Hi @rillig, is there a YouTrack request open for this? If not, could you create one?
+* time: 2018-11-15T17:55:27Z
+* content: @BasLeijdekkers I just created https://youtrack.jetbrains.com/issue/IDEA-202323 for it.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-20T13:44:00Z
+* content: Add 'ignore != 0' to inspection for negated conditions (IDEA-202323)
+* codeUrl: github.com/JetBrains/intellij-community/pull/908/commits/b8676eefed3ab90132bdbbc1d37986352bdd7b9c
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-20T13:53:26Z
+* content: @BasLeijdekkers The next try is ready.
+* time: 2018-11-20T13:53:26Z
+* content: Is there a better way for testing different options of one inspection? I'd rather have liked a method doTest(inspection) instead, but currently both calls to getInspection are during the setup phase of the test, and I also didn't find a hook for modifying the inspection before actually applying it.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-20T18:51:11Z
+* content: Improve test for NegatedConditionInspection (IDEA-202323)
+* codeUrl: github.com/JetBrains/intellij-community/pull/908/commits/2fb5ae6912acc9ce10656c048edd8d7f15129e6b
+************************************************************************

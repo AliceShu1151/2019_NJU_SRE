@@ -1,0 +1,47 @@
+************************************************************************
+* id: 685
+* requirement: Fix bug in resizing of DialogWrapper with large error label
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-19T15:57:00Z
+* content: Fix bug in resizing of DialogWrapper with large error label
+* codeUrl: github.com/JetBrains/intellij-community/pull/685/commits/ff240093f6fe6aa47c62531694c75b8b3a6a9c8c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-15T17:03:18Z
+* content: If the error label in the DialogWrapper is displayed on multiple lines, any update of the error message that keeps it on several lines will cause the dialog window to shrink.
+* time: 2018-01-02T17:39:01Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-01-02T18:10:26Z
+* content: CLA signed
+* time: 2018-01-03T20:15:39Z
+* content: No individual CLA applies to this contribution; it's work for hire at Google and covered by the agreement between Google and JetBrains.
+* time: 2018-01-03T20:15:39Z
+* content: @jgaillard85, your GitHub account should belong to the Google org.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-09T18:29:21Z
+* content: Use set/getMinimumSize
+* codeUrl: github.com/JetBrains/intellij-community/pull/685/commits/e79ad293065aa81503c20ed56d51daa789277a54
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-09T18:31:23Z
+* content: Updated PR following comments
+* time: 2018-01-17T23:52:03Z
+* content: @kkmic I'm not seeing this change in the master branch where the update above appears to show it was merged. Do you know why? Is “JetBrains:master” something different?
+* time: 2018-01-18T12:34:48Z
+* content: 'Cause I did it a wrong way. Now it's in our master and will sync up with the community soon.
+************************************************************************

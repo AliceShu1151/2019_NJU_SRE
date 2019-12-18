@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1026
+* requirement: Fix NPE inside `ExceptionRangeCFG::toString()` for `finally` exception range.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-09T00:01:20Z
+* content: This PR fix NullPointerException inside ExceptionRangeCFG::toString() when exceptionTypes == null. For ranges representing try ... finally block null is a valid value.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-09T02:49:02Z
+* content: Fix NPE inside `ExceptionRangeCFG::toString()` for `finally` exceptio…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1026/commits/aab7fbab8d205f69468bb2c2db971909718e014d
+************************************************************************

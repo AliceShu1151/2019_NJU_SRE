@@ -1,0 +1,4 @@
+************************************************************************
+* id: 582
+* requirement: README.md: escape * and +
+the requirement of 582 only has implements, no discussion.

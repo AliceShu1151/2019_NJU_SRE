@@ -1,0 +1,25 @@
+************************************************************************
+* id: 190
+* requirement: unix launch script: ensure filenames with special characters survive the...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-06-01T13:38:00Z
+* content: unix launch script: ensure filenames with special characters survive …
+* codeUrl: github.com/JetBrains/intellij-community/pull/190/commits/e82a7c6c44deed350d9df3a0bace9aa61a0a639d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-06-01T13:58:52Z
+* content: ... 'eval' call.
+* time: 2014-06-01T13:58:52Z
+* content: Just using "$@" fails with names with spaces or parenthesises in them. While the initial "$@" properly quotes all args passing to eval, the submit which eval does of the result misses the quotes. Hence this. At least I think that's what's happening. And with this change it works. Tested against bash 4.3.011 on Arch Linux. Test call:
+* time: 2014-06-01T13:58:52Z
+* content: Prior to the patch, with debug enabled by adding -x option to the shebang (and without parenthesises, as the eval call fails with them):
+* time: 2014-06-01T13:58:52Z
+* content: With patch:
+************************************************************************

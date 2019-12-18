@@ -1,0 +1,21 @@
+************************************************************************
+* id: 320
+* requirement: IDEA-147131 "Add Copy Subject" action to VCS history context menu
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-31T00:26:14Z
+* content: IDEA-147131 "Add Copy Subject" action to VCS history context menu
+* codeUrl: github.com/JetBrains/intellij-community/pull/320/commits/ac34eb384d7ebfb545efce3fb43bb1aca7b6612f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-31T00:27:25Z
+* content: See https://youtrack.jetbrains.com/issue/IDEA-147131 
+* time: 2015-11-02T13:18:08Z
+* content: As discussed in the tracker ticket, the functionality is already covered by the plain Copy action.
+************************************************************************

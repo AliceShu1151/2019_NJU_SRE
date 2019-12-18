@@ -1,0 +1,35 @@
+************************************************************************
+* id: 612
+* requirement: Create extension point for pregenerated skeletons
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-09T20:43:05Z
+* content: Create extension point to package pregenerated skeletons
+* codeUrl: github.com/JetBrains/intellij-community/pull/612/commits/292ccaed7908f26d4e550b0e2d04d7b0310de6e8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-14T00:28:42Z
+* content: @vlasovskikh This patch allows plugins to provide their own pregenerated skeletons. In my case this is needed because in our environment every release contains a different packaged SDK.  Generating these skeletons takes a very long time because the SDKs contain a lot of binary packages and because in windows spawning processes is a very slow operation.
+* time: 2017-08-22T02:53:15Z
+* content: @vlasovskikh @traff Rebased against latest master and resolved with @traff's changes
+* time: 2017-09-07T17:03:18Z
+* content: @fitermay The proposed extension point looks reasonable overall, but I don't get your motivation for introducing PyPregeneratedSkeletons instead of just providing a VirtualFile with a custom skeletons archive. How do you intend to use this interface?
+* time: 2017-09-08T02:12:20Z
+* content: @vlasovskikh Sorry, I haven't explained properly why I've done it this way.
+* time: 2017-09-08T02:12:20Z
+* content: We have a very large number of libraries bundled with the SDK. They do not change most of the time but on occasion they do. When they do change this API will allow detecting that and actually running a skeleton generator for that specific library instead of providing a pregenerated one.
+* time: 2017-09-08T02:12:20Z
+* content: Also, when running as a plugin there is no guarantee that the generator version of the pregenerated skeletons will match that of the platform. For those cases I will be able to return a skeleton with a fake generator version. It's a bit of a hack but I think it will work well enough.
+* time: 2017-09-08T02:12:20Z
+* content: In short this API offers more flexibility of how the skeletons are provided than simply returning an archive.
+* time: 2017-09-11T16:30:31Z
+* content: @fitermay Thanks for your explanation! We've slightly updated our pre-built skeletons handling in order to use the skeletons for a major Python even when minor versions don't match. Could you please rebase your  changes and then I'll merge your commits?
+* time: 2017-09-11T21:34:03Z
+* content: @vlasovskikh Thanks. Rebased on master and incorporated recent changes
+************************************************************************

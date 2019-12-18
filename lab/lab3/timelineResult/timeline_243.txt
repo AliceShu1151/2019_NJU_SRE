@@ -1,0 +1,23 @@
+************************************************************************
+* id: 243
+* requirement: fix IDEA-128528
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-15T15:39:29Z
+* content: fixes IDEA-128528
+* codeUrl: github.com/JetBrains/intellij-community/pull/243/commits/11615db06d58ea8b8264b31ab98bc38f17c12089
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-15T15:43:03Z
+* content: loads annotation processor options from bsc.maven.plugin
+* time: 2015-02-15T15:48:02Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-02-17T14:54:13Z
+* content: is it possible to compile this plugin standalone and replace the one thats shipped with my 14.1 EAP ? or get it into the next EAP ? I need this change desperately!
+************************************************************************

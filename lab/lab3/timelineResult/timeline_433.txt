@@ -1,0 +1,33 @@
+************************************************************************
+* id: 433
+* requirement: IDEA-157903 add "keep blank lines" option in properties code style
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-24T14:50:29Z
+* content: add "keep blank lines" option in properties code style
+* codeUrl: github.com/JetBrains/intellij-community/pull/433/commits/1a39280029f6ae8cef5e1d74d7eb3a55a4015eac
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-30T21:09:46Z
+* content: Currently blank lines in properties files are automatically removed by the formatter. This is very annoying when, for instance, you have spent some time separating groups of related properties using blank lines and then at commit time, the “reformat option” being checked, the formatter screw this up in your back (true story :-().
+* time: 2016-07-30T21:09:46Z
+* content: This patch adds a new properties code style option (checkbox) to choose if the blank lines should be preserved.
+* time: 2016-07-30T21:09:46Z
+* content: By default, the option is disabled to keep the current behavior (removing blank lines).
+* time: 2016-08-02T07:41:48Z
+* content: Have you submitted a contributor license agreement? If not, please provide an e-mail address where I can send the CLA. Please also set up your real name and e-mail in commit details. Thanks.
+* time: 2016-08-02T19:28:17Z
+* content: Hi Kirill,
+* time: 2016-08-02T19:28:17Z
+* content: The commit has been rebased to set up the proper commit details. And I have just sent you the signed CLA on your Jetbrains email address.
+* time: 2016-08-02T19:28:17Z
+* content: Kind regards, Vincent
+* time: 2016-08-03T07:14:39Z
+* content: The CLA was received. Thank you.
+************************************************************************

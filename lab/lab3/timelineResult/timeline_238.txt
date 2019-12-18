@@ -1,0 +1,29 @@
+************************************************************************
+* id: 238
+* requirement: check myAssertThreading before using assertIsDispatchThread
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-01-29T04:55:37Z
+* content: check myAssertThreading before using assertIsDispatchThread
+* codeUrl: github.com/JetBrains/intellij-community/pull/238/commits/cd28806c1b8a6576eb44ad3c38b9cb9dc814defe
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-01-29T04:58:42Z
+* content: The DocumentImpl constructor takes an argument called forUseInNonAWTThread, which is stored in the myAssertThreading field. While this field is checked before some assertions, it is not checked before others.
+* time: 2015-01-29T04:58:42Z
+* content: This change checks the field before all assertIsDispatchThread calls, enabling users to use more features of DocumentImpl outside the dispatch thread (as indicated by the constructor parameter).
+* time: 2015-01-29T04:58:42Z
+* content: (It is unclear to me why the assertIsDispatchThread assertions are there at all -- the functions don't seem to require it at all. This is the least intrusive change, remove the assertions completely should maybe be considered.)
+* time: 2015-01-29T11:58:20Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-01-29T14:14:14Z
+* content: Just sent the CLA.
+* time: 2015-01-29T14:51:31Z
+* content: Received, thanks.
+************************************************************************

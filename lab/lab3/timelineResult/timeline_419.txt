@@ -1,0 +1,75 @@
+************************************************************************
+* id: 419
+* requirement: Fix PY-19826
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-23T05:54:52Z
+* content:  No description provided. 
+* time: 2016-07-09T18:26:26Z
+* content: What do you think about inheriting PyTupleType from PyCollectionType? Maybe it will be more general solution of this issue.
+* time: 2016-07-09T19:37:40Z
+* content: I think it can be done but should be treated as a separate task/issue from this PR due to the risks of such a change. It would also be a substantially larger change since places in the code that check for instanceof PyCollectionType before checking for instanceof PyTupleType to be fixed.
+* time: 2016-07-10T04:48:20Z
+* content: I  guess what I'm trying to say is that I think it's a good idea but I'm not 100% confident it won't break anything. If you think it won't break things I can do it that way.
+* time: 2016-07-19T06:23:15Z
+* content: @sproshev so which route do you want to go here?
+* time: 2016-07-20T16:58:58Z
+* content: @fitermay Let's try with inheriting PyTupleType from PyCollectionType.
+* time: 2016-07-20T16:58:58Z
+* content: I think methods below should be updated:
+* time: 2016-07-20T16:58:58Z
+* content: What do you think? I think it would be great if we succeed :)
+* time: 2016-07-20T17:00:53Z
+* content: Maybe it's better to start from PyTypeChecker#match(PyType, PyType, TypeEvalContext, Map<PyGenericType,PyType>, boolean) to make sure that processing become easier
+* time: 2016-07-20T17:06:06Z
+* content: while we're at it I think PyUnionType should be updated to be more efficient, not rely on the order the types are added and remove the hack where null inside the set mean "unknown" type.
+* time: 2016-07-20T17:06:06Z
+* content: On Wednesday, July 20, 2016, Semyon Proshev notifications@github.com wrote:
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-23T03:02:52Z
+* content: Refactor PyTupleType to extend PyCollectionType
+* codeUrl: github.com/JetBrains/intellij-community/pull/419/commits/3cf934b5e3b3dd43c7ff171ddf720a709dc54607
+* time: 2016-07-23T03:04:35Z
+* content: add test that this fixes PY-19826
+* codeUrl: github.com/JetBrains/intellij-community/pull/419/commits/f2f1f697b1e04cd96ec61a574f2d26e0bee69458
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-23T03:11:24Z
+* content: @sproshev: Ok! Pushed the refactored code to this PR. PyNamedParameterImpl#getType and PyCallExpressionHelper#getCallTargetReturnType don't need to be changed , I think, because the skeleton type doesn't have an init method.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-23T14:27:13Z
+* content: Added handling of tuple type constructor
+* codeUrl: github.com/JetBrains/intellij-community/pull/419/commits/4d48a848a00d3afa3f46f63064b12e32f71877e6
+* time: 2016-07-23T20:26:55Z
+* content: Support union types in non-dict sequence element inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/419/commits/3d02939f97be2440f11893d75561bcdac7edaa33
+* time: 2016-07-23T20:47:04Z
+* content: tests tuple construction and mixed sequence types
+* codeUrl: github.com/JetBrains/intellij-community/pull/419/commits/7dfb3da0cd8dd3d1c0ad6ae98df0ec53eb464b04
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-23T20:50:56Z
+* content: @sproshev Bonus changes: Handle the tuple(...) constructor and mixed type lists. Had to change PyNamedParameterImpl#getType and PyCallExpressionHelper#getCallTargetReturnType after all to support these.
+* time: 2016-07-29T15:27:40Z
+* content: @sproshev ping
+************************************************************************

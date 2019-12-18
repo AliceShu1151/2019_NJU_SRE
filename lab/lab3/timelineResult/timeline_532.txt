@@ -1,0 +1,65 @@
+************************************************************************
+* id: 532
+* requirement: PY-23150: Improve autocompletion speed for modules with a lot of top level symbols
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-25T19:13:35Z
+* content: PY-23150: Lazy resolve FQNs for completion variants
+* codeUrl: github.com/JetBrains/intellij-community/pull/532/commits/63cca5370d0672e2cbda6906aaa07195983ddd66
+* time: 2017-03-26T04:07:52Z
+* content: PY-23150: Numpy custom members take significant time to resolve since…
+* codeUrl: github.com/JetBrains/intellij-community/pull/532/commits/5702120fb16105e5ac841ef4bf95230c11d870df
+* time: 2017-03-26T13:50:57Z
+* content: PY-23150: Make the ridiculously expensive search om QualifiedNameFind…
+* codeUrl: github.com/JetBrains/intellij-community/pull/532/commits/c18721cc98a10cdee1067fbbcfbd9d7fa37e0f00
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-27T12:24:48Z
+* content: This should make completions appear instantly even for modules with a large number of imports. Also includes a specific speedup for numpy.
+* time: 2017-03-28T17:12:48Z
+* content: I agree with the most of the changes, though this lazy rendering of LookupItem's type looks a bit doubtful. My original intention was to figure out how to make findCanonicalImportPath() itself faster, and, first of all, how come that caching of its result doesn't help up here. I'll look more closely into your changes before the end of the week (on a business trip now).
+* time: 2017-03-28T18:29:46Z
+* content: I know it looks doubtful because of the use of placeholder type text but it is the only way to get real-time performance in cases such as numpy and tensorflow.  This way we look up the type for 10-15 items that are displayed instead of 700+ items on the list.  I checked and the only places that getTypeText is used before are:
+* time: 2017-03-28T18:29:46Z
+* content: Also, the resolves types lazily only if there are more than 50 completions. In other cases we fall back to the old way.
+* time: 2017-03-28T18:29:46Z
+* content: As for findCanonicalImportPath, I have made it faster but it is not possible to make it fast enough for desired real-time performance, especially not on slightly older machines.  The caches do not help because the item being imported is a parameter, so 700 different items necessarily means 700 traversals through the package chain to find the first one from which it can be imported.
+* time: 2017-03-28T18:29:46Z
+* content: So as I see it the only two possibilities are:
+* time: 2017-03-29T01:56:39Z
+* content: Some more details about why caches don't help: Each module caches symbols defined at the module level but for symbols imported from other modules ,star imports and from imports, it has to follow the import and do so recursively until the declaring module is found. findCanonicalImportPath repeats this search for every symbol * every package in the heirarchy. You can try to flatten this search by caching imported symbols but generating this cache would be very expensive and it would need to be invalidated on every PSI change. So it would likely do more harm than good.
+* time: 2017-03-29T01:56:39Z
+* content: Alternatively you can use a special cache invalidation strategy for library files by implementing a custom modification tracker and maintaining special caches for libraries but that's a fairly large task that I think goes beyond the scope of this single issue.
+* time: 2017-03-29T01:56:39Z
+* content: So please consider my proposal of going around the problem entirely and using lazy resolve. It is not as scary as it sounds:)
+* time: 2017-04-03T11:56:13Z
+* content: I found out that performing the lookup of the topmost package exporting a symbol in the opposite direction in QualifiedNameFinder#doFindCanonicalImportPath() doesn't improve the situation. In the extreme case where all packages and modules propagate their symbols one level higher using wildcard imports we are going to scan through all possible combinations of a star import and a symbol's name no matter where we actually start. For instance, in the following example
+* time: 2017-04-03T11:56:13Z
+* content: every module defines a single name that is then imported in __init__.py of the corresponding package using "star" import and then propagated further up to lib/___init__.py. Despite the fact that there are only eight symbols in total, we do num_init_py * num_star_imports_per_module * num_symbols = 7 * 2 * 8 = 112 calls to PyStarImportElementImpl#multiResolveName() trying to discover canonical names for all of them. This is there the actual (combinatorial) bottleneck is in my opinion.
+* time: 2017-04-03T12:14:31Z
+* content: Yes, but in this case we exit the first time we find the import. The previous algorithm scanned those symbols several times because it never exited. However, the new algo does not improve worst case scenario, just average case.
+* time: 2017-04-03T12:36:26Z
+* content: I see, but in order to find the import in lib/__init__.py we still need to drill down all the nested packages and modules in the hierarchy, and the results of PyStarImportElementImpl#multiResolveName() are cached so the previous implementation didn't look for an imported name twice.
+* time: 2017-04-03T13:14:32Z
+* content: Good point. I may be wrong here. I'll need to take a better look at the intermediate caches and run the profiler without the other changes in place. Can we talk about the lazy type resolve? It is really the change which makes the completions instant but that you consider dubious, for understandable reasons.
+* time: 2017-04-03T23:34:41Z
+* content: I've tested it with a profiler. Like you said, the improvement is not great because PyStarImportElementImpl#multiResolveName() is cached. However, there is an improvement in the order of around 5% because traversing name definers in submodules is not quite free. You may keep that change or your may remove it if you think it's not worth it.
+* time: 2017-04-04T14:25:35Z
+* content: To keep things simple we first want to try hiding canonical names in the completion popup altogether using rather the real qualified names of defining modules. An alternative approach would be to somehow pre-populate the cache of resolved symbols for the given name available via each star import element (the one in PyStarImportElementImpl#multiResolveName()) while computing completion variants but it's not completely obvious where to do so without affecting the rest of the code insight.
+* time: 2017-04-04T14:40:51Z
+* content: That sounds reasonable -- you went with option #2: changing what you present as types.  I still prefer the lazy resolve approach because it doesn't change functionality. It does so at some potential cost to maintainability, and since you are maintaining it I cannot argue :)  Do you want to do a partial merge of this with just the numpy changes or do you need me to remove the rest of the commits?
+* time: 2017-04-04T14:46:37Z
+* content: Regarding the approach of prepopulating the caches: I think this can only be done with major refactoring or a major hack.
+* time: 2017-04-05T17:29:47Z
+* content: Yes, I'll integrate your Numpy-related patch alone. No need to modify the PR. It doesn't improve the responsiveness of the completion that much (about 80 milliseconds on my machine), but it doesn't hurt either.  As a nice side-effect it changes the icon of the corresponding entries in the completion popup to a more logical one (they were listed as methods previously) :)
+* time: 2017-04-05T17:29:47Z
+* content: Overall, there are already tons of various caches in PyCharm that serve as a common source of confusion and cryptic errors. We try not to add additional layers of laziness if it's possible to avoid that.
+* time: 2017-04-05T17:29:47Z
+* content: Meanwhile, I'll look further into how to reduce the computational cost of getCanonicalImportPath(). We rely on it in multiple places besides code completion, so this unfortunate oversight hinders other functionality too (though not that dramatically).
+************************************************************************

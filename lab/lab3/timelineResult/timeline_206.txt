@@ -1,0 +1,265 @@
+************************************************************************
+* id: 206
+* requirement: Static and dynamic call hierarchy for Python
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-07-30T10:43:03Z
+* content: Create CallSignature-, ReturnSignature- and CallHierarchy- cache mana…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/e7aa6e0cf5624e05e2c79870e5ab24e26242916f
+* time: 2014-07-30T11:06:35Z
+* content: Integrate CallSignatureCM with pydev
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/3dcf088c9456df7489077657fb8d9e6269e6d75b
+* time: 2014-07-30T11:19:39Z
+* content: Integrate ReturnSignatureCM with pydev
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/830c075bb63dc5b4a56f56e59efe177a4e3055f7
+* time: 2014-07-30T11:37:36Z
+* content: Added ability to accept and store return signatures
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/9c9ed857d956861a56bfbf57f24d366fad437b6f
+* time: 2014-07-30T11:43:29Z
+* content: Add PyReturnSignatureTypeProvider that can extract info about dinamic…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/39921ea1649dd40c88ad56c972af27f8916fb125
+* time: 2014-07-30T11:56:54Z
+* content: Integrate CallHierarchyCacheManager with pydev
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/39f59e1569b8c77c3776b12380783b2ee58aa71e
+* time: 2014-07-30T12:09:16Z
+* content: Added ability to store call information that was received from debugger
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/e3894bcd8915ef21c6919799a54c70dd0d8b50ed
+* time: 2014-07-30T12:36:22Z
+* content: Created caller- and callee- tree structure, trees usages call informa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a65a82bd9e8eaa870f09892e460313dabe5345bb
+* time: 2014-07-30T13:57:22Z
+* content: Added ability of using informatioon from FIndUsages for building call…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/0db2e1dd40012ddf57322cae0af01cf8d90621f3
+* time: 2014-08-06T08:57:37Z
+* content: Use static information for calleesTree, remove dublicate callee(r)s
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/18512cfff9c4b863463b23499a105ade7bb74fec
+* time: 2014-08-06T10:12:33Z
+* content: CallTreeStructure: check scope
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/0b58f212022d1f515775a693aa6559af4af2b6f4
+* time: 2014-08-08T11:18:49Z
+* content: add static and dynamic PyFunctionCallInfoManager
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/2b60f86da0f0a88a081c8a1c010e180a4ade5555
+* time: 2014-08-11T15:15:05Z
+* content: create Simple test for CallHierarchy
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/9392bb67069822374ddaa7f58780cf2161264573
+* time: 2014-08-11T15:35:36Z
+* content: add test ArgumentList for CallHierarchy
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/1d36b56b2f5071ec572c17602d579e13aeed2b54
+* time: 2014-08-11T15:38:10Z
+* content: change test Simple for CallHierarchy
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/fd325837fd66130684d3b1fd0b181596eba387bb
+* time: 2014-08-12T08:19:25Z
+* content: delete test AnotherSimple, create test Inheritance
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/131122d44e9c4289ad4fffcbf7f8a94822c26386
+* time: 2014-08-12T09:18:37Z
+* content: StaticCallInfoManager also detect ReferenceExpr of target function in…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/3ed7b55406d99431c34f0cd5b82531646e619fbe
+* time: 2014-08-12T10:36:33Z
+* content: change using of FindUsages
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/66abbf4ae683c0e41c00461d5f0d202aca4a0a7b
+* time: 2014-08-12T10:40:33Z
+* content: change PyFunctionCallInfoManaget interface
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/c267291d959c9a9acf3a15c205264ca4cb45f738
+* time: 2014-08-12T10:41:10Z
+* content: add OverriddenMathod test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/ab9631f49b539663c109e76489c1dfd3332b4684
+* time: 2014-08-13T09:32:09Z
+* content: PyCalleeFunctionTreeStructurre always show plus
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/17067541d0138f92ff7e9948c4bbbe95c2936d57
+* time: 2014-08-13T09:57:10Z
+* content: merge with JB-intellij-community env tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a68d9fca858829dec093b28e411dcf1ad45f4075
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-08-13T11:54:54Z
+* content: Please revert your changes to .idea/* files.
+* time: 2014-08-13T15:39:01Z
+* content: Do you really need any changes in this class for creating your call hierarchy test?
+* time: 2014-08-13T15:42:47Z
+* content: Python tests should not depend on Java tests.
+* time: 2014-08-13T15:46:22Z
+* content: Are these dependencies really necessary?
+* time: 2014-08-13T15:46:59Z
+* content: What's the idea behind these changes?
+* time: 2014-08-13T16:07:21Z
+* content: How do you handle nested classes and functions nested into the function? Please add tests and exclude calls from nested scopes. A more effective way of walking down a tree is a visitor, see PyRecursiveElementVisitor.
+* time: 2014-08-13T16:49:27Z
+* content: Why do you need a separate pop-up menu for Python call hierarchy?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-08-14T14:06:14Z
+* content: revert changes to CodeInsightTestFixture(Impl)
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/863cdda34e960c4239a2706e1f9e081e3332e417
+* time: 2014-08-14T15:34:53Z
+* content: add methods from HierarchyViewTestBase for check HierarchyTreeStructure
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a201b6a3ccf46829168be22a23c264746ea4f180
+* time: 2014-08-14T15:40:27Z
+* content: remove dependenсy of python-community-test from testFramework-java
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/f09e6d9b771ebefa85958bbc96d962adcf1c58b3
+* time: 2014-08-14T15:43:05Z
+* content: remove unnecessary dependencies of testFramework.iml
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/ff2f24f78fc074117c0c412aa04f670652a93f46
+* time: 2014-08-17T17:04:34Z
+* content: create HierarchyTreeStructureViewer (based on HierarchyViewTestBase) …
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/7fdf6f726d7236b7a7a9f3eee4a6437daa8a254e
+* time: 2014-08-17T17:06:39Z
+* content: remove write cache from CallHierarchyCacheManager
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/20508b52a2aeeef606db800b751a18e8c72b1e99
+* time: 2014-08-17T17:14:24Z
+* content: add some changes to Dynamic CallHierarchyTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/5b0612a1eea20e7fca19310a5a17c93fb1e31b06
+* time: 2014-08-17T17:17:24Z
+* content: remove checkTreeStructure from PyCallHierarchyTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/745f03992557b789290d9534dd6115e1a3ac2ce9
+* time: 2014-08-17T17:20:15Z
+* content: turn on save signatures in PyDebuggerOptionsProvider
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/67c5c25bb9717daf06c3bc96ebbdddc3217fab73
+* time: 2014-08-17T17:22:49Z
+* content: remove bug related with removing CallHierarchyData from PyHierarchyCa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/2d3f9db514c9e740df2fd54bddba629c5a29baab
+* time: 2014-08-17T17:24:01Z
+* content: create PyCallHierarchyTask for test dynamic collecting CallHierarchyData
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/b8a09c2fc9ab9d158437ba841763c80b3b507259
+* time: 2014-08-17T17:24:26Z
+* content: create Dynamic test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/98727fb7019843715b0b4c1387ead02f17023421
+* time: 2014-08-18T06:54:00Z
+* content: use recoursive visitor for building CalleeTree
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/976fac4daf0a1ea04656ad729b0dab545d7f97b9
+* time: 2014-08-18T07:03:33Z
+* content: use recoursive visitor for building CalleeTree
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/06ea119c987c4ec559705343c2c40dd6734d59a5
+* time: 2014-08-18T07:06:51Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/e94fd98a600cd067356de061b3de3c7a6d1d0305
+* time: 2014-08-18T07:28:08Z
+* content: create InnerFunction test for StaticHierarchyCallTree
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/b6d650cea12bc5896f6569353f86058653d5f54d
+* time: 2014-08-18T08:11:51Z
+* content: rename DynamicTest to Simple and move to folder 'Dynamic'
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/3292697d7aac759f4a9105aad5bb850c9467b59d
+* time: 2014-08-18T08:12:44Z
+* content: move Static Tests to folder 'Static'
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/694ea48fd0311e170f556b05b3de3953aff88582
+* time: 2014-08-18T09:21:31Z
+* content: create Constructor test for StaticCallHierarchy
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/3d29e065429d13c47279c5a57561bd889307f4f9
+* time: 2014-08-20T12:35:07Z
+* content: create DefaultValue test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/0590f005ebcc58031f4e1f1b9e4f32a44bc069c6
+* time: 2014-08-20T12:36:19Z
+* content: create data for NestedCall test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/68e548bcc26ce73f41012a9473f11c3e85e91a11
+* time: 2014-08-20T12:37:34Z
+* content: create data for Parentheses test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a87b6d52073f6a3344e047d1e8ebe26098b145b1
+* time: 2014-08-20T12:39:01Z
+* content: create data for Lambda test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a3ce50c76360e29ac59896ed1a982ff4405099bd
+* time: 2014-08-20T12:40:43Z
+* content: add tests to PyCallHierarchyTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/7ad4e989f8fe6b785b6b104462feb486467cf551
+* time: 2014-08-20T12:46:52Z
+* content: back to default version of PyDebuggerOptionProvider
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/3d7858509852c2ed83a4688804ae0b9e7d8f6ef0
+* time: 2014-08-20T12:58:51Z
+* content: add actions to PyCallHierarchyPopupMenu
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/0626491da7fa08d6bc49b9234d16c5ddd2de59a1
+* time: 2014-08-20T13:01:46Z
+* content: add changes in getting callers and callees based on static information
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/123de65d8a5a01721fa45c61e0d206826d257faf
+* time: 2014-08-20T13:02:49Z
+* content: changes data for ArgumentList test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/1e4a4b01a621edec7497d43cfc4e404156cddd76
+* time: 2014-08-20T13:03:38Z
+* content: changes data for Inheritance test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/9acd3578f2be192e73f19abcb377b51848616f16
+* time: 2014-08-20T13:04:31Z
+* content: changes data for OverridenMethod test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/59f8b789afae6af8b5c318c0643dac0933c319d1
+* time: 2014-08-20T13:06:10Z
+* content: set up isSaveCallSignatures to true for env tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/e67ca4b14afa012668589db0a5dfbaea2efb1e0d
+* time: 2014-08-20T13:29:48Z
+* content: remove unnecessary method doCallHierarchyTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/23bae91879247bb0da7eb6e2816d5639b3f698ff
+* time: 2014-08-20T13:30:20Z
+* content: change data for dynamic Simple test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/18d587def8ac3edc5188089cbbed60f93d71cde5
+* time: 2014-08-20T13:31:06Z
+* content: create data for AnotherSimple dynamic test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a0aa38b276a2f36d579fd57419aa0edc8d192751
+* time: 2014-08-20T13:52:41Z
+* content: add AnotherSimple test to PythonCallHierarchyTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/c86c538d4ab5be1a69c2ca1fce2c9d037dc4cd10
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-08-20T13:57:35Z
+* content: Static and dynamic call hierarchy for Python
+* time: 2014-08-20T14:00:41Z
+* content: @traff Please review the dynamic part related to the debugger.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-08-20T14:48:49Z
+* content: change main.py for AnotherSimple env test
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/cc05540c2073198a16d636a258602c46cb47b874
+* time: 2014-08-20T15:22:33Z
+* content: remove comments from PyHierarchyCallCacheManagerImpl
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/7ea9d7c1b1709f22724a84515d6513c8200d2edb
+* time: 2014-08-21T10:00:56Z
+* content: modified method 'add' in CallHierarchyCacheManager
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/585c0c09304eb71f0fe12d090be6192662dc3bd5
+* time: 2014-08-23T22:22:35Z
+* content: remove unnecessary components from PythonCallHierarchyTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/54ad0ba635ef83dd23bbccdac52709501bb4a585
+* time: 2014-08-23T22:35:23Z
+* content: extract callData from frames without signature_factory and map_frame_…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/21e5c2760db9d34eba51300ba78c2f40b759bc9d
+* time: 2014-08-23T22:43:10Z
+* content: rename PyHierarchyCallInfo to PyHierarcheCallData
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/01faea165222cc2d61f2f95e8e8a84d871116137
+* time: 2014-08-23T22:44:10Z
+* content: change api of PyHierarchyCallData class
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/566a2dd3dee3b532c254c442077c08504020cc3c
+* time: 2014-08-23T22:46:32Z
+* content: change policy of converting PyHierarchyCallData to String and back
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/e24d92df0a76c683b9b66a6ae9b8ec554c535b91
+* time: 2014-08-23T22:48:55Z
+* content: store callData with full qualified names
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/d271f1d575e67118c2fc7a54f9a0ccde54025cf9
+* time: 2014-08-23T22:51:59Z
+* content: changed procedure of obtaining caller(e)s through PyDinamicCallDataMa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/7ce4f5af8344a1480426def686d17d4b300885ab
+* time: 2014-08-23T22:55:56Z
+* content: CallHierarchyNode contains PsiElement instead of PyFunction
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/a0b14ecfe7e7fb035f6ce760766e508e75fe5637
+* time: 2014-08-24T01:26:19Z
+* content: add building CallHierarchyTree for PyClass and PyFile
+* codeUrl: github.com/JetBrains/intellij-community/pull/206/commits/017ef6b0cafacb194f1520f357ef78904e77cad7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-09-05T13:31:18Z
+* content: I have cherry-picked and refactored the static call hierarchy implementation into master.
+* time: 2014-09-26T08:49:38Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+************************************************************************

@@ -1,0 +1,51 @@
+************************************************************************
+* id: 486
+* requirement: make console patcher work
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-07T11:21:37Z
+* content: new inference: check intersection type of upper bound to detect subst…
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/4290a37a08df4ce2e8a2320b183dd847e168a3cb
+* time: 2016-12-07T16:51:56Z
+* content: Java: Added a test case to DefUseTest for nested 'try/finally' within…
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/fcf94c75d8e3736a3f56af8c389dc19485e094c4
+* time: 2016-12-07T17:02:22Z
+* content: nodejs rc producer using yml config file — fix isConfigurationFromCon…
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/a048035d971c9807748b0df370c063275acea552
+* time: 2016-12-07T17:05:41Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/e8a4c0addf7c2c5881b1dc56e0c76adb2556a0ad
+* time: 2016-12-07T17:17:33Z
+* content: Run Configurations dialog: limit minimum size for the tree (now width…
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/de96a58e25fd3890bd03e4c4e5e812f901f5ccc9
+* time: 2016-12-07T17:35:28Z
+* content: display the file name in "Outdated stub in index" message
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/b5389da6573fbcd3253e2418d2107b1331c8db60
+* time: 2016-12-07T17:39:48Z
+* content: make sure all possible exceptions are logged and error result is retu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/0a3d44230cdabdf351fb471754550762ed372d1e
+* time: 2016-12-07T17:41:36Z
+* content: ensure no whitespaces/comments left after dequalify with type annotat…
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/b086783d8d8ddbeaf8c1696ffe22cb77fc5cd359
+* time: 2016-12-07T17:43:06Z
+* content: dump validation messages and fail if there are some conflicts and/or …
+* codeUrl: github.com/JetBrains/intellij-community/pull/486/commits/3cfa5435714f50f934842787e62776dd7ab6d178
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-07T18:00:16Z
+* content: Current implementation of consoleUI for patcher did not check ANY errors and conflicts that may be found during the process. Moreover, it used to skip all error and apply changes as-is
+* time: 2016-12-07T18:00:16Z
+* content: The patch provides a logging and error reporting for that case.
+* time: 2016-12-07T18:00:16Z
+* content: I failed to find integration tests for console running patcher, so tests were not added to check this case
+* time: 2016-12-07T18:05:25Z
+* content: Only last two commits are actually the fix. The rest are here my mistake
+* time: 2016-12-08T15:33:45Z
+* content: @jonnyzzz Please rebase against current origin/master and remove commits that are not needed. Thanks.
+************************************************************************

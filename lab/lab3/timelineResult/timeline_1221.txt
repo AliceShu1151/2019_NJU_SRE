@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1221
+* requirement: IDEA-225647 "View Mode" menu item text changes
+the requirement of 1221 only has implements, no discussion.

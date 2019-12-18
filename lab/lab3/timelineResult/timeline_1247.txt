@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1247
+* requirement: IDEA-227006 Associate stdout/stderr JUnit5 ReportEntry/reporting entries with proper test in IntelliJ as regular stdout/stderr
+the requirement of 1247 only has implements, no discussion.

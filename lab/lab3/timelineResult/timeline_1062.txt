@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1062
+* requirement: IDEA-207106 Log deprecation notices for uses of registerFileType() instead of FileTypeFactory
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-11T18:25:06Z
+* content: IDEA-207106 Log deprecation notices for uses of registerFileType() in…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1062/commits/f33d630504686eaf2202bd2fd58267898ede70e4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-11T18:26:07Z
+* content: Implements https://youtrack.jetbrains.net/issue/IDEA-207106
+************************************************************************

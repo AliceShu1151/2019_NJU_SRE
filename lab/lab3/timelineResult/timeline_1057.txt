@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1057
+* requirement: IDEA-206965 Mark focused component when opening UI Inspector
+the requirement of 1057 only has implements, no discussion.

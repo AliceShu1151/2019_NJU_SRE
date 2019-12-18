@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1181
+* requirement: Fix AndroidXmlFormat issue when creating new layout
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-30T22:23:13Z
+* content: Fix AndroidXmlFormat issue when creating new layout
+* codeUrl: github.com/JetBrains/intellij-community/pull/1181/commits/9c9ef51bc90b061d4ec579f12b60f631a46d024c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-30T22:55:19Z
+* content: We're seeing an issue where Default XML styling takes higher priority over Android XML styling when creating Android XML Layout.
+* time: 2019-07-30T22:55:19Z
+* content: Newly created layout files do not have directory set yet when format is applied. However, almost everywhere, directory info is used to determine the format. Which causes all android formatting to be ignored for newly created files, and default formats were being applied.
+* time: 2019-07-30T22:55:19Z
+* content: This change sets the directory info before applying style formats.
+* time: 2019-07-30T22:55:19Z
+* content: Related bugs : https://buganizer.corp.google.com/issues/135967844 https://youtrack.jetbrains.com/issue/IDEA-219512
+************************************************************************

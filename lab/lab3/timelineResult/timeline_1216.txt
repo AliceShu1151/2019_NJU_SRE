@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1216
+* requirement: Update README.md
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-18T17:50:40Z
+* content: Update README.md
+* codeUrl: github.com/JetBrains/intellij-community/pull/1216/commits/5af8d3a5d3a108dc17fc8b1f3b29347334dbe85e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-18T17:53:07Z
+* content: Fixing of typos and mistakes in README.md using grammarly.com
+* time: 2019-11-09T13:21:47Z
+* content: This incorrectly changes the meaning of the sentence. The before was correct.
+************************************************************************

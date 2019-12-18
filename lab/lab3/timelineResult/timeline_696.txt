@@ -1,0 +1,35 @@
+************************************************************************
+* id: 696
+* requirement: Add git4idea dialog handlers to extension points.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-23T00:43:47Z
+* content: add dialog handlers extension points
+* codeUrl: github.com/JetBrains/intellij-community/pull/696/commits/27c3febccbe5f7a69db90310bd3caca1c3e158d3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-23T00:52:56Z
+* content:  No description provided. 
+* time: 2017-12-28T18:44:11Z
+* content: So why do you need these extension points?
+* time: 2017-12-29T11:24:28Z
+* content: I'm developing EmojiPrefix Plugin. but When I attach emoji to commit message, I couldn't put JPanel in dialogs. There is a way to hook Toolbar action on my plugin, but I don't think that is a good way.
+* time: 2017-12-30T16:53:11Z
+* content: Have you tried to use the CommitMessage class or CommitMessageI interface available e.g. from the VcsDataKeys.COMMIT_MESSAGE_CONTROL DataKey.
+* time: 2017-12-31T01:00:10Z
+* content: VcsDataKeys.COMMIT_MESSAGE_CONTROL need DataContext or DataProvider. but It doesn't gave from Git4Idea.
+* time: 2018-03-18T12:39:25Z
+* content: Sorry for a delay. So what's the problem of getting the COMMIT_MESSAGE_CONTROL from the DataContext? Could you please point me to the exact place in the code where you'd like to modify the commit message?
+* time: 2018-03-18T13:39:54Z
+* content: I want to add JPanel to those dialogs, and i want to change commit message when those dialogs are close.
+* time: 2018-06-04T13:15:39Z
+* content: It doesn't seem reasonable to customize all these dialogs separately, but it makes sense to allow plugins to provide custom commit message components. So I've created corresponding tasks - IDEA-193251, IDEA-193252.
+* time: 2018-06-04T13:15:39Z
+* content: As for the solution you could use right now. You could try overriding corresponding git actions, like
+************************************************************************

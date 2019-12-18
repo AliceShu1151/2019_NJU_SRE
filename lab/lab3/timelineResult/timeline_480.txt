@@ -1,0 +1,21 @@
+************************************************************************
+* id: 480
+* requirement: Test Hash comparisons using assertThat
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-01T01:59:11Z
+* content: Test Hash comparisons using assertThat
+* codeUrl: github.com/JetBrains/intellij-community/pull/480/commits/4830920e8ace99a7cb4492172301fce223ee9f0e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-01T02:02:17Z
+* content: … which makes failure messages (and maybe assertion code) more readable, and avoids http://errorprone.info/bugpattern/SelfEquals and inspection EqualsWithItself.
+* time: 2016-12-02T20:57:02Z
+* content: I didn't close this. Something went wrong with the branch and GitHub closed it automatically.
+************************************************************************

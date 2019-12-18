@@ -1,0 +1,4 @@
+************************************************************************
+* id: 586
+* requirement: Remove current name from the suggestion list when renaming
+the requirement of 586 only has implements, no discussion.

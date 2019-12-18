@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1003
+* requirement: IDEA-203651: Improve check that source root type is for tests
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-05T14:26:51Z
+* content: IDEA-203651: Improve check that source root type is for tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/1003/commits/31417affbda09db4785a6c24345774adb422d079
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-05T14:33:32Z
+* content:  No description provided. 
+* time: 2018-12-07T11:16:26Z
+* content: There are other places where the new method should be used to properly support custom test source roots, I'll check them.
+* time: 2018-12-07T11:17:01Z
+* content: I've fixed these problems and committed the changes myself.
+************************************************************************

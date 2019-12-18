@@ -1,0 +1,19 @@
+************************************************************************
+* id: 159
+* requirement: Add extension point for preprocessing of inner class usages
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-03-12T10:56:16Z
+* content: Add extension point for preprocessing of inner class usages
+* codeUrl: github.com/JetBrains/intellij-community/pull/159/commits/f6302349d800fad0201fd8139002fe184fdf0341
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-03-12T11:34:53Z
+* content: Add usages processor (with corresponding extension point) which is invoked when inner class is moved to top level. The goal is to provide other languages with a way to modify constructor invocations (e.g. in Kotlin A().B() should become B(A())).
+************************************************************************

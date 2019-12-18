@@ -1,0 +1,39 @@
+************************************************************************
+* id: 50
+* requirement: IDEA-98030 Encoding problem in comments in hg4idea plugin in IDEA
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-10T04:46:48Z
+* content: IDEA-98030 Encoding problem in comments in hg4idea plugin in IDEA
+* codeUrl: github.com/JetBrains/intellij-community/pull/50/commits/7c58cd4b768f8d57ceb95f29e94a43b4ec773faf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-10T04:56:04Z
+* content: Fix for http://youtrack.jetbrains.com/issue/IDEA-98030 The default encoding for Windows may be changed depending on the locale. For example, Japanese is cp932. And, if the HGENCODING is set to overrides the system default.
+* time: 2013-03-10T04:56:04Z
+* content: Please reference the following for the code page of Windows. http://msdn.microsoft.com/en-us/library/2x8et5ee.aspx
+* time: 2013-03-18T15:32:17Z
+* content: You can change value of "Start button ->Control Panel -> Clock, Language, and Region-> Regional and Language->Administrative -> Current language for non-Unicode programs -> Change system locale" (for example to Japanese ) instead of providing HGENCODING variable. Could you check  if this bug is still reproduced in this case, please?
+* time: 2013-03-18T18:36:32Z
+* content: Of course, the system locale has selected Japanese. The problem is that the read and write the commit log fixed character set cp1251. In Windows, the character code for Japanese is cp932. However, mojibake occurs because the character code is incorrect. Please see the following for mojibake. http://en.wikipedia.org/wiki/Mojibake
+* time: 2013-03-18T18:36:32Z
+* content: Capture below is the commit log that changed the character code only. same mojibake occurs cmd of cp1251 and hg4idea.
+* time: 2013-03-18T18:36:32Z
+* content: cmd_cp932_correct: 
+* time: 2013-03-18T18:36:32Z
+* content: hg4idea_mojibake: 
+* time: 2013-03-18T18:36:32Z
+* content: cmd_cp1251_mojibake: 
+* time: 2013-03-18T18:36:32Z
+* content: Default code page and character encoding for commit log is almost same, In this patch I use Charset.defaultCharset().
+* time: 2013-03-18T18:36:32Z
+* content: As capture below, I was able to resolve the mojibake If you apply this patch.
+* time: 2013-03-18T18:36:32Z
+* content: hg4idea_patched: 
+************************************************************************

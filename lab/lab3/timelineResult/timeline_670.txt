@@ -1,0 +1,21 @@
+************************************************************************
+* id: 670
+* requirement: Enumerate module roots directly in ModuleHighlightUtil.getModuleDescriptor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-21T10:17:17Z
+* content: Enumerate module roots directly in ModuleHighlightUtil.getModuleDescr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/670/commits/652056b4efd30af9d4e877735eec228c25834f25
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-21T10:21:17Z
+* content: This is faster than going through FilenameIndex which would call GlobalSearchScope.accept for all "module-info.java" files in the project, and there can be many of those
+* time: 2017-11-21T15:54:08Z
+* content: That's not quite correct. These files may live anywhere in module sources, not just under a source root.
+************************************************************************

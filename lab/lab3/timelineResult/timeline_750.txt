@@ -1,0 +1,43 @@
+************************************************************************
+* id: 750
+* requirement: [Fernflower] Ignore library classes when saving decompilation result
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-06T00:18:47Z
+* content: Ignore library classes when saving decompilation result
+* codeUrl: github.com/JetBrains/intellij-community/pull/750/commits/8ef880211fd0fb9aa2d3a24e6ccc19b9b9c3bcf5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-06T00:49:44Z
+* content: I have found a bug where, in some cases, an NPE is thrown because fernflower tries to get the ClassNode of a class added as a library (not isOwn).
+* time: 2018-03-06T00:49:44Z
+* content: Test.java:
+* time: 2018-03-06T00:49:44Z
+* content: TestLib.java:
+* time: 2018-03-06T00:49:44Z
+* content: Then compile these classes to Test.class and TestLib.class
+* time: 2018-03-06T00:49:44Z
+* content: On decompiling Test.class with TestLib.class added as a library, the following error is thrown:
+* time: 2018-03-06T00:49:44Z
+* content: ClassesProcessor only adds classes marked as isOwn to mapRootClasses. Therefore, invoking getClassEntryName on a library class will return a null node, hence the NPE.
+* time: 2018-03-06T00:49:44Z
+* content: This patch ensures that getClassEntryName is only called on non-library classes.
+* time: 2018-03-06T00:49:44Z
+* content: Adding library classes with -e= doesn't cause any issues if added as a .jar or .zip. This is because the entire ContextUnit representing the archive has own set to false. Therefore saveContext skips it entirely.
+* time: 2018-03-06T00:49:44Z
+* content: The NPE only occurs if both library and non-library classes are added to the same ContextUnit.
+* time: 2018-03-06T00:49:44Z
+* content: Ensure that getClassEntryName is only called on non-library classes when saving.
+* time: 2018-03-06T00:49:44Z
+* content: There are alternative ways to fix it too, such as making getClassEntryName gracefully return null if the class does not exist, but that may hide other bugs.
+* time: 2018-03-06T00:49:44Z
+* content: Alternatively, ContextUnit could enforce that all classes have the same isOwn value. I'm thinking this would be a better fix but requires a bit of refactoring.
+* time: 2018-03-06T00:49:44Z
+* content: I have signed the CLA.
+************************************************************************

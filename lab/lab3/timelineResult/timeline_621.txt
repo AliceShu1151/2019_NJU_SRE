@@ -1,0 +1,4 @@
+************************************************************************
+* id: 621
+* requirement: Fix nested test classes run in delegate to Gradle mode
+the requirement of 621 only has implements, no discussion.

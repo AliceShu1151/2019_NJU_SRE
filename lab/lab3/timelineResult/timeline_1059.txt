@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1059
+* requirement: IDEA-206970 When copying task into LocalTaskImpl, grab original icon
+the requirement of 1059 only has implements, no discussion.

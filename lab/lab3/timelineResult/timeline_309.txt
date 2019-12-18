@@ -1,0 +1,55 @@
+************************************************************************
+* id: 309
+* requirement: Put path mapping storage behind an interface
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-19T20:10:00Z
+* content: Put path mapping storage behind an interface
+* codeUrl: github.com/JetBrains/intellij-community/pull/309/commits/5291b9c5902aa0ef36c98c38aa308f7f8b5080f3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-20T17:13:33Z
+* content: Use a map to look up path mapping information. This makes the lookup on the order of the length of the path (in components) rather than on the order of number of paths that need mapping.
+* time: 2015-10-20T17:13:33Z
+* content: Added support (and a test) for the situation when a mapped path (symlink) is then remapped by the native file watcher.
+* time: 2015-10-20T17:14:45Z
+* content: I left the original linear list impl in the code so the interface can be examined independently of the map impl. Before the cl is merged, I'd remove the list impl entirely.
+* time: 2015-10-21T10:49:52Z
+* content: Looks good. But CanonicalPathMapTest does not work :)
+* time: 2015-10-21T12:35:41Z
+* content: It passes for me on mac and linux so I'm guessing that it must be failing on my favorite os (windows). I should have a windows laptop waiting for me at the office to debug the test. Is there any abstraction layer in IntelliJ to simulate the windows file system behavior?
+* time: 2015-10-21T12:50:39Z
+* content: Right, Windows. Um, didn't think it may be platform-dependent, will check it later today.
+* time: 2015-10-21T12:52:40Z
+* content: There are no such layer - too many small differences. We resorted to having CI agents with all 3 OSes.
+* time: 2015-10-21T15:22:45Z
+* content: Nothing critical, just file separators. You can go on, I'll make sure the test works before merging.
+* time: 2015-10-21T16:17:31Z
+* content: Ah yes, sorry about that.
+* time: 2015-10-27T14:43:50Z
+* content: No rush, but I was wondering if you had an estimate on when the merge would happen.
+* time: 2015-10-27T15:23:15Z
+* content: Oops, sorry :) I was waiting for you to do final touches (removing a list-based implementation etc). I'll clean it up and merge it later today.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-27T15:39:09Z
+* content: Cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/309/commits/d250ebdb1d467d6d6555b118e2322fed5f4f2cb9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-27T15:41:58Z
+* content: Sorry, I should have clarified sooner. I removed the list based impl and I think I made the test safe for windows.
+************************************************************************

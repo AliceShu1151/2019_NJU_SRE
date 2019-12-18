@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1153
+* requirement: Avoid attaching multiple versions sources
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-06T10:55:40Z
+* content: Avoid attaching multiple versions sources
+* codeUrl: github.com/JetBrains/intellij-community/pull/1153/commits/f8c2935227c5fa77e6dbd301ffa84d9278929eaf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-06T10:57:07Z
+* content: Avoid attaching multiple versions sources and docs with a snapshot dependency Fix the issue: https://youtrack.jetbrains.com/issue/IDEA-207941
+* time: 2019-06-07T09:42:16Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+************************************************************************

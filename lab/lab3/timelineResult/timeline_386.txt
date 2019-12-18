@@ -1,0 +1,29 @@
+************************************************************************
+* id: 386
+* requirement: Fix PY-19266 -- Debugger config not being passed when connecting from console
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-20T17:44:17Z
+* content: --Respect collect run time type information and qt-support when conne…
+* codeUrl: github.com/JetBrains/intellij-community/pull/386/commits/ae76d2be61f653277d62f1bf914a8a337acacb1f
+* time: 2016-04-21T04:11:54Z
+* content: --Pass environment variable based options to debugger when connecting…
+* codeUrl: github.com/JetBrains/intellij-community/pull/386/commits/f31293e2880dfb4c6c3023ab824525295865c408
+* time: 2016-04-21T04:13:12Z
+* content: reformat
+* codeUrl: github.com/JetBrains/intellij-community/pull/386/commits/8316ee40879f71c4650c47bc1893e3f578d9fcbd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-21T04:15:35Z
+* content:  No description provided. 
+* time: 2016-05-07T15:32:30Z
+* content: Thank you for the pull request! But I'm not sure there is real need for such fix. Gevent support will not work in that case. For PyQt support we create an import hook, so it will work if only PyQt is imported after connecting to debugger (also there is a matplotlib import hook in console, they can overlap each other). Does PyQt support really work after your fix? So the only reason to do that is to collect runtime information. But for collecting it you can just run debugger once in a casual way (via Run configuration) and don't care about it anymore.
+* time: 2016-05-07T15:41:01Z
+* content: Gevent support wont work but stepping filters, collecting run time type info will work. PyQT support worked for me as well. Ignoring stepping filters when connecting from console is certainly a bug. Users will also expect run time type info to be collected.
+************************************************************************

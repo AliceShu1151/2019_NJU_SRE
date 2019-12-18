@@ -1,0 +1,21 @@
+************************************************************************
+* id: 213
+* requirement: Fix the asm jar version required by javac2 in ant build
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-10-10T01:04:02Z
+* content: Fix the asm jar required by javac2 in ant build
+* codeUrl: github.com/JetBrains/intellij-community/pull/213/commits/5fda90bbc73f3277eeb3b66dc6acd88caab57f13
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-10-10T01:12:03Z
+* content: When one asks IJ to create an Ant build for the project, and "Enable UI forms compilation" is checked on the dialog, the output build file incorrectly references asm4-all.jar which causes the exception below, whereas asm-all.jar builds the project correctly.
+* time: 2014-10-10T01:12:03Z
+* content: This behavior is present in 2c69464 and in the latest 14 EAP (139.1.20).
+************************************************************************

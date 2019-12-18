@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1077
+* requirement: Add missing break statement (see IDEA-208467)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-06T09:11:06Z
+* content: Add missing break statement (see IDEA-208467)
+* codeUrl: github.com/JetBrains/intellij-community/pull/1077/commits/e494555f5a082ed980b812e4352f0ec0411c6fe9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-06T10:47:50Z
+* content: This raise-a-flag pattern is very wide-spread and often implemented without break statement after flag is raised. In case if-statement doesn't have any side-effects all iterations executed after the flag is raised are useless, as flag's value won't change. The statement or iteration however are often time-consuming which impacts performance.
+************************************************************************

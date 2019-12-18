@@ -1,0 +1,25 @@
+************************************************************************
+* id: 659
+* requirement: Splice side effect from String concatenation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-24T19:53:36Z
+* content: exclude side effect from String concatenation
+* codeUrl: github.com/JetBrains/intellij-community/pull/659/commits/d29fcd061977f9364334354ea2211f11297440e1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-08T22:02:45Z
+* content: According to https://bugs.openjdk.java.net/browse/JDK-8043677
+* time: 2017-11-08T22:02:45Z
+* content: is slower than
+* time: 2017-11-08T22:02:45Z
+* content: I've created a feature request https://youtrack.jetbrains.com/issue/IDEA-181103 (wtih measurement results) to have IDEA detecting such cases automatically and replaced them in the code of CE.
+* time: 2017-11-09T09:08:43Z
+* content: Closing since it was decided not to implement this kind of inspections.
+************************************************************************

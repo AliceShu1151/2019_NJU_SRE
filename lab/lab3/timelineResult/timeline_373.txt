@@ -1,0 +1,23 @@
+************************************************************************
+* id: 373
+* requirement: replace increment / decrement synthetic access method
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-22T05:33:46Z
+* content: Increment / decrement synthetic methods weren't identified and replaced as such.
+* time: 2016-03-22T05:33:46Z
+* content: For instance
+* time: 2016-03-22T05:33:46Z
+* content: Used to decompile to
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-27T19:21:39Z
+* content: replace increment / decrement synthetic access method
+* codeUrl: github.com/JetBrains/intellij-community/pull/373/commits/892c8c5388f011e5a0335abf534636ab8433aa0e
+************************************************************************

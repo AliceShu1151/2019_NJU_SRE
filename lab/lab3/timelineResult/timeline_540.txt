@@ -1,0 +1,47 @@
+************************************************************************
+* id: 540
+* requirement: Replaced checkboxes ChangeListener with ItemListener
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-05T11:04:42Z
+* content: IDEA-140862 Changed the "Regex" checkbox ChangeListener to ItemListener
+* codeUrl: github.com/JetBrains/intellij-community/pull/540/commits/062ea6b968100677ee8a437f5222abab1cb6179d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-05T11:44:03Z
+* content: Checkbox ChangeListener is also triggered on mouse hover as "armed" on / off state changes. To listen to checkbox 'selected' state changes only you want ItemListener instead. The patch does exactly that.
+* time: 2017-04-05T11:44:03Z
+* content: Now the list selection is not reset when mouse is moved over the "Regex" checkbox in Subversion "Repository" view. I also added a 'g' mnemonic so that regexp mode can be switched with Alt+G hotkey.
+* time: 2017-04-07T14:07:46Z
+* content: There are at least 17 other instances of addChangeListener() called on a JCheckBox. All of them are used to handle checkboxes selection change. I.e. they are better replaced with addItemListener() to avoid receiving unwanted events. Clicking a checkbox generates at least 5 "change" events:
+* time: 2017-04-07T14:07:46Z
+* content: Should I commit the fix for the other 17 cases to this branch?
+* time: 2017-04-07T15:21:24Z
+* content: Yep, it looks reasonable, thanks!
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-07T21:50:00Z
+* content: Replace addChangeListener() for checkboxes with addItemListener()
+* codeUrl: github.com/JetBrains/intellij-community/pull/540/commits/e315bb1396737491985065a1804f6311cc854227
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-13T08:02:22Z
+* content: Hi, I don't mean to nag but I'd expect some reaction in a week's time. Is the patch good enough? Are you going to pull the changes? (do you actually pull them on GitHub? i.e. will I see the status change from Open to Merged?)
+* time: 2017-04-13T14:10:12Z
+* content: Sorry for delay. I've merged the changes manually. Thanks!
+* time: 2017-04-13T14:10:12Z
+* content: GitHub is not the primary repository, so we actually apply the pull request manually and then (within an hour) it is mirrored to GitHub.
+************************************************************************

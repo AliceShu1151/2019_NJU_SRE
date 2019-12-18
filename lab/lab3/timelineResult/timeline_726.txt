@@ -1,0 +1,25 @@
+************************************************************************
+* id: 726
+* requirement: Pycharm community project config fixes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-07T03:15:55Z
+* content: exclude gradle build folders from project and add to .gitignore
+* codeUrl: github.com/JetBrains/intellij-community/pull/726/commits/6a926be1afb31cebd95a99523e62cb5e510d63f4
+* time: 2018-02-07T03:17:07Z
+* content: helpers/pydev should be a source root with output prefix 'pydev'
+* codeUrl: github.com/JetBrains/intellij-community/pull/726/commits/94a02085d9c38466c0572c9ea51daae48ca80cff
+* time: 2018-02-07T03:17:31Z
+* content: chmod +x setup-test-environment gradle wrapper
+* codeUrl: github.com/JetBrains/intellij-community/pull/726/commits/7d96ef1808cee2679e82903a819fd10b7fe8631d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-07T03:20:22Z
+* content: Fixes to take some pain out of properly configuring the project
+************************************************************************

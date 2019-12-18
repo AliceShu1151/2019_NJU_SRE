@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1205
+* requirement: Add unit tests for unindent with selection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-09-24T05:07:15Z
+* content: Add unit tests for unindent with selection
+* codeUrl: github.com/JetBrains/intellij-community/pull/1205/commits/16c8901c3552e6677591c9809cf17019ceb06cdd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-24T05:34:35Z
+* content: This adds two unit tests that reproduces IDEA-223397.
+* time: 2019-09-24T05:34:35Z
+* content: (Sorry I don't know my way around the editor enough to attempt an actual fix for the bug)
+* time: 2019-09-27T16:20:20Z
+* content: Cannot push a test which fails (without a fix for the problem).
+************************************************************************

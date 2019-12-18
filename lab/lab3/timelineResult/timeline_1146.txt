@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1146
+* requirement: Use get arrow button preferred size combo box instead
+the requirement of 1146 only has implements, no discussion.

@@ -1,0 +1,49 @@
+************************************************************************
+* id: 1084
+* requirement: Upgrade pip, setuptools and virtualenv
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-09T06:51:01Z
+* content: Removed the old modules as pip, setuptools and virtualenv and added a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1084/commits/ff67ef84ed01b2739d772c51e65d18cfd0e88273
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-09T07:11:04Z
+* content: Removed the old modules as pip, setuptools and virtualenv and added all the new once.
+* time: 2019-03-09T07:11:04Z
+* content: I did a test changing my PyCharm as this steps:
+* time: 2019-03-09T07:11:04Z
+* content: I created a new project with virtualenv: 
+* time: 2019-03-09T07:11:04Z
+* content: Notice that the versions are old because it take pip v10 and setuptools 39. 
+* time: 2019-03-09T07:11:04Z
+* content: I searched in the directory and I found this files here ./helpers 
+* time: 2019-03-09T07:11:04Z
+* content: I replaced the file ./pycharm/lib/pycharm.jar and changed the versions for pip, setuptools and virtualenv. 
+* time: 2019-03-09T07:11:04Z
+* content: I closed the Pycharm and I open it again then create a new project and Bingo the python modules were always updated to this last version. 
+* time: 2019-03-09T07:11:04Z
+* content: Then I checked in the GitHub official project and I notice that the file .src/com/jetbrains/python/packaging/PyPackageManagerImpl.java has the references for these modules.
+* time: 2019-03-09T07:11:04Z
+* content: Resources I used: PyPI: PIP PyPI: Setuptools PyPI: Virtualenv
+* time: 2019-03-09T07:11:04Z
+* content: NOTE: The setuptools file is a zip file which I extracted and then compressed into a tar.gz
+* time: 2019-03-11T15:27:13Z
+* content: Have you signed our contributors agreement already? If you haven't, could you please go to https://www.jetbrains.com/agreements/cla/ and sign it electronically?
+* time: 2019-03-11T15:38:16Z
+* content: No but I signed a few minutes ago.
+* time: 2019-03-12T11:32:59Z
+* content: Great! Everything looks good to me (in particular, pip and setuptools are in sync with their versions bundled with virtualenv). Merged. We were actually going to do exactly that for the upcoming 2019.1 release, but you turned out to be slightly ahead :)
+* time: 2019-03-12T11:32:59Z
+* content: Also, we're unlikely to backport these updated packages to 2018.3 as all of them no longer support Python both 2.6 and 3.3 that we're compatible with there.
+* time: 2019-03-12T11:32:59Z
+* content: By the way, no need to reverse-engineer PyCharm -- feel free to directly ask us about the implementation in the issue if you want to submit a pull request
+* time: 2019-03-12T11:32:59Z
+* content: Anyway, thanks for your contribution!
+************************************************************************

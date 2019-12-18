@@ -1,0 +1,22 @@
+************************************************************************
+* id: 1168
+* requirement: Fix unstable order of dependencies and modules listed in iml files after import from Gradle
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-09T07:38:17Z
+* content: Make dependencies order reproducible
+* codeUrl: github.com/JetBrains/intellij-community/pull/1168/commits/53a6b9fc0fdb4ff536b571e19015d7f2440e7444
+* time: 2019-07-09T11:35:36Z
+* content: Remove all orderEntries if some dependencies are duplicated
+* codeUrl: github.com/JetBrains/intellij-community/pull/1168/commits/61c52e7ea146dac49f47a306868d73e04b10d8bc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-09T12:04:00Z
+* content: What actually done:
+************************************************************************

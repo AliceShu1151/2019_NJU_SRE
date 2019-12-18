@@ -1,0 +1,23 @@
+************************************************************************
+* id: 757
+* requirement: Add support for nullability annotations in androidx package
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-13T17:37:00Z
+* content: Add support for nullability annotations in androidx package
+* codeUrl: github.com/JetBrains/intellij-community/pull/757/commits/f01cf262fc196bf4dbb99e20cd937dee3705a7b6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-13T17:42:43Z
+* content: This is similar to JetBrains/kotlin#1559
+* time: 2018-03-15T09:42:05Z
+* content: Merged manually to 'master' branch so it'll be included into 2018.2 release. Do you need to have this in 2018.1 updates?
+* time: 2018-03-15T13:25:26Z
+* content: It would be ideal to get it into 2018.1 but it's not strictly necessary. We're going to start shipping libraries with these annotations in them pretty soon, but they won't be stable right away, so this is most important for people who are early adopter types, and they're probably more likely to be using 2018.2 EAPs? (I think for the corresponding Kotlin compiler change they're putting it into 1.2.40 and maybe 1.2.31 if there's a 1.2.31 for other bug fixes.)
+************************************************************************

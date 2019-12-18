@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1066
+* requirement: Maven: Import folders from multiple executions
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-17T09:34:46Z
+* content: Maven: Import folders from multiple executions
+* codeUrl: github.com/JetBrains/intellij-community/pull/1066/commits/d3eb21449104184e78e5bb59aadd10aa94de2f26
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-17T10:00:35Z
+* content: With maven-build-helper, one can define multiple executions that can each add source or resource folders to the project. With the current implementation, IntelliJ only considers the very first execution that matches the given maven goal, like add-sources. However, it is perfectly fine with Maven to define multiple executions with the same goal. This also happens automatically, for example when multiple Maven profiles are defined and active, that each call add-source of the maven-build-helper.
+* time: 2019-02-17T10:00:35Z
+* content: With this commit, I changed the folder importing strategy, so that not only the first matching execution is considered, but all executions that call the appropriate Maven goal.
+* time: 2019-02-17T10:00:35Z
+* content: I also added a test case that fails on current master, but passes with this commit. It simulates a project structure with multiple additional sources and resources folders, with each of them added in different executions of the maven-build-helper. This can be a common scenario if one extensively uses Maven profiles to trigger specific actions.
+* time: 2019-03-07T18:57:56Z
+* content: Did anyone already have a chance to take a look at this? The company I work for would very much appreciate to see this patch integrated into IntelliJ Ultimate. We rely heavily on conditionally generated source folders which have to be manually marked by the developers because of this issue.
+************************************************************************

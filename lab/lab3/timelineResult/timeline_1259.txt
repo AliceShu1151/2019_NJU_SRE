@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1259
+* requirement: Improve Method's param count evaluation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-22T11:47:33Z
+* content: Improve Method's param count evaluation
+* codeUrl: github.com/JetBrains/intellij-community/pull/1259/commits/eed0d667a7c1d5be8f84fedf18bab35d1cea9cb0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-22T14:02:06Z
+* content: I've investigated usage of java.lang.reflect.Method.getParameterTypes(); and found that it's frequently called from parts of the application responsible for startup, indexing and PSI:
+* time: 2019-11-22T14:02:06Z
+* content: 
+* time: 2019-11-22T14:02:06Z
+* content: 
+* time: 2019-11-22T14:02:06Z
+* content: 
+* time: 2019-11-22T14:02:06Z
+* content: Each call to Method.getParameterTypes() clones underlying array, and in many cases the copy is used only to get it's length i.e. number of method params. So I propose to use Method.getParameterCount() which returns number of method's arguments without cloning of underlying array.
+* time: 2019-11-22T14:02:06Z
+* content: In some cases it also allows to make a decision about constructor's param count and if it's 0 then we can call Constructor.newInstance() without using vararg.
+************************************************************************

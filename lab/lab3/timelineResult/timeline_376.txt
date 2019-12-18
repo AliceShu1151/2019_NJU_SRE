@@ -1,0 +1,19 @@
+************************************************************************
+* id: 376
+* requirement: [Fernflower] Setup increment/decrement test properly
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-29T05:17:28Z
+* content: the source code for the test was rewritten but the binaries and test …
+* codeUrl: github.com/JetBrains/intellij-community/pull/376/commits/e6ade4e2009a7607f2835cfaead7d4b1a1dbd591
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-29T05:17:55Z
+* content: the source code for the test was rewritten but the class wasn't compiled and test result were not mapped, which means that the new method addition wasn't being tested
+************************************************************************

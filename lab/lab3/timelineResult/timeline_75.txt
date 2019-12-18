@@ -1,0 +1,19 @@
+************************************************************************
+* id: 75
+* requirement: removed unused libs and dependencies
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-04-21T18:29:12Z
+* content: removed unused libs and dependencies
+* codeUrl: github.com/JetBrains/intellij-community/pull/75/commits/abf1e140a28ca42f2d1a2e755b9f4de64505b799
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-04-21T20:30:56Z
+* content: removed rhino-js and sass-std (and some broken module dependencies) to fix errors that appear in Project Structure). More description here: http://youtrack.jetbrains.com/issue/IDEA-105886
+************************************************************************

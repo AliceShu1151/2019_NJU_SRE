@@ -1,0 +1,21 @@
+************************************************************************
+* id: 613
+* requirement: PY-20537: Flush scope caches on content reload
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-17T05:13:42Z
+* content: PY-20537: Flush scope caches on content reload
+* codeUrl: github.com/JetBrains/intellij-community/pull/613/commits/1c7478de04eafecbfb8a221de39576da27f40005
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-17T05:15:21Z
+* content:  No description provided. 
+* time: 2017-08-18T21:07:03Z
+* content: Hello @fitermay Please check my comment here: https://youtrack.jetbrains.com/issue/PY-20537#comment=27-2376326
+************************************************************************

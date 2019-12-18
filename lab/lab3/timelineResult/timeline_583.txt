@@ -1,0 +1,19 @@
+************************************************************************
+* id: 583
+* requirement: Ignore idle threads of the common pool
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-30T22:34:07Z
+* content: Ignore idle threads of the common pool
+* codeUrl: github.com/JetBrains/intellij-community/pull/583/commits/2a2d72b99716a7d8105aab7e2fbe3a6830103f09
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-06T04:27:40Z
+* content: When running tests, the leak checker was catching ForkJoinPool.commonPool() idle threads, and was failing.
+************************************************************************

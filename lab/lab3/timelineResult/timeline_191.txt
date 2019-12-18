@@ -1,0 +1,23 @@
+************************************************************************
+* id: 191
+* requirement: Handle '@' symbol in ssh username
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-06-06T05:37:18Z
+* content: Handle '@' symbol in ssh username
+* codeUrl: github.com/JetBrains/intellij-community/pull/191/commits/f06f5a629e60660821eaaa72a86ec3e85faa2e24
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-06-06T05:38:38Z
+* content: http://youtrack.jetbrains.com/issue/IDEA-123890 Git pull doesn't work if git username has 'at' symbol
+* time: 2014-06-09T16:55:34Z
+* content: The fix is nice, thanks!
+* time: 2014-06-09T16:55:34Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+************************************************************************

@@ -1,0 +1,22 @@
+************************************************************************
+* id: 397
+* requirement: Fix PY-11224 -- Debugger, variable assignment from console inside function fails
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-30T23:50:26Z
+* content: --fix issue with locals not being set in debugger console
+* codeUrl: github.com/JetBrains/intellij-community/pull/397/commits/3f6d36fe2a2de8cf7b8a5d440e61525fc90f92a2
+* time: 2016-04-30T23:57:43Z
+* content: --refactor pydevd_save_locals to avoid deadlocks caused by import loc…
+* codeUrl: github.com/JetBrains/intellij-community/pull/397/commits/6e12e2bd849d92912a95ef0e8eb7b7f456946a49
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-30T23:59:44Z
+* content:  No description provided. 
+************************************************************************

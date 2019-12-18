@@ -1,0 +1,49 @@
+************************************************************************
+* id: 242
+* requirement: Add support for paramaterizing varargs in PyCharm
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-09T17:49:05Z
+* content: Add support for paramaterizing varargs in PyCharm
+* codeUrl: github.com/JetBrains/intellij-community/pull/242/commits/97d1c3ba269e8bf9e07c7f9e860315cbe0b92912
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-11T01:10:21Z
+* content: Previously, *args and **kwargs were skipped when matching against parameterized types in the type checker.  This prevented pycharm from understanding type hints on functions whose return type are a function of the varardic parameters.
+* time: 2015-02-11T01:10:21Z
+* content: This can be reproduced with the following code:
+* time: 2015-02-15T15:49:14Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-02-15T21:49:11Z
+* content: Sent!
+* time: 2015-03-10T23:20:48Z
+* content: @klikh, is there anything I can do to help this PR along?
+* time: 2015-03-11T11:58:52Z
+* content: I've forwarded your request to the PyCharm developer. He'll look at this one soon. Sorry for delay.
+* time: 2016-05-01T23:37:51Z
+* content: @klikh Anything I should do to bump this again?
+* time: 2016-05-19T16:29:18Z
+* content: @kroo Thanks for your PR! Sorry for the late reply.
+* time: 2016-05-19T16:29:18Z
+* content: We would like the type hints notation for varargs to be compatible with PEP 0484, where you don't have to state that *args is a tuple of some type; you just specify the type of the elements in that tuple. For example, we would like this:
+* time: 2016-05-19T16:29:18Z
+* content: to be similar to PEP 0484 syntax:
+* time: 2016-05-26T20:17:33Z
+* content: Thanks, this makes sense.  I'll give it a go.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-27T08:58:56Z
+* content: Update paramaterized varargs to match PEP484
+* codeUrl: github.com/JetBrains/intellij-community/pull/242/commits/10d1593592b81d892191eb09903bbfd8ceebe488
+************************************************************************

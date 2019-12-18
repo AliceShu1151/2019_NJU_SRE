@@ -1,0 +1,23 @@
+************************************************************************
+* id: 863
+* requirement: Add dependencies on KotlinTest
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-18T08:23:45Z
+* content: Add dependencies on KotlinTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/863/commits/2d4b95bdce00420339ccbb834ef6027261976e0c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-18T08:49:42Z
+* content: … seemingly necessitated by commits 7c5dcca, d0e8ab3, and 192b4eb.
+* time: 2018-09-18T08:50:28Z
+* content: @dmitry-avdeev, @pchel-, @xiexed, @SvetlanaZem?
+* time: 2018-09-19T11:58:24Z
+* content: Actually, we have kotlin-test.jar as part of KotlinJavaRuntime library, but it is more by mistake. So I'll remove it and merge your request as well. Thanks!
+************************************************************************

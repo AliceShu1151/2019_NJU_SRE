@@ -1,0 +1,29 @@
+************************************************************************
+* id: 122
+* requirement: Possibility opening tasks in browser using Issue URL pattern for generic...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-08T12:23:34Z
+* content: Possibility opening tasks in browser using Issue URL pattern for gene…
+* codeUrl: github.com/JetBrains/intellij-community/pull/122/commits/29ad49fbbcd9658200c4e93837a524cd2ec200f2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-08T15:08:52Z
+* content: When using Task plugin configured with generic task server is no way to open current task in browser. Menu item is disabled because Idea doesn't know task url. Assembla doesn't include direct url to task in tickets.xml and if we want to make it we should to get some addition information like space id and tiket number. So, issue url template can help with it: substitute matched groups from ticket pattern and get link to issue.
+* time: 2013-11-08T15:08:52Z
+* content: 
+* time: 2013-11-10T11:07:29Z
+* content: Sergey, have you submitted a contributor agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign it, scan and email to contribute@jetbrains.com
+* time: 2013-11-11T05:31:40Z
+* content: I sent agreement. Also, I changed my name to real at GitHub, so don't confuse Thanks!
+* time: 2019-06-23T00:07:42Z
+* content: hey @pochemuto
+* time: 2019-06-23T15:34:20Z
+* content: @naXa777 It looks like it's possible to provide issue url now. Even if server doesn't provide it I suppose you can build it using string concatination with xpath to issue id.
+************************************************************************

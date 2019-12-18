@@ -1,0 +1,23 @@
+************************************************************************
+* id: 223
+* requirement: allow for inline noinspections, cf #py-13835
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-16T16:43:00Z
+* content: allow for inline noinspections, cf #py-13835
+* codeUrl: github.com/JetBrains/intellij-community/pull/223/commits/a6a8fd8638faca329d7729e83a8d8a6b5499be68
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-16T16:44:32Z
+* content: Allow for inline noinspections.
+* time: 2014-11-16T16:44:32Z
+* content: It can help to have cleaner code if inspection ignores can be commentted inline. Most python linters & code formatters do this.
+* time: 2014-12-05T12:35:58Z
+* content: Closing since Contribution Agreement was not signed.
+************************************************************************

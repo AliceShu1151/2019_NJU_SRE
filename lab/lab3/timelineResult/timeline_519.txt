@@ -1,0 +1,21 @@
+************************************************************************
+* id: 519
+* requirement: IDEA-105458 XML nodes shouldn't be always treated as leafs
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-02-23T01:43:30Z
+* content: IDEA-105458 XML nodes shouldn't be always treated as leafs
+* codeUrl: github.com/JetBrains/intellij-community/pull/519/commits/8d2e4a00e200687a5cf68dd2627d0911bf213021
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-02-23T01:44:55Z
+* content: IDEA-105458 XML nodes shouldn't be always treated as leafs
+* time: 2017-02-23T01:44:55Z
+* content: Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+************************************************************************

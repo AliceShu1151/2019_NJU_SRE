@@ -1,0 +1,27 @@
+************************************************************************
+* id: 268
+* requirement: Fix for a null-pointer exception while decompiling
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-05-18T13:11:25Z
+* content: Fix for a null-pointer exception while decompiling
+* codeUrl: github.com/JetBrains/intellij-community/pull/268/commits/d1a9bc718748b1271f4fce2f9a76a903eac3e05e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-05-18T13:16:25Z
+* content:  No description provided. 
+* time: 2015-05-18T13:20:17Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-06-17T18:37:41Z
+* content: I have not and was not aware that a CLA was necessary for something like this. Perhaps this can be treated as a bug report and recoded instead?
+* time: 2015-06-18T12:02:46Z
+* content: Jesse, a CLA is needed for applying the patch under your name. Sure I can commit the fix myself if you like.
+* time: 2015-06-18T14:08:04Z
+* content: @trespasserw - Ok, that is fine, I don't care about the attribution. :)
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 143
+* requirement: Updating the PivotalTracker state
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-01-21T00:38:39Z
+* content: Updating the pivotal task state to 'finished' when task state is RESO…
+* codeUrl: github.com/JetBrains/intellij-community/pull/143/commits/3cbfe6c991cdcc7ecd0c00a6991e16729b206e2b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-01-21T00:43:17Z
+* content: The Pivotal Tracker plugin does not properly set the remote story to finished when the status on the task is updated to TaskState.RESOLVED
+* time: 2014-01-21T00:43:17Z
+* content: This update handles setting a task to both started and finished in PivotalTracker
+************************************************************************

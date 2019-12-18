@@ -1,0 +1,45 @@
+************************************************************************
+* id: 1253
+* requirement: TypeMigration tries to convert Map<String, Object> to Map<String, String> without valid reason
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-18T14:05:14Z
+* content: TypeMigration tries to convert Map<String, Object> to Map<String, Str…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1253/commits/4f490e8d31fa99e0dc586e3531a7ded01832d4d9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-18T14:08:28Z
+* content: Let be:
+* time: 2019-11-18T14:08:28Z
+* content: When asking type migration to convert method int number() from int to long, it tries to convert PsiParameter Map<String, Object> map from Map<String, Object> to Map<String, String>.
+* time: 2019-11-18T14:08:28Z
+* content: This PR should fix the behaviour.
+* time: 2019-11-18T15:32:25Z
+* content: Hi @reda-alaoui,
+* time: 2019-11-18T15:32:25Z
+* content: It looks like you are doing to some nice work on type migration. But it would be even better if you could add some tests for the bugs you are fixing. Look at com.intellij.refactoring.AllTypeMigrationTestSuite to find existing test cases.
+* time: 2019-11-18T15:32:25Z
+* content: Thanks!
+* time: 2019-11-18T17:41:31Z
+* content: Hi @BasLeijdekkers ,
+* time: 2019-11-18T17:41:31Z
+* content: I was just going to ask you to give me some pointers about test writing. I have my answers, I add the tests ASAP.
+* time: 2019-11-19T11:07:46Z
+* content: Test added
+* time: 2019-11-21T10:38:25Z
+* content: TypeConversionUtil is quite low level, and used in a lot of places. For example to check for type errors in Java code. With your changes from this pull request I see test failures in the following test classes:
+* time: 2019-11-21T10:38:25Z
+* content: FunctionalTypeWildcardParameterizationTest GenericsHighlighting8Test GenericsHighlightingTest GraphInferenceHighlightingTest NewLambdaHighlightingTest RedundantCast15Test ReturnSeparatedFromComputationFixTest
+* time: 2019-11-21T10:38:25Z
+* content: This means that currently your changes can not be merged.
+* time: 2019-11-21T17:06:31Z
+* content: @BasLeijdekkers , how to run all the tests?
+* time: 2019-11-22T10:24:12Z
+* content: @BasLeijdekkers I fixed the mentioned tests by adding a flag to TypeConversionUtil modified methods.
+************************************************************************

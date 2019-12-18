@@ -1,0 +1,23 @@
+************************************************************************
+* id: 742
+* requirement: PY-28629: Fix resolving skeletons for implicit relative imports
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-23T05:48:37Z
+* content: PY-28629: Fix resolving skeletons for implicit relative imports
+* codeUrl: github.com/JetBrains/intellij-community/pull/742/commits/c97cbcd7dce50d559d293098b9a53b0985abf287
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-23T05:51:18Z
+* content: @vlasovskikh I would really like to get this fixed before 2018 release as it is causing a lot of problems in Python 2.7 when dealing with older libraries.
+* time: 2018-02-23T05:51:18Z
+* content: Tests pending... Is there a fixture I can use to setup the test skeletons?
+* time: 2018-02-26T06:00:19Z
+* content: @vlasovskikh added test
+************************************************************************

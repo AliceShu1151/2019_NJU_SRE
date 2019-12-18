@@ -1,0 +1,21 @@
+************************************************************************
+* id: 585
+* requirement: IDEA-170926 Do not show parameter hint when it matches the argument name
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-07T21:21:33Z
+* content: IDEA-170926 Do not show parameter hint when it matches the argument name
+* codeUrl: github.com/JetBrains/intellij-community/pull/585/commits/7d8495fd73213d6830ff8367b0a6653d37c50e07
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-07T21:39:12Z
+* content: There is no point to show parameter hint when it's the exact duplicate of the passed argument. As in insert([pos:] pos, [value:] value). This patch addresses that.
+* time: 2017-06-07T21:39:12Z
+* content: It also disables parameter hint when the argument is a method call and the called method name ends with the parameter name. For example save([stats:] collectStats())
+************************************************************************

@@ -1,0 +1,22 @@
+************************************************************************
+* id: 738
+* requirement: Minor pydev changes/fixes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-19T19:07:46Z
+* content: merge f5b6bd5673f2a76e4b643506360ab7b7131dbc61 from pydevd
+* codeUrl: github.com/JetBrains/intellij-community/pull/738/commits/fc498d82390602732efbb34bea22f5c30ecc3a72
+* time: 2018-02-19T20:14:38Z
+* content: handle console tracebacks for frameworks that invoke sys.except_hook
+* codeUrl: github.com/JetBrains/intellij-community/pull/738/commits/99b28f9b85ab3692be1fc267e42157c06740cf07
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-19T20:19:34Z
+* content: @Elizaveta239  Please take a look. One commit allows the typeResolve to decide on the order of columns by returning OrderedDict. The other commit handles cases where frameswork call sys.excepthook directly.
+************************************************************************

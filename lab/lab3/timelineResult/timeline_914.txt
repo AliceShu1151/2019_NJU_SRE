@@ -1,0 +1,27 @@
+************************************************************************
+* id: 914
+* requirement: Show modules in bold on Project View
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-09T23:48:32Z
+* content: Show modules in bold on Project View
+* codeUrl: github.com/JetBrains/intellij-community/pull/914/commits/d56f54bf8370680058345af2668f79f8903ae90f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-09T23:58:39Z
+* content: When a GradleModuleDirectoryNode is shown the name of the module is appended in boldeface, unless it is the same as the path, but since shouldShowModuleName is overloaded to return false, this causes that the module's directory is not shown in bold face.
+* time: 2018-11-09T23:58:39Z
+* content: This change causes the name of the module to appear in bold face when the module name is not appended. This fixes this bug:
+* time: 2018-11-09T23:58:39Z
+* content: https://issuetracker.google.com/issues/77235561
+* time: 2019-11-25T14:06:31Z
+* content: Thanks for the contribution, however the change causes unexpected presentation of the Gradle source set modules on Project View: 
+* time: 2019-11-25T14:06:31Z
+* content: I've fixed it using the following commit f74f118
+************************************************************************

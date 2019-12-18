@@ -1,0 +1,4 @@
+************************************************************************
+* id: 72
+* requirement: IDEABKL-6771 Add optional parameter 'exceptionMessage' to @NotNull annotation
+the requirement of 72 only has implements, no discussion.

@@ -1,0 +1,27 @@
+************************************************************************
+* id: 475
+* requirement: Make plugins/settings-repository/resources a resources root
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-11-28T22:28:14Z
+* content: Make plugins/settings-repository/resources a resources root
+* codeUrl: github.com/JetBrains/intellij-community/pull/475/commits/02906bb660ddd91ee69c0ccbfe79cad5b84f9402
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-11-28T22:32:18Z
+* content: … instead of a sources root, since it contains only a plugin.xml and a .properties file.
+* time: 2017-05-06T01:08:49Z
+* content: @develar?
+* time: 2017-10-04T07:20:47Z
+* content: @AMPivovarov?
+* time: 2018-02-08T07:30:23Z
+* content: @chashnikov?
+* time: 2018-02-08T07:32:41Z
+* content: I will review. Sorry for delay.
+************************************************************************

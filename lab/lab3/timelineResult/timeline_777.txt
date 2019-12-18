@@ -1,0 +1,52 @@
+************************************************************************
+* id: 777
+* requirement: Resize myOriginalDocument to a message boundary
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-11T01:03:29Z
+* content: Android Studio overrides LogConsoleBase.getOriginalDocument to work around the referenced issue. The override deletes additional characters up to and including the next newline so the Studio logcat message parsers don't break.
+* time: 2018-04-11T01:03:29Z
+* content: Bug: https://issuetracker.google.com/77876440
+* time: 2018-04-11T01:05:14Z
+* content: @Eugene-Kudelevsky
+* time: 2018-04-11T15:06:55Z
+* content: Eugene doesn't work at JB anymore. I'll try to help if I can. What would be the fix in AS with help of opened document/editor? I would prefer to expose api and not the implementation details which are represented by document/editor in this case. Thanks
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-11T19:51:55Z
+* content: Resize myOriginalDocument to a message boundary
+* codeUrl: github.com/JetBrains/intellij-community/pull/777/commits/fe4fa91b5b1b13bf66b2201d3fa1c398454f9350
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-11T20:29:10Z
+* content: Hi @akozlova
+* time: 2018-04-11T20:29:10Z
+* content: For the record, I'm a total GitHub newbie, so please bear with me. I pushed a new commit with effectively the same fix I had in Studio. Let me know what you think, thanks!
+* time: 2018-04-12T15:39:38Z
+* content: I ask what would you like to do with exposed document and editor assuming you have access to them. Is there any commits with the changes? I see only one commit from you. Thanks
+* time: 2018-04-12T18:56:10Z
+* content: I uploaded a commit to our external Gerrit so you can see what I'm trying to do. I'm overriding getOriginalDocument to do what the superclass version does and adding my custom buffer resizing logic. I reference myOriginalDocument and getEditor in the override.
+* time: 2018-04-12T18:56:10Z
+* content: https://android-review.googlesource.com/#/c/platform/tools/adt/idea/+/663830/
+* time: 2018-04-13T18:09:36Z
+* content: what if delete to the last new line before toRemove?
+* time: 2018-04-14T00:22:59Z
+* content: That's fine. Thank you!
+* time: 2018-04-18T18:14:22Z
+* content: merged manually, thanks!
+* time: 2018-04-18T18:40:43Z
+* content: Thank you Anna! Can you point me at a commit so I can merge it on our side?
+* time: 2018-04-18T18:57:07Z
+* content: Not yet visible on GitHub. Will appear tomorrow. Will let you know
+************************************************************************

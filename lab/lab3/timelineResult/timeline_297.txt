@@ -1,0 +1,58 @@
+************************************************************************
+* id: 297
+* requirement: Refactored external system services to reduce amount or write actions
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-30T00:57:36Z
+* content: Refactored external system services to reduce amount or write locks a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/297/commits/7aa4ee08a760460db214cd2819496619f8c5dd4b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-08-30T01:35:31Z
+* content: Description:
+* time: 2015-08-30T01:35:31Z
+* content: It appeared that most of the default services were executing a lot of write actions to commit models. Also services were committing models in write actions even if there were no changes to these models.
+* time: 2015-08-30T01:35:31Z
+* content: This refactoring tries to collect all the modifiable models and perform all commits in just one write action. Also before a commit all models are checked for changes. It affects performance of an incremental refresh drastically for huge projects.
+* time: 2015-08-30T01:35:31Z
+* content: Testing:
+* time: 2015-08-30T01:35:31Z
+* content: All 5 tests for external build system are passing. :-) Also manually tested on a project with 2227 modules. Incremental refresh on dependency/library changes was super fast!
+* time: 2015-08-30T01:35:31Z
+* content: It would be very nice if you guys can run the change on CI.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-03T17:16:34Z
+* content: Addressed review comments
+* codeUrl: github.com/JetBrains/intellij-community/pull/297/commits/a97c24c78e2b77c16e8f4fa604e17546a3157b1b
+* time: 2015-09-03T17:56:32Z
+* content: Removed redundant final modifiers.
+* codeUrl: github.com/JetBrains/intellij-community/pull/297/commits/5dfa0eab6dc6a1bd288b51bd1def6e1aa4a0e67e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-08T12:04:23Z
+* content: Merged to master, thank you for the contribution!
+* time: 2015-09-08T12:04:23Z
+* content: I also did some fixes myself. Firstly, I changed order of statements in 'LibraryTableBase.LibraryModel#commit', otherwise 'isChanged' will return 'false' during 'commit' so no events will be fired. Secondly, I introduced method 'ExceptionUtil.rethrowAllAsUnchecked' and used it instead of 'rethrowUnchecked' to ensure that if the code will be changed in the future and start producing checked exceptions they won't be silently ignored.
+* time: 2015-09-08T16:24:11Z
+* content: Awesome! Спасибо, Коля!
+* time: 2015-09-08T16:24:11Z
+* content: 
+* time: 2015-09-10T01:17:26Z
+* content: Does 142.4675.3 include the fix?
+* time: 2015-09-10T01:23:06Z
+* content: Nope. It's included in 142.4712.
+************************************************************************

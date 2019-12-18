@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1266
+* requirement: fix NPE in MacIntelliJButtonUI::getDarculaButtonSize
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-30T13:04:25Z
+* content: fix NPE in getDarculaButtonSize
+* codeUrl: github.com/JetBrains/intellij-community/pull/1266/commits/edc4f9d9ecadbcab49149e46381909f4f62578e3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-30T13:20:43Z
+* content: MacIntelliJButtonUI overwrites getDarculaButtonSize and doesn't handle the the case that the dimension returned by BasicGraphicsUtils.getPreferredButtonSize is null when "myButton.getComponentCount() > 0". More about this undocumented behavior can be found here: https://bugs.openjdk.java.net/browse/JDK-4694008.
+* time: 2019-11-30T13:20:43Z
+* content: The same fix was added for DarculaButtonUI::getDarculaButtonSize (9372853).
+* time: 2019-11-30T13:20:43Z
+* content: I couldn't test this fix because I don't have a mac available. I found one report about this NPE here: exbin/bined-intellij-plugin#22
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-30T13:39:26Z
+* content: handle null directly in 'getPreferredSize'
+* codeUrl: github.com/JetBrains/intellij-community/pull/1266/commits/778b19d96c0e3570856e5428358c6e215ca157b8
+************************************************************************

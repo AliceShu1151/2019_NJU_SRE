@@ -1,0 +1,21 @@
+************************************************************************
+* id: 671
+* requirement: FernFlower: Rename classes whose filenames will exceed 255 characters
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-24T09:29:47Z
+* content: FernFlower: Rename classes whose filenames will exceed 255 characters
+* codeUrl: github.com/JetBrains/intellij-community/pull/671/commits/8c9332cb1119f50bd5a830f6cea20d8b676fd959
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-24T09:33:44Z
+* content: An obfuscated application I'm reversing has a class called "OoOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" in it (256 characters long). This decompiles fine into a JAR, but if I want to unpack the JAR in order to refactor code and/or recompile it, I quickly run in to filesystem filename length limits (almost all filesystems top out at 255 characters).
+* time: 2017-11-24T09:33:44Z
+* content: This patch renames classes that would exceed 255 characters in length once ".class" is added to the name.
+************************************************************************

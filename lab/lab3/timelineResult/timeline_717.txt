@@ -1,0 +1,21 @@
+************************************************************************
+* id: 717
+* requirement: Improve description of "Type can be weakened" inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-27T13:55:02Z
+* content: Improve description of "Type can be weakened" inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/717/commits/efa92fcc484fdb43d96b42dcdc7f9c4df6fe879b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-27T13:57:08Z
+* content: Bold font should be used to draw attention. Type names and method names are not the important eye catchers here, it's the names of the configuration knobs.
+* time: 2018-07-21T11:04:37Z
+* content: @BasLeijdekkers, please take a look.
+************************************************************************

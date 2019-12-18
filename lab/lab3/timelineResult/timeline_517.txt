@@ -1,0 +1,4 @@
+************************************************************************
+* id: 517
+* requirement: IDEA-168575 introduced ant ansi color based on message type (error, w…
+the requirement of 517 has no implements.

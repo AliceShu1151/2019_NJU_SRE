@@ -1,0 +1,19 @@
+************************************************************************
+* id: 758
+* requirement: fix NPE: PsiFile.getContainingDirectory can return null
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-14T01:09:37Z
+* content: fix NPE: PsiFile.getContainingDirectory can return null
+* codeUrl: github.com/JetBrains/intellij-community/pull/758/commits/e625addf34c32f6b8d7095fa74f479d6f3070fad
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-14T01:15:37Z
+* content: PyUtil.turnInitIntoDir can return null for not null values. In my case this problem caused the reference highlighter to throw an exception in the Diff Viewer.
+************************************************************************

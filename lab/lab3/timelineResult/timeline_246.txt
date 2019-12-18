@@ -1,0 +1,35 @@
+************************************************************************
+* id: 246
+* requirement: Move "$@@product_uc@@_VM_OPTIONS" to the end of line.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-20T22:31:22Z
+* content: Move "$@@product_uc@@_VM_OPTIONS" to the end of line.
+* codeUrl: github.com/JetBrains/intellij-community/pull/246/commits/65471568a1b4e51dfc08a17772aeeee0679c5b6b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-20T22:51:53Z
+* content: Hi!
+* time: 2015-02-20T22:51:53Z
+* content: This change will enable JVM variable overriding. Oracle's JVM uses the last variable, which means that if we have the same variable defined twice, only the second value will be used, e.g. if -Xmx is defined twice, once in user's _VM_OPTIONS file and once in idea.vmoptions in bin/idea.vmoptions, user's -Xmx will be used by JVM.
+* time: 2015-02-20T22:51:53Z
+* content: Let me know if you need anything else.
+* time: 2015-02-20T22:51:53Z
+* content: Thanks, Krystian Kichewko
+* time: 2015-02-22T11:00:26Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-02-23T17:25:29Z
+* content: Hello Kirill!
+* time: 2015-02-23T17:25:29Z
+* content: I've just sent signed Contributor License Agreement to contribute@jetbrains.com. Let me know if you need anything more from me.
+* time: 2015-02-23T17:25:29Z
+* content: Thanks, Krystian Kichewko
+* time: 2015-02-24T11:33:48Z
+* content: Agreement received, thanks.
+************************************************************************

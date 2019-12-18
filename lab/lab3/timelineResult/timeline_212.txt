@@ -1,0 +1,34 @@
+************************************************************************
+* id: 212
+* requirement: IDEA-130394 TestNG, diff link is not displayed when hamcrest is used
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-09-22T12:43:36Z
+* content: Display diff link in TestNG test when hamcrest test fails.
+* codeUrl: github.com/JetBrains/intellij-community/pull/212/commits/7485127d227c7a811a5da7d288930c8b9cf20392
+* time: 2014-09-22T13:57:06Z
+* content: Display diff link in TestNG test when hamcrest test fails. Support ma…
+* codeUrl: github.com/JetBrains/intellij-community/pull/212/commits/e39143a361076de4f56ecf3ceea8b884e43bc81e
+* time: 2014-09-22T14:09:34Z
+* content: Display diff link in TestNG test when hamcrest test fails. Fixed a ca…
+* codeUrl: github.com/JetBrains/intellij-community/pull/212/commits/13af7ff10728ce335c0b1fb633cf8d51b0c3d2eb
+* time: 2014-09-25T08:48:01Z
+* content: Display diff link in TestNG test when hamcrest test fails. Added supp…
+* codeUrl: github.com/JetBrains/intellij-community/pull/212/commits/64c5c46c07ca0d2be9218bad6318e921ca804a25
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-09-25T20:24:41Z
+* content:  No description provided. 
+* time: 2014-09-26T08:39:41Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-09-26T09:05:01Z
+* content: @klikh Done
+* time: 2014-09-26T09:14:46Z
+* content: Received, thanks
+************************************************************************

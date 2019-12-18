@@ -1,0 +1,35 @@
+************************************************************************
+* id: 304
+* requirement: Always check PATH in Git detector
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-28T17:23:01Z
+* content: Always check PATH in Git detector
+* codeUrl: github.com/JetBrains/intellij-community/pull/304/commits/26c1ea0661607257912909f5323fc56e66582f06
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-28T19:51:58Z
+* content: With the change the detector works fine with my custom git location.
+* time: 2015-10-01T19:20:25Z
+* content: FYI @klikh. Would be nice to have it cherry-picked in 15.
+* time: 2015-10-06T15:00:42Z
+* content: LGTM. Have you checked GitExecutableDetectorWindowsTest?
+* time: 2015-10-06T17:20:16Z
+* content: I assumed it's only for windows and I have only Mac.
+* time: 2015-10-09T16:49:03Z
+* content: I've checked it myself, it fails because the code is referring to the PathEnvironmentVariableUtil which is not overridden in the test. I'll prepare the fix and merge the updated change soon.
+* time: 2015-10-09T16:58:34Z
+* content: Thanks a ton!
+* time: 2015-10-09T16:58:34Z
+* content: On Fri, Oct 9, 2015 at 9:49 AM, Kirill Likhodedov notifications@github.com wrote:
+* time: 2015-10-10T14:00:56Z
+* content: Just found another problem: there are two valid executable formats for Git on Windows: git.cmd and git.exe. In this PR only git.exe is considered. Moreover, it is not enough to, for instance, check the PATH for git.exe and then check it for git.cmd, since if both are available in the PATH, the first one (in the order in which they appear in the PATH) should be preferred.
+* time: 2015-10-10T14:00:56Z
+* content: Currently working on it. Luckily, I wrote this test a while ago, otherwise wouldn't capture this.
+************************************************************************

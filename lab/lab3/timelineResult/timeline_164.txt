@@ -1,0 +1,4 @@
+************************************************************************
+* id: 164
+* requirement: IDEA-121292 Download Sources does not work for snapshots
+the requirement of 164 only has implements, no discussion.

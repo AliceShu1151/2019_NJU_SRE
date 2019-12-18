@@ -1,0 +1,42 @@
+************************************************************************
+* id: 577
+* requirement: Added support for anchors and aliases (YAML)
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-26T11:33:54Z
+* content: This commit adds navigation support for YAML anchors and aliases.
+* time: 2017-05-26T11:33:54Z
+* content: For example, a user is able to navigate from "*example" to "&example" in the following YAML by placing cursor at "*example":
+* time: 2017-05-26T11:33:54Z
+* content: More about YAML anchors at http://www.yaml.org/spec/1.2/spec.html
+* time: 2017-05-26T11:33:54Z
+* content: I discovered the need for this feature from https://github.com/zalando/intellij-swagger. Navigating YAML anchors help users to write Swagger specs which tend to be big.
+* time: 2017-05-26T14:58:03Z
+* content: Thanks! I'll review the PR soon, just leaving a an issue on YT here: https://youtrack.jetbrains.com/issue/RUBY-12492
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-07T11:46:40Z
+* content: Added support for YAML anchors
+* codeUrl: github.com/JetBrains/intellij-community/pull/577/commits/c3bb67f1336b4889546041d410fb21c9e36c9ca8
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-07T12:16:59Z
+* content: I updated the PR files. I modified the lexer to detect anchor tokens. Following anchors are supported:
+* time: 2017-06-07T12:16:59Z
+* content: 
+* time: 2017-06-07T12:16:59Z
+* content: I introduced a new interface which YAML elements can implement if they support anchors. YAMLKeyValue and YAMLSequenceItem extend this interface.
+* time: 2017-06-07T12:16:59Z
+* content: Feedback is appreciated!
+************************************************************************

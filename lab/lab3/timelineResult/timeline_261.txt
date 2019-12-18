@@ -1,0 +1,27 @@
+************************************************************************
+* id: 261
+* requirement: publishing my image editor plugin
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-04-28T12:03:51Z
+* content: publishing my image editor plugin
+* codeUrl: github.com/JetBrains/intellij-community/pull/261/commits/f33b977e0a4187199f71bc8946689cd7a307fc9b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-04-28T12:09:50Z
+* content: Hi All
+* time: 2015-04-28T12:09:50Z
+* content: I don't know if this is the right place to publish plugins if it is not where do i publish a plugin
+* time: 2015-04-28T12:09:50Z
+* content: Anyway i have created a plugin that allows a developer to quickly resize image files within their projects (more features to come)
+* time: 2015-04-28T12:09:50Z
+* content: Hope this will be of use to someone and have a great day!
+* time: 2015-04-28T12:12:04Z
+* content: Please publish the plugin to JetBrains Plugin Repository. Check this link for details: https://www.jetbrains.com/idea/help/preparing-plugins-for-publishing.html Thank you for your contribution!
+************************************************************************

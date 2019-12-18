@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1178
+* requirement: JBR-1337: add logs on JavaFX init errors, prevent stuck IDE
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-19T22:15:35Z
+* content: JBR-1337: add log entries when JavaFX initialization fails, avoid blo…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1178/commits/67e454ac648fc87f62ffc2904c236b272a815517
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-19T22:27:25Z
+* content: This PR is a proof-of-concept that:
+* time: 2019-07-19T22:27:25Z
+* content: Please advise if a different kind of notification for the user would be appropriate.
+* time: 2019-07-19T22:27:25Z
+* content: I was unable to build the complete IDE locally, but I tested the code as part of the AsciiDoc plugin including the "stuck" detection.
+************************************************************************

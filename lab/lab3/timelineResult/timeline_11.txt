@@ -1,0 +1,4 @@
+************************************************************************
+* id: 11
+* requirement: Remove extra space in the "Click to browse" link
+the requirement of 11 only has implements, no discussion.

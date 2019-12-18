@@ -1,0 +1,31 @@
+************************************************************************
+* id: 348
+* requirement: Sort when writing plugin list
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-01-26T00:03:22Z
+* content: Sort when writing plugin list
+* codeUrl: github.com/JetBrains/intellij-community/pull/348/commits/15c08bd506d6942f1017f63692282b6487d181e1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-26T00:09:30Z
+* content: This sorts plugin lists when writing to disk.
+* time: 2016-01-26T00:09:30Z
+* content: I try to keep as much of my IntelliJ configuration in version control as possible. disabled_plugins.txt is an obnoxious file because it gets jumbled into a different order every time it's written to disk, resulting in a lot of unnecessary diffs. So it's nice to have it sorted just to keep the order consistent.
+* time: 2016-01-26T00:09:30Z
+* content: I haven't been able to successfully build this project yet, so this change is untested. I'm hoping it's simple enough, though.
+* time: 2016-01-27T15:18:59Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-05-25T16:38:24Z
+* content: I've now submitted the CLA.
+* time: 2016-05-26T08:01:09Z
+* content: The CLA was received. Thanks.
+* time: 2016-05-26T16:11:14Z
+* content: Thank you for the contribution. However 'iterator()' in PriorityQueue isn't guarantied to process elements in sorted order, so I've implemented this myself by copying collection into array and sorting it.
+************************************************************************

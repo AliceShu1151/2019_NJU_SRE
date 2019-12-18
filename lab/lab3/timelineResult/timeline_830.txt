@@ -1,0 +1,30 @@
+************************************************************************
+* id: 830
+* requirement: YouTrack connector updates for task management plugin
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-16T12:21:47Z
+* content: Updated YouTrack icons for task plugin to match contemporary YouTrack…
+* codeUrl: github.com/JetBrains/intellij-community/pull/830/commits/016afcd85b030bd50059ac30ef8f84f5bfcb8f64
+* time: 2018-07-16T12:23:47Z
+* content: Don't suggest YouTrack search language for scratch files
+* codeUrl: github.com/JetBrains/intellij-community/pull/830/commits/fca081d21dcb659c5ecc31db2d7a038966070d4c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-16T12:37:36Z
+* content: Contribution agreement has been signed already: #222
+* time: 2018-07-21T09:56:20Z
+* content: @dmitry-avdeev, please take a look.
+* time: 2018-08-24T11:21:53Z
+* content: @dmitry-avdeev any updates?
+* time: 2018-08-26T17:35:26Z
+* content: @chashnikov could you help please, @jk1 is from the YouTrack team, it's a pity that we couldn't process the PR from our colleagues in a month and a half.
+* time: 2018-08-27T10:23:51Z
+* content: Integrated into master and 182, thanks!
+************************************************************************

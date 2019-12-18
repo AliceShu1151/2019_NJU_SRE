@@ -1,0 +1,80 @@
+************************************************************************
+* id: 608
+* requirement: PY-25491: Fix PyImportElement.getAsName incorrectly returning null
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-03T03:08:03Z
+* content:  No description provided. 
+* time: 2017-08-03T16:17:46Z
+* content: @vlasovskikh A more correct fix would be to fix shouldCreateStub in PyTargetExpressionElementType but it would require forcing everyone updating to reindex...
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-04T01:58:23Z
+* content: PY-25491: Fix PyImportElement.getAsName incorrectly returning null
+* codeUrl: github.com/JetBrains/intellij-community/pull/608/commits/d13c1977f560c126363cc48c6d179df3d9b9ceea
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-04T02:01:46Z
+* content: @vlasovskikh Decided to fix it properly by adding the stubs. Also added test
+* time: 2017-08-22T19:40:33Z
+* content: @fitermay Thanks for your investigation and your pull request! It helped me a lot with debugging this problem.
+* time: 2017-08-22T19:40:33Z
+* content: We don't store target expressions for all import statements, not only for function-local imports. We actually store "as" names in the stubs for PyImportElement objects. The problem was that after partially switching to green stubs we now got the situation where the getStub() == null check doesn't guarantee that getPsiOrChild*() methods will use the AST representation. I've fixed this problem by switching to AST-based search for this case since most of the methods already use the stub-aware getAsName() instead of getAsNameElement() that now becomes AST-based.
+* time: 2017-08-22T19:40:33Z
+* content: My fix will be in master in a few hours.
+* time: 2017-08-22T20:18:58Z
+* content: @vlasovskikh Hi, I started with the same fix as you're proposing but then changed it to generate the stubs.  I believe it is probably the preferred solution.
+* time: 2017-08-22T20:18:58Z
+* content: -- "We don't store target expressions for all import statements, not only for function-local imports. We actually store "as" names in the stubs "
+* time: 2017-08-22T20:18:58Z
+* content: --The problem was that after partially switching to green stubs we now got the situation where the getStub() == null
+* time: 2017-08-23T14:42:49Z
+* content: @fitermay Thanks for your comment. You're right, PyCharm currently creates stubs for PyTargetExpression elements inside PyImportElement elements at the file level. But this is unintentional. We don't use these target expressions because the "as" names are already stored in the stubs for PyImportElement. Having stubs within functions is meaningless (at least that this pre-green stubs stage) since these names aren't exported from the file they are defined in, so the only way to access them is to have this file as AST. We have stubs for PyTargetExpressions inside functions only for instance and class attributes.
+* time: 2017-08-23T14:42:49Z
+* content: A more appropriate thing to do would be to remove PyTargetExpression stubs inside import elements from the file level. It won't affect performance since code inspections only access "as" names via PyImportElement.getAsName() or they already have the AST for the current file being analysed so there are no stubs anyway.
+* time: 2017-08-23T14:42:49Z
+* content: I'm not removing these file-level stubs inside import elements now because we don't want the minor updates to cause the re-indexing of the whole project.
+* time: 2017-08-23T19:45:24Z
+* content: @vlasovskikh Hi, You're right , 'getAsNameElement()'  for PyImportElement inside a function does not appear to be ever accessed from a non-ast element because it is not an exported symbol. However, 'getAsNamedElement' in general is accessed from a non-ast context.  Through at least iterateNames and getPresentation. So I believe 6291058 will maycause performance issues because it always caused stub->ast conversion.
+* time: 2017-08-23T19:45:24Z
+* content: Actually iterateNames forces stub->ast conversion in most cases by invoking 'getImportReferenceExpression' but I'm not sure if it's correct either... Can't it use 'getImportedQName'?
+* time: 2017-08-23T19:45:24Z
+* content: Example stack:
+* time: 2017-08-23T20:48:26Z
+* content: @fitermay I'm not sure that I got you. PyImportElementImpl defines only getAsNameElement() and it's public, there is no getAsNamedElement(). The getPresentation() method may be invoked quite often in "Navigate to ..." completion lists, and we do have some performance problems for PyClass by the way. But import elements are never shown in these "Navigate to ..." actions.
+* time: 2017-08-23T20:48:26Z
+* content: For clarity getPresentation() and iterateNames() should be rewritten to use getAsName() or getVisibleName() (I guess the latter might be more appropriate). But it's a minor issue, since it doesn't really affect performance.
+* time: 2017-08-23T21:05:29Z
+* content: @vlasovskikh Sorry, I meant getAsNameElement . I agree it's not a problem for getPresentation because it's not invoked. iterateNames  actually causes very many unnecessary stub to ast conversions. This is because the name definers for the star imports are resolved to a different file than the one under inspection and these are unnecessarily unstubbed. You can check this is true for by testing with any file that has star imports.
+* time: 2017-08-23T21:10:57Z
+* content: @vlasovskikh I can send you a PR:
+* time: 2017-08-23T21:10:57Z
+* content: I'm dealing with super large projects , so performance is important. Edit: Just realized iterateNames returns elements, not names.  So getVisibleName, getAsName won't work. I'm sure something can be done here, though.
+* time: 2017-08-23T21:10:57Z
+* content: Edit2: I'm pretty sure I have an idea of what to do with it. Let me know if you'd accept a PR optimizing it.
+* time: 2017-08-23T21:59:28Z
+* content: @fitermay Yes, iterarateNames() cannot be rewritten without changing the PyImportedNameDefiner interface, but again it isn't actually invoked from a non-AST context. getVisibleName() is still a good candidate for fixing.
+* time: 2017-08-23T21:59:28Z
+* content: Improving the performance of PyClassImpl.getPresentation() requires adding the text of the superclass list into the class stub. We already have some plans for it in the context of PY-25655, so I'm not sure it's worth looking into right now.
+* time: 2017-08-23T22:01:43Z
+* content: @vlasovskikh The problem is that iterateNames is invoked in non-ast context by PyUnresolvedReferencesInspection in collectUnusedImportElements . It causes unstubbing of many files when star imports are present.  I'm absolutely certain of this.
+* time: 2017-08-23T22:01:43Z
+* content: You can verify this:
+* time: 2017-08-23T22:01:43Z
+* content: Put a conditional breakpoint getStub() != null in PyImportElementImpl.iterateNames()
+* time: 2017-08-23T23:02:24Z
+* content: @fitermay Indeed.
+* time: 2017-08-23T23:02:24Z
+* content: We can change it to:
+************************************************************************

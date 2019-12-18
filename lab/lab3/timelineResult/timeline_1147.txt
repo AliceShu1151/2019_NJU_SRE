@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1147
+* requirement: Use getArrowButtonPreferredSize(comboBox) instead
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-05-31T20:41:04Z
+* content: Use getArrowButtonPreferredSize(comboBox) instead
+* codeUrl: github.com/JetBrains/intellij-community/pull/1147/commits/9b15acde263c36eea21859a5e0d7fd9ff1597cdd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-05-31T21:07:18Z
+* content: Of arrowButton.getPreferredSize(). There are times when getSizeWithButton gets called with a null arrowButton.
+************************************************************************

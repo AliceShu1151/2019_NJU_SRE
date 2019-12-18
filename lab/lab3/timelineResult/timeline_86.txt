@@ -1,0 +1,19 @@
+************************************************************************
+* id: 86
+* requirement: Fix CoreJavaFileManager bug
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-07-23T13:28:30Z
+* content: CoreJavaFileManager#getPackage explicitly converts paths to system in…
+* codeUrl: github.com/JetBrains/intellij-community/pull/86/commits/0661e158e20bbf3b9797a200a7f802b212f8fbf1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-07-23T13:42:34Z
+* content: CoreJavaFileManager#getPackage explicitly converts paths to system independent paths Previously it depended on VirtualFile#getPath returning path with forward slashes CoreLocalVirtualFile#getPath returning system dependent path caused a bug on Windows operating systems
+************************************************************************

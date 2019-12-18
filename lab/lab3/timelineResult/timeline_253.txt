@@ -1,0 +1,51 @@
+************************************************************************
+* id: 253
+* requirement: Added a few additional foldings for Java, some based on Groovy
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-03-03T09:27:15Z
+* content: Added a folding option for "\\" in Strings
+* codeUrl: github.com/JetBrains/intellij-community/pull/253/commits/279d59e3b75e4113cb23740a1f9751490039a6a5
+* time: 2015-03-03T09:28:46Z
+* content: Added a folding option for constant expressions
+* codeUrl: github.com/JetBrains/intellij-community/pull/253/commits/6a22df683ab27bbd7fad5c94f870d4d3055650d6
+* time: 2015-03-03T09:29:10Z
+* content: Added a folding option for String.format
+* codeUrl: github.com/JetBrains/intellij-community/pull/253/commits/84549b518baac0e118ac5d48e439265c6541aeb7
+* time: 2015-03-03T09:31:22Z
+* content: Added a folding option for Object and primitive comparisons (equals, …
+* codeUrl: github.com/JetBrains/intellij-community/pull/253/commits/9085adf0d3286d13baf9fddb365d8fda55b822b4
+* time: 2015-03-03T12:15:59Z
+* content: Cleanup of Java Folding Test to make room for new foldings
+* codeUrl: github.com/JetBrains/intellij-community/pull/253/commits/702db9763041b16ae3e2cb6b5e9088a2a22036ee
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-14T11:23:08Z
+* content: Every comment is appreciated, I don't expect this to be merged in as it is currently :)
+* time: 2015-03-14T11:59:46Z
+* content: 
+* time: 2015-03-16T07:39:10Z
+* content: I will rename 'format' to 'value'
+* time: 2015-03-16T07:40:01Z
+* content: should use another, non-collapsable method here
+* time: 2015-03-16T15:45:23Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-03-20T10:26:53Z
+* content: CA was received. Thanks.
+* time: 2015-03-30T11:04:26Z
+* content: We doubt that the majority of users will like such a change, so we wouldn't like to make this functionality available in platform by default. You can still make it available as a separate plugin.
+* time: 2015-03-30T12:16:36Z
+* content: If the majority won't like it, it can be disabled by default and we can get feedback on it. Could you please reopen this?
+* time: 2015-03-30T13:25:23Z
+* content: In our experience, adding features which are disabled by default is a waste of time, because the number of people who will look in the settings for the feature, understand what it does, and decide to enable it is extremely small. Releasing the functionality as a separate plugin is a much better way to get feedback.
+* time: 2015-03-31T15:42:00Z
+* content: Maybe, but not adding them at all would definitely be :) There are already 10 disabled foldings by default in Idea (more than enabled by default).
+* time: 2015-03-31T15:42:00Z
+* content: Please tell me what changes you would like to see, to accept any part of my changes (I've separated  the features in commits, I'm sure, at least my cleanup commit doesn't affect the end users)
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 879
+* requirement: [Fernflower] Improve output for float and double literals
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-08-09T19:39:11Z
+* content: Improve float and double literals
+* codeUrl: github.com/JetBrains/intellij-community/pull/879/commits/5592119d1d6d0e404248ef8d78a675329f8feaf3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-30T21:09:27Z
+* content: This PR does a few things regarding float and double literals:
+* time: 2018-09-30T21:09:27Z
+* content: With regards to possible future work on this, there are two things I can think of:
+************************************************************************

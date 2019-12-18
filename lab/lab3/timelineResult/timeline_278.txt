@@ -1,0 +1,72 @@
+************************************************************************
+* id: 278
+* requirement: [IDEA-138776] Maven polyglot support
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-06-23T17:23:22Z
+* content: first working version of polyglot support (currently Groovy only)
+* codeUrl: github.com/JetBrains/intellij-community/pull/278/commits/29175b98366822981408134d0c85be54502f8ed9
+* time: 2015-06-23T17:25:25Z
+* content: a bit of doc
+* codeUrl: github.com/JetBrains/intellij-community/pull/278/commits/3ebcf44ebc7d504d48057d7ccb2980834d2254a0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-06-23T17:27:52Z
+* content: Massive changes to support Maven Polyglot. I was flying blind with this. I hope I've done OK. Currently, only Groovy is supported but it will be easy to add others. Changes:
+* time: 2015-06-23T17:29:49Z
+* content: Could you please remove .jps-build-data from your pull request?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-06-23T17:31:31Z
+* content: removed .jps-build-data
+* codeUrl: github.com/JetBrains/intellij-community/pull/278/commits/4593957ca99d3634d9e5212a8ed029ba9cc9bd21
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-06-24T08:48:23Z
+* content: Seems like a nice first step! Can't wait for this!
+* time: 2015-06-25T14:05:24Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-06-25T14:37:11Z
+* content: I just emailed the signed agreement
+* time: 2015-06-25T14:58:14Z
+* content: CA received, thanks.
+* time: 2015-06-29T13:07:29Z
+* content: You should probably remove some unwanted changes like changing the Java version to 7 or adding CoffeeScript to .idea/codeStyleSettings.xml.
+* time: 2015-06-29T22:34:54Z
+* content: I started with master. Should I just remove these files?
+* time: 2015-06-30T12:22:43Z
+* content: You should remove the changes in these files, not the files themselves.
+* time: 2015-06-30T12:22:43Z
+* content: Note that these configuration files might have been changed not directly by you, but rather by IDEA which noticed changes in the Settings (e.g. if you modified the code style from the UI).
+* time: 2015-06-30T12:25:03Z
+* content: Yeah I'm not sure what changed the files, but what I'm sure of is that you didn't look at what you were commiting when you did the commit :P
+* time: 2015-06-30T15:34:35Z
+* content: Um, I looked at everything. But, I didn't know what was required. I'm not sure why the config files are in the repo. But, I'll remove the changes.
+* time: 2015-07-03T22:48:21Z
+* content: +1
+* time: 2015-07-12T06:27:43Z
+* content: @Randgalt Could you possibly squash the 3 commits into one? That should help this get merged I would think, especially as a bunch of weird local config files were included in the first commit. If you need help with this let me know I can assist.
+* time: 2015-07-13T00:58:32Z
+* content: @brcolow what would help me is to know what files I should not have committed. I can revert whatever needs reverting and then sqaush the commits.
+* time: 2015-08-21T00:05:28Z
+* content: Could someone from JetBrains take a look at this as it is clearly a popular feature request and we'd love to see it added.Thank you  !
+* time: 2016-08-02T12:07:23Z
+* content: +1
+* time: 2016-09-20T08:20:50Z
+* content: Thanks for the contribution, however we can not merge this PR, since the feature was implemented slightly different. You can try the feature using the nearest EAP (IDEA 2016.3 EAP build >= #163.4830.3). Your feedback are welcome!
+* time: 2016-09-20T08:20:50Z
+* content: You can find the change at a2c139b
+************************************************************************

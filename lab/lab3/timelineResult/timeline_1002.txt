@@ -1,0 +1,22 @@
+************************************************************************
+* id: 1002
+* requirement: PY-23615 add warning for shadowing system modules
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-30T09:36:16Z
+* content: add python-stdlib-list to python/helpers
+* codeUrl: github.com/JetBrains/intellij-community/pull/1002/commits/317b39cd282c35a65deeb5abe8b68f797b98ebf4
+* time: 2018-12-04T06:41:29Z
+* content: add warning notification for std module shadowing
+* codeUrl: github.com/JetBrains/intellij-community/pull/1002/commits/22a181a50f43a4b8a3d20901468ae6bfe5263a47
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-05T14:20:43Z
+* content: Issue: https://youtrack.jetbrains.com/issue/PY-23615
+************************************************************************

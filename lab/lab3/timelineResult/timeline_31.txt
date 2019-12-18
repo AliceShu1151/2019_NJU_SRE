@@ -1,0 +1,21 @@
+************************************************************************
+* id: 31
+* requirement: IDEA-97356 Link "Specify Master Password" dialog to the Help topic
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-12-19T22:37:20Z
+* content: IDEA-97356 add help links to ChangeMasterKeyDialog and ResetPasswordD…
+* codeUrl: github.com/JetBrains/intellij-community/pull/31/commits/930a9c18e872ddd0a80834239448c3827af2d936
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-12-19T23:35:55Z
+* content: Fix for http://youtrack.jetbrains.com/issue/IDEA-97356. added help links to both ChangeMasterKeyDialog and ResetPasswordDialog. both are directly accessible via Passwords settings or as described in the original issue
+* time: 2012-12-24T14:34:51Z
+* content: Accepted. Thanks!
+************************************************************************

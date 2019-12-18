@@ -1,0 +1,23 @@
+************************************************************************
+* id: 300
+* requirement: Support modifying directory rendering.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-31T15:37:19Z
+* content: Support hiding PsiDirectoryNode sources roots.
+* codeUrl: github.com/JetBrains/intellij-community/pull/300/commits/7d860294fc8d18b60272bee49c8d6225f538b4fa
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-08-31T19:09:48Z
+* content: This is used by TreeStructureProviders to suppress the rendering of the above.
+* time: 2015-08-31T19:09:48Z
+* content: Change-Id: I9c6ccf82b6c85043adebc56c588e714e3e54203f
+* time: 2015-09-01T14:37:02Z
+* content: I've updated the commit with a much more modest change. We are now replacing each PsiDirectoryNode with a replacement instance in our TreeStructureProvider, obviating the need for instance variables.
+************************************************************************

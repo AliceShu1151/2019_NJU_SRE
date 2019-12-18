@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1220
+* requirement: IDEA-225641: Use SofterReferences instead of SoftReferences
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-25T17:23:54Z
+* content: IDEA-225641: Use SofterReferences instead of SoftReferences in Resolv…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1220/commits/ee95b5ab449ff4a615415a79c0a8db96e3c4b0f2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-25T17:27:06Z
+* content: Use SofterReferences instead of SoftReferences in ResolveCache
+************************************************************************

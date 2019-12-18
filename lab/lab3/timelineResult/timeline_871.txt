@@ -1,0 +1,32 @@
+************************************************************************
+* id: 871
+* requirement: IJSDK-474 Clarify definition of "IDEA jdk" in README.md
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-24T15:10:37Z
+* content: Initial clarification: use JDK 1.8 for plugin development.
+* codeUrl: github.com/JetBrains/intellij-community/pull/871/commits/8096d2699e41df638868d158cae486eb767c477c
+* time: 2018-09-24T18:34:08Z
+* content: Clarified definition of IDEA jdk.
+* codeUrl: github.com/JetBrains/intellij-community/pull/871/commits/47d266fec6f9d98a891ad9c6bc6445e5cf8c7b8f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-24T19:07:29Z
+* content: This change attempts to clarify whether users should define the IDEA jdk based on JDK 1.6 or 1.8.
+* time: 2018-09-24T19:07:29Z
+* content: I found explaining this definition to be tricky because there are three audiences: plugin developers, internal engineers, and contributors to the IntelliJ IDEA Community Edition open source project.  I tried to reach the plugin developer audience first, and clarify which JDK should be used based on how a build will be used.
+* time: 2018-09-24T19:07:29Z
+* content: /cc @yole
+* time: 2018-09-27T07:42:26Z
+* content: Plugin developers don't need to setup and build intellij-community project. If they don't use gradle-intellij-plugin which downloads sources automatically they may check out intellij-community sources (see the docs but they don't need to setup that project or build it).
+* time: 2018-09-30T21:17:16Z
+* content: Thanks for your feedback. I was trying to clarify the wording because it apparently confused a developer. However, this might be a case of "better" being the enemy of good.
+* time: 2018-09-30T21:17:16Z
+* content: How about I delete this pull request and backout the changes from my fork?
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 564
+* requirement: Add an extension point to support custom SDKs with future language features
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-21T16:56:29Z
+* content: Add an extension point to support custom SDKs with future language fe…
+* codeUrl: github.com/JetBrains/intellij-community/pull/564/commits/3751f9a5784292e684306d3a4be40732acc4c695
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-24T13:56:38Z
+* content:  No description provided. 
+* time: 2017-04-24T14:01:23Z
+* content: This allows using a custom python 2.7 SDK which supports function annotations (e.g. via https://github.com/google/pytype/blob/master/pytype/patches/python_2_7_type_annotations.diff), and otherwise has no effect for anyone not implementing this extension point.
+* time: 2017-04-28T15:45:41Z
+* content: @brendandouglas PyCharm already has an API for customized dialects of Python. You can register your own subclasses of PythonParserDefinition, PyParser, FileTypeFactory.
+* time: 2017-04-28T15:45:41Z
+* content: See PyFunctionTypeAnnotation* classes that introduce a dialect for PEP 484 type hints in comments for function types. I believe FunctionParsing is flexible enough then, so you can override the necessary pieces to introduce a Python 2 dialect with function annotations.
+************************************************************************

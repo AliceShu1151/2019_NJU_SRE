@@ -1,0 +1,29 @@
+************************************************************************
+* id: 339
+* requirement: Preprocess options to extract --pythonpath and --settings
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-30T23:48:44Z
+* content: Preprocess options to extract --pythonpath and --settings before load…
+* codeUrl: github.com/JetBrains/intellij-community/pull/339/commits/89661a4451c1222cba507f72fb97aeb479c01187
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-30T23:52:50Z
+* content: Allows using the --pythonpath and --settings options when running django tests on pycharm
+* time: 2018-07-21T14:34:37Z
+* content: @hcastilho, please rebase the PR, cc @throwable-one, @IlyaKazakevich.
+* time: 2018-07-24T18:59:12Z
+* content: Done
+* time: 2018-07-24T19:27:01Z
+* content: Hello @hcastilho So, you are trying to pass pythonpath and django settings to run configuration, right? Should not it be set in Django settings directly in PyCharm? It will be passed as env. variable then.
+* time: 2018-07-24T20:10:00Z
+* content: Honestly I didn't even remember this PR.
+* time: 2018-07-24T20:10:00Z
+* content: Having slightly different settings for tests is something that I always do. Also I keep settings separate form the code and outside of site-packages. Probably I could have  worked around by setting PYTHONPATH and DJANGO_SETTINGS_MODULE in the tests configuration. But I have always called the django cli with these options explicitly, so I was surprised when they did not work (I avoid using env variables).
+************************************************************************

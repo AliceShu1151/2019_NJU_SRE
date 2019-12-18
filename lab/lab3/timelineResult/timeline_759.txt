@@ -1,0 +1,25 @@
+************************************************************************
+* id: 759
+* requirement: Disable rerunImportAction when it is performed on refreshProject
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-14T19:45:35Z
+* content: Disable rerunImportAction when it is perfomed on refreshProject
+* codeUrl: github.com/JetBrains/intellij-community/pull/759/commits/31fad2c2804a55f76972d348053108ff19c3c0d4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-14T19:57:02Z
+* content: There is a "Refresh Project" button on the Build view, when this button is pressed, the rerunImportAction action inside ExternalSystemUtil#refreshProject is performed, but if you double click this button, this action is performed twice.
+* time: 2018-03-14T19:57:02Z
+* content: This button is not disabled until the update method is called and inside it, processHadles.isProcessTerminated() returns false. This causes a small time window in wich this button can be cliicked multiple times.
+* time: 2018-03-14T19:57:02Z
+* content: This change disables this button when this action is performed instead of waiting for update and isProcessTerminated to catch up.
+* time: 2018-07-21T11:15:07Z
+* content: cc @vladsoroka
+************************************************************************

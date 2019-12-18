@@ -1,0 +1,21 @@
+************************************************************************
+* id: 550
+* requirement: Ensure '_latest_subtest_result' is set.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-13T15:15:15Z
+* content: Ensure '_latest_subtest_result' is set.
+* codeUrl: github.com/JetBrains/intellij-community/pull/550/commits/56a4b9618a99ea920458620ce14a57aecad4fc28
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-13T15:15:36Z
+* content: Prevent AttributeError: 'NewTeamcityServiceMessages' object has no attribute '_latest_subtest_result'
+* time: 2017-04-13T15:30:38Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+************************************************************************

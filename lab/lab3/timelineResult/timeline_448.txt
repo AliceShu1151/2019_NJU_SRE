@@ -1,0 +1,35 @@
+************************************************************************
+* id: 448
+* requirement: IDEA-146390 Modules generated from Maven sources named using artifact name
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-22T21:31:26Z
+* content: IDEA-146390 Modules generated from Maven sources can use Maven projec…
+* codeUrl: github.com/JetBrains/intellij-community/pull/448/commits/1b08867ede164e5e328555e3d97b5c7123940bc7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-22T21:54:23Z
+* content: https://youtrack.jetbrains.com/issue/IDEA-146390
+* time: 2016-09-22T21:54:23Z
+* content: This change adds configuration to the Maven project importer so that IntelliJ Modules can be named as per the name element in the corresponding pom, rather than the artifactId.
+* time: 2016-09-22T21:54:23Z
+* content: Existing behaviour is preserved.
+* time: 2016-09-22T21:54:23Z
+* content: Main functional change starts on line 134 in MavenModuleNameMapper. The rest is plumbing to pass configuration in.
+* time: 2016-09-23T12:53:57Z
+* content: The CLA was received, thanks.
+* time: 2016-11-24T12:30:39Z
+* content: Hi @klikh, is this in a queue to be reviewed? If it won't be merged, then so be it, but it would be nice to have some closure :)
+* time: 2018-07-21T13:00:20Z
+* content: @manicmonkey, please rebase the PR, cc @vladsoroka.
+* time: 2018-08-01T03:41:19Z
+* content: Hi @ignatov, I don't mind rebasing if this has a chance of going in - last comment from @vladsoroka on the associated youtrack issue suggested it wouldn't be: https://youtrack.jetbrains.com/issue/IDEA-146390#focus=streamItem-27-1799877-0-0
+* time: 2018-08-01T03:41:19Z
+* content: Please advise...
+************************************************************************

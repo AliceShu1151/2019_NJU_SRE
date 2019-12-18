@@ -1,0 +1,21 @@
+************************************************************************
+* id: 235
+* requirement: Fixes issue with uncomment action removing a space after a comment prefix which ends with a space; refs IDEA-135341
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-01-18T23:28:28Z
+* content: Fixes issue with uncomment action removing a space after a comment pr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/235/commits/976b962dd3a32eb4f375d30879893747cbab6742
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-01-19T16:40:31Z
+* content:  No description provided. 
+* time: 2015-01-20T10:54:37Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+************************************************************************

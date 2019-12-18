@@ -1,0 +1,23 @@
+************************************************************************
+* id: 423
+* requirement: (PY-19967) Fix code code completion in cases of namedtuple inheritance
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-02T23:30:31Z
+* content: pass TypeEvalContext when checking replaceable subclasses
+* codeUrl: github.com/JetBrains/intellij-community/pull/423/commits/4d0bb48517a65c6eec3a1704b1542ff39f366736
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-02T23:36:22Z
+* content:  No description provided. 
+* time: 2016-07-05T12:22:56Z
+* content: @fitermay Thank you! I'll review your patch this week.
+* time: 2016-07-06T16:37:07Z
+* content: @sproshev Could please you take a look at this PR?
+************************************************************************

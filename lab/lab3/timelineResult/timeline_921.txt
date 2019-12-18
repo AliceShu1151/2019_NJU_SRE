@@ -1,0 +1,47 @@
+************************************************************************
+* id: 921
+* requirement: Differentiate syntax highlighting between control and non-control keywords
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-16T18:52:37Z
+* content: Differentiate between control and non-control keywords in Java and in…
+* codeUrl: github.com/JetBrains/intellij-community/pull/921/commits/49d3c800b8ddef371920603bb1fc5dfd6119c70e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-16T18:57:00Z
+* content: This is an idea from the TextMate grammars, in which different syntax highlighting can be customized for keywords which affect control flow and and keywords which do not.
+* time: 2018-11-21T14:28:06Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-11-21T19:18:37Z
+* content: @klikh Yes, I submitted the CLA.
+* time: 2018-12-20T14:38:49Z
+* content: @klikh @akozlova Pinging since it's been a month. Is there anything I can do to address concerns about this PR?
+* time: 2018-12-20T15:56:18Z
+* content: We are hesitating if the idea of the PR is feasible for the IDEA. Could you please explain what problem this separation solves? E.g. I see that you put new to control keywords though super and this are not, java default keyword is a control keyword though it can be used for default methods in interfaces and there it should not be a control keyword.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-22T15:48:58Z
+* content: For Java syntax highlighting, make `default` and keywords used in cal…
+* codeUrl: github.com/JetBrains/intellij-community/pull/921/commits/38392d14453bdd788b34c176dcdac7fa5498faab
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-22T16:02:38Z
+* content: The particular problem this solves is that I use different text editors and like to keep my syntax highlighting similar between them. After using TextMate grammar-based editors, I find the distinction between control and non-control keywords helpful. This PR does not change the default colors, so there is no effect for users unless they explicitly specify in settings.
+* time: 2018-12-22T16:02:38Z
+* content: You make a good point about the default keyword. I updated this PR so that:
+* time: 2018-12-22T16:02:38Z
+* content: I do need assistance in one area, as I am not deeply familiar with the syntax highlighting mechanism. That is, there is a bug currently in the PR: e.g., if keyword font attribute has Bold selected and control keyword does not, then default, super, and this will show bold when highlighted as control keywords after parsing. Would you have suggestion(s) how to fix this?
+************************************************************************

@@ -1,0 +1,35 @@
+************************************************************************
+* id: 747
+* requirement: Add versionDetailsProvider extension point to the platform.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-28T16:12:00Z
+* content: Add versionDetailsProvider extension point to the platform.
+* codeUrl: github.com/JetBrains/intellij-community/pull/747/commits/f145e88bd5786b850052354550368505f1bc4f5e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-28T19:41:42Z
+* content: This extension point allows the extensions to supply application-specific version details in addition to the platform, system and JDK information always populated by the platform by default.
+* time: 2018-02-28T19:41:42Z
+* content: For example, Android Studio would provide additional details like Gradle and Android Gradle Plugin versions, as well as versions of some Android SDK components.
+* time: 2018-02-28T19:41:42Z
+* content: This is going to make it easier for users to collect version information when they file bugs, which apart from the general UX improvement would also reduce turnaround time as it'll be less likely that a necessary detail might need to be requested from the user additionally.
+* time: 2018-02-28T19:41:42Z
+* content: This CL also makes the relevant changes to SendFeedbackAction and AboutPopup, which are the two sources of the version information used by people when filing bugs.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-21T19:54:43Z
+* content: Merge branch 'master' into master
+* codeUrl: github.com/JetBrains/intellij-community/pull/747/commits/82826022ae57a7ae5e7f8fe3430f2ea4fc1a8f86
+************************************************************************

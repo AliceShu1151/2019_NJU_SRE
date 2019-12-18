@@ -1,0 +1,28 @@
+************************************************************************
+* id: 422
+* requirement: emit first key event when second keystroke timeout
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-06-30T05:57:52Z
+* content: emit first key event when second keystroke timeout
+* codeUrl: github.com/JetBrains/intellij-community/pull/422/commits/2c133a6b9727832d7e2314f1c0b199e191d6d740
+* time: 2016-06-30T05:58:53Z
+* content: Merge remote-tracking branch 'upstream/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/422/commits/796fb89160bb700d682f0a34fc32f60dea3f795c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-30T10:34:42Z
+* content: hi there, I use “semicolon” as my shortcut first keystroke, but I can not input “semicolon” any more. should we emit first keystroke when second keystroke timeout or there is a wrong second keystroke?
+* time: 2016-06-30T14:38:43Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-07-01T10:53:15Z
+* content: hello klikh I have sent the agreement a few hours ago, please check.
+* time: 2016-07-02T14:30:13Z
+* content: Received, thanks.
+************************************************************************

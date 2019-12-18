@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1009
+* requirement: Fix IDEA-201331: Respect the annotations processors order
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-11T02:37:55Z
+* content: Fix IDEA-201331: Respect the annotations processors order
+* codeUrl: github.com/JetBrains/intellij-community/pull/1009/commits/570e9e8faa5b8c184387572bc819b917dfe7729e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-11T02:45:17Z
+* content: Fix for https://youtrack.jetbrains.com/issue/IDEA-201331
+* time: 2018-12-11T12:09:01Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-12-11T12:25:52Z
+* content: Done
+* time: 2018-12-11T12:53:48Z
+* content: @Im-dex nice!
+* time: 2018-12-12T10:41:08Z
+* content: Thank you! merged manually
+* time: 2019-05-16T09:30:24Z
+* content: IU-191.7479.1 is affected. Project compiles but doesn't respect gradle definition order of annotation processors. Request to controller fails with Internal Server Error: Error instantiating bean of type [example.micronaut.Application$ConferenceController]: example.micronaut.Application$ConferenceController: method <init>()V not found
+************************************************************************

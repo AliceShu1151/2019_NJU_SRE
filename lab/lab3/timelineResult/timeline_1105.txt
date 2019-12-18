@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1105
+* requirement: IDEA-209898 SpeedSearch: Make Ctrl-Backspace also delete trailing whitespace first
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-28T16:55:57Z
+* content: IDEA-209898 SpeedSearch: Make Ctrl-Backspace also delete trailing whi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1105/commits/6bcf41ae028408c7bd3cac6432923fa8b8165ca1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-28T17:06:03Z
+* content: Fixes IDEA-209898 SpeedSearch: Ctrl-Backspace only works if cursor is after non-whitespace character
+* time: 2019-03-28T17:06:03Z
+* content: See https://youtrack.jetbrains.net/issue/IDEA-209898
+************************************************************************

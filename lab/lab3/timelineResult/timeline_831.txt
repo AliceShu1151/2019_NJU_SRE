@@ -1,0 +1,67 @@
+************************************************************************
+* id: 831
+* requirement: Provide API to support context run configuration in Kotlin multiplatform projects
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-12T14:45:09Z
+* content: Introduce MultipleRunLocationsProvider extension point
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/943133a778c11b7388760146b65c2f28d1c12458
+* time: 2018-07-12T14:49:34Z
+* content: Use MultipleRunLocationProvider to create multiple configurations
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/1e475b6285d223ee5e8c05899716ce4e649b9903
+* time: 2018-07-12T14:53:06Z
+* content: Enhance 'Run context configuration' action
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/50a49b664ef48f716e1c6a261edb30767361444d
+* time: 2018-07-12T17:07:25Z
+* content: ExecutorAction: correctly handle alternative locations
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/ac77c2d7ed2f8fe14086dfbbf23761584794af5d
+* time: 2018-07-17T17:03:34Z
+* content: Provide API to avoid reusing tabs when running a group of configurations
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/e8330cc7c3b43d8e57c0848bcce25fd4a38d1cd4
+* time: 2018-07-17T17:40:17Z
+* content: Fix compound configuration not showing all the tabs sometimes
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/8a19fdb0aaf2d103cd589358fa64a7f83cb9d379
+* time: 2018-07-17T17:49:03Z
+* content: Fix "Run all" configuration now showing all the tabs sometimes
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/dd3ad68f4a0a70c72749f8aea1f11559359a2b25
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-17T18:29:45Z
+* content:  No description provided. 
+* time: 2018-07-19T19:33:46Z
+* content: Pavel, the code looks mostly harmless, but Dmitry's comments are very good TODOs.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-25T12:32:48Z
+* content: Implement notification to suggest using Run Dashboard
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/786e2924e34361f58dc6850249a4f7f13fd4f824
+* time: 2018-07-25T12:35:49Z
+* content: Suggest using Run Dashboard on 'Run all' action
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/1b68f1b5ce022bd8d141ed4e4d141b208bc9aa77
+* time: 2018-07-25T12:40:23Z
+* content: Suggest using Run Dashboard on running compound run configuration
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/15749ee6156595e851b55af3165c6ef8c40be601
+* time: 2018-08-06T14:36:12Z
+* content: Refactor: move code to RunContextAction
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/131d8d601f3d89bc708ae84ac8f234de0d9fc5d3
+* time: 2018-08-06T15:38:24Z
+* content: Use executionId instead of GroupRunId to avoid reusing tabs
+* codeUrl: github.com/JetBrains/intellij-community/pull/831/commits/33eab4921a5ee6d1ad4b94846780867d442315bb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-08-08T10:50:39Z
+* content: This changes were also reviewed in Upsource.
+************************************************************************

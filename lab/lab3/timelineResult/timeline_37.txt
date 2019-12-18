@@ -1,0 +1,23 @@
+************************************************************************
+* id: 37
+* requirement: IDEA-87874 input task doesn't use the defaultvalue
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-05T09:01:32Z
+* content: IDEA-87874 input task doesn't use the defaultvalue
+* codeUrl: github.com/JetBrains/intellij-community/pull/37/commits/85eb79b6db132402f3ba04b1dcaec2d8b62b49b6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-05T09:59:58Z
+* content:  No description provided. 
+* time: 2013-03-05T11:26:05Z
+* content: Was think as u. Tested all good
+* time: 2013-03-05T11:42:02Z
+* content: JComboBox - checked in setSelectionValue for contains in Model
+************************************************************************

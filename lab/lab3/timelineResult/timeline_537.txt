@@ -1,0 +1,27 @@
+************************************************************************
+* id: 537
+* requirement: Sync idea_default_no_spellchecker.xml
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-29T16:45:33Z
+* content: Sync idea_default_no_spellchecker.xml
+* codeUrl: github.com/JetBrains/intellij-community/pull/537/commits/18ba894f7642ad2a6ee0ef6655d8a0d535cc4fc8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-29T16:49:54Z
+* content: … with idea_default.xml after divergence since commit a3f7112.
+* time: 2017-03-29T16:52:59Z
+* content: @akozlova?
+* time: 2017-03-30T08:26:27Z
+* content: What does 'sync' mean? This profile is used on our internal CI, nothing else. Thanks
+* time: 2017-03-30T16:25:32Z
+* content: “Sync” means “cause (a set of data or files) to remain identical in more than one location.” In this case, though, the files aren't intended to be completely identical; in commit a3f7112 idea_default_no_spellchecker.xml differs in two small ways: (1) the profile name has “.no.spellchecker” appended, and (2) SpellCheckingInspection is disabled. I preserved those differences here.
+* time: 2017-03-30T16:25:32Z
+* content: As of recently it's used on our internal CI as well; hence concern about divergence here.
+************************************************************************

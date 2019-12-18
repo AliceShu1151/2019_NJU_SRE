@@ -1,0 +1,23 @@
+************************************************************************
+* id: 609
+* requirement: IDEA-146215 SILENT Install should use admin parameters, if installed …
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-10T10:02:36Z
+* content: IDEA-146215 SILENT Install should use admin parameters, if installed …
+* codeUrl: github.com/JetBrains/intellij-community/pull/609/commits/4256ef07fe9f93bcae411b1dc94b2592b809c073
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-10T11:14:33Z
+* content: This will install the application silently with admin if the user has run the installer as an admin else it will do what it did previously and install as a normal user.
+* time: 2017-08-10T14:39:24Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2017-08-10T14:41:55Z
+* content: I am in the process of doing that.
+************************************************************************

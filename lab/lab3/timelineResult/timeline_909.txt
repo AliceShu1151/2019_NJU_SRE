@@ -1,0 +1,27 @@
+************************************************************************
+* id: 909
+* requirement: fix IDEA-142594
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-02T22:57:55Z
+* content: IDEA-142594 add support for ANNOTATION_PARAMETERS_LPAREN_ON_NEXT_LINE…
+* codeUrl: github.com/JetBrains/intellij-community/pull/909/commits/3caf40163be6a5b341fcb607e2c84b157dd9f0d2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-02T22:59:33Z
+* content: add support for ANNOTATION_PARAMETERS_LPAREN_ON_NEXT_LINE and ANNOTATION_PARAMETERS_RPAREN_ON_NEXT_LINE
+* time: 2018-11-06T09:41:47Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-11-06T20:23:19Z
+* content: @klikh just did
+* time: 2019-07-23T08:44:19Z
+* content: Please update the PR.
+* time: 2019-07-23T08:45:01Z
+* content: @dyadix please review
+************************************************************************

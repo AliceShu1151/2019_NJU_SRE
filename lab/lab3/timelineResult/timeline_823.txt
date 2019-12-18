@@ -1,0 +1,36 @@
+************************************************************************
+* id: 823
+* requirement: Add "delete unversioned" action shortcut in commit changes dialog
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-08T16:08:38Z
+* content: Add "Delete" key shortcut for "ChangesView.DeleteUnversioned" action.
+* codeUrl: github.com/JetBrains/intellij-community/pull/823/commits/50c24c2ca72c2cd93aefc9d4f4a3d4f0a7f90a7a
+* time: 2018-07-08T18:31:53Z
+* content: Add explicit shortcut set to support macOs backspace shortcut.
+* codeUrl: github.com/JetBrains/intellij-community/pull/823/commits/d55c6eeef4aab7c08bc6f4384efca05785c94826
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-08T18:43:46Z
+* content: This PR fixes the https://youtrack.jetbrains.com/issue/IDEA-160857 issue.
+* time: 2018-07-23T18:39:09Z
+* content: Actually, I think, it's not quite OK to add "DELETE" shortcut to the "ChangesView.DeleteUnversioned" action, because it is enabled "almost everywhere" and will highly intersect with common "$Delete" action (though the implementation is quite the same).
+* time: 2018-07-23T18:39:09Z
+* content: I'll make changes to use "$Delete" action instead of "ChangesView.DeleteUnversioned" (and so delete shortcut will also be available).
+* time: 2018-07-23T21:35:05Z
+* content: If I've understood you correctly, I need to edit VcsActions.xml only.
+* time: 2018-07-23T21:35:05Z
+* content: If I do that, then I the delete icon disappears from the context menu. Will it be ok? 
+* time: 2018-07-23T21:35:05Z
+* content: Otherwise it works on both Linux and macOs, thanks for the tip.
+* time: 2018-07-24T16:39:54Z
+* content: I've pushed several changes related to the topic - see 023f55d, 9bae28b, 7627ae1, c4f3bd9.
+* time: 2018-07-24T16:39:54Z
+* content: Thanks!
+************************************************************************

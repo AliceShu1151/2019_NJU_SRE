@@ -1,0 +1,89 @@
+************************************************************************
+* id: 316
+* requirement: Use commit template if available
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-23T23:29:04Z
+* content: Use commit template if available
+* codeUrl: github.com/JetBrains/intellij-community/pull/316/commits/a61ee6a7445f4ed8d5c53b2ee56eacadf28bb8ba
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-26T23:47:47Z
+* content: Added a configuration option to use a VCS commit template if its available. This fixes https://youtrack.jetbrains.com/issue/IDEA-66355 for Git
+* time: 2015-10-26T23:47:47Z
+* content: Testing: Local Git repo shows the commit template
+* time: 2015-10-27T13:15:37Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-10-27T15:59:27Z
+* content: Sent the signed agreement to contribute@jetbrains.com
+* time: 2015-10-29T16:21:04Z
+* content: Received, thanks.
+* time: 2015-10-31T16:16:51Z
+* content: First of all, thank you for the contribution.
+* time: 2015-10-31T16:16:51Z
+* content: There is a problem with this pull request though. You're requesting commit templates when constructing the commit dialog, i.e. on the EDT. But such methods as GitConfigUtil.getValue, which forks a git process, and FileUtil.loadFile, which reads from disk (less painful but still not perfect), can potentially take long time to finish. And they will freeze the UI during that time. On modern machines with SSD no user will even notice that, but we have to consider older machines, heavily-loaded system, HDD and even network drives.
+* time: 2015-10-31T16:16:51Z
+* content: A simple solution could be to perform these actions under a modal progress (which in IntelliJ IDEA doesn't appear if the action takes less than 0.3s), but then there is a risk of blinking modal progresses on slow machines. That would annoy users a lot, especially if they don't use any commit template.
+* time: 2015-10-31T16:16:51Z
+* content: One more idea which comes to my mind is to cache the commit message template in a way similar as we already do for the list of branches (see GitRepositoryImpl.getBranches()): listen to git config and template file changes, load the file in the background when such change happens, use the cached value instantly when commit dialog is shown. However, this needs to be thinked over carefully.
+* time: 2015-10-31T16:16:51Z
+* content: Your suggestions are welcome.
+* time: 2015-11-03T05:31:54Z
+* content: Thanks! I had not thought of these conditions. The caching solution seems ok. However, the file doesn't have to change for the template to change. User can update the git global option to point to a different file. Users will have to restart IntelliJ IDEA at that point to pick up the new template.
+* time: 2015-11-03T12:42:44Z
+* content: Actually, we can capture even this fact as well. I've issued a request about tracking global git config changes some time ago. However, this can be implemented within a separate activity.
+* time: 2015-11-03T12:42:44Z
+* content: Do you want to try the caching approach yourself or you'd better wait for a fix from my side?
+* time: 2015-11-03T12:42:44Z
+* content: At any case, let me note another issue in this pull request - an incompatible API change: unfortunately CheckingEnvironment is not an abstract class but an interface which makes method additions destructive for all implementors (which as I see we have quite a bit among existing 3party plugins).
+* time: 2015-11-03T12:42:44Z
+* content: A valid solution could be to add an extension point which would provide the commit template (e.g. like com.intellij.dvcs.push.PushSupport or com.intellij.dvcs.cherrypick.VcsCherryPicker). Of course, the extension point should probably indicate which VCS does it support, and there should still be some policy on what to do if there are several extension point implementations for the same VCS (e.g. ignore this situation and simply pick up the first random extension point (I prefer this one, because the situation seems to be quite unlikely)? or maybe show a dialog proposing to choose the template?).
+* time: 2015-11-12T06:36:28Z
+* content: You are right. Modifying the interface is probably a bad idea for other plugins. I can add an extension point and get the (cached) commit template from the extension in the CommitChangeListDialog class, same place where I call the interface method currently. Would that work?
+* time: 2015-11-13T13:07:24Z
+* content: Not exactly. There is some complex logic around choosing initial commit message. In particular, a valuable feature is preserving commit message on cancel (user decides to commit, edits the message, cancels the dialog to make some additional changes, and calls the commit dialog again). See setComment() method of CommitChangeListDialog. Unfortunately, the whole logic is not entirely clear there due other aspects (such as taking commit message from the changelist, etc.), and we need to decide when commit message should be substituted and with which value.
+* time: 2015-11-13T13:07:24Z
+* content: There is also a property VcsConfiguration.getInstance(getProject()).CLEAR_INITIAL_COMMIT_MESSAGE which corresponds to a user preference (IDEA Settings | Version Control | Confirmation | Clear initial commit message). Currently it works incorrectly, because it clears the commit message even after commit dialog is cancelled, but - apart of this bug - it looks like this is the right place to insert loading commit message from the VCS template (with fixing that bug of course). I even think that we may use the same UI property, just rename it (i.e. "clear or take from the VCS template if one exists").
+* time: 2015-11-13T13:07:24Z
+* content: That said, let me take a pause to check the logic of commit message default values, I would also welcome if you investigate this matter as well. Note that there are already many other issues with this logic which you may find amongst the 'related issues' list of IDEA-66355.
+* time: 2017-04-13T11:26:24Z
+* content: +1
+* time: 2017-05-11T06:24:09Z
+* content: Any progress?
+* time: 2018-04-06T22:42:17Z
+* content: +1
+* time: 2018-08-10T16:59:26Z
+* content: +1
+* time: 2018-09-26T16:13:46Z
+* content: One more point here. There could be commented lines (lines starting with #) in the commit message template, which will be removed from commit message if using git executable. But currently if such commented lines are present in the "Commit message" field of the commit dialog they are not removed and just become part of the commit message.
+* time: 2018-09-26T16:13:46Z
+* content: So we need to deal with this somehow. Probably not load commit template to the "Commit message" field, but just show it somewhere to be used as a reference. Or add logic to highlight such lines in "Commit message" field and remove them on commit. Etc.
+* time: 2018-09-26T16:13:46Z
+* content: What do you think?
+* time: 2018-09-26T16:24:00Z
+* content: Not loading the template into the message field would completely miss the point of having it. Lines starting with #, if present in the template, would need to be loaded into the message field and then ignored. Same behaviour as if commiting through git using any text editor.
+* time: 2018-09-27T08:55:32Z
+* content: That's what we can't do. The user interface in the IDE is not the same as a text editor invoked from the command line. Users as used to the fact that everything they enter into the commit message field becomes the commit message. They would be very surprised if quite common text constructions like "Fixed #23" become ignored and stripped out from the commit message.
+* time: 2018-09-27T13:17:20Z
+* content: Please, don't be so naive. "fixed #23" would never be left out of the commit message, not even in plain git. Only lines starting with #. Users are used to use git, and that is the default behaviour.
+* time: 2018-09-27T13:35:31Z
+* content: Possibly, such comment lines could be rendered differently to clearly indicate that they are comments. They should be uneditable (not sure if it is possible to make an uneditable fragment in the editable editor), and new lines starting with "#" should not be treated as comments. That could work. @pchel- what do you think of it?
+* time: 2018-09-27T16:27:58Z
+* content: Probably we could try rendering such template comments using InlayModel in the commit message editor. Or utilize Document.createGuardedBlock(). Need to create prototype to test it.
+* time: 2019-02-04T20:26:53Z
+* content: Hi guys! Does anyone working on this right now ? I would like to continue the work on this if it's not taken.
+* time: 2019-02-05T19:52:19Z
+* content: Hi! It won't be part of the upcoming 2019.1 release. But we plan to add commit message template support this year (2019.2 or 2019.3).
+* time: 2019-02-05T20:05:20Z
+* content: Cool! In this case I'm gonna play around with it :)
+* time: 2019-02-06T00:59:10Z
+* content: Does this has a YouTrack issue we can follow? I would like to also request support for Pull Request message template.
+* time: 2019-02-06T08:58:12Z
+* content: This one https://youtrack.jetbrains.com/issue/IDEA-66355
+************************************************************************

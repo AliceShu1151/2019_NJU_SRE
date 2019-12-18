@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1242
+* requirement: IDEA-226566: Use caching for large images
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-08T22:56:48Z
+* content: IDEA-226566: Use caching for large images
+* codeUrl: github.com/JetBrains/intellij-community/pull/1242/commits/88a2b6046636de8073a19ddc7d889379aef35ddb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-08T22:59:32Z
+* content: Caching of large images is important to prevent memory waste due to having multiple copies of the same image.
+* time: 2019-11-26T11:55:32Z
+* content: We also have a code to cache loaded images in the disk, see the com.intellij.util.SVGLoaderCache class for more details. I'm not sure it's in the scope, but probably it would make sense to use something similar as well. It is assumed in the implementation that the cache is only used to the images from IDE resources
+* time: 2019-11-26T21:25:06Z
+* content: SVGLoaderCache doesn't seem to be relevant to IDEA-226566 since background image may not be an SVG.
+************************************************************************

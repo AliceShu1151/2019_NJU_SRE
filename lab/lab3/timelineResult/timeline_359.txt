@@ -1,0 +1,31 @@
+************************************************************************
+* id: 359
+* requirement: Fixed `FlipCommaIntention` for Groovy files
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-22T19:55:58Z
+* content: Fixed `FlipCommaIntention` for Groovy files
+* codeUrl: github.com/JetBrains/intellij-community/pull/359/commits/52c11841cf96a5c7c6e25fc702bb023dc908a46c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-02-22T20:36:01Z
+* content: I have checked that Change signature is still working.
+* time: 2016-02-22T20:36:01Z
+* content: @maxmedvedev, @ignatov
+* time: 2016-02-29T11:23:09Z
+* content: @paplorinc see GrIntentionTestCase and its inheritors for examples.
+* time: 2016-02-29T11:41:39Z
+* content: Thanks @dovchinnikov, will create a test for it soon :)
+* time: 2016-02-29T11:41:39Z
+* content: Could you please take a look at my other PRs in the meantime?
+* time: 2016-02-29T11:43:00Z
+* content: @paplorinc yeah, sure
+* time: 2016-02-29T22:29:25Z
+* content: @dovchinnikov, done, corrected the flip for lists also
+************************************************************************

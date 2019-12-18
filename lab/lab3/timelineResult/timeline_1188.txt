@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1188
+* requirement: IDEA-219943 language counters corner case
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-14T18:03:45Z
+* content: IDEA-219943 language counters corner case
+* codeUrl: github.com/JetBrains/intellij-community/pull/1188/commits/c8e926da483d5038d3f8953b9831828c6cfb8f76
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-14T18:13:53Z
+* content: I have thought of a corner case for the language-specific PSI modification trackers.
+* time: 2019-08-14T18:13:53Z
+* content: Say I get a tracker with
+* time: 2019-08-14T18:13:53Z
+* content: Now suppose the project has just been opened and the myLanguageTrackers is empty. Then exampleTracker.getModificationCount() will be 0.
+* time: 2019-08-14T18:13:53Z
+* content: Now, if the user deletes a Java file, "all" language counters will be incremented. Since myLanguageTrackers is still empty, though, no counters will be incremented. And so exampleTracker.getModificationCount() will still be 0, even though a Java file changed.
+* time: 2019-08-14T18:13:53Z
+* content: I guess the root cause is that forLanguages(Condition) allows a modification tracker to depend on languages that aren't in the myLanguageTrackers map yet. One possible fix is to have a separate "unattributedLanguage" modification tracker whose modification count is included with the modification trackers returned from forLanguage() and forLanguages().
+************************************************************************

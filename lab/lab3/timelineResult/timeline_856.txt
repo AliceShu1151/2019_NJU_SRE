@@ -1,0 +1,25 @@
+************************************************************************
+* id: 856
+* requirement: Unintended autocomplete when typing B or P in Kotlin
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-12T15:28:25Z
+* content: Unintended autocomplete when typing B or P in Kotlin
+* codeUrl: github.com/JetBrains/intellij-community/pull/856/commits/0f003fa92064f7702cc5eebc8529db4a9364dde0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-12T15:28:59Z
+* content: Fix for https://youtrack.jetbrains.com/issue/KT-8474.
+* time: 2018-10-24T10:10:21Z
+* content: I'd say:
+* time: 2018-11-30T18:33:46Z
+* content: I'd say we need to rethink OTHER context type. Why Kotlin context matches Other context type?
+* time: 2018-11-30T18:43:02Z
+* content: There was a suggestion by Peter do not show templates in auto popup if there is nothing but them. I'm still not sure about it but I'll try to implement it
+************************************************************************

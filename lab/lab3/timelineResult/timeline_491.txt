@@ -1,0 +1,25 @@
+************************************************************************
+* id: 491
+* requirement: Update error messages for version control plugins to be more readable.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-09T21:48:28Z
+* content: Update SvnBundle description to have more natural sentence
+* codeUrl: github.com/JetBrains/intellij-community/pull/491/commits/eb22fcec0cfe9cca3da27e67fa161c861cada89d
+* time: 2016-12-09T21:49:48Z
+* content: Update GitBundle error description to have more natural sentence
+* codeUrl: github.com/JetBrains/intellij-community/pull/491/commits/8052d5198c9412f22d323224b38bd35424f0e0ff
+* time: 2016-12-09T21:52:00Z
+* content: Update Hg4idea error message description to have a more natural sentence
+* codeUrl: github.com/JetBrains/intellij-community/pull/491/commits/37df70453843e1b523cb6f31c872a0b5019f99aa
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-09T21:53:46Z
+* content: The current error messages are a bit awkward to read so I just changed them up a bit.
+************************************************************************

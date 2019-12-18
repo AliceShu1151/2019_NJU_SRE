@@ -1,0 +1,19 @@
+************************************************************************
+* id: 840
+* requirement: Prevent exception wrapping to UndeclaredThrowableException
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-27T10:28:56Z
+* content: Prevent exception wrapping to UndeclaredThrowableException
+* codeUrl: github.com/JetBrains/intellij-community/pull/840/commits/e7bc3145387905b139dc06fd023317ab739e0468
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-27T10:43:34Z
+* content: If the corresponding external system api implementation throw some exception (e.g. ExternalSystemException) this exception will be wrapped to UndeclaredThrowableException. This happens because method method.invoke throw InvocationTargetException which is checked exception and such exception not a part of the corresponding proxied interface signature (e.g. RemoteExternalSystemProjectResolver.resolveProjectInfo method)
+************************************************************************

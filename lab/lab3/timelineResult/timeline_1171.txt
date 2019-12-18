@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1171
+* requirement: allow overwrite key completion register
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-12T17:35:38Z
+* content: allow overwrite key completion register
+* codeUrl: github.com/JetBrains/intellij-community/pull/1171/commits/dbee6e35223d9eabb3a732fb55dce8442e320223
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-12T17:59:08Z
+* content: I'm extending this module to create an Ansible IDE. And now I'm facing a problem to group suggestions and prioritize keywords before modules. I'm not able to return a PrioritizedLookupElement from getKeyLookups in my custom Field implementation since it returns a list of LookupElementBuilder. So, the best options is to overwrite YamlMetaTypeCompletionProviderBase#registerBasicKeyCompletion but it's private and static. So, with this PR I'm broadening it to protected and removing the static flag so I'm group the LookupElements before add to CompletionResultSet. @olegs
+* time: 2019-07-13T10:26:53Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2019-07-13T11:11:03Z
+* content: @klikh, done
+* time: 2019-07-15T11:06:37Z
+* content: @bkmeneguello For some reason we didn't receive the CLA. Could you please try to sign it once again?
+* time: 2019-07-15T11:12:39Z
+* content: @klikh, done once more
+* time: 2019-07-15T11:27:36Z
+* content: This time we received it. Thanks.
+************************************************************************

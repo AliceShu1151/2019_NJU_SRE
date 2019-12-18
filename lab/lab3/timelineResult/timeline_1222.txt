@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1222
+* requirement: IDEA-225641: Clear ResolveCache on low memory condition
+the requirement of 1222 only has implements, no discussion.

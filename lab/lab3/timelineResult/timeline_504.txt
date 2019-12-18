@@ -1,0 +1,27 @@
+************************************************************************
+* id: 504
+* requirement: PY-21915 Fix PyDeprecationInspection for DeprecationWarning subclasses
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-01-19T19:57:20Z
+* content: PY-21915 Fix PyDeprecationInspection for DeprecationWarning subclasses
+* codeUrl: github.com/JetBrains/intellij-community/pull/504/commits/dd6436af5191f7743af35a13c03ca55542ce9530
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-01-19T20:00:45Z
+* content: https://youtrack.jetbrains.com/issue/PY-21915
+* time: 2017-01-19T20:00:45Z
+* content: Add support of highlighting DeprecationWarning or PendingDeprecationWarning subclasses / aliases / etc.
+* time: 2018-02-09T12:13:39Z
+* content: @dmitry-panchenko Thanks for your PR! Sorry it went unnoticed for more than a year. Are you still interested in this feature?
+* time: 2018-02-09T12:13:39Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it online.
+* time: 2018-03-01T12:17:04Z
+* content: @dmitry-panchenko Checking back on this issue. Could you please sign the contributor license agreement online? The URL for the CLA form is http://www.jetbrains.com/agreements/cla/.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 441
+* requirement: [PyCharm] Fix python crash in module Qt5Gui.dll
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-02T01:11:42Z
+* content: Fix python crash in module Qt5Gui.dll
+* codeUrl: github.com/JetBrains/intellij-community/pull/441/commits/b3bec5a57f6f952cb07bdc490d49d91392afcf6f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-02T01:48:20Z
+* content: Current skeleton generation cause application crash in module Qt5Gui.dll with exception 0xc0000005 when it called for modules "PyQt5.Qt" and "PyQt5.QtGui".
+* time: 2016-09-02T01:48:20Z
+* content: This patch fix reason of this crash.
+* time: 2016-09-05T14:35:49Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+************************************************************************

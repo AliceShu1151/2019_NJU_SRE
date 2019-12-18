@@ -1,0 +1,87 @@
+************************************************************************
+* id: 916
+* requirement: Array can be replaced with enum values inspection added
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-13T15:48:27Z
+* content: Array can be replaced with enum values inspection added
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/e9d6f11c3951246742bff59154f636bb56ec1927
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-13T15:51:56Z
+* content: Array can be replaced with enum values inspection suggests to replace the creation of array with EnumType.values()
+* time: 2018-11-13T16:47:37Z
+* content: Please add tests, e.g. new Enum[] {"", Enum.A} will probably fail as well as new Enum[][] {{Enum.A}}.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-14T18:34:48Z
+* content: Tests for Array can be replaced with enum values inspection added.
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/9c923f6b01f011229fd3c2fd03bb1a7cfb7f4810
+* time: 2018-11-15T09:39:32Z
+* content: Tests for Array can be replaced with enum values insp added
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/3fc7c141ef1d061e0c882a5a764b8688c2227d8a
+* time: 2018-11-15T13:58:22Z
+* content: Tests and inspection updated
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/cb8e186d9f36192a1e7ebdf9c74dc337d22dc257
+* time: 2018-11-15T17:58:28Z
+* content: Array can be replaced with enum values inp bug fixed + tests added
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/1b327f6f6704288d31d9057e6f0a7ac71de7bcd4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-16T15:35:12Z
+* content:  intellij-community/plugins/InspectionGadgets/src/com/siyeh/ig/style/ArrayCanBeReplacedWithEnumValuesInspection.java 
+* time: 2018-11-16T15:35:12Z
+* content:           Line 64       in       1b327f6 
+* time: 2018-11-16T15:35:12Z
+* content:  intellij-community/plugins/InspectionGadgets/src/com/siyeh/ig/style/ArrayCanBeReplacedWithEnumValuesInspection.java 
+* time: 2018-11-16T15:35:12Z
+* content:           Line 72       in       1b327f6 
+* time: 2018-11-16T15:35:12Z
+* content:  intellij-community/plugins/InspectionGadgets/src/com/siyeh/ig/style/ArrayCanBeReplacedWithEnumValuesInspection.java 
+* time: 2018-11-16T15:35:12Z
+* content:           Line 76       in       1b327f6 
+* time: 2018-11-16T15:35:12Z
+* content:  intellij-community/plugins/InspectionGadgets/src/com/siyeh/ig/style/ArrayCanBeReplacedWithEnumValuesInspection.java 
+* time: 2018-11-16T15:35:12Z
+* content:           Line 76       in       1b327f6 
+* time: 2018-11-16T15:35:12Z
+* content:  intellij-community/plugins/InspectionGadgets/src/com/siyeh/ig/style/ArrayCanBeReplacedWithEnumValuesInspection.java 
+* time: 2018-11-16T15:35:12Z
+* content:           Line 112       in       1b327f6 
+* time: 2018-11-16T15:35:12Z
+* content:  intellij-community/plugins/InspectionGadgets/src/com/siyeh/ig/style/ArrayCanBeReplacedWithEnumValuesInspection.java 
+* time: 2018-11-16T15:35:12Z
+* content:           Line 143       in       1b327f6 
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-22T12:25:35Z
+* content: Initialisation with foo return value added
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/02be569a32bbee2ecd13456f4df5b0c07cf0f4e7
+* time: 2018-11-29T16:22:39Z
+* content: Array can be replaced with enum values code cleaning
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/610e64829b4a20a7ef75cc4660429ab3ca05c200
+* time: 2018-11-29T21:18:09Z
+* content: Array can be replaced with enum values code cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/64484c5111283ebca38758307ac13cb1e42aae96
+* time: 2018-11-30T10:22:00Z
+* content: Array can be replaced with enum values: init with foo() deleted
+* codeUrl: github.com/JetBrains/intellij-community/pull/916/commits/9b842d3ab317c2fedbce53dc6a1abcf8613f571d
+************************************************************************

@@ -1,0 +1,53 @@
+************************************************************************
+* id: 776
+* requirement: PY-29338: Sort out foreign relative imports from python ones
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-05T04:27:06Z
+* content: PY-29338: Sort out foreign relative imports from python ones
+* codeUrl: github.com/JetBrains/intellij-community/pull/776/commits/eb19392538f7260e1a64da050222ed95bcd12aad
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-05T04:29:16Z
+* content: @sproshev @vlasovskikh The problem is resolving relative imports, foreign imports and relative skeletons are all tangled up in the same codepath. The returned foreign imports were not ordered properly relative to the rest of the results causing the selected result to be a foreign import (PsiPackage) when a python one was available. This fix is far from perfect (and also didn't have time to write test) but  it should fix the issue for now without breaking anything else.  It will also effect caches in cases when a package can be imported as a relative import or absolute under exactly the same name. I don't expect it to meaningfully affect performance though.
+* time: 2018-04-05T04:51:37Z
+* content: @sproshev @vlasovskikh I was considering taking a shot at cleaning up the import logic for a while now but there are some questions I'm still thinking about. I'd like to know your team's thoughts about how to resolve those issues. Was going to write an email to @vlasovskikh but may as well post a wall-of-text here.
+* time: 2018-04-05T04:51:37Z
+* content: Also, Maybe SDK roots configuration should allow reordering of user added roots to match the desired PYTHONPATH
+* time: 2018-04-05T04:51:37Z
+* content: I wonder if findCanonicalImportPath is strictly necessary for resolving stubs and skeletons. What are the cases when a proper qualified name cannot be used? It is difficult to reason about recursion issues when findCanonicalImportPath is used as part of the import logic.
+* time: 2018-04-05T04:51:37Z
+* content: Rated resolve results do not seem to compose well and combining results seems to be a very brittle process. I wonder if there is a better way to classify multiResolve results. In cases of imports it should be possible to come up with a manageable number of categories for classifying primary results and fallbacks.
+* time: 2018-04-06T15:12:19Z
+* content: @fitermay Answering to your points:
+* time: 2018-04-06T15:12:19Z
+* content: The user is expected to mark their source roots properly to explain their run-time sys.path model to the code insight engine of PyCharm. Usually it's enough to mark source roots in the correct order to achieve the necessary ordering. If you have any specific examples where we can improve findShortestImportableQName I'll be interested in looking into them.
+* time: 2018-04-06T15:12:19Z
+* content: findCanonicalImportPath is needed for things covered by PyCanonicalPathProvider like PyStdlibCanonicalPathProvider. For example, os.path.join is defined in posixpath.join, but we shouldn't use this name in code insight and prefer os.path.join instead.
+* time: 2018-04-06T15:12:19Z
+* content: Currently we use only RATE_HIGH, RATE_NORMAL, and RATE_LOW, which was enough for a while and maybe it's still enough. As for foreign resolve results, I was thinking about introducing "overriding" foreign import providers that take precedence over normal resolve results.
+* time: 2018-04-06T18:00:24Z
+* content: @vlasovskikh
+* time: 2018-04-06T18:00:24Z
+* content: I understand that findCanonicalImportPath normalizes reexported names. There are two steps for this process.  The first step is smart and expensive re-normalization --  it looks for the topmost package from which the name can be imported.  The second step is straightforward iteration through PyCanonicalPathProviders. What I'm wondering is whether the first step is strictly necessary here.
+* time: 2018-04-06T18:00:24Z
+* content: All I'm saying is that combining those result lists is a very frequent source of bugs.  I think this is so because a result's rating does not convey enough information about the kind of result it is.
+* time: 2018-04-06T19:05:20Z
+* content: @fitermay There are users who want to be able to run their scripts with sys.path left intact. For example, one may have some scripts unrelated to the rest of the project that assume that they are run outside of the context of the project:
+* time: 2018-04-06T19:05:20Z
+* content: but I'm sure there are other examples when users want full control on their sys.path.
+* time: 2018-04-06T19:17:28Z
+* content: It might be wrong, but the ability to run stuff the way the users expect is more important for them. When users report about their problems with false warnings, we advise them to make their static configuration reflect their dynamic sys.path, but it's not always easy, sometimes even not possible.
+* time: 2018-04-11T18:18:46Z
+* content: @fitermay Thanks for your quick solution to this problem! Unfortunately, the solution proposed in this pull request isn't clean enough and it will complicate future refactorings of imports. You're right about the fact that the code tangles together foreign imports, relative stubs, and binary skeletons. I had to revert the fix for PY-28629 that resulted in this regression since the issue was affecting too many users.
+* time: 2018-04-11T18:18:46Z
+* content: It would be great to come up with the refactoring of the resolving imports that also will make it possible to address the reverted issue with the skeletons in a cleaner way.
+* time: 2018-04-11T18:24:00Z
+* content: @vlasovskikh I agree with you. A comprehensive refactoring is what is needed here. I think I have all the details worked out in my head at this point. I will try to implement the refactoring next week and also add support for explicit namespace packages (unless Anton already started work on it)
+************************************************************************

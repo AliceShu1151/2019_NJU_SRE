@@ -1,0 +1,31 @@
+************************************************************************
+* id: 314
+* requirement: Disabled `PointlessBoolean` inspection for Spock's data tables
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-25T20:49:08Z
+* content: Disabled `PointlessPointlessBoolean` inspection for Spock's data tables
+* codeUrl: github.com/JetBrains/intellij-community/pull/314/commits/e11bc2bda626cae309ed180bbaff81f42a35d708
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-25T21:16:09Z
+* content: Spock's data tables aren't real boolean expressions, and shouldn't be flagged as PointlessBoolean, e.g.
+* time: 2015-10-25T21:16:09Z
+* content: (I did this PR, because it has id #314 :p) 
+* time: 2016-03-01T09:51:54Z
+* content: I don't think where is allowed to have the and label; otherwise it should be skipped here
+* time: 2016-03-22T15:20:06Z
+* content: @dovchinnikov, @maxmedvedev, @ignatov ?
+* time: 2017-04-11T21:19:04Z
+* content: ... too bad
+* time: 2017-11-13T20:36:25Z
+* content: @dovchinnikov any reason this was not merged?
+* time: 2019-05-21T09:32:14Z
+* content: @dovchinnikov ? would it make sense for me to rebase this?
+************************************************************************

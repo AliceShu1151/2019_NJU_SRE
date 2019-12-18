@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1179
+* requirement: Check for settings file when looking for location
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-17T22:34:56Z
+* content: Check for settings file when looking for location
+* codeUrl: github.com/JetBrains/intellij-community/pull/1179/commits/d635acfa46b576287ae05f5402da60574b54bfdf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-23T22:23:43Z
+* content: ... in Gradle errors.
+* time: 2019-07-23T22:23:43Z
+* content: We currently have these patterns for Gradle errors with locations:
+* time: 2019-07-23T22:23:43Z
+* content: Build file '(.)' line: ([\d]+) Build file '(.)'
+************************************************************************

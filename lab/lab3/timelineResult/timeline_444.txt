@@ -1,0 +1,160 @@
+************************************************************************
+* id: 444
+* requirement: Better Python Console
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-12T01:59:07Z
+* content: Get rid of PythonConsoleToolWindow, PythonConsoleToolWindowFactory, P…
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/a9da284ebe054899a42cd8ac3677cefbc6918ac9
+* time: 2016-09-12T02:03:15Z
+* content: PY-20839: previous console listeners get rerun on console restart!
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/7453729752444568d08ba293258c5c505e31bfc8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-12T02:07:12Z
+* content: Implement proper multi-line console for PyCharm.
+* time: 2016-09-12T02:07:35Z
+* content: This is a work in progress. Submitting a PR now for JB to keep track
+* time: 2016-09-12T16:43:14Z
+* content: Thank you for these changes, the code looks nice. Just a few minors after a short testing:
+* time: 2016-09-12T17:33:37Z
+* content: Could you please send me a screencast of how to reproduce these issues? I cannot reproduce them on my machine.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-14T00:35:26Z
+* content: -- get rid of inheritance from AbstractConsoleRunner with history. It…
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/8746012dbb1796d7c7239e714aceec169836827f
+* time: 2016-09-14T01:07:09Z
+* content: PY-13029: Console restart action does not pick up new console setting…
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/5767661445e7c1d1ab051d2e68536cf20a33b19f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-14T04:42:46Z
+* content: The last commit should fix PY-13029. There are some other issues I see like connection being closed on UI thread I want to fix here before I go ahead with the actual implementation of the console code...
+* time: 2016-09-15T12:38:34Z
+* content: @fitermay Thank you for your fixes and improvements! I'm not able to reproduce my phantom bug anymore.
+* time: 2016-09-15T12:38:34Z
+* content: A small, but important reminder: if you fix some bug, please, find its id in our tracker and add it to your commit message. If you can't find it, feel free to create it. It will help us to distinguish refactoring commits and bug fixing commits. Also it will make a testing process easier. Thank you!
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-16T18:09:43Z
+* content: Fix PY-20831: Do not let console lock up UI thread for a long time
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/5aa91a6baba93178d824137819994e900eacef70
+* time: 2016-09-17T04:44:27Z
+* content: Allow to display gutter annotations for empty documents. Needed for m…
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/ec4459b82d9ebfa305fb83a0f2b5bbb074280529
+* time: 2016-09-17T04:45:01Z
+* content: PY-20619,PY-20618,PY-20617,PY-20616,PY-20615, PY-20615,PY-15731,PY-15…
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/707f6a5ac4af9c2b0ec5b2e8d9f2ffdf2fb643aa
+* time: 2016-09-17T05:02:18Z
+* content: Fix PY-20836: Fix unindent when at end of document. Especially notica…
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/1590d5e16ec89ecffce62e64f29285f3d028bb52
+* time: 2016-09-17T23:05:46Z
+* content: PY-13498 : Remove prompt from text when copying from history
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/8237a3fca2d7db389ea04e0b0853d8b1163cd69b
+* time: 2016-09-18T06:31:25Z
+* content: PY-19613: Add variable viewer when launching with 'show command line …
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/e0c2b16dc930f7c89e077b5a8f46c83d87c0b259
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-18T22:33:43Z
+* content: Ok, this completes what I had planned for this PR. At some point I'd like to implement more enchancements such as a multiplexing console that switches between debug console when process is suspended and regular console when running. These will be submitted as a different PR when I have time to work on them.
+* time: 2016-09-19T13:50:38Z
+* content: Thank you very much for your job! I've found some bugs, please, look at them: PY-20848, PY-20847, PY-20849, comment in PY-20836. Also I've created a tag "PR 444" for all issues related to your pull request.
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-20T03:00:35Z
+* content: PY-20849: Don't increment IPython prompt counter on blank input
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/9d85b8ef7e6fdeb2e887b74e4ee90680c933a867
+* time: 2016-09-20T03:10:14Z
+* content: do not execute if line on which 'enter' was pressed is indented
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/2df0e1c5803c50dde3c6af5707d0d1fb553affe4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-20T03:14:18Z
+* content: PY-20847: As designed. It waits for indent to be 0 to execute. Compare with IPython and IDLE console -- they work the same way PY-20848,20849,: Fixed Comment in PY-20836: Yes, it's a bug. Fixed.
+************************************************************************
+*=======================================================================
+* round 4
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-20T03:32:00Z
+* content: PY-20847: Send line to console on blank line
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/e53e5f78ce234bbcb7d459b9cf8fa4646938b8ed
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-20T03:33:23Z
+* content: Oops. Never mind. IPython also executes on blank lines.Fixed
+************************************************************************
+*=======================================================================
+* round 5
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-20T03:53:38Z
+* content: fix off by one error in handling of triple nodes
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/233f1798fb72e86eb4371d60288c7b73df9b2d18
+* time: 2016-09-21T06:57:56Z
+* content: PY-20847: Rewrite ConsoleEnterHandler and add sufficient testing
+* codeUrl: github.com/JetBrains/intellij-community/pull/444/commits/03ccfc0ef8c6c53443e255e15afe8d5bb564cdfc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-10-10T21:56:51Z
+* content: Hi Yuli, this was huge! Thanks for the contribution. The changes were tested and seem to be working quite well.
+* time: 2016-10-10T21:56:51Z
+* content: Though I have some questions regarding your design decisions: why did you choose to implement it with Executor and Startup activity instead of normal ToolWindow like it was before?
+* time: 2016-10-11T10:41:05Z
+* content: I've reverted the implementation from Executors to ToolWindow API as it was before. All other fixes were preserved.
+* time: 2016-10-11T11:07:06Z
+* content: Does rerun action still work properly after the revert? I relied on the reuse content reuse behavior of RunContenrManager to get restart action to work correctly. I'll try to explain more when I have some time today.
+* time: 2016-10-11T15:24:51Z
+* content: Ok, this is why I chose to get rid of the Toolwindow.
+* time: 2016-10-11T15:24:51Z
+* content: From general considerations:
+* time: 2016-10-11T15:24:51Z
+* content: Specific reasons:
+* time: 2016-10-13T12:33:18Z
+* content: Yes, your points are valid and your implementation worked well. The problem is that extending Executor to support console is bit of a API misuse. Toolwindow API was designed exactly for this purpose. So it we think that it doesn't work as it should, we just need to fix it instead making another extension point.
+* time: 2016-10-13T12:33:18Z
+* content: Also there was a tiny problem that the startup activity was launched later then tool window intitializers which resulted into Python Console tool window appear later then other tool windows in the the corresponding panel.
+* time: 2016-10-13T12:33:18Z
+* content: Anyway now the code look simpler then before there is only one PythonConsoleToolWindow(with it's factory) which reflects PythonConsoleExecutor with a startup activity.
+* time: 2016-10-13T12:33:18Z
+* content: As for the rerun - it works fine now.
+* time: 2016-10-13T12:33:18Z
+* content: Yes there is now exception which happens sometimes on execute line action due to some async misconfiguration, but I am going to fix it for the next release.
+************************************************************************

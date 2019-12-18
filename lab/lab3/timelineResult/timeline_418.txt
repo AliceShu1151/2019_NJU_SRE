@@ -1,0 +1,21 @@
+************************************************************************
+* id: 418
+* requirement: Implemented getHashCode(CharSequence,int,int)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-06-21T21:00:54Z
+* content: Implemented getHashCode(CharSequence,int,int)
+* codeUrl: github.com/JetBrains/intellij-community/pull/418/commits/31660934f6859d975a9d3e3b92c552193c946379
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-21T21:01:07Z
+* content: Implemented getHashCode(CharSequence,int,int) overload which can add nodes using a CharSequence as input.
+* time: 2018-07-21T13:18:47Z
+* content: @donnerpeter please review.
+************************************************************************

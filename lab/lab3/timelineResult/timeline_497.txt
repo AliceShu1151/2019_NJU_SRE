@@ -1,0 +1,56 @@
+************************************************************************
+* id: 497
+* requirement: IDEA-165738 Gradle import is very slow in multi-module projects
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-21T11:34:31Z
+* content: Fixes IDEA-165738 (Gradle import is very slow in multi-module project…
+* codeUrl: github.com/JetBrains/intellij-community/pull/497/commits/bcc22abe0d33d3045c00bf4fc45467ae6d54f9f7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-21T11:37:12Z
+* content: The gradle import resolves source and javadoc JAR files for all artifacts, including project dependency artifacts. These artifacts do not exist in external repositories and so gradle makes many unsuccessful HTTP calls to pom files as well as source and javadoc JARs across all configured repositories every time the project is imported. For large multi-module projects with many external repositories these unsuccessful HTTP calls can take a long time, on the order of many minutes.
+* time: 2016-12-21T11:37:12Z
+* content: This fix limits the resolved artifacts to those from external dependencies. I have checked that all tests in gradle-tooling-extension-impl still pass.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-21T11:49:58Z
+* content: Minor formatting fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/497/commits/9d2fc185049f3f386b80db9495ea28c31a4b1293
+* time: 2016-12-21T15:32:11Z
+* content: Make it clear that the ComponentArtifactsResult instances of project …
+* codeUrl: github.com/JetBrains/intellij-community/pull/497/commits/7ae6140cf965767a81227c55b31b4588fc4d8db3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-21T15:37:57Z
+* content: With feedback from @oehme (Gradle)
+* time: 2016-12-21T15:49:34Z
+* content: I think this change is going to break partial imports, i.e. we have a project with two subprojects Foo and Bar (Foo depends on Bar) and we only import Foo. I think the code that was changed in this commit was making sure that a version of Bar is loaded from the repository instead, so that Foo will still compile. I guess there is no test coverage for this case, so it went undetected. I might be wrong, but it's hard to tell without tests.
+* time: 2016-12-21T15:49:34Z
+* content: I think this can be improved though, using one of the following solutions:
+* time: 2016-12-21T16:23:15Z
+* content: This did not produce a compilable project before this change (I just checked it) and so this is a separate unrelated issue. You could argue that the artifacts might be available in a repository, but in general this is not the case for all modules and as soon as you bump the version number it would not work anymore. As far as I see, you can realistically only exclude projects that no included projects depend on.
+* time: 2016-12-21T16:32:39Z
+* content: Btw, just to give a sense of scale here:  Before this change, the import time for my project (~80 modules) was 5-10 minutes, after the change it is 20 seconds (with warm daemon)
+* time: 2016-12-21T17:10:17Z
+* content: I didn't know that, thanks for checking! In that case the change is good to go imho.
+* time: 2017-01-18T12:00:31Z
+* content: @vladsoroka Can you have a look at this PR when you have time? It's currently very painful for me to import my larger projects and it would be great if this could go into 2017.1. Thank you!
+* time: 2017-01-19T08:33:28Z
+* content: @ingokegel thanks for the contribution, I'll dig into the issue today
+* time: 2017-01-19T20:29:49Z
+* content: Thank you very much!
+************************************************************************

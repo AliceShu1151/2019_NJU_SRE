@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1214
+* requirement: IDEA-215838 Fix memory leak in FindPopupPanel
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-17T18:05:41Z
+* content: IDEA-215838 Fix memory leak in FindPopupPanel
+* codeUrl: github.com/JetBrains/intellij-community/pull/1214/commits/2af430d09db24f6d429ab635fd0154386343b296
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-17T23:18:10Z
+* content: To ensure that the popup is closed when the corresponding project is closed, a Disposable was registered with the project that closes the popup. When the popup closes normally, this Disposable is not removed. Since it is an inner class, it retains the popup. Opening this popup is a fairly frequent operation, so a significant amount of memory can be leaked (on the order of 100MB was seen in some heap reports).
+* time: 2019-10-17T23:18:10Z
+* content: This change instead subscribes a ProjectManagerListener which will close the popup if the project is closed. It uses the dialog's disposable for the message bus connection, so if the popup is closed normally, the connection is closed and nothing holds on to the popup.
+************************************************************************

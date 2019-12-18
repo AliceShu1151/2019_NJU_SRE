@@ -1,0 +1,48 @@
+************************************************************************
+* id: 498
+* requirement: Added building python debugger binaries for 2.6
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-27T15:46:38Z
+* content: related to this issue https://youtrack.jetbrains.com/issue/PY-19216
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-30T19:33:27Z
+* content: Build Pydevd windows binaries for Python 2.6
+* codeUrl: github.com/JetBrains/intellij-community/pull/498/commits/2222d3b8ac616a4cca46981c2296cca37a9bdc8b
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-30T19:38:26Z
+* content: @Elizaveta239 I've rebased onto master and cleaned this up. The change will not introduce any additional dependencies on your side. Python 2.6 binaries are built against the same MS SDK as Python 2.7 binaries.
+* time: 2017-10-31T14:52:57Z
+* content: @da1z @fitermay Thanks for your pull request. Unfortunately, we won't include the debugger binaries for Python 2.6 since we consider it obsolete. Python 2.6 reached its official end of life on 2013-10-29 and in future versions of PyCharm we will drop support for it. If having compiled Cython extensions for Python 2.6 is critical for you, please consider distributing them separately from PyCharm. We could update our language check when looking for Cython extensions so PyCharm will try to load them for 2.6 from sys.path.
+* time: 2017-10-31T14:52:57Z
+* content: The related ticket in the issue tracker: https://youtrack.jetbrains.com/issue/PY-19215
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-03T02:17:28Z
+* content: update CYTHON_SUPPORTED constant
+* codeUrl: github.com/JetBrains/intellij-community/pull/498/commits/f91302b6ed4f978081421b843badd4e2f1906fc9
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-14T12:38:02Z
+* content: @da1z @fitermay Thank you for the pull request!
+************************************************************************

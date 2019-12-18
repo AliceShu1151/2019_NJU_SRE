@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1183
+* requirement: IDEA-22407: Comply with XDG Base Directory Specification on Linux
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-03T19:42:19Z
+* content: IDEA-22407: Comply with XDG Base Directory Specification on Linux
+* codeUrl: github.com/JetBrains/intellij-community/pull/1183/commits/481be16712aa3ccea6ba16dd10b516368cbcc272
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-03T20:12:40Z
+* content: Implement platformPath for the XDG Base Directories Specification and split the IDEA configuration into the corresponding XDG_CONFIG_HOME, XDG_DATA_HOME & XDG_CACHE_HOME directories.
+* time: 2019-08-03T20:12:40Z
+* content: In case no old configuration directory under XDG_CONFIG_HOME exists then import the last old configuration from the home directory. But move the plugins directory into the corresponding directory under XDG_DATA_HOME.
+* time: 2019-08-03T20:12:40Z
+* content: Parameters are renamed to indicate the usage on multiple systems.
+* time: 2019-08-04T07:11:22Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2019-08-04T09:05:08Z
+* content: I submitted the CLA.
+* time: 2019-08-07T19:40:20Z
+* content: Thanks!
+* time: 2019-08-07T19:40:20Z
+* content: I have a couple of remarks to changes in the import code, though, and it would be nice to add some tests. Would you like to improve the patch yourself or rather want me fix it?
+* time: 2019-08-08T16:30:47Z
+* content: Since it's only a small patch, it'll be quicker if you just fix it.
+************************************************************************

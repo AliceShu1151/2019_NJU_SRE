@@ -1,0 +1,32 @@
+************************************************************************
+* id: 1255
+* requirement: Add the extension point for extending Annotate view.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-19T16:17:22Z
+* content: Add the extension point for extending Annotate view. More info is in the thread.
+* time: 2019-11-19T16:17:22Z
+* content: https://intellij-support.jetbrains.com/hc/en-us/community/posts/360006634979-I-want-to-extend-the-Annotate-view-of-Git-VCS-But-?page=1#community_comment_360000966480
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-20T17:01:46Z
+* content: Add the extension point for extending Annotate view.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1255/commits/3edae74ffa878653b33a61a946f41a2e82f68911
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-20T17:03:26Z
+* content: Force push a commit using the suggested approach to achieve it.
+* time: 2019-11-20T17:58:07Z
+* content: I can fix mentioned minor issues while merging the patch, if you want.
+************************************************************************

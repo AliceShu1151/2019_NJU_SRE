@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1085
+* requirement: IDEA-208615: Fix one of UiNotifyConnector leak channels
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-10T23:15:24Z
+* content: IDEA-208615: Fix one of UiNotifyConnector leak channels
+* codeUrl: github.com/JetBrains/intellij-community/pull/1085/commits/2797f8c6e217bff86a5eed27d364b7c6a55df1c3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-10T23:18:05Z
+* content: Introduce disposables corresponding to individual tabs. Use such a disposable to control lifecycle of UiNotifyConnector used by EditorTabbedContainer.CloseTab.
+************************************************************************

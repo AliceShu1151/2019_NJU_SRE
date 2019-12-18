@@ -1,0 +1,35 @@
+************************************************************************
+* id: 229
+* requirement: [IDEABKL-7100] Create an instance of PsiElementFinderImpl via the extension point 'com.intellij.java.elementFinder'
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-12-05T12:02:23Z
+* content: [IDEABKL-7100] Create an instance of PsiElementFinderImpl via the ext…
+* codeUrl: github.com/JetBrains/intellij-community/pull/229/commits/ad173d85893855d805edbc638bb3ca93e6949ed8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-12-05T12:10:11Z
+* content: Probably an instance variable com.intellij.psi.impl.JavaPsiFacadeImpl#myElementFinders and a method com.intellij.psi.impl.JavaPsiFacadeImpl#calcFinders could be removed. And a method com.intellij.psi.impl.JavaPsiFacadeImpl#finders could just delegate to myProject.getExtensions(PsiElementFinder.EP_NAME).
+* time: 2014-12-05T12:23:09Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2014-12-05T12:29:13Z
+* content: I've just sent it to contribute@jetbrains.com.
+* time: 2014-12-05T12:34:26Z
+* content: Received, thanks.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-12-05T13:13:48Z
+* content: [IDEABKL-7100] Assigned 'java' as id for com.intellij.psi.impl.PsiEle…
+* codeUrl: github.com/JetBrains/intellij-community/pull/229/commits/36b5f8c3c74db9dc7bc7d97a4ea6d776b57bbf36
+************************************************************************

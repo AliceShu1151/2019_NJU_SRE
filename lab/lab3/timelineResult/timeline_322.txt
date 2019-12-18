@@ -1,0 +1,25 @@
+************************************************************************
+* id: 322
+* requirement: CodeDocumenationAwareCommenter: Fix copy/paste issues
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-07T16:44:59Z
+* content: CodeDocumenationAwareCommenter: Fix copy/paste issues
+* codeUrl: github.com/JetBrains/intellij-community/pull/322/commits/07af579d00c82519ccb448d0b03c5af844a879a6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-11-07T16:45:34Z
+* content: This PR fixes two small copy/paste issues in the CodeDocumenationAwareCommenter interface
+* time: 2015-11-08T14:34:39Z
+* content: I've merged the pull request, thank you!
+* time: 2015-11-08T14:40:15Z
+* content: hmm, it doesn't show up in the master branch yet?
+* time: 2015-11-08T15:04:43Z
+* content: This github repository is a mirror of the main one and is updated once per hour.
+************************************************************************

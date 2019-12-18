@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1207
+* requirement: [IDEA-218836] Added SortLinesActions
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-09-29T15:38:27Z
+* content: [IDEA-218836] Added SortLinesActions
+* codeUrl: github.com/JetBrains/intellij-community/pull/1207/commits/a24fb173b2e3a152934dc4035dff9f7a64f35931
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-29T15:45:28Z
+* content: New EditorSortLinesActionGroup + children to sort selected lines (IDEA-218836).
+* time: 2019-09-29T15:45:28Z
+* content: Eight child actions:
+* time: 2019-09-29T15:45:28Z
+* content: I also had to make a little change to ActionsTreeUtil.createEditorActionsGroup() so that Editor Actions in the Keymap settings pane will also group certain actions. Otherwise the Sort Line child actions (Alphabetically, By Length, …) would be listed in there without context which is confusing. The group is also intended to have a shortcut on its own which allows selecting the sort order on-the-fly through a popup.
+* time: 2019-09-29T15:45:28Z
+* content: Note that only groups with a non-empty template text will be listed. So far that's only Sort Lines (not accounting for plugins here). Action groups without text fall back to the standard behavior of being flattened into Editor Actions directly. Thus IDE and plugin developers can opt for grouping on a per-case basis.
+* time: 2019-09-29T15:45:28Z
+* content: In the worst case some plugin developers have already defined a text for a group they add to Editor Actions which will cause their actions to be grouped.
+* time: 2019-09-29T15:45:28Z
+* content: It may even make sense to deliberately group actions in Editor Actions in the future to make it easier to navigate as it's getting rather long.
+************************************************************************

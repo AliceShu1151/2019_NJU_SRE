@@ -1,0 +1,25 @@
+************************************************************************
+* id: 350
+* requirement: Ignore Screens with a width or height of 0
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-30T23:44:36Z
+* content: Fixes IDEA-151060.
+* time: 2016-01-30T23:45:07Z
+* content: About to sign CLA.
+* time: 2016-01-31T00:06:00Z
+* content: Emailed CLA to contribute@jetbrains.com.
+* time: 2016-02-02T14:50:39Z
+* content: We've received the CLA. Thanks.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-03T19:37:44Z
+* content: Ignore Screens with a width or height of 0
+* codeUrl: github.com/JetBrains/intellij-community/pull/350/commits/df76ac356b2c8696130843b9aebd24fcc3cfba7c
+************************************************************************

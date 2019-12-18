@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1136
+* requirement: IDEA-212508: Reduce memory footprint of MultipleBuildsView.myBuildsMap
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-05-13T00:24:08Z
+* content: IDEA-212508: Reduce memory footprint of MultipleBuildsView.myBuildsMap
+* codeUrl: github.com/JetBrains/intellij-community/pull/1136/commits/5f3fa353f84b94fc4adc23c37820624a6173d33e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-05-13T00:40:43Z
+* content: The change is based on the observation that build events with java.lang.Object IDs never have child events.
+* time: 2019-06-06T10:22:09Z
+* content: Thanks for the contribution, Sergey!
+************************************************************************

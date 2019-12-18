@@ -1,0 +1,4 @@
+************************************************************************
+* id: 118
+* requirement: Fix for stable changes in JUnit 4.12-SNAPSHOT (should also work with earlier versions of JUnit).
+the requirement of 118 only has implements, no discussion.

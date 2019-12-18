@@ -1,0 +1,30 @@
+************************************************************************
+* id: 527
+* requirement: Add option for JavaDoc continuation indent.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-25T16:23:19Z
+* content: JavaDoc formatting refactor.
+* codeUrl: github.com/JetBrains/intellij-community/pull/527/commits/c1f62ee48f0fda4b3832b7d47a1b39689049a7af
+* time: 2017-03-25T17:34:04Z
+* content: Add option for JavaDoc continuation indent.
+* codeUrl: github.com/JetBrains/intellij-community/pull/527/commits/6ee8bb35c2d77c22c90250293939cf8cbad580bf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-25T17:48:40Z
+* content: This fixes https://youtrack.jetbrains.com/issue/IDEA-23188
+* time: 2017-03-25T17:48:40Z
+* content: This change is based on #526 so the first commit can be ignored.
+* time: 2017-04-20T14:56:38Z
+* content: Just bumping to see if someone could take a look or if there's any problems with this change that I can look into.
+* time: 2017-05-24T14:34:39Z
+* content: Hi, Chris! Thanks for the contribution! I've checked, made few small corrections and generally everything seems fine to me. Just one thing - please add corresponding tests into JavadocFormatterTest and attach patch here.
+* time: 2017-05-25T10:29:08Z
+* content: Or verify if I covered all cases in e1405ba
+************************************************************************

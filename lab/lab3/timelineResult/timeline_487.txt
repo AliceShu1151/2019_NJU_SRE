@@ -1,0 +1,23 @@
+************************************************************************
+* id: 487
+* requirement: Rename each Maven3 module-library
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-07T22:29:42Z
+* content: Rename each Maven3 module-library
+* codeUrl: github.com/JetBrains/intellij-community/pull/487/commits/ac9f6fafbd74984a61c405ffadd14dcd3e7aee58
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-07T22:35:10Z
+* content: … to indicate its version, since that matters to the module.
+* time: 2016-12-07T22:41:49Z
+* content: @vladsoroka?
+* time: 2018-07-21T13:01:00Z
+* content: @dahlstrom-g, please rebase the PR, cc @vladsoroka.
+************************************************************************

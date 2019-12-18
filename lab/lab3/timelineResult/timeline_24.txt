@@ -1,0 +1,69 @@
+************************************************************************
+* id: 24
+* requirement: New highlights
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-10-19T20:44:53Z
+* content: Added highlight for Java abstract methods calls
+* codeUrl: github.com/JetBrains/intellij-community/pull/24/commits/943e2d4d697180f268c442cd6003e0faf2eb9a72
+* time: 2012-10-22T19:39:11Z
+* content: Added highlight for Java inherited methods calls
+* codeUrl: github.com/JetBrains/intellij-community/pull/24/commits/b9cedbcb83242636449ab84b6a9bf5511983acd7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-10-22T19:52:32Z
+* content: As a former Eclipse user, I really miss highlights for abstract and inherited method calls. That's why I wrote some code to have it working.
+* time: 2012-10-22T19:52:32Z
+* content: Implementing abstract method calls hightlights was trivial, but inherited method calls was a little harder as PsiMethod.getMethodReceiver() isn't giving expected information.
+* time: 2012-10-22T19:52:32Z
+* content: Hope this helps.
+* time: 2012-10-23T12:50:44Z
+* content: Instead of all this code, please use enclosingClass.isInheritor(method.getContainingClass(), true)
+* time: 2012-10-23T12:51:03Z
+* content: PsiTreeUtil.getParentOfType(element, PsiClass.class)
+* time: 2012-10-23T12:55:16Z
+* content: This is wrong. You need to find a parent PsiMethodCallExpression for elementToHighlight, then get its method expression and check what kind of qualifier the method expression has.
+* time: 2012-10-23T12:57:04Z
+* content: Before we can merge your pull request, you'll need to submit a contributor license agreement: http://www.jetbrains.org/display/IJOS/Contributor+Agreement The easiest way to do so is to print out the PDF, fill the information, sign it, scan and email to contribute@jetbrains.com
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-10-23T19:01:06Z
+* content: Enhancement to use existing methods of Psi API
+* codeUrl: github.com/JetBrains/intellij-community/pull/24/commits/dd468702818cbbb366298da4e2b791159a18784f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-10-23T19:09:18Z
+* content: Thanks to your comments, I've made changes to use existing methods.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-10-24T19:52:25Z
+* content: Added highlight for Java enums
+* codeUrl: github.com/JetBrains/intellij-community/pull/24/commits/4bddcfab54076e8938bb1293fc1f454d3dbfeff8
+* time: 2012-10-24T20:19:55Z
+* content: Added highlight for Java constants (i.e. static final)
+* codeUrl: github.com/JetBrains/intellij-community/pull/24/commits/c83d509094532c240bcc529ce1796e211588b5f9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-10-24T21:02:51Z
+* content: As you can see, I added 2 commits on the pull request for Enum and Constants (i.e. static final) hightlights
+************************************************************************

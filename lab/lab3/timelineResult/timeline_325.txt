@@ -1,0 +1,19 @@
+************************************************************************
+* id: 325
+* requirement: Add support for sending a module name to pydevd
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-19T00:22:01Z
+* content: Add support for sending a module name to pydevd
+* codeUrl: github.com/JetBrains/intellij-community/pull/325/commits/3b42b5e11df5659425111ae279aca3a36b0af69b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-11-19T00:34:38Z
+* content: Previously, the args for a subprocess spawned under debug with a module specified via -m would get rewritten incorrectly, resulting in the -m flag being split from the module name. This resulted in running a command similar to /usr/bin/python -m /path/to/pydevd.py --someargs --file [module], which doesn't work. This removes the -m from that command and adds a --command flag passed to pydevd, which results in correctly running as a module instead of a file.
+************************************************************************

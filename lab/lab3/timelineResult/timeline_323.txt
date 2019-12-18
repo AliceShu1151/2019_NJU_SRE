@@ -1,0 +1,21 @@
+************************************************************************
+* id: 323
+* requirement: IDEA-101238 fixed url parameter encoding for youtrack time tracking
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-10T10:38:35Z
+* content: IDEA-101238 fixed url parameter encoding for youtrack time tracking
+* codeUrl: github.com/JetBrains/intellij-community/pull/323/commits/cc5273a816100ff6e9b8ea3cec59362986b23c39
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-11-10T10:40:18Z
+* content: Contribution agreement has been signed already: #222
+* time: 2015-12-05T10:43:52Z
+* content: Guys, any plans to merge it?
+************************************************************************

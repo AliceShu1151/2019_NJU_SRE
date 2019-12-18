@@ -1,0 +1,25 @@
+************************************************************************
+* id: 303
+* requirement: Add a new postfix completion template
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-09-19T06:11:32Z
+* content: Add a new postfix completion template
+* codeUrl: github.com/JetBrains/intellij-community/pull/303/commits/7c5bffdd2dc9158cf77f187f9324c77cdfa4c6da
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-09-19T06:45:28Z
+* content: This is what I was making as a separate plugins. https://plugins.jetbrains.com/plugin/7950?pr=
+* time: 2015-09-19T06:45:28Z
+* content: I think it is very useful in the coding of Java8. Does this template is not officially required?
+* time: 2015-09-19T12:10:32Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-09-21T13:06:42Z
+* content: The CLA was received. Thanks.
+************************************************************************

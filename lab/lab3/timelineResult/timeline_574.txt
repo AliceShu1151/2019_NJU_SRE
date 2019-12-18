@@ -1,0 +1,21 @@
+************************************************************************
+* id: 574
+* requirement: Fix new line indent when alignment is enabled (IDEA-173208)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-20T18:31:33Z
+* content: Reuse indentation from previous block when alignment is present (IDEA…
+* codeUrl: github.com/JetBrains/intellij-community/pull/574/commits/f01d4fad875b5ef8e29a13afab2bcb13452f8398
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-20T19:02:44Z
+* content: Reuse indentation from previous block when alignment is present (IDEA-173208)
+* time: 2017-05-20T19:02:44Z
+* content: Previous version didn't consider child attributes for indentation during reconstruction from parent.
+************************************************************************

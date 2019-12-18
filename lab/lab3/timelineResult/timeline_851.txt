@@ -1,0 +1,4 @@
+************************************************************************
+* id: 851
+* requirement: build scripts: increase Xmx to fix OOM
+the requirement of 851 only has implements, no discussion.

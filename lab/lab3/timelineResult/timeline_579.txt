@@ -1,0 +1,25 @@
+************************************************************************
+* id: 579
+* requirement: IDEA-173612 added ant log colors configuration
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-30T09:32:47Z
+* content: IDEA-173612 added ant log colors configuration, ant log icons, PRIORI…
+* codeUrl: github.com/JetBrains/intellij-community/pull/579/commits/bf729b1c821040544ed92ea2dda3653ab1f76696
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-30T09:36:37Z
+* content: added
+* time: 2017-05-30T09:36:37Z
+* content: I haven't found build/scripts/icons.gant file so that change was done manually.
+* time: 2017-05-30T09:36:37Z
+* content: /**
+* time: 2017-05-30T09:36:37Z
+* content: Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+************************************************************************

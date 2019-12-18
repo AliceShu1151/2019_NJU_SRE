@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1052
+* requirement: IDEA-171758 Support Guava collections in 'Suspicious collections method calls' inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-06T21:32:55Z
+* content: IDEA-171758 Support Guava collections in 'Suspicious collections meth…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1052/commits/a1afeb0d55d41ee205fcb6e11975094ef4d357a8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-06T21:36:07Z
+* content:  No description provided. 
+* time: 2019-02-07T09:34:16Z
+* content: Could you please sign CLA https://www.jetbrains.com/agreements/cla/ ?
+************************************************************************

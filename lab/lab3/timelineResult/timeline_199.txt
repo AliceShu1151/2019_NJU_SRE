@@ -1,0 +1,33 @@
+************************************************************************
+* id: 199
+* requirement: Solves IDEA-107376
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-07-08T04:02:49Z
+* content: Solves
+* codeUrl: github.com/JetBrains/intellij-community/pull/199/commits/ec88f49ac46080469e5d6757e415133b634e35b6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-07-08T04:10:31Z
+* content: The problem was due myTabbedPane is always null when there are not tabs (Editor / Editor Tabs / Tab Appearance set to none) therefor never requesting focus.
+* time: 2014-07-08T04:10:31Z
+* content: I added a else case to make use of IdeFocusManager so it will use the findInstanceByComponent with the current panel and then request the focus to the editor.
+* time: 2014-07-08T04:10:31Z
+* content: Issue reference http://youtrack.jetbrains.com/issue/IDEA-107376
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-07-09T14:42:16Z
+* content: Fixed hardcoded true, fix code styling
+* codeUrl: github.com/JetBrains/intellij-community/pull/199/commits/471a6e63cc5e43ed6027523f5e689b4e64dabca5
+************************************************************************

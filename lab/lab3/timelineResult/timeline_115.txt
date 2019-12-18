@@ -1,0 +1,29 @@
+************************************************************************
+* id: 115
+* requirement: Proper fix of PY-9356
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-22T06:40:18Z
+* content: PY-9356 Clean .pyc should include $py.class files if jython interpret…
+* codeUrl: github.com/JetBrains/intellij-community/pull/115/commits/5be12fbb11805f9d784836690dc0309eb3a135b5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-22T06:52:58Z
+* content: Use $py.class instead of .$py.class
+* time: 2013-10-22T06:56:23Z
+* content: I'm very apologize but I miss some very important thing in the #111
+* time: 2013-10-22T06:56:23Z
+* content: In the fix we try to delete .$py.class instead of $py.class
+* time: 2013-10-22T06:56:23Z
+* content: I prepare this pull request which was fully tested and fix the issue for sure.
+* time: 2013-10-22T06:56:23Z
+* content: Best Regards, Vladimir
+* time: 2013-10-30T16:45:25Z
+* content: Pushed a simpler fix to this issue.
+************************************************************************

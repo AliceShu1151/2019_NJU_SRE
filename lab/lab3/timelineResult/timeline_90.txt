@@ -1,0 +1,25 @@
+************************************************************************
+* id: 90
+* requirement: IDEA-105361 - Subversion: Compare action doesn't work for revisions in History after path rename
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-08-21T09:07:07Z
+* content: IDEA-105361 svn compare fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/90/commits/4ef90937617c7e443fcc0eca33b78058ed8f210a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-08-21T09:11:45Z
+* content: Not sure if this is right, but I have been using it for some time and it seems to work ok.
+* time: 2013-08-21T09:11:45Z
+* content: http://youtrack.jetbrains.com/issue/IDEA-105361
+* time: 2013-08-30T09:10:15Z
+* content: In general your fix make sense for this particular case, but this method from SvnUtil is also used from other places.
+* time: 2013-08-30T09:10:15Z
+* content: Please see fix that was actually applied - 165ccf7.
+************************************************************************

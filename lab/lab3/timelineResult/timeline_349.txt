@@ -1,0 +1,19 @@
+************************************************************************
+* id: 349
+* requirement: Fix broken link in plugin README
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-01-28T13:00:57Z
+* content: Fix broken link in plugin README
+* codeUrl: github.com/JetBrains/intellij-community/pull/349/commits/5c063a274acd94a61cd77e84eba9281793f46b51
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-28T13:02:24Z
+* content: Link to GitHub was broken due to missing https prefix (was treated as https://github.com/JetBrains/intellij-community/blob/master/plugins/settings-repository/www.github.com).
+************************************************************************

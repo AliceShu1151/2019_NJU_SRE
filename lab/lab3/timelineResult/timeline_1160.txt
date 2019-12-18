@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1160
+* requirement: Change UI designer form compiler modality to any
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-21T09:18:11Z
+* content: Change UI designer form compiler modality to any
+* codeUrl: github.com/JetBrains/intellij-community/pull/1160/commits/1b32a592080eb51454a6d1ac3bfd378efccfc69f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-21T09:23:48Z
+* content: I do not understand why the form compilation task referred to in this commit is requiring the application to have a non-modal state, as it seems to me this process can fulfill its job even if there is a modal dialog present. This PR changes the requirement to any modality state.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 41
+* requirement: IDEA-40104 Support Check/uncheck multiple items in Ant/Build file props/Filters
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-06T13:06:48Z
+* content: IDEA-40104 Support Check/uncheck multiple items in Ant/Build file pro…
+* codeUrl: github.com/JetBrains/intellij-community/pull/41/commits/eaa478a0b7b86638403b1bffb7e5f3ad8039dbda
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-06T13:21:47Z
+* content:  No description provided. 
+* time: 2018-12-19T12:56:49Z
+* content: Please update the PR.
+************************************************************************

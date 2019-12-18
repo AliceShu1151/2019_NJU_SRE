@@ -1,0 +1,23 @@
+************************************************************************
+* id: 753
+* requirement: Add an onStart method to ExternalProjectRefreshCallback
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-10T00:50:40Z
+* content: Add an onStart method to ExternalProjectRefreshCallback
+* codeUrl: github.com/JetBrains/intellij-community/pull/753/commits/8c848fd7c60a40c9bea0558acee853365428e51e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-10T00:57:35Z
+* content: When ExternalSystemUtil#refreshProject is called, a rerun import action is created and attached to the build view. This action is called when the "Refresh" button is pressed and what it does is simply call refreshProject again with the same parameters. For Android Studio, we do some setup before calling refreshProject, but since this rerun action calls refreshProject directly, we cannot do this inicial setup.
+* time: 2018-03-10T00:57:35Z
+* content: This CL adds an onStart method to ExternalProjectRefreshCallback which allows any setup steps to be done before starting project refresh, causing those steps to be repeated when the refresh button is pressed.
+* time: 2018-07-25T11:41:47Z
+* content: ExternalProjectRefreshCallback was intended to be used to get the result of the async execution of the project refresh. There are many other places where the project refresh can be triggered, e.g. "Refresh" button from the Gradle tool window, auto-import, plugins code etc. If you run your setup using ExternalProjectRefreshCallback all those import invocations will not get it.
+************************************************************************

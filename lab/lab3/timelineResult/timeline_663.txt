@@ -1,0 +1,4 @@
+************************************************************************
+* id: 663
+* requirement: PY-15360 Error on trailing comma after star args for Py<3.5
+the requirement of 663 only has implements, no discussion.

@@ -1,0 +1,31 @@
+************************************************************************
+* id: 52
+* requirement: CheckboxTreeBase.CheckPolicy was called with uncheckChildrenWithUnchecke...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-14T18:26:04Z
+* content: CheckboxTreeBase.CheckPolicy was called with uncheckChildrenWithUnche…
+* codeUrl: github.com/JetBrains/intellij-community/pull/52/commits/8eec6704b1c880df46259ba41bb762a06c8b78e5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-14T19:16:14Z
+* content: Dear IntelliJ Team,
+* time: 2013-03-14T19:16:14Z
+* content: I would like contributing a few small changes to enhance your great product.
+* time: 2013-03-14T19:16:14Z
+* content: This is my first time sending a pull request to an open source project and the first time using GitHub & Git so please give me a hint if I do something wrong.
+* time: 2013-03-14T19:16:14Z
+* content: I signed the contribution agreement a few weeks ago and sent it by post, but I didn’t receive any acknowledgement.
+* time: 2013-03-14T19:16:14Z
+* content: Best regards
+* time: 2013-03-14T19:16:14Z
+* content: Josef
+* time: 2013-03-26T20:09:48Z
+* content: Merged manually. Thanks for your contribution Josef!
+************************************************************************

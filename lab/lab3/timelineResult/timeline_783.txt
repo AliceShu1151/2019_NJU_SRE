@@ -1,0 +1,35 @@
+************************************************************************
+* id: 783
+* requirement: Support several postfix live templates on the same key
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-22T10:33:15Z
+* content: Support several postfix live templates on the same key
+* codeUrl: github.com/JetBrains/intellij-community/pull/783/commits/392eb330826c71e908012636fd74232f65b3d5b7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-22T10:44:16Z
+* content:  No description provided. 
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-23T11:13:22Z
+* content: Check if a template is applicable before expanding it
+* codeUrl: github.com/JetBrains/intellij-community/pull/783/commits/c5f351ec5ea82d96e36029e073940bed99b62417
+* time: 2018-04-24T04:28:47Z
+* content: find only applicable templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/783/commits/15b1778d757dbb9e56069259a9591207974e1584
+* time: 2018-05-01T09:36:45Z
+* content: Tests for several postfix templates with the same key
+* codeUrl: github.com/JetBrains/intellij-community/pull/783/commits/e1e5290a452f822dda0fb526dbf83c30ab1aee7a
+************************************************************************

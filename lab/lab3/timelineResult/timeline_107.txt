@@ -1,0 +1,31 @@
+************************************************************************
+* id: 107
+* requirement: Improved XmlSerializerUtil#copyBean -- moved type compatibility checks to compile time instead runtime.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-14T13:21:27Z
+* content: Improved XmlSerializerUtil#copyBean -- moved type compatibility check…
+* codeUrl: github.com/JetBrains/intellij-community/pull/107/commits/edc6d3cf6df4884454cf28f88ebecfd67fdcd804
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-15T11:15:18Z
+* content: Fixed bug when copying a instance of Base class to a instance of Derived class. Added XmlSerializerUtil#mergeBeans. Suppressed some warnings.
+* time: 2013-10-15T11:41:03Z
+* content: Sorry, I don't get the point of changing the type parameters of a method if the change requires adding typecasts to previously valid code. Especially given the fact that the code in question is part of the plugin API, so the change is quite likely to cause compilation failures in third-party plugins as well.
+* time: 2013-10-15T12:02:59Z
+* content: But it just move error to compile time instead of runtime. Current version asserts that To assignable to From i.e. To extends From. Current version fails when try to copy instance of a Base class to instance of a Derived class becouse it use accessors from Dervide class. And it's valid cast we already have same typecast in getState.
+* time: 2013-10-15T12:09:14Z
+* content: As you can see by the name of the class and its containing package, this is not a general-purpose bean copying facility; it was designed with a specific purpose of implementing persistent state components. In that use case, you never need to copy an instance of a Base class to an instance of a Derived class; there's just one class in play.
+* time: 2013-10-15T12:09:14Z
+* content: Also, I don't get the distinction between "valid" and "invalid" typecasts. Code that does not require a typecast is better than code that does require one.
+* time: 2013-10-15T12:09:14Z
+* content: In short, this pull request makes our code strictly worse: it doesn't solve any problem that we have, and it breaks our own code and has a potential of breaking third-party plugins.
+* time: 2013-10-15T12:40:14Z
+* content: Well, I thought that compile time error with typecast in 1% of cases is better then runtime error.
+************************************************************************

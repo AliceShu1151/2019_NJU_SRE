@@ -1,0 +1,23 @@
+************************************************************************
+* id: 604
+* requirement: Improve diagnostic when failing to delete files in tests
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-26T18:43:11Z
+* content: Improve diagnostic when failing to delete files in tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/604/commits/4c2d7ef9792704ab724bbd31d8c833b63ea5a179
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-07-26T22:12:03Z
+* content: java.io.IOException: Can't delete xxx (stack trace)
+* time: 2017-07-26T22:12:03Z
+* content: [0]: java.nio.file.FileSystemException: [myDirectory]\myfile.txt: The process cannot access the file because it is being used by another process.
+* time: 2017-07-26T22:12:03Z
+* content: [1]: java.nio.file.DirectoryNotEmptyException: [myDirectory] (stack trace)
+************************************************************************

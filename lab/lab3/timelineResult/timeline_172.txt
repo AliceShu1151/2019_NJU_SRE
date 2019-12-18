@@ -1,0 +1,25 @@
+************************************************************************
+* id: 172
+* requirement: Don't repeat exception message twice
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-04-14T11:56:51Z
+* content: Don't repeat exception message twice
+* codeUrl: github.com/JetBrains/intellij-community/pull/172/commits/336e79912a48da655e61f8b007d856ba98b6947e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-04-14T13:46:28Z
+* content: Don't repeat message in exception if it's already present in IdeaLogginEvent.getMessage().
+* time: 2014-04-14T13:46:28Z
+* content: 
+* time: 2014-04-14T13:54:35Z
+* content: I'd rather fix the code which stacks exceptions instead of rethrowing an original one.
+* time: 2014-04-14T14:53:27Z
+* content: I'm not sure I understood your proposal well as there's no rethrowing in the fix. It looks like LogMessage is created badly from accurately initialized  IdeaLoggingEvent, that's why fix is local. If you think that some structure changes of the logging system should be done, I think you can simply close PR :)
+************************************************************************

@@ -1,0 +1,56 @@
+************************************************************************
+* id: 1107
+* requirement: FUS  make event logger configurable for IntelliJ plugins
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-29T17:44:49Z
+* content: FUS move internal classes to impl module upd
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/81e375d6aa4cf9adff1e21d007fced8ddf009d9a
+* time: 2019-03-29T17:52:58Z
+* content: FUS rename classes to separate internal event log functionality from fus
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/6478e690d6b9e662e72998e40ef50630cea7155e
+* time: 2019-03-29T17:53:34Z
+* content: FUS make logger provider configured with recorder id, version and sen…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/02012a391f96f2c74328e0ae1d1f9a2b98714286
+* time: 2019-03-29T18:13:41Z
+* content: FUS make logger target dir configurable
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/41f5178a7c210a56cef499d2f3e5eb677f59664b
+* time: 2019-03-29T18:48:38Z
+* content: FUS make LogEventRecordRequest configured with recorder id
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/fd36dd61ea3c17c1f97ba21b4a2139331d74d474
+* time: 2019-03-29T19:12:47Z
+* content: FUS add EventLogStatisticService to StatisticsEventLoggerProvider to …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/8019fd3af1ced23f29990fed943267ed5a03fdc6
+* time: 2019-03-29T21:14:16Z
+* content: FUS move StatisticsEventLogger to StatisticsEventLoggerProvider to ac…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/30f6ad65a4a3046e0f586f50a7588870546ec2d9
+* time: 2019-03-29T21:20:16Z
+* content: FUS fix logging interruption after the log cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/145c5916099a22bba1ebe05aaecd38a753873900
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-29T23:11:50Z
+* content: @SvetlanaZem
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-30T23:36:17Z
+* content: FUS initialize logger with default value
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/e7673f9c7c382900e61d3f89ebcbe3da30fe9ce7
+* time: 2019-03-31T22:57:03Z
+* content: FUS show notifications only for fus in StatisticsJobsScheduler
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/2be530c6e49bd4af46e3dd96679a39912b56dfba
+* time: 2019-04-01T19:40:49Z
+* content: FUS move custom logs to another directory
+* codeUrl: github.com/JetBrains/intellij-community/pull/1107/commits/7461201338a5f1737e9b07667b6dc5e266e9ce8a
+************************************************************************

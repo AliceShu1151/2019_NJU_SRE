@@ -1,0 +1,35 @@
+************************************************************************
+* id: 189
+* requirement: fileContentIndexingVoter extension point
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-05-31T23:40:53Z
+* content: fileContentIndexingVoter extension point
+* codeUrl: github.com/JetBrains/intellij-community/pull/189/commits/f0fe72777ec9f16a193d34860e1597fef3f8418d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-06-01T00:28:47Z
+* content: A proposal for introducing fileContentIndexingVoter extension point which would allow to control file content indexing, effectively providing a way for overcoming issues described in IDEA-23537 (has 8 linked issues, including IDEA, WI and WEB spaces), IDEA-96277 and so on.
+* time: 2014-06-01T00:28:47Z
+* content: I've assembled a small plugin shyiko/ijignore to demonstrate how it can be used. Once .ijignore is in place, opening a project (sandbox home was forcefully rm -rf'ed, so no cheating) with
+* time: 2014-06-01T00:28:47Z
+* content: where .ijignore looked like
+* time: 2014-06-01T00:28:47Z
+* content: was almost instantaneous (in comparison to "without .ijignore"). Tested on 2 year old Macbook Pro (with SSD).
+* time: 2014-06-01T00:28:47Z
+* content: Same extension point could be used (for example):
+* time: 2014-06-01T00:28:47Z
+* content: This would be really helpful for projects with frequent filesystem changes, significantly reducing time spent on "Indexing..." where it's not really needed.
+* time: 2014-06-01T00:28:47Z
+* content: Please let me know if you have any concerns regarding the pull request's content. I'm willing to make any changes you deem appropriate.
+* time: 2014-06-01T00:28:47Z
+* content: Thank you.
+* time: 2014-06-04T19:18:47Z
+* content: After talking to @bulenkov (who generously agreed to review the PR) it was decided (together with @chashnikov) that there should be a better way. Closing PR as a result.
+************************************************************************

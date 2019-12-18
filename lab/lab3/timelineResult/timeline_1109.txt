@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1109
+* requirement: Fix Gradle Daemons window with Gradle 5.3
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-01T23:29:35Z
+* content: Fix Gradle Daemons window with Gradle 5.3
+* codeUrl: github.com/JetBrains/intellij-community/pull/1109/commits/4c3efbb4d5535235d0e16aca3edcff9050e356d6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-02T00:43:22Z
+* content: The constructor of DaemonParameters class in Gradle tooling API is updated since Gradle 5.3. It now takes FileCollectionFactory as required parameter. This change calls the constructor by reflection if current Gradle version is newer than 5.3.
+* time: 2019-04-02T00:43:22Z
+* content: Change-Id: I21eeb8f1e95267892ab378a98ca4517eb3d50e07
+* time: 2019-04-10T09:26:34Z
+* content: Thanks for the contribution! I've merged the change using the following commit 77ee05b
+************************************************************************

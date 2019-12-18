@@ -1,0 +1,21 @@
+************************************************************************
+* id: 99
+* requirement: Fixed TypeConversionUtil#getAllBoxedTypeSupers (after f4a27e8).
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-11T13:32:12Z
+* content: Fixed TypeConversionUtil#getAllBoxedTypeSupers (after
+* codeUrl: github.com/JetBrains/intellij-community/pull/99/commits/1f39a36a63fee29073f15cbf18573eb7a70fffcc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-11T13:37:42Z
+* content: Register ProjectRootManager and ProjectRootModificationTracker services in JavaCoreProjectEnvironment.
+* time: 2013-09-11T13:37:42Z
+* content: (It's necessary for Kotlin compiler)
+************************************************************************

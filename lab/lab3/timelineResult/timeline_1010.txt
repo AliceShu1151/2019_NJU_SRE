@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1010
+* requirement: [external-system] faster module select
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-11T18:45:43Z
+* content: [external-system] faster module select
+* codeUrl: github.com/JetBrains/intellij-community/pull/1010/commits/374924a0854055554b6e532a5b24d6293dbe5e9e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-11T18:50:13Z
+* content: There is no need to explicitly set selected state for nodes. It will be taken care of by CheckboxTree.
+* time: 2018-12-11T18:50:13Z
+* content: I've tested it on a multi-project. Just selected/deselected node.
+* time: 2018-12-11T18:50:13Z
+* content: I found it while profiling a ~20 seconds UI freeze while operating with select project dialog.
+* time: 2018-12-11T18:50:13Z
+* content: to: @vladsoroka @nskvortsov
+************************************************************************

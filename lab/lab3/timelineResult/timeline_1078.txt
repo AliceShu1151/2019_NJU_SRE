@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1078
+* requirement: decompiler: Recognize enum as keyword on Java 5
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-07T16:33:13Z
+* content: decompiler: Recognize enum as keyword on Java 5
+* codeUrl: github.com/JetBrains/intellij-community/pull/1078/commits/0012dd92592adcad7534eb278fa3fcdb68c71294
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-07T16:47:17Z
+* content: The current code recognizes enum as keyword on versions greater than 5. However, enums and the keyword have been introduced in Java 5. This PR simply changes the check to check whether a given version is greater than or equal to 5.
+************************************************************************

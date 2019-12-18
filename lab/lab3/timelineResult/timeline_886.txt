@@ -1,0 +1,94 @@
+************************************************************************
+* id: 886
+* requirement: Group External Modules in UI
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-12T20:13:14Z
+* content: Related to IDEA-198453
+* time: 2018-10-12T20:13:14Z
+* content: New Group Modules action looks like this in action:
+* time: 2018-10-12T20:13:14Z
+* content: 
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-15T22:09:28Z
+* content: Group External Modules in UI
+* codeUrl: github.com/JetBrains/intellij-community/pull/886/commits/55471762bd1ee09b601bba8b4fc776d1da1c9772
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-16T00:28:16Z
+* content: @vladsoroka looking a little bit more into how BaseGradleProjectResolverExtension#createModule works it seems that any ModuleData will always be a direct child of a ProjectData which will make the structure flatten. I was wondering if it makes sense to add some structure there instead of duplicating this logic here and potentially in ExternalProjectDataSelectorDialog (since it will be great to group modules there too to load/unload groups of modules). What do you think?
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-20T21:13:04Z
+* content: Grouping in ExternalProjectDataSelectorDialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/886/commits/5db4acd1c80b15b612fad98c86a208380fcd0411
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-20T21:16:24Z
+* content: I've also added grouping to select projects to import in the last commit
+* time: 2018-10-20T21:16:24Z
+* content: 
+* time: 2018-10-25T08:22:27Z
+* content: We can not do this, since it will break existing clients of the DataNode api and decrease the performance of the project modules traverse.
+* time: 2018-10-25T08:22:27Z
+* content: We have plans to replace DataNode api with another api which will have db-like implementation under the hood with indexing and other facilities to address performance and usability issues of the external project model consumers.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-31T22:58:11Z
+* content: Make parents assigning order independent
+* codeUrl: github.com/JetBrains/intellij-community/pull/886/commits/cda9cb6fcbe6f7293c9a9304e2268da9e4ed4d25
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-07T06:35:08Z
+* content: There are several issues with the change (the gradle-4.10.2/samples/java/multiproject used for testing):
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-07T18:48:32Z
+* content: Default parent to project root
+* codeUrl: github.com/JetBrains/intellij-community/pull/886/commits/d82b1b720f0ad69385cea97f3533056e5e93ceb2
+* time: 2018-11-07T18:49:31Z
+* content: Better grouping to fix edge cases
+* codeUrl: github.com/JetBrains/intellij-community/pull/886/commits/d7d52bcdda8043c7ea12a5a9e5d76715a4c73412
+* time: 2018-11-07T19:31:17Z
+* content: Simplified IDE module grouping to support source sets
+* codeUrl: github.com/JetBrains/intellij-community/pull/886/commits/1519c1447ddb313c9e4e57795c4a09c65ba5d71e
+************************************************************************
+*=======================================================================
+* round 4
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-07T20:27:10Z
+* content: Rebased and fixed the issues described. 
+* time: 2018-11-13T10:15:34Z
+* content: Thanks for the contribution, I've merged the changes using the following commits: 9b48f9a, 5874b0d, 882a673, 8facb70, 9640755, 93b3001
+************************************************************************

@@ -1,0 +1,47 @@
+************************************************************************
+* id: 358
+* requirement: Show commits in git log history (IDEA-134161)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-02-19T19:17:51Z
+* content: Show commits in git log history (IDEA-134161)
+* codeUrl: github.com/JetBrains/intellij-community/pull/358/commits/a299dd318f8d84b712fb748d8fdb2a5605c6dc28
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-02-19T19:23:04Z
+* content: This is a bit of a hack, as I did not want to midfy VcsFileRevision, which is shared for multiple VCS implementations. That's why I just added those git notes to the commit message. The null check in GitLogParserTest is to make sure, that the test conforms to the acutal behavior. If not adding the check, the test would get "null" as String, which is wrong. When executing IDEA, GitLogParser returns null for unset git notes.
+* time: 2016-02-19T19:23:04Z
+* content: If the pull request is ok, a backport to IDEA 15 would be great.
+* time: 2016-02-19T19:23:04Z
+* content: Referencing issue: https://youtrack.jetbrains.com/issue/IDEA-134161
+* time: 2016-02-19T19:23:04Z
+* content: Just as a side note: I did already submit the developer agreement.
+* time: 2016-02-19T19:23:04Z
+* content: BTW: How do you handle those code style issues and warnings within your code? In my pull requests, I did not want to resolve anything but the issue itself. However, there are loads of lines that do not conform to your codestyle and huge amounts of warnings, i.e. for unnecessary generics. Is it ok to resolve those in pull requests?
+* time: 2016-02-20T15:34:56Z
+* content: Thanks for you contribution! However, I don't think we can accept it, because it is really some sort of a hack. I don't think we want to modify the commit message at least for 2 reasons:
+* time: 2016-02-20T15:34:56Z
+* content: The correct fix would be something like the following:
+* time: 2016-02-20T15:34:56Z
+* content: You can try to follow this way, or you can wait for us to implement this. We'll try to raise the priority of this task.
+* time: 2016-02-20T15:34:56Z
+* content: Note: we are using VcsLogProvider interface for the repository log, and we plan to switch to this provider for the file history (which currently uses HistoryProvider) in the nearest releases, so it is OK to patch just this one.
+* time: 2016-02-20T15:34:56Z
+* content: Btw, you've got a typo in the commit message of this pull request: "commits" -> "notes".
+* time: 2016-02-20T15:34:56Z
+* content: As per your question about code style changes, I think it is better to avoid such changes even within a separate commit or pull request. The reason is simple: it is easier to make such changes (since many of them are semi- or fully-automated by IDEA), than to review them :)
+* time: 2016-02-21T10:37:44Z
+* content: For sure, structured data would be much better. This would also allow a checkbox or something to enable or disable the commit notes.
+* time: 2016-02-21T10:37:44Z
+* content: However, I am still thinking about the implementation of the extension point. The implementing method would have to ask git log another time to get that additional data, as there is no such thing as a cache. This somehow feels wrong ... and it is hard to understand for people reading the implementation afterwards.
+* time: 2016-02-21T13:59:00Z
+* content: Good point. Actually, we plan to have some hash for commit details which can include the notes as well, so I don't really think that additional command will hurt much. However, of course it is better to avoid it when possible.
+* time: 2016-02-21T13:59:00Z
+* content: Maybe this additional data should reside within the VcsFullCommitDetails object provided by VcsLogProvider#readFullDetails. Unfortunately, type safe implementation would probably force us to generify the VcsLogProvider itself.
+************************************************************************

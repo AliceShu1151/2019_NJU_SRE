@@ -1,0 +1,35 @@
+************************************************************************
+* id: 87
+* requirement: CoreJavaFileManager.findClass: properly resolve $ in inner class names
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-08-09T08:54:57Z
+* content: CoreJavaFileManager.findClass: properly resolve $ in inner class names
+* codeUrl: github.com/JetBrains/intellij-community/pull/87/commits/13539bc26ee786500c639175d286a3137d7b0890
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-08-09T09:46:43Z
+* content: More general fix for $ resolve: added ability to resolve Nested.Inner$ class in next case (hello from new akka library):
+* time: 2013-08-09T09:46:43Z
+* content: class Nested { class Inner {} class Inner$ {} }
+* time: 2013-08-09T09:46:43Z
+* content: Please merge it also to nearest 12.1.* release and 13 eap
+* time: 2013-08-12T10:45:07Z
+* content: Please remove System.out.println from the tests
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-08-12T11:14:50Z
+* content: Update CoreJavaFileManagerTest.java
+* codeUrl: github.com/JetBrains/intellij-community/pull/87/commits/857bfd57f67c125172adbcc0c20e3854144bcaa1
+************************************************************************

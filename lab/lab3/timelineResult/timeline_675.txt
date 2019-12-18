@@ -1,0 +1,35 @@
+************************************************************************
+* id: 675
+* requirement: Fix sporadic exceptions in AbstractTreeUi.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-05T15:43:48Z
+* content: Fix sporadic exceptions in AbstractTreeUi.
+* codeUrl: github.com/JetBrains/intellij-community/pull/675/commits/932256d0ace6d382e2e7e24531ebe3162357d573
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-05T15:59:37Z
+* content: AbstractTreeUi has been sporadically failing in different places and most often at
+* time: 2017-12-05T15:59:37Z
+* content: in sortChildren().
+* time: 2017-12-05T15:59:37Z
+* content: The other manifistation of the problem was "null" nodes sometimes appearing in the tree (nodes that visually appear with text "null").
+* time: 2017-12-05T15:59:37Z
+* content: The root cause of the problem is getNodeForElement() which disposes any node that is not in the tree. However, because of async nature of queued updates a node which is being dosposed can be already scheduled for addition to the tree.
+* time: 2017-12-05T15:59:37Z
+* content: Here is the original comment from the commit from 2008 thad added diposing:
+* time: 2017-12-05T15:59:37Z
+* content: IDEADEV-29853 - invalid nodes, found by custom builders are disposed
+* time: 2017-12-05T15:59:37Z
+* content: This CL replaces the getNodeForElement() with the equiavalent code that does not dispose any nodes. Attn: @vladsoroka
+* time: 2017-12-05T15:59:37Z
+* content: Test: "null" node does not appear visually. makeSimpleApplication() UI test passes. Bug: IDEA-181904 Change-Id: I837f2f4d3ab7a235d8b9ec6cb1afb215b4c230e4
+* time: 2017-12-05T17:58:24Z
+* content: The PR basically removes the fix introduced at 768178e for the queued updates case.
+************************************************************************

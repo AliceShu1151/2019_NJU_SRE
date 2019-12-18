@@ -1,0 +1,53 @@
+************************************************************************
+* id: 666
+* requirement: Honor .mailmap
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-15T09:09:06Z
+* content: Honor .mailmap
+* codeUrl: github.com/JetBrains/intellij-community/pull/666/commits/446dcb00420fca9ffe1d059480d6c922debc0acb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-15T09:09:24Z
+* content: Using %aN instead of %an git log respects the mappings in .mailmap file
+* time: 2017-11-15T09:09:24Z
+* content: More details on https://git-scm.com/docs/git-log
+* time: 2017-11-15T09:16:05Z
+* content: Related to https://youtrack.jetbrains.com/issue/IDEA-160677 and https://stackoverflow.com/a/39301372/848072
+* time: 2017-11-15T17:36:36Z
+* content: There is a problem with this change: it can break filtering in log. User filters use indexes to filter, and indexes done prior to this change would contain old user names. We need either to rebuild indexes on every .mailmap change (which we do not want to do), or to read .mailmap and use this information to query indexes by both new and old names.
+* time: 2017-11-15T17:48:07Z
+* content: Yes I guess that adding %an and %aN, both can be parsed. Then you can use %an for filter if you want. But when you use .mailmap to remap same person, like:
+* time: 2017-11-15T17:48:07Z
+* content: what you want is to filter by mapped name (I guess)
+* time: 2017-11-15T17:48:07Z
+* content: .mailmap is not a file with much traffic. Once mapped it stay the same most of the time
+* time: 2017-11-15T17:48:07Z
+* content: I didn't recompile all Intellij to try this change, if you need me to test anything, just tell me
+* time: 2018-03-05T17:52:49Z
+* content: @juliabeliaeva lastly I managed to build Intellij (for other PR) I can try or implement anything if you need it.
+* time: 2018-03-05T17:52:49Z
+* content: All my repos comes with an ugly corporate username and .mailmap is a real improvement to review changes and triage bugs
+* time: 2018-03-07T14:15:43Z
+* content: @juliabeliaeva : I second @albfan. Is there something I can do to help this PR get merged?
+* time: 2018-07-21T11:22:40Z
+* content: @juliabeliaeva any updates?
+* time: 2018-07-21T13:06:36Z
+* content: I'm avaliable to any further implementation.
+* time: 2018-07-21T13:06:36Z
+* content: Manually invalidate cache in case you add .mailmap to an existing project already imported in Intellij seems a reasonable workaround
+* time: 2018-08-12T20:35:06Z
+* content: In order to correctly implement this feature, one needs to read mailmap and use it to convert names when displaying / convert back when filtering.
+* time: 2018-08-13T13:39:05Z
+* content: I think it can use a flag, so if cache was not made with mailmap, do one step conversion. Maybe that flag should be a sha of .mailmap, so that conversion should be done everytime .mailmap changes.
+* time: 2018-08-13T13:39:05Z
+* content: Sounds it correct @juliabeliaeva?
+* time: 2018-08-14T20:04:53Z
+* content: @albfan yes, we can detect when index was made without a .mailmap or with a different .mailmap, but to do something with it we still need to read .mailmap and convert names back and forth (and reversing names from index made with different mailmap could be awkward). And since we are reading .mailmap anyway, we could just do it all the time, keeping original names in the index as it is done now.
+************************************************************************

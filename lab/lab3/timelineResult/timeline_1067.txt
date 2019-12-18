@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1067
+* requirement: IDEA-207657 Fix StringIndexOutOfBoundsException in DocumentWindowImpl#replaceString
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-21T00:21:55Z
+* content: IDEA-207657 Fix StringIndexOutOfBoundsException in DocumentWindowImpl…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1067/commits/23493eb3c681449f4d7cfceaef0617d77ace2fa7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-21T00:40:17Z
+* content:  No description provided. 
+* time: 2019-03-07T13:39:12Z
+* content: IMHO it would be better to fix the intention, not to suppress it.
+* time: 2019-03-08T04:11:05Z
+* content: Thanks for reviewing, I'd like to add a little more comment about this issue. Cause of the issue:
+* time: 2019-03-08T04:11:05Z
+* content: By fix the intention, do you mean:
+* time: 2019-03-08T04:11:05Z
+* content: Or what's your proposal for fixing the bug?
+* time: 2019-03-11T13:21:13Z
+* content: I've created a proper fix for this: d881375
+************************************************************************

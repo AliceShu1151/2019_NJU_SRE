@@ -1,0 +1,19 @@
+************************************************************************
+* id: 449
+* requirement: PY-20771: Fix dataframe rendering issue in frames 100+ columns
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-24T08:19:35Z
+* content: PY-20771: Min and max values for columns 100 and above were computed …
+* codeUrl: github.com/JetBrains/intellij-community/pull/449/commits/87da6c5a2c5874b3efa8843f230fa409b88b606a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-24T08:55:45Z
+* content: PY-20771: Min and max values for columns 100 and above were computed incorrectly sometimes causing exceptions during rendering. The UI exceptions are also one of the reasons for poor performance
+************************************************************************

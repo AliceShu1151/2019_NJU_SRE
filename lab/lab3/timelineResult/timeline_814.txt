@@ -1,0 +1,27 @@
+************************************************************************
+* id: 814
+* requirement: Allow alternative resolve in CombinedTestLocator.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-21T18:17:07Z
+* content: Allow alternative resolve in CombinedTestLocator.
+* codeUrl: github.com/JetBrains/intellij-community/pull/814/commits/17d5060898abd473364df3c204664a19bbf08bb1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-21T18:41:24Z
+* content: Android Studio runs gradle builds in dumb mode. This change allows Android Studio to resolve test case locations even in dumb mode, if alternative resolve is enabled.
+* time: 2018-06-25T14:45:06Z
+* content: CombinedTestLocator is dumb aware, if you would mark android's test locator as dumb aware, then test location should be resolved in dumb mode as well. (How you would do that, with help of slow alternative resolve or based on some fast checks - that's up to you). Would this work for you?
+* time: 2018-06-25T18:48:22Z
+* content: Thanks for the suggestion Anna.
+* time: 2018-06-25T18:48:22Z
+* content: In Android Studio, CombinedTestLocator wraps JavaTestLocator, not an Android-specific test locator. JavaTestLocator is not dumb aware, and thus the getLocation method (without my proposed change) returns an empty list.
+* time: 2018-06-26T06:41:21Z
+* content: Do you use com.android.tools.idea.testartifacts.junit.AndroidJUnitConsoleProperties? Or are the pure junit tests without anything added by android?
+************************************************************************

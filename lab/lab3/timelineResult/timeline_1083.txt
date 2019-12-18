@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1083
+* requirement: Change wording in tooltip when no unused imports found
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-09T07:08:53Z
+* content: Change wording in tooltip when no unused imports found
+* codeUrl: github.com/JetBrains/intellij-community/pull/1083/commits/5c70ad0abbc5c53dd2731847f58f18a76c6504ff
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-09T07:09:17Z
+* content: Change the wording in the tooltip that shows up after "optimize imports" has been run and no unused imports were found, from "Unused imports not found" to "No unused imports found", since it reads as more natural English.
+************************************************************************

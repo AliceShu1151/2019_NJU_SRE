@@ -1,0 +1,29 @@
+************************************************************************
+* id: 826
+* requirement: Add a Way To Specify Class Names to Not Import Inner Classes For
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-12T13:45:42Z
+* content: Add a Way To Specify Class Names to Not Import Inner Classes For
+* codeUrl: github.com/JetBrains/intellij-community/pull/826/commits/f0759d602eeb2118d8b9d0f47d7624127529d992
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-12T13:47:07Z
+* content: Like Builder, Factory etc
+* time: 2018-07-12T13:47:07Z
+* content: https://youtrack.jetbrains.com/issue/IDEA-135092
+* time: 2018-07-12T14:04:30Z
+* content:    
+* time: 2018-07-13T13:50:21Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-07-14T06:28:47Z
+* content: Kirill
+* time: 2018-07-14T06:28:47Z
+* content: I work at Google and according to our Open SOurce policy, the patch I submit should associated to my @google.com address. I created a new PR #828 And signed the CLA with my @google.com email. Can you please use the other PR instead of this one?
+************************************************************************

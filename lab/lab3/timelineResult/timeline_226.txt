@@ -1,0 +1,37 @@
+************************************************************************
+* id: 226
+* requirement: Fixed flow for Ant build file validation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-11-24T03:27:13Z
+* content: Fixed flow for Ant build file validation
+* codeUrl: github.com/JetBrains/intellij-community/pull/226/commits/a01eefeab79b897d43ccec5720240c6619a76b55
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-11-24T03:38:11Z
+* content: Pull request to fix AntConfiguration flow when a build file is added.
+* time: 2014-11-24T03:38:11Z
+* content: Currently the build file is marked as Ant file prior to inner structure validation.
+* time: 2014-11-24T03:38:11Z
+* content: It means that although the validation is performed, it does not throw an exception for build files without required attributes.
+* time: 2014-11-24T03:38:11Z
+* content: The flow just falls to less strict check and hence the invalid Ant build file is added. Due to the previous call of marking the file as Ant file, pretty much any XML file can be added as Ant file.
+* time: 2014-11-24T03:38:11Z
+* content: I changed the order that marking the file as Ant file is happening after the inner structure validation.
+* time: 2014-11-24T10:40:21Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2014-11-24T19:00:25Z
+* content: Sent out just moments ago.
+* time: 2014-11-25T10:02:31Z
+* content: Agreement received, thanks.
+* time: 2014-12-02T15:02:14Z
+* content: Thanks for your contribution. Unfortunately, I must reject the change because it breaks the intended functionality. The method addBuildFileImpl containing the code
+* time: 2014-12-02T15:02:14Z
+* content: AntSupport.markFileAsAntFile(file, xmlFile.getProject(), true);
+************************************************************************

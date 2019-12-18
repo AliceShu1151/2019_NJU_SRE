@@ -1,0 +1,21 @@
+************************************************************************
+* id: 714
+* requirement: Allow to bypass OOCB for lazy elements in non-Java languages
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-25T10:00:05Z
+* content: Allow to bypass OOCB for lazy elements in non-Java languages
+* codeUrl: github.com/JetBrains/intellij-community/pull/714/commits/a5f9481ce5bd2c62fb4b1922bb003e67716dcabd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-25T11:15:57Z
+* content: As JavaCodeBlockModificationListener works for all PsiClassOwner files, it may unexpectedly cause OOCB for lazy elements in languages, that don't expect it. Allow to bypass this by implementing PsiModifiableCodeBlock interface.
+* time: 2018-01-25T11:15:57Z
+* content: #IDEA-185462 Fixed
+************************************************************************

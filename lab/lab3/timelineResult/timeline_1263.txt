@@ -1,0 +1,37 @@
+************************************************************************
+* id: 1263
+* requirement: Remove no longer used getDetectedFileTypes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-26T12:24:55Z
+* content: Remove no longer used getDetectedFileTypes - this is to avoid people …
+* codeUrl: github.com/JetBrains/intellij-community/pull/1263/commits/78ba75460a3f6a343dce98b0f2bfb3dd500dcc41
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-26T13:00:01Z
+* content: Since e9cd494#diff-a2590eb4630da07c27f3010a7688c35b getDetectedFileTypes method in FileTypeDetector is no longer being used.
+* time: 2019-11-26T13:00:01Z
+* content: Despite that fact people might still try to implement it for their own FileTypeDetectors, which will be a waste of time and might lead to potential confusion when changes to the method are not reflected in how the plugins function. I think it's better to be completely explicit about the method removal.
+* time: 2019-11-26T13:00:01Z
+* content: This is just a proposal, so let me know what you think! This will cause compilation errors in plugins implementing the method, but I view it as better than just ignoring the method altogether.
+* time: 2019-11-26T13:00:01Z
+* content: This came up when investigating an issue in the pants intellij plugin: pantsbuild/intellij-pants-plugin#431
+* time: 2019-11-26T14:53:12Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2019-11-26T14:58:41Z
+* content: Hi! I did submit it, but let me know if I mixed something up.
+* time: 2019-11-26T15:11:44Z
+* content: Yep, I've found it now. Thanks.
+* time: 2019-11-28T09:11:18Z
+* content: Thanks for spotting the unused code that I missed! The fate of that change isn't fully decided yet, so I'd wait a bit with removing API that plugins implement and introducing source-level incompatibilities.
+* time: 2019-11-28T11:58:58Z
+* content: Sure, I was just thinking that if we indeed go this way and that method is not used it would better to let know plugin authors by having it break existing plugins or at least deprecating the method.
+* time: 2019-12-03T18:27:36Z
+* content: @donnerpeter I case you decide to stay with getDetectedFileTypes what would be a suggested way to implement FileType for files without extension for example Pants build tool? Pants define targets by creating BUILD files which contain python syntax for defining the target.
+************************************************************************

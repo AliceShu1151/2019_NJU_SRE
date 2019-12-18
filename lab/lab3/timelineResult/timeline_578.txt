@@ -1,0 +1,35 @@
+************************************************************************
+* id: 578
+* requirement: Simplify logging output options to three, matching the options availa…
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-27T01:11:56Z
+* content: Simplify logging output options to three, matching the options availa…
+* codeUrl: github.com/JetBrains/intellij-community/pull/578/commits/410d458ad72fd91331d30f99dfeca514b8031fd9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-27T01:31:54Z
+* content: Fix for IDEA-52042: https://youtrack.jetbrains.com/issue/IDEA-52042
+* time: 2017-05-27T01:31:54Z
+* content: Signed-off-by: Arvind Ranganathan arvindanekal@gmail.com
+* time: 2017-05-27T01:31:54Z
+* content: This fix constrains the output options to just three (debug, info and warn) matching the options available in apache maven (--debug, --quiet and for no option, everything). This avoids ambiguity and makes the UI simpler. Existing tests work fine and no new tests were needed.
+* time: 2017-05-27T01:31:54Z
+* content: This credits for the idea of the fix goes to Timothy Basanov (https://github.com/timothybasanov)
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-02T23:52:07Z
+* content: Added another logging level for Errors
+* codeUrl: github.com/JetBrains/intellij-community/pull/578/commits/658b2b5bafb5e18a98271241e6e112dabac6a9ff
+************************************************************************

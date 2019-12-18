@@ -1,0 +1,21 @@
+************************************************************************
+* id: 154
+* requirement: Fixes path so that local modules get priority
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-02-23T02:59:23Z
+* content: Fixes path so that local modules get priority
+* codeUrl: github.com/JetBrains/intellij-community/pull/154/commits/972808d0242e1d10122eecd9da61cb9d7fb19b79
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-02-23T02:59:30Z
+* content: By using sys.path.extend() the local source and content directories are given lower priority than the global python site-path. This can be problematic if the module being developed is also installed in the site-path.
+* time: 2014-02-23T03:02:38Z
+* content: This patch will give priority to the local source and content directories. This way developers can test their modules while developing them.
+************************************************************************

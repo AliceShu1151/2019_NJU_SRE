@@ -1,0 +1,27 @@
+************************************************************************
+* id: 46
+* requirement: IDEA-99403 Dont highlight 'super' / 'this' keywords, while highlighting 'Constructor Call'
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-07T13:08:56Z
+* content: IDEA-99403 Dont highlight 'super' / 'this' keywords, while highlighti…
+* codeUrl: github.com/JetBrains/intellij-community/pull/46/commits/2a06b18a320e361ef4a884a44357f80ce55cef98
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-07T13:10:46Z
+* content:  No description provided. 
+* time: 2013-03-07T19:34:14Z
+* content: Merged manually. Thanks!
+* time: 2013-03-08T21:04:42Z
+* content: Why i cant find this change at master branch ?
+* time: 2013-03-10T08:14:56Z
+* content: I committed this change as myself. Since you used some weird characters (parentheses) in your branch name, I couldn't do a proper merge.
+* time: 2013-03-10T09:05:50Z
+* content: sry for that. I was create branch with wrong name - and then create with "(valid)"
+************************************************************************

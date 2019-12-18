@@ -1,0 +1,23 @@
+************************************************************************
+* id: 763
+* requirement: terminal: quote shell variable when testing
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-19T21:36:14Z
+* content: terminal: quote shell variable when testing
+* codeUrl: github.com/JetBrains/intellij-community/pull/763/commits/112b8e113c35446720136976b039ae15b5d5bf6b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-19T21:47:14Z
+* content: In the case LOGIN_SHELL is undefined, the test becomes:
+* time: 2018-03-19T21:47:14Z
+* content: if [ -n ]; then ... fi
+* time: 2018-03-19T21:47:14Z
+* content: which will execute the block inside the if, when it shouldn't.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1198
+* requirement: [Sh] Allow 3rd-party plugins to override the ShRunConfigurationProfileState
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-09-14T17:33:00Z
+* content: Allow 3rd-party plugins to override the ShRunConfigurationProfileStat…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1198/commits/d58dd7ed9e5c4f45f6487cd514629dbd38643a56
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-14T17:40:46Z
+* content: Allow 3rd-party plugins to override the ShRunConfigurationProfileState, for example to add debug support while reusing ShRunConfiguration.
+* time: 2019-09-14T17:40:46Z
+* content: Such a plugin would reuse the run configuration and add debug support  on top. Its implementation would most likely use a runner based on BaseProgramRunner, which retrieves a new RunProfileState from the run configuration (source).
+************************************************************************

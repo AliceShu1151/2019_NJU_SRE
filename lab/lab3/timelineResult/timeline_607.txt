@@ -1,0 +1,35 @@
+************************************************************************
+* id: 607
+* requirement: IDEA-149976 Added "Reveal in Terminal" action.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-31T22:09:58Z
+* content: IDEA-149976 Added "Reveal in Terminal" action.
+* codeUrl: github.com/JetBrains/intellij-community/pull/607/commits/3a723f97b0a839ea2c952aa7c91fe7eca933198b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-01T16:47:54Z
+* content: Hello.
+* time: 2017-08-01T16:47:54Z
+* content: I've decided to speed up things a bit and implement the https://youtrack.jetbrains.com/issue/IDEA-149976 feature.
+* time: 2017-08-01T16:47:54Z
+* content: The implementation was pretty straightforward except for new methods in ToolWindow interface, I have some doubts about them as a way of achieving the functionality required. The idea was to be able to pass a file, selected by user, to external modules like plugins. I've provided a default implementation of the methods in case some external code have used the interface.
+* time: 2017-08-01T16:47:54Z
+* content: If there is something that can be improved, please let me know.
+* time: 2017-11-19T17:02:38Z
+* content: And it seems JetBrains won't do things speedily 
+* time: 2017-11-20T09:39:03Z
+* content: Yeah, I wish they've commented the issue at least :)
+* time: 2017-11-20T15:45:06Z
+* content: I'm very disappointed in JetBrains on how they deal with issues and pull requests.
+* time: 2017-11-20T15:45:06Z
+* content: They have ton of issues on YouTrack but they can't manage them well even they developed YouTrack, just my own opinion.
+* time: 2017-11-21T19:02:10Z
+* content: Merged
+************************************************************************

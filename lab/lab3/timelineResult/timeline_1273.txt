@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1273
+* requirement: Process the mouse event if it is a click
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-12-13T02:47:39Z
+* content: Process the mouse event if it is a click
+* codeUrl: github.com/JetBrains/intellij-community/pull/1273/commits/16122cd4982a65e1771f67f0af89d034433fd492
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-12-13T03:01:35Z
+* content: Hi Kirill, this is Juan with Android Studio
+* time: 2019-12-13T03:01:35Z
+* content: One of our UI tests creates an Android Instrumented Tests configuration by opening the Run/Debug Configurations dialog, clicking the +, and selecting Android Instrumented Tests in the popup. But the Swing in IDEA never gets the simulated mouse click, the instrumented test configuration is not created, and the test fails.
+* time: 2019-12-13T03:01:35Z
+* content: I traced things to 98a868f. If I revert the commit, things work. Did you mean for that ! to be in front of isClick? The test also passes if I remove only that.
+* time: 2019-12-13T03:05:24Z
+* content: @kkmic
+* time: 2019-12-13T11:46:36Z
+* content: Hi Juan. I just checked that removing isClick entirely (its calculation and from the condition) works well for the issue I was originally fixing: https://youtrack.jetbrains.com/issue/IDEA-217535 Please do so and check it your tests pass. If they do I'll remove isClick.
+************************************************************************

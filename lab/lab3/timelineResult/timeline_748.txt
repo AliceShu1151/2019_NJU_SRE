@@ -1,0 +1,26 @@
+************************************************************************
+* id: 748
+* requirement: Let unused TypeEvalContext instances be gc-ed
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-01T02:33:03Z
+* content: make values in TypeEvalContextBasedCache soft
+* codeUrl: github.com/JetBrains/intellij-community/pull/748/commits/f2f54441b79bb6d44be7a5618540c79a6c2f147f
+* time: 2018-03-01T02:36:46Z
+* content: minor: anonymous ThreadLocal class -> ThreadLocal.withInitial
+* codeUrl: github.com/JetBrains/intellij-community/pull/748/commits/44d758b1dbfabae62a19de96046051ead667f579
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-01T02:45:00Z
+* content: The problem here is that while the map holding cached values is softly referenced , the values themselves are not. This means the GC can either collect the entire map or none of it. Since the collector uses an LRU policy to collect soft refs and the reference to the map is usually 'recently used' it does not get collected until the memory situation becomes critical.  This becomes a problem when running inspections in batch mode on a large enough workload.
+* time: 2018-03-01T02:45:00Z
+* content: This patch makes the cached values themselves softly referenced so that the gc can collect TypeEvalContext instances that have no been recently used.
+* time: 2018-03-19T15:15:58Z
+* content: I am ok with this change except put => putIfAbsent change which is not clear for me.
+************************************************************************

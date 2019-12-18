@@ -1,0 +1,29 @@
+************************************************************************
+* id: 712
+* requirement: prevent django_manage.py from tracking changes in node_modules
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-20T16:35:56Z
+* content: prevent django_manage.py from tracking changes in node_modules
+* codeUrl: github.com/JetBrains/intellij-community/pull/712/commits/c2d481100cfdde4a2b2d618c152c1b871c0b30b1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-20T16:56:31Z
+* content: The patch prevents manage.py console in PyCharm from being painfully slow when there is a node_modules somewhere in the project tree.
+* time: 2018-01-20T16:56:31Z
+* content: Timings from my current project, running migrate command from manage.py console in PyCharm:
+* time: 2018-01-20T16:56:31Z
+* content: Developers are not supposed to manually change the contents of node_modules, so I guess it's fine to exclude it from tracking. I also think it is ok to just hardcode node_modules in the method code, because it is hardcoded in Node and developers cannot rename it.
+* time: 2018-03-16T17:08:59Z
+* content: Hello. Since 2018.1 PyCharm does not track all folders, but filters them by pattern instead: https://youtrack.jetbrains.com/issue/PY-27260 Please check if this issue is still actual in 2018.1
+* time: 2018-03-31T13:12:38Z
+* content: Hi there,
+* time: 2018-03-31T13:12:38Z
+* content: PyCharm 2018.1 is indeed faster, it demonstrates 3-4x speed improvement without the patch. However, it is still slow. Here are measurements from my project with PyCharm 2018.1, running migrate without any active migrations to apply:
+************************************************************************

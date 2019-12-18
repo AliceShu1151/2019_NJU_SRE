@@ -1,0 +1,21 @@
+************************************************************************
+* id: 275
+* requirement: added and marked as deprecated removed constructor ArchiveHandler.Ent…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-06-15T14:14:57Z
+* content: added and marked as deprecated removed constructor ArchiveHandler.Ent…
+* codeUrl: github.com/JetBrains/intellij-community/pull/275/commits/2d8efc1e2789ca8f2f73fe51cddfcbf212dce91a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-06-15T14:22:34Z
+* content: …ryInfo
+* time: 2015-06-15T14:22:34Z
+* content: This is import in order to support Kotlin plugin
+************************************************************************

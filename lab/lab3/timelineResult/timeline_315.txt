@@ -1,0 +1,41 @@
+************************************************************************
+* id: 315
+* requirement: IDEA-146898 DoubleNegationInspection only for booleans
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-10-26T19:32:10Z
+* content: IDEA-146898 DoubleNegationInspection only for booleans
+* codeUrl: github.com/JetBrains/intellij-community/pull/315/commits/77060e17f15719017f3693642611a886ef8b73cc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-26T19:35:17Z
+* content: The DoubleNegationInspection should only register error for booleans and conditional statements.
+* time: 2015-10-27T13:19:49Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-10-27T13:47:51Z
+* content: Hi @klikh , Thank you for the reminder. I sent it.
+* time: 2015-10-27T13:54:35Z
+* content: Received. Thanks.
+* time: 2016-03-01T09:37:10Z
+* content: you might want to i18n this
+* time: 2016-03-01T09:38:19Z
+* content: formatting
+* time: 2016-03-01T09:39:47Z
+* content: hmmm, this signature (and naming) is suspicious, please review it
+* time: 2016-03-01T09:41:06Z
+* content: you could import GroovyTokenTypes statically, to make it more readable
+* time: 2016-03-01T09:43:57Z
+* content: the loop will get the parent, you should skip it here: PsiElement parent = expression; ad preferably move it to a separate method (though I'm sure there are helper methods for this already)
+* time: 2016-03-01T09:48:00Z
+* content: PsiType.BOOLEAN.isAssignableFrom(expression.getType()) ? (might need the nullcheck also)
+* time: 2018-07-21T12:43:31Z
+* content: @vladmm, please rebase the PR, cc @dovchinnikov.
+* time: 2019-06-24T14:41:59Z
+* content: The code is okay, but there are other boolean contexts such as assert statement or ternary expression. Support for all of them is needed before this could be merged.
+************************************************************************

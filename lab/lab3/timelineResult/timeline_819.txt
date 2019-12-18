@@ -1,0 +1,31 @@
+************************************************************************
+* id: 819
+* requirement: Print useful debugging info when compilation fails
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-30T03:06:49Z
+* content: Print useful debugging info when compilation fails
+* codeUrl: github.com/JetBrains/intellij-community/pull/819/commits/fe0ae28bdb2c10d21ca1104c69eeceff7ae88784
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-30T03:10:41Z
+* content: @chashnikov?
+* time: 2018-07-05T12:20:44Z
+* content: Firstly if compilation fails because of errors in source code, Standalone.runBuild won't throw an exception, the errors will be reported to org.jetbrains.intellij.build.impl.JpsCompilationRunner.AntMessageHandler and printed via org.jetbrains.intellij.build.BuildMessages::compilationErrors. Secondly, even if Standalone.runBuild fails with exception (which means that it was an internal error in the compiler implementation), context.messages.error will throw BuildException which will stop the build, and its cause will be printed to the output.
+* time: 2018-07-05T12:20:44Z
+* content: So why do you need this?
+* time: 2018-07-05T21:08:47Z
+* content: Without this change I get inscrutable failures:
+* time: 2018-07-05T21:08:47Z
+* content: This change produces more informative output:
+* time: 2018-07-12T16:43:18Z
+* content: Ok, I see, Ant just catches BuildException in org.apache.tools.ant.Main#startAnt method and don't print its stracktrace by default. I'll think how to fix this properly.
+* time: 2018-07-13T09:13:32Z
+* content: I've implemented this in a little different way, by printing stacktrace via BuildMessageLogger. This will work better then build is running under TeamCity. Also it makes sense to stop build by throwing exception, not just print stacktrace.
+************************************************************************

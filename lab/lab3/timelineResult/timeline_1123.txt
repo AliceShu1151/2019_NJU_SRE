@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1123
+* requirement: IDEA-131162 Detect recursion in Java call hierarchy
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-15T14:09:51Z
+* content: IDEA-131162 Detect recursion in Java call hierarchy
+* codeUrl: github.com/JetBrains/intellij-community/pull/1123/commits/d7097f07587a50590f3a0096d5f9ae04663a1ba9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-15T14:15:25Z
+* content: Fixes IDEA-131162, IDEA-144116, IDEA-52371 https://youtrack.jetbrains.com/issue/IDEA-131162
+* time: 2019-04-22T11:20:21Z
+* content: pushed, thanks
+* time: 2019-04-22T14:25:48Z
+* content: (apologies, deleted last comment posted to the wrong ticket)
+************************************************************************

@@ -1,0 +1,46 @@
+************************************************************************
+* id: 903
+* requirement: IDEA-201317: Add Cucumber4 Formatter
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-27T16:27:14Z
+* content: IDEA-201317: Add Cucumber4 Formatter
+* codeUrl: github.com/JetBrains/intellij-community/pull/903/commits/f106b87792826fc9c9e6c05dc01a92d7d43331f4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-27T16:39:38Z
+* content: Add the ability to see tests executing in realtime as per current Cucumber3 Behaviour. Currently IntelliJ only displays test results at the end of the complete test run.
+* time: 2018-10-27T16:39:38Z
+* content: See details tracked here: https://youtrack.jetbrains.com/issue/IDEA-201317
+* time: 2018-10-27T16:39:38Z
+* content: Added a new Cucumber formatter module that implements the ConcurrentEventListener interface
+* time: 2018-10-27T16:39:38Z
+* content: NB. No attempt has been made to make this threadsafe as the current IDE plugin for cucumber does not pass the new --threads option and therefore cucumber defaults to a single thread. If this functionality is required then further changes will need to be made.
+* time: 2018-10-27T16:39:38Z
+* content: Also note the cucumber plugin will need to be updated to pass the new Formatter package name.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-12-12T14:07:12Z
+* content: Revert erroneous changes
+* codeUrl: github.com/JetBrains/intellij-community/pull/903/commits/b0a5c684a5999c6884c0af9869c8d0f8cf676ee2
+* time: 2018-12-12T14:12:44Z
+* content: remove whitespace
+* codeUrl: github.com/JetBrains/intellij-community/pull/903/commits/7206d580600a1a180284480d28ffbf490b9ba53d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-12-12T14:14:35Z
+* content: @avokin Hi Andrey, I have made the changes as per our discussion. I will raise the changes for org.jetbrains.plugins.cucumber.java.run.CucumberJavaRunConfigurationProducer separately.
+************************************************************************

@@ -1,0 +1,19 @@
+************************************************************************
+* id: 100
+* requirement: IDEA-113488 Find commits in git log from file history context menu
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-11T15:44:45Z
+* content: IDEA-113488 (
+* codeUrl: github.com/JetBrains/intellij-community/pull/100/commits/631a24cd4a37df9f46b2a223abbe1eaf8716bcef
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-11T15:50:15Z
+* content: This is a feature patch for http://youtrack.jetbrains.com/issue/IDEA-113488 I've already sent a signed contributor license agreement per fax.
+************************************************************************

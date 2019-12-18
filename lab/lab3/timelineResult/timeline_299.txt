@@ -1,0 +1,31 @@
+************************************************************************
+* id: 299
+* requirement: align chained methods with comments properly
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-30T17:12:38Z
+* content: align chained methods with comments properly
+* codeUrl: github.com/JetBrains/intellij-community/pull/299/commits/0e096c971a583261367047fa7c3e7b0f36c1b16e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-08-30T17:21:54Z
+* content: Fixes https://youtrack.jetbrains.com/issue/IDEA-122802: 'Comments between chained calls aren't indented properly' and https://youtrack.jetbrains.com/issue/IDEA-136980: 'Comments at end of the line during chained calls break allignment'
+* time: 2015-08-30T19:16:19Z
+* content: the last element may be a comment, so let's index from the beginning instead: [DOT, method name, expression list]
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-31T20:06:14Z
+* content: Changed testChainedMethodWithComments to be more descriptive
+* codeUrl: github.com/JetBrains/intellij-community/pull/299/commits/ee809c4b44972edf91977342610c1a98a1a2af6e
+************************************************************************

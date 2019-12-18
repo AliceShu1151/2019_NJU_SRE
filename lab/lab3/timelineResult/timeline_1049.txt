@@ -1,0 +1,35 @@
+************************************************************************
+* id: 1049
+* requirement: Make Gradle's ProjectImportAction more flexible
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-28T15:41:45Z
+* content: Make Gradle's ProjectImportAction more flexible
+* codeUrl: github.com/JetBrains/intellij-community/pull/1049/commits/23f2dfb1be72c37e59468b4b3c5e8e3854f45a4a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-29T16:30:54Z
+* content: This change gives more flexibility providers of GradleProjectResolverExtensions to inject logic when requesting models from Gradle during the ProjectImportAction. We allow extensions to provide a ProjectImportExtraModelProvider instead of a set list of classes, this provider has two methods which are both run within the build action. Each method provides a consumer-like interface for the provider to register the models that they are interested in so they are visible to the resolver context during setup.
+* time: 2019-01-29T16:30:54Z
+* content: 
+* time: 2019-01-29T16:30:54Z
+* content: 
+* time: 2019-01-29T16:30:54Z
+* content: I've ran any tests that I could that look like they might be affected. E.g in intellij.gradle.tests the results are consistent with or without the change (though both end up with ~100 failures). Any instruction on how best to test the new functionality would be appreciated.
+* time: 2019-01-29T16:30:54Z
+* content: Thanks!
+* time: 2019-02-01T11:26:01Z
+* content: so far looks good to me. I will run this patch through our TeamCity (CI server)
+* time: 2019-02-01T14:06:21Z
+* content: Cool, thanks!
+* time: 2019-02-01T14:15:49Z
+* content: Our integration tests went fine. Will merge the request manually
+* time: 2019-02-01T14:28:08Z
+* content: Merged manually. Thank you!
+************************************************************************

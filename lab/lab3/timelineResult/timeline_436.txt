@@ -1,0 +1,27 @@
+************************************************************************
+* id: 436
+* requirement: Fixed typo in Groovy description for missing switch branch
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-08-11T19:51:17Z
+* content: Update description.html
+* codeUrl: github.com/JetBrains/intellij-community/pull/436/commits/e946247e342263ba3c704d95c86ad7eb06eac004
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-08-11T19:52:49Z
+* content: The possessive form of "it" does not have an apostrophe.
+* time: 2016-08-11T19:52:49Z
+* content: IDEA-159748
+* time: 2016-08-12T19:35:50Z
+* content: Merged. Thank you for the contribution.
+* time: 2016-08-12T20:14:55Z
+* content: @klikh Happy to help! But was this merged? It looks like this was closed without being merged..
+* time: 2016-08-13T08:04:52Z
+* content: Yes, I've merged it manually, but the push was delayed a bit. The commit is now available: 7c189cb
+************************************************************************

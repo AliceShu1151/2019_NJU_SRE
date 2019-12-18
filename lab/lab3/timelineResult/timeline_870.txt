@@ -1,0 +1,35 @@
+************************************************************************
+* id: 870
+* requirement: ExternalAnnotationsManager: added support for batch annotation
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-24T13:06:08Z
+* content: ExternalAnnotationsManager: added support for batch annotation
+* codeUrl: github.com/JetBrains/intellij-community/pull/870/commits/3c1ea91f4a8f2d174cf9196ff15179a8ba7e0cb9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-24T13:09:16Z
+* content:  No description provided. 
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-24T15:08:57Z
+* content: ExternalAnnotationsManager: added try finally to release write lock
+* codeUrl: github.com/JetBrains/intellij-community/pull/870/commits/b146d468f92f213e12f1e7c16ac891829a010fcf
+* time: 2018-09-25T04:48:46Z
+* content:  ExternalAnnotationsManager: fixed iteration in root sub tags
+* codeUrl: github.com/JetBrains/intellij-community/pull/870/commits/bb4ad91219a798abf8af36368036567658b4134d
+* time: 2018-10-02T03:53:31Z
+* content: ExternalAnnotationsManager: replaced compareTo with equals
+* codeUrl: github.com/JetBrains/intellij-community/pull/870/commits/558c034e38117f608c58c520d268e37333489fc1
+************************************************************************

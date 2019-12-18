@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1065
+* requirement: IDEA-207424 Add color constants for uidesigner.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-15T23:12:51Z
+* content: IDEA-207424 Add color constants for uidesigner.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1065/commits/6b2dd88a1a1a482f9479443a723935504fb021de
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-16T00:40:13Z
+* content: Add 2 colors for uidesigner:
+* time: 2019-02-16T00:40:13Z
+* content: Change-Id: I3b5505da33f7b9971eeaed14dcd74759dff0cfb8
+* time: 2019-02-22T13:43:57Z
+* content: Please see my comments here https://youtrack.jetbrains.com/issue/IDEA-207424
+************************************************************************

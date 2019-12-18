@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1149
+* requirement: Support contributed references for the ShVariable PSI element
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-04T09:19:27Z
+* content: Allow 3rd-party plugins to provide references for a ShVariable via Sh…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1149/commits/0ac6d80a290d6cf55af1a793a9e82a9f83e04ef2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-04T09:23:10Z
+* content: This PR adds support for contributed references to the ShVariable implementation. Variables can be resolved to definitions and this adds the possibility to let extensions contribute references.
+* time: 2019-06-04T09:23:10Z
+* content: I'm following the style which is used by other elements of the sh.bnf grammar.
+* time: 2019-10-16T08:21:51Z
+* content: @ignatov This is a new take to allow 3rd-party plugins to provide references for a ShVariable. It now uses ShSupport to get the references. The default value is the same as before, i.e. no references.
+* time: 2019-10-16T08:21:51Z
+* content: It would be great to allow other plugins to provide references for variables which are not supported by Sh.
+************************************************************************

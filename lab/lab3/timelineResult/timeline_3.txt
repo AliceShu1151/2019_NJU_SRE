@@ -1,0 +1,19 @@
+************************************************************************
+* id: 3
+* requirement: git4idea: option "interactive" on rebase not default
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2011-10-07T21:22:24Z
+* content: git4idea: option "interactive" on rebase not default
+* codeUrl: github.com/JetBrains/intellij-community/pull/3/commits/96a7f0d39bca4fbf969f63bf033ff6abbae7859e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2011-10-07T21:27:31Z
+* content: The option "interactive" on command "rebase" is commonly not used by default. So the CheckBox should be unchecked by default.
+************************************************************************

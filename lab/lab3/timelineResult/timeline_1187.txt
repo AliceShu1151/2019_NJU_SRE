@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1187
+* requirement: [Gradle] Avoid task configuration in tooling model builders.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-12T22:46:00Z
+* content: [Gradle] Avoid task configuration in tooling model builders.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1187/commits/82efac5b127e914427115d6544ed7cde68233a77
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-12T22:59:17Z
+* content: When building Gradle tooling models, there are a few usages of TaskCollection.all, which triggers creation and configuration of all registered tasks. To avoid this expensive operation, replace the usage with lighter API - TaskCollection.withType, which only configures the affected tasks.
+* time: 2019-08-12T22:59:17Z
+* content: Besides, introduce project property idea.do.not.resolve.task.list. When defined, the task list in ExternalProject will not be populated. Because this operation requires configuration for all tasks and there is no light-weight alternatives. This property provides a way to disable task configuration from idea.
+* time: 2019-08-23T14:39:18Z
+* content: Thank you for the request.
+* time: 2019-08-23T14:39:18Z
+* content: What is the intended usage of idea.do.not.resolve.task.list ? Without tasks information from Gradle multiple issues may rise (still to be checked with the patch): missing autocomplete in different places, problems runnig unit tests in delegated mode, maybe other...
+* time: 2019-08-28T00:54:05Z
+* content: We hope to have some approach to disable the task list tree in Gradle tools window. Android projects usually have much more tasks than non-Android projects. For example, one of our customers' project has 10,000+ tasks. Disabling the task tree improves performance for them. This flag is intended to be set from Preferences if user doesn't use the task tree and would like to avoid the overhead of populating it.
+* time: 2019-08-28T00:54:05Z
+* content: I am not aware of all of the side effects this may cause. Is it possible to use alternative APIs to only get certain tasks?
+* time: 2019-08-29T12:07:50Z
+* content: We can introduce some kind of filters to exclude certain tasks. Is it possible to distinguish such "useless" for IDE and IDE user android tasks? Maybe by task type or task naming pattern?
+* time: 2019-09-20T19:06:34Z
+* content: I simplified this change to only replace TaskCollection.all with TaskCollection.withTypes. Will address the task filtering problem separately.
+************************************************************************

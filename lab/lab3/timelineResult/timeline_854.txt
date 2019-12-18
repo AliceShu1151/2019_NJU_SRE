@@ -1,0 +1,25 @@
+************************************************************************
+* id: 854
+* requirement: [Decompiler] Fix short name imports shadowed by super inner classes (IDEA-196315)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-11T16:48:32Z
+* content: Fix short name imports shadowed by super inner classes
+* codeUrl: github.com/JetBrains/intellij-community/pull/854/commits/44748feca0ba15d584723a4cee2597b3c7b60a5f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-11T17:39:28Z
+* content: Currently, decompiling the modified test class will result in the short names Builder and Entry incorrectly being used as both these imports will be shadowed. This PR adds a check to the import collector to see if a short name will be shadowed a super inner class and adjusts the import accordingly.
+* time: 2018-09-14T15:07:25Z
+* content: I just thought of a way to slightly improve this. I'll update the PR this weekend when I have time.
+* time: 2018-09-16T01:01:45Z
+* content: Cleaned up this PR. Should be much better.
+* time: 2018-09-26T22:35:37Z
+* content: Updated with the requested changes made.
+************************************************************************

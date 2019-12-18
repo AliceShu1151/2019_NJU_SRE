@@ -1,0 +1,19 @@
+************************************************************************
+* id: 407
+* requirement: Add additional deserialization note for index value violate
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-05-28T10:19:19Z
+* content: Add additional deserialization note for index value violate
+* codeUrl: github.com/JetBrains/intellij-community/pull/407/commits/8e9e3d98197eddb814c732d20ba75fa1ec8d0436
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-28T10:21:11Z
+* content: I debugged some plugins against this implemention. this gives better clue, what is wrong in detail
+************************************************************************

@@ -1,0 +1,29 @@
+************************************************************************
+* id: 559
+* requirement: Made display name mutable for RunContentDescriptor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-24T20:13:34Z
+* content: Made display name mutable for RunContentDescriptor
+* codeUrl: github.com/JetBrains/intellij-community/pull/559/commits/8dba987959a6bce86febd266870ba9ba4c09b52b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-17T18:39:48Z
+* content:  No description provided. 
+* time: 2017-04-18T13:31:30Z
+* content: As usual ;) , please provide the motivation. The change is perfectly clear, but it would be nice to get a use case description.
+* time: 2017-04-18T13:31:30Z
+* content: Btw, mutability is evil by default. Not critical for this particular class, since it is already quite mutable, but it is a good habit to have a good motivation for each change like that. Thanks.
+* time: 2017-04-18T14:20:27Z
+* content: Lets say we have several consoles and when we want to execute console action if no console selected we use ExecutionHelper.selectContentDescriptor that shows popup with available consoles. We want to be able to modify title of a console in this popup. Mutability of the displayName gives as this possibility. This is one of use cases.
+* time: 2017-04-18T17:39:59Z
+* content: The reason we need this change is we have a custom implementation of the Python console with actions such as "Execute Module in Console", "Execute Script in Console" and so on.  Those actions execute the script/module/test in the console without restarting it.  In those cases we change the console title to "Running script x..." ,Running test y.." to indicate to the context to the user.  In any case "Console (1)", "Console (2)"... are not very useful titles.
+* time: 2017-04-18T17:39:59Z
+* content: As Kiryl explained, unless we change the title in the RunContentDesciptor code that relies on it, like  ExecutionHelper.selectContentDescriptor, would not work correctly.
+************************************************************************

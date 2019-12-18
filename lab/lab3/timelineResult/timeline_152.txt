@@ -1,0 +1,58 @@
+************************************************************************
+* id: 152
+* requirement: libnotifywrapper: Fix crashes when showing notification
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-02-18T13:18:28Z
+* content: Fixes IDEA crashing after showing a notification balloon on Ubuntu 12.04. There was a typo in the dlsym call for notify_uninit, and also libnotify must not be dlclosed and dlopened repeatedly.
+* time: 2014-02-18T15:34:31Z
+* content: Conversation with GTK people:
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-02-18T20:36:02Z
+* content: libnotifywrapper: Fix crashes when showing notification
+* codeUrl: github.com/JetBrains/intellij-community/pull/152/commits/ad6e6ee9513b9ae234f843d5d76abf88b2a0e305
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-02-24T16:25:31Z
+* content: Thanks a lot! We will review it soon
+* time: 2014-02-25T10:03:54Z
+* content: The notification system was reworked to use JNA (4d26c0a) so the fix is now obsolete. Thank you anyway!
+* time: 2014-03-20T15:41:52Z
+* content: I get segfaults related to libnotify in IDEA ultimate 13.1, pretty sure this is also using JNA.
+* time: 2014-03-20T15:51:52Z
+* content: @facboy any details? You can disable notifications by putting "ide.libnotify.enabled=false" in bin/idea.properties.
+* time: 2014-03-20T19:37:23Z
+* content: i raised it on the jetbrains forums: http://devnet.jetbrains.com/message/5511841?tstart=0#5511841
+* time: 2014-03-21T02:50:49Z
+* content: For @facboy's problem, it seems that the libnotify library is too old and the call signature of notify_notification_new has changed in the meantime.
+* time: 2014-03-21T02:50:49Z
+* content: libnotify-0.5.0 has:
+* time: 2014-03-21T02:50:49Z
+* content: but libnotify-0.7.5 (what I have on Ubuntu 12.04) is lacking the last parameter (which the JNA code is written against):
+* time: 2014-03-21T02:50:49Z
+* content: What I would try is to either add a version check for libnotify, or change the signature of notify_notification_new to the four-parameter version in the JNA code and always pass in NULL as the widget parameter. The calling convention on Linux is such that passing an extra argument to a function shouldn't technically cause problems, so both versions should work.
+* time: 2014-03-21T12:47:20Z
+* content: I've fixed library version to .so.4 so that older version (.so.1) would not be loaded. Thanks!
+* time: 2014-03-21T12:47:20Z
+* content: Upd. the fix will be include in 13.1.2.
+* time: 2014-03-24T19:03:18Z
+* content: FYI - I seem to have a very similar issue re: libnotity.so.1 IntelliJ Ultimate 13.1.1 running on linux crashes if I switch windows (alt-tab) during a compile:
+* time: 2014-03-24T19:03:18Z
+* content: Will 13.1.2 fix this?
+* time: 2014-03-24T19:20:02Z
+* content: It's not just similar - it's the very issue. Yes, 13.1.2 will fix it.
+* time: 2014-03-24T19:20:32Z
+* content: @gclayburg you have the exact same crash location and library version as in the crash above, so it's the same issue.
+************************************************************************

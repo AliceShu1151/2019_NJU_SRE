@@ -1,0 +1,23 @@
+************************************************************************
+* id: 567
+* requirement: Add missing package to pydev
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-02T13:03:31Z
+* content: Add missing package to pydev
+* codeUrl: github.com/JetBrains/intellij-community/pull/567/commits/dbde1973bf118ce7dd185ccac2c2ea823ed1b82d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-02T13:08:09Z
+* content: Remote debugging with IntelliJ Ultimate fails unless the _pydevd_frame_eval package is included in the pydev helper.
+* time: 2017-05-05T14:07:32Z
+* content: Hi! Unfortunately, we can't reproduce the problem. Do you mean debugging with Remote debug server? Do you use .egg files provided with the installation? In fact, this setup.py is used only for pydevd package (and PyDev debugger). For PyCharm and Python plugin we build it separately.
+* time: 2017-05-07T18:48:46Z
+* content: Hi Elizaveta. Yes, the problem occurs when using pydev for remote debugging. More specifically, it is used for being able to debug code running in a docker container. For that purpose, the setup.py is used to build the pydevd-1.0.0-cp35-cp35m-linux_x86_64.whl file, which is installed in the docker image. Without this dependency, it fails with '_pydevd_frame_eval' as a missing module. Hope that gave some more context to be able to reproduce the problem, let me know if you want more info.
+************************************************************************

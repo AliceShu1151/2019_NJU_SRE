@@ -1,0 +1,38 @@
+************************************************************************
+* id: 557
+* requirement: Added frame name passing to PyPositionConverter
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-13T17:16:15Z
+* content: Add resume method to PythonDebugConsoleCommunication
+* codeUrl: github.com/JetBrains/intellij-community/pull/557/commits/c3c98fc134cfe9f96c4565363cdb147df5e748a5
+* time: 2017-04-13T17:25:41Z
+* content: Add name parameter to PyPositionConverter
+* codeUrl: github.com/JetBrains/intellij-community/pull/557/commits/492882db47876ca3bf82c4de55163db184993324
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-17T16:26:08Z
+* content: We have our own PyPositionConverter implementation that requires frame name
+* time: 2017-04-25T18:53:42Z
+* content: Why do you need frame name? Can it be generalized somehow?
+* time: 2017-04-25T19:57:10Z
+* content: We have an in-house graph framework that essentially rewrites the evaluation order of code to be evaluated in excel-like manner. It creates synthetic frames that needs special handling and translation. We can identify those frames based on the name.
+* time: 2017-04-25T19:57:10Z
+* content: We could generalize (in a sense) by changing the parameter type passed to the converter to 'PyStackFrameInfo', if you prefer that.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-25T20:11:40Z
+* content: Allow getting frame name from python frame
+* codeUrl: github.com/JetBrains/intellij-community/pull/557/commits/e3d1b7bdf7eb1a1eed3e86ee89f3ac1099d4b29d
+************************************************************************

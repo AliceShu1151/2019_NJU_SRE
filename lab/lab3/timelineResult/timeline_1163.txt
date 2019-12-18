@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1163
+* requirement: IDEA-212715 - fixed snapshooter's ClassNotFoundException on startup
+the requirement of 1163 only has implements, no discussion.

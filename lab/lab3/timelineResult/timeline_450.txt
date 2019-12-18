@@ -1,0 +1,29 @@
+************************************************************************
+* id: 450
+* requirement: Ensuring project directory is given priority prior to settings import
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-09-26T14:04:26Z
+* content: Ensuring project directory is given priority prior to settings import
+* codeUrl: github.com/JetBrains/intellij-community/pull/450/commits/137828b272aefbddd1492b134301c901b9aed2c3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-09-26T14:28:20Z
+* content: I'm developing a reusable Django app which has settings in example_project.settings. The example_project provides a project which is both a bare-bones example, and a bootstrap for the tests.
+* time: 2016-09-26T14:28:20Z
+* content: However – and perhaps unsurprisingly – another Django app also contained an example_project. Moreover, my project directories entry on sys.path only appears towards the end of the list, after many dependencies. In my case, the result was that the incorrect settings file would be imported.
+* time: 2016-09-26T14:28:20Z
+* content: I don't think this change should have any negative consequences, but I'm very much open for input.
+* time: 2016-09-26T14:28:20Z
+* content: PS. I couldn't see an email address to send the CLA to
+* time: 2016-09-26T16:27:30Z
+* content: For the CLA, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-09-27T12:01:56Z
+* content: Done
+************************************************************************

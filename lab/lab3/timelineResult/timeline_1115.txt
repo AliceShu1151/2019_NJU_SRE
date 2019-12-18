@@ -1,0 +1,33 @@
+************************************************************************
+* id: 1115
+* requirement: Unstage file for deletion if it's being reused
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-11T01:58:15Z
+* content: Unstage file for deletion if it's being reused
+* codeUrl: github.com/JetBrains/intellij-community/pull/1115/commits/f14f618f1dec5dcbe87c36070ee2e7234584be57
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-11T05:33:40Z
+* content: Currently in SchemeManagerImpl it is possible for a scheme's containing file to be deleted AFTER another scheme of the same containing file name starts using the file.
+* time: 2019-04-11T05:33:40Z
+* content: SchemeManagerImpl stages files to be deleted but doesn't actually do so until save() is called. While a file is staged for deletion, another scheme can be "soft" saved with saveScheme(), which saves the scheme in memory. saveScheme() does contain code to unstage the scheme's containing file for deletion, but there is an edge case where this won't happen due to an early exit that assumes no operation is required to "soft" save the scheme if the new scheme is identical to the old one. This results in a zero net-change in schemes, and a file staged for unintentional deletion.
+* time: 2019-04-11T05:33:40Z
+* content: This moves the "unstage file for deletion" code before the exit so it's always checked, which fixes the edge case scenario.
+* time: 2019-04-11T17:31:35Z
+* content: Thanks a lot.
+* time: 2019-04-11T17:31:35Z
+* content: From what I see, your change is safe, it is quite ok to call it a little bit earlier.
+* time: 2019-04-11T17:31:35Z
+* content: It is not true anymore. Fixed already in master.
+* time: 2019-04-11T17:38:06Z
+* content: Your test is passed for me without changes. But anyway I found your change useful, so, merged, thanks again for test and comprehensive description.
+* time: 2019-04-11T18:35:27Z
+* content: @dahlstrom-g Cherry-picked to 191.
+************************************************************************

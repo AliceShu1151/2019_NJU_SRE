@@ -1,0 +1,41 @@
+************************************************************************
+* id: 1096
+* requirement: Update inotify.c
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-22T21:43:54Z
+* content: Update inotify.c
+* codeUrl: github.com/JetBrains/intellij-community/pull/1096/commits/0b5359ab036dc41d95770339f98e95eb0f4dc3b8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-22T21:44:09Z
+* content: Fix bug that caused crash when encountering a hardlink or bind mounted file.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-22T22:02:53Z
+* content: remove unused var
+* codeUrl: github.com/JetBrains/intellij-community/pull/1096/commits/552bd12ca9a0b403b37a667e214252aab1663fa7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-25T19:08:35Z
+* content: Bind mounts and hard links make the same physical bytes to appear via several FS paths. With this fix, fsnotifier would report only one of them as changed, and this may cause hard-to-debug sync/overwrite issues.
+* time: 2019-03-25T19:08:35Z
+* content: Sorry, can't accept.
+* time: 2019-03-25T20:34:24Z
+* content: @trespasserw I figured what I did was not complete. The code needs to ignore cases where a duplicate inode id is returned from inotify because that is not an error. It does that when there are hard linked or bind mounted files. This behavior is in the inotify documentation btw. Are you going to fix it properly?
+* time: 2019-03-26T15:31:33Z
+* content: The change could be a-okay in the context of the fsnotifier binary, but the latter doesn't work in isolation. For an IDE, bind-mounted or hard-linked files 'A' and 'B' are two independent FS entries. When only one of them is reported as changed, it may lead to an outdated content in the editor and eventual data loss.
+************************************************************************

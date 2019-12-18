@@ -1,0 +1,23 @@
+************************************************************************
+* id: 832
+* requirement: Switch JavaHelp license type to match bundled version
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-17T22:15:08Z
+* content: Switch JavaHelp license type to match bundled version
+* codeUrl: github.com/JetBrains/intellij-community/pull/832/commits/b9abe3c4e780708e052f5d9a2531ad19f00edd67
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-18T03:18:54Z
+* content: License text is from: javaee/javahelp@3ca862d
+* time: 2018-07-18T03:18:54Z
+* content: We "Mavenized" this library in the recent merge, and we're now using javax.help:javahelp:jar:2.0.02.
+* time: 2018-07-18T03:19:06Z
+* content: @yole?
+************************************************************************

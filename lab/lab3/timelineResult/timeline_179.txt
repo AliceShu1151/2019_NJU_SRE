@@ -1,0 +1,24 @@
+************************************************************************
+* id: 179
+* requirement: Small console improvements
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-05-04T21:18:21Z
+* content: magic number moved to registry
+* codeUrl: github.com/JetBrains/intellij-community/pull/179/commits/08cf753fd6083c6d063fc448f9d98936099db711
+* time: 2014-05-05T21:47:31Z
+* content: check validity of RangeHighlighter
+* codeUrl: github.com/JetBrains/intellij-community/pull/179/commits/a104c466684d99d9a8997b603f5f60ca52c19449
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-05-07T22:10:46Z
+* content:  No description provided. 
+* time: 2014-05-11T13:06:12Z
+* content: So markup model returns nonvalid highlighters? Pity.
+************************************************************************

@@ -1,0 +1,27 @@
+************************************************************************
+* id: 844
+* requirement: Optimize plugin version checking when update intellij platform version
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-31T08:53:32Z
+* content: optimize plugin version checking when update intellij platform version
+* codeUrl: github.com/JetBrains/intellij-community/pull/844/commits/66847f436a46a8f6b9e6d7caab1e0aaeaefcc841
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-31T11:44:15Z
+* content: Merge remote-tracking branch 'JetBrains/master', and update #228.
+* time: 2018-07-31T11:44:15Z
+* content: Checking plugin version by plugin version and since build
+* time: 2018-07-31T11:44:15Z
+* content: @alexeypegov @ignatov
+* time: 2018-08-01T09:22:45Z
+* content: Could you please rebase the branch onto master and remove the "Merge pull request #1" commit, leaving only the meaningful one. Thanks!
+* time: 2018-08-01T10:36:14Z
+* content: Sorry, I removed it. Now: the plugin version will be find when idea platform upgraded, but downgrade don't.
+************************************************************************

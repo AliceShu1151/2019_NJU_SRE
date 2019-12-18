@@ -1,0 +1,62 @@
+************************************************************************
+* id: 505
+* requirement: Custom postfix templates
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-01-20T22:58:28Z
+* content: implemented simple version of custom postfix templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/505/commits/d32609903b973bb072d91c6bfd212cec93691c3b
+* time: 2017-01-20T23:57:41Z
+* content: allow to define type specific custom postfix templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/505/commits/f4b30138e97ebddcbbd16267abff805a45bb4530
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-01-21T00:20:35Z
+* content: This pull request implements a very simple version of the custom postfix templates requested in https://youtrack.jetbrains.com/issue/IDEA-122443.
+* time: 2017-01-21T00:20:35Z
+* content: It allows to define the postfix templates in $HOME/.ideaPostfixTemplates (one template per line). The format of each line is:
+* time: 2017-01-21T00:20:35Z
+* content: Example:
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-01-21T00:37:37Z
+* content: fetch IOException when loading templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/505/commits/e061d9be07012cc5dcd1c675016a960c9e90db2f
+* time: 2017-01-21T10:25:51Z
+* content: allow multiple postfix templates with the same name by combining them…
+* codeUrl: github.com/JetBrains/intellij-community/pull/505/commits/722b912f80fd8ed08777c3d874c775ba8ffe4ce5
+* time: 2017-01-21T13:37:17Z
+* content: improved the custom postfix templates and the combined postfix templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/505/commits/aec5ceb6c924b64b7b9021790860a2010fc149b5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-01-21T14:12:06Z
+* content: I created a repository for collecting postfix templates for different user groups: https://github.com/xylo/intellij-postfix-templates
+* time: 2017-01-21T14:12:06Z
+* content: I started with a template file for Scala users, but it's probably useful for classical Java developers as well.
+* time: 2017-01-23T10:46:12Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2017-01-23T13:04:50Z
+* content: @xylo Hi. Thank you for the contribution. I think the better solution is extract the code as external plugin. It will be a good compromise because we cannot accept the pull-request right now: the most important (and the most difficult) part of the feature is user-friendly UI. Also using the file '$HOME/.ideaPostfixTemplates' is not acceptable solution I suggest to create 'PersistentStateComponent' for storing the path.
+* time: 2017-01-24T09:07:16Z
+* content: @kirillk I tried to submit the CLA form with my data, but I got the following error: "Something is wrong. Please, try again later or reach out to us via contribute@jetbrains.com"
+* time: 2017-01-24T09:07:16Z
+* content: @anstarovoyt Good answer!  I think I would suggest the same in your situation. :) So I have to options: Make the adaptations UI friendly or export it into a plugin.  Since both solutions will take some time, I would prefer to implement the UI stuff and extend this pull request in the next weeks.  Before I start I will post a concrete proposal here so that we can discuss it.
+* time: 2017-01-24T09:07:16Z
+* content: By the way thanks for the your tips regarding the storing path.  I was already searching for something like this, but couldn't find it so fast.
+* time: 2017-01-24T13:51:56Z
+* content: @xylo I've just tried to sign a CLA, and it worked for me. At what stage did it fail? Right after you filled the web form, or after you've signed the online pdf document? Could you please try again and send me (kirill.likhodedov@jetbrains.com) a screenshot of the error if it still fails? We'd like to understand the issue and fix it. Thanks!
+************************************************************************

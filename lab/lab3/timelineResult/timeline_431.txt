@@ -1,0 +1,23 @@
+************************************************************************
+* id: 431
+* requirement: IDEA-157902 FIX - Duplicated git items in "Find Action"
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-22T13:59:02Z
+* content: IDEA-157902 FIX - Duplicated git items in "Find Action"
+* codeUrl: github.com/JetBrains/intellij-community/pull/431/commits/fb593ec7c8db603baa401336c2e0f0f346cc8d12
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-22T14:02:59Z
+* content:  No description provided. 
+* time: 2016-07-27T13:20:24Z
+* content: Thanks for the pull request. However, it looks that there is a better fix for the issue with "Open on GitHub" actions. Instead of adding an unnecessary word to the action title, we merged two actions into a single action: 5c5db80
+* time: 2016-07-27T13:20:24Z
+* content: As per "Git" action group, I don't think that naming one of the groups "Git Actions" will solve the problem. It will help with duplication, but won't help with confusion. Unfortunately, currently it is not clear what can be done with these groups. It might help if a hint would be displayed at the right of each group, as it is done for some other actions.
+************************************************************************

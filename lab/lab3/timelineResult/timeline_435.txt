@@ -1,0 +1,36 @@
+************************************************************************
+* id: 435
+* requirement: IDEA-90507 Close tabs to the right
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-08-07T19:10:09Z
+* content: Feature close tab to the left/to the right realization.
+* codeUrl: github.com/JetBrains/intellij-community/pull/435/commits/7d0af68d6a225e9e7547eed9cfa929c1de422e19
+* time: 2016-08-07T19:11:02Z
+* content: Merge remote-tracking branch 'upstream/master' into IDEA-90507
+* codeUrl: github.com/JetBrains/intellij-community/pull/435/commits/3dd6b198ed3e250d573f588bd9589bc858ee20a4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-08-07T19:15:17Z
+* content:  No description provided. 
+* time: 2016-08-11T13:10:23Z
+* content: Have you submitted a contributor license agreement? If not, please specify your real name (preferrably in commit data as well) and I'll send you an e-mail with the CLA to sign. Thanks.
+* time: 2016-08-11T15:37:09Z
+* content: No, I don't. I specified the real name in the GitHub profile.
+* time: 2016-08-12T16:29:47Z
+* content: Please check your inbox: I've just send there the CLA to sign. Thanks.
+* time: 2016-08-12T17:09:19Z
+* content: Completed.
+* time: 2016-08-12T19:32:12Z
+* content: Received, thanks.
+* time: 2016-08-12T20:32:46Z
+* content: Thanks you.
+* time: 2018-07-21T12:09:41Z
+* content: @vvv1559 please update the RP if you're still interested in. There's a plugin for that – https://github.com/tom-power/close-tab-left-right. cc @Vassiliy-Kudryashov
+************************************************************************

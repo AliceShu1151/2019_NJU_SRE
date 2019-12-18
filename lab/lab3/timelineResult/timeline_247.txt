@@ -1,0 +1,23 @@
+************************************************************************
+* id: 247
+* requirement: Fixed method clear in TestProjectBuilderLogger
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-27T10:07:58Z
+* content: Fixed method clear in TestProjectBuilderLogger
+* codeUrl: github.com/JetBrains/intellij-community/pull/247/commits/32d68e79adf589d54956b00327ec7cab0fd9267b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-27T10:15:09Z
+* content:  No description provided. 
+* time: 2015-03-02T15:36:10Z
+* content: Why do you need this? In fact myLogLines isn't cleared in 'clear' method intentionally, it allows us to get full log after performing several builds. Though I agree that the name isn't good.
+* time: 2015-03-03T10:02:09Z
+* content: In kotlin we have a test, which rebuilds project many times(over 150) and size of this log is very large(100 mb)
+************************************************************************

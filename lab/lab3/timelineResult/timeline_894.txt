@@ -1,0 +1,25 @@
+************************************************************************
+* id: 894
+* requirement: doc(testIntegration): Add some javadoc around test integration
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-21T21:59:08Z
+* content: doc(testIntegration): Add some javadoc around test integration
+* codeUrl: github.com/JetBrains/intellij-community/pull/894/commits/581ac4f68571e9e5088a794fd3d179f9132feb84
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-21T22:05:45Z
+* content: Hi,
+* time: 2018-10-21T22:05:45Z
+* content: I've spent quite some time trying to figure out how to plug on the test integration of Intellij, and the lack of documentation definitely frustrated me in the process, so I figured I'd open a small PR to improve it.
+* time: 2018-10-21T22:05:45Z
+* content: It's my first PR on this repo, I read the guidelines, but please let me know if anything is missing.
+* time: 2018-10-21T22:05:45Z
+* content: Cheers
+************************************************************************

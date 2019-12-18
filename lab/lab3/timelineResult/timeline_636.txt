@@ -1,0 +1,21 @@
+************************************************************************
+* id: 636
+* requirement: IDEA-180073 PlatformTestCase fails with "Code style settings damaged"
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-04T18:47:20Z
+* content: IDEA-180073 PlatformTestCase fails with "Code style settings damaged"
+* codeUrl: github.com/JetBrains/intellij-community/pull/636/commits/cdf6ddb18befea4c860f3ad9663eadc0bd9d7016
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-05T17:06:10Z
+* content: Unknown elements should be cloned during a "copyFrom" operation, otherwise reading code style settings from disk, then cloning, results in the cloned instance being different that the instance read from disk (if some elements are unknown).
+* time: 2017-10-05T17:06:10Z
+* content: This happens 100% of the time after running Android Studio from intellij because Android Studio adds elements that are unknown to the settings used in PlatformTestCase.
+************************************************************************

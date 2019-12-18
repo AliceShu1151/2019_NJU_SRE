@@ -1,0 +1,23 @@
+************************************************************************
+* id: 906
+* requirement: Suspend indexing while refreshing project structure
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-30T20:53:43Z
+* content: Suspend indexing while refreshing project structure
+* codeUrl: github.com/JetBrains/intellij-community/pull/906/commits/a5e838d590225c09276362d71d6ab1a806aec98e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-30T20:57:14Z
+* content: In my testing it actually improved the initial importing time from roughly 14 minutes to just 3 and a half minutes.
+* time: 2018-10-30T20:57:14Z
+* content: Also included pausing indexing while choosing projects to import. It's very handy with external.system.show.selective.import.dialog  to avoid unnecessary indexing.
+* time: 2018-10-30T20:57:14Z
+* content: to @vladsoroka
+************************************************************************

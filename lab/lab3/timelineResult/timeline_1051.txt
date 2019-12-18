@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1051
+* requirement: Add message bus topic for typing latency events
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-02T01:00:17Z
+* content: Add message bus topic for typing latency events
+* codeUrl: github.com/JetBrains/intellij-community/pull/1051/commits/b4f617b0ad1e064566392b00e6972484e456e2d4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-05T20:16:30Z
+* content: This allows plugins to accurately measure typing latency.
+* time: 2019-02-05T20:16:30Z
+* content: Also updates Latenciometer.kt to subscribe to this new topic.
+* time: 2019-02-06T11:37:51Z
+* content: Merged manually. Thanks!
+************************************************************************

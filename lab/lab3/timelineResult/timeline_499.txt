@@ -1,0 +1,21 @@
+************************************************************************
+* id: 499
+* requirement: IDEA-165963 Gradle run configurations cannot be profiled
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-27T16:07:19Z
+* content: IDEA-165963 Gradle run configurations cannot be profiled
+* codeUrl: github.com/JetBrains/intellij-community/pull/499/commits/d1a20543c2fa7adcb6ff71933b47602983d96ce2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-27T16:09:16Z
+* content: Provide a way for executors other than the debugging executor to set VM parameters that are patched into the gradle Java task. This is solved with a special key that can be set in the user data of the ExecutionEnvironment.
+* time: 2017-03-17T10:59:36Z
+* content: Changes look good, thank you! I've merged it for 2017.2 release. However I've also renamed field DEBUGGER_SETUP_KEY and parameter debuggerSetup => JVM_AGENT_SETUP_KEY, jvmAgentSetup. And added the validation to avoid misusage of the api: all JVM arguments should be started with "-agentlib:", "-agentpath:" or "-javaagent:"
+************************************************************************

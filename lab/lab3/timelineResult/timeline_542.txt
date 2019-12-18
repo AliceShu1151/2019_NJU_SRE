@@ -1,0 +1,27 @@
+************************************************************************
+* id: 542
+* requirement: IDEA-140862 Extend DefaultMutableTreeNode to support restoring tree selection.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-08T20:26:57Z
+* content: Extend DefaultMutableTreeNode to support restoring tree selection.
+* codeUrl: github.com/JetBrains/intellij-community/pull/542/commits/da358ce57d8986e18e897c7f664265a80feffb31
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-08T20:32:05Z
+* content: DefaultMutableTreeNode does not implement equals() and hashCode(). Because of that it is impossible to re-apply stored selection after re-building tree model.
+* time: 2017-04-08T20:32:05Z
+* content: A new sub-class implements these methods (delegating the calls to "user object"). This fixes the selection reset when changing the filter in "Version Control > Repository" view.
+* time: 2017-04-14T02:24:37Z
+* content: Would not recommend doing the lambda expression instead of just the anonymous interfaces, as adding lambda's would essentially make those classes java 8 dependent which might not be for the best.
+* time: 2017-04-14T16:40:32Z
+* content: @Notoh Why is it not for the best? The vcs-impl module is already fully under Java 8.
+* time: 2017-04-14T18:51:12Z
+* content: Lambdas won't add anything other than slight readability (at least in this instance alone) which can sacrifice compatibility if this were to be used with java 7 or earlier. Because it is java 8 already, at the end of the day its just semantics about the principal of good practice.
+************************************************************************

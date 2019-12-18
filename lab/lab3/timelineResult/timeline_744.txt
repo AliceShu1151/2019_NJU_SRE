@@ -1,0 +1,42 @@
+************************************************************************
+* id: 744
+* requirement: Allow "Switch after create" when creating branch from repository location in SVN plugin
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-24T19:19:48Z
+* content: The common scenario where I work is to create a branch from repository location (i.e. trunk) in one commit and then in a separate one commit the changes. Unfortunately the option to automatically switch after create is not available when branching from repository location, which forces us to switch manually, which can be easily forgotten and leads to accidental commits to wrong branch. This pull requests makes this checkbox available for both options.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-24T20:12:40Z
+* content: Allowed "Switch after create" when creating branch from repository lo…
+* codeUrl: github.com/JetBrains/intellij-community/pull/744/commits/0e36a97df73f5f3704a3238a8e5edbef39b7c249
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-13T18:36:45Z
+* content: Consider the following case:
+* time: 2018-03-13T18:36:45Z
+* content: Note that working copy location and repository location will be set according to the file in the editor.
+* time: 2018-03-13T18:36:45Z
+* content: My concern is that the user could set necessary repository location and "copy to" parameters - so the correct branch will be created. But "switch after create" option will switch only that one file (opened in the editor). And this could be confusing.
+* time: 2018-03-13T18:36:45Z
+* content: Probably we should disable this checkbox for some cases, or detect working copy path to switch (based on repository location) and specify it explicitly in the checkbox text, or something else. What do you think?
+* time: 2018-05-13T14:16:00Z
+* content: I'm sorry to react so late, but as I got assigned to another team at work and stopped using SVN, I had little motivation to pursue it futher. (Un)fortunately I am back to SVN, so I found some time to work on it.
+* time: 2018-05-13T14:16:00Z
+* content: I added a text field which informs the user which working copy location will be switched when selecting the checkbox. When choosing repository location as a source, it displays the file which was chosen when opening the "Create branch or tag" popup. I hope the typical case for this functionality is to branch & switch whole project (when it's clear what will happen) and in the other cases the provided information should alleviate the possible confusion. What do you think? ;)
+* time: 2018-07-30T10:51:42Z
+* content: Any progress with this pull request? My team has same problem.
+* time: 2018-07-30T10:57:48Z
+* content: My team is also interested. Is it going to be included?
+************************************************************************

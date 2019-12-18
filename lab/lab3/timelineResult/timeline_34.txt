@@ -1,0 +1,52 @@
+************************************************************************
+* id: 34
+* requirement: CoreJavaFileManager.findClass: properly resolve $ in inner class names
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-02-06T13:09:25Z
+* content: CoreJavaFileManager.findClass: properly resolve $ in inner class names
+* codeUrl: github.com/JetBrains/intellij-community/pull/34/commits/c78c66d5afd961dbd8cea95db9ceb07771e717f9
+* time: 2013-02-06T13:39:35Z
+* content: CoreJavaFileManager.findClass: properly resolve $ in inner class names
+* codeUrl: github.com/JetBrains/intellij-community/pull/34/commits/13d9eb8b3580d0e03f0900cb64be183c85e9dabb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-02-06T13:44:43Z
+* content:  No description provided. 
+* time: 2013-02-06T13:53:25Z
+* content: Would be really great to have a test or at least a link to an issue showing how the current logic resolves it improperly.
+* time: 2013-02-06T14:00:43Z
+* content: For Nested.Inner$ CoreJavaFileManager.findClassInClasspathRoot returns null: public class Nested { public class Inner$ {}
+* time: 2013-02-06T14:00:43Z
+* content: }
+* time: 2013-02-06T14:00:43Z
+* content: http://youtrack.jetbrains.com/issue/KT-3324
+* time: 2013-02-06T14:18:10Z
+* content: I would really appreciate a test. The logic looks correct to me, but it's rather convoluted, and it would be much easier to verify with a test.
+* time: 2013-02-06T15:19:27Z
+* content: What is the best way to provide test: by comment or add it to pull request?
+* time: 2013-02-06T15:22:32Z
+* content: Of course it's better to add it to the pull request.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-02-06T15:27:22Z
+* content: Test for pull request "CoreJavaFileManager.findClass: properly resolv…
+* codeUrl: github.com/JetBrains/intellij-community/pull/34/commits/5bf812a43db6afad3eed2590d5d2da0c74a595ff
+* time: 2013-02-06T15:48:22Z
+* content: Test for pull request "CoreJavaFileManager.findClass: properly resolv…
+* codeUrl: github.com/JetBrains/intellij-community/pull/34/commits/3e24970835f735c42c0bc2f72399c4a748e868be
+* time: 2013-02-07T06:58:52Z
+* content: Small refactoring
+* codeUrl: github.com/JetBrains/intellij-community/pull/34/commits/50fbff7668df8c454d6a1dd1439b3d576f416e8a
+************************************************************************

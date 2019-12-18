@@ -1,0 +1,23 @@
+************************************************************************
+* id: 566
+* requirement: IDEA-73669 Allow branch to have longer name in status bar
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-28T01:34:28Z
+* content: IDEA-73669 Allow branch to have longer name in status bar
+* codeUrl: github.com/JetBrains/intellij-community/pull/566/commits/5f7ecf49c890dbdc84fb9d2720359c0c24384ab9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-28T01:35:19Z
+* content: This change allows to have a much longer branch name in status bar. This is not perfect but working solution.
+* time: 2017-05-04T10:17:44Z
+* content: The issue with this fix is that it doesn't take the IDE window width into account. So if the window is narrow, and the branch name is very long, there is very little space left for the status bar messages and background tasks.
+* time: 2017-05-04T13:00:43Z
+* content: Kirill, previous implementation did not take this into account either. Look at my status bar:  If you give me some recommendations how can I figure out building IDEA on Mac, I can spend some time on weekend to extract max length of branch name into settings.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1226
+* requirement: Remove final keyword from IdeTooltipManager
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-28T21:00:00Z
+* content: Remove final keyword from IdeTooltipManager
+* codeUrl: github.com/JetBrains/intellij-community/pull/1226/commits/a7f2480116b11b91377a7a7390110dc7adad8562
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-29T19:00:36Z
+* content: This was added incidentally by commit 977a1d1 breaking tests that mock the class.
+* time: 2019-11-12T02:00:02Z
+* content: @develar?
+* time: 2019-11-12T11:14:35Z
+* content: Mockito is able to mock final classes, please see files likes org.mockito.plugins.MockMaker (there are two in android repo).
+************************************************************************

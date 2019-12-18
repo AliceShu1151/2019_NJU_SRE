@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1055
+* requirement: IDEA-206930 Don't complain when renaming branch to itself
+the requirement of 1055 only has implements, no discussion.

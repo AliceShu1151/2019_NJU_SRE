@@ -1,0 +1,21 @@
+************************************************************************
+* id: 911
+* requirement: removed deprecated option --recompile-scripts
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-09T21:28:57Z
+* content: removed deprecated option --recompile-scripts
+* codeUrl: github.com/JetBrains/intellij-community/pull/911/commits/1724c351e482d07f0b6d5437f83b19e2f2d39f9a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-03T19:00:30Z
+* content: Gradle 5.0 has deprecated --recompile-scripts see gradle/gradle#1425
+* time: 2018-11-03T19:00:30Z
+* content: Gradle considers that it is useless to have such flags as caching should always be correct.
+************************************************************************

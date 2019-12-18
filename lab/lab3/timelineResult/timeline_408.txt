@@ -1,0 +1,23 @@
+************************************************************************
+* id: 408
+* requirement: Remove a special Windows-only call to WinPtyProcess.destroy
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-06-02T05:28:28Z
+* content: Remove a special Windows-only call to WinPtyProcess.destroy
+* codeUrl: github.com/JetBrains/intellij-community/pull/408/commits/cc581fa2e7f0e265cb1fae86dda91541e8a4ed22
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-03T09:36:20Z
+* content: This code isn't necessary anymore.  The agent process automatically exits once it flushes the last of the scraped CONOUT/CONERR into its output pipes (WINPTY_SPAWN_FLAG_EXIT_AFTER_SHUTDOWN).  We wouldn't want to kill the agent before that point, because we'd generally lose data.
+* time: 2016-06-03T09:36:20Z
+* content: Even without WINPTY_SPAWN_FLAG_EXIT_AFTER_SHUTDOWN, it shouldn't be necessary anymore to kill the agent.  Once all (one or both) of the WinPtyProcess's WinPTYInputStream instances have been closed, the WinPty object is closed, which calls winpty_free, which kills the agent.
+* time: 2016-06-03T09:36:20Z
+* content: Analogously, with UnixPtyProcess, the pty master FDs are closed when the input streams are closed.
+************************************************************************

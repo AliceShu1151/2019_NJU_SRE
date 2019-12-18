@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1145
+* requirement: Skip/ignore disposed modules in the project view.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-05-26T16:51:31Z
+* content: Skip/ignore disposed modules in the project view.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1145/commits/4be20d5b54b8c013180a496d1a23f422c5903f67
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-05-26T17:07:35Z
+* content: The project view is updated asynchronously via a MergeQueue and invokeLater calls. Therefore its nodes may for short periods of time refer to disposed modules. If it happens that such a node is accessed before it is updated it typically results in a crash.
+* time: 2019-05-26T17:07:35Z
+* content: This change fixes several most common cases where this type of crash can happen. The fix is similar to how disposed modules are already handled in the same classes.
+* time: 2019-05-26T17:07:35Z
+* content: Bug: 133469297 Test: n/a (manually by increasing MergeQueue update time to 10 seconds) Change-Id: I0b1d247990b8d491c744249a02d2ef12897a1179
+* time: 2019-06-19T12:42:40Z
+* content: Could someone take a look at this?
+************************************************************************

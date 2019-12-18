@@ -1,0 +1,61 @@
+************************************************************************
+* id: 26
+* requirement: IDEA-96000 + IDEA-96001
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-11-27T17:52:44Z
+* content: [GDSL] Add missing documentation to bindable and vetoable
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/dec7ff5db9ae2ec1ac00dc7614e50e458df9542a
+* time: 2012-11-27T17:53:26Z
+* content: [GDSL] add dsl definitions for missing AST transformations
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/3393bb2d1ce4fe99fb255f8ae4b3f4782226c8cd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-11-27T19:29:05Z
+* content: Includes fixes for
+* time: 2012-11-27T19:29:05Z
+* content: All contributions were made during Hackergarten meetings :-)
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-11-27T19:34:05Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/cd2c74a41f0246055fa8bc6213580e4f7fb30cdc
+* time: 2012-11-28T16:35:29Z
+* content: IDEA-96001 Remove extra parenthesis on AutoExternalize.gdsl
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/14425fe15b306f8a1b54dc42f17e2b7e249e81ee
+* time: 2012-11-28T16:36:16Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/2492210a22aec07b2f27c899f0871194bd193c6e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-11-28T16:46:10Z
+* content: autoExternalize.gdsl has an extra parenthesis
+* time: 2012-11-28T16:46:10Z
+* content: https://github.com/aalmiray/intellij-community/commit/14425fe15b306f8a1b54dc42f17e2b7e249e81ee
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-01-13T10:58:53Z
+* content: Remove redundant GDSLs, they are covered by AutoExternalizeContributo…
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/d2f46f6ed530306269d27caf7db107be99273631
+* time: 2013-01-13T11:06:12Z
+* content: Avoid potential NPEs and AIOOBEs
+* codeUrl: github.com/JetBrains/intellij-community/pull/26/commits/989396e6be08a51db9ae39297fdaa575d291844b
+************************************************************************

@@ -1,0 +1,4 @@
+************************************************************************
+* id: 28
+* requirement: IDEA-94184 hardcoded value ChooseByNameBase#REBUILD_DELAY moved to registry.properties
+the requirement of 28 only has implements, no discussion.

@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1238
+* requirement: Implement serialization bindings for byte and char primitives
+the requirement of 1238 only has implements, no discussion.

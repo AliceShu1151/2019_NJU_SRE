@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1170
+* requirement: Bump lodash.defaultsdeep from 4.6.0 to 4.6.1 in /platform/built-in-server/start-up-visualizer
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-11T14:52:59Z
+* content: Bump lodash.defaultsdeep
+* codeUrl: github.com/JetBrains/intellij-community/pull/1170/commits/d5aea7f524f0176c15cea0f6469aa607960b90b5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-11T14:53:00Z
+* content: Bumps lodash.defaultsdeep from 4.6.0 to 4.6.1.
+* time: 2019-07-11T14:53:00Z
+* content: 
+* time: 2019-07-11T14:53:00Z
+* content: Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting @dependabot rebase.
+* time: 2019-07-11T14:53:00Z
+* content: You can trigger Dependabot actions by commenting on this PR:
+************************************************************************

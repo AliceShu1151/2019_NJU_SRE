@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1224
+* requirement: Fix bug: environment variables of before run task can not be saved to…
+the requirement of 1224 only has implements, no discussion.

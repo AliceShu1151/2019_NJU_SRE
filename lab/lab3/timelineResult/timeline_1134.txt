@@ -1,0 +1,31 @@
+************************************************************************
+* id: 1134
+* requirement: IDEA-212454 Find usages does not detect generated accessors
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-05-10T14:17:18Z
+* content: Fix IDEA-212454 Find usages does not detect generated boolean accesso…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1134/commits/cb382a5acba132e1cad6cbc3a9c3bb44f0dcc6ae
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-05-10T14:20:17Z
+* content: Fix IDEA-212454 Find usages does not detect generated boolean accessors correctly on find field usages
+* time: 2019-05-10T14:20:17Z
+* content: For the following boolean fields
+* time: 2019-05-10T14:20:17Z
+* content: IntelliJ now additionally detects:
+* time: 2019-05-10T14:20:17Z
+* content: Getter: isActive() Setter: setActive()
+* time: 2019-05-22T19:27:13Z
+* content: A test please?
+* time: 2019-05-24T09:00:29Z
+* content: @akozlova Hey Anna. Thanks for taking a look. How can a test check whether or not the "search for accessor" popup shows?
+* time: 2019-05-24T10:02:25Z
+* content: I guess, it's easier to check that the search for accessors was performed, accepting the choice com.intellij.find.findUsages.JavaFindUsagesHandler#askShouldSearchAccessors in case of ApplicationManager.getApplication().isUnitTestMode() or similar
+************************************************************************

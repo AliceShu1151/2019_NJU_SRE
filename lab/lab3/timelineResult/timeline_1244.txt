@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1244
+* requirement: Hides device selection from the configuration menu
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-21T18:04:27Z
+* content: Hides device selection from the configuration menu
+* codeUrl: github.com/JetBrains/intellij-community/pull/1244/commits/9bfa6dd0b408f86e84c38fc992df22d2430ef7fa
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-12T19:28:42Z
+* content: Android Studio externally manages execution targets, so we hide all execution target information from the configuration combo box.
+* time: 2019-11-12T19:28:42Z
+* content: We do this by adding support for externally managed targets, and filter out UI elements that match externally managed targets.
+* time: 2019-11-12T19:30:36Z
+* content: @bulenkov
+************************************************************************

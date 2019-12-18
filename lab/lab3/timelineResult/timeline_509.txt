@@ -1,0 +1,25 @@
+************************************************************************
+* id: 509
+* requirement: Update from Original
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-08-23T16:59:56Z
+* content: Merge pull request #1 from JetBrains/master
+* codeUrl: github.com/JetBrains/intellij-community/pull/509/commits/56d3caf1f0bafb0605e5cdba9a0589e5ec4cb089
+* time: 2017-01-05T11:10:42Z
+* content: Merge pull request
+* codeUrl: github.com/JetBrains/intellij-community/pull/509/commits/1ecbf06b817ce7173af7224f866792f38e10a264
+* time: 2017-01-19T05:23:57Z
+* content: Merge pull request
+* codeUrl: github.com/JetBrains/intellij-community/pull/509/commits/7627751b0318bcfb5f749954c8834dc16ed38967
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-02-03T04:29:35Z
+* content: Update from Original
+************************************************************************

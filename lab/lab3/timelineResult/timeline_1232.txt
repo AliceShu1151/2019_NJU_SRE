@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1232
+* requirement: Through TypeMigrationProcessor, allow to disable TypeMigrationLabeler warning
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-05T15:51:05Z
+* content: Through TypeMigrationProcessor, allow to disable TypeMigrationLabeler…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1232/commits/18d232309ecee7c8c6de36b68af57b37bc873663
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-05T15:53:32Z
+* content: I am building a massive refactoring process making use of TypeMigrationProcessor. Each time the number of roots exceeds 10, IntelliJ displays a warning that I must acknowledge.
+* time: 2019-11-05T15:53:32Z
+* content: This PR allows to disable this warning.
+************************************************************************

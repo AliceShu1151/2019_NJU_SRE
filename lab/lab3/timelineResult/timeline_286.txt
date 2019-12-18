@@ -1,0 +1,49 @@
+************************************************************************
+* id: 286
+* requirement: Allow using more than one color in structure view nodes
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-08T13:34:44Z
+* content: Allow using more than one color in structure view nodes
+* codeUrl: github.com/JetBrains/intellij-community/pull/286/commits/ba265306c265206a45549ca0f44f79c3658772f1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-08T13:38:14Z
+* content: This patch allows using more than one color in ItemPresentations used in the structure view, for example to match the syntax highlighting in the editor.
+* time: 2016-05-31T14:36:35Z
+* content: Are you guys are interested in this PR? If so, I can update it.
+* time: 2016-05-31T17:48:39Z
+* content: This idea is good, but...
+* time: 2016-05-31T17:48:39Z
+* content: ItemPresentation is a simple representation, which includes primary text, secondary text and icon only. All colors are retrieved automatically according to selected color scheme and component state.
+* time: 2016-05-31T17:48:39Z
+* content: ColoredItemPresentation adds an ability to set a text color, but it uses a special key to retrive it from selected color scheme.
+* time: 2016-05-31T17:48:39Z
+* content: You suggest to return a ColoredFragment from the Tree API, which allows people to set colors directly. So many people will not take care of supporting different color schemes.
+* time: 2016-05-31T17:48:39Z
+* content: I think that interface should return something like List<Pair<String,TextAttributesKey>>. Also, the documentation should describe what should we do with methods of the super interface. Should we ignore all the methods from ItemPresentation? Should we extend ColoredItemPresentation and use our list as addtitional text fragments to the primary colored fragment?
+* time: 2016-05-31T17:48:39Z
+* content: Also we need to test this functionality in different use cases.
+* time: 2016-05-31T17:53:04Z
+* content: Sorry, the following part of the comment was considered as HTML and gone:
+* time: 2016-05-31T17:53:04Z
+* content: I think that interface should return something like List of Pair of String,TextAttributesKey.
+* time: 2016-05-31T18:57:57Z
+* content: Thanks for your feedback. Using TextAttributesKey seems like a good idea, I'll try to improve the PR this week.
+* time: 2016-05-31T18:57:57Z
+* content: I think getLocationString() and getIcon(boolean) are still useful and should not be ignored, only getPresentableText() will not be used because the results of getColoredFragments() will be used instead. Since this method is already @Nullable, I suppose I can override it in MulticoloredItemPresentation to add a Javadoc that clarifies this.
+* time: 2016-05-31T18:57:57Z
+* content: ColoredItemPresentation can still be used independently of MulticoloredItemPresentation to add an easier way to force a single color.
+* time: 2018-07-21T14:51:35Z
+* content: @bjansen, please rebase the PR, cc @SergeyMalenkov.
+* time: 2018-10-08T19:33:09Z
+* content: Actually I don't have this branch anymore, I will open a separate pull request with my updated changes.
+* time: 2018-10-08T20:15:25Z
+* content: @SergeyMalenkov what about something like this?
+************************************************************************

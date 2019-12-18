@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1274
+* requirement: PY-14631 Use IPython config file in Python Console
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-12-13T07:31:47Z
+* content: PY-14631 Use IPython config file in Python Console
+* codeUrl: github.com/JetBrains/intellij-community/pull/1274/commits/29b41da382e03cc65fd8b5b038f113b796a22c16
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-12-13T07:40:03Z
+* content: @Elizaveta239 I seem to solve the problem Could you help me examine if this PR indeed makes PyCharm load IPython config flie and possibly break other things?
+************************************************************************

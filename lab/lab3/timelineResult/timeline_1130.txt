@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1130
+* requirement: Use DarculaTableSelectedCellHighlightBorder
+the requirement of 1130 has no implements.

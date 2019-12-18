@@ -1,0 +1,4 @@
+************************************************************************
+* id: 192
+* requirement: BasicStepMethodFilter.getMethodName() extracted to the separate interface
+the requirement of 192 only has implements, no discussion.

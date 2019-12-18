@@ -1,0 +1,41 @@
+************************************************************************
+* id: 217
+* requirement: [Decompiler] Don't include redundant casts even when castAlways is true.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-10-24T11:33:11Z
+* content: [Decompiler] Don't include redundant casts even when castAlways is true.
+* codeUrl: github.com/JetBrains/intellij-community/pull/217/commits/73586914da17adc6436514b2e4cace12f1cd5386
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-10-24T11:34:41Z
+* content: In the previous fernflower binaries, this was the case, however inexplicably this code has been absent in the source since day one. Adding this check prevents instances of duplicate casts such as ((String) ((String) "test")) or (Type) objectOfType in method calls, which is completely redundant.
+* time: 2014-10-24T11:34:41Z
+* content: @trespasserw as mentioned previously I currently maintain a forked fernflower based on modified bytecode from the last obfuscated released. I figure I'd start pull requesting the useful stuff upstream, so here is a start!
+* time: 2014-10-24T11:43:55Z
+* content: CLA has been signed and sent.
+* time: 2014-10-24T11:43:55Z
+* content: Thanks
+* time: 2014-10-24T12:10:10Z
+* content: Agreement received, thanks.
+* time: 2014-10-24T19:44:32Z
+* content: Thanks for the patch, but I do believe that the problem is rather at a call site, where a parameter is considered to be ambiguous.
+* time: 2014-10-24T20:25:15Z
+* content: Doing it at the call site would mean adding fixes wherever this method is called. As noted above the obfuscated binary release of fernflower from several years back contains this code. I do believe this is the proper fix, as there are no circumstances where a redundant cast to the same type is required, it makes no sense.
+* time: 2014-10-24T21:36:18Z
+* content: There is only one usage of the method where the flag may be true - it's about handling the situations where a missed cast may result in calling wrong overloaded method. So, the cost of mistake here is higher than impaired readabilty because of one extra cast.
+* time: 2014-10-24T21:43:48Z
+* content: There cannot physically be a mistake though:
+* time: 2014-10-24T21:43:48Z
+* content: Can under NO circumstances cause issues / side effects and therefore should be removed. Its a simple check:
+* time: 2014-10-24T21:50:17Z
+* content: If you don't belive me check bB.a(LaJ;LQ;Ljava/lang/StringBuilder;IZZ)Z of the fernflower binary release.
+* time: 2014-11-05T10:10:32Z
+* content: Fixed at the call site.
+************************************************************************

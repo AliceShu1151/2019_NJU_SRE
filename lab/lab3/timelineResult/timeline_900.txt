@@ -1,0 +1,51 @@
+************************************************************************
+* id: 900
+* requirement: Fix JSON index performance
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-25T18:12:52Z
+* content: Avoid using Psi-tree in JsonSchemaFileValuesIndex.
+* codeUrl: github.com/JetBrains/intellij-community/pull/900/commits/58a15d76be759154f94de02438d39737d3d5f28b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-25T18:26:04Z
+* content: The existing implementation of the JsonSchemaFileValuesIndex relies on psi trees to extract just two top level properties $id and $schema. On projects having multiple relatively large JSON files it often takes substantial time. Many larger JSON files come in JARs for some popular third party libraries.
+* time: 2018-10-25T18:26:04Z
+* content: This PR replaces the implementation of map() function with a Lexer based extraction.
+* time: 2018-10-25T18:26:04Z
+* content: Apart from the submitted unit tests, it has been tested that the editor properly recognises the JSON schema referred from a JSON file.
+* time: 2018-10-29T08:56:05Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-10-29T09:24:08Z
+* content: Hi Kirill, I believe it is covered by the agreement between companies.
+* time: 2018-10-29T09:26:13Z
+* content: Yes, absolutely. Didn't notice that you're from Google. ;)
+* time: 2018-10-29T10:08:14Z
+* content: Thanks a lot for the improvement! There's one place that can be improved further. If you agree with that and can fix it, I'll wait before merging. If not, then I'll merge as is, because this PR already significantly optimizes the performance.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-29T11:53:31Z
+* content: Stop parsing scanning on both properties found.
+* codeUrl: github.com/JetBrains/intellij-community/pull/900/commits/e077a9079c8247b281d5d37ab324370b9c6fccc4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-29T11:58:38Z
+* content: Thank you for the fast update!
+* time: 2018-11-08T21:42:01Z
+* content: @zhuravlikjb  I don't see the commits in master (anywhere in github repo). Did it break any tests ?
+* time: 2018-11-09T09:55:14Z
+* content: @yuriy-solodkyy Sorry, I accepted the PR here, but not to our main repository, and so it was synced back without the commits. Fixed, now the commits will appear here in about an hour. Thanks a lot for reminding!
+************************************************************************

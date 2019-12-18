@@ -1,0 +1,21 @@
+************************************************************************
+* id: 573
+* requirement: Fix error when using behave 1.2.6dev
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-16T10:54:46Z
+* content: Fix error when using behave 1.2.6dev
+* codeUrl: github.com/JetBrains/intellij-community/pull/573/commits/159470d4676d224746f63aeb2e5cfd9d40a32275
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-16T15:20:18Z
+* content: If you run behave tests from PyCharm using behave 1.2.6-dev (installed from master branch), an error message is shown in console:
+* time: 2017-05-16T15:20:18Z
+* content: Behave ModelRunner class has been updated few months ago and now log_capture is located inside capture_controller. This commit contains the update: behave/behave@82aabc1#diff-6b74cab5955bbc0f7bce44cca7cfd975R435.
+************************************************************************

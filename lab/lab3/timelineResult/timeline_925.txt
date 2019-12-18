@@ -1,0 +1,4 @@
+************************************************************************
+* id: 925
+* requirement: IDEA-202665 changed order of method resolutions for quick documentation
+the requirement of 925 has no implements.

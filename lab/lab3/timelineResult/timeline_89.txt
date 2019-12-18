@@ -1,0 +1,23 @@
+************************************************************************
+* id: 89
+* requirement: Custom "Malformed format string" inspection
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-08-20T18:45:55Z
+* content: Custom "Malformed format string" inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/89/commits/e13cd7200ad58f8908ca36e17c3cafd7f62f93ee
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-08-20T19:31:54Z
+* content: Allow a user to add custom Classes and Methods to check for malformed string inspections. IDEA-75416
+* time: 2013-08-26T09:45:57Z
+* content: Jason, have you submitted a contributor agreement? If not, could you please download the CLA from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and send to contribute@jetbrains.com? Thanks!
+* time: 2013-08-26T19:56:20Z
+* content: I sent it via fax last week but also just sent an email this morning.
+************************************************************************

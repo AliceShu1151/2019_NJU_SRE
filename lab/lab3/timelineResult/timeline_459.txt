@@ -1,0 +1,21 @@
+************************************************************************
+* id: 459
+* requirement: IDEA-141243 added support for ant-contrib try/catch-task
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-10-27T13:00:58Z
+* content: IDEA-141243 added support for ant-contrib try/catch-task
+* codeUrl: github.com/JetBrains/intellij-community/pull/459/commits/7d69c0d25551e2631fc947e222fb16b983c11f3c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-10-27T13:02:31Z
+* content: when exception is thrown in try block it'll get logged as verbosive message
+* time: 2016-10-27T13:02:31Z
+* content: Signed-off-by: Martin Zdarsky-Jones zdary@zdary.cz
+************************************************************************

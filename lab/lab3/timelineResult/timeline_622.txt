@@ -1,0 +1,54 @@
+************************************************************************
+* id: 622
+* requirement: Add copy URL to clipboard for Gist creation dialog in GitHub plugin
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-30T19:52:03Z
+* content: Adds an additional check box in the Create Gist dialog to copy the URL to clipboard. 
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-31T09:47:20Z
+* content: added copy URL to clipboard for Gists in GitHub plugin
+* codeUrl: github.com/JetBrains/intellij-community/pull/622/commits/d7feab8277dc56d06017ad2faf26aa39d9902f31
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-09-04T10:12:22Z
+* content: Hi, Thanks for the submission.
+* time: 2017-09-04T10:12:22Z
+* content: How do you think, wouldn't it be better to replace these checkboxes with notification actions? 
+* time: 2017-09-04T16:15:11Z
+* content: Ah, I knew there was a clipboard manager, just couldn't find it, thanks!
+* time: 2017-09-04T16:15:11Z
+* content: As for the notification actions suggestion, I do agree that it works a lot cleaner than adding an additional check box to the Gist creation dialog box, but I do personally like having it persistently remember the action. Seeing that the Open in browser action has both a check box and notification action would it be ok to do the same with the copy to clipboard action and have both a check box and notification action?
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-09-04T16:27:02Z
+* content: use CopyPasteManager for copying content to clipboard
+* codeUrl: github.com/JetBrains/intellij-community/pull/622/commits/0954f7c35c822a89c61ca21b461eb06c3d847e89
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-09-12T08:36:10Z
+* content: Hi! If you want this option to be persistently remembered maybe it is better to move the setting to VCS -> GitHub settings page?
+* time: 2017-09-17T13:23:40Z
+* content: It's kind of something I want to be like the open in browser action. If I selected it last time I want it to remember, and if I didn't last time I don't want it to the next time. It's not something I really want hidden in a settings page, I'd rather have it out front when I'm about to upload.
+* time: 2018-07-21T11:35:13Z
+* content: @h1nk please rebase the PR, cc @AMPivovarov.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1151
+* requirement: Missing remote repository for org.jetbrains:markdown:0.1.31
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-05T14:05:17Z
+* content: jarRepositories.xml: Missing maven repo for JetBrain's markdown library
+* codeUrl: github.com/JetBrains/intellij-community/pull/1151/commits/16716d7d3dbdcaf2381e95d6265f895dd701abd2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-05T14:10:28Z
+* content: I have updated the remote jar repositories to contain the repository for org.jetbrains:markdown:0.1.31
+* time: 2019-06-05T14:10:28Z
+* content: Otherwise, the build fails if the library is not yet in the local maven repository with this error:
+* time: 2019-06-05T14:10:28Z
+* content: 14:45	Repository library synchronization: No files were downloaded for org.jetbrains:markdown:0.1.31
+************************************************************************

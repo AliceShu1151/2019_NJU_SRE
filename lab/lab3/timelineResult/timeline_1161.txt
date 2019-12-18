@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1161
+* requirement: Optimize async stack frame loading
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-06-26T18:39:35Z
+* content: Optimize async stack frame loading
+* codeUrl: github.com/JetBrains/intellij-community/pull/1161/commits/b2bb6315f669444d384485113a19896380fc7dbb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-06-26T19:10:07Z
+* content: For each async stack frame we have to find a com.sun.jdi.Location corresponding to a given line number. To do this we called ReferenceType.locationsOfLine()---but that calls locationsOfLine() on all methods in the class. Since we already know the name of the method we're looking for, it's faster to first filter by method name, then call locationsOfLine() directly on the matching methods.
+* time: 2019-06-26T19:10:07Z
+* content: This optimization is less important when running on a local JVM, but very useful for remote debugging sessions. For example, when debugging on an Android device, this change reduces the time spent in findLocation() by 10x when loading 15 async stack frames, and the frames show up in the UI significantly faster.
+* time: 2019-06-26T19:10:07Z
+* content: Before: 2767 ms spent in findLocation() After: 247 ms spent in findLocation()
+* time: 2019-06-26T23:12:45Z
+* content: Actually, now that I think about it: is there any downside to just always returning a GeneratedLocation instance instead of trying to look up an existing Location by line number?
+* time: 2019-06-26T23:12:45Z
+* content: I.e., can we just remove the whole block that starts with "if (type != null && line >= 0) {" ?
+* time: 2019-06-27T11:23:05Z
+* content: thanks for the fix, always returning GeneratedLocation may work, though I'm slightly worried about the method field inside, current implementation of GeneratedLocation constructor takes the first matched by name. If we choose to always return GeneratedLocation, we should probably find the method more correctly matching the line number again and so gathering line number information, so it seems that there will be no real gain here.
+************************************************************************

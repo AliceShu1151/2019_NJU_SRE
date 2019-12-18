@@ -1,0 +1,23 @@
+************************************************************************
+* id: 705
+* requirement: Fix 'This function should be called while holding treeLock'.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-08T22:19:39Z
+* content: Fix 'This function should be called while holding treeLock'.
+* codeUrl: github.com/JetBrains/intellij-community/pull/705/commits/2799a90cf56ded8b4c254c0027189c88dffdad93
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-08T22:41:50Z
+* content: Fixes: bazelbuild/intellij#200 https://youtrack.jetbrains.com/issue/DEXP-102531 https://youtrack.jetbrains.com/issue/DEXP-103539 https://youtrack.jetbrains.com/issue/DEXP-131197 https://youtrack.jetbrains.com/issue/DEXP-138781 https://youtrack.jetbrains.com/issue/DEXP-166009 https://youtrack.jetbrains.com/issue/DEXP-184133 https://youtrack.jetbrains.com/issue/DEXP-185620 https://youtrack.jetbrains.com/issue/DEXP-88407 https://youtrack.jetbrains.com/issue/IDEA-141213
+* time: 2018-01-08T22:56:59Z
+* content: Original change by @shafirov.
+* time: 2018-07-21T11:21:43Z
+* content: cc @artemm-bochkarev, @bulenkov
+************************************************************************

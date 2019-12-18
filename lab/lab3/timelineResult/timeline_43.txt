@@ -1,0 +1,23 @@
+************************************************************************
+* id: 43
+* requirement: IDEA-66284 ant integration - "description" attribute for "attribute" ele...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-07T09:09:50Z
+* content: IDEA-66284 ant integration - "description" attribute for "attribute" …
+* codeUrl: github.com/JetBrains/intellij-community/pull/43/commits/0d0e5d81282d6153cddad84dfa6c719d3af1e01b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-07T09:18:29Z
+* content: ...ment under "macrodef" not recognized
+* time: 2018-12-19T12:54:56Z
+* content: Please update the PR.
+* time: 2018-12-19T12:56:21Z
+* content: Hello. I'm not interested in this PR anymore. Sorry
+************************************************************************

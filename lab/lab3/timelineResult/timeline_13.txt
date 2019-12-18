@@ -1,0 +1,174 @@
+************************************************************************
+* id: 13
+* requirement: Updated Bundled TestNG version to 6.5.2
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-07-27T12:48:38Z
+* content: Remove extra space in the "Click to browse" link
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/8069e0d3aafc0bedcf1c050a6ec4f9bd4a2e1a8f
+* time: 2012-07-27T12:58:56Z
+* content: Merge pull request
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/f1402616a3b23db8802a5571d0bcc4f2880d1f65
+* time: 2012-07-31T16:26:27Z
+* content: dumb-aware actions in keymap settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/7de44d020973f9f293b1eef59d8ace736dc7cfa4
+* time: 2012-07-31T17:55:09Z
+* content: None
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/018c0109422ccc22a1cae6a9c8dc082b4b85833d
+* time: 2012-07-31T20:33:21Z
+* content: IDEA-87599 - CloudFoundry integration - inherit search scope in debug…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/0f2493932605671f78dde5b9ee080da7c0e49d47
+* time: 2012-07-31T22:28:16Z
+* content: Merge branch 'master' of git.labs.intellij.net:idea/community
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/3a3620b064c1e5244aee8a5fdffeae6bbf7c05e7
+* time: 2012-08-01T09:26:20Z
+* content: resolving priority fixed
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/636b72cce979bdff28d9d8c87d20ece325deccaf
+* time: 2012-08-01T09:41:50Z
+* content: Merge branch 'master' of git.labs.intellij.net:idea/community
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/bc7d60e10d043b2edbf3e00cd64fcc2eeef16bf1
+* time: 2012-08-01T09:45:04Z
+* content: @Nullables
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/fe3ab1715da8d1c74c62c797bde60fb298d60bde
+* time: 2012-08-01T09:48:23Z
+* content: intention to create simple for-loop from foreach (IDEA-66487)
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/4ffa2bfa49787b971f408e72be81bd6ce7940b56
+* time: 2012-08-01T10:03:25Z
+* content: Merge branch 'master' of git.labs.intellij.net:idea/community
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/7eb03640d5ff74c81bab00135d31ded82cd69661
+* time: 2012-08-01T10:05:38Z
+* content: IDEA-70314 android extract style refactoring
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/8f36645feda3908db4a6abd21ea330984e88988a
+* time: 2012-08-01T10:19:39Z
+* content: IdeaWin32 lookup reordered (to support plugin developers)
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/0d816b4ee7492f4d1f7bfa1413eaabd0f222e765
+* time: 2012-08-01T10:25:01Z
+* content: introduce variable: correctly detect anchor to insert variable declar…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/10f113df0a147431f1d3ac916318963a0a0de62b
+* time: 2012-08-01T11:12:53Z
+* content: IDEA-89544 Make method public - LayoutCodeDialog#isDoNotAskMe
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/e53b5bf03494e8cdc9919d42d8e2e20e0d5dd9b4
+* time: 2012-08-01T11:12:57Z
+* content: IDEA-89481 Valid XML not recognized
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/9f3cab63862a6472d2be4f96a7c5eb23024b8bf3
+* time: 2012-08-01T11:15:23Z
+* content: dumb-aware ant target actions
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/bc64fb2615b80fb38a99561a0ca7b7e47940006f
+* time: 2012-08-01T11:25:08Z
+* content: Cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/8d76b37aeccf433fd17898fc35eada14961f654d
+* time: 2012-08-01T11:31:22Z
+* content: ExecutableValidator: log the fact of invalid executable
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/4e6790a243b1fc9b6af4a01905c6276764b3e6ba
+* time: 2012-08-01T11:32:10Z
+* content: [git] IDEA-89552 Scary error message on 'Enable VCS integration' if e…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/3db82524f283b7388b6c3c98e42cd5f530d530b4
+* time: 2012-08-01T11:38:17Z
+* content: Fix Already disposed IDEA-76765
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/4d5dbc2cc01dbb4e5b914a384e8872a830a2934c
+* time: 2012-08-01T11:40:53Z
+* content: Fix tree UI test for JDK7
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/f5f0f6d66406e7255d7b58366951647d03e753f5
+* time: 2012-08-01T12:30:31Z
+* content: GitHandler: no need to check for executable for each command. Better …
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/31beae3efadbbada9729ce9620783c5112a491fa
+* time: 2012-08-01T12:43:19Z
+* content: IDEA-89574 Unable to create a Java class in a source root
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/26caefcb2080f34f0337833e6390a709379f87f6
+* time: 2012-08-01T12:49:42Z
+* content: [git] IDEA-82033 Process merge which failed because of invalid git ex…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/9307517d624ced1b4e7d1cdba7570dc279ab9d92
+* time: 2012-08-01T12:57:28Z
+* content: support "extract style" in android designer
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/651c4552c689185d2f98e12845e99d5c6f157fa3
+* time: 2012-08-01T13:02:04Z
+* content: IDEA-89570 Use product full name only
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/eae391c9c89114fe03452289250e84cefc6306fc
+* time: 2012-08-01T13:32:06Z
+* content: IDEA-36202 Comment disappearing when joining lines
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/4490d0e6775ebe242e10a3f55f257459d9b493ff
+* time: 2012-08-01T13:32:08Z
+* content: access for private members through type parameter bound is forbidden …
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/03da4cdaa043ceee353efae6179b6a2424c866e5
+* time: 2012-08-01T13:33:38Z
+* content: JsTD run configuration UI improvements
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/6e9fb5cb4803a7d8b7bff2f8bc4864f9fa2d2ca8
+* time: 2012-08-01T13:44:50Z
+* content: IDEA-89469 Menu Selection is not readable with JGoodies Windows LAF
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/ee65102391de30650c557053416cf3391250d2a5
+* time: 2012-08-01T13:48:53Z
+* content: check for conflicts with escalate visibility setting on (IDEA-88719)
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/4cdf6d94de01609858795c9ab7f48252e2215bd0
+* time: 2012-08-01T13:51:02Z
+* content: logging
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/141f79c43803a51e99bb4244239cf098db78e8fa
+* time: 2012-08-01T13:51:07Z
+* content: extract FragmentCompletionTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/de8db3120af900203b984ef805535a79daea326d
+* time: 2012-08-01T13:56:04Z
+* content: Revert "FileHistoryPanelImpl: calculate maximum string value of the c…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/2b06aa11bea69612d7b0842f24759aa596c5b38e
+* time: 2012-08-01T14:04:14Z
+* content: IDEA-89585 Code Completion for class names in Run/Debug configuration…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/d7f10da46144a8e24b63fb1429937bf2f0adc269
+* time: 2012-08-01T14:16:29Z
+* content: revert conflict directions (IDEA-88688)
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/a19d945e7f22900343f2b75275b068de2612ff06
+* time: 2012-08-01T14:18:13Z
+* content: [git] git init: show message about invalid executable
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/2a7648a98f56cbf90071f8546b8bc2240b9397a5
+* time: 2012-08-01T14:30:38Z
+* content: IDEA-66127 Git SSH executable as a system wide setting
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/01728529dd2ab472cc3881a3a057855668a75361
+* time: 2012-08-01T15:53:16Z
+* content: IDEA-85530 Override dialog should not match on the parameter names/cl…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/77a018fbc7bbff1fe69b8ee8a5ceefb22b23b9d5
+* time: 2012-08-01T16:19:38Z
+* content: Fix instrumenter tests for JDK7
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/40d6c9242729ce647ecffd23579fe10c3fcafecf
+* time: 2012-08-01T16:41:03Z
+* content: Broken toolbar shortcuts in "Run/Debug Configurations"
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/9c56342078b733db0540c6672ab5da6525da98f6
+* time: 2012-08-01T17:10:34Z
+* content: Normalized VFS path should not contain duplicate separators
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/a60e6ed90ca5ad0f6ebf7819d0f125d317b3d0af
+* time: 2012-08-01T17:56:07Z
+* content: XDebugger: compare value with clipboard action (IDEA-89243), finish '…
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/af10749df336a671ef3c06f16da6c83a326fb3c4
+* time: 2012-08-01T17:57:31Z
+* content: Switch off multiple declaration inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/527a8eadee8c2597c306a40aae156ac55c5790c7
+* time: 2012-08-01T18:13:36Z
+* content: Do not keep case-duplicate FS roots
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/db7f868e916d6d6599d4c02067319dbfcadba9dc
+* time: 2012-08-01T18:30:47Z
+* content: xml attribute value has presentation with proper container text
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/fc4208a1b9822fa0cf994bbd7ada4aad3b69cf8f
+* time: 2012-08-01T21:53:52Z
+* content: NPE fix (when project is default)
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/29efd1e6b8300dc2f7d72c19b28f59bcd83eba41
+* time: 2012-08-01T21:54:59Z
+* content: use default project when project == null
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/1838c30d6edd646819f6b6d40c5f36498d47a9d7
+* time: 2012-08-01T21:57:44Z
+* content: several fixes for nullable project
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/653b294c030d8c3cf5fed82fbb30bccc59052d4c
+* time: 2012-08-02T03:27:55Z
+* content: Merge branch 'master' of github.com:talios/intellij-community
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/b99ad51c9ca41938df4fbb299db077bea730240e
+* time: 2012-08-02T03:29:13Z
+* content: Updated testng version to 6.5.2
+* codeUrl: github.com/JetBrains/intellij-community/pull/13/commits/94c11ea7b777f97f99c915d44547565f6e7763bb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-08-02T04:15:08Z
+* content: This pull request updates the bundled TestNG version to the most recent release of 6.5.2.
+* time: 2012-08-02T09:13:24Z
+* content: Doh - well this is annoying. Looks like github's community repo is quite a few commits behind the main repository - I thought I'd made the branch off of the github/master commit :(
+************************************************************************

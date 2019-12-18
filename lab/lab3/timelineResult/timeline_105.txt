@@ -1,0 +1,21 @@
+************************************************************************
+* id: 105
+* requirement: MismatchedCollectionQueryUpdateInspection -- added "compute" update prefix
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-19T15:28:30Z
+* content: MismatchedCollectionQueryUpdateInspection -- added "compute" prefix (…
+* codeUrl: github.com/JetBrains/intellij-community/pull/105/commits/73c963fc13c422f9d47c7d735b8e2c0a2c215a86
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-19T15:29:53Z
+* content: From j.u.Map in JDK8
+* time: 2013-09-19T15:50:57Z
+* content: Merged and pushed. Thanks for your contribution!
+************************************************************************

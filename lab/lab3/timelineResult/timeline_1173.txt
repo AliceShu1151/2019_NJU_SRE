@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1173
+* requirement: Replace boolean expression with literal and comment
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-14T17:00:00Z
+* content: Replace boolean expression with literal and comment
+* codeUrl: github.com/JetBrains/intellij-community/pull/1173/commits/088e3a9b4be68893396aeb2d42f223a5cfb95a30
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-14T17:01:48Z
+* content: @rendner
+* time: 2019-07-14T23:41:54Z
+* content: @dahlstrom-g : I'm not a collaborator. I only tried to answer your question.
+* time: 2019-07-15T10:49:04Z
+* content: See also the discussion here:
+* time: 2019-07-15T10:49:04Z
+* content: ac2e862#r34298268
+************************************************************************

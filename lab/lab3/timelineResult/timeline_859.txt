@@ -1,0 +1,25 @@
+************************************************************************
+* id: 859
+* requirement: IDEA-198933: Fix painting of splash screen progress bar
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-14T20:36:03Z
+* content: IDEA-198933: Fix painting of splash screen progress bar
+* codeUrl: github.com/JetBrains/intellij-community/pull/859/commits/2b52b04c687858ea2e92d64efdfedbd391461d86
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-14T20:41:52Z
+* content: On Windows HiDPI mode (JRE managed) with a fractional scaling factor (e.g. 1.5), the progress tail shows as garbled pixels instead of a semi transparent icon.
+* time: 2018-09-14T20:41:52Z
+* content: There were 2 HiDPI specific issue when loading the tail icon
+* time: 2018-09-14T20:41:52Z
+* content: The icon should allow fractional scaling, otherwise it is just scaled too much (scaling of 2.0 instead of 1.5 for a 1.5 monitor scaling)
+* time: 2018-09-14T20:41:52Z
+* content: The icon image should be wrapped into a JBImageIcon, so that paintIcon method ends up calling into a HiDPI aware paint method.
+************************************************************************

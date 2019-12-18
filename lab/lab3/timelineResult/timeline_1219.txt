@@ -1,0 +1,29 @@
+************************************************************************
+* id: 1219
+* requirement: Make LineMarkersPass constructor public
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-10-24T15:40:30Z
+* content: Make LineMarkersPass constructor public
+* codeUrl: github.com/JetBrains/intellij-community/pull/1219/commits/28471b9fdc2559d7e0c38bc1effb8cd1bdc42651
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-10-24T15:45:52Z
+* content: This would simplify life for plugin-writers and would allow them not to use workarounds.
+* time: 2019-10-29T09:19:38Z
+* content: Hello. LineMarkersPass is extremely internal class. Instantiating it in plugins is undesirable. What do you need to do so hardcore that the LineMarkerProvider is insufficient?
+* time: 2019-10-29T10:39:05Z
+* content: We need to update line markers after a custom highlighting pass is completed, but there is no way to execute our highlighting pass after the line markers pass. We could try to rerun the analysis, but to do this, we need to mark the file dirty and this would mean that other highlighting passes also will be executed the second time, which is not desirable. Anyway, invoking the line marker pass directly seems to be a more sensible solution and it works just fine.
+* time: 2019-10-29T11:47:45Z
+* content: I suggest to do DaemonCodeAnalyzer.restart() when your model (on which your line markers are based) is changed. UNfortunately, instantiating and running LIneMarkerPass manually can lead to internal data structures corruption because the passes are running in highly concurrent and interruptible environment.
+* time: 2019-10-29T12:13:31Z
+* content: If we do that, this would mean that all passes will be restarted including ours. This means that it will be executed twice and this is not desirable since it is somewhat expensive. We could try to cache the result or do something similar, but this is hard to implement because of the highly concurrent and iterruptible environment you mentioned. It seems much easier just to invoke LineMarkersPass directly from our pass after it completes the required calculations. Since we're invoking one pass from another, I don't think this could lead to any problems you mentioned. I've been testing this implementation for quite some time and never get any problems.
+* time: 2019-10-29T13:42:12Z
+* content: If you need to run these passes twice I guess it means that your line markers pass depends on the data produced by the other pass. Which actually is not a good thing because highlighting passes should be independent because they can run in not-specified order (or even concurrently). Instead, I think it's better to organize your code such that both passes depend on one other  data source (let's call it the "model"). This way, your custom highlighting pass runs, queries the model and highlights things accordingly. Meanwhile, your line marker pass runs, queries the same model and highlights line markers. When the model changes, you call daemonCodeAnalyzer.restart(). No passes should run twice.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1072
+* requirement: Add flake8 inspection supressor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-01T11:55:21Z
+* content: Add inspection suppression from
+* codeUrl: github.com/JetBrains/intellij-community/pull/1072/commits/57214ebaa1ad2a8269fdc229e080aa2e0dc9d563
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-01T12:05:37Z
+* content: This adds my inspection suppressor at https://github.com/jansorg/pycharm-flake8 to the PyCharm community sources, as requested by the PyCharm team.
+* time: 2019-06-04T09:04:53Z
+* content: @east825 Is it still likely that the flake8 changes will be merged into intellij-community?
+************************************************************************

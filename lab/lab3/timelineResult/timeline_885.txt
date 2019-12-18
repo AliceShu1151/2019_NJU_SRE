@@ -1,0 +1,27 @@
+************************************************************************
+* id: 885
+* requirement: IDEA-199921 Revert commit d8423f0 after commit b6a57a9
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-10T17:10:10Z
+* content: IDEA-199921 Revert commit
+* codeUrl: github.com/JetBrains/intellij-community/pull/885/commits/ad156ab1c55aae7e711d493e4f4c97500e9487fc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-10T22:46:30Z
+* content: @develar?
+* time: 2018-10-18T11:44:12Z
+* content: Oh,  sorry, I wasn't aware of this activity. Yes, I'd say calling request on a disposed alarm is a pre-condition violation (and "assertion failed" is an expected result of it), and removePropertyChangeListener fix should be enough.
+* time: 2018-10-18T11:44:12Z
+* content: Let's wait for @develar to merge the revert, though, as he owns the code.
+* time: 2018-11-07T01:00:21Z
+* content: @develar?
+* time: 2018-11-07T06:36:02Z
+* content: Does this extra check leads to any runtime issues? Or because this check hides  real issues like "and "assertion failed" is an expected result of it)"?
+************************************************************************

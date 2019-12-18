@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1095
+* requirement: Use a Swing combobox in the configuration import dialog
+the requirement of 1095 only has implements, no discussion.

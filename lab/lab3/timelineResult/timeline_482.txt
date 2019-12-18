@@ -1,0 +1,31 @@
+************************************************************************
+* id: 482
+* requirement: Fix: createDirectories doesn't handle symbolic links
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-03T15:30:55Z
+* content: [fix] storageUtil: getOrCreateVirtualFile doesn't handle symbolic links
+* codeUrl: github.com/JetBrains/intellij-community/pull/482/commits/6b15142132680944fbc662924d2c9e7e0263623d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-03T15:34:25Z
+* content: Let's handle it to support symbolic links in configuration See https://youtrack.jetbrains.com/issue/IDEA-164639
+* time: 2016-12-03T15:42:29Z
+* content: I will take a look Monday. Thanks for contribution.
+* time: 2016-12-03T17:38:24Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2016-12-06T17:51:59Z
+* content: The CLA was received. Thanks.
+* time: 2017-03-25T01:05:41Z
+* content: Just a friendly inquiry, are we still merging this PR?
+* time: 2017-07-13T02:03:01Z
+* content: NOTE: still seeing this in 2017.2 - for example when changing the runtime applicable to PHP for the project. Some settings can be saved however.
+* time: 2017-07-13T02:03:01Z
+* content: bump - I'm getting errors due to symlinks which break saving settings... 
+************************************************************************

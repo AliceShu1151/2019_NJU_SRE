@@ -1,0 +1,31 @@
+************************************************************************
+* id: 237
+* requirement: Add support for specifying the debugging step size
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-12-30T06:21:26Z
+* content: Add support for specifying the debugging step size
+* codeUrl: github.com/JetBrains/intellij-community/pull/237/commits/0ef4d01a142a9d9c2cb3b85989b191aa888c72a2
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-01-25T20:20:12Z
+* content: This patch adds the necessary plumbing to allow a language plugin to set the step size when debugging a jvm process.
+* time: 2015-01-25T20:20:12Z
+* content: This is useful, for example, for a bytecode-oriented language, where using a step size of StepRequest.STEP_MIN makes more sense than StepRequest.STEP_LINE
+* time: 2015-01-26T10:11:26Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-01-26T17:49:15Z
+* content: This should be covered under your contributor license agreement with Google.
+* time: 2015-02-02T14:12:22Z
+* content: We don't have such general contributor agreement with Google yet. Until it is fixed, we have to sign the CA with each Google developer individually.
+* time: 2015-02-03T21:28:44Z
+* content: Done, my signed CLA has been sent to contribute@jetbrains.com
+* time: 2015-02-04T08:55:27Z
+* content: Received, thanks.
+************************************************************************

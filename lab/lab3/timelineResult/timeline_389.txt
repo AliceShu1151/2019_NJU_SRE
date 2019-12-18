@@ -1,0 +1,4 @@
+************************************************************************
+* id: 389
+* requirement: [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
+the requirement of 389 has no implements.

@@ -1,0 +1,145 @@
+************************************************************************
+* id: 619
+* requirement: override SmartList.equals() for better performance
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-02T18:40:13Z
+* content: [file-history] highlight current revision
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/1d101a9be147d336c2ea0add1d01d2971ea6b317
+* time: 2017-08-02T19:09:31Z
+* content: [file-history] get rid of cell wrapper in DualView
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/7784613b9d372ca63a587c095ade7280cc5f70e2
+* time: 2017-08-24T15:57:34Z
+* content: logging for EA-106371 - SIOOBE: Class.getSimpleBinaryName
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/7f29026b108e2d98db7a82218c9f773781db5deb
+* time: 2017-08-28T16:47:31Z
+* content: avoid nonsensical clear()
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/9ed6fc54e75ffa0e53743f541eadd206c109ef49
+* time: 2017-08-28T21:47:41Z
+* content: override SmartList.equals() for better performance
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/29faf1abf24545aa0d3010f30830a302ab145d69
+* time: 2017-08-28T21:47:41Z
+* content: override SmartList.equals() for better performance
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/186b111bcebc5f067cd5232ffba1bb429c8da280
+* time: 2017-08-29T09:54:54Z
+* content: unused library: don't check runtime dependencies (IDEA-178133)
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/d01a145417a0838abbfc3087ad2aeffb23d9c92b
+* time: 2017-08-29T11:35:34Z
+* content: let ScopeOptimizer use restricted scope instead of scope to exclude
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/402bd30012f4b6a7a7d940cd38e3580b69e4a7c7
+* time: 2017-08-29T11:48:01Z
+* content: NPE in tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/65577c112555de25c9f3b0c0d9e845efd9862ede
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-29T12:12:18Z
+* content: Default implementation of AbstractList.equals() creates two Iterators and then compare their items one by one. For array-base implementations (ArrayList/SmartList) it's possible to enhance comparison by
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-29T12:32:17Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/6a90211cefff314ec38d77713774a8a508190d80
+* time: 2017-08-29T12:56:50Z
+* content: junit class detection in classpath: accept any
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/31cdb5f7fd1af37d5a2f3917f6f77216db60e33e
+* time: 2017-08-29T12:57:48Z
+* content: IDEA-177963 - Servers combo: Switch to <Auto-Detected> on last removal
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/3871840fc600fdb497de5fbd9bca0055d884a09e
+* time: 2017-08-29T13:03:07Z
+* content: check for JDK leaks in tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/95eaf81e0ea497f8c69263c11fd3202d28a7a1b2
+* time: 2017-08-29T13:37:52Z
+* content: fix nullability warnings in CreateFromUsageBaseFix#getTargetSubstitutor
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/32bde283764d820817ea8b5e6d76472a5a59bb05
+* time: 2017-08-29T13:39:30Z
+* content: avoid unnecessary text layout cache resets on scrolling
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/25d48f3e577381ab925909d71c7bd7e4d312be80
+* time: 2017-08-29T13:47:52Z
+* content: make substitutor
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/9430eaa6584894f7e3bff435d55558e10c3d164d
+* time: 2017-08-29T13:56:29Z
+* content: IDEA-163490 Force the use of https in connections to PivotalTracker
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/f69a58abcd2535cc47c8e5b47e0be4259a4b6a90
+* time: 2017-08-29T14:15:27Z
+* content: junit detection: test for constructor args
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/0ea8d49f73b71c59be0ffee4e03fa360ac051bcb
+* time: 2017-08-29T14:15:54Z
+* content: remove redundant throws from test templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/743f078f8347a2a244d194e6d8ae04c7cee75e21
+* time: 2017-08-29T14:26:11Z
+* content: null argument checker: ignore parameters if method throws exception a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/f7dd4dfaa4f845191cd796b073a1f5c95cc8e611
+* time: 2017-08-29T14:58:23Z
+* content: IDEA-177766 Properly find in comments inside javascript
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/1185396f63d82b30fc02328955994dff06c424b1
+* time: 2017-08-29T15:08:27Z
+* content: Make the comment more precise
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/76c1f21f1e265e16101d64ba3ef0e2fea6affc6d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-29T15:14:30Z
+* content: Why, is there any specific performance problem you're trying to address with this change?
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-29T15:18:57Z
+* content: Allow to reword/rebase in the detached HEAD state
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/b681e943f38cf948be2af7361c4a324ea2ef0d11
+* time: 2017-08-29T15:48:48Z
+* content: favorites: fix classloader when a bookmark node class is contained in…
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/11ba5dbd40f8a7d6be0f97c0e1567a4c05f3ce3e
+* time: 2017-08-29T16:13:36Z
+* content: [platform] fault-tolerant bindings initialization
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/f59cc8246ca900f1fbd9c191ea8fd8713b65f57d
+* time: 2017-08-29T16:44:08Z
+* content: mark NodeJS 173.* as broken
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/0f61f0be425c472b2d7f66914e5cfb1bdd495c99
+* time: 2017-08-29T16:46:36Z
+* content: editorconfig should be first as it knows better (PY-21115, RUBY-17138…
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/b465193dab7481bad05d14cd50dcb7b7c2abed6e
+* time: 2017-08-29T16:56:36Z
+* content: recognize 'unset' values for editorconfig (IDEA-171720)
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/b870b6987954e83b6230763688246d167e8c12aa
+* time: 2017-08-29T17:26:36Z
+* content: wording
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/01de4dfccbc7c9ccbf532e71492e38241ead49b4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-29T18:55:21Z
+* content: I've found 174 usages of List.equals() in the code of Idea CE where concrete instance of List is ArrayList. Changing ArrayList into SmartList probably gives some performance improvement supposing this patch is applied.
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-29T18:56:52Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/619/commits/b0686e383785fec8eec4133d6360d06f29b63a13
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-29T20:05:44Z
+* content: Is it possible to exclude other commits from this pull-request or should I create new one?
+************************************************************************

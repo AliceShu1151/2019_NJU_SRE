@@ -1,0 +1,25 @@
+************************************************************************
+* id: 83
+* requirement: Add "VCS -> Mercurial -> Browse Changes...", allowing to browse changes ...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-06-28T08:07:35Z
+* content: Add "VCS -> Mercurial -> Browse Changes...", allowing to browse chang…
+* codeUrl: github.com/JetBrains/intellij-community/pull/83/commits/251a88c951942eb311dbacdbe6beeba05bff6e35
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-06-28T08:10:33Z
+* content: ...before/after/within a date range or a before/after/within a range of commits.
+* time: 2013-07-11T05:39:54Z
+* content: Any feedback on this?
+* time: 2013-07-11T05:39:54Z
+* content: Thank you,
+* time: 2013-07-11T05:39:54Z
+* content: Jay
+************************************************************************

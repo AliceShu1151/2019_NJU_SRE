@@ -1,0 +1,21 @@
+************************************************************************
+* id: 895
+* requirement: [platform] Support Python 2.6 in python launcher
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-22T15:54:11Z
+* content: [platform] Support Python 2.6 in python launcher
+* codeUrl: github.com/JetBrains/intellij-community/pull/895/commits/15b70c854a381aaa2d164a95627b168a5a9cddf7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-23T16:53:31Z
+* content: sys.version_info does not return a named tuple until Python 2.7
+* time: 2018-12-19T14:20:58Z
+* content: Thanks! BTW, do people really still use Python 2.6?
+************************************************************************

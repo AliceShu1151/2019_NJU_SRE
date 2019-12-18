@@ -1,0 +1,25 @@
+************************************************************************
+* id: 701
+* requirement: Add mechanism to trigger resolution on jars
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-10-15T19:33:17Z
+* content: Add mechanism to trigger resolution on jars
+* codeUrl: github.com/JetBrains/intellij-community/pull/701/commits/4787dda93437efabbfded2b2c18fd1112df22d7d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-04T20:57:07Z
+* content:  No description provided. 
+* time: 2018-01-04T20:58:52Z
+* content: @nicity, word has it you “seemed amenable” to this change. ;-)
+* time: 2018-01-23T07:17:14Z
+* content: @nicity, could you review this, or call it to someone else's attention?
+* time: 2018-01-26T10:05:29Z
+* content: I remember from previous email discussions that this functionality was requested only for tests. Is it still the case ?
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1127
+* requirement: Finish pending children ExecutionNode
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-24T22:07:11Z
+* content: Finish pending children ExecutionNode
+* codeUrl: github.com/JetBrains/intellij-community/pull/1127/commits/e7a587c61696b77531a7cb9c1b86f18f85f9d7e1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-24T22:11:11Z
+* content: ... when a finish event is received in BuildTreeConsoleView#onEvent
+* time: 2019-04-24T22:11:11Z
+* content: This fixes https://youtrack.jetbrains.com/issue/IDEA-211609
+************************************************************************

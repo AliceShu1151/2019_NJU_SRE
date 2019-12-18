@@ -1,0 +1,105 @@
+************************************************************************
+* id: 109
+* requirement: IDEA-114955 Add support for filtering by regular expressions in Subversion repository view
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-15T21:09:34Z
+* content: IDEA-114955 Add support for filtering by regular expressions in Subve…
+* codeUrl: github.com/JetBrains/intellij-community/pull/109/commits/d580831f20bb620fcdcb083e452153ec75ec3025
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-15T21:42:48Z
+* content: http://youtrack.jetbrains.com/issue/IDEA-114955
+* time: 2013-10-15T21:42:48Z
+* content: Regex filtering is enabled only when the checkbox is selected.
+* time: 2013-10-15T21:42:48Z
+* content: 
+* time: 2013-10-16T07:38:55Z
+* content: Peter, have you submitted a contributor agreement? If not, could you please download the CLA from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and send to contribute@jetbrains.com? Thanks!
+* time: 2013-10-16T08:05:06Z
+* content: This doesn't look perfect solution. I think, it would be better to show nothing & somehow indicate the error.
+* time: 2013-10-16T17:43:12Z
+* content: [cosmetics] Please add braces inside if-else block, even if there is only one statement.
+* time: 2013-10-16T17:43:52Z
+* content: [cosmetics] my-prefix is preferable even in inner classes.
+* time: 2013-10-16T18:01:02Z
+* content: Btw, is "filter on the fly" active in this view? Maybe the delay should be made longer or filter-on-the-fly should be turned off if "Regexp" is selected. Otherwise user may be confused, because usually it takes longer to form a regexp. Could you please check this?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-16T20:34:57Z
+* content: IDEA-114955 Cosmetic code style changes
+* codeUrl: github.com/JetBrains/intellij-community/pull/109/commits/f2800a977420b80287c2e611baaebe779ede78ca
+* time: 2013-10-16T22:29:56Z
+* content: IDEA-114955 Display an error message when invalid regex is entered
+* codeUrl: github.com/JetBrains/intellij-community/pull/109/commits/22268d7fc823c83eeb04a9e1ae2bf759197094e3
+* time: 2013-10-16T22:39:19Z
+* content: IDEA-114955 Show red background in the search box if it doesn't match…
+* codeUrl: github.com/JetBrains/intellij-community/pull/109/commits/b4d954149aa93a9c61f2e2c88aeda7fe80dd7037
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-16T22:53:49Z
+* content: Fixed in f2800a9.
+* time: 2013-10-16T22:54:20Z
+* content: Fixed in f2800a9.
+* time: 2013-10-16T23:02:27Z
+* content: I changed this in 22268d7 to hide all commits if regex is invalid. Instead, a message explaining the error is displayed in the center of the panel.
+* time: 2013-10-16T23:02:27Z
+* content: Also, b4d9541 changes the background color of the search box to red if regex is invalid or if the search doesn't match any commits. This makes the search box behavior consistent with "Ctrl-F" search in the main source code editor.
+* time: 2013-10-16T23:40:00Z
+* content: Yes, the delay is currently the same for regex and no-regex searches. I looked at how is this handled elsewhere in IDEA and the same situation occurs in Ctrl-F search in the main editor. In that case user gets immediate feedback for both regex and no-regex search. I actually find it pretty useful to see the results as I type the regex - it means many mistakes are caught immediately. Let me know if this should still be changed or not.
+* time: 2013-10-17T11:51:38Z
+* content: Contributor agreement is submitted now.
+* time: 2013-10-20T16:17:20Z
+* content: With the proper message displayed as the empty text it looks nice.
+* time: 2013-10-20T16:18:45Z
+* content: Hm. For me the filter is never empty. And it shouldn't be, because it is just the text inside the filter text field, isn't it? I guess some other condition should be used here to indicate the erroneous regexp.
+* time: 2013-10-20T16:20:22Z
+* content: I wouldn't save it in a field. I think it is better just to call UiUtil.getTextFieldBackground() here to get the default background color.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-21T20:07:04Z
+* content: IDEA-114955 Use existing helper method to get the default background …
+* codeUrl: github.com/JetBrains/intellij-community/pull/109/commits/a41e00a8042a45918e99450fc626d953b76269b8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-21T20:23:39Z
+* content: Fixed in a41e00a.
+* time: 2013-10-21T20:23:39Z
+* content: By the way, the same technique is also used in com.intellij.find.EditorSearchComponent, so that class can probably also be changed to use UIUtil.getTextFieldBackground().
+* time: 2013-10-21T20:59:42Z
+* content: Not sure I understand. For me getFilter() returns an empty String initially, before I type anything into the filter text field, or if I type something and then delete it.
+* time: 2013-10-21T20:59:42Z
+* content: Currently the red background appears when either regex has an error, or when the filter is valid but it doesn't match any commits. I did it this way intentionally - to match the behavior of Ctrl-F search box in the main editor.
+* time: 2013-10-21T20:59:42Z
+* content: The second part of the condition (!myFilterComponent.getFilter().isEmpty()) is to handle the case when the list of changes has not been initialized yet - in that case result.size() is always zero, so the background of the search box would be permanently red.
+* time: 2013-10-23T10:53:21Z
+* content: Somehow I'm not able to get the red background for invalid regexp. Do I miss something? 
+* time: 2013-10-23T20:28:06Z
+* content: Interesting. Which theme are you using? For me the red background works fine with "Alloy. Bedouin Theme" (see screenshot below), but with "GTK+" I'm just getting white background all time time. This seems to be a bug unrelated to this pull request, because the same problem affects the Ctrl-F search box in the main editor (it never changes to red with GKT+ theme).
+* time: 2013-10-23T20:28:06Z
+* content: Could you try if the red background works for you with "Alloy. Bedouin Theme" and if the red background in Ctrl-F search box works with your current theme?
+* time: 2013-10-23T20:28:06Z
+* content: 
+* time: 2013-10-24T09:48:53Z
+* content: Nice catch. I'm on Mac, using the Default theme. In Darcula the highlighting works indeed. I've fired a bug for this problem: http://youtrack.jetbrains.com/issue/IDEA-115340
+************************************************************************

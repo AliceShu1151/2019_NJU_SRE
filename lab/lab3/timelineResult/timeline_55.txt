@@ -1,0 +1,97 @@
+************************************************************************
+* id: 55
+* requirement: Fixes IDEA-84220 CTRL-F5 shortcut doesn't work in Hierarchy view!
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-16T17:48:00Z
+* content: IDEA-84220 CTRL-F5 shortcut doesn't work in Hierarchy view!
+* codeUrl: github.com/JetBrains/intellij-community/pull/55/commits/e83efaddf0c1a1896859d05d0ffa2a95349eeda3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-16T17:58:52Z
+* content:  No description provided. 
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-16T18:21:59Z
+* content: Merge remote-tracking branch 'upstream/master' into IDEA-84220
+* codeUrl: github.com/JetBrains/intellij-community/pull/55/commits/a55f7601f4a8416c018d11b3fbb1d78dd8239fb9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-26T19:58:29Z
+* content: The unregistration happens in inner classes that extend Tree, so 'this' in that context also means a Tree instance. Please fix this so that the unregistration matches the registration.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-30T16:32:40Z
+* content: Fix IDEA-84220, registerShortcutOn(tree) wasn't called after unregist…
+* codeUrl: github.com/JetBrains/intellij-community/pull/55/commits/9bb0c9ec9601eb714d505fa155d3e41acc4294da
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-04-21T17:43:27Z
+* content: Unfortunately my previous fix (myRefreshAction.registerShortcutOn(this);) didn’t work. It was just bad luck that it seamed to work.
+* time: 2013-04-21T17:43:27Z
+* content: There were two problems with this fix: Sometimes the shortcut of the call hierarchy is unregistered right after opening the call hierarchy, I have no idea why this is happening and can't reproduce it very often - it sometimes occurred right after starting IDEA and opening call hierarchy. In this case the shortcut doesn't work. Second my fix seamed to work, because the shortcut was never unregistered. Thank you very much for your hint.
+* time: 2013-04-21T17:43:27Z
+* content: Would you be so kind and explain me, why it is necessary to unregister some shortcuts?
+* time: 2013-04-21T17:43:27Z
+* content: What do you think of calling myRefreshAction.registerShortcutOn(this); inside addNotify? It worked in all my test cases.
+* time: 2013-04-21T17:43:27Z
+* content: A small test case which is absolutely reproducible: Open call hierarchy, Press Ctrl+F5 (Refresh) it should work Pin the tab, Open another call hierarchy, Press Ctrl+F5 it should still work. Switch to first call hierarchy Ctrl+F5 doesn't work anymore. Switch back to second, it doesn't work either.
+* time: 2013-04-21T17:43:27Z
+* content: It would be interesting for me which test case Maxim Shafirov executed on issue IDEA-84220.
+* time: 2013-04-21T17:43:27Z
+* content: Best regards
+* time: 2013-04-21T17:43:27Z
+* content: Josef
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-03-30T08:26:22Z
+* content: Merge branch 'master' into IDEA-84220
+* codeUrl: github.com/JetBrains/intellij-community/pull/55/commits/3db8bf6359d70c5ed8da67d18c992c45663a3639
+* time: 2014-03-30T08:37:28Z
+* content: Merge branch 'master' into IDEA-84220
+* codeUrl: github.com/JetBrains/intellij-community/pull/55/commits/51e03eff388c9077c3ea22b996aea28f5feec490
+* time: 2014-03-30T08:58:33Z
+* content: Fix IDEA-84220 Refresh shortcut was unregistered when two or more cal…
+* codeUrl: github.com/JetBrains/intellij-community/pull/55/commits/9b06a80da5066da2b8dd4ff5c4c61b5a8d7d273c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-03-30T09:07:50Z
+* content: After one year I analyzed it again and suggest the solution from GitLogUI. The code doesn't unregister the shortcut, there is no conflict between the call hierarchy views and I’ve checked that the garbage collector cleans the instances properly.
+* time: 2014-03-30T09:07:50Z
+* content: Do I miss something?
+* time: 2014-03-30T09:07:50Z
+* content: It would be nice if you could review this patch.
+* time: 2014-03-30T09:07:50Z
+* content: Thank you.
+* time: 2014-03-30T09:07:50Z
+* content: My test case: http://youtu.be/H9gQlUV8FiQ
+* time: 2018-07-21T15:03:25Z
+* content: @lehnerj, please rebase the PR, cc @bulenkov.
+************************************************************************

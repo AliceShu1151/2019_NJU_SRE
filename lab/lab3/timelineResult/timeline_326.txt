@@ -1,0 +1,21 @@
+************************************************************************
+* id: 326
+* requirement: Allow plugins to provide language-specific implementation of "Introduce Functional Parameter"
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-20T17:59:27Z
+* content: Introduce Functional Parameter: Allow plugins to provide language-spe…
+* codeUrl: github.com/JetBrains/intellij-community/pull/326/commits/c2c02f1d4e32ccf6a3f155dc276bf24f04752489
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-11-23T09:08:38Z
+* content:  No description provided. 
+* time: 2015-11-23T11:38:52Z
+* content: I'd like to have valid annotations on file, so I would have to do the change in 2 commits and as kotlin here is not of much help I would skip the second part, sorry
+************************************************************************

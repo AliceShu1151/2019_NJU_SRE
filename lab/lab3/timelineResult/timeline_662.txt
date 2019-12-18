@@ -1,0 +1,45 @@
+************************************************************************
+* id: 662
+* requirement: PY-25655: Store super classes text in stub
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-11-14T19:50:09Z
+* content: PY-25655: Store super classes text in stub
+* codeUrl: github.com/JetBrains/intellij-community/pull/662/commits/4ceca0ec0c49d2389661999d8b30c106898d78c0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-11-14T19:53:15Z
+* content: @vlasovskikh Wanted to get this in because it involves stub changes so it's only possible to get it in before a major release. Implementation is slightly strange to preserve compatibility.
+* time: 2017-12-01T13:03:22Z
+* content: Our initial intend was to get rid of the list of base classes in the class presentation altogether (since no other language support seems to do that) rather than store additional information in stubs. But after giving it some thought we decided that in may be beneficial in a longer term in other places in code insight (generics, six.with_metaclass, special "keyword" base classes in typing, etc.).
+* time: 2017-12-01T13:36:00Z
+* content: Regarding your last comment. Storing the text will not be very useful for code analysis IMO because class names can be aliased in multiple ways. On the other hand, speaking as a user, I personally find this information very useful when performing ‘find class’.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-12-04T15:30:55Z
+* content: changes after review
+* codeUrl: github.com/JetBrains/intellij-community/pull/662/commits/d14a6a77e6959a4d6dff3e8f06e7bab853e9b12a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-04T15:32:23Z
+* content: @east825 After thinking about it  -- you're right. There is no point of keeping the method nullable for compatibility since it's a new method. Requested changes applied.
+* time: 2018-01-08T17:41:22Z
+* content: @east825 ping
+* time: 2018-01-11T16:35:11Z
+* content: A few minor complaints about code style and nullability contracts.
+* time: 2018-01-11T16:46:58Z
+* content: Sorry, I was on Christmas/New Year holidays that are somewhat lengthy in Russia. I left a few comments about code style and inspection warnins, but apparently forgot to submit them  (not that familiar with reviewing on GitHub) and already fixed everything myself. Do you mind me squashing your two commits into one?
+************************************************************************

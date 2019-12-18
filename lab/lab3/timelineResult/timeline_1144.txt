@@ -1,0 +1,41 @@
+************************************************************************
+* id: 1144
+* requirement: IDEA-182029: Improve New Package dialog usability
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-05-23T12:48:16Z
+* content: Improve New Package dialog usability
+* codeUrl: github.com/JetBrains/intellij-community/pull/1144/commits/0884aea0b3245c7c5d8bf97482734447802e76fe
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-05-23T14:17:27Z
+* content: Implements the requested functionality: https://youtrack.jetbrains.com/issue/IDEA-182029
+* time: 2019-05-23T14:17:27Z
+* content: The new package creation dialog for a single package looks like:
+* time: 2019-05-23T14:17:27Z
+* content: 
+* time: 2019-05-23T14:17:27Z
+* content: When you press the "+" button or a combination of Shift + Enter, a new input field is added:
+* time: 2019-05-23T14:17:27Z
+* content: 
+* time: 2019-05-23T14:17:27Z
+* content: Also includes: #1068
+* time: 2019-05-23T14:17:27Z
+* content: The dialog expands on its own when the package name reaches the edge of the input field. Also added an empty space in front of the right edge, so that the name does not hide behind the right edge. It was requested here: https://youtrack.jetbrains.com/issue/IDEA-209397
+* time: 2019-05-23T14:17:47Z
+* content: Just want to ask, how should I notify the user about the presence of a hot-key Shift + Enter, which adds a new input field?
+* time: 2019-05-23T14:17:47Z
+* content: I thought about adding it to the “+” button in the tooltip, but it would create the illusion that this combination is available from any part of the dialog, whereas it is available only when the window is focused on the input field.
+* time: 2019-05-24T09:05:31Z
+* content: Cool! For consistency, you could add the "generate/add new" shortcut that works basically anywhere there is an "add" bttton.
+* time: 2019-05-24T09:05:31Z
+* content: How does this a interact with multiple source/test roots?
+* time: 2019-05-24T12:22:28Z
+* content: Did not quite understand what shortcut you mean?
+************************************************************************

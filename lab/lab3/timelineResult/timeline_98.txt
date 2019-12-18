@@ -1,0 +1,25 @@
+************************************************************************
+* id: 98
+* requirement: IDEA-111450 - Fixes to redundant cast analysis of primitive comparisons
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-10T19:18:02Z
+* content: IDEA-111450 - Fixes to redundant cast analysis of primitive compariso…
+* codeUrl: github.com/JetBrains/intellij-community/pull/98/commits/4a86d6ad47a22378fdf7fd71b0529b9cc553ebbc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-10T19:23:10Z
+* content: See http://youtrack.jetbrains.com/issue/IDEA-111450
+* time: 2013-09-10T19:26:05Z
+* content: Mike, have you submitted a contributor license agreement? If not, could you please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it, sign, scan and send to contribute@jetbrains.com ? Thanks!
+* time: 2013-09-10T19:28:15Z
+* content: I just attached the scanned PDF to the YouTrack issue a moment ago :).
+* time: 2013-09-10T19:39:09Z
+* content: Thanks! That's good enough. :)
+************************************************************************

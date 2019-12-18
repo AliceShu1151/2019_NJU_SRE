@@ -1,0 +1,23 @@
+************************************************************************
+* id: 293
+* requirement: JavaDoc showAndGet function
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-12T13:14:25Z
+* content: JavaDoc showAndGet function
+* codeUrl: github.com/JetBrains/intellij-community/pull/293/commits/ea80ca8dcfa790cec0bcc6be1cfd16d7ea5e2f48
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-08-12T13:15:17Z
+* content: Add JavaDoc for Quick documentation (I know that's not a big pull request, but I found the not commented method when I needed it so I wrote it).
+* time: 2015-08-13T11:54:47Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-08-13T14:13:36Z
+* content: I've sent the license just now.
+************************************************************************

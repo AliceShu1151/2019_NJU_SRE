@@ -1,0 +1,34 @@
+************************************************************************
+* id: 311
+* requirement: Added `Convert to Operator` Groovy inspection
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-10-22T18:00:11Z
+* content: Fixes https://youtrack.jetbrains.com/issue/IDEA-95818
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-05T11:09:05Z
+* content: Added `Convert to Operator` Groovy inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/311/commits/ed6338e645524adbb0525f0e83d613e192b8454e
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-22T15:20:30Z
+* content: @dovchinnikov, @maxmedvedev, @ignatov ?
+* time: 2016-03-22T18:53:12Z
+* content: I'm sorry for long responses btw.
+* time: 2016-03-24T16:49:28Z
+* content: Added a few more error checks for places which I thought were already covered, I hope all NPEs and AIOOBEs are eliminated now :)
+* time: 2016-03-24T16:49:28Z
+* content: What should I do about the untestable cases (they're working from the IDE, not from JUnit)?
+************************************************************************

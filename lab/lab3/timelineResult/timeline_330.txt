@@ -1,0 +1,19 @@
+************************************************************************
+* id: 330
+* requirement: IDEA-91198 Maximize views in floating mode
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-03T04:51:36Z
+* content: IDEA-91198 Maximize views in floating mode
+* codeUrl: github.com/JetBrains/intellij-community/pull/330/commits/e931ed8ff500c161e4c13c4b2bf1c1fb2f031413
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-03T04:54:43Z
+* content: by making floating mode window a full-fledged frame thus making it possible to expand the window by double-click and use multiple desktops feature on Mac which is especially useful with split views
+************************************************************************

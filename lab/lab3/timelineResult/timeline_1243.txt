@@ -1,0 +1,40 @@
+************************************************************************
+* id: 1243
+* requirement: IDEA-226683 - "Fix doc comment" action removes valid type param tags from JavaDoc
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-11T23:29:53Z
+* content: differentiate between type parameters and parameters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1243/commits/56921e0b8c6fa8ff6b03e69610c9714b64ce9e1b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-11T23:42:12Z
+* content: This PR fixes IDEA-226683.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-13T23:38:25Z
+* content: add unit test
+* codeUrl: github.com/JetBrains/intellij-community/pull/1243/commits/0f8df70c8af56fd5dd293c9d81399cf298e0c2b0
+* time: 2019-11-14T06:53:52Z
+* content: add unit test for duplicated type parameter
+* codeUrl: github.com/JetBrains/intellij-community/pull/1243/commits/934be14d2f31f6220168ba5dc9971c603b20597c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-19T10:47:18Z
+* content: Merged.
+* time: 2019-11-19T10:51:58Z
+* content: Due to an unfortunate mistake I misattributed several my commits to you. I'm sorry for this and hopefully, you are not very disappointed by this fact. Rewriting published history is not very cheap, so if you don't mind let's keep them as is.
+************************************************************************

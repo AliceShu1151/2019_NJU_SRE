@@ -1,0 +1,35 @@
+************************************************************************
+* id: 53
+* requirement: Change Signature -> Propagate Exceptions -> Toolbar added with Expand Al...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-03-14T19:49:44Z
+* content: Change Signature -> Propagate Exceptions -> Toolbar added with Expand…
+* codeUrl: github.com/JetBrains/intellij-community/pull/53/commits/453d3f317c7cdbb08bc81764daa0d0f72666fecf
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-03-14T20:09:16Z
+* content: Changing from SINGLE_TREE_SELECTION to DISCONTIGUOUS_TREE_SELECTION allows the user to press CTRL+A to select every node in the tree and afterwards he can press SPACE to select all check boxes. I don't expect any bad side effects but I am not a Swing expert.
+* time: 2013-03-14T20:10:12Z
+* content: Dear IntelliJ Team,
+* time: 2013-03-14T20:10:12Z
+* content: this pull request adds an Expand All / Collapse All toolbar button.
+* time: 2013-03-14T20:10:12Z
+* content: If you want to propagate an exception to all methods in a deep call hierarchy it can be automatically expanded which saves a lot of time.
+* time: 2013-03-14T20:10:12Z
+* content: The only problem is, that it can take a lot of time if the hierarchy is very big and I don't know yet how to display a progress bar which let's the user cancel the operation.
+* time: 2013-03-14T20:10:12Z
+* content: It would be nice if you could add this functionality to IntelliJ. Thanks.
+* time: 2013-03-14T20:10:12Z
+* content: Best regards
+* time: 2013-03-14T20:10:12Z
+* content: Josef
+* time: 2013-03-26T20:01:00Z
+* content: I don't think this is valuable. The "Expand all" action does take a huge amount of time for a large call graph, and propagating the exception to a large call hierarchy without any review is most certainly a bad idea.
+************************************************************************

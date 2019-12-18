@@ -1,0 +1,42 @@
+************************************************************************
+* id: 369
+* requirement: Fix WM_CLASS x property not being null-terminated
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-11-24T16:59:49Z
+* content: Fix faulty WM_CLASS
+* codeUrl: github.com/JetBrains/intellij-community/pull/369/commits/56e487fed4e897adbe93cb76f06ce1581ac335f4
+* time: 2015-11-24T17:03:56Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/369/commits/346e307be85fc9b59e6b3a6e86645e5f7c310ac4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-12T14:17:53Z
+* content: The WM_CLASS must be null-terminated according to the icccm spec 4.1.2.5:
+* time: 2016-03-12T14:17:53Z
+* content: https://tronche.com/gui/x/icccm/sec-4.html
+* time: 2016-03-12T14:17:53Z
+* content: This fixes the icon for the jetbrains IDEs appearing twice due to random memory being added to the WM_CLASS because it missed the null-terminator. This happened for example in the gnome launcher.
+* time: 2016-03-12T14:38:01Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-03-12T14:40:07Z
+* content: @klikh Are you sure it's necessary to sign a 1-2 page legal paper to contribute a 2 line change? I will gladly state that I waive all my rights to these 2 lines here on github. I am not knowledgeable enough to understand all the legal speech used in the agreement you linked, really.
+* time: 2016-03-16T14:28:18Z
+* content: WM_CLASS is assembled from an array, and the value of awtAppClassName field isn't always the second part of the pair. So, thank you for pointing to a problem, but I cannot accept the fix as-is, sorry. I'll submit a patch for inclusion in our build of JDK, and hopefully upstream to Oracle.
+* time: 2016-03-16T14:37:19Z
+* content: In fact, the bug is already fixed by Oracle, scheduled for 8u82 (see JDK-6961123 for details).
+* time: 2016-03-19T15:50:25Z
+* content: @trespasserw
+* time: 2016-03-19T15:50:25Z
+* content: As 8u82 will only be released in July 2016 (see https://bugs.openjdk.java.net/projects/JDK/versions/18319), it would be good to fix this now.
+* time: 2016-03-19T15:50:25Z
+* content: I've been using the patch I submitted here in production without any issues - can you give clearer references to the issues you are expecting to happen here?
+* time: 2016-03-19T17:36:04Z
+* content: Right, that's why we'll port the fix to our custom JDK ASAP.
+************************************************************************

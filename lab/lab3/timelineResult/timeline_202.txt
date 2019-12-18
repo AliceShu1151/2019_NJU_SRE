@@ -1,0 +1,31 @@
+************************************************************************
+* id: 202
+* requirement: option BROWSEWORDATCARET removed
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-07-26T12:36:27Z
+* content: option BROWSEWORDATCARET removed
+* codeUrl: github.com/JetBrains/intellij-community/pull/202/commits/cac5f6de909fb6595314a5b690c7e82c64cee543
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-07-26T12:38:45Z
+* content: Latest BrowseWordAtCaret fully supports darcula scheme, so this key is not longer needed. https://code.google.com/p/browsewordatcaret/issues/detail?id=16
+* time: 2014-07-27T12:24:38Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-07-27T12:47:36Z
+* content: @klikh CLA done
+* time: 2014-07-27T12:50:57Z
+* content: Received, thanks.
+* time: 2018-07-21T15:08:28Z
+* content: @minman, please rebase the PR, cc @bulenkov.
+* time: 2019-06-22T23:47:43Z
+* content: @minman what issue does it solve? is it still reproducible? there are chances that it was fixed somewhere between 2014 and 2019...
+* time: 2019-06-22T23:47:43Z
+* content: @bulenkov please update this PR so it's ready to be merged, explain why this can't be done, or consider closing it.
+************************************************************************

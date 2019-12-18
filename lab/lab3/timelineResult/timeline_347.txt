@@ -1,0 +1,31 @@
+************************************************************************
+* id: 347
+* requirement: [IDEA-137253] Fixed renaming class elements when decompiling
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-01-21T06:06:45Z
+* content: Fixed renaming class elements when using the decompilers -ren=1 optio…
+* codeUrl: github.com/JetBrains/intellij-community/pull/347/commits/e1b4995d6eb38a26f8a6854b0f2de96539687444
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-01-21T06:11:13Z
+* content: Fixes issue IDEA-137253
+* time: 2016-01-22T15:28:35Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-01-24T23:39:22Z
+* content: I'll do that early next week, I won't have access to a printer until monday at the earliest.
+* time: 2016-01-26T20:49:04Z
+* content: I've gone ahead and emailed it to the address that you mentioned.
+* time: 2016-01-27T15:35:07Z
+* content: We've received the CLA. Thanks.
+* time: 2016-02-19T23:43:52Z
+* content: There is a bug with renaming inherited class elements in the outputted code (methods and fields). When an inherited method or field is referenced in code it is decompiled as the original name. Obviously this is not the intended behaviour.
+* time: 2016-02-21T19:43:29Z
+* content: I mentioned that in this comment that I added in 82f187e
+************************************************************************

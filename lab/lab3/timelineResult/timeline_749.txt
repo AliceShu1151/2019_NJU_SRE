@@ -1,0 +1,69 @@
+************************************************************************
+* id: 749
+* requirement: Fish now will respect user's selected prompt
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-03T05:26:28Z
+* content: Fish now will respect user's selected prompt
+* codeUrl: github.com/JetBrains/intellij-community/pull/749/commits/c967b6aa086b743bbc68911ed58ed5bffdebd3e5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-03T05:30:01Z
+* content: Fixes IDEA-173259.
+* time: 2018-03-03T05:30:01Z
+* content: See:
+* time: 2018-03-05T07:49:45Z
+* content: Have you submitted a contributor license agreement? If not, please follow the steps described at http://www.jetbrains.com/agreements/cla/ to sign it.
+* time: 2018-03-05T07:54:59Z
+* content: Just signed it.
+* time: 2018-03-10T13:16:07Z
+* content: This won't work if one happens to use functions in its ~/.config/fish/config.fish. It works as expected if the block sourcing the functions is placed before the one loading the ~/.config/fish/config.fish
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-12T06:05:17Z
+* content: Functions should be sourced before config
+* codeUrl: github.com/JetBrains/intellij-community/pull/749/commits/6b2fa485c4116b9a00774d7b0d4f1673e9606508
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-12T06:06:34Z
+* content: @tumasgiu Thanks for catching this issue. I updated the PR to address it.
+* time: 2018-04-01T20:05:59Z
+* content: Just applied this patch locally and it works fine. Hope to see this merged before next release.
+* time: 2018-05-26T01:14:55Z
+* content: @traff, what prevents this from being merged? I'm a bit tired to manually patch files after each update.
+* time: 2018-06-10T11:20:43Z
+* content: Can we get this merged? This bug is really rather annoying!
+* time: 2018-06-13T10:18:11Z
+* content: Judging by his activity log, it is possible that @traff (the assignee) is on vacation.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-23T14:14:51Z
+* content: Merge branch 'master' into behrangsa-fish-config
+* codeUrl: github.com/JetBrains/intellij-community/pull/749/commits/123c4f380e78f03a639cc8729ceb14da552bacc0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-23T14:15:11Z
+* content: @Elizaveta239 @bulenkov @vladsoroka @traff any progress on this guys?
+* time: 2018-06-25T08:12:54Z
+* content: Hi @behrangsa Can we take care of ~/.config/fish/conf.d/ as well, which is also a important part of configurations of fish,  I think https://fishshell.com/docs/current/index.html#initialization
+************************************************************************

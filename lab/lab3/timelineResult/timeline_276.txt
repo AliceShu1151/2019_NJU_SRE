@@ -1,0 +1,4 @@
+************************************************************************
+* id: 276
+* requirement: Don't provide intentions or fixes that will modify generated sources
+the requirement of 276 only has implements, no discussion.

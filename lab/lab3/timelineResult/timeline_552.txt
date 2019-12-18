@@ -1,0 +1,62 @@
+************************************************************************
+* id: 552
+* requirement: IDEA-171459 fix type cast for int literals used as byte / short
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-13T22:00:42Z
+* content: IDEA-171459 fix type cast for int literals used as byte / short in de…
+* codeUrl: github.com/JetBrains/intellij-community/pull/552/commits/61b2d4dc7357b2bf4ac922101209f049f264a149
+* time: 2017-04-13T22:16:53Z
+* content: Removed unnecessary boxing of primitive types
+* codeUrl: github.com/JetBrains/intellij-community/pull/552/commits/37191f1f4d285b34c48ce593e9126e2a2c0192ad
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-13T22:23:14Z
+* content: Fixed decompiler to add a type cast for integer values used in byte / short context. For example: Byte.valueOf((byte)123)
+* time: 2017-04-13T22:23:14Z
+* content: Also removed unnecessary primitive types boxing: String.format("%b", new Object[]{Boolean.valueOf(bool)}) =>String.format("%b", new Object[]{bool})
+* time: 2017-04-18T08:40:25Z
+* content: Fixing this issue greatly improves the chances of being able to recompile the output of many java applications that I've worked with at various points in the past. Please consider merging this soon.
+* time: 2017-04-18T14:32:07Z
+* content: I like it, thanks! Is it possible to avoid cast here in return? public byte getByte() {   return 127; } also byteArray = {(byte)1, (byte)0, (byte)127, (byte)-128, (byte)-1}, in MoreAnnotations does not look good. I agree that compilability is more important here, but maybe we could fix this as well.
+* time: 2017-04-18T14:42:41Z
+* content: Sure. I'll check what can be done about the cast for literals that are within respective value ranges.
+* time: 2017-04-18T14:42:41Z
+* content: It's a bit tricky since the compiler behavior is inconsistent for such values. Both byte b = 127; and return 127; are ok. But for example Byte.valueOf(127) is an error.
+* time: 2017-04-18T14:44:23Z
+* content: I've found a note about this here: https://docs.oracle.com/javase/specs/jls/se7/html/jls-5.html#jls-5.3-500-C
+* time: 2017-04-18T14:48:48Z
+* content: byte[] barr = new byte[]{(byte)0, (byte)0, (byte)0}; same here, casts are not needed
+* time: 2017-04-18T14:51:08Z
+* content: Thanks for the link.
+* time: 2017-04-18T14:51:08Z
+* content: I'll change the code to add the casts for literals only if a) value is outside respective type range or b) value is used as a method / constructor argument
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-18T23:16:47Z
+* content: Add '(byte)' and '(short)' type cast for int literals only in invocat…
+* codeUrl: github.com/JetBrains/intellij-community/pull/552/commits/34a1c4020906106dddd756cc0b6dc5a9235e3d9b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-18T23:24:37Z
+* content: I've realized that literal values will never be "outside respective type range". E.g. (byte) 128 will be compiled to -128.
+* time: 2017-04-19T08:39:12Z
+* content: merged into master, thanks!
+* time: 2017-04-19T21:38:51Z
+* content: I've just realized that explicit boxing of primitive literals is still present in some cases. E.g. Integer.valueOf(1) in TestClassLambda.dec.
+* time: 2017-04-19T21:38:51Z
+* content: Should I create a new PR?
+************************************************************************

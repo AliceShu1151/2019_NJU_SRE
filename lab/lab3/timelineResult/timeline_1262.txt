@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1262
+* requirement: Make getters public again, like their setters
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-22T23:00:00Z
+* content: Make getters public again, like their setters
+* codeUrl: github.com/JetBrains/intellij-community/pull/1262/commits/06bff90e3ae841bcc263808eb44c37c53a23fd6a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-22T23:00:21Z
+* content: Commit 3cf5f1d made getters package-private but left setters public which triggers KT-20602 (“Cannot set synthetic property”).
+* time: 2019-11-22T23:00:31Z
+* content: @cdracm?
+************************************************************************

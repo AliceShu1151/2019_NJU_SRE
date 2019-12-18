@@ -1,0 +1,74 @@
+************************************************************************
+* id: 563
+* requirement: Decompiler: Remove 'Integer.valueOf()' boxing of literals
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-20T20:49:24Z
+* content: Removed 'Integer.valueOf()' boxing of literals
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/caad7f11d608ad6035ffdb1d75b5021dcf78aef1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-20T20:58:12Z
+* content: This is a continuation of #552.
+* time: 2017-04-20T20:58:12Z
+* content: Removed Integer.valueOf() boxing of literals whose type is detected as byte or short.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-01T10:23:43Z
+* content: Merge branch 'master' into decompiler-boxing
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/45084fcb6608eb99c2a83d0ea46f2460b0ecd9c0
+* time: 2017-05-01T10:28:01Z
+* content: Fixed conflicts after recent changes in master
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/45bdd70e3a1f4af498b344e73ee5fc2ab557eff6
+* time: 2017-05-11T20:31:30Z
+* content: Merge branch 'master' into decompiler-boxing
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/aa2facddca4edd837be17d34567c137e181a1148
+* time: 2017-05-11T20:45:22Z
+* content: Updated TestPrimitives test to match the source
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/6075ac104ee73b4c44f7eaef46f979414f605efd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-21T20:35:26Z
+* content: @gorrus Would you mind checking this?
+* time: 2017-06-22T16:42:50Z
+* content: I'm slightly worried that you do setConstType inside isBoxingCall method, this looks like an invisible side effect. Please find a better place for it.
+* time: 2017-06-22T16:44:28Z
+* content: Please do not do setConstType inside isBoxingCall method
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-23T19:43:23Z
+* content: Removed setConstType() from is isBoxingCall() to avoid hidden side ef…
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/46f0c567f7d600b143e5d021ce8ded4879c89dde
+* time: 2017-06-23T20:37:37Z
+* content: Fixed narrowing cast from 'int' to 'Byte' / 'Short'
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/d70332d9343ab8e4de0ff1759f1befe41789579a
+* time: 2017-06-23T21:22:32Z
+* content: Omit unnecessary unboxing calls in decompiled code
+* codeUrl: github.com/JetBrains/intellij-community/pull/563/commits/7e17f1d6c209fb00e0d09a7aa7e091cf72f8b589
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-23T21:28:56Z
+* content: I removed setConstType() from isBoxingCall(). I also fixed another bug: narrowing cast was not applied when target type was Byte or Short.
+* time: 2017-06-23T21:28:56Z
+* content: On top of that I removed the unboxing calls too. (intValue(), etc.) This should have probably been done in a separate PR, but I couldn't resist.
+************************************************************************

@@ -1,0 +1,21 @@
+************************************************************************
+* id: 625
+* requirement: Add elements into collection directly
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-09-11T15:34:11Z
+* content: get rid of excess usage of Arrays.asList(T...)
+* codeUrl: github.com/JetBrains/intellij-community/pull/625/commits/722cd826bd7c4dbc08f58a9f9583de8d69224edc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-09-11T17:27:56Z
+* content: Direct adding of elements into collection by the means of ContainerUtil.addAll and new SmartList(T...) allows to reduce amount of garbage instances produced by Arrays.asList
+* time: 2017-09-11T17:27:56Z
+* content: See https://youtrack.jetbrains.com/issue/IDEA-178648
+************************************************************************

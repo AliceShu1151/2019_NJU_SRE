@@ -1,0 +1,50 @@
+************************************************************************
+* id: 843
+* requirement: fix extra semicolon in decompiled empty blocks IDEA-196314
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-28T20:29:08Z
+* content: fix extra semicolon in empty blocks IDEA-196314
+* codeUrl: github.com/JetBrains/intellij-community/pull/843/commits/fc65b849d81906f1f61d33ed4321bf8faa54b0ae
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-28T20:34:28Z
+* content: This should fix the mentioned issue (and also other cases of empty blocks that I didn't consider). I have changed the tests so that they all pass, if there are problems that the tests do not cover I am happy to add more.
+* time: 2018-07-30T11:19:57Z
+* content: There's a semicolon param in the method specifically for this case, why not change it to false?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-30T12:55:42Z
+* content: add tests for other cases, move to better fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/843/commits/c7d88a8fba3dc4da1c2fef3350880e87a1e24281
+* time: 2018-07-30T13:02:23Z
+* content: fix double indent with label, fix obsfucated tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/843/commits/8150d0e6ad07db94ddbf9699a3aaab61f9235ba8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-30T13:05:11Z
+* content: I initially just changed jmpWrapper as it fixed all cases and I couldn't find anything that used it to provide a semicolon correctly. However, some cases with if statements aren't covered by it and it's not a great fix. Hopefully the output formatting is OK.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-30T15:39:21Z
+* content: add missing class file
+* codeUrl: github.com/JetBrains/intellij-community/pull/843/commits/8cf491e66d0a2ec099699da773d6880dea697e68
+************************************************************************

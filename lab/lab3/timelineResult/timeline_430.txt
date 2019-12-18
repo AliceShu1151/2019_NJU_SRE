@@ -1,0 +1,25 @@
+************************************************************************
+* id: 430
+* requirement: IDEA-158882 Adding support for setting.xml set via .mvn/maven.config
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-21T22:44:23Z
+* content: IDEA-158882 Adding support for setting.xml set via .mvn/maven.config …
+* codeUrl: github.com/JetBrains/intellij-community/pull/430/commits/2e0767ff6c58efd4c95d0fea4d8d0dd292ea75b3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-21T22:48:38Z
+* content: Maven 3.3 provides support for supplying project-specific maven execution arguments via .mvn/maven.config under the project base directory. This patch address issue IDEA-158882 to honors the --settings or -s argument supplied in that file.
+* time: 2016-07-22T08:44:11Z
+* content: Have you submitted a contributor license agreement? If not, please check your inbox: I've just send there the CLA to sign. Thanks.
+* time: 2016-07-22T18:56:30Z
+* content: I Just faxed the CLA. Thanks.
+* time: 2016-07-26T13:01:08Z
+* content: Received, thanks.
+************************************************************************

@@ -1,0 +1,49 @@
+************************************************************************
+* id: 868
+* requirement: JDWP: Ignore vmVersion number when attached to dalvik/Art
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-20T22:31:08Z
+* content: JDWP: Ignore vmVersion number when attached to dalvik/Art
+* codeUrl: github.com/JetBrains/intellij-community/pull/868/commits/bdb9a3ecbbdea321304438188cb6505a01688e13
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-20T22:43:53Z
+* content: This number is somewhat meaningless on android and varies based on the android version. It should be ignored and the values returned by VirtualMachine.Capabilities and VirtualMachine.CapabilitiesNew should be considered the sole source of truth.
+* time: 2018-09-20T22:43:53Z
+* content: Bug: https://youtrack.jetbrains.com/issue/IDEA-199236
+* time: 2018-09-21T13:24:21Z
+* content: Hi, have you signed https://www.jetbrains.com/agreements/cla/ ?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-21T15:43:02Z
+* content: Use com.intellij.debugger.engine.DebuggerUtils#isAndroidVM
+* codeUrl: github.com/JetBrains/intellij-community/pull/868/commits/b4a345ce404a63ebe671ef8985f76de3c0f67dcd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-21T15:45:25Z
+* content: Yes.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-21T15:53:59Z
+* content: Sort includes in VirtualMachineProxyImpl
+* codeUrl: github.com/JetBrains/intellij-community/pull/868/commits/9b82cf93f8fd9430187c5a933a6445ef4ae33e8e
+************************************************************************

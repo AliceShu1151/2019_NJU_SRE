@@ -1,0 +1,19 @@
+************************************************************************
+* id: 183
+* requirement: Show language name instead of internal id to user
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-05-20T17:03:16Z
+* content: Show language name instead of internal id to user
+* codeUrl: github.com/JetBrains/intellij-community/pull/183/commits/dc5115e7dbffbc57d14a2b0291ef92484c8ff0c8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-05-20T18:00:04Z
+* content: I haven't found "Cannot inline reference from ..." in test data but didn't run tests too.
+************************************************************************

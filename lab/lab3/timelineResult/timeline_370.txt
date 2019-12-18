@@ -1,0 +1,24 @@
+************************************************************************
+* id: 370
+* requirement: [Fernflower] ClassReference14Processor cleanup
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-14T05:55:49Z
+* content: Made ClassReference14Processor static similar to how InitializerProce…
+* codeUrl: github.com/JetBrains/intellij-community/pull/370/commits/d5f7612d15a7f420dd9f97ce0d13937b687dd400
+* time: 2016-03-14T06:02:36Z
+* content: Fixed a typo in a comment and in a method name. Made ClassWriter.invo…
+* codeUrl: github.com/JetBrains/intellij-community/pull/370/commits/b7d47946898a16324bd350fefb0dc762cda7a130
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-14T06:15:45Z
+* content: ClassReference14Processor has been made static similar to how EnumProcessor and InitializerProcessor are setup. This prevents a lot of redundant InvocationExprent creation. I also fixed a couple typos that I noticed while working on the codebase and split BasicBlockStatement.toJava(int indent, BytecodeMappingTracer tracer) into two lines to make it easier to interpret stack traces involving it.
+* time: 2016-03-14T06:15:45Z
+* content: I've previously signed the contributor license agreement.
+************************************************************************

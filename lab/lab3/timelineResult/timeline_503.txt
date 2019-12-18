@@ -1,0 +1,25 @@
+************************************************************************
+* id: 503
+* requirement: Fix PY-21991
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-01-16T04:38:26Z
+* content: Fix PY-21991
+* codeUrl: github.com/JetBrains/intellij-community/pull/503/commits/712c478b512d9e858798d14ead8f14361cbf4e3e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-01-16T04:40:58Z
+* content: Fix PY-21991
+* time: 2017-01-20T11:49:06Z
+* content: @fitermay Thank you very much! It works fine except cases of executing complete multi-line commands. For example, if user selected such lines:
+* time: 2017-01-20T11:49:06Z
+* content: they should be executed without any additional "Enter" pressing.
+* time: 2017-01-20T12:03:32Z
+* content: Good catch, we need to append \n in those cases.
+************************************************************************

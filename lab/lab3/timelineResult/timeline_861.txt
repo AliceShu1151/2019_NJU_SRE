@@ -1,0 +1,34 @@
+************************************************************************
+* id: 861
+* requirement: Terminal tool window native tabs
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-11T09:11:05Z
+* content: Created configurable group for tool window context menu
+* codeUrl: github.com/JetBrains/intellij-community/pull/861/commits/06f189f1013cabe20424ee8c11e28d128f7245b5
+* time: 2018-09-17T07:40:31Z
+* content: Native tabs for terminal tool window: part I (no renaming of tabs, no…
+* codeUrl: github.com/JetBrains/intellij-community/pull/861/commits/833ab4566f906b6788671010e63a03302e644d95
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-17T12:54:14Z
+* content:  No description provided. 
+* time: 2018-09-17T16:23:22Z
+* content: @traff you can take a look at the functionality while it's being reviewed if you want
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-20T08:39:24Z
+* content: Native tabs for terminal tool window: renaming of tabs, drag&drop (th…
+* codeUrl: github.com/JetBrains/intellij-community/pull/861/commits/04f88867a98c370f24fc6728808a83497a9bad95
+************************************************************************

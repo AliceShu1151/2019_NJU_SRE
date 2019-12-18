@@ -1,0 +1,19 @@
+************************************************************************
+* id: 181
+* requirement: Joined two console CompositFilters into one
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-05-07T22:17:25Z
+* content: joined two console CompositFilters into one
+* codeUrl: github.com/JetBrains/intellij-community/pull/181/commits/c22f13d7da3f5280cfae4f65f583c0523604bf70
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-05-07T22:48:38Z
+* content: CompositeFilter uses all filters by default and merges results (skips intersecting hyperlinks) - to hopefully remove a need to introduce a new interface for ordering of filters
+************************************************************************

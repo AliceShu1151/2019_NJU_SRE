@@ -1,0 +1,4 @@
+************************************************************************
+* id: 692
+* requirement: Introduce ScratchFileLanguageProvider
+the requirement of 692 only has implements, no discussion.

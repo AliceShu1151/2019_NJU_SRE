@@ -1,0 +1,33 @@
+************************************************************************
+* id: 841
+* requirement: Use conventional directory structure for intellij.gradle.java
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-27T21:44:48Z
+* content: Use conventional directory structure for intellij.gradle.java
+* codeUrl: github.com/JetBrains/intellij-community/pull/841/commits/e92d560006cae4fd5e1e0bfc955d585fd5b35565
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-27T21:48:26Z
+* content: This module followed a non-conventional directory structure.  Java packages usually correspond with a directory. This module used a package prefix which caused problems in downstream projects.
+* time: 2018-07-27T21:48:26Z
+* content: This change moves all source files to follow a more conventional directory structure, and removes the usage of the package prefix from the module. Moreover, the GradleInspectionBundle.properties file is moved to the resources directory.
+* time: 2018-07-30T07:28:06Z
+* content: Could you elaborate which problems in downstream projects are you talking about?
+* time: 2018-07-30T16:56:03Z
+* content: Sure! The Android Studio project was unable to run some of its UI tests with the Bazel build system. The custom rule that was building IML modules handled package prefixes for source files, but prefixes were not applied to resource files. For example, the GradleInspectionBundle.properties file was packaged as codeInspection/GradleInspectionBundle.properties rather than org/jetbrains/plugins/gradle/GradleInspectionBundle.properties.
+* time: 2018-07-31T21:48:54Z
+* content: @vladsoroka any input?
+* time: 2018-08-01T22:46:40Z
+* content: @klikh Polite ping, just to make sure that this PR doesn't end up getting ignored.
+* time: 2018-08-02T08:07:16Z
+* content: @afwang
+* time: 2018-08-02T08:07:16Z
+* content: So, the only GradleInspectionBundle.properties file movement is needed for you. I've moved the file using the following commit c51505f
+************************************************************************

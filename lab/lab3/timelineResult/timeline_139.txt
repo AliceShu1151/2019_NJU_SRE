@@ -1,0 +1,29 @@
+************************************************************************
+* id: 139
+* requirement: Enable per-file trim-trailing-whitespace and ensure-final-newline settings
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-12-16T07:21:31Z
+* content: Added support for per-file trailing spaces and final newline settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/139/commits/7ee8c8a87546084d126c887f09a77e5bbe44716c
+* time: 2013-12-16T07:25:50Z
+* content: Removed some commented-out stuff
+* codeUrl: github.com/JetBrains/intellij-community/pull/139/commits/56d7733fb06dcc078f0d14fb9e53e81d8d1caf00
+* time: 2013-12-16T07:27:28Z
+* content: Merge remote-tracking branch 'upstream/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/139/commits/815407454bdb6188c6a23ba28d743bc3402476d3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-16T07:54:07Z
+* content: This change will allow per-file overriding of settings handled by the TrailingSpacesStripper class. The specific motivation for this is to support the editorconfig-jetbrains plugin. For an example of how this extension to TrailingSpacesStripper can be used, see the EditorSettingsManager class in the "future" branch of the editorconfig plugin.
+* time: 2013-12-16T07:54:07Z
+* content: I'm not sure if the TrailingSpacesStripper class is the best place to keep the new UserData keys and string constants that I introduced, so please feel free to change where those live and I will update accordingly.
+* time: 2013-12-16T07:54:07Z
+* content: Also, I have done some basic testing to make sure that this patch works well with my plugin, but I am having some issues running the IntelliJ test suite. I have been in contact with one of your developers about this patch, so I will work with her to make sure that the patch doesn't introduce any regressions and that my new tests work okay. I just wanted to go ahead and get the pull request out.
+************************************************************************

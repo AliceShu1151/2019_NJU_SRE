@@ -1,0 +1,32 @@
+************************************************************************
+* id: 773
+* requirement: WIP: Pydevd native trace
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-26T23:14:10Z
+* content: Tracing by using native 'PyEval_SetTrace'
+* codeUrl: github.com/JetBrains/intellij-community/pull/773/commits/91fbdbfb85cee16765bdb0b1fc9aa85dbbbb5eb7
+* time: 2018-03-26T23:24:24Z
+* content: remove 'SafeCallWrapper'
+* codeUrl: github.com/JetBrains/intellij-community/pull/773/commits/b5e28a81c32720f8d5b221adb4cdd5a6e83b5967
+* time: 2018-03-26T23:35:21Z
+* content: use a no-op native dummy trace for frame eval debugger
+* codeUrl: github.com/JetBrains/intellij-community/pull/773/commits/241663aad1a2aed64b85a84610f87978a929335e
+* time: 2018-03-26T23:40:28Z
+* content: revert local change
+* codeUrl: github.com/JetBrains/intellij-community/pull/773/commits/b509bdcf4279f6573b659b05f268f455036e41f4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-26T23:45:15Z
+* content: @Elizaveta239 Please take a look:
+* time: 2018-03-26T23:45:15Z
+* content: This is work in progress. It works but needs to be productionized. I gave you access to the branch in case you have time to work on this.
+* time: 2018-03-27T11:01:28Z
+* content: Hi @fitermay! It looks very interesting. At the moment we're going to have a 2018.1 release and we're going to fix regressions and bugs in new features in minor updates. But after that we can discuss your implementation. Thank you!
+************************************************************************

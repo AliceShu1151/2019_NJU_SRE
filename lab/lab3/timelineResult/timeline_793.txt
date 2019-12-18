@@ -1,0 +1,41 @@
+************************************************************************
+* id: 793
+* requirement: In my opinion, there aren't many people that committed message same as previous
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-05-23T03:30:30Z
+* content: Set CLEAR_INITIAL_COMMIT_MESSAGE = true
+* codeUrl: github.com/JetBrains/intellij-community/pull/793/commits/a389c9bb84e45db89137b69cded243fb9363f092
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-05-23T03:32:42Z
+* content:  No description provided. 
+* time: 2018-05-23T13:59:11Z
+* content: The commit message is preselected, so if you don’t need it, just start typing, and it will be replaced with yours.
+* time: 2018-05-23T13:59:11Z
+* content: Seeing the previous message, or even reusing it at least partially could be useful. With the default changed, people who find it useful will not have a message out of the box, and will need to go enable it first, while those who do not need it just type their own.
+* time: 2018-05-23T13:59:11Z
+* content: If you don’t need this in any of your projects, configure the option in Default settings, so all your new project have this option enabled.
+* time: 2018-05-23T17:18:23Z
+* content: @klikh My team dislike this default option because sometime forget to change commit message.
+* time: 2018-05-23T17:41:45Z
+* content: Hi @klikh
+* time: 2018-05-23T17:41:45Z
+* content: I think this problem is due to user error because position of commit message box is bad UI/UX.
+* time: 2018-05-23T17:41:45Z
+* content: When I open the commit dialog, I'll select the change file (top position). and review changes (bottom position), then click the commit button.
+* time: 2018-05-23T17:41:45Z
+* content: If I do not forget to change the text. When I click on the text box. Selected text will be discarded. The message must be re-selected. It's not easy.
+* time: 2018-05-23T17:41:45Z
+* content: If the commit message box move to near commit button, it will reduce the problem.
+* time: 2018-05-23T17:41:45Z
+* content: Hope you will review this case again.
+* time: 2018-05-25T17:51:52Z
+* content: Usually the commit message is considered as a very important part of the commit, so it is strange to forget to change it. Nevertheless, we are currently discussing a new layout of the commit dialog, so it may be changed in one of future releases.
+************************************************************************

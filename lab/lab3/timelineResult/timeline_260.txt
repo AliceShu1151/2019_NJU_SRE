@@ -1,0 +1,97 @@
+************************************************************************
+* id: 260
+* requirement: Add the ability to get keys and values from KeyFMap
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-04-27T16:34:44Z
+* content: Add the ability to get keys and values from KeyFMap
+* codeUrl: github.com/JetBrains/intellij-community/pull/260/commits/f06a33f802b349b294a091c5a8cc2447b7d8f1ad
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-04-27T17:04:58Z
+* content: Changes in KeyFMap are needed for Kotlin
+* time: 2015-04-27T17:18:27Z
+* content: @donnerpeter @chashnikov please review this.
+* time: 2015-04-27T17:19:16Z
+* content: Note I didn't test it on CI
+* time: 2015-04-27T19:11:04Z
+* content: Why exactly do you need this in Kotlin?
+* time: 2015-04-27T19:51:20Z
+* content: We need lightweight container for storing metadata in some places. We want to use UserDataHolder(Base) but sometimes we need merge some containers, so we should know what keys stored inside container...
+* time: 2015-04-27T19:51:20Z
+* content: TBH right now we need only getKeys, getValues added because it's already exist in most implementations and to be symmetrical :)
+* time: 2015-04-27T20:00:16Z
+* content: Another possible way to achieve it is declare some utility functions outside KeyFMap, but I afraid that then we can forget to update these functions while adding new implementations.
+* time: 2015-04-27T20:00:16Z
+* content: Thoughts?
+* time: 2015-04-27T20:01:34Z
+* content: I thought that maybe will be useful to have containsKey too? What do you think?
+* time: 2015-04-28T08:44:11Z
+* content: If you need to merge KeyFMap why not add method 'plus(KeyFMap)' to KeyFMap instead?
+* time: 2015-04-28T08:44:11Z
+* content: On Mon, Apr 27, 2015 at 9:51 PM, Zalim Bashorov notifications@github.com wrote:
+* time: 2015-04-28T18:08:43Z
+* content: Good point, thanks @chashnikov! What do You think @donnerpeter?
+* time: 2015-04-28T18:08:43Z
+* content: Anyway I think getKeys is useful in some cases(e.g. see second commit).
+* time: 2015-04-28T18:35:24Z
+* content: I'm sorry, but I jumped to conclusions. We really need getKeys.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-04-28T19:15:36Z
+* content: ArrayBackedFMap: getKeys -> getKeyIds
+* codeUrl: github.com/JetBrains/intellij-community/pull/260/commits/9bb470daacab7496a197967e392a01a9e3fa65f8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-04-28T19:31:59Z
+* content: I still don't understand the exact problem you're trying to solve and why just plain old Map isn't enough. KeyFMap is pretty specific and has quite a bad performance when large. If you need immutability, have a look at SmartFMap (and if Kotlin still doesn't have its own immutable collections, that's a shame).
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-04-28T19:34:05Z
+* content: Use KeyFMap#getKeys in ExportableUserDataHolderBase to simplify and i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/260/commits/d993831ce5ff4437536e1d9d2c63f29b428fcf8f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-04-28T19:48:16Z
+* content: I updated the PR
+* time: 2015-04-28T19:57:49Z
+* content: We want to store metadatas which key's type is Key.
+* time: 2015-04-28T19:57:49Z
+* content: It's ok for our cases -- we don't expected large datas.
+* time: 2015-04-28T19:57:59Z
+* content: We (sometimes) prefer to use tested for years things instead of reinvent it :)
+* time: 2015-04-28T20:08:16Z
+* content: java.util.HashMap is a very tested thing, for many more years already than KeyFMap. The latter is itself an implementation detail of UserDataHolderBase and might change in future (although not very likely).  It also lacks some functionality that might be important, e.g. equals/hashCode. HashMap is not so type-safe, agreed, but definitely more reliable and proven.
+* time: 2015-04-28T20:08:16Z
+* content: So I'd say I need more arguments that you really-really need KeyFMap and no alternatives will ever suit you :)
+* time: 2015-04-29T13:12:04Z
+* content: I updated PR.
+* time: 2015-04-29T13:12:28Z
+* content: Please backport changes to 141 branch
+* time: 2015-04-29T14:01:56Z
+* content: Pushed to master. Need review for 141. @chashnikov ?
+* time: 2015-04-29T14:33:29Z
+* content: Looks ok now, though I would generate KEYS and VALUES arrays in KeyFMapTest instead of hardcoding.
+* time: 2015-04-29T15:20:34Z
+* content: I created new PR #262 with changes in KeyFMapTest.
+************************************************************************

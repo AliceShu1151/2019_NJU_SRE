@@ -1,0 +1,25 @@
+************************************************************************
+* id: 902
+* requirement: Fix StringSearcher.scan bug
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-27T11:21:37Z
+* content: Add test case to StringSearcherTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/902/commits/1b36052fafd890e0e4b2d128dfd59af0c9f9870b
+* time: 2018-10-27T11:25:42Z
+* content: Fix StringSearcher bug
+* codeUrl: github.com/JetBrains/intellij-community/pull/902/commits/8c31aaad030d585e2ca579670e0fbc3da89f5b92
+* time: 2018-10-27T12:50:08Z
+* content: Inline variable to remove inspection warning
+* codeUrl: github.com/JetBrains/intellij-community/pull/902/commits/365e39e6b4ebea83011b6ce6dba5e52b5100751a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-27T13:28:06Z
+* content: new StringSearcher(pattern, any, false).scan(text) starts scan from index text.length() - myPatternLength + 1 in text. So it throws StringIndexOutOfBoundsException if myPatternLength == 1.
+************************************************************************

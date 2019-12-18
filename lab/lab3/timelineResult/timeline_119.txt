@@ -1,0 +1,25 @@
+************************************************************************
+* id: 119
+* requirement: svn4idea plugin, IDEA-96825: consider the "longest" (most specific) path...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-10-23T07:15:22Z
+* content: svn4idea plugin, IDEA-96825: consider the "longest" (most specific) p…
+* codeUrl: github.com/JetBrains/intellij-community/pull/119/commits/70346be7c4acd4f2d6261e5ad71ebc299fd4d1ca
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-10-23T07:18:43Z
+* content: Fix for http://youtrack.jetbrains.com/issue/IDEA-96825.
+* time: 2013-10-30T16:29:59Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2013-10-31T07:09:01Z
+* content: I have sent the signed agreement on 23.10.2013 20:30 via fax to JetBrains s.r.o..
+* time: 2014-01-15T12:19:37Z
+* content: It seems no custom filtering is necessary for file history, so I just removed it - all history should be shown correct now. See 9bba592.
+************************************************************************

@@ -1,0 +1,77 @@
+************************************************************************
+* id: 789
+* requirement: [PsiTreeUtil] adding findChildrenByFilter() method
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-05-08T19:24:20Z
+* content: adding findChildrenByFilter() method
+* codeUrl: github.com/JetBrains/intellij-community/pull/789/commits/4fa1da5b51882fbd1bf1bc5e1366199718eb7546
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-05-08T19:54:32Z
+* content: That will give flexibility of filtering children not just by  Type (Class) but aslo by any conditions.
+* time: 2018-05-08T19:54:32Z
+* content: Also existing bottom most findChildrenOfAnyType() could be rewritten to something like that:
+* time: 2018-05-08T19:54:32Z
+* content: PS Same kind of methods could be done for findChildOfType() and others...
+* time: 2018-05-11T13:58:43Z
+* content: Why do you need this?
+* time: 2018-05-11T17:43:46Z
+* content: Let's say we need to find all elements by Type with specific Text in a file. Presently, we have to fetch all elements by Type and then for-each them by Text:
+* time: 2018-05-11T17:43:46Z
+* content: With n elements in the file and m elements of ElementType, that will take O(n*m). Also, that will envolve allocating space for the collection of all m elements of ElementType while we might need only few of them at the end. We might hope for some smart optimisations inside JVM, but I would not relay on that...
+* time: 2018-05-11T17:43:46Z
+* content: With suggested method all checks will happened once per each element withing the file, so it will take O(n) and we'll have to allocate the collection with only searched elements.
+* time: 2018-05-11T17:43:46Z
+* content: Another solution would be copy-past and modify findChildrenOfType() code to findChildrenOfTypeWithText() or even provide some kind of comparator and use it inside PsiElementProcessor.execute(). But we already have CollectFilteredElements subclass with PsiElementFilter filter that will do all needed works for us.
+* time: 2018-05-11T17:43:46Z
+* content: PS Full "production" code of usage example is here: CMakePSITreeSearch.java
+* time: 2018-05-12T19:39:42Z
+* content: Why do you need it in PsiTreeUtil? I'd prefer not to add API methods unused in our codebase, just for one plugin.
+* time: 2018-05-12T19:39:42Z
+* content: BTW note that filtering by getText is extremely inefficient, especially when invoked for all children recursively in large composite elements.
+* time: 2018-05-12T19:39:42Z
+* content: There's also quite handy SynTraverser.psiTraverser(root) API which gives you an Iterable of all its children recursively, which you can filter as you like.
+* time: 2018-05-13T01:50:11Z
+* content: Actually,  I don't need it in PsiTreeUtil. I already implemented it in my package. I thought it might be useful for others to have universal search method instead of multiples findChildrenOf[Any]Type() and findChildOf[Any]Type() for each specific case, all of which at the bottom comes to the same filtering inside PsiElementProcessor.execute() method. Its mostly been just suggestion for next refactoring round of PsiTreeUtil. Hence, we can close this PR.
+* time: 2018-05-13T01:50:11Z
+* content: As for getText, unfortunatelly it's the only way I can see to find element with variable declaration in CMake psi after filtering for element instanceof CMakeLiteral.
+* time: 2018-05-13T01:50:11Z
+* content: Thank you for SynTraverser.psiTraverser(root)! Will explore it and check if it speeds up search more then using CollectFilteredElements.
+* time: 2018-05-13T05:45:54Z
+* content: SynTraverser is unlikely to speed things up, but might deliver comparable performance.
+* time: 2018-05-13T05:45:54Z
+* content: I'd also suggest to try PsiElement#textMatches, it's more efficient than querying getText of everything
+* time: 2018-05-13T17:35:26Z
+* content: Just checked textMatches() and didn't find any visible speed up for my case. Also looking into textMatches() declaration at PsiElement interface:
+* time: 2018-05-13T17:35:26Z
+* content: And used implementation at PsiElementBase class:
+* time: 2018-05-13T17:35:26Z
+* content: I can see two issue:
+* time: 2018-05-13T18:12:36Z
+* content: Sorry, I mistakenly thought that ASTDelegatePsiElement#textMatches delegates to TreeElement#textMatches, which is indeed faster because it doesn't need to traverse all text if the beginning doesn't match. But, surprisingly, it doesn't. I'll try to correct that.
+* time: 2018-05-13T18:12:36Z
+* content: The //Q comment is outdated, I don't think textMatches will be deprecated soon.
+* time: 2018-05-13T19:14:52Z
+* content: Actually, Comparing.equal() is roughly 20% faster then String.equal()... Very naive test:
+* time: 2018-05-13T19:14:52Z
+* content: Results:
+* time: 2018-05-14T01:04:14Z
+* content: Comparing.equal() and String.equal() also stop to traverse at first unmatched char. So TreeElement#textMatches (implementation at LeafElement#leafTextMatches, right?) will not give any advantages over them.
+* time: 2018-05-14T01:04:14Z
+* content: PS Can't stop to play around. :) In the performance test above changing "comparing against" string to: Long.toString(countStr) - same string test;
+* time: 2018-05-14T01:04:14Z
+* content: Long.toString(countStr-1) - almost same string (9/10 cases), last char differ;
+* time: 2018-05-14T01:04:14Z
+* content: Long.toString(countStr>>1) - same lenght (9/10 cases) but differents chars.
+* time: 2018-05-14T01:04:14Z
+* content: Still getting Comparing.equal() faster then String.equal() on 15-25%. The only explanation I have is slowdown on typecasting anObject to String at String.equal().
+* time: 2018-05-14T05:01:41Z
+* content: The most interesting implementation of textMatches is in CompositeElement, it doesn't traverse whole subtree if it's not needed.
+************************************************************************

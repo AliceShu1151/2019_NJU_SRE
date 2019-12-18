@@ -1,0 +1,19 @@
+************************************************************************
+* id: 129
+* requirement: Move to java-psi-impl to make classes available in intellij-core.jar
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-14T12:30:27Z
+* content: Move to java-psi-impl to make classes available in intellij-core.jar
+* codeUrl: github.com/JetBrains/intellij-community/pull/129/commits/56e1974fdb021948f64913524a5241ce06fc48a9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-11-14T13:42:14Z
+* content: We are going to use those classes in Kotlin as it already done with LightMethod.
+************************************************************************

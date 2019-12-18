@@ -1,0 +1,35 @@
+************************************************************************
+* id: 379
+* requirement: avoid duplicate String instances of JpsElementChildRoleBase.myDebugName
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-06T15:11:49Z
+* content: avoid duplicate String instance for myDebugName
+* codeUrl: github.com/JetBrains/intellij-community/pull/379/commits/450c7a914e237bee4c95154a47e23f03fc4053a7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-06T15:13:51Z
+* content: I was playing with MAT on IDEA and found 2500+ instance of this class (subclasses included). and there're 600+ instance of String "collection of library root".
+* time: 2016-04-06T15:13:51Z
+* content: So intern() should make sense here.
+* time: 2016-04-06T15:13:51Z
+* content: Null check is not performed as it seems not necessary :-)
+* time: 2016-04-06T20:43:59Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-04-07T09:13:52Z
+* content: @klikh, signed and sent, cheers.
+* time: 2016-04-12T15:02:41Z
+* content: We didn't receive it yet. Could you please resend it once again?
+* time: 2016-04-13T03:16:14Z
+* content: @klikh, just resent to contribute@jetbrains.com, could you please check?
+* time: 2016-05-04T15:47:28Z
+* content: The CLA was received. Thanks.
+* time: 2016-05-05T12:06:40Z
+* content: I merged your commit to 'master', thank you for the contribution!
+************************************************************************

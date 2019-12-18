@@ -1,0 +1,30 @@
+************************************************************************
+* id: 92
+* requirement: Some refactoring for reusing GenerateEquals UI in scala plugin
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-08-26T11:29:43Z
+* content: Some refactoring for reusing GenerateEquals UI in scala plugin
+* codeUrl: github.com/JetBrains/intellij-community/pull/92/commits/7046dc4da7001710ef4c399e6f825bfb9402144d
+* time: 2013-08-26T12:21:19Z
+* content: Code style fixed
+* codeUrl: github.com/JetBrains/intellij-community/pull/92/commits/710d3ba6e554edc98590d5b75dba7f5aa18f8a0c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-08-26T12:24:39Z
+* content:  No description provided. 
+* time: 2013-08-28T18:40:58Z
+* content: Please do respect the formatting. We don't put getters in a single line. I'll fix it for you this time, but in the future, as I mentioned, please respect the style of the codebase you're contributing to.
+* time: 2013-08-28T18:55:02Z
+* content: I've also moved AbstractGenerateEqualsWizard to the java-impl module. equals() and hashCode() are JVM-specific concepts, and a wizard to generate those is of no use for IDEs that don't target the JVM.
+* time: 2013-08-28T18:57:02Z
+* content: createMemberSelectionTable() is never invoked through the AbstractMemberSelectionPanel interface, so I've removed it from the interface.
+* time: 2013-08-28T18:58:59Z
+* content: With these remarks, the pull request has been merged and pushed.
+************************************************************************

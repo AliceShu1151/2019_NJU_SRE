@@ -1,0 +1,33 @@
+************************************************************************
+* id: 708
+* requirement: Fix incorrect closing streams in sanselan IOUtils
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-11T18:17:52Z
+* content: fix incorrect closing streams in sanselan IOUtils
+* codeUrl: github.com/JetBrains/intellij-community/pull/708/commits/bcc99b7af8d955a6b6847c783c5f378fb464b3d7
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-11T18:28:49Z
+* content:  No description provided. 
+* time: 2018-01-13T16:30:31Z
+* content: This class is deprecated and is not intended to be used. It was not removed only to keep compatibility with plugins which have not yet been updated.
+* time: 2018-01-13T16:37:03Z
+* content: To keep compatibility, it must work properly. The method, however, has a bug that cannot copy streams of which size less than the size of a buffer. So, not updated plugins won't work properly, and I'm using one of them.
+* time: 2018-01-13T16:44:00Z
+* content: Nope, "keeping compatibility" means "not breaking the stuff that used to work".
+* time: 2018-01-13T16:44:00Z
+* content: Maybe you could send a pull request to the plugin, to help the author in migrating to new API?
+* time: 2018-01-13T16:58:08Z
+* content: The bug will "break the stuff that used to work". This class was just "added" at 2017.3 with removing org.apache.sanselan package. (change notes, commit log) I cannot find the original source of your customized org.apache.sanselan package, but it doesn't have the same bug. (Please refer this source) Please refer the original source from here.
+* time: 2018-01-13T17:02:32Z
+* content: @gregsh Please have a look.
+* time: 2018-03-27T11:13:49Z
+* content: @dplusic Thanks for the fix and sorry for delay! Will see it back-ported.
+************************************************************************

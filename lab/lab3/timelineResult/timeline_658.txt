@@ -1,0 +1,4 @@
+************************************************************************
+* id: 658
+* requirement: how to edit privacy policy
+the requirement of 658 only has implements, no discussion.

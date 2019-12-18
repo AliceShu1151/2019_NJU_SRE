@@ -1,0 +1,21 @@
+************************************************************************
+* id: 12
+* requirement: Fix JFlex's Action.GENERAL_LOOK lookahead option to work with --charAt and --sliceandcharat
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-07-30T04:01:33Z
+* content: Fix JFlex's Action.GENERAL_LOOK lookahead option to work with --charA…
+* codeUrl: github.com/JetBrains/intellij-community/pull/12/commits/e537a27e2bfc8e12500f00fa33e8e51ccaf47243
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-07-30T04:07:08Z
+* content: The if block that handled Action.GENERAL_LOOK was assuming zzBufferL was an array and accessing zzBufferL.length and zzBufferL[]. If JFlex was used with the --charAt and --sliceandcharat options, the generated code would not compile since zzBufferL would be a CharSequence.
+* time: 2012-07-30T04:07:08Z
+* content: I'm guessing JetBrains already has this fix internally since the checked in _GroovyLexer.java references zzBufferL.length() appropriately.
+************************************************************************

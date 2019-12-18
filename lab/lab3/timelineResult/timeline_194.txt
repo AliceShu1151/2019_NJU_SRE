@@ -1,0 +1,21 @@
+************************************************************************
+* id: 194
+* requirement: IDEA-126459: Fix "Extract chained constructor" checkbox not showing up
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-06-23T21:52:45Z
+* content: IDEA-126459: Fix "Extract chained constructor" checkbox not showing up
+* codeUrl: github.com/JetBrains/intellij-community/pull/194/commits/1ce4cd52f12a736d85c52a5288b1aa971fca949e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-06-23T21:54:51Z
+* content: http://youtrack.jetbrains.com/issue/IDEA-126459
+* time: 2014-06-24T08:58:30Z
+* content: Exactly, it is not set yet. Your change would allow to extract e.g. method with return value from first statements of the constructor so it would produce red code.
+************************************************************************

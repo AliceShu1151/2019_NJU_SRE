@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1064
+* requirement: IDEA-207347 Allow a JTextComponent to avoid a swing undo manager.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-15T00:09:42Z
+* content: IDEA-207347 Allow a JTextComponent to avoid a swing undo manager.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1064/commits/91ccf9fb35dbe4dd37b3b2f693a2409e29a713b6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-15T01:57:11Z
+* content: The base class: UndoRedoAction calculates the undo manager based on the class of the component. If the component is a JTextComponent (that is not a main text editor) the undo manager will use the Swing undo manager. There are cases were this is unwanted.
+* time: 2019-02-15T01:57:11Z
+* content: This CL adds a ClientProperty on the JTextComponent such that the Swing undo manager will not be used.
+* time: 2019-02-15T01:57:11Z
+* content: Change-Id: I3e8d7a6681e51d30bc9f6052b3e74d7467fcca1c
+* time: 2019-03-12T19:01:39Z
+* content: I created a new pull request for this bug with a different implementation.
+************************************************************************

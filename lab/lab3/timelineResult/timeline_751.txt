@@ -1,0 +1,25 @@
+************************************************************************
+* id: 751
+* requirement: Leak hunter sometimes uses stale roots
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-08T00:51:12Z
+* content: Leak hunter sometimes uses stale roots
+* codeUrl: github.com/JetBrains/intellij-community/pull/751/commits/3ade341b1a54ab39f8c024e146f35afb4af07c25
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-08T22:35:28Z
+* content: LeakHunter.processLeaks() gets a list of root objects, typically a result of LeakHunter.allRoots() call. As a part of leak search, LeakHunter will flush all outstanding tasks in AWT EventQueue, which should also include all tasks schedules with LaterInvocator.
+* time: 2018-03-08T22:35:28Z
+* content: allRoots() call gets all LaterInvocator tasks and uses them as roots for leaks search. This list will become stale (i.e. will include runnables that were already executed and removed from the LaterInvocator queue) after processLeaks() flushes all events. To fix this the list of roots should be computed after all event flushing is completed.
+* time: 2018-03-08T22:35:28Z
+* content: Fix: processLeaks() now takes a supplier for roots collection, so the set of root objects can be computed after all events are flushed.
+* time: 2018-03-08T22:35:28Z
+* content: This fix has already been applied in Android Studio source tree as some test runs intermittently reported failures because of these timing issues.
+************************************************************************

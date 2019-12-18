@@ -1,0 +1,77 @@
+************************************************************************
+* id: 733
+* requirement: PY-28461: Fix completions for implicitly imported sub-packages from inside a package
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-12T22:10:16Z
+* content: PY-28461 Refactoring: get rid of unused PyModuleType member
+* codeUrl: github.com/JetBrains/intellij-community/pull/733/commits/823cfc21528bd261ea63607c6bbda8d7340fd29b
+* time: 2018-02-13T01:43:15Z
+* content: PY-28461: Converge logic for resolveMember and getCompletionVariants
+* codeUrl: github.com/JetBrains/intellij-community/pull/733/commits/d02cd91a2b93c0dadec31cf7d547843c2abc58b8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-13T01:52:03Z
+* content: @vlasovskikh This fixes PY-28461. I didn't want to add this to previous PR since it was already too large.
+* time: 2018-02-13T01:52:03Z
+* content: btw do you know the purpose of the check !inSameFile(location, importedModule)  in PyModuleType? It looks suspicious to me.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-27T05:23:19Z
+* content: PY-28685: Consider module at reference location as implcitly imported
+* codeUrl: github.com/JetBrains/intellij-community/pull/733/commits/ff14b9f4c4a1169fbb37e5dfa2df047bafdbbc61
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-01T11:45:03Z
+* content: @fitermay !inSameFile(location, importedModule) was necessary for PyMultiFileResolveTest#testRelativeFromSubmodule where we had to add the original import for the imported module located in anther file. Actually it's OK to remove this check and always add the original import, there just may be duplicates. Making importElements a Set<PyImportElement> will likely overcome this duplication.
+* time: 2018-03-01T11:51:44Z
+* content: @fitermay Thanks for your pull request! I've found a couple of minor details that can be improved. Could you please address them?
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-02T05:05:05Z
+* content: PY-28685/PY-28461: Refactoring after review
+* codeUrl: github.com/JetBrains/intellij-community/pull/733/commits/e9990fdb630d62d616e20c41ddf021d2d68c4ae3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-02T05:10:58Z
+* content: @vlasovskikh I've refactored it as you suggested , I think.  Some operations ended up being repeated twice, but I think it's probably better than passing a confusing number of parameters.
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-03T06:02:40Z
+* content: fix resolving QualifiedNames in scratch file context
+* codeUrl: github.com/JetBrains/intellij-community/pull/733/commits/fccd1ffbefa3bfb06360771145d90e5e0dcb8abb
+* time: 2018-03-05T03:31:31Z
+* content: ensure packages resolve to __init__.py when possible
+* codeUrl: github.com/JetBrains/intellij-community/pull/733/commits/2faa63936a2327e3c9cf107bd1f9d7b19e9c2971
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-05T03:35:48Z
+* content: @vlasovskikh I've noticed a couple of issue that may be related to my previous set of changes. I've added fixes to them in this PR.
+************************************************************************

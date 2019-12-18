@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1081
+* requirement: Ensure GradleProjectResolver uses extensions extra model provider
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-08T12:37:02Z
+* content: Ensure GradleProjectResolver uses the provided extra model provider
+* codeUrl: github.com/JetBrains/intellij-community/pull/1081/commits/84b1fe1cc909ae6425570b24764a640c6d4fc6f9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-08T12:48:52Z
+* content: I missed this when submitting the last pull request, apologies. This ensures that the providers are taken correctly from the GradleProjectResolverExtensions.
+* time: 2019-03-08T12:48:52Z
+* content: This change should not affect the behavior since currently no resolver extensions override this method, the default implementation in AbsractProjectResolverExtension uses the ClassSetProjectImportExtraModelProvider which is exactly what this is currently doing.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 873
+* requirement: Add an explicit import for com.intellij.openapi.module.Module
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-25T17:45:34Z
+* content: Add an explicit import for com.intellij.openapi.module.Module
+* codeUrl: github.com/JetBrains/intellij-community/pull/873/commits/b6fbdb94a3345e933cdda9c8046a4299c8d7b92e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-26T07:20:35Z
+* content: to disambiguate with java.lang.Module under JDK 9.
+* time: 2018-09-26T07:20:35Z
+* content: This is a work-around for: https://youtrack.jetbrains.net/issue/KT-27141
+* time: 2018-09-26T07:22:09Z
+* content: @develar? @cdracm?
+************************************************************************

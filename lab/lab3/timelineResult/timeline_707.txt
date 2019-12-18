@@ -1,0 +1,23 @@
+************************************************************************
+* id: 707
+* requirement: Fixes Task issue status being saved in a corrupt fashion for JIRA
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-11T06:56:32Z
+* content: Especially when connected to a JIRA server, there are times where the…
+* codeUrl: github.com/JetBrains/intellij-community/pull/707/commits/5fec33cf99ff1039435fcd07497b3c08186ebc61
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-11T07:09:59Z
+* content: Especially when connected to a JIRA server, there are times where the status will not update correctly upon closing the issue. After analysis between OpenTaskDialog and CloseTaskAction (because the status would successfully update on opening the task), I noticed that the Task is being saved at different levels of inheritance, potentially corrupting the state that the task is in and so checked for that and cast it so.
+* time: 2018-01-11T07:09:59Z
+* content: Specifically the error message was Cannot Set State For Issue
+* time: 2018-01-11T07:13:19Z
+* content: Re-opening after signing CLA
+************************************************************************

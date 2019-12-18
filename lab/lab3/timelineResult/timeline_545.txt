@@ -1,0 +1,4 @@
+************************************************************************
+* id: 545
+* requirement: Change return type of PydevConsoleRunnerFactory
+the requirement of 545 only has implements, no discussion.

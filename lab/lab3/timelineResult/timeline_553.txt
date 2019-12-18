@@ -1,0 +1,35 @@
+************************************************************************
+* id: 553
+* requirement: SystemHealthMonitor: fix notification race
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-14T16:13:06Z
+* content: SystemHealthMonitor: fix notification race
+* codeUrl: github.com/JetBrains/intellij-community/pull/553/commits/5f796b854b451dbcbc1ed889e36fd8f9497f29ae
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-14T16:27:28Z
+* content: Android Studio defines a custom first-run wizard, which exposes a race condition in displaying notifications in SystemHealthMonitor.
+* time: 2017-04-14T16:27:28Z
+* content: The root problem is that the appFrameCreated callback happens before the frame is actually visible, see IdeaApplication where we have:
+* time: 2017-04-14T16:27:28Z
+* content: lifecyclePublisher.appFrameCreated(args, willOpenProject) ... followed by, later WelcomeFrame.showNow()
+* time: 2017-04-14T16:27:28Z
+* content: And WelcomeFrame.showNow() first goes through extensions before making itself available:
+* time: 2017-04-14T16:27:28Z
+* content: if (ourInstance == null) { ... for (WelcomeFrameProvider provider : EP.getExtensions()) { frame = provider.createFrame(); } ... ourInstance = frame; }
+* time: 2017-04-14T16:27:28Z
+* content: For any non-trivial extension that displays a dialog and starts consuming events from the AWT queue, this leads to a race condition: if SystemHealthMonitor has notifications to show, it may not see any visible frame and throw an NPE because the welcome frame didn't get a chance to initialize itself.
+* time: 2017-04-14T16:27:28Z
+* content: We propose to use the appStarting callback, which is guaranteed to happen later in a separate transaction.
+* time: 2017-04-14T16:27:28Z
+* content: Bug: http://b.android.com/241387
+* time: 2018-07-21T12:11:52Z
+* content: @rsauciuc, please rebase the PR, cc @trespasserw.
+************************************************************************

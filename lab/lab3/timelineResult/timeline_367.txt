@@ -1,0 +1,54 @@
+************************************************************************
+* id: 367
+* requirement: [Fernflower] Fixed annotations not being renamed properly and corrected the position of annotations relative to generated comments
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-10T17:14:40Z
+* content: Append annotations before comments about the class/method/field that …
+* codeUrl: github.com/JetBrains/intellij-community/pull/367/commits/f50c6e4d10dfd5a3b2947204eb4786e11a869350
+* time: 2016-03-10T17:23:17Z
+* content: Fixed a bug that caused annotations attached to classes, methods, and…
+* codeUrl: github.com/JetBrains/intellij-community/pull/367/commits/6e91636516971795e3b3be7adb3e653a0a9d2a8c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-10T17:31:07Z
+* content: I have previously signed a contributor license agreement.
+* time: 2016-03-10T17:31:07Z
+* content: I fixed a bug that caused annotations to not be properly renamed in the generated source code when the annotation was applied to a class, method, or field.
+* time: 2016-03-10T17:31:07Z
+* content: I also changed it so that generated comments about renamed classes, methods, and fields are placed directly on top of the class, method, or field and below the annotations.
+* time: 2016-03-16T10:55:02Z
+* content: Could you please add a test case to plugins/java-decompiler/engine/test/org/jetbrains/java/decompiler/SingleClassesTest.java?
+* time: 2016-03-16T11:08:43Z
+* content: While comments between an annotation and a declaration are legal, I consider this as a bad style. Please exclude corresponding changes from the PR.
+* time: 2016-03-16T15:45:52Z
+* content: I'll gladly add a test case for it, but are you entirely sure you want me to move the comments back? I understand why one would say it's bad style in most cases, but at least in the case of the renaming comments it definitely added some confusion. For example, if the code previously looked like this: @one public class two {}
+* time: 2016-03-16T15:45:52Z
+* content: after being renamed the comments had it looking like this
+* time: 2016-03-16T15:45:52Z
+* content: // renamed from two @A public class b {}
+* time: 2016-03-16T15:45:52Z
+* content: which really confused me at first until I realized it was just awkward placement of the note. Thoughts?
+* time: 2016-03-16T16:45:43Z
+* content: Doesn't look crystal-clear either:
+* time: 2016-03-16T16:45:43Z
+* content: Probably, a better way would be dropping these comments completely and producing a separate log of all renames when requested.
+* time: 2016-03-16T16:56:39Z
+* content: I agree that it's still not perfectly clear but I feel that it's a step in the right direction. But I do like you're idea of producing a separate log instead because currently those comments are being attached to every single renamed class, field, and method. Would you be okay with the comments being moved where I put them until someone (perhaps even myself) can get around to changing the way the name mapping is output?
+* time: 2016-03-16T19:10:26Z
+* content: Okay.
+* time: 2016-03-22T15:39:17Z
+* content: I went to write a test case but I realized that I accidentally deleted my fork. Would the best approach be for me to close this pull request, re-fork, reapply these changes, add the test case, and make a new pull request referencing this comment?
+* time: 2016-03-23T17:52:50Z
+* content: "a better way would be dropping these comments completely and producing a separate log of all renames when requested."
+* time: 2016-03-23T17:52:50Z
+* content: What type of format would you like for this? A json file called changed_names.json?
+* time: 2016-03-24T11:25:10Z
+* content: A new pull request would be easier to merge.
+************************************************************************

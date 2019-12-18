@@ -1,0 +1,117 @@
+************************************************************************
+* id: 593
+* requirement: PY-10985/IDEA-104596: Prefix based console history
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-17T03:07:38Z
+* content: PY-10985/IDEA-104596 extract ConsoleHistoryModel interface
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/14541abe21186ab2b91afe38cf5551968dee07b0
+* time: 2017-06-17T03:40:44Z
+* content: PY-10985/IDEA-104596 provide extension point for console history model
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/92ac71b09a9d766eafa69c7e76a66b1d1c3c74c2
+* time: 2017-06-17T20:42:17Z
+* content: PY-10985/IDEA-104596 initial impl of prefix based history model
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/1618296c9aab80f4407aac8643ab228f27d250c3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-19T02:07:51Z
+* content: Some notes:
+* time: 2017-06-20T16:12:13Z
+* content: @traff ping
+* time: 2017-08-11T16:40:59Z
+* content: Hi Yuli! Thank you for your pull request! Could you please tell me why you're using pcollections? We're trying to add new libraries to the project if and only if it's really necessary, but this library looks like something you can replace with standard collections (if it isn't true, please, explain, why). I haven't found any performance benchmarks, but authors might have some problems with it: hrldcpr/pcollections#4. Also the latest commit to this library was a year ago, it doesn't look like a reliable project.
+* time: 2017-08-12T13:07:09Z
+* content: @Elizaveta239 My main motivation is not really performance -- there are really no CPU intensive tasks here. I'm using pcollections to make it simplify reasoning about concurrency in places where state may be updated by multiple threads/consoles. Also to avoid placing unnecessary locks or making defensive copies.
+* time: 2017-08-12T13:07:09Z
+* content: I thought this library is ok to include because the kotlin guys find it reliable enough to implement kotlin persistent collections based on it: https://github.com/Kotlin/kotlinx.collections.immutable. Also the jar is tiny (under 40KB).
+* time: 2017-08-12T13:07:09Z
+* content: Could you ask Ilya Gorbunov( @ilya-g ) if the library is reliable enough? I assume he knows more about it than we do. If it's not reliable or we can't include it for some reason I can re-implement without it.
+* time: 2017-08-12T13:07:09Z
+* content: Also please let me know if you find any other issues. Thanks!
+* time: 2017-08-15T22:18:41Z
+* content: @fitermay If so, why don't you want to use this Kotlin library? As I've already said, we can't rely on pcollections library authors. And when we merge it to the project, we will have to support it.
+* time: 2017-08-15T22:18:41Z
+* content: During the next two weeks I will be on vacation, and after that I'll finish reviewing.
+* time: 2017-08-15T23:54:05Z
+* content: @Elizaveta239 I'd rather use the Kotlin library. Are you ok with using it? Not sure of the right way to add a kotlin lib to the project. Do I just drop the jar into lib?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-17T01:58:09Z
+* content: PY-10985/IDEA-104596: Pick up master changes after rebase
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/d3c0d7c1447a983c001ad5877eecb35794761340
+* time: 2017-08-17T05:10:37Z
+* content: PY-10985/IDEA-104596: migrate to kotlix lib
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/60305cab44da53ce172f0f04864fb32a1d7652f0
+* time: 2017-08-22T03:01:42Z
+* content: PY-10985/IDEA-104596: Get rid of pcollections dependency
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/5ff9eef85b83da96306a7fd266e50ad3b2821d73
+* time: 2017-08-22T03:03:12Z
+* content: PY-10985/IDEA-104596: Cleanup kotlin code
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/f141d68e5c9321c436612d7d5005ae59b43f96d9
+* time: 2017-08-23T00:25:52Z
+* content: work around KT-19830
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/1119167814630b280ed469a29be253584fa547ee
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-08-23T00:28:57Z
+* content: @Elizaveta239 Replaced pcollections with kotlix.immutable, fixed issue caused by kotlin compiler bug and rebased onto latest master.
+* time: 2017-08-30T06:56:18Z
+* content: Currently the kotlinx.collections.immutable library doesn't offer the performance better than pcollections, as it is built on top of pcollections. That library was chosen as the implementation not because of its outstanding reliability, but because it's just easier to adapt it to the proposed API and the library itself is rather small.
+* time: 2017-08-30T06:56:18Z
+* content: @fitermay Regarding the usage of the immutable persistent list in this PR, I don't see a big need in that, so that it could justify adding another library to the IDEA codebase. You can use any read-only List to hold entries collection, or if there is guava library available, you can consider using the immutable list (not persistent) from there.
+* time: 2017-08-30T07:03:17Z
+* content: @ilya-g I could use a read only list but then I would have to make a copy each time I need to mutate state. This isn't a big deal IMO because the lists are small but there was some discussion about performance so I don't know if that will be accepted.
+* time: 2017-08-30T07:51:07Z
+* content: Anyways I will rewrite with regular mutable collections. Most of the operations here must be on the EDT anyways. No idea why the original model used those unnecessary locks but it had me in the beginning.
+* time: 2017-08-30T09:55:46Z
+* content: Hi @fitermay! I'm back and I'm ready to continue a review.
+* time: 2017-08-30T09:55:46Z
+* content: I like the idea to use regular collections. But I have an another question about one of your decisions. The state in PrefixHistoryModel is being updated only after user's actions with history, so it doesn't happen very often. Why are you using atomic operations instead of synchronized code? Which advantages does it have in this case?
+* time: 2017-08-30T09:55:46Z
+* content: I haven't passed a build to our QA team yet, but I've met a strange behaviour after a short testing.
+* time: 2017-08-30T09:55:46Z
+* content: If in the state 4 you decide to delete the command and just press enter, it doesn't execute empty command, but it prints "..." for entering a multiline command. It looks like a bug as well.
+* time: 2017-08-30T09:55:46Z
+* content: As far as I understand, in the current implementation you assume that the prefix for a history search is a substring of the first line from the beginning to the caret position. It works fine when you navigate through the history to the older commands (the caret is always on the first line). But if you decide to go back to the most recent command (press "down" many times), the console should show you only commands, which you've already seen. And your caret position on the first line shouldn't affect the commands order. I mean if I searched for commands with if True: prefix, when I go back to my command, even if my caret in the beginning of the line, I should see only commands with if True: prefix. It was really surprising for me to find some new commands in a history and it took some time to realize that it depends on the caret position. Am I right?
+* time: 2017-08-30T11:45:58Z
+* content: @Elizaveta239  Yes, it depends on the caret position on the first line. Like I said I copied the behavior of QtConsole. I think the behavior you want is more intuitive though. I will fix it.
+* time: 2017-08-30T11:45:58Z
+* content: However, please do experiment with QtConsole and let me know which behavior you want.
+* time: 2017-09-05T10:45:06Z
+* content: @fitermay Sorry, I missed your comment editing. Yes, I think, QtConsole isn't very intuitive. If you have time, it would be great if you implement another behaviour. Please, let me know if you're not going to change it - I'll do it on my own later.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-09-06T00:51:02Z
+* content: PY-10985/IDEA-104596: Changes after review
+* codeUrl: github.com/JetBrains/intellij-community/pull/593/commits/487783c3b342e45d528c6b11c83909569fac480a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-09-06T01:17:02Z
+* content: @Elizaveta239 Hi, Didn't have time to work in it until today. I've applied the changes we discussed.
+* time: 2017-09-06T12:33:41Z
+* content: @fitermay Thank you! I'll review it this week.
+* time: 2017-09-11T12:38:24Z
+* content: @fitermay It's ok, I've passed a build to our QA team.
+* time: 2017-09-11T14:48:13Z
+* content: @Elizaveta239 Great, I think getting feedback from QA and EAP users ASAP is the best way to get this right.
+************************************************************************

@@ -1,0 +1,23 @@
+************************************************************************
+* id: 798
+* requirement: Fix an error when the HEAD is detached
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-02T13:20:33Z
+* content: Fix an error when the HEAD is detached
+* codeUrl: github.com/JetBrains/intellij-community/pull/798/commits/790aef83d33aaf0a56e2e690ef65c4a032d96e1d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-02T13:35:06Z
+* content: The error occurred when there is no current branch (e.g. a commit is checked out).
+* time: 2018-06-02T13:35:06Z
+* content: Fixed by checking if the parameter is null before passing it to getBranchPresentation() method.
+* time: 2018-06-02T16:34:30Z
+* content: Thanks for the contribution! But this has already been fixed in 0e2571c
+************************************************************************

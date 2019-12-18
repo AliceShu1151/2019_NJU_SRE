@@ -1,0 +1,21 @@
+************************************************************************
+* id: 595
+* requirement: Fix hierarchy export to file indentation
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-21T16:56:59Z
+* content: Fix hierarchy export to file indentation
+* codeUrl: github.com/JetBrains/intellij-community/pull/595/commits/ff445c73aeabefc587b054e18db90956a7fdf786
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-21T17:01:01Z
+* content: If a hierarchy node had a null descriptor, indentation was still appended to the string builder, leading to malformed indentation later on.
+* time: 2017-06-21T17:01:01Z
+* content: Originally a fix for a bug reported to Android Studio, now submitting upstream. (For questions, email gharrma@google.com)
+************************************************************************

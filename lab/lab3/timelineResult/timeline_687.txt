@@ -1,0 +1,4 @@
+************************************************************************
+* id: 687
+* requirement: Dispose of the IdeRootPanel when disposing of the IdeFrame
+the requirement of 687 only has implements, no discussion.

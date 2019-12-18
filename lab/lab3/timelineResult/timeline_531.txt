@@ -1,0 +1,57 @@
+************************************************************************
+* id: 531
+* requirement: PY-12627: Share and persist 'search for text occurences' option
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-27T02:22:10Z
+* content: PY-12627: Share and persistent state of 'search for text occurences o…
+* codeUrl: github.com/JetBrains/intellij-community/pull/531/commits/edcc6b6a47e3309519fd34f4053fafb808728f0d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-27T02:24:31Z
+* content:  No description provided. 
+* time: 2017-07-01T02:32:49Z
+* content: Hi,
+* time: 2017-07-01T02:32:49Z
+* content: I've renamed PyCommonFindUsageOptions and changed persistence to save into the workspace file.  The other suggestions, unfortunately, do not appear to work. It's been a while since I've looked at this change but now I recall why I implemented it this way.
+* time: 2017-07-01T02:32:49Z
+* content: PyModuleFindUsagesHandler cannot be used with PyFindUsagesHandler because its dialog does not have the 'search for text occurences' option. This causes the option to reset to 'false' no matter what the user set it to last.
+* time: 2017-07-01T02:32:49Z
+* content: Extending 'FindUsagesOptions' does not appear to be possible without serializing to 'Element' because serialization requires a no-arg constructor.  However, FindUsagesOptions cannot be constructed with no-args ; it needs at least a non-null project
+* time: 2017-07-01T19:24:14Z
+* content: Thanks! I'm OK with this change and with making "Search for text occurrences off by default. Could you please fix one minor issue with inheritance?
+* time: 2017-07-01T21:06:35Z
+* content: @vlasovskikh I found a way to work around the issues and do it the way you requested. Also ,squashed into 1 commit.
+* time: 2017-07-10T16:52:56Z
+* content: These changes have broken most tests from PyFindUsagesTest. Most likely due to the fact that PyFindUsagesHandler.getFindUsagesOptions() doesn't set FindUsagesOptions.isUsages like FindUsagesHandler did before using createFindUsagesOptions().
+* time: 2017-07-11T04:17:47Z
+* content: Ok, setting it to true fixes the tests.
+* time: 2017-07-12T19:35:31Z
+* content: @fitermay I've just tried searching for the usages of a function. After I turned off "Search for text usages" and restarted PyCharm the text usages setting was turned on back. It turns out that during the refactoring the main functionality got broken. Could you please revisit this PR?
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-07-13T03:37:56Z
+* content: PY-12627: Fix 'isSearchForTextOccurrences' persistence after refactoring
+* codeUrl: github.com/JetBrains/intellij-community/pull/531/commits/b46e148625e67c336a26f2a7610d26d2dd862b6b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-07-13T03:42:16Z
+* content: @vlasovskikh Fixed -- I forgot to set 'isSearchForTextOccurrences' to false by default. It needs to have the same default as the field in the persisted state or else override 'noStateLoaded' since loadState does not get invoked for the default state...
+* time: 2017-07-19T22:43:52Z
+* content: @vlasovskikh ping
+* time: 2017-07-20T13:04:15Z
+* content: @fitermay Sorry, I've missed the notification. I will look into it tomorrow.
+************************************************************************

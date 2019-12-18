@@ -1,0 +1,23 @@
+************************************************************************
+* id: 534
+* requirement: Added ability to patch python command line via Python sdk flavor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-28T19:02:29Z
+* content: Added ability to patch command line via Python sdk flavor
+* codeUrl: github.com/JetBrains/intellij-community/pull/534/commits/8fd1387824e69dd4be6c7b939dd31b0f6537ce10
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-28T19:05:51Z
+* content: Allow plugin sdk to override command line when running python tools
+* time: 2017-03-30T16:18:43Z
+* content: Hi Kiryl, thanks for the pull request. Could you please explain what kind of command line patching you would like to provide in a flavor?
+* time: 2017-03-30T16:40:45Z
+* content: Hi Dmitry, Our interpreter uses custom arguments and need to setup the environment correctly. In some cases we need to redirect to another helper script entirely
+************************************************************************

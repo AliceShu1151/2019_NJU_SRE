@@ -1,0 +1,23 @@
+************************************************************************
+* id: 904
+* requirement: [IDEA-201282] Ignore setting Maven Resolver's LoggerFactory for Maven…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-28T20:21:13Z
+* content: [IDEA-201282] Ignore setting Maven Resolver's LoggerFactory for Maven…
+* codeUrl: github.com/JetBrains/intellij-community/pull/904/commits/efe4fe5113a0818338ae35cd1f1ca5ae1a9b9a86
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-10-28T20:39:26Z
+* content: … 3.6.0
+* time: 2018-10-28T20:39:26Z
+* content: From Maven 3.6.0 and Maven Resolver 1.3.0 internal logging has been migrated to the SLF4J.
+* time: 2018-11-30T10:21:37Z
+* content: Code modified but I don't know where I can find this message logged. In all code in this DefaultArtifactResolver class there is only one debug line and here we catch specific NoSuchMethodError exception.
+************************************************************************

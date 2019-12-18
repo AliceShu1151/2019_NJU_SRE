@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1116
+* requirement: IDEA-210834 fix gradle properties not being read on distribution initialization
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-11T10:51:49Z
+* content: IDEA-210834 fix gradle properties not being read on distribution init…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1116/commits/b8b86d4f50a050b4eeada428de7dcdc31fabdd7a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-11T10:54:15Z
+* content: This fixes an issue when Gradle distribution can't be downloaded if remote repo requires an authentication.
+* time: 2019-04-11T10:54:15Z
+* content: The suggested solution duplicates the GradleWrapperMain behavior: https://github.com/gradle/gradle/blob/ae6478d485a613b6b4c1f9761882a956adb9156c/subprojects/wrapper/src/main/java/org/gradle/wrapper/GradleWrapperMain.java#L70
+* time: 2019-04-11T12:50:10Z
+* content: I'll reopen it to the master branch
+************************************************************************

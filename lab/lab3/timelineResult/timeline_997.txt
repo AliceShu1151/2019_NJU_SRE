@@ -1,0 +1,763 @@
+************************************************************************
+* id: 997
+* requirement: 183
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-10-09T08:44:58Z
+* content: IDEA-197972 DevKit: add checks from PluginVerifier (plugins.jetbrains…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8515c4500a5538c940cad8c000b3bc05d72051e0
+* time: 2018-10-22T12:35:59Z
+* content: IDEA-199878 Add keys: border for message sheet
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4cf1e504d2c5396c92fa823ac834f29c2347e271
+* time: 2018-10-25T16:36:03Z
+* content: IDEA-CR-38709: [java] fixes exotic case of failing module resolve (ID…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/15337040274cdde8581fd832a4b6f082b5356261
+* time: 2018-10-29T17:09:12Z
+* content: junit: distinguish same named tests by location
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/fd2ff1c8fe4f671e813500065036f85cc89998b6
+* time: 2018-10-30T10:25:14Z
+* content: junit: fix tree for parameterized tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/beec7c7702d15e9e09d3ba35d64c648ce5af971e
+* time: 2018-10-31T09:51:48Z
+* content: IDEA-CR-38997: update coverage & test discovery to use asm 7.0 release
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/92a1a49b802b7556d67197ee813c3477b440c75b
+* time: 2018-10-31T16:07:29Z
+* content: IDEA-CR-39072: IDEA-187185 Library index not updated when jars are re…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ca2015b98c787b2fcd848e7538727f52f7b05e53
+* time: 2018-11-01T10:51:04Z
+* content: IDEA-201599 Don't show 'Version must be specified' error in plugin.xm…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/eec7381b23d3c2a5388e7679a14b2839dd61de24
+* time: 2018-11-02T17:23:03Z
+* content: `idea.plugins.host` parameter should update `pluginManagerUrl`
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/61950ca1d21b268a1e5a5d4f05cabf5262477bcc
+* time: 2018-11-05T16:09:00Z
+* content: IDEA-CR-39666: SSR: Java string literal should not match char fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/945d19e9d31ee5252bfc8bea42637d6e355b651f
+* time: 2018-11-05T19:21:40Z
+* content: SSR: allow scrolling in new dialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/b5e52df468a7dcde2a537ec3dc985126a5626837
+* time: 2018-11-06T01:07:59Z
+* content: IDEA-CR-40121: IDEA-201787 - Docker view hangs after specific actions…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/62c7f810c2405b085a54959496def5b6a668827c
+* time: 2018-11-06T08:57:44Z
+* content: linux-menubar: impl accelerators for menu items
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/70621063bc4d9294ad7cb0ae7836c99687bbb085
+* time: 2018-11-06T14:35:59Z
+* content: IDEA-CR-39313: coverage: use initial line info to avoid miscalculatio…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/310f9d8f24bbf16df986fd4b6a8c16b441b36d3f
+* time: 2018-11-07T03:43:54Z
+* content: IDEA-CR-39274: ExpressionUtils#getTopLevelExpression; used in Surroun…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/af53d177dba6d482e97468647cdee4569b320f2a
+* time: 2018-11-07T16:55:16Z
+* content: IDEA-CR-39577: redundant suppression (fall through switch stmt): ensu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f43cbc72ced1da269a1ea0c06823e40dc039917e
+* time: 2018-11-08T10:54:16Z
+* content: IDEA-200953 Add keys: breakpoint and refactoring balloons background …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0a430434f285b695ae915d3385984e47b4a1096b
+* time: 2018-11-08T12:01:02Z
+* content: [gui-test] fix PluginInstallTest on mac
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9abc759f83663fa1e5369f4ee63bd05516c407f9
+* time: 2018-11-08T16:09:26Z
+* content: SSR: hide scope panel in inspection settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/998c0ef2901d1452e3f11a82fa97eb29cd963025
+* time: 2018-11-08T17:13:59Z
+* content: enable intentions in scratches (IDEA-146217; IDEA-197852; IDEA-201903)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/a76f3303b2f4aa2eff3a993a0a9f5a4c2aafdf44
+* time: 2018-11-09T08:22:03Z
+* content: IDEA-CR-39591: statistics: report how many exceptions are thrown by p…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3c8ed67f201d34730fa3d18bc8a34a22e81630ce
+* time: 2018-11-09T11:01:57Z
+* content: IDEA-CR-39729: [gui-test] fix Privacy Policy skip
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/67b4726b95eeaf04846c20440a0a40b78c52a2a8
+* time: 2018-11-09T14:51:31Z
+* content: IDEA-CR-39591: Refactoring: move statistics report to appending (base…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8a4b60579f2b88403a7ae5c4b3dd454fb4167d59
+* time: 2018-11-09T15:51:52Z
+* content: Filter out fake elements from typeshed builtins (PY-22508)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2b34787ea771b8fe4c1b9c619f84d2fd46d7a99c
+* time: 2018-11-09T18:53:44Z
+* content: IDEA-CR-39591: Only plugins from plugin repository can be reported to…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7fef83f0fee4f7a8676b6a47b76f54b1214293b1
+* time: 2018-11-09T21:31:42Z
+* content: IDEA-CR-39591: Move pluginId report into ide.error group to help unit…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8902d37d01702914660c91143a09bf3c96e0f3dc
+* time: 2018-11-10T12:18:06Z
+* content: IDEA-CR-39842: WEB-35514 Comma is inserted in an incorrect place when…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/97a7e492abeeff7bdc68810c66e2982a9aa3c1f2
+* time: 2018-11-11T06:08:31Z
+* content: linux-menubar: don't show swing-menu of child-windows of ide frame
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/b75e4605234d96735e61b74d8ad3c2e22fa71063
+* time: 2018-11-11T10:26:38Z
+* content: linux-menubar: fixed IDEA-201286 Linux Native Menu bar: the order of …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0ad7d6d9bda1bb422401d5e015f6f2230ee393a6
+* time: 2018-11-12T08:56:32Z
+* content: IDEA-CR-39729: [gui-test] fix Privacy Policy skip
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f03dbc99c319a1d9cc523cbe7be648b084f11102
+* time: 2018-11-12T10:57:34Z
+* content: introduce `BaseIntentionAction#canModify` to check that element is in…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4bb0792be5ff72307d8a16db3abf741e671cc4bc
+* time: 2018-11-12T11:35:04Z
+* content: [devkit] RegistrationIndexer: use getPsiFileForPsiDependentIndex()
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2f5faa5b87f59845c2b2756e554d831fbec1b033
+* time: 2018-11-12T13:02:58Z
+* content: IDEA-CR-39841: RUBY-22998 YAML: ":" is not added after autocompleted …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5f8a656c738880409c64293644af4cfa69d51103
+* time: 2018-11-12T15:12:53Z
+* content: IDEA-CR-39591: Introduced `ApplicationInfoEx.isPluginManagerUrlDefault`.
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/bcb9900394151faf313c93a6a9181e9181022e87
+* time: 2018-11-12T17:07:44Z
+* content: [^cdr] IDEA-200807 NPE caused by NonClasspathClassFinder constructor …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/664d66f85f0cdffc8bd525fdeb577c0b50ea37cf
+* time: 2018-11-12T17:50:28Z
+* content: IDEA-CR-39591: Better API to filter safe for statistics plugin ids, a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0b0709e616496164284d4e4f97b9b929eba8d3c5
+* time: 2018-11-12T19:33:15Z
+* content: IDEA-CR-39729: [gui-test] fix first start for the User Agreement
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5149fd5e7037e65093cb2ada82037adc1e05d24a
+* time: 2018-11-13T09:16:13Z
+* content: IDEA-201519 - Store cloud credentials in password safe (IDEA-CR-39753)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4743f6b8d01133d592e1e7490f0697c5cc70a3d5
+* time: 2018-11-13T14:30:50Z
+* content: IDEA-CR-39591: Improvements for IDEA-CR-39591
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0ffbea34b8edfd4a3a87dbe1de383361cdfa2cf2
+* time: 2018-11-13T15:02:17Z
+* content: IDEA-CR-39809: RUBY-22575 Extended key sequence paste feature pattern
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/923067799191dc589f9f7db11b25a464fdcd517d
+* time: 2018-11-13T15:14:55Z
+* content: IDEA-CR-39591: Improvements-2 for IDEA-CR-39591
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d38d0464b62810c87a3ef93120769bac559b855e
+* time: 2018-11-13T15:33:06Z
+* content: IDEA-CR-39813: fix JavaDoc as copyDirContent creates dereferenced fil…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/1a6be4343a4750be8f8abee7542503db90e93101
+* time: 2018-11-13T15:59:12Z
+* content: IDEA-197872 Select in... is broken in new Search Everywhere
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2d9f294f888331126d3f967bb8bd289fa773e4f9
+* time: 2018-11-13T17:03:45Z
+* content: [^zolotov] IDEA-200585 Live Templates: Expand with = None is shown as…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/80b9931f76c094c7603928939beda85fec33a267
+* time: 2018-11-13T17:10:54Z
+* content: IDEA-CR-39821: skip calculations if there's no path mapping
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f70e0afb5a9d0f7493332091b50429c73133002f
+* time: 2018-11-13T17:34:12Z
+* content: IDEA-CR-39885: introduce via postfix template: ensure postformatting …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/99986e9ef38f93b3a58dec1916257f549121e02e
+* time: 2018-11-13T17:38:38Z
+* content: IDEA-CR-39591: Improvements-3 for IDEA-CR-39591
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/300277b254fda938eeb20cecbfa1379f4e780c34
+* time: 2018-11-13T20:40:20Z
+* content: PY-27500: For tox, environment should go first.
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/1f2928549c8992507499742a9bfdf8d18456190b
+* time: 2018-11-13T20:40:20Z
+* content: PY-27500: For tox, environment should go first.
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/6feb869d19ad16f1146ea446c108cd3a49aaec47
+* time: 2018-11-13T21:39:14Z
+* content: IDEA-129070 Macro: multiple $Prompt$ in External Tools
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/e3b6a7d43f278b064829a82d0496f56db937d777
+* time: 2018-11-14T10:41:23Z
+* content: IDEA-CR-39856: FUS: blacklist action and menu items we don't want to …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c53ef4f4bae40b090a0b07a1ea482fbebb9284d9
+* time: 2018-11-14T10:46:30Z
+* content: add and use lazyPub shortcut
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/086b9f5678168813e0915c112a707b0ea8b5b922
+* time: 2018-11-14T11:37:12Z
+* content: linux-menubar: show swing-menu in full screen mode
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/a69f7ced7fc0d9b7de75be08b5fb0b15a1596698
+* time: 2018-11-14T11:42:58Z
+* content: IDEA-CR-39852: IDEA-199826 Switching from read-only file to editable …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/85648c7e0363799f149cbf67a431c803a436c31b
+* time: 2018-11-14T12:21:37Z
+* content: linux-menubar: fix inspection warnings
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8f54f01bf492ce32d21561a6227ea3d06dd8dc78
+* time: 2018-11-14T13:40:28Z
+* content: introduce ProjectScopeBuilder#buildEverythingScope for ignored scratc…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4e967bcb2b39eced514555571ca430d5ca157e38
+* time: 2018-11-14T14:14:51Z
+* content: IDEA-CR-39883: inference: skip constraints that depend on ignored con…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c36733476f3c656d876a5a7cdaa6143dc16c0562
+* time: 2018-11-14T14:21:40Z
+* content: PY-24191 Fix debugging Django applications with auto-reload in Docker…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/27c279b2e5f36a75a4d7e365ea87f9a7eae983fb
+* time: 2018-11-14T14:25:11Z
+* content: backport mad testing fixes
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5c983af87539357523d155430b519e6f4b14fa04
+* time: 2018-11-14T14:55:01Z
+* content: IDEA-CR-39871: Extending IDEA ActionButton API for implementing Split…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/52c3bd98f70565237ebd93ab3e2d5d3ccd017fa3
+* time: 2018-11-14T15:29:24Z
+* content: IDEA-202230 Setting or registry items aren't shown in "Find Action" d…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/e0af5d379ba2bd63fd4efb940d42d99a36c58c44
+* time: 2018-11-14T16:03:35Z
+* content: IDEA-CR-39852 drop 'actionEnabled = false', it is not needed
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/351e99808dbf5bbe089a240923470e0f078359b2
+* time: 2018-11-14T16:06:00Z
+* content: IDEA-CR-39931: [gradle] drop --recompile-scripts option from tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/51f4098e4ab220c41d6d325320565edbf7762f18
+* time: 2018-11-14T16:09:10Z
+* content: IDEA-CR-39931: [gradle] fix unresolved dependencies handling compatib…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/04185c9ea6aa8f51cb79959daa165439b89dbd2c
+* time: 2018-11-14T18:06:10Z
+* content: IDEA-CR-39591: Returned check that non-JB plugin is installed from so…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7030c58f84b0dbc7b2516943b12bfd047fe9dce6
+* time: 2018-11-14T20:29:57Z
+* content: IDEA-CR-39591: Only plugins from repo are considered not bundled, so …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3220d6373b8ba5dfc4cf5e1da0555ff20d2d9a21
+* time: 2018-11-15T05:17:17Z
+* content: IDEA-CR-39913: Gradle: do not map all 'archives' artifacts to the mod…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4a231cec4ec87cb03ecbc6196e8c8affc08e67d9
+* time: 2018-11-15T05:20:53Z
+* content: IDEA-CR-39913: Gradle: source set output folders can be used as a con…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/6bf51d747eb496409619bb3f4400cb0ec04bccb8
+* time: 2018-11-15T09:53:53Z
+* content: Replace In Path: enable 'Replace All' button even if only one result …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5033537b8465042e5b9acad96d214b5fa9262b8c
+* time: 2018-11-15T10:03:39Z
+* content: [gui-test] CreateGradleProjectAndConfigureOldKotlinGuiTest: removed t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/22ccf23adf8aa363c8945d6da5f8ce17284f9c61
+* time: 2018-11-15T10:08:52Z
+* content: offline inspections: do not open xml files with VirtualFile utils (re…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8912fcb1f81941e01977a76f0022688c3c4cda47
+* time: 2018-11-15T10:22:29Z
+* content: linux-menubar: fix inspection warnings
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c9915e01310645312a21fdc8634019559334d550
+* time: 2018-11-15T10:34:25Z
+* content: IDEA-CR-39907: FUS-194 Replace main menu and action collectors with n…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5ee8ce7996cdfed8c15f5f294fb205290e2948ff
+* time: 2018-11-15T10:43:38Z
+* content: IDEA-CR-39913: Gradle: do not map all 'archives' artifacts to the mod…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/fc3efbbd4166535d8a0b828404d2d4c7de2f0a76
+* time: 2018-11-15T10:58:52Z
+* content: PY-32600 PyCharm 2018.3 Release artwork
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2d519d58665d5aebb91b35533a48debd903f5055
+* time: 2018-11-15T11:10:27Z
+* content: EDU-1730 PyCharm 2018.3 EDU Release artwork
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4112cf127c1123bf610d8406ec9a5ec7375c251a
+* time: 2018-11-15T11:42:05Z
+* content: IDEA-CR-39913: Gradle: do not add duplicate dependencies for multiple…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9287da3abfaca6b021c4f6e33babcbfbe16232ac
+* time: 2018-11-15T12:20:04Z
+* content: IDEA-CR-39912: EA-73762, IDEA-199974 java.lang.ArithmeticException on…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/6d6fb4bcac620904087696b1016dca93eebf77eb
+* time: 2018-11-15T12:21:01Z
+* content: Prevent ProgressSuspender from crashing in isInImpatientReader mode.
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/32f235d9d621c1534d74cab7b6b8ad98514e01a1
+* time: 2018-11-15T12:28:46Z
+* content: EA-131816 make tool window ids buffer thread safe
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/78d4d7aebff987a430f6f23e3ddaf4da99399d9f
+* time: 2018-11-15T13:11:01Z
+* content: IDEA-CR-40081: JSON: never cause PSI building when requesting top-lev…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0fe801e029c81368183543c05d8cac71402b0a8e
+* time: 2018-11-15T13:11:16Z
+* content: offline inspections: revert back error dialog (IDEA-CR-39905)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/bc69dc4810e136548d92d4988490170e56f041a2
+* time: 2018-11-15T13:43:00Z
+* content: IDEA-CR-39919: [groovy] use sources for @AnnotationCollector (IDEA-20…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/be7b6d18e43b864d9da64701c3c25ed62abed976
+* time: 2018-11-15T13:47:23Z
+* content: IDEA-CR-39921: IDEA-202205 Wrong gutter action add to intention popup…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ff55bf9abf649854f3f3cd6e1bbf9160d0ea854c
+* time: 2018-11-15T14:01:28Z
+* content: IDEA-CR-39924: [groovy] parse new line before question in ternary exp…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/a360c45203eb343b24ab781e9a8e46c5463da279
+* time: 2018-11-15T14:22:28Z
+* content: IDEA-CR-39922: [groovy] pass proper context when creating attribute f…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/1925ba9199b1e1cfca67768389cb9d87b0544daa
+* time: 2018-11-15T14:47:49Z
+* content: IDEA-CR-39931: fix missing annotation processor dependency when impor…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5cf39bb26e1289451f6a43dd5f9a0a7b2e7c1c72
+* time: 2018-11-15T14:59:48Z
+* content: PY-24191 Use dictionary for handling CMD_PROCESS_CREATED_MSG_RECEIVED…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7417bee0b8fcf0db59b8f66c3c013e7351225865
+* time: 2018-11-15T15:04:38Z
+* content: PY-24191 Use explicit integer values for CommunicationRole constants,…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/536c46bc59fe0045d4df08d9282194ed8a52bc3b
+* time: 2018-11-15T15:42:28Z
+* content: fix hiding auto popup when lookup windows is on the edge with the editor
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/87e1fde54cabbdd2cf92d2412bbd83a729f8df1f
+* time: 2018-11-15T17:19:28Z
+* content: introduce toArray(E[]); cleanup javadoc
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c04de5fff5f3470be0218b9417b8bb8e3a5a11c3
+* time: 2018-11-15T18:02:22Z
+* content: IDEA-129070 Macro: multiple $Prompt$ in External Tools
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/876de30b38ff06194c14b747d9695a2b6d9abebf
+* time: 2018-11-15T19:33:30Z
+* content: [vcs-log] remove structure filter if filtered files are not inside th…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f2ddd5c3a2bea2962329cd516280efd2693fb03a
+* time: 2018-11-16T01:06:27Z
+* content: introduce LightPlatformCodeInsightFixture4TestCase for JUnit4 tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/10840dec268be0d7d79f7f7760d1b293cea44ffb
+* time: 2018-11-16T08:38:40Z
+* content: IDEA-CR-39950: HighlightFixUtil: HighlightInfo should be nullable
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/cfa034d6cb73e4a9157acd6f996b9ce87a1fdf12
+* time: 2018-11-16T08:45:27Z
+* content: RUBY-22697 UX-343 color schemes ruby parameter color and style correc…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/30b090008f7d51826d1b0caedf33d7b5ed0a61e9
+* time: 2018-11-16T08:53:40Z
+* content: IDEA-CR-39952: update bundled Kotlin to 1.3.10 (IDEA-202194)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0e2b6b58461da5ee9cced0144080f834c1fdcdfa
+* time: 2018-11-16T09:21:26Z
+* content: IDEA-CR-39954: EA-132392 - assert: ComponentManagerImpl.lambda$throwA…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f2e44557f3075bb400b7ce354763948eefddbebc
+* time: 2018-11-16T09:22:23Z
+* content: IDEA-CR-39931: [gradle] remove remote repository from test IDEA-CR-39931
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2d44e07e15d927a5ca317358677e2acaa4438fda
+* time: 2018-11-16T10:09:03Z
+* content: IDEA-CR-39989: [uast] `TreeBasedEvaluator` calls `checkCanceled` on e…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/22e5c1ec3a2f39c6f96185fe2c1e75e2f0a40e6e
+* time: 2018-11-16T10:10:21Z
+* content: IDEA-CR-39913:
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/eb369b907a6010be905b2d286d7ff60c4c35bb3e
+* time: 2018-11-16T10:24:05Z
+* content: IDEA-CR-39913: extract library substitutor class
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ad436dc19b21d6a488e07ce3297138f808d7313b
+* time: 2018-11-16T10:29:39Z
+* content: IDEA-CR-39913: javadoc
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3fd64d1c0bf7a4aaaf0dcf205afa61d538ae22c5
+* time: 2018-11-16T12:49:58Z
+* content: IDEA-CR-39978: IDEA-202244 "Allow running in parallel" option is not …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/db45a236839b916f41421a3b10718b83fa1871d6
+* time: 2018-11-16T13:48:46Z
+* content: IDEA-CR-40195: fix test data to handle upcoming Gradle 5.0, update mi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/97492e91ec2b0041f9c60f26130f592369548f06
+* time: 2018-11-16T15:28:41Z
+* content: IDEA-202206 Search everywhere: Type / to see commands
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/bb63929213fc46e93a5d89a77b51073dd044067c
+* time: 2018-11-16T15:45:46Z
+* content: IDEA-CR-40021 Generate links to third-party libraries in JSON format …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ad642341cad9b0d8e19cc58205a2769de55dbc58
+* time: 2018-11-16T15:57:37Z
+* content: IDEA-CR-39994: youtrack@2x.png optimized
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/86d92fa1d3eed1c365de7ac05b4e89bf200bdaae
+* time: 2018-11-16T16:09:46Z
+* content: IDEA-CR-39995: IDEA-202380 Can't assign non-array value to an array i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d944afba1df622d2305fd4cc19c6742f509176ff
+* time: 2018-11-16T16:40:24Z
+* content: introduce checkErrorElements(PsiElement)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8052b2a554e1fc8524f1d0437227c8652c755a77
+* time: 2018-11-16T17:47:54Z
+* content: IDEA-CR-40000: IDEA-202396 IDE switches to wrong tab when dragging ta…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9bdbe3f6d8689e12ee5fbdd5be2ddc90cb151a8c
+* time: 2018-11-16T20:01:11Z
+* content: Fix broken tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7d833de23caa89bc073798a966b6e290a354c11a
+* time: 2018-11-17T07:46:35Z
+* content: IDEA-CR-40001: InferenceSession#isOverloadCheck: take parentheses int…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c9520a6b1f46e1715147ae3c590f8af157dcaae6
+* time: 2018-11-17T09:49:12Z
+* content: HippieCompletion restarts after hitting last word (IDEA-174019)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d7775f0b5138739a071cf1d7eb7940e253771faa
+* time: 2018-11-17T12:29:23Z
+* content: PY-24191 Fix hanging of the debugger on performing os.exec*() while h…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/e1e6d2fbfbfe50c1cac358e0198f906273b1bf6e
+* time: 2018-11-17T12:31:41Z
+* content: PY-24191 Skip sending superfluous messages from debugger to IDE about…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3540fdaa5683df418a53ee862a77aa44cf179904
+* time: 2018-11-18T03:05:07Z
+* content: IDEA-CR-40009: CollectMigration#targetReferences: null-check
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d9ce99dae4bdcfb54bc346ef293ffbc2b7333ab1
+* time: 2018-11-18T08:01:29Z
+* content: IDEA-CR-39961 RUBY-22697 UX-343 fix duplicate `RUBY_IDENTIFIER` defin…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2f0f2926e8503218137d5e646b62f0dd8271d55f
+* time: 2018-11-18T10:20:57Z
+* content: [stats-collector] Do not bundle stats collector plugin into release i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2bed3a93b5fac90914193e5a59629a919193e1ea
+* time: 2018-11-19T07:55:56Z
+* content: PY-32719 Fix "ModuleNotFoundError: No module named '_shaded_thriftpy'…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9975b96420348ad5670475e7ea1d9c7386dddb81
+* time: 2018-11-19T08:57:28Z
+* content: IDEA-CR-40019: project structure dialog: show scrollbars in custom ar…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8693792a522787be7b1bb28e6be58ea8bf5950ba
+* time: 2018-11-19T10:23:18Z
+* content: IDEA-202206 Search everywhere: Type / to see commands
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/984e4f2165abc9081971a7f5d4c807cf31f6c743
+* time: 2018-11-19T11:37:06Z
+* content: IDEA-CR-40030: IDEA-192280 Update icon for gradle file
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/24a74e6958d77de1ca3e1bc672de23cdec3e87f9
+* time: 2018-11-19T11:48:31Z
+* content: IDEA-CR-40032: [java] fixes Java documentation root addition (IDEA-20…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/20121f9575705f526f6a26885aca0740ede474e4
+* time: 2018-11-19T11:53:28Z
+* content: IDEA-CR-40053: FUS: record toolwindow ids registered in xml or whitel…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/83d4e4a4b1551e8ea8010a10f1e9497a67e9a5af
+* time: 2018-11-19T12:12:57Z
+* content: IDEA-CR-39995: IDEA-202380 Can't assign non-array value to an array i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d1ceb70bc9ba9adfb728628888cc1f0c490b2b78
+* time: 2018-11-19T12:13:32Z
+* content: Hide hidden files in scripted extensions menu IDEA-201896
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3ff4749f54a52db879591f4a96dd43932e262dc9
+* time: 2018-11-19T12:22:37Z
+* content: IDEA-202447 Argument for
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9d4a987f1d905d6a6583f8611b22b9c2f1480ee7
+* time: 2018-11-19T13:15:10Z
+* content: IDEA-CR-40044: [java] makes Java documentation provider compatible wi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/b60da366b49cf5e4202441d0ee04e6940314943d
+* time: 2018-11-19T13:31:06Z
+* content: IDEA-CR-40050: Public methods for setting sticking to right mode of r…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/21f3deeb886957f3cc480d0a041153a5f478da67
+* time: 2018-11-19T15:20:54Z
+* content: cherry-picked from IDEA-CR-40041 logging for batch analysis to catch …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/710b0a4263aabe22e88f2ec8e42eaca139db065b
+* time: 2018-11-19T15:21:53Z
+* content: Merge branch '183' of git.labs.intellij.net:idea/community into 183
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3d2db6485b5f62de25f3c430cc300695a9e73385
+* time: 2018-11-19T15:52:58Z
+* content: IDEA-CR-39995: added issue description comment for IDEA-CR-39995
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9f4d7c82ab55ab5706fd9cfe093f8f9165f4a1a7
+* time: 2018-11-19T16:20:58Z
+* content: compilation fixed
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/92b55a251ae2d84ef96676bb640bffca03e91992
+* time: 2018-11-19T16:21:46Z
+* content: Merge branch '183' of git.labs.intellij.net:idea/community into 183
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0636f6fd3104d26dcc16366a49f9308161cd9dc4
+* time: 2018-11-19T16:55:50Z
+* content: IDEA-CR-40089: Fixed bug with possible several internal dots
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/52adc022e06bb603c025ca27f43ece57aadb3558
+* time: 2018-11-19T16:57:01Z
+* content: IDEA-CR-40089: RUBY-22576 Allowed leading dots for paste key sequence…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4b0b44af213c84f97570b88434a57824dca87edc
+* time: 2018-11-19T17:50:16Z
+* content: IDEA-CR-40091: FUS: report only JB plugins as bundled in enabled and …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/932da7d325090a910e7392d8452a9b1c1223f6c0
+* time: 2018-11-19T19:08:58Z
+* content: IDEA-CR-40044: [java] polls module-based documentation URLs only for …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/36d69ac942c3098894882340dcd6badfee0f6df4
+* time: 2018-11-19T20:10:41Z
+* content: IDEA-CR-40094: IDEA-106651 Editor Search/Replace: font for text input…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4a60baa843fc7236240adbb1a1e62aa68fd96ce3
+* time: 2018-11-19T20:20:50Z
+* content: IDEA-CR-40113: update prettierrc schema
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/6e6e2a64f8d74f15631b691abaa35aab3b8f0415
+* time: 2018-11-19T21:20:31Z
+* content: include lite-gen from Toolbox into the build
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3dfda641c59facd78d1f4d397c55fd6bd4a36da3
+* time: 2018-11-20T07:46:09Z
+* content: IDEA-CR-40105: IDEA-126774 Lens mode doesn't show last line
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/838df02b3d7a245ffbb9a847bdba79a3ec20d7da
+* time: 2018-11-20T08:15:14Z
+* content: RUBY-23014 Replaced immediate file discovery with lazy one. File may …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d5ba0237e25f8735e79390936551cbb97b2f3a96
+* time: 2018-11-20T09:01:00Z
+* content: IDEA-CR-40116: EA-132496 - IAE: XBreakpointManagerImpl.$$$reportNull$$$
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/50d1ff69ccf85b89a32a0cd59996871d0d53e2ef
+* time: 2018-11-20T10:06:53Z
+* content: patch updater: refresh Application Icon for apply patches in batch mode
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/61545653922ecfb990c2fb680dce42c883b368d7
+* time: 2018-11-20T10:10:23Z
+* content: NPE on missing icon
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9a83b8b22904695c5772dc4b7485158ce0991c58
+* time: 2018-11-20T10:52:24Z
+* content: 183 now targets IJ 2018.3.2
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/24723ebe6bbe9d5923b12af645a5788c5c032b19
+* time: 2018-11-20T12:12:55Z
+* content: IDEA-CR-40146: JSON: restore nice-looking tooltips for ctrl+hover
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d3211f16fc4b37086b294dfaecaa275b6fb9ff83
+* time: 2018-11-20T12:52:53Z
+* content: IDEA-CR-40116: fixes for IDEA-CR-40116
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5b7c8817e2c28cd96fc716aba910ab7caab7dccc
+* time: 2018-11-20T13:06:18Z
+* content: IDEA-CR-40136: IDEA-202087 Broken indentation in editor (HiDPI)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/fc7648a8b234d63fcb7aad8ef47268d825ef3ef8
+* time: 2018-11-20T13:28:35Z
+* content: IDEA-CR-40081 fix caching top-level values for JSON
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/582e8ad528ed75e84c2d09256dc4c456a61756f5
+* time: 2018-11-20T13:30:17Z
+* content: IDEA-CR-40091: FUS: report only JB plugins as bundled in enabled and …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f7b1314ac7f4b1bed461044ad2ed249d700b62de
+* time: 2018-11-20T14:00:39Z
+* content: IDEA-CR-40146: fix testdata
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7f24bfc32bd5e7aa498f675af2bd02c6a615e1a2
+* time: 2018-11-20T14:13:08Z
+* content: IDEA-CR-40413: PY-31991 Formatter strips spaces around topmost expres…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0be63680135774e67aaf83930b1f3e2751fbb915
+* time: 2018-11-20T15:49:33Z
+* content: IDEA-CR-40231: PY-31984 Properly split f-strings on enter when caret …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f46eae3dc5c4463b62cc4ab8221a42953685af3a
+* time: 2018-11-20T15:50:09Z
+* content: IDEA-CR-40167: FUS: ide should respect build ranges from the whitelist
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2aef99a281a41f5f11a355a9efe81984e4db47a8
+* time: 2018-11-20T15:53:58Z
+* content: Apply structure on update DBE-7320
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8da61fc1475d52a33979c024a08419670f13b5a8
+* time: 2018-11-20T16:04:01Z
+* content: IDEA-CR-40161: EA-127416 - IOOBE: SearchEverywhereUI$SearchListModel.…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/e0aaeaf7874e3625da8dc7df10f255723bdbf9e4
+* time: 2018-11-20T20:00:10Z
+* content: IDEA-CR-40105: IDEA-126774 Lens mode doesn't show last line
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/404117160ff5c409667002fb06f3bc6fb546835f
+* time: 2018-11-20T20:16:18Z
+* content: IDEA-CR-40105: IDEA-126774 Lens mode doesn't show last line
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c4bfd128a43c5122f48c63c23ace8c3a203bddb7
+* time: 2018-11-20T20:21:21Z
+* content: delegate default provider to short-name
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/4748a583d969997f37db8b8b123311f746d50d29
+* time: 2018-11-21T06:49:16Z
+* content: IDEA-CR-40177: artifacts: include production sources only in 'module …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/898e87dc972be48bae268351ee7bae0fd5d4c682
+* time: 2018-11-21T08:22:04Z
+* content: IDEA-CR-40188: CharsetObjectCanBeUsedInspection: take into account ex…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d0425313c7356bc34887dc3ac0fd09813da8bfea
+* time: 2018-11-21T10:32:07Z
+* content: manual scaling for images in documentation component (IDEA-200855)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/633ee5fab5e170d3ef413ccf2b53db6b653e3121
+* time: 2018-11-21T10:53:52Z
+* content: IDEA-CR-39912: EA-73762, IDEA-199974 java.lang.ArithmeticException on…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/567a275798821097b537cad08726a8354b964a05
+* time: 2018-11-21T10:56:34Z
+* content: IDEA-CR-40205: IDEA-196043 EveryWhereSearchDialogTest failure
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/077c1ab79fbbdd3d5bc775d0437b9186c7b43b0f
+* time: 2018-11-21T12:30:58Z
+* content: IDEA-CR-40195: [gradle] compare base version instead of full ones IDE…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/da10d270a1972228a9a3ae5aeb774a223c8f9a94
+* time: 2018-11-21T12:47:44Z
+* content: IDEA-CR-40174: UX-398 WEB-35842 Move ObjectTypeAttribute icon to AllI…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/52ac1aadb2df9940ecf52cecb21b7ca7bacb5d92
+* time: 2018-11-21T13:24:08Z
+* content: tune test expected results for linux IDEA-CR-40194
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7028cf90dfdd11e84876c8ae554b0a93fe39af24
+* time: 2018-11-21T14:44:56Z
+* content: IDEA-CR-40220: EA-131745 - PIEAE: PsiUtilCore.ensureValid
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d002c8ab5548e15a23787f8597f92ac0debc482f
+* time: 2018-11-21T15:20:57Z
+* content: IDEA-CR-40220: EA-131745 - Search Everywhere throws exception when ca…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/33489feb02df7872c9737cb65322cbde3dad4138
+* time: 2018-11-21T15:34:32Z
+* content: IDEA-CR-40240: FUS: report file types defined in listed plugins
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/e6c76865600acad463ea6e41de4e307d1ed2c495
+* time: 2018-11-21T16:52:29Z
+* content: IDEA-CR-40241: FUS: report run-configurations defined in listed plugins
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/45d3f817cc21f7a090f6584515f838aae9043bd4
+* time: 2018-11-21T18:03:39Z
+* content: cancel "tips on start-up" right before the show
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d88473b5f90b511abaa911106a5c765715c04456
+* time: 2018-11-21T18:10:54Z
+* content: rename to startup-activity
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/eb423ee77d8006c8e0048f07fe496fcbc3341851
+* time: 2018-11-22T09:10:13Z
+* content: delay actions update
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2d38d1f41cbfaed20d225993a056e0f1f6cb8a41
+* time: 2018-11-22T09:19:27Z
+* content: IDEA-CR-40265: IDEA-202606 UnalignedAddressException during read only…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/b7dd747aea7ac969216c94cb6c97f8f3918315e0
+* time: 2018-11-22T10:15:31Z
+* content: IDEA-CR-40272: FUS: report ui collectors from listed or JB plugins
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/a60f01f1af31483560156399cddd27473d3ce649
+* time: 2018-11-22T10:46:30Z
+* content: IDEA-202496 Extension point to alter "No {0} found" text in Search ev…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7b35dbc865c8ee34bd602bee3921e2857fd3349b
+* time: 2018-11-22T11:24:38Z
+* content: IDEA-CR-40275: IDEA-202634 ParameterInfo is now wedged in completion …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/47a48a2697067ca10ddf4c9eecbbab7e2150993c
+* time: 2018-11-22T11:43:35Z
+* content: IDEA-CR-40278: IDEA-202642 XmlLikeFileType.isCaseSensitive has wrong …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/6346a2259ca813726cb68e39f66a00b2dc36d3fd
+* time: 2018-11-22T13:32:23Z
+* content: IDEA-202205 Wrong gutter action add to intention popup when we have d…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ac505ce4049b32078e4cc2a7d68eee05e8701009
+* time: 2018-11-22T13:36:15Z
+* content: IDEA-CR-40338: IDEA-197467 Modernize Maven Run/Debug Configuration icon
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f8660e7a24f3dfd9de4ad2c8cbb73cda41ce9d94
+* time: 2018-11-22T14:06:09Z
+* content: IDEA-CR-40375: FUS: update config url
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0debfcccaae9cea6f52039c0385eeb8553aa6386
+* time: 2018-11-22T14:21:14Z
+* content: IDEA-CR-40341: cancel completion autopopup if caret is moved right af…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7d4b8a7a008ded38c2d7c3a63965c29a250fa1b5
+* time: 2018-11-22T14:28:43Z
+* content: IDEA-CR-40339: SaveAsTemplateAction: extract a method that calculates…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/03069c162be9349f31484e7f871b323d1e8d7eaa
+* time: 2018-11-22T14:33:43Z
+* content: IDEA-CR-40347: IDEA-202565 Creating live template containing annotati…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/89868a8e0eb03e69d7b595791b069ae3bbd75010
+* time: 2018-11-22T14:34:57Z
+* content: terminal: use "command" bash/zsh builtin to disable cp alias (IDEA-20…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/952ea457f8501afebbddecf78aca03ea6acef1d1
+* time: 2018-11-22T16:46:28Z
+* content: IDEA-CR-40372: more cancellability in JavaBinaryPlusExpressionIndex (…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/dbffec6c72148af848e12d163739952b451509d6
+* time: 2018-11-22T17:09:41Z
+* content: IDEA-CR-40371: java type arguments should be in "Declaration" live te…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/a2d42428eeb4df403fe19522702e06e0f63a3d88
+* time: 2018-11-22T18:18:19Z
+* content: IDEA-CR-40272: FUS: make plugin type names more descriptive
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/94d7c104530ca1ff4e9647f9de82f9babcb349df
+* time: 2018-11-22T18:21:46Z
+* content: IDEA-CR-40272: FUS: delete unnecessary parent class
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/9d1ed2a663d4ccddd2cfcbcd83e47e0cef7e71ed
+* time: 2018-11-22T21:05:11Z
+* content: IDEA-CR-39684: FUS: event log should not depend on aggregates whitelist
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/0dd00dd9abdb22d5ec72333ab9a834dc188a2dd0
+* time: 2018-11-22T21:39:45Z
+* content: [java] fixes Java documentation lookup from decompiled classes (IDEA-…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2b3ed8128634ff5ec0000e1f6813b05fa4597da2
+* time: 2018-11-22T23:34:43Z
+* content: handle the case when getExtensions() throws PCE
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8eb5efb32754a25621b7a6dd023fe66b572c0a67
+* time: 2018-11-22T23:53:56Z
+* content: use same tab title in SE and directory chooser
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/05bf26d150fe473607de4bf5b3950d9b52343af7
+* time: 2018-11-22T23:54:58Z
+* content: make New SQL File action always available
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/344235802d40a7d977f695f09250087be262c006
+* time: 2018-11-23T00:17:09Z
+* content: use same tab title in SE and directory chooser: fix plurals, add go-t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/b192142ef67046b9ae5b7af3f7153601762ea212
+* time: 2018-11-23T07:22:42Z
+* content: IDEA-CR-40381: IDEA-201089 quick fix for XMLInputFactoryImpl exceptio…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/34a91cc9e8b9230243ed2e59589b574dab4fb74b
+* time: 2018-11-23T11:38:10Z
+* content: IDEA-CR-40401: IDEA-202801 Input of Yen character () deletes previou…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c6e2789f80e92c8ce512a4fc6c28e39be8b69258
+* time: 2018-11-23T12:22:56Z
+* content: IDEA-CR-40434: NullableStuffInspection: report only property accessor…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/81c39685b3fc787d459c4263df5d4779936f243d
+* time: 2018-11-23T13:25:29Z
+* content: make New SQL File action always available 2
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ab0e66e30401a7ce48e173db5223a58afc823c0d
+* time: 2018-11-23T14:42:40Z
+* content: IDEA-CR-40491: allow to call findTargetElement from bg thread (
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/1239fe2ca8de914998c94d299116d0da7dcc9c0e
+* time: 2018-11-23T14:58:53Z
+* content: add explicit return type for `lazyPub`
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7ac9bc6e9cf31019012a3840f08533bda708f8a0
+* time: 2018-11-23T15:38:56Z
+* content: terminal: fix regressed support "Select Next Tab/Select Previous Tab"…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/23f0ffc0b1ffbea2e026898f5ca30098bd8f138b
+* time: 2018-11-23T15:40:46Z
+* content: PY-32819 Fix ignoring updates of global variables in Python console
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/ea5e6901d0931f9abd9d15f2e27c27cd87273f74
+* time: 2018-11-23T16:08:15Z
+* content: terminal: restore regressed "Close Session" keyboard action (IDEA-CR-…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/1323e89ecce0f4f4c47aa88f54af4b53a504d7d6
+* time: 2018-11-23T17:12:48Z
+* content: two tip-of-the-day dialogs shown fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c3da4d9a1edcafbe4ca7878f575248d3167e9394
+* time: 2018-11-23T17:57:39Z
+* content: customize todo actions. Fix 'autoscroll to source' discoverability
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d5f2b671a2fd41a64aa0cb08caaafe9df0c3a83d
+* time: 2018-11-23T18:01:32Z
+* content: IDEA-CR-40439: java enter handler: ensure works for java files only
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/41943b2d6a397c8ed5327a99529be25f6f4520aa
+* time: 2018-11-24T10:49:15Z
+* content: IDEA-CR-40448: terminal: set pty4j.tmpdir to IDE temp folder to fix /…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7d37c499e8f8b95275a581af3f74035d29c402e9
+* time: 2018-11-25T14:25:43Z
+* content: git: don't notify about massive working tree changes on cherry-pick
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/3aaf9ab348d1973bf9b8ad43b37517c6b3d5119b
+* time: 2018-11-25T15:00:53Z
+* content: git: disable the Fetch action if there are no Git remotes: IDEA-202533
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c977fa5be9c919324f680ce6ab61a70903118626
+* time: 2018-11-25T20:41:34Z
+* content: terminal: log exceptions to investigate IDEA-202881
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/b6df8d16419134cf4e4bd3d8945298a3ca7cd0b8
+* time: 2018-11-26T09:19:09Z
+* content: IDEA-CR-40465: FUS-198 Report only build-in keymap names.
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/2cc0d95d34916ac6adc7e3371a02f0c9dd0c5ebe
+* time: 2018-11-26T11:07:49Z
+* content: IDEA-CR-40576: WEB-35983 WEB-35941 Improve code completion for Angula…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/77187a752b63aa2ddc206a95ce0ca60ab2c2d5a5
+* time: 2018-11-26T14:32:50Z
+* content: IDEA-CR-40465: FUS-198 Add FUSUsageContext for keymap collector.
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/1a093c834d38b00bf498582b15c26532bbf853b5
+* time: 2018-11-26T15:10:43Z
+* content: IDEA-CR-40487: terminal: collect known shell names only
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/438e6919d324154548cb794deababb558ab8bc7e
+* time: 2018-11-26T15:45:07Z
+* content: IDEA-CR-40503: WEB-35997 Single quote completed with double quote in …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d85d3c361e75333e70061674fd9fedc509c1da21
+* time: 2018-11-26T16:31:16Z
+* content: IDEA-CR-40487: terminal: increment groupId, remove "vscode" (IDEA-CR-…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d81f39881c75505b1eaea89d705fe7e1fab6206c
+* time: 2018-11-26T16:33:40Z
+* content: skip empty scratches root node for empty view to show empty text
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5d40b0e1b7641963c65253b804130c47ffa0d8cd
+* time: 2018-11-26T16:52:45Z
+* content: IDEA-CR-40507: [gradle] import folder as "source dir" when it is expl…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/f99336f4f47f2fad5cec5307a747cda1100d9c7e
+* time: 2018-11-26T17:33:38Z
+* content: Robot-merge branch with cherry-picked commits into 183
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/e14a4c161fefb2e8fd379569cf395e7e31a7824b
+* time: 2018-11-26T17:52:50Z
+* content: IDEA-CR-40518: [gradle] fix NPE when restoring serialized cached data…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7c1425270b1352220b04d0aa6a428efdf20466c5
+* time: 2018-11-26T18:50:55Z
+* content: IDEA-CR-40487: terminal: fix trimKnownExt, rename groupId to valid `s…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/17ad148a52f343476703e1cd891cdda03ba5ccaf
+* time: 2018-11-26T19:09:38Z
+* content: IDEA-CR-40511: terminal: comply assertions in selectPreviousContent a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/c1d79a6b52e3f20f17de3f013f7f05d1be01cd42
+* time: 2018-11-26T19:31:56Z
+* content: terminal: dumb aware "New Session" action button
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/621f7c133f69818d0963bce5332d1bb853ee2600
+* time: 2018-11-27T06:03:00Z
+* content: IDEA-202935 Regression: cannot install IntelliJ IDEA in silent mode i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/fbfaacdfee7477197191f1e0f0c7cb5b53363c6a
+* time: 2018-11-27T09:13:24Z
+* content: IDEA-CR-40520: IDEA-203015 Wrong caret position after up/down movemen…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8db8b7b0f814e2f1a41845f23e50ded16c147efd
+* time: 2018-11-27T10:50:01Z
+* content: IDEA-CR-40533: ExpressionUtils#isEvaluatedAtCompileTime: soe fixed if…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/17d1add8fea2167f773eec481b403e4e407084df
+* time: 2018-11-27T12:09:48Z
+* content: IDEA-CR-40543: IDEA-203021 IllegalStateException from objectMirror - …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/abfa271cee7fc0aed398b983a3f0e2acee846283
+* time: 2018-11-27T13:36:50Z
+* content: IDEA-CR-40558: FUS: filter non-ascii symbols in event log
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/de29029d9eaf7820e429f6592b9c032086b290e3
+* time: 2018-11-27T14:52:09Z
+* content: IDEA-CR-40561: Gradle: handle unresolved transitive dependencies (IDE…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d613e9984a35e72991e33727d81adb1ce2389b03
+* time: 2018-11-27T15:04:56Z
+* content: IDEA-CR-40563: Gradle: implicit gradle imports updated for 5.0 (IDEA-…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/56dd81f5e630dba3bdcdfcc0a7a43612ff6a5681
+* time: 2018-11-27T15:47:59Z
+* content: IDEA-202675 "Open Task" dialog with empty "Create changelist" field
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/8ff20cfdd7ab839f3b4f3fccd759c95aca0b7637
+* time: 2018-11-27T17:17:43Z
+* content: IDEA-CR-40637: fixed warning from BaseOSProcessHandler
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/10f90ed74126ab13bb9b109a31a92b84189e1828
+* time: 2018-11-28T08:20:59Z
+* content: IDEA-202675 "Open Task" dialog with empty "Create changelist" field
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/74c06f4af58f28adcb739e5d1e2c32a604176d97
+* time: 2018-11-28T10:11:26Z
+* content: make public for Rider (IDEA-203067)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/5e31bcee7274341359883de2e8aafccf1ef5d65e
+* time: 2018-11-28T12:41:16Z
+* content: IDEA-CR-40599 change Piped*Stream to NIO Pipe IDEA-199623
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d11c887f38edbfd8bad8d98b820043e2a566d101
+* time: 2018-11-28T12:51:01Z
+* content: IDEA-CR-40612: IDEA-203139 Update gradle icon for run configuration a…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/d3c5761e6c7cfb04caad3086dc655078c922f2f7
+* time: 2018-11-28T14:53:00Z
+* content: IDEA-CR-40628: IDEA-203120 Adding block inlay leads to code lens inva…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/6640f305cd308c74e950dab41c5571ec328842a8
+* time: 2018-11-28T22:09:32Z
+* content: IDEA-CR-40645: terminal: fix broken ssh session (IDEA-203045)
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/751a654e56b82ea6cdbc4eb53fa2d6cb5823d5d1
+* time: 2018-11-29T06:57:03Z
+* content: IDEA-CR-40652: jps build: ensure proper order for production-on-test …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/10fd32199ffa337b4e384e9bad92268ff9430c1c
+* time: 2018-11-29T09:28:53Z
+* content: IDEA-CR-40653: gradle: fix reading 'module type' attribute for module…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/36b9de87652fe7de1272cf4e9b6b39ff0eaa10e7
+* time: 2018-11-29T09:40:24Z
+* content: IDEA-CR-40654: build scripts: include missing maven-model library to …
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/01c9df6f42bf8bbfaedd1e545a38a2a83ff6d0cb
+* time: 2018-11-29T11:25:06Z
+* content: IDEA-202885 DevKit: constant assertion when using xi:include with <de…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/08569db4eaa7653e6218a510ad4e653089d65d87
+* time: 2018-11-29T12:54:15Z
+* content: IDEA-CR-40663: IDEA-203144 sa-jdwp: All object arrays contain only nu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/7187e8e8ec237083c84a156d1d968264858c0ed5
+* time: 2018-11-29T15:02:35Z
+* content: IDEA-CR-40628: IDEA-203120 Adding block inlay leads to code lens inva…
+* codeUrl: github.com/JetBrains/intellij-community/pull/997/commits/feb89e956ec29c461b1327010851550c708dbad1
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-29T20:16:44Z
+* content: ok
+************************************************************************

@@ -1,0 +1,32 @@
+************************************************************************
+* id: 539
+* requirement: Added ability to extends PreferredSdkComparator
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-29T19:42:07Z
+* content: Added extension point to allow extend functionality of Python Preferr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/539/commits/52e45d04f2821981490b80f9fba27a389d3a7e2d
+* time: 2017-04-04T17:10:04Z
+* content: Moved extension comparing to beginning
+* codeUrl: github.com/JetBrains/intellij-community/pull/539/commits/0086ec4a70558464542154777c477c9f38af511d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-04T17:42:30Z
+* content: Added extension point to preferred sdk comparator to be able to extend functionality of it
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-12T21:36:40Z
+* content: Refactored to actually compare sdk instead of weight providing
+* codeUrl: github.com/JetBrains/intellij-community/pull/539/commits/2bf4d8e5cedca05a59063fb630a8f008eae82886
+************************************************************************

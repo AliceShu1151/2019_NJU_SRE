@@ -1,0 +1,19 @@
+************************************************************************
+* id: 588
+* requirement: Avoid logging passwords in GradleExecutionHelper
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-09T19:48:44Z
+* content: Avoid logging passwords in GradleExecutionHelper
+* codeUrl: github.com/JetBrains/intellij-community/pull/588/commits/24114593a5857f40f5dd7323d55d61f9d184d29c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-09T20:10:44Z
+* content: The GradleExecutionHelper was previously logging android keystore passwords.  This change will obfuscate the values of a parameter ending in '.password' within the idea.log file.
+************************************************************************

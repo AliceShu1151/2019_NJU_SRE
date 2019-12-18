@@ -1,0 +1,30 @@
+************************************************************************
+* id: 524
+* requirement: Avoid deregistering roots that will registered again in fsNotifier
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-02T16:44:07Z
+* content: Add an implementation of set
+* codeUrl: github.com/JetBrains/intellij-community/pull/524/commits/be2a339c420a64ea59a68c15423ef049a7cca974
+* time: 2017-03-02T16:45:57Z
+* content: Avoid deregistering roots that will registered again
+* codeUrl: github.com/JetBrains/intellij-community/pull/524/commits/496f739851e8d5cc7db5dcb1125164122444b3eb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-02T17:07:41Z
+* content: The current behavior is that once a new set of roots is received, all the current roots were first deregistered and then the new ones registered.
+* time: 2017-03-02T17:07:41Z
+* content: In case the majority of the roots belong to the both sets, this causes two issues:
+* time: 2017-03-02T17:07:41Z
+* content: Performance overhead
+* time: 2017-03-02T17:07:41Z
+* content: Loss of event if it happened after deregistering before registering
+* time: 2017-03-02T17:07:41Z
+* content: To avoid those issues, the set of current and new roots can be compared and only new roots registered and only the old roots no longer present deregistered.
+************************************************************************

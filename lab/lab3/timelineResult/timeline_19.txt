@@ -1,0 +1,31 @@
+************************************************************************
+* id: 19
+* requirement: IDEA-91145 Enhance org.jetbrains.idea.maven.server.MavenEmbedderWrapper#execute to be able to specify the project list and explicit profile exclusions
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-08-15T12:03:36Z
+* content: [IDEA-91145] Merge maven-embedder-1.1-SNAPSHOT into maven2-server-impl
+* codeUrl: github.com/JetBrains/intellij-community/pull/19/commits/7cc2ed78ddf20843f7cc3da481636009ff428dde
+* time: 2012-09-06T14:43:04Z
+* content: [IDEA-91145] Add a new MavenEmbedderWrapper#execute method that permi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/19/commits/b596794fb04f3a559ad77ad78eac5e3d59c401cf
+* time: 2012-09-06T14:47:43Z
+* content: [IDEA-91145] Add methods to find Maven root projects
+* codeUrl: github.com/JetBrains/intellij-community/pull/19/commits/d88d26418edb5bca31ad4c5caa5d9274f7fac10d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-09-06T22:13:44Z
+* content: Proposition of implementation of http://youtrack.jetbrains.com/issue/IDEA-91145
+* time: 2012-09-28T19:25:40Z
+* content: Have you signed the contributor agreement? If not, could you please do so? http://www.jetbrains.org/display/IJOS/Contributor+Agreement
+* time: 2012-10-05T16:09:40Z
+* content: I'm checking with my employer if I can sign it or if it is to him to sign it.
+* time: 2012-10-18T07:18:14Z
+* content: The CLA will be send today (Jetbrains.net ID: systar)
+************************************************************************

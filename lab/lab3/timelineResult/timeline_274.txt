@@ -1,0 +1,4 @@
+************************************************************************
+* id: 274
+* requirement: added and marked as deprecated removed constructor ArchiveHandler.Ent…
+the requirement of 274 only has implements, no discussion.

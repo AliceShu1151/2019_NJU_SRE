@@ -1,0 +1,25 @@
+************************************************************************
+* id: 1199
+* requirement: Open a project by launcher.py when other window is already open
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-09-16T22:49:22Z
+* content: Open a project by launcher.py when other window is already open
+* codeUrl: github.com/JetBrains/intellij-community/pull/1199/commits/8313fdc136b70ddf55387c56da1c77a082242183
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-09-16T23:01:53Z
+* content: Hi developers. Thank you very much for the wonderful project!
+* time: 2019-09-16T23:01:53Z
+* content: The launcher.py opens a project properly when no IntelliJ window is running. However, when some IntelliJ windows are running, the launcher.py doesn't open properly in macOS. This PR fixes the problem.
+* time: 2019-09-16T23:01:53Z
+* content: I provide the following two demo video about before-PR and after-PR.
+* time: 2019-09-16T23:01:53Z
+* content: 
+************************************************************************

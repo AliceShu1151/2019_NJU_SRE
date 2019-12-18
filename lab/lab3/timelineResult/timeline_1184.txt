@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1184
+* requirement: cache JAXBContext to avoid overhead on parsing every SVN operation result
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-05T10:19:46Z
+* content: cache JAXBContext to avoid overhead on parsing every SVN operation re…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1184/commits/9ac5d872b22f541a7eba2901b4337beba81b8e07
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-05T10:21:24Z
+* content: PR for https://youtrack.jetbrains.net/issue/IDEA-219881
+************************************************************************

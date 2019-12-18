@@ -1,0 +1,35 @@
+************************************************************************
+* id: 203
+* requirement: Install CustomShortcuts for Editor Up and Down in every trees widgets
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-07-26T14:58:53Z
+* content: Install CustomShortcuts for Editor Up and Down in every trees widgets
+* codeUrl: github.com/JetBrains/intellij-community/pull/203/commits/e8c1d3a52734bb9896064fc447cb55b9706283eb
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-07-26T17:33:38Z
+* content: After remaping up/down keys it allows me to use new shortcuts in every ListScrollingUtil based list widgets but not in any tree widgets.
+* time: 2014-07-26T17:33:38Z
+* content: For tree widgets there is coresponding TreeUtil class with installActions but without handling custom shortcuts.
+* time: 2014-07-26T17:33:38Z
+* content: This pull merge fixes this and adds "Editor Up" and "Editor Down" shortcuts tu use in any tree based widget.
+* time: 2014-07-26T17:33:38Z
+* content: It allows for vim biased users to use Project Structure, File Structure, Find Results without forcing them to use arrow keys.
+* time: 2014-07-27T12:23:20Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-08-06T11:04:57Z
+* content: Email was sent today. Please check your mailbox.
+* time: 2014-08-06T12:09:21Z
+* content: Received, thanks.
+* time: 2018-07-21T14:55:34Z
+* content: @ppalucki, please rebase the PR, cc @SergeyMalenkov @vlasovskikh.
+* time: 2018-08-29T19:38:25Z
+* content: Suggested approach does not work for me. Also, it contains unrelated comments and unused imports.
+************************************************************************

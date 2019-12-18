@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1074
+* requirement: Decrement the current index after removing first element from buffer
+the requirement of 1074 has no implements.

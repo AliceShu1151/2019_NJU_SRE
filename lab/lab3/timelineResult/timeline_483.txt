@@ -1,0 +1,4 @@
+************************************************************************
+* id: 483
+* requirement: Added additional method to BudledKeymapProvider extension point to be…
+the requirement of 483 has no implements.

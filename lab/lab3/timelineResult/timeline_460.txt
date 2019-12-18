@@ -1,0 +1,19 @@
+************************************************************************
+* id: 460
+* requirement: IDEA-162949 myTaskPriority set to verbosive
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-10-27T13:05:59Z
+* content: IDEA-162949 myTaskPriority needs to be set to verbose in order to be …
+* codeUrl: github.com/JetBrains/intellij-community/pull/460/commits/5f919dabd9af04b4b67c53d1e8cce4134e112855
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-10-27T13:08:45Z
+* content: myTaskPriority needs to be set to verbose in order to be able to turn it off by AntBuildFileImpl.VERBOSE.set(editPropertyContainer, false);
+************************************************************************

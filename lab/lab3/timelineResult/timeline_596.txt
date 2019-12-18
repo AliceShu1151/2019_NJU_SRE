@@ -1,0 +1,25 @@
+************************************************************************
+* id: 596
+* requirement: Fix for performance problem IDEA-174594
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-20T11:55:38Z
+* content: Fix of performance problem in UAST value loop analysis
+* codeUrl: github.com/JetBrains/intellij-community/pull/596/commits/457e5bac74e2e84a6fe11fb0c7c5b99897bf4bd0
+* time: 2017-06-23T09:36:20Z
+* content: UAST value analysis: perform variable merge more accurately
+* codeUrl: github.com/JetBrains/intellij-community/pull/596/commits/8e5b755ba12971fc5af6510caaef5110605774a6
+* time: 2017-06-23T09:47:53Z
+* content: UAST value analysis: more accurate merging of call results
+* codeUrl: github.com/JetBrains/intellij-community/pull/596/commits/3339f72c9c4648adbbb9c9fe289c66c3a48e39fa
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-23T09:56:36Z
+* content: First commit is mandatory and two others are just helpful
+************************************************************************

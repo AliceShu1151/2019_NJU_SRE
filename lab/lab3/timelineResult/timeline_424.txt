@@ -1,0 +1,41 @@
+************************************************************************
+* id: 424
+* requirement: IDEA-157915: Fix symbolic-ref in HEAD
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-05T21:53:04Z
+* content: IDEA-157915: Fix symbolic-ref in HEAD
+* codeUrl: github.com/JetBrains/intellij-community/pull/424/commits/593217dd28c6ef7923f630e2d1d1de4162179b8e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-05T21:54:18Z
+* content:  No description provided. 
+* time: 2016-07-14T09:14:30Z
+* content: Have you submitted a contributor license agreement? If not, please check your mail box: I've just sent a sign request there via DocuSign.
+* time: 2016-07-14T09:18:06Z
+* content: Yes, I've just signed it.
+* time: 2016-07-14T09:20:55Z
+* content: Received, thanks.
+* time: 2016-07-14T09:20:55Z
+* content: I see that you've at first closed this pull request right after creation, and then reopened it a week later. But Github doesn't show any new/rewritten commits here. You just wanted to test it more, or you closed it by accident?
+* time: 2016-07-14T09:23:25Z
+* content: Yes, I just wanted PR to be first reviewed by my colleagues, but accidentally created it in JetBrains repo instead of my fork
+* time: 2016-07-17T08:29:10Z
+* content: Merged the patch with a few mentioned corrections. Thanks a lot!
+* time: 2016-07-18T10:21:09Z
+* content: Ah. Together we missed the fact that the linked reference can reside in .git/packed-refs. Currently it leads to RepoStateException: Couldn't load file /Users/loki/temp/t/.git/refs/heads/master. Seems that this fix can't be easily adjusted. Temporary reverted.
+* time: 2016-07-18T10:48:00Z
+* content: And how can this happen? symbolic-ref in origin?
+* time: 2016-07-18T15:44:44Z
+* content: git pack-refs --all makes everything packed, including refs/heads/master thus the code can't find .git/refs/heads/master written in .git/HEAD.
+* time: 2016-07-18T15:44:44Z
+* content: It seems that to solve the issue we'll have first to read all references to a map, both from .git/refs and .git/packed-refs, and then resolve them by following links inside the map.
+* time: 2016-07-18T15:53:23Z
+* content: Thank you, I'll try to do something with this.
+************************************************************************

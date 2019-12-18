@@ -1,0 +1,35 @@
+************************************************************************
+* id: 95
+* requirement: Implement extension support for MethodTextOccurrenceProcessor
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-09-09T13:59:02Z
+* content: Implement extension support for MethodTextOccurrenceProcessor
+* codeUrl: github.com/JetBrains/intellij-community/pull/95/commits/2f7d80b602b98b1588cbd0b5bd04420de35f0440
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-09-09T14:14:16Z
+* content: This pull request delegates signature comparison performed by MethodTextOccurrenceProcessor to its extensions. Therefore deciding whether particular reference satisfies search criteria can be extended to support comparison with non-Java PSI elements.
+* time: 2013-09-09T14:14:16Z
+* content: The main goal is to allow Kotlin plugin to reuse most of the existing Java method search infrastructure.
+* time: 2013-09-10T11:38:32Z
+* content: Why don't you simply write another QueryExecutor to find Kotlin's usages? Currently it looks like the amount of code you'll be able to reuse is hardly higher than the amount of additional infrastructure you're creating to enable the reuse.
+* time: 2013-09-10T11:57:01Z
+* content: Separate QueryExecutor is always an option, but then we have to basically duplicate MethodUsagesSearcher and MethodTextOccurrenceProcessor (with very minor changes like changing class name of request processor and replacing kotlin function with its Java view). Extension allows to reuse both with a cost of one extra interface and implementation class, so at large it seems more preferable to me.
+* time: 2013-09-10T12:37:03Z
+* content: Maybe you could inherit from the existing implementations? All searchers for other languages and search types are implemented as separate classes, and it seems really inconsistent to add an extension point in this single place.
+* time: 2013-09-10T13:11:48Z
+* content: Inheritance won't help because in this case it still requires to copy-and-paste most of search class implementation. I've looked at Groovy and Scala plugins, but they don't have the problem, since their method PSIs are inherited from Java's PsiMethod. Unfortunately this is not the case for Kotlin where functions are separate from their Java counterparts.
+* time: 2013-09-10T13:11:48Z
+* content: It is possible to add separate searcher which finds koltin-only references (Java references to Kotlin function are found without additional changes), but this would cause MethodTextOccurrenceProcessor to search the same string twice: first time looking for Java-only references, second time - for Kotlin-only references, which may be not good from performance viewpoint
+* time: 2013-09-10T15:02:29Z
+* content: I still don't see why a large amount of copy/paste would be required when inheriting from the existing implementations. You're welcome to refactor the existing platform code to reduce the need of duplication (extract some methods etc.).
+* time: 2013-09-10T15:02:29Z
+* content: Performance is not really an issue because the usage of SearchRequestCollector in the existing code ensures that the word search (the expensive part) will not be performed twice.
+************************************************************************

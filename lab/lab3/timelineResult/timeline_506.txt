@@ -1,0 +1,29 @@
+************************************************************************
+* id: 506
+* requirement: [junit5] Support FileSource and CompositeTestSource in 'Jump to Source'
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-01-22T20:11:48Z
+* content: support FileSource and CompositeTestSource in 'Jump to Source'
+* codeUrl: github.com/JetBrains/intellij-community/pull/506/commits/827fca3dd32873b13f9f8cdf05fd5503bfe8a424
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-01-22T22:10:40Z
+* content: Currently Intellij only extracts locationHints from MethodSource and ClassSource. In cucumber there is a feature file (FileSource) as well as a step implementation (MethodSource) you may want to navigate to from the test tree. I report both of them in a CompositeTestSource in this order [FileSource, MethodSource].
+* time: 2017-01-22T22:10:40Z
+* content: This pull request adds support for:
+* time: 2017-01-22T22:10:40Z
+* content: I already send a signed CLA for a previous pull request to intellij-plugins.
+* time: 2017-01-22T22:10:40Z
+* content: @akozlova can you have a look?
+* time: 2017-01-24T20:16:52Z
+* content: Looks good. Will merge manually tomorrow. Thanks!
+* time: 2017-01-25T16:42:35Z
+* content: Merged.
+************************************************************************

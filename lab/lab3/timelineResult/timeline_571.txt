@@ -1,0 +1,19 @@
+************************************************************************
+* id: 571
+* requirement: IDEA-172832. Support long module names in Find in Path.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-05-14T23:54:03Z
+* content: IDEA-172832. Support long module names in Find in Path.
+* codeUrl: github.com/JetBrains/intellij-community/pull/571/commits/e6eadf21efb0fc2ecb2cfcf282c2b4d3047505d4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-05-15T00:05:34Z
+* content: Sets the preferredWidth to the length of the longest module name in the selected project.
+************************************************************************

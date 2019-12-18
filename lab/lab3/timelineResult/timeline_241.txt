@@ -1,0 +1,31 @@
+************************************************************************
+* id: 241
+* requirement: FileSystemUtil: Update JNA code to work on Linux/PPC
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-10T07:19:07Z
+* content: FileSystemUtil: Update JNA code to work on Linux/PPC
+* codeUrl: github.com/JetBrains/intellij-community/pull/241/commits/33e16a0c45a93664024edb8ede425b6e3a38f6c0
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-10T21:28:16Z
+* content: The struct stat64 offsets were incorrect for Linux/PPC32. Add the correct offsets, and use them when OS_ARCH is "ppc".
+* time: 2015-02-10T21:28:16Z
+* content: Also, increase the "ver" parameter of __xstat64 to "1", since the Linux/PPC64 libc rejects the value "0".
+* time: 2015-02-10T21:28:16Z
+* content: There might be more arches where the default offset table is incorrect, but I can't test that right now.
+* time: 2015-02-10T21:28:16Z
+* content: I have tested this patch on Linux/PPC with IBM JDK 1.7.0 (both 32 and 64 bit) and on Linux/x86 with Oracle JDK 1.7.0 (64 bit).
+* time: 2015-02-11T11:21:46Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-02-12T10:40:43Z
+* content: Ok, sent it now.  Thanks.
+* time: 2015-02-12T13:18:55Z
+* content: Received. Thanks.
+************************************************************************

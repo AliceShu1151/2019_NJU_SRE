@@ -1,0 +1,37 @@
+************************************************************************
+* id: 457
+* requirement: LightCodeInsightFixtureTestCase: override hook replacing tempDirFixture
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-10-26T14:15:10Z
+* content: LightCodeInsightFixtureTestCase: override hook replacing tempDirFixture
+* codeUrl: github.com/JetBrains/intellij-community/pull/457/commits/b34ccf5afc22a80ae509d34bc56591e1940666f4
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-10-26T14:30:50Z
+* content: Add an override hook to initialize an instance of TempDirTestFixture in Test classes derived from LightCodeInsightFixtureTestCase. By default it uses an in-memory implementation - LightTempDirTestFixtureImpl. Would be nice to be able to replace it with a persistent filesystem implementation - TempDirTestFixtureImpl.
+* time: 2016-10-26T17:16:41Z
+* content: The Contributor License Agreement has been received. Thanks.
+* time: 2016-10-26T17:18:44Z
+* content: Why do you want to override the temp dir fixture?
+* time: 2016-10-26T20:07:21Z
+* content: I would like to have the test case project files stored to disk. It helps in understanding the tested project structure, validating assumptions and problem solving.
+* time: 2016-10-26T20:31:28Z
+* content: Have you tried CodeInsightFixtureTestCase? It does exactly that, although it's slower (because of more disk operations).
+* time: 2016-10-26T20:57:35Z
+* content: I'm using LightCodeInsightFixtureTestCase since it supports Java projects, while  CodeInsightFixtureTestCase doesn't
+* time: 2016-10-27T07:20:58Z
+* content: Indeed. Have you tried JavaCodeInsightFixtureTestCase?
+* time: 2016-10-27T08:22:23Z
+* content: That does the trick. Thanks for the tip Peter One issue though, according to the docs - the light version is more effiecient since projects are reused when possible between tests. I guess this will not happen with JavaCodeInsightFixtureTestCase?! is it possible to use LightCodeInsightFixtureTestCase with TempDirTestFixtureImpl - so files will be persisted to disk while still re-using project files between tests? If so then this PR might be relevant, otherwise it can be closed.
+* time: 2016-10-27T08:41:20Z
+* content: No, JavaCodeInsightFixtureTestCase doesn't reuse the project. It'd be more expensive and fragile when working with physical disk.
+* time: 2016-10-27T08:41:20Z
+* content: If you don't absolutely need the disk for tests themselves (this can happen if they run some external process on the project files), I'd recommend to start with JavaCodeInsightFixtureTestCase, do the "understanding the tested project structure, validating assumptions and problem solving" and then switch superclass to use light tests to get all the speed improvements.
+************************************************************************

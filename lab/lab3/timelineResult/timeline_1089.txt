@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1089
+* requirement: Surface error nodes on top of build steps
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-13T12:02:09Z
+* content: Surface error nodes on top of build steps
+* codeUrl: github.com/JetBrains/intellij-community/pull/1089/commits/af08fc8d991685ec868e7992686aa4dfa404ca8b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-13T14:32:46Z
+* content: Hi @vladsoroka,
+* time: 2019-03-13T14:32:46Z
+* content: This is the PR for the work we discussed on the BOW. Instead of attaching nodes to the root, I created an intermediate build step node. If an error group with a failure is created, it will be attached to the root, before the build steps.
+* time: 2019-03-13T14:32:46Z
+* content: Feel free to ping me if you have another idea. Thanks, Vadim
+************************************************************************

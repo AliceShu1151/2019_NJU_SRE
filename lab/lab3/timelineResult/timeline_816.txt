@@ -1,0 +1,23 @@
+************************************************************************
+* id: 816
+* requirement: Resolve dependency sources in all repositories.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-26T04:34:46Z
+* content: Resolve dependency sources in all repositories.
+* codeUrl: github.com/JetBrains/intellij-community/pull/816/commits/4049aa6b574ee5548af18088c9d7aeba5f4fb7a8
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-26T04:36:55Z
+* content: As reported here: https://discuss.gradle.org/t/idea-plugin-isnt-downloading-sources-when-mavenlocal-is-used/2160 library sources are not downloaded for certain gradle configurations.
+* time: 2018-06-26T04:36:55Z
+* content: Download source fails when the first maven repository configured doesn't already contain the artifact requested, a common case of this issue is use of mavenLocal which likely does not already have sources present.
+* time: 2018-07-21T10:51:36Z
+* content: cc @vladsoroka
+************************************************************************

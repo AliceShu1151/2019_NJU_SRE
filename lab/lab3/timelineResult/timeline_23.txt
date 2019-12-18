@@ -1,0 +1,35 @@
+************************************************************************
+* id: 23
+* requirement: IDEA-92541
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-10-08T21:56:18Z
+* content: HgPusher now considers the return value of the push command to decide…
+* codeUrl: github.com/JetBrains/intellij-community/pull/23/commits/34de87772f5d544e42a76f63feabdf127924fabd
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2012-10-08T22:13:57Z
+* content: Pull request for IDEA-92541
+* time: 2012-10-08T22:13:57Z
+* content: Due to server-side hooks, a push might fail in which case the return value of the hg push command might be different from 0 indicating the push failed. See a copy-paste from the command-line:
+* time: 2012-10-08T22:13:57Z
+* content: This push request shows an error message when the push failed instead of silently ignoring the error by checking the return value of running the hg command.
+* time: 2012-10-08T22:13:57Z
+* content: You might consider to check the other usages of the HgCommandResultNotifier#process method to see whether the output can be improved in other parts of the code as well.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2012-10-08T22:22:49Z
+* content: When there is nothing to push, the return value is 1 but that should …
+* codeUrl: github.com/JetBrains/intellij-community/pull/23/commits/fbd3d3eb9e0662762ef1783de1848d66d3a195b0
+************************************************************************

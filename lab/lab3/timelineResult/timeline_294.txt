@@ -1,0 +1,23 @@
+************************************************************************
+* id: 294
+* requirement: Debug log level for project data services
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-08-14T19:01:30Z
+* content: Debug log level for project data services
+* codeUrl: github.com/JetBrains/intellij-community/pull/294/commits/d1449f3614a3c7147986a92bc3e71c383e089469
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-08-14T19:02:58Z
+* content: For really big projects there are too much output to idea.log
+* time: 2015-08-15T12:29:24Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-08-17T17:48:22Z
+* content: @klikh done.
+************************************************************************

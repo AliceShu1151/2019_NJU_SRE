@@ -1,0 +1,33 @@
+************************************************************************
+* id: 251
+* requirement: Added contributing guideline file
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-03-05T23:15:34Z
+* content: Added contributing guideline file
+* codeUrl: github.com/JetBrains/intellij-community/pull/251/commits/ce1089e8efd49ba61748b1d875e4a988c6b257af
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-05T23:55:22Z
+* content: In the spirit of Github, I think there should be a contributing file.
+* time: 2015-03-06T15:01:13Z
+* content: And have you submitted a contributor license agreement as well? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2015-03-06T15:04:19Z
+* content: Hi @klikh as far as I know I've did that as I already have a Confluence account and rights to edit the IntelliJ space on it.
+* time: 2015-03-06T16:16:23Z
+* content: Well, if you're not a JetBrains employee and if you didn't send a scanned contribution agreement yet, you should do it. That's actually what is mentioned in the contributing.md :)
+* time: 2015-03-08T11:16:31Z
+* content: @klikh I've sent it by fax on 21.11.2014. Should I send it by mail as well?
+* time: 2015-03-10T11:31:19Z
+* content: It seems that we didn't receive it by fax: I've just asked our colleague to double-check, and they confirmed the fact. Could you please resend it by e-mail? Thanks.
+* time: 2015-03-11T11:57:00Z
+* content: The CA was received. Thank you!
+* time: 2015-03-11T13:04:25Z
+* content: The pull request has been merged. Thanks for your contribution.
+************************************************************************

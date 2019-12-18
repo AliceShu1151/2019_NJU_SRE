@@ -1,0 +1,19 @@
+************************************************************************
+* id: 794
+* requirement: Pass caught exception when generating ExternalSystemException
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-01T00:23:13Z
+* content: Pass caught exception when generating ExternalSystemException
+* codeUrl: github.com/JetBrains/intellij-community/pull/794/commits/c07228eaa7f9c45bfce9fd2092318d15ee66d71a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-01T00:29:13Z
+* content: This will cause the message to not be empty when getMessage(rootCause) returns an empty string.
+************************************************************************

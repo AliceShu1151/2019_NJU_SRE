@@ -1,0 +1,23 @@
+************************************************************************
+* id: 778
+* requirement: IDEA-189919 provide a setting for property comments not convert to ascii
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-04-11T02:05:45Z
+* content: IDEA-189919 Makes property comments not converted to ascii settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/778/commits/6234299f6139a8d63b49d5c27411fc2f50d1f257
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-04-11T02:21:52Z
+* content: Provide a feature like eclipse properties editor plugin： 
+* time: 2018-04-11T02:21:52Z
+* content: default behavior is convert comments, if you don't want to convert comments to ascii,  a string below need add to the $IDEA_INSTALLATION/bin/idea.properties idea.native2ascii.skip.comments=true
+* time: 2018-04-11T02:21:52Z
+* content: then, you need to add a string to tell IDEA what line sperator in use.  by default, it is "\r\n",you can change to "\n" or "\r" idea.native2ascii.line.separator=\r\n
+************************************************************************

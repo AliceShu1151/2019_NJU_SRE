@@ -1,0 +1,23 @@
+************************************************************************
+* id: 250
+* requirement: Remove file based storage from project creation options (fixes first part of IDEA-137327)
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-03-05T23:02:46Z
+* content: Remove file based storage from project creation options
+* codeUrl: github.com/JetBrains/intellij-community/pull/250/commits/ecf379b404c2801da805d8218668f334c2a3a637
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-05T23:07:34Z
+* content: Hi,
+* time: 2015-03-05T23:07:34Z
+* content: As per ticket https://youtrack.jetbrains.com/issue/IDEA-137327, this removes the file based storage from new project creations.
+* time: 2015-03-05T23:07:34Z
+* content: Thank you.
+************************************************************************

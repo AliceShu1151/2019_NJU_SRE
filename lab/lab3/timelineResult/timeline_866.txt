@@ -1,0 +1,25 @@
+************************************************************************
+* id: 866
+* requirement: Catch ClassCastException on GroupByTypeComparator
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-20T00:20:08Z
+* content: Catch ClassCastException on GroupByTypeComparator
+* codeUrl: github.com/JetBrains/intellij-community/pull/866/commits/c93f782e5c878a686841e91481dbce83792c691a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-20T00:33:06Z
+* content: When comparing ProjectViewNodes using type, the comparator calls to getTypeSortKey, this function returns an instance of Comparable, but the only warranty is that we can compare elements of the same type. In most of the cases the value is a String but there are a couple of places that it is not, possibly causing ClassCastException when comparing an String to a different type. This is the cause of https://issuetracker.google.com/issues/113159120.
+* time: 2018-09-20T00:33:06Z
+* content: This change ignores ClassCastException when comparing keys while sorting by type.
+* time: 2018-09-29T12:18:19Z
+* content: Thank you for your fix. I'll integrate it soon.
+* time: 2018-09-29T12:20:56Z
+* content: Thank you for the fix. I'll integrate it soon.
+************************************************************************

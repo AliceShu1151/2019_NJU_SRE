@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1079
+* requirement: IDEA-208610: Fix memory leaks in MouseDragHelper.attach and MouseDrag…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-08T00:56:17Z
+* content: IDEA-208610: Fix memory leaks in MouseDragHelper.attach and MouseDrag…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1079/commits/94cb31930672ebb7499619ea7fd26b6ad67a746f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-08T01:05:29Z
+* content: Fix memory leaks in MouseDragHelper.attach and MouseDragHelper.start.
+* time: 2019-03-08T01:05:29Z
+* content: Make the detach method dispose the object added to the Disposer's tree by the attach method.
+* time: 2019-03-08T01:05:29Z
+* content: Make the stop method dispose the object added to the Disposer's tree by the start method.
+************************************************************************

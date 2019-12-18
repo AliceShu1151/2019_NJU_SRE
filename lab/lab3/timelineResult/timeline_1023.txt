@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1023
+* requirement: Fix invalid decompiled missing inner class references
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-01-03T15:42:28Z
+* content: Fix invalid decompiled missing inner class references
+* codeUrl: github.com/JetBrains/intellij-community/pull/1023/commits/bf00c861c83c163154ca039fe818370851f68b5f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-01-03T15:59:33Z
+* content: Fix for https://youtrack.jetbrains.net/issue/IDEA-204298
+* time: 2019-01-20T11:02:24Z
+* content: @trespasserw, please let me know where to add tests for this to validate the change
+************************************************************************

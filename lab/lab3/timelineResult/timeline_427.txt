@@ -1,0 +1,30 @@
+************************************************************************
+* id: 427
+* requirement: Update `parametrize` signature in Pytest skeleton
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-14T09:11:37Z
+* content: python-skeletons/pytest: Fix whitespace
+* codeUrl: github.com/JetBrains/intellij-community/pull/427/commits/57c1882b31fe4cc511755fce609ac575ea2081da
+* time: 2016-07-14T09:13:18Z
+* content: python-skeletons/pytest: Update signature of `parametrize`
+* codeUrl: github.com/JetBrains/intellij-community/pull/427/commits/fec0195a66e0de27d4aed81eb44edc9ac1099971
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-14T09:16:38Z
+* content: Please advise how I get a CLA arranged.
+* time: 2016-07-15T07:45:26Z
+* content: Could you please share your e-mail address, and I'll send you the CLA form to sign electronically.
+* time: 2016-07-15T07:45:26Z
+* content: Alternatively, you may download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign (mention you github account name there), scan and email to contribute@jetbrains.com
+* time: 2016-07-15T07:45:26Z
+* content: We would also like to request you to update your commit authorship with your actual e-mail address instead of @users.noreply.github.com.
+* time: 2016-07-15T14:17:18Z
+* content: @allanlewis Please make a PR in https://github.com/JetBrains/python-skeletons repository. Folder in current repo is a mirror, we sync it manually.
+************************************************************************

@@ -1,0 +1,59 @@
+************************************************************************
+* id: 743
+* requirement: hg4idea: Added a compare action to branch popup menu IDEA-187194
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-02-23T21:58:07Z
+* content: hg4idea: Added a compare action to branch popup menu
+* codeUrl: github.com/JetBrains/intellij-community/pull/743/commits/57bfe9ce9515f93ff7e4eef89e85cce0b4f6348e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-02-23T22:13:41Z
+* content: Code for IDEA-187194. Uses
+* time: 2018-02-23T22:13:41Z
+* content: to load changes, otherwise followed git4idea as much as possible
+* time: 2018-07-12T15:10:14Z
+* content: Thank you for the contribution!
+* time: 2018-07-12T15:10:14Z
+* content: There is a little issue with the PR, unfortunately.
+* time: 2018-07-12T15:10:14Z
+* content: As a result, hg4idea and git4idea include a lot of almost duplicated code. The better approach would be to move common code from both plugins to the dvcs-impl module. Could you please adjust the changes accordingly?
+* time: 2018-07-12T15:37:33Z
+* content: @dmitriysmirnovjb You're right, I chose to do it this way so I can easily patch existing IDEA installations before the PR is approved. This can obviously be done a lot better.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-07-16T03:17:42Z
+* content: IDEA-187194: Moved GitCompareBranchesDialog to dvcs-impl
+* codeUrl: github.com/JetBrains/intellij-community/pull/743/commits/eadd942699c6da716d55529aab7355a8f0c58221
+* time: 2018-07-20T03:18:51Z
+* content: IDEA-187194: Merged with master, moved reloadContentFromBranch code t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/743/commits/a93049789303a53a936fb12bba4e5a42b38293b5
+* time: 2018-07-20T03:28:14Z
+* content: Merge branch 'master' of github.com:JetBrains/intellij-community into…
+* codeUrl: github.com/JetBrains/intellij-community/pull/743/commits/eae21d87cef0789d32ab640e8574523c68e21964
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-07-20T03:39:36Z
+* content: @dmitriysmirnovjb @AMPivovarov  I moved most of the UI code into dvcs-impl, had to play a little catch-up with GitCompareBranchesDiffPanel changes. Hopefully this can be reviewed soon, otherwise it'll need constant re-merging.
+* time: 2018-07-20T18:04:21Z
+* content: Thanks for your contribution!
+* time: 2018-07-20T18:04:21Z
+* content: Sorry for your troubles with conflicts. I've noticed that it caused merge conflicts (and broke API for some plugins, that you couldn't know), so I thought to resolve them and apply manually.
+* time: 2018-07-20T22:34:38Z
+* content: @AMPivovarov Thank you for looking into it. I assume it broke things outside the intellij-community repo, but why would merge conflicts not be visible on github?
+* time: 2018-07-21T09:55:34Z
+* content: @idlsoft Yes, those were third-party plugins from Plugin Repository.
+************************************************************************

@@ -1,0 +1,83 @@
+************************************************************************
+* id: 390
+* requirement: [Fernflower] New Testing Type: stdout comparison tests (including new test cases)
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-25T17:43:14Z
+* content: New Testing Type: stdout comparison tests (including new test cases)
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/5c7e924dd0b946c58d002ba992d3a50981e42cea
+* time: 2016-04-25T17:50:38Z
+* content: minor: some tests were added between my checkout and my push...
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/b28abe219b08b478ab6337222f0c18486ef22ee6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-25T17:55:16Z
+* content: (resubmitted, had a git accident..., contributor license agreement on the way...)
+* time: 2016-04-25T17:55:16Z
+* content: For these test you just dump java files into the test folder. They will be compiled, then run (output stored), then the classes are decompiled, compiled and run too (output compared).
+* time: 2016-04-25T17:55:16Z
+* content: So much less maintaining to do then with the other tests (for the others all tests have to be updated on fundamental changes to Fernflower that change decompiled output).
+* time: 2016-04-25T17:55:16Z
+* content: These tests don't require that the decompiler output never changes. They check that the output of the classes when run does not change and is the same as for the original classes. Also we get a failure when the decompiled classes cannot be compiled again.
+* time: 2016-04-25T17:55:16Z
+* content: It also supports optional pattern matching on the created classes. Note: the compiler runs with 'renaming' turned on to test that at the same time.
+* time: 2016-04-25T17:55:16Z
+* content: Classes in 'javadefault' are compiled with Java 1.8, in 'java14' with Java 1.4, in 'java15' with Java 1.5 and so on.
+* time: 2016-04-25T17:55:16Z
+* content: At the moment all but the example test are deactivate (so skipped), see build.xml begin of test-stdout-prepare:
+* time: 2016-04-25T18:28:15Z
+* content: Note: I think it needs ant 1.9.6, at least I cannot run it on command line with ant 1.9.4.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-25T18:44:24Z
+* content: minor
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/56efde781c82ed76573e140dac37fca64b8d2177
+* time: 2016-04-26T00:12:06Z
+* content: minor
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/72edc8c58d145101c9da73249fcf5c7da3915a7d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-04-26T09:31:06Z
+* content: I'm thinking about improving this. But only if you want to merge it.
+* time: 2016-04-26T09:31:06Z
+* content: Have a optional file next to each test with additional decompiler arguments (so that only the renaming tests have renaming turned on, and only the overloading tests use the new -osc=1 (if you merge that)).
+* time: 2016-04-26T09:31:06Z
+* content: Also at the moment the test cases are duplicated if they should be compiled with multiple java versions (e.g. in package 'java14' and 'java15'). I could change that. Question is if default is to compile with all java versions? Or the opposite: by default compile with current java (1.8 atm) only? In both cases exceptions would be defined in build.xml.
+* time: 2016-04-26T09:31:06Z
+* content: Also I could maybe remove the optional pattern matching on the decompiled java files. Not sure if this will ever be needed.
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-04-26T11:53:14Z
+* content: stdout tests renaming cases
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/82427bb1448d593957a4e1df27c8c3f704de3186
+* time: 2016-04-26T11:58:21Z
+* content: minor
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/398801bec078efc14529078b22e4b109f7efcadf
+* time: 2016-04-26T14:58:13Z
+* content: New_Tests_Stdout_Comparison minor
+* codeUrl: github.com/JetBrains/intellij-community/pull/390/commits/2f94b351d9ad3367a909a4ab662ea81e95c1659d
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-05-30T13:03:59Z
+* content: Hi!
+************************************************************************

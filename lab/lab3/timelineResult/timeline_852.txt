@@ -1,0 +1,29 @@
+************************************************************************
+* id: 852
+* requirement: Fix patching args in monkey patched subprocess module.
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-09-08T21:53:45Z
+* content: Fix patching args in monkey patched subprocess module.
+* codeUrl: github.com/JetBrains/intellij-community/pull/852/commits/1f606505feee68222342df4f88d2eb325cefd946
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-09-08T22:15:21Z
+* content: Commit taken from: fabioz/PyDev.Debugger@c0b2a44
+* time: 2018-09-08T22:15:21Z
+* content: Example script:
+* time: 2018-09-08T22:15:21Z
+* content: Here is the error output from when you debug this script with PyCharm's debugger on Linux:
+* time: 2018-09-08T22:15:21Z
+* content: remove_quotes_from_args changed:
+* time: 2018-09-08T22:15:21Z
+* content: to:
+* time: 2018-09-08T22:15:21Z
+* content: Output after applying changes from this commit:
+************************************************************************

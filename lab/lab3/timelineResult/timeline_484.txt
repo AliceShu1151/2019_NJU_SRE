@@ -1,0 +1,22 @@
+************************************************************************
+* id: 484
+* requirement: Address FieldAccessor.get compilation failure in JDK 9
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-06T22:59:22Z
+* content: Replace calls to FieldAccessor.get
+* codeUrl: github.com/JetBrains/intellij-community/pull/484/commits/f3e4ee55baa52965d3cb568f10165d9e47b788e1
+* time: 2016-12-06T23:03:31Z
+* content: Remove method FieldAccessor.get
+* codeUrl: github.com/JetBrains/intellij-community/pull/484/commits/da33f0123fdbd41c5f41c532d577b8fba192b689
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-06T23:09:54Z
+* content: The first commit replaces uses of the method, which is all we apparently need at the moment to compile with JDK 9. The second commit removes the method—separate because I'm not sure if it needs to be kept in case of uses outside the project.
+************************************************************************

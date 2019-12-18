@@ -1,0 +1,25 @@
+************************************************************************
+* id: 688
+* requirement: Fix memory leak of StatusBar in IdeFrameImpl
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-14T13:32:18Z
+* content: Fix memory leak of StatusBar in IdeFrameImpl
+* codeUrl: github.com/JetBrains/intellij-community/pull/688/commits/ca98f62e54848c9cd86dfbde52a8dd70674e146c
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-12-18T14:48:27Z
+* content: IdeFrameImpl holds a IdeRootPane that holds a StatusBar. When disposing of the IdeFrameImpl, one needs to first dispose of the StatusBar.
+* time: 2018-01-23T07:15:05Z
+* content: @gregsh? I'm not sure who should review this, but can someone take a look?
+* time: 2018-02-05T12:53:09Z
+* content: @SergeyMalenkov Could you please take a look?
+* time: 2018-02-05T17:43:31Z
+* content: It looks OK for me.
+************************************************************************

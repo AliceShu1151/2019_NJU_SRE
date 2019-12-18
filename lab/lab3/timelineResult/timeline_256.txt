@@ -1,0 +1,19 @@
+************************************************************************
+* id: 256
+* requirement: [IDEA-137300] Added ability to filter psi classes returned by JavaPsiFac...
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-03-19T14:06:10Z
+* content: [IDEA-137300] Added ability to filter psi classes returned by JavaPsi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/256/commits/3650fcf6b4f58131ff8c1f56778d2235b0e5ad0f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-19T15:49:48Z
+* content: It adds a new method PsiElementFinder.getClassesFilter(GlobalSearhcScope). By default it returns null. Methods of JavaPsiFacadeImpl, which are used to look up classes, are changed to apply the filter if it is not null.
+************************************************************************

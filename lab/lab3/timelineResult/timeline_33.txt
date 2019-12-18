@@ -1,0 +1,69 @@
+************************************************************************
+* id: 33
+* requirement: add Groovy Introduce local variable.
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-01-19T09:21:10Z
+* content: add Groovy Introduce local variable.
+* codeUrl: github.com/JetBrains/intellij-community/pull/33/commits/910f2c958f25b7f28168b00430735b6395d07310
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-01-19T11:45:11Z
+* content: I added a Introduce local variable for Groovy.
+* time: 2013-01-19T12:36:23Z
+* content: The code looks good, but the question is, is this intention really needed? What value does it add? Java editor doesn't have it. Adding it means that there'll almost always be a potentially distracting lightbulb in the editor. And there's always Introduce Variable action available.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-01-20T06:59:47Z
+* content: changed family name.
+* codeUrl: github.com/JetBrains/intellij-community/pull/33/commits/d49fb4ef60f64344b367c64db2237f14248d69ba
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-01-24T06:37:45Z
+* content: Java is "Introduce local valriable intention" supported , but Groovy is unsupported. Because of this, I have proposed this.
+* time: 2013-01-24T06:37:45Z
+* content: I'm sorry in poor English.
+* time: 2013-01-24T09:23:18Z
+* content: Where is "introduce local variable" intention supported in Java, could you please provide a code example?
+* time: 2013-01-24T12:31:30Z
+* content: Implementation of Intention Action of Java. https://github.com/JetBrains/intellij-community/blob/master/java/java-impl/src/com/intellij/codeInsight/intention/impl/IntroduceVariableIntentionAction.java
+* time: 2013-01-24T13:26:58Z
+* content: I see. Java intention is shown only on expression statements which return something, yours is on every expression that happens not to occur inside an assignment and variable declaration. It would make sense to use org.jetbrains.plugins.groovy.lang.psi.util.PsiUtil#isExpressionStatement to check. And perhaps not to display this intention on very nested constructions, e.g. inside parameter list, inside closure etc.
+* time: 2013-01-24T13:26:58Z
+* content: You also need to sign the contributor agreement for your changes to be merged to IDEA codebase: http://www.jetbrains.org/display/IJOS/Contributor+Agreement
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-01-26T09:04:50Z
+* content: When determining the statement to be, changed to use the PsiUtil.isEx…
+* codeUrl: github.com/JetBrains/intellij-community/pull/33/commits/cf642747ce65a157a6e3416af395ac390648c472
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-01-26T13:14:15Z
+* content: I was sent by fax the contributor agreement.
+* time: 2013-01-29T12:18:07Z
+* content: We're no longer receiving contributor license agreements by fax. Could you please scan the signed document and e-mail it to contribute@jetbrains.com?
+* time: 2013-01-30T13:37:21Z
+* content: I sent it by an email some time ago.
+* time: 2013-01-30T13:42:52Z
+* content: Thanks! We've received the contributor license agreement.
+************************************************************************

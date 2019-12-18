@@ -1,0 +1,21 @@
+************************************************************************
+* id: 1053
+* requirement: IJSDK-563 Fix incorrect rendering of copyable labels
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-02-05T18:52:35Z
+* content: IDEA-206829 Fix incorrect rendering of copyable labels
+* codeUrl: github.com/JetBrains/intellij-community/pull/1053/commits/bbcd74f975c4d3b2e0ecc6b750f00b77a0903a5a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-02-06T23:50:01Z
+* content: By default JBLabels will autowrap its text contents when the container is not wide enough to render the whole text on a single line.  In copyable mode however, the JBLabel will render "..." if  the container isn't wide enough when autowrapping is set to false.  This lead to error messages in the Edit Configuration window (a very narrow window) to render as "..." with no obvious clue as to what's wrong.
+* time: 2019-02-06T23:50:01Z
+* content: This commit fixes the bug in JBLabel to respond properly to autowrapping and adds autowrapping to the JBLabel in Edit Configuration window.
+************************************************************************

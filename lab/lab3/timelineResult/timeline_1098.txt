@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1098
+* requirement: IDEA-168007 Make icon filters aware of CachedImageIcon
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-03-25T19:20:45Z
+* content: IDEA-168007 Make icon filters aware of CachedImageIcon
+* codeUrl: github.com/JetBrains/intellij-community/pull/1098/commits/12087272bca57d21c5dd7d2542fadd3b73eed5cc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-03-25T19:23:50Z
+* content: Use IconLoader.filterIcon when filtering icons without providing a Graphics object, as that still allows the filterd icons to be HiDPI aware.
+************************************************************************

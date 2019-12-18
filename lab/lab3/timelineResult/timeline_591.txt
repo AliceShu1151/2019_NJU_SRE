@@ -1,0 +1,35 @@
+************************************************************************
+* id: 591
+* requirement: [Fernflower] autoboxing primitives should not always be ignored
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-11T14:01:12Z
+* content: [Fernflower] autoboxing primitives should not always be ignored
+* codeUrl: github.com/JetBrains/intellij-community/pull/591/commits/fdb797cb1cbd365dc74e3d2fb88a11dc8607bf1e
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-11T14:10:53Z
+* content: This commit puts more restrictions on when we can safely ignore the boxing primitives. The initial restrictions were a bit too loose. cdecb09
+* time: 2017-07-15T09:22:13Z
+* content: I resolved the merge conflicts.
+* time: 2017-07-15T09:22:13Z
+* content: @gorrus did you get a chance to have a look at this pull request?
+* time: 2017-07-25T10:18:11Z
+* content: Not yet, but it is in the list, sorry for the delay.
+* time: 2017-08-05T07:59:11Z
+* content: Yes, it does feel like overkill, the new tests pass with your suggested improvement.
+* time: 2017-08-05T07:59:11Z
+* content: The reason why I had made it so specific was to make sure that this doesn't potentially break any other scenario that I can't think of right now so I made it as specific as I could get.
+* time: 2017-08-05T07:59:11Z
+* content: I removed the highly specific boxing restrictions using another commit rather than amending the previous one just in case it turns out that this is too broad and someone in the future will go through the commit log to see these original restrictions. If you prefer that I squish these commits into one please let me know and I will.
+* time: 2017-08-28T10:20:30Z
+* content: Hi, thanks for changes, please make it in one commit, thanks!
+* time: 2017-08-30T06:34:14Z
+* content: done
+************************************************************************

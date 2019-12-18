@@ -1,0 +1,21 @@
+************************************************************************
+* id: 249
+* requirement: fix IDEA-132015
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-03-05T14:27:27Z
+* content: fix IDEA-132015
+* codeUrl: github.com/JetBrains/intellij-community/pull/249/commits/e7735ef93638e952c97c8b666d1be35389087718
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-03-05T14:39:30Z
+* content: Add "assigned me" checkbox. If this check box is not selected, the all tasks are displayed.
+* time: 2015-03-06T12:02:02Z
+* content: Hi, @siosio, I'm going to make this feature (filtration of tasks by assignee) consistent across all different connectors and move corresponding checkbox to the "Open Task" popup eventually, but for the time being it's a nice little fix, so I accept your pull request. Thank you!
+************************************************************************

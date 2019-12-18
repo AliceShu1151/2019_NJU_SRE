@@ -1,0 +1,21 @@
+************************************************************************
+* id: 770
+* requirement: use equals for module name comparison
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-03-24T20:16:22Z
+* content: use equals for module name comparison
+* codeUrl: github.com/JetBrains/intellij-community/pull/770/commits/f2c4343c369b3e65f0bee0c0443c66a1bb833b9b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-03-24T20:16:51Z
+* content: This will trigger a bug when a module name starts with another module name, for example, statistics and stat.
+* time: 2018-07-21T11:01:31Z
+* content: @traff, please reassign the PR to the right person if needed.
+************************************************************************

@@ -1,0 +1,19 @@
+************************************************************************
+* id: 924
+* requirement: Make code in UnnecessaryUnicodeEscapeInspection shorter
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-11-20T19:31:44Z
+* content: Make code in UnnecessaryUnicodeEscapeInspection shorter
+* codeUrl: github.com/JetBrains/intellij-community/pull/924/commits/db9fb0b759a8fbaa530367b50438060164f1e421
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-11-20T19:33:32Z
+* content: The keyword "while" at the beginning of a line usually starts a while loop instead of ending a do-while loop. To avoid further confusion, replace the do-while loop with a typical while-loop.
+************************************************************************

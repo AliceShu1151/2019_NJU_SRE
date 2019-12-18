@@ -1,0 +1,25 @@
+************************************************************************
+* id: 805
+* requirement: Delete to the first newline after indexToDeleteTo
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-06-07T18:25:13Z
+* content: Delete to the first newline after indexToDeleteTo
+* codeUrl: github.com/JetBrains/intellij-community/pull/805/commits/d4d287560df4bae7910f2a8b24c877ee2f1bb0e5
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-06-07T19:28:03Z
+* content: Instead of the first one before. Doing that can still leave partial log messages which break Android Studio.
+* time: 2018-06-07T19:34:12Z
+* content: Hi @akozlova,
+* time: 2018-06-07T19:34:12Z
+* content: Remember me? I think we're gonna have to resize to the first newline after indexToDeleteTo instead of before because we're still getting uncaught java.time.format.DateTimeFormatter exceptions from partial dates left in Android Studio logcat messages. I added unit tests this time and LogConsoleBaseTest.resizeBufferIndexToDeleteToIsInFirstMessage will fail if you resize to the newline before.
+* time: 2018-06-07T19:34:12Z
+* content: Happy to chat about this, thanks!
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 528
+* requirement: [pycharm] [py.test] Issue py.test for multiple source roots [build 171.3780.115]
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-26T12:11:58Z
+* content: Fix issue py.test for multiple source roots
+* codeUrl: github.com/JetBrains/intellij-community/pull/528/commits/844eaace735ac45bef46f53ac99cfc8cfdefe186
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-26T12:50:06Z
+* content: That fixes issue for project with multiple source roots
+* time: 2017-03-26T12:50:06Z
+* content: example structure
+* time: 2017-03-26T12:50:06Z
+* content: src [source root] ├── applications [source root] │ └── example │     ├── init.py │     ├── models.py │     ├── tests │     │ ├── init.py │     │ └── test_example.py::TestExample::test_generic │     └── views.py ├── manage.py ├── pytest.ini └── settings.py
+* time: 2017-03-26T12:50:06Z
+* content: When select run test_example.py file - it okay becasuse pass absolute path to pytest and when select run class or method test case - py.test not found test, because pass no absolute path to p; as example: example/tests/test_example.py::TestExample::test_generic should be applications/example/tests/test_example.py::TestExample::test_generic or /absolute/path/to/file/applications/example/tests/test_example.py::TestExample::test_generic
+************************************************************************

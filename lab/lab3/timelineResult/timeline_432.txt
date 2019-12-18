@@ -1,0 +1,38 @@
+************************************************************************
+* id: 432
+* requirement: Fix PY-20227,PY-20251,PY-20332,PY-20468
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-07-28T23:18:29Z
+* content: --do not pass empty format to getArrayItems
+* codeUrl: github.com/JetBrains/intellij-community/pull/432/commits/810fe5236e63ceea48f2f54fbff96f7fe941ac66
+* time: 2016-07-28T23:26:45Z
+* content: --do not use PyDebuggerException for flow control (makes it very diff…
+* codeUrl: github.com/JetBrains/intellij-community/pull/432/commits/6493fa0a2d978cab16c9fe3960f1840347ca96f6
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-07-28T23:31:01Z
+* content:  No description provided. 
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-08-19T03:43:45Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/432/commits/13b4c7df4b2e793fb536d83ab8452a4a6546f128
+* time: 2016-08-19T04:07:17Z
+* content: Fix PY-20332: Fix code that causes constant revalidation during repaint
+* codeUrl: github.com/JetBrains/intellij-community/pull/432/commits/9e1240a0f2e8be3815b0f536a0d39aa68be8168f
+* time: 2016-08-19T04:22:27Z
+* content: --Fix PY-20251: Remember the previous renderer state
+* codeUrl: github.com/JetBrains/intellij-community/pull/432/commits/c7fc19c3a1487c3a161fa694a328f7a1b47b2dd8
+************************************************************************

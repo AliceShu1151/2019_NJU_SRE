@@ -1,0 +1,27 @@
+************************************************************************
+* id: 1190
+* requirement: fix util_methods.copy on NFS
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-08-22T14:36:24Z
+* content: fix util_methods.copy on NFS
+* codeUrl: github.com/JetBrains/intellij-community/pull/1190/commits/c029028839bd38d96f7f6916ed115a089ce6b277
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-08-22T14:37:25Z
+* content: Via: https://youtrack.jetbrains.com/issue/PY-37523
+* time: 2019-08-23T16:54:47Z
+* content: @albertz Could you please sign the Contributor Agreement at https://www.jetbrains.com/agreements/cla/?
+* time: 2019-08-23T18:06:45Z
+* content: @east825 Ok, I did that now.
+* time: 2019-08-24T19:22:20Z
+* content: @albertz Sorry, the system didn't receive the CLA for some reason. Could you please try once again? Thanks.
+* time: 2019-08-25T20:41:09Z
+* content: I did the CLA again now. Did you get it now?
+************************************************************************

@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1034
+* requirement: IDEA-189773 Action to copy about info to clipboard
+the requirement of 1034 only has implements, no discussion.

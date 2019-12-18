@@ -1,0 +1,37 @@
+************************************************************************
+* id: 285
+* requirement: Structure popup should check if filters are reverted
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-08T10:53:54Z
+* content: Structure popup should check if filters are reverted
+* codeUrl: github.com/JetBrains/intellij-community/pull/285/commits/c6fce2edfefe60c7602aba29f1d204f5c8a50574
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-08T10:56:37Z
+* content: When I configure a structure filter as a FileStructureFilter so that it's shown in the structure popup as well, matching nodes are removed from the tree although the checkbox is not checked. That's because the algorithm assumes the filters are reverted by default (which is the case in the few implementations I've seen so far). In my case, the filter is not reverted, so nodes shouldn't be removed from the tree unless the checkbox is checked. This PR will apply filters if they are checked and not reverted, or if they are not checked and reverted.
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-07-08T11:02:45Z
+* content: Structure dialog should check if filters are reverted
+* codeUrl: github.com/JetBrains/intellij-community/pull/285/commits/59186cc0980f7d98bf943ee9d6d006953ac1cb40
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-07-08T11:26:15Z
+* content: BTW I just signed the CLA and sent it by email.
+* time: 2015-07-08T13:53:57Z
+* content: I created https://youtrack.jetbrains.com/issue/IDEA-142411 for this pull request.
+************************************************************************

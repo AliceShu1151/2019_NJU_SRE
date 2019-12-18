@@ -1,0 +1,830 @@
+************************************************************************
+* id: 82
+* requirement: SSH agent support for git and svn integrations
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-06-25T17:13:46Z
+* content: This version allows SSH agent-based authentication to be used for authenticating to SVN or git, as discussed in the ticket http://youtrack.jetbrains.com/issue/IDEA-52034
+* time: 2013-06-25T17:16:27Z
+* content: A contributor agreement has been submitted by Doug Grey, VP of Engineering at at Indeed.com (which owns copyright to this change).
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-11-25T11:59:22Z
+* content: IDEA-116621 Groovy: Extract Parameter Refactoring: 'Replace this occu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1533ed8298020e16be6cc6f6a781b9a5635cfa44
+* time: 2013-12-12T09:49:31Z
+* content: revert: IDEA-117864 optimize reference search scope
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/dc77905ac2584b34c7d9c6964f8847a5d2cedc3b
+* time: 2013-12-16T08:52:51Z
+* content: simplify type inference for unary expressions
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b9531f2428533b89db5d3fa07e62e9c37fd17857
+* time: 2013-12-16T11:32:27Z
+* content: save applicability in GroovyResolveResult
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e48edcd68c6f11ac759bab992e07a4d3317cc4aa
+* time: 2013-12-17T13:20:52Z
+* content: support keywords storage
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/ad17a0b502d84b8105e58dd7ff92a5ffc9571587
+* time: 2013-12-18T09:47:43Z
+* content: [log] Supply correct commit object to getCommitData in DetailsPanel
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9a92cb95ea404280f30fa422de0b3c71bc6d7fac
+* time: 2013-12-19T11:42:57Z
+* content: more precise quick fix name (IDEA-118416)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/fda75954dd1dce6f98b91bf96b56fdb2dc3647f5
+* time: 2013-12-19T12:00:54Z
+* content: IDEA-118420 Better wording for quickfix to 'Declaration can have fina…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/ab1bebff33b7311d48b44c2a0e47f0c13521bf20
+* time: 2013-12-19T12:08:31Z
+* content: IDEA-118371 Partial find occurences disappear with 'group by ...' button
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/53fe9df2533f8f45c6b5dd569ddbbf7e087e7519
+* time: 2013-12-19T13:12:20Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/520219514ceea9fc92deb289574c5bf94c6cd2f9
+* time: 2013-12-19T13:13:09Z
+* content: optimisation: do not load document to check for isReadOnly
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/11dad8cb724bb528182740e2fe44f020a7854fbc
+* time: 2013-12-19T13:58:06Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/aa678f58088d01a9654087ea3b5df485f1404240
+* time: 2013-12-19T14:05:43Z
+* content: ui: correct icon for facet editor panel
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4eb09a2f3a3ec19bf10c5604b44687a9ee3df96c
+* time: 2013-12-19T15:07:07Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c0a94d5a9a8b91ccaa0d2b6451c743cd81492bd2
+* time: 2013-12-19T15:08:50Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c52f140d18da19165ebff07de44a1461846eb163
+* time: 2013-12-19T16:03:54Z
+* content: restore WebBrowserUrlProvider API
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d4d4ad54db8a386fe8fd787deaef8ba8bb5ca077
+* time: 2013-12-19T16:09:06Z
+* content: polish "Difference using "Open in browser" vs browser icon" fix — we …
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/bcebafd0b1e87ef57c3cd752560994bef90e1a46
+* time: 2013-12-19T16:13:06Z
+* content: add assert: respect initializer in ForStatement
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7c4a448e292bec457f7553cfa2b5ed310a8d9309
+* time: 2013-12-19T16:15:24Z
+* content: platform: incompatible KTerm option stripped
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/285876768890fa1413bc2709b30984e7381361d7
+* time: 2013-12-19T16:16:33Z
+* content: IDEA-118429 (IDEA incorrectly suggests to remove unboxing)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c45066584665b9485d005e6821e08af066f2548f
+* time: 2013-12-19T16:26:12Z
+* content: Cleanup (duplicate)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d2e8aa1934c0ebed4cbed3507cb75e6190cc4317
+* time: 2013-12-19T16:34:27Z
+* content: junit: reject to start when no tests were found in package
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/fa52498116208c0bec2688b16d13fe9df7e7a460
+* time: 2013-12-19T17:04:22Z
+* content: run manager: do not override shared status from default configuration…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d35fc051decbaf42a056c1bc72b729e582cb8b87
+* time: 2013-12-19T17:32:22Z
+* content: add missed src jar
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f34a02493fa5cebd9b5fc5a8857d5997c013ba06
+* time: 2013-12-19T17:38:00Z
+* content: Cleanup (PTY runner decoupled from GeneralCommandLine)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1da12c620597edd27ff5089343e094205600bc2a
+* time: 2013-12-19T17:38:00Z
+* content: IDEA-118496 disable boolean param inspection for library overriders
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/58e433ad7bc50e9f65be46bae0d2df3378ea0b99
+* time: 2013-12-19T18:38:14Z
+* content: Do not populate custom live template lookup with 'Edit live template
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e647f6fe107f7b8d4eb8a2b713a7c9e5c827dd90
+* time: 2013-12-19T18:39:51Z
+* content: Postfix: rename 'Edit postfix templates settings' action
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/a71af7f7e114aab93b5e3d3a3004f0923121a7c3
+* time: 2013-12-19T18:56:28Z
+* content: Emmet: show 'Edit emmet settings' for emmet lookup item
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1684f09c3758544a3806fc259925a3c4cc93075a
+* time: 2013-12-20T07:12:03Z
+* content: Groovy: operator resolving & type inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7c2363d66c23d29282d09ce0d424d263a0e8b891
+* time: 2013-12-20T08:20:42Z
+* content: allow autocompletion in dumb mode if provider is dumb aware
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/90d256cf2803506f62e53c880d1ded476f06bc43
+* time: 2013-12-20T08:25:50Z
+* content: free RootIndex memory on project dispose
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b3a6dbb1b62d9ca888bd1f42e73aec1e1062d597
+* time: 2013-12-20T08:33:07Z
+* content: spy-js plugin initial commit
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/530c80088fb2d46fc229f1efb8cec464ff9468d5
+* time: 2013-12-20T08:43:29Z
+* content: uncomment DirectoryIndexTest assertions
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/5c514055ddab72a478e738351ddffd8ebb6f75a4
+* time: 2013-12-20T09:52:56Z
+* content: Groovy: assignment type inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/2ecd26f735c1dd819149449332b68d8d43c58b4b
+* time: 2013-12-20T09:52:57Z
+* content: IDEA-118096 Documentation popup not usable because of Jetbrains annot…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/32133c0ad1c71ecd68b2a9b961912ff30bdc20a9
+* time: 2013-12-20T10:59:21Z
+* content: Show "Split mode" action for sliding toolwindows.
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e03fa18deb9d4f3fcc30215bbce61a0b6d6c9d3b
+* time: 2013-12-20T11:05:14Z
+* content: Copyright: commit document after comment updating
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/0f2e2a53a442d883f07e66d1c6c02a6900cb67f2
+* time: 2013-12-20T11:17:46Z
+* content: don't fall into recursion while resolving annotation name
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/aa52dce5bce20f5827c17eb19691bb09351717bd
+* time: 2013-12-20T11:40:51Z
+* content: some cases to avoid Document.getText where CharSequence is enough
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/93977b511b77b9deee5f553c46e4bd962602b665
+* time: 2013-12-20T11:47:39Z
+* content: save RootIndex memory
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/0f2dda440c63a5047752650e91c003a80a8a870f
+* time: 2013-12-20T11:51:09Z
+* content: NotificationGroup constructor shouldn't require an initialized Applic…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4e60af8a433d719e0648d4f05c80ac3142408c5b
+* time: 2013-12-20T12:10:53Z
+* content: use folder icon for groups in Menus and Toolbars configurable
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f310feeef8d5f5167f462ac6f536098aa451aeff
+* time: 2013-12-20T12:14:42Z
+* content: IDEA-118552 Generated ANT scripts do not honour cross-compile settings
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8d996fa4c79942d0582137fc8edf1a11d775cb0b
+* time: 2013-12-20T12:15:16Z
+* content: cosmetics
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/767d1aba6a5d58d43f1fa69046619f96abc2cfff
+* time: 2013-12-20T12:35:32Z
+* content: EA-52137
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/bb63a9b4aa64783b6c760b3ce695364983ba2a87
+* time: 2013-12-20T12:46:02Z
+* content: can be final: ensure non final for base of anonymous class (IDEA-118493)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/fb53d06dfd941ce3e394b742e64f3921b24e93c1
+* time: 2013-12-20T13:00:05Z
+* content: [log] Flush & Close persistent enumerator on dispose()
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/2beff60bed9f55f004decfec005e0ef500f735df
+* time: 2013-12-20T13:08:50Z
+* content: Switched back to char-based triple quotes detection for docstring ele…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/242a5e3ee03a8d52ab4a0db5537f37bcd108cbc2
+* time: 2013-12-20T13:21:27Z
+* content: check context for nullability
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d3be23f7ce49700522d5a354d2689816a807deca
+* time: 2013-12-20T13:27:07Z
+* content: groovy 2.2.1
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/53ea37558d6acfd25c0f2c697e716b59835fd842
+* time: 2013-12-20T13:37:52Z
+* content: BackgroundTaskQueue.waitForTasksToFinish API
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/be071832ee0192b05f2bed4dbe0f61750b76e3e5
+* time: 2013-12-20T13:38:53Z
+* content: BackgroundTaskQueue doesn't postpone onSuccess/onCancel until next aw…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/628ff783002a49f323f6e812ff9b75944d9bee36
+* time: 2013-12-20T14:04:13Z
+* content: lazy sem contributor loading
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1feb27b7bcce9d9073a61751e4946245eb23e708
+* time: 2013-12-20T14:05:20Z
+* content: constant-time ModuleManager.getModuleByFilePath
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/0380bcfb47639502814e063e3b69059d3de583d0
+* time: 2013-12-20T14:06:42Z
+* content: [git] Wrap the VcsException not to loose the cause
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/23583d3a74c095c9551f9800eb9fce408af7968c
+* time: 2013-12-20T14:28:14Z
+* content: Gradle: GrShiftExpressionImpl usage removed
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/fd3bc7f4930515de2db02cad12a1cf37b62a898c
+* time: 2013-12-20T14:32:31Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/016ee36d1752dd37bc5520d3984e419d9d84f4e5
+* time: 2013-12-20T14:35:42Z
+* content: Multiply revision node presentation in HgLog for only one revision fi…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4e16c4174b1ed8b3d2a4d33d0a829fb6c5efef40
+* time: 2013-12-20T14:50:01Z
+* content: VersionComparatorUtil.comparePriorities() simplified
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d4f5e53432e70aa3fe533cc84a3e35af569e0a2f
+* time: 2013-12-20T14:54:48Z
+* content: Parents revision hash template changed to long.
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/32ab1db7693a73a5cae7e714bf647a99c40db6a9
+* time: 2013-12-20T15:02:11Z
+* content: Show unnamed branch heads without bookmarks and not current revision …
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/77792a3770b517417469613b976a908db6d9bc87
+* time: 2013-12-20T15:12:28Z
+* content: fixed problem mentioned in CR-IC-3742
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7e9eaf963bc09c26bb7358d99254297191ec2b7a
+* time: 2013-12-20T15:22:10Z
+* content: [log] Fix identifying root of Node
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/cb5ee8641f42b078ef9310172f88c0232bd67558
+* time: 2013-12-20T15:23:05Z
+* content: [log] Take END_COMMIT_NODE as well as COMMIT_NODE
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/34ab25e2273911e105184def6d2d77ae28304646
+* time: 2013-12-20T15:25:45Z
+* content: cache cls navigation elements that are not so cheap to calculate each…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/054ec7e0586ee5269e22b1f730e2b0754446328a
+* time: 2013-12-20T15:40:07Z
+* content: IDEA-104706 Remove currently active file from "Recent Files" popup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/317be6ec958d0fa73ec7ea75daa59a70f009fc2e
+* time: 2013-12-20T15:40:09Z
+* content: assertion added to check that 'registerOutputDirectory' isn't called …
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/2f2154b59302bdd7a3e9333e7022ae278f48a1a2
+* time: 2013-12-20T15:42:53Z
+* content: don't show active file in recent files section
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3aac7abcd1295caf6b616e86c00a0cafa3ec2862
+* time: 2013-12-20T16:08:59Z
+* content: IDEA-118569 Add quick doc for live template lookup items
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/107e9ae4422949500cd465d34f40505149ea7f80
+* time: 2013-12-20T16:09:40Z
+* content: % sign is useless while indexing
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/181d69ee838e2a8b27924a2445d8e0307baf0e56
+* time: 2013-12-20T16:11:22Z
+* content: use ctrl(meta) + shift + K shortcut for push
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/2c708399fcff5278e049c0bd1262648b4c7e0eb3
+* time: 2013-12-20T16:13:19Z
+* content: use ctrl(meta) + shift + K shortcut for push
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/718d70f59b43f0d90e50f584091430edf6797d10
+* time: 2013-12-20T16:19:31Z
+* content: Do not throw on quick-fix creation, just return null
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b83ecae0bdea002263c09f1190c81017cd61a122
+* time: 2013-12-20T16:23:34Z
+* content: Extend block support API
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/60a5c6086f929dd3c6557d025eccec9144270ea7
+* time: 2013-12-20T17:24:20Z
+* content: free the memory used to build RootIndex
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/ec01e468b1940a674e618fdc1b4c2dd3b162beaa
+* time: 2013-12-20T17:24:50Z
+* content: avoid creating string garbage when searching for external annotations
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/2c458f1f5c203c6e0cbdb0e21dacad00e186f27c
+* time: 2013-12-20T17:25:17Z
+* content: drop cls navigation element cache on the navigation element change
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/2acfe622469dea8fe09d435814c5785aadae5a3c
+* time: 2013-12-20T18:26:56Z
+* content: + "trie"
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/669ae41ad09412e77421206cfcc6991d4f9dbfa5
+* time: 2013-12-21T11:12:40Z
+* content: cosmetics: revision hash template changed to long.
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f1c78e193f7bd3c31c529ed24b54bc961eb8c031
+* time: 2013-12-21T11:14:20Z
+* content: Style: unnecessary array with indicator output command removed, mySho…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/71f457f8f135eaebd81d74691baee3eb0ee2fa8e
+* time: 2013-12-21T12:14:58Z
+* content: OutputSuppressed option added for HgCommandExecutor, style changed, u…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4d55fdde0d0cdb67df877b506e9ebebed019723a
+* time: 2013-12-21T13:04:33Z
+* content: [log] simplify
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/12fd8d45add703f9f8504180dc117d1a913bb221
+* time: 2013-12-21T16:45:16Z
+* content: [log] IDEA-115423 Limit number of commits requested when filtering
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8420f9e4bfc962195ccc025f2dce597e122c40a6
+* time: 2013-12-21T17:44:25Z
+* content: don't run groovy shell if there is no full Groovy lib in a module
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/0ac89c0d2ecafaa78d281fb266b01ecaab8493c1
+* time: 2013-12-21T17:45:08Z
+* content: get rid of GrBinaryExpressionImpl inheritors in code base
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/62dec2dbcba22af60246395872a1bcadd9d04d4a
+* time: 2013-12-21T17:58:38Z
+* content: disable 'new' postfix template for a while
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/87b06c1fb59d47db948793f30976c4aedd04f7fb
+* time: 2013-12-21T18:18:58Z
+* content: update gant according to groovy version
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/77bf85bda600d0faf4df40f15549616b360c834a
+* time: 2013-12-21T19:36:36Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/cf379f32ab82fc42e087b3f396e7d95f005d9452
+* time: 2013-12-21T19:44:14Z
+* content: revert groovy 2.2.1
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/dfbbfe289d18c70552c0fd3859eff2cc681c81d1
+* time: 2013-12-21T20:14:17Z
+* content: corrected gant
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/a8861db9c968040b714cc0b37b187635782757ee
+* time: 2013-12-22T09:37:19Z
+* content: dfa: don't grow stack infinitely on &= (IDEA-118522)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1dd46651c97a59b7b373d3b27a659ef0f3544955
+* time: 2013-12-23T08:34:07Z
+* content: IDEA-117966 introduce variable from unresolved reference
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/5b8d6b2497173f36d2d070937603dd4555c124ea
+* time: 2013-12-23T08:58:28Z
+* content: IDEA-118138 don't highlight closures using unassigned vars
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/ec97f825f7158c2eb1dce6dcd36e96aced0ff143
+* time: 2013-12-23T09:50:59Z
+* content: correct dependency type for gant
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4cfd00159853dad00a86ff3225f065b95610e72a
+* time: 2013-12-23T10:05:03Z
+* content: EA-52726 (assert: ComponentManagerImpl.getComponent)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/5a86a94ba17dfa851a40417b5c5afe6560fd0b11
+* time: 2013-12-23T10:23:28Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8ff12a43153ac60c2bc428bb51a655637a13ac6a
+* time: 2013-12-23T10:24:54Z
+* content: IDEA-97930
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6d025c10cd0f2a8dfec1e2a685d0f8d21ca44138
+* time: 2013-12-23T11:23:28Z
+* content: EA-35422 - IOOBE: EditorImpl.offsetToLogicalLine (from debugger)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c21cd02f53a93fee9c8f1e1b8363e8dfa36b7ef7
+* time: 2013-12-23T11:31:13Z
+* content: fixed IDEA-111701 Emacs: pressing Ctrl+k several times should add lin…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/93b3fcc3707ab110df36c5d9423f0b06037d9574
+* time: 2013-12-23T11:32:01Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b83d875e175e68e6e31b918c31cfbe9795dfe1b2
+* time: 2013-12-23T11:41:21Z
+* content: roll back spy-js
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/5c0518e821dc0998d516b727981f2768dcb74f03
+* time: 2013-12-23T11:52:47Z
+* content: Made builtins cache valid only if it has a valid reference to the bui…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3a3bbfff65d89ec6ec10fa588a798fd5fa5a4716
+* time: 2013-12-23T11:55:18Z
+* content: IDEA-86907 Fold/unfold for the last node is incorrect
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8086000a6ee1d7940f35b6bb72f8595da981a1b5
+* time: 2013-12-23T12:07:22Z
+* content: clean up literal type inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/89e472e454a14673209686704b0f6582d8bcb82e
+* time: 2013-12-23T12:10:08Z
+* content: ensure public inner inside interface (IDEA-118564)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3d7a8fb300d5bdc15359fb3f8c19701de34a8de0
+* time: 2013-12-23T12:11:02Z
+* content: re-applied darcula changes correctly
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/183e4169e70e3167a0aa5fd472defbaab5bf5cd0
+* time: 2013-12-23T12:14:25Z
+* content: Added error message for missing python-skeletons diagnostics (PY-10411)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9e8ef9207c6232c1ef573e511025828e21176517
+* time: 2013-12-23T12:15:14Z
+* content: untie static methods in interface hierarchy (IDEA-118577)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6565df2babc6206fac57a0efb120b28cb8aa35a3
+* time: 2013-12-23T12:17:37Z
+* content: overrides, prefer to use our utils methods
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/558b4bac4bd8050236c6cd75d0345674f9dcac3c
+* time: 2013-12-23T12:31:07Z
+* content: rename: do not show collisions for static methods rename in interface…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6eaeefa2aa6bbbaa005ea88bec4519295e4647a6
+* time: 2013-12-23T12:39:36Z
+* content: IDEA-118588 (Concatenation with empty string fails to fix an expression)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/01753c7677518db84c94d606fc1722aa2b85e89f
+* time: 2013-12-23T13:09:57Z
+* content: java: extra whitespace in class decompiler trimmed
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6d85c557b24cf750ca95c5bb7159597b5a78d31f
+* time: 2013-12-23T13:12:24Z
+* content: plugin advertiser: do not suggest to update from ultimate to ultimate…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/461cd32ee4f7e523530fe6e68e5c059e2135a887
+* time: 2013-12-23T13:15:58Z
+* content: separate checks if compiler is enabled and compiler api is supported …
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7af3bf2746ad999e3ce6f2d0703267c073a56a65
+* time: 2013-12-23T13:45:27Z
+* content: ListTemplateAction should provide custom live templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/544d21fd9a8b7a08fc52453363694481c2f1597e
+* time: 2013-12-23T13:47:19Z
+* content: lower the dfa inspection time limit in analyze mode (IDEA-118567)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/99aaa2c27838994b937d4b9dcbf913570871e052
+* time: 2013-12-23T13:50:19Z
+* content: Introduced Bitness and JdkVersionInfo combining version and bitness
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9d07fd69b41f2b2985e77515d82cfc3a0ba77c3e
+* time: 2013-12-23T13:58:05Z
+* content: Merge branch 'python-fixes'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/5735d5c46945bfbddc2426697872191b60fa0086
+* time: 2013-12-23T14:20:13Z
+* content: IDEA-118419 Keep caret on the screen while changing font size, IDEA-1…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f6a4f207f067b7ae74eacc6c162ee091d97f64e5
+* time: 2013-12-23T14:38:02Z
+* content: EA-52292 fix (PHP template inside HTML comment case)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/41ccbd29470b505a469a0a8029ebf4da292e3169
+* time: 2013-12-23T14:54:40Z
+* content: use getElement instead of getParent
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/43b7c906fd72b5dbf53982d6dace9529815803b1
+* time: 2013-12-23T15:15:58Z
+* content: Groovy: reassigned vars without closures
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e90c6785e9902484c4c8cb8da6f287e4d0c0fd47
+* time: 2013-12-23T15:24:04Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9930be003add86d6693ab41357e1316d3d3c0b8a
+* time: 2013-12-23T15:24:35Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/62b2dde37f7785619611bc3970e4eb46f58fee28
+* time: 2013-12-23T15:31:36Z
+* content: added copyright
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/59d1d4c3695238abb9f6b19349ec5bff6b8f9095
+* time: 2013-12-23T15:35:45Z
+* content: java: incorrect parsing of bounds in class files fixed
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f45f27fd20a2f27e90b07d98d3eee18dd86b9c1b
+* time: 2013-12-23T15:35:58Z
+* content: Cleanup (formatting)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1e147d8455fe9993770806fd92c6b5d9918a13e3
+* time: 2013-12-23T15:36:31Z
+* content: IDEA-118487 IDEA should suggest downloading missing plug-ins for unre…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/0a5485ba2e83457903878d6d16574cc68ac4cc26
+* time: 2013-12-23T15:43:41Z
+* content: fix performance problem on 'new Object() {}' test code
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3d634e499acbc06ef7e2c0a8b8452f2731e548c6
+* time: 2013-12-23T16:20:27Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b963343532d72c86dde10ab100c4cf8b2eb281d2
+* time: 2013-12-23T16:27:23Z
+* content: static super methods: java 8 interfaces
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7e3d1abb52935a7d5f54bfb80c4d96cafa46759e
+* time: 2013-12-23T16:30:11Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/668b0c15850b1a7f30d33a38faa0cdfe378709dd
+* time: 2013-12-23T16:53:36Z
+* content: WEB-10367 JavaScript Debugging in Firefox hangs PhpStorm
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1a0c297d426849da3b1b11185ef777617b0b8d67
+* time: 2013-12-23T16:56:47Z
+* content: Add debug info to investigate blink test.
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d25214ab584442e3ec067ad2b34b07276ab863e5
+* time: 2013-12-23T18:06:18Z
+* content: IDEA-118601 New Module: Maven: click on "Create from archetype" rever…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d94c9a19edd8fca16112b3dbf7f93ca5a4571056
+* time: 2013-12-23T18:53:13Z
+* content: WEB-10360 Javascript debugger with non unique file names
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6bd22b407483d7702c5a35d787057263c2ccf560
+* time: 2013-12-23T19:36:12Z
+* content: fix and clarify "Cyclic class dependency" inspection warning
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/68b7ce46db80a6d18b51de0f3250b3572a7b3773
+* time: 2013-12-23T20:31:37Z
+* content: Bug fix: check not-null
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6b54183c9cbacf912b4d0036425a26f77d164183
+* time: 2013-12-23T20:59:54Z
+* content: Fix live templates tests
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9edbf08ea2db9f303624e43d6c922f0b2fa58900
+* time: 2013-12-23T22:04:17Z
+* content: move test to correct location
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/878641fc5108f4803cd487874951646172ddcfd3
+* time: 2013-12-23T22:46:57Z
+* content: IDEA-118495 (Cyclic package dependency inspection is unusable.)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e23693cb2e18a57c239004dd7e254c59d9425df1
+* time: 2013-12-24T06:41:24Z
+* content: IDEA-118419 Keep caret on the screen while changing font size
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/00dda2f26588e8db19c087009e4cbf8d011be4b0
+* time: 2013-12-24T06:41:42Z
+* content: new project wizard in work
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/41308247ee8636f6e212cca747e488ecfff6d5c2
+* time: 2013-12-24T06:52:28Z
+* content: description font
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c3ca08be471cb2fbbae11d5a0060beb2da166266
+* time: 2013-12-24T08:07:13Z
+* content: ProjectTemplateList
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4f93b7d31485a4a976ec8608374ba2b86e9c45b1
+* time: 2013-12-24T08:08:12Z
+* content: NewProjectWizardAction removed
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7c4b4a182661acd04bc658daba2be2aac46620fa
+* time: 2013-12-24T08:50:35Z
+* content: Fix JavaAutoPopupTest: test live template without description
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b8e46005631748427a7f1ca45cb568785f7492ed
+* time: 2013-12-24T08:56:37Z
+* content: added test for IDEA-111701 (2 editors for 1 document)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/17e632821b503c61585a5be87aaa594131799d1d
+* time: 2013-12-24T08:56:56Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d0f541a741931ebf71fe3c2580b920e0809af081
+* time: 2013-12-24T09:09:45Z
+* content: gant in libLicences.gant
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/de7798b2299e4fb01e1b33c7aa3541c05285b106
+* time: 2013-12-24T09:30:15Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/af79d47eed5c665121bf7bd85b72da4745851346
+* time: 2013-12-24T09:31:02Z
+* content: less garbage
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/41db6bfeb0c22d7146dec41ba7ec54f4e1058f1c
+* time: 2013-12-24T10:04:06Z
+* content: netty 5.0.0.Alpha1
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7960886b70ab81f139cb9851e3c582b35b6b4691
+* time: 2013-12-24T10:04:58Z
+* content: IDEA-118675 - Errors in app server run configs not shown in UI
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3feff30e08ed3283a22beff535165181e5c6d8dd
+* time: 2013-12-24T10:24:55Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/87343029b776b29e65db1017479e875cd46d8d95
+* time: 2013-12-24T11:10:40Z
+* content: diagnostics: show the reason for document lock
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/ab77496fadaae9949bc47947b6c4ec769d78a9b6
+* time: 2013-12-24T11:23:46Z
+* content: Postfix: enabled new-expression template
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4d61bc17b9c37a041945a5fde447ac237b759d78
+* time: 2013-12-24T11:25:13Z
+* content: ability to copy status text
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/a541ab123ba7e590fd2549c791bc80836f038f04
+* time: 2013-12-24T11:30:10Z
+* content: Add extra test for new-expression template
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b021743bbc0289b46786e98b06daf2aaafcf9553
+* time: 2013-12-24T11:31:22Z
+* content: IDEA-118333 Groovy: Extract Parameter Refactoring: "Replace all occur…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c482422b774a28ce7319639119d6675c6daa701d
+* time: 2013-12-24T11:34:29Z
+* content: "Configurable Project Types"
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/955220b1cb11f7e2ae4a415e535e9f23be35a473
+* time: 2013-12-24T11:34:38Z
+* content: Groovy: don't skip 'null' type in inference
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/cd70918c3c83fc2c94e3b6d2e4c6f2296c2cdd35
+* time: 2013-12-24T11:58:25Z
+* content: external build: throw BuildDataCorruptedException instead of generic …
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/91047f06dde3624a598daf9567df5c503b9a10d8
+* time: 2013-12-24T12:05:13Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/43cca9bb6ad0785d77718b19d3f18071ae3975f9
+* time: 2013-12-24T12:19:33Z
+* content: IDEA-115761 MakeInnerClassOf refactoring should probably exclude targ…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b100613376819127640c25541ddfe1057a10b310
+* time: 2013-12-24T12:20:56Z
+* content: IDEA-118587 IDEA may not exit with black window
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/a622b213b711fc9000041a6ecc73fa5b43e0186f
+* time: 2013-12-24T12:31:40Z
+* content: in case when some output and source roots intersect: do not stop rebu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/20604f787f36788665f3a3d4594766bd170f8d23
+* time: 2013-12-24T12:35:07Z
+* content: IDEA-93034 SQL: MySQL: erasing the first backtick could erase the pair
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/92eb361160f3874ff9dba273e586f0aa5d45ab25
+* time: 2013-12-24T12:56:46Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d5de3de366605723c9e71b61fa75023bb3caeb1c
+* time: 2013-12-24T13:00:06Z
+* content: [vcs] IDEA-118644 Fix apply patch for new file in new folder + test
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b801015d0c53d397793ba93f40c905c22a5403cc
+* time: 2013-12-24T13:01:10Z
+* content: custom options panel leak fixed
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/76665bee99aee0d28d207eafaff22797300468b7
+* time: 2013-12-24T13:10:51Z
+* content: [vcs] IDEA-95729 Don't ask about adding new files from patch to VCS
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/56239162fb090c956b9a2db4dcbb59940e79eb13
+* time: 2013-12-24T13:11:29Z
+* content: IDEA-71691: appengine facet doesnt bring in required libraries
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/124408c7b20ffae3e64dfcf252b1fc02bd00a115
+* time: 2013-12-24T13:24:11Z
+* content: App Engine: refresh library roots when new module created (IDEA-71691)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c2e7ccbe26464a40fdc9441bc338852c48e78fb7
+* time: 2013-12-24T14:00:22Z
+* content: one more fix for IDEA-111701 Emacs: pressing Ctrl+k several times sho…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4b92724bc9303b8bacbe93597aa23f0be5be3aa9
+* time: 2013-12-24T14:00:52Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7b0e37d6de8b3c4f80fc43ea9c3ce1d558a78935
+* time: 2013-12-24T14:58:45Z
+* content: SASS: make declaration block lazy
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3dbc81944422026674f842ee7de6b1a7140e394b
+* time: 2013-12-24T15:24:40Z
+* content: updated code compatibility inspection
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/892dab2528baf12573875ca7ed8e79d2a92d66c6
+* time: 2013-12-24T15:25:05Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8cbb8a332dc902913e238c07216c538a7d8cde19
+* time: 2013-12-24T15:25:40Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d70cd0856c332a8cb1b47457ecb012865c487d0b
+* time: 2013-12-24T15:29:36Z
+* content: WEB-9517 Npm: Error loading package list
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/aa82d2a3284cf82551d8142a58579630ed03cebb
+* time: 2013-12-24T15:30:50Z
+* content: IDEA-117724: source files under "generated source root" should not be…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/20a3dce71cb6440cd652f08eeed599e3991fc498
+* time: 2013-12-24T15:33:11Z
+* content: show the containing file if ambiguous method ref occurred
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8c00119a91a6babd064bb3b4bb45cf153598f8a1
+* time: 2013-12-24T15:33:38Z
+* content: IDEA-72835 yet another attempt
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e3a83697df3e26552c29bc5b5ee5668d0f8cee49
+* time: 2013-12-24T15:47:54Z
+* content: reformat code: exclusion project files from formatting simplified
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/92caef0c05ca2b1c55da6b9dc33f32a7579d34f0
+* time: 2013-12-24T15:47:55Z
+* content: deprecate getNotNullHelper
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/15c79714f57aa0971d7a8f3b1fae5fc6f2623ec1
+* time: 2013-12-24T15:50:14Z
+* content: Prepare css module for upsource: move indent parsers to core-impl
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9e6c90af4d98cd4f02113b96fd0d99d87ff9fd3f
+* time: 2013-12-24T15:51:09Z
+* content: reduce getNotNullHelper usage
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9b111fe23c0cb52edaa9d813db6bd728718ddff1
+* time: 2013-12-24T15:55:22Z
+* content: WEB-6700 TODOs not recognized on multiple level language template
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9d008109b52fb29dc14d32393f055d593140acfa
+* time: 2013-12-24T16:12:28Z
+* content: IDEA-117452: Generated folder should not be reformatted/imports-optim…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9d52b67e42b01387081838bcd9d77deba29a010c
+* time: 2013-12-24T16:13:11Z
+* content: default highlighting level for generated sources corrected
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/fb7a33bcef49a2af439b3e5b3273dc35d2d932e2
+* time: 2013-12-24T16:36:00Z
+* content: Extract common used WhitespaceBinders
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/59284484189c2bbaf00e502bf3484aa19aacd157
+* time: 2013-12-24T16:38:06Z
+* content: test fix: explicit encoding is required
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4548db3b7c52381c3a106ff7c910ed8218c116ff
+* time: 2013-12-24T16:48:26Z
+* content: WEB-849 "Comment with line comment" on empty line in <script> block g…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/caa313252cb274afc81112c42d5492a10fe0f430
+* time: 2013-12-24T16:49:07Z
+* content: more compact todo storage (since we advanced the version anyway)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8fb92c4b5e464ef090e7dcd0905ff38e61843263
+* time: 2013-12-24T17:34:55Z
+* content: IDEA-96131 Java: Braces placements don't work as expected for `Next L…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/975cfe81b0600e4a4b70d4992ee5d39a90d44f32
+* time: 2013-12-24T21:46:48Z
+* content: WEB-10387 Mocha console log statements are not correctly aligned to t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6018640fc27d1b9d933aa017feaf1427d12caf5c
+* time: 2013-12-24T21:53:42Z
+* content: WEB-8262 Comment with line/block comment STILL doesn't work on HTML i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b4d35ba243ad637b3bc7e95b2c4b0d86e453cc72
+* time: 2013-12-25T03:22:47Z
+* content: groovy 2.2.1 once again
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6fe9437b8c5789318ad72a65cb86318ef1efc7de
+* time: 2013-12-25T08:20:22Z
+* content: take words from other files if there is no variants from current file…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/64575f68e79cdf3224eee1afa19bef897529cff1
+* time: 2013-12-25T08:24:53Z
+* content: used assertion to check fold region
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/933abc65588d468e34d7b82c4de02675d14c8326
+* time: 2013-12-25T08:55:55Z
+* content: [git log] Don't display "index" and "stash" pseudo-commits in the log
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/76acb3eebbcd177fe3f3b1729a692d0a5190cf00
+* time: 2013-12-25T09:18:50Z
+* content: IDEA-118613: catch all possible exceptions, that may be caused by cor…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6351d0494bef767c098636929594a1dba703aec2
+* time: 2013-12-25T09:57:01Z
+* content: IDEA-118701 Multimodule project imported into IDEA via opening projec…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/09123130db5ab1af3f01ef8376d4fadcfd116a9c
+* time: 2013-12-25T10:06:19Z
+* content: already disposed
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f1a1706698699fb310f6ee2dadc1b5ac0a9fd85b
+* time: 2013-12-25T10:06:27Z
+* content: [log] Flush the Hash->Int persistent map more often
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c395dcfcb198f4440e1884f91dc9fa0d08d62129
+* time: 2013-12-25T10:33:43Z
+* content: Move WhitespaceBinders to core-impl
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/fe19e6aabaf8374f626d3e97a8d6b9d9f954d46f
+* time: 2013-12-25T10:36:05Z
+* content: sources for Groovy 2.2.1
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/063e8dfa3b323c4521e8c18df05f1f3300bf5b2f
+* time: 2013-12-25T10:38:23Z
+* content: attach messages to root node if no running node found
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/5c660057ef2556bc5e3e0473781434834d0684fc
+* time: 2013-12-25T10:46:07Z
+* content: EA-52850
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/97a168d00392d660fe44d64638b0c1b89f33a80e
+* time: 2013-12-25T11:12:58Z
+* content: add http-cleint 4.3.1 to dist +review
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/17b4dfa70d708192c3356160e0939f91901891db
+* time: 2013-12-25T11:18:04Z
+* content: Added missing license for ANTLR 4 Runtime library
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b4e61bb97d8fc355cb3280a753a45a2dc195ea23
+* time: 2013-12-25T11:30:55Z
+* content: IDEA-114811 Mouse drag over left gutter below the last line: IOOBE at…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d3a97cfa1bb8fd1ae1f41a6567c848b8f4960e97
+* time: 2013-12-25T11:33:24Z
+* content: don't run batch inspections and search for duplicates in generated so…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f4038db00bcf2ea3d90f2874bdadae95ab4acef9
+* time: 2013-12-25T12:25:26Z
+* content: Fixed IDEA-117788 Eclipse code style import: continuation indent is i…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/a9768eede8b7b142cffae362d4242dd22ce21f8a
+* time: 2013-12-25T13:06:04Z
+* content: dispose caret
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/cc392114dcbad9dd85eb628f532152c380083caa
+* time: 2013-12-25T13:06:30Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/715a143048c09e133c205c8cc0a47acc91f26cfa
+* time: 2013-12-25T13:26:57Z
+* content: cleanup
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/92d3e78c85d54c8333f813f691481fe990d7d594
+* time: 2013-12-25T13:31:48Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1f869df8d48c7a655117a2f70d8fa2d9c7ba610f
+* time: 2013-12-25T14:19:41Z
+* content: Add debug info to investigate blink test.
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6ac4b445a093b5ee6a70ce2a230c7d695ff867d1
+* time: 2013-12-25T15:27:36Z
+* content: optimisation: do not restore the element
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/938371bb4e3d22e46521a51cd6535c6d1dfe32d1
+* time: 2013-12-25T15:34:53Z
+* content: disable 'new' postfix template for a while again
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1261c24c6945b808a8335a074c6b41ddcca96d8b
+* time: 2013-12-25T16:09:32Z
+* content: SASS/SCSS: make functionBody lazy
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/9dd6f07a2400587e1e1c2f0aecbe5e7f20605dfe
+* time: 2013-12-25T16:13:46Z
+* content: notnull
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f3bf9d08b7f0ee2367700ef8decc6cde221e2d97
+* time: 2013-12-25T21:44:19Z
+* content: IDEA-118696 Replace with regex: IOOBE at SegmentArray.findSegmentIndex()
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/c3239504db6e0cec69273aa08f41fe5ee6a40f0a
+* time: 2013-12-26T05:27:38Z
+* content: IDEA-118394 "Delete to line end" missing
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/dc73830beec92f13ca4d17fcb91a41508ca57b0a
+* time: 2013-12-26T07:36:47Z
+* content: EA-27319 - assert: FoldingUpdate.getFoldingsFor
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/7db9b0c2d946dd083c863e963dbcc75cc6c3e0ae
+* time: 2013-12-26T08:55:33Z
+* content: performance: do not rewrite the whole file
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/56354fd643f6b87a65837953c8f5c2fcc2655143
+* time: 2013-12-26T09:01:29Z
+* content: cleanup, made fields final
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/3575ed8a02bf1e565c4be87e2bc7644a0dd62d27
+* time: 2013-12-26T09:07:21Z
+* content: dispose injected documents on close
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/8d1e4abbb68562896d423b64ac5464f185940a1d
+* time: 2013-12-26T09:46:50Z
+* content: IDEA-115935 nulls and void in assignments
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/419f61ed7f9dcf6e9ab1a599eae011c6bf736457
+* time: 2013-12-26T10:12:14Z
+* content: Fixed IDEA-116006 Eclipse code style import: import the same xml does…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/f6e9d9dd29cb4b4a3eeb98c0c8439e4e7934480d
+* time: 2013-12-26T11:15:41Z
+* content: show warning when generated source file is edited (IDEA-115757)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/1fc88006e1d42a62042af067b8af648659aab4fe
+* time: 2013-12-26T11:47:20Z
+* content: IDEA-118708 libnotify is not avaliable in 32bit java 64bit OS configu…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6017ab7b76a0931bfaf716e4c57099a5e0d33993
+* time: 2013-12-26T12:07:15Z
+* content: test fix
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/6ef1f3d9e2ba14c074dab58d88c22e94ac68752e
+* time: 2013-12-26T12:24:06Z
+* content: javadoc
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/48c6f7247fca9405be85d17552acd45a160022c3
+* time: 2013-12-26T12:26:55Z
+* content: no icons for subgroups
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/0ad2452c273ee5f939dff7ea935ba783c35bedb9
+* time: 2013-12-26T12:33:37Z
+* content: EA-52865
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4f7d13c64e07a4ddc9c2d2eb71b2bf14624df911
+* time: 2013-12-26T12:36:38Z
+* content: adding custom templates
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/79c397b27b33161574fe9610093e3d5ccba1031a
+* time: 2013-12-26T12:38:42Z
+* content: EA-52747 logging
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/bac6ea31d0c07e6e61cf0685c40c60dbd2f056cf
+* time: 2013-12-26T12:44:19Z
+* content: IDEA-118747 Show IDE icon in the libnotify notification
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/09c14fab1c9592f00da7bf2975d4fba25bd06ba9
+* time: 2013-12-26T12:53:12Z
+* content: Remove 'Help' action from maven toolbar.
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/d4bb110a8dee61b79b173701d04cee45ac6bb2eb
+* time: 2013-12-26T13:55:59Z
+* content: IDEA-74428 Ability to turn on log debug categories from the GUI
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/b3ee7717788d6dde63b45091711049536155102f
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-26T14:09:02Z
+* content: Sorry for delay with this pull request.
+* time: 2013-12-26T14:09:02Z
+* content: @charles-dyfis-net I see that SvnKit 1.7.10 introduced SSH agent support added via JSCH library. Was it your patch accepted by SvnKit team or it is somewhat different? Currently there are no reasons (besides additional testing) not to update SvnKit shipped with IDEA to 1.7.11, so we'd prefer an official build to the patched version.
+* time: 2013-12-26T14:09:02Z
+* content: Could you please check if the patch works fine if SvnKit 1.7.11 is used?
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-12-26T14:17:29Z
+* content: cleanup GroovyDocDialog
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/899b70e02761f9c9f52bc8c0207bea1d23cd4aa7
+* time: 2013-12-26T15:23:29Z
+* content: updated test data for python3.4
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/de36aec875c35378e69d0afd26b974fd99fa0242
+* time: 2013-12-26T15:23:54Z
+* content: Merge remote-tracking branch 'origin/master'
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/e61f6f2c646478a2e893f577c375c10dc7b83a7e
+* time: 2013-12-26T15:37:19Z
+* content: Prefer highlighting passes for the selected editor (IDEA-23831)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/43558ef6d1b15bcc89967c46efb41ce2b43b2eac
+************************************************************************
+*=======================================================================
+* round 2
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-26T15:44:24Z
+* content: Yes, this patch works with upstream SVNKit 1.7.11.
+* time: 2013-12-26T15:54:50Z
+* content: @charles-dyfis-net Thanks! Could you please recreate the pull request without patching svnkit?
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-12-26T16:01:48Z
+* content: SSH agent support for git and svn integrations; separate out old tril…
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4f05af274e5666b7a455cb043fb3812ae0d7e1a4
+************************************************************************
+*=======================================================================
+* round 3
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-26T16:09:03Z
+* content: Per request.
+* time: 2013-12-26T16:09:03Z
+* content: That said, there's still a pretty nontrivial set of conflicts trying to merge this into current master -- one of the perils of leaving something unmerged for quite this long.
+* time: 2013-12-26T16:09:03Z
+* content: I might try to rebase. Would master be the appropriate target?
+* time: 2013-12-26T16:14:25Z
+* content: Yep. Please rebase against current master.
+************************************************************************
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2013-12-26T18:06:00Z
+* content: Upgrade to SVNKit 1.7.11 (release)
+* codeUrl: github.com/JetBrains/intellij-community/pull/82/commits/4f48203927e0251db35a96e94171e4e4f9dbfe06
+************************************************************************
+*=======================================================================
+* round 4
+*=======================================================================
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2013-12-26T18:07:18Z
+* content: Done. I'm including the upgrade to SVNKit 1.7.11 (released version) as a separate changeset -- so y'all can cherry-pick the piece that doesn't contain it if the upgrade has been done separately. As the patch can't be built without an appropriate SVNKit, not including one at all doesn't make much sense.
+* time: 2013-12-26T19:26:18Z
+* content: Bleh -- this PR is still using 129 as target. Closing and recreating.
+************************************************************************

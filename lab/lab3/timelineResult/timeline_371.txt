@@ -1,0 +1,21 @@
+************************************************************************
+* id: 371
+* requirement: spell checker: levenshtein->damerau-levenstein
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-03-19T13:56:38Z
+* content: spell checker: levenshtein->damerau-levenstein
+* codeUrl: github.com/JetBrains/intellij-community/pull/371/commits/1a2e84ddfa113dc2516ee1daae6a5511e70ff35f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-03-19T14:37:57Z
+* content: Word distance algorithm changed to Damerau-Levenshtein https://en.wikipedia.org/wiki/Levenshtein_distance https://en.wikipedia.org/wiki/Damerau–Levenshtein_distance
+* time: 2016-03-19T14:37:57Z
+* content: motivation: transposition error is really common For example: versoin (Typo:Change to...). expected: version. actual: vermin, vernon ...
+************************************************************************

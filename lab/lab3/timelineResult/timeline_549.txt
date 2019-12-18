@@ -1,0 +1,21 @@
+************************************************************************
+* id: 549
+* requirement: Patch command line in PyPackageManager
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-13T14:32:56Z
+* content: Patch command line in PyPackageManager
+* codeUrl: github.com/JetBrains/intellij-community/pull/549/commits/8a05cd48ba8ade9dd3f0b2b9c79a0f0275178d6b
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-13T14:38:37Z
+* content: Added patching command line in PyPackageManager
+* time: 2017-06-27T22:27:21Z
+* content: @vlasovskikh please take a look at this
+************************************************************************

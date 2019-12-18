@@ -1,0 +1,19 @@
+************************************************************************
+* id: 533
+* requirement: Fixed: Get sdk flavor by sdkpath does not look through flavor from extension points
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-03-28T18:33:07Z
+* content: Added looking for PythonSdkFlavor in extension point when getting pla…
+* codeUrl: github.com/JetBrains/intellij-community/pull/533/commits/5ec6b98b8ce02f72eb15507fcd60381f70b27202
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-03-28T18:58:17Z
+* content: Fixed issue when getting sdk flavor by sdk path was not looking through sdk flavors from PythonFlavorProvider extension point
+************************************************************************

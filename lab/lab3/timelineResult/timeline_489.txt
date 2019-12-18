@@ -1,0 +1,19 @@
+************************************************************************
+* id: 489
+* requirement: Use existing jsr305 project-level library
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-12-08T01:23:44Z
+* content: Use existing jsr305 project-level library
+* codeUrl: github.com/JetBrains/intellij-community/pull/489/commits/bf13e21b704645e562b724edb65137e6bcb56e98
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-12-08T01:29:18Z
+* content: … instead of module-library in gradle module. Also remove identical redundant jsr305-1.3.9.jar and associated library.
+************************************************************************

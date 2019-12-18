@@ -1,0 +1,4 @@
+************************************************************************
+* id: 864
+* requirement: Allow to register existing external annotation files
+the requirement of 864 only has implements, no discussion.

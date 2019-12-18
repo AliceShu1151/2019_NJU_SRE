@@ -1,0 +1,31 @@
+************************************************************************
+* id: 561
+* requirement: Fix PyCustomMember.resolvesToClass
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-04-19T18:01:55Z
+* content: fix PyCustomMember targeting a class
+* codeUrl: github.com/JetBrains/intellij-community/pull/561/commits/6db0a15ee35bf22d7cb555fce81f05419395edfc
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-04-19T20:08:27Z
+* content: Without the fix PyCustomMember.resolvesToClass(classQName) does not work properly.
+* time: 2017-04-19T20:08:27Z
+* content: new PyCustomMember(name).resolvesToClass(qName) wont resolve because it would use pass as a target class
+* time: 2017-04-28T15:52:09Z
+* content: Please add a unit test that shows what problem you're solving. See the unit tests in PyResolveTest and the test data for them in testData/resolve/.
+* time: 2017-06-27T22:24:43Z
+* content: @vlasovskikh please take a look at this
+* time: 2017-07-01T16:24:13Z
+* content: @da1z @fitermay Thanks for adding a test! Could you please add a call to PyCustomMember.resolvesToClass(classQName) to the test? It was mentioned by @da1z as the incentive for this PR.
+* time: 2017-07-01T16:24:13Z
+* content: Please squash all your commits into one. We strongly prefer that PRs don't contain any merge commits as they have been proven difficult to rebase.
+* time: 2017-07-01T23:09:25Z
+* content: @vlasovskikh: Done
+************************************************************************

@@ -1,0 +1,25 @@
+************************************************************************
+* id: 719
+* requirement: py/resolve: consider all candidate module paths
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2018-01-30T23:29:29Z
+* content: py/resolve: consider all candidate module paths
+* codeUrl: github.com/JetBrains/intellij-community/pull/719/commits/9fb467e402fa36362682eb4bfdc7ff985087ae52
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2018-01-31T01:23:05Z
+* content: Since c4f1959, ResolveImportUtil::resolveNameInFromImport only ever considers the first candidate returned by PyFromImportStatement::resolveImportSourceCandidates. This makes it iterate over all candidates.
+* time: 2018-01-31T18:37:23Z
+* content: @rohanjoyce Thanks for your pull request! Could you please add unit tests that show what the problem was and how the fix has helped with it?
+* time: 2018-01-31T18:37:23Z
+* content: You can find test cases for resolving imported references in PyMultiFileResolveTest. Alternatively, there is PyUnresolvedReferencesInspectionTest that contains tests for the unresolved references inspection.
+* time: 2018-01-31T21:41:09Z
+* content: @vlasovskikh I've updated with four tests. Prior to this PR, testMultipleModulePathProviderCandidatesSamePackageDifferentModule and testMultipleModulePathProviderCandidatesReturnMultiple would fail. I thought it was worth including the other two tests for the 0 and 1 candidate cases.
+************************************************************************

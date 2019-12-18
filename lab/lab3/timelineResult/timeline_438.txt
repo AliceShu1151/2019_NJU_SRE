@@ -1,0 +1,28 @@
+************************************************************************
+* id: 438
+* requirement: Close All non-project
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-08-22T14:36:07Z
+* content: Close All non-project
+* codeUrl: github.com/JetBrains/intellij-community/pull/438/commits/ba0a6c7f57cdc142bfbed98151afb0185705167c
+* time: 2016-08-22T14:43:46Z
+* content: Merge branch 'master' of
+* codeUrl: github.com/JetBrains/intellij-community/pull/438/commits/759cd48f7a36a7df41c28fd259fdcf8816cca9d9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-08-22T14:55:11Z
+* content: This PR adds action in RMB menu of tabs that closes all non-project files.
+* time: 2016-08-24T09:49:50Z
+* content: Have you submitted a contributor license agreement? If not, please check your inbox: I've just send there the CLA to sign. Thanks.
+* time: 2016-08-24T10:39:25Z
+* content: OK, I've just sign it.
+* time: 2016-08-25T07:58:24Z
+* content: Received the CLA. Thanks.
+************************************************************************

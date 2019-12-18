@@ -1,0 +1,39 @@
+************************************************************************
+* id: 1260
+* requirement: Fix Built Output Tool Window performance issues on projects with thousands of tasks
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-22T13:02:32Z
+* content: Do not walk the tree to re-expand nodes on each change.
+* codeUrl: github.com/JetBrains/intellij-community/pull/1260/commits/e7f8014d7cf5b520b910f7982004f8a271bc9c48
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-11-22T17:16:39Z
+* content: This PR address several problems in the build output tool window which significantly slow down the UI and overall build time especially for Android projects with many modules (above 200). This is extremely noticeable when all the Gradle tasks are up-to-date.
+* time: 2019-11-22T17:16:39Z
+* content: (1) The dedicated thread updating the tree structure does not  keep up with the rate of events coming from Gradle because of acquiring the read lock for each event (and allocating a progress indicator. The  later problem is not addressed by this PR).
+* time: 2019-11-22T17:16:39Z
+* content: (2) Running TreeUtil.expand() over the entire tree on each event (this operation allocates a lot of sync operations and becomes slower as the tree grows)
+* time: 2019-11-22T17:16:39Z
+* content: (3) CachingSimpleNode is "simple" and resets its cache of nodes on each change. It results in large arrays being re-allocated and a filter being applied to thousand of nodes on each event.
+* time: 2019-11-22T17:16:39Z
+* content: See the commit descriptions for more specific details.
+* time: 2019-11-22T17:16:39Z
+* content: @nskvortsov
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-11-25T14:38:35Z
+* content: Eliminate invokeSafely() overhead from treeModel updates
+* codeUrl: github.com/JetBrains/intellij-community/pull/1260/commits/b2e4b5c171b6e04530c7136e8f3ae139a77e6544
+************************************************************************

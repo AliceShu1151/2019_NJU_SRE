@@ -1,0 +1,23 @@
+************************************************************************
+* id: 245
+* requirement: Allow Git 'Compare with branch' popup to filter based on the branch name
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-02-18T21:51:53Z
+* content: Enabled Git 'Compare with branch' popup to allow filtering/searching …
+* codeUrl: github.com/JetBrains/intellij-community/pull/245/commits/2a9ece896c3318f9e5b55719b7b1989ddca31b8f
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-02-18T22:04:34Z
+* content: When selecting compare with branch, a list of branches pops up, this list is not searchable/filterable. This commit allows the list to be searched just by typing.
+* time: 2015-02-19T12:09:15Z
+* content: Contribution Agreement was received.
+* time: 2015-02-20T10:06:52Z
+* content: Merged. Thanks! Btw, this fixes https://youtrack.jetbrains.com/issue/IDEA-116852.
+************************************************************************

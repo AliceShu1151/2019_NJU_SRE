@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1169
+* requirement: Improve support for gmavenplus-plugin
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-07-11T07:21:11Z
+* content: Improve support for gmavenplus-plugin. Inject Groovy language to 'scr…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1169/commits/b5f5b5f38904b32c459203633e4ea17dc2736827
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-07-11T07:45:13Z
+* content: This pull requests improves existing GMavenPlus support by injecting Groovy language for parameter scripts > script of GMavenPlus plugin. (documentation says this parameter can contain inline Groovy scripts)
+************************************************************************

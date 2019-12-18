@@ -1,0 +1,34 @@
+************************************************************************
+* id: 234
+* requirement: Fixes to CoreJavaFileManager
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-01-13T12:44:35Z
+* content: Refactor and improve CoreJavaFileManagerTest
+* codeUrl: github.com/JetBrains/intellij-community/pull/234/commits/58514e34f6b5b6d878b10c52f776bd7c960d7862
+* time: 2015-01-13T13:27:34Z
+* content: Fix CoreJavaFileManager for top level classes with dollar in name
+* codeUrl: github.com/JetBrains/intellij-community/pull/234/commits/6dbe78cdff212170d16d4011e49defc997f35482
+* time: 2015-01-13T14:56:48Z
+* content: CoreJavaFileManagerTest: add negative scenarios
+* codeUrl: github.com/JetBrains/intellij-community/pull/234/commits/15989988f699ac074c0edf0644702c4b11214186
+* time: 2015-01-13T15:56:15Z
+* content: CoreJavaFileManager: find main class in file with several classes pre…
+* codeUrl: github.com/JetBrains/intellij-community/pull/234/commits/90e2339adfda6f865cc28cc904dcc9fb9a8cc538
+* time: 2015-01-13T16:03:35Z
+* content: CoreJavaFileManager: check scope when searching for classes
+* codeUrl: github.com/JetBrains/intellij-community/pull/234/commits/d5bd063a5a0898376faa8c96dac7948dd3e2c40c
+* time: 2015-01-13T17:51:54Z
+* content: CoreJavaFileManager: avoid constructing unneeded list
+* codeUrl: github.com/JetBrains/intellij-community/pull/234/commits/f9bbc71f84a6ef7ad9aa5605893497b05b76ddfa
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-01-13T18:02:19Z
+* content: Needed for Kotlin. See https://youtrack.jetbrains.com/issue/KT-6444
+************************************************************************

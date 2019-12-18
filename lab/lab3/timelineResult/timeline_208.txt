@@ -1,0 +1,23 @@
+************************************************************************
+* id: 208
+* requirement: Add support choosing Gradle JVM
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2014-08-30T23:40:58Z
+* content: Add support choosing Gradle JVM
+* codeUrl: github.com/JetBrains/intellij-community/pull/208/commits/7b76816413b03128ee101624bea61b9671ea6355
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2014-08-30T23:42:26Z
+* content: Add support choosing Gradle JVM
+* time: 2014-09-26T08:44:05Z
+* content: Have you submitted a contributor license agreement? If not, please download the PDF from http://www.jetbrains.org/display/IJOS/Contributor+Agreement and then print it out, sign, scan and email to contribute@jetbrains.com
+* time: 2014-11-14T16:18:43Z
+* content: Yes. Just sent it.
+************************************************************************

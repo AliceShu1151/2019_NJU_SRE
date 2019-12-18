@@ -1,0 +1,4 @@
+************************************************************************
+* id: 1048
+* requirement: Add support for Fish completions in terminal
+the requirement of 1048 only has implements, no discussion.

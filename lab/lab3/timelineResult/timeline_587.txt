@@ -1,0 +1,4 @@
+************************************************************************
+* id: 587
+* requirement: Introduce HighlighterLayer.WEAK_WARNING
+the requirement of 587 only has implements, no discussion.

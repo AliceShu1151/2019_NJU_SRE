@@ -1,0 +1,51 @@
+************************************************************************
+* id: 584
+* requirement: Add multi-language support for "Analyze Data Flow To/From Here"
+*=======================================================================
+* round 0
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-06T13:23:05Z
+* content: Analyze Data Flow: Support multi-language graphs
+* codeUrl: github.com/JetBrains/intellij-community/pull/584/commits/b3395ab5bb1582bff960f3500223f6e76969e0a9
+* time: 2017-06-07T13:03:47Z
+* content: Analyze Data Flow: Generalize "Group by leaf expression nullness" action
+* codeUrl: github.com/JetBrains/intellij-community/pull/584/commits/9ec3f42adb05584e20ee19785db0c84777a1a098
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-07T14:50:30Z
+* content: The immediate goal is to allow mixing Java and Kotlin code in the same data flow graph as well as support grouping by leaf expressions and nullability (see also https://youtrack.jetbrains.com/issue/KT-16833)
+* time: 2017-06-07T21:42:34Z
+* content: Thank you for your contribution! I'd expect some tests present in the PR though
+* time: 2017-06-13T12:11:42Z
+* content: As far as I see there are no alternative dataflow implementations at the moment. So I don't think any new tests are necessary as single-language dataflow shouldn't be affected by these changes. Tests corresponding to the mixed Java-Kotlin dataflow will be added in the Kotlin project, though
+************************************************************************
+*=======================================================================
+* round 1
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-06-13T17:18:57Z
+* content: Analyze Data Flow: Initial implementation for Groovy
+* codeUrl: github.com/JetBrains/intellij-community/pull/584/commits/4128ccf555ad16da6215496ff1cb909fecb38f02
+* time: 2017-06-21T14:19:31Z
+* content: Analyze Data Flow: Generalize "Group by leaf expression" action
+* codeUrl: github.com/JetBrains/intellij-community/pull/584/commits/9202b490b4025f37e4f463362b445810fa47dbe9
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-06-25T17:17:40Z
+* content: (A similar one for Scala: https://youtrack.jetbrains.com/issue/SCL-2818. Thanks for working on this generically.) @asedunov do you have plans to implement that for Scala too?
+* time: 2017-06-25T17:17:40Z
+* content: BTW: I think the *Base abstract classes and interfaces might be better put to a different module (not java-impl, maybe java-api?). There are a few new methods where nullability is not declared, it probably should be updated.
+* time: 2017-07-03T12:02:33Z
+* content: @aborg0: Thanks. Currently I don't plan working on Scala implementation. The main objective of this PR was to add support for Java-Kotlin cross-language dataflow analysis. Groovy implementation is added mainly for the testing purposes
+* time: 2017-07-03T18:49:15Z
+* content: @asedunov Thanks, in this case I'll add Scala. Once a version of this PR gets merged, I'll start working on it (as I do not want to duplicate your work and this is not urgent for me). Thanks for rebasing your changes, I'll try to check it during the weekend (or just pull from the main repo if it gets merged ;) ). Is there anything I can help?
+************************************************************************

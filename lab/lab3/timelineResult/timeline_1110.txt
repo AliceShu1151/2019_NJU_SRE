@@ -1,0 +1,23 @@
+************************************************************************
+* id: 1110
+* requirement: IDEA-200272 activate the session scope when looking up AbstractLifecy…
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-02T14:09:47Z
+* content: IDEA-200272 activate the session scope when looking up AbstractLifecy…
+* codeUrl: github.com/JetBrains/intellij-community/pull/1110/commits/273e8b1217667dc5f0068ba92694f758f0923c39
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-02T14:14:00Z
+* content: activate the session scope when looking up AbstractLifecycleParticipant to fix broken  dependency resolution
+* time: 2019-04-11T14:12:35Z
+* content: @vladsoroka Do you need any help to get this merged? This is a showstopper for all IntelliJ users in my current project (and all other projects that depend on such maven extensions).
+* time: 2019-04-15T14:25:24Z
+* content: Thanks for the contribution! I've merged the change using the following commit c99273c
+************************************************************************

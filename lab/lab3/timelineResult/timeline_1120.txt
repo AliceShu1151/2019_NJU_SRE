@@ -1,0 +1,19 @@
+************************************************************************
+* id: 1120
+* requirement: Support test parallelization in UsefulTestCase
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2019-04-12T06:40:18Z
+* content: Support test parallelization in UsefulTestCase
+* codeUrl: github.com/JetBrains/intellij-community/pull/1120/commits/4ed75beedcd0c2e6336c0adde9289f5fcc3ee92a
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2019-04-12T06:42:20Z
+* content: Commit prevents folder clashing on parallel test execution.
+************************************************************************

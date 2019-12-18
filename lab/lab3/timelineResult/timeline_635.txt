@@ -1,0 +1,25 @@
+************************************************************************
+* id: 635
+* requirement: Extends IdeaModuleBase to support jars
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2017-08-02T23:43:56Z
+* content: Extends IdeaModuleBase to support jars
+* codeUrl: github.com/JetBrains/intellij-community/pull/635/commits/ea80f5bdcdcbbbdab3654388158d2732d1e5ff85
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2017-10-04T00:16:11Z
+* content: IdeaModuleBase already extends a file set that supports zips or directories as inputs. This changes it so if the output of the model is a .jar, it will use the zip code path. It's unfortunate that the ant base class has two variables and expects only one of them to be set.
+* time: 2018-07-21T11:27:48Z
+* content: cc @chashnikov
+* time: 2018-07-23T09:18:02Z
+* content: Sorry for the late reply, we somehow missed this pull request. Why do you need this? IdeaModuleBase describes location of module classes, and it's used to pack them into JARs to build IDE distribution (see org.jetbrains.intellij.build.impl.DistributionJARsBuilder). If it refers to a JAR file it means that that JAR file will be packed into another JAR file in IDE distribution and this won't work.
+* time: 2018-07-23T09:18:02Z
+* content: Also this change will cause problems if there is an existing module which output directory name ends with .jar (e.g. because the module name ends with .jar).
+************************************************************************

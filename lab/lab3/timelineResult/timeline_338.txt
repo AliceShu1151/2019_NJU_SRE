@@ -1,0 +1,36 @@
+************************************************************************
+* id: 338
+* requirement: Make compilable both with latest Kotlin and beta4
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2015-12-29T20:31:25Z
+* content: Add use site variance (co- and contra-) to methods of Promise<T> to e…
+* codeUrl: github.com/JetBrains/intellij-community/pull/338/commits/802555a278afb2f19507c6c8aeec06935bb0f97f
+* time: 2015-12-29T20:31:25Z
+* content: Cleanup deprecated Kotlin symbol usages.
+* codeUrl: github.com/JetBrains/intellij-community/pull/338/commits/08d8cb572a3d3e7b237970cc3f4cb2124d5af9bc
+* time: 2015-12-30T14:26:37Z
+* content: Accept SuspendContext<*> in SuspendContextManager.isContextObsolete, …
+* codeUrl: github.com/JetBrains/intellij-community/pull/338/commits/b9c08a91fe180a910451626ad09fdb6599fcabce
+* time: 2015-12-30T14:29:07Z
+* content: Precisely specify type of breakpointTypeClass to be compatible with t…
+* codeUrl: github.com/JetBrains/intellij-community/pull/338/commits/48479b6b3820b9f8173c8e8d87e14e6587732802
+* time: 2015-12-30T15:41:23Z
+* content: Temporary fixes to compile with Kotlin beta4, revert after migrating …
+* codeUrl: github.com/JetBrains/intellij-community/pull/338/commits/29b49373f4aa639384befe9eff10c710f3c73279
+* time: 2015-12-30T16:05:14Z
+* content: Make property constant to access it as static field from java.
+* codeUrl: github.com/JetBrains/intellij-community/pull/338/commits/3ae58e5a44b4e9811746dbf9e8fc4c6518c91952
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2015-12-30T16:09:08Z
+* content: Fix type projection usages, deprecated symbols cleanup
+* time: 2015-12-30T16:45:46Z
+* content: I've used kotlin 1.0.0-beta-5233 and 1.0.0-beta-4584-IJ143-12 to compile
+************************************************************************

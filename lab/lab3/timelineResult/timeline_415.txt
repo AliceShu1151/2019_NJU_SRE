@@ -1,0 +1,23 @@
+************************************************************************
+* id: 415
+* requirement: Prevent JNA library conflicts
+*=======================================================================
+* no changes, only the initial requirement, implements, and discussion.
+*=======================================================================
+************************************************************************
+* type: implements
+*-----------------------------------------------------------------------
+* time: 2016-06-18T01:34:38Z
+* content: Prevent JNA library conflicts
+* codeUrl: github.com/JetBrains/intellij-community/pull/415/commits/87249802be9187c7238851f4d67637a6366ebfc3
+************************************************************************
+************************************************************************
+* type: discussion
+*-----------------------------------------------------------------------
+* time: 2016-06-18T01:39:50Z
+* content: Adding this option prevents a JNA library conflict with other software when trying to upgrade IntelliJ with the patching mechanism. See here for more info.
+* time: 2018-07-21T13:07:20Z
+* content: @theroflcoptr, please rebase the PR, cc @chashnikov.
+* time: 2018-07-21T16:32:22Z
+* content: Sorry for the late reply, we somehow missed this pull request. It looks like we already set jna.nosys property inside the IDE (see 83eeacb) and while installing patches (see cbcfe98). Also IDEA run configuration is used to run IntelliJ IDEA from sources only, and it isn't possible to update it via patch in that mode.
+************************************************************************
